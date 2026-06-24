@@ -1,0 +1,17 @@
+{
+  "name": "policy-as-data",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic, cited decision engine over policy-as-data. Proof of concept on MARADMIN 051/23.",
+  "scripts": {
+    "test": "node --test --experimental-strip-types \"test/*.test.ts\"",
+    "build": "tsc",
+    "serve": "node scripts/serve.mjs",
+    "dev": "npm run build && npm run serve"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
