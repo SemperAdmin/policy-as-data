@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Document-structure layer for the proof of concept.
+  USLM-aligned markup of the Assistant Secretary of the Navy (Manpower and
+  Reserve Affairs) Memorandum, "Department of the Navy Guidance for Expansion of
+  the Military Parental Leave Program," 17 January 2023, conforming to the USMC
+  issuance schema (schema/usmc-issuance-1.0.xsd).
+
+  Reference (b) of MARADMIN 051/23 — the Navy-level authority that implements
+  DTM 23-001 for the Department of the Navy. Encoded verbatim from the memorandum
+  (provided as photographs). All provisions VERIFIED against the source.
+-->
+<issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://policy.usmc.mil/ns/uslm/1.0 ../schema/usmc-issuance-1.0.xsd"
+          identifier="/us/navy/asn-mra/2023/mplp-guidance"
+          issuanceType="MEMO"
+          status="VERIFIED">
+  <meta>
+    <originator>Assistant Secretary of the Navy (Manpower and Reserve Affairs)</originator>
+    <date>17 January 2023</date>
+    <signer>Robert D. Hogue, Principal Deputy Assistant Secretary of the Navy (Manpower and Reserve Affairs), Performing the Duties of the Assistant Secretary of the Navy (Manpower and Reserve Affairs)</signer>
+    <subject>Department of the Navy Guidance for Expansion of the Military Parental Leave Program</subject>
+    <derivesFrom href="/us/dod/dtm/2023/23-001"/>
+    <derivesFrom href="/us/usc/10/701"/>
+  </meta>
+
+  <paragraph identifier="/us/navy/asn-mra/2023/mplp-guidance/preamble" status="VERIFIED">
+    <content>
+      <p>On January 4, 2023, the Under Secretary of Defense for Personnel and Readiness signed reference (a), which establishes policy, assigns responsibilities, and provides procedures for the expansion of the Military Parental Leave Program (MPLP) pursuant to reference (b). This DTM supplements reference (c), takes precedence over any previous DoD issuances or Service regulations pertaining to MPLP, but does not supersede reference (d) or Service regulations pertaining to Reserve Component Maternity Leave Program.</p>
+      <p>The Department of the Navy shall implement expansion of the MPLP in strict accordance with references (a) through (c) and any subsequent policy updates. In addition to the requirements in the references, the following guidance is issued to further define responsibilities in the Navy and Marine Corps, and maximize the delegation of authorities to the greatest extent possible. Accordingly, the Navy and Marine Corps will:</p>
+    </content>
+  </paragraph>
+
+  <paragraph identifier="/us/navy/asn-mra/2023/mplp-guidance/p1" status="VERIFIED">
+    <num style="paren-arabic">(1)</num>
+    <content><p>Implement expanded MPLP entitlements retroactively to December 27, 2022.</p></content>
+    <paragraph identifier="/us/navy/asn-mra/2023/mplp-guidance/p1/a" status="VERIFIED">
+      <num style="alpha-lower">a</num>
+      <content><p>Apply the expanded MPLP entitlement to Sailors and Marines who have unused caregiver leave as of December 27, 2022, if such unused leave was authorized by the now superseded March 23, 2018, USD(P&amp;R) memorandum. The combination of caregiver leave and parental leave will not exceed 12 weeks.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/navy/asn-mra/2023/mplp-guidance/p1/b" status="VERIFIED">
+      <num style="alpha-lower">b</num>
+      <content><p>Continue previously authorized maternity convalescent leave for Sailors or Marines who have unused maternity convalescent leave as of December 27, 2022, if such leave was authorized by the March 23, 2018, USD(P&amp;R) memorandum.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/navy/asn-mra/2023/mplp-guidance/p1/c" status="VERIFIED">
+      <num style="alpha-lower">c</num>
+      <content><p>Grant convalescent leave that may exceed 30 days to the birth parent for recovery from the birth event, if such leave is specifically recommended, in writing, by the health care provider of the birth parent to address a diagnosed medical condition and is approved by the unit commander.</p></content>
+    </paragraph>
+  </paragraph>
+
+  <paragraph identifier="/us/navy/asn-mra/2023/mplp-guidance/p2" status="VERIFIED">
+    <num style="paren-arabic">(2)</num>
+    <content><p>Issue further Service-specific guidance as soon as possible, consistent with references (a) through (c), including specific guidance that a unit commander must balance the needs of the unit with the needs of the member to maximize opportunity to use parental leave.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/navy/asn-mra/2023/mplp-guidance/p3" status="VERIFIED">
+    <num style="paren-arabic">(3)</num>
+    <content><p>Educate the force to ensure Sailors and Marines understand the new benefits, including eligibility and date of implementation.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/navy/asn-mra/2023/mplp-guidance/p4" status="VERIFIED">
+    <num style="paren-arabic">(4)</num>
+    <content><p>Establish non-birth parent proof of parentage requirements, for a qualifying birth event of child(ren) born outside of a marriage. Proof of parentage documents can be:</p></content>
+    <paragraph identifier="/us/navy/asn-mra/2023/mplp-guidance/p4/a" status="VERIFIED">
+      <num style="alpha-lower">a</num>
+      <content><p>Listing, with consent, as a parent on the child's birth certificate or other government issued document;</p></content>
+    </paragraph>
+    <paragraph identifier="/us/navy/asn-mra/2023/mplp-guidance/p4/b" status="VERIFIED">
+      <num style="alpha-lower">b</num>
+      <content><p>Acknowledgement in writing of an obligation to support the child, either by voluntary agreement or court order; or</p></content>
+    </paragraph>
+    <paragraph identifier="/us/navy/asn-mra/2023/mplp-guidance/p4/c" status="VERIFIED">
+      <num style="alpha-lower">c</num>
+      <content><p>Registration, or pending registration, in the Defense Enrollment Eligibility Reporting System.</p></content>
+    </paragraph>
+  </paragraph>
+
+  <paragraph identifier="/us/navy/asn-mra/2023/mplp-guidance/p5" status="VERIFIED">
+    <num style="paren-arabic">(5)</num>
+    <content><p>Submit requests for exceptions to policy regarding the policies and procedures in reference (c) to the Assistant Secretary of Defense for Manpower and Reserve Affairs (ASD(M&amp;RA)) via this office.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/navy/asn-mra/2023/mplp-guidance/closing" status="VERIFIED">
+    <content><p>This memorandum will remain in effect unless and until rescinded by the Assistant Secretary of the Navy (Manpower and Reserve Affairs) or updates to the Secretary of the Navy Instruction 1000.10B, "Department of Navy Policy on Parenthood and Pregnancy," whichever occurs first.</p></content>
+  </paragraph>
+</issuance>

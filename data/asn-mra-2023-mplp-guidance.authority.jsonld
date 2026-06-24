@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "pol": "https://policy.usmc.mil/ns#",
+    "label": "pol:label",
+    "identifier": "pol:identifier",
+    "derivesAuthorityFrom": { "@id": "pol:derivesAuthorityFrom", "@type": "@id" },
+    "references": { "@id": "pol:references", "@type": "@id" }
+  },
+  "@graph": [
+    {
+      "@id": "/us/usc/10/701",
+      "@type": "pol:Statute",
+      "label": "10 U.S.C. 701, Entitlement and accumulation of leave"
+    },
+    {
+      "@id": "/us/dod/dtm/2023/23-001",
+      "@type": "pol:DirectiveTypeMemorandum",
+      "label": "OSD DTM 23-001, Expansion of the Military Parental Leave Program. ASN memo reference (a)."
+    },
+    {
+      "@id": "/us/dod/dodi/1327.06",
+      "@type": "pol:DoDInstruction",
+      "label": "DoDI 1327.06, Leave and Liberty Policy and Procedures. ASN memo reference (c)."
+    },
+    {
+      "@id": "/us/navy/asn-mra/2023/mplp-guidance",
+      "@type": "pol:NavyIssuance",
+      "label": "ASN (M&RA) Memorandum, Department of the Navy Guidance for Expansion of the MPLP (17 Jan 2023)",
+      "derivesAuthorityFrom": [
+        "/us/dod/dtm/2023/23-001",
+        "/us/usc/10/701"
+      ],
+      "references": "/us/dod/dodi/1327.06"
+    }
+  ]
+}

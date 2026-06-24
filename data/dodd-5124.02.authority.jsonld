@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "pol": "https://policy.usmc.mil/ns#",
+    "label": "pol:label",
+    "identifier": "pol:identifier",
+    "derivesAuthorityFrom": { "@id": "pol:derivesAuthorityFrom", "@type": "@id" }
+  },
+  "@graph": [
+    {
+      "@id": "/us/usc/10/113",
+      "@type": "pol:Statute",
+      "label": "10 U.S.C. 113, Secretary of Defense"
+    },
+    {
+      "@id": "/us/usc/10/136",
+      "@type": "pol:Statute",
+      "label": "10 U.S.C. 136, Under Secretary of Defense for Personnel and Readiness"
+    },
+    {
+      "@id": "/us/dod/dodd/5124.02",
+      "@type": "pol:DoDDirective",
+      "label": "DoD Directive 5124.02, Under Secretary of Defense for Personnel and Readiness (USD(P&R))",
+      "derivesAuthorityFrom": [
+        "/us/usc/10/113",
+        "/us/usc/10/136"
+      ]
+    }
+  ]
+}

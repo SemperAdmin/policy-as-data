@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Document-structure layer for the proof of concept.
+  USLM-aligned markup of DoD Directive 5124.02, "Under Secretary of Defense for
+  Personnel and Readiness (USD(P&R))," conforming to the USMC issuance schema
+  (schema/usmc-issuance-1.0.xsd).
+
+  The charter directive that authorizes the USD(P&R) to issue DoD policy; it is
+  the authority DTM 23-001 and DoDI 1327.06 are issued under. Effective June 23,
+  2008, incorporating Change 2 (July 23, 2025); issued under the authority of the
+  Secretary of Defense per 10 U.S.C. 113 and 136. SCOPE: Purpose, Applicability,
+  and Definitions are encoded in full; Section 4 (Responsibilities and Functions)
+  and later sections (Relationships, Authorities, Releasability) and the
+  enclosures are large and NOT yet fully encoded.
+-->
+<issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://policy.usmc.mil/ns/uslm/1.0 ../schema/usmc-issuance-1.0.xsd"
+          identifier="/us/dod/dodd/5124.02"
+          issuanceType="DODD"
+          status="VERIFIED">
+  <meta>
+    <originator>Department of Defense — Director of Administration and Management (DA&amp;M)</originator>
+    <date>June 23, 2008 (Incorporating Change 2, July 23, 2025)</date>
+    <subject>Under Secretary of Defense for Personnel and Readiness (USD(P&amp;R))</subject>
+    <derivesFrom href="/us/usc/10/113"/>
+    <derivesFrom href="/us/usc/10/136"/>
+  </meta>
+
+  <paragraph identifier="/us/dod/dodd/5124.02/p1" status="VERIFIED">
+    <num style="arabic">1</num>
+    <heading>Purpose</heading>
+    <content><p>Under the authority vested in the Secretary of Defense by Sections 113 and 136 of Reference (a), this Directive:</p></content>
+    <paragraph identifier="/us/dod/dodd/5124.02/p1/1.1" status="VERIFIED">
+      <num style="compound">1.1</num>
+      <content><p>Reissues Reference (b) to update the responsibilities, functions, relationships, and authorities of the USD(P&amp;R); incorporates References (c) and (d) and Deputy Secretary of Defense Memorandums (References (e) through (g)); and cancels References (e), (g), and (ab).</p></content>
+    </paragraph>
+    <paragraph identifier="/us/dod/dodd/5124.02/p1/1.2" status="VERIFIED">
+      <num style="compound">1.2</num>
+      <content><p>Authorizes the USD(P&amp;R) to, as a Principal Staff Assistant (PSA) reporting directly to the Secretary of Defense, promulgate DoD policy in DoD Instructions within the responsibilities, functions, and authorities assigned herein in accordance with DoD Instruction 5025.01, and reissue, as necessary, the chartering DoD Directives for the Deputy Under Secretaries and Assistant Secretaries reporting to the USD(P&amp;R).</p></content>
+    </paragraph>
+  </paragraph>
+
+  <paragraph identifier="/us/dod/dodd/5124.02/p2" status="VERIFIED">
+    <num style="arabic">2</num>
+    <heading>Applicability</heading>
+    <content><p>This Directive applies to the Office of the Secretary of Defense (OSD), the Military Departments, the Office of the Chairman of the Joint Chiefs of Staff and the Joint Staff, the Combatant Commands, the Office of Inspector General of the Department of Defense, the Defense Agencies, the DoD Field Activities, and all other organizational entities in the Department of Defense (hereafter referred to collectively as the "DoD Components").</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/dod/dodd/5124.02/p3" status="VERIFIED">
+    <num style="arabic">3</num>
+    <heading>Definitions</heading>
+    <content><p>The following definitions are for the purposes of this Directive only:</p></content>
+    <paragraph identifier="/us/dod/dodd/5124.02/p3/3.1" status="VERIFIED">
+      <num style="compound">3.1</num>
+      <heading>Armed Forces</heading>
+      <content><p>Refers to the Army, Navy, Air Force, Marine Corps, Space Force, and Coast Guard.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/dod/dodd/5124.02/p3/3.2" status="VERIFIED">
+      <num style="compound">3.2</num>
+      <heading>Reserve Components</heading>
+      <content><p>Refers collectively to the Army National Guard of the United States, the Army Reserve, the Navy Reserve, the Marine Corps Reserve, the Air National Guard of the United States, the Air Force Reserve, and the Coast Guard Reserve, when the Coast Guard is operating as a Service of the Department of the Navy.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/dod/dodd/5124.02/p3/3.3" status="VERIFIED">
+      <num style="compound">3.3</num>
+      <heading>Total Force</heading>
+      <content><p>The organizations, units, and individuals that comprise the DoD resources for implementing the National Security Strategy. It includes DoD Active and Reserve Component military personnel, military retired members, DoD civilian personnel (including foreign national direct- and indirect-hire, as well as nonappropriated fund employees), contractors, and host-nation support personnel.</p></content>
+    </paragraph>
+  </paragraph>
+
+  <paragraph identifier="/us/dod/dodd/5124.02/p4" status="VERIFIED">
+    <num style="arabic">4</num>
+    <heading>Responsibilities and Functions</heading>
+    <content><p>The USD(P&amp;R) is the PSA and advisor to the Secretary of Defense for Total Force management; National Guard and Reserve Component affairs; health affairs; readiness and training; military and civilian personnel requirements; language; dependents' education; equal opportunity; morale, welfare, recreation; and quality-of-life matters. In this capacity, the USD(P&amp;R) shall develop policies, plans, and programs for the matters assigned herein.</p></content>
+  </paragraph>
+
+  <!-- Section 4's detailed sub-paragraphs (4.1 onward) and later sections
+       (Relationships, Authorities, Releasability) and enclosures are not yet
+       encoded. -->
+</issuance>

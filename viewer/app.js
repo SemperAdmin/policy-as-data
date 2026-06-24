@@ -45,6 +45,20 @@ const DOCS = [
     rules: null,
   },
   {
+    id: "/us/dod/dodd/5124.02",
+    label: "DoDD 5124.02 · DoD",
+    uslm: "../data/dodd-5124.02.uslm.xml",
+    authority: "../data/dodd-5124.02.authority.jsonld",
+    rules: null,
+  },
+  {
+    id: "/us/navy/asn-mra/2023/mplp-guidance",
+    label: "ASN (M&RA) memo · Navy",
+    uslm: "../data/asn-mra-2023-mplp-guidance.uslm.xml",
+    authority: "../data/asn-mra-2023-mplp-guidance.authority.jsonld",
+    rules: null,
+  },
+  {
     id: "/us/usc/10/701",
     label: "10 U.S.C. 701 · Statute",
     uslm: "../data/usc-10-701.uslm.xml",
