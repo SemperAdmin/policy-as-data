@@ -29,7 +29,15 @@ DATA_CONTRACT.md                       the read-only mandate and the verificatio
 ```
 
 The schema is the foundation; the marked-up MARADMINs are the worked corpus that
-exercises it. Validate a document with:
+exercises it. Validate the whole corpus — schema conformance, JSON
+well-formedness, ontology parse, data-to-ontology conformance, and that every
+citation resolves to a real provision — with:
+
+```bash
+python3 tools/validate.py
+```
+
+Or validate a single document against the schema directly:
 
 ```bash
 xmllint --noout --schema schema/usmc-issuance-1.0.xsd data/maradmin-051-23.uslm.xml
