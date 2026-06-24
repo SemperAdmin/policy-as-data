@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Document-structure layer for the proof of concept.
+  USLM-aligned markup of the Assistant Secretary of the Navy (Manpower and
+  Reserve Affairs) Memorandum, "Secretariat Response to the 2020 Secretary of the
+  Navy's Retiree Council Report," 31 March 2021, conforming to the USMC issuance
+  schema (schema/usmc-issuance-1.0.xsd).
+
+  STANDALONE DOCUMENT. This is NOT MARADMIN 523/22's reference (c) (which is the
+  "Secretariat Response to the 2020 Marine Corps Reserve Policy Board Report,"
+  26 Mar 2021) and is unrelated to parental leave. Encoded verbatim from the
+  memorandum (provided as photographs); all provisions VERIFIED against source.
+-->
+<issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://policy.usmc.mil/ns/uslm/1.0 ../schema/usmc-issuance-1.0.xsd"
+          identifier="/us/navy/asn-mra/2021/retiree-council-response"
+          issuanceType="MEMO"
+          status="VERIFIED">
+  <meta>
+    <originator>Assistant Secretary of the Navy (Manpower and Reserve Affairs)</originator>
+    <date>31 March 2021</date>
+    <signer>Catherine L. Kessmeier, Acting Assistant Secretary of the Navy (Manpower and Reserve Affairs)</signer>
+    <subject>Secretariat Response to the 2020 Secretary of the Navy's Retiree Council Report</subject>
+    <derivesFrom href="/us/navy/secnavinst/5420.169K"/>
+  </meta>
+
+  <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/p1" status="VERIFIED">
+    <num style="arabic">1</num>
+    <content><p>I have reviewed the Council's 2020 report, and I both appreciate and applaud the hard work it represents. I am pleased to provide the Secretariat response in enclosure (1).</p></content>
+  </paragraph>
+  <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/p2" status="VERIFIED">
+    <num style="arabic">2</num>
+    <content><p>Thank you for sharing your Committee Informational Issues. I look forward to watching these mature and working solutions on behalf of the Council.</p></content>
+  </paragraph>
+  <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/p3" status="VERIFIED">
+    <num style="arabic">3</num>
+    <content><p>Please convey my gratitude to the entire Council for their diligence prioritizing issues on behalf of all retired Sailors and Marines. I ask that you continue this important mission and to highlight those issues most pressing for retirees. I welcome further discussion and look forward to your continued work in 2021.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1" status="VERIFIED" level="enclosure">
+    <heading>Enclosure (1) — Secretariat Response to the 2020 Secretary of the Navy's Retiree Council Report</heading>
+
+    <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i1" status="VERIFIED">
+      <num style="arabic">1</num>
+      <heading>Issue 2020-01: Defense Health Agency Transition – Impact on Retirees and Access to Care</heading>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i1/a" status="VERIFIED">
+        <num style="alpha-lower">a</num><heading>Issue Description</heading>
+        <content><p>The transition of Military Treatment Facilities (MTFs) to the Defense Health Agency (DHA) and the planned reduction of 18,000 medical billets have proven to be a failed test case under real-world application. A full list of concerns can be found in reference (b).</p></content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i1/b" status="VERIFIED">
+        <num style="alpha-lower">b</num><heading>Council's Proposed Solutions / Recommendations / Actions</heading>
+        <content>
+          <p>The Council supports the information memorandum to SECDEF dated 05 August 2020 (enclosure (5) of reference (b))</p>
+          <p>Strongly recommend SECNAV engage with the Secretaries of the other Military Departments and request SECDEF suspend the reduction of medical billets until action can be reevaluated</p>
+          <p>Recommend SECNAV include the Navy Surgeon General and military command staff to identify shortfalls with the transition plan offered by DHA</p>
+          <p>Request SECNAV and DoD support measures to insist DHA address issues raised by the GAO Report before further implementation and restructuring</p>
+          <p>Continue to monitor and support legislation (H.R. 6395) from HASC regarding FY-2021 National Defense Authorization Act (NDAA)</p>
+          <p>The Council is in solidarity with the other Retiree Councils in supporting reevaluation of DHA transition and reduction of medical billets.</p>
+        </content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i1/c" status="VERIFIED">
+        <num style="alpha-lower">c</num><heading>Secretariat Response</heading>
+        <content><p>The Secretariat understands the concern the Council has with the transition of the MTFs to the DHA and acknowledges the Council's recommendations and support of the SECDEF memorandum from 05 August 2020. SECNAV and other Military Department Secretaries are in regular communication with SECDEF and DHA to determine MTF billet reduction impacts on Access to Care (ATC) for our retiree populations. All DON medical stakeholders, to include BUMED and the Navy Surgeon General, are stakeholders in the DHA transition and are actively monitoring gaps and seams that may be caused by the transition. The Secretariat is interested in the findings of the GAO and is actively monitoring the DHA transition. The Secretariat will continue to monitor all legislation that affects the Navy and Marine Corps and will ensure updates and new information regarding the DHA transition are communicated to the Council to further enhance the general knowledge and impacts it has on the retiree community.</p></content>
+      </paragraph>
+    </paragraph>
+
+    <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i2" status="VERIFIED">
+      <num style="arabic">2</num>
+      <heading>Issue 2020-02: Navy Reserve Retirement Delays</heading>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i2/a" status="VERIFIED">
+        <num style="alpha-lower">a</num><heading>Issue Description</heading>
+        <content><p>Navy Reserve retirees making the transition from 'retired without pay' ("gray area retirees") to 'retired with pay' face long delays receiving their first retirement check.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i2/b" status="VERIFIED">
+        <num style="alpha-lower">b</num><heading>Council's Proposed Solutions / Recommendations / Actions</heading>
+        <content>
+          <p>Title 10 USC §12731 should be changed, eliminating the requirement for the Service member to apply for retired pay entitled to them with their non-regular retirement. Proposed change would involve the Service initiating the process for non-regular retirement at the member's eligible milestones and member verification of intent as well as their service history and data; including retirement point record, paygrade, years of service, and qualifying duty toward the date on which the member is eligible for retired pay. Pay could start on time with the best information available and updated during the first year in a pay status</p>
+          <p>PERS-912 update policy documents to require formal Reserve retirement transition awareness training at key milestones during the Reservist's career, and through the gray area period, prior to the point of making a retirement request</p>
+          <p>Request DFAS continue myPay account throughout the gray area period</p>
+          <p>Request DFAS push a SMARTDOC to the email address on file which should reach greater than 80% of the reservists getting ready to retire. This email should be sent out at least ten months prior</p>
+        </content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i2/c" status="VERIFIED">
+        <num style="alpha-lower">c</num><heading>Secretariat Response</heading>
+        <content><p>The Secretariat shares the concerns of the Council regarding delays in reserve retirement pay. Delays in retired pay regardless of active or reserve affiliation are unacceptable. Ultimate authority for the laws governing retired pay fall under the purview of DoD and DFAS, who have been hesitant to eliminate the legal requirements of the members requesting retirement pay due to the variables associated with a member's time in the "gray area." The Secretariat will direct its Reserve Matters team to engage with DoD and DFAS in order to highlight these concerns and help find a solution. Regarding formal Reserve retirement transition training, PERS-912 initiated a Retirement Transition Outreach (RTO) program in 2020 to provide retirement information, including requirements, processes, timelines, forms, and expectations specifically to Navy Reserve Sailors and "gray area" retirees. The RTO is open to all members of the RC, but specifically targets those members who are between 18-20 years of service and "gray area" retirees within 24 months of age 60. The RTO will continue to offer virtual events throughout FY21. This is a step in the right direction and has increased RC access to retirement information; however much needs to be done especially as it applies to funding. The RTO program is a collateral effort and has limited resources. The Secretariat will engage OPNAV N170 and HQMC MMSR-6 to assess the possibility of converting this training to mandated, required training for all reserve members.</p></content>
+      </paragraph>
+    </paragraph>
+
+    <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i3" status="VERIFIED">
+      <num style="arabic">3</num>
+      <heading>Issue 2020-03: Retirement Transition Class for Reserve Retirees</heading>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i3/a" status="VERIFIED">
+        <num style="alpha-lower">a</num><heading>Issue Description</heading>
+        <content><p>There is no required Transition Assistance Management Program (TAMP) course for Reserve Component (RC) members when they retire without pay, or upon reaching retirement age (normally 60 years old). Members who retire from the RC without pay and prior to reaching their eligibility for pay (gray area retirees) usually have not had contact with their military components for up to twenty years and are expected to know the current requirements to apply for pay when eligible. In contrast, the active component has a standardized transition course (T-GPS).</p></content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i3/b" status="VERIFIED">
+        <num style="alpha-lower">b</num><heading>Council's Proposed Solutions / Recommendations / Actions</heading>
+        <content>
+          <p>CNAVPERS, COMNAVRESFOR, USMC DepCmdt M&amp;RA and MARFORRES mandate a Navy and Marine Corps Reserve-centric retirement class for all the Navy and Marine Corps Reserve retirees to include the gray area retirees</p>
+          <p>CNAVPERS update MILPERSMAN Article 1820-020 (paragraph 9), and BUPERSINST 1001.39F (Chapter 20), and DepCmdt M&amp;RA update MCO 1001R.1L (Chapter 4 – Section 7) and MARCORPERSMAN (Chapter 13 – Article 13167) to include the newly mandated Navy and Marine Corps Reserve-centric retirement class for all retirement transitioning Navy and Marine Corps Reservists</p>
+          <p>OSD consider a joint Reserve Retirement workshop be added to the Transition Assistance Management Program (TAMP) or to a virtual training evolution such as the Joint Knowledge On-line (JKO) transition assistance platform, or MyNavy portal. This online tool should include webinar/video-based classes easily understandable and obtainable by gray area retirees who have been away from the military for a number of years prior to pay eligibility</p>
+          <p>SECNAV Retiree Council lead an informal consortium of Service Retiree Councils to request all Services jointly establish a Reserve retirement workshop, and it be added to the TAMP.</p>
+          <p>COMNAVRESFOR/MARFORRES require reserve retirement components (PERS-912/MMSR-6) annually contact gray area retirees via phone, email, or mail after reserve retirement without pay commences. Doing so would inform the gray area retirees of the required updates on personal information and life changing events to include address changes, marriage, divorce, and any other family member changes</p>
+          <p>OPNAV (N170)/MMSR-6 provide the above updated contact information for distribution to Navy RAOs and Marine Corps RSOs empowering them to better assist the growing number of RC retired members and their families</p>
+        </content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i3/c" status="VERIFIED">
+        <num style="alpha-lower">c</num><heading>Secretariat Response</heading>
+        <content><p>As discussed in the response to issue 2020-02, the Secretariat will engage with OPNAV N170 and HQMC MMSR-6 to determine the viability of converting the current voluntary RTO training into one that is mandated. The specifics of implementation and execution of mandated training needs to be studied, and leveraging existing programs (such as TAP) requires inquiry. In addition, the Secretariat will engage OPNAV N170 and HQMC MMSR-6 on options to remove communication barriers with the retiree population. The Navy's Shift Colors and the USMC's Semper Fidelis perform an adequate job of informing the retiree population; however, communication paths can improve utilizing modern messaging technology.</p></content>
+      </paragraph>
+    </paragraph>
+
+    <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i4" status="VERIFIED">
+      <num style="arabic">4</num>
+      <heading>Issue 2020-04: TRICARE Equity for Reserve Retirees</heading>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i4/a" status="VERIFIED">
+        <num style="alpha-lower">a</num><heading>Issue Description</heading>
+        <content><p>The National Defense Authorization Act (NDAA) for Fiscal Year 2008 enacted the Reduced Retirement Age for Reserve Component (RC) members based on Active Duty (AD) days. Members of the National Guard and Reserve are eligible for retirement after they have performed 20 or more years of creditable military service. Typically, they receive their retired pay at age 60. However certain periods of active duty reduce the retirement age by three months for every 90 days served. For some members of the Guard and Reserve, this could mean starting retired pay as early as age 50. While these Reduced Age Retirements allow the receipt of retired pay prior to age 60, the NDAA did not include a concurrent eligibility for TRICARE Prime or Select benefits. In order to receive TRICARE Prime or Select benefits, the member must still wait until age 60.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i4/b" status="VERIFIED">
+        <num style="alpha-lower">b</num><heading>Council's Proposed Solutions / Recommendations / Actions</heading>
+        <content>
+          <p>Support amending 10 U.S.C. §1076e(a), to include eligibility for TRICARE Standard or Prime coverage for RC members who retire below age 60 under 10 U.S.C. §12731.</p>
+          <p>Support H.R. 5169: TRICARE Fairness for National Guard and Reserve Retirees Act. This bill was introduced 19 November 2019 and currently has 30 cosponsors.</p>
+        </content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i4/c" status="VERIFIED">
+        <num style="alpha-lower">c</num><heading>Secretariat Response</heading>
+        <content><p>DON supported a legislative proposal that was submitted to Congress in October 2020 by the Undersecretary of Defense (Personnel and Readiness). The legislative proposal is titled, "TRICARE Eligibility for Former Members Under 60 Years of Age Entitled to Retired Pay for Non-Regular Service" and has the intent of removing the barrier placed on certain Service members from enrolling in TRICARE Select or Prime upon their eligibility for retired pay. The Secretariat will ensure that the Council is informed of any information regarding this proposal as it moves through the legislative process.</p></content>
+      </paragraph>
+    </paragraph>
+
+    <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i5" status="VERIFIED">
+      <num style="arabic">5</num>
+      <heading>Issue 2020-05: TRICARE Fee Increases and the TRICARE Young Adult Program (TYA)</heading>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i5/a" status="VERIFIED">
+        <num style="alpha-lower">a</num><heading>Issue Description</heading>
+        <content><p>The Council continues to identify concerns about TRICARE fee increases. In the Fiscal Year 2017 NDAA Congress approved a request from the DoD to implement enrollment fees for what was then known as TRICARE Standard. Many retirees will transition their care from Military Treatment Facilities (MTF) to the TRICARE network which will result in additional out-of-pocket expenses.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i5/b" status="VERIFIED">
+        <num style="alpha-lower">b</num><heading>Council's Proposed Solutions / Recommendations / Actions</heading>
+        <content>
+          <p>SECNAV oppose the ongoing erosion of health care benefits due to increased fees and loss of access to military treatment facilities</p>
+          <p>Task TRICARE with establishing an aggressive communication plan to inform retirees of the requirement to establish payment of enrollment fees and notice of open-enrollment period</p>
+          <p>Support an extension of the grace period for re-enrollment in TRICARE Select outside of a qualifying life event from 3 months to 12 months</p>
+          <p>Support the efforts of The Military Coalition members and any potential legislation introduced by Congress that eliminates the additional premium of the TYA program</p>
+          <p>Further, the Council recommends allowing family members to remain on the sponsor's plan until the age of 26 to mirror plans in the civilian sector, essentially eliminating the TYA program, which significantly impacts working age retirees.</p>
+        </content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i5/c" status="VERIFIED">
+        <num style="alpha-lower">c</num><heading>Secretariat Response</heading>
+        <content><p>TRICARE Select retiree enrollment fees are statutory requirements. The Secretariat engages with military healthcare system (MHS) stakeholders to ensure the retiree population is receiving regular communication on relevant topics. DHA communicates aggressively via e-mail, postal mail, online and telephonic contact with affected beneficiaries as changes to the benefit are applied in line with statutory and regulatory changes. Regarding an extension of the grace period for re-enrollment in TRICARE Select outside of open season with a qualifying life (QLE), TRICARE's policy is based on industry standards aimed at preventing "adverse selection," which describes a potential beneficiary who only enrolls in a program when they need significant healthcare, driving up premiums and costs of the programs over time. The 90 days currently allowed by the DoD for retroactive coverage exceeds that of civilian-sector peers - the Federal Employees Health Benefits Program (FEHBP) allows for enrollment within 60 days of a QLE. TRICARE feels the extension of an enrollment window to 12 months would promote adverse selection, as a beneficiary could opt to never enroll for periods where they did not experience any significant healthcare expenditures, while being assured that, in the event of an emergency, they could retroactively obtain coverage. TRICARE also mandates eligibility requirements, to include those of the TYA. In both the QLE and TYA cases, the Secretariat will share the Council's concerns with senior MHS stakeholders. The Secretariat also strongly encourages retirees to engage with VSOs and MSOs on these topics.</p></content>
+      </paragraph>
+    </paragraph>
+
+    <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i6" status="VERIFIED">
+      <num style="arabic">6</num>
+      <heading>Issue 2020-06: Bridging the Communication Gap with Retirees</heading>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i6/a" status="VERIFIED">
+        <num style="alpha-lower">a</num><heading>Issue Description</heading>
+        <content><p>Currently, the Navy and Marine Corps lack an effective communication system to contact retirees and annuitants in emergencies, for changes to policies and procedures, and informational updates that affect the life of a retiree and other annuitants on base.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i6/b" status="VERIFIED">
+        <num style="alpha-lower">b</num><heading>Council's Proposed Solutions / Recommendations / Actions</heading>
+        <content>
+          <p>DFAS should again agree to announce Retiree Appreciation Days (RAD) using their SMARTDOC system to ensure retirees/annuitants' attendance so they can receive current and accurate information about these events</p>
+          <p>If required, DFAS generate consent forms for retirees and annuitants ("opt-in" forms) so email/texting information can be provided to OPNAV N170 and MMSR-6 for communications to Navy and Marine Corps retirees</p>
+          <p>DFAS permit Navy and Marine Corps Personnel Commands (OPNAV N170 and MMSR-6) to send important and emergent communication to retirees/annuitants through DFAS and their SMARTDOC system</p>
+          <p>Commander, Navy Installations Command (CNIC) create base-wide links whereby retiree/annuitants can enter point of contact information to receive emergency notices and other updates</p>
+          <p>Following creation of the above base-wide links, OPNAV N170 and MMSR-6 advertise these links in Shift Colors and Semper Fidelis newsletters so retirees and annuitants are aware</p>
+          <p>SECNAV research the viability of the email address for life.</p>
+        </content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i6/c" status="VERIFIED">
+        <num style="alpha-lower">c</num><heading>Secretariat Response</heading>
+        <content><p>The Secretariat notes the Council's recommendation and concurs with the desired outcome. Due to the potential for inadvertent disclosure of personally identifiable information (PII), the best way to achieve this intent is for the Navy &amp; Marine Corps to post notices in the Shift Colors and Semper Fidelis newsletters, respectively. These notices should invite retirees in the geographical vicinity of a particular military installation to contact that installation's RAO/RSO and ask to be added to their email distribution/phone contact list. Local installations may be better suited for routine communications with retirees in their specific geographical areas. Unfortunately, CNIC cannot develop base wide links for retirees and annuitants to enter point of contact information to receive emergency notices and other updates due to a '.mil' email address restriction. The Secretariat directs OPNAV N170 and HQMC MMSR-6 to explore the requirements necessary to establish an email address for life.</p></content>
+      </paragraph>
+    </paragraph>
+
+    <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i7" status="VERIFIED">
+      <num style="arabic">7</num>
+      <heading>Issue 2020-07: Regaining Access to Data to Communicate by United States Postal Service Mail with Retirees within Targeted Areas</heading>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i7/a" status="VERIFIED">
+        <num style="alpha-lower">a</num><heading>Issue Description</heading>
+        <content><p>Program Managers (PMs) and Retiree Assistance Officers (RAOs)/Retiree Service Officers (RSOs) serving U.S. Military retirees across all branches of service can no longer provide key information in a timely manner by mail to retirees within targeted areas. This is because the Defense Manpower Data Center (DMDC) will no longer release retiree contact data to PMs/RAOs/RSOs, citing the Privacy Act.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i7/b" status="VERIFIED">
+        <num style="alpha-lower">b</num><heading>Council's Proposed Solutions / Recommendations / Actions</heading>
+        <content>
+          <p>Reinstate Retired Address Finder (RAF) access to PMs/RAOs/RSOs to enable them to perform searches and conduct mailings as they've previously done</p>
+          <p>Create a memorandum of agreement for DMDC to perform the mailing function upon the request of the PMs/RAOs/RSOs, with reimbursement by the requesting branch.</p>
+        </content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i7/c" status="VERIFIED">
+        <num style="alpha-lower">c</num><heading>Secretariat Response</heading>
+        <content><p>The Secretariat concurs with these recommendations and is aware of current initiatives by other agency stakeholders and other Services to address these concerns. Provided PII issues can be resolved, the Secretariat will support the initiative to reinstate RAF access, and if a subsequent MOA is required, the Secretariat will endorse.</p></content>
+      </paragraph>
+    </paragraph>
+
+    <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i8" status="VERIFIED">
+      <num style="arabic">8</num>
+      <heading>Issue 2020-08: Commissary/NEX Spain Military Retiree Access</heading>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i8/a" status="VERIFIED">
+        <num style="alpha-lower">a</num><heading>Issue Description</heading>
+        <content><p>Due to wording in the Agreement on Defense Cooperation (ADC) between Spain and the United States, U. S. Military retirees were not included in that part of the treaty addressing personnel who are authorized access to the NEX and commissary. As a result, retirees are not authorized to use those facilities. Retirees affected by this denial of access suffer financial/quality of life hardships that can be resolved by U.S. Government action at no cost to the U. S. Government. The agreement, signed in 1988 between Spain and the United States, for the United States' use of Rota Naval Base will expire in May 2021. The United States' continued use of Naval Base Rota depends upon renegotiation prior to May 2021.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i8/b" status="VERIFIED">
+        <num style="alpha-lower">b</num><heading>Council's Proposed Solutions / Recommendations / Actions</heading>
+        <content>
+          <p>Recommend prior to upcoming Rota military base renegotiation, a formal request be delivered to the State Department's Senior Desk Officer for Spain requesting that the policy in Spain be revised to allow military retiree access to Spain-based commissary and exchange stores. It is felt this would likely guarantee success. Of special note, the current agreement signed in 1988 expires in May 2021.</p>
+          <p>The DASN/SECNAV letter should be sent to the Senior Desk Officer for Spain, U. S. State Department prior to the upcoming renegotiation, which are imminent.</p>
+        </content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i8/c" status="VERIFIED">
+        <num style="alpha-lower">c</num><heading>Secretariat Response</heading>
+        <content><p>The Secretariat understands the ADC with Spain will be extended by an additional year to May 2022. I will draft a letter to ASD (M&amp;RA) expressing support prior to the renegotiation.</p></content>
+      </paragraph>
+    </paragraph>
+
+    <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i9" status="VERIFIED">
+      <num style="arabic">9</num>
+      <heading>Issue 2020-09: Suicide Prevention for Military Retirees</heading>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i9/a" status="VERIFIED">
+        <num style="alpha-lower">a</num><heading>Issue Description</heading>
+        <content><p>The Veteran's Administration (VA) is a leader in the development and implementation of innovative suicide prevention approaches and resources. Ongoing collection, analysis, and dissemination of suicide-related data is crucial for understanding veteran suicide and informing suicide prevention initiatives. The military retiree population is not differentiated within that demographic.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i9/b" status="VERIFIED">
+        <num style="alpha-lower">b</num><heading>Council's Proposed Solutions / Recommendations / Actions</heading>
+        <content>
+          <p>Encourage DoD to take ownership of available military/veteran/retiree suicide data in order to facilitate Mental Health and Suicide Prevention activities throughout the veteran/retiree communities</p>
+          <p>Require the Defense Finance and Accounting Service (DFAS) to collect "manner of death" (specifically suicide) data and coordinate the information with the VA Office of Mental Health and Suicide Prevention in order to analyze retirees for health activities, including clinical care, public health, program evaluation, research, and prevention strategies</p>
+          <p>Require DFAS to provide military retiree suicide data to the Services</p>
+          <p>Support implementation of National Suicide Hotline Designation Act of 2020 which creates a three-digit 9-8-8 crisis line as per Senate bill S.2661 and H.R. 4194.</p>
+        </content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i9/c" status="VERIFIED">
+        <num style="alpha-lower">c</num><heading>Secretariat Response</heading>
+        <content><p>The Secretariat shares the concerns of the Council regarding retiree suicide prevention and mental health efforts. As was reported last year, the Services continue to explore wide ranging efforts tackling risks and protective factors for suicide, to include improving models and implementing evidence-based screening and treatment initiatives. BUMED continues to actively collaborate with DHA, VA and others to provide subject matter expertise in the area of suicide prevention and mental health. Information sharing agreements between DFAS, other stakeholders, and outside agencies are vetted thoroughly due to PII and PHI concerns, managing these agreements falls under the purview of DoD, and the other relevant agencies. The Secretariat will continue to track and ensure DON equities and priorities are met regarding this vital issue and will continue to share that knowledge throughout the Navy and Marine Corps' Veterans and Retirees. The Secretariat was also fully supportive of The National Suicide Hotline Designation Act of 2020 and was happy to see it become Public Law No: 116-172 in October 2020.</p></content>
+      </paragraph>
+    </paragraph>
+
+    <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i10" status="VERIFIED">
+      <num style="arabic">10</num>
+      <heading>Issue 2020-10: Supporting the End of the "180-Day Rule" for Retirees Seeking Most DoD Civilian Jobs</heading>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i10/a" status="VERIFIED">
+        <num style="alpha-lower">a</num><heading>Issue Description</heading>
+        <content><p>Members retiring from Military Service have to wait 180 days before entering civil service positions in or under the Department of Defense, including non-appropriated fund positions, resulting in a loss (or delay) of employment to members and talent to government.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i10/b" status="VERIFIED">
+        <num style="alpha-lower">b</num><heading>Council's Proposed Solutions / Recommendations / Actions</heading>
+        <content><p>The Secretary seek the support of the Secretaries of the other Military Departments to eliminate the "180-Day Rule."</p></content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i10/c" status="VERIFIED">
+        <num style="alpha-lower">c</num><heading>Secretariat Response</heading>
+        <content><p>The Secretariat understands the frustrations of the "180-day Rule." Although waivers may be granted, Services are statutorily required to comply by the rule. The Secretariat also understands there are proposals currently in Congress targeting adjustments to the rule and encourages retirees to engage with VSOs and MSOs who are leading the charge on this front.</p></content>
+      </paragraph>
+    </paragraph>
+
+    <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i11" status="VERIFIED">
+      <num style="arabic">11</num>
+      <heading>Issue 2020-11: Blue Water Navy Submariner Eligibility</heading>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i11/a" status="VERIFIED">
+        <num style="alpha-lower">a</num><heading>Issue Description</heading>
+        <content><p>The Court of Appeals for the Federal Circuit decided in Procopio v. Wilkie, that for purposes of the Agent Orange Act of 1991, the territorial seas are considered part of the Republic of Vietnam – Blue Water. With cost issues resolved by the court, Congress passed The Blue Water Vietnam Veterans Act (PL 116-23), effective 01 January 2020. The Congressional action covered roughly the same area as the Procopio case although it failed to include provision for submarine sailors operating in the waters offshore Vietnam.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i11/b" status="VERIFIED">
+        <num style="alpha-lower">b</num><heading>Council's Proposed Solutions / Recommendations / Actions</heading>
+        <content>
+          <p>SECNAV establish a means to recognize submariner service in the Blue Waters of Vietnam. Provide the names of submarines that served in the Blue Waters of Vietnam, and the dates they operated in those waters to the VA.</p>
+          <p>VA waive the necessity to provide deck log evidence a submarine sailor served in the Blue Waters provided the sailor's DD-214 reflects he was awarded the Vietnam Service Medal (VSM).</p>
+        </content>
+      </paragraph>
+      <paragraph identifier="/us/navy/asn-mra/2021/retiree-council-response/encl1/i11/c" status="VERIFIED">
+        <num style="alpha-lower">c</num><heading>Secretariat Response</heading>
+        <content><p>All facets of eligibility and administration for Blue Water Navy claims fall under the purview of the Department of Veterans Affairs, and the DON stands ready to support the VA and the DoD/VA Collaboration Office (DVCO) with any Navy and Marine Corps-specific related inquiries. This collaboration has already yielded results as the SECNAV reported to the Congress that the Veterans Benefit Administration (VBA) developed the Ship's Locator Tool designed to identify ships that served in the Blue Waters off Vietnam during the relevant timeframe of the Blue Water Vietnam Veterans Act of 2019. The Secretariat is encouraged by the fact that as of Oct 2020, 22,500 Blue Water Navy claims have been processed by the VA.</p></content>
+      </paragraph>
+    </paragraph>
+  </paragraph>
+</issuance>

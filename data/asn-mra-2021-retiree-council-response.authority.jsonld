@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "pol": "https://policy.usmc.mil/ns#",
+    "label": "pol:label",
+    "identifier": "pol:identifier",
+    "references": { "@id": "pol:references", "@type": "@id" }
+  },
+  "@graph": [
+    {
+      "@id": "/us/navy/secnavinst/5420.169K",
+      "@type": "pol:NavyIssuance",
+      "label": "SECNAVINST 5420.169K, Secretary of the Navy Retiree Council. Reference (a)."
+    },
+    {
+      "@id": "/us/navy/asn-mra/2021/retiree-council-response",
+      "@type": "pol:NavyIssuance",
+      "label": "ASN (M&RA) Memorandum, Secretariat Response to the 2020 Secretary of the Navy's Retiree Council Report (31 Mar 2021). Standalone — not part of the parental-leave chain.",
+      "references": "/us/navy/secnavinst/5420.169K"
+    }
+  ]
+}
