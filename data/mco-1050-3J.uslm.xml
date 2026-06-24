@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Document-structure layer for the proof of concept.
+  USLM-aligned markup of Marine Corps Order 1050.3J, conforming to the USMC
+  issuance schema (schema/usmc-issuance-1.0.xsd).
+
+  Reference (d) of MARADMIN 051/23. SCOPE: the Order's front matter (Situation,
+  Cancellation, Mission) is encoded in full. The Order's policy lives in
+  Enclosure (1), Regulations for Leave, Liberty, and Administrative Absence,
+  which is large (chapters) and NOT yet encoded; only its title is asserted. The
+  basic Order's paragraphs 4 (Execution) onward are likewise not yet encoded.
+-->
+<issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://policy.usmc.mil/ns/uslm/1.0 ../schema/usmc-issuance-1.0.xsd"
+          identifier="/us/usmc/mco/1050.3J"
+          issuanceType="MCO"
+          status="VERIFIED">
+  <meta>
+    <originator>Commandant of the Marine Corps — MPO</originator>
+    <date>19 May 2009</date>
+    <subject>Regulations for Leave, Liberty, and Administrative Absence</subject>
+    <derivesFrom href="/us/usc/10/701"/>
+  </meta>
+
+  <paragraph identifier="/us/usmc/mco/1050.3J/p1" status="VERIFIED">
+    <num style="arabic">1</num>
+    <heading>Situation</heading>
+    <content><p>To update regulations and policies on leave, liberty, and administrative absence.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/mco/1050.3J/p2" status="VERIFIED">
+    <num style="arabic">2</num>
+    <heading>Cancellation</heading>
+    <content><p>MCO P1050.3H.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/mco/1050.3J/p3" status="VERIFIED">
+    <num style="arabic">3</num>
+    <heading>Mission</heading>
+    <content><p>Commanders shall ensure that an aggressive leave program is established in order to provide Marines respite from the work environment in ways that shall contribute to their improved performance and increased motivation. The policy and procedural guidance is contained in the enclosure.</p></content>
+  </paragraph>
+
+  <!-- Paragraph 4 (Execution) onward is not yet encoded. -->
+
+  <paragraph identifier="/us/usmc/mco/1050.3J/encl1" status="VERIFIED" level="enclosure">
+    <heading>Enclosure (1) — Regulations for Leave, Liberty, and Administrative Absence</heading>
+  </paragraph>
+</issuance>

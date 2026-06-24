@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "pol": "https://policy.usmc.mil/ns#",
+    "label": "pol:label",
+    "identifier": "pol:identifier",
+    "derivesAuthorityFrom": { "@id": "pol:derivesAuthorityFrom", "@type": "@id" }
+  },
+  "@graph": [
+    {
+      "@id": "/us/usc/10/701",
+      "@type": "pol:Statute",
+      "label": "10 U.S.C. 701, Entitlement and accumulation of leave"
+    },
+    {
+      "@id": "/us/usmc/mco/1050.3J",
+      "@type": "pol:MarineCorpsOrder",
+      "label": "MCO 1050.3J, Regulations for Leave, Liberty, and Administrative Absence",
+      "derivesAuthorityFrom": "/us/usc/10/701"
+    }
+  ]
+}
