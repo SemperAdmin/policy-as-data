@@ -35,17 +35,29 @@ REFERENCES.md                          source backlog: authorities cited but not
 `viewer/` renders the encoded policy into something you can look at — the
 document with `VERIFIED`/`UNVERIFIED` badges, and click any provision to trace
 its authority up to statute. It is pure visualization: it only reads the `data/`
-files and adds no logic.
+files and adds no logic. All paths are relative, so it runs from a static host
+with no build step.
 
-It needs to be served over HTTP (browsers will not `fetch()` from `file://`):
+### On GitHub Pages (primary)
+
+1. Repo **Settings → Pages**.
+2. **Build and deployment → Source: Deploy from a branch.**
+3. Branch: **`main`**, folder: **`/ (root)`**. Save.
+4. After it builds, open the Pages URL — the root redirects straight to the
+   viewer at `…/viewer/`.
+
+`.nojekyll` is included so Pages serves the files as-is. The viewer fetches the
+`data/` files with relative paths, which resolve correctly under the
+`…/<repo>/` project-pages base.
+
+### Local preview (optional)
+
+Browsers will not `fetch()` from `file://`, so to preview locally serve the repo
+root over HTTP:
 
 ```bash
-python3 -m http.server 8000      # from the repo root
-# then open http://localhost:8000/viewer/
+python3 -m http.server 8000      # then open http://localhost:8000/viewer/
 ```
-
-To share it without a local server, enable GitHub Pages on the repo (serve from
-the default branch root); the viewer then lives at `…/viewer/`.
 
 The schema is the foundation; the marked-up MARADMINs are the worked corpus that
 exercises it. Validate the whole corpus — schema conformance, JSON
