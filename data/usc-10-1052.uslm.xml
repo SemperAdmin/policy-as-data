@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Document-structure layer for the proof of concept.
+  USLM-aligned markup of 10 U.S.C. 1052 (Adoption expenses: reimbursement),
+  conforming to the USMC issuance schema (schema/usmc-issuance-1.0.xsd, v1.2).
+
+  Encoded verbatim from the United States Code. This is the statute whose
+  definition of "qualified adoption agency" (subsection (g)(3)) is cited by the
+  adoption definitions in DTM 23-001 and MARADMIN 051/23. Subsections (a)-(g)
+  are encoded in full. Editorial and amendment notes are omitted as annotations.
+-->
+<issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://policy.usmc.mil/ns/uslm/1.0 ../schema/usmc-issuance-1.0.xsd"
+          identifier="/us/usc/10/1052"
+          issuanceType="USC"
+          status="VERIFIED">
+  <meta>
+    <originator>United States Congress — Title 10, Subtitle A, Part II, Chapter 53</originator>
+    <subject>10 U.S.C. 1052 — Adoption expenses: reimbursement</subject>
+  </meta>
+
+  <paragraph identifier="/us/usc/10/1052/a" status="VERIFIED">
+    <num style="paren-alpha">(a)</num>
+    <heading>Authorization To Reimburse</heading>
+    <content><p>The Secretary of Defense shall carry out a program under which a member of the armed forces may be reimbursed, as provided in this section, for qualifying adoption expenses incurred by the member in the adoption of a child under 18 years of age.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/usc/10/1052/b" status="VERIFIED">
+    <num style="paren-alpha">(b)</num>
+    <heading>Adoptions Covered</heading>
+    <content><p>An adoption for which expenses may be reimbursed under this section includes an adoption by a single person, an infant adoption, an intercountry adoption, and an adoption of a child with special needs (as defined in section 473(c) of the Social Security Act (42 U.S.C. 673(c))).</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/usc/10/1052/c" status="VERIFIED">
+    <num style="paren-alpha">(c)</num>
+    <heading>Benefits Paid After Adoption Is Final</heading>
+    <content><p>Benefits paid under this section in the case of an adoption may be paid only after the adoption is final.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/usc/10/1052/d" status="VERIFIED">
+    <num style="paren-alpha">(d)</num>
+    <heading>Treatment of Other Benefits</heading>
+    <content><p>A benefit may not be paid under this section for any expense paid to or for a member of the armed forces under any other adoption benefits program administered by the Federal Government or under any such program administered by a State or local government.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/usc/10/1052/e" status="VERIFIED">
+    <num style="paren-alpha">(e)</num>
+    <heading>Limitations</heading>
+    <paragraph identifier="/us/usc/10/1052/e/1" status="VERIFIED">
+      <num style="paren-arabic">(1)</num>
+      <content><p>Not more than $2,000 may be paid under this section to a member of the armed forces, or to two such members who are spouses of each other, for expenses incurred in the adoption of a child.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usc/10/1052/e/2" status="VERIFIED">
+      <num style="paren-arabic">(2)</num>
+      <content><p>Not more than $5,000 may be paid under this section to a member of the armed forces, or to two such members who are spouses of each other, for adoptions by such member (or members) in any calendar year.</p></content>
+    </paragraph>
+  </paragraph>
+
+  <paragraph identifier="/us/usc/10/1052/f" status="VERIFIED">
+    <num style="paren-alpha">(f)</num>
+    <heading>Regulations</heading>
+    <content><p>The Secretary of Defense shall prescribe regulations to carry out this section.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/usc/10/1052/g" status="VERIFIED">
+    <num style="paren-alpha">(g)</num>
+    <heading>Definitions</heading>
+    <content><p>In this section:</p></content>
+    <paragraph identifier="/us/usc/10/1052/g/1" status="VERIFIED">
+      <num style="paren-arabic">(1)</num>
+      <content>
+        <p>The term "qualifying adoption expenses" means reasonable and necessary expenses that are directly related to the legal adoption of a child under 18 years of age, but only if such adoption is arranged by a qualified adoption agency or other source authorized to place children for adoption under State or local law. Such term does not include any expense incurred—</p>
+        <p>(A) by an adopting parent for travel; or</p>
+        <p>(B) in connection with an adoption arranged in violation of Federal, State, or local law.</p>
+      </content>
+    </paragraph>
+    <paragraph identifier="/us/usc/10/1052/g/2" status="VERIFIED">
+      <num style="paren-arabic">(2)</num>
+      <content>
+        <p>The term "reasonable and necessary expenses" includes—</p>
+        <p>(A) public and private agency fees, including adoption fees charged by an agency in a foreign country;</p>
+        <p>(B) placement fees, including fees charged adoptive parents for counseling;</p>
+        <p>(C) legal fees (including court costs) in connection with services that are unavailable to a member of the armed forces under section 1044 or 1044a of this title; and</p>
+        <p>(D) medical expenses, including hospital expenses of the biological mother of the child to be adopted and of a newborn infant to be adopted.</p>
+      </content>
+    </paragraph>
+    <paragraph identifier="/us/usc/10/1052/g/3" status="VERIFIED">
+      <num style="paren-arabic">(3)</num>
+      <content><p>The term "qualified adoption agency" means any of the following:</p></content>
+      <paragraph identifier="/us/usc/10/1052/g/3/A" status="VERIFIED">
+        <num style="paren-alpha-upper">(A)</num>
+        <content><p>A State or local government agency which has responsibility under State or local law for child placement through adoption.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usc/10/1052/g/3/B" status="VERIFIED">
+        <num style="paren-alpha-upper">(B)</num>
+        <content><p>A nonprofit, voluntary adoption agency which is authorized by State or local law to place children for adoption.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usc/10/1052/g/3/C" status="VERIFIED">
+        <num style="paren-alpha-upper">(C)</num>
+        <content><p>Any other source authorized by a State to provide adoption placement if the adoption is supervised by a court under State or local law.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usc/10/1052/g/3/D" status="VERIFIED">
+        <num style="paren-alpha-upper">(D)</num>
+        <content><p>A foreign government or an agency authorized by a foreign government to place children for adoption, in any case in which—</p></content>
+        <paragraph identifier="/us/usc/10/1052/g/3/D/i" status="VERIFIED">
+          <num style="paren-roman-lower">(i)</num>
+          <content><p>the adopted child is entitled to automatic citizenship under section 320 of the Immigration and Nationality Act (8 U.S.C. 1431); or</p></content>
+        </paragraph>
+        <paragraph identifier="/us/usc/10/1052/g/3/D/ii" status="VERIFIED">
+          <num style="paren-roman-lower">(ii)</num>
+          <content><p>a certificate of citizenship has been issued for such child under section 322 of that Act (8 U.S.C. 1433).</p></content>
+        </paragraph>
+      </paragraph>
+    </paragraph>
+  </paragraph>
+</issuance>

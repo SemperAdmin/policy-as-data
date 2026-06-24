@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "pol": "https://policy.usmc.mil/ns#",
+    "label": "pol:label",
+    "identifier": "pol:identifier",
+    "partOf": { "@id": "pol:partOf", "@type": "@id" }
+  },
+  "@graph": [
+    {
+      "@id": "/us/usc/10/1052",
+      "@type": "pol:Statute",
+      "label": "10 U.S.C. 1052, Adoption expenses: reimbursement"
+    },
+    {
+      "@id": "/us/usc/10/1052/g/3",
+      "@type": "pol:Provision",
+      "label": "Definition of \"qualified adoption agency\" — cited by the adoption definitions in DTM 23-001 and MARADMIN 051/23",
+      "partOf": "/us/usc/10/1052"
+    }
+  ]
+}
