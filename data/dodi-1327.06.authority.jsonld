@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "pol": "https://policy.usmc.mil/ns#",
+    "label": "pol:label",
+    "identifier": "pol:identifier",
+    "derivesAuthorityFrom": { "@id": "pol:derivesAuthorityFrom", "@type": "@id" },
+    "partOf": { "@id": "pol:partOf", "@type": "@id" },
+    "governs": { "@id": "pol:governs", "@type": "@id" }
+  },
+  "@graph": [
+    {
+      "@id": "/us/usc/10/701",
+      "@type": "pol:Statute",
+      "label": "10 U.S.C. 701, Entitlement and accumulation of leave"
+    },
+    {
+      "@id": "/us/dod/dodd/5124.02",
+      "@type": "pol:DoDDirective",
+      "label": "DoD Directive 5124.02, Under Secretary of Defense for Personnel and Readiness (USD(P&R))"
+    },
+    {
+      "@id": "/us/dod/dodi/1327.06",
+      "@type": "pol:DoDInstruction",
+      "label": "DoDI 1327.06, Military Leave, Liberty, and Administrative Absence (Aug 7, 2025; reissues the June 16, 2009 edition cited by MARADMIN 051/23 and DTM 23-001)",
+      "derivesAuthorityFrom": [
+        "/us/dod/dodd/5124.02",
+        "/us/usc/10/701"
+      ]
+    },
+    {
+      "@id": "/us/dod/dodi/1327.06/s3/3.11/c",
+      "@type": "pol:Provision",
+      "label": "ADPL (Active Duty Parental Leave) — the current DoD parental-leave procedures (incorporating DTM 23-001)",
+      "partOf": "/us/dod/dodi/1327.06",
+      "governs": "pol:ParentalLeaveCapDecision"
+    }
+  ]
+}

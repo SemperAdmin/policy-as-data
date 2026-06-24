@@ -38,6 +38,13 @@ const DOCS = [
     rules: null,
   },
   {
+    id: "/us/dod/dodi/1327.06",
+    label: "DoDI 1327.06 · DoD",
+    uslm: "../data/dodi-1327.06.uslm.xml",
+    authority: "../data/dodi-1327.06.authority.jsonld",
+    rules: null,
+  },
+  {
     id: "/us/usc/10/701",
     label: "10 U.S.C. 701 · Statute",
     uslm: "../data/usc-10-701.uslm.xml",
