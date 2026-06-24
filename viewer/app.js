@@ -51,6 +51,20 @@ const DOCS = [
     authority: "../data/usc-10-1052.authority.jsonld",
     rules: null,
   },
+  {
+    id: "/us/usmc/mco/5000.12F",
+    label: "MCO 5000.12F · Order",
+    uslm: "../data/mco-5000-12F.uslm.xml",
+    authority: "../data/mco-5000-12F.authority.jsonld",
+    rules: null,
+  },
+  {
+    id: "/us/usmc/mco/1050.3J",
+    label: "MCO 1050.3J · Order",
+    uslm: "../data/mco-1050-3J.uslm.xml",
+    authority: "../data/mco-1050-3J.authority.jsonld",
+    rules: null,
+  },
 ];
 
 const $ = (sel) => document.querySelector(sel);

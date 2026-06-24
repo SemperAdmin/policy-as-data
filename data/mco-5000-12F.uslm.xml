@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Document-structure layer for the proof of concept.
+  USLM-aligned markup of Marine Corps Order 5000.12F CH-1, conforming to the
+  USMC issuance schema (schema/usmc-issuance-1.0.xsd).
+
+  Reference (c) of MARADMIN 051/23 and reference (a) of MARADMIN 523/22.
+  SCOPE: the CH-1 change order (Change 1, 10 Mar 2021) is encoded in full — its
+  front matter and the change list it transmits. The two enclosures are present
+  as containers with their verbatim titles; the basic Order's policy enclosure
+  (Enclosure (2): chapters and appendices A-D) is large and NOT yet encoded, so
+  its body is not asserted here. issuanceType MCO exercises the order document
+  type (From/To/Subj/Ref/Encl header, enclosures).
+-->
+<issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://policy.usmc.mil/ns/uslm/1.0 ../schema/usmc-issuance-1.0.xsd"
+          identifier="/us/usmc/mco/5000.12F"
+          issuanceType="MCO"
+          status="VERIFIED">
+  <meta>
+    <originator>Commandant of the Marine Corps — M&amp;RA (MPO)</originator>
+    <date>10 Mar 2021 (Change 1)</date>
+    <signer>David A. Ottignon, Deputy Commandant for Manpower and Reserve Affairs</signer>
+    <subject>Marine Corps Policy Concerning Parenthood and Pregnancy</subject>
+  </meta>
+
+  <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p1" status="VERIFIED">
+    <num style="arabic">1</num>
+    <heading>Situation</heading>
+    <content><p>To transmit changes to the basic Order, because the postpartum exemption period for physical fitness testing and body composition standards has been expanded from nine months to 12 months.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p2" status="VERIFIED">
+    <num style="arabic">2</num>
+    <heading>Mission</heading>
+    <content><p>This change illustrates Commandant of the Marine Corps directed updates to this Order.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p3" status="VERIFIED">
+    <num style="arabic">3</num>
+    <heading>Execution</heading>
+    <content><p>Changes are listed as follows:</p></content>
+    <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p3/a" status="VERIFIED">
+      <num style="alpha-lower">a</num>
+      <content><p>Page 4, paragraph 4.b.(8)(l), change "nine" to "12" and change "nine" to "12". This change will expand the post-partum exemption period for return to weight standards.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p3/b" status="VERIFIED">
+      <num style="alpha-lower">b</num>
+      <content><p>Page 6, paragraph 4.b.(12)(f), change "nine" to "12" and change "nine-month" to "12 month". This change expands the post-partum exemption period for complying with physical fitness and body composition standards.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p3/c" status="VERIFIED">
+      <num style="alpha-lower">c</num>
+      <content><p>Page 6, paragraph 4.b.(13), change "nine" to "12" and change "nine-month" to "12 month". This change expands the post-partum exemption period for complying with physical fitness and body composition standards.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p3/d" status="VERIFIED">
+      <num style="alpha-lower">d</num>
+      <content><p>Page 2-3, paragraph 3.b.(7), change "nine" to "12" and change "nine-month" to "12 month". This change expands the post-partum exemption period for complying with physical fitness and body composition standards.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p3/e" status="VERIFIED">
+      <num style="alpha-lower">e</num>
+      <content><p>Page 2-4, paragraph 4.d., change "nine" to "12" and change "nine" to "12". This change expands the post-partum exemption period for assignment to the body composition or military appearance programs.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p3/f" status="VERIFIED">
+      <num style="alpha-lower">f</num>
+      <content><p>Page 2-8, paragraph 7.a.(1), change "nine" to "12". This change expands the post-partum exemption period for unit physical training, Physical Fitness Test (PFT), Combat Fitness Test (CFT), and body composition and military appearance programs.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p3/g" status="VERIFIED">
+      <num style="alpha-lower">g</num>
+      <content><p>Page 2-8, paragraph 7.a.(1)(d), change "nine" to "12". This change expands the post-partum exemption period for physical fitness.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p3/h" status="VERIFIED">
+      <num style="alpha-lower">h</num>
+      <content><p>Page A-2, paragraph 3., change "nine" to "12". This change expands the post-partum exemption period for PFT, CFT, and acceptable weight standards.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p3/i" status="VERIFIED">
+      <num style="alpha-lower">i</num>
+      <content><p>Page D-2, paragraph 25., change "nine" to "12". This change expands the post-partum exemption period for PFT, CFT, and acceptable weight standards.</p></content>
+    </paragraph>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p4" status="VERIFIED">
+    <num style="arabic">4</num>
+    <heading>Administration and Logistics</heading>
+    <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p4/a" status="VERIFIED">
+      <num style="alpha-lower">a</num>
+      <heading>Recommendations</heading>
+      <content><p>Submit all recommendations concerning this Order to Manpower and Reserve Affairs (M&amp;RA), Manpower Military Policy (MPO) Branch.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p4/b" status="VERIFIED">
+      <num style="alpha-lower">b</num>
+      <heading>Records Management</heading>
+      <content><p>Records created as a result of this directive shall be managed according to National Archives and Records Administration (NARA)-approved dispositions per SECNAV M-5210.1 CH-1 to ensure proper maintenance, use, accessibility and preservation, regardless of format or medium. Refer to MCO 5210.11F for Marine Corps records management policy and procedures.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p4/c" status="VERIFIED">
+      <num style="alpha-lower">c</num>
+      <heading>Privacy Act</heading>
+      <content><p>Any misuse or unauthorized disclosure of Personally Identifiable Information (PII) may result in both civil and criminal penalties. All collection, use, maintenance, or dissemination of PII shall be in accordance with the Privacy Act of 1974, as amended (5 U.S.C. 552a) and implemented per SECNAVINST 5211.5F.</p></content>
+    </paragraph>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p5" status="VERIFIED">
+    <num style="arabic">5</num>
+    <heading>Command and Signal</heading>
+    <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p5/a" status="VERIFIED">
+      <num style="alpha-lower">a</num>
+      <heading>Command</heading>
+      <content><p>This Order is applicable to the Marine Corps Total Force.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/mco/5000.12F/ch1/p5/b" status="VERIFIED">
+      <num style="alpha-lower">b</num>
+      <heading>Signal</heading>
+      <content><p>This Order is effective the date signed.</p></content>
+    </paragraph>
+  </paragraph>
+
+  <!-- Enclosure titles are verbatim from the Encl: list. The basic Order's
+       policy enclosure (Enclosure (2)) is large (chapters + appendices A-D) and
+       is NOT yet encoded; only its title is asserted here. -->
+  <paragraph identifier="/us/usmc/mco/5000.12F/encl1" status="VERIFIED" level="enclosure">
+    <heading>Enclosure (1) — References</heading>
+  </paragraph>
+  <paragraph identifier="/us/usmc/mco/5000.12F/encl2" status="VERIFIED" level="enclosure">
+    <heading>Enclosure (2) — Marine Corps Policy Concerning Parenthood and Pregnancy</heading>
+  </paragraph>
+</issuance>

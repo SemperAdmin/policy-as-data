@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "pol": "https://policy.usmc.mil/ns#",
+    "label": "pol:label",
+    "identifier": "pol:identifier"
+  },
+  "@graph": [
+    {
+      "@id": "/us/usmc/mco/5000.12F",
+      "@type": "pol:MarineCorpsOrder",
+      "label": "MCO 5000.12F CH-1, Marine Corps Policy Concerning Parenthood and Pregnancy"
+    }
+  ]
+}
