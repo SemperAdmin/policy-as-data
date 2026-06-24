@@ -61,6 +61,16 @@ pol:Provision a owl:Class ;
   rdfs:label "Provision" ;
   rdfs:comment "An addressable unit within an issuance (a paragraph or sub-paragraph)." .
 
+pol:Decision a owl:Class ;
+  rdfs:label "Decision" ;
+  rdfs:comment "A policy decision or determination that a provision governs." .
+
+# Decisions governed by provisions in the encoded corpus.
+pol:ParentalLeaveCapDecision a pol:Decision ; rdfs:label "Parental leave cap decision" .
+pol:ParentalLeaveIncrementDecision a pol:Decision ; rdfs:label "Parental leave increment decision" .
+pol:ParentalLeaveWindowDecision a pol:Decision ; rdfs:label "Parental leave entitlement window decision" .
+pol:QualifyingEventMergeDecision a pol:Decision ; rdfs:label "Qualifying-event merge decision" .
+
 #
 # Properties.
 #
@@ -76,9 +86,17 @@ pol:partOf a owl:ObjectProperty, owl:TransitiveProperty ;
   rdfs:comment "A provision is part of the issuance (or parent provision) that contains it." .
 
 pol:governs a owl:ObjectProperty ;
-  rdfs:domain pol:Provision ;
+  rdfs:domain pol:Provision ; rdfs:range pol:Decision ;
   rdfs:label "governs" ;
   rdfs:comment "The decision or subject matter this provision controls." .
+
+pol:label a owl:AnnotationProperty ;
+  rdfs:label "label" ;
+  rdfs:comment "Human-readable label, used as the shorthand 'label' key in the JSON-LD graphs." .
+
+pol:identifier a owl:AnnotationProperty ;
+  rdfs:label "identifier" ;
+  rdfs:comment "Stable path-style identifier, used as the shorthand 'identifier' key in the JSON-LD graphs." .
 
 pol:clarifies a owl:ObjectProperty ;
   rdfs:domain pol:Authority ; rdfs:range pol:Authority ;
