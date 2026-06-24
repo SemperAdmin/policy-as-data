@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "pol": "https://policy.usmc.mil/ns#",
+    "label": "pol:label",
+    "identifier": "pol:identifier",
+    "derivesAuthorityFrom": { "@id": "pol:derivesAuthorityFrom", "@type": "@id" },
+    "clarifies": { "@id": "pol:clarifies", "@type": "@id" }
+  },
+  "@graph": [
+    {
+      "@id": "/us/usc/10/701",
+      "@type": "pol:Statute",
+      "label": "10 U.S.C. 701"
+    },
+    {
+      "@id": "/us/dod/dodi/1327.06",
+      "@type": "pol:DoDInstruction",
+      "label": "DoDI 1327.06",
+      "derivesAuthorityFrom": "/us/usc/10/701"
+    },
+    {
+      "@id": "/us/usmc/maradmin/2023/051",
+      "@type": "pol:ServiceMessage",
+      "label": "MARADMIN 051/23",
+      "derivesAuthorityFrom": "/us/dod/dodi/1327.06"
+    },
+    {
+      "@id": "/us/usmc/maradmin/2023/129",
+      "@type": "pol:ServiceMessage",
+      "label": "MARADMIN 129/23, Clarification to MARADMIN 051/23",
+      "derivesAuthorityFrom": "/us/dod/dodi/1327.06",
+      "clarifies": "/us/usmc/maradmin/2023/051"
+    }
+  ]
+}

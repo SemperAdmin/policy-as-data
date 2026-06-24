@@ -10,6 +10,19 @@
     "/us/dod/dodi/1327.06",
     "/us/usmc/maradmin/2023/051"
   ],
+  "corrections": [
+    {
+      "date": "2026-06-24",
+      "against": "Authoritative text of MARADMIN 051/23 (full message).",
+      "changes": [
+        "MAX_PARENTAL_LEAVE_DAYS citation corrected from para 8 to para 11.d, which carries the verbatim 84-day enforcement language. Para 8 is 'Amplifying Instructions'.",
+        "ENTITLEMENT_WINDOW_DAYS citation corrected from para 8.b.(2) to para 8.c.(3), the forfeiture-after-1-year rule.",
+        "MIN_INCREMENT_DAYS confirmed at para 8.a.(1)(b); status UNVERIFIED -> VERIFIED.",
+        "EVENT_PROXIMITY_MERGE confirmed at para 8.b.(1); status UNVERIFIED -> VERIFIED. Source states a 72-hour period, so the rule is re-expressed in hours (id EVENT_PROXIMITY_MERGE_HOURS, 72) rather than the prior approximation of 3 days.",
+        "Added MAX_INCREMENTS (12), stated in the same source line as the minimum increment."
+      ]
+    }
+  ],
   "rules": [
     {
       "id": "MAX_PARENTAL_LEAVE_DAYS",
@@ -17,11 +30,11 @@
       "unit": "days",
       "status": "VERIFIED",
       "citation": {
-        "identifier": "/us/usmc/maradmin/2023/051/p8",
-        "label": "MARADMIN 051/23, para 8",
+        "identifier": "/us/usmc/maradmin/2023/051/p11/d",
+        "label": "MARADMIN 051/23, para 11.d",
         "status": "VERIFIED"
       },
-      "note": "Commands and Marines ensure parental leave does not exceed 84 days, except per para 8.b.(2). Multiple qualifying events top up to, but do not exceed, 84 days within the window."
+      "note": "Commands and Marines are responsible for ensuring the Marine authorized this leave does not use over 84 days of parental leave, except in the circumstance identified in para 8.b.(2). The 84 days equals the 12-week entitlement stated as '12 weeks (84 days)' in para 7.a.(1)."
     },
     {
       "id": "ENTITLEMENT_WINDOW_DAYS",
@@ -29,35 +42,47 @@
       "unit": "days",
       "status": "VERIFIED",
       "citation": {
-        "identifier": "/us/usmc/maradmin/2023/051/p8/b/2",
-        "label": "MARADMIN 051/23, para 8.b.(2)",
+        "identifier": "/us/usmc/maradmin/2023/051/p8/c/3",
+        "label": "MARADMIN 051/23, para 8.c.(3)",
         "status": "VERIFIED"
       },
-      "note": "Unused parental leave is forfeited one year from the qualifying event. For multiple events, the window is measured from the later event."
+      "note": "Parental leave not executed before the expiration of 1 year from the date of the qualifying event is forfeited, unless para 8.a.(3) applies. The 1-year period runs from the date of birth, qualifying adoption, or placement (para 7); for separate multiple events it is measured from the later event (para 8.b.(2)(a))."
     },
     {
       "id": "MIN_INCREMENT_DAYS",
       "value": 7,
       "unit": "days",
-      "status": "UNVERIFIED",
+      "status": "VERIFIED",
       "citation": {
-        "identifier": "/us/usmc/maradmin/2023/051/UNCONFIRMED",
-        "label": "Increment provision, MARADMIN 051/23 or DoDI 1327.06, source line NOT located",
-        "status": "UNVERIFIED"
+        "identifier": "/us/usmc/maradmin/2023/051/p8/a/1/b",
+        "label": "MARADMIN 051/23, para 8.a.(1)(b)",
+        "status": "VERIFIED"
       },
-      "note": "User-asserted 7-day minimum increment. NOT located in retrieved issuance text. Confirm the exact source line and threshold before relying on this rule. The 5-day demonstration case denies ONLY on this rule, so this rule's status governs that case outcome."
+      "note": "Parental leave used in more than one increment must be in periods of at least 7 days, for a maximum of 12 increments (see MAX_INCREMENTS)."
     },
     {
-      "id": "EVENT_PROXIMITY_MERGE_DAYS",
-      "value": 3,
-      "unit": "days",
-      "status": "UNVERIFIED",
+      "id": "MAX_INCREMENTS",
+      "value": 12,
+      "unit": "increments",
+      "status": "VERIFIED",
       "citation": {
-        "identifier": "/us/usmc/maradmin/2023/051/UNCONFIRMED",
-        "label": "Qualifying-event proximity rule, source line NOT located",
-        "status": "UNVERIFIED"
+        "identifier": "/us/usmc/maradmin/2023/051/p8/a/1/b",
+        "label": "MARADMIN 051/23, para 8.a.(1)(b)",
+        "status": "VERIFIED"
       },
-      "note": "User-asserted rule: qualifying events within 3 days of each other count as a single qualifying event. NOT located in retrieved issuance text. Confirm before relying."
+      "note": "Parental leave used in more than one increment must be in periods of at least 7 days for a maximum of 12 increments."
+    },
+    {
+      "id": "EVENT_PROXIMITY_MERGE_HOURS",
+      "value": 72,
+      "unit": "hours",
+      "status": "VERIFIED",
+      "citation": {
+        "identifier": "/us/usmc/maradmin/2023/051/p8/b/1",
+        "label": "MARADMIN 051/23, para 8.b.(1)",
+        "status": "VERIFIED"
+      },
+      "note": "Multiple qualifying events occurring within the same 72-hour period are treated as a single event for the allocation of parental leave. Events not within the same 72-hour period are treated as separate events (para 8.b.(2))."
     }
   ]
 }

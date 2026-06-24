@@ -1,0 +1,105 @@
+@prefix pol:  <https://policy.usmc.mil/ns#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+#
+# Policy-as-data authority ontology.
+#
+# Models the chain of authority for U.S. policy and doctrine, from statute at
+# the top down to Marine Corps issuances, and the provenance relationships that
+# let any provision be traced to the authority it derives from.
+#
+# This is the ontology the per-document authority graphs
+# (data/*.authority.jsonld) are written against. They share the pol: namespace.
+#
+
+pol: a owl:Ontology ;
+  rdfs:label "Policy-as-data authority ontology" ;
+  rdfs:comment "Authority hierarchy and provenance relationships, statute down to Marine Corps issuances." .
+
+#
+# Authority levels. authorityLevel orders them: a lower number outranks a
+# higher one. An issuance derives its authority from issuances at or above its
+# level. This is the USLM statute model extended downward through DoD to the
+# service.
+#
+
+pol:Authority a owl:Class ;
+  rdfs:label "Authority" ;
+  rdfs:comment "Any instrument that carries or confers legal/policy authority." .
+
+pol:Statute a owl:Class ; rdfs:subClassOf pol:Authority ;
+  pol:authorityLevel 1 ; rdfs:label "Statute (U.S. Code)" .
+
+pol:CodeOfFederalRegulations a owl:Class ; rdfs:subClassOf pol:Authority ;
+  pol:authorityLevel 2 ; rdfs:label "Code of Federal Regulations" .
+
+pol:ExecutiveOrder a owl:Class ; rdfs:subClassOf pol:Authority ;
+  pol:authorityLevel 2 ; rdfs:label "Executive Order" .
+
+pol:DoDDirective a owl:Class ; rdfs:subClassOf pol:Authority ;
+  pol:authorityLevel 3 ; rdfs:label "DoD Directive" .
+
+pol:DoDInstruction a owl:Class ; rdfs:subClassOf pol:Authority ;
+  pol:authorityLevel 3 ; rdfs:label "DoD Instruction" .
+
+pol:OpmIssuance a owl:Class ; rdfs:subClassOf pol:Authority ;
+  pol:authorityLevel 3 ; rdfs:label "OPM issuance" .
+
+pol:NavyIssuance a owl:Class ; rdfs:subClassOf pol:Authority ;
+  pol:authorityLevel 4 ; rdfs:label "Department of the Navy issuance (e.g., SECNAVINST)" .
+
+pol:MarineCorpsOrder a owl:Class ; rdfs:subClassOf pol:Authority ;
+  pol:authorityLevel 5 ; rdfs:label "Marine Corps Order" .
+
+pol:ServiceMessage a owl:Class ; rdfs:subClassOf pol:Authority ;
+  pol:authorityLevel 5 ; rdfs:label "Service message (e.g., MARADMIN)" .
+
+pol:Provision a owl:Class ;
+  rdfs:label "Provision" ;
+  rdfs:comment "An addressable unit within an issuance (a paragraph or sub-paragraph)." .
+
+#
+# Properties.
+#
+
+pol:derivesAuthorityFrom a owl:ObjectProperty, owl:TransitiveProperty ;
+  rdfs:domain pol:Authority ; rdfs:range pol:Authority ;
+  rdfs:label "derives authority from" ;
+  rdfs:comment "This instrument's authority flows from the referenced one. Transitive: a MARADMIN derives from a DoDI which derives from a statute." .
+
+pol:partOf a owl:ObjectProperty, owl:TransitiveProperty ;
+  rdfs:domain pol:Provision ; rdfs:range pol:Authority ;
+  rdfs:label "part of" ;
+  rdfs:comment "A provision is part of the issuance (or parent provision) that contains it." .
+
+pol:governs a owl:ObjectProperty ;
+  rdfs:domain pol:Provision ;
+  rdfs:label "governs" ;
+  rdfs:comment "The decision or subject matter this provision controls." .
+
+pol:clarifies a owl:ObjectProperty ;
+  rdfs:domain pol:Authority ; rdfs:range pol:Authority ;
+  rdfs:label "clarifies" ;
+  rdfs:comment "This issuance clarifies an earlier one without superseding it (e.g., a follow-on MARADMIN clarifying a prior MARADMIN). Distinct from derivesAuthorityFrom: a clarification does not draw authority from what it clarifies." .
+
+pol:supersedes a owl:ObjectProperty ;
+  rdfs:domain pol:Authority ; rdfs:range pol:Authority ;
+  rdfs:label "supersedes" ;
+  rdfs:comment "This issuance replaces an earlier one." .
+
+pol:authorityLevel a owl:DatatypeProperty ;
+  rdfs:range xsd:integer ;
+  rdfs:label "authority level" ;
+  rdfs:comment "Rank in the hierarchy; lower outranks higher." .
+
+pol:verificationStatus a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:label "verification status" ;
+  rdfs:comment "VERIFIED (confirmed against source text) or UNVERIFIED (source line not yet located)." .
+
+pol:maxValueDays a owl:DatatypeProperty ;
+  rdfs:range xsd:integer ;
+  rdfs:label "maximum value in days" .

@@ -27,12 +27,33 @@
       "derivesAuthorityFrom": "/us/dod/dodi/1327.06"
     },
     {
-      "@id": "/us/usmc/maradmin/2023/051/p8",
+      "@id": "/us/usmc/maradmin/2023/051/p11/d",
       "@type": "pol:Provision",
-      "label": "Parental leave cap",
+      "label": "Parental leave cap (84 days)",
       "partOf": "/us/usmc/maradmin/2023/051",
       "governs": "pol:ParentalLeaveCapDecision",
       "maxValueDays": 84
+    },
+    {
+      "@id": "/us/usmc/maradmin/2023/051/p8/a/1/b",
+      "@type": "pol:Provision",
+      "label": "Minimum increment (7 days) and maximum increments (12)",
+      "partOf": "/us/usmc/maradmin/2023/051",
+      "governs": "pol:ParentalLeaveIncrementDecision"
+    },
+    {
+      "@id": "/us/usmc/maradmin/2023/051/p8/b/1",
+      "@type": "pol:Provision",
+      "label": "Qualifying-event proximity merge (72-hour period)",
+      "partOf": "/us/usmc/maradmin/2023/051",
+      "governs": "pol:QualifyingEventMergeDecision"
+    },
+    {
+      "@id": "/us/usmc/maradmin/2023/051/p8/c/3",
+      "@type": "pol:Provision",
+      "label": "Entitlement window forfeiture (1 year)",
+      "partOf": "/us/usmc/maradmin/2023/051",
+      "governs": "pol:ParentalLeaveWindowDecision"
     }
   ]
 }
