@@ -37,6 +37,29 @@ way you did 051/23 and 129/23) and I will encode it to the schema and validate.
 | 7 | `/us/usc/10/1052` | **10 U.S.C. 1052** (qualified adoption agency) | Cited in 051/23 para 6.c. Not yet a graph node; add when its text is available. |
 | 8 | `/us/usmc/maradmin/2022/523` | **MARADMIN 523/22**, Forthcoming Changes to Reserve Component Parental Leave Policy | Ref (e); related MARADMIN. Lower priority. |
 
+## Located sources (fetch is blocked here — paste needed)
+
+Searched for each. The environment can find these URLs but cannot retrieve their
+bodies (marines.mil, esd.whs.mil, govinfo.gov, and law.cornell.edu all return
+HTTP 403 to the fetch relay), so the verbatim text has to be pasted in.
+
+| # | Document | Located at |
+|---|---|---|
+| 1 | MCO 1050.3J | `marines.mil/Portals/1/Publications/MCO 1050.3J.pdf` |
+| 2 | MCO 5000.12F CH-1 | marines.mil Publications / MCPEL (exact PDF link unconfirmed) |
+| 3 | OSD/USD(P&R) DTM, Expansion of the MPLP (4 Jan 2023) | not on a public portal — you hold it |
+| 4 | ASN (M&RA) memo, DON MPLP Guidance (17 Jan 2023) | not on a public portal — you hold it |
+| 5 | DoDI 1327.06 | `esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132706p.pdf` |
+| 6 | 10 U.S.C. 701 | uscode.house.gov / govinfo.gov / law.cornell.edu |
+| 7 | 10 U.S.C. 1052 | uscode.house.gov / govinfo.gov / law.cornell.edu |
+| 8 | MARADMIN 523/22 | marines.mil News/Messages |
+
+**Version caveat for DoDI 1327.06:** 051/23 references the edition titled
+"Leave and Liberty Policy and Procedures" (16 Jun 2009, incorporating changes).
+The current esd.whs.mil PDF is a 2025 reissue retitled "Military Leave, Liberty,
+and Administrative Absence" — a different document. For faithful provenance to
+051/23, send the 2009 edition.
+
 ## What is most useful to send next
 
 - **To prove the schema generalizes:** an MCO (#1 or #2) — a structurally
