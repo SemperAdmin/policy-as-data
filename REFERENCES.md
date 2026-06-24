@@ -11,12 +11,13 @@ Acquisition is human-in-the-loop: the environment cannot fetch these from
 marines.mil / DoD / GPO sites (network policy + 403s), and the project's
 discipline forbids encoding text that cannot be confirmed against the source.
 
-## Encoded (8)
+## Encoded (9)
 
 | Identifier | Document | Scope |
 |---|---|---|
 | `/us/usc/10/701` | 10 U.S.C. 701, Entitlement and accumulation of leave | subsections (a) and (h), full |
 | `/us/usc/10/1052` | 10 U.S.C. 1052, Adoption expenses | (a)–(g), full |
+| `/us/dod/dodi/1327.06` | DoDI 1327.06, Military Leave, Liberty, and Administrative Absence (current, Aug 7 2025; reissues the 2009 edition the corpus cites) | **instruction-level**: Purpose + full Section/paragraph structure; bodies not yet encoded. Parental leave at 3.11.c (ADPL) / 3.11.d (IDPL) |
 | `/us/dod/dtm/2023/23-001` | OSD DTM 23-001, Expansion of the MPLP | full |
 | `/us/usmc/maradmin/2023/051` | MARADMIN 051/23, Expansion of the MC MPLP | full |
 | `/us/usmc/maradmin/2023/129` | MARADMIN 129/23, Clarification to 051/23 | full |
@@ -36,14 +37,18 @@ policy enclosures are large and mostly tangential to parental leave (pregnancy /
 PFT standards; general leave-and-liberty administration); the chapter bodies are
 queued for fuller encoding if needed.
 
-## Blocked / wrong edition
+## Still needed
 
 | Identifier | Document | Issue |
 |---|---|---|
-| `/us/dod/dodi/1327.06` | DoDI 1327.06 | The PDF provided is the **Aug 7, 2025 reissue** ("Military Leave, Liberty, and Administrative Absence"), which cancels the **June 16, 2009** edition ("Leave and Liberty Policy and Procedures") the corpus cites. Need the **2009** edition to encode the cited node faithfully. |
 | `/us/navy/asn-mra/2023/mplp-guidance` | ASN (M&RA) memo, 17 Jan 2023 (051/23 ref b) | PDF is a scanned image, no text layer — please paste the text. |
 | `/us/navy/asn-mra/2021/reserve-policy-board` | ASN (M&RA) memo, 26 Mar 2021 (523/22 ref c) | not yet provided |
 | `/us/dod/dodd/5124.02` | DoD Directive 5124.02, USD(P&R) | not yet provided |
+
+Note: DoDI 1327.06 is encoded from the current (Aug 7, 2025) edition; the node
+records that it reissues the June 16, 2009 edition cited by the 2023-era
+documents. The deep section bodies (incl. 3.11.c ADPL / 3.11.d IDPL) are queued
+for fuller encoding.
 
 ## Still needed (2)
 
