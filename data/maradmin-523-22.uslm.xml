@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Document-structure layer for the proof of concept.
+  USLM-aligned markup of MARADMIN 523/22 in full, conforming to the USMC
+  issuance schema (schema/usmc-issuance-1.0.xsd).
+
+  Encoded verbatim from the authoritative message text. Reference (e) of
+  MARADMIN 051/23. Exercises the deepest numbering in the corpus
+  (e.g., 3.g.(1)(a)2.a. — six levels). All provisions VERIFIED against source.
+  Internal cross-references are transcribed exactly as written in the message.
+-->
+<issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://policy.usmc.mil/ns/uslm/1.0 ../schema/usmc-issuance-1.0.xsd"
+          identifier="/us/usmc/maradmin/2022/523"
+          issuanceType="MARADMIN"
+          status="VERIFIED">
+  <meta>
+    <originator>CMC WASHINGTON DC MRA RA</originator>
+    <dtg>061650Z OCT 22</dtg>
+    <subject>Forthcoming Changes to Reserve Component Parental Leave Policy</subject>
+    <derivesFrom href="/us/dod/dtm/2022/22-004"/>
+  </meta>
+
+  <paragraph identifier="/us/usmc/maradmin/2022/523/p1" status="VERIFIED">
+    <num style="arabic">1</num>
+    <heading>Purpose</heading>
+    <content><p>To provide advance notification of two forthcoming changes to reference (a)'s reserve component parental leave policy in alignment with references (b) and (c).</p></content>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p1/a" status="VERIFIED">
+      <num style="alpha-lower">a</num>
+      <content><p>Reserve Component Maternity Leave Program, see paragraph 3.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p1/b" status="VERIFIED">
+      <num style="alpha-lower">b</num>
+      <content><p>Training Deferment Period, see paragraph 4.</p></content>
+    </paragraph>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/maradmin/2022/523/p2" status="VERIFIED">
+    <num style="arabic">2</num>
+    <heading>Background</heading>
+    <content><p>Reference (b) establishes policy for the Reserve Component Maternity Leave (RCML) Program as authorized in Section 602 of Public Law 116-283, also known as the "William M. ("Mac") Thornberry National Defense Authorization Act for Fiscal Year 2021." Reference (a) authorizes a Reserve Marine in a drilling status, after giving birth, to defer active duty or inactive duty for training (IDT) for up to 42 days. Reference (c) increases the deferment up to 84 days.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/maradmin/2022/523/p3" status="VERIFIED">
+    <num style="arabic">3</num>
+    <heading>Change #1</heading>
+    <content><p>On 9 June 2022, reference (b) established the Reserve Component Maternity Leave (RCML) Program which grants up to 12 periods of paid inactive duty training (IDT) (equivalent to three months of drills) to eligible Reserve Marines after childbirth. The RCML Program will be administered in accordance with (IAW) applicable laws, and the policies contained in the references.</p></content>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p3/a" status="VERIFIED">
+      <num style="alpha-lower">a</num>
+      <heading>Eligibility</heading>
+      <content><p>A member of the Ready Reserve who gives birth and, as of the date of a qualifying birth event:</p></content>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/a/1" status="VERIFIED">
+        <num style="paren-arabic">(1)</num>
+        <content><p>Is a member of the Selected Marine Corps Reserve (SMCR) or Individual Mobilization Augmentee (IMA) Program in good standing; and,</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/a/2" status="VERIFIED">
+        <num style="paren-arabic">(2)</num>
+        <content><p>But for giving birth, would otherwise be required, or scheduled, to attend or participate in up to 12 periods of IDT within a year.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/a/3" status="VERIFIED">
+        <num style="paren-arabic">(3)</num>
+        <content><p>Marines who meet the above criteria will be referred to as "eligible Marines" for the remainder of this MARADMIN.</p></content>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p3/b" status="VERIFIED">
+      <num style="alpha-lower">b</num>
+      <heading>Ineligibility</heading>
+      <content><p>The following Marines are not eligible for RCML:</p></content>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/b/1" status="VERIFIED">
+        <num style="paren-arabic">(1)</num>
+        <content><p>Marines in a retired status.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/b/2" status="VERIFIED">
+        <num style="paren-arabic">(2)</num>
+        <content><p>Marines of the Standby Reserve (Active Status List or Inactive Status List).</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/b/3" status="VERIFIED">
+        <num style="paren-arabic">(3)</num>
+        <content><p>Marines of the Ready Reserve who are not entitled to inactive duty pay when performing IDT.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/b/4" status="VERIFIED">
+        <num style="paren-arabic">(4)</num>
+        <content><p>Marines of the Ready Reserve who are entitled to inactive duty pay, but do not perform a sufficient number of IDTs to earn a minimum of 50 points during the current anniversary year.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/b/5" status="VERIFIED">
+        <num style="paren-arabic">(5)</num>
+        <content><p>Individual Ready Reserve Marines</p></content>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p3/c" status="VERIFIED">
+      <num style="alpha-lower">c</num>
+      <heading>Conditions for entitlement to RCML</heading>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/c/1" status="VERIFIED">
+        <num style="paren-arabic">(1)</num>
+        <content><p>RCML is limited to eligible Marines following a qualifying birth event.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/c/2" status="VERIFIED">
+        <num style="paren-arabic">(2)</num>
+        <content><p>RCML is limited to eligible Marines who are not on active duty and are not entitled to basic pay during any RCML period taken by the eligible Marine.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/c/3" status="VERIFIED">
+        <num style="paren-arabic">(3)</num>
+        <content><p>RCML must be used within one year following the date of a qualifying birth event.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/c/4" status="VERIFIED">
+        <num style="paren-arabic">(4)</num>
+        <content><p>RCML may not be taken for any IDT period which has been rescheduled or excused.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/c/5" status="VERIFIED">
+        <num style="paren-arabic">(5)</num>
+        <content><p>One RCML period is equivalent to a four-hour IDT period. A maximum of two RCML periods may be taken per day.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/c/6" status="VERIFIED">
+        <num style="paren-arabic">(6)</num>
+        <content><p>RCML may be taken in multiple nonconsecutive segments (i.e., in nonconsecutive months). However, if taken in nonconsecutive segments, each segment must consist of a minimum of two RCML periods.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/c/7" status="VERIFIED">
+        <num style="paren-arabic">(7)</num>
+        <content><p>Eligible Marines may not exceed 12 RCML periods within the 12 months following the date of a qualifying birth event.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/c/8" status="VERIFIED">
+        <num style="paren-arabic">(8)</num>
+        <content><p>Commanders may not disapprove RCML requests for IDT periods occurring within the first three months following the date of a qualifying birth event. However, after the first three months commanders may disapprove RCML due to operational requirements and training workloads.</p></content>
+        <paragraph identifier="/us/usmc/maradmin/2022/523/p3/c/8/a" status="VERIFIED">
+          <num style="paren-alpha">(a)</num>
+          <content><p>When disapproving RCML, commanders will consider the Marine's health (including any health effects related to recovery from childbirth), the Marine's ability to safely return to military duty, and will propose alternate dates for which the Marine may take RCML.</p></content>
+        </paragraph>
+        <paragraph identifier="/us/usmc/maradmin/2022/523/p3/c/8/b" status="VERIFIED">
+          <num style="paren-alpha">(b)</num>
+          <content><p>In no case will commanders establish limitations or additional requirements to scheduling RCML that would cause eligible Marines to forfeit one or more periods of RCML.</p></content>
+        </paragraph>
+        <paragraph identifier="/us/usmc/maradmin/2022/523/p3/c/8/c" status="VERIFIED">
+          <num style="paren-alpha">(c)</num>
+          <content><p>Commanders shall provide every opportunity for eligible Marines to schedule up to 12 RCML periods during the first three months following a qualifying birth event, consistent with the Marine's desires. To this end, commands may not schedule equivalent duty periods (training conducted in lieu of a missed regularly scheduled drill) or additional IDT periods for eligible Marines during the first three months following a qualifying birth event.</p></content>
+        </paragraph>
+        <paragraph identifier="/us/usmc/maradmin/2022/523/p3/c/8/d" status="VERIFIED">
+          <num style="paren-alpha">(d)</num>
+          <content><p>When annual training (AT) is scheduled during the first three months following a qualifying birth event, commanders may authorize eligible Marines to attend an alternate annual training AT period which falls outside of the first three months. Eligible Marines may elect to attend the originally scheduled AT or the alternate AT.</p></content>
+        </paragraph>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/c/9" status="VERIFIED">
+        <num style="paren-arabic">(9)</num>
+        <content><p>RCML may not be transferred to create any kind of shared benefit.</p></content>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p3/d" status="VERIFIED">
+      <num style="alpha-lower">d</num>
+      <content><p>RCML periods will count towards meeting the requirements for a satisfactory anniversary year. RCML periods also count toward the 48 paid IDTs per year allowed for SMCR and IMA Marines.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p3/e" status="VERIFIED">
+      <num style="alpha-lower">e</num>
+      <heading>RCML benefits</heading>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/e/1" status="VERIFIED">
+        <num style="paren-arabic">(1)</num>
+        <content><p>The rate of pay for each RCML period is equivalent to one paid IDT period.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/e/2" status="VERIFIED">
+        <num style="paren-arabic">(2)</num>
+        <content><p>The same rate of pay for special and incentive pay(s) and bonuses shall be paid for each period of RCML taken in lieu of each scheduled paid IDT period.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/e/3" status="VERIFIED">
+        <num style="paren-arabic">(3)</num>
+        <content><p>One retirement point is credited for each period of RCML taken.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/e/4" status="VERIFIED">
+        <num style="paren-arabic">(4)</num>
+        <content><p>RCML does not confer entitlement to any form of military pay, allowance, or other benefit not expressly provided for by Section 602 of the Public Law 116-283 and reference (b).</p></content>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p3/f" status="VERIFIED">
+      <num style="alpha-lower">f</num>
+      <content><p>When an eligible Marine uses a surrogate, and the Marine becomes the legal parent or guardian of the child, the event will be treated as an adoption, and the Marine is not entitled to RCML.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p3/g" status="VERIFIED">
+      <num style="alpha-lower">g</num>
+      <heading>Transitioning Marines who are eligible for the Military Parental Leave Program (MPLP)</heading>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/g/1" status="VERIFIED">
+        <num style="paren-arabic">(1)</num>
+        <content><p>The following may apply to Reserve Marines on active duty who are released from active duty, or active component Marines who transition to the SMCR or IMA Program.</p></content>
+        <paragraph identifier="/us/usmc/maradmin/2022/523/p3/g/1/a" status="VERIFIED">
+          <num style="paren-alpha">(a)</num>
+          <content><p>Marines eligible for parental leave under the MPLP IAW reference (a) and have unused parental leave remaining at the time of release or separation from active duty will receive a proportionate amount of RCML as described in paragraph 3.g.(1)(b) of this message if the following conditions are met:</p></content>
+          <paragraph identifier="/us/usmc/maradmin/2022/523/p3/g/1/a/1" status="VERIFIED">
+            <num style="arabic">1</num>
+            <content><p>The Marine is the birth parent.</p></content>
+          </paragraph>
+          <paragraph identifier="/us/usmc/maradmin/2022/523/p3/g/1/a/2" status="VERIFIED">
+            <num style="arabic">2</num>
+            <content><p>The Marine, at the time of separation or release from active duty (or within 3 months following the date of separation or release), is:</p></content>
+            <paragraph identifier="/us/usmc/maradmin/2022/523/p3/g/1/a/2/a" status="VERIFIED">
+              <num style="alpha-lower">a</num>
+              <content><p>Joined to an SMCR or IMA unit.</p></content>
+            </paragraph>
+            <paragraph identifier="/us/usmc/maradmin/2022/523/p3/g/1/a/2/b" status="VERIFIED">
+              <num style="alpha-lower">b</num>
+              <content><p>Required or scheduled to attend up to 12 periods of IDT within the 12 months following the date of the MPLP qualifying birth event.</p></content>
+            </paragraph>
+          </paragraph>
+          <paragraph identifier="/us/usmc/maradmin/2022/523/p3/g/1/a/3" status="VERIFIED">
+            <num style="arabic">3</num>
+            <content><p>The Marine is not ineligible for RCML as described in paragraph 3.c.</p></content>
+          </paragraph>
+          <paragraph identifier="/us/usmc/maradmin/2022/523/p3/g/1/a/4" status="VERIFIED">
+            <num style="arabic">4</num>
+            <content><p>The proportionate RCML period(s) that represent the unused parental leave are used within one year of the date the member gave birth while on active duty. Any unused RCML remaining at the end of the one year period will be forfeited.</p></content>
+          </paragraph>
+        </paragraph>
+        <paragraph identifier="/us/usmc/maradmin/2022/523/p3/g/1/b" status="VERIFIED">
+          <num style="paren-alpha">(b)</num>
+          <content><p>Qualified Marines will be eligible for one period of RCML for each full week of unused parental leave under the MPLP. For example, a Marine with six weeks of MPLP parental leave remaining unused, as of the date of release or separation from active duty, would be eligible for a maximum of six periods of RCML.</p></content>
+        </paragraph>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/g/2" status="VERIFIED">
+        <num style="paren-arabic">(2)</num>
+        <content><p>Marines on active duty who transition to the SMCR or IMA Program and who, while on active duty gave birth, but were not eligible for parental leave under the MPLP, may be eligible for RCML for a qualifying birth event if the conditions in paragraphs 3.h.(1)(a)1-4 of this MARADMIN are met.</p></content>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p3/h" status="VERIFIED">
+      <num style="alpha-lower">h</num>
+      <heading>Requesting RCML</heading>
+      <content><p>RCML periods must be requested and approved in advance of the IDT period.</p></content>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/h/1" status="VERIFIED">
+        <num style="paren-arabic">(1)</num>
+        <content><p>Drill Management Module has been modified to allow the Muster Manager the ability to select (X)-Present Satisfactory and a required reason code of either "00-Satisfactory IDT" or "04-RC Maternity Leave". The reason code is recorded to the transaction and submitted to the system for processing to the Reserve Marines electronic record.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/h/2" status="VERIFIED">
+        <num style="paren-arabic">(2)</num>
+        <content><p>For each IDT in which an RCML period is taken, the Muster Manager will report each RCML period via Drill Management Module as "Present Satisfactory" and reason code "04-RC Maternity Leave."</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/h/3" status="VERIFIED">
+        <num style="paren-arabic">(3)</num>
+        <content><p>Drill Management Module and the Marine Corps Total Force System do not currently account for the number of RCML periods executed by a Marine to ensure a total of 12 RCML periods are not exceeded. Until such time that MCTFS is updated, units are required to manually account for the number of RCML periods executed within the one year time limitation authorized.</p></content>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p3/i" status="VERIFIED">
+      <num style="alpha-lower">i</num>
+      <content><p>A federal civilian employee who is also a Reserve Marine, and who also meets the requirements to be considered an eligible Marine IAW paragraph 3.b of this MARADMIN, may, as appropriate, receive both RCML and any form of federal civilian parental leave.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p3/j" status="VERIFIED">
+      <num style="alpha-lower">j</num>
+      <content><p>Any amount of RCML will be forfeited if it remains unused as of the date that is:</p></content>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/j/1" status="VERIFIED">
+        <num style="paren-arabic">(1)</num>
+        <content><p>One year after the date of a qualifying birth event;</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/j/2" status="VERIFIED">
+        <num style="paren-arabic">(2)</num>
+        <content><p>At the time of separation from the Marine Corps;</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/j/3" status="VERIFIED">
+        <num style="paren-arabic">(3)</num>
+        <content><p>At the time of transfer from an eligible reserve component category or status to an ineligible category or status (including transfer to the Standby Reserve, any other non-pay status, or the Retired Reserve—with or without entitlement to retired pay); or</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p3/j/4" status="VERIFIED">
+        <num style="paren-arabic">(4)</num>
+        <content><p>The commencement of an active duty period that is at least 30 calendar days.</p></content>
+      </paragraph>
+    </paragraph>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/maradmin/2022/523/p4" status="VERIFIED">
+    <num style="arabic">4</num>
+    <heading>Change #2: Training Deferment Period</heading>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p4/a" status="VERIFIED">
+      <num style="alpha-lower">a</num>
+      <content><p>Reserve Marines in a drilling status, following the placement of a minor child in the Marine's home through a qualifying birth event, adoption, long-term foster care or surrogate pregnancy services, may defer active duty or IDT for up to 84 consecutive days (12 weeks) starting from the date of placement of a minor child in the Marine's home. This training deferment period is unrelated to leave under the MPLP, and also unrelated to the RCML Program described above.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p4/b" status="VERIFIED">
+      <num style="alpha-lower">b</num>
+      <content><p>Training deferment may not be disapproved by a commander if scheduled during the IDT periods within 90 days of placement of a minor child in the Marine's home. However, commanders may disapprove training deferment due to operational requirements and training workloads if deferment is requested for periods outside of 90 days following the placement of a minor child in the Marine's home.</p></content>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p4/b/1" status="VERIFIED">
+        <num style="paren-arabic">(1)</num>
+        <content><p>In disapproving training deferment, commanders will take into consideration the Marine's health (including any health effects related to their recovery from childbirth), whether the Marine's health impacts their ability to safely return to military duty, and will propose alternate dates for which the Marine may schedule training deferment.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p4/b/2" status="VERIFIED">
+        <num style="paren-arabic">(2)</num>
+        <content><p>In no case will commanders establish limitations or additional requirements to scheduling training deferment that would cause eligible Marines to waive or shorten training deferment without the Marine's written consent.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p4/b/3" status="VERIFIED">
+        <num style="paren-arabic">(3)</num>
+        <content><p>Commanders shall provide every opportunity for Marines eligible for training deferment to schedule up to 84 days of training deferment during the 90 days following the placement of a minor child in a Marine's home, consistent with the Marine's desires. To this end, commands shall not schedule equivalent duty periods (training conducted in lieu of a missed regularly scheduled drill) or additional IDT periods for Marines eligible for training deferment during the 90 days following the placement of a minor child in a Marine's home.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p4/b/4" status="VERIFIED">
+        <num style="paren-arabic">(4)</num>
+        <content><p>For Marines eligible for training deferment, during the 90 days following the placement of a minor child in a Marine's home, commanders may authorize the Marine to attend an alternate annual training (AT) period which falls outside of the 90 days following the placement of a minor child in a Marine's home. The Marine may elect to attend the originally scheduled AT or the alternate AT.</p></content>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p4/c" status="VERIFIED">
+      <num style="alpha-lower">c</num>
+      <content><p>Training deferment must be taken in one continuous period of absence within the 12 months following placement of a minor child in the Marine's home.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p4/d" status="VERIFIED">
+      <num style="alpha-lower">d</num>
+      <content><p>The training deferment period may be extended if specifically recommended in writing by the Marine's health care provider and is approved by the commander.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p4/e" status="VERIFIED">
+      <num style="alpha-lower">e</num>
+      <content><p>A Reserve Marine in a drilling status shall invoke or waive the deferment period via a page 11 entry.</p></content>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p4/e/1" status="VERIFIED">
+        <num style="paren-arabic">(1)</num>
+        <content><p>In the case of a dual military couple, both the birth parent and non-birth parent are eligible to invoke the deferment period.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p4/e/2" status="VERIFIED">
+        <num style="paren-arabic">(2)</num>
+        <content><p>Use the following page 11 entry to invoke or waive the deferment period: "I am eligible to defer active duty or IDT for up to 84 consecutive days following the placement of a minor child in my home through a qualifying birth event, adoption, long-term foster care or surrogate pregnancy services. I have provided written documentation from a competent medical authority who has made a determination of medical necessity to extend my deferment period to (date). (Omit the previous sentence if not applicable). Accordingly, I request to defer active duty or IDT from (start date) to (end date) or I waive deferment from (start date) to (end date). I am required to earn a minimum of 50 retirement credit points to obtain a satisfactory anniversary year. Although I am not required to reschedule or make up any missed training events during my elected deferment period, I have/have not been provided opportunities to reschedule critical training events. I understand that I am responsible for completing mandatory annual or fiscal year training requirements unless granted exemption or extension by appropriate authority."</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p4/e/3" status="VERIFIED">
+        <num style="paren-arabic">(3)</num>
+        <content><p>Commands shall cancel IDTs for Marines during their elected deferment period. Annotate the cancelled IDTs with an appropriate comment such as "IDT cancelled due to training deferment."</p></content>
+      </paragraph>
+      <paragraph identifier="/us/usmc/maradmin/2022/523/p4/e/4" status="VERIFIED">
+        <num style="paren-arabic">(4)</num>
+        <content><p>Commands shall provide opportunities for Marines to reschedule critical training events outside of the Marine's elected deferment period. IDT periods not rescheduled within the same fiscal year will be forfeited.</p></content>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p4/f" status="VERIFIED">
+      <num style="alpha-lower">f</num>
+      <content><p>RCML and training deferment may be sequenced to best meet the needs of the Marine's family. All RCML and training deferment must be scheduled/executed within the one year time limitation from a qualifying event. Training deferment shall not be taken concurrently with RCML.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p4/g" status="VERIFIED">
+      <num style="alpha-lower">g</num>
+      <content><p>Reserve Marines will not receive pay or retirement credit points for any missed IDT or AT periods during the training deferment period.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/usmc/maradmin/2022/523/p4/h" status="VERIFIED">
+      <num style="alpha-lower">h</num>
+      <content><p>All other provisions in reference (a) pertaining to Reserve Marines still apply.</p></content>
+    </paragraph>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/maradmin/2022/523/p5" status="VERIFIED">
+    <num style="arabic">5</num>
+    <content><p>This MARADMIN will be cancelled when the information contained herein is incorporated into reference (a).</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/maradmin/2022/523/p6" status="VERIFIED">
+    <num style="arabic">6</num>
+    <content><p>Additional changes to reference (a) are expected as the Department of Defense provides guidance IAW with National Defense Authorization Act provisions.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/maradmin/2022/523/p7" status="VERIFIED">
+    <num style="arabic">7</num>
+    <content><p>This MARADMIN is applicable to the reserve component, excluding Marines in the Active Reserve program.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/maradmin/2022/523/p8" status="VERIFIED">
+    <num style="arabic">8</num>
+    <content><p>Release authorized by Major General M. S. Martin, Director, Reserve Affairs Division.</p></content>
+  </paragraph>
+</issuance>

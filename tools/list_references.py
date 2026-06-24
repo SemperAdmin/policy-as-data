@@ -23,10 +23,13 @@ DATA = os.path.join(ROOT, "data")
 # @types that denote an external authority/issuance (not a provision or decision).
 AUTHORITY_TYPES = {
     "pol:Statute",
+    "pol:PublicLaw",
     "pol:CodeOfFederalRegulations",
     "pol:ExecutiveOrder",
     "pol:DoDDirective",
     "pol:DoDInstruction",
+    "pol:DirectiveTypeMemorandum",
+    "pol:Memorandum",
     "pol:OpmIssuance",
     "pol:NavyIssuance",
     "pol:MarineCorpsOrder",

@@ -24,6 +24,13 @@ const DOCS = [
     rules: null,
   },
   {
+    id: "/us/usmc/maradmin/2022/523",
+    label: "MARADMIN 523/22 · RC Leave",
+    uslm: "../data/maradmin-523-22.uslm.xml",
+    authority: "../data/maradmin-523-22.authority.jsonld",
+    rules: null,
+  },
+  {
     id: "/us/dod/dtm/2023/23-001",
     label: "DTM 23-001 · OSD",
     uslm: "../data/dtm-23-001.uslm.xml",
