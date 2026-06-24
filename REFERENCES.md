@@ -39,6 +39,15 @@ policy enclosures are large and mostly tangential to parental leave (pregnancy /
 PFT standards; general leave-and-liberty administration); the chapter bodies are
 queued for fuller encoding if needed.
 
+## Standalone documents (outside the parental-leave chain)
+
+Real encoded documents that are not part of the parental-leave corpus and link
+to nothing in it.
+
+| Identifier | Document |
+|---|---|
+| `/us/navy/asn-mra/2021/retiree-council-response` | ASN (M&RA) Memorandum, Secretariat Response to the 2020 Secretary of the Navy's Retiree Council Report (31 Mar 2021) — 11 retiree issues. NOT MARADMIN 523/22 ref (c). |
+
 ## Still needed (1)
 
 | Identifier | Document | Issue |

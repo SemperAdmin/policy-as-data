@@ -59,6 +59,13 @@ const DOCS = [
     rules: null,
   },
   {
+    id: "/us/navy/asn-mra/2021/retiree-council-response",
+    label: "ASN Retiree Council memo (standalone)",
+    uslm: "../data/asn-mra-2021-retiree-council-response.uslm.xml",
+    authority: "../data/asn-mra-2021-retiree-council-response.authority.jsonld",
+    rules: null,
+  },
+  {
     id: "/us/usc/10/701",
     label: "10 U.S.C. 701 · Statute",
     uslm: "../data/usc-10-701.uslm.xml",
