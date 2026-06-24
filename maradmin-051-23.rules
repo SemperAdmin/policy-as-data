@@ -1,0 +1,63 @@
+{
+  "source": {
+    "identifier": "/us/usmc/maradmin/2023/051",
+    "label": "MARADMIN 051/23, Expansion of the Marine Corps Military Parental Leave Program",
+    "dtg": "272030Z JAN 23",
+    "originator": "CMC WASHINGTON DC MRA MP"
+  },
+  "authorityChain": [
+    "/us/usc/10/701",
+    "/us/dod/dodi/1327.06",
+    "/us/usmc/maradmin/2023/051"
+  ],
+  "rules": [
+    {
+      "id": "MAX_PARENTAL_LEAVE_DAYS",
+      "value": 84,
+      "unit": "days",
+      "status": "VERIFIED",
+      "citation": {
+        "identifier": "/us/usmc/maradmin/2023/051/p8",
+        "label": "MARADMIN 051/23, para 8",
+        "status": "VERIFIED"
+      },
+      "note": "Commands and Marines ensure parental leave does not exceed 84 days, except per para 8.b.(2). Multiple qualifying events top up to, but do not exceed, 84 days within the window."
+    },
+    {
+      "id": "ENTITLEMENT_WINDOW_DAYS",
+      "value": 365,
+      "unit": "days",
+      "status": "VERIFIED",
+      "citation": {
+        "identifier": "/us/usmc/maradmin/2023/051/p8/b/2",
+        "label": "MARADMIN 051/23, para 8.b.(2)",
+        "status": "VERIFIED"
+      },
+      "note": "Unused parental leave is forfeited one year from the qualifying event. For multiple events, the window is measured from the later event."
+    },
+    {
+      "id": "MIN_INCREMENT_DAYS",
+      "value": 7,
+      "unit": "days",
+      "status": "UNVERIFIED",
+      "citation": {
+        "identifier": "/us/usmc/maradmin/2023/051/UNCONFIRMED",
+        "label": "Increment provision, MARADMIN 051/23 or DoDI 1327.06, source line NOT located",
+        "status": "UNVERIFIED"
+      },
+      "note": "User-asserted 7-day minimum increment. NOT located in retrieved issuance text. Confirm the exact source line and threshold before relying on this rule. The 5-day demonstration case denies ONLY on this rule, so this rule's status governs that case outcome."
+    },
+    {
+      "id": "EVENT_PROXIMITY_MERGE_DAYS",
+      "value": 3,
+      "unit": "days",
+      "status": "UNVERIFIED",
+      "citation": {
+        "identifier": "/us/usmc/maradmin/2023/051/UNCONFIRMED",
+        "label": "Qualifying-event proximity rule, source line NOT located",
+        "status": "UNVERIFIED"
+      },
+      "note": "User-asserted rule: qualifying events within 3 days of each other count as a single qualifying event. NOT located in retrieved issuance text. Confirm before relying."
+    }
+  ]
+}
