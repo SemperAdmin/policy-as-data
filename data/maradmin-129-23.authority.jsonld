@@ -21,8 +21,8 @@
       "derivesAuthorityFrom": "/us/usc/10/701"
     },
     {
-      "@id": "/us/osd/dtm/2023/expansion-mplp",
-      "@type": "pol:DoDDirective",
+      "@id": "/us/dod/dtm/2023/23-001",
+      "@type": "pol:DirectiveTypeMemorandum",
       "label": "USD(P&R) Directive-Type Memorandum, Expansion of the Military Parental Leave Program (4 Jan 2023). MARADMIN 129/23 reference (b).",
       "inferredAuthorityFrom": "/us/dod/dodi/1327.06"
     },
@@ -40,7 +40,7 @@
       "@id": "/us/usmc/maradmin/2023/129",
       "@type": "pol:ServiceMessage",
       "label": "MARADMIN 129/23, Clarification to MARADMIN 051/23",
-      "derivesAuthorityFrom": "/us/osd/dtm/2023/expansion-mplp",
+      "derivesAuthorityFrom": "/us/dod/dtm/2023/23-001",
       "references": "/us/usmc/mco/1050.3J",
       "clarifies": "/us/usmc/maradmin/2023/051"
     }

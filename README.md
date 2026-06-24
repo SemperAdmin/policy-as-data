@@ -24,6 +24,8 @@ data/maradmin-051-23.authority.jsonld  051/23 authority graph: provisions -> iss
 data/maradmin-051-23.rules.json        machine-readable rule values extracted from 051/23, each cited
 data/maradmin-129-23.uslm.xml          MARADMIN 129/23 (Clarification to 051/23), full document
 data/maradmin-129-23.authority.jsonld  129/23 authority graph, including `clarifies` -> 051/23
+data/dtm-23-001.uslm.xml               OSD DTM 23-001 (the DoD authority 051/23 implements), full document
+data/dtm-23-001.authority.jsonld       DTM 23-001 authority graph
 
 viewer/                                read-only viewer: renders the data files into a navigable, badged document
 DATA_CONTRACT.md                       the read-only mandate and the verification legend

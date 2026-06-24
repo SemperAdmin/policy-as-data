@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Document-structure layer for the proof of concept.
+  USLM-aligned markup of Directive-Type Memorandum 23-001 in full, conforming to
+  the USMC issuance schema (schema/usmc-issuance-1.0.xsd, v1.1).
+
+  Encoded verbatim from the authoritative memorandum text. This is the OSD
+  authority that MARADMIN 051/23 implements (its reference (a)). All provisions
+  are VERIFIED against the retrieved issuance text. A different document type
+  than a MARADMIN: named memo sections, attachments, and a glossary.
+-->
+<issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://policy.usmc.mil/ns/uslm/1.0 ../schema/usmc-issuance-1.0.xsd"
+          identifier="/us/dod/dtm/2023/23-001"
+          issuanceType="DTM"
+          status="VERIFIED">
+  <meta>
+    <originator>Under Secretary of Defense for Personnel and Readiness</originator>
+    <date>January 4, 2023</date>
+    <signer>Gilbert R. Cisneros, Jr.</signer>
+    <subject>Directive-type Memorandum 23-001 – "Expansion of the Military Parental Leave Program"</subject>
+    <derivesFrom href="/us/dod/dodd/5124.02"/>
+    <derivesFrom href="/us/usc/10/701"/>
+  </meta>
+
+  <paragraph identifier="/us/dod/dtm/2023/23-001/purpose" status="VERIFIED" level="section">
+    <heading>Purpose</heading>
+    <content>
+      <p>In accordance with the authority in DoD Directive (DoDD) 5124.02, this Directive-type Memorandum (DTM):</p>
+      <p>Establishes policy, assigns responsibilities, and provides procedures for the expansion of the Military Parental Leave Program (MPLP) pursuant to Section 701 of Title 10, United States Code (U.S.C.), as amended by Section 621 of Public Law 117–81, also known as the National Defense Authorization Act for Fiscal Year 2022.</p>
+      <p>Policies and procedures established in this DTM supplement DoD Instruction (DoDI) 1327.06 and supersede the MPLP established in the March 23, 2018 Under Secretary of Defense for Personnel and Readiness (USD(P&amp;R)) Memorandum.</p>
+      <p>This DTM takes precedence over any previous DoD issuances or Service regulations as they pertain to MPLP but does not supersede DTM 22-004.</p>
+      <p>Is effective January 4, 2023; it must be incorporated into DoDI 1327.06. This DTM will expire effective January 4, 2025.</p>
+    </content>
+  </paragraph>
+
+  <paragraph identifier="/us/dod/dtm/2023/23-001/applicability" status="VERIFIED" level="section">
+    <heading>Applicability</heading>
+    <content>
+      <p>This DTM applies to OSD, the Military Departments (including the Coast Guard at all times, including when it is a Service in the Department of Homeland Security by agreement with that Department), the Office of the Chairman of the Joint Chiefs of Staff and the Joint Staff, the Combatant Commands, the Office of Inspector General of the Department of Defense, the Defense Agencies, the DoD Field Activities, and all other organizational entities within the DoD (referred to collectively in this DTM as the "DoD Components").</p>
+    </content>
+  </paragraph>
+
+  <paragraph identifier="/us/dod/dtm/2023/23-001/definitions" status="VERIFIED" level="section">
+    <heading>Definitions</heading>
+    <content><p>See Glossary.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/dod/dtm/2023/23-001/policy" status="VERIFIED" level="section">
+    <heading>Policy</heading>
+    <content>
+      <p>Active Component Service members; Reserve Component Service members performing Active Guard and Reserve duty or full-time National Guard Duty for more than 12 months consecutively; and Reserve Component Service members performing duty under a call or order to active service for more than 12 months consecutively, referred to collectively in this DTM as "members," are covered by this policy.</p>
+      <p>It is important for the development of military families that members be able to care for their newborn, adopted, or placed child or children, all of whom are referred to in this DTM as "child." Unit commanders must balance the needs of the unit with the needs of the member to maximize opportunity to use parental leave.</p>
+      <p>Members who give birth will be authorized 12 weeks of parental leave following a period of convalescence to care for the child.</p>
+      <p>Members who are the non-birth parent will be authorized 12 weeks of parental leave following the birth of their child to care for the child.</p>
+      <p>Members who adopt a minor child or who have a minor child placed for adoption or long-term foster care with them will be authorized 12 weeks of parental leave to care for the child.</p>
+      <p>Members will be afforded the opportunity to take full advantage of the MPLP consistent with their desires, operational requirements, and training workloads of their unit.</p>
+      <p>The MPLP must be administered in accordance with applicable laws and the policies and procedures in this DTM.</p>
+    </content>
+  </paragraph>
+
+  <paragraph identifier="/us/dod/dtm/2023/23-001/responsibilities" status="VERIFIED" level="section">
+    <heading>Responsibilities</heading>
+    <content><p>See Attachment 2.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/dod/dtm/2023/23-001/procedures" status="VERIFIED" level="section">
+    <heading>Procedures</heading>
+    <content><p>See Attachment 3.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/dod/dtm/2023/23-001/releasability" status="VERIFIED" level="section">
+    <heading>Releasability</heading>
+    <content><p>Cleared for public release. Available on the Directives Division Website at https://www.esd.whs.mil/DD/.</p></content>
+  </paragraph>
+
+  <paragraph identifier="/us/dod/dtm/2023/23-001/att1" status="VERIFIED" level="attachment">
+    <heading>Attachment 1 — References</heading>
+    <content>
+      <p>Directive-type Memorandum 22-004, "Reserve Component Maternity Leave Program," June 9, 2022</p>
+      <p>DoD Directive 5124.02, "Under Secretary of Defense for Personnel and Readiness (USD(P&amp;R))," June 23, 2008</p>
+      <p>DoD Directive 5124.10, "Assistant Secretary of Defense for Manpower and Reserve Affairs (ASD(M&amp;RA))," March 14, 2018</p>
+      <p>DoD Instruction 1327.06, "Leave and Liberty Policy and Procedures," June 16, 2009, as amended</p>
+      <p>DoD Instruction 5025.01, "DoD Issuances Program," August 1, 2016, as amended</p>
+      <p>DoD Instruction 8260.03, "The Global Force Management Data Initiative (GFM DI)," February 19, 2014, as amended</p>
+      <p>Public Law 117-81, Section 621 "National Defense Authorization Act for Fiscal Year 2022," December 27, 2021</p>
+      <p>Under Secretary of Defense for Personnel and Readiness Memorandum, "Parental Leave for Military Personnel in Connection with the Birth or Adoption of a Child," March 23, 2018</p>
+      <p>United States Code, Title 1, Section 8</p>
+      <p>United States Code, Title 10</p>
+    </content>
+  </paragraph>
+
+  <paragraph identifier="/us/dod/dtm/2023/23-001/att2" status="VERIFIED" level="attachment">
+    <heading>Attachment 2 — Responsibilities</heading>
+    <paragraph identifier="/us/dod/dtm/2023/23-001/att2/p1" status="VERIFIED">
+      <num style="arabic">1</num>
+      <heading>USD(P&amp;R)</heading>
+      <content><p>In accordance with DoDD 5124.02, the USD(P&amp;R):</p></content>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att2/p1/a" status="VERIFIED">
+        <num style="alpha-lower">a</num>
+        <content><p>Ensures that implementing Military Department and the Department of Homeland Security policies and procedures regarding MPLP are uniform across the Military Services, to the extent feasible.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att2/p1/b" status="VERIFIED">
+        <num style="alpha-lower">b</num>
+        <content><p>Monitors the effectiveness of Military Department policies and procedures regarding the MPLP.</p></content>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/dod/dtm/2023/23-001/att2/p2" status="VERIFIED">
+      <num style="arabic">2</num>
+      <heading>Assistant Secretary of Defense for Manpower and Reserve Affairs</heading>
+      <content><p>Under the authority, direction, and control of the USD(P&amp;R), the Assistant Secretary of Defense for Manpower and Reserve Affairs:</p></content>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att2/p2/a" status="VERIFIED">
+        <num style="alpha-lower">a</num>
+        <content><p>Provides overall guidance and oversight of the administration of the MPLP in accordance with DoDD 5124.10.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att2/p2/b" status="VERIFIED">
+        <num style="alpha-lower">b</num>
+        <content><p>Serves as the focal point for policies related to leave and liberty in general, and the MPLP in particular.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att2/p2/c" status="VERIFIED">
+        <num style="alpha-lower">c</num>
+        <content><p>Develops and maintains supporting guidance governing the MPLP as well as publications and memorandums that implement all aspects of this DTM as required, and in accordance with DoDI 5025.01.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att2/p2/d" status="VERIFIED">
+        <num style="alpha-lower">d</num>
+        <content><p>Monitors DoD Component administration of the provisions of the MPLP in accordance with this DTM and works with the DoD Components to make improvements as necessary.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att2/p2/e" status="VERIFIED">
+        <num style="alpha-lower">e</num>
+        <content><p>Adjudicates exception to policy requests beyond the authorities that this DTM provides.</p></content>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/dod/dtm/2023/23-001/att2/p3" status="VERIFIED">
+      <num style="arabic">3</num>
+      <heading>Secretaries of the Military Departments and Commandant of the Coast Guard</heading>
+      <content><p>The Secretaries of the Military Departments and the Commandant of the Coast Guard:</p></content>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att2/p3/a" status="VERIFIED">
+        <num style="alpha-lower">a</num>
+        <content><p>Implement the policy in this DTM in their respective Military Services.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att2/p3/b" status="VERIFIED">
+        <num style="alpha-lower">b</num>
+        <content><p>Issue further Service-specific guidance in accordance with this DTM.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att2/p3/c" status="VERIFIED">
+        <num style="alpha-lower">c</num>
+        <content><p>Educate their respective forces to ensure that all members understand the new benefits, including eligibility and date of implementation.</p></content>
+      </paragraph>
+    </paragraph>
+  </paragraph>
+
+  <paragraph identifier="/us/dod/dtm/2023/23-001/att3" status="VERIFIED" level="attachment">
+    <heading>Attachment 3 — Procedures</heading>
+    <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p1" status="VERIFIED">
+      <num style="arabic">1</num>
+      <heading>Extension of Coverage</heading>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p1/a" status="VERIFIED">
+        <num style="alpha-lower">a</num>
+        <content><p>A period of active service of a Reserve Component member may not be extended to permit that member to take leave authorized under the MPLP.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p1/b" status="VERIFIED">
+        <num style="alpha-lower">b</num>
+        <content><p>A member's period of active service may be extended following a birth when determined medically necessary by a competent medical authority.</p></content>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2" status="VERIFIED">
+      <num style="arabic">2</num>
+      <heading>Parental Leave</heading>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2/a" status="VERIFIED">
+        <num style="alpha-lower">a</num>
+        <heading>Effective Date</heading>
+        <content><p>The parental leave described in this DTM applies to a member when any one of these events occurs on or after December 27, 2022: the birth of a member's child, adoption of a minor child by the member, or placement of a minor child with the member for adoption or long-term foster care.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2/b" status="VERIFIED">
+        <num style="alpha-lower">b</num>
+        <heading>Parental Leave for Birth</heading>
+        <content><p>Members will be authorized parental leave for the birth of their child and to care for the child, in accordance with Paragraphs 2.b.(1) and 2.b.(2) of this attachment:</p></content>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2/b/1" status="VERIFIED">
+          <num style="paren-arabic">(1)</num>
+          <content><p>For the birth parent, 12 weeks of parental leave will be authorized following a period of convalescence from childbirth.</p></content>
+          <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2/b/1/a" status="VERIFIED">
+            <num style="paren-alpha">(a)</num>
+            <content><p>Convalescent leave may be authorized for the recovery of the birth parent from giving birth if such leave is specifically recommended, in writing, by the health care provider of the birth parent to address a diagnosed medical condition and is approved by the unit commander. The period of convalescent leave immediately following childbirth will be taken in one increment. Such leave will begin on the first full day after the birth of the child or the date of release of the member from the hospital or similar facility where the birth took place, whichever is later.</p></content>
+          </paragraph>
+          <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2/b/1/b" status="VERIFIED">
+            <num style="paren-alpha">(b)</num>
+            <content><p>Twelve weeks of parental leave will be authorized during the 1-year period beginning on the date of birth of the child. Parental leave will be taken following any period of convalescent leave described in Paragraph 2.b.(1)(a) and in accordance with Paragraph 3 of this attachment.</p></content>
+          </paragraph>
+        </paragraph>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2/b/2" status="VERIFIED">
+          <num style="paren-arabic">(2)</num>
+          <content><p>For the non-birth parent, 12 weeks of parental leave will be authorized during the 1-year period beginning on the date of birth of the child. If the child is born outside of marriage, the non-birth parent's parentage of the child must be established in accordance with the criteria prescribed by the Military Department concerned.</p></content>
+        </paragraph>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2/c" status="VERIFIED">
+        <num style="alpha-lower">c</num>
+        <heading>Parental Leave for Adoption Placement or Adoption</heading>
+        <content><p>Members, to include dual military couples, will be authorized 12 weeks of parental leave during the 1-year period following the date of placement of a minor child with the member for adoption, or the date of adoption of a minor child by the member.</p></content>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2/c/1" status="VERIFIED">
+          <num style="paren-arabic">(1)</num>
+          <content><p>If a member (or a dual military couple) uses a surrogate and they become the legal parent(s) of a newborn child, the event will be treated as an adoption and will be authorized 12 weeks of parental leave.</p></content>
+        </paragraph>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2/c/2" status="VERIFIED">
+          <num style="paren-arabic">(2)</num>
+          <content><p>A member is not authorized an additional 12 weeks of parental leave when the placement of a minor child with the member for adoption is finalized as an adoption by the member of a minor child already residing within the member's household.</p></content>
+        </paragraph>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2/d" status="VERIFIED">
+        <num style="alpha-lower">d</num>
+        <heading>Parental Leave for Long-term Foster Care Placement</heading>
+        <content><p>Members, to include dual military couples, will be authorized 12 weeks of parental leave during the 1-year period after the date of placement of a minor child with the member for long-term foster care of the placed child. A member is not authorized an additional 12 weeks of parental leave when the placement of a minor child with the member for long-term foster care is:</p></content>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2/d/1" status="VERIFIED">
+          <num style="paren-arabic">(1)</num>
+          <content><p>Converted to a placement for adoption with the member; or</p></content>
+        </paragraph>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2/d/2" status="VERIFIED">
+          <num style="paren-arabic">(2)</num>
+          <content><p>Finalized as an adoption by the member of a minor child already residing within the member's household.</p></content>
+        </paragraph>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2/e" status="VERIFIED">
+        <num style="alpha-lower">e</num>
+        <heading>Multiple Qualifying Events</heading>
+        <content><p>Multiple qualifying events are subject to these limitations:</p></content>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2/e/1" status="VERIFIED">
+          <num style="paren-arabic">(1)</num>
+          <content><p>Multiple qualifying events that do not occur within the same 72-hour period will be treated as separate events for the allocation of parental leave. For example: A birth parent has two qualifying events separated by 50 days. The birth parent gives birth to a child, and then a minor child is placed with the birth parent for adoption 50 days later. Specifically, in this example, the birth parent's child is born on January 1 and the birth parent is released from the hospital on January 5 to begin a period of convalescent leave that ends on February 4. On February 5, the birth parent begins a 12-week period (i.e., 84 days) of parental leave. On February 20, the birth parent adopts a minor child. In this example, the birth parent used 15 days of parental leave between the two events and has 69 days of unused parental leave from the birth of the child. The birth parent is authorized an additional 15 days for the placement of the minor child to be added to the 69 days remaining from the birth of the child. Any of these days that the birth parent does not use within 1 year of the second event will be forfeited.</p></content>
+        </paragraph>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2/e/2" status="VERIFIED">
+          <num style="paren-arabic">(2)</num>
+          <content><p>Multiple qualifying events occurring within the same 72-hour period will be treated as a single event for the allocation of parental leave. For example: A member adopts two children separated by 48 hours. In this example, the member is authorized a total of 12 weeks (i.e., 84 days) of parental leave because the two adoptions are treated as a single adoption. Any parental leave that the member does not use within 1 year of the second adoption will be forfeited.</p></content>
+        </paragraph>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p2/e/3" status="VERIFIED">
+          <num style="paren-arabic">(3)</num>
+          <content><p>In separate qualifying events, any new parental leave must run concurrently with any pre-existing parental leave that has not expired or been used as of the date of the new event. For example: A member adopts a minor child on March 1 and a minor child is placed with the member for long-term foster care on September 1. The member used all 12 weeks (i.e., 84 days) of parental leave from the adoption before September 1. In this example, the member is authorized an additional 12 weeks (i.e., 84 days) of parental leave for the placement of the minor child for long-term foster care because the member used all the parental leave from the adoption before the placement event in September. Any parental leave of 12 weeks (i.e., 84 days) that the member does not use within 1 year of the placement will be forfeited.</p></content>
+        </paragraph>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p3" status="VERIFIED">
+      <num style="arabic">3</num>
+      <heading>Taking Parental Leave</heading>
+      <content><p>Members may take parental leave in one continuous period or in increments. Parental leave may be taken together with ordinary leave.</p></content>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p3/a" status="VERIFIED">
+        <num style="alpha-lower">a</num>
+        <heading>Incremental Periods of Parental Leave</heading>
+        <content><p>Parental leave may be taken in one or more increments. Increments will be taken consistent with operational requirements.</p></content>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p3/a/1" status="VERIFIED">
+          <num style="paren-arabic">(1)</num>
+          <content><p>Members choosing to take parental leave in more than one increment must request such proposed leave in blocks of at least 7 days each for a maximum of 12 increments and must submit such requests within the timelines established by normal Service procedures and/or the unit commander. If the commander disapproves the request, the member may appeal the decision through their normal Service procedures.</p></content>
+        </paragraph>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p3/a/2" status="VERIFIED">
+          <num style="paren-arabic">(2)</num>
+          <content><p>Commanders are encouraged to approve requests for incremental periods of parental leave. If the unit commander does not approve taking incremental parental leave, they must allow the member to take the full 12 weeks of parental leave in one continuous period.</p></content>
+        </paragraph>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p3/b" status="VERIFIED">
+        <num style="alpha-lower">b</num>
+        <heading>Combining Types of Leave</heading>
+        <content><p>Members may take ordinary (i.e., chargeable) leave in between increments of parental leave or consecutively with parental leave. No particular order or sequence of such leave is required.</p></content>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p4" status="VERIFIED">
+      <num style="arabic">4</num>
+      <heading>Deferral of Parental Leave</heading>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p4/a" status="VERIFIED">
+        <num style="alpha-lower">a</num>
+        <content><p>Operationally deployed members must normally defer parental leave until their deployment is completed. However, in exceptional and compelling circumstances, a unit commander may approve parental leave if the unit commander determines that the unit's readiness will not be adversely impacted.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p4/b" status="VERIFIED">
+        <num style="alpha-lower">b</num>
+        <content><p>Members who are required to defer parental leave because of such deployment may be authorized an extension of the 1-year parental leave period as described in Paragraph 6 of this attachment.</p></content>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p5" status="VERIFIED">
+      <num style="arabic">5</num>
+      <heading>Unused Parental Leave</heading>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p5/a" status="VERIFIED">
+        <num style="alpha-lower">a</num>
+        <content><p>Any amount of parental leave remaining unused at the time of separation from active service will be forfeited. Such forfeiture does not apply to a member who qualifies for Reserve Component maternity leave as described in Paragraph 5 of DTM-22-004.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p5/b" status="VERIFIED">
+        <num style="alpha-lower">b</num>
+        <content><p>Parental leave may not be transferred to create a shared benefit, even between members of a dual military couple.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p5/c" status="VERIFIED">
+        <num style="alpha-lower">c</num>
+        <content><p>Parental leave that is not taken before the expiration of 1 year from the date of a birth of the child, adoption of a minor child by the member, or placement of a minor child with the member for adoption or long-term foster care will be forfeited, unless Paragraph 6 of this attachment applies.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p5/d" status="VERIFIED">
+        <num style="alpha-lower">d</num>
+        <content><p>Any parental leave that this DTM authorizes for a Reserve Component member that is not taken by the time they are separated from active service will be forfeited unless such forfeiture does not apply as described in Paragraph 5.a. of this attachment:</p></content>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p5/d/1" status="VERIFIED">
+          <num style="paren-arabic">(1)</num>
+          <content><p>The period of active service of a Reserve Component member may not be extended solely to permit them to take the leave that this DTM authorizes.</p></content>
+        </paragraph>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p5/d/2" status="VERIFIED">
+          <num style="paren-arabic">(2)</num>
+          <content><p>Reserve Component members will not be recalled to active service to use any category of leave, either singly or in combination, that this DTM authorizes.</p></content>
+        </paragraph>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p5/e" status="VERIFIED">
+        <num style="alpha-lower">e</num>
+        <content><p>If the placement of a minor child with the member for adoption or long-term foster care is terminated, any amount of parental leave remaining unused on the date of such termination will be forfeited. Such forfeiture does not apply if the placement of the minor child for adoption or long-term foster care is finalized as an adoption by the member.</p></content>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p6" status="VERIFIED">
+      <num style="arabic">6</num>
+      <heading>Extension of the 1-Year Parental Leave Period</heading>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p6/a" status="VERIFIED">
+        <num style="alpha-lower">a</num>
+        <content><p>A member is authorized to take parental leave after the 1-year period, if they would ordinarily lose unused parental leave at the end of the 1-year period because of one or more of these conditions:</p></content>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p6/a/1" status="VERIFIED">
+          <num style="paren-arabic">(1)</num>
+          <content><p>A member's participation in a deployment and/or military exercise for a consecutive period of 90 or more days within the 1-year period concerned.</p></content>
+        </paragraph>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p6/a/2" status="VERIFIED">
+          <num style="paren-arabic">(2)</num>
+          <content><p>A member's attendance at an in-residence professional military education course for a consecutive period of 90 or more days within the 1-year period concerned.</p></content>
+        </paragraph>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p6/a/3" status="VERIFIED">
+          <num style="paren-arabic">(3)</num>
+          <content><p>A member's execution of permanent change-of-station orders with temporary duty en route to a new permanent duty station of 90 or more consecutive days that would interfere with the taking of parental leave within the 1-year period concerned.</p></content>
+        </paragraph>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p6/a/4" status="VERIFIED">
+          <num style="paren-arabic">(4)</num>
+          <content><p>A member conducted routine temporary duty away from the permanent duty station for a consecutive period of 90 or more days within the 1-year period.</p></content>
+        </paragraph>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p6/a/5" status="VERIFIED">
+          <num style="paren-arabic">(5)</num>
+          <content><p>A member was hospitalized or in an in-patient status for 90 or more consecutive days within the 1-year period concerned.</p></content>
+        </paragraph>
+        <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p6/a/6" status="VERIFIED">
+          <num style="paren-arabic">(6)</num>
+          <content><p>A Secretary of a Military Department or Commandant of the Coast Guard, whoever applicable, may approve other extenuating circumstances, on a case-by-case basis, that exceed a consecutive period of 90 or more days within the 1-year period concerned.</p></content>
+        </paragraph>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p6/b" status="VERIFIED">
+        <num style="alpha-lower">b</num>
+        <content><p>For such qualifying circumstances outlined in Paragraph 6.a., the 1-year period will be extended on a day-for-day basis based on the period of such circumstance.</p></content>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p7" status="VERIFIED">
+      <num style="arabic">7</num>
+      <heading>Non-Chargeable Leave for Surrogacy or Child Placed for Adoption</heading>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p7/a" status="VERIFIED">
+        <num style="alpha-lower">a</num>
+        <content><p>A member who either places their child for adoption or has their parental rights terminated by consent or court order is not eligible for parental leave. However, the member may be authorized convalescent leave as recommended by the DoD health care provider in accordance with medical practice standards.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p7/b" status="VERIFIED">
+        <num style="alpha-lower">b</num>
+        <content><p>A member whose spouse meets the conditions of Paragraph 7.a. is not authorized parental leave.</p></content>
+      </paragraph>
+    </paragraph>
+    <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p8" status="VERIFIED">
+      <num style="arabic">8</num>
+      <heading>Leave Following a Stillbirth or Miscarriage</heading>
+      <content><p>In cases when a member experiences a stillbirth or miscarriage, the DoD health care provider may recommend convalescent leave in accordance with medical practice standards. In such cases, neither the member nor their spouse (if a member) is eligible for parental leave. However, either may be authorized emergency leave.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p9" status="VERIFIED">
+      <num style="arabic">9</num>
+      <heading>Leave Following Death of a Child</heading>
+      <content><p>Parental leave eligibility, or the parental leave, if started, terminates upon the death of the child, adopted child, or child placed for adoption or long-term foster care. However, in such cases, members may be transitioned to convalescent leave if recommended by a DoD health care provider in accordance with medical practice standards or transitioned to other types of leave such as emergency leave, as appropriate.</p></content>
+    </paragraph>
+    <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p10" status="VERIFIED">
+      <num style="arabic">10</num>
+      <heading>Transitioning of Primary and Secondary Caregivers to the Expanded MPLP</heading>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p10/a" status="VERIFIED">
+        <num style="alpha-lower">a</num>
+        <content><p>Parental leave authorized by this DTM also applies to members who have unused caregiver leave or maternity convalescent leave by December 27, 2022, if such unused leave was authorized by the March 23, 2018 USD(P&amp;R) Memorandum. In such cases, the member is authorized a total of 12 weeks of parental leave as described in Paragraph 2 of this attachment, but the member's unit commander must approve the taking of this parental leave pursuant to Paragraph 3 of this attachment. All provisions in this DTM apply to such members.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p10/b" status="VERIFIED">
+        <num style="alpha-lower">b</num>
+        <content><p>Any used caregiver leave of a member when combined with the parental leave authorized by this DTM must not exceed a total of 12 weeks. A birth parent who is in a maternity convalescent status as of December 27, 2022, is authorized to continue in such a status until the birth parent completes the approved period of maternity convalescent leave. Any maternity convalescent leave granted to a birth parent by December 27, 2022 is assumed to meet the requirements for convalescent leave authorized in this issuance.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/att3/p10/c" status="VERIFIED">
+        <num style="alpha-lower">c</num>
+        <content><p>Such leave that remains unused within 1 year of the qualifying event will be forfeited unless Paragraph 6 of this attachment applies.</p></content>
+      </paragraph>
+    </paragraph>
+  </paragraph>
+
+  <paragraph identifier="/us/dod/dtm/2023/23-001/glossary" status="VERIFIED" level="section">
+    <heading>Glossary</heading>
+    <paragraph identifier="/us/dod/dtm/2023/23-001/glossary/part1" status="VERIFIED" level="part">
+      <heading>Part I — Abbreviations and Acronyms</heading>
+      <content>
+        <p>DoDD — DoD directive</p>
+        <p>DoDI — DoD instruction</p>
+        <p>DTM — directive-type memorandum</p>
+        <p>MPLP — Military Parental Leave Program</p>
+        <p>U.S.C. — United States Code</p>
+        <p>USD(P&amp;R) — Under Secretary of Defense for Personnel and Readiness</p>
+      </content>
+    </paragraph>
+    <paragraph identifier="/us/dod/dtm/2023/23-001/glossary/part2" status="VERIFIED" level="part">
+      <heading>Part II — Definitions</heading>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/glossary/part2/adoption" status="VERIFIED">
+        <heading>adoption</heading>
+        <content><p>An adoption that is arranged by a "qualified adoption agency" as that term is defined in Section 1052 of Title 10, U.S.C.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/glossary/part2/birth-parent" status="VERIFIED">
+        <heading>birth parent</heading>
+        <content><p>The member who gives birth.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/glossary/part2/child" status="VERIFIED">
+        <heading>child</heading>
+        <content><p>Defined in Section 8 of Title 1, U.S.C.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/glossary/part2/convalescent-leave" status="VERIFIED">
+        <heading>convalescent leave</heading>
+        <content><p>A period of authorized absence granted to members under medical care, which is part of the treatment prescribed for recuperation and convalescence. It is also referred to as "sick leave."</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/glossary/part2/foster-care" status="VERIFIED">
+        <heading>foster care</heading>
+        <content><p>A 24-hour substitute care for children placed away from their parents or guardian and for whom the State agency has placement and care responsibility. This includes, but is not limited to, placements in foster family homes, foster homes of relatives, group homes, emergency shelters, residential facilities, childcare institutions, and pre-adoptive homes. See also the term and definition of placement for long-term foster care.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/glossary/part2/military-exercise" status="VERIFIED">
+        <heading>military exercise</heading>
+        <content><p>A military maneuver or simulated wartime operation involving planning, preparation, and execution that is carried out for the purpose of training and evaluation.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/glossary/part2/miscarriage" status="VERIFIED">
+        <heading>miscarriage</heading>
+        <content><p>Loss of pregnancy in the uterus.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/glossary/part2/multiple-qualifying-events" status="VERIFIED">
+        <heading>multiple qualifying events</heading>
+        <content><p>When a member experiences any of these events within 1 year: Giving birth to more than one child from a multiple pregnancy; giving birth to a child from a back-to-back pregnancy, adopting more than one minor child; having more than one minor child placed with the member for adoption or long-term foster care; or a combination of any of these events.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/glossary/part2/operational-deployment" status="VERIFIED">
+        <heading>operational deployment</heading>
+        <content><p>An event is an operational deployment if it is recorded in the joint capabilities requirement manager or contained in the annual Global Force Management Data Initiative-compliant tool under the Global Force Management Data Initiative reporting structure specified in DoDI 8260.03. Forces deployed pursuant to Executive orders, operational plans, or concept plans approved by the Secretary of Defense are also considered deployed. An operational deployment begins when most of a unit or detachment, or an individual not attached to a unit or detachment leaves a homeport, station, or base, or leaves from an en route training location to meet a Secretary of Defense-approved operational requirement. A deployment ends when most of the unit or detachment, or an individual not attached to a unit or detachment, returns to their homeport, station, or base.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/glossary/part2/parental-leave" status="VERIFIED">
+        <heading>parental leave</heading>
+        <content><p>A period of non-chargeable leave granted to a member following the birth of the member's child, adoption of a minor child by the member, or placement of a minor child with the member for adoption or long-term foster care in order to care for the child.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/glossary/part2/placement-for-adoption" status="VERIFIED">
+        <heading>placement for adoption</heading>
+        <content><p>The action of placing a minor child with the prospective adoptive parents in which there is a contractual agreement between the prospective adoptive parents and the qualifying adoption agency occurring before the legal finalization of the adoption.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/glossary/part2/placement-for-long-term-foster-care" status="VERIFIED">
+        <heading>placement for long-term foster care</heading>
+        <content><p>The action of placing a minor child in foster care in which there is an expectation and contractual agreement between the foster parents and the child-placing agency that the child remain in the home of the foster parents for a minimum of 24 months.</p></content>
+      </paragraph>
+      <paragraph identifier="/us/dod/dtm/2023/23-001/glossary/part2/surrogacy" status="VERIFIED">
+        <heading>surrogacy</heading>
+        <content><p>A legal agreement whereby a person agrees to undergo pregnancy to deliver a child for another party to whom they will surrender and transfer the child for custody and care.</p></content>
+      </paragraph>
+    </paragraph>
+  </paragraph>
+</issuance>
