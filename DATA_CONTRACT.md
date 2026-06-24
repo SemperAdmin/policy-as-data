@@ -1,44 +1,43 @@
-# Frozen data contract, policy-as-data proof of concept
+# Data contract, policy-as-data proof of concept
 
-This folder is the spine of the proof of concept. It is artifact one of three.
-The implementing agent reads this before writing any code.
+This document governs the encoded artifacts in `data/`. It is the standing
+mandate for anyone — human or agent — who touches the encoding.
 
 ## What this proves
 
-One rule from one policy, parsed to structured data, drives a decision the live
-system gets wrong. The worked rule is MARADMIN 051/23, the Military Parental
-Leave Program. The lead case is a 5-day parental leave request.
+That one Marine Corps issuance can be restricted into structured data — markup
+plus an authority graph — faithfully enough that every provision is addressable
+and its authority is traceable to statute. The worked document is MARADMIN
+051/23, the Military Parental Leave Program.
 
 ## Read-only mandate
 
-The implementing agent treats the files in `data/` as fixed inputs.
+The files in `data/` are a faithful record of the source issuance, not a
+workspace.
 
-- The agent changes logic and UI. The agent does not change encoded rule values.
-- A rule value reads as it does because the issuance says so. The 84-day cap is
-  84 because MARADMIN 051/23 says 84. If a test wants a different number, the
-  test is wrong or the encoding is wrong, and a human decides which. The agent
-  does not edit the rule data to make a test pass.
+- Encoded values read as they do because the issuance says so. The 84-day cap
+  is 84 because MARADMIN 051/23 says 84.
+- No value is added, changed, or removed except to correct it against the
+  source issuance text, with the change recorded. Nothing is encoded that is
+  not in the source.
 
 ## File map
 
-- `src/types.ts` - the TypeScript contract for `evaluate()`. Input shape, output
-  shape, and the four hard constraints on the function.
-- `data/maradmin-051-23.rules.json` - the encoded rule values, each with a
-  verification status and a citation. This is the file the engine reads at run
-  time.
-- `data/maradmin-051-23.uslm.xml` - document-structure layer. USLM-aligned
-  markup of paragraph 8, with stable identifiers.
-- `data/maradmin-051-23.authority.jsonld` - authority graph. Links the cap
+- `data/maradmin-051-23.uslm.xml` — document-structure layer. USLM-aligned
+  markup of the issuance, with stable `@identifier`s on every provision.
+- `data/maradmin-051-23.authority.jsonld` — authority graph. Links each encoded
   provision up through DoDI 1327.06 to 10 U.S.C. 701.
+- `data/maradmin-051-23.rules.json` — machine-readable rule values extracted
+  from the text, each carrying a verification status and a citation.
 
 ## Verification legend
 
-Every rule and every citation carries one status.
+Every encoded value and every citation carries one status.
 
-- `VERIFIED` - the value is confirmed against retrieved issuance text.
-- `UNVERIFIED` - the value comes from a subject-matter assertion and the exact
-  source line is not yet located. The engine treats an UNVERIFIED rule as
-  load-bearing-but-unproven.
+- `VERIFIED` — confirmed against the retrieved issuance text.
+- `UNVERIFIED` — the value comes from a subject-matter assertion and the exact
+  source line is not yet located. An UNVERIFIED provision is recorded as
+  present-but-unproven, and is not asserted in the USLM markup until confirmed.
 
 ## Verified versus unverified, current state
 
@@ -47,22 +46,19 @@ VERIFIED:
 - `MAX_PARENTAL_LEAVE_DAYS` = 84. Source: MARADMIN 051/23, para 8.
 - `ENTITLEMENT_WINDOW_DAYS` = 365. Source: MARADMIN 051/23, para 8.b.(2).
 
-UNVERIFIED, confirm the source line before the demo relies on either:
+UNVERIFIED, confirm the source line before relying on either:
 
-- `MIN_INCREMENT_DAYS` = 7. The 5-day case denies only on this rule.
-- `EVENT_PROXIMITY_MERGE_DAYS` = 3. The twins-plus-adoption merge depends on it.
+- `MIN_INCREMENT_DAYS` = 7.
+- `EVENT_PROXIMITY_MERGE_DAYS` = 3.
 
-## Loud-failure behavior
+## Why the verified/unverified split is on the face of the data
 
-When the binding constraint for a request is an UNVERIFIED rule, the decision
-outcome is `UNVERIFIED`, not `DENY` and not `APPROVE`, and
-`restsOnUnverifiedRule` is true. The 5-day request therefore returns
-`UNVERIFIED` today, with a reason naming the unconfirmed increment rule. It
-flips to `DENY` only after a human marks `MIN_INCREMENT_DAYS` as VERIFIED
-against a confirmed source line. This is the feature, not a gap. The system
-distinguishes confirmed policy from asserted policy on the face of the output.
+The point of the encoding is to distinguish confirmed policy from asserted
+policy at the level of the data itself. A reader never has to guess which
+provisions are grounded in the issuance text and which are awaiting a confirmed
+source line — the status says so, on every value and every citation.
 
 ## Confidence
 
-Cap and window encoding: 0.9. Increment and proximity rules as written: 0.55,
-source line unverified. Contract design: 0.82.
+Cap and window encoding: 0.9. Increment and proximity values as written: 0.55,
+source line unverified. Encoding approach: 0.82.
