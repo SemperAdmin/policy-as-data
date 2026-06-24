@@ -33,6 +33,15 @@ pol:Authority a owl:Class ;
 pol:Statute a owl:Class ; rdfs:subClassOf pol:Authority ;
   pol:authorityLevel 1 ; rdfs:label "Statute (U.S. Code)" .
 
+pol:PublicLaw a owl:Class ; rdfs:subClassOf pol:Statute ;
+  pol:authorityLevel 1 ; rdfs:label "Public Law (act of Congress as enacted)" .
+
+pol:DirectiveTypeMemorandum a owl:Class ; rdfs:subClassOf pol:Authority ;
+  pol:authorityLevel 3 ; rdfs:label "Directive-Type Memorandum (DoD)" .
+
+pol:Memorandum a owl:Class ; rdfs:subClassOf pol:Authority ;
+  pol:authorityLevel 3 ; rdfs:label "Memorandum" .
+
 pol:CodeOfFederalRegulations a owl:Class ; rdfs:subClassOf pol:Authority ;
   pol:authorityLevel 2 ; rdfs:label "Code of Federal Regulations" .
 

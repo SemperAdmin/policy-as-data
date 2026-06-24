@@ -23,6 +23,13 @@ const DOCS = [
     authority: "../data/maradmin-129-23.authority.jsonld",
     rules: null,
   },
+  {
+    id: "/us/dod/dtm/2023/23-001",
+    label: "DTM 23-001 · OSD",
+    uslm: "../data/dtm-23-001.uslm.xml",
+    authority: "../data/dtm-23-001.authority.jsonld",
+    rules: null,
+  },
 ];
 
 const $ = (sel) => document.querySelector(sel);
@@ -74,12 +81,14 @@ function renderMeta(issuance) {
   const meta = child(issuance, "meta");
   const get = (n) => (child(meta, n)?.textContent || "").trim();
   const derives = children(meta, "derivesFrom").map((d) => d.getAttribute("href"));
+  const when = get("dtg") || get("date");
+  const signer = get("signer");
   $("#doc-meta").innerHTML = `
-    <div class="subject">${get("subject")}</div>
+    <div class="subject">${escapeHtml(get("subject"))}</div>
     <div class="kv">
       ${issuance.getAttribute("issuanceType")} ·
       <code>${issuance.getAttribute("identifier")}</code> ·
-      ${get("dtg")} · ${get("originator")}
+      ${when} · ${get("originator")}${signer ? ` · signed ${signer}` : ""}
     </div>
     <div class="kv">derives authority from: ${derives.map((d) => `<code>${d}</code>`).join(" , ") || "—"}</div>`;
 }

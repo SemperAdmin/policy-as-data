@@ -14,12 +14,23 @@ Why this exists: the environment cannot fetch these from marines.mil / DoD sites
 (network policy + 403s), and the project's discipline forbids encoding text we
 cannot confirm against the source. So acquisition is a human-in-the-loop step.
 
-## Encoded (2)
+## Encoded (3)
 
 | Identifier | Document |
 |---|---|
 | `/us/usmc/maradmin/2023/051` | MARADMIN 051/23, Expansion of the MC Military Parental Leave Program — full |
 | `/us/usmc/maradmin/2023/129` | MARADMIN 129/23, Clarification to MARADMIN 051/23 — full |
+| `/us/dod/dtm/2023/23-001` | OSD DTM 23-001, Expansion of the MPLP — full (the DoD authority 051/23 implements) |
+
+## Received, queued for encoding (2)
+
+Source text in hand; large documents, encoded next. The schema (v1.1) now
+supports their structure (enclosures, chapters, From/To/Ref/Encl headers).
+
+| Identifier | Document |
+|---|---|
+| `/us/usmc/mco/1050.3J` | MCO 1050.3J, Regulations for Leave, Liberty and Administrative Absence (56 pp) |
+| `/us/usmc/mco/5000.12F` | MCO 5000.12F CH-1, Marine Corps Policy Concerning Parenthood and Pregnancy (47 pp) |
 
 ## Need source text (8)
 

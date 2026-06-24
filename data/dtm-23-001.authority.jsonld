@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "pol": "https://policy.usmc.mil/ns#",
+    "label": "pol:label",
+    "identifier": "pol:identifier",
+    "derivesAuthorityFrom": { "@id": "pol:derivesAuthorityFrom", "@type": "@id" },
+    "references": { "@id": "pol:references", "@type": "@id" },
+    "supersedes": { "@id": "pol:supersedes", "@type": "@id" },
+    "partOf": { "@id": "pol:partOf", "@type": "@id" },
+    "governs": { "@id": "pol:governs", "@type": "@id" }
+  },
+  "@graph": [
+    {
+      "@id": "/us/usc/10/701",
+      "@type": "pol:Statute",
+      "label": "10 U.S.C. 701, Entitlement and accrual of leave"
+    },
+    {
+      "@id": "/us/usc/pl/117-81",
+      "@type": "pol:PublicLaw",
+      "label": "Public Law 117-81, Section 621 (National Defense Authorization Act for Fiscal Year 2022), Dec 27, 2021 — amended 10 U.S.C. 701"
+    },
+    {
+      "@id": "/us/dod/dodd/5124.02",
+      "@type": "pol:DoDDirective",
+      "label": "DoD Directive 5124.02, Under Secretary of Defense for Personnel and Readiness (USD(P&R))"
+    },
+    {
+      "@id": "/us/dod/dodi/1327.06",
+      "@type": "pol:DoDInstruction",
+      "label": "DoDI 1327.06, Leave and Liberty Policy and Procedures",
+      "derivesAuthorityFrom": "/us/usc/10/701"
+    },
+    {
+      "@id": "/us/dod/memo/usdpr/2018/parental-leave",
+      "@type": "pol:Memorandum",
+      "label": "USD(P&R) Memorandum, Parental Leave for Military Personnel in Connection with the Birth or Adoption of a Child, March 23, 2018"
+    },
+    {
+      "@id": "/us/dod/dtm/2023/23-001",
+      "@type": "pol:DirectiveTypeMemorandum",
+      "label": "Directive-type Memorandum 23-001, Expansion of the Military Parental Leave Program",
+      "derivesAuthorityFrom": [
+        "/us/dod/dodd/5124.02",
+        "/us/usc/10/701"
+      ],
+      "references": [
+        "/us/usc/pl/117-81",
+        "/us/dod/dodi/1327.06"
+      ],
+      "supersedes": "/us/dod/memo/usdpr/2018/parental-leave"
+    },
+    {
+      "@id": "/us/dod/dtm/2023/23-001/att3/p3/a/1",
+      "@type": "pol:Provision",
+      "label": "Minimum increment (7 days) and maximum increments (12), DoD level",
+      "partOf": "/us/dod/dtm/2023/23-001",
+      "governs": "pol:ParentalLeaveIncrementDecision"
+    },
+    {
+      "@id": "/us/dod/dtm/2023/23-001/att3/p2/e/2",
+      "@type": "pol:Provision",
+      "label": "Qualifying-event proximity merge (72-hour period), DoD level",
+      "partOf": "/us/dod/dtm/2023/23-001",
+      "governs": "pol:QualifyingEventMergeDecision"
+    }
+  ]
+}

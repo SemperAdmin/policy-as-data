@@ -71,6 +71,22 @@ This is the project's core discipline enforced by the schema itself: confirmed
 policy and asserted policy are distinguishable on the face of the data, and you
 cannot encode a provision while staying silent about which it is.
 
+## Document types (v1.1)
+
+v1.0 modeled the MARADMIN (naval message). v1.1 generalizes to other issuance
+types in the corpus while staying backward compatible:
+
+- `<num>` is **optional**, so named memo sections (Purpose, Applicability,
+  Policy …) and containers (attachments, enclosures) need not be numbered.
+- `<meta>` accepts `date` and `signer` (memos/orders) alongside `dtg` (messages).
+- `@level` on a provision labels the structural unit it represents:
+  `section`, `attachment`, `enclosure`, `chapter`, `appendix`, `part`,
+  `paragraph`.
+
+The encoded OSD DTM 23-001 exercises this: named sections, three attachments,
+and a glossary, all under one schema. Marine Corps Orders (enclosures, chapters)
+use the same constructs.
+
 ## Multi-level numbering
 
 Naval-message paragraphs nest as 1 / a / (1) / (a). `<paragraph>` is recursive
@@ -100,8 +116,10 @@ The schema is the foundation; the marked-up MARADMINs are the worked corpus:
 
 - `data/maradmin-051-23.uslm.xml` — MARADMIN 051/23 in full (78 provisions).
 - `data/maradmin-129-23.uslm.xml` — MARADMIN 129/23, its clarification, in full.
+- `data/dtm-23-001.uslm.xml` — OSD DTM 23-001 in full (93 provisions), a
+  different document type proving the v1.1 generalization.
 
-Both validate against `usmc-issuance-1.0.xsd`, and every citation in
+All validate against `usmc-issuance-1.0.xsd`, and every citation in
 `data/maradmin-051-23.rules.json` resolves to a provision `@identifier` in the
 markup. The next document is mechanical: encode to the same schema and identifier
 scheme.
