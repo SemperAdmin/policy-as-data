@@ -26,6 +26,7 @@ data/maradmin-129-23.uslm.xml          MARADMIN 129/23 (Clarification to 051/23)
 data/maradmin-129-23.authority.jsonld  129/23 authority graph, including `clarifies` -> 051/23
 
 DATA_CONTRACT.md                       the read-only mandate and the verification legend
+REFERENCES.md                          source backlog: authorities cited but not yet encoded
 ```
 
 The schema is the foundation; the marked-up MARADMINs are the worked corpus that
