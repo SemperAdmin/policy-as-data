@@ -108,6 +108,17 @@ pol:supersedes a owl:ObjectProperty ;
   rdfs:label "supersedes" ;
   rdfs:comment "This issuance replaces an earlier one." .
 
+pol:references a owl:ObjectProperty ;
+  rdfs:domain pol:Authority ; rdfs:range pol:Authority ;
+  rdfs:label "references" ;
+  rdfs:comment "Cites another issuance as a reference without deriving authority from it (e.g., a standing order the message provides interim guidance for)." .
+
+pol:inferredAuthorityFrom a owl:ObjectProperty ;
+  rdfs:subPropertyOf pol:derivesAuthorityFrom ;
+  rdfs:domain pol:Authority ; rdfs:range pol:Authority ;
+  rdfs:label "inferred authority from" ;
+  rdfs:comment "An authority link NOT cited in the source text but inferred from the policy hierarchy. Kept distinct from derivesAuthorityFrom so an inference is never mistaken for a citation." .
+
 pol:authorityLevel a owl:DatatypeProperty ;
   rdfs:range xsd:integer ;
   rdfs:label "authority level" ;

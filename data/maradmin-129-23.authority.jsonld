@@ -4,6 +4,8 @@
     "label": "pol:label",
     "identifier": "pol:identifier",
     "derivesAuthorityFrom": { "@id": "pol:derivesAuthorityFrom", "@type": "@id" },
+    "inferredAuthorityFrom": { "@id": "pol:inferredAuthorityFrom", "@type": "@id" },
+    "references": { "@id": "pol:references", "@type": "@id" },
     "clarifies": { "@id": "pol:clarifies", "@type": "@id" }
   },
   "@graph": [
@@ -15,20 +17,31 @@
     {
       "@id": "/us/dod/dodi/1327.06",
       "@type": "pol:DoDInstruction",
-      "label": "DoDI 1327.06",
+      "label": "DoDI 1327.06, Leave and Liberty Policy and Procedures",
       "derivesAuthorityFrom": "/us/usc/10/701"
+    },
+    {
+      "@id": "/us/osd/dtm/2023/expansion-mplp",
+      "@type": "pol:DoDDirective",
+      "label": "USD(P&R) Directive-Type Memorandum, Expansion of the Military Parental Leave Program (4 Jan 2023). MARADMIN 129/23 reference (b).",
+      "inferredAuthorityFrom": "/us/dod/dodi/1327.06"
+    },
+    {
+      "@id": "/us/usmc/mco/1050.3J",
+      "@type": "pol:MarineCorpsOrder",
+      "label": "MCO 1050.3J, Regulations for Leave, Liberty and Administrative Absence. MARADMIN 129/23 reference (c)."
     },
     {
       "@id": "/us/usmc/maradmin/2023/051",
       "@type": "pol:ServiceMessage",
-      "label": "MARADMIN 051/23",
-      "derivesAuthorityFrom": "/us/dod/dodi/1327.06"
+      "label": "MARADMIN 051/23, Expansion of the Marine Corps Military Parental Leave Program. MARADMIN 129/23 reference (a)."
     },
     {
       "@id": "/us/usmc/maradmin/2023/129",
       "@type": "pol:ServiceMessage",
       "label": "MARADMIN 129/23, Clarification to MARADMIN 051/23",
-      "derivesAuthorityFrom": "/us/dod/dodi/1327.06",
+      "derivesAuthorityFrom": "/us/osd/dtm/2023/expansion-mplp",
+      "references": "/us/usmc/mco/1050.3J",
       "clarifies": "/us/usmc/maradmin/2023/051"
     }
   ]
