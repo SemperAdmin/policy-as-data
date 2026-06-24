@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  USMC issuance schema, version 1.0.
+
+  A USLM-aligned profile for Marine Corps issuances (MARADMINs first, then
+  orders), extending the House USLM model downward to service-level documents.
+  This schema defines DOCUMENT STRUCTURE only. The authority relationships
+  between issuances live in the authority ontology (schema/authority-ontology.ttl)
+  and the per-document authority graph (data/*.authority.jsonld).
+
+  Design goals it enforces:
+    1. Every provision is addressable      -> @identifier is required everywhere.
+    2. Verification is on the face of data  -> @status (VERIFIED|UNVERIFIED) is
+                                               required on the issuance and on
+                                               every provision. Nothing is
+                                               encoded without declaring whether
+                                               it is confirmed against the source.
+    3. Multi-level numbering is first-class -> <paragraph> nests to any depth and
+                                               <num> carries an explicit @style
+                                               (1 / a / (1) / (a) / compound).
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="https://policy.usmc.mil/ns/uslm/1.0"
+           targetNamespace="https://policy.usmc.mil/ns/uslm/1.0"
+           elementFormDefault="qualified">
+
+  <!-- Confirmed against the source issuance text, or not yet. -->
+  <xs:simpleType name="VerificationStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VERIFIED"/>
+      <xs:enumeration value="UNVERIFIED"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Enumeration style of a provision designator. -->
+  <xs:simpleType name="EnumStyle">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="arabic"/>       <!-- 1  2  3   -->
+      <xs:enumeration value="alpha-lower"/>  <!-- a  b  c    -->
+      <xs:enumeration value="alpha-upper"/>  <!-- A  B  C    -->
+      <xs:enumeration value="paren-arabic"/> <!-- (1) (2)    -->
+      <xs:enumeration value="paren-alpha"/>  <!-- (a) (b)    -->
+      <xs:enumeration value="compound"/>     <!-- 8.b.(2)    -->
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- A stable, path-style identifier, e.g. /us/usmc/maradmin/2023/051/p8 -->
+  <xs:simpleType name="Identifier">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="/[A-Za-z0-9._/()-]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="issuance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="meta" type="Meta"/>
+        <xs:element name="paragraph" type="Paragraph" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="identifier" type="Identifier" use="required"/>
+      <!-- e.g. MARADMIN, MCO, SECNAVINST, DODI -->
+      <xs:attribute name="issuanceType" type="xs:string" use="required"/>
+      <xs:attribute name="status" type="VerificationStatus" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="Meta">
+    <xs:sequence>
+      <xs:element name="originator" type="xs:string"/>
+      <xs:element name="dtg" type="xs:string"/>
+      <xs:element name="subject" type="xs:string"/>
+      <!-- Upward authority links; resolved in the authority graph. -->
+      <xs:element name="derivesFrom" type="AuthorityRef"
+                  minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AuthorityRef">
+    <xs:attribute name="href" type="Identifier" use="required"/>
+  </xs:complexType>
+
+  <!-- A provision. Recursive: a paragraph may contain sub-paragraphs. -->
+  <xs:complexType name="Paragraph">
+    <xs:sequence>
+      <xs:element name="num" type="Num"/>
+      <xs:element name="heading" type="xs:string" minOccurs="0"/>
+      <xs:element name="content" type="Content" minOccurs="0"/>
+      <xs:element name="paragraph" type="Paragraph"
+                  minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="identifier" type="Identifier" use="required"/>
+    <xs:attribute name="status" type="VerificationStatus" use="required"/>
+    <xs:attribute name="derivesFrom" type="Identifier"/>
+  </xs:complexType>
+
+  <xs:complexType name="Num">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="style" type="EnumStyle"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="Content">
+    <xs:sequence>
+      <xs:element name="p" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

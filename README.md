@@ -15,10 +15,24 @@ Military Parental Leave Program.
 ## Artifacts
 
 ```
-data/maradmin-051-23.uslm.xml          document-structure markup (USLM-aligned), stable @identifiers
-data/maradmin-051-23.authority.jsonld  authority graph: provision -> issuance -> DoDI -> statute
-data/maradmin-051-23.rules.json        machine-readable rule values extracted from the text, each cited
+schema/usmc-issuance-1.0.xsd           the schema: structure of one issuance (USLM-aligned)
+schema/authority-ontology.ttl          the ontology: authority hierarchy + provenance relationships (OWL/RDF)
+schema/README.md                       schema design, identifier scheme, verification semantics
+
+data/maradmin-051-23.uslm.xml          MARADMIN 051/23, full document, marked up and schema-valid
+data/maradmin-051-23.authority.jsonld  051/23 authority graph: provisions -> issuance -> DoDI -> statute
+data/maradmin-051-23.rules.json        machine-readable rule values extracted from 051/23, each cited
+data/maradmin-129-23.uslm.xml          MARADMIN 129/23 (Clarification to 051/23), full document
+data/maradmin-129-23.authority.jsonld  129/23 authority graph, including `clarifies` -> 051/23
+
 DATA_CONTRACT.md                       the read-only mandate and the verification legend
+```
+
+The schema is the foundation; the marked-up MARADMINs are the worked corpus that
+exercises it. Validate a document with:
+
+```bash
+xmllint --noout --schema schema/usmc-issuance-1.0.xsd data/maradmin-051-23.uslm.xml
 ```
 
 ## First principles

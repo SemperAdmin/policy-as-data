@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Document-structure layer for the proof of concept.
+  USLM-aligned markup of MARADMIN 129/23, Clarification to MARADMIN 051/23,
+  conforming to the USMC issuance schema (schema/usmc-issuance-1.0.xsd).
+
+  Encoded verbatim from the authoritative message text. This is a SEPARATE
+  issuance from 051/23; the clarifies relationship between them is recorded in
+  the authority graph (maradmin-129-23.authority.jsonld). All provisions are
+  VERIFIED against the retrieved issuance text.
+-->
+<issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://policy.usmc.mil/ns/uslm/1.0 ../schema/usmc-issuance-1.0.xsd"
+          identifier="/us/usmc/maradmin/2023/129"
+          issuanceType="MARADMIN"
+          status="VERIFIED">
+  <meta>
+    <originator>CMC WASHINGTON DC MRA MP</originator>
+    <dtg>081100Z MAR 23</dtg>
+    <subject>Clarification to MARADMIN 051/23</subject>
+    <derivesFrom href="/us/dod/dodi/1327.06"/>
+  </meta>
+
+  <paragraph identifier="/us/usmc/maradmin/2023/129/p1" status="VERIFIED">
+    <num style="arabic">1</num>
+    <content>
+      <p>This MARADMIN provides clarification to reference (a) concerning the expansion of the Military Parental Leave Program (MPLP).</p>
+    </content>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/maradmin/2023/129/p2" status="VERIFIED">
+    <num style="arabic">2</num>
+    <heading>Background</heading>
+    <content>
+      <p>Reference (a) provided implementing guidance for the expansion of the MPLP as authorized by reference (b).  The new policy in reference (b) removed the designators of Primary Caregiver Leave (PCL) and Secondary Caregiver Leave (SCL) as all Marines with a qualifying event are authorized 12 weeks of parental leave.  Additionally, Maternity Convalescent Leave (MCL) that was set at 42 days and began immediately following discharge from a hospital or similar facility or the first full day after a planned home delivery was removed and replaced with convalescent leave that requires a recommendation by a health care provider and approval from a commander.</p>
+    </content>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/maradmin/2023/129/p3" status="VERIFIED">
+    <num style="arabic">3</num>
+    <heading>Convalescent Leave</heading>
+    <content>
+      <p>The period of convalescent leave, under the new policy, is intended to allow the Marine who gave birth, and is not yet fit for duty, time to recover from a medical condition related to the birth event.  It is separate and distinct from parental leave.  Convalescent leave is flexible in that it allows a Marine to receive the proper number of days/weeks needed to properly recover from a birth event, as recommended by their health care provider based on their individual medical circumstances.  Parental leave is not a substitute for convalescent leave for a birth parent.  The approval authority for convalescent leave remains with the commander in accordance with reference (c); however, commanders should not deny convalescent leave for a birth parent Marine based solely on their eligibility for parental leave.</p>
+    </content>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/maradmin/2023/129/p4" status="VERIFIED">
+    <num style="arabic">4</num>
+    <heading>Special Leave Accrual (SLA)</heading>
+    <content>
+      <p>SLA specifically due to a Marine executing parental leave is not authorized.  Marines must still meet the eligibility criteria in reference (c) to be eligible for SLA.  Marines are encouraged to closely monitor their regular (annual) leave and properly plan the execution of it to preclude lost days at the end of a fiscal year.  Reference (a) authorized annual leave to be executed in conjunction with, or in between, increments of parental leave.</p>
+    </content>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/maradmin/2023/129/p5" status="VERIFIED">
+    <num style="arabic">5</num>
+    <content>
+      <p>Release authorized by Lieutenant General James F. Glynn, Deputy  Commandant for Manpower and Reserve Affairs.</p>
+    </content>
+  </paragraph>
+</issuance>
