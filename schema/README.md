@@ -36,6 +36,14 @@ above it.
 `derivesAuthorityFrom` is transitive: a MARADMIN that derives from a DoDI that
 derives from a statute is, by inference, grounded in that statute.
 
+Cited authority is kept distinct from inferred authority. `derivesAuthorityFrom`
+and `references` record links the source text actually states (its REF lines);
+`inferredAuthorityFrom` records a link inferred from the policy hierarchy but not
+cited in the message. MARADMIN 051/23, for example, cites an OSD Directive-Type
+Memorandum and an ASN memo (`derivesAuthorityFrom`) and two MCOs (`references`);
+the connection from that DTM up to DoDI 1327.06 is `inferredAuthorityFrom`, so
+an inference is never mistaken for a citation.
+
 ## Identifier scheme
 
 Every issuance and every provision has a stable, path-style identifier:
