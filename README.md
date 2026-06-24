@@ -25,9 +25,27 @@ data/maradmin-051-23.rules.json        machine-readable rule values extracted fr
 data/maradmin-129-23.uslm.xml          MARADMIN 129/23 (Clarification to 051/23), full document
 data/maradmin-129-23.authority.jsonld  129/23 authority graph, including `clarifies` -> 051/23
 
+viewer/                                read-only viewer: renders the data files into a navigable, badged document
 DATA_CONTRACT.md                       the read-only mandate and the verification legend
 REFERENCES.md                          source backlog: authorities cited but not yet encoded
 ```
+
+## See it: the viewer
+
+`viewer/` renders the encoded policy into something you can look at — the
+document with `VERIFIED`/`UNVERIFIED` badges, and click any provision to trace
+its authority up to statute. It is pure visualization: it only reads the `data/`
+files and adds no logic.
+
+It needs to be served over HTTP (browsers will not `fetch()` from `file://`):
+
+```bash
+python3 -m http.server 8000      # from the repo root
+# then open http://localhost:8000/viewer/
+```
+
+To share it without a local server, enable GitHub Pages on the repo (serve from
+the default branch root); the viewer then lives at `…/viewer/`.
 
 The schema is the foundation; the marked-up MARADMINs are the worked corpus that
 exercises it. Validate the whole corpus — schema conformance, JSON

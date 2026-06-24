@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>policy-as-data — viewer</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>policy-as-data</h1>
+      <p class="tagline">Marine Corps policy, encoded as structured data. Every
+        provision is addressable, verification-tagged, and traceable to its
+        authority. This page only <em>renders</em> the data files &mdash; it adds
+        no logic of its own.</p>
+      <nav id="doc-picker"></nav>
+    </header>
+
+    <main>
+      <section id="document" aria-label="Encoded policy document">
+        <div id="doc-meta"></div>
+        <ol id="doc-body"></ol>
+      </section>
+
+      <aside id="panel" aria-label="Provision detail">
+        <p class="hint">Select any provision to see its verification status,
+          its extracted machine-readable value, and its chain of authority up to
+          statute.</p>
+      </aside>
+    </main>
+
+    <footer>
+      <span id="legend">
+        <span class="badge VERIFIED">VERIFIED</span> confirmed against the
+        issuance text &nbsp;·&nbsp;
+        <span class="badge UNVERIFIED">UNVERIFIED</span> source line not yet
+        located
+      </span>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
