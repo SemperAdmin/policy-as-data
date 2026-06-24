@@ -5,6 +5,8 @@
 import type { ParentalLeaveRequest, ParentalLeaveDecision } from "../src/types.ts";
 import { asRuleSet } from "../src/ruleset.ts";
 import { createEvaluator } from "../src/engine.ts";
+import type { AuthorityGraph } from "../src/authority.ts";
+import { asAuthorityGraph, provenanceFor } from "../src/authority.ts";
 
 const $ = <T extends HTMLElement>(id: string): T => {
   const el = document.getElementById(id);
@@ -12,9 +14,15 @@ const $ = <T extends HTMLElement>(id: string): T => {
   return el as T;
 };
 
+let authority: AuthorityGraph;
+
 async function boot(): Promise<void> {
-  const response = await fetch("./data/maradmin-051-23.rules.json");
-  const ruleSet = asRuleSet(await response.json());
+  const [rulesRes, authRes] = await Promise.all([
+    fetch("./data/maradmin-051-23.rules.json"),
+    fetch("./data/maradmin-051-23.authority.jsonld"),
+  ]);
+  const ruleSet = asRuleSet(await rulesRes.json());
+  authority = asAuthorityGraph(await authRes.json());
   const evaluate = createEvaluator(ruleSet);
 
   const form = $<HTMLFormElement>("request-form");
@@ -48,8 +56,18 @@ function render(decision: ParentalLeaveDecision): void {
        source line.</p>`
     : "";
   const reasons = decision.reasons
-    .map(
-      (r) => `
+    .map((r) => {
+      const prov = provenanceFor(
+        authority,
+        r.citation.identifier,
+        r.citation.status
+      );
+      const chain = prov.asserted
+        ? `<p class="chain">${prov.chain
+            .map((n) => `<span>${n.label}</span>`)
+            .join(" → ")}</p>`
+        : `<p class="chain none">No authority chain asserted for this citation.</p>`;
+      return `
       <li>
         <code>${r.code}</code>
         <p>${r.message}</p>
@@ -58,8 +76,9 @@ function render(decision: ParentalLeaveDecision): void {
           <span class="cstatus ${r.citation.status}">${r.citation.status}</span>
           <br /><span class="cid">${r.citation.identifier}</span>
         </p>
-      </li>`
-    )
+        ${chain}
+      </li>`;
+    })
     .join("");
   out.innerHTML = `
     <h2>Decision ${badge}</h2>
