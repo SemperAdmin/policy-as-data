@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Document-structure layer for the proof of concept.
+  USLM-aligned markup of MARADMIN 051/23, paragraph 8 (parental leave cap).
+  Each provision carries a stable @identifier used by the authority graph
+  (authority.jsonld) and by every Citation in the decision output.
+  Verified values only. Unverified rules are NOT asserted here.
+-->
+<maradmin identifier="/us/usmc/maradmin/2023/051">
+  <meta>
+    <originator>CMC WASHINGTON DC MRA MP</originator>
+    <dtg>272030Z JAN 23</dtg>
+    <subject>Expansion of the Marine Corps Military Parental Leave Program</subject>
+    <derivesFrom href="/us/dod/dodi/1327.06"/>
+  </meta>
+
+  <paragraph identifier="/us/usmc/maradmin/2023/051/p8">
+    <num>8</num>
+    <heading>Parental leave cap</heading>
+    <content>
+      <p>The Marine authorized this leave shall not use over 84 days of
+         parental leave, except as identified in paragraph 8.b.(2).</p>
+    </content>
+  </paragraph>
+
+  <paragraph identifier="/us/usmc/maradmin/2023/051/p8/b/2">
+    <num>8.b.(2)</num>
+    <content>
+      <p>Days remaining from a first qualifying event combine with a second
+         qualifying event, topping up to a total of 84 days, measured from the
+         later event, and forfeited if unused one year from the later event.</p>
+    </content>
+  </paragraph>
+</maradmin>
