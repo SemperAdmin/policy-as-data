@@ -49,6 +49,9 @@
       <xs:enumeration value="alpha-upper"/>  <!-- A  B  C    -->
       <xs:enumeration value="paren-arabic"/> <!-- (1) (2)    -->
       <xs:enumeration value="paren-alpha"/>  <!-- (a) (b)    -->
+      <xs:enumeration value="paren-alpha-upper"/> <!-- (A) (B)  U.S. Code -->
+      <xs:enumeration value="paren-roman-lower"/> <!-- (i) (ii) U.S. Code -->
+      <xs:enumeration value="paren-roman-upper"/> <!-- (I) (II) U.S. Code -->
       <xs:enumeration value="compound"/>     <!-- 8.b.(2)    -->
     </xs:restriction>
   </xs:simpleType>

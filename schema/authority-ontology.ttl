@@ -122,6 +122,11 @@ pol:references a owl:ObjectProperty ;
   rdfs:label "references" ;
   rdfs:comment "Cites another issuance as a reference without deriving authority from it (e.g., a standing order the message provides interim guidance for)." .
 
+pol:amends a owl:ObjectProperty ;
+  rdfs:domain pol:Authority ; rdfs:range pol:Authority ;
+  rdfs:label "amends" ;
+  rdfs:comment "This instrument changes the text of another (e.g., a public law amending a section of the U.S. Code)." .
+
 pol:inferredAuthorityFrom a owl:ObjectProperty ;
   rdfs:subPropertyOf pol:derivesAuthorityFrom ;
   rdfs:domain pol:Authority ; rdfs:range pol:Authority ;

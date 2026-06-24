@@ -30,6 +30,20 @@ const DOCS = [
     authority: "../data/dtm-23-001.authority.jsonld",
     rules: null,
   },
+  {
+    id: "/us/usc/10/701",
+    label: "10 U.S.C. 701 · Statute",
+    uslm: "../data/usc-10-701.uslm.xml",
+    authority: "../data/usc-10-701.authority.jsonld",
+    rules: null,
+  },
+  {
+    id: "/us/usc/10/1052",
+    label: "10 U.S.C. 1052 · Statute",
+    uslm: "../data/usc-10-1052.uslm.xml",
+    authority: "../data/usc-10-1052.authority.jsonld",
+    rules: null,
+  },
 ];
 
 const $ = (sel) => document.querySelector(sel);

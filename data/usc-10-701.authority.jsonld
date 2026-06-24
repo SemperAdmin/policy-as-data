@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "pol": "https://policy.usmc.mil/ns#",
+    "label": "pol:label",
+    "identifier": "pol:identifier",
+    "amends": { "@id": "pol:amends", "@type": "@id" },
+    "partOf": { "@id": "pol:partOf", "@type": "@id" },
+    "governs": { "@id": "pol:governs", "@type": "@id" }
+  },
+  "@graph": [
+    {
+      "@id": "/us/usc/10/701",
+      "@type": "pol:Statute",
+      "label": "10 U.S.C. 701, Entitlement and accumulation of leave"
+    },
+    {
+      "@id": "/us/usc/pl/117-81",
+      "@type": "pol:PublicLaw",
+      "label": "Public Law 117-81, Section 621 (NDAA FY2022) — expanded the parental leave authority in 10 U.S.C. 701(h)",
+      "amends": "/us/usc/10/701"
+    },
+    {
+      "@id": "/us/usc/10/701/h",
+      "@type": "pol:Provision",
+      "label": "12 weeks of parental leave within the one-year period (statutory basis of the 84-day cap)",
+      "partOf": "/us/usc/10/701",
+      "governs": "pol:ParentalLeaveCapDecision"
+    },
+    {
+      "@id": "/us/usc/10/701/h/4",
+      "@type": "pol:Provision",
+      "label": "Leave may be taken in more than one increment (statutory basis of the increment rule)",
+      "partOf": "/us/usc/10/701",
+      "governs": "pol:ParentalLeaveIncrementDecision"
+    },
+    {
+      "@id": "/us/usc/10/701/h/5",
+      "@type": "pol:Provision",
+      "label": "Forfeiture if not taken within one year (statutory basis of the entitlement window)",
+      "partOf": "/us/usc/10/701",
+      "governs": "pol:ParentalLeaveWindowDecision"
+    }
+  ]
+}

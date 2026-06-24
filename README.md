@@ -26,6 +26,8 @@ data/maradmin-129-23.uslm.xml          MARADMIN 129/23 (Clarification to 051/23)
 data/maradmin-129-23.authority.jsonld  129/23 authority graph, including `clarifies` -> 051/23
 data/dtm-23-001.uslm.xml               OSD DTM 23-001 (the DoD authority 051/23 implements), full document
 data/dtm-23-001.authority.jsonld       DTM 23-001 authority graph
+data/usc-10-701.uslm.xml               10 U.S.C. 701 (statute at the top of the chain), subsections (a) and (h)
+data/usc-10-1052.uslm.xml              10 U.S.C. 1052 (adoption expenses; "qualified adoption agency"), full
 
 viewer/                                read-only viewer: renders the data files into a navigable, badged document
 DATA_CONTRACT.md                       the read-only mandate and the verification legend
