@@ -24,6 +24,7 @@
   <meta>
     <originator>Office of the Under Secretary of Defense for Personnel and Readiness</originator>
     <date>Effective August 7, 2025 (reissues the June 16, 2009 edition)</date>
+    <isoDate>2025-08-07</isoDate>
     <signer>Anthony J. Tata, Under Secretary of Defense for Personnel and Readiness</signer>
     <subject>Military Leave, Liberty, and Administrative Absence</subject>
     <derivesFrom href="/us/dod/dodd/5124.02"/>
@@ -92,7 +93,13 @@
       <num style="compound">3.11</num><heading>Non-chargeable Leave</heading>
       <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/a" status="VERIFIED"><num style="alpha-lower">a</num><heading>Convalescent Leave</heading></paragraph>
       <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/b" status="VERIFIED"><num style="alpha-lower">b</num><heading>RC Maternity Leave</heading></paragraph>
-      <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/c" status="VERIFIED"><num style="alpha-lower">c</num><heading>ADPL (Active Duty Parental Leave)</heading></paragraph>
+      <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/c" status="VERIFIED">
+        <num style="alpha-lower">c</num>
+        <heading>ADPL (Active Duty Parental Leave)</heading>
+        <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/c/adpl-entitlement" status="UNVERIFIED">
+          <content><p>Asserted entitlement: up to 12 weeks (84 days) of Active Duty Parental Leave during the one-year period following a qualifying event. The body of paragraph 3.11.c is not yet encoded; this value is recorded as an unverified subject-matter assertion, pending confirmation against the issuance text.</p></content>
+        </paragraph>
+      </paragraph>
       <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/d" status="VERIFIED"><num style="alpha-lower">d</num><heading>IDPL (Inactive Duty Parental Leave)</heading></paragraph>
       <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/e" status="VERIFIED"><num style="alpha-lower">e</num><heading>NCR&amp;R Leave Program</heading></paragraph>
       <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/f" status="VERIFIED"><num style="alpha-lower">f</num><heading>Special Rest and Recuperation (SR&amp;R) Leave Program</heading></paragraph>

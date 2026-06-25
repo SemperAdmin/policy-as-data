@@ -1,7 +1,9 @@
 // docs.js
-// The encoded corpus: one entry per document. Shared by the viewer (app.js) and
-// the searchable table (table.js) so the document list never drifts between them.
-// Paths are relative to the viewer/ pages, which resolve to repo /data at fetch.
+// The encoded corpus: one entry per document. Shared by the viewer (app.js),
+// the searchable table (table.js), and the reference graph (graph.js) so the
+// document list never drifts. Paths are relative to the viewer/ pages, which
+// resolve to repo /data at fetch. `source` links to the official issuance where
+// a confirmed public URL exists.
 
 export const DOCS = [
   {
@@ -10,6 +12,7 @@ export const DOCS = [
     uslm: "../data/maradmin-051-23.uslm.xml",
     authority: "../data/maradmin-051-23.authority.jsonld",
     rules: "../data/maradmin-051-23.rules.json",
+    source: "https://www.marines.mil/News/Messages/Messages-Display/Article/3281525/expansion-of-the-marine-corps-military-parental-leave-program/",
   },
   {
     id: "/us/usmc/maradmin/2023/129",
@@ -17,6 +20,7 @@ export const DOCS = [
     uslm: "../data/maradmin-129-23.uslm.xml",
     authority: "../data/maradmin-129-23.authority.jsonld",
     rules: null,
+    source: "https://www.marines.mil/News/Messages/Messages-Display/Article/3322160/clarification-to-maradmin-05123/",
   },
   {
     id: "/us/usmc/maradmin/2022/523",
@@ -37,7 +41,8 @@ export const DOCS = [
     label: "DoDI 1327.06 · DoD",
     uslm: "../data/dodi-1327.06.uslm.xml",
     authority: "../data/dodi-1327.06.authority.jsonld",
-    rules: null,
+    rules: "../data/dodi-1327.06.rules.json",
+    source: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132706p.pdf",
   },
   {
     id: "/us/dod/dodd/5124.02",
@@ -45,6 +50,7 @@ export const DOCS = [
     uslm: "../data/dodd-5124.02.uslm.xml",
     authority: "../data/dodd-5124.02.authority.jsonld",
     rules: null,
+    source: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodd/512402p.pdf",
   },
   {
     id: "/us/navy/asn-mra/2023/mplp-guidance",
@@ -66,6 +72,7 @@ export const DOCS = [
     uslm: "../data/usc-10-701.uslm.xml",
     authority: "../data/usc-10-701.authority.jsonld",
     rules: null,
+    source: "https://www.law.cornell.edu/uscode/text/10/701",
   },
   {
     id: "/us/usc/10/1052",
@@ -73,6 +80,7 @@ export const DOCS = [
     uslm: "../data/usc-10-1052.uslm.xml",
     authority: "../data/usc-10-1052.authority.jsonld",
     rules: null,
+    source: "https://www.law.cornell.edu/uscode/text/10/1052",
   },
   {
     id: "/us/usmc/mco/5000.12F",
@@ -87,5 +95,6 @@ export const DOCS = [
     uslm: "../data/mco-1050-3J.uslm.xml",
     authority: "../data/mco-1050-3J.authority.jsonld",
     rules: null,
+    source: "https://www.marines.mil/Portals/1/Publications/MCO%201050.3J.pdf",
   },
 ];

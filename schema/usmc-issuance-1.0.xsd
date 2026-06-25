@@ -95,6 +95,8 @@
       <!-- dtg for naval messages; date for memos/orders. At least one applies. -->
       <xs:element name="dtg" type="xs:string" minOccurs="0"/>
       <xs:element name="date" type="xs:string" minOccurs="0"/>
+      <!-- Normalized ISO 8601 date (YYYY-MM-DD) for sorting and filtering. -->
+      <xs:element name="isoDate" type="xs:string" minOccurs="0"/>
       <xs:element name="signer" type="xs:string" minOccurs="0"/>
       <xs:element name="subject" type="xs:string"/>
       <!-- Upward authority links; resolved in the authority graph. -->
