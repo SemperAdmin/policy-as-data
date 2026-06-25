@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Understand the Scheme — policy-as-data</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <h1>Understand the Scheme</h1>
+        <a class="back-link" href="./index.html">&larr; Back to the viewer</a>
+      </div>
+      <p class="tagline">How a policy issuance is turned into structured data:
+        the two layers, the shared identifier spine, the rules the schema
+        enforces, and how it all stays consistent.</p>
+    </header>
+
+    <article class="prose">
+      <div class="inner">
+
+        <p class="lead">The scheme separates <strong>what a document says</strong>
+          from <strong>where its authority comes from</strong>, and joins them with
+          one addressing system. It follows the House's
+          <a href="https://github.com/usgpo/uslm">USLM</a> approach to publishing
+          statute as XML, extended <em>downward</em> through the federal hierarchy
+          to DoD and the Marine Corps.</p>
+
+        <h2>The two layers and the spine</h2>
+        <table>
+          <tr><th>Layer</th><th>Files</th><th>Answers</th></tr>
+          <tr>
+            <td><strong>Document structure</strong></td>
+            <td><code>schema/usmc-issuance-1.0.xsd</code><br /><code>data/*.uslm.xml</code></td>
+            <td>What does this issuance say, and how is it organized?</td>
+          </tr>
+          <tr>
+            <td><strong>Authority / provenance</strong></td>
+            <td><code>schema/authority-ontology.ttl</code><br /><code>data/*.authority.jsonld</code></td>
+            <td>What does this provision derive its authority from, and what does it govern?</td>
+          </tr>
+          <tr>
+            <td><strong>The spine</strong></td>
+            <td>path-style identifiers</td>
+            <td>The same address names a provision in <em>both</em> layers.</td>
+          </tr>
+        </table>
+
+        <h2>Layer 1 &mdash; the document-structure schema (XSD)</h2>
+        <p>A document is an <code>&lt;issuance&gt;</code> containing
+          <code>&lt;meta&gt;</code> and a recursive tree of
+          <code>&lt;paragraph&gt;</code>s.</p>
+<pre><code>&lt;issuance identifier="…" issuanceType="MARADMIN" status="VERIFIED"&gt;
+  &lt;meta&gt; originator, dtg|date, signer?, subject, derivesFrom* &lt;/meta&gt;
+  &lt;paragraph identifier="…" status="VERIFIED" level="…"&gt;
+    &lt;num style="…"&gt;8&lt;/num&gt;
+    &lt;heading&gt;…&lt;/heading&gt;
+    &lt;content&gt;&lt;p&gt;…&lt;/p&gt;&lt;/content&gt;
+    &lt;paragraph&gt;…&lt;/paragraph&gt;   &lt;!-- nests to any depth --&gt;
+  &lt;/paragraph&gt;
+&lt;/issuance&gt;</code></pre>
+
+        <p>The schema makes the discipline non-optional. It enforces four invariants:</p>
+        <ol>
+          <li><strong>Everything is addressable.</strong> <code>@identifier</code>
+            is required on the issuance and every paragraph.</li>
+          <li><strong>Verification is on the face of the data.</strong>
+            <code>@status</code> (<span class="badge VERIFIED">VERIFIED</span> /
+            <span class="badge UNVERIFIED">UNVERIFIED</span>) is required
+            everywhere &mdash; you cannot encode a provision without declaring
+            whether it is confirmed against the source.</li>
+          <li><strong>Numbering is data, not formatting.</strong> Paragraphs nest
+            to any depth, and <code>&lt;num style="…"&gt;</code> names the
+            designator's kind (<code>arabic</code>, <code>alpha-lower</code>,
+            <code>paren-arabic</code>, <code>paren-alpha</code>,
+            <code>paren-alpha-upper</code>, <code>paren-roman-lower/-upper</code>,
+            <code>compound</code>). This is what makes <code>8.a.(1)(b)</code> and
+            the statute's <code>(h)(1)(B)(i)(I)</code> exact, addressable
+            structure.</li>
+          <li><strong>It generalizes across document types.</strong>
+            <code>&lt;num&gt;</code> is optional (named memo sections),
+            <code>&lt;meta&gt;</code> takes <code>dtg</code> or
+            <code>date</code>+<code>signer</code>, and <code>@level</code> labels
+            the structural unit (<code>section</code>/<code>attachment</code>/
+            <code>enclosure</code>/<code>chapter</code>/<code>appendix</code>/
+            <code>part</code>). One schema validated a naval message, a DoD memo, a
+            Marine Corps Order, a DoD instruction, and a U.S. Code section.</li>
+        </ol>
+
+        <h2>Layer 2 &mdash; the authority ontology (OWL / RDF)</h2>
+        <p>This is the part beyond USLM: a small ontology in the
+          <code>pol:</code> namespace defining a ranked hierarchy of authority and
+          the relationships between issuances.</p>
+
+        <h3>The hierarchy (lower level outranks higher)</h3>
+<pre><code>1  Statute, PublicLaw
+2  CodeOfFederalRegulations, ExecutiveOrder
+3  DoDDirective, DoDInstruction, DirectiveTypeMemorandum, Memorandum, OpmIssuance
+4  NavyIssuance
+5  MarineCorpsOrder, ServiceMessage (MARADMIN)</code></pre>
+
+        <h3>The relationships</h3>
+        <ul>
+          <li><code>derivesAuthorityFrom</code> &mdash; transitive; the cited authority a document flows from.</li>
+          <li><code>inferredAuthorityFrom</code> &mdash; a subproperty of the above, for links <em>not</em> stated in the text but inferred &mdash; so an inference is never mistaken for a citation.</li>
+          <li><code>references</code> &mdash; cites without deriving authority.</li>
+          <li><code>amends</code> / <code>supersedes</code> / <code>clarifies</code> &mdash; public-law-amends-statute, reissue-cancels-prior, follow-on-clarifies-prior.</li>
+          <li><code>partOf</code> &mdash; a provision belongs to its issuance.</li>
+          <li><code>governs</code> &mdash; a provision controls a named <code>Decision</code>.</li>
+        </ul>
+        <p>The <code>governs</code> edge makes the lineage literal:
+          <code>10 U.S.C. 701(h)</code>, the DoDI's <code>3.11.c</code>, the DTM,
+          and <code>MARADMIN 051/23</code> all <code>govern</code> the same
+          <code>ParentalLeaveCapDecision</code> &mdash; one rule traced from the
+          Marine up to enacted law.</p>
+
+        <h2>The spine &mdash; the identifier scheme</h2>
+        <p>One path-style address per provision, used identically in the markup
+          (<code>@identifier</code>) and the graph (<code>@id</code>):</p>
+<pre><code>/us/usc/10/701/h/1/A                  ← statute, subparagraph
+/us/dod/dtm/2023/23-001/att3/p3/a/1   ← DTM, deep procedure
+/us/usmc/maradmin/2023/051/p11/d      ← MARADMIN, the 84-day cap</code></pre>
+        <p>Pattern: <code>/jurisdiction / organization / series / number / …provision path</code>.
+          Because both layers use the same string, a citation in the markup and its
+          node in the authority graph point at the exact same thing.</p>
+
+        <h2>The verification model</h2>
+        <p><span class="badge VERIFIED">VERIFIED</span> means confirmed against the
+          retrieved issuance text; <span class="badge UNVERIFIED">UNVERIFIED</span>
+          means present but the source line is not yet located. It is required by
+          the schema, propagates onto every citation, and is the project's
+          signature: the data distinguishes <em>confirmed policy</em> from
+          <em>asserted policy</em> on its face.</p>
+
+        <h2>What ties it together &mdash; the validator</h2>
+        <p><code>tools/validate.py</code> keeps the layers consistent, which is what
+          makes the scheme trustworthy at scale:</p>
+        <ol>
+          <li><strong>Schema</strong> &mdash; every <code>*.uslm.xml</code> validates against the XSD.</li>
+          <li><strong>Well-formedness</strong> &mdash; every JSON / JSON-LD parses.</li>
+          <li><strong>Ontology</strong> &mdash; the Turtle parses.</li>
+          <li><strong>Conformance</strong> &mdash; every <code>pol:</code> type/predicate used in a graph is declared in the ontology.</li>
+          <li><strong>Referential integrity</strong> &mdash; every citation and every <code>Provision</code> node resolves to a real <code>@identifier</code> in the markup.</li>
+        </ol>
+
+        <h2>Why it is built this way</h2>
+        <p>Keep <strong>structure</strong> and <strong>authority</strong> in
+          separate layers so each can be reasoned about independently, but bind
+          them with <strong>one identifier spine</strong> so nothing drifts. Make
+          <strong>addressability</strong> and <strong>verification</strong>
+          schema-mandatory so the data cannot be sloppy. Model
+          <strong>numbering and authority as data</strong> &mdash; not formatting,
+          not prose &mdash; so machines can traverse it. Get the scheme right once,
+          and thousands of issuances can run through it and be validated. That is
+          the thesis.</p>
+
+        <p style="margin-top:1.5rem"><a class="back-link" href="./index.html">&larr; Back to the viewer</a></p>
+      </div>
+    </article>
+
+    <footer>
+      <span>policy-as-data &mdash; the scheme: <code>schema/usmc-issuance-1.0.xsd</code> (structure) + <code>schema/authority-ontology.ttl</code> (authority)</span>
+    </footer>
+  </body>
+</html>
