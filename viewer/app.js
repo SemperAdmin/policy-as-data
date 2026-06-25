@@ -25,7 +25,7 @@ function children(el, localName) {
   return [...el.children].filter((c) => c.localName === localName);
 }
 
-async function loadDoc(doc) {
+async function loadDoc(doc, selectProvId) {
   $("#document").classList.add("loading");
   try {
     const [xmlText, authority, rules] = await Promise.all([
@@ -49,6 +49,7 @@ async function loadDoc(doc) {
     renderMeta(issuance);
     renderBody(issuance);
     resetPanel();
+    if (selectProvId) selectById(selectProvId);
   } catch (err) {
     $("#doc-body").innerHTML = `<li class="err">Could not load ${doc.uslm}: ${err.message}.
       Serve the repo root over HTTP (see the README) — fetch() will not read file://.</li>`;
@@ -68,7 +69,7 @@ function renderMeta(issuance) {
       <code>${issuance.getAttribute("identifier")}</code> ·
       ${when} · ${get("originator")}${signer ? ` · signed ${signer}` : ""}
     </div>
-    <div class="kv">derives authority from: ${derives.map((d) => `<code>${d}</code>`).join(" , ") || "—"}</div>`;
+    <div class="kv">derives authority from: ${derives.map((d) => refLink(d, labelFor(d))).join(" , ") || "—"}</div>`;
 }
 
 function renderBody(issuance) {
@@ -126,7 +127,32 @@ function selectProvision(id, status, heading, text) {
     <p class="prov-text">${escapeHtml(text) || "<em>(container provision)</em>"}</p>
     ${rule ? renderRule(rule) : ""}
     <h2>Authority chain</h2>
-    ${renderChain(id)}`;
+    ${renderChain(id)}
+    ${renderRelated()}`;
+}
+
+// Outgoing reference-type links of the current issuance, as clickable links.
+function renderRelated() {
+  const node = state.authorityById.get(state.issuanceId);
+  if (!node) return "";
+  const groups = [
+    ["references", "references"],
+    ["clarifies", "clarifies"],
+    ["supersedes", "supersedes"],
+    ["amends", "amends"],
+  ];
+  const parts = [];
+  for (const [key, label] of groups) {
+    const ids = asArray(node[key]);
+    if (ids.length) {
+      parts.push(
+        `<div class="rel"><span class="edge ${key}">${label}</span> ${ids
+          .map((id) => refLink(id, labelFor(id)))
+          .join(", ")}</div>`
+      );
+    }
+  }
+  return parts.length ? `<h2>Related documents</h2>${parts.join("")}` : "";
 }
 
 function renderRule(rule) {
@@ -154,7 +180,7 @@ function renderChain(provId) {
     const type = node ? typeOf(node) : "";
     items.push(`<li>
       ${edgeLabel ? `<span class="edge ${edgeClass}">${edgeLabel}</span> ` : ""}
-      <span class="lbl">${label}</span>
+      <span class="lbl">${refLink(nodeId, label)}</span>
       <span class="type">${type} · ${nodeId}</span></li>`);
     if (!node) return;
     for (const up of asArray(node.derivesAuthorityFrom)) walk(up, "cited", "cited");
@@ -176,6 +202,30 @@ function asArray(v) {
   return v == null ? [] : Array.isArray(v) ? v : [v];
 }
 
+// Which encoded document owns an identifier (root id, or a provision under it).
+function docForIdentifier(id) {
+  if (!id) return null;
+  return DOCS.find((d) => id === d.id || id.startsWith(d.id + "/")) || null;
+}
+
+// A clickable link if the identifier resolves to an encoded document; else plain.
+function refLink(id, text) {
+  const label = text || id;
+  if (!docForIdentifier(id)) return `<code>${escapeHtml(id)}</code>`;
+  return `<a class="reflink" data-ref="${escapeHtml(id)}" href="./index.html?doc=${encodeURIComponent(
+    id
+  )}" title="${escapeHtml(id)}">${escapeHtml(label)}</a>`;
+}
+
+// Scroll to a provision in the current document and select it.
+function selectById(provId) {
+  const row = document.querySelector(`.prov[data-id="${cssEscape(provId)}"]`);
+  if (row) {
+    row.scrollIntoView({ behavior: "smooth", block: "center" });
+    row.click();
+  }
+}
+
 function resetPanel() {
   $("#panel").innerHTML = `<p class="hint">Select any provision to see its
     verification status, its extracted machine-readable value, and its chain of
@@ -189,20 +239,51 @@ function cssEscape(s) {
   return (window.CSS && CSS.escape) ? CSS.escape(s) : s.replace(/["\\]/g, "\\$&");
 }
 
+const pickerButtons = new Map();
+
 function buildPicker() {
   const nav = $("#doc-picker");
-  DOCS.forEach((doc, i) => {
+  DOCS.forEach((doc) => {
     const b = document.createElement("button");
     b.textContent = doc.label;
-    b.addEventListener("click", () => {
-      nav.querySelectorAll("button").forEach((x) => x.classList.remove("active"));
-      b.classList.add("active");
-      loadDoc(doc);
-    });
-    if (i === 0) b.classList.add("active");
+    b.addEventListener("click", () => selectDoc(doc));
+    pickerButtons.set(doc.id, b);
     nav.appendChild(b);
   });
 }
 
-buildPicker();
-loadDoc(DOCS[0]);
+function selectDoc(doc, provId) {
+  pickerButtons.forEach((b) => b.classList.remove("active"));
+  pickerButtons.get(doc.id)?.classList.add("active");
+  loadDoc(doc, provId);
+}
+
+// Follow a reference to another document (and optionally a provision within it).
+function navigateTo(id) {
+  const doc = docForIdentifier(id);
+  if (!doc) return;
+  const provId = id !== doc.id ? id : null;
+  selectDoc(doc, provId);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+// Delegated handler so every rendered reference link navigates in place.
+document.addEventListener("click", (e) => {
+  const a = e.target.closest(".reflink");
+  if (a) {
+    e.preventDefault();
+    navigateTo(a.dataset.ref);
+  }
+});
+
+function boot() {
+  buildPicker();
+  const params = new URLSearchParams(location.search);
+  const docId = params.get("doc");
+  const provId = params.get("prov");
+  const doc = (docId && docForIdentifier(docId)) || DOCS[0];
+  const target = provId || (docId && docId !== doc.id ? docId : null);
+  selectDoc(doc, target);
+}
+
+boot();
