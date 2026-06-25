@@ -27,6 +27,15 @@ header {
   background: var(--panel);
 }
 header h1 { margin: 0; font-size: 1.3rem; letter-spacing: -0.01em; }
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.scheme-link {
+  font-size: 0.85rem; font-weight: 600; text-decoration: none;
+  color: #fff; background: var(--ink); border: 1px solid var(--ink);
+  padding: 0.4rem 0.9rem; border-radius: 1rem; white-space: nowrap;
+}
+.scheme-link:hover { background: var(--cited); border-color: var(--cited); }
+.back-link { font-size: 0.85rem; font-weight: 600; text-decoration: none; color: var(--cited); }
+.back-link:hover { text-decoration: underline; }
 .tagline { margin: 0.3rem 0 0.8rem; color: var(--muted); max-width: 60ch; font-size: 0.9rem; }
 
 nav#doc-picker { display: flex; gap: 0.5rem; flex-wrap: wrap; }
@@ -124,6 +133,31 @@ ol.chain .type { font-size: 0.7rem; color: var(--muted); display: block; }
 .edge.cited { background: #3552c722; color: var(--cited); }
 .edge.inferred { background: #8a6d0022; color: var(--inferred); }
 .edge.clarifies, .edge.references { background: #6663; color: #555; }
+
+/* Scheme explainer page */
+.prose {
+  max-width: 52rem; margin: 1.5rem auto; padding: 0 1.5rem;
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: 0.5rem;
+}
+.prose .inner { padding: 1.5rem 2rem 2rem; }
+.prose h2 { font-size: 1.15rem; margin: 1.8rem 0 0.5rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+.prose h2:first-of-type { border-top: none; padding-top: 0; }
+.prose h3 { font-size: 0.95rem; margin: 1.1rem 0 0.3rem; }
+.prose p { margin: 0.5rem 0; }
+.prose ul { margin: 0.5rem 0; padding-left: 1.2rem; }
+.prose li { margin: 0.3rem 0; }
+.prose code { background: #f0f0f0; padding: 0.05rem 0.3rem; border-radius: 0.2rem; font-size: 0.85em; }
+.prose pre {
+  background: #1a1a1a; color: #e8e8e8; padding: 0.9rem 1.1rem;
+  border-radius: 0.4rem; overflow-x: auto; font-size: 0.8rem; line-height: 1.5;
+}
+.prose pre code { background: none; color: inherit; padding: 0; }
+.prose table { border-collapse: collapse; width: 100%; font-size: 0.88rem; margin: 0.6rem 0; }
+.prose th, .prose td { border: 1px solid var(--line); padding: 0.35rem 0.6rem; text-align: left; vertical-align: top; }
+.prose th { background: var(--bg); }
+.lead { font-size: 1.02rem; color: #333; }
+.prose .badge { font-size: 0.66rem; }
 
 footer {
   padding: 0.8rem 1.5rem; border-top: 1px solid var(--line);
