@@ -28,6 +28,7 @@ header {
 }
 header h1 { margin: 0; font-size: 1.3rem; letter-spacing: -0.01em; }
 .topbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.nav-links { display: flex; gap: 0.5rem; flex-wrap: wrap; }
 .scheme-link {
   font-size: 0.85rem; font-weight: 600; text-decoration: none;
   color: #fff; background: var(--ink); border: 1px solid var(--ink);
@@ -133,6 +134,27 @@ ol.chain .type { font-size: 0.7rem; color: var(--muted); display: block; }
 .edge.cited { background: #3552c722; color: var(--cited); }
 .edge.inferred { background: #8a6d0022; color: var(--inferred); }
 .edge.clarifies, .edge.references { background: #6663; color: #555; }
+
+/* Search table page */
+.controls { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; margin-top: 0.3rem; }
+.controls input[type="search"] {
+  font: inherit; padding: 0.45rem 0.7rem; min-width: 22rem; flex: 1 1 22rem;
+  border: 1px solid var(--line); border-radius: 0.4rem;
+}
+.controls select { font: inherit; padding: 0.45rem 0.5rem; border: 1px solid var(--line); border-radius: 0.4rem; }
+.controls .count { color: var(--muted); font-size: 0.85rem; white-space: nowrap; }
+.table-main { max-width: 78rem; margin: 1.2rem auto; padding: 0 1.5rem; }
+table.data { border-collapse: collapse; width: 100%; font-size: 0.88rem; background: var(--panel); }
+table.data thead th {
+  position: sticky; top: 0; background: var(--bg); text-align: left;
+  border-bottom: 2px solid var(--line); padding: 0.5rem 0.7rem; font-size: 0.8rem;
+  text-transform: uppercase; letter-spacing: 0.03em; color: var(--muted);
+}
+table.data td { border-bottom: 1px solid var(--line); padding: 0.5rem 0.7rem; vertical-align: top; }
+table.data tr:hover td { background: #f4f6ff; }
+table.data .doc { white-space: nowrap; color: #444; font-weight: 600; font-size: 0.82rem; }
+table.data .num { font-variant-numeric: tabular-nums; color: var(--muted); white-space: nowrap; }
+table.data .prov .cid { font-family: ui-monospace, monospace; font-size: 0.72rem; color: var(--muted); margin-top: 0.2rem; word-break: break-all; }
 
 /* Scheme explainer page */
 .prose {

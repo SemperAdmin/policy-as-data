@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search the corpus — policy-as-data</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <h1>Search the corpus</h1>
+        <a class="back-link" href="./index.html">&larr; Back to the viewer</a>
+      </div>
+      <p class="tagline">Every provision across all encoded documents, in one
+        searchable table. This is a <em>query projection</em> generated from the
+        structured store at load time &mdash; the markup is the source of truth,
+        and every row keeps its stable identifier.</p>
+      <div class="controls">
+        <input id="q" type="search" placeholder="Search text, heading, or identifier…" autocomplete="off" />
+        <select id="status-filter" aria-label="Filter by verification status">
+          <option value="ALL">All statuses</option>
+          <option value="VERIFIED">VERIFIED only</option>
+          <option value="UNVERIFIED">UNVERIFIED only</option>
+        </select>
+        <span class="count"><b id="shown">0</b> of <b id="total">0</b> provisions</span>
+      </div>
+    </header>
+
+    <main class="table-main">
+      <table class="data">
+        <thead>
+          <tr>
+            <th>Document</th>
+            <th>#</th>
+            <th>Provision</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </main>
+
+    <footer>
+      <span id="legend">
+        <span class="badge VERIFIED">VERIFIED</span> confirmed against the
+        issuance text &nbsp;·&nbsp;
+        <span class="badge UNVERIFIED">UNVERIFIED</span> source line not yet
+        located
+      </span>
+    </footer>
+
+    <script type="module" src="./table.js"></script>
+  </body>
+</html>
