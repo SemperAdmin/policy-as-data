@@ -155,7 +155,11 @@ table.data thead th {
 }
 table.data td { border-bottom: 1px solid var(--line); padding: 0.5rem 0.7rem; vertical-align: top; }
 table.data tr:hover td { background: #f4f6ff; }
-table.data .doc { white-space: nowrap; color: #444; font-weight: 600; font-size: 0.82rem; }
+table.data .doc { color: #444; font-weight: 600; font-size: 0.82rem; min-width: 11rem; }
+table.data .docmeta { font-weight: 400; color: var(--muted); font-size: 0.72rem; margin-top: 0.15rem; }
+table.data .docmeta a, .kv .src { color: var(--cited); text-decoration: none; }
+table.data .docmeta a:hover, .kv .src:hover { text-decoration: underline; }
+.kv .iso { color: #777; }
 table.data .num { font-variant-numeric: tabular-nums; color: var(--muted); white-space: nowrap; }
 table.data .prov .cid { font-family: ui-monospace, monospace; font-size: 0.72rem; color: var(--muted); margin-top: 0.2rem; word-break: break-all; }
 

@@ -41,15 +41,21 @@ Every encoded value and every citation carries one status.
 
 ## Verified versus unverified, current state
 
-VERIFIED:
+VERIFIED (confirmed against the retrieved issuance text; corrections logged in
+`data/maradmin-051-23.rules.json`):
 
-- `MAX_PARENTAL_LEAVE_DAYS` = 84. Source: MARADMIN 051/23, para 8.
-- `ENTITLEMENT_WINDOW_DAYS` = 365. Source: MARADMIN 051/23, para 8.b.(2).
+- `MAX_PARENTAL_LEAVE_DAYS` = 84. Source: MARADMIN 051/23, para 11.d.
+- `ENTITLEMENT_WINDOW_DAYS` = 365. Source: MARADMIN 051/23, para 8.c.(3).
+- `MIN_INCREMENT_DAYS` = 7. Source: MARADMIN 051/23, para 8.a.(1)(b).
+  (Confirmed against source; was previously UNVERIFIED.)
+- `EVENT_PROXIMITY_MERGE_HOURS` = 72. Source: MARADMIN 051/23, para 8.b.(1).
+  (Confirmed; the issuance states a 72-hour period, previously asserted as 3 days.)
 
-UNVERIFIED, confirm the source line before relying on either:
+UNVERIFIED, load-bearing-but-unproven (kept so the distinction stays live on the
+face of the data):
 
-- `MIN_INCREMENT_DAYS` = 7.
-- `EVENT_PROXIMITY_MERGE_DAYS` = 3.
+- `CURRENT_DOD_PARENTAL_LEAVE_WEEKS` = 12. DoDI 1327.06, para 3.11.c (ADPL). The
+  section body is not yet encoded, so the source line is not confirmed.
 
 ## Why the verified/unverified split is on the face of the data
 

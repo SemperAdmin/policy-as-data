@@ -1,0 +1,22 @@
+{
+  "source": {
+    "identifier": "/us/dod/dodi/1327.06",
+    "label": "DoDI 1327.06, Military Leave, Liberty, and Administrative Absence",
+    "date": "Effective August 7, 2025",
+    "originator": "OUSD(P&R)"
+  },
+  "rules": [
+    {
+      "id": "CURRENT_DOD_PARENTAL_LEAVE_WEEKS",
+      "value": 12,
+      "unit": "weeks",
+      "status": "UNVERIFIED",
+      "citation": {
+        "identifier": "/us/dod/dodi/1327.06/s3/3.11/c/adpl-entitlement",
+        "label": "DoDI 1327.06, para 3.11.c (ADPL)",
+        "status": "UNVERIFIED"
+      },
+      "note": "The current DoD active-duty parental-leave entitlement is governed by DoDI 1327.06 para 3.11.c (ADPL), which incorporated DTM 23-001. The section body is not yet encoded, so the exact value and source line are not yet confirmed against the issuance text. Load-bearing-but-unproven per the verification legend; confirm before relying."
+    }
+  ]
+}

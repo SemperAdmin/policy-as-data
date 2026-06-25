@@ -18,10 +18,18 @@
         and every row keeps its stable identifier.</p>
       <div class="controls">
         <input id="q" type="search" placeholder="Search text, heading, or identifier…" autocomplete="off" />
+        <select id="type-filter" aria-label="Filter by document type">
+          <option value="ALL">All types</option>
+        </select>
         <select id="status-filter" aria-label="Filter by verification status">
           <option value="ALL">All statuses</option>
           <option value="VERIFIED">VERIFIED only</option>
           <option value="UNVERIFIED">UNVERIFIED only</option>
+        </select>
+        <select id="sort" aria-label="Sort">
+          <option value="doc">Sort: document order</option>
+          <option value="date-desc">Sort: newest first</option>
+          <option value="date-asc">Sort: oldest first</option>
         </select>
         <span class="count"><b id="shown">0</b> of <b id="total">0</b> provisions</span>
       </div>

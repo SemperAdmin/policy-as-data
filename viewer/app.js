@@ -27,6 +27,7 @@ function children(el, localName) {
 
 async function loadDoc(doc, selectProvId) {
   $("#document").classList.add("loading");
+  state.doc = doc;
   try {
     const [xmlText, authority, rules] = await Promise.all([
       fetch(doc.uslm).then((r) => r.text()),
@@ -61,13 +62,16 @@ function renderMeta(issuance) {
   const get = (n) => (child(meta, n)?.textContent || "").trim();
   const derives = children(meta, "derivesFrom").map((d) => d.getAttribute("href"));
   const when = get("dtg") || get("date");
+  const iso = get("isoDate");
   const signer = get("signer");
+  const source = state.doc?.source;
   $("#doc-meta").innerHTML = `
     <div class="subject">${escapeHtml(get("subject"))}</div>
     <div class="kv">
       ${issuance.getAttribute("issuanceType")} ·
       <code>${issuance.getAttribute("identifier")}</code> ·
-      ${when} · ${get("originator")}${signer ? ` · signed ${signer}` : ""}
+      ${when}${iso ? ` <span class="iso">(${iso})</span>` : ""} · ${get("originator")}${signer ? ` · signed ${signer}` : ""}
+      ${source ? ` · <a class="src" href="${source}" target="_blank" rel="noopener">source&nbsp;&#8599;</a>` : ""}
     </div>
     <div class="kv">derives authority from: ${derives.map((d) => refLink(d, labelFor(d))).join(" , ") || "—"}</div>`;
 }
