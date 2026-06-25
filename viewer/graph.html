@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reference graph — policy-as-data</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <h1>Reference graph</h1>
+        <a class="back-link" href="./index.html">&larr; Back to the viewer</a>
+      </div>
+      <p class="tagline">How the encoded documents reference each other, laid out
+        by authority level &mdash; statute at the top, Marine Corps at the bottom.
+        Built from the <code>*.authority.jsonld</code> files. Click any
+        <strong>encoded</strong> document to open it in the viewer.</p>
+      <div class="graph-legend">
+        <span><i class="ek cited"></i> derives authority (cited)</span>
+        <span><i class="ek inferred"></i> inferred authority</span>
+        <span><i class="ek references"></i> references</span>
+        <span><i class="ek adjacent"></i> supersedes / clarifies / amends</span>
+        <span class="count" id="count"></span>
+      </div>
+    </header>
+
+    <main class="graph-main">
+      <div id="graph">Loading…</div>
+    </main>
+
+    <footer>
+      <span>Solid nodes are encoded documents (clickable); dashed nodes are
+        referenced but not yet encoded.</span>
+    </footer>
+
+    <script type="module" src="./graph.js"></script>
+  </body>
+</html>
