@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the GunnyBot canonical store (schema 0.2.1).
+     Every provision is UNVERIFIED until confirmed against source per
+     DATA_CONTRACT.md. Contact details are masked pending owner policy. -->
+<issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
+          identifier="/us/usmc/maradmin-canx/2018/011"
+          issuanceType="MARADMIN"
+          status="UNVERIFIED">
+  <meta>
+    <originator>CMC WASHINGTON DC MRA MM</originator>
+    <isoDate>2018-03-19</isoDate>
+    <subject>CANCELLATION OF MARADMIN 161/18</subject>
+  </meta>
+  <paragraph identifier="/us/usmc/maradmin-canx/2018/011/header" status="UNVERIFIED" level="section">
+    <content>
+      <p>MARADMIN 011/18
+R 190725Z MAR 18
+CANCELLATION MARADMIN 011/18
+MSGID/GENADMIN/CMC WASHINGTON DC MRA MM//
+SUBJ/CANCELLATION OF MARADMIN 161/18//
+REF/A/MSGID: MSG/CMC WASHINGTON DC MRA MM/141313ZMAR18//
+AMPN/REF A, MARADMIN 161/18, APPROVED SELECTED MARINE CORPS RESERVE (SMCR) STAFF
+NONCOMMISSIONED OFFICER (SNCO) SELECTIONS//
+POC/CHRISTINA R. UPTON/MAJ/HD MMPR-2/-/TEL: [contact withheld]/EMAIL:
+[contact withheld]//</p>
+    </content>
+  </paragraph>
+  <paragraph identifier="/us/usmc/maradmin-canx/2018/011/body" status="UNVERIFIED" level="section">
+    <heading>Remarks</heading>
+    <content>
+      <p>GENTEXT/REMARKS/1.  Reference (a) is hereby cancelled.  An updated MARADMIN will
+be released.
+2.  Release authorized by MajGen Robert F. Castellvi, Director, Manpower
+Management Division.//</p>
+    </content>
+  </paragraph>
+</issuance>

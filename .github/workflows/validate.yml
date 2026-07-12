@@ -1,0 +1,24 @@
+name: validate
+
+# CI for SemperAdmin/policy-as-data - every push and PR must pass the
+# repo's own validator (XSD + schema checks over data/). Machine-encoded
+# policy that fails validation never lands on main.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install validator dependencies
+        run: pip install lxml jsonschema
+      - name: Validate corpus
+        # Adjust the path or args if validate.py moved or takes a target dir.
+        run: python validate.py
