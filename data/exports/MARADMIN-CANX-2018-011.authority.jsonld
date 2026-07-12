@@ -1,0 +1,20 @@
+{
+  "@id": "/us/usmc/maradmin-canx/2018/011",
+  "generator": "gunnybot canonical export - UNVERIFIED stub, human review required",
+  "canonicalId": "MARADMIN-CANX-2018-011",
+  "status": "active",
+  "@type": "ServiceMessage",
+  "supersedes": [
+    {
+      "@id": "/us/usmc/maradmin/2018/161",
+      "basis": "cited"
+    },
+    {
+      "@id": "/us/usmc/maradmin/2018/011",
+      "basis": "cited"
+    }
+  ],
+  "referencesRaw": [
+    "MSGID: MSG/CMC WASHINGTON DC MRA MM/141313ZMAR18"
+  ]
+}
