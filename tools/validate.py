@@ -166,10 +166,17 @@ def check_references(ids, rules_files, jsonld_files):
 
 
 def main():
-    uslm = sorted(glob.glob(os.path.join(DATA, "*.uslm.xml")))
-    jsonld = sorted(glob.glob(os.path.join(DATA, "*.jsonld")))
-    rules = sorted(glob.glob(os.path.join(DATA, "*.rules.json")))
-    other_json = sorted(set(glob.glob(os.path.join(DATA, "*.json"))) - set(rules))
+    # Recursive so subdirectories (data/exports/) are held to the same
+    # checks - the docstring promises every document in data/, and the
+    # implementation now keeps that promise.
+    uslm = sorted(glob.glob(os.path.join(DATA, "**", "*.uslm.xml"),
+                            recursive=True))
+    jsonld = sorted(glob.glob(os.path.join(DATA, "**", "*.jsonld"),
+                              recursive=True))
+    rules = sorted(glob.glob(os.path.join(DATA, "**", "*.rules.json"),
+                             recursive=True))
+    other_json = sorted(set(glob.glob(os.path.join(DATA, "**", "*.json"),
+                                      recursive=True)) - set(rules))
 
     rdflib = load_rdflib()
     check_schema(uslm)
