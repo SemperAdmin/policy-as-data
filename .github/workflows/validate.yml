@@ -18,7 +18,10 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install validator dependencies
-        run: pip install lxml jsonschema
+        # xmllint does the XSD work (subprocess), rdflib activates the
+        # ontology + conformance checks instead of skipping them.
+        run: |
+          sudo apt-get update && sudo apt-get install -y libxml2-utils
+          pip install rdflib
       - name: Validate corpus
-        # Adjust the path or args if validate.py moved or takes a target dir.
-        run: python validate.py
+        run: python tools/validate.py
