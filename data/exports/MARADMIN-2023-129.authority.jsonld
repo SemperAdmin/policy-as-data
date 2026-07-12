@@ -1,0 +1,12 @@
+{
+  "@id": "/us/usmc/maradmin/2023/129",
+  "generator": "gunnybot canonical export - UNVERIFIED stub, human review required",
+  "canonicalId": "MARADMIN-2023-129",
+  "status": "active",
+  "@type": "ServiceMessage",
+  "referencesRaw": [
+    "MSGID: MSG/CMC WASHINGTON DC MRA MP/272030ZJAN23",
+    "MSGID: MEMO/OSD WASHINGTON DC/4JAN2023",
+    "MSGID: DOC/OSD WASHINGTON DC MPO/19MAY2009"
+  ]
+}

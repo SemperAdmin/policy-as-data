@@ -1,0 +1,11 @@
+{
+  "@id": "/us/usmc/maradmin/2018/161",
+  "generator": "gunnybot canonical export - UNVERIFIED stub, human review required",
+  "canonicalId": "MARADMIN-2018-161",
+  "status": "cancelled",
+  "@type": "ServiceMessage",
+  "referencesRaw": [
+    "MSGID: MSG/CMC/191450ZDEC16",
+    "MSGID: DOC/CMC MMPR-2/14JUN2012"
+  ]
+}

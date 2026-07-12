@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the GunnyBot canonical store (schema 0.2.1).
+     Every provision is UNVERIFIED until confirmed against source per
+     DATA_CONTRACT.md. Contact details are masked pending owner policy. -->
+<issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
+          identifier="/us/usmc/maradmin/2023/051"
+          issuanceType="MARADMIN"
+          status="UNVERIFIED">
+  <meta>
+    <originator>CMC WASHINGTON DC MRA MP</originator>
+    <isoDate>2023-01-27</isoDate>
+    <subject>EXPANSION OF THE MARINE CORPS MILITARY PARENTAL LEAVE PROGRAM</subject>
+  </meta>
+  <paragraph identifier="/us/usmc/maradmin/2023/051/header" status="UNVERIFIED" level="section">
+    <content>
+      <p>MARADMIN 051/23
+R 272030Z JAN 23
+MARADMIN 051/23
+MSGID/GENADMIN/CMC WASHINGTON DC MRA MP//
+SUBJ/EXPANSION OF THE MARINE CORPS MILITARY PARENTAL LEAVE PROGRAM//
+REF/A/MSGID: MEMO/OSD WASHINGTON DC/4JAN2023//
+REF/B/MSGID: MEMO/ASN WASHINGTON DC/17JAN2023//
+REF/C/MSGID: DOC/OSD WASHINGTON DC MPO/13APR2020//
+REF/D/MSGID: DOC/OSD WASHINGTON DC MPO/19MAY2009//
+REF/E/MSGID: MSG/CMC WASHINGTON DC MRA RA/061650ZOCT22//
+AMPN/REF A IS UNDER SECRETARY OF DEFENSE FOR PERSONNEL AND READINESS
+DIRECTIVE-TYPE MEMORANDUM, EXPANSION OF THE MILITARY PARENTAL LEAVE PROGRAM. REF B
+IS ASSISTANT SECRETARY OF THE NAVY (MANPOWER AND RESERVE AFFAIRS) MEMORANDUM,
+DEPARTMENT OF NAVY GUIDANCE FOR EXPANSION OF THE MILITARY PARENTAL LEAVE
+PROGRAM. REF C IS MCO 5000.12F CH-1 MARINE CORPS POLICY CONCERNING PARENTHOOD AND
+PREGNANCY. REF D IS MCO 1050.3J REGULATIONS FOR LEAVE, LIBERTY AND ADMINISTRATIVE
+ABSENCE. REF E IS MARADMIN 523/22 FORTHCOMING CHANGES TO RESERVE COMPONENT
+PARENTAL LEAVE//
+POC/MRA(MPO)/EMAIL: [contact withheld]/TEL: [contact withheld]//</p>
+    </content>
+  </paragraph>
+  <paragraph identifier="/us/usmc/maradmin/2023/051/body" status="UNVERIFIED" level="section">
+    <heading>Remarks</heading>
+    <content>
+      <p>GENTEXT/REMARKS/1.  This MARADMIN announces the expansion of the Military Parental
+Leave Program (MPLP) as directed by OSD and DON in references (a) and (b) and
+provides implementing guidance until these changes are incorporated into
+references (c) and (d).
+2.  This MARADMIN modifies previous policy concerning parental leave and
+supersedes previous MARADMINs concerning parental leave.
+3.  Summary of Policy Changes
+a.  Expands authorized leave to 12 weeks for parents following child birth, a
+qualifying adoption of a minor child, or the placement of a minor child for
+adoption or long-term foster care.
+b.  Primary and secondary caregiver designations are no longer applicable as the
+parental leave period is the same for all Marines.
+c.  Maternity Convalescent Leave, standardized at six weeks from the previous</p>
+      <p>
+policy, is removed with this change.  Marines who give birth may still be eligible
+for convalescent leave following a birth in accordance with this MARADMIN.
+4.  Effective immediately, commanders with leave approving authority shall grant
+parental leave in accordance with the parameters of this MARADMIN.
+5.  The parental leave described in this MARADMIN applies to a Marine when a
+qualifying event occurred on or after 27 Dec 22 or a Marine who may be eligible to
+transition from the previous policy in accordance with paragraph 10 of this
+MARADMIN.
+6.  Definitions
+a.  Parental Leave.  A period of non-chargeable leave granted to a Marine
+following the birth of the Marineâ€™s child, adoption of a minor child by the
+Marine, or placement of a minor child with the Marine for adoption or long-term
+foster care in order to care for the child.
+b.  Qualifying Birth.  Any live birth of a child to a Marine designated as a
+parent.
+c.  Qualifying Adoption.  An adoption arranged by a â€œqualified adoption agencyâ€ as
+that term is defined in Section 1052 Title 10, United States Code.
+d.  Placement for Adoption.  The action of placing a minor child with the
+prospective adoptive parents in which there is a contractual agreement between the
+prospective adoptive parents and the qualifying adoption agency occurring before
+the legal finalization of the adoption.
+e.  Placement for Long-term Foster Care.  The action of placing a minor child in
+foster care in which there is an expectation and contractual agreement between the
+foster parents and the child placing agency that the child remain in the home of
+the foster parents for a minimum of 24 months.
+f.  Qualifying Event.  Either a qualifying birth, qualifying adoption, placement
+for adoption, or placement for long-term foster care.
+7.  Parental Leave
+a.  Parental Leave for Qualifying Birth.  Marines are authorized parental leave
+for the birth of their child and to care for the child.
+(1) For the birth parent, 12 weeks (84 days) of parental leave during the 1-year
+period beginning on the date of birth of the child is authorized following a
+period of convalescence from childbirth.
+(a) Convalescent leave may be authorized for a diagnosed medical condition
+associated with the qualifying birth immediately following a birth event when
+specifically recommended, in writing, by the health care provider of the birth
+parent and subsequently approved by the commander.  Such leave will begin on the
+first full day after the birth of the child or the date of release of the Marine
+from the hospital or similar facility where the birth took place, whichever is
+later.
+(b) Commanders may grant convalescent leave only to the birth parent for recovery
+from a birth event, if such leave is specifically recommended in writing, by the
+health care provider of the birth parent.  Commanders are authorized to approve
+convalescent leave in excess of 30 days in this instance without prior
+coordination with the CMC (MMEA/MMOA, or RA, as applicable).
+(2) For the non-birth parent, 12 weeks of parental leave is authorized for a
+1-year period beginning on the date of birth of the child.
+(a) If the child is born outside of marriage, the non-birth parentâ€™s parentage of</p>
+      <p>
+the child must first be established.
+(b) Proof of parentage includes designation as a parent, with consent, on the
+childâ€™s birth certificate, certificate of live birth, or other government issued
+document; acknowledgement, in writing, of an obligation to support the child,
+either by voluntary agreement or court order; or registration, or pending
+registration, in Defense Enrollment Eligibility Reporting System (DEERS).
+b.  Parental Leave for Qualifying Adoption or Placement for Adoption.  Marines, to
+include dual military couples, are authorized 12 weeks of parental leave, for each
+parent, during a 1-year period following the date of a placement for adoption of
+the minor child with the Marine or the date of the qualifying adoption.
+(1) If a Marine (or a dual military couple) uses a surrogate and they become the
+legal parent(s) of a newborn child, the event is treated the same as an adoption
+and the Marine(s) is authorized 12 weeks of parental leave.
+(2) A Marine is not authorized an additional 12 weeks of parental leave when the
+placement of a minor child with the Marine for adoption is legally finalized as an
+adoption.
+(3) Example:  A child is placed with the prospective adoptive Marine, with a
+contractual agreement between the prospective Marine and the qualifying adoption
+agency, on 1 Jan 23.  The adoption is legally finalized on 1 Feb 23.  The Marine
+has until 31 Dec 23 to execute the 84 days of parental leave.  The Marine is not
+authorized an additional 84 days when the adoption is finalized on 1 Feb 23.
+c.  Parental Leave for Placement for Long-term Foster Care.  Marines, to include
+dual military couples, are authorized 12 weeks of parental leave for each parent
+during the 1-year period after the date of placement of a minor child with the
+Marine for long-term foster care of the placed child.  A Marine is not authorized
+an additional 12 weeks of parental leave when the placement of a minor child with
+the Marine for long-term foster care is:
+(1) Converted to a placement for adoption with the Marine; or
+(2) Finalized as an adoption by the Marine.
+d.  Commanders may consider a Marineâ€™s self-certification of a qualifying event to
+approve a request for parental leave.  However, in the cases of birth or adoption,
+a Marine must add their dependent child in the Marine Corps Total Force System
+(MCTFS) within 30 days.  If the Marine fails to add their dependent in MCTFS,
+parental leave executed will be converted and charged as annual leave to the
+Marineâ€™s annual leave account.  The Marine should also add their dependent child
+in DEERS within 30 days.  For long-term foster care, the contractual agreement
+must be provided within 30 days and retained by the command to prevent parental
+leave from being charged as annual leave.
+e.  Marines are expected to notify their command as soon as practicable of a
+qualifying event to ensure the health and welfare of the parents and child. 
+Additionally, this notification enables commanders to facilitate leave plans and
+unit mission accomplishment.
+8.  Amplifying Instructions
+a.  Commanderâ€™s Authority
+(1) Commanders will make every effort to approve requests and may authorize
+parental leave in one continuous period or in increments consistent with
+operational requirements.  Parental leave may be approved in conjunction with
+annual leave and other types of special leave and liberty, and annual leave may be</p>
+      <p>
+approved in between increments of parental leave.
+(a) In instances where the commander has carefully evaluated the operational
+requirements of the unit, and incremental periods of leave for the Marine are not
+feasible or have an immediate detriment to the unitâ€™s mission accomplishment over
+the 1-year period, commanders shall approve the Marine to execute the total
+authorized leave in one continuous increment.
+(b) Parental leave used in more than one increment must be in periods of at least
+7 days for a maximum of 12 increments.
+(c) Parental leave requests must be submitted within the timelines established by
+the commandâ€™s normal leave request procedures and policies.  If a commander
+disapproves the request, the decision may be appealed through established
+procedures.
+(2) Deployed Marines must normally defer parental leave until their deployment is
+complete, which may extend their 1-year period if criteria in paragraph 8a(3) is
+met and approved by the commander.  However, in exceptional and compelling
+circumstances, a commander may approve parental leave while deployed if the
+commander determines that the unitâ€™s readiness will not be adversely impacted.
+(3) For a commander to approve a Marine to take parental leave after the 1-year
+period if they would lose unused parental leave at the end of the 1-year period,
+one or more of the following conditions must be met:
+(a) A Marineâ€™s participation in a deployment and/or military exercise for a
+consecutive period of 90 or more consecutive days within the 1-year period
+concerned.
+(b) A Marineâ€™s attendance at an in-residence professional military education
+course for a consecutive period of 90 or more days within the 1-year period
+concerned.
+(c) A Marineâ€™s execution of permanent change-of-station orders with temporary duty
+en route to a new permanent duty station of 90 or more consecutive days that would
+interfere with the taking of parental leave within the 1-year period concerned.
+(d) A Marine conducted routine temporary duty away from the permanent duty station
+for a consecutive period of 90 or more days within the 1-year period.
+(e) A Marine serving in a billet identified as critical for mission accomplishment
+by the commander for a consecutive period of 90 or more days within the 1-year
+period concerned.
+(f) A Marineâ€™s hospitalization or placement in an in-patient status for 90 or more
+days within the 1-year period concerned.
+(4) For such qualifying circumstances outlined in paragraph 8a(3), the 1-year
+period may be extended on a day-for-day basis based on the period of such
+circumstance.
+b.  Multiple Qualifying Events
+(1) Multiple qualifying events occurring within the same 72-hour period are
+treated as a single event for the allocation of parental leave.
+(2) Multiple qualifying events that do not occur within the same 72-hour period
+are treated as separate events for the allocation of parental leave.
+(a) In separate qualifying events, any new parental leave must run concurrently
+with any pre-existing parental leave that has not expired or been used as of the
+date of the new event.  For example, a non-birth parent Marine has a child born on
+1 Jan 23.  From 1 Jan 23 until 11 Mar 23, the Marine was authorized and took 70</p>
+      <p>
+days of parental leave and has 14 days of unused parental leave.  On 12 Mar 23,
+the Marine has a qualifying adoption of a child.  The Marine is authorized an
+additional 70 days for the adoption to be added to the 14 days remaining from the
+birth of the child for a total of 84 days.  Any of these days that the Marine does
+not use by 11 Mar 24 (1-year from the second event) are forfeited.
+c.  Un-used Parental Leave
+(1) Any amount of parental leave remaining un-used at the time of separation from
+active service is forfeited.
+(2) Parental leave may not be transferred between members to create a shared
+benefit.
+(3) Parental leave that is not executed before the expiration of 1-year from the
+date of a birth of the child, adoption of a minor child by the Marine, or
+placement of a minor child with the Marine for adoption or long-term foster care
+is forfeited, unless paragraph 8a(3) of this MARADMIN applies.
+(4) Parental leave is authorized for Reserve Component (RC) Marines who meet the
+criteria outlined in paragraph 12 of this MARADMIN.  For pregnant RC Marines, the
+provisions of enclosure (1), chapter 2, paragraph 16 of reference (c) still
+apply.  Any parental leave not taken by the time of separation from active service
+is forfeited.  Additionally, an RC Marine on Active Duty Operational Support
+(ADOS) orders will forfeit any unused parental leave on the end date of their set
+of orders that were current on the day of the qualifying event.
+(1) The period of active service of a RC Marine may not be extended solely to
+permit them to take leave authorized by this MARADMIN.
+(2) RC Marines will not be recalled to active service to use any category of
+leave, either singly or in combination, authorized by this MARADMIN.
+(3) RC Marines on active duty who are released from active duty, or Active
+Component (AC) Marines who transition to the Selected Marine Corps Reserve or
+Individual Mobilization Augmentee Program who have unused parental leave may be
+eligible for Reserve Component Maternity Leave in accordance with reference (e).
+9.  Limitations
+a.  Surrogacy or Child Placed for Adoption.  A Marine who either places their
+child up for adoption or has their parental rights terminated by consent or court
+order is not eligible for parental leave.  However, the Marine may be authorized
+convalescent leave as recommended by a health care provider in accordance with
+medical practice standards.  A Marine whose spouse meets the conditions above is
+not authorized parental leave.
+b.  Stillbirth or Miscarriage.  In cases when a Marine experiences a stillbirth or
+miscarriage, a health care provider may recommend convalescent leave, approved by
+the commander, in accordance with medical practice standards.  In such cases,
+neither the Marine nor their spouse (if a Marine) are eligible for parental
+leave.  However, either may be authorized emergency leave.
+c.  Leave Following Death of a Child.  Parental leave eligibility, or the parental
+leave, if started, terminates upon the death of the child, adopted child, or child
+placed for adoption or long-term foster care.  However, in such cases, Marines may
+be transitioned to other types of leave such as convalescent leave, if recommend
+by a DoD health care provider; emergency leave; or other types of leave, as
+appropriate.
+10.  Transitioning of Primary Caregiver Leave (PCL) and Secondary Caregiver Leave</p>
+      <p>
+(SCL) to Parental Leave
+a.  Parental leave authorized by this MARADMIN also applies to Marines who have
+unused PCL, SCL or Maternity Convalescent Leave (MCL) as of 27 Dec 22, if such
+unused leave was authorized by reference (c).  Marines must have been in the
+execution or had not started their PCL, SCL, or MCL as of 27 Dec 22 to be eligible
+for this transition. All provisions in this MARADMIN apply to such Marines.
+b.  The total of any used PCL or SCL of a Marine when combined with the parental
+leave authorized by this MARADMIN must not exceed a total of 12 weeks.  A birth
+parent who is in a maternity convalescent status as of 27 Dec 22, is authorized to
+continue in such a status until the birth parent completes the approved period of
+Maternity Convalescent Leave (MCL) and is then authorized 12 weeks of parental
+leave.
+(1) Example 1:  A Marine who is a secondary caregiver executed their 3 weeks of
+SCL from 10 Dec 22 to 31 Dec 22.  Since the Marine was in a SCL status on 27 Dec 22
+and has executed 3 weeks in connection to a qualifying event, the Marine is
+authorized an additional 9 weeks of parental leave.
+(2) Example 2:  A Marine who is a secondary caregiver only executed 14 of 21 days
+of secondary caregiver leave from 1 Oct 22 to 14 Oct 22.  Since PCL and SCL must
+be taken in one increment, in accordance with previous policy, the Marine is not
+eligible for the additional parental leave authorized by this MARADMIN.
+(3) Example 3:  A Marine was approved for 6 weeks of MCL on 16 Dec 22.  The Marine
+is authorized to complete their approved convalescent leave and then is authorized
+an additional 12 weeks of Parental leave.
+c.  Such leave that remains unused within 1-year of the qualifying event is
+forfeited unless paragraph 8a(2) or 8a(3) of this MARADMIN applies.
+11.  Temporary Administrative Procedures.  Until a permanent parental leave code
+that tracks the number of days utilized in Marine Online (MOL) is implemented, the
+following temporary administrative procedures will be utilized:
+a.  Marines will submit all parental leave requests under â€œPTAD, Parental Leaveâ€
+in MOL.  Any Marine who is currently on â€œParental Leave, Primary Caregiverâ€ or
+â€œParental Leave, Secondary Caregiverâ€, must have their leave transitioned to
+â€œPTAD, Parental Leaveâ€ by 1 Mar 23.
+b.  Marines who give birth will now utilize â€œLeave, Convalescent Leaveâ€ following
+the birth of their child in accordance with paragraph 7a.  Any Marine who is
+currently on â€œLeave, Maternityâ€, must have any remaining authorized MCL
+transitioned to â€œLeave, Convalescent Leaveâ€ by 1 Mar 23.
+c.  Commands are responsible for locally tracking and maintaining records of a
+Marineâ€™s eligibility and execution of parental leave in accordance with this
+MARADMIN.
+d.  Commands and Marines are responsible for ensuring the Marine authorized this
+leave does not use over 84 days of parental leave, except in circumstance
+identified in paragraph 8b(2).
+e.  Commands are responsible for ensuring the criteria in paragraph 7d are met
+during the interim to effect the charge of annual leave as may be required until
+Marine Corps personnel systems are updated.
+12.  This MARADMIN is applicable to all AC Marines, and all RC Marines who perform
+active duty for more than 12 consecutive months.
+13.  Release authorized by Lieutenant General James F. Glynn, Deputy Commandant</p>
+      <p>
+for Manpower and Reserve Affairs.//</p>
+    </content>
+  </paragraph>
+</issuance>
