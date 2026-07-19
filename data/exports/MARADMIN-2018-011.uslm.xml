@@ -3,7 +3,7 @@
      Every provision is UNVERIFIED until confirmed against source per
      DATA_CONTRACT.md. Contact details are masked pending owner policy. -->
 <issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
-          identifier="/us/usmc/maradmin/2018/011"
+          identifier="/us/dod/don/usmc/maradmin/2018/011"
           issuanceType="MARADMIN"
           status="UNVERIFIED">
   <meta>
@@ -11,7 +11,7 @@
     <isoDate>2018-01-06</isoDate>
     <subject>CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND STAFF</subject>
   </meta>
-  <paragraph identifier="/us/usmc/maradmin/2018/011/header" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/maradmin/2018/011/header" status="UNVERIFIED" level="section">
     <content>
       <p>MARADMIN 011/18
 CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND
@@ -48,7 +48,7 @@ POC/R. D. BARRETT/MAJ/CDET/TELEPHONE: [contact withheld]/[contact withheld]/E-MA
 [contact withheld]//</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/maradmin/2018/011/body" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/maradmin/2018/011/body" status="UNVERIFIED" level="section">
     <heading>Remarks</heading>
     <content>
       <p>GENTEXT/REMARKS/1.  This Marine Administrative Message (MARADMIN)announces the

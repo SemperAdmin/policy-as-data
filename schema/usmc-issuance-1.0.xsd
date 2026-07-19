@@ -69,7 +69,7 @@
     </xs:restriction>
   </xs:simpleType>
 
-  <!-- A stable, path-style identifier, e.g. /us/usmc/maradmin/2023/051/p8 -->
+  <!-- A stable, path-style identifier, e.g. /us/dod/don/usmc/maradmin/2023/051/p8 -->
   <xs:simpleType name="Identifier">
     <xs:restriction base="xs:string">
       <xs:pattern value="/[A-Za-z0-9._/()-]+"/>
