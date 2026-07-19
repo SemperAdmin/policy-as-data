@@ -12,7 +12,7 @@
 <issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://policy.usmc.mil/ns/uslm/1.0 ../schema/usmc-issuance-1.0.xsd"
-          identifier="/us/usmc/maradmin/2023/129"
+          identifier="/us/dod/don/usmc/maradmin/2023/129"
           issuanceType="MARADMIN"
           status="VERIFIED">
   <meta>
@@ -23,14 +23,14 @@
     <derivesFrom href="/us/dod/dtm/2023/23-001"/>
   </meta>
 
-  <paragraph identifier="/us/usmc/maradmin/2023/129/p1" status="VERIFIED">
+  <paragraph identifier="/us/dod/don/usmc/maradmin/2023/129/p1" status="VERIFIED">
     <num style="arabic">1</num>
     <content>
       <p>This MARADMIN provides clarification to reference (a) concerning the expansion of the Military Parental Leave Program (MPLP).</p>
     </content>
   </paragraph>
 
-  <paragraph identifier="/us/usmc/maradmin/2023/129/p2" status="VERIFIED">
+  <paragraph identifier="/us/dod/don/usmc/maradmin/2023/129/p2" status="VERIFIED">
     <num style="arabic">2</num>
     <heading>Background</heading>
     <content>
@@ -38,7 +38,7 @@
     </content>
   </paragraph>
 
-  <paragraph identifier="/us/usmc/maradmin/2023/129/p3" status="VERIFIED">
+  <paragraph identifier="/us/dod/don/usmc/maradmin/2023/129/p3" status="VERIFIED">
     <num style="arabic">3</num>
     <heading>Convalescent Leave</heading>
     <content>
@@ -46,7 +46,7 @@
     </content>
   </paragraph>
 
-  <paragraph identifier="/us/usmc/maradmin/2023/129/p4" status="VERIFIED">
+  <paragraph identifier="/us/dod/don/usmc/maradmin/2023/129/p4" status="VERIFIED">
     <num style="arabic">4</num>
     <heading>Special Leave Accrual (SLA)</heading>
     <content>
@@ -54,7 +54,7 @@
     </content>
   </paragraph>
 
-  <paragraph identifier="/us/usmc/maradmin/2023/129/p5" status="VERIFIED">
+  <paragraph identifier="/us/dod/don/usmc/maradmin/2023/129/p5" status="VERIFIED">
     <num style="arabic">5</num>
     <content>
       <p>Release authorized by Lieutenant General James F. Glynn, Deputy  Commandant for Manpower and Reserve Affairs.</p>

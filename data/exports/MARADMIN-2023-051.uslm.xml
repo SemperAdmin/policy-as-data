@@ -3,7 +3,7 @@
      Every provision is UNVERIFIED until confirmed against source per
      DATA_CONTRACT.md. Contact details are masked pending owner policy. -->
 <issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
-          identifier="/us/usmc/maradmin/2023/051"
+          identifier="/us/dod/don/usmc/maradmin/2023/051"
           issuanceType="MARADMIN"
           status="UNVERIFIED">
   <meta>
@@ -11,7 +11,7 @@
     <isoDate>2023-01-27</isoDate>
     <subject>EXPANSION OF THE MARINE CORPS MILITARY PARENTAL LEAVE PROGRAM</subject>
   </meta>
-  <paragraph identifier="/us/usmc/maradmin/2023/051/header" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/maradmin/2023/051/header" status="UNVERIFIED" level="section">
     <content>
       <p>MARADMIN 051/23
 R 272030Z JAN 23
@@ -34,7 +34,7 @@ PARENTAL LEAVE//
 POC/MRA(MPO)/EMAIL: [contact withheld]/TEL: [contact withheld]//</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/maradmin/2023/051/body" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/maradmin/2023/051/body" status="UNVERIFIED" level="section">
     <heading>Remarks</heading>
     <content>
       <p>GENTEXT/REMARKS/1.  This MARADMIN announces the expansion of the Military Parental

@@ -49,9 +49,9 @@ an inference is never mistaken for a citation.
 Every issuance and every provision has a stable, path-style identifier:
 
 ```
-/us/usmc/maradmin/2023/051            the issuance
-/us/usmc/maradmin/2023/051/p8         paragraph 8
-/us/usmc/maradmin/2023/051/p8/b/2     paragraph 8.b.(2)
+/us/dod/don/usmc/maradmin/2023/051            the issuance
+/us/dod/don/usmc/maradmin/2023/051/p8         paragraph 8
+/us/dod/don/usmc/maradmin/2023/051/p8/b/2     paragraph 8.b.(2)
 /us/dod/dodi/1327.06                  the DoDI it derives from
 /us/usc/10/701                        the statute at the top of the chain
 ```

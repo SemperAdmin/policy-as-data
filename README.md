@@ -83,7 +83,7 @@ xmllint --noout --schema schema/usmc-issuance-1.0.xsd data/maradmin-051-23.uslm.
 - **Faithful.** Nothing is encoded that is not in the source issuance. Wording,
   numbering, and hierarchy are preserved.
 - **Addressable.** Every provision carries a stable identifier
-  (e.g. `/us/usmc/maradmin/2023/051/p8`), shared across the markup and the
+  (e.g. `/us/dod/don/usmc/maradmin/2023/051/p8`), shared across the markup and the
   authority graph.
 - **Traceable.** Authority links run from a provision up through DoDI 1327.06
   to 10 U.S.C. 701.
