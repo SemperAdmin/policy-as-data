@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 560" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1140" height="560" fill="#FFFFFF"/>
+  <text x="40" y="46" font-size="26" font-weight="700" fill="#0F1F3D">Authoring: policy born as data</text>
+  <text x="40" y="74" font-size="16" fill="#555">A directive drafted in the structure needs no parsing later. It is correct by construction, from the first keystroke.</text>
+
+  <!-- SemperScribe author -->
+  <rect x="40" y="110" width="270" height="150" rx="8" fill="#FFFFFF" stroke="#0F1F3D" stroke-width="2"/>
+  <rect x="40" y="110" width="270" height="38" rx="8" fill="#0F1F3D"/>
+  <text x="58" y="135" font-size="16" font-weight="700" fill="#FFF">SemperScribe</text>
+  <text x="58" y="176" font-size="14" fill="#333">A drafter composes a directive</text>
+  <text x="58" y="196" font-size="14" fill="#333">as structured paragraphs. The tool</text>
+  <text x="58" y="216" font-size="14" fill="#333">keeps MCO 5215.1K numbering</text>
+  <text x="58" y="236" font-size="14" fill="#333">correct as they type.</text>
+
+  <!-- export -->
+  <path d="M 314 185 L 356 185" stroke="#B89042" stroke-width="3" marker-end="url(#a5)"/>
+  <text x="316" y="176" font-size="12" font-weight="700" fill="#8A6A22">export</text>
+  <rect x="360" y="132" width="220" height="106" rx="8" fill="#FDF3D8" stroke="#B89042"/>
+  <text x="378" y="160" font-size="15" font-weight="700" fill="#8A6A22">Policy-as-Data</text>
+  <text x="378" y="180" font-size="15" font-weight="700" fill="#8A6A22">(USLM)</text>
+  <text x="378" y="204" font-size="12.5" fill="#7A5F1E">one menu item, one file:</text>
+  <text x="378" y="224" font-size="12.5" font-family="Consolas, monospace" fill="#7A5F1E">MCO-5215.1K.policy.json</text>
+
+  <path d="M 584 185 L 626 185" stroke="#B89042" stroke-width="3" marker-end="url(#a5)"/>
+
+  <!-- pipeline -->
+  <rect x="630" y="110" width="470" height="150" rx="8" fill="#0A1424" stroke="#233A5C"/>
+  <rect x="630" y="110" width="470" height="38" rx="8" fill="#B82230"/>
+  <text x="648" y="135" font-size="16" font-weight="700" fill="#FFF">Policy-as-Data pipeline</text>
+  <text x="648" y="174" font-size="13.5" fill="#F2E5BE">Validates against the 0.4.0 schema.</text>
+  <text x="648" y="196" font-size="13.5" fill="#F2E5BE">Exports XSD-valid USLM XML.</text>
+  <text x="648" y="218" font-size="13.5" fill="#F2E5BE">Renders a library page with clickable</text>
+  <text x="648" y="240" font-size="13.5" fill="#F2E5BE">provisions. No parsing, no inference.</text>
+
+  <!-- same identifiers -->
+  <rect x="360" y="300" width="740" height="70" rx="8" fill="#F7F8FA" stroke="#DDD"/>
+  <text x="378" y="328" font-size="14" font-weight="700" fill="#0F1F3D">The authored directive carries the same identifiers as the scraped library</text>
+  <text x="378" y="352" font-size="13" font-family="Consolas, monospace" fill="#333">/us/dod/don/usmc/mco/5215.1k/p3/a   —   validated end to end against the published XSD</text>
+
+  <path d="M 175 264 L 175 300 L 358 300" fill="none" stroke="#AAA" stroke-width="2" marker-end="url(#a6)"/>
+  <text x="60" y="292" font-size="13" fill="#555">The read side proves structure can be</text>
+  <text x="60" y="312" font-size="13" fill="#555">recovered from a PDF.</text>
+  <text x="60" y="336" font-size="13" font-weight="700" fill="#B82230">The write side proves you</text>
+  <text x="60" y="356" font-size="13" font-weight="700" fill="#B82230">never needed the PDF.</text>
+
+  <!-- gates reminder -->
+  <rect x="40" y="404" width="1060" height="120" rx="8" fill="#FFFFFF" stroke="#B82230" stroke-width="2"/>
+  <text x="60" y="432" font-size="15" font-weight="700" fill="#B82230">The four controls apply at authoring time too</text>
+  <text x="60" y="458" font-size="13.5" fill="#444">A directive authored in SemperScribe enters the system under the same discipline as a scraped one: every</text>
+  <text x="60" y="480" font-size="13.5" fill="#444">provision stamped UNVERIFIED until a human confirms it, contacts masked, publication gate honored, and</text>
+  <text x="60" y="502" font-size="13.5" fill="#444">status carried in the data. Correct by construction does not mean unchecked - it means checked from the start.</text>
+
+  <defs>
+    <marker id="a5" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#B89042"/></marker>
+    <marker id="a6" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#AAA"/></marker>
+  </defs>
+</svg>

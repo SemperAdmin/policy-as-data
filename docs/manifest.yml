@@ -1,0 +1,8 @@
+---
+applications:
+- name: policy-as-data
+  memory: 64M
+  disk_quota: 512M
+  instances: 1
+  buildpacks:
+    - staticfile_buildpack
