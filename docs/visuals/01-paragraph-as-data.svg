@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1100" height="620" fill="#FFFFFF"/>
+  <text x="40" y="46" font-size="26" font-weight="700" fill="#0F1F3D">One paragraph, two views</text>
+  <text x="40" y="74" font-size="16" fill="#555">The page a Marine reads does not change. What changes is what the machine knows underneath it.</text>
+
+  <!-- LEFT: printed view -->
+  <rect x="40" y="102" width="470" height="470" rx="6" fill="#FCFCFA" stroke="#CCC"/>
+  <rect x="40" y="102" width="470" height="34" rx="6" fill="#0F1F3D"/>
+  <text x="56" y="125" font-size="15" font-weight="700" fill="#FFF">PRINTED VIEW — unchanged</text>
+  <text x="56" y="128" font-size="15" fill="#FFF" opacity="0"> </text>
+
+  <text x="56" y="168" font-size="15" font-weight="700" fill="#222">8.  Amplifying Instructions</text>
+  <text x="86" y="198" font-size="15" font-weight="700" fill="#222">a.  Commander's Authority</text>
+  <text x="116" y="228" font-size="15" fill="#222">(1)  Commanders will make every effort to</text>
+  <text x="116" y="248" font-size="15" fill="#222">approve requests for parental leave.</text>
+  <text x="146" y="278" font-size="15" fill="#222">(a)  In instances where the commander</text>
+  <text x="146" y="298" font-size="15" fill="#222">has carefully evaluated the operational</text>
+  <text x="146" y="318" font-size="15" fill="#222">requirements of the unit...</text>
+  <rect x="140" y="332" width="352" height="52" rx="4" fill="#FBEEF0" stroke="#B82230" stroke-width="2"/>
+  <text x="152" y="354" font-size="15" font-weight="700" fill="#B82230">(b)  Parental leave used in more than one</text>
+  <text x="152" y="374" font-size="15" font-weight="700" fill="#B82230">increment must be in periods of at least 7 days.</text>
+  <text x="146" y="410" font-size="15" fill="#222">(c)  Parental leave requests must be</text>
+  <text x="146" y="430" font-size="15" fill="#222">submitted within the 1-year period.</text>
+
+  <text x="56" y="478" font-size="14" fill="#555">Standard naval letter format prints a single</text>
+  <text x="56" y="498" font-size="14" fill="#555">character. The reader sees "(b)" and nothing more.</text>
+  <text x="56" y="534" font-size="14" font-style="italic" fill="#B89042">"The xml will need all the details</text>
+  <text x="56" y="554" font-size="14" font-style="italic" fill="#B89042">but visually it won't change."</text>
+
+  <!-- arrow -->
+  <path d="M 528 340 L 572 340" stroke="#B89042" stroke-width="3" marker-end="url(#ar)"/>
+  <defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L9,3 z" fill="#B89042"/></marker></defs>
+
+  <!-- RIGHT: stored data -->
+  <rect x="590" y="102" width="470" height="470" rx="6" fill="#0A1424" stroke="#233A5C"/>
+  <rect x="590" y="102" width="470" height="34" rx="6" fill="#B82230"/>
+  <text x="606" y="125" font-size="15" font-weight="700" fill="#FFF">STORED DATA — fully hierarchical</text>
+
+  <text x="606" y="170" font-size="13" fill="#B5A988">identifier</text>
+  <text x="606" y="192" font-size="14" font-family="Consolas, monospace" fill="#FAF1D8">/us/dod/don/usmc/maradmin/</text>
+  <text x="606" y="212" font-size="14" font-family="Consolas, monospace" fill="#FAF1D8">2023/051/p8/a/1/b</text>
+
+  <text x="606" y="250" font-size="13" fill="#B5A988">citation form (machine)</text>
+  <text x="606" y="272" font-size="15" font-family="Consolas, monospace" fill="#D4AF67">8.a.(1)(b)</text>
+
+  <text x="606" y="308" font-size="13" fill="#B5A988">printed label (human)</text>
+  <text x="606" y="330" font-size="15" font-family="Consolas, monospace" fill="#D4AF67">(b)</text>
+
+  <text x="606" y="366" font-size="13" fill="#B5A988">parent</text>
+  <text x="606" y="388" font-size="14" font-family="Consolas, monospace" fill="#FAF1D8">p8/a/1        depth 3</text>
+
+  <text x="606" y="424" font-size="13" fill="#B5A988">verification</text>
+  <text x="606" y="446" font-size="14" font-family="Consolas, monospace" fill="#FAF1D8">UNVERIFIED</text>
+
+  <text x="606" y="482" font-size="13" fill="#B5A988">text (marker removed)</text>
+  <text x="606" y="504" font-size="13" fill="#F2E5BE">"Parental leave used in more than one</text>
+  <text x="606" y="522" font-size="13" fill="#F2E5BE">increment must be in periods of at</text>
+  <text x="606" y="540" font-size="13" fill="#F2E5BE">least 7 days for a maximum of 12..."</text>
+  <text x="606" y="562" font-size="12" fill="#6B9BD2">— MARADMIN 051/23, actual pipeline output</text>
+</svg>

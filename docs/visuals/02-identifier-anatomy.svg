@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1100" height="520" fill="#FFFFFF"/>
+  <text x="40" y="46" font-size="26" font-weight="700" fill="#0F1F3D">Anatomy of an identifier</text>
+  <text x="40" y="74" font-size="16" fill="#555">Every paragraph in the corpus carries a permanent name that states its command lineage and its exact position.</text>
+
+  <!-- the path -->
+  <g font-family="Consolas, monospace" font-size="22" font-weight="700">
+    <rect x="40"  y="110" width="52"  height="44" rx="4" fill="#E8EAEF" stroke="#0F1F3D"/>
+    <text x="52"  y="139" fill="#0F1F3D">/us</text>
+    <rect x="96"  y="110" width="66"  height="44" rx="4" fill="#E8EAEF" stroke="#0F1F3D"/>
+    <text x="106" y="139" fill="#0F1F3D">/dod</text>
+    <rect x="166" y="110" width="66"  height="44" rx="4" fill="#E8EAEF" stroke="#0F1F3D"/>
+    <text x="176" y="139" fill="#0F1F3D">/don</text>
+    <rect x="236" y="110" width="82"  height="44" rx="4" fill="#E8EAEF" stroke="#0F1F3D"/>
+    <text x="246" y="139" fill="#0F1F3D">/usmc</text>
+    <rect x="322" y="110" width="140" height="44" rx="4" fill="#FDF3D8" stroke="#B89042"/>
+    <text x="332" y="139" fill="#8A6A22">/maradmin</text>
+    <rect x="466" y="110" width="80"  height="44" rx="4" fill="#FDF3D8" stroke="#B89042"/>
+    <text x="476" y="139" fill="#8A6A22">/2023</text>
+    <rect x="550" y="110" width="66"  height="44" rx="4" fill="#FDF3D8" stroke="#B89042"/>
+    <text x="560" y="139" fill="#8A6A22">/051</text>
+    <rect x="620" y="110" width="56"  height="44" rx="4" fill="#FBEEF0" stroke="#B82230"/>
+    <text x="630" y="139" fill="#B82230">/p8</text>
+    <rect x="680" y="110" width="46"  height="44" rx="4" fill="#FBEEF0" stroke="#B82230"/>
+    <text x="690" y="139" fill="#B82230">/a</text>
+    <rect x="730" y="110" width="46"  height="44" rx="4" fill="#FBEEF0" stroke="#B82230"/>
+    <text x="740" y="139" fill="#B82230">/1</text>
+    <rect x="780" y="110" width="46"  height="44" rx="4" fill="#FBEEF0" stroke="#B82230"/>
+    <text x="790" y="139" fill="#B82230">/b</text>
+  </g>
+
+  <!-- brackets -->
+  <path d="M 42 168 L 42 180 L 316 180 L 316 168" fill="none" stroke="#0F1F3D" stroke-width="2"/>
+  <text x="60" y="204" font-size="15" font-weight="700" fill="#0F1F3D">COMMAND LINEAGE</text>
+  <text x="60" y="226" font-size="14" fill="#555">Nation, department, service branch. Mirrors the</text>
+  <text x="60" y="246" font-size="14" fill="#555">DON XML NDR base URN urn:us:gov:dod:don</text>
+  <text x="60" y="266" font-size="14" fill="#555">expressed in the USLM path convention used</text>
+  <text x="60" y="286" font-size="14" fill="#555">to publish the U.S. Code.</text>
+
+  <path d="M 324 168 L 324 180 L 614 180 L 614 168" fill="none" stroke="#B89042" stroke-width="2"/>
+  <text x="342" y="204" font-size="15" font-weight="700" fill="#8A6A22">THE DOCUMENT</text>
+  <text x="342" y="226" font-size="14" fill="#555">Issuance type, year, number — exactly how a</text>
+  <text x="342" y="246" font-size="14" fill="#555">Marine cites it. MARADMIN 051/23.</text>
+
+  <path d="M 622 168 L 622 180 L 824 180 L 824 168" fill="none" stroke="#B82230" stroke-width="2"/>
+  <text x="640" y="204" font-size="15" font-weight="700" fill="#B82230">THE PROVISION</text>
+  <text x="640" y="226" font-size="14" fill="#555">Paragraph 8, subparagraph a,</text>
+  <text x="640" y="246" font-size="14" fill="#555">item (1), sub-item (b).</text>
+  <text x="640" y="266" font-size="14" fill="#555">Reads 8.a.(1)(b) when cited.</text>
+
+  <!-- rooting variants -->
+  <rect x="40" y="318" width="1020" height="170" rx="6" fill="#F7F8FA" stroke="#DDD"/>
+  <text x="60" y="348" font-size="16" font-weight="700" fill="#0F1F3D">The same rule applied across issuing authorities</text>
+  <g font-family="Consolas, monospace" font-size="15">
+    <text x="60" y="382" fill="#333">/us/dod/don/usmc/maradmin/2023/051/p8/a/1/b</text>
+    <text x="620" y="382" font-family="Segoe UI, Arial" font-size="14" fill="#555">Marine Corps message</text>
+    <text x="60" y="410" fill="#333">/us/dod/don/secnavinst/1000.10b</text>
+    <text x="620" y="410" font-family="Segoe UI, Arial" font-size="14" fill="#555">Navy department instruction</text>
+    <text x="60" y="438" fill="#333">/us/dod/fmr/vol01/ch01</text>
+    <text x="620" y="438" font-family="Segoe UI, Arial" font-size="14" fill="#555">DoD-level regulation</text>
+    <text x="60" y="466" fill="#333">/us/dod/don/usmc/maradmin-canx/2018/011</text>
+    <text x="620" y="466" font-family="Segoe UI, Arial" font-size="14" fill="#555">Cancellation notice series</text>
+  </g>
+</svg>
