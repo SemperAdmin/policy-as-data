@@ -3,14 +3,14 @@
      Every provision is UNVERIFIED until confirmed against source per
      DATA_CONTRACT.md. Contact details are masked pending owner policy. -->
 <issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
-          identifier="/us/usmc/mco/5215.1k-ch3"
+          identifier="/us/dod/don/usmc/mco/5215.1k-ch3"
           issuanceType="MCO"
           status="UNVERIFIED">
   <meta>
     <originator></originator>
     <subject>MCO 5215.1K WADMIN CH-3</subject>
   </meta>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/front-matter" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/front-matter" status="UNVERIFIED" level="section">
     <content>
       <p>DISTRIBUTION STATEMENT A:  Approved for public release; distribution is 
 unlimited. 
@@ -44,7 +44,7 @@ be made to the list of officials authorized to sign Marine Corps directives
 2.  Mission.  To implement changes to the Order.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-3" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-3" status="UNVERIFIED" level="section">
     <num style="arabic">3</num>
     <heading>3.  Execution.  Changes to the Order are as follows:</heading>
     <content>
@@ -59,7 +59,7 @@ authorities.
 direction” signature authorities.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-4" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-4" status="UNVERIFIED" level="section">
     <num style="arabic">4</num>
     <heading>4.  Administration and Logistics</heading>
     <content>
@@ -99,7 +99,7 @@ Management Division (AR); Reports, Directives, and Forms Management Section
 mailbox, [contact withheld].</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-5" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-5" status="UNVERIFIED" level="section">
     <num style="arabic">5</num>
     <heading>5.  Command and Signal</heading>
     <content>
@@ -157,7 +157,7 @@ Ref:   (a) E.O. 14168, “Defending Women From Gender Ideology Extremism and
        (g) MCO 5211.5</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-1" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-1" status="UNVERIFIED" level="section">
     <num style="arabic">1</num>
     <heading>1.  Situation.  The Commandant of the Marine Corps (CMC) has directed changes</heading>
     <content>
@@ -169,7 +169,7 @@ references (a) and (b) of this transmittal.
 2.  Mission.  To implement changes to the Order.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-3-2" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-3-2" status="UNVERIFIED" level="section">
     <num style="arabic">3</num>
     <heading>3.  Execution.  Changes to the Order are as follows:</heading>
     <content>
@@ -207,7 +207,7 @@ updated policy in enclosure (1), page 13-16, Section 3, paragraph 8b(1) from
 reference (b) of this transmittal.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-4-2" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-4-2" status="UNVERIFIED" level="section">
     <num style="arabic">4</num>
     <heading>4.  Administration and Logistics</heading>
     <content>
@@ -240,7 +240,7 @@ Management Division (AR); Reports, Directives, and Forms Management Section
 mailbox, [contact withheld].</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-5-2" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-5-2" status="UNVERIFIED" level="section">
     <num style="arabic">5</num>
     <heading>5.  Command and Signal</heading>
     <content>
@@ -279,7 +279,7 @@ Defending Women,” January 29, 2025
 reviewed and updated as necessary.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-2" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-2" status="UNVERIFIED" level="section">
     <num style="arabic">2</num>
     <heading>2.  The required changes have been incorporated into reference (c) as an</heading>
     <content>
@@ -292,7 +292,7 @@ b.  Change the paragraph title and modify the language in paragraph 15 of
 Chapter 1 on page 1-6 of enclosure (1).</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-3-3" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-3-3" status="UNVERIFIED" level="section">
     <num style="arabic">3</num>
     <heading>3.  These changes are effective as of the date signed.</heading>
     <content>
@@ -433,7 +433,7 @@ to reference (q) for policy and procedural guidance.
 2.  Cancellation.  MCO 5215.1J.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-3-4" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-3-4" status="UNVERIFIED" level="section">
     <num style="arabic">3</num>
     <heading>3.  Mission.  This Order provides policy for the preparation, approval, and</heading>
     <content>
@@ -443,7 +443,7 @@ written in compliance with this Order.  Policy and procedural or “how to”
 guidance is contained in enclosure (1).</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-4-3" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-4-3" status="UNVERIFIED" level="section">
     <num style="arabic">4</num>
     <heading>4.  Execution</heading>
     <content>
@@ -572,7 +572,7 @@ this Order may be forwarded to CMC (ARDB) via the appropriate chain-of-
 command.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-6" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-6" status="UNVERIFIED" level="section">
     <num style="arabic">6</num>
     <heading>6.  Command and Signal</heading>
     <content>
@@ -711,7 +711,7 @@ Chapter 1         DIRECTIVES ADMINISTRATIVE PROCEDURES...................1-1
                   Directive..............................................1-17</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-39" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-39" status="UNVERIFIED" level="section">
     <num style="arabic">39</num>
     <heading>39.               Numbering Pages........................................1-18</heading>
     <content>
@@ -746,7 +746,7 @@ IDENTIFICATION                      TITLE                                PAGE
 53.               Preparing Change Transmittal Pages.....................1-23</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-54" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-54" status="UNVERIFIED" level="section">
     <num style="arabic">54</num>
     <heading>54.               Identifying and Replacing Chapters of an Order.........1-23</heading>
     <content>
@@ -768,7 +768,7 @@ Chapter 2         ORDERS.................................................2-1
 2.                Letterhead Page........................................2-1</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-3-5" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-3-5" status="UNVERIFIED" level="section">
     <num style="arabic">3</num>
     <heading>3.                Mandatory Paragraphs...................................2-1</heading>
     <content>
@@ -777,7 +777,7 @@ Chapter 2         ORDERS.................................................2-1
 5.                “Command and Signal” Paragraph.........................2-2</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-6-2" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-6-2" status="UNVERIFIED" level="section">
     <num style="arabic">6</num>
     <heading>6.                Signature Block........................................2-2</heading>
     <content>
@@ -794,7 +794,7 @@ Chapter 3         BULLETINS..............................................3-1
 2.                Letterhead Page........................................3-1</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-3-6" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-3-6" status="UNVERIFIED" level="section">
     <num style="arabic">3</num>
     <heading>3.                SSIC and Sponsor Code..................................3-1</heading>
     <content>
@@ -811,7 +811,7 @@ TABLE OF CONTENTS
 IDENTIFICATION                      TITLE                                PAGE</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-4-4" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-4-4" status="UNVERIFIED" level="section">
     <num style="arabic">4</num>
     <heading>4.                Designation Line.......................................3-1</heading>
     <content>
@@ -828,7 +828,7 @@ IDENTIFICATION                      TITLE                                PAGE</p
 14.               Filing Instructions....................................3-3</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-15" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-15" status="UNVERIFIED" level="section">
     <num style="arabic">15</num>
     <heading>15.               Bulletins Issued in Message Format.....................3-3</heading>
     <content>
@@ -854,7 +854,7 @@ Chapter 4         JOINT DIRECTIVES.......................................4-1
 9.                Signature Authority....................................4-3</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-10" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-10" status="UNVERIFIED" level="section">
     <num style="arabic">10</num>
     <heading>10.               Format of a Directive Signed by Two or More</heading>
     <content>
@@ -876,7 +876,7 @@ definitions, authorities, responsibilities, and procedures associated with
 the preparation of Marine Corps directives.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-2-2" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-2-2" status="UNVERIFIED" level="section">
     <num style="arabic">2</num>
     <heading>2.  Background.  The Marine Corps Directives Management Program shall be</heading>
     <content>
@@ -885,7 +885,7 @@ administered in accordance with this Order.  Chapters 2 through 4 provide
 instructions and formats for preparing directives and other issuances.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-3-7" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-3-7" status="UNVERIFIED" level="section">
     <num style="arabic">3</num>
     <heading>3.  Definitions</heading>
     <content>
@@ -946,7 +946,7 @@ the duties of the assistant principal in the latter’s absence.
 implementing policy and programs as delegated by the principal official.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-4-5" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-4-5" status="UNVERIFIED" level="section">
     <num style="arabic">4</num>
     <heading>4.  Exemptions.  The documents below are not issued under the Marine Corps</heading>
     <content>
@@ -973,7 +973,7 @@ individuals and/or equipment.
 operation of computer systems.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-5-3" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-5-3" status="UNVERIFIED" level="section">
     <num style="arabic">5</num>
     <heading>5.  Promulgation of Supplemental Directives</heading>
     <content>
@@ -1012,7 +1012,7 @@ command is not authorized or does not have the capability to secure classified
 material).</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-6-3" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-6-3" status="UNVERIFIED" level="section">
     <num style="arabic">6</num>
     <heading>6.  Authority to Issue Directives.  All commanders, per the Marine Corps Manual,</heading>
     <content>
@@ -1025,7 +1025,7 @@ organization or command.  HQMC activities and field commands must refer to figur
 2-2 for formatting.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-7" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-7" status="UNVERIFIED" level="section">
     <num style="arabic">7</num>
     <heading>7.  Delegating Signature Authority.  The principal official may delegate signature</heading>
     <content>
@@ -1096,7 +1096,7 @@ signed by the principal official or delegate.  Refer to page 1-3, paragraph 7
 of this Order for delegation of signature authority.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-8" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-8" status="UNVERIFIED" level="section">
     <num style="arabic">8</num>
     <heading>8.  Directives Control Point (DCP).  HQMC staff agencies and field commanders</heading>
     <content>
@@ -1106,7 +1106,7 @@ detailed for processing directives.  Field commands are required to designate
 a DCP in writing.  CMC (ARDB) is the DCP for HQMC directives.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-9" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-9" status="UNVERIFIED" level="section">
     <num style="arabic">9</num>
     <heading>9.  Classified Directives</heading>
     <content>
@@ -1131,7 +1131,7 @@ appropriate Distribution Statement on the first page.
                                                                   10 May 2007</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-10-2" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-10-2" status="UNVERIFIED" level="section">
     <num style="arabic">10</num>
     <heading>10.  Designation “FOR OFFICIAL USE ONLY” (FOUO) Directives</heading>
     <content>
@@ -1161,7 +1161,7 @@ OR
              basic directive and enclosures (1) and (4).</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-11" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-11" status="UNVERIFIED" level="section">
     <num style="arabic">11</num>
     <heading>11.  Directive Sponsor Change</heading>
     <content>
@@ -1174,7 +1174,7 @@ DCP via the new sponsor for formal concurrence.
 directives just to change the address or title of a command.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-13" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-13" status="UNVERIFIED" level="section">
     <num style="arabic">13</num>
     <heading>13.  Command Assumption.  An assumption of command directive may be in letter</heading>
     <content>
@@ -1184,7 +1184,7 @@ figure 1-1.  A command directives review shall be conducted up to 1 year
 after the principal officer has assumed command.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-14" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-14" status="UNVERIFIED" level="section">
     <num style="arabic">14</num>
     <heading>14.  Internal Reviews</heading>
     <content>
@@ -1213,7 +1213,7 @@ database file containing the same information as an option to recording the
 results of the review on a NAVMC 10974.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-15-2" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-15-2" status="UNVERIFIED" level="section">
     <num style="arabic">15</num>
     <heading>15.  Gender Specific Language and Personal Pronouns Sex-Based Language and</heading>
     <content>
@@ -1235,7 +1235,7 @@ enclosure title, etc., when the directive or that portion pertains to a specific
 gender sex.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-16" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-16" status="UNVERIFIED" level="section">
     <num style="arabic">16</num>
     <heading>16.  Abbreviations, Acronyms, and Reference Aids</heading>
     <content>
@@ -1284,7 +1284,7 @@ the directives or manuals in this paragraph or not commonly used Marine
 Corps-wide.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-17" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-17" status="UNVERIFIED" level="section">
     <num style="arabic">17</num>
     <heading>17.  Staffing and Clearing Directives</heading>
     <content>
@@ -1311,7 +1311,7 @@ original, all background material, and comments/recommendations to the
 appropriate DCP to process for distribution and/or publishing.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-18" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-18" status="UNVERIFIED" level="section">
     <num style="arabic">18</num>
     <heading>18.  Letterhead Stationery and Style of Type</heading>
     <content>
@@ -1343,7 +1343,7 @@ text, table diagram, etc., to fit properly.
     d.  Electronic Letterhead.  Refer to reference (f) CH-2, Appendix C.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-19" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-19" status="UNVERIFIED" level="section">
     <num style="arabic">19</num>
     <heading>19.  Distribution Statements.  Directives sponsors shall designate</heading>
     <content>
@@ -1369,7 +1369,7 @@ OPNAVINST 5510.161; (date of determination).  Other requests shall be referred t
 command).</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-20" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-20" status="UNVERIFIED" level="section">
     <num style="arabic">20</num>
     <heading>20.  Printing and Distribution</heading>
     <content>
@@ -1389,7 +1389,7 @@ documents (see paragraph above).  These directives shall not be placed on an
 unclassified web site.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-21" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-21" status="UNVERIFIED" level="section">
     <num style="arabic">21</num>
     <heading>21.  Preparing Directives.  Prepare directives per the following</heading>
     <content>
@@ -1456,7 +1456,7 @@ directive, then use the next available unassigned point number.
 applies only to the Marine Corps Reserve; e.g., MCO 5215R.15.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-23" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-23" status="UNVERIFIED" level="section">
     <num style="arabic">23</num>
     <heading>23.  Designation Line.  Start the designation line on the second line below</heading>
     <content>
@@ -1503,7 +1503,7 @@ parenthesis; i.e., (canc:  Aug 06).
 lettering system; e.g., (aa)-(az).</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-25" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-25" status="UNVERIFIED" level="section">
     <num style="arabic">25</num>
     <heading>25.  Citing References.  Use the term ”reference (a)” or “references (b) and</heading>
     <content>
@@ -1520,7 +1520,7 @@ articles, conjunctions, or two and three-letter prepositions.
 the text of the basic directive.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-27" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-27" status="UNVERIFIED" level="section">
     <num style="arabic">27</num>
     <heading>27.  Citing Enclosures</heading>
     <content>
@@ -1532,7 +1532,7 @@ front page of a preprinted document of a different agency when it is to be
 printed with the directive.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-28" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-28" status="UNVERIFIED" level="section">
     <num style="arabic">28</num>
     <heading>28.  Locator Sheet.  (Optional for unclassified directives.)</heading>
     <content>
@@ -1638,7 +1638,7 @@ Show the report(s) required section on the promulgation page as follows:
                  Reports Required:  List, page v.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-30" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-30" status="UNVERIFIED" level="section">
     <num style="arabic">30</num>
     <heading>30.  Forms Management</heading>
     <content>
@@ -1662,7 +1662,7 @@ directive and will include instructions to dispose of these records, per
 reference (d).</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-32" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-32" status="UNVERIFIED" level="section">
     <num style="arabic">32</num>
     <heading>32.  Paragraphs.  Refer to chapters 2 through 3 for required paragraphs.</heading>
     <content>
@@ -1685,7 +1685,7 @@ Do not leave a paragraph title and/or its subtitle at the end of a page, it
 must be followed by at least two consecutive lines of text.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-33" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-33" status="UNVERIFIED" level="section">
     <num style="arabic">33</num>
     <heading>33.  Paragraph Numbering System.  Arrange paragraphs following the format on</heading>
     <content>
@@ -1742,7 +1742,7 @@ NOTE:
                                                                   10 May 2007</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-34" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-34" status="UNVERIFIED" level="section">
     <num style="arabic">34</num>
     <heading>34.  Optional Paragraph Numbering for Directives with Enclosures over 200</heading>
     <content>
@@ -1791,7 +1791,7 @@ numbers without periods and spaces; e.g., 1a(2)(b).
 in the text of directives.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-37" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-37" status="UNVERIFIED" level="section">
     <num style="arabic">37</num>
     <heading>37.  Signature Block, Distribution, and Copy to Sections.  Show the signature</heading>
     <content>
@@ -1891,7 +1891,7 @@ DISTRIBUTION:  PCN 10207570000
                    8145001 (1)</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-38" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-38" status="UNVERIFIED" level="section">
     <num style="arabic">38</num>
     <heading>38.  Identifying Additional Pages of the Basic Directive.  For unclassified</heading>
     <content>
@@ -1913,7 +1913,7 @@ MCO 5215.1J                                     MCBul 5215
                   2 Sep 2003</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-39-2" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-39-2" status="UNVERIFIED" level="section">
     <num style="arabic">39</num>
     <heading>39.  Numbering Pages.  Center and number the second and succeeding pages</heading>
     <content>
@@ -1925,7 +1925,7 @@ corner with the word “Enclosure (X)” and the appropriate enclosure number
 inside the parenthesis.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-40" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-40" status="UNVERIFIED" level="section">
     <num style="arabic">40</num>
     <heading>40.  Change Transmittals and Page Replacements</heading>
     <content>
@@ -1940,7 +1940,7 @@ directive, such as date of references and organizational symbols.  These
 changes need not be coordinated.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-41" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-41" status="UNVERIFIED" level="section">
     <num style="arabic">41</num>
     <heading>41.  Preparing a Change.  Provide page replacements as follows:</heading>
     <content>
@@ -1952,7 +1952,7 @@ directive.
 cancels, or modifies its contents.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-42" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-42" status="UNVERIFIED" level="section">
     <num style="arabic">42</num>
     <heading>42.  Change Transmittal Page.</heading>
     <content>
@@ -1996,7 +1996,7 @@ h.  “Filing Instructions” Paragraph.  Include this paragraph to show
 where to file the change transmittal page(s).</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-43" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-43" status="UNVERIFIED" level="section">
     <num style="arabic">43</num>
     <heading>43.  Identifying Additional Pages of the Change Transmittal Page</heading>
     <content>
@@ -2026,7 +2026,7 @@ MCO 5215.1J Ch 2
 unchanged pages in the same position as the replaced pages.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-44" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-44" status="UNVERIFIED" level="section">
     <num style="arabic">44</num>
     <heading>44.  Signing the Change Transmittal with a Revised Signature Page.  If the</heading>
     <content>
@@ -2036,7 +2036,7 @@ procedures, the change must be signed at the same level as the original
 directive, or higher.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-45" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-45" status="UNVERIFIED" level="section">
     <num style="arabic">45</num>
     <heading>45.  Maintaining Directives Files</heading>
     <content>
@@ -2061,7 +2061,7 @@ matters.
 disposed of per reference (d).</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-46" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-46" status="UNVERIFIED" level="section">
     <num style="arabic">46</num>
     <heading>46.  Master Directive File</heading>
     <content>
@@ -2077,7 +2077,7 @@ of orders with the same SSIC.
 as MCOs in the master directive files.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-47" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-47" status="UNVERIFIED" level="section">
     <num style="arabic">47</num>
     <heading>47.  Checklists</heading>
     <content>
@@ -2098,7 +2098,7 @@ dates of changes.
   (6) Sponsor’s organizational code.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-48" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-48" status="UNVERIFIED" level="section">
     <num style="arabic">48</num>
     <heading>48.  Significant Pages Required in an Order.  Pages required are arranged in</heading>
     <content>
@@ -2135,7 +2135,7 @@ page after the signature page.  For example:  If the signature page is page
 4, the “Reports Required” page is page 5.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-49" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-49" status="UNVERIFIED" level="section">
     <num style="arabic">49</num>
     <heading>49.  Directives Identification Block.  Orders will show a running header</heading>
     <content>
@@ -2147,7 +2147,7 @@ with the upper right margin of odd numbered pages and upper left margin of
 even number pages.  See paragraph 21.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-50" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-50" status="UNVERIFIED" level="section">
     <num style="arabic">50</num>
     <heading>50.  Main Segments of Procedural Guidance (Enclosure to the Order).  The main</heading>
     <content>
@@ -2222,7 +2222,7 @@ Enclosure (1)</p>
 reference (f) and chapter 1, paragraph 33.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-52" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-52" status="UNVERIFIED" level="section">
     <num style="arabic">52</num>
     <heading>52.  Numbering Pages</heading>
     <content>
@@ -2237,7 +2237,7 @@ I-2, or I-3.
 paragraphs 40 through 44.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-54-2" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-54-2" status="UNVERIFIED" level="section">
     <num style="arabic">54</num>
     <heading>54.  Identifying and Replacing Chapters of an Order.  When a chapter is</heading>
     <content>
@@ -2309,7 +2309,7 @@ reference (a).
 2.  Cancellation.  DIVO 1301.2.  (Predecessor's order.)</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-3-8" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-3-8" status="UNVERIFIED" level="section">
     <num style="arabic">3</num>
     <heading>3.  Execution.  I have assumed duties as Commanding General,</heading>
     <content>
@@ -2377,7 +2377,7 @@ Encl:  (1) New page inserts to MCO 1000.1
 2.  Additional Paragraphs.  Refer to paragraph 42 chapter 1.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-3-9" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-3-9" status="UNVERIFIED" level="section">
     <num style="arabic">3</num>
     <heading>3.  Execution</heading>
     <content>
@@ -2465,7 +2465,7 @@ subject; use an unclassified short title, if one, or type “SECRET” OR
 4.  The locator sheet is not used in place of “charge out” cards.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-5-4" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-5-4" status="UNVERIFIED" level="section">
     <num style="arabic">5</num>
     <heading>5.  The locator sheet may be used to show your internal distribution,</heading>
     <content>
@@ -2695,7 +2695,7 @@ figure.
 3.  Cite the reports in the sequence in which they first appear in the Order.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-4-6" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-4-6" status="UNVERIFIED" level="section">
     <num style="arabic">4</num>
     <heading>4.  Follow the format shown here when preparing a Reports Required page.</heading>
     <content>
@@ -2725,7 +2725,7 @@ DECISION PACKAGE SETS (DPS’S)
 A.  General</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-1-2" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-1-2" status="UNVERIFIED" level="section">
     <num style="arabic">1</num>
     <heading>1.  Purpose.  This appendix provides guidance concerning the processing of</heading>
     <content>
@@ -2734,7 +2734,7 @@ SECDEF decision package sets (DPS’s) and the preparation of position papers
 and reclamas to support requested restoration of budget cuts.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-2-3" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-2-3" status="UNVERIFIED" level="section">
     <num style="arabic">2</num>
     <heading>2.  Background.  The OSD/OMB joint budget review normally begins in October</heading>
     <content>
@@ -2849,7 +2849,7 @@ Chapter 2
 Orders</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-1-3" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-1-3" status="UNVERIFIED" level="section">
     <num style="arabic">1</num>
     <heading>1.  Introduction.  This chapter provides the instructions and format for</heading>
     <content>
@@ -2859,7 +2859,7 @@ Figure 2-1 depicts the format of a HQMC Marine Corps Order (MCO) and figure
 2-2 depicts the format of a Field Command Order.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-2-4" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-2-4" status="UNVERIFIED" level="section">
     <num style="arabic">2</num>
     <heading>2.  Letterhead Page</heading>
     <content>
@@ -2882,7 +2882,7 @@ line of the “Ref:” line.
 page.  Refer to chapter 1 for the various distribution statements.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-3-10" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-3-10" status="UNVERIFIED" level="section">
     <num style="arabic">3</num>
     <heading>3.  Mandatory Paragraphs</heading>
     <content>
@@ -2926,7 +2926,7 @@ applicable to the Marine Corps Reserve.”
     b.  Signal.  This Order is effective the date signed.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-6-4" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-6-4" status="UNVERIFIED" level="section">
     <num style="arabic">6</num>
     <heading>6.  Signature Block.  The signature block appears as one of the following:</heading>
     <content>
@@ -3120,7 +3120,7 @@ Encl:  (1) (If applicable)
 first paragraph of the directive.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-2-5" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-2-5" status="UNVERIFIED" level="section">
     <num style="arabic">2</num>
     <heading>2.  Mission.  Task to be accomplished.  When cancellation of an order</heading>
     <content>
@@ -3132,7 +3132,7 @@ regulation.  When the “Cancellation” and “Mission” paragraphs are both
 used, the directive will have six paragraphs.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-3-11" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-3-11" status="UNVERIFIED" level="section">
     <num style="arabic">3</num>
     <heading>3.  Execution</heading>
     <content>
@@ -3146,7 +3146,7 @@ and reserve efforts).
 that are common to two or more elements).</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-4-7" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-4-7" status="UNVERIFIED" level="section">
     <num style="arabic">4</num>
     <heading>4.  Administration and Logistics</heading>
     <content>
@@ -3188,7 +3188,7 @@ XXO SSIC.XX
 (Date Signed)</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-5-5" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-5-5" status="UNVERIFIED" level="section">
     <num style="arabic">5</num>
     <heading>5.  Command and Signal</heading>
     <content>
@@ -3211,7 +3211,7 @@ Bulletins
 preparing a bulletin.  Figures 3-1 through 3-3 provide samples.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-2-6" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-2-6" status="UNVERIFIED" level="section">
     <num style="arabic">2</num>
     <heading>2.  Letterhead Page</heading>
     <content>
@@ -3235,7 +3235,7 @@ figure 3-2.
 margin as “MCBul 1000.”  Add the date once the bulletin is signed.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-4-8" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-4-8" status="UNVERIFIED" level="section">
     <num style="arabic">4</num>
     <heading>4.  Designation Line.  Start the designation line on the second line below</heading>
     <content>
@@ -3255,7 +3255,7 @@ the “Ref:” line.
 page.  Refer to chapter 1 for the various distribution statements.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-11-2" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-11-2" status="UNVERIFIED" level="section">
     <num style="arabic">11</num>
     <heading>11.  Major Paragraphs.  The paragraphs below are the major paragraphs that</heading>
     <content>
@@ -3292,7 +3292,7 @@ the bulletin has a cancellation contingency.  State the contingency, but do
 not repeat the cancellation date.  Refer to figure 3-1.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-12" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-12" status="UNVERIFIED" level="section">
     <num style="arabic">12</num>
     <heading>12.  Signature Block.  The signature block appears as one of the following:</heading>
     <content>
@@ -3330,7 +3330,7 @@ signature block.
 with colons aligned.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-14-2" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-14-2" status="UNVERIFIED" level="section">
     <num style="arabic">14</num>
     <heading>14.  Filing Instructions.  If the bulletin cancels before it is incorporated</heading>
     <content>
@@ -3340,7 +3340,7 @@ directive in the master file.  Destroy the bulletin when it is incorporated
 in another directive.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-15-3" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-15-3" status="UNVERIFIED" level="section">
     <num style="arabic">15</num>
     <heading>15.  Bulletins Issued in Message Format.  The following provide instructions</heading>
     <content>
@@ -3384,7 +3384,7 @@ MCO 5215.1K w/Admin CH-2
 3-4                      Enclosure (1)</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-2-7" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-2-7" status="UNVERIFIED" level="section">
     <num style="arabic">2</num>
     <heading>2.  MCO 1000.XX or MCBUL 5000 of 21 SEP 2002 IS CANCELED.</heading>
     <content>
@@ -3449,7 +3449,7 @@ contingency, per the references.
 2.  Cancellation.  Identify directives being canceled, if any.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-3-12" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-3-12" status="UNVERIFIED" level="section">
     <num style="arabic">3</num>
     <heading>3.  Background.  Bulletins have the same force and effect as Orders, transmit</heading>
     <content>
@@ -3494,7 +3494,7 @@ MCBul or I MEFBul 1000
 (Date Signed)</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-4-9" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-4-9" status="UNVERIFIED" level="section">
     <num style="arabic">4</num>
     <heading>4.  Action.  Show the cancellation date inside the upper right margin on the</heading>
     <content>
@@ -3508,7 +3508,7 @@ contingency but do not repeat the cancellation date.
 Total Force.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-6-5" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-6-5" status="UNVERIFIED" level="section">
     <num style="arabic">6</num>
     <heading>6.  Cancellation Contingency.  This Bulletin is canceled when incorporated in</heading>
     <content>
@@ -3562,7 +3562,7 @@ cancellation date, per the references.
 2.  Cancellation.  Identify directives being canceled, if any.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-3-13" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-3-13" status="UNVERIFIED" level="section">
     <num style="arabic">3</num>
     <heading>3.  Background.  Letter-type bulletins have the same force and effect as</heading>
     <content>
@@ -3594,7 +3594,7 @@ MCBul or I MEFBul 1000
 (Date Signed)</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-4-10" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-4-10" status="UNVERIFIED" level="section">
     <num style="arabic">4</num>
     <heading>4.  Action.  Show the given cancellation date inside the upper right margin</heading>
     <content>
@@ -3605,7 +3605,7 @@ month (cancels last day), and use the four digit year; e.g., “Canc frp:  Oct
 2004.”  A self-cancellation paragraph is not required.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-5-6" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-5-6" status="UNVERIFIED" level="section">
     <num style="arabic">5</num>
     <heading>5.  Reserve Applicability.  This Bulletin is applicable to the Marine Corps</heading>
     <content>
@@ -3646,7 +3646,7 @@ SCORES ALSO WILL BE AVAILABLE ON THE ENLISTED PROMOTION SECTION WEB
 PAGE.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-2-8" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-2-8" status="UNVERIFIED" level="section">
     <num style="arabic">2</num>
     <heading>2.  TO ELIMINATE ERRONEOUS PROMOTIONS AND DELAYS IN PROMOTING</heading>
     <content>
@@ -3658,7 +3658,7 @@ ARE MET:
 DIARY FEEDBACK REPORT.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-3-14" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-3-14" status="UNVERIFIED" level="section">
     <num style="arabic">3</num>
     <heading>3.  THE REF SETS FORTH GUIDANCE AND INSTRUCTIONS FOR EFFECTING THE</heading>
     <content>
@@ -3671,7 +3671,7 @@ WHO MEET THE FOLLOWING CRITERIA:
     D.  EFFECTIVE DATE:  20061001</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-4-11" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-4-11" status="UNVERIFIED" level="section">
     <num style="arabic">4</num>
     <heading>4.  FOR MARINE ENLISTED PROMOTION MATTERS CALL COMM [contact withheld]</heading>
     <content>
@@ -3682,7 +3682,7 @@ PROMOTION BRANCH’S INTERNET WEB PAGE AT WWW.USMC.MIL.  SELECT
 5.  THIS BULLETIN IS NOT APPLICABLE TO THE MARINE CORPS RESERVE.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-6-6" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-6-6" status="UNVERIFIED" level="section">
     <num style="arabic">6</num>
     <heading>6.  THIS BULLETIN IS CANCELED 30 SEPTEMBER 2007.//</heading>
     <content>
@@ -3705,7 +3705,7 @@ Chapter 4
 Joint Directives</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-1-4" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-1-4" status="UNVERIFIED" level="section">
     <num style="arabic">1</num>
     <heading>1.  Introduction.  This chapter provides supplemental information for</heading>
     <content>
@@ -3742,7 +3742,7 @@ common superior, but is authorized to promulgate directives in a single
 version under their titles and in their own systems; e.g., CMC, CNO, etc.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-2-9" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-2-9" status="UNVERIFIED" level="section">
     <num style="arabic">2</num>
     <heading>2.  SSIC and Signature Requirements.  It must be noted that only the SSIC of</heading>
     <content>
@@ -3795,7 +3795,7 @@ all addressees by Distribution List and Publications Control Number (PCN) in
 the same manner as a regular directive.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-4-12" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-4-12" status="UNVERIFIED" level="section">
     <num style="arabic">4</num>
     <heading>4.  Canceling Joint Directives.  The primary principal must obtain</heading>
     <content>
@@ -3808,7 +3808,7 @@ the respective principal's directives system or is only needed for a specific
 length of time.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-5-7" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-5-7" status="UNVERIFIED" level="section">
     <num style="arabic">5</num>
     <heading>5.  Information Required for Joint Directives.  The primary principal will</heading>
     <content>
@@ -3830,7 +3830,7 @@ procured and distributed, to include sharing the cost of printing by each
 principal, as applicable.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-6-7" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-6-7" status="UNVERIFIED" level="section">
     <num style="arabic">6</num>
     <heading>6.  Checklist of Effective Directives.  Joint directives will be identified</heading>
     <content>
@@ -3839,7 +3839,7 @@ and listed in the checklist of the primary principal, but may also be listed
 in the checklists of the other participating principals.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-7-2" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-7-2" status="UNVERIFIED" level="section">
     <num style="arabic">7</num>
     <heading>7.  Preliminary Coordination</heading>
     <content>
@@ -3854,7 +3854,7 @@ resolved before final coordination for signature and distribution
 instructions are obtained from all participants.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-8-2" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-8-2" status="UNVERIFIED" level="section">
     <num style="arabic">8</num>
     <heading>8.  Final Coordination.  The primary principal’s coordinator will affect the</heading>
     <content>
@@ -3870,7 +3870,7 @@ to include:
         (3) Summary of reciprocal action taken by other participants.</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-9-2" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-9-2" status="UNVERIFIED" level="section">
     <num style="arabic">9</num>
     <heading>9.  Signature Authority.  Joint directives shall be approved and signed by</heading>
     <content>
@@ -3891,7 +3891,7 @@ signed as delegated by the senior principal official.
                                                                   10 May 2007</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/mco/5215.1k-ch3/p-10-3" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/mco/5215.1k-ch3/p-10-3" status="UNVERIFIED" level="section">
     <num style="arabic">10</num>
     <heading>10.  Format of a Directive Signed by Two or More Principals.  Follow the</heading>
     <content>

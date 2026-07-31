@@ -27,22 +27,22 @@
       "inferredAuthorityFrom": "/us/dod/dodi/1327.06"
     },
     {
-      "@id": "/us/usmc/mco/1050.3J",
+      "@id": "/us/dod/don/usmc/mco/1050.3J",
       "@type": "pol:MarineCorpsOrder",
       "label": "MCO 1050.3J, Regulations for Leave, Liberty and Administrative Absence. MARADMIN 129/23 reference (c)."
     },
     {
-      "@id": "/us/usmc/maradmin/2023/051",
+      "@id": "/us/dod/don/usmc/maradmin/2023/051",
       "@type": "pol:ServiceMessage",
       "label": "MARADMIN 051/23, Expansion of the Marine Corps Military Parental Leave Program. MARADMIN 129/23 reference (a)."
     },
     {
-      "@id": "/us/usmc/maradmin/2023/129",
+      "@id": "/us/dod/don/usmc/maradmin/2023/129",
       "@type": "pol:ServiceMessage",
       "label": "MARADMIN 129/23, Clarification to MARADMIN 051/23",
       "derivesAuthorityFrom": "/us/dod/dtm/2023/23-001",
-      "references": "/us/usmc/mco/1050.3J",
-      "clarifies": "/us/usmc/maradmin/2023/051"
+      "references": "/us/dod/don/usmc/mco/1050.3J",
+      "clarifies": "/us/dod/don/usmc/maradmin/2023/051"
     }
   ]
 }

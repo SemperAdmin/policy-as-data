@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MARADMIN-2021-388 - Semper Admin Policy Library</title>
+<style>
+/* Semper Admin tokens - transcribed from SEMPER-STYLE-GUIDE.md v1.2 */
+:root {
+  --color-usmc-scarlet: #B82230;
+  --color-usmc-scarlet-300: #D14150;
+  --color-marine-blue: #0F1F3D;
+  --color-marine-blue-700: #0A1424;
+  --color-marine-blue-300: #2A3D60;
+  --color-marine-blue-100: #6B9BD2;
+  --color-parchment: #F2E5BE;
+  --color-parchment-300: #FAF1D8;
+  --color-brass: #B89042;
+  --color-brass-300: #D4AF67;
+  --color-status-fresh: #2F8F5C;
+  --color-status-aging: #C97D1F;
+  --color-status-stale: #B83232;
+  --color-status-info: #2F5FA8;
+  --color-background: #0A1424;
+  --color-bg-elev: #11203F;
+  --color-bg-sunken: #060E1A;
+  --color-foreground: #F2E5BE;
+  --color-card: #11203F;
+  --color-muted: #182A4D;
+  --color-muted-foreground: #B5A988;
+  --color-border: #233A5C;
+  --color-border-strong: #34507A;
+  --color-ring-dark: #D4AF67; /* 508 deviation - see file header */
+  --color-neutral-950: #0F0C09;
+  --font-display: "Bebas Neue", "Oswald", system-ui, sans-serif;
+  --font-body: "Inter Variable", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", "JetBrains Mono", "Cascadia Code", Menlo, monospace;
+  --radius-sm: 6px; --radius-md: 8px; --radius-lg: 12px;
+  --shadow-card: 0 1px 2px rgba(0,0,0,.4), 0 0 0 1px rgba(242,229,190,.04);
+  --shadow-md: 0 2px 4px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.45);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--color-background); color: var(--color-foreground);
+       font: 400 15px/1.6 var(--font-body); }
+a { color: var(--color-marine-blue-100); }
+a:hover { color: var(--color-brass-300); }
+:focus-visible { outline: 3px solid var(--color-ring-dark); outline-offset: 2px;
+                 border-radius: 2px; }
+::selection { background: var(--color-brass); color: var(--color-neutral-950); }
+.skip { position: absolute; left: -9999px; }
+.skip:focus { position: static; display: inline-block; padding: 8px;
+              background: var(--color-brass-300); color: var(--color-neutral-950); }
+header.chrome, main, footer { max-width: 60rem; margin: 0 auto; padding: 16px 24px; }
+header.chrome { margin-top: 16px; border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elev); box-shadow: var(--shadow-md);
+  display: flex; align-items: baseline; gap: 12px; }
+.wordmark { font: 400 28px/1.2 var(--font-display); letter-spacing: 0.04em;
+  color: var(--color-parchment-300); text-decoration: none; text-transform: uppercase; }
+.wordmark:hover { color: var(--color-brass-300); }
+.eyebrow { font: 700 11px/1 var(--font-body); text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--color-muted-foreground); }
+h1 { font: 700 28px/1.2 var(--font-body); letter-spacing: -0.005em; margin: 32px 0 16px; }
+h2 { font: 700 22px/1.2 var(--font-body); letter-spacing: -0.005em;
+  border-bottom: 1px solid var(--color-border-strong); padding-bottom: 8px; margin-top: 32px; }
+nav ul { list-style: none; padding: 0; } nav li { margin: 8px 0; }
+.status { display: inline-block; padding: 4px 12px; border-radius: 9999px;
+  font: 700 13px/1.4 var(--font-body); color: var(--color-parchment-300);
+  background: var(--color-muted); border: 2px solid var(--color-border-strong); }
+.status-cancelled { background: var(--color-status-stale); border-color: var(--color-status-stale); }
+.status-active { border-color: var(--color-status-fresh); }
+.status-unknown { border-color: var(--color-status-aging); }
+dl.meta { display: grid; grid-template-columns: max-content 1fr; gap: 8px 24px;
+  background: var(--color-card); border: 1px solid var(--color-border);
+  border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-card); }
+dl.meta dt { font-weight: 700; color: var(--color-muted-foreground); } dl.meta dd { margin: 0; }
+.doc-text { white-space: pre-wrap; overflow-wrap: break-word;
+  font: 500 13px/1.7 var(--font-mono); color: var(--color-foreground);
+  background: var(--color-bg-sunken); border: 1px solid var(--color-border);
+  border-radius: var(--radius-md); padding: 24px; }
+footer { border-top: 1px solid var(--color-border); margin-top: 48px;
+  font-size: 13px; color: var(--color-muted-foreground); }
+.hero-accent { color: var(--color-usmc-scarlet-300); }
+@supports (-webkit-background-clip: text) {
+  .hero-accent { background: linear-gradient(95deg, var(--color-usmc-scarlet) 0%,
+    var(--color-usmc-scarlet-300) 35%, var(--color-brass-300) 75%, var(--color-brass) 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent; }
+}
+nav.crumbs { max-width: 60rem; margin: 8px auto 0; padding: 0 24px;
+  font-size: 13px; color: var(--color-muted-foreground); }
+nav.crumbs ol { list-style: none; margin: 0; padding: 0; display: flex;
+  flex-wrap: wrap; gap: 4px; }
+nav.crumbs li + li::before { content: "/"; margin: 0 8px;
+  color: var(--color-border-strong); }
+nav.crumbs [aria-current="page"] { color: var(--color-foreground);
+  font-weight: 700; }
+.prose { max-width: 70ch; }
+.prose p { font: 400 15px/1.65 var(--font-body); margin: 0 0 12px;
+  overflow-wrap: break-word; }
+.prose .doc-text { margin: 12px 0; }
+details.verbatim { margin-top: 24px; }
+details.verbatim summary { cursor: pointer; font-weight: 700;
+  color: var(--color-marine-blue-100); }
+details.verbatim summary:hover { color: var(--color-brass-300); }
+.reflow-note { font-size: 12px; color: var(--color-muted-foreground); }
+.prose p.lvl2 { margin-left: 24px; }
+.prose p.lvl3 { margin-left: 48px; }
+.prose p.lvl4 { margin-left: 72px; }
+nav.toc { background: var(--color-card); border: 1px solid var(--color-border);
+  border-radius: var(--radius-md); padding: 12px 24px; margin-top: 16px; }
+nav.toc h2 { border: none; margin: 0 0 4px; font-size: 16px; }
+nav.toc ol { list-style: decimal; padding-left: 20px; margin: 0; }
+nav.toc li { margin: 2px 0; }
+/* P3 - provisions: local label prints, full path lives in id + title */
+.prose p.prov { font: 400 15px/1.65 var(--font-body); margin: 0 0 12px;
+  overflow-wrap: break-word; scroll-margin-top: 16px; }
+.prov-label { font-weight: 700; color: var(--color-brass-300);
+  margin-right: 6px; }
+.prose p.prov:target { background: var(--color-muted);
+  border-left: 4px solid var(--color-brass-300);
+  padding: 8px 12px; border-radius: var(--radius-sm); }
+a.cite { text-decoration: underline dotted; }
+a.cite:hover { text-decoration: underline solid; }
+figure.diagram { margin: 24px 0 32px; }
+figure.diagram img { width: 100%; height: auto; border-radius: var(--radius-md);
+  border: 1px solid var(--color-border); background: #fff; }
+figure.diagram figcaption { font-size: 13px; color: var(--color-muted-foreground);
+  margin-top: 8px; }
+details.alt { margin-top: 8px; }
+details.alt summary { cursor: pointer; font-size: 13px;
+  color: var(--color-marine-blue-100); }
+details.alt summary:hover { color: var(--color-brass-300); }
+details.alt div { font-size: 14px; margin-top: 8px; }
+.quote-hhq { border-left: 4px solid var(--color-brass-300); padding-left: 16px;
+  margin: 16px 0; font-style: italic; color: var(--color-parchment-300); }
+.quote-hhq cite { display: block; font-style: normal; font-size: 12px;
+  color: var(--color-muted-foreground); margin-top: 6px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important; transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; }
+}
+@media print {
+  :root { color-scheme: light; }
+  body { background: #fff; color: #1A1610; }
+  .doc-text, dl.meta { background: #fff; color: #1A1610; border-color: #999; }
+  header.chrome { box-shadow: none; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="chrome">
+<img src="semper-logo.jpg" alt="Semper Admin emblem" height="40" style="align-self:center">
+<a class="wordmark" href="index.html">Semper Admin</a>
+<span class="eyebrow">Marine Corps Policy Library</span>
+<a href="how-it-works.html" style="margin-left:auto">How it works</a>
+<a href="mos-manual-lineage.html">Version history</a>
+<a href="search.html">Search</a>
+<a href="https://forms.osi.apps.mil/r/k5QWzJDL9P" rel="noopener">Feedback</a>
+</header>
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="type-MARADMIN.html">MARADMIN documents</a></li><li aria-current="page">MARADMIN-2021-388</li></ol></nav>
+<main id="main">
+<h1>MARADMIN 2021-388: CHANGE 1 TO FY22 COMMANDANT&#x27;S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD</h1>
+<p><span class="status status-active">Active</span></p>
+<dl class="meta"><dt>Document type</dt><dd>MARADMIN</dd><dt>Native number</dt><dd>388/21</dd><dt>Identifier</dt><dd>/us/dod/don/usmc/maradmin/2021/388</dd><dt>Signed</dt><dd>2021-07-26</dd><dt>Verification</dt><dd>UNVERIFIED</dd><dt>Subject</dt><dd>CHANGE 1 TO FY22 COMMANDANT&#x27;S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD</dd></dl>
+
+<h2>References</h2><ul><li>MSGID/GENADMIN/CMC WASHINGTON DC MRA MM/09JUL21</li></ul>
+<h2>Points of contact</h2><ul><li>DAVID P. FOLEY/MAJ/MMOA-3/USMC/[contact withheld]/TEL [contact withheld]/EMAIL:</li></ul>
+<h2>Document text</h2>
+<div class="prose" id="text-header"><p>MARADMIN 388/21</p><div class="doc-text">R 261830Z JUL 21</div><p>MARADMIN 388/21</p><div class="doc-text">MSGID/GENADMIN/CMC WASHINGTON DC MRA//
+SUBJ/CHANGE 1 TO FY22 COMMANDANT&#x27;S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD</div><p>(CPIB)//</p><div class="doc-text">REF/A/MSGID/GENADMIN/CMC WASHINGTON DC MRA MM/09JUL21//</div><p>AMP/REF A IS MARADMIN 360/21 FY22 COMMANDANT&#x27;S PROFESSIONAL INTERMEDIATE-LEVELEDUCATION BOARD (CPIB)//</p><div class="doc-text">POC/DAVID P. FOLEY/MAJ/MMOA-3/USMC/[contact withheld]/TEL [contact withheld]/EMAIL:</div><p>[contact withheld]//</p></div>
+<h2 id="body">Remarks</h2>
+<div class="prose" id="text-body"><p class="prov" id="p1" title="1."><span class="prov-label">1.</span> This MARADMIN announces changes to the FY22 Commandant&#x27;s Professional Intermediate-Level Education Board announcement message.</p><p class="prov" id="p2" title="2."><span class="prov-label">2.</span> The Environmental Engineering Program (8831) will continue to be offered as a program of study at the Air Force Institute of Technology (AFIT).</p><p class="prov" id="p2-a" title="2.a."><span class="prov-label">a.</span> Change to <a class="cite" href="MARADMIN-2021-360.html#p2-d" title="MARADMIN-2021-360 p2/d">MARADMIN 360/21, paragraph 2.d</a>.4. Remove Environmental Engineering (8831) as a Civilian Institutions-Restricted Program.</p><p class="prov" id="p2-b" title="2.b."><span class="prov-label">b.</span> Paragraph 2.i. Change 8831 school description from Civilian to AFIT.</p><p class="prov" id="p2-c" title="2.c."><span class="prov-label">c.</span> Paragraph 5.b.2.c. Delete paragraph on civilian university application requirements for Environmental Engineering.</p><p class="prov" id="p3" title="3."><span class="prov-label">3.</span> The Masters of Education Program (8802) will only be offered on the CCLEB board.</p><p class="prov" id="p3-a" title="3.a."><span class="prov-label">a.</span> Change to <a class="cite" href="MARADMIN-2021-360.html#p2-d" title="MARADMIN-2021-360 p2/d">MARADMIN 360/21, paragraph 2.d</a>.4. Remove Education (8802 AMOS) as a Civilian Institutions-Restricted Program.</p><p class="prov" id="p3-b" title="3.b."><span class="prov-label">b.</span> Paragraph 5.c.2.d. Delete paragraph on civilian university application requirements for Masters of Education.</p><p class="prov" id="p4" title="4."><span class="prov-label">4.</span> Foreign PME does not require a separate application.</p><p class="prov" id="p4-a" title="4.a."><span class="prov-label">a.</span> Change to <a class="cite" href="MARADMIN-2021-360.html#p5-f" title="MARADMIN-2021-360 p5/f">MARADMIN 360/21, paragraph 5.f</a>. Replace with:  Officers with or without a Note 1 are eligible for Foreign PME.  To be considered, officers must have a DLAB score in their record and rank it accordingly as a preference in the questionnaire.  The DLAB requirement pertains to English speaking programs as well.  A letter to the board explaining the desire to attend FPME along with any other qualifications is also recommended.</p><p class="prov" id="p5" title="5."><span class="prov-label">5.</span> This MARADMIN is not applicable to the Marine Corps Reserve.</p><p class="prov" id="p6" title="6."><span class="prov-label">6.</span> Release authorized by BGen Michael J. Borgschulte, Director, Manpower Management Division.//</p></div>
+<details class="verbatim"><summary>View verbatim extraction</summary><div class="doc-text">MARADMIN 388/21
+R 261830Z JUL 21
+MARADMIN 388/21
+MSGID/GENADMIN/CMC WASHINGTON DC MRA//
+SUBJ/CHANGE 1 TO FY22 COMMANDANT&#x27;S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD
+(CPIB)//
+REF/A/MSGID/GENADMIN/CMC WASHINGTON DC MRA MM/09JUL21//
+AMP/REF A IS MARADMIN 360/21 FY22 COMMANDANT&#x27;S PROFESSIONAL
+INTERMEDIATE-LEVELEDUCATION BOARD (CPIB)//
+POC/DAVID P. FOLEY/MAJ/MMOA-3/USMC/[contact withheld]/TEL [contact withheld]/EMAIL:
+[contact withheld]//
+
+GENTEXT/REMARKS/1.  This MARADMIN announces changes to the FY22 Commandant&#x27;s
+Professional Intermediate-Level Education Board announcement message.
+2.  The Environmental Engineering Program (8831) will continue to be offered as a
+program of study at the Air Force Institute of Technology (AFIT).
+2.a.  Change to MARADMIN 360/21, paragraph 2.d.4. Remove Environmental Engineering
+(8831) as a Civilian Institutions-Restricted Program.
+2.b.  Paragraph 2.i. Change 8831 school description from Civilian to AFIT.
+2.c.  Paragraph 5.b.2.c. Delete paragraph on civilian university application
+requirements for Environmental Engineering.
+3.  The Masters of Education Program (8802) will only be offered on the CCLEB
+board.
+3.a.  Change to MARADMIN 360/21, paragraph 2.d.4. Remove Education (8802 AMOS) as
+a Civilian Institutions-Restricted Program.
+3.b.  Paragraph 5.c.2.d. Delete paragraph on civilian university application
+requirements for Masters of Education.
+4.  Foreign PME does not require a separate application.
+4.a.  Change to MARADMIN 360/21, paragraph 5.f. Replace with:  Officers with or
+without a Note 1 are eligible for Foreign PME.  To be considered, officers must
+have a DLAB score in their record and rank it accordingly as a preference in the
+questionnaire.  The DLAB requirement pertains to English speaking programs as
+well.  A letter to the board explaining the desire to attend FPME along with any
+
+
+other qualifications is also recommended.
+5.  This MARADMIN is not applicable to the Marine Corps Reserve.
+6.  Release authorized by BGen Michael J. Borgschulte, Director, Manpower
+Management Division.//</div></details>
+<p class="reflow-note">Text above is reflowed for readability - paragraph breaks reconstructed from the extraction, no words altered. The verbatim extraction is the authoritative rendering.</p>
+</main>
+<footer>
+<p>Generated from the canonical policy store. Status reflects the source
+catalog and supersession records at generation time. This site is an
+unofficial reference - the issuing authority's copy governs.</p>
+<p><a href="accessibility.html">Accessibility statement</a> &middot;
+<a href="https://forms.osi.apps.mil/r/k5QWzJDL9P" rel="noopener">Submit feedback</a></p>
+</footer>
+</body>
+</html>

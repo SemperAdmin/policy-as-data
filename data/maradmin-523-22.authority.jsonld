@@ -18,23 +18,23 @@
       "label": "USD(P&R) Directive-Type Memorandum 22-004, Reserve Component Maternity Leave Program (9 Jun 2022). MARADMIN 523/22 reference (b)."
     },
     {
-      "@id": "/us/navy/asn-mra/2021/reserve-policy-board",
+      "@id": "/us/dod/don/asn-mra/2021/reserve-policy-board",
       "@type": "pol:NavyIssuance",
       "label": "ASN (M&RA) Memorandum, Secretariat Response to 2020 Marine Corps Reserve Policy Board Report (26 Mar 2021). MARADMIN 523/22 reference (c)."
     },
     {
-      "@id": "/us/usmc/mco/5000.12F",
+      "@id": "/us/dod/don/usmc/mco/5000.12F",
       "@type": "pol:MarineCorpsOrder",
       "label": "MCO 5000.12F CH-1, Marine Corps Policy Concerning Parenthood and Pregnancy. MARADMIN 523/22 reference (a)."
     },
     {
-      "@id": "/us/usmc/maradmin/2022/523",
+      "@id": "/us/dod/don/usmc/maradmin/2022/523",
       "@type": "pol:ServiceMessage",
       "label": "MARADMIN 523/22, Forthcoming Changes to Reserve Component Parental Leave Policy",
       "derivesAuthorityFrom": "/us/dod/dtm/2022/22-004",
       "references": [
-        "/us/usmc/mco/5000.12F",
-        "/us/navy/asn-mra/2021/reserve-policy-board",
+        "/us/dod/don/usmc/mco/5000.12F",
+        "/us/dod/don/asn-mra/2021/reserve-policy-board",
         "/us/usc/pl/116-283"
       ]
     }

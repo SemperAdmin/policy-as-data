@@ -3,7 +3,7 @@
      Every provision is UNVERIFIED until confirmed against source per
      DATA_CONTRACT.md. Contact details are masked pending owner policy. -->
 <issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
-          identifier="/us/usmc/maradmin/2018/161"
+          identifier="/us/dod/don/usmc/maradmin/2018/161"
           issuanceType="MARADMIN"
           status="UNVERIFIED">
   <meta>
@@ -11,7 +11,7 @@
     <isoDate>2018-03-14</isoDate>
     <subject>FY18 APPROVED SELECTED MARINE CORPS RESERVE (SMCR) STAFF NONCOMMISSIONED</subject>
   </meta>
-  <paragraph identifier="/us/usmc/maradmin/2018/161/header" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/maradmin/2018/161/header" status="UNVERIFIED" level="section">
     <content>
       <p>MARADMIN 161/18
 R 141313Z MAR 18
@@ -28,7 +28,7 @@ POC/CHRISTINA R. UPTON/MAJ/HD MMPR-2/-/TEL: [contact withheld]/EMAIL:
 [contact withheld]//</p>
     </content>
   </paragraph>
-  <paragraph identifier="/us/usmc/maradmin/2018/161/body" status="UNVERIFIED" level="section">
+  <paragraph identifier="/us/dod/don/usmc/maradmin/2018/161/body" status="UNVERIFIED" level="section">
     <heading>Remarks</heading>
     <content>
       <p>GENTEXT/REMARKS/1.  Appointments for Marines listed in paragraph 2 will be issued

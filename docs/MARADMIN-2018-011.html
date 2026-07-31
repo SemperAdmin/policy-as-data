@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MARADMIN-2018-011 - Semper Admin Policy Library</title>
+<style>
+/* Semper Admin tokens - transcribed from SEMPER-STYLE-GUIDE.md v1.2 */
+:root {
+  --color-usmc-scarlet: #B82230;
+  --color-usmc-scarlet-300: #D14150;
+  --color-marine-blue: #0F1F3D;
+  --color-marine-blue-700: #0A1424;
+  --color-marine-blue-300: #2A3D60;
+  --color-marine-blue-100: #6B9BD2;
+  --color-parchment: #F2E5BE;
+  --color-parchment-300: #FAF1D8;
+  --color-brass: #B89042;
+  --color-brass-300: #D4AF67;
+  --color-status-fresh: #2F8F5C;
+  --color-status-aging: #C97D1F;
+  --color-status-stale: #B83232;
+  --color-status-info: #2F5FA8;
+  --color-background: #0A1424;
+  --color-bg-elev: #11203F;
+  --color-bg-sunken: #060E1A;
+  --color-foreground: #F2E5BE;
+  --color-card: #11203F;
+  --color-muted: #182A4D;
+  --color-muted-foreground: #B5A988;
+  --color-border: #233A5C;
+  --color-border-strong: #34507A;
+  --color-ring-dark: #D4AF67; /* 508 deviation - see file header */
+  --color-neutral-950: #0F0C09;
+  --font-display: "Bebas Neue", "Oswald", system-ui, sans-serif;
+  --font-body: "Inter Variable", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", "JetBrains Mono", "Cascadia Code", Menlo, monospace;
+  --radius-sm: 6px; --radius-md: 8px; --radius-lg: 12px;
+  --shadow-card: 0 1px 2px rgba(0,0,0,.4), 0 0 0 1px rgba(242,229,190,.04);
+  --shadow-md: 0 2px 4px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.45);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--color-background); color: var(--color-foreground);
+       font: 400 15px/1.6 var(--font-body); }
+a { color: var(--color-marine-blue-100); }
+a:hover { color: var(--color-brass-300); }
+:focus-visible { outline: 3px solid var(--color-ring-dark); outline-offset: 2px;
+                 border-radius: 2px; }
+::selection { background: var(--color-brass); color: var(--color-neutral-950); }
+.skip { position: absolute; left: -9999px; }
+.skip:focus { position: static; display: inline-block; padding: 8px;
+              background: var(--color-brass-300); color: var(--color-neutral-950); }
+header.chrome, main, footer { max-width: 60rem; margin: 0 auto; padding: 16px 24px; }
+header.chrome { margin-top: 16px; border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elev); box-shadow: var(--shadow-md);
+  display: flex; align-items: baseline; gap: 12px; }
+.wordmark { font: 400 28px/1.2 var(--font-display); letter-spacing: 0.04em;
+  color: var(--color-parchment-300); text-decoration: none; text-transform: uppercase; }
+.wordmark:hover { color: var(--color-brass-300); }
+.eyebrow { font: 700 11px/1 var(--font-body); text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--color-muted-foreground); }
+h1 { font: 700 28px/1.2 var(--font-body); letter-spacing: -0.005em; margin: 32px 0 16px; }
+h2 { font: 700 22px/1.2 var(--font-body); letter-spacing: -0.005em;
+  border-bottom: 1px solid var(--color-border-strong); padding-bottom: 8px; margin-top: 32px; }
+nav ul { list-style: none; padding: 0; } nav li { margin: 8px 0; }
+.status { display: inline-block; padding: 4px 12px; border-radius: 9999px;
+  font: 700 13px/1.4 var(--font-body); color: var(--color-parchment-300);
+  background: var(--color-muted); border: 2px solid var(--color-border-strong); }
+.status-cancelled { background: var(--color-status-stale); border-color: var(--color-status-stale); }
+.status-active { border-color: var(--color-status-fresh); }
+.status-unknown { border-color: var(--color-status-aging); }
+dl.meta { display: grid; grid-template-columns: max-content 1fr; gap: 8px 24px;
+  background: var(--color-card); border: 1px solid var(--color-border);
+  border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-card); }
+dl.meta dt { font-weight: 700; color: var(--color-muted-foreground); } dl.meta dd { margin: 0; }
+.doc-text { white-space: pre-wrap; overflow-wrap: break-word;
+  font: 500 13px/1.7 var(--font-mono); color: var(--color-foreground);
+  background: var(--color-bg-sunken); border: 1px solid var(--color-border);
+  border-radius: var(--radius-md); padding: 24px; }
+footer { border-top: 1px solid var(--color-border); margin-top: 48px;
+  font-size: 13px; color: var(--color-muted-foreground); }
+.hero-accent { color: var(--color-usmc-scarlet-300); }
+@supports (-webkit-background-clip: text) {
+  .hero-accent { background: linear-gradient(95deg, var(--color-usmc-scarlet) 0%,
+    var(--color-usmc-scarlet-300) 35%, var(--color-brass-300) 75%, var(--color-brass) 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent; }
+}
+nav.crumbs { max-width: 60rem; margin: 8px auto 0; padding: 0 24px;
+  font-size: 13px; color: var(--color-muted-foreground); }
+nav.crumbs ol { list-style: none; margin: 0; padding: 0; display: flex;
+  flex-wrap: wrap; gap: 4px; }
+nav.crumbs li + li::before { content: "/"; margin: 0 8px;
+  color: var(--color-border-strong); }
+nav.crumbs [aria-current="page"] { color: var(--color-foreground);
+  font-weight: 700; }
+.prose { max-width: 70ch; }
+.prose p { font: 400 15px/1.65 var(--font-body); margin: 0 0 12px;
+  overflow-wrap: break-word; }
+.prose .doc-text { margin: 12px 0; }
+details.verbatim { margin-top: 24px; }
+details.verbatim summary { cursor: pointer; font-weight: 700;
+  color: var(--color-marine-blue-100); }
+details.verbatim summary:hover { color: var(--color-brass-300); }
+.reflow-note { font-size: 12px; color: var(--color-muted-foreground); }
+.prose p.lvl2 { margin-left: 24px; }
+.prose p.lvl3 { margin-left: 48px; }
+.prose p.lvl4 { margin-left: 72px; }
+nav.toc { background: var(--color-card); border: 1px solid var(--color-border);
+  border-radius: var(--radius-md); padding: 12px 24px; margin-top: 16px; }
+nav.toc h2 { border: none; margin: 0 0 4px; font-size: 16px; }
+nav.toc ol { list-style: decimal; padding-left: 20px; margin: 0; }
+nav.toc li { margin: 2px 0; }
+/* P3 - provisions: local label prints, full path lives in id + title */
+.prose p.prov { font: 400 15px/1.65 var(--font-body); margin: 0 0 12px;
+  overflow-wrap: break-word; scroll-margin-top: 16px; }
+.prov-label { font-weight: 700; color: var(--color-brass-300);
+  margin-right: 6px; }
+.prose p.prov:target { background: var(--color-muted);
+  border-left: 4px solid var(--color-brass-300);
+  padding: 8px 12px; border-radius: var(--radius-sm); }
+a.cite { text-decoration: underline dotted; }
+a.cite:hover { text-decoration: underline solid; }
+figure.diagram { margin: 24px 0 32px; }
+figure.diagram img { width: 100%; height: auto; border-radius: var(--radius-md);
+  border: 1px solid var(--color-border); background: #fff; }
+figure.diagram figcaption { font-size: 13px; color: var(--color-muted-foreground);
+  margin-top: 8px; }
+details.alt { margin-top: 8px; }
+details.alt summary { cursor: pointer; font-size: 13px;
+  color: var(--color-marine-blue-100); }
+details.alt summary:hover { color: var(--color-brass-300); }
+details.alt div { font-size: 14px; margin-top: 8px; }
+.quote-hhq { border-left: 4px solid var(--color-brass-300); padding-left: 16px;
+  margin: 16px 0; font-style: italic; color: var(--color-parchment-300); }
+.quote-hhq cite { display: block; font-style: normal; font-size: 12px;
+  color: var(--color-muted-foreground); margin-top: 6px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important; transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; }
+}
+@media print {
+  :root { color-scheme: light; }
+  body { background: #fff; color: #1A1610; }
+  .doc-text, dl.meta { background: #fff; color: #1A1610; border-color: #999; }
+  header.chrome { box-shadow: none; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="chrome">
+<img src="semper-logo.jpg" alt="Semper Admin emblem" height="40" style="align-self:center">
+<a class="wordmark" href="index.html">Semper Admin</a>
+<span class="eyebrow">Marine Corps Policy Library</span>
+<a href="how-it-works.html" style="margin-left:auto">How it works</a>
+<a href="mos-manual-lineage.html">Version history</a>
+<a href="search.html">Search</a>
+<a href="https://forms.osi.apps.mil/r/k5QWzJDL9P" rel="noopener">Feedback</a>
+</header>
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="type-MARADMIN.html">MARADMIN documents</a></li><li aria-current="page">MARADMIN-2018-011</li></ol></nav>
+<main id="main">
+<h1>MARADMIN 2018-011: CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND STAFF</h1>
+<p><span class="status status-active">Active</span></p>
+<dl class="meta"><dt>Document type</dt><dd>MARADMIN</dd><dt>Native number</dt><dd>011/18</dd><dt>Identifier</dt><dd>/us/dod/don/usmc/maradmin/2018/011</dd><dt>Signed</dt><dd>2018-01-06</dd><dt>Verification</dt><dd>UNVERIFIED</dd><dt>Subject</dt><dd>CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND STAFF</dd></dl>
+
+<h2>References</h2><ul><li>MCO/P1900.16G/20131126</li><li>MCO/1553.4B/20080125</li><li>MARADMIN/703.08/20081211</li><li>MARADMIN/498.13/20130926</li></ul>
+<h2>Points of contact</h2><ul><li>MR. BRENNETT FORD/CIVILIAN/RESERVE AFFAIRS/-/TELEPHONE: [contact withheld]/DSN:</li><li>MR. DAVID S. ROBERTS/CIVILIAN/MARINE FORCES RESERVE(G-3/5)/TELEPHONE:  (504)</li><li>R. D. BARRETT/MAJ/CDET/TELEPHONE: [contact withheld]/[contact withheld]/E-MAIL:</li></ul>
+<h2>Document text</h2>
+<div class="prose" id="text-header"><p>MARADMIN 011/18 CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND STAFF COLLEGE AND EXPEDITIONARY WARFARE SCHOOL BLENDED SEMINAR PROGRAM SELECTION BOARD FOR RESERVE OFFICERS &gt; United States Marine Corps Flagship &gt; Messages Display Date: 1/8/2018</p><div class="doc-text">SUBJ: CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND STAFF</div><p>COLLEGE AND EXPEDITIONARY WARFARE SCHOOL BLENDED SEMINAR PROGRAM SELECTION BOARD FOR RESERVE OFFICERS// CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND STAFF COLLEGE AND EXPEDITIONARY WARFARE SCHOOL BLENDED SEMINAR PROGRAM SELECTION BOARD FOR RESERVE OFFICERS Date Signed: 1/8/2018 | MARADMINS Number: 011/18 MARADMINS : 011/18</p><div class="doc-text">R 060027Z JAN 18</div><p>MARADMIN 011/18</p><div class="doc-text">MSGID/GENADMIN/CG MCCDC QUANTICO VA//
+SUBJ/CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND STAFF</div><p>COLLEGE AND EXPEDITIONARY WARFARE SCHOOL BLENDED SEMINAR PROGRAM SELECTION BOARD FOR RESERVE OFFICERS//</p><div class="doc-text">REF/A/MCO/P1900.16G/20131126//
+REF/B/MCO/1553.4B/20080125//
+REF/C/MARADMIN/703.08/20081211//
+REF/D/MARADMIN/498.13/20130926//
+NARR/REF A IS MCO P1900.16G, MARINE CORPS SEPARATION AND RETIREMENT MANUAL.  REF B</div><p>IS MCO 1553.4B, PROFESSIONAL MILITARY EDUCATION (PME).  REF C IS MARADMIN 703/08, OFFICER PROFESSIONAL MILITARY EDUCATION (PME) SUMMARY.  REF D IS MARADMIN 498/13, OFFICIAL MILITARY PERSONNEL FILE (OMPF) PHOTOGRAPH GUIDANCE.//</p><div class="doc-text">POC/MR. BRENNETT FORD/CIVILIAN/RESERVE AFFAIRS/-/TELEPHONE: [contact withheld]/[contact withheld]/E-MAIL:  [contact withheld]//
+POC/MR. DAVID S. ROBERTS/CIVILIAN/MARINE FORCES RESERVE(G-3/5)/TELEPHONE:  (504)</div><p>[contact withheld]/[contact withheld]/EMAIL: [contact withheld]//</p><div class="doc-text">POC/R. D. BARRETT/MAJ/CDET/TELEPHONE: [contact withheld]/[contact withheld]/E-MAIL:</div><p>[contact withheld]//</p></div>
+<h2 id="body">Remarks</h2>
+<div class="prose" id="text-body"><p class="prov" id="p1" title="1."><span class="prov-label">1.</span> This Marine Administrative Message (MARADMIN)announces the convening of the Academic Year (AY) 2018-19 Command and Staff College and Expeditionary Warfare School funded Blended Seminar Program (BSP) selection board for reserve officers.  The intent of this MARADMIN is to solicit applications from those reserve officers desiring to attend the funded BSP Distance Education Program (DEP) and to detail the application process.</p><p class="prov" id="p2" title="2."><span class="prov-label">2.</span> Application.  All applicants must submit their application via the Headquarters Marine Corps Reserve website.  Officers that are board selected for a BSP will be registered in the Marine Corps Training Information Management System by Marine Forces Reserve G-3 Training.  Officers who meet any of the following criteria are ineligible to apply for the funded BSP DEP:</p><p class="prov" id="p2-a" title="2.A."><span class="prov-label">A.</span> Officers who are in the above zone on the next scheduled promotion board.</p><p class="prov" id="p2-b" title="2.B."><span class="prov-label">B.</span> Officers that have completed an equivalent Formal Level School (FLS) or DEP.</p><p class="prov" id="p2-c" title="2.C."><span class="prov-label">C.</span> Officers with approved retirements, resignations, or pending conditional release.</p><p class="prov" id="p2-d" title="2.D."><span class="prov-label">D.</span> Officers applying for FLS whose mandatory removal date is 1 October 2021 or earlier will not be considered.</p><p class="prov" id="p3" title="3."><span class="prov-label">3.</span> Requirements.  Unrestricted Reserve (UR) officers participating in any funded Professional Military Education (PME) program of study (excluding 2 week staff training courses) will incur a Selected reserve (SELRES) drilling affiliation obligation for 24 continuous months following the completion of the program of study.  This requirement is to ensure that the reserve component effectively realizes a return on the investment made in funding the education of officers through these programs.  To more effectively enforce this requirement, the following applies:</p><p class="prov" id="p3-a" title="3.A."><span class="prov-label">A.</span> UR officers will sign a Separate Written Agreement to Train(SWAT) at the time of application to all funded DEP PME programs of study to acknowledge and accept the SELRES drilling affiliation requirement.  DEP applications submitted without a signed SWAT will not be accepted.</p><p class="prov" id="p3-b" title="3.B."><span class="prov-label">B.</span> Ninety days following graduation, officers must be joined to either a Selected Marine Corps Reserve (SMCR) drilling unit or an Individual Mobilization Augmentee (IMA) billet identification code that matches his or her grade and military occupational specialty.</p><p class="prov" id="p3-c" title="3.C."><span class="prov-label">C.</span> Subsequent failure to affiliate following graduation will be handled in accordance with the SWAT signed at the time of application.</p><p class="prov" id="p3-d" title="3.D."><span class="prov-label">D.</span> A mandatory drill stop date of 24 months will be reported on unit diary by Commandant of the Marine Corps (CMC), Reserve Affairs Management-4 upon completion of the course.</p><p class="prov" id="p4" title="4."><span class="prov-label">4.</span> The BSP prerequisites.  UR officers in the SMCR, IMA, or Individual Ready Reserve (IRR) are eligible for consideration if they meet the specific eligibility criteria listed for each respective program below:</p><p class="prov" id="p4-a" title="4.A."><span class="prov-label">A.</span> Command and Staff College Blended Seminar Program (CSCBSP)</p><p class="prov lvl2" id="p4-a-1" title="4.A.1."><span class="prov-label">1.</span> Eligible officers.  Major and major select, Chief Warrant Officer (CWO) 5 and CWO5 select, CWO4 and CWO4 select.</p><p class="prov lvl2" id="p4-a-2" title="4.A.2."><span class="prov-label">2.</span> Format.  CSCBSP is designed for delivery in three stages:  Stage 1 is a 4 week resident period, stage 2 is a 28 week online period, and stage three is a 6 week resident period.</p><p class="prov lvl2" id="p4-a-3" title="4.A.3."><span class="prov-label">3.</span> CSCBSP class dates: Class Number and Location                    Report 1st Reserve Period Report 2nd Reserve Period 901-902 at Quantico, Virginia                11 June 2018 (901)                29 April 2019 (902) 903-904 at Camp Lejuene, North Carolina      2 August 2018 (903)               15 April 2019 (904) 905-906 at Camp Pendleton, California        2 August 2018 (905)               15 April 2019 (906) 907-908 at Camp Lejuene, North Carolina      20 January 2019 (907)             23 September 2019 (908) 909-910 at Camp Lejuene, North Carolina      30 January 2019 (909)             23 September 2019 (910)</p><p class="prov" id="p4-b" title="4.B."><span class="prov-label">B.</span> Expeditionary Warfare School Blended Seminar Program (EWSBSP)</p><p class="prov lvl2" id="p4-b-1" title="4.B.1."><span class="prov-label">1.</span> Eligible officers.  Captain and captain select, CWO3 and CWO3 select.</p><p class="prov lvl2" id="p4-b-2" title="4.B.2."><span class="prov-label">2.</span> Format.  EWSBSP is designed for delivery in three stages:  Stage 1 is a 29 day resident period, stage 2 is a 12 week online period, and stage 3 is a 6 week resident period.</p><p class="prov lvl2" id="p4-b-3" title="4.B.3."><span class="prov-label">3.</span> EWSBSP class dates (read in three columns): Class Number and Location                     Report 1st Reserve Period Report 2nd Reserve Period 901-902 at Quantico, Virginia                 9 July 2018 (901)                29 October 2018 (902) 903-904 at Camp Lejuene, North Carolina       9 July 2018 (903)                29 October 2018 (904) 905-906 at Camp Pendleton, California         5 October 2018 (905)             25 March 2019 (906) 907-908 at Camp Lejuene, North Carolina       7 January 2019 (907)             29 April 2019 (908) 909-910 at Camp Lejuene, North Carolina       7 January 2019 (909)             29 April 2019 (910)</p><p class="prov lvl2" id="p4-b-5" title="4.B.5."><span class="prov-label">5.</span> Course prerequisites.  Information, course prerequisites, and frequently asked questions can be found by accessing the reserve officer PME website under top requests at www.manpower.usmc.mil.</p><p class="prov lvl2" id="p4-b-6" title="4.B.6."><span class="prov-label">6.</span> Application process.  The deadline for submitting the application and updated material for the BSPs is 9 March 2018, 2359 Eastern Standard Time (EST).  The online website for submission of all applications and material is www.manpower.usmc.mil/application.  Officers with a Manpower and Reserve Affairs (MRA) portal account will proceed to the login process. Officers who do not have an MRA portal account will receive a 404 access error.  Within the error message are instructions on how to register for a MRA portal account.  Any active or reserve component Marine requesting a portal account is automatically approved. Upon login, the system will validate the application for which the officer is qualified.  Click RPME-C and complete the RPME-C application for the respective program.  Officers are strongly advised to read the instructions in their entirety before completing the application form.  The web-based application allows for the attachment of documents and offers RPME preference options via drop-down boxes. Ensure upload of documents into the proper document type (e.g., Reserve Qualification Summary (RQS) documents upload into RQS file type).  Officers must complete, sign (digitally or physically) and attach their RQS NAVMC 10476 (Rev. September 2016), which is the current version located on the online application and on the RAM-4 webpage in order for their application to be considered.  All applicants applying for funded BSP must also attach a signed SWAT which is located on the application website, in order for their application to be considered.  Once submitted, officers will receive a confirmation e-mail that theirapplication has been received.  Hard copy applications will not be accepted.  All submitted material will be destroyed upon completion of the selection process.</p><p class="prov" id="p6-a" title="6.A."><span class="prov-label">A.</span> Photographs.  A current promotion photograph is required by the RPME board in accordance with reference (d).  Eligible officers are highly encouraged to read and comply with reference (d).  Officers are responsible for verifying receipt of their photograph by CMC Manpower Management Records and Perfomance (MMRP)-20.  The primary means of confirming receipt of a photograph is the online Official Military Personnel File (OMPF) via Marine Online.  Photographs will be available for viewing online within 24 hours of photograph receipt by CMC (MMRP-20). Photographs are considered current if submitted within 12 months preceding the convening date of the RPME-C selection process.  The date listed on the photograph title board, is the date used to determine whether or not an officers promotion photograph is current.  Officers are advised that outdated photographs will remain in the OMPF until an updated photograph is submitted.  Marines have the personal responsibility to ensure that their promotion photograph is current, submitted, and received.  Marines may also confirm receipt of their digital photograph via the MMRP website at:  www.mmsb.usmc.mil.  Click on MMRP-20 OMPF, look under online applications, then click on digital photo inventory.</p><p class="prov" id="p6-b" title="6.B."><span class="prov-label">B.</span> Fitness reports.  The selection board will review and consider fitness reports.  All fitness reports must be included in an officers OMPF.  Incomplete fitness reports will not be accepted.  This includes those fitness reports missing signatures or reviewing officer certification.  Information regarding fitness reports can be viewed on the MMRP website at www.mmsb.usmc.mil.  Click on MMRP-30 Performance Evaluation Section.  Look under online applications, then click on check your fitness report status.</p><p class="prov" id="p6-c" title="6.C."><span class="prov-label">C.</span> OMPF material.  Any documents that an officer feels should be part of his or her OMPF, other than fitness reports, must be forwarded to CMC (MMRP-20) by 9 March 2018, 2359 EST.  E-mail is the preferred and fastest way to update the OMPF.  E-mail updated material to [contact withheld].  In the text of the e-mail, indicate AY 2018, 2019 RPME-C selection process as the program for which being considered.  A single black and white multi-page attachment in adobe portable document format will expedite filing.  Ensure all materials contain full name and electronic data interchange personal identifier.  Personally identifiable information privacy is the responsibility of the sender.</p><p class="prov" id="p7" title="7."><span class="prov-label">7.</span> Administration.  Ensure correct e-mail addresses and telephone numbers are current and are provided on the application.  Update any changes to point of contact information promptly.</p><p class="prov" id="p8" title="8."><span class="prov-label">8.</span> Notification of selection.  The selection panel will select a number of officers as primaries equal to the number of school seats available.  The selection panel will also select a sufficient number of officers as alternates to meet quota requirements when officers decline or otherwise cannot accept.  Once the results are approved by Reserve Affairs, primary selectees for the BSP will be announced via MARADMIN.  The results MARADMIN will provide administrative guidance for orders processing and issuance.</p><p class="prov" id="p9" title="9."><span class="prov-label">9.</span> This MARADMIN is applicable to the reserve component (SMCR, IMA and IRR) and has been coordinated with Reserve Affairs and Marine Forces Reserve (MARFORRES). Active Reserve program members must apply via their chain of command to MARFORRES G-3 Training.</p><p class="prov" id="p10" title="10."><span class="prov-label">10.</span> Release authorized by Lieutenant General Robert S. Walsh, Commanding General, Marine Corps Combat Development Command.// Archived: 2026-07-12 08:08 | Source: marines.mil</p></div>
+<details class="verbatim"><summary>View verbatim extraction</summary><div class="doc-text">MARADMIN 011/18
+CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND
+STAFF COLLEGE AND EXPEDITIONARY WARFARE SCHOOL BLENDED SEMINAR PROGRAM
+SELECTION BOARD FOR RESERVE OFFICERS &gt; United States Marine Corps Flagship &gt;
+Messages Display
+Date: 1/8/2018
+SUBJ: CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND STAFF
+COLLEGE AND EXPEDITIONARY WARFARE SCHOOL BLENDED SEMINAR PROGRAM SELECTION BOARD FOR
+RESERVE OFFICERS//
+CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND STAFF
+COLLEGE AND EXPEDITIONARY WARFARE SCHOOL BLENDED SEMINAR PROGRAM SELECTION BOARD
+FOR RESERVE OFFICERS
+Date Signed: 1/8/2018 | MARADMINS Number: 011/18
+MARADMINS : 011/18
+R 060027Z JAN 18
+MARADMIN 011/18
+MSGID/GENADMIN/CG MCCDC QUANTICO VA//
+SUBJ/CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND STAFF
+COLLEGE AND EXPEDITIONARY WARFARE SCHOOL BLENDED SEMINAR PROGRAM SELECTION BOARD
+FOR RESERVE OFFICERS//
+REF/A/MCO/P1900.16G/20131126//
+REF/B/MCO/1553.4B/20080125//
+REF/C/MARADMIN/703.08/20081211//
+REF/D/MARADMIN/498.13/20130926//
+NARR/REF A IS MCO P1900.16G, MARINE CORPS SEPARATION AND RETIREMENT MANUAL.  REF B
+IS MCO 1553.4B, PROFESSIONAL MILITARY EDUCATION (PME).  REF C IS MARADMIN 703/08,
+OFFICER PROFESSIONAL MILITARY EDUCATION (PME) SUMMARY.  REF D IS MARADMIN 498/13,
+OFFICIAL MILITARY PERSONNEL FILE (OMPF) PHOTOGRAPH GUIDANCE.//
+POC/MR. BRENNETT FORD/CIVILIAN/RESERVE AFFAIRS/-/TELEPHONE: [contact withheld]/[contact withheld]/E-MAIL:  [contact withheld]//
+POC/MR. DAVID S. ROBERTS/CIVILIAN/MARINE FORCES RESERVE(G-3/5)/TELEPHONE:  (504)
+[contact withheld]/[contact withheld]/EMAIL: [contact withheld]//
+POC/R. D. BARRETT/MAJ/CDET/TELEPHONE: [contact withheld]/[contact withheld]/E-MAIL: 
+[contact withheld]//
+
+GENTEXT/REMARKS/1.  This Marine Administrative Message (MARADMIN)announces the
+convening of the Academic Year (AY) 2018-19 Command and Staff College and
+Expeditionary Warfare School funded Blended Seminar Program (BSP) selection board
+for reserve officers.  The intent of this MARADMIN is to solicit applications from
+those reserve officers desiring to attend the funded BSP Distance Education
+
+
+Program (DEP) and to detail the application process.
+2.  Application.  All applicants must submit their application via the
+Headquarters Marine Corps Reserve website.  Officers that are board selected for a
+BSP will be registered in the Marine Corps Training Information Management System
+by Marine Forces Reserve G-3 Training.  Officers who meet any of the following
+criteria are ineligible to apply for the funded BSP DEP:
+2.A.  Officers who are in the above zone on the next scheduled promotion board.
+2.B.  Officers that have completed an equivalent Formal Level School (FLS) or DEP.
+2.C.  Officers with approved retirements, resignations, or pending conditional
+release.
+2.D.  Officers applying for FLS whose mandatory removal date is 1 October 2021 or
+earlier will not be considered.
+3.  Requirements.  Unrestricted Reserve (UR) officers participating in any funded
+Professional Military Education (PME) program of study (excluding 2 week staff
+training courses) will incur a Selected reserve (SELRES) drilling affiliation
+obligation for 24 continuous months following the completion of the program of
+study.  This requirement is to ensure that the reserve component effectively
+realizes a return on the investment made in funding the education of officers
+through these programs.  To more effectively enforce this requirement, the
+following applies:
+3.A.  UR officers will sign a Separate Written Agreement to Train(SWAT) at the
+time of application to all funded DEP PME programs of study to acknowledge and
+accept the SELRES drilling affiliation requirement.  DEP applications submitted
+without a signed SWAT will not be accepted.
+3.B.  Ninety days following graduation, officers must be joined to either a
+Selected Marine Corps Reserve (SMCR) drilling unit or an Individual Mobilization
+Augmentee (IMA) billet identification code that matches his or her grade and
+military occupational specialty.
+3.C.  Subsequent failure to affiliate following graduation will be handled in
+accordance with the SWAT signed at the time of application.
+3.D.  A mandatory drill stop date of 24 months will be reported on unit diary by
+Commandant of the Marine Corps (CMC), Reserve Affairs Management-4 upon completion
+of the course.
+4.  The BSP prerequisites.  UR officers in the SMCR, IMA, or Individual Ready
+Reserve (IRR) are eligible for consideration if they meet the specific eligibility
+criteria listed for each respective program below:
+4.A.  Command and Staff College Blended Seminar Program (CSCBSP)
+4.A.1.  Eligible officers.  Major and major select, Chief Warrant Officer (CWO) 5
+and CWO5 select, CWO4 and CWO4 select.
+4.A.2.  Format.  CSCBSP is designed for delivery in three stages:  Stage 1 is a 4
+week resident period, stage 2 is a 28 week online period, and stage three is a 6
+week resident period.
+4.A.3.  CSCBSP class dates:
+Class Number and Location                    Report 1st Reserve Period        
+Report 2nd Reserve Period
+901-902 at Quantico, Virginia                11 June 2018 (901)                29
+April 2019 (902)
+903-904 at Camp Lejuene, North Carolina      2 August 2018 (903)               15
+
+
+April 2019 (904)
+905-906 at Camp Pendleton, California        2 August 2018 (905)               15
+April 2019 (906)
+907-908 at Camp Lejuene, North Carolina      20 January 2019 (907)             23
+September 2019 (908)
+909-910 at Camp Lejuene, North Carolina      30 January 2019 (909)             23
+September 2019 (910)
+4.B.  Expeditionary Warfare School Blended Seminar Program (EWSBSP)
+4.B.1.  Eligible officers.  Captain and captain select, CWO3 and CWO3 select.
+4.B.2.  Format.  EWSBSP is designed for delivery in three stages:  Stage 1 is a 29
+day resident period, stage 2 is a 12 week online period, and stage 3 is a 6 week
+resident period.
+4.B.3.  EWSBSP class dates (read in three columns):
+Class Number and Location                     Report 1st Reserve Period       
+Report 2nd Reserve Period
+901-902 at Quantico, Virginia                 9 July 2018 (901)                29
+October 2018 (902)
+903-904 at Camp Lejuene, North Carolina       9 July 2018 (903)                29
+October 2018 (904)
+905-906 at Camp Pendleton, California         5 October 2018 (905)             25
+March 2019 (906)
+907-908 at Camp Lejuene, North Carolina       7 January 2019 (907)             29
+April 2019 (908)
+909-910 at Camp Lejuene, North Carolina       7 January 2019 (909)             29
+April 2019 (910)
+5.  Course prerequisites.  Information, course prerequisites, and frequently asked
+questions can be found by accessing the reserve officer PME website under top
+requests at www.manpower.usmc.mil.
+6.  Application process.  The deadline for submitting the application and updated
+material for the BSPs is 9 March 2018, 2359 Eastern Standard Time (EST).  The
+online website for submission of all applications and material is
+www.manpower.usmc.mil/application.  Officers with a Manpower and Reserve Affairs
+(MRA) portal account will proceed to the login process. Officers who do not have
+an MRA portal account will receive a 404 access error.  Within the error message
+are instructions on how to register for a MRA portal account.  Any active or
+reserve component Marine requesting a portal account is automatically approved. 
+Upon login, the system will validate the application for which the officer is
+qualified.  Click RPME-C and complete the RPME-C application for the respective
+program.  Officers are strongly advised to read the instructions in their entirety
+before completing the application form.  The web-based application allows for the
+attachment of documents and offers RPME preference options via drop-down boxes. 
+Ensure upload of documents into the proper document type (e.g., Reserve
+Qualification Summary (RQS) documents upload into RQS file type).  Officers must
+complete, sign (digitally or physically) and attach their RQS NAVMC 10476 (Rev.
+September 2016), which is the current version located on the online application
+and on the RAM-4 webpage in order for their application to be considered.  All
+applicants applying for funded BSP must also attach a signed SWAT which is located
+on the application website, in order for their application to be considered.  Once
+
+
+submitted, officers will receive a confirmation e-mail that theirapplication has
+been received.  Hard copy applications will not be accepted.  All submitted
+material will be destroyed upon completion of the selection process.
+6.A.  Photographs.  A current promotion photograph is required by the RPME board
+in accordance with reference (d).  Eligible officers are highly encouraged to read
+and comply with reference (d).  Officers are responsible for verifying receipt of
+their photograph by CMC Manpower Management Records and Perfomance (MMRP)-20.  The
+primary means of confirming receipt of a photograph is the online Official
+Military Personnel File (OMPF) via Marine Online.  Photographs will be available
+for viewing online within 24 hours of photograph receipt by CMC (MMRP-20). 
+Photographs are considered current if submitted within 12 months preceding the
+convening date of the RPME-C selection process.  The date listed on the photograph
+title board, is the date used to determine whether or not an officers promotion
+photograph is current.  Officers are advised that outdated photographs will remain
+in the OMPF until an updated photograph is submitted.  Marines have the personal
+responsibility to ensure that their promotion photograph is current, submitted,
+and received.  Marines may also confirm receipt of their digital photograph via
+the MMRP website at:  www.mmsb.usmc.mil.  Click on MMRP-20 OMPF, look under online
+applications, then click on digital photo inventory.
+6.B.  Fitness reports.  The selection board will review and consider fitness
+reports.  All fitness reports must be included in an officers OMPF.  Incomplete
+fitness reports will not be accepted.  This includes those fitness reports missing
+signatures or reviewing officer certification.  Information regarding fitness
+reports can be viewed on the MMRP website at www.mmsb.usmc.mil.  Click on MMRP-30
+Performance Evaluation Section.  Look under online applications, then click on
+check your fitness report status.
+6.C.  OMPF material.  Any documents that an officer feels should be part of his or
+her OMPF, other than fitness reports, must be forwarded to CMC (MMRP-20) by 9
+March 2018, 2359 EST.  E-mail is the preferred and fastest way to update the
+OMPF.  E-mail updated material to [contact withheld].  In the text of
+the e-mail, indicate AY 2018, 2019 RPME-C selection process as the program for
+which being considered.  A single black and white multi-page attachment in adobe
+portable document format will expedite filing.  Ensure all materials contain full
+name and electronic data interchange personal identifier.  Personally identifiable
+information privacy is the responsibility of the sender.
+7.  Administration.  Ensure correct e-mail addresses and telephone numbers are
+current and are provided on the application.  Update any changes to point of
+contact information promptly.
+8.  Notification of selection.  The selection panel will select a number of
+officers as primaries equal to the number of school seats available.  The
+selection panel will also select a sufficient number of officers as alternates to
+meet quota requirements when officers decline or otherwise cannot accept.  Once
+the results are approved by Reserve Affairs, primary selectees for the BSP will be
+announced via MARADMIN.  The results MARADMIN will provide administrative guidance
+for orders processing and issuance.
+9.  This MARADMIN is applicable to the reserve component (SMCR, IMA and IRR) and
+has been coordinated with Reserve Affairs and Marine Forces Reserve (MARFORRES). 
+Active Reserve program members must apply via their chain of command to MARFORRES
+
+
+G-3 Training.
+10.  Release authorized by Lieutenant General Robert S. Walsh, Commanding General,
+Marine Corps Combat Development Command.//
+Archived: 2026-07-12 08:08 | Source: marines.mil</div></details>
+<p class="reflow-note">Text above is reflowed for readability - paragraph breaks reconstructed from the extraction, no words altered. The verbatim extraction is the authoritative rendering.</p>
+</main>
+<footer>
+<p>Generated from the canonical policy store. Status reflects the source
+catalog and supersession records at generation time. This site is an
+unofficial reference - the issuing authority's copy governs.</p>
+<p><a href="accessibility.html">Accessibility statement</a> &middot;
+<a href="https://forms.osi.apps.mil/r/k5QWzJDL9P" rel="noopener">Submit feedback</a></p>
+</footer>
+</body>
+</html>

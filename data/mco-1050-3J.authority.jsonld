@@ -12,7 +12,7 @@
       "label": "10 U.S.C. 701, Entitlement and accumulation of leave"
     },
     {
-      "@id": "/us/usmc/mco/1050.3J",
+      "@id": "/us/dod/don/usmc/mco/1050.3J",
       "@type": "pol:MarineCorpsOrder",
       "label": "MCO 1050.3J, Regulations for Leave, Liberty, and Administrative Absence",
       "derivesAuthorityFrom": "/us/usc/10/701"

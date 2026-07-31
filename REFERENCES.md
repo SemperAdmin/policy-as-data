@@ -20,12 +20,12 @@ discipline forbids encoding text that cannot be confirmed against the source.
 | `/us/dod/dodd/5124.02` | DoD Directive 5124.02, USD(P&R) charter (authority for the DTM and DoDI) | **directive-level**: Purpose, Applicability, Definitions full; Responsibilities (Sec 4+) and enclosures not yet encoded |
 | `/us/dod/dodi/1327.06` | DoDI 1327.06, Military Leave, Liberty, and Administrative Absence (current, Aug 7 2025; reissues the 2009 edition the corpus cites) | **instruction-level**: Purpose + full Section/paragraph structure; bodies not yet encoded. Parental leave at 3.11.c (ADPL) / 3.11.d (IDPL) |
 | `/us/dod/dtm/2023/23-001` | OSD DTM 23-001, Expansion of the MPLP | full |
-| `/us/navy/asn-mra/2023/mplp-guidance` | ASN (M&RA) Memorandum, DON Guidance for Expansion of the MPLP (17 Jan 2023) | full |
-| `/us/usmc/maradmin/2023/051` | MARADMIN 051/23, Expansion of the MC MPLP | full |
-| `/us/usmc/maradmin/2023/129` | MARADMIN 129/23, Clarification to 051/23 | full |
-| `/us/usmc/maradmin/2022/523` | MARADMIN 523/22, RC Parental Leave changes | full (deepest numbering: 6 levels) |
-| `/us/usmc/mco/5000.12F` | MCO 5000.12F CH-1, Parenthood and Pregnancy | **order-level**: CH-1 change order in full; policy Enclosure (2) (chapters + appendices A–D) not yet encoded |
-| `/us/usmc/mco/1050.3J` | MCO 1050.3J, Leave, Liberty and Administrative Absence | **order-level**: front matter (Situation/Cancellation/Mission); Enclosure (1) regulations not yet encoded |
+| `/us/dod/don/asn-mra/2023/mplp-guidance` | ASN (M&RA) Memorandum, DON Guidance for Expansion of the MPLP (17 Jan 2023) | full |
+| `/us/dod/don/usmc/maradmin/2023/051` | MARADMIN 051/23, Expansion of the MC MPLP | full |
+| `/us/dod/don/usmc/maradmin/2023/129` | MARADMIN 129/23, Clarification to 051/23 | full |
+| `/us/dod/don/usmc/maradmin/2022/523` | MARADMIN 523/22, RC Parental Leave changes | full (deepest numbering: 6 levels) |
+| `/us/dod/don/usmc/mco/5000.12F` | MCO 5000.12F CH-1, Parenthood and Pregnancy | **order-level**: CH-1 change order in full; policy Enclosure (2) (chapters + appendices A–D) not yet encoded |
+| `/us/dod/don/usmc/mco/1050.3J` | MCO 1050.3J, Leave, Liberty and Administrative Absence | **order-level**: front matter (Situation/Cancellation/Mission); Enclosure (1) regulations not yet encoded |
 
 The parental-leave chain is anchored end to end:
 `10 U.S.C. 701(h)` → `DTM 23-001` → `MARADMIN 051/23` (clarified by `129/23`).
@@ -46,13 +46,13 @@ to nothing in it.
 
 | Identifier | Document |
 |---|---|
-| `/us/navy/asn-mra/2021/retiree-council-response` | ASN (M&RA) Memorandum, Secretariat Response to the 2020 Secretary of the Navy's Retiree Council Report (31 Mar 2021) — 11 retiree issues. NOT MARADMIN 523/22 ref (c). |
+| `/us/dod/don/asn-mra/2021/retiree-council-response` | ASN (M&RA) Memorandum, Secretariat Response to the 2020 Secretary of the Navy's Retiree Council Report (31 Mar 2021) — 11 retiree issues. NOT MARADMIN 523/22 ref (c). |
 
 ## Still needed (1)
 
 | Identifier | Document | Issue |
 |---|---|---|
-| `/us/navy/asn-mra/2021/reserve-policy-board` | ASN (M&RA) memo, 26 Mar 2021 (523/22 ref c) | not yet provided |
+| `/us/dod/don/asn-mra/2021/reserve-policy-board` | ASN (M&RA) memo, 26 Mar 2021 (523/22 ref c) | not yet provided |
 
 Note: DoDI 1327.06 is encoded from the current (Aug 7, 2025) edition; the node
 records that it reissues the June 16, 2009 edition cited by the 2023-era
@@ -63,5 +63,5 @@ for fuller encoding.
 
 | Identifier | Document | Why blocked |
 |---|---|---|
-| `/us/navy/asn-mra/2023/mplp-guidance` | ASN (M&RA) Memorandum, DON MPLP Guidance (17 Jan 2023), MARADMIN 051/23 ref (b) | The PDF provided is a **scanned image** with no text layer; cannot extract here. Please paste the text. |
+| `/us/dod/don/asn-mra/2023/mplp-guidance` | ASN (M&RA) Memorandum, DON MPLP Guidance (17 Jan 2023), MARADMIN 051/23 ref (b) | The PDF provided is a **scanned image** with no text layer; cannot extract here. Please paste the text. |
 | `/us/dod/dodd/5124.02` | DoD Directive 5124.02, USD(P&R) | Authority under which DTM 23-001 is issued; not yet provided. |
