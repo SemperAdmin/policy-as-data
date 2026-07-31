@@ -7,7 +7,7 @@
 
 export const DOCS = [
   {
-    id: "/us/usmc/maradmin/2023/051",
+    id: "/us/dod/don/usmc/maradmin/2023/051",
     label: "MARADMIN 051/23",
     uslm: "../data/maradmin-051-23.uslm.xml",
     authority: "../data/maradmin-051-23.authority.jsonld",
@@ -15,7 +15,7 @@ export const DOCS = [
     source: "https://www.marines.mil/News/Messages/Messages-Display/Article/3281525/expansion-of-the-marine-corps-military-parental-leave-program/",
   },
   {
-    id: "/us/usmc/maradmin/2023/129",
+    id: "/us/dod/don/usmc/maradmin/2023/129",
     label: "MARADMIN 129/23 · Clarification",
     uslm: "../data/maradmin-129-23.uslm.xml",
     authority: "../data/maradmin-129-23.authority.jsonld",
@@ -23,7 +23,7 @@ export const DOCS = [
     source: "https://www.marines.mil/News/Messages/Messages-Display/Article/3322160/clarification-to-maradmin-05123/",
   },
   {
-    id: "/us/usmc/maradmin/2022/523",
+    id: "/us/dod/don/usmc/maradmin/2022/523",
     label: "MARADMIN 523/22 · RC Leave",
     uslm: "../data/maradmin-523-22.uslm.xml",
     authority: "../data/maradmin-523-22.authority.jsonld",
@@ -53,14 +53,14 @@ export const DOCS = [
     source: "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodd/512402p.pdf",
   },
   {
-    id: "/us/navy/asn-mra/2023/mplp-guidance",
+    id: "/us/dod/don/asn-mra/2023/mplp-guidance",
     label: "ASN (M&RA) memo · Navy",
     uslm: "../data/asn-mra-2023-mplp-guidance.uslm.xml",
     authority: "../data/asn-mra-2023-mplp-guidance.authority.jsonld",
     rules: null,
   },
   {
-    id: "/us/navy/asn-mra/2021/retiree-council-response",
+    id: "/us/dod/don/asn-mra/2021/retiree-council-response",
     label: "ASN Retiree Council memo (standalone)",
     uslm: "../data/asn-mra-2021-retiree-council-response.uslm.xml",
     authority: "../data/asn-mra-2021-retiree-council-response.authority.jsonld",
@@ -83,14 +83,14 @@ export const DOCS = [
     source: "https://www.law.cornell.edu/uscode/text/10/1052",
   },
   {
-    id: "/us/usmc/mco/5000.12F",
+    id: "/us/dod/don/usmc/mco/5000.12F",
     label: "MCO 5000.12F · Order",
     uslm: "../data/mco-5000-12F.uslm.xml",
     authority: "../data/mco-5000-12F.authority.jsonld",
     rules: null,
   },
   {
-    id: "/us/usmc/mco/1050.3J",
+    id: "/us/dod/don/usmc/mco/1050.3J",
     label: "MCO 1050.3J · Order",
     uslm: "../data/mco-1050-3J.uslm.xml",
     authority: "../data/mco-1050-3J.authority.jsonld",

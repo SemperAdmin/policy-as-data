@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 640" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1140" height="640" fill="#FFFFFF"/>
+  <text x="40" y="46" font-size="26" font-weight="700" fill="#0F1F3D">How it is built, and what holds at every layer</text>
+  <text x="40" y="74" font-size="16" fill="#555">One source of record. Everything else is regenerated from it, and every output passes the same controls.</text>
+
+  <!-- pipeline row -->
+  <g>
+    <rect x="40" y="108" width="150" height="86" rx="6" fill="#FFFFFF" stroke="#999"/>
+    <text x="58" y="136" font-size="15" font-weight="700" fill="#333">Published</text>
+    <text x="58" y="156" font-size="15" font-weight="700" fill="#333">documents</text>
+    <text x="58" y="178" font-size="12" fill="#777">marines.mil, DoD, DON</text>
+
+    <path d="M 198 151 L 232 151" stroke="#0F1F3D" stroke-width="3" marker-end="url(#p)"/>
+
+    <rect x="240" y="108" width="150" height="86" rx="6" fill="#FFFFFF" stroke="#999"/>
+    <text x="258" y="136" font-size="15" font-weight="700" fill="#333">Extraction</text>
+    <text x="258" y="158" font-size="12" fill="#777">text + provenance</text>
+    <text x="258" y="178" font-size="12" fill="#777">hash, source, date</text>
+
+    <path d="M 398 151 L 432 151" stroke="#0F1F3D" stroke-width="3" marker-end="url(#p)"/>
+
+    <rect x="440" y="96" width="230" height="110" rx="6" fill="#0F1F3D"/>
+    <text x="458" y="126" font-size="16" font-weight="700" fill="#FFF">CANONICAL STORE</text>
+    <text x="458" y="150" font-size="13" fill="#D4AF67">the single source of record</text>
+    <text x="458" y="172" font-size="13" fill="#F2E5BE">17,514 documents</text>
+    <text x="458" y="192" font-size="13" fill="#F2E5BE">649,037 provisions</text>
+
+    <path d="M 678 151 L 712 151" stroke="#0F1F3D" stroke-width="3" marker-end="url(#p)"/>
+
+    <rect x="720" y="108" width="170" height="86" rx="6" fill="#FFFFFF" stroke="#999"/>
+    <text x="738" y="136" font-size="15" font-weight="700" fill="#333">Structure</text>
+    <text x="738" y="158" font-size="12" fill="#777">paragraphs, hierarchy,</text>
+    <text x="738" y="178" font-size="12" fill="#777">citations, supersession</text>
+  </g>
+  <defs><marker id="p" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#0F1F3D"/></marker></defs>
+
+  <!-- fan out -->
+  <path d="M 555 214 L 555 240 L 150 240 L 150 268" fill="none" stroke="#B89042" stroke-width="2" marker-end="url(#g)"/>
+  <path d="M 555 214 L 555 240 L 420 240 L 420 268" fill="none" stroke="#B89042" stroke-width="2" marker-end="url(#g)"/>
+  <path d="M 555 214 L 555 240 L 690 240 L 690 268" fill="none" stroke="#B89042" stroke-width="2" marker-end="url(#g)"/>
+  <path d="M 555 214 L 555 240 L 960 240 L 960 268" fill="none" stroke="#B89042" stroke-width="2" marker-end="url(#g)"/>
+  <defs><marker id="g" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#B89042"/></marker></defs>
+  <text x="576" y="234" font-size="12" font-style="italic" fill="#8A6A22">derived — regenerated, never edited</text>
+
+  <g>
+    <rect x="60" y="272" width="180" height="80" rx="6" fill="#FDF3D8" stroke="#B89042"/>
+    <text x="78" y="300" font-size="15" font-weight="700" fill="#8A6A22">Public library</text>
+    <text x="78" y="322" font-size="12" fill="#7A5F1E">searchable pages with</text>
+    <text x="78" y="340" font-size="12" fill="#7A5F1E">clickable paragraph links</text>
+
+    <rect x="330" y="272" width="180" height="80" rx="6" fill="#FDF3D8" stroke="#B89042"/>
+    <text x="348" y="300" font-size="15" font-weight="700" fill="#8A6A22">XML exports</text>
+    <text x="348" y="322" font-size="12" fill="#7A5F1E">USLM-aligned, validated</text>
+    <text x="348" y="340" font-size="12" fill="#7A5F1E">against a published schema</text>
+
+    <rect x="600" y="272" width="180" height="80" rx="6" fill="#FDF3D8" stroke="#B89042"/>
+    <text x="618" y="300" font-size="15" font-weight="700" fill="#8A6A22">Decision engine</text>
+    <text x="618" y="322" font-size="12" fill="#7A5F1E">answers cite the exact</text>
+    <text x="618" y="340" font-size="12" fill="#7A5F1E">paragraph relied upon</text>
+
+    <rect x="870" y="272" width="180" height="80" rx="6" fill="#FDF3D8" stroke="#B89042"/>
+    <text x="888" y="300" font-size="15" font-weight="700" fill="#8A6A22">Training corpus</text>
+    <text x="888" y="322" font-size="12" fill="#7A5F1E">459,413 labeled chunks</text>
+    <text x="888" y="340" font-size="12" fill="#7A5F1E">for model tuning</text>
+  </g>
+
+  <!-- gates bar -->
+  <rect x="40" y="386" width="1060" height="60" rx="6" fill="#B82230"/>
+  <text x="60" y="414" font-size="17" font-weight="700" fill="#FFF">EVERY OUTPUT PASSES THE SAME FOUR CONTROLS</text>
+  <text x="60" y="436" font-size="13" fill="#FBD8DC">Applied by construction, not by review — no output layer can opt out.</text>
+
+  <g>
+    <rect x="40" y="462" width="252" height="152" rx="6" fill="#FFFFFF" stroke="#B82230" stroke-width="2"/>
+    <text x="58" y="490" font-size="15" font-weight="700" fill="#B82230">1 · Publication gate</text>
+    <text x="58" y="514" font-size="13" fill="#444">Seven documents carrying</text>
+    <text x="58" y="534" font-size="13" fill="#444">Distribution Statement C are</text>
+    <text x="58" y="554" font-size="13" fill="#444">excluded from the site, the</text>
+    <text x="58" y="574" font-size="13" fill="#444">index, the exports, and the</text>
+    <text x="58" y="594" font-size="13" fill="#444">training corpus.</text>
+
+    <rect x="308" y="462" width="252" height="152" rx="6" fill="#FFFFFF" stroke="#B82230" stroke-width="2"/>
+    <text x="326" y="490" font-size="15" font-weight="700" fill="#B82230">2 · Contact masking</text>
+    <text x="326" y="514" font-size="13" fill="#444">Email addresses and phone</text>
+    <text x="326" y="534" font-size="13" fill="#444">numbers are withheld in every</text>
+    <text x="326" y="554" font-size="13" fill="#444">published artifact. Names are</text>
+    <text x="326" y="574" font-size="13" fill="#444">retained, matching current</text>
+    <text x="326" y="594" font-size="13" fill="#444">marines.mil practice.</text>
+
+    <rect x="576" y="462" width="252" height="152" rx="6" fill="#FFFFFF" stroke="#B82230" stroke-width="2"/>
+    <text x="594" y="490" font-size="15" font-weight="700" fill="#B82230">3 · Verification state</text>
+    <text x="594" y="514" font-size="13" fill="#444">Machine extraction is labeled</text>
+    <text x="594" y="534" font-size="13" fill="#444">UNVERIFIED on the face of the</text>
+    <text x="594" y="554" font-size="13" fill="#444">data until a human confirms it</text>
+    <text x="594" y="574" font-size="13" fill="#444">line by line. Promotion is</text>
+    <text x="594" y="594" font-size="13" fill="#444">deliberate and recorded.</text>
+
+    <rect x="844" y="462" width="256" height="152" rx="6" fill="#FFFFFF" stroke="#B82230" stroke-width="2"/>
+    <text x="862" y="490" font-size="15" font-weight="700" fill="#B82230">4 · Status labeling</text>
+    <text x="862" y="514" font-size="13" fill="#444">Cancelled and superseded</text>
+    <text x="862" y="534" font-size="13" fill="#444">policy is marked as such in the</text>
+    <text x="862" y="554" font-size="13" fill="#444">data and inside the training</text>
+    <text x="862" y="574" font-size="13" fill="#444">text, so a model cannot state</text>
+    <text x="862" y="594" font-size="13" fill="#444">rescinded rules as current.</text>
+  </g>
+</svg>

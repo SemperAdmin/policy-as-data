@@ -23,7 +23,7 @@
       "label": "DoDI 1327.06, Leave and Liberty Policy and Procedures. ASN memo reference (c)."
     },
     {
-      "@id": "/us/navy/asn-mra/2023/mplp-guidance",
+      "@id": "/us/dod/don/asn-mra/2023/mplp-guidance",
       "@type": "pol:NavyIssuance",
       "label": "ASN (M&RA) Memorandum, Department of the Navy Guidance for Expansion of the MPLP (17 Jan 2023)",
       "derivesAuthorityFrom": [

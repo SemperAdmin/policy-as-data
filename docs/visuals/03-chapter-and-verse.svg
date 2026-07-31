@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1100" height="600" fill="#FFFFFF"/>
+  <text x="40" y="46" font-size="26" font-weight="700" fill="#0F1F3D">Chapter and verse: a reference that resolves</text>
+  <text x="40" y="74" font-size="16" fill="#555">A change message names the paragraphs it amends. The citation becomes a link to that exact paragraph.</text>
+
+  <!-- source doc -->
+  <rect x="40" y="106" width="440" height="300" rx="6" fill="#FFFFFF" stroke="#0F1F3D" stroke-width="2"/>
+  <rect x="40" y="106" width="440" height="40" rx="6" fill="#0F1F3D"/>
+  <text x="58" y="133" font-size="16" font-weight="700" fill="#FFF">MARADMIN 388/21</text>
+  <text x="240" y="133" font-size="13" fill="#B5A988">Change 1 · 12 provisions</text>
+  <text x="58" y="176" font-size="13" fill="#777">CHANGE 1 TO FY22 COMMANDANT'S PROFESSIONAL</text>
+  <text x="58" y="194" font-size="13" fill="#777">INTERMEDIATE-LEVEL EDUCATION BOARD</text>
+
+  <rect x="58" y="212" width="404" height="72" rx="4" fill="#FBEEF0" stroke="#B82230"/>
+  <text x="70" y="234" font-size="13" font-weight="700" fill="#B82230">p2/a</text>
+  <text x="118" y="234" font-size="13" fill="#333">"...as described in</text>
+  <text x="118" y="254" font-size="13" font-weight="700" fill="#B82230" text-decoration="underline">MARADMIN 360/21, paragraph 2.d</text>
+  <text x="118" y="274" font-size="13" fill="#333">is hereby amended to read..."</text>
+
+  <rect x="58" y="296" width="404" height="42" rx="4" fill="#F7F8FA" stroke="#CCC"/>
+  <text x="70" y="322" font-size="13" font-weight="700" fill="#555">p3/a</text>
+  <text x="118" y="322" font-size="13" fill="#555">also cites paragraph 2.d</text>
+
+  <rect x="58" y="348" width="404" height="42" rx="4" fill="#F7F8FA" stroke="#CCC"/>
+  <text x="70" y="374" font-size="13" font-weight="700" fill="#555">p4/a</text>
+  <text x="118" y="374" font-size="13" fill="#555">cites paragraph 5.f</text>
+
+  <!-- arrows -->
+  <path d="M 470 248 C 540 248 540 250 600 250" fill="none" stroke="#B82230" stroke-width="3" marker-end="url(#a2)"/>
+  <path d="M 470 317 C 540 317 545 262 600 258" fill="none" stroke="#CCC" stroke-width="2" marker-end="url(#a3)"/>
+  <path d="M 470 369 C 540 369 545 430 600 434" fill="none" stroke="#CCC" stroke-width="2" marker-end="url(#a3)"/>
+  <defs>
+    <marker id="a2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#B82230"/></marker>
+    <marker id="a3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#AAA"/></marker>
+  </defs>
+  <text x="486" y="228" font-size="12" font-weight="700" fill="#B82230">resolves to</text>
+
+  <!-- target doc -->
+  <rect x="620" y="106" width="440" height="380" rx="6" fill="#FFFFFF" stroke="#0F1F3D" stroke-width="2"/>
+  <rect x="620" y="106" width="440" height="40" rx="6" fill="#0F1F3D"/>
+  <text x="638" y="133" font-size="16" font-weight="700" fill="#FFF">MARADMIN 360/21</text>
+  <text x="820" y="133" font-size="13" fill="#B5A988">base order · 78 provisions</text>
+
+  <text x="638" y="176" font-size="13" font-weight="700" fill="#555">2.  Eligibility</text>
+  <text x="656" y="200" font-size="13" fill="#888">a. ...   b. ...   c. ...</text>
+
+  <rect x="638" y="214" width="404" height="60" rx="4" fill="#FDF3D8" stroke="#B89042" stroke-width="3"/>
+  <text x="652" y="238" font-size="14" font-weight="700" fill="#8A6A22">d.  Graduate Education at:</text>
+  <text x="652" y="260" font-size="12" font-family="Consolas, monospace" fill="#8A6A22">/us/dod/don/usmc/maradmin/2021/360/p2/d</text>
+
+  <text x="638" y="302" font-size="13" font-weight="700" fill="#555">3. ...    4. ...</text>
+  <text x="638" y="330" font-size="13" font-weight="700" fill="#555">5.  Application Procedures</text>
+  <text x="656" y="354" font-size="13" fill="#888">a. ...  b. ...  c. ...  d. ...  e. ...</text>
+
+  <rect x="638" y="368" width="404" height="80" rx="4" fill="#FDF3D8" stroke="#B89042" stroke-width="3"/>
+  <text x="652" y="392" font-size="14" font-weight="700" fill="#8A6A22">f.  Foreign PME. Officers with or without</text>
+  <text x="652" y="412" font-size="14" font-weight="700" fill="#8A6A22">a Note 1 are eligible to apply...</text>
+  <text x="652" y="434" font-size="12" font-family="Consolas, monospace" fill="#8A6A22">/us/dod/don/usmc/maradmin/2021/360/p5/f</text>
+
+  <!-- verification note -->
+  <rect x="40" y="430" width="440" height="130" rx="6" fill="#F7F8FA" stroke="#DDD"/>
+  <text x="58" y="458" font-size="15" font-weight="700" fill="#0F1F3D">The link is verified before it is written</text>
+  <text x="58" y="482" font-size="13" fill="#555">The citation is read from the source text, the target</text>
+  <text x="58" y="502" font-size="13" fill="#555">paragraph is confirmed to exist, and only then does</text>
+  <text x="58" y="522" font-size="13" fill="#555">the link appear. A citation to a paragraph that is not</text>
+  <text x="58" y="542" font-size="13" fill="#555">there produces no link — never a fabricated one.</text>
+
+  <rect x="620" y="502" width="440" height="58" rx="6" fill="#0A1424"/>
+  <text x="638" y="526" font-size="13" font-style="italic" fill="#F2E5BE">"That way when we start referring to other documents we</text>
+  <text x="638" y="546" font-size="13" font-style="italic" fill="#F2E5BE">can go directly to the chapter and verse."</text>
+</svg>

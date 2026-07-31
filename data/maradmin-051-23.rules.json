@@ -1,6 +1,6 @@
 {
   "source": {
-    "identifier": "/us/usmc/maradmin/2023/051",
+    "identifier": "/us/dod/don/usmc/maradmin/2023/051",
     "label": "MARADMIN 051/23, Expansion of the Marine Corps Military Parental Leave Program",
     "dtg": "272030Z JAN 23",
     "originator": "CMC WASHINGTON DC MRA MP"
@@ -9,7 +9,7 @@
     "/us/usc/10/701",
     "/us/dod/dodi/1327.06",
     "/us/dod/dtm/2023/23-001",
-    "/us/usmc/maradmin/2023/051"
+    "/us/dod/don/usmc/maradmin/2023/051"
   ],
   "corrections": [
     {
@@ -31,7 +31,7 @@
       "unit": "days",
       "status": "VERIFIED",
       "citation": {
-        "identifier": "/us/usmc/maradmin/2023/051/p11/d",
+        "identifier": "/us/dod/don/usmc/maradmin/2023/051/p11/d",
         "label": "MARADMIN 051/23, para 11.d",
         "status": "VERIFIED"
       },
@@ -43,7 +43,7 @@
       "unit": "days",
       "status": "VERIFIED",
       "citation": {
-        "identifier": "/us/usmc/maradmin/2023/051/p8/c/3",
+        "identifier": "/us/dod/don/usmc/maradmin/2023/051/p8/c/3",
         "label": "MARADMIN 051/23, para 8.c.(3)",
         "status": "VERIFIED"
       },
@@ -55,7 +55,7 @@
       "unit": "days",
       "status": "VERIFIED",
       "citation": {
-        "identifier": "/us/usmc/maradmin/2023/051/p8/a/1/b",
+        "identifier": "/us/dod/don/usmc/maradmin/2023/051/p8/a/1/b",
         "label": "MARADMIN 051/23, para 8.a.(1)(b)",
         "status": "VERIFIED"
       },
@@ -67,7 +67,7 @@
       "unit": "increments",
       "status": "VERIFIED",
       "citation": {
-        "identifier": "/us/usmc/maradmin/2023/051/p8/a/1/b",
+        "identifier": "/us/dod/don/usmc/maradmin/2023/051/p8/a/1/b",
         "label": "MARADMIN 051/23, para 8.a.(1)(b)",
         "status": "VERIFIED"
       },
@@ -79,7 +79,7 @@
       "unit": "hours",
       "status": "VERIFIED",
       "citation": {
-        "identifier": "/us/usmc/maradmin/2023/051/p8/b/1",
+        "identifier": "/us/dod/don/usmc/maradmin/2023/051/p8/b/1",
         "label": "MARADMIN 051/23, para 8.b.(1)",
         "status": "VERIFIED"
       },
