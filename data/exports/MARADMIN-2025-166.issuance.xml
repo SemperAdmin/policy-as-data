@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2025/166" canonicalId="MARADMIN-2025-166" docType="MARADMIN" nativeNumber="166/25" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2025-03-27" schemaVersion="2.0">
+  <meta>
+    <title>ANNOUNCEMENT OF THE WINNERS FOR CY2024 VISUAL INFORMATION AND</title>
+    <subject>ANNOUNCEMENT OF THE WINNERS FOR CY2024 VISUAL INFORMATION AND</subject>
+    <originator>CMC CD WASHINGTON DC</originator>
+    <signedDate>2025-03-27</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2025\MARADMIN_166_25_ANNOUNCEMENT_OF_THE_WINNERS_FOR_CY2024_VISUAL_INFORMATION_AN.pdf" sourceHash="5fbb735e6077d1285d824cfb4704ada0388a2a5d994abf1e664d3dc18c20aa53" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2025/166/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2025/166/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Congratulations to the following Marines and commands on selection as the recipients of the 2024 Communication Strategy and Operations (COMMSTRAT) Visual Information and Excellence in Communication (VIEC) Awards. Your leadership and proficiency in visual information and communication have greatly supported the Commandant of the Marine Corpsâ€™ communication objectives and bring great credit to you and your commands.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>First Place Award Recipients:</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>COMMSTRAT of the Year winners:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/a/1" path="p2/a/1" number="2.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Communication Plan of the Year: II Marine Expeditionary Force</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>COMMSTRAT Marine of the Year: Sgt Ryan W. Hageali, 1st Marine Division</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/a/3" path="p2/a/3" number="2.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>COMMSTRAT SNCO of the Year: GySgt Donald J. Holbert, 15th Marine Expeditionary Unit</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/a/4" path="p2/a/4" number="2.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>COMMSTRAT Visual Information Officer of the Year: CWO2 Akeel A. Austin, 2d Marine Aircraft Wing</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/a/5" path="p2/a/5" number="2.a.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>COMMSTRAT Officer of the Year: 1st Lt Jacob R. Ballard, 2d Marine Aircraft Wing</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/a/6" path="p2/a/6" number="2.a.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>COMMSTRAT Unit of the Year: III Marine Expeditionary Force</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Graphic Design winners:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/b/1" path="p2/b/1" number="2.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Marine Corps Graphic Designer of the Year: 1st Place: Cpl Matthew A. Benfield, U.S. Marine Corps Forces, Pacific 2nd Place: Cpl Joanna M. Stauss, Marine Corps Installations Pacific 3rd Place: Sgt Amelia L. Kang, 15th Marine Expeditionary Unit</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/b/2" path="p2/b/2" number="2.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Civilian Graphic Designer of the Year: No Awards</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/b/3" path="p2/b/3" number="2.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Digital Art: 1st Place: Cpl Calah J. Thompson, Marine Corps Air Station Iwakuni 2nd Place: LCpl Hana L. Lathrop, Marine Corps Base Quantico 3rd Place: LCpl Vivian Linwu, Marine Corps Installations Pacific</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/b/4" path="p2/b/4" number="2.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Identity Design: 1st Place: Cpl Joanna M. Stauss, Marine Corps Installations Pacific 2nd Place: LCpl Hana L. Lathrop, Marine Corps Base Quantico 3rd Place: Cpl Samuel T. Qin, U.S. Marine Corps Forces, South</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/b/5" path="p2/b/5" number="2.b.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Layout and Design: 1st Place: LCpl Hana L. Lathrop, Marine Corps Base Quantico 2nd Place: Pvt Audrie D. Nelson, U.S. Marine Corps Forces, Pacific 3rd Place: Pfc Erick Reyes, Marine Corps Base Quantico</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/b/6" path="p2/b/6" number="2.b.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>Animation: 1st Place: Sgt James G. Stanfield, Communication Directorate 2nd Place: Cpl Brian E. Knowles, I Marine Expeditionary Force 3rd Place: Pfc Dominic D. Spence, Marine Corps Air-Ground Combat Center, Twentynine Palms</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/b/7" path="p2/b/7" number="2.b.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+          <text>Photo Illustration: 1st Place: LCpl Blake A. Gonter, U.S. Marine Corps Forces, Pacific 2nd Place: Cpl Adeola A. Adetimehin, 1st Marine Division 3rd Place: Sgt Mary W. Torres, 2nd Marine Logistics Group</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Photography winners:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/c/1" path="p2/c/1" number="2.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Marine Corps Photographer of the Year: 1st Place: Cpl Juan P. Torres, Marine Rotational Force - Darwin 24.3 2nd Place: Cpl Ava M. Alegria, Marine Corps Recruit Depot Parris Island 3rd Place: Cpl Aidan C. Hekker, 15th Marine Expeditionary Unit</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/c/2" path="p2/c/2" number="2.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Marine Corps Civilian Photographer of the Year: No Awards</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/c/3" path="p2/c/3" number="2.c.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Photo Series: 1st Place: Sgt Patrick S. Katz, 15th Marine Expeditionary Unit 2nd Place: LCpl Christian R. Salazar, 2nd Marine Logistics Group 3rd Place: Cpl Juan P. Torres, Marine Rotational Force - Darwin 24.3</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/c/4" path="p2/c/4" number="2.c.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>News Photo: 1st Place: Cpl Migel A. Reynosa, Marine Rotational Force - Darwin 24.3 2nd Place: LCpl Moses S. Lopez Franco, 1st Marine Aircraft Wing 3rd Place: LCpl Ryan J. Little, Marine Corps Base Camp Blaz</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/c/5" path="p2/c/5" number="2.c.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Feature Photo: 1st Place: LCpl Peyton E. Kahle, 15th Marine Expeditionary Unit 2nd Place: Cpl Juan P. Torres, Marine Rotational Force - Darwin 24.3 3rd Place: LCpl Joaquincar S. Dela Torre, Marine Corps Base Quantico</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/c/6" path="p2/c/6" number="2.c.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>Portrait: 1st Place: Sgt Patrick S. Katz, 15th Marine Expeditionary Unit 2nd Place: Cpl Earik H. Barton, Marine Rotational Force - Darwin 24.3 3rd Place: Cpl Samuel T. Qin, U.S. Marine Corps Forces, South</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/c/7" path="p2/c/7" number="2.c.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+          <text>Sports Photography: 1st Place: Cpl Aidan C. Hekker, 15th Marine Expeditionary Unit 2nd Place: Cpl Maxwell R. Cook, 9th Marine Corps District 3rd Place: LCpl Jeffrey E. Pruett, III Marine Expeditionary Force</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Videography winners:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/d/1" path="p2/d/1" number="2.d.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Marine Corps Videographer of the Year: 1st Place: Cpl Joseph V. Helms, 15th Marine Expeditionary Unit 2nd Place: Cpl Jacob H. Richardson, U.S. Marine Corps Forces, Europe and Africa 3rd Place: Sgt Patrick S. Katz, 15th Marine Expeditionary Unit</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/d/2" path="p2/d/2" number="2.d.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Marine Corps Civilian Videographer of the Year: 1st Place: Sharon L. McPeak, Marine Corps Combat Service Support Schools 2nd Place: No Award 3rd Place: No Award</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/d/3" path="p2/d/3" number="2.d.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Short-Form Production Video (unit award): 1st Place: Communication Directorate, â€œThe 249th Marine Corps Birthday Messageâ€ 2nd Place: Marine Corps Installations East, â€œGUTS OF IRON: SSgt Geoff Laney, North Carolinaâ€™s Strongest Manâ€ 3rd Place: Defense Media Activity â€“ Marines, â€œJohn Basilone: Selfless Warriorâ€</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/d/4" path="p2/d/4" number="2.d.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Long-Form Production Video (unit award): 1st Place: 1st Marine Division, â€œ20 Years Later: Remembering the Second Battle of Fallujahâ€ 2nd Place: Communication Directorate, â€œThe Second Battle of Fallujahâ€ 3rd Place: Defense Media Activity â€“ Marines, â€œVoice Over the Horizon - A Thomas Begay Story (Long Version)â€</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/d/5" path="p2/d/5" number="2.d.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>B-Roll Videography: 1st Place: Cpl Joseph V. Helms, 15th Marine Expeditionary Unit 2nd Place: Cpl Gideon M. Schippers, Marine Aviation Weapons and Tactics Squadron-1 3rd Place: Cpl Samuel T. Qin, U.S. Marine Corps Forces, South</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/d/6" path="p2/d/6" number="2.d.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>Editing: 1st Place: Cpl Noah J. Masog, 3d Marine Division 2nd Place: John A. Martinez, Jr., Communication Directorate 3rd Place: Cpl Emily A. Hazelbaker, II Marine Expeditionary Force</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/d/7" path="p2/d/7" number="2.d.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+          <text>Multimedia Product: 1st Place: Cpl Jacob H. Richardson, U.S. Marine Corps Forces, Europe and Africa 2nd Place: Cpl Aidan C. Hekker, 15th Marine Expeditionary Unit 3rd Place: Shaehmus R. Sawyer, Marine Corps Base Quantico</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/d/8" path="p2/d/8" number="2.d.(8)" label="(8)" depth="2" verification="UNVERIFIED">
+          <text>Video Story: 1st Place: Cpl Aidan C. Hekker, 15th Marine Expeditionary Unit 2nd Place: John A. Martinez, Jr., Communication Directorate 3rd Place: Cpl Sydni M. Jessee, 3rd Marine Logistics Group</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/d/9" path="p2/d/9" number="2.d.(9)" label="(9)" depth="2" verification="UNVERIFIED">
+          <text>Video Spot: 1st Place: Cpl Jacob H. Richardson, U.S. Marine Corps Forces, Europe and Africa 2nd Place: Cpl Joseph V. Helms, 15th Marine Expeditionary Unit 3rd Place: SSgt Danny R. Gonzalez, Joint Task Force-National Capital Region</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/e" path="p2/e" number="2.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Communication and Print Winners:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/e/1" path="p2/e/1" number="2.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Marine Corps Communicator of the Year: 1st Place: LCpl Sean R. LeClaire, Marine Corps Base Quantico 2nd Place: Cpl Luis V. Agostini, 15th Marine Expeditionary Unit 3rd Place: Sgt Jacqueline Parsons Weidman, 3d Marine Littoral Regiment</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/e/2" path="p2/e/2" number="2.e.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Marine Corps Writer of the Year: 1st Place: Cpl Jade K. Venegas, Marine Corps Air Station Yuma 2nd Place: LCpl William A. Horsley, Marine Corps Recruit Depot, Parris Island 3rd Place: Cpl Jessica J. Mazzamuto, 2nd Marine Logistics Group</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/e/3" path="p2/e/3" number="2.e.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Marine Corps Civilian Writer of the Year: 1st Place: Shaehmus R. Sawyer, Marine Corps Base Quantico 2nd Place: Victoria A. Long, Marine Corps Installations East 3rd Place: No Award</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/e/4" path="p2/e/4" number="2.e.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Information Story: 1st Place: Cpl Luis V. Agostini, 15th Marine Expeditionary Unit 2nd Place: Cpl Calah J. Thompson, Marine Corps Air Station Iwakuni 3rd Place: SSgt Samuel Ruiz, III Marine Expeditionary Force Information Group</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/e/5" path="p2/e/5" number="2.e.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Feature Story: 1st Place: LCpl Madisyn C. Paschal, U.S. Marine Corps Forces, South 2nd Place: SSgt Alexa M. Hernandez, 2d Marine Division 3rd Place: LCpl Brenna A. Ritchie, Marine Corps Recruiting Command</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p2/e/6" path="p2/e/6" number="2.e.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>Photojournalism: 1st Place: Sgt Shaina R. Jupiter, Marine Rotational Force - Southeast Asia 2nd Place: Cpl Jade K. Venegas, Marine Corps Air Station Yuma 3rd Place: Sgt Andrew J. Skiver, Marine Corps Installations East</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Commanders are highly encouraged to recognize those Marines identified in this message with the appropriate impact award(s).</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>All winners content, to include second and third place winners, can be viewed at: https:(slash)(slash)www.dvidshub.net/awards/dma/2024?branch=marines</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>All winners, including second and third place winners, will be recognized at the annual COMMSTRAT Training and Leadership Development Summit hosted by Communication Directorate and the United States Marine Corps Combat Correspondents Association on August 28, 2025, at the Pacific Views Events Center, Marine Corps Base Camp Pendleton, California. Commands are highly encouraged to send their winners TAD to receive their awards. Information about the event will be published via separate correspondence by MARADMIN POCS. Award winners who are unable to accept their awards in person will receive them via mail.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>All winners should send official mailing address, command board style photos, and hometown for news release to MARADMIN POCs by 1 July 2025.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2025/166/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by SES April L. Langwell, Director of Communication, Communication Directorate, Headquarters, United States Marine Corps//</text>
+    </provision>
+  </section>
+</issuance>

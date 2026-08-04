@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.5.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/dodi/1320_14" canonicalId="DODI-1320.14" docType="DODI" nativeNumber="1320.14" tier="T1" lifecycle="active" verification="UNVERIFIED" startPeriod="2020-12-16" schemaVersion="2.0">
+  <meta>
+    <title>DoD Instruction 1320.14 - DoD Commissioned Officer Promotion Program Procedures</title>
+    <subject>DOD COMMISSIONED OFFICER PROMOTION PROGRAM PROCEDURES</subject>
+    <signedDate>2020-12-16</signedDate>
+    <provenance sourcePath="https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132014p.pdf" sourceHash="927e91823d05f7fc611adf784c98be84c53a393009d5d18bfb0bb4de35be6754" extractionEngine="manual-metadata-entry" convertedAt="2026-08-03T00:00:00+00:00" storeSchemaVersion="0.5.0"/>
+  </meta>
+  <authority>
+    <ref rel="cancels" target="DODI-1320.11" basis="cited" held="held" from="front-matter"/>
+    <ref rel="supersedes" target="DODI-1320.14-2013" basis="cited" held="held" from="front-matter"/>
+    <ref rel="references" target="DODD-5124.02" targetIdentifier="/us/dod/dodd/5124_02" basis="cited" tier="T1" held="absent" from="front-matter:ref/c"/>
+    <ref rel="references" target="DODI-1300.19" targetIdentifier="/us/dod/dodi/1300_19" basis="cited" tier="T1" held="held" from="front-matter:ref/d"/>
+    <ref rel="references" target="DODI-1310.02" targetIdentifier="/us/dod/dodi/1310_02" basis="cited" tier="T1" held="absent" from="front-matter:ref/e"/>
+    <ref rel="references" target="DODI-1320.04" targetIdentifier="/us/dod/dodi/1320_04" basis="cited" tier="T1" held="absent" from="front-matter:ref/f"/>
+    <ref rel="references" target="DODI-1320.13" targetIdentifier="/us/dod/dodi/1320_13" basis="cited" tier="T1" held="absent" from="front-matter:ref/g"/>
+    <ref rel="references" target="DODI-1327.07" targetIdentifier="/us/dod/dodi/1327_07" basis="cited" tier="T1" held="absent" from="front-matter:ref/h"/>
+    <ref rel="references" target="DODI-1334.02" targetIdentifier="/us/dod/dodi/1334_02" basis="cited" tier="T1" held="absent" from="front-matter:ref/i"/>
+    <ref rel="references" target="USC-T10" targetIdentifier="/us/usc/t10" basis="cited" tier="T0" held="held" from="front-matter:ref/j"/>
+  </authority>
+  <section anchor="front-matter" heading="DoD Instruction 1320.14, DoD Commissioned Officer Promotion Program Procedures, December 16, 2020" verification="UNVERIFIED">
+    <provision path="ref" number="Ref:" label="Ref:" depth="0" role="reference" verification="UNVERIFIED">
+      <provision path="ref/a" number="(a)" label="(a)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Chairman of the Joint Chiefs of Staff Instruction 1330.05A, “Joint Officer Management Program Procedures,” December 15, 2015</text>
+      </provision>
+      <provision path="ref/b" number="(b)" label="(b)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Chairman of the Joint Chiefs of Staff Instruction 1331.01D, “Manpower and Personnel Actions Involving General and Flag Officers,” August 1, 2010</text>
+      </provision>
+      <provision path="ref/c" number="(c)" label="(c)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Directive 5124.02, “Under Secretary of Defense for Personnel and Readiness (USD(P&amp;R)),” June 23, 2008</text>
+        <citation target="DODD-5124.02" targetIdentifier="/us/dod/dodd/5124_02" basis="cited" text="DoD Directive 5124.02, “Under Secretary of Defense for Personnel and Readiness (USD(P&amp;R)),” June 23, 2008"/>
+      </provision>
+      <provision path="ref/d" number="(d)" label="(d)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 1300.19, “DoD Joint Officer Management (JOM) Program,” April 3, 2018</text>
+        <citation target="DODI-1300.19" targetIdentifier="/us/dod/dodi/1300_19" basis="cited" text="DoD Instruction 1300.19, “DoD Joint Officer Management (JOM) Program,” April 3, 2018"/>
+      </provision>
+      <provision path="ref/e" number="(e)" label="(e)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 1310.02, “Original Appointment of Officers,” March 26, 2015</text>
+        <citation target="DODI-1310.02" targetIdentifier="/us/dod/dodi/1310_02" basis="cited" text="DoD Instruction 1310.02, “Original Appointment of Officers,” March 26, 2015"/>
+      </provision>
+      <provision path="ref/f" number="(f)" label="(f)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 1320.04, “Military Officer Actions Requiring Presidential, Secretary of Defense, or Under Secretary of Defense for Personnel and Readiness Approval or Senate Confirmation,” January 3, 2014, as amended</text>
+        <citation target="DODI-1320.04" targetIdentifier="/us/dod/dodi/1320_04" basis="cited" text="DoD Instruction 1320.04, “Military Officer Actions Requiring Presidential, Secretary of Defense, or Under Secretary of Defense for Personnel and Readiness Approval or Senate Confirmation,” January 3, 2014, as amended"/>
+      </provision>
+      <provision path="ref/g" number="(g)" label="(g)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 1320.13, “Commissioned Officer Promotion Reports (COPRs),” October 30, 2014</text>
+        <citation target="DODI-1320.13" targetIdentifier="/us/dod/dodi/1320_13" basis="cited" text="DoD Instruction 1320.13, “Commissioned Officer Promotion Reports (COPRs),” October 30, 2014"/>
+      </provision>
+      <provision path="ref/h" number="(h)" label="(h)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 1327.07, “Career Intermission Program (CIP) for Service Members,” October 18, 2018</text>
+        <citation target="DODI-1327.07" targetIdentifier="/us/dod/dodi/1327_07" basis="cited" text="DoD Instruction 1327.07, “Career Intermission Program (CIP) for Service Members,” October 18, 2018"/>
+      </provision>
+      <provision path="ref/i" number="(i)" label="(i)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 1334.02, “Frocking of Commissioned Officers,” December 7, 2012, as amended</text>
+        <citation target="DODI-1334.02" targetIdentifier="/us/dod/dodi/1334_02" basis="cited" text="DoD Instruction 1334.02, “Frocking of Commissioned Officers,” December 7, 2012, as amended"/>
+      </provision>
+      <provision path="ref/j" number="(j)" label="(j)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>United States Code, Title 10</text>
+        <citation target="USC-T10" targetIdentifier="/us/usc/t10" basis="cited" text="United States Code, Title 10"/>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="s-1" heading="SECTION 1: GENERAL ISSUANCE INFORMATION" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-2" heading="SECTION 2: RESPONSIBILITIES" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-3" heading="SECTION 3: PROCEDURES" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-4" heading="SECTION 4: ALTERNATIVE PROMOTION AUTHORITY" verification="UNVERIFIED">
+  </section>
+  <section anchor="glossary" heading="GLOSSARY" verification="UNVERIFIED">
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>15 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>
