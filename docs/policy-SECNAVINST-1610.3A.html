@@ -1,0 +1,918 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SECNAVINST 1610.3A - Department of the Navy Policy on Harassment Prevention and Response - Semper Admin Policy Library</title>
+<style>
+:root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
+--blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
+--brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
+--bg:#0A1424;--elev:#11203F;--sunken:#060E1A;--fg:#F2E5BE;--card:#11203F;
+--muted:#182A4D;--mutedfg:#B5A988;--border:#233A5C;--borders:#34507A;
+--n950:#0F0C09;--rad:8px;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:400 15px/1.6 "Inter Variable",Inter,system-ui,sans-serif}
+a{color:var(--blue1)}a:hover{color:var(--brass3)}
+:focus-visible{outline:3px solid var(--brass3);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px;
+background:var(--brass3);color:var(--n950)}
+header.chrome,main,footer{max-width:64rem;margin:0 auto;padding:16px 24px}
+header.chrome{margin-top:16px;border-radius:12px;border:1px solid var(--border);
+background:var(--elev);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.wordmark{font:400 28px/1.2 "Bebas Neue",Oswald,system-ui,sans-serif;
+letter-spacing:.04em;color:var(--parch3);text-decoration:none;text-transform:uppercase}
+h1{font:700 28px/1.2 inherit;margin:32px 0 8px}
+h2{font:700 20px/1.2 inherit;border-bottom:1px solid var(--borders);
+padding-bottom:8px;margin-top:40px}
+.lede{color:var(--mutedfg);max-width:52rem}
+.tier{border:1px solid var(--border);border-radius:12px;background:var(--card);
+margin:0 0 4px;padding:16px 20px}
+.tier.gap{background:repeating-linear-gradient(135deg,var(--sunken),
+var(--sunken) 10px,#0b1830 10px,#0b1830 20px);border-style:dashed;
+border-color:var(--aging)}
+.tierhead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
+font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin-bottom:10px}
+.tiercode{color:var(--brass3);font-weight:700}
+.doc{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--muted)}
+.doc:first-of-type{border-top:0;padding-top:0}
+.docid{font:600 14px/1.4 "JetBrains Mono",Menlo,monospace;color:var(--parch3)}
+.doctitle{color:var(--fg)}
+.uslm{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.why{font-size:13px;color:var(--mutedfg);margin-top:4px}
+.pill{display:inline-block;padding:2px 9px;border-radius:9999px;
+font:700 11px/1.6 inherit;border:1px solid var(--borders);
+background:var(--muted);color:var(--parch3);white-space:nowrap}
+.pill.cited{border-color:var(--fresh);color:#9fe0bd}
+.pill.drift{border-color:var(--aging);color:#f0c489}
+.pill.gap{border-color:var(--stale);color:#f3a3a3}
+.pill.held{border-color:var(--blue1);color:#bcd7f2}
+.pill.cancelled,.pill.superseded{background:var(--stale);border-color:var(--stale);
+color:#fff}
+.arrow{text-align:center;color:var(--brass);font:700 13px/1 inherit;
+padding:6px 0;letter-spacing:.08em}
+.arrow span{background:var(--bg);padding:0 10px}
+.arrow{position:relative}
+.arrow:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
+background:var(--brass);z-index:-1}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--muted);
+vertical-align:top}
+th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;
+letter-spacing:.08em}
+code{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+footer{border-top:1px solid var(--border);margin-top:48px;font-size:13px;
+color:var(--mutedfg)}
+
+.crumb{font-size:13px;color:var(--mutedfg);margin:24px 0 0}
+.ident{font:500 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.factrow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.lede2{color:var(--mutedfg);max-width:54rem;margin:6px 0 18px}
+.ladder{border-left:2px solid var(--brass);margin:0 0 4px 10px;padding:0 0 0 18px}
+.rung{position:relative;padding:9px 0}
+.rung:before{content:"";position:absolute;left:-24px;top:16px;width:12px;
+height:2px;background:var(--brass)}
+.rung .t{font:700 11px/1 inherit;letter-spacing:.09em;color:var(--brass3);
+text-transform:uppercase}
+.rung.gaprung{opacity:.72}
+.rung.gaprung .t{color:var(--aging)}
+.small{font-size:13px;color:var(--mutedfg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.panel{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:16px 20px}
+.panel h3{font:700 12px/1.3 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin:0 0 10px}
+.prov{border-left:1px solid var(--muted);margin:0 0 0 4px;padding:2px 0 2px 14px}
+.plabel{font:600 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+.ptext{white-space:pre-wrap;overflow-wrap:break-word}
+.reflist{list-style:none;padding:0;margin:0}
+.reflist li{padding:7px 0;border-bottom:1px solid var(--muted)}
+.reflist li:last-child{border-bottom:0}
+.reflink{font-weight:600}
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{padding:8px 0 8px 16px;border-left:2px solid var(--border);
+position:relative}
+.timeline li:before{content:"";position:absolute;left:-5px;top:15px;width:8px;
+height:8px;border-radius:50%;background:var(--brass)}
+.timeline li.now:before{background:var(--fresh);box-shadow:0 0 0 3px rgba(47,143,92,.25)}
+.timeline li.gone:before{background:var(--stale)}
+details.body{margin-top:10px}
+details.body summary{cursor:pointer;color:var(--blue1);font-weight:600}
+.src{font:500 11px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--mutedfg)}
+.doc-raw{white-space:pre-wrap;overflow-wrap:break-word;
+font:500 12px/1.65 "JetBrains Mono",Menlo,monospace;color:var(--fg);
+background:var(--sunken);border:1px solid var(--border);border-radius:8px;
+padding:14px;max-height:34rem;overflow:auto}
+.typegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));
+gap:10px;margin:12px 0}
+.typecard{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:14px 16px}
+.typecard .n{font:700 26px/1.1 inherit;color:var(--brass3)}
+</style></head><body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="chrome"><a class="wordmark" href="index.html">Semper Admin</a><span>Policy</span><a href="policy-index.html" style="margin-left:auto">All policies</a><a href="authority-index.html">Authority chains</a><a href="sources.html">Sources</a></header>
+<main id="main">
+<p class="crumb"><a href="policy-index.html">All policies</a> &rsaquo; T2 Department of the Navy</p>
+<h1>SECNAVINST 1610.3A - Department of the Navy Policy on Harassment Prevention and Response</h1>
+<div class="ident">/us/dod/don/secnavinst/1610_3a</div>
+<div class="factrow"><span class="pill ">T2 Department of the Navy</span><span class="pill ">unknown</span><span class="pill ">UNVERIFIED</span></div>
+<h2>Where this sits</h2>
+<p class="lede2">The ladder above is what governs this policy, one tier at a time. Every rung exists because this document, or one above it, printed the reference. A tier the corpus does not hold is shown rather than skipped.</p>
+<div class="ladder">
+<div class="rung"><div class="t">T0 Statute</div>
+<div style="padding:3px 0"><code>USC-T10-S801-950a</code> <span class="pill gap">not held</span><div class="src">named at p-8:ref/k &middot; cited</div></div>
+<div style="padding:3px 0"><code>USC-T10-S930</code> <span class="pill gap">not held</span><div class="src">named at p-8:ref/j &middot; cited</div></div>
+<div style="padding:3px 0"><code>USC-T5-S2105</code> <span class="pill gap">not held</span><div class="src">named at p-8:ref/h &middot; cited</div></div>
+<div style="padding:3px 0"><a href="policy-USC-T5-S552a.html">USC-T5-S552a</a> <span class="pill held">in store</span><div class="small">5 U.S.C. 552a - Records maintained on individuals</div><div class="src">named at p-8:ref/m &middot; cited</div></div>
+</div>
+<div class="rung"><div class="t">T1 Department of Defense</div>
+<div style="padding:3px 0"><code>DODD-7050.06</code> <span class="pill gap">not held</span><div class="src">named at p-8:ref/i &middot; cited</div></div>
+<div style="padding:3px 0"><code>DODI-1020.03</code> <span class="pill gap">not held</span><div class="src">named at p-8:ref/a &middot; cited</div></div>
+<div style="padding:3px 0"><code>DODI-1020.04</code> <span class="pill gap">not held</span><div class="src">named at p-8:ref/d &middot; cited</div></div>
+<div style="padding:3px 0"><code>DODI-5015.02</code> <span class="pill gap">not held</span><div class="src">named at p-8:ref/n &middot; cited</div></div>
+</div>
+<div class="rung"><div class="t">T2 Department of the Navy &middot; this document</div><div><strong>SECNAVINST 1610.3A - Department of the Navy Policy on Harassment Prevention and Response</strong></div></div>
+</div>
+<h2>What came before</h2>
+<p class="lede2">The corpus holds one edition of this policy and no document cites an earlier one. That is the honest answer, not a missing feature: a superseded edition is usually gone from the publisher's site before a scraper reaches it.</p>
+<details class="body"><summary>Record history &middot; 3 correction(s) to the DATA, not to the policy</summary><ul class="timeline">
+<li><strong>2026-08-03</strong> <span class="small">checked against section text already carried in this record</span><ul class="small"><li>reparse_provisions.py - provision tree rebuilt after the reference-list and signature-block parser fixes</li><li>21 path(s) added, 19 removed, 150 provisions total</li><li>reference and enclosure lists now parse under ref/ and encl/ instead of entering the body marker stack</li><li>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</li></ul></li>
+<li><strong>2026-08-03</strong> <span class="small">checked against the Subj: field in this record&#x27;s own front matter text</span><ul class="small"><li>backfill_subjects.py - subject recovered from the naval letter Subj: field, which the provision parser skips as a label line</li><li>title rebuilt as doc type, native number, and subject</li><li>no text was invented; a record with no Subj: field keeps subject null</li></ul></li>
+<li><strong>2026-08-04</strong> <span class="small">checked against USLM User Guide section 12.2, Referencing Model</span><ul class="small"><li>normalize_identifiers.py - period replaced with underscore in every USLM path segment</li><li>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</li><li>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</li><li>20 identifier(s) rewritten in this record</li><li>document id, native number, and displayed text are unchanged</li><li>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</li></ul></li>
+</ul></details>
+<h2>What it says</h2>
+<div class="panel"><h3>References this document names</h3><p class="small">Each entry is a link, not a string. This is the join between one policy and the next.</p>
+<ul class="reflist">
+<li><span class="plabel">(1)</span> References <span class="pill ">no issuance named</span></li>
+<li><span class="plabel">(2)</span> Definitions <span class="pill ">no issuance named</span></li>
+<li><span class="plabel">(3)</span> Policy <span class="pill ">no issuance named</span></li>
+<li><span class="plabel">(4)</span> Responsibilities <span class="pill ">no issuance named</span></li>
+</ul>
+<ul class="reflist">
+<li><span class="plabel">(a)</span> <span class="reflink"><code>DoD Instruction 1020.03 of 8 February 2018</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/dodi/1020_03</div></li>
+<li><span class="plabel">(b)</span> <span class="reflink"><code>SECNAVINST 5300.26E</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/secnavinst/5300_26e</div></li>
+<li><span class="plabel">(c)</span> <span class="reflink"><code>CNO WASHINGTON DC 101454Z JAN 25(ALNAV 001/25)</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/alnav/2025/001</div></li>
+<li><span class="plabel">(d)</span> <span class="reflink"><code>DoD Instruction 1020.04 of 30 June 2020</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/dodi/1020_04</div></li>
+<li><span class="plabel">(e)</span> <span class="reflink"><code>SECNAVINST 12713.14</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/secnavinst/12713_14</div></li>
+<li><span class="plabel">(f)</span> <span class="reflink"><code>SECNAV M-5210.1</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/secnavm/5210_1</div></li>
+<li><span class="plabel">(g)</span> <span class="reflink"><code>SECNAV M-5214.1</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/secnavm/5214_1</div></li>
+<li><span class="plabel">(h)</span> <span class="reflink"><code>5 U.S.C. §2105</code></span> <span class="pill gap">named, not held</span><div class="src">/us/usc/t5/s2105</div></li>
+<li><span class="plabel">(i)</span> <span class="reflink"><code>DoD Directive 7050.06 of 17 April 2015</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/dodd/7050_06</div></li>
+<li><span class="plabel">(j)</span> <span class="reflink"><code>10 U.S.C. §930</code></span> <span class="pill gap">named, not held</span><div class="src">/us/usc/t10/s930</div></li>
+<li><span class="plabel">(k)</span> <span class="reflink"><code>10 U.S.C. §§801-950a</code></span> <span class="pill gap">named, not held</span><div class="src">/us/usc/t10/s801-950a</div></li>
+<li><span class="plabel">(l)</span> <span class="reflink"><code>SECNAVINST 5800.11B</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/secnavinst/5800_11b</div></li>
+<li><span class="plabel">(m)</span> <span class="reflink"><a href="policy-USC-T5-S552a.html">5 U.S.C. §552a</a></span> <span class="pill ">T0 Statute</span> <span class="pill held">in store</span><div class="src">/us/usc/t5/s552a</div></li>
+<li><span class="plabel">(n)</span> <span class="reflink"><code>DoD Instruction 5015.02 of 24 February 2015</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/dodi/5015_02</div></li>
+<li><span class="plabel">(o)</span> <span class="reflink"><code>SECNAVINST 5800.12C SECNAVINST 1610.3A 13 May 2026 Enclosure (2) DEFINITIONS</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/secnavinst/5800_12c</div></li>
+</ul>
+</div>
+<details class="body"><summary>The full text &middot; 129 addressable paragraph(s) across 31 section(s), 12 of them held as source text because the parser refused to invent a hierarchy for them</summary>
+<div class="panel" style="margin-top:10px" id="sec-front-matter"><h3>front-matter</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">D E P A R T M E N T O F T H E N A V Y 
+O F F I C E O F T H E S E C R E T A R Y  
+1 0 0 0 N A V Y P E N T A G O N 
+W A S H I N G T O N D C 2 0 3 5 0 - 1000  
+ 
+ 
+ 
+                                              SECNAVINST 1610.3A 
+                                              ASN (M&amp;RA) MMP 
+                                              13 May 2026 
+ 
+SECNAV INSTRUCTION 1610.3A  
+ 
+From:  Secretary of the Navy  
+ 
+Subj:  DEPARTMENT OF THE NAVY POLICY ON HARASSMENT PREVENTION 
+       AND RESPONSE 
+ 
+Encl:  (1) References 
+  (2) Definitions  
+  (3) Policy 
+       (4) Responsibilities</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-1"><h3>p-1 &middot; 1.  Purpose</h3>
+<div class="prov" id="p1">
+<span class="plabel">1.</span> 
+<span class="ptext">Purpose</span>
+</div>
+<div class="prov" id="p1-a">
+<span class="plabel">a.</span> 
+<span class="ptext">To provide a comprehensive Department of the Navy (DON) policy for all military personnel on the identification, response, reporting, prevention, and elimination of harassment; including, but not limited to, cyberharassment, discriminatory harassment, hazing, bullying, and stalking pursuant to the guidance provided by references (a) through (o).  See enclosure</span>
+</div>
+<div class="prov" id="p1-a-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">for a listing of these references.</span>
+</div>
+<div class="prov" id="p1-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Significant changes include expansion of policy to address all forms of non-sexual harassment.  Additionally, this instruction incorporates policy and responsibilities promulgated in reference (a).</span>
+</div>
+<div class="prov" id="p1-c">
+<span class="plabel">c.</span> 
+<span class="ptext">The Navy’s sexual harassment response policies are governed by references (b) and (c), and are not covered in this instruction.</span>
+</div>
+<div class="prov" id="p2">
+<span class="plabel">2.</span> 
+<span class="ptext">Cancellation.  SECNAVINST 1610.3.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-3"><h3>p-3 &middot; 3.  Definitions.  Interpretation of this instruction shall be</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">3.  Definitions.  Interpretation of this instruction shall be 
+governed by the definitions in enclosure (2) and reference (a).
+
+
+                                             SECNAVINST 1610.3A 
+                                             13 May 2026 
+ 
+2</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-4"><h3>p-4 &middot; 4.  Applicability</h3>
+<div class="prov" id="p4">
+<span class="plabel">4.</span> 
+<span class="ptext">Applicability</span>
+</div>
+<div class="prov" id="p4-a">
+<span class="plabel">a.</span> 
+<span class="ptext">This instruction applies to all DON military personnel, specifically:  active duty military personnel, both Regular and Reserve; midshipmen of the Naval Academy and the Naval Reserve Officer Training Corps; and Reserve personnel when performing active or inactive duty for training or engaging in any activity related to the performance of Department of War (DoW) Reserve duty or function.</span>
+</div>
+<div class="prov" id="p4-b">
+<span class="plabel">b.</span> 
+<span class="ptext">This instruction does not apply to DON civilian employees.  Policies and remedies on harassment prevention and responses for DON civilian employees are set forth in references</span>
+</div>
+<div class="prov" id="p4-b-d">
+<span class="plabel">(d)</span> 
+<span class="ptext">and (e).</span>
+</div>
+<div class="prov" id="p5">
+<span class="plabel">5.</span> 
+<span class="ptext">Policy.  See enclosure (3).</span>
+</div>
+<div class="prov" id="p6">
+<span class="plabel">6.</span> 
+<span class="ptext">Responsibilities.  See enclosure (4).</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-7"><h3>p-7 &middot; 7.  Records Management</h3>
+<div class="prov" id="p7">
+<span class="plabel">7.</span> 
+<span class="ptext">Records Management</span>
+</div>
+<div class="prov" id="p7-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Records created as a result of this instruction, regardless of format or media, must be maintained pursuant to reference (f) and dispositioned according to the records disposition schedules found on the Directives and Records Management Division (DRMD) portal page: https://flankspeed.sharepoint- mil.us/sites/SECNAV_DRMD/SitePages/Records-and-Information- Management-Program.aspx</span>
+</div>
+<div class="prov" id="p7-b">
+<span class="plabel">b.</span> 
+<span class="ptext">For questions concerning the management of records related to this instruction or the records disposition schedules, please contact your local Records Manager or the DRMD program office. SECNAVINST 1610.3A 13 May 2026 3</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-8"><h3>p-8 &middot; 8.  Information Management Control.  The reporting requirements</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">8.  Information Management Control.  The reporting requirements 
+contained in this instruction are exempt from information 
+collection control pursuant to reference (g), Part IV, paragraph 
+7n.  
+                              
+ 
+HUNG CAO 
+Acting  
+ 
+Distribution:   
+Electronic only, via Department of the Navy Issuance Website:  
+https://www.secnav.navy.mil/doni/default.aspx 
+ 
+
+
+                                              SECNAVINST 1610.3A 
+                                              13 May 2026 
+ 
+Enclosure (1) 
+REFERENCES 
+ 
+(a) DoD Instruction 1020.03 of 8 February 2018 
+(b) SECNAVINST 5300.26E 
+(c) CNO WASHINGTON DC 101454Z JAN 25(ALNAV 001/25) 
+(d) DoD Instruction 1020.04 of 30 June 2020 
+(e) SECNAVINST 12713.14 
+(f) SECNAV M-5210.1 
+(g) SECNAV M-5214.1  
+(h) 5 U.S.C. §2105 
+(i) DoD Directive 7050.06 of 17 April 2015  
+(j) 10 U.S.C. §930 
+(k) 10 U.S.C. §§801-950a  
+(l) SECNAVINST 5800.11B 
+(m) 5 U.S.C. §552a 
+(n) DoD Instruction 5015.02 of 24 February 2015 
+(o) SECNAVINST 5800.12C 
+  
+ 
+
+
+                                              SECNAVINST 1610.3A 
+                                              13 May 2026 
+ 
+Enclosure (2) 
+DEFINITIONS</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-1-2"><h3>p-1-2 &middot; 1.  Anonymous Complaint.  A complaint received by a commander,</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">1.  Anonymous Complaint.  A complaint received by a commander, 
+commanding officer, or officer-in-charge (hereby referred to as 
+commander), or supervisor, regardless of the means of 
+transmission, from an unknown or unidentified source, alleging 
+harassment.  The individual is not required to divulge any 
+personally identifiable information.</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-2"><h3>p-2 &middot; 2.  Bullying.  A form of harassment that includes acts of</h3>
+<div class="prov" id="p2">
+<span class="plabel">2.</span> 
+<span class="ptext">Bullying.  A form of harassment that includes acts of aggression by Service Members or DON civilian employees, with a nexus to military service, with the intent of harming a Service Members or DON civilian employees either physically or psychologically, without a proper military or other governmental purpose.  Bullying may involve the singling out of an individual from coworkers, or unit, for ridicule because the individual is considered different or weak.  It often involves an imbalance of power between the aggressor and the victim.  Bullying can be conducted through the use of electronic devices, including social media, other forms of communication, as well as in person.  Bullying is evaluated by a reasonable person standard.</span>
+</div>
+<div class="prov" id="p2-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Bullying includes, but is not limited to the following when performed without a proper military or other governmental purpose:</span>
+</div>
+<div class="prov" id="p2-a-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Physically striking another person in any manner or threatening to do the same.</span>
+</div>
+<div class="prov" id="p2-a-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Intimidating, teasing, or taunting another person.</span>
+</div>
+<div class="prov" id="p2-a-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Oral or written berating of another person with the purpose of belittling or humiliating.</span>
+</div>
+<div class="prov" id="p2-a-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Encouraging another person to engage in illegal, harmful, demeaning, or dangerous acts.</span>
+</div>
+<div class="prov" id="p2-a-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">Playing abusive or malicious tricks.</span>
+</div>
+<div class="prov" id="p2-a-6">
+<span class="plabel">(6)</span> 
+<span class="ptext">Branding, handcuffing, duct taping, tattooing, shaving, greasing, or painting another person.</span>
+</div>
+<div class="prov" id="p2-a-7">
+<span class="plabel">(7)</span> 
+<span class="ptext">Subjecting another person to excessive or abusive use of water. SECNAVINST 1610.3A 13 May 2026 2                 Enclosure (2)</span>
+</div>
+<div class="prov" id="p2-a-8">
+<span class="plabel">(8)</span> 
+<span class="ptext">Forcing another person to consume food, alcohol, drugs, or any other substance.</span>
+</div>
+<div class="prov" id="p2-a-9">
+<span class="plabel">(9)</span> 
+<span class="ptext">Degrading or damaging another’s property or reputation.</span>
+</div>
+<div class="prov" id="p2-a-10">
+<span class="plabel">(10)</span> 
+<span class="ptext">Soliciting, coercing, or knowingly permitting another person to solicit or coerce acts of bullying.</span>
+</div>
+<div class="prov" id="p2-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Bullying does not include properly directed command or organizational activities that serve a proper military or other governmental purpose, or the requisite training activities required to prepare for such activities (e.g., command- authorized physical training).</span>
+</div>
+<div class="prov" id="p2-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Service Members or DoW civilian employees may be responsible for an act of bullying even if there was actual or implied consent from the victim and regardless of the grade or rank, status, or Service of the victim.</span>
+</div>
+<div class="prov" id="p2-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Bullying is prohibited in all circumstances and environments, including off-duty or “unofficial” unit functions and settings.</span>
+</div>
+<div class="prov" id="p3">
+<span class="plabel">3.</span> 
+<span class="ptext">Civilian Employee.  As defined in reference (h).</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-4-2"><h3>p-4-2 &middot; 4.  Complaint.  An allegation of harassment made by a Service</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">4.  Complaint.  An allegation of harassment made by a Service 
+Member to a commander, supervisor, the Inspector General’s 
+office, Military Equal Opportunity (MEO) office, or staff 
+designated by the Military Service to receive harassment 
+complaints.</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-5"><h3>p-5 &middot; 5.  Cyberharassment.  A form of harassment, as defined herein,</h3>
+<div class="prov" id="p5">
+<span class="plabel">5.</span> 
+<span class="ptext">Cyberharassment.  A form of harassment, as defined herein, or sexual harassment, as defined in reference (b), occurring through or facilitated by an electronic communications system. As used herein, electronic communication systems include internet enabled devices, online spaces and platforms, computers, mobile devices, cameras and imaging platforms, applications, location tracking devices, smart devices, communication technologies, and other emerging technologies. Cyberharassment may include, but is not limited to, threatening, derogatory, or harassing text or email messages, instant messages, social media comments, blog entries, or similar communications.  The broadcast or public sharing via an SECNAVINST 1610.3A 13 May 2026 3                 Enclosure (2) electronic communications system of non-publicly available information about an individual, also referred to as doxing, can be a form of cyberharassment.</span>
+</div>
+<div class="prov" id="p6">
+<span class="plabel">6.</span> 
+<span class="ptext">Discriminatory Harassment.  A form of harassment that is unwelcome conduct based on race, color, national origin, religion, sex (including pregnancy), or sexual orientation.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-7-2"><h3>p-7-2 &middot; 7.  Formal Complaint.  An allegation submitted in writing to the</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">7.  Formal Complaint.  An allegation submitted in writing to the 
+staff designated to receive such complaints in the Military 
+Service’s operating instructions and regulations; or an informal 
+complaint, which the commander or supervisor determines warrants 
+an investigation.</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-8-2"><h3>p-8-2 &middot; 8.  Harassment.  Behavior that is unwelcome or offensive to a</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">8.  Harassment.  Behavior that is unwelcome or offensive to a 
+reasonable person, whether oral, visual, written, physical, or 
+electronic, that creates an intimidating, hostile, or offensive 
+environment.</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-9"><h3>p-9 &middot; 9.  Hazing.  A form of harassment that includes conduct through</h3>
+<div class="prov" id="p9">
+<span class="plabel">9.</span> 
+<span class="ptext">Hazing.  A form of harassment that includes conduct through which Service Members or DON civilian employees, without a proper military or other governmental purpose, but with a nexus to military service, physically or psychologically injures or creates a risk of physical or psychological injury to Service Members or DON civilian employees for the purpose of: initiation into, admission into, affiliation with, change in status or position within, or a condition for continued membership in any military or DoW civilian organization.  Hazing can be conducted through the use of electronic devices, including social media, other forms of communication, as well as in person.</span>
+</div>
+<div class="prov" id="p9-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Hazing is evaluated by a reasonable person standard and includes, but is not limited to, the following when performed without a proper military or other governmental purpose:</span>
+</div>
+<div class="prov" id="p9-a-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Any form of initiation or congratulatory act that involves physically striking another person in any manner or threatening to do the same.</span>
+</div>
+<div class="prov" id="p9-a-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Pressing any object into another person’s skin, regardless of whether it pierces the skin, such as “pinning” or “tacking on” of rank insignia, aviator wings, jump wings, diver insignia, badges, medals, or any other object. SECNAVINST 1610.3A 13 May 2026 4                 Enclosure (2)</span>
+</div>
+<div class="prov" id="p9-a-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Oral or written berating of another person with the purpose of belittling or humiliating.</span>
+</div>
+<div class="prov" id="p9-a-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Encouraging another person to engage in illegal, harmful, demeaning, or dangerous acts.</span>
+</div>
+<div class="prov" id="p9-a-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">Playing abusive or malicious tricks.</span>
+</div>
+<div class="prov" id="p9-a-6">
+<span class="plabel">(6)</span> 
+<span class="ptext">Branding, handcuffing, duct taping, tattooing, shaving, greasing, or painting another person.</span>
+</div>
+<div class="prov" id="p9-a-7">
+<span class="plabel">(7)</span> 
+<span class="ptext">Subjecting another person to excessive or abusive use of water.</span>
+</div>
+<div class="prov" id="p9-a-8">
+<span class="plabel">(8)</span> 
+<span class="ptext">Forcing another person to consume food, alcohol, drugs, or any other substance.</span>
+</div>
+<div class="prov" id="p9-a-9">
+<span class="plabel">(9)</span> 
+<span class="ptext">Soliciting, coercing, or knowingly permitting another person to solicit or coerce acts of hazing.</span>
+</div>
+<div class="prov" id="p9-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Hazing does not include properly directed command or organizational activities that serve a proper military or other governmental purpose, or the requisite training activities required to prepare for such activities (e.g., administrative corrective measures, extra military instruction, or command- authorized physical training).</span>
+</div>
+<div class="prov" id="p9-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Service Members or DON civilian employees may be responsible for an act of hazing even if there was actual or implied consent from the victim and regardless of the grade or rank, status, or Service of the victim.</span>
+</div>
+<div class="prov" id="p9-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Hazing is prohibited in all circumstances and environments including off-duty or “unofficial” unit functions and settings.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-10"><h3>p-10 &middot; 10.  Informal Complaint.  An allegation, made either orally or</h3>
+<div class="prov" id="p10">
+<span class="plabel">10.</span> 
+<span class="ptext">Informal Complaint.  An allegation, made either orally or in writing, that is not processed or resolved as a formal complaint through the office designated to receive harassment complaints.  The allegation may be submitted to a person in a position of authority within the Service Member’s organization or outside of the Service Member’s organization. SECNAVINST 1610.3A 13 May 2026 5                 Enclosure (2)</span>
+</div>
+<div class="prov" id="p11">
+<span class="plabel">11.</span> 
+<span class="ptext">Investigation.  An examination into allegations of wrongdoing or misconduct.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-12"><h3>p-12 &middot; 12.  Joint Service Environment.  A locality from which</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">12.  Joint Service Environment.  A locality from which 
+operations of two or more of the Military Departments are 
+projected or supported and which is manned by significant 
+elements of two or more Military Departments or in which 
+significant elements of two or more Military Departments are 
+located.  Includes joint commands, joint bases, Defense 
+Agencies, and joint field activities that involve more than one 
+branch of Military Service.</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-13"><h3>p-13 &middot; 13.  Reprisal.  Taking or threatening to take an unfavorable</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">13.  Reprisal.  Taking or threatening to take an unfavorable 
+personnel action, or withholding or threatening to withhold a 
+favorable personnel action, for making, preparing to make, or 
+being perceived as making or preparing to make a protected 
+communication pursuant to reference (i).</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-14"><h3>p-14 &middot; 14.  Retaliation.  Retaliation encompasses illegal,</h3>
+<div class="prov" id="p14">
+<span class="plabel">14.</span> 
+<span class="ptext">Retaliation.  Retaliation encompasses illegal, impermissible, or hostile actions taken by a Service Member’s chain of command, peers, or coworkers because of making or being suspected of making a protected communication pursuant to reference (i).  Retaliation for reporting a criminal offense can occur in several ways, including reprisal.  Investigation of complaints of non-criminal retaliatory actions other than reprisal will be processed consistent with Service-specific regulations.  Additional retaliatory behaviors include ostracism and maltreatment.</span>
+</div>
+<div class="prov" id="p15">
+<span class="plabel">15.</span> 
+<span class="ptext">Sexual Harassment.  As defined in reference (b).</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-16"><h3>p-16 &middot; 16.  Social Media.  Web-based tools, websites, applications, and</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">16.  Social Media.  Web-based tools, websites, applications, and 
+media that connect users and allow them to engage in dialogue, 
+share information, collaborate, and interact.  Harassment 
+conducted through social media may also be referred to as 
+cyberharassment.</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-17"><h3>p-17 &middot; 17.  Stalking.  Includes, but it is not limited to, when a</h3>
+<div class="prov" id="p17">
+<span class="plabel">17.</span> 
+<span class="ptext">Stalking.  Includes, but it is not limited to, when a person:</span>
+</div>
+<div class="prov" id="p17-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Wrongfully engages in a course of conduct directed at a specific person that would cause a reasonable person to fear death or bodily harm, including sexual assault, to the specific SECNAVINST 1610.3A 13 May 2026 6                 Enclosure (2) person, to a member of the specific person’s immediate family, or to the specific person’s intimate partner.</span>
+</div>
+<div class="prov" id="p17-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Has knowledge, or should have knowledge, that a specific person will be placed in reasonable fear of death or bodily harm, including sexual assault, to the specific person, to a member of the specific person’s immediate family, or to the specific person’s intimate partner.</span>
+</div>
+<div class="prov" id="p17-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Whose conduct induces reasonable fear of death or bodily harm to a specific person, including sexual assault, to the specific person, to a member of the specific person’s immediate family, or to the specific person’s intimate partner.  For further information refer to reference (j).</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-18"><h3>p-18 &middot; 18.  Supervisor.  A commissioned officer, non-commissioned</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">18.  Supervisor.  A commissioned officer, non-commissioned 
+officer, or DoW civilian employee in a supervisory or command 
+position. 
+ 
+ 
+
+
+                                              SECNAVINST 1610.3A 
+                                              13 May 2026 
+ 
+Enclosure (3) 
+POLICY</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-1-3"><h3>p-1-3 &middot; 1.  Harassment.  Harassment is contrary to our Core Values of</h3>
+<div class="prov" id="p1">
+<span class="plabel">1.</span> 
+<span class="ptext">Harassment.  Harassment is contrary to our Core Values of Honor, Courage, and Commitment.  Adherence to Core Values by our Sailors and Marines is central to the DON’s ability to meet its global mission.  These values have served the Sea Services well during war and peacetime.  They are our guiding principles for treating every Sailor and Marine with dignity and respect, and as a valued member of the Navy and Marine Corps team. Harassment degrades and diminishes the ability of a Sailor or Marine to function within their unit.  It erodes our members&#x27; confidence and trust in their shipmates and is destructive to unit cohesion and combat readiness.  Every member of DON will be afforded the opportunity to be a productive and contributing member, free of harassment and its ill effects.</span>
+</div>
+<div class="prov" id="p1-a">
+<span class="plabel">a.</span> 
+<span class="ptext">DON leadership has a responsibility to create and maintain an environment free from harassment.</span>
+</div>
+<div class="prov" id="p1-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Harassment is prohibited and will not be tolerated by any member of the Navy or Marine Corps.</span>
+</div>
+<div class="prov" id="p1-c">
+<span class="plabel">c.</span> 
+<span class="ptext">No Service Member in the DON may engage in harassment or consent to acts of harassment being committed upon them.</span>
+</div>
+<div class="prov" id="p1-d">
+<span class="plabel">d.</span> 
+<span class="ptext">No commander or supervisor may, by act, word, deed, or omission, condone or ignore harassment if the commander or supervisor knows or reasonably should have known that harassment may or did occur.</span>
+</div>
+<div class="prov" id="p1-e">
+<span class="plabel">e.</span> 
+<span class="ptext">Every Service Member has the responsibility to report each violation of this policy to leadership or appropriate authorities.  Commanders and supervisors must commence, or cause the commencement of, an investigation of a formal complaint of harassment within five duty days of receipt of the complaint using the procedures listed in reference (a).</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-2-2"><h3>p-2-2 &middot; 2.  Hazing.  Military customs and traditions have long been an</h3>
+<div class="prov" id="p2">
+<span class="plabel">2.</span> 
+<span class="ptext">Hazing.  Military customs and traditions have long been an integral part of the Navy and Marine Corps.  These activities, if properly supervised, can be effective leadership tools to instill esprit de corps, unit cohesion, and respect for an accomplishment of another Sailor or Marine.  While most ceremonies commemorate the many selfless acts of bravery of our military, they also commemorate significant events.  These SECNAVINST 1610.3A 13 May 2026 2                 Enclosure (3) actions and events form the basis upon which our Core Values of Honor, Courage, and Commitment were founded.  Graduations, chiefs&#x27; initiations, &quot;crossing-the-line&quot; ceremonies, and others are meant to celebrate and recognize the achievements of individual Sailors or Marines or those of entire units.  Service Members must be able to work together, build-up, encourage, and support their shipmates.  Incorporating or condoning behavior that is degrading, embarrassing, abusive, or injurious as part of our ceremonies, initiations, or rites of passage can be illegal and unprofessional.  Hazing is not part of our &quot;time honored traditions&quot; and has no place in the modern Naval Services.</span>
+</div>
+<div class="prov" id="p2-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Commanders or supervisors must be aware of all ceremonies and initiations conducted within their organizations and must take active measures to ensure that these activities do not violate this policy.</span>
+</div>
+<div class="prov" id="p2-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Commanders or supervisors must ensure that Service Members participating in command authorized ceremonies, initiations, and other activities are treated with dignity and respect during these events.</span>
+</div>
+<div class="prov" id="p3">
+<span class="plabel">3.</span> 
+<span class="ptext">Complaints of sexual harassment may be reported pursuant to reference (b) and processed using the procedures outlined in references (b) and (c).</span>
+</div>
+<div class="prov" id="p4">
+<span class="plabel">4.</span> 
+<span class="ptext">Retaliation.  Retaliation or reprisal actions, as defined in this instruction, enclosure (2), against any victim or witness of harassment incidents are strictly prohibited.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-5-2"><h3>p-5-2 &middot; 5.  Applicability.  The rules in this instruction, enclosure</h3>
+<div class="prov" id="p5">
+<span class="plabel">5.</span> 
+<span class="ptext">Applicability.  The rules in this instruction, enclosure (3), paragraph 5.a. are regulatory orders and apply to all DON military personnel individually and without further implementation.  A violation of these provisions by military personnel may be punishable pursuant to reference (k).  The prohibitions in this instruction, enclosure (3), paragraph 5.a. apply to all conduct which occurs in or affects a DoW working environment, or otherwise meets the definition of harassment, cyberharassment, discriminatory harassment, hazing, bullying, or stalking as defined in this instruction, enclosure (2). SECNAVINST 1610.3A 13 May 2026 3                 Enclosure (3)</span>
+</div>
+<div class="prov" id="p5-a">
+<span class="plabel">a.</span> 
+<span class="ptext">DON military personnel will not intentionally or recklessly:</span>
+</div>
+<div class="prov" id="p5-a-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Commit harassment, as defined in this instruction, enclosure (2).</span>
+</div>
+<div class="prov" id="p5-a-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Retaliate against a person who provides information on an incident of alleged harassment, cyberharassment, discriminatory harassment, hazing, bullying or stalking, obstruct an investigation of such an incident, or act to prevent a victim or witness from reporting harassment, cyberharassment, discriminatory harassment, hazing, bullying, or stalking.</span>
+</div>
+<div class="prov" id="p5-a-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Make a false accusation of harassment, cyberharassment, discriminatory harassment, hazing, bullying, or stalking.</span>
+</div>
+<div class="prov" id="p5-a-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">While in a supervisory or command position, condone or ignore harassment, cyberharassment, discriminatory harassment, hazing, bullying, or stalking of which he or she has knowledge or reasonably should have knowledge.</span>
+</div>
+<div class="prov" id="p5-b">
+<span class="plabel">b.</span> 
+<span class="ptext">The appropriate action to resolve a substantiated incident of harassment will depend upon the circumstances surrounding that incident.  Incidents of harassment cover a wide range of behaviors, from verbal comments to physical acts, and can be subtle or overt.  Likewise, the full range of administrative and disciplinary actions are available to address harassment.</span>
+</div>
+<div class="prov" id="p5-b-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">In the case of military personnel, these include, but are not limited to, informal counseling, comments in fitness reports and evaluations, administrative separation, and punitive measures under reference (k).</span>
+</div>
+<div class="prov" id="p5-b-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Substantiated complaints will be annotated on fitness reports, evaluations, or Service-level reporting and tracking system(s).  The Service-level tracking system shall be reviewed for substantiated harassment incidents prior to a Service member’s selection for promotion and other favorable personnel actions.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-6"><h3>p-6 &middot; 6.  Leadership.  Sound leadership must be the cornerstone of the</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">6.  Leadership.  Sound leadership must be the cornerstone of the 
+effort to eliminate harassment.  It is not the intent of this 
+
+
+                                              SECNAVINST 1610.3A 
+                                              13 May 2026 
+ 
+                                   4                 Enclosure (3) 
+instruction to impair commanders and supervisors in their 
+ability to take appropriate actions to carry out leadership 
+responsibilities.  They must set the example in treating all 
+people with dignity and respect, and fostering a climate free of 
+harassment.  Such a climate is essential to maintain high 
+morale, discipline, and readiness.  Commanders and supervisors 
+are responsible for and must be committed to preventing 
+harassment in their commands and work environments.  They must 
+not ignore or condone harassment in any form, and they must take 
+whatever action is required to ensure that a victim of 
+harassment is not subsequently also the victim of retaliation or 
+reprisal.  Retaliation or reprisal, as further described in this 
+instruction, enclosure (2); and reference (a), is prohibited 
+under this instruction whether it is originated by the command, 
+the alleged perpetrator, or peers of the complainant.  These 
+responsibilities regarding harassment are part of the broader 
+responsibility of commanders and supervisors to foster a 
+positive climate and take appropriate corrective action when 
+conduct is disruptive, provoking, discriminatory, or otherwise 
+unprofessional.</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-7-3"><h3>p-7-3 &middot; 7.  Victim and Witness Assistance Program</h3>
+<div class="prov" id="p7">
+<span class="plabel">7.</span> 
+<span class="ptext">Victim and Witness Assistance Program</span>
+</div>
+<div class="prov" id="p7-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Commanders and supervisors must be informed immediately of any allegation of harassment.</span>
+</div>
+<div class="prov" id="p7-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Victims and witnesses, as defined in reference (l), must be immediately advised of their rights and offered legal advice, medical assistance, and counseling as necessary.  Commanders and supervisors will ensure that victims and witnesses are advised of and given access to victim and witness advocacy services pursuant to reference (l).</span>
+</div>
+<div class="prov" id="p7-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Dignity, respect, and communication throughout the investigative process is paramount to prevent re-victimization of the individual who experienced the harassment. SECNAVINST 1610.3A 13 May 2026 Enclosure (4) RESPONSIBILITIES</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-1-4"><h3>p-1-4 &middot; 1.  The Assistant Secretary of the Navy (Manpower and Reserve</h3>
+<div class="prov" id="p1">
+<span class="plabel">1.</span> 
+<span class="ptext">The Assistant Secretary of the Navy (Manpower and Reserve Affairs) (ASN (M&amp;RA)) will:</span>
+</div>
+<div class="prov" id="p1-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Provide oversight of Navy and Marine Corps harassment prevention and response programs.</span>
+</div>
+<div class="prov" id="p1-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Review annual reports submitted to ASN (M&amp;RA) as required by this instruction, enclosure (4), paragraphs 2a, 2b, 3c, and 4c.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-2-3"><h3>p-2-3 &middot; 2.  The Naval Inspector General (NAVINSGEN) and the Deputy Naval</h3>
+<div class="prov" id="p2">
+<span class="plabel">2.</span> 
+<span class="ptext">The Naval Inspector General (NAVINSGEN) and the Deputy Naval Inspector General for Marine Corps Matters/Inspector General of the Marine Corps (IGMC) will:</span>
+</div>
+<div class="prov" id="p2-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Provide a summary of hotline allegations involving harassment for the previous Fiscal Year (FY) by 15 December annually to ASN (M&amp;RA) and the respective Service MEO manager. Summary must include total number of harassment reports; ranks of the complainant(s) and alleged offender(s); number of substantiated or unsubstantiated reports; and if substantiated, the administrative or disciplinary action that resulted.</span>
+</div>
+<div class="prov" id="p2-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Provide a summary of allegations against DON senior officials (Flag Officers, General Officers, Senior Executive Service officials, and senior official equivalents) relating to harassment for the previous Fiscal Year (FY) by 15 December annually to ASN (M&amp;RA).  Summary must include the total number of harassment reports; ranks of the complainant(s) and alleged offender(s); number of substantiated or unsubstantiated reports; and if substantiated, the administrative or disciplinary action that resulted.  All allegations against DON senior officials must be reported to NAVINSGEN or IGMC.</span>
+</div>
+<div class="prov" id="p2-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Include specific assessments of harassment prevention and response programs in all command inspections and area assessments, and ensure that subordinate inspectors general include harassment program prevention and response assessments in their own unit-level inspection programs. SECNAVINST 1610.3A 13 May 2026 2                 Enclosure (4)</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-3-2"><h3>p-3-2 &middot; 3.  The Director, Naval Criminal Investigative Service (NCIS)</h3>
+<div class="prov" id="p3">
+<span class="plabel">3.</span> 
+<span class="ptext">The Director, Naval Criminal Investigative Service (NCIS) will:</span>
+</div>
+<div class="prov" id="p3-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Provide advice and assistance to ASN (M&amp;RA) on stalking, including reviewing and coordinating on all proposed policies, regulations, directives, and instructions that reference stalking.</span>
+</div>
+<div class="prov" id="p3-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Investigate all actions related to stalking and respond to information or actions reported via all referral methods as appropriate.</span>
+</div>
+<div class="prov" id="p3-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Establish mechanisms to collect, track, assess, and analyze data and information related to stalking complaints pursuant to Section 3 of reference (a).</span>
+</div>
+<div class="prov" id="p3-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Respond to DoW data calls, via ASN (M&amp;RA), pursuant to Section 7 of reference (a), including data and reports to support annual congressional and DoW FY reports.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-4-3"><h3>p-4-3 &middot; 4.  The Chief of Naval Operations and the Commandant of the</h3>
+<div class="prov" id="p4">
+<span class="plabel">4.</span> 
+<span class="ptext">The Chief of Naval Operations and the Commandant of the Marine Corps will:</span>
+</div>
+<div class="prov" id="p4-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Establish harassment prevention and response policies and programs that meet the requirements of reference (a) and this instruction with specific attention to the functional areas of prevention, training, case management, reporting, and accountability  to ensure that:</span>
+</div>
+<div class="prov" id="p4-a-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Service Members are treated with dignity and respect.</span>
+</div>
+<div class="prov" id="p4-a-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Leaders at all levels foster a climate that is free from harassment, does not tolerate retaliation for reporting harassment allegations, and a climate in which leaders are held appropriately accountable for failing to do so.</span>
+</div>
+<div class="prov" id="p4-a-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Formal and informal resolution procedures are established.</span>
+</div>
+<div class="prov" id="p4-a-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Harassment complaints are resolved in an impartial and timely manner and all formal complaint investigations are reviewed for legal sufficiency.  Reference (a) includes SECNAVINST 1610.3A 13 May 2026 3                 Enclosure (4) timelines for initiating and completing an investigation for complaints, including anonymous complaints.  A complaint that alleges facts that, if true, would not constitute harassment, need not be investigated using harassment procedures.  However, where the facts alleged, if true, would constitute unlawful harassment or discrimination under another statutory or regulatory basis (e.g., sexual harassment), that matter must be investigated under procedures established for investigations under those other bases; for example, stalking must be reported to NCIS.  Claims that are identical to claims previously filed and resolved may be dismissed as duplicative.</span>
+</div>
+<div class="prov" id="p4-a-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">Complainants receive access to available victim services and support, and are afforded an opportunity to provide input regarding disposition.</span>
+</div>
+<div class="prov" id="p4-a-6">
+<span class="plabel">(6)</span> 
+<span class="ptext">Complainants receive ongoing timely information regarding the status of their complaints, commencement of the investigation, and notice of disposition.</span>
+</div>
+<div class="prov" id="p4-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Oversee Military Service programs, which will include:</span>
+</div>
+<div class="prov" id="p4-b-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Information regarding how to identify harassment.</span>
+</div>
+<div class="prov" id="p4-b-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Information regarding reporting options, procedures, and applicable timelines to submit harassment complaints, including complaints submitted anonymously, and complaints involving a Service Member’s commander or supervisor, to the appropriate commander or supervisor, the Inspector General’s office, MEO office, or staff designated by the Military Service to receive harassment complaints.</span>
+</div>
+<div class="prov" id="p4-b-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Procedures for commanders and supervisors to receive, respond to, investigate, and resolve harassment complaints, including those made in Joint Service environments consistent with reference (a), paragraph 4.5.  These procedures shall include forms for the documentation of each step in the formal complaint process, including pre-decision updates and post-decision follow-ups with the complainant consistent with reference (m) and implementing DoW guidance.  Complaint forms and reporting systems should clearly identify the duty status involved in Reserve Component cases.  Service Members should be encouraged to file complaints promptly, normally within 60 days of the incident. SECNAVINST 1610.3A 13 May 2026 4                 Enclosure (4)</span>
+</div>
+<div class="prov" id="p4-b-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Training and education requirements for commanders, supervisors, Service Members, and any other appropriate personnel (e.g., chaplains, judge advocates, investigating officers, inspectors general, MEO personnel, and staff designated by the Service to receive complaints).  In addition to requirements in Section 6 of reference (a), training will include, at a minimum, training modules and materials provided by Defense Equal Opportunity Management Institute (DEOMI). Service developed training plans for such personnel will be submitted to DEOMI for review before implementation.</span>
+</div>
+<div class="prov" id="p4-b-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">Criteria for the appeal of administrative findings of formally resolved complaints of harassment.  The sole mechanism for appealing the disposition of an informally resolved complaint shall be to file a complaint using the formal resolution process.  Appeal procedures shall be conducted pursuant to reference (a).</span>
+</div>
+<div class="prov" id="p4-b-6">
+<span class="plabel">(6)</span> 
+<span class="ptext">Information on the policies and procedures for filing a complaint of reprisal under reference (i).</span>
+</div>
+<div class="prov" id="p4-b-7">
+<span class="plabel">(7)</span> 
+<span class="ptext">Mechanisms to collect, track, assess, and analyze data and information related to harassment complaints pursuant to Section 7 of reference (a).</span>
+</div>
+<div class="prov" id="p4-b-8">
+<span class="plabel">(8)</span> 
+<span class="ptext">Mechanisms to maintain data regarding harassment complaints in a manner that will ensure adequate tracking of complaints from or against Service Members assigned, detailed, or otherwise working in a DoW Component, other than the Navy or Marine Corps, consistent with Service specific record retention policies and procedures, references (f) and (n).</span>
+</div>
+<div class="prov" id="p4-b-9">
+<span class="plabel">(9)</span> 
+<span class="ptext">Requirements to prominently post and publicize information regarding DON and Service harassment prevention and response policies and programs, including information regarding how to identify harassment.</span>
+</div>
+<div class="prov" id="p4-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Respond to DoW data calls, via ASN (M&amp;RA), pursuant to Section 7 of reference (a), including data and other information to support annual Congressional and DoW FY reports.</span>
+</div>
+<div class="prov" id="p4-c-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Hazing and bullying data by December 1. SECNAVINST 1610.3A 13 May 2026 5                 Enclosure (4)</span>
+</div>
+<div class="prov" id="p4-c-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Data and reports on all other types of harassment, by January 31.</span>
+</div>
+<div class="prov" id="p4-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Ensure that a minimum of one 24-hour toll-free or local hotline (or advice line) provides information on harassment policies and procedures covered within this instruction, including how and where to file complaints and the behaviors that constitute harassment.</span>
+</div>
+<div class="prov" id="p4-e">
+<span class="plabel">e.</span> 
+<span class="ptext">Verify that appropriate administrative or disciplinary action is taken against Service Members in cases involving substantiated harassment complaints.</span>
+</div>
+<div class="prov" id="p4-f">
+<span class="plabel">f.</span> 
+<span class="ptext">Mandate that substantiated complaints are annotated on fitness reports, evaluations, or Service-level reporting and tracking system(s).  The Service-level tracking system shall be reviewed for substantiated harassment incidents prior to Service Members’ selection for promotion and other favorable personnel actions.</span>
+</div>
+<div class="prov" id="p4-g">
+<span class="plabel">g.</span> 
+<span class="ptext">Assist and support harassment complainants pursuant to reference (a).  Complainants should be provided adequate protection and care, and informed about available support resources, including:</span>
+</div>
+<div class="prov" id="p4-g-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Military and civilian emergency medical and support services.</span>
+</div>
+<div class="prov" id="p4-g-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Public and private programs that are available to provide counseling, treatment, and other support.</span>
+</div>
+<div class="prov" id="p4-g-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Organizations and entities on- and off-base that provide victim and witness services and support.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-5-3"><h3>p-5-3 &middot; 5.  Leaders at all levels will:</h3>
+<div class="prov" id="p5">
+<span class="plabel">5.</span> 
+<span class="ptext">Leaders at all levels will:</span>
+</div>
+<div class="prov" id="p5-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Clearly communicate that demeaning attitudes and behavior, bullying, and hazing will not be tolerated.</span>
+</div>
+<div class="prov" id="p5-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Demonstrate through actions and words that they will not tolerate a hostile work environment. SECNAVINST 1610.3A 13 May 2026 6                 Enclosure (4)</span>
+</div>
+<div class="prov" id="p5-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Discourage harassing behaviors and immediately and actively intervene if harassing actions/behaviors are observed.</span>
+</div>
+<div class="prov" id="p5-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Encourage members to report all harassment.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-6-2"><h3>p-6-2 &middot; 6.  Service Members will:</h3>
+<div class="prov" id="p6">
+<span class="plabel">6.</span> 
+<span class="ptext">Service Members will:</span>
+</div>
+<div class="prov" id="p6-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Treat others with dignity and respect.</span>
+</div>
+<div class="prov" id="p6-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Promote a positive command climate.</span>
+</div>
+<div class="prov" id="p6-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Safely intervene, discourage, and/or report harassing behaviors to commander, supervisor, or law enforcement.</span>
+</div>
+<div class="prov" id="p6-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Be accountable for their actions and behavior.</span>
+</div>
+</div>
+</details>
+<h2>Provenance</h2><div class="panel"><p class="small">Source <code>E:\GunnyBot\Policies\SECNAV\SECNAVINST_1610.3A.pdf</code><br>Extracted by pymupdf on 2026-05-16, converted 2026-07-19 against store schema 0.4.0<br>Checksum <code>f74e4ff7ccc0881b307d7cbd96a31f74</code></p></div>
+<footer><p>This record is an UNVERIFIED machine extraction unless marked otherwise. Every link on this page is cited: it exists because the issuing authority printed the reference on the document. This library is an unofficial reference - the issuing authority's copy governs.</p></footer></main></body></html>

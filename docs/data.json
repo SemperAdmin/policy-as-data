@@ -1,0 +1,85 @@
+{
+ "@context": "https://resources.data.gov/vocab/dcat-us/v3/context.jsonld",
+ "@type": "dcat:Catalog",
+ "conformsTo": "https://resources.data.gov/vocab/dcat-us/v3/schema",
+ "describedBy": "https://raw.githubusercontent.com/GSA/dcat-us/main/schemas/dataset.json",
+ "dataset": [
+  {
+   "@type": "dcat:Dataset",
+   "identifier": "https://example.invalid/policy/dataset/marine-corps-policy-as-data",
+   "title": "Marine Corps policy as data - canonical issuance corpus",
+   "description": "Marine Corps and Department of the Navy policy issuances recast as structured data. Each record carries a stable identifier, a paragraph-level provision tree with citation anchors, publication status with supersession and cancellation chains, cited authority edges to the issuances above it, and full extraction provenance. Covers 56 document(s): MARADMIN (29), MCO (12), DODI (6), USC (5), SECNAV (3), NAVMC (1). Every record is a machine extraction marked UNVERIFIED until a human confirms it line by line against the authoritative source. Records marked cancelled or superseded are retained and labelled rather than removed. This is an unofficial reference compiled from public documents; the issuing authority's copy governs.",
+   "keyword": [
+    "policy",
+    "directives",
+    "Marine Corps",
+    "Department of the Navy",
+    "military personnel",
+    "issuances",
+    "USLM",
+    "policy as data",
+    "authority chain",
+    "supersession"
+   ],
+   "issued": "2026-08-04",
+   "modified": "2026-08-04",
+   "publisher": {
+    "@type": "org:Organization",
+    "name": "Unofficial reference - publisher not asserted"
+   },
+   "contactPoint": {
+    "@type": "vcard:Contact",
+    "fn": "Corpus owner",
+    "hasEmail": "mailto:owner@example.invalid"
+   },
+   "accessRights": "public",
+   "accessLevel": "public",
+   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "spatial": "United States",
+   "temporal": "2002-11-05/2026-06-23",
+   "accrualPeriodicity": "R/P1D",
+   "language": [
+    "en-US"
+   ],
+   "theme": [
+    "government"
+   ],
+   "describedBy": "https://example.invalid/policy/schema/policy_document.schema.json",
+   "describedByType": "application/schema+json",
+   "distribution": [
+    {
+     "@type": "dcat:Distribution",
+     "title": "Canonical records (JSON)",
+     "description": "One JSON record per issuance, validating against policy_document.schema.json 0.5.0.",
+     "downloadURL": "https://example.invalid/policy/canonical.zip",
+     "mediaType": "application/zip",
+     "format": "JSON"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "Issuance XML export",
+     "description": "Per-document XML in the usmc-issuance namespace, built on United States Legislative Markup conventions and extended to service issuances.",
+     "downloadURL": "https://example.invalid/policy/uslm_export.zip",
+     "mediaType": "application/zip",
+     "format": "XML"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "Authority graph (JSON-LD)",
+     "description": "Cited authority edges between issuances, each carrying its basis and the paragraph it was read from.",
+     "downloadURL": "https://example.invalid/policy/authority.jsonld",
+     "mediaType": "application/ld+json",
+     "format": "JSON-LD"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "Public library",
+     "description": "Rendered, Section 508 targeted HTML.",
+     "accessURL": "https://example.invalid/policy",
+     "mediaType": "text/html",
+     "format": "HTML"
+    }
+   ]
+  }
+ ]
+}

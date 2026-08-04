@@ -1173,10 +1173,10 @@
       </provision>
     </provision>
     <provision identifier="/us/dod/don/usmc/mco/1610_7b/p-4-5/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
-      <text>20101001-20110930 AR (Report prior to RT report)</text>
+      <text>20[contact withheld]0930 AR (Report prior to RT report)</text>
     </provision>
     <provision identifier="/us/dod/don/usmc/mco/1610_7b/p-4-5/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
-      <text>20120601-20120615 RT</text>
+      <text>20[contact withheld]0615 RT</text>
       <provision identifier="/us/dod/don/usmc/mco/1610_7b/p-4-5/p2/f" path="p2/f" number="2.(f)" label="(f)" depth="1" verification="UNVERIFIED">
         <text>When the Judge Advocate General of the Navy suspends or revokes a Marine judge advocate’s certification under Article 26(b), UCMJ, Article 27(b), UCMJ, or Rule for Courts-Martial (R.C.M) 502(d)(3).</text>
         <provision identifier="/us/dod/don/usmc/mco/1610_7b/p-4-5/p2/f/6" path="p2/f/6" number="2.(f)(6)" label="(6)" depth="2" verification="UNVERIFIED">
@@ -1524,7 +1524,7 @@
       </provision>
     </provision>
     <provision identifier="/us/dod/don/usmc/mco/1610_7b/p-4-5/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
-      <text>20111001-20120901 GC (1st report after RT report)</text>
+      <text>20[contact withheld]0901 GC (1st report after RT report)</text>
       <provision identifier="/us/dod/don/usmc/mco/1610_7b/p-4-5/p3/b" path="p3/b" number="3.(b)" label="(b)" depth="1" verification="UNVERIFIED">
         <text>If fitness report three was started on 20120616, the MRO would have a fitness report date gap from 20111001 to 20120531.</text>
       </provision>
@@ -11015,7 +11015,7 @@
       </provision>
     </provision>
     <provision identifier="/us/dod/don/usmc/mco/1610_7b/p-2-10/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
-      <text>To obtain a mailing address, work through the HQMC Worldwide Locator Unit (MMRP-11A) [contact withheld], commercial (703)[contact withheld] or toll free at 1-[contact withheld].</text>
+      <text>To obtain a mailing address, work through the HQMC Worldwide Locator Unit (MMRP-11A) [contact withheld], commercial [contact withheld] or toll free at 1-[contact withheld].</text>
     </provision>
     <provision identifier="/us/dod/don/usmc/mco/1610_7b/p-2-10/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
       <text>Contacting the MRO’s previous command for the RS’s address.</text>

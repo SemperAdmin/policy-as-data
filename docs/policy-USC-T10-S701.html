@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10 U.S.C. 701 - Entitlement and accumulation - Semper Admin Policy Library</title>
+<style>
+:root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
+--blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
+--brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
+--bg:#0A1424;--elev:#11203F;--sunken:#060E1A;--fg:#F2E5BE;--card:#11203F;
+--muted:#182A4D;--mutedfg:#B5A988;--border:#233A5C;--borders:#34507A;
+--n950:#0F0C09;--rad:8px;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:400 15px/1.6 "Inter Variable",Inter,system-ui,sans-serif}
+a{color:var(--blue1)}a:hover{color:var(--brass3)}
+:focus-visible{outline:3px solid var(--brass3);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px;
+background:var(--brass3);color:var(--n950)}
+header.chrome,main,footer{max-width:64rem;margin:0 auto;padding:16px 24px}
+header.chrome{margin-top:16px;border-radius:12px;border:1px solid var(--border);
+background:var(--elev);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.wordmark{font:400 28px/1.2 "Bebas Neue",Oswald,system-ui,sans-serif;
+letter-spacing:.04em;color:var(--parch3);text-decoration:none;text-transform:uppercase}
+h1{font:700 28px/1.2 inherit;margin:32px 0 8px}
+h2{font:700 20px/1.2 inherit;border-bottom:1px solid var(--borders);
+padding-bottom:8px;margin-top:40px}
+.lede{color:var(--mutedfg);max-width:52rem}
+.tier{border:1px solid var(--border);border-radius:12px;background:var(--card);
+margin:0 0 4px;padding:16px 20px}
+.tier.gap{background:repeating-linear-gradient(135deg,var(--sunken),
+var(--sunken) 10px,#0b1830 10px,#0b1830 20px);border-style:dashed;
+border-color:var(--aging)}
+.tierhead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
+font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin-bottom:10px}
+.tiercode{color:var(--brass3);font-weight:700}
+.doc{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--muted)}
+.doc:first-of-type{border-top:0;padding-top:0}
+.docid{font:600 14px/1.4 "JetBrains Mono",Menlo,monospace;color:var(--parch3)}
+.doctitle{color:var(--fg)}
+.uslm{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.why{font-size:13px;color:var(--mutedfg);margin-top:4px}
+.pill{display:inline-block;padding:2px 9px;border-radius:9999px;
+font:700 11px/1.6 inherit;border:1px solid var(--borders);
+background:var(--muted);color:var(--parch3);white-space:nowrap}
+.pill.cited{border-color:var(--fresh);color:#9fe0bd}
+.pill.drift{border-color:var(--aging);color:#f0c489}
+.pill.gap{border-color:var(--stale);color:#f3a3a3}
+.pill.held{border-color:var(--blue1);color:#bcd7f2}
+.pill.cancelled,.pill.superseded{background:var(--stale);border-color:var(--stale);
+color:#fff}
+.arrow{text-align:center;color:var(--brass);font:700 13px/1 inherit;
+padding:6px 0;letter-spacing:.08em}
+.arrow span{background:var(--bg);padding:0 10px}
+.arrow{position:relative}
+.arrow:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
+background:var(--brass);z-index:-1}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--muted);
+vertical-align:top}
+th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;
+letter-spacing:.08em}
+code{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+footer{border-top:1px solid var(--border);margin-top:48px;font-size:13px;
+color:var(--mutedfg)}
+
+.crumb{font-size:13px;color:var(--mutedfg);margin:24px 0 0}
+.ident{font:500 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.factrow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.lede2{color:var(--mutedfg);max-width:54rem;margin:6px 0 18px}
+.ladder{border-left:2px solid var(--brass);margin:0 0 4px 10px;padding:0 0 0 18px}
+.rung{position:relative;padding:9px 0}
+.rung:before{content:"";position:absolute;left:-24px;top:16px;width:12px;
+height:2px;background:var(--brass)}
+.rung .t{font:700 11px/1 inherit;letter-spacing:.09em;color:var(--brass3);
+text-transform:uppercase}
+.rung.gaprung{opacity:.72}
+.rung.gaprung .t{color:var(--aging)}
+.small{font-size:13px;color:var(--mutedfg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.panel{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:16px 20px}
+.panel h3{font:700 12px/1.3 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin:0 0 10px}
+.prov{border-left:1px solid var(--muted);margin:0 0 0 4px;padding:2px 0 2px 14px}
+.plabel{font:600 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+.ptext{white-space:pre-wrap;overflow-wrap:break-word}
+.reflist{list-style:none;padding:0;margin:0}
+.reflist li{padding:7px 0;border-bottom:1px solid var(--muted)}
+.reflist li:last-child{border-bottom:0}
+.reflink{font-weight:600}
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{padding:8px 0 8px 16px;border-left:2px solid var(--border);
+position:relative}
+.timeline li:before{content:"";position:absolute;left:-5px;top:15px;width:8px;
+height:8px;border-radius:50%;background:var(--brass)}
+.timeline li.now:before{background:var(--fresh);box-shadow:0 0 0 3px rgba(47,143,92,.25)}
+.timeline li.gone:before{background:var(--stale)}
+details.body{margin-top:10px}
+details.body summary{cursor:pointer;color:var(--blue1);font-weight:600}
+.src{font:500 11px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--mutedfg)}
+.doc-raw{white-space:pre-wrap;overflow-wrap:break-word;
+font:500 12px/1.65 "JetBrains Mono",Menlo,monospace;color:var(--fg);
+background:var(--sunken);border:1px solid var(--border);border-radius:8px;
+padding:14px;max-height:34rem;overflow:auto}
+.typegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));
+gap:10px;margin:12px 0}
+.typecard{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:14px 16px}
+.typecard .n{font:700 26px/1.1 inherit;color:var(--brass3)}
+</style></head><body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="chrome"><a class="wordmark" href="index.html">Semper Admin</a><span>Policy</span><a href="policy-index.html" style="margin-left:auto">All policies</a><a href="authority-index.html">Authority chains</a><a href="sources.html">Sources</a></header>
+<main id="main">
+<p class="crumb"><a href="policy-index.html">All policies</a> &rsaquo; T0 Statute</p>
+<h1>10 U.S.C. 701 - Entitlement and accumulation</h1>
+<div class="ident">/us/usc/t10/s701</div>
+<div class="factrow"><span class="pill ">T0 Statute</span><span class="pill ">active</span><span class="pill ">UNVERIFIED</span></div>
+<h2>Where this sits</h2>
+<p class="lede2">The ladder above is what governs this policy, one tier at a time. Every rung exists because this document, or one above it, printed the reference. A tier the corpus does not hold is shown rather than skipped.</p>
+<div class="ladder">
+<div class="rung"><div class="t">T0 Statute &middot; this document</div><div><strong>10 U.S.C. 701 - Entitlement and accumulation</strong></div></div>
+<div class="rung"><div class="t">Below &middot; 2 document(s) name this one</div>
+<div style="padding:3px 0"><a href="policy-MCO-1050.3J.html">MCO-1050.3J</a><div class="small">MCO 1050.3J - Regulations for Leave, Liberty, and Administrative Absence</div><div class="src">names it at front-matter:ref/p</div></div>
+<div style="padding:3px 0"><a href="policy-DODI-1327.06.html">DODI-1327.06</a><div class="small">DoD Instruction 1327.06 - Military Leave, Liberty, and Administrative Absence</div><div class="src">names it at front-matter:ref/f</div></div>
+</div>
+</div>
+<h2>What came before</h2>
+<p class="lede2">The corpus holds one edition of this policy and no document cites an earlier one. That is the honest answer, not a missing feature: a superseded edition is usually gone from the publisher's site before a scraper reaches it.</p>
+<h2>What it says</h2>
+<details class="body"><summary>The full text &middot; 6 addressable paragraph(s) across 2 section(s), 1 of them held as source text because the parser refused to invent a hierarchy for them</summary>
+<div class="panel" style="margin-top:10px" id="sec-front-matter"><h3>front-matter &middot; 10 U.S.C. 701 - Entitlement and accumulation</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">METADATA-GRADE - headings and identity transcribed from the authoritative source; section text not ingested. Do not quote this record as the words of the issuance.</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-subsections"><h3>subsections &middot; Subsections</h3>
+<div class="prov" id="a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Basic entitlement. “A member of an armed force is entitled to leave at the rate of 2½ calendar days for each month of active service, excluding periods of-”</span>
+</div>
+<div class="prov" id="b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Accumulation limits - 60-day cap on accumulated leave.</span>
+</div>
+<div class="prov" id="e">
+<span class="plabel">(e)</span> 
+<span class="ptext">Excess leave retention - Secretary may authorize retention of up to 30 days excess leave.</span>
+</div>
+<div class="prov" id="h">
+<span class="plabel">(h)</span> 
+<span class="ptext">Parental leave. “Under regulations prescribed by the Secretary of Defense, a member of the armed forces described in paragraph (2) is allowed up to a total of 12 weeks of parental leave during the one-year period beginning after” specified events including birth, adoption, and foster placement.</span>
+</div>
+<div class="prov" id="l">
+<span class="plabel">(l)</span> 
+<span class="ptext">Bereavement leave - two weeks for immediate family death.</span>
+</div>
+<div class="prov" id="m">
+<span class="plabel">(m)</span> 
+<span class="ptext">Convalescent leave - medical provider recommended.</span>
+</div>
+</div>
+</details>
+<h2>Provenance</h2><div class="panel"><p class="small">Source <code>https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title10-section701&amp;num=0&amp;edition=prelim</code><br>Extracted by manual-metadata-entry on 2026-08-03, converted 2026-08-03 against store schema 0.5.0<br>Checksum <code>811b0aa8988b10d527cbe77fcf259def</code></p></div>
+<footer><p>This record is an UNVERIFIED machine extraction unless marked otherwise. Every link on this page is cited: it exists because the issuing authority printed the reference on the document. This library is an unofficial reference - the issuing authority's copy governs.</p></footer></main></body></html>

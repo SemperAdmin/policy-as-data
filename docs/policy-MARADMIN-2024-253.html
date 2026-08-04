@@ -1,0 +1,443 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FISCAL YEAR 2024 MARINE CORPS TALENT ACQUISITION PILOT - Semper Admin Policy Library</title>
+<style>
+:root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
+--blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
+--brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
+--bg:#0A1424;--elev:#11203F;--sunken:#060E1A;--fg:#F2E5BE;--card:#11203F;
+--muted:#182A4D;--mutedfg:#B5A988;--border:#233A5C;--borders:#34507A;
+--n950:#0F0C09;--rad:8px;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:400 15px/1.6 "Inter Variable",Inter,system-ui,sans-serif}
+a{color:var(--blue1)}a:hover{color:var(--brass3)}
+:focus-visible{outline:3px solid var(--brass3);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px;
+background:var(--brass3);color:var(--n950)}
+header.chrome,main,footer{max-width:64rem;margin:0 auto;padding:16px 24px}
+header.chrome{margin-top:16px;border-radius:12px;border:1px solid var(--border);
+background:var(--elev);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.wordmark{font:400 28px/1.2 "Bebas Neue",Oswald,system-ui,sans-serif;
+letter-spacing:.04em;color:var(--parch3);text-decoration:none;text-transform:uppercase}
+h1{font:700 28px/1.2 inherit;margin:32px 0 8px}
+h2{font:700 20px/1.2 inherit;border-bottom:1px solid var(--borders);
+padding-bottom:8px;margin-top:40px}
+.lede{color:var(--mutedfg);max-width:52rem}
+.tier{border:1px solid var(--border);border-radius:12px;background:var(--card);
+margin:0 0 4px;padding:16px 20px}
+.tier.gap{background:repeating-linear-gradient(135deg,var(--sunken),
+var(--sunken) 10px,#0b1830 10px,#0b1830 20px);border-style:dashed;
+border-color:var(--aging)}
+.tierhead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
+font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin-bottom:10px}
+.tiercode{color:var(--brass3);font-weight:700}
+.doc{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--muted)}
+.doc:first-of-type{border-top:0;padding-top:0}
+.docid{font:600 14px/1.4 "JetBrains Mono",Menlo,monospace;color:var(--parch3)}
+.doctitle{color:var(--fg)}
+.uslm{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.why{font-size:13px;color:var(--mutedfg);margin-top:4px}
+.pill{display:inline-block;padding:2px 9px;border-radius:9999px;
+font:700 11px/1.6 inherit;border:1px solid var(--borders);
+background:var(--muted);color:var(--parch3);white-space:nowrap}
+.pill.cited{border-color:var(--fresh);color:#9fe0bd}
+.pill.drift{border-color:var(--aging);color:#f0c489}
+.pill.gap{border-color:var(--stale);color:#f3a3a3}
+.pill.held{border-color:var(--blue1);color:#bcd7f2}
+.pill.cancelled,.pill.superseded{background:var(--stale);border-color:var(--stale);
+color:#fff}
+.arrow{text-align:center;color:var(--brass);font:700 13px/1 inherit;
+padding:6px 0;letter-spacing:.08em}
+.arrow span{background:var(--bg);padding:0 10px}
+.arrow{position:relative}
+.arrow:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
+background:var(--brass);z-index:-1}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--muted);
+vertical-align:top}
+th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;
+letter-spacing:.08em}
+code{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+footer{border-top:1px solid var(--border);margin-top:48px;font-size:13px;
+color:var(--mutedfg)}
+
+.crumb{font-size:13px;color:var(--mutedfg);margin:24px 0 0}
+.ident{font:500 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.factrow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.lede2{color:var(--mutedfg);max-width:54rem;margin:6px 0 18px}
+.ladder{border-left:2px solid var(--brass);margin:0 0 4px 10px;padding:0 0 0 18px}
+.rung{position:relative;padding:9px 0}
+.rung:before{content:"";position:absolute;left:-24px;top:16px;width:12px;
+height:2px;background:var(--brass)}
+.rung .t{font:700 11px/1 inherit;letter-spacing:.09em;color:var(--brass3);
+text-transform:uppercase}
+.rung.gaprung{opacity:.72}
+.rung.gaprung .t{color:var(--aging)}
+.small{font-size:13px;color:var(--mutedfg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.panel{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:16px 20px}
+.panel h3{font:700 12px/1.3 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin:0 0 10px}
+.prov{border-left:1px solid var(--muted);margin:0 0 0 4px;padding:2px 0 2px 14px}
+.plabel{font:600 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+.ptext{white-space:pre-wrap;overflow-wrap:break-word}
+.reflist{list-style:none;padding:0;margin:0}
+.reflist li{padding:7px 0;border-bottom:1px solid var(--muted)}
+.reflist li:last-child{border-bottom:0}
+.reflink{font-weight:600}
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{padding:8px 0 8px 16px;border-left:2px solid var(--border);
+position:relative}
+.timeline li:before{content:"";position:absolute;left:-5px;top:15px;width:8px;
+height:8px;border-radius:50%;background:var(--brass)}
+.timeline li.now:before{background:var(--fresh);box-shadow:0 0 0 3px rgba(47,143,92,.25)}
+.timeline li.gone:before{background:var(--stale)}
+details.body{margin-top:10px}
+details.body summary{cursor:pointer;color:var(--blue1);font-weight:600}
+.src{font:500 11px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--mutedfg)}
+.doc-raw{white-space:pre-wrap;overflow-wrap:break-word;
+font:500 12px/1.65 "JetBrains Mono",Menlo,monospace;color:var(--fg);
+background:var(--sunken);border:1px solid var(--border);border-radius:8px;
+padding:14px;max-height:34rem;overflow:auto}
+.typegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));
+gap:10px;margin:12px 0}
+.typecard{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:14px 16px}
+.typecard .n{font:700 26px/1.1 inherit;color:var(--brass3)}
+</style></head><body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="chrome"><a class="wordmark" href="index.html">Semper Admin</a><span>Policy</span><a href="policy-index.html" style="margin-left:auto">All policies</a><a href="authority-index.html">Authority chains</a><a href="sources.html">Sources</a></header>
+<main id="main">
+<p class="crumb"><a href="policy-index.html">All policies</a> &rsaquo; T5 Message</p>
+<h1>FISCAL YEAR 2024 MARINE CORPS TALENT ACQUISITION PILOT</h1>
+<div class="ident">/us/dod/don/usmc/maradmin/2024/253</div>
+<div class="factrow"><span class="pill ">T5 Message</span><span class="pill ">active</span><span class="pill ">UNVERIFIED</span><span class="pill ">signed 2024-05-30</span></div>
+<h2>Where this sits</h2>
+<p class="lede2">The ladder above is what governs this policy, one tier at a time. Every rung exists because this document, or one above it, printed the reference. A tier the corpus does not hold is shown rather than skipped.</p>
+<div class="ladder">
+<div class="rung gaprung"><div class="t">T0 Statute <span class="pill gap">tier not held</span></div><div class="small">MCO 1610.7B names 5 U.S.C. 552a and 10 U.S.C. 1034 in its reference list, so this spine does reach statute. The chain above climbs through DoD Instruction 1300.19 instead, whose own reference list could not be retrieved from the authoritative source and is therefore not asserted. Expand the reference table on MCO 1610.7B to see the statutory citations.</div></div>
+<div class="rung gaprung"><div class="t">T1 Department of Defense <span class="pill gap">tier not held</span></div><div class="small">No Department of Defense issuance is named in the reference list of any document on this spine. The MOS Manual carries a DoD occupational conversion report requirement, but the requirement names no issuance number, so no edge is written.</div></div>
+<div class="rung gaprung"><div class="t">T2 Department of the Navy <span class="pill gap">tier not held</span></div><div class="small">The store holds no Department of the Navy physical fitness instruction.</div></div>
+<div class="rung"><div class="t">T3 Service directive</div>
+<div style="padding:3px 0"><a href="policy-MCO-1400.32D-CH2.html">MCO-1400.32D-CH2</a> <span class="pill held">in store</span><div class="small">MCO 1400.32D - Marine Corps Promotion Manual, Volume 2, Enlisted Promotions (SHORT TITLE: MARCORPROMAN, VOL 2,</div><div class="src">named at narr:REF G &middot; cited</div></div>
+</div>
+<div class="rung"><div class="t">T4 Service manual</div>
+<div style="padding:3px 0"><code>NAVMC-1200.1J</code> <span class="pill drift">drift</span> <span class="small">holds <code>NAVMC-1200.1L</code></span><div class="src">named at narr:REF H &middot; cited</div></div>
+</div>
+<div class="rung"><div class="t">T5 Message &middot; this document</div><div><strong>FISCAL YEAR 2024 MARINE CORPS TALENT ACQUISITION PILOT</strong></div></div>
+</div>
+<h2>What came before</h2>
+<p class="lede2">The corpus holds one edition of this policy and no document cites an earlier one. That is the honest answer, not a missing feature: a superseded edition is usually gone from the publisher's site before a scraper reaches it.</p>
+<details class="body"><summary>Record history &middot; 1 correction(s) to the DATA, not to the policy</summary><ul class="timeline">
+<li><strong>2026-08-04</strong> <span class="small">checked against USLM User Guide section 12.2, Referencing Model</span><ul class="small"><li>normalize_identifiers.py - period replaced with underscore in every USLM path segment</li><li>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</li><li>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</li><li>2 identifier(s) rewritten in this record</li><li>document id, native number, and displayed text are unchanged</li><li>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</li></ul></li>
+</ul></details>
+<h2>What it says</h2>
+<details class="body"><summary>The full text &middot; 67 addressable paragraph(s) across 2 section(s), 1 of them held as source text because the parser refused to invent a hierarchy for them</summary>
+<div class="panel" style="margin-top:10px" id="sec-header"><h3>header</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">MARADMIN 253/24
+R 302057Z MAY 24
+MARADMIN 253/24
+MSGID/GENADMIN/CMC WASHINGTON DC MRA MP//
+SUBJ/FISCAL YEAR 2024 MARINE CORPS TALENT ACQUISITION PILOT//
+REF/A/DOC/CMC/01NOV2021//
+REF/B/DOC/CMC/01JAN2023//
+REF/C/DOC/CMC/01MAR2023//
+REF/D/DOC/CMC/01MAR2020//
+REF/E/DOC/CMC/18JUL2023//
+REF/F/DOC/MCRC/01MAY2020//
+REF/G/DOC/CMC/14JUN2012//
+REF/H/DOC/CMC/09JUN2023//
+NARR/REF A IS TALENT MANAGEMENT 2030. REF B IS TRAINING AND
+EDUCATION 2030. REF C IS THE TALENT MANAGEMENT 2030 UPDATE. REF D IS
+THE FORCE DESIGN 2030 UPDATE. REF E IS THE MARINE CORPS TALENT
+MANAGEMENT CAMPAIGN PLAN 2023-2025. REF F IS MCRCO 1100.1A
+ENLISTMENT PROCESSING MANUAL. REF G IS MCO P1400.32D ENLISTED
+PROMOTIONS. REF H IS NAVMC 1200.1J MILITARY OCCUPATIONAL
+SPECIALITIES MANUAL//
+POC/ S. L. GOYDA/MGYSGT/M&amp;RA//
+POC/A. F. CALLANAN/LTCOL/DCI//
+POC/A. M. FALLAN/MSGT/DCI//
+POC/M. R. HART/LTCOL/DCI//
+POC/ M. G. DUVALL/DCI//</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-body"><h3>body &middot; Remarks</h3>
+<div class="prov" id="p1">
+<span class="plabel">1.</span> 
+<span class="ptext">This MARADMIN announces the initiation of the Marine Corps Talent Acquisition Pilot (MCTAP) Program to provide select opportunities for candidates to enlist in the Marine Corps to serve within specific Military Occupational Specialties (MOS) at a rank commensurate with their experience, up to Gunnery Sergeant (E7).</span>
+</div>
+<div class="prov" id="p2">
+<span class="plabel">2.</span> 
+<span class="ptext">Purpose. The Marine Corps Talent Acquisition Pilot (MCTAP) Program is designed to address the Corps&#x27; need for a rapid process to identify, train, and employ personnel who possess essential skills and relevant experience to meet warfighting requirements at the point and time of need.</span>
+</div>
+<div class="prov" id="p3">
+<span class="plabel">3.</span> 
+<span class="ptext">Background. Talent Management requires that we recruit, retain, and align the best talent with the needs of the service - to meet Marine Corps warfighting requirements in the Active or Reserve Component. Lateral Entry grants constructive service credit for private sector training or experience.</span>
+</div>
+<div class="prov" id="p4">
+<span class="plabel">4.</span> 
+<span class="ptext">Eligibility</span>
+</div>
+<div class="prov" id="p4-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Marine Corps prior service.</span>
+</div>
+<div class="prov" id="p4-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Prior service other service.</span>
+</div>
+<div class="prov" id="p4-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Non-prior service.</span>
+</div>
+<div class="prov" id="p5">
+<span class="plabel">5.</span> 
+<span class="ptext">Scope. The initial focus is on MOSs with shortfalls that are difficult to recruit, retain, and sustain, and where there are other means of obtaining the credentials and experience outside of the service. Current identified requirements are Cyber and Signals Intelligence. This Pilot Program will also assess the feasibility of expansion into other occupational specialties and ranks.</span>
+</div>
+<div class="prov" id="p5-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Active and Reserve Component. Primary Military Occupational Specialty (PMOS) 1721 Cyberspace Warfare Operator.</span>
+</div>
+<div class="prov" id="p5-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Active Component. PMOS 2629 Signals Intelligence Collection Manager.</span>
+</div>
+<div class="prov" id="p6">
+<span class="plabel">6.</span> 
+<span class="ptext">Procedures. MCTAP will follow a four-phase approach: Identify, recruit, earn, and serve. These phases will serve as a roadmap for the Pilot Program, guiding its efforts to identify the Marine Corps&#x27; requirements, recruit highly skilled individuals with desired qualifications, provide them with training to earn the title of Marine, and ultimately enable them to serve in roles that align with the Marine Corps&#x27; warfighting requirements.</span>
+</div>
+<div class="prov" id="p7">
+<span class="plabel">7.</span> 
+<span class="ptext">Phase 1 / Identify. Manpower &amp; Reserve Affairs (M&amp;RA), Occupational Field (OccFLD) managers, and OccFLD specialists validated the following requirements for this Pilot Program and communicated them to the Commanding General, Marine Corps Recruiting Command (MCRC).</span>
+</div>
+<div class="prov" id="p8">
+<span class="plabel">8.</span> 
+<span class="ptext">PMOS 1721 Cyberspace Warfare Operator PMOS in both active and reserve component.</span>
+</div>
+<div class="prov" id="p8-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Description. The Cyberspace Warfare Operator is familiar with all aspects of cyberspace maneuver operations. They employ offensive and defensive cyber tools, tactics, techniques, and procedures. They integrate effects into warfighting functions to achieve tactical, operational, and strategic objectives. The Cyber Warfare Operator provides the means to emulate tactics, techniques, and procedures used by known adversaries to identify unmitigated vulnerabilities through simulated exploitation or attacks on department of defense information systems. They are familiar with digital network concepts and analytical techniques that support tactical cyber operations. Utilizing these skills to enumerate friendly environments, these operators search for and respond to targeted adversary presence within friendly terrain.</span>
+</div>
+<div class="prov" id="p8-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Duties. Exploitation Analysts are the primary technical planners for offensive cyberspace operations. The exploitation analyst must be an expert with adversary systems, networks, technologies, tools, techniques, and procedures. The duties for this position encompass generating intelligence, converting intelligence to operational planning, developing significant target awareness, and balancing levels of risk against operational goals. Duties increase with experience to encompass the management of target packages and developing new techniques and procedures for offensive cyber operations.</span>
+</div>
+<div class="prov" id="p8-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Qualifications / Education / Experience</span>
+</div>
+<div class="prov" id="p8-c-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Prior Service USMC. Former MOS of 2611, 1711, or 1721 Marine. Minimum: Completed the Joint Cyberspace Analyst Course. Preferred: Completed the United States Cyber Command (USCC)/National Security Agency (NSA) exploitation analyst work role certification.</span>
+</div>
+<div class="prov" id="p8-c-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Prior Service-Other Service. Former Army 17 series MOS; Former Air Force 1B series MOS; Former Navy Cryptologic Technician Networks (CTN) / Cyber Warfare Technician series MOS. Preferred: Completed the USCC/NSA Exploitation Analyst work role certification.</span>
+</div>
+<div class="prov" id="p8-c-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Non-Prior Service. Degree in computer science, information systems, engineering, or other related discipline. Knowledge/ experience with NSAâ€™s post-apprentice Cryptologic Cyber Network Operator training standards.</span>
+</div>
+<div class="prov" id="p8-c-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Desired: Cyberspace Operations Plannersâ€™ Course, 1713 additional MOS.</span>
+</div>
+<div class="prov" id="p8-c-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">Applicants who have prior service in the USMC or other services but gained experience and education upon being discharged from service and meet criteria as described under non-prior service criteria can apply.</span>
+</div>
+<div class="prov" id="p9">
+<span class="plabel">9.</span> 
+<span class="ptext">PMOS 2629 Signals Intelligence Collection Manager in active component.</span>
+</div>
+<div class="prov" id="p9-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Description. This PMOS requires Signals Intelligence (SIGINT), Electromagnetic Warfare (EW), and support to Cyberspace Operations (CO) training focused on collection management, operational planning and coordination, analysis, reporting, exploitation, and dissemination in support of the seven warfighting functions. Duties encompass the supervision of tasking, collection, processing, exploitation, and dissemination of products related to the three disciplines of SIGINT. Communications Intelligence Electronic Intelligence and Foreign Instrumentation Signals Intelligence. EW duties encompass the planning, coordination, and execution of full spectrum Marine Air Ground Task Force EW operations, including Electromagnetic Warfare Support, Electromagnetic Protect, and Electromagnetic Attack. Provides intelligence support to full spectrum CO defined as Offensive Cyberspace Operations, Defensive Cyberspace Operations, and Department of Defense Information Network Operations. Technicians develop and maintain records on technical aspects of target emitters, develop and maintain communications order of battle files, situation maps, and other related SIGINT/EW/CO files. Technicians prepare and issue reports to include intelligence reports, technical reports, and summaries. Technicians are required to perform SIGINT/EW/CO briefings.</span>
+</div>
+<div class="prov" id="p9-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Duties. Responsible for performing intelligence collections management functions. Provide technical and analytical advice to headquarters staff sections, subordinate commands, and units in matters relating to intelligence collection. Responsible for issues pertaining to all-source intelligence collection and production requirements and management. Serve as intelligence requirements management projections officer for routing, special access program, and compartmented projects, operations, or exercises. Plan and execute collection management within priorities established through the collection management process while using appropriate collection strategies. Develop collection strategies and address challenges related to gathering information from relevant sources and shortfalls in collection tasking. Provide centralized administration, governance, and coordination of collection management requirements in support of cyberspace operations.</span>
+</div>
+<div class="prov" id="p9-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Qualifications / Education / Experience</span>
+</div>
+<div class="prov" id="p9-c-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Prior Service USMC. Former MOS of 2621, 2631, 2641, 2651, entry level training</span>
+</div>
+<div class="prov" id="p9-c-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Prior Service - Other Service. Former Army 35 series MOS; Former Air Force 1N series MOS; Former Navy Cryptologic Technician (CT) series MOS.</span>
+</div>
+<div class="prov" id="p9-c-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Non-Prior Service. Degree in computer science, information systems, engineering, or other related discipline. Knowledge/ experience with the SIGINT/EW/CO collection and ground processing architecture and associated systems. The ideal candidate would be SIGINT/EW/CO systems subject matter expert. They should be familiar with the end-to-end system, including tasking, collection management, collection operations, processing and dissemination components, and processes.</span>
+</div>
+<div class="prov" id="p9-c-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Applicants who have prior service in the USMC or other services but gained experience and education upon being discharged from service and meet criteria as described under non-prior service criteria can apply.</span>
+</div>
+<div class="prov" id="p10">
+<span class="plabel">10.</span> 
+<span class="ptext">Phase 2 / Recruit. MCRC serves as the primary recruiter for prior service applicants. Due to the specific focus and niche capabilities of MCTAP, a representative from the community of interest is responsible for primary recruitment of non-prior service applicants and referring prior service applicants to MCRC.</span>
+</div>
+<div class="prov" id="p10-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Interview. Once applicants are identified, they will interview with an Acquisition Panel (AP), composed of the OccFLD specialists, MCRC, and Fleet Marine Force (as required). This panel verifies applicant qualifications, as detailed in the requirement notification. Applicants should be prepared to provide the following prior to the interview:</span>
+</div>
+<div class="prov" id="p10-a-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Resume</span>
+</div>
+<div class="prov" id="p10-a-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Certifications (civilian and military)</span>
+</div>
+<div class="prov" id="p10-a-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Transcripts (as related to position)</span>
+</div>
+<div class="prov" id="p10-a-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Letters of recommendation (as directed)</span>
+</div>
+<div class="prov" id="p10-a-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">Practical application examination (as directed at the interview)</span>
+</div>
+<div class="prov" id="p10-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Following the interview, the AP will submit their recommendations to MCRC for follow on screening per reference (f). The AP should at a minimum:</span>
+</div>
+<div class="prov" id="p10-b-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Validate credentials per reference (h)</span>
+</div>
+<div class="prov" id="p10-b-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Recommended MOS training (if required)</span>
+</div>
+<div class="prov" id="p10-b-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Recommended professional military education (if required)</span>
+</div>
+<div class="prov" id="p10-b-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Recommended rank up to Gunnery Sergeant (E7) commensurate with qualifications and experience</span>
+</div>
+<div class="prov" id="p10-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Once qualified for enlistment, MCRC shall submit a complete package to the DC, M&amp;RA for approval. A completed package will include:</span>
+</div>
+<div class="prov" id="p10-c-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">AP recommendation letter</span>
+</div>
+<div class="prov" id="p10-c-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Waiver coversheet</span>
+</div>
+<div class="prov" id="p10-c-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Waiver documents (if required)</span>
+</div>
+<div class="prov" id="p10-c-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Resume</span>
+</div>
+<div class="prov" id="p10-c-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">Transcripts</span>
+</div>
+<div class="prov" id="p10-c-6">
+<span class="plabel">(6)</span> 
+<span class="ptext">Certificates</span>
+</div>
+<div class="prov" id="p10-c-7">
+<span class="plabel">(7)</span> 
+<span class="ptext">Letters of recommendation (as directed)</span>
+</div>
+<div class="prov" id="p10-c-8">
+<span class="plabel">(8)</span> 
+<span class="ptext">Practical examination results (as directed)</span>
+</div>
+<div class="prov" id="p10-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Determination. If the DC, M&amp;RA approves, MCRC will receive the final approval letter, to include the contract proposal, and shall process the applicant in accordance with reference (f).</span>
+</div>
+<div class="prov" id="p10-e">
+<span class="plabel">e.</span> 
+<span class="ptext">Acceptance. MCRC will communicate the DC, M&amp;RAâ€™s determination to the applicant for the applicantâ€™s acceptance.</span>
+</div>
+<div class="prov" id="p11">
+<span class="plabel">11.</span> 
+<span class="ptext">Phase 3 / Earn. It is a steadfast commitment of the Marine Corps that all new Marines will undergo appropriate entry-level training to earn the title Marine as follows:</span>
+</div>
+<div class="prov" id="p11-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Prior Service USMC. Applicants who have successfully completed Marine Corps recruit training are not required to attend Marine Corps recruit training again, as they have already earned the title of Marine.</span>
+</div>
+<div class="prov" id="p11-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Prior Service Other Service. Applicants must complete Marine Corps recruit training.</span>
+</div>
+<div class="prov" id="p11-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Non-Prior Service. Applicants must complete Marine Corps recruit training.</span>
+</div>
+<div class="prov" id="p12">
+<span class="plabel">12.</span> 
+<span class="ptext">Phase 4 / Serve. Applicants will serve in the predetermined billet and location based on identified requirements. Applicants are not eligible for permanent change of station or reassignment during their first enlistment. Applicants who submit, are approved, and accept reenlistment may be subject to follow on assignments in a different geographical location from their initial duty station.</span>
+</div>
+<div class="prov" id="p13">
+<span class="plabel">13.</span> 
+<span class="ptext">Coordinating Instructions</span>
+</div>
+<div class="prov" id="p13-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Term of Enlistment. The specific length of the contract will be determined based on the requirement filled, communicated to the AP, and confirmed with the applicant during their interview.</span>
+</div>
+<div class="prov" id="p13-b">
+<span class="plabel">b.</span> 
+<span class="ptext">MOS Training. If MOS training is necessary, the AP will provide appropriate recommendations. For example, depending on the experience of the applicant, MOS training may be customized to provide appropriate overview and orientation to the service. Additionally, applicants may be asked to complete testable sections of basic or advanced MOS schools as part of their training requirements.</span>
+</div>
+<div class="prov" id="p13-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Grade. The AP shall recommend an initial rank for the applicant up to Gunnery Sergeant (E7). Upon receiving approval from DC, M&amp;RA, the pay for the contracted rank will commence from the basic training phase. Recruits will start receiving their contracted pay as soon as they begin their basic training. Rank will be worn upon completion of any required MOS training.</span>
+</div>
+<div class="prov" id="p13-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Promotion. Due to the specialized focus and unique competencies of MCTAP, Marines participating in the initial pilot program will have promotion opportunities to the ranks of Master Sergeant and Master Gunnery Sergeant. The option to submit for promotion to ranks of First Sergeant or Sergeant Major will not be available to these Marines. For Marines entering service through MCTAP, their initial promotion opportunity will be based on non-competitive consideration with the exception that professional military education is required.</span>
+</div>
+<div class="prov" id="p13-e">
+<span class="plabel">e.</span> 
+<span class="ptext">Specialized Recruiting. For the Pilot Program, a representative from the community of interest will serve as subject matter expert recruiter in a Temporary Additional Duty (TAD) / surge (requirement or time) capacity with MCRC and have primary recruitment responsibility of non-prior service applicants.</span>
+</div>
+<div class="prov" id="p13-f">
+<span class="plabel">f.</span> 
+<span class="ptext">Specialized Recruiting TAD Funding. The community of interest will be responsible for funding TAD expenses for specialized recruiters. TAD funding requests can be submitted to MCRC for consideration.</span>
+</div>
+<div class="prov" id="p13-g">
+<span class="plabel">g.</span> 
+<span class="ptext">Feedback. OccFLD specialists shall provide feedback on the performance of MCTAP Marines and the MCTAP process itself to Headquarters United States Marine Corps at 6 months and 12 months from the date the applicant begins serving in their designated billet.</span>
+</div>
+<div class="prov" id="p13-h">
+<span class="plabel">h.</span> 
+<span class="ptext">How to Apply. Applicants will submit required documentation per paragraph 10.a. to the following organizational mailbox: [contact withheld], with the subject line reading MCTAP.</span>
+</div>
+<div class="prov" id="p14">
+<span class="plabel">14.</span> 
+<span class="ptext">Release authorized by Lieutenant General James F. Glynn, Deputy Commandant for Manpower and Reserve Affairs.//</span>
+</div>
+</div>
+</details>
+<h2>Provenance</h2><div class="panel"><p class="small">Source <code>E:\GunnyBot\Policies\MARADMINS\CY2024\MARADMIN_253_24_FISCAL_YEAR_2024_MARINE_CORPS_TALENT_ACQUISITION_PILOT.pdf</code><br>Extracted by pymupdf on 2026-05-16, converted 2026-07-19 against store schema 0.4.0<br>Checksum <code>d88756bba48b92c7270ac3e6eed1972b</code></p></div>
+<footer><p>This record is an UNVERIFIED machine extraction unless marked otherwise. Every link on this page is cited: it exists because the issuing authority printed the reference on the document. This library is an unofficial reference - the issuing authority's copy governs.</p></footer></main></body></html>
