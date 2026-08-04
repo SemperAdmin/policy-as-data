@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2021/360" canonicalId="MARADMIN-2021-360" docType="MARADMIN" nativeNumber="360/21" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2021-07-09" schemaVersion="2.0">
+  <meta>
+    <title>FY22 COMMANDANTâ€™S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD (CPIB)</title>
+    <subject>FY22 COMMANDANTâ€™S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD (CPIB)</subject>
+    <originator>CMC WASHINGTON DC MRA MM</originator>
+    <signedDate>2021-07-09</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2021\MARADMIN_360_21_FY22_COMMANDANTS_PROFESSIONAL_INTERMEDIATE-LEVEL_EDUCATION_B.pdf" sourceHash="2236fc4f82603e585af9c9945d182821eebb79d86a9b192ba5f0b3b357828cb5" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="MCO-1524.1" targetIdentifier="/us/dod/don/usmc/mco/1524_1" basis="cited" tier="T3" held="absent" from="narr:REF A"/>
+    <ref rel="references" target="DODI-1322.06" targetIdentifier="/us/dod/dodi/1322_06" basis="cited" tier="T1" held="absent" from="narr:REF B"/>
+    <ref rel="references" target="MCO-1520.11F" targetIdentifier="/us/dod/don/usmc/mco/1520_11f" basis="cited" tier="T3" held="absent" from="narr:REF C"/>
+    <ref rel="references" target="MCO-7220.52F" targetIdentifier="/us/dod/don/usmc/mco/7220_52f" basis="cited" tier="T3" held="drift" storeHolds="MCO-7220.52G" from="narr:REF D"/>
+    <ref rel="references" target="SECNAVINST-1520.7G" targetIdentifier="/us/dod/don/secnavinst/1520_7g" basis="cited" tier="T2" held="absent" from="narr:REF E"/>
+    <ref rel="references" target="MCO-1300.8" targetIdentifier="/us/dod/don/usmc/mco/1300_8" basis="cited" tier="T3" held="drift" storeHolds="MCO-1300.8-CH2" from="narr:REF F"/>
+    <ref rel="references" target="MARADMIN-2020-491" targetIdentifier="/us/dod/don/usmc/maradmin/2020/491" basis="cited" tier="T5" held="absent" from="narr:REF G"/>
+    <ref rel="references" target="DODI-1322.10" targetIdentifier="/us/dod/dodi/1322_10" basis="cited" tier="T1" held="absent" from="narr:REF H"/>
+    <ref rel="references" target="MCO-1553.4B" targetIdentifier="/us/dod/don/usmc/mco/1553_4b" basis="cited" tier="T3" held="absent" from="narr:REF I"/>
+    <ref rel="references" target="MCO-1900.16-CH2" targetIdentifier="/us/dod/don/usmc/mco/1900_16/ch2" basis="cited" tier="T3" held="drift" storeHolds="MCO-1900.16-CH3" from="narr:REF J"/>
+    <ref rel="references" target="MARADMIN-2021-165" targetIdentifier="/us/dod/don/usmc/maradmin/2021/165" basis="cited" tier="T5" held="absent" from="narr:REF K"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2021/360/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2021/360/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Purpose.  To announce the Fiscal Year 2022 (FY22) Commandantâ€™s Intermediate-Level Education Board (CPIB) convening on 7 September 2021.  The deadline to complete board instructions (contained within this message) and submit letters to the board is 8 August 2021.  Letters to the board are not required and are at the discretion of the officer being screened.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Marines are encouraged to review the graduate education order (ref a) found at:  https:(slash)(slash)www.marines.mil/portals/1/Publications/MCO%201524.1.pdf?v er=2019-06-03-083458-743.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Programs.  The board will convene for approximately four weeks to select officers for:</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Intermediate-Level Schools (ILS) to include Foreign Professional Military Education.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Fellowships to include the Congressional Fellowship Program (CFP), the Commandantâ€™s National Fellows, and the Commandantâ€™s Fellows.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>International Affairs Programs (IAP).</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p2/c/1" path="p2/c/1" number="2.c.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Regional Affairs Officer Program (RAO) (Must be a major or major select having between nine and 15 years of commissioned service).</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Graduate Education at:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p2/d/1" path="p2/d/1" number="2.d.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Naval Postgraduate School (NPS).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p2/d/2" path="p2/d/2" number="2.d.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Air Force Institute of Technology (AFIT).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p2/d/3" path="p2/d/3" number="2.d.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>San Diego State University (SDSU)-Restricted to 4502 Primary Military Occupational Specialty (PMOS).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p2/d/4" path="p2/d/4" number="2.d.4." label="4." depth="2" verification="UNVERIFIED">
+          <text>Civilian Institutions-Restricted to Education (8802 AMOS),History (8878 AMOS), and Environmental Engineering (8831).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p2/d/5" path="p2/d/5" number="2.d.5." label="5." depth="2" verification="UNVERIFIED">
+          <text>Advanced Civilian Schools Program (ACSP).</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p2/e" path="p2/e" number="2.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Criminal Law Fellowship- Restricted to 4402 PMOS.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p2/f" path="p2/f" number="2.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>National Geospatial Intelligence Agency Fellowship-Restricted to 4402 PMOS.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p2/g" path="p2/g" number="2.g." label="g." depth="1" verification="UNVERIFIED">
+        <text>The Judge Advocate Generals Legal Center and School (TJAGLCS)-Restricted to 4402 PMOS.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p2/h" path="p2/h" number="2.h." label="h." depth="1" verification="UNVERIFIED">
+        <text>Olmsted Scholar Program (OSP)-Limited to officers with no more than 13 years of total federal service as of 1 April 2022 and certain PMOSs, as determined by the Olmsted Scholar Foundation.  See https:(slash)(slash)olmstedfoundation.org/wha t-we-do/career-fields-eligible-to-apply/for eligible MOSs.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p2/i" path="p2/i" number="2.i." label="i." depth="1" verification="UNVERIFIED">
+        <text>The following AMOSs are associated with the corresponding graduate education disciplines and schools: AMOS    DISCIPLINE                                    SCHOOL 3006    Contingency Contracting                       NPS 4505    Communication Strategy and Operations Planner SDSU 8820    Aeronautical Engineering                      AFIT 8824    Electrical Engineering                        NPS 8825    Modeling and Simulation                       NPS 8826    Combat Systems Science and Technology         NPS 8831    Environmental Engineering                     Civilian 8834    Information Warfare Systems                   NPS 8840    Manpower Management                           NPS 8844    Financial Management                          NPS 8846    Computer Science                              NPS 8848    Info Systems Management                       NPS 8850    Operations Analysis                           NPS 8852    Defense Systems Analysis                      NPS 8862    Material Logistics Support Management         NPS 8866    Space Systems Operations                      NPS 8870    Special Operations (Irregular Warfare)        NPS 8878    History                                       Civilian</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>General Eligibility Guidelines.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>All majors, major selects, and those in zone for the CY21 (FY23) Majors Promotion Selection Board with a date of departure from their current command no later than 30 September 2022 will be screened on the FY23 CPIB.  Specific questions regarding tour lengths should be directed to the appropriate PMOS monitor.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>The following are not eligible for consideration:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p3/b/1" path="p3/b/1" number="3.b.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Officers in the above-zone for promotion to major.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p3/b/2" path="p3/b/2" number="3.b.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Majors who are in zone for the CY21(FY23) Lieutenant Colonels Promotion Selection Board.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p3/b/3" path="p3/b/3" number="3.b.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>Majors previously passed for promotion to lieutenant colonel.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p3/b/4" path="p3/b/4" number="3.b.4." label="4." depth="2" verification="UNVERIFIED">
+          <text>Officers who are currently enrolled in a program designated to them by a previous Commandantâ€™s Education Board (CCLEB or CPIB).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p3/b/5" path="p3/b/5" number="3.b.5." label="5." depth="2" verification="UNVERIFIED">
+          <text>Officers who have not fulfilled an obligated payback tour for a previously attended program CCLEB or CPIB.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p3/b/6" path="p3/b/6" number="3.b.6." label="6." depth="2" verification="UNVERIFIED">
+          <text>Officers participating in or having completed the Command and Staff Blended Seminar Program (BSP) for PME in-grade or have completed Advanced-ILS (i.e. SAW, SAMS, MAWS, SAASS).  Officers in this category, who are interested in programs other than ILS, must submit a request to be considered via Administrative Action Form (NAVMC 10274) to their PMOS monitor NLT 1 August 2021 to be considered by the board.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p3/b/7" path="p3/b/7" number="3.b.7." label="7." depth="2" verification="UNVERIFIED">
+          <text>Officers with an approved separation or retirement date.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p3/b/8" path="p3/b/8" number="3.b.8." label="8." depth="2" verification="UNVERIFIED">
+          <text>Restricted Officers.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p3/b/4" path="p3/b/4" number="3.b.4." label="4." depth="2" verification="UNVERIFIED">
+          <text>Eligible Population.  All officers due for permanent change of duty orders (PCS/PCA) in FY22 are required to complete the specific instructions outlined in paragraph 5.</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>The list of eligible officers that will be screened can be found on the CPIB/CCLEB Updates page on the main USMC Manpower website at:  https:(slash)(slash )www.manpower.usmc.mil/webcenter/portal/OA3CEB/pages_cpibcclebupdates.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>Within the list, officers with sufficient career timing to participate in programs longer than one year, such as graduate education programs, CFP, Olmsted, etc., will have a Note 1 beside their name.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Instructions for the Eligible Population.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Officers are responsible to ensure their OMPFs are current and contain documents authorized for the OMPF that adequately describe their Marine Corps service.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Officers with a Note 1 beside their name are required to complete the questions on the FY22 Commandantâ€™s Education Board Questionnaire and upload a copy of their undergraduate transcripts to the questionnaire.  Do not request to have transcripts sent directly to MMOA-3 by mail or sent electronically.  All transcripts must be copies uploaded as a Transcript file within the FY22 Commandantâ€™s Education Board Questionnaire.  Transcripts uploaded to the questionnaire will not be sent to Official Military Personnel Files (OMPF) by MMOA-3.  Officers should have their transcripts put in their record by sending a copy to MMRP at:  [contact withheld].  Each page in the copy must contain the grade, full name and EDIPI (DOD ID) legibly handwritten or typed.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>The below subparagraphs also apply to officers with a Note 1 by their name:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/1" path="p5/c/1" number="5.c.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Officers are required to apply to the NPS NLT 8 August 2021.  After submitting an application, official transcripts must be ordered from all attended undergraduate and graduate institutions and delivered from the institution(s) directly to NPS Admissions.  Transcripts must come directly from the institution or their designated transcript exchange service, NPS does not accept transcripts submitted by the applicant.  Officers that have previously applied to NPS must submit an additional application, but do not have to resubmit transcripts. Officers can submit up to three applications for different programs at NPS listed in paragraph 2.i above.  NPS will notify MMOA-3 of an officerâ€™s acceptance.  NPS does not provide an acceptance letter or status of acceptance to individual officers.  Officers desiring graduate education are required to have â€œGraduate Educationâ€ within their top three preferences for available programs listed on the questionnaire.  Marines holding a PMOS of 4402 are not required to apply to NPS. NPS Admissions website can be found at: https:(slash)(slash)nps.edu/web/admissions/apply.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/2" path="p5/c/2" number="5.c.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Officers who prefer a graduate education program not offered at NPS are required to take the GRE and submit applications to the desired school.  Upload GRE scores, conditional acceptance letters, and transcripts into the questionnaire in order to be considered.  These programs include:</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/2/a" path="p5/c/2/a" number="5.c.2.a." label="a." depth="3" verification="UNVERIFIED">
+            <text>Mass Communication and Media Studies at San Diego State University - Restricted to 4502 PMOS.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/2/b" path="p5/c/2/b" number="5.c.2.b." label="b." depth="3" verification="UNVERIFIED">
+            <text>Aeronautical Engineering at AFIT-Restricted to 75XX PMOSs.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/2/d" path="p5/c/2/d" number="5.c.2.d." label="d." depth="3" verification="UNVERIFIED">
+            <text>Masters of Education (8802) from a civilian university-Curriculums must be verified by the program officer listed in paragraph 10 below.  Interested officers are required to have current GRE scores and rank this program within their top three choices for graduate education preferences.  Interested officers shall also compose a letter to the board which states your educational philosophy and desired focus of education study (ex:  curriculum design/development, methodology, policy, embodied learning, learning analytics, emerging technology, etc).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/2/e" path="p5/c/2/e" number="5.c.2.e." label="e." depth="3" verification="UNVERIFIED">
+            <text>Masters of History (8878) from a civilian university must be verified by the program officer listed in paragraph 10 below.  Interested officers are required to have current GRE scores and rank this program within their top three choices for graduate education preferences.  Officers who list 8878 as their top choice are encouraged to submit a letter to the board stating their preferred area of historical study and three prospective universities.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/2/f" path="p5/c/2/f" number="5.c.2.f." label="f." depth="3" verification="UNVERIFIED">
+            <text>Advanced Civilian Schools Program (ACSP).</text>
+            <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/2/f/1" path="p5/c/2/f/1" number="5.c.2.f.1." label="1." depth="4" verification="UNVERIFIED">
+              <text>The purpose for ACSP is to provide additional education opportunities for Marine Corps officers.  The ACSP allows officers the opportunity to earn an advance degree while maintaining career progression.  Participants are highly encouraged to pursue areas of study and research topics of interest to the Marine Corps.  Interested officers are required to have current GRE scores, submit an application, and rank this program within their top three choices for graduate education preferences.</text>
+            </provision>
+            <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/2/f/2" path="p5/c/2/f/2" number="5.c.2.f.2." label="2." depth="4" verification="UNVERIFIED">
+              <text>Program  Details.  The board will select up to five officers to participate in this education program lasting no longer than 12-months.  This program qualifies as partially-funded education per reference (h).  Participating officers will receive their regular pay and allowances, but application fees, tuition and matriculation fees, cost of textbooks and materials, and all similar fees and expenses will be borne by the officer.  The area of study and research is at the discretion of the officer and no utilization tour is required. Participants follow-on assignment will be based on the needs of the Marine Corps and the participants career progression.</text>
+            </provision>
+            <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/2/f/3" path="p5/c/2/f/3" number="5.c.2.f.3." label="3." depth="4" verification="UNVERIFIED">
+              <text>Marines who complete the ACSP are required to have their diplomas and transcripts included in their OMPF.</text>
+            </provision>
+            <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/2/f/4" path="p5/c/2/f/4" number="5.c.2.f.4." label="4." depth="4" verification="UNVERIFIED">
+              <text>Marines may be awarded a secondary FMOS (i.e. 88XX) for their masters degree if approved by the Occupational Field Manager for that discipline.</text>
+            </provision>
+            <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/2/f/5" path="p5/c/2/f/5" number="5.c.2.f.5." label="5." depth="4" verification="UNVERIFIED">
+              <text>Selectees must send an official acceptance letter to MMOA-3 via [contact withheld] no later than 1 April 2022.  Failure to produce an acceptance letter or failure to communicate a potential delay in receiving an acceptance letter by this deadline will result in removal from the program.</text>
+            </provision>
+            <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/2/f/6" path="p5/c/2/f/6" number="5.c.2.f.6." label="6." depth="4" verification="UNVERIFIED">
+              <text>Professional Military Education (PME) Requirement.  This program is not a service equivalent for PME and does not meet any JPME requirements.  Marines participating in ACSP are required to pursue completion of a PME program commensurate with their grade.</text>
+            </provision>
+            <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/2/f/7" path="p5/c/2/f/7" number="5.c.2.f.7." label="7." depth="4" verification="UNVERIFIED">
+              <text>Questions may be directed to MMOA-3 via e-mail at [contact withheld], subject titled â€œAdvanced Civilian Schools Program.â€</text>
+            </provision>
+            <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/2/f/8" path="p5/c/2/f/8" number="5.c.2.f.8." label="8." depth="4" verification="UNVERIFIED">
+              <text>The ACSP application detailing all requirements are found at the CCLEB/CPIB website provided in paragraph 4.</text>
+            </provision>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/3" path="p5/c/3" number="5.c.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>Officers interested in the RAO program must annotate the program as one of their top three preferences but are not required to have a DLAB score in their record.  Officers must have more than nine years and less than 15 years of commissioned service by December 2022 for the RAO program.  Additionally, interested applicants must submit a memorandum to the board in naval letter format to include a statement highlighting interest in the RAO program, international experience, and desire to serve in RAO billets across the Marine Corps.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/4" path="p5/c/4" number="5.c.4." label="4." depth="2" verification="UNVERIFIED">
+          <text>Officers interested in the Olmsted Scholar Program should submit completed and signed applications to the questionnaire.  Application formats are provided at the CPIB/CCLEB updates website.  Applicants are responsible for ensuring time-in-service and PMOS requirements are met before applying.  Additional information may be found at: http:(slash)(slash)www.olmstedfoundation.org/what-we-do/eligibility-requirements.</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/4/a" path="p5/c/4/a" number="5.c.4.a." label="a." depth="3" verification="UNVERIFIED">
+            <text>Olmsted Scholar applications now require the submission of a command photo taken in Service "A" with National Ensign and Service flag in the background.  A high-quality digital file of this photo must be sent with the Olmsted application.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/c/4/b" path="p5/c/4/b" number="5.c.4.b." label="b." depth="3" verification="UNVERIFIED">
+            <text>Electronic photos  must be less than 10MB in file size and  should be emailed to the MMOA-3 email address:  [contact withheld] with a subject and file titled, â€œLNAME_FNAME_OLMSTED_PHOTO.â€</text>
+          </provision>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/d" path="p5/d" number="5.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Officers without a Note 1 beside their name are still required to complete and submit the FY22 Commandantâ€™s Education Board Questionnaire prior to 8 August 2021.  The option for longer programs (e.g., NPS, CFP, RAO, Olmsted, etc.) will only be available to those designated by a Note 1 on the eligibility roster. Officers without a Note 1 who believe they have the career timing to screen for long programs should contact their PMOS monitor.  Questions concerning overall career timing should be directed to the respective PMOS monitor.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/e" path="p5/e" number="5.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>For specifics on any of the programs, reference the PME order and/or contact the program officer in paragraph 10 below.  Program information can also be found under Grad Ed Programs Info section on the CPIB/CCLEB Updates webpage.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/f" path="p5/f" number="5.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Foreign PME.  Officers with or without a Note 1 are eligible to apply for Foreign PME.  To be considered, officers must have a DLAB score in their record and rank it accordingly as a preference in the questionnaire.  The DLAB requirement pertains to English speaking programs as well.  All applications can be found on the CCLEB/CPIB updates page in paragraph 4 and are due to the program POCS NLT 1 August 2021.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/g" path="p5/g" number="5.g." label="g." depth="1" verification="UNVERIFIED">
+        <text>Officers applying for CFP must submit their applications to The Office of Legislative Affairs (OLA) at [contact withheld].  Applications are due to OLA no later than 2359 on 6 August 2021.  Unlike in past years this message is applicable to all 3404 officer CFP applicants.  For more information, guidance and FAQ reference:  https:(slash)(slash)www.hqmc.marines.mil/Agencies/Office-of-Legisl ative-Affairs/Congressional-Fellowship-Program/.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p5/b/2/c" path="p5/b/2/c" number="5.b.2.c." label="c." depth="3" verification="UNVERIFIED">
+      <text>Masters of Environmental Engineering/Science/Policy (8831) from a civilian university must be verified by the program officer listed in paragraph 10 below.  Interested officers are required to have current GRE scores and rank this program within their top three choices for graduate education preferences.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Board Correspondence.  All correspondence to the board must originate from or be endorsed by the officer being screened.  All submissions (letters of recommendation, clarifying statements of service, etc.) must be uploaded into the Letters to the Board file on the FY22 Commandantâ€™s Education Board Questionnaire no later than 8 August 2021.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>FY22 Commandantâ€™s Education Board Questionnaire can be found at https:(slash)(slash)go.max.gov/dod/FY22CEB.  The questionnaire will be made available until the deadline for those listed on the eligibility roster.  See paragraph 4 above for directions to the roster.  Eligible officers will be able to submit program preferences as well as upload transcripts, GRE scores, applications, and letters to the board.  All eligible officers are directed to the manpower website for further information and eligibility requirements for each program.  Note:  Your EDIPI is required to access the website.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>Non-Compliance.  Officers are considered non-compliant with the above instructions:</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p8/a" path="p8/a" number="8.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>If they have a Note 1 next to their name on the eligibility roster and do not complete the questionnaire and upload a legible copy of their transcripts.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p8/b" path="p8/b" number="8.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>If they are listed in the eligibility roster with a Note 1 next to their name and they do not complete the questionnaire or fail to apply to NPS.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p8/c" path="p8/c" number="8.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Officers who fail to complete the questionnaire, fail to apply to NPS or submit transcripts will still screen and may be slated/assigned to a program at the board's discretion.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p8/d" path="p8/d" number="8.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>A list of non-compliant officers will be provided to a Marines command on a weekly basis starting on 2 August 2021.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p9" path="p9" number="9." label="9." depth="0" verification="UNVERIFIED">
+      <text>A subsequent MARADMIN will announce FY22 CPIB board results.  The results MARADMIN will serve as notification of orders for all primary selectees.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p10" path="p10" number="10." label="10." depth="0" verification="UNVERIFIED">
+      <text>Program Points of Contact</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p10/a" path="p10/a" number="10.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Intermediate-Level Schools (ILS), Foreign PME, and Fellowships Contact your PMOS monitor.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p10/b" path="p10/b" number="10.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Olmsted Scholar Program Mr. Michael Cooper (Marine Corps University) [contact withheld], Comm:  [contact withheld] Email:  [contact withheld]</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p10/c" path="p10/c" number="10.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Congressional Fellowship Program Maj Lucas Huisenga (OLA) Comm:  (703)[contact withheld] Email:  [contact withheld] Email:  [contact withheld]</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p10/d" path="p10/d" number="10.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>International Affairs Program (IAP) Mr. Clayton Fisher (PLU-8) [contact withheld], Comm:  (703)[contact withheld] Email:  [contact withheld]</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p10/e" path="p10/e" number="10.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Law Programs Maj John Boyer [contact withheld], Comm:  (703)[contact withheld] Email:  [contact withheld]</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p10/f" path="p10/f" number="10.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Masters of History Maj Benjamin Brewster (United States Naval Academy) Comm:  (410)[contact withheld] Email:  [contact withheld]</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p10/g" path="p10/g" number="10.g." label="g." depth="1" verification="UNVERIFIED">
+        <text>Environmental Engineering - 8831 Maj Colton J. Dickman Comm:  (571)[contact withheld] Email:  [contact withheld]</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p11" path="p11" number="11." label="11." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN is not applicable to the Marine Corps Reserve.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/360/p12" path="p12" number="12." label="12." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by BGen Michael J. Borgschulte, Director, Manpower Management Division.//</text>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>9 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

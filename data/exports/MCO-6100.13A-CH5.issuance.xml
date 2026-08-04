@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/mco/6100_13a-ch5" canonicalId="MCO-6100.13A-CH5" docType="MCO" nativeNumber="6100.13A" tier="T3" lifecycle="active" verification="UNVERIFIED" schemaVersion="2.0">
+  <meta>
+    <title>MCO 6100.13A - Marine Corps Directives Compliance with Executive Order 14168</title>
+    <subject>MARINE CORPS DIRECTIVES COMPLIANCE WITH EXECUTIVE ORDER 14168</subject>
+    <distributionStatement>DISTRIBUTION STATEMENT A: Approved for public release; distribution is</distributionStatement>
+    <provenance sourcePath="E:\GunnyBot\Policies\MCO\MCO_6100.13A_WADMIN_CH-5.pdf" sourceHash="e6aa1d9179b81d5f891015f1fda541d8eca4141777c0c5743ba73d4185261353" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="EO-14168" targetIdentifier="/us/eop/eo/14168" basis="cited" tier="TX" held="absent" from="front-matter:ref/a"/>
+    <ref rel="references" target="MCO-6100.13A-CH4" targetIdentifier="/us/dod/don/usmc/mco/6100_13a/ch4" basis="cited" tier="T3" held="drift" storeHolds="MCO-6100.13A-CH5" from="front-matter:ref/c"/>
+    <ref rel="references" target="DODI-1308.3" targetIdentifier="/us/dod/dodi/1308_3" basis="cited" tier="T1" held="held" from="p-6:ref/a"/>
+    <ref rel="references" target="SECNAVM-5210.1-CH1" targetIdentifier="/us/dod/don/secnavm/5210_1/ch1" basis="cited" tier="T2" held="absent" from="p-6:ref/b"/>
+    <ref rel="references" target="USC-T5-S552a" targetIdentifier="/us/usc/t5/s552a" basis="cited" tier="T0" held="held" from="p-6:ref/c"/>
+    <ref rel="references" target="SECNAVINST-5211.5F" targetIdentifier="/us/dod/don/secnavinst/5211_5f" basis="cited" tier="T2" held="absent" from="p-6:ref/d"/>
+    <ref rel="references" target="MCRP-8-10B.4" targetIdentifier="/us/dod/don/usmc/mcrp/8-10b_4" basis="cited" tier="T4" held="absent" from="p-6:ref/e"/>
+    <ref rel="references" target="MCO-3500.27C" targetIdentifier="/us/dod/don/usmc/mco/3500_27c" basis="cited" tier="T3" held="absent" from="p-6:ref/f"/>
+    <ref rel="references" target="MCO-5210.11F" targetIdentifier="/us/dod/don/usmc/mco/5210_11f" basis="cited" tier="T3" held="absent" from="p-6:ref/g"/>
+    <ref rel="references" target="MCO-1070.12K-CH1" targetIdentifier="/us/dod/don/usmc/mco/1070_12k/ch1" basis="cited" tier="T3" held="absent" from="p-6:ref/i"/>
+    <ref rel="references" target="MCO-1610.7A" targetIdentifier="/us/dod/don/usmc/mco/1610_7a" basis="cited" tier="T3" held="drift" storeHolds="MCO-1610.7B" from="p-6:ref/j"/>
+    <ref rel="references" target="MCO-1900.16-CH2" targetIdentifier="/us/dod/don/usmc/mco/1900_16/ch2" basis="cited" tier="T3" held="drift" storeHolds="MCO-1900.16-CH3" from="p-6:ref/k"/>
+    <ref rel="references" target="SECNAVINST-1920.6D" targetIdentifier="/us/dod/don/secnavinst/1920_6d" basis="cited" tier="T2" held="absent" from="p-6:ref/l"/>
+    <ref rel="references" target="MCO-1040.31" targetIdentifier="/us/dod/don/usmc/mco/1040_31" basis="cited" tier="T3" held="absent" from="p-6:ref/m"/>
+    <ref rel="references" target="MCO-1400.31C-CH1" targetIdentifier="/us/dod/don/usmc/mco/1400_31c/ch1" basis="cited" tier="T3" held="drift" storeHolds="MCO-1400.31D" from="p-6:ref/n"/>
+    <ref rel="references" target="MCO-1400.32D-CH2" targetIdentifier="/us/dod/don/usmc/mco/1400_32d/ch2" basis="cited" tier="T3" held="held" from="p-6:ref/o"/>
+    <ref rel="references" target="MCO-1326.6D-CH2" targetIdentifier="/us/dod/don/usmc/mco/1326_6d/ch2" basis="cited" tier="T3" held="drift" storeHolds="MCO-1326.6-CH1" from="p-6:ref/p"/>
+    <ref rel="references" target="BUMEDINST-6320.66E-CH2" targetIdentifier="/us/dod/don/bumedinst/6320_66e/ch2" basis="cited" tier="T2" held="absent" from="p-6:ref/q"/>
+    <ref rel="references" target="SECNAVNOTE-5210" targetIdentifier="/us/dod/don/secnavnote/5210" basis="cited" tier="T2" held="absent" from="p-6:ref/r"/>
+  </authority>
+  <section anchor="front-matter" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/front-matter" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/front-matter/ref" path="ref" number="Ref:" label="Ref:" depth="0" role="reference" verification="UNVERIFIED">
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/front-matter/ref/a" path="ref/a" number="(a)" label="(a)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Executive Order (E.O.)14168, “Defending Women from Gender Ideology Extremism and Restoring Biological Truth to the Federal Government,” January 20, 2025</text>
+        <citation target="EO-14168" targetIdentifier="/us/eop/eo/14168" basis="cited" text="Executive Order (E.O.)14168, “Defending Women from Gender Ideology Extremism and Restoring Biological Truth to the Federal Government,” January 20, 2025"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/front-matter/ref/b" path="ref/b" number="(b)" label="(b)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>United States Office of Personnel Management (OPM), Memorandum, “Initial Guidance Regarding President Trump’s Executive Order Defending Women,” January 29, 2025</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/front-matter/ref/c" path="ref/c" number="(c)" label="(c)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Marine Corps Order 6100.13A CH-4, “Marine Corps Physical Fitness and Combat Fitness Tests (PFT/CFT)”, March 23, 2022</text>
+        <citation target="MCO-6100.13A-CH4" targetIdentifier="/us/dod/don/usmc/mco/6100_13a/ch4" basis="cited" text="Marine Corps Order 6100.13A CH-4, “Marine Corps Physical Fitness and Combat Fitness Tests (PFT/CFT)”, March 23, 2022"/>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/front-matter/m" path="m" number="m." label="m." depth="0" verification="UNVERIFIED">
+      <text>Add Chapter 2, language to subparagraph 5.d. (see inserted language) Page 2-5.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/front-matter/n" path="n" number="n." label="n." depth="0" verification="UNVERIFIED">
+      <text>Add Chapter 2, subparagraph 5.e.  Pages 2-5 and 2-6.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/front-matter/o" path="o" number="o." label="o." depth="0" verification="UNVERIFIED">
+      <text>Add Chapter 2, Table 2-4.  Page 2-14.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/front-matter/p" path="p" number="p." label="p." depth="0" verification="UNVERIFIED">
+      <text>Add Chapter 3, language to subparagraph 4.b. (see inserted language) Page 3-2.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/front-matter/q" path="q" number="q." label="q." depth="0" verification="UNVERIFIED">
+      <text>Add Chapter 3, language to subparagraph 5.a. (see inserted language)</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/front-matter/r" path="r" number="r." label="r." depth="0" verification="UNVERIFIED">
+      <text>Add Chapter 3, language to subparagraph 5.b. (see inserted language) Page 3-3.</text>
+    </provision>
+  </section>
+  <section anchor="p-4" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4" heading="4. Administration and Logistics" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Administration and Logistics</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Submit all recommendations concerning this Order to Commanding General, Training and Education Command (CG TECOM) via the Force Fitness Division.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Records Management.  Records created as a result of this Order shall be managed according to National Archives and Records Administration approved dispositions per reference (b) and (r) to ensure proper maintenance, use, accessibility and preservation, regardless of format or medium.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Privacy Act.  Any misuse or unauthorized disclosure of Personally Identifiable Information (PII) may result in both civil and criminal penalties.  The Department of the Navy (DON) recognizes that the privacy of an individual is a personal and fundamental right that shall be respected and protected.  The DON's need to collect, use, maintain, or disseminate PII about individuals for purposes of discharging its statutory responsibilities will be balanced against the individuals' right to be protected against unwarranted invasion of privacy.  All collection, use, maintenance, or dissemination of PII will be in accordance with the Privacy Act of 1974, as amended per reference (c) and implemented per reference (d).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Forms Management.  Navy Forms Online is the official online resource for Marine Corps forms.  Marine Corps forms identified in this Order may be retrieved from:  https://forms.documentservices.dla.mil/order/.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4/p4/e" path="p4/e" number="4.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Physical Fitness and Combat Fitness Tests (PFT/CFT) Videos. Instructional videos on PFT/CFT administration can be found at: http://www.fitness.marines.mil. MCO 6100.13A CH-2 30 DEC 2019 3</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-5" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5" heading="5. Command and Signal" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Command and Signal</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Command.  This Order is applicable to the Marine Corps Total Force.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Signal.   This Order is effective the date signed.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Situation.  To transmit changes to the basic Order.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Mission.  This change illustrates Commandant of Marine Corps (CMC) directed updates to this Order, to include raising the minimum passing score from a cumulative 120 points to 150 points.</text>
+    </provision>
+  </section>
+  <section anchor="p-4-2" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2" heading="4. Execution" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Execution</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Remove MCO 5000.12 E and NavMed P-117 from reference list; add SECNAV Notice 5210.  Page 1.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Delete Chapter 1, subparagraph 2.a.(1) and (4), and replace (see inserted language); insert (7).  Page 1-1.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Delete Chapter 1, subparagraph 3.d. and replace (see inserted language).  Page 1-3.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Delete Table 1-1.  Page 1-4.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/e" path="p4/e" number="4.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Delete Chapter 1, subparagraph 5.a.(2), and replace (see inserted language).  Page 1-5.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/f" path="p4/f" number="4.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Delete Chapter 1, subparagraph 5.f.(1) and replace (see inserted language).  Page 1-6.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/g" path="p4/g" number="4.g." label="g." depth="1" verification="UNVERIFIED">
+        <text>Delete Chapter 1, subparagraph 5.g. and replace (see inserted language).  Page 1-7.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/h" path="p4/h" number="4.h." label="h." depth="1" verification="UNVERIFIED">
+        <text>Delete Chapter 1, subparagraph 6.a.(4) and replace (see inserted language).  Page 1-8.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/i" path="p4/i" number="4.i." label="i." depth="1" verification="UNVERIFIED">
+        <text>Add Chapter 1, subparagraph 6.b.(3), (e), (f) and (g).  Page 1-8.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/j" path="p4/j" number="4.j." label="j." depth="1" verification="UNVERIFIED">
+        <text>Add Chapter 2, paragraph 3.  Page 2-1.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/k" path="p4/k" number="4.k." label="k." depth="1" verification="UNVERIFIED">
+        <text>Add Chapter 2, subparagraph 5.d.(4).  Page 2-5.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/l" path="p4/l" number="4.l." label="l." depth="1" verification="UNVERIFIED">
+        <text>Delete Chapter 2, paragraph 6 and replace (see inserted language). Page 2-7. MCO 6100.13A CH 1 13 MAR 2019 2</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/m" path="p4/m" number="4.m." label="m." depth="1" verification="UNVERIFIED">
+        <text>Delete Table 2-1 and replace (see inserted language).  Page 2-8.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/n" path="p4/n" number="4.n." label="n." depth="1" verification="UNVERIFIED">
+        <text>Delete Chapter 2, paragraph 9.  Page 2-8.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/o" path="p4/o" number="4.o." label="o." depth="1" verification="UNVERIFIED">
+        <text>Delete Table 2-2 and replace with new Table 2-2.  Page 2-8.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/p" path="p4/p" number="4.p." label="p." depth="1" verification="UNVERIFIED">
+        <text>Delete Chapter 3, paragraph 1, and replace (see inserted language). Page 3-1.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/q" path="p4/q" number="4.q." label="q." depth="1" verification="UNVERIFIED">
+        <text>Delete Chapter 3, subparagraph 4.d.  Page 3-2.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/r" path="p4/r" number="4.r." label="r." depth="1" verification="UNVERIFIED">
+        <text>Delete paragraph 6 and replace (see inserted language).  Page 3-8.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/s" path="p4/s" number="4.s." label="s." depth="1" verification="UNVERIFIED">
+        <text>Delete Table 3-2 and replace (see inserted language).  Page 3-9.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-2/p4/t" path="p4/t" number="4.t." label="t." depth="1" verification="UNVERIFIED">
+        <text>Delete Chapter 3, paragraph 9.  Page 3-9.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-5-2" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-2" heading="5. Administration and Logistics" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-2/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Administration and Logistics</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-2/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Submit all recommendations concerning this Order to Commanding General, Training and Education Command (CG TECOM) via the Force Fitness Division.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-2/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Records Management.  Records created as a result of this Order shall be managed according to National Archives and Records Administration (NARA) approved dispositions per reference (b) and (r) to ensure proper maintenance, use, accessibility and preservation, regardless of format or medium.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-2/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Privacy Act.  Any misuse or unauthorized disclosure of Personally Identifiable Information (PII) may result in both civil and criminal penalties.  The Department of the Navy (DON) recognizes that the privacy of an individual is a personal and fundamental right that shall be respected and protected.  The DON's need to collect, use, maintain, or disseminate PII about individuals for purposes of discharging its statutory responsibilities will be balanced against the individuals' right to be protected against unwarranted invasion of privacy.  All collection, use, maintenance, or dissemination of PII will be in accordance with the Privacy Act of 1974, as amended per reference (c) and implemented per reference (d).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-2/p5/d" path="p5/d" number="5.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Forms Management.  Navy Forms Online (NFOL) is the official online resource for Marine Corps forms.  Marine Corps forms identified in this Order may be retrieved from:  https://forms.documentservices.dla.mil/order/.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-2/p5/e" path="p5/e" number="5.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Physical Fitness and Combat Fitness Tests (PFT/CFT) Videos. Instructional videos on PFT/CFT administration can be found at: http://www.fitness.marines.mil. MCO 6100.13A CH 1 13 MAR 2019 3</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-6" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6" heading="6. Command and Signal" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref" path="ref" number="Ref:" label="Ref:" depth="0" role="reference" verification="UNVERIFIED">
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/a" path="ref/a" number="(a)" label="(a)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DODI 1308.3 “DOD PHYSICAL FITNESS AND BODY FAT PROGRAMS PROCEDURES,” November 5, 2002</text>
+        <citation target="DODI-1308.3" targetIdentifier="/us/dod/dodi/1308_3" basis="cited" text="DODI 1308.3 “DOD PHYSICAL FITNESS AND BODY FAT PROGRAMS PROCEDURES,” November 5, 2002"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/b" path="ref/b" number="(b)" label="(b)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAV M-5210.1 CH-1</text>
+        <citation target="SECNAVM-5210.1-CH1" targetIdentifier="/us/dod/don/secnavm/5210_1/ch1" basis="cited" text="SECNAV M-5210.1 CH-1"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/c" path="ref/c" number="(c)" label="(c)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>5 U.S.C 552a</text>
+        <citation target="USC-T5-S552a" targetIdentifier="/us/usc/t5/s552a" basis="cited" text="5 U.S.C 552a"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/d" path="ref/d" number="(d)" label="(d)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAVINST 5211.5F</text>
+        <citation target="SECNAVINST-5211.5F" targetIdentifier="/us/dod/don/secnavinst/5211_5f" basis="cited" text="SECNAVINST 5211.5F"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/e" path="ref/e" number="(e)" label="(e)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCRP 8-10B.4</text>
+        <citation target="MCRP-8-10B.4" targetIdentifier="/us/dod/don/usmc/mcrp/8-10b_4" basis="cited" text="MCRP 8-10B.4"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/f" path="ref/f" number="(f)" label="(f)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 3500.27C</text>
+        <citation target="MCO-3500.27C" targetIdentifier="/us/dod/don/usmc/mco/3500_27c" basis="cited" text="MCO 3500.27C"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/g" path="ref/g" number="(g)" label="(g)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 5210.11F</text>
+        <citation target="MCO-5210.11F" targetIdentifier="/us/dod/don/usmc/mco/5210_11f" basis="cited" text="MCO 5210.11F"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/h" path="ref/h" number="(h)" label="(h)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MARINE CORPS TOTAL FORCE SYSTEM PERSONNEL RERPORTING INSTRUCTION USER’S MANUAL (MCTFS PRIUM)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/i" path="ref/i" number="(i)" label="(i)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO P1070.12K W/CH 1</text>
+        <citation target="MCO-1070.12K-CH1" targetIdentifier="/us/dod/don/usmc/mco/1070_12k/ch1" basis="cited" text="MCO P1070.12K W/CH 1"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/j" path="ref/j" number="(j)" label="(j)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO P1610.7A</text>
+        <citation target="MCO-1610.7A" targetIdentifier="/us/dod/don/usmc/mco/1610_7a" basis="cited" text="MCO P1610.7A"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/k" path="ref/k" number="(k)" label="(k)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 1900.16 CH2</text>
+        <citation target="MCO-1900.16-CH2" targetIdentifier="/us/dod/don/usmc/mco/1900_16/ch2" basis="cited" text="MCO 1900.16 CH2"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/l" path="ref/l" number="(l)" label="(l)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAVINST 1920.6D</text>
+        <citation target="SECNAVINST-1920.6D" targetIdentifier="/us/dod/don/secnavinst/1920_6d" basis="cited" text="SECNAVINST 1920.6D"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/m" path="ref/m" number="(m)" label="(m)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO P1040.31</text>
+        <citation target="MCO-1040.31" targetIdentifier="/us/dod/don/usmc/mco/1040_31" basis="cited" text="MCO P1040.31"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/n" path="ref/n" number="(n)" label="(n)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO P1400.31C W/CH1 Volume 1</text>
+        <citation target="MCO-1400.31C-CH1" targetIdentifier="/us/dod/don/usmc/mco/1400_31c/ch1" basis="cited" text="MCO P1400.31C W/CH1 Volume 1"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/o" path="ref/o" number="(o)" label="(o)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO P1400.32D W/CH2 Volume 2</text>
+        <citation target="MCO-1400.32D-CH2" targetIdentifier="/us/dod/don/usmc/mco/1400_32d/ch2" basis="cited" text="MCO P1400.32D W/CH2 Volume 2"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/p" path="ref/p" number="(p)" label="(p)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO P1326.6D W/CH 2</text>
+        <citation target="MCO-1326.6D-CH2" targetIdentifier="/us/dod/don/usmc/mco/1326_6d/ch2" basis="cited" text="MCO P1326.6D W/CH 2"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/q" path="ref/q" number="(q)" label="(q)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>BUMEDINST 6320.66E CH-2</text>
+        <citation target="BUMEDINST-6320.66E-CH2" targetIdentifier="/us/dod/don/bumedinst/6320_66e/ch2" basis="cited" text="BUMEDINST 6320.66E CH-2"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/ref/r" path="ref/r" number="(r)" label="(r)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAV Notice 5210</text>
+        <citation target="SECNAVNOTE-5210" targetIdentifier="/us/dod/don/secnavnote/5210" basis="cited" text="SECNAV Notice 5210"/>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/encl" path="encl" number="Encl:" label="Encl:" depth="0" role="enclosure" verification="UNVERIFIED">
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/encl/1" path="encl/1" number="(1)" label="(1)" depth="1" role="enclosure" verification="UNVERIFIED">
+        <text>Procedural Guidance for the Execution of the Marine Corps Physical Fitness and Combat Fitness Tests.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Command and Signal</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/p6/a" path="p6/a" number="6.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Command.  This Order is applicable to the Marine Corps Total Force.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/p6/b" path="p6/b" number="6.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Signal.   This Order is effective the date signed.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Situation.  To provide policy and procedural guidance for implementation of the Marine Corps Physical Fitness Test (PFT) and Combat Fitness Test (CFT).</text>
+    </provision>
+  </section>
+  <section anchor="p-2" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2" heading="2. Mission. This Order establishes procedures and standards for the" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-3" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3" heading="3. Execution" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Execution</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Commander’s Intent and Concept of Operations</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3/a/1" path="p3/a/1" number="3.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Commander’s Intent.  Every Marine must be physically fit, as per reference (a).  All Marines should adopt a healthy lifestyle and a lifelong commitment to fitness.  This combination has a direct and positive impact on MCO 6100.13A 17 JAN 2018 2 job performance and combat readiness.  The PFT/CFT, combined with military occupational specific physical standards, are means to assess general and occupational fitness of Marines in accordance with reference (a).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3/a/2" path="p3/a/2" number="3.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Concept of Operations.  COs/OICs shall conduct periodic physical and combat fitness evaluations in accordance with reference (a) and the instructions contained in enclosure (1).</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Subordinate Element Missions</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3/b/1" path="p3/b/1" number="3.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Deputy Commandant for Manpower &amp; Reserve Affairs (DC M&amp;RA)</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3/b/1/a" path="p3/b/1/a" number="3.b.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Ensure promotion, retention, assignment, and reporting policies are consistent with the policies established in this Order.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3/b/1/b" path="p3/b/1/b" number="3.b.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Provide a capable system to report and record individual PFT/CFT performance data in order to facilitate analysis and modification, as required.</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3/b/2" path="p3/b/2" number="3.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Commanding General, Training &amp; Education Command (CG TECOM)</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3/b/2/a" path="p3/b/2/a" number="3.b.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Serve as program sponsor and provide subject matter experts in order to ensure the currency and relevance of the PFT/CFT.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3/b/2/b" path="p3/b/2/b" number="3.b.(2)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Manage and monitor the PFT/CFT through development, implementation, and interpretation of standards, policies, and procedures consistent with the requirements contained in reference (a).</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3/b/3" path="p3/b/3" number="3.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Director, Safety Division (SD)</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3/b/3/a" path="p3/b/3/a" number="3.b.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Provide an annual assessment of PFT/CFT related injuries (Class A-C) to CG TECOM (C469) no later than 28 February for the previous period 1 January through 31 December, in order to analyze and make appropriate adjustments to the PFT/CFT, as required.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3/b/3/b" path="p3/b/3/b" number="3.b.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Serve as a repository for PFT/CFT related injuries (Class A- C) via Web Enabled Safety System (WESS).</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3/b/4" path="p3/b/4" number="3.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Inspector General of the Marine Corps (IGMC)</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3/b/4/a" path="p3/b/4/a" number="3.b.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Review implementation, execution, and management of the PFT/CFT during command inspections.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3/p3/b/4/b" path="p3/b/4/b" number="3.b.(4)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Provide assessments of PFT/CFT execution as required, or via IGMC unit inspection reports to the Commandant of the Marine Corps (CMC).</text>
+          </provision>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-4-3" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-3" heading="4. Administration and Logistics" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-3/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Administration and Logistics</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-3/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Submit all recommendations concerning this Order to CG TECOM via the Force Fitness Division (C469).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-3/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Records Management.  Records created as a result of this Order shall be managed according to National Archives and Records Administration (NARA) approved dispositions per references (r) and (b) to ensure proper maintenance, use, accessibility and preservation, regardless of format or medium.  Refer to reference (g) for Marine Corps records management policy and procedures. MCO 6100.13A 17 JAN 2018 3</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-3/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Privacy Act.  Any misuse or unauthorized disclosure of Personally Identifiable Information (PII) may result in both civil and criminal penalties.  The Department of the Navy (DON) recognizes that the privacy of an individual is a personal and fundamental right that shall be respected and protected.  The DON's need to collect, use, maintain, or disseminate PII about individuals for purposes of discharging its statutory responsibilities shall be balanced against the individuals' right to be protected against unwarranted invasion of privacy.  All collection, use, maintenance, or dissemination of PII shall be in accordance with the Privacy Act of 1974, as amended (reference (c)) and implemented per reference (d).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-3/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Forms Management.  Navy Forms Online (NFOL) is the official online resource for Marine Corps forms.  Marine Corps forms identified in this Order may be retrieved from: https://forms.documentservices.dla.mil/order/.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-3/p4/e" path="p4/e" number="4.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Physical Fitness and Combat Fitness Tests (PFT/CFT) Videos. Instructional videos on PFT/CFT administration can be found at: http://www.fitness.marines.mil.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-5-3" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-3" heading="5. Command and Signal" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-3/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Command and Signal</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-3/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Command.  This Order is applicable to the Marine Corps Total Force.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-3/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Signal.   This Order is effective the date signed.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-9" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-9" heading="9. Altitude Considerations.........................2-9" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-9-2" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-9-2" heading="9. Altitude Considerations.........................3-9" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-1" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-1" heading="1. Objective. As professional warrior-athletes, every Marine must be" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-2-2" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2" heading="2. Responsibilities" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Responsibilities</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Commanding Officers/Officers in Charge (COs/OICs)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/a/1" path="p2/a/1" number="2.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Ensure Marines comply with the requirements and standards contained in this Order and take appropriate action when required.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Select and assign in writing a Force Fitness Instructor (FFI) and/or Command Physical Training Representative (CPTR).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/a/3" path="p2/a/3" number="2.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Ensure the timely and accurate recording of performance data in Marine-On-Line (MOL), Unit Diary/Marine Integrated Personnel System (UD/MIPS), and the Marine Corps Training Information Management System (MCTIMS).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/a/4" path="p2/a/4" number="2.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Ensure appropriate administrative actions as a result of a PFT/CFT/ Partial Physical Fitness Tests (PPFT)/ Partial Combat Fitness Tests (PCFT) failure are conducted in accordance with this Order.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/a/5" path="p2/a/5" number="2.a.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Ensure the timely and accurate recording, reporting and investigation of all physical training, PFT, CFT, PPFT, and PCFT Class A-C mishaps via the WESS reporting system.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/a/6" path="p2/a/6" number="2.a.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>Responsible for ensuring proper execution of the PFT/CFT, as well as accurate testing setups.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/a/7" path="p2/a/7" number="2.a.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+          <text>Ensure command physical training programs are not developed solely for the preparation of the PFT or CFT.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Force Fitness Instructors or Command Physical Training Representative (FFI or CPTR)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/b/1" path="p2/b/1" number="2.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Review reference (e) and the contents of this Order, immediately upon assignment.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/b/2" path="p2/b/2" number="2.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Responsible for coordinating and supervising the execution of regularly scheduled organizational semi-annual PFTs/CFTs.  Responsibilities may include, but not limited to the following: MCO 6100.13A 17 JAN 2018 1-2 Enclosure (1)</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/b/2/a" path="p2/b/2/a" number="2.b.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Select and train PFT/CFT assistant monitors, for administration of the PFT/CFT, as required.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/b/2/b" path="p2/b/2/b" number="2.b.(2)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Select CFT location.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/b/2/c" path="p2/b/2/c" number="2.b.(2)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Select PFT run route.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/b/2/d" path="p2/b/2/d" number="2.b.(2)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Conduct PFT/CFT Risk Management (RM) evaluations in accordance with reference (f).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/b/2/e" path="p2/b/2/e" number="2.b.(2)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Document and record PFT/CFT evaluation performance data.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/b/2/f" path="p2/b/2/f" number="2.b.(2)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Manage and maintain PFT/CFT documentation in accordance with reference (g).</text>
+          </provision>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Individual Marines</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/c/1" path="p2/c/1" number="2.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Every Marine must be physically fit.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-2/p2/c/2" path="p2/c/2" number="2.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Every Marine is responsible to comply with the standards and requirements contained in this Order.</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-3-2" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2" heading="3. Reporting" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Reporting</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Physical Fitness Test, Combat Fitness Test, Partial Physical Fitness Test, Partial Combat Fitness Test (PFT/CFT/PPFT/PCFT).  FFI or CPTR monitors will ensure the timely submission of final PFT/CFT/PPFT/PCFT Performance Worksheets in accordance with reference (d) and locally established administrative procedures.  Only a command approved, FFI or CPTR monitored PFT/CFT/PPFT/PCFT satisfies the annual requirement.  Only a command approved, FFI or CPTR monitored PFT/CFT/PPFT/PCFT will be recorded as an entry in MCTIMS, Marine Corps Total Force System (MCTFS), MOL, or as an item 8b/c of Section A entry on NAVMC 10835 “USMC Fitness Report”.  PFT/CFT/PPFT/PCFTs run for official score and recording are only conducted in their current season. For exemptions and waivers, refer to paragraph six of this Order, and utilize reference (h) for data entry.  For Marines in a light or limited duty status that miss the semi-annual requirement, refer to paragraph 5 “Medical Considerations” for make-up tests.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Multiple Attempts</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/b/1" path="p3/b/1" number="3.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Marines are allowed to take multiple PFT/CFT/PPFT/PCFTs to improve their score during the current PFT/CFT season.  Every official PFT/PPFT/CFT/PCFT taken will be entered into MCTIMS regardless of whether the score is higher, lower, or the same as previous attempts.  If a Marine has failed an official PFT/PPFT/CFT/PCFT, COs/OICs will comply with paragraph 3d below.  Any PFT/CFT that is a monitored by a properly assigned FFI/CPTR is considered an official PFT/CFT.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/b/2" path="p3/b/2" number="3.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Since recruits are subject to multiple PFTs as part of recruit training, it will be the decision of the CGs of the Marine Corps Recruit Depots (MCRD) to designate which PFT/CFT score taken during recruit training is designated as their graduation requirement and entered into MCTIMS.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Required Did Not Take (RDNT).  If a Marine was required, but did not take (RDNT) the PFT or CFT, this renders a fitness report adverse if the MCO 6100.13A 17 JAN 2018 1-3 Enclosure (1) Reporting Senior (RS) deems the Marine Reported On (MRO) did not exercise due diligence in meeting the PFT/CFT/PPFT/PCFT semi-annual/annual requirement.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/d" path="p3/d" number="3.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>PFT/CFT/PPFT/PCFT failure.  A failure in any of the PFT/CFT/PPFT/PCFTs taken during the testing period, will render a fitness report adverse, have proficiency mark implications, will place a Marine in a promotion restriction status until a PFT/CFT/PPFT/PCFT is passed, and may result in other administrative consequences.  A page 11, 6105 counseling entry is required when a Marine has failed a PFT/CFT/PPFT/PCFT in accordance with reference (i) for enlisted personnel, and enclosure (3) of reference (l) for officers.  Once a Marine has passed a failed PFT/CFT/PPFT/PCFT, the Marine will receive the minimum passing score until the next applicable semi- annual period.  If a Marine fails consecutive PFTs/PPFTs or CFTs/PCFTs (not multiple attempts within the same semi-annual reporting period), they will be considered for administrative separation (in accordance with reference (k)). For example, if a Marine fails a PFT and CFT in the same year, they will not be considered for administrative separation.  However, in the following year if the Marine fails a PFT or CFT they will be considered for administrative separation. For example, if a Marine fails a PFT and passes the CFT in one year and then they fail the PFT the following year the Marine will be considered for administrative separation. Additionally, if a Marine fails a PFT/PPFT or CFT/PCFT and passes on a subsequent attempt they will still be considered for administrative separation if they fail the same event the following year.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/e" path="p3/e" number="3.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Performance Evaluation</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/e/1" path="p3/e/1" number="3.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Proficiency Marks.  For corporals and below, Proficiency Marks will be adjusted commensurate with PFT/CFT/PPFT/PCFT performance, in accordance with paragraph 4005 of reference (i).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/e/2" path="p3/e/2" number="3.e.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Fitness Reports</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/e/2/a" path="p3/e/2/a" number="3.e.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Directed Comments.  For sergeants and above, PFT/CFT/PPFT/PCFT scores will be recorded on item 8b/c of Section A for the respective reporting period, in accordance with reference (j). PFT/CFT/PPFT/PCFT failures render a fitness report adverse. PFT/CFT/PPFT/PCFT failures will be addressed within the reporting period in which they occur, regardless of performance on a more recent PFT/CFT/PPFT/PCFT.  Failure of PFT/CFTs conducted at formal schools or as part of unit inspector general (IG) inspections constitute a failure even if they are taken out of season.  A Section I directed comment will be made to address the following circumstances:</text>
+          </provision>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Score of 285 and above</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Not Medically Qualified (NMED)</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Medical basis for PPFT/PCFT</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Physical Fitness Test, Combat Fitness Test, Partial Physical Fitness Test, Partial Combat Fitness Test (PFT/CFT/PPFT/PCFT).  FFI or CPTR monitors will ensure the timely submission of final PFT/CFT/PPFT/PCFT Performance Worksheets in accordance with reference (d) and locally established administrative procedures.  Only a command approved, FFI or CPTR monitored PFT/CFT/PPFT/PCFT satisfies the annual requirement.  Only a command approved, FFI or CPTR monitored PFT/CFT/PPFT/PCFT will be recorded as an entry in MCTIMS, Marine Corps Total Force System (MCTFS), MOL, or as an item 8b/c of Section A entry on NAVMC 10835 “USMC Fitness Report”.  PFT/CFT/PPFT/PCFTs run for official score and recording are only conducted in their current season. For exemptions and waivers, refer to paragraph six of this Order, and utilize reference (h) for data entry.  For Marines in a light or limited duty status that miss the semi-annual requirement, refer to paragraph 5 “Medical Considerations” for make-up tests.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Multiple Attempts</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/b/1" path="p3/b/1" number="3.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Marines are allowed to take multiple PFT/CFT/PPFT/PCFTs to improve their score during the current PFT/CFT season.  Every official PFT/PPFT/CFT/PCFT taken will be entered into MCTIMS regardless of whether the score is higher, lower, or the same as previous attempts.  If a Marine has failed an official PFT/PPFT/CFT/PCFT, COs/OICs will comply with paragraph 3d below.  Any PFT/CFT that is a monitored by a properly assigned FFI/CPTR is considered an official PFT/CFT.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/b/2" path="p3/b/2" number="3.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Since recruits are subject to multiple PFTs as part of recruit training, it will be the decision of the CGs of the Marine Corps Recruit Depots (MCRD) to designate which PFT/CFT score taken during recruit training is designated as their graduation requirement and entered into MCTIMS.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Required Did Not Take (RDNT).  If a Marine was required, but did not take (RDNT) the PFT or CFT, this renders a fitness report adverse if the MCO 6100.13A 17 JAN 2018 1-3 Enclosure (1) Reporting Senior (RS) deems the Marine Reported On (MRO) did not exercise due diligence in meeting the PFT/CFT/PPFT/PCFT semi-annual/annual requirement.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/d" path="p3/d" number="3.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>PFT/CFT/PPFT/PCFT failure.  A failure in any of the PFT/CFT/PPFT/PCFTs taken during the testing period, will render a fitness report adverse, have proficiency mark implications, will place a Marine in a promotion restriction status until a PFT/CFT/PPFT/PCFT is passed, and may result in other administrative consequences.  A page 11, 6105 counseling entry is required when a Marine has failed a PFT/CFT/PPFT/PCFT in accordance with reference (i) for enlisted personnel, and enclosure (3) of reference (l) for officers.  Once a Marine has passed a failed PFT/CFT/PPFT/PCFT, the Marine will receive the minimum passing score until the next applicable semi- annual period.  If a Marine fails consecutive PFTs/PPFTs or CFTs/PCFTs (not multiple attempts within the same semi-annual reporting period), they will be considered for administrative separation (in accordance with reference (k)). For example, if a Marine fails a PFT and CFT in the same year, they will not be considered for administrative separation.  However, in the following year if the Marine fails a PFT or CFT they will be considered for administrative separation. For example, if a Marine fails a PFT and passes the CFT in one year and then they fail the PFT the following year the Marine will be considered for administrative separation. Additionally, if a Marine fails a PFT/PPFT or CFT/PCFT and passes on a subsequent attempt they will still be considered for administrative separation if they fail the same event the following year.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/e" path="p3/e" number="3.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Performance Evaluation</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/e/1" path="p3/e/1" number="3.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Proficiency Marks.  For corporals and below, Proficiency Marks will be adjusted commensurate with PFT/CFT/PPFT/PCFT performance, in accordance with paragraph 4005 of reference (i).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/e/2" path="p3/e/2" number="3.e.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Fitness Reports</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/e/2/a" path="p3/e/2/a" number="3.e.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Directed Comments.  For sergeants and above, PFT/CFT/PPFT/PCFT scores will be recorded on item 8b/c of Section A for the respective reporting period, in accordance with reference (j). PFT/CFT/PPFT/PCFT failures render a fitness report adverse. PFT/CFT/PPFT/PCFT failures will be addressed within the reporting period in which they occur, regardless of performance on a more recent PFT/CFT/PPFT/PCFT.  Failure of PFT/CFTs conducted at formal schools or as part of unit inspector general (IG) inspections constitute a failure even if they are taken out of season.  A Section I directed comment will be made to address the following circumstances:</text>
+          </provision>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>RDNT MCO 6100.13A 17 JAN 2018 1-4 Enclosure (1)</text>
+    </provision>
+  </section>
+  <section anchor="p-4-4" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-4" heading="4. Administrative Actions. Table 1-1 contains a summary of required" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-5-4" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-4" heading="5. Medical Considerations. When a Marine is unable to complete a PFT/CFT" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-4/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Medical Considerations.  When a Marine is unable to complete a PFT/CFT due to an underlying physical or medical condition, an evaluation by a Privileged Health Care Provider (PHCP) must be conducted in accordance with reference (q).  A PHCP for purposes of this Order is a medical officer, nurse practitioner, independent duty corpsman, or a physician’s assistant.  The PHCP will make a medical status determination regarding the Marine's ability to complete the PFT/CFT/PPFT/PCFTs, or if referral to a Medical Evaluation Board (MEB)/Physical Evaluation Board (PEB) is warranted.  A medical determination is required to excuse a Marine from participating in a particular event or an entire test, but a PEB finding is required for a semi- annual/annual exemption.  Marines assigned to a light/limited duty status are not exempt from the semi-annual/annual PFT/CFT requirement and are still required to perform those events not affected by the condition, unless otherwise specified by the PHCP. For example, a Marine may be placed on light duty for 30 days and excused from performing a PFT/CFT in March due to a training injury in February, but the Marine not exempt from completing a PFT and CFT for the January to June semi-annual period. If the condition becomes extended or is considered permanent in nature, then a determination by a formal MEB, PEB, or both must be conducted to determine the Marine's medical qualification for continued active service.  A Marine may not be repeatedly excused from participation in the PFT/CFT without a MEB determination and is not exempt from the semi-annual/annual requirement without a PEB determination.</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-4/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>PPFT/PCFT.  Marines who are medically excused from performing a particular event of the PFT or CFT, as certified by a PHCP, are still required to perform a PPFT/PCFT.</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-4/p5/a/1" path="p5/a/1" number="5.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Marines will perform a PPFT/PCFT when a PHCP determines they are physically incapable of performing a particular event of the PFT/CFT.  The PHCP will document the medical condition, expiration date, exercise limitations, and PPFT/PCFT events a Marine can perform during the light/limited duty period.  If a Marine is unable to take a full PFT/CFT, every consideration should be taken by the PHCP for Marines to take a PPFT or PCFT, with the health of the Marine the foremost consideration.  For Marines who are incapable of performing any portion of a PFT/CFT, their inability MCO 6100.13A 17 JAN 2018 1-5 Enclosure (1) will not be considered a failure and an appropriate fitness report Section I Directed Comment will be made, in accordance with reference (j).  COs/OICs will ensure assistance is provided to Marines in order to facilitate their return to full duty.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-4/p5/a/2" path="p5/a/2" number="5.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>To meet PPFT requirements, Marines must complete two of the three PFT events.  Marines will be required to obtain at least the minimum acceptable performance requirements for the two events, as well as earn the additional points needed to achieve the score of 100 points or better.  Event times/repetitions will be awarded points the same way the PFT awards points. As with a PFT, failure to meet the minimum requirements in either event constitutes a test failure.  For Marines requiring a composite score for promotion purposes, commands will use the aggregate score (points) achieved during the last semi-annual/annual PFT for the event missed.  For events that are no longer available, such as the flexed arm hang, commands will run the equivalent score or minimum passing score for that event in order to produce a composite score.  Similarly, if a Marine received a low passing score previously that is now a failed scored per the new standards, the closest passing score for that event should be run.  See table 1-1 for a summary of administrative actions warranted as a result of PFT failure and table 2-1 for PFT classification scores.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-4/p5/a/3" path="p5/a/3" number="5.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>To meet PCFT requirements, Marines must complete at least one of the three CFT events.  Marines will be required to obtain the minimum acceptable performance requirements for the single event.  As with a CFT, failure to meet the minimum requirement will constitute a test failure.  In most cases, musculoskeletal limitations will allow for the conduct of either the Movement To Contact (MTC) or Ammunition Lift (AL).  Considering the all- encompassing nature of the Maneuver Under Fire (MANUF), musculoskeletal limitations may limit participating in this event as the one selected when performing a PCFT.  For Marines requiring a composite score for promotion purposes, commands will use the aggregate score (points) achieved during the last semi-annual/annual CFT for the event missed.  COs/OICs will run the equivalent score or minimum passing score for each event in order to allow a composite score to post.  See table 1-1 for a summary of administrative actions warranted as a result of PFT failure and table 2-1 for CFT classification scores.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-4/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Consecutive Partial Physical Fitness, and Partial Combat Fitness Tests (PPFT/PCFTs).  Marines who perform a PPFT/PCFT for two consecutive annual periods, for the same medical condition, will be referred to a PHCP for MEB/PEB evaluation, in accordance with reference (k).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-4/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Injury.  Marines injured during the conduct of a PFT/CFT may be given credit for a PPFT if two out of three events were completed, or for a PCFT if one out of three events were completed prior to the injury.  A Marine injured during the conduct of a PFT/CFT, may be afforded the opportunity to retake a PFT/CFT once returned to full duty by a PHCP.  For Marines who elect to retake the PFT/CFT, their new score will replace the previous score and is final.  Only COs/OICs can authorize PPFT/PCFT credit or a retest for Marines injured during the conduct of a PFT/CFT.  Marines completing only one event prior to the injury will receive neither a PFT score nor PPFT credit.  If assigned light duty status as a result of the injury, the Marine will be required to retake the PFT/CFT no earlier than 30 days, and no later than 90 days from return to full duty status.  Marines who are evaluated and not assigned a light duty status, will retake the PFT at the COs/OICs discretion. MCO 6100.13A 17 JAN 2018 1-6 Enclosure (1)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-4/p5/d" path="p5/d" number="5.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Illness.  Marines encountering a rapid onset illness prior to conducting a PFT/CFT must obtain a light duty chit.  Light duty chits will be submitted to the command prior to the scheduled PFT/CFT.  Only the CO/OIC can decide if a Marine will be authorized to take a missed PFT/CFT or if an RDNT determination is required.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-4/p5/e" path="p5/e" number="5.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Post-Light/Limited Duty</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-4/p5/e/1" path="p5/e/1" number="5.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Marines who did not take a PPFT or PCFT for the annual requirement due to physical/medical reasons, will be administered a PFT/CFT no less than 30 days and no more than 90 days after return to full duty. COs/OICs should be attentive that Marines returning to full duty status following an extended limited duty period will require a progressive training routine in returning to pre-injury/disease fitness levels.  If the grace period crosses over into the next semi-annual period, the Marine must take the test that was missed.  While NMED will be utilized to categorize the test during the period for which the Marine was unable to take a PFT/CFT, the make-up test must be passed or adverse administration actions will result as in a PFT/CFT failure in normal circumstances.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-4/p5/e/2" path="p5/e/2" number="5.e.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Marines who were able to perform a PPFT/PCFT and are able to complete a PFT/CFT after returning to full duty will have the option to either keep the PPFT/PCFT score or conduct a PFT/CFT.  Marines will be given a minimum of 30 days and no more than 90 days to complete a PFT/CFT.  The new score will replace the previous PPFT/PCFT.  If the grace period crosses over into the next semi-annual interval, the new PFT/CFT score will satisfy the current requirement and the PPFT/PCFT score will be utilized for the previous semi-annual/annual period.  The new score will not be considered a remedial score.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-4/p5/f" path="p5/f" number="5.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Pregnancy/Post-Partum</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-4/p5/f/1" path="p5/f/1" number="5.f.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Marines who are confirmed pregnant by a PHCP are exempt from taking the PFT/CFT.  After delivery, Marines will participate in an exercise program, as soon as medically authorized, to prepare for the PFT/CFT.  The Marine has to be prepared to take the PFT/CFT, no earlier than 12 months after the birth event.  Following this 12-month exemption, a Marine birthparent is expected to meet physical fitness standards at the next regularly scheduled unit physical fitness evaluation.  Additional time may be recommended by the PHCP and granted, if necessary, due to unique medical circumstances.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-4/p5/f/2" path="p5/f/2" number="5.f.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>For pregnancies that do not come to full term, Marines will be required to meet semi-annual/annual PFT/CFT requirements in a time period determined by a PHCP or Obstetrics (OB) healthcare provider.  Time limits will not exceed those that are prescribed for a full term pregnancy.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-4/p5/f/3" path="p5/f/3" number="5.f.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Difficult pregnancies, cesarean sections, or still births present unique challenges that may require greater recovery time.  Therefore, in pregnancies where complications develop, PHCPs will determine the time needed to return to full duty (RTFD) and complete a PFT/CFT.</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-6-2" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2" heading="6. Exemptions and Waivers" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Exemptions and Waivers</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/a" path="p6/a" number="6.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Exemptions.  Marines are exempt from annual PFT/CFT requirements under the following conditions: MCO 6100.13A 17 JAN 2018 1-7 Enclosure (1)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/a/1" path="p6/a/1" number="6.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Deployment to a combat zone while in receipt of hostile fire pay. Marines are exempt from the annual PFT/CFT requirement for 60 days following their departure from a combat zone/termination of hostile fire pay.  Routine deployments in support of the Unit Deployment Program (UDP) or Marine Expeditionary Units (MEU), and while not in receipt of hostile fire pay, do not exempt Marines from the semi-annual/annual PFT/CFT requirement. For example, a Marine deploys in May and is in receipt of hostile fire pay.  The Marine departs the combat zone and returns to Camp Pendleton in November.  The Marine is not required to perform an annual CFT until the next semi-annual period beginning in July. For example, a Marine deploys in August and is in receipt of hostile fire pay.  The Marine departs the combat zone and returns to Camp Lejeune in March.  The Marine is required to perform an annual PFT for the current semi-annual period that began in January.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/a/2" path="p6/a/2" number="6.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>For Marines on temporary limited duty, permanent limited duty, or awaiting PEB results, PHCP verification is required.  Marines on light duty or awaiting MEB results are not exempt from the annual PFT/CFT requirement.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/a/3" path="p6/a/3" number="6.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>After confirmation from a PHCP/OB healthcare provider and an appropriate duty limitation code entered into MCTFS.  Marines who are confirmed pregnant by a health care professional are exempt from taking the PFT/CFT.  After delivery, Marines will participate in an exercise program, as soon as medically authorized, to prepare for the PFT/CFT.  No earlier than 12 months after the date of the birth event, the Marine is expected to meet physical fitness standards at the next regularly scheduled unit physical fitness evaluation.  Additional time may be recommended by PHCP and granted, if necessary, due to unique medical circumstances.  Marines are exempt from taking the PFT/CFT during pregnancy, post-partum convalescent period, and for 12 months after the date of the birth event.  For pregnancies that do not come to full term, Marines will be required to meet PFT/CFT semi- annual/annual requirements, after consultation with a PHCP/OB health care provider and upon return to full duty.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b" path="p6/b" number="6.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Waivers</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/1" path="p6/b/1" number="6.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Waivers may be solicited only for short-term situations that temporarily prevent an individual, group, or an entire unit from completing the annual training requirements contained in this Order.  The intent is for units to request a waiver when it has been determined that time or the lack of sufficient resources will prevent an individual, group, or entire unit from accomplishing the required annual physical fitness program (PFP).  The purpose of granting waivers is to protect individual Marines who were legitimately unable to complete required semi-annual/annual training from being adversely affected.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/2" path="p6/b/2" number="6.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Waivers must state the circumstances preventing an individual, group, or unit from completing required PFP and what steps are being taken by the unit to fulfill established training requirements.  Unit “blanket waiver” requests are not permitted.  Waiver requests must be submitted with a by-name roster for all individuals needing a waiver.  Waivers will only apply for the time period requested, because semi-annual/annual PFT/CFT requirements are based on the calendar year. MCO 6100.13A 17 JAN 2018 1-8 Enclosure (1)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/3" path="p6/b/3" number="6.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>The authority to waive training rests with the following deputy commandants, commanding generals, and commanding officers and cannot be delegated:</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/3/a" path="p6/b/3/a" number="6.b.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>DC M&amp;RA</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/3/b" path="p6/b/3/b" number="6.b.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Marine Corps Combat Development Command (CG MCCDC)</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/3/c" path="p6/b/3/c" number="6.b.(3)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Marine Forces Command</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/3/d" path="p6/b/3/d" number="6.b.(3)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Marine Forces Pacific</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/3/e" path="p6/b/3/e" number="6.b.(3)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Marine Forces Central</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/3/f" path="p6/b/3/f" number="6.b.(3)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Marine Forces Europe</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/3/g" path="p6/b/3/g" number="6.b.(3)(g)" label="(g)" depth="3" verification="UNVERIFIED">
+            <text>Marine Forces South</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/3/h" path="p6/b/3/h" number="6.b.(3)(h)" label="(h)" depth="3" verification="UNVERIFIED">
+            <text>Marine Forces North</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/3/i" path="p6/b/3/i" number="6.b.(3)(i)" label="(i)" depth="3" verification="UNVERIFIED">
+            <text>Marine Forces Africa</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/3/j" path="p6/b/3/j" number="6.b.(3)(j)" label="(j)" depth="3" verification="UNVERIFIED">
+            <text>Marine Forces Reserve</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/3/k" path="p6/b/3/k" number="6.b.(3)(k)" label="(k)" depth="3" verification="UNVERIFIED">
+            <text>Marine Forces Special Operations Command</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/3/l" path="p6/b/3/l" number="6.b.(3)(l)" label="(l)" depth="3" verification="UNVERIFIED">
+            <text>I, II, and III Marine Expeditionary Force</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/4" path="p6/b/4" number="6.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>For separate organizations not commanded by a General Officer, authorization to waive training must be obtained from CG, MCCDC (C469).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/5" path="p6/b/5" number="6.b.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>For Marine activities that are not tenants of Marine Corps posts or stations, waivers shall be submitted to CG, MCCDC (C469).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-2/p6/b/6" path="p6/b/6" number="6.b.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>Commands authorized by this Order to grant waivers must send a copy of the waiver response to CG, MCCDC (C469) within 30 days of disposition. MCO 6100.13A CH-4 23 Mar 2022 2-1                       Enclosure (1) Chapter 2 Physical Fitness Test (PFT)</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-1-2" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-1-2" heading="1. Purpose. The PFT is a collective measure of general fitness Marine" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-2-3" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-3" heading="2. Requirement" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-3/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Requirement</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-3/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Active Component.  The PFT is a scored, calendar year annual requirement for all active duty Marines.  It is required to be conducted between 1 January and 30 June of each year.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-3/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Reserve Component.  The PFT is a scored, calendar year annual requirement for all Selected Marine Corps Reserve (SMCR) and Individual Mobilization Augmentee (IMA) Marines.  PFT scores will remain valid for two years for promotional purposes should operational constraints prevent annual testing.  It is required to be conducted between 1 January and 30 June of each year.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-3/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Activated Reservists.  Activated Reserve Marines, to include Active Reserve (AR), mobilized or those performing Active Duty Operational Support (ADOS) will comply with the active component annual PFT requirement. Exceptions and waivers will be administered in accordance with this Order.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-3/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>End of Active Service/Retirement.  Marines are required to complete a PFT during the annual period preceding their End of Active Service (EAS) or retirement date, unless otherwise directed.  The terminal leave date will not be utilized to determine PFT requirements.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-3/p2/e" path="p2/e" number="2.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>End of Active Service (EAS)/Retirement Final Physical Examination. Completion of the required final physical examination, regardless of when completed, does not exempt a Marine from performing a PFT.  A Marine, who elects to complete their final physical examination 7-12 months prior to EAS or retirement, is still required to perform the annual PFT for that period. This policy is also applicable to the reserve component annual requirement. For example, a Marine who completes their final physical examination in March, but does not EAS or retire until October, is still required to perform the annual PFT for the January-June timeframe.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-3-3" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-3" heading="3. Sequence. The PFT consists of three events. Marines will choose to" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-4-5" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-5" heading="4. Procedures" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-5/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Procedures</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-5/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Safety.  RM will be utilized in order to ensure PFT participants are not exposed to unnecessary risk.  COs/OICs shall ensure all personnel have a current PHA prior to participating in command PFP activities to include physical fitness testing and combat fitness testing.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-5/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Supervision.  The FFI or CPTR will monitor the PFT and maintain the NAVMC 11622, “PFT/CFT Performance Worksheet.”  The form can be found on the FFD website, https://www.fitness.marines.mil/, or at, https://forms.documentservices.dla.mil/order/.  Prior to the execution of each event, the FFI or CPTR will ask the Marines if they have any injuries that will prevent them from performing the event.  Marines will be kept advised of their progress as they are performing each event by the FFI or CPTR.  COs/OICs are responsible for the proper administration of the PFT.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-5/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Monitor Certification.  Monitor certification must be completed via MarineNet through the “PFT/CFT Monitor Certification” course before Marines are certified as monitors.  Both FFIs and CPTRs must complete this certification course to be able to serve as monitors.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-5/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Uniform.  The only authorized uniform for the PFT is the Marine Corps approved green-on-green T-shirt, shorts, and running shoes.  The green-on- green sweat suit or running suit with watch cap and gloves may be worn, as required.  However, the running suit is not to be used in conjunction with the sweat suit in any combination.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-5/p4/e" path="p4/e" number="4.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Equipment.  A timepiece (digital or stopwatch) that accurately measures time to the second is required for push-ups, abdominal crunch, plank, and three mile run.  A “Concept 2” brand ergometer is required for Marines that select the 5,000m rowing event as an alternative aerobic event.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-5-5" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5" heading="5. Events" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Events</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Hybrid Pull-up/ Push-up Test</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/a/1" path="p5/a/1" number="5.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>This event gives Marines the option to do either pull-ups or push-ups.  All Marines should be encouraged to do pull-ups as this is a better field test of dynamic upper body strength.  Additionally, maximum points on the hybrid pull-up/push-up test can only be earned by doing pull- ups.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/a/2" path="p5/a/2" number="5.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Prior to the hybrid pull-up/push-up test Marines will indicate to the FFI or CPTR if they will attempt pull-ups or push-ups.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/a/3" path="p5/a/3" number="5.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Marines must score at least the minimum points on the event selected to pass this test.  If unable to meet at least the minimum points, this constitutes a failure of this event and of the PFT.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/a/4" path="p5/a/4" number="5.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Either pull-ups or push-ups will be conducted on this test. Push-up and pull-up scores cannot be combined for a total score on this event. MCO 6100.13A 17 JAN 2018 2-3                       Enclosure (1)</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Pull-up</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/b/1" path="p5/b/1" number="5.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>This is not a timed event and can be conducted either indoors or outdoors.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/b/2" path="p5/b/2" number="5.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Diameter of the bar may range between 1 and 1 3/4 inches.  The use of athletic tape on the bar is authorized.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/b/3" path="p5/b/3" number="5.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>The bar must be high enough to allow the tallest Marine’s legs to hang straight without touching the ground, when arms are fully extended.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/b/4" path="p5/b/4" number="5.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Sweatshirts/running suit top or long sleeve shirt must be removed during the conduct of the pull-up event in order to observe the lockout of the elbows with each repetition.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/b/5" path="p5/b/5" number="5.b.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>The preparatory command is “Ready” and the execute command is “Begin.”</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/b/6" path="p5/b/6" number="5.b.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>Assistance to the bar with a step up, being lifted up, or jumping up is authorized.  Assistance up to the bar will not be used as momentum into the first pull-up.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/b/7" path="p5/b/7" number="5.b.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+          <text>The bar must be grasped with both palms facing either forward or to the rear.  Gloves are authorized for wear, but wrist wraps are not authorized.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/b/8" path="p5/b/8" number="5.b.(8)" label="(8)" depth="2" verification="UNVERIFIED">
+          <text>The correct starting position begins when arms are fully extended beneath the bar, feet are free from touching the ground or any bar mounting assist, and the body is motionless.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/b/9" path="p5/b/9" number="5.b.(9)" label="(9)" depth="2" verification="UNVERIFIED">
+          <text>Legs may be positioned in a straight or bent position, but knees may not be raised above the waist.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/b/10" path="p5/b/10" number="5.b.(10)" label="(10)" depth="2" verification="UNVERIFIED">
+          <text>One repetition consists of raising the body with the arms until the chin is above the bar and then lowering the body until the arms are fully extended; repeat as many repetitions as possible.  At no time during the execution of this event can a Marine rest the chin on the bar.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/b/11" path="p5/b/11" number="5.b.(11)" label="(11)" depth="2" verification="UNVERIFIED">
+          <text>The intent is to execute a vertical “dead hang” pull-up.  A certain amount of inherent body movement will occur as the pull-up is executed.  However, the intent is to avoid a pendulum-like motion that enhances the ability to execute the pull-up.  Whipping, kicking, or kipping of the body or legs, or any leg movement used to assist in the vertical progression of the pull-up is not authorized.  If observed, the repetition does not count for score.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/b/12" path="p5/b/12" number="5.b.(12)" label="(12)" depth="2" verification="UNVERIFIED">
+          <text>A repetition will be counted when a correct and complete pull-up is performed.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/b/13" path="p5/b/13" number="5.b.(13)" label="(13)" depth="2" verification="UNVERIFIED">
+          <text>The goal of this event is for Marines to execute as many correct and complete pull-ups before dropping off the bar.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Push-ups</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/c/1" path="p5/c/1" number="5.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>This is a timed event to perform as many push-ups as possible in two minutes.  This event can be conducted either indoors or outdoors. MCO 6100.13A 17 JAN 2018 2-4                       Enclosure (1)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/c/2" path="p5/c/2" number="5.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Sweatshirts will be removed during the conduct of the push-up event to observe full extension of the arms and upper arms (above the elbow) parallel to the deck.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/c/3" path="p5/c/3" number="5.c.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>The preparatory command is “Ready” and the execute command is “Begin.”</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/c/4" path="p5/c/4" number="5.c.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>On the command “Ready” the Marine will assume the front-leaning rest position by placing the hands where comfortable.  The feet may be together or 12 inches apart (measured between the feet).  When viewed from the side, the body should form a generally straight line from the shoulders to the ankles.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/c/5" path="p5/c/5" number="5.c.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>On the command “Begin”, begin the push-up by bending the elbows and lowering the entire body as a single unit until the upper arms are at least parallel to the ground.  Then, return to the starting position by raising the entire body until the arms are fully extended.  Marines may not rest their chest on the deck except as required to ensure that the upper arms are at least parallel to the deck.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/c/6" path="p5/c/6" number="5.c.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>The body must remain rigid in a generally straight line and move as a unit while performing each repetition.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/c/7" path="p5/c/7" number="5.c.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+          <text>At the end of each repetition, the scorer will state the number of repetitions completed correctly.  If the Marine fails to keep the body generally straight, to lower the whole body until the upper arms are at least parallel to the ground, or to extend the arms completely, that repetition will not count, and the scorer will repeat the number of the last correctly performed repetition.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/c/8" path="p5/c/8" number="5.c.(8)" label="(8)" depth="2" verification="UNVERIFIED">
+          <text>If the Marine fails to perform the first 10 push-ups correctly, the scorer will tell the Marine to go to the knees and will explain the deficiencies.  The Marine will then be sent to the end of the line to be retested.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/c/9" path="p5/c/9" number="5.c.(9)" label="(9)" depth="2" verification="UNVERIFIED">
+          <text>After the first 10 push-ups have been performed and counted, no restarts are allowed.  The test will continue, and any incorrectly performed push-ups will not be counted.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/c/10" path="p5/c/10" number="5.c.(10)" label="(10)" depth="2" verification="UNVERIFIED">
+          <text>An altered, front-leaning rest position is the only authorized rest position.  That is, the Marine may sag in the middle or flex the back. When flexing the back, the knees may be bent, but not to such an extent that the Marine is supporting most of the body weight with the legs.  If this occurs, the Marine’s performance will be terminated.  The Marine must return to, and pause in the correct starting position before continuing.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/c/11" path="p5/c/11" number="5.c.(11)" label="(11)" depth="2" verification="UNVERIFIED">
+          <text>If the Marine rests on the ground or raise either hand or foot from the ground, the performance will be terminated.  The Marine may reposition the hands and/or feet during the event as long as they remain in contact with the ground at all times.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/d" path="p5/d" number="5.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Abdominal Crunch</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/d/1" path="p5/d/1" number="5.d.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>This is a timed event to do as many abdominal crunches as possible in two minutes.  This event can be conducted either indoors or outdoors. MCO 6100.13A CH-4 23 Mar 2022 2-5                       Enclosure (1)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/d/2" path="p5/d/2" number="5.d.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The preparatory command is “Ready” and the execute command is “Begin.”</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/d/3" path="p5/d/3" number="5.d.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>On a flat surface, Marines will lie flat on their back with shoulder blades touching the deck, knees bent, and both feet flat on the deck.  The feet and knees shall be no further than shoulder width apart.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/d/4" path="p5/d/4" number="5.d.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Arms will be folded across the chest or rib cage with no gap between the arms and chest or rib cage.  The hands must be in constant contact with the upper arm between the elbow and shoulder.  Thumbs may be wrapped around the upper arm or together with the rest of the hand on top of the upper arm.  Both arms must remain in constant contact with chest or rib cage throughout the exercise.  A single repetition consists of raising the upper body from the starting position with shoulder blades touching the deck until both forearms or elbows simultaneously touch the thighs, and then return to the starting position with the shoulder blades touching the deck.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/d/5" path="p5/d/5" number="5.d.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>The buttocks will remain in constant contact with the deck throughout the event.  No arching of the lower back or lifting of the buttocks is permitted.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/d/6" path="p5/d/6" number="5.d.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>An assistant may be used to hold a Marine's legs or feet, at or below the knees in whatever manner that is most comfortable for the Marine, and does not interfere with the Marine’s ability to make contact with their thighs.  Kneeling or sitting on the Marine’s feet is permitted.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/d/7" path="p5/d/7" number="5.d.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+          <text>A repetition will be counted when a correct and complete abdominal crunch is performed.  The FFIs or CPTRs will ensure proper repetition counting is conducted.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/d/8" path="p5/d/8" number="5.d.(8)" label="(8)" depth="2" verification="UNVERIFIED">
+          <text>The goal of this event is for Marines to execute as many correct and complete crunches within the two minute time limit.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/d/9" path="p5/d/9" number="5.d.(9)" label="(9)" depth="2" verification="UNVERIFIED">
+          <text>The monitor to Marine ratio will be no more than seven Marines to one monitor.  For recruit training and Officer Candidate School (OCS), the CGs of the MCRDs and Training Command have the authority to determine the correct monitor to recruit/candidate ratio that most effectively ensures the integrity of the event given the number of recruits/candidates participating and the drill instructor staff available.  This authority may be delegated to the Commanding Officers of the Recruit Training Regiments and OCS.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/d/10" path="p5/d/10" number="5.d.(10)" label="(10)" depth="2" verification="UNVERIFIED">
+          <text>This event will be discontinued on 31 December 2022.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/e" path="p5/e" number="5.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Plank</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/e/1" path="p5/e/1" number="5.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>As with the hybrid pull-up/push-up test, Marines will be given the option of conducting either the plank or the abdominal crunch.  Prior to execution of the PFT, Marines will indicate to the CPTR if they will attempt the plank or the abdominal crunch.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/e/2" path="p5/e/2" number="5.e.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The event consists of maintaining a proper plank position for as long as possible or until the max time to earn 100 points.  The plank shall be conducted on a firm or suitably padded, non-slip, level surface.  The plank should be conducted as follows:</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/e/2/a" path="p5/e/2/a" number="5.e.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>To start the plank, elbows should be bent and lowered to the ground so that the forearms are lying flat on the ground, with the body in a MCO 6100.13A CH-4 23 Mar 2022 2-6                       Enclosure (1) straight line similar to a push-up position, with feet hip-width apart. Elbows should be aligned below the shoulders with forearms parallel to the body at about shoulder width distance.  Hands must be on the ground, either in fists with pinky side of the hand touching the ground or lying flat with palms down.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/e/2/b" path="p5/e/2/b" number="5.e.(2)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Hips should be lifted off the ground with feet flexed and the bottom of the toes on the ground.  The back, buttocks, and legs shall be straight from head to heels and must remain so throughout the test.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/e/2/c" path="p5/e/2/c" number="5.e.(2)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Toes, forearms, and fists or palms shall remain in contact with the floor, not a wall or other vertical support surface.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/e/2/d" path="p5/e/2/d" number="5.e.(2)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Marines should look at the floor to keep the head in line with the shoulders, back, and legs.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/e/2/e" path="p5/e/2/e" number="5.e.(2)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Once the Marine is in the correct position, the CPTR shall signal the start and call out 15 second time intervals until the completion of the exercise. Time is recorded with a stopwatch to the nearest second.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/e/2/f" path="p5/e/2/f" number="5.e.(2)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>The exercise is ended when the Marine: (1) touches the floor with any part of the body except the toes, forearms, fists or palms, (2) raises one or both feet or hands off the floor, or (3) fails to maintain the back, buttocks, and legs in a straight line from head to heels.  With regard to item (3) and proper straight line from head to heels, FFIs or CPTRs are allowed, but not required, to give Marines one verbal warning for correction. Warnings will not be issued for items (1) and (2).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/e/2/g" path="p5/e/2/g" number="5.e.(2)(g)" label="(g)" depth="3" verification="UNVERIFIED">
+            <text>Involuntary muscle spasms i.e. shaking, trembling, or quivering, resulting from maximum exertion during the course of the exercise is permitted as long as the proper plank position is maintained.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/e/2/h" path="p5/e/2/h" number="5.e.(2)(h)" label="(h)" depth="3" verification="UNVERIFIED">
+            <text>Marines will hold this position for as long as possible or until the maximum time of four three minutes, twenty forty five seconds.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/e/2/i" path="p5/e/2/i" number="5.e.(2)(i)" label="(i)" depth="3" verification="UNVERIFIED">
+            <text>The monitor to Marine ratio will be no more than seven Marines to one monitor.  For recruit training and OCS, the CGs of the MCRDs and Training Command have the authority to determine the correct monitor to recruit/candidate ratio that most effectively ensures the integrity of the event given the number of recruits/candidates participating and the drill instructor staff available.  This authority may be delegated to the Commanding Officers of the Recruit Training Regiments and OCS.</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/e/3" path="p5/e/3" number="5.e.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>There is one scoring table (Table 2-4, page 2-14 2-15) for both male and female Marines for all age groups with a maximum of four three minutes and twenty forty five seconds and a minimum of one minute and three ten seconds.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/f" path="p5/f" number="5.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Three Mile Run</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/f/1" path="p5/f/1" number="5.f.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>This is a timed event and can be conducted either indoors or outdoors.  Running this event on a treadmill is not authorized.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/f/2" path="p5/f/2" number="5.f.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The run course will be three miles exactly (no variation authorized), must be measured for accuracy, and set over reasonably level ground.  COs/OICs are responsible for ensuring the accuracy of the PFT course length. MCO 6100.13A 17 JAN 2018 2-7                       Enclosure (1)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/f/3" path="p5/f/3" number="5.f.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>The preparatory command is “Ready” and the execute command is “Go.”</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/f/4" path="p5/f/4" number="5.f.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>The course should be an “out and back” or a wide loop course. The run course should not include numerous sharp turns that would force a participant to slow down excessively to remain on the course.  A determination as to whether the track is a yard or meter track must be made and the track measured to ensure accurate distance prior to conducting the PFT.  Run courses should not require a Marine to do more than 12 laps to cover three miles, (e.g., a course should not be shorter than 440-yards per lap).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/f/5" path="p5/f/5" number="5.f.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>The goal of this event is for Marines to complete the measured course as quickly as possible.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/g" path="p5/g" number="5.g." label="g." depth="1" verification="UNVERIFIED">
+        <text>Rowing</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/g/1" path="p5/g/1" number="5.g.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Marines 46 years of age and older have the option to select rowing as an alternative aerobic event to the three mile run.  This event must be taken on a “Concept 2 (C2)” brand rowing ergometer with a Performance Monitor 3 (PM3) or later performance monitor.  No other ergometers are authorized.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/g/2" path="p5/g/2" number="5.g.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Rowing is also authorized for other age groups in lieu of the three mile run, if recommended by a PHCP based on a medical condition or if post-partum and approved by the CO/OIC.  Marines under the age of 46 whose medical condition necessitates rowing for more than two consecutive years will be referred to a MEB.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/g/3" path="p5/g/3" number="5.g.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>The event is a timed 5,000m row conducted in the following manner:</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/g/3/a" path="p5/g/3/a" number="5.g.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>The Marine rowing will take a seated position on the rower ready to begin.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/g/3/b" path="p5/g/3/b" number="5.g.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>From the main menu of the performance monitor the FFI or CPTR will press the "Select Workout" button (Figure 2-1).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/g/3/c" path="p5/g/3/c" number="5.g.(3)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>The FFI or CPTR will press the "Standard List" button and then select "5000m" (Figure 2-2), which will bring the screen to the “5000m” event page.  The FFI or CPTR will then select “5000m (Figure 2-3).  A 5,000m event will not be completed on any other screen. MCO 6100.13A 17 JAN 2018 2-8                       Enclosure (1) Figure 2-1.--“Main Menu” Page.    Figure 2-2.--“Select Workout” Page. Press “Select Workout”               Press “Standard List” Figure 2-3.--“Standard List” Page.        Figure 2-4.--“5000m” Test Page. Press “5,000m”                       5,000m “Start” Screen</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/g/3/d" path="p5/g/3/d" number="5.g.(3)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>The event begins when the FFI or CPTR gives the command “Begin”.  Time starts automatically on the rowing monitor display when the Marine starts rowing.  The rowing distance display counts down from “5000m” to “0”.  The test ends when the Marine reaches zero meters, or stops rowing for a period long enough that the monitor turns off.  The rowing time will be rounded up or down to the nearest whole second (e.g., 22 minutes, 8.6 seconds will be recorded as 22 minutes, 9 seconds.  22 mins, 8.5 seconds will be recorded as 22 minutes, 8 seconds).</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-5/p5/g/4" path="p5/g/4" number="5.g.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>The 5,000m event takes place at the level or damper setting on the flywheel selected by the Marine.  Once the Marine begins event by pulling on the handle, he or she should remain in constant and continuous motion until the 5,000m test is complete.  If the Marine stops his or her MCO 6100.13A 17 JAN 2018 2-9                       Enclosure (1) motion rowing during the event for such duration that the screen turns off, the event is over.</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-6-3" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-3" heading="6. Performance. The minimum combined score required to pass the PFT is 150." verification="UNVERIFIED">
+  </section>
+  <section anchor="p-7" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-7" heading="7. Classification. Table 2-1 shows the classification scores required, for" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-8" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-8" heading="8. Score. The official Marine Corps PFT calculator is found on MOL:" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-9-3" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-9-3" heading="9. Altitude Considerations. Units administering the PFT at altitudes of" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-9-3/p9" path="p9" number="9." label="9." depth="0" verification="UNVERIFIED">
+      <text>Altitude Considerations.  Units administering the PFT at altitudes of 4,500 feet or more above sea level will utilize Table 2-6 for adjusted run times or Table 2-8 for adjusted rowing times.  COs/OICs are directed to provide Marines a 30-day acclimatization period prior to conducting a PFT altitude.  Marines scheduled to report to parent stations or commands at altitude in June will complete their PFTs prior to detaching. MCO 6100.13A 17 JAN 2018 2-10 Enclosure (1) Table 2-2.--Hybrid Pull-up/Push-up Test Scoring Tables. 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Max 20 23 23 23 21 20 19 18 Max 7 11 12 11 10 8 6 4 Min 4 5 5 5 5 5 4 3 Min 1 3 4 3 3 2 2 2 Max 100 100 100 100 100 100 100 100 Max 100 100 100 100 100 100 100 100 Min Pts 40 40 40 40 40 40 40 40 Min Pts 60 60 60 60 60 60 60 60 Reps 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Reps 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ 23 100 100 100 12 100 22 97 97 97 11 100 95 100 21 93 93 93 100 10 95 90 95 100 20 100 90 90 90 96 100 9 90 85 90 94 19 96 87 87 87 93 96 100 8 85 80 85 89 100 18 93 83 83 83 89 92 96 100 7 100 80 75 80 83 93 17 89 80 80 80 85 88 92 96 6 93 75 70 75 77 87 100 16 85 77 77 77 81 84 88 92 5 87 70 65 70 71 80 90 15 81 73 73 73 78 80 84 88 4 80 65 60 65 66 73 80 100 14 78 70 70 70 74 76 80 84 3 73 60 60 60 67 70 80 13 74 67 67 67 70 72 76 80 2 67 60 60 60 12 70 63 63 63 66 68 72 76 1 60 11 66 60 60 60 63 64 68 72 10 63 57 57 57 59 60 64 68 9 59 53 53 53 55 56 60 64 8 55 50 50 50 51 52 56 60 7 51 47 47 47 48 48 52 56 6 48 43 43 43 44 44 48 52 5 44 40 40 40 40 40 44 48 4 40 40 44 3 40 Male Pullups Female Pullups Male Pull-ups Female Pull-ups MCO 6100.13A 17 JAN 2018 2-11 Enclosure (1) Table 2-2.--Hybrid Pull-up/Push-up Test Scoring Tables (cont.) 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Max 82 87 84 80 76 72 68 64 Max 42 48 50 46 43 41 40 38 Min 42 40 39 36 34 30 25 20 Min 19 18 18 16 14 12 11 10 Min Pts 40 40 40 40 40 40 40 40 Min Pts 40 40 40 40 40 40 40 40 Max Pts 70 70 70 70 70 70 70 70 Max Pts 70 70 70 70 70 70 70 70 Male Push-Ups Female Push-Ups Reps 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Reps 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ 87 70 50 70 86 69 49 69 85 69 48 70 68 84 68 70 47 69 67 83 67 69 46 68 66 70 82 70 67 69 45 67 65 69 81 69 66 68 44 66 64 68 80 69 66 67 70 43 65 63 67 70 79 68 65 67 69 42 70 64 63 66 69 78 67 64 66 69 41 69 63 62 65 68 70 77 66 64 65 68 40 67 62 61 64 67 69 70 76 66 63 65 67 70 39 66 61 60 63 66 68 69 75 65 62 64 67 69 38 65 60 59 62 65 67 68 70 74 64 62 63 66 69 37 63 59 58 61 64 66 67 69 73 63 61 63 65 68 36 62 58 57 60 63 65 66 68 72 63 60 62 65 67 70 35 61 57 56 59 62 64 65 67 71 62 60 61 64 66 69 34 60 56 55 58 61 63 64 66 70 61 59 61 63 66 69 33 58 55 54 57 60 62 63 65 69 60 59 60 63 65 68 32 57 54 53 56 59 61 62 64 68 60 58 59 62 64 67 70 31 56 53 52 55 58 60 61 63 67 59 57 59 61 64 66 69 30 54 52 51 54 57 59 60 61 Male Push-Ups Female Push-Ups MCO 6100.13A 17 JAN 2018 2-12 Enclosure (1) Table 2-2.--Hybrid Pull-up/Push-up Test Scoring Tables (cont.) 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Max 82 87 84 80 76 72 68 64 Max 42 48 50 46 43 41 40 38 Min 42 40 39 36 34 30 25 20 Min 19 18 18 16 14 12 11 10 Min Pts 40 40 40 40 40 40 40 40 Min Pts 40 40 40 40 40 40 40 40 Max Pts 70 70 70 70 70 70 70 70 Max Pts 70 70 70 70 70 70 70 70 Male Push-Ups Female Push-Ups 66 58 57 58 60 63 66 69 29 53 51 50 53 56 58 59 60 65 57 56 57 60 62 65 68 28 52 50 49 52 54 57 58 59 64 57 55 57 59 61 64 67 70 27 50 49 48 51 53 56 57 58 63 56 55 56 58 61 64 67 69 26 49 48 48 50 52 54 56 57 62 55 54 55 58 60 63 66 69 25 48 47 47 49 51 53 54 56 61 54 53 55 57 59 62 65 68 24 47 46 46 48 50 52 53 55 60 54 53 54 56 59 61 64 67 23 45 45 45 47 49 51 52 54 59 53 52 53 56 58 61 64 67 22 44 44 44 46 48 50 51 53 58 52 51 53 55 57 60 63 66 21 43 43 43 45 47 49 50 52 57 51 51 52 54 56 59 62 65 20 41 42 42 44 46 48 49 51 56 51 50 51 54 56 59 62 65 19 40 41 41 43 45 47 48 50 55 50 50 51 53 55 58 61 64 18 40 40 42 44 46 47 49 54 49 49 50 52 54 57 60 63 17 41 43 45 46 48 53 48 48 49 52 54 56 60 63 16 40 42 44 45 46 52 48 48 49 51 53 56 59 62 15 41 43 44 45 51 47 47 48 50 52 55 58 61 14 40 42 43 44 50 46 46 47 50 51 54 57 60 13 41 42 43 49 45 46 47 49 51 54 57 60 12 40 41 42 48 45 45 46 48 50 53 56 59 11 40 41 47 44 44 45 48 49 52 55 58 10 40 46 43 44 45 47 49 51 55 58 45 42 43 44 46 48 51 54 57 44 42 43 43 45 47 50 53 56 43 41 42 43 45 46 49 53 56 42 40 41 42 44 46 49 52 55 41 41 41 43 45 48 51 54 40 40 41 43 44 47 50 54 39 40 42 44 46 50 53 38 41 43 46 49 52 37 41 42 45 48 52 36 40 41 44 48 51 35 41 44 47 50 34 40 43 46 50 33 42 46 49 32 41 45 48 31 41 44 48 30 40 43 47 29 43 46 28 42 45 27 41 45 26 41 44 25 40 43 24 43 23 42 22 41 21 41 20 40 MCO 6100.13A 17 JAN 2018 2-13 Enclosure (1) Table 2-3.--PFT Abdominal Crunches Scoring Tables. 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Max 105 110 115 115 110 105 100 100 Max 100 105 110 105 105 100 100 100 Min 70 70 70 70 70 65 50 40 Min 50 55 60 60 60 55 50 40 Min Pts 40 40 40 40 40 40 40 40 Min Pts 40 40 40 40 40 40 40 40 Male Crunches Female Crunches Reps 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Reps 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ 115 100 100 110 100 114 99 99 109 99 113 97 97 108 98 112 96 96 107 96 111 95 95 106 95 110 100 93 93 100 105 100 94 100 100 109 99 92 92 99 104 99 93 99 99 108 97 91 91 97 103 98 92 97 97 107 96 89 89 96 102 96 90 96 96 106 94 88 88 94 101 95 89 95 95 105 100 93 87 87 93 100 100 100 94 88 93 93 100 100 100 104 98 91 85 85 91 99 99 99 93 87 92 92 99 99 99 103 97 90 84 84 90 97 98 98 92 86 91 91 97 98 98 102 95 88 83 83 88 96 97 96 90 84 89 89 96 96 97 101 93 87 81 81 87 94 96 95 89 83 88 88 95 95 96 100 91 85 80 80 85 93 100 100 95 94 88 82 87 87 93 94 95 99 90 84 79 79 84 91 99 99 94 93 87 81 85 85 92 93 94 98 88 82 77 77 82 90 98 98 93 92 86 80 84 84 91 92 93 97 86 81 76 76 81 88 96 97 92 90 84 78 83 83 89 90 92 96 85 79 75 75 79 87 95 96 91 89 83 77 81 81 88 89 91 95 83 78 73 73 78 85 94 95 90 88 82 76 80 80 87 88 90 94 81 76 72 72 76 84 93 94 89 87 81 75 79 79 85 87 89 93 79 75 71 71 75 82 92 93 88 86 80 74 77 77 84 86 88 92 78 73 69 69 73 81 90 92 87 84 78 72 76 76 83 84 87 91 76 72 68 68 72 79 89 91 86 83 77 71 75 75 81 83 86 90 74 70 67 67 70 78 88 90 85 82 76 70 73 73 80 82 85 89 73 69 65 65 69 76 87 89 84 81 75 69 72 72 79 81 84 88 71 67 64 64 67 75 86 88 83 80 74 68 71 71 77 80 83 87 69 66 63 63 66 73 84 87 82 78 72 66 69 69 76 78 82 86 67 64 61 61 64 72 83 86 81 77 71 65 68 68 75 77 81 85 66 63 60 60 63 70 82 85 80 76 70 64 67 67 73 76 80 84 64 61 59 59 61 69 81 84 79 75 69 63 65 65 72 75 79 83 62 60 57 57 60 67 80 83 78 74 68 62 64 64 71 74 78 82 61 58 56 56 58 66 78 82 77 72 66 60 63 63 69 72 77 81 59 57 55 55 57 64 77 81 76 71 65 59 61 61 68 71 76 80 57 55 53 53 55 63 76 80 75 70 64 58 60 60 67 70 75 Male Crunches Female Crunches MCO 6100.13A 17 JAN 2018 2-14 Enclosure (1) Table 2-3.-- PFT Abdominal Crunches Scoring Tables (cont.) 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Max 105 110 115 115 110 105 100 100 Max 100 105 110 105 105 100 100 100 Min 70 70 70 70 70 65 50 40 Min 50 55 60 60 60 55 50 40 Min Pts 40 40 40 40 40 40 40 40 Min Pts 40 40 40 40 40 40 40 40 Male Crunches Female Crunches 79 55 54 52 52 54 61 75 79 74 69 63 57 59 59 65 69 74 78 54 52 51 51 52 60 74 78 73 68 62 56 57 57 64 68 73 77 52 51 49 49 51 58 72 77 72 66 60 54 56 56 63 66 72 76 50 49 48 48 49 57 71 76 71 65 59 53 55 55 61 65 71 75 49 48 47 47 48 55 70 75 70 64 58 52 53 53 60 64 70 74 47 46 45 45 46 54 69 74 69 63 57 51 52 52 59 63 69 73 45 45 44 44 45 52 68 73 68 62 56 50 51 51 57 62 68 72 43 43 43 43 43 51 66 72 67 60 54 48 49 49 56 60 67 71 42 42 41 41 42 49 65 71 66 59 53 47 48 48 55 59 66 70 40 40 40 40 40 48 64 70 65 58 52 46 47 47 53 58 65 69 46 63 69 64 57 51 45 45 45 52 57 64 68 45 62 68 63 56 50 44 44 44 51 56 63 67 43 60 67 62 54 48 42 43 43 49 54 62 66 42 59 66 61 53 47 41 41 41 48 53 61 65 40 58 65 60 52 46 40 40 40 47 52 60 64 57 64 59 51 45 45 51 59 63 56 63 58 50 44 44 50 58 62 54 62 57 48 42 43 48 57 61 53 61 56 47 41 41 47 56 60 52 60 55 46 40 40 46 55 59 51 59 54 45 45 54 58 50 58 53 44 44 53 57 48 57 52 42 42 52 56 47 56 51 41 41 51 55 46 55 50 40 40 50 54 45 54 49 49 53 44 53 48 48 52 42 52 47 47 51 41 51 46 46 50 40 50 45 45 49 49 44 44 48 48 43 43 47 47 42 42 46 46 41 41 45 45 40 40 44 44 43 43 42 42 41 41 40 40 MCO 6100.13A $GPLQ&amp;+ 2-15 Enclosure (1) Table 2-4.--Plank Scoring Table. (NOTE: The plank scoring table is VH[ and age neutral with one table for both males and females regardless of age) Time Score Time Score 3:45 100 2:25 69 3:43 99 2:23 68 3:40 98 2:20 67 3:38 97 2:18 66 3:35 96 2:15 65 3:33 95 2:12 64 3:30 94 2:10 63 3:27 93 2:07 62 3:25 92 2:05 61 3:22 91 2:02 60 3:20 90 2:00 59 3:17 89 1:57 58 3:14 88 1:54 57 3:12 87 1:52 56 3:09 86 1:49 55 3:07 85 1:47 54 3:04 84 1:44 53 3:02 83 1:41 52 2:59 82 1:39 51 2:56 81 1:36 50 2:54 80 1:34 49 2:51 79 1:31 48 2:49 78 1:29 47 2:46 77 1:26 46 2:43 76 1:23 45 2:41 75 1:21 44 2:38 74 1:18 43 2:36 73 1:16 42 2:33 72 1:13 41 2:31 71 1:10 40 2:28 70 28 May 2025 MCO 6100.13A 17 JAN 2018 2-16 Enclosure (1) Table 2-5.--PFT 3 Mile Run Scoring Tables. 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Max 18:00 18:00 18:00 18:00 18:00 18:30 19:00 19:30 Max 21:00 21:00 21:00 21:00 21:00 21:30 22:00 22:30 Min 27:40 27:40 28:00 28:20 28:40 29:20 30:00 33:00 Min 30:50 30:50 31:10 31:30 31:50 32:30 33:30 36:00 Min Pts 40 40 40 40 40 40 40 40 Min Pts 40 40 40 40 40 40 40 40 Male 3 Mile Run Female 3 Mile Run Time 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Time 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ 18:00 100 100 100 100 100 21:00 100 100 100 100 100 18:10 99 99 99 99 99 21:10 99 99 99 99 99 18:20 98 98 98 98 98 21:20 98 98 98 98 98 18:30 97 97 97 97 97 100 21:30 97 97 97 97 97 100 18:40 96 96 96 96 96 99 21:40 96 96 96 96 96 99 18:50 95 95 95 95 95 98 21:50 95 95 95 95 95 98 19:00 94 94 94 94 94 97 100 22:00 94 94 94 94 94 97 100 19:10 93 93 93 93 93 96 99 22:10 93 93 93 93 94 96 99 19:20 92 92 92 92 93 95 98 22:20 92 92 92 92 93 95 98 19:30 91 91 91 91 92 94 97 100 22:30 91 91 91 91 92 95 97 100 19:40 90 90 90 90 91 94 96 99 22:40 90 90 90 90 91 94 97 99 19:50 89 89 89 89 90 93 95 99 22:50 89 89 89 90 90 93 96 99 20:00 88 88 88 88 89 92 95 98 23:00 88 88 88 89 89 92 95 98 20:10 87 87 87 87 88 91 94 97 23:10 87 87 87 88 88 91 94 97 20:20 86 86 86 86 87 90 93 96 23:20 86 86 86 87 87 90 93 96 20:30 84 84 85 85 86 89 92 96 23:30 85 85 85 86 86 89 92 96 20:40 83 83 84 85 85 88 91 95 23:40 84 84 84 85 85 88 91 95 20:50 82 82 83 84 84 87 90 94 23:50 83 83 83 84 84 87 90 94 21:00 81 81 82 83 83 86 89 93 24:00 82 82 82 83 83 86 90 93 21:10 80 80 81 82 82 85 88 93 24:10 81 81 81 82 82 85 89 93 21:20 79 79 80 81 81 84 87 92 24:20 80 80 80 81 82 85 88 92 21:30 78 78 79 80 80 83 86 91 24:30 79 79 79 80 81 84 87 91 21:40 77 77 78 79 79 82 85 90 24:40 78 78 78 79 80 83 86 90 21:50 76 76 77 78 78 82 85 90 24:50 77 77 77 78 79 82 85 90 22:00 75 75 76 77 78 81 84 89 25:00 76 76 76 77 78 81 84 89 22:10 74 74 75 76 77 80 83 88 25:10 75 75 75 76 77 80 83 88 22:20 73 73 74 75 76 79 82 87 25:20 74 74 74 75 76 79 83 87 22:30 72 72 73 74 75 78 81 87 25:30 73 73 73 74 75 78 82 87 22:40 71 71 72 73 74 77 80 86 25:40 72 72 72 73 74 77 81 86 22:50 70 70 71 72 73 76 79 85 25:50 71 71 71 72 73 76 80 85 23:00 69 69 70 71 72 75 78 84 26:00 69 69 70 71 72 75 79 84 23:10 68 68 69 70 71 74 77 84 26:10 68 68 70 70 71 75 78 84 23:20 67 67 68 69 70 73 76 83 26:20 67 67 69 70 70 74 77 83 23:30 66 66 67 68 69 72 75 82 26:30 66 66 68 69 70 73 77 82 23:40 65 65 66 67 68 71 75 81 26:40 65 65 67 68 69 72 76 81 23:50 64 64 65 66 67 70 74 81 26:50 64 64 66 67 68 71 75 81 24:00 63 63 64 65 66 70 73 80 27:00 63 63 65 66 67 70 74 80 24:10 62 62 63 64 65 69 72 79 27:10 62 62 64 65 66 69 73 79 24:20 61 61 62 63 64 68 71 79 27:20 61 61 63 64 65 68 72 79 24:30 60 60 61 62 63 67 70 78 27:30 60 60 62 63 64 67 71 78 24:40 59 59 60 61 63 66 69 77 27:40 59 59 61 62 63 66 70 77 24:50 58 58 59 60 62 65 68 76 27:50 58 58 60 61 62 65 70 76 25:00 57 57 58 59 61 64 67 76 28:00 57 57 59 60 61 65 69 76 Male 3 Mile Run Female 3 Mile Run MCO 6100.13A 17 JAN 2018 2-17 Enclosure (1) Table 2-5.--PFT 3 Mile Run Scoring Tables (cont.) 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Max 18:00 18:00 18:00 18:00 18:00 18:30 19:00 19:30 Max 21:00 21:00 21:00 21:00 21:00 21:30 22:00 22:30 Min 27:40 27:40 28:00 28:20 28:40 29:20 30:00 33:00 Min 30:50 30:50 31:10 31:30 31:50 32:30 33:30 36:00 Min Pts 40 40 40 40 40 40 40 40 Min Pts 40 40 40 40 40 40 40 40 Male 3 Mile Run Female 3 Mile Run 25:10 56 56 57 58 60 63 66 75 28:10 56 56 58 59 60 64 68 75 25:20 54 54 56 57 59 62 65 74 28:20 55 55 57 58 59 63 67 74 25:30 53 53 55 56 58 61 65 73 28:30 54 54 56 57 58 62 66 73 25:40 52 52 54 55 57 60 64 73 28:40 53 53 55 56 58 61 65 73 25:50 51 51 53 55 56 59 63 72 28:50 52 52 54 55 57 60 64 72 26:00 50 50 52 54 55 58 62 71 29:00 51 51 53 54 56 59 63 71 26:10 49 49 51 53 54 58 61 70 29:10 50 50 52 53 55 58 63 70 26:20 48 48 50 52 53 57 60 70 29:20 49 49 51 52 54 57 62 70 26:30 47 47 49 51 52 56 59 69 29:30 48 48 50 51 53 56 61 69 26:40 46 46 48 50 51 55 58 68 29:40 47 47 49 50 52 55 60 68 26:50 45 45 47 49 50 54 57 67 29:50 46 46 48 50 51 55 59 67 27:00 44 44 46 48 49 53 56 67 30:00 45 45 47 49 50 54 58 67 27:10 43 43 45 47 48 52 55 66 30:10 44 44 46 48 49 53 57 66 27:20 42 42 44 46 48 51 55 65 30:20 43 43 45 47 48 52 57 65 27:30 41 41 43 45 47 50 54 64 30:30 42 42 44 46 47 51 56 64 27:40 40 40 42 44 46 49 53 64 30:40 41 41 43 45 46 50 55 64 27:50 41 43 45 48 52 63 30:50 40 40 42 44 46 49 54 63 28:00 40 42 44 47 51 62 31:00 41 43 45 48 53 62 28:10 41 43 46 50 61 31:10 40 42 44 47 52 61 28:20 40 42 46 49 61 31:20 41 43 46 51 61 28:30 41 45 48 60 31:30 40 42 45 50 60 28:40 40 44 47 59 31:40 41 45 50 59 28:50 43 46 59 31:50 40 44 49 59 29:00 42 45 58 32:00 43 48 58 29:10 41 45 57 32:10 42 47 57 29:20 40 44 56 32:20 41 46 56 29:30 43 56 32:30 40 45 56 29:40 42 55 32:40 44 55 29:50 41 54 32:50 43 54 30:00 40 53 33:00 43 53 MCO 6100.13A 17 JAN 2018 2-18 Enclosure (1) Table 2-5.--PFT 3 Mile Run Scoring Tables (cont.) 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Max 18:00 18:00 18:00 18:00 18:00 18:30 19:00 19:30 Max 21:00 21:00 21:00 21:00 21:00 21:30 22:00 22:30 Min 27:40 27:40 28:00 28:20 28:40 29:20 30:00 33:00 Min 30:50 30:50 31:10 31:30 31:50 32:30 33:30 36:00 Min Pts 40 40 40 40 40 40 40 40 Min Pts 40 40 40 40 40 40 40 40 Male 3 Mile Run Female 3 Mile Run 30:10 53 33:10 42 53 30:20 52 33:20 41 52 30:30 51 33:30 40 51 30:40 50 33:40 50 30:50 50 33:50 50 31:00 49 34:00 49 31:10 48 34:10 48 31:20 47 34:20 47 31:30 47 34:30 47 31:40 46 34:40 46 31:50 45 34:50 45 32:00 44 35:00 44 32:10 44 35:10 44 32:20 43 35:20 43 32:30 42 35:30 42 32:40 41 35:40 41 32:50 41 35:50 41 33:00 40 36:00 40 MCO 6100.13A 17 JAN 2018 2-19 Enclosure (1) Table 2-6.--PFT 3 Mile Run Altitude Compensation Tables (at or above 4,500 feet mean sea level) 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Max 19:30 19:30 19:30 19:30 19:30 20:00 20:30 21:00 Max 22:30 22:30 22:30 22:30 22:30 23:00 23:30 24:00 Min 29:10 29:10 29:30 29:50 30:10 30:50 31:30 34:30 Min 32:20 32:20 32:40 33:00 33:20 34:00 35:00 37:30 Min Pts 40 40 40 40 40 40 40 40 Min Pts 40 40 40 40 40 40 40 40 Male 3 Mile Run (Altitude) Female 3 Mile Run (Altitude) Time 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ 19:30 100 100 100 100 100 22:30 100 100 100 100 100 19:40 99 99 99 99 99 22:40 99 99 99 99 99 19:50 98 98 98 98 98 22:50 98 98 98 98 98 20:00 97 97 97 97 97 100 23:00 97 97 97 97 97 100 20:10 96 96 96 96 96 99 23:10 96 96 96 96 96 99 20:20 95 95 95 95 95 98 23:20 95 95 95 95 95 98 20:30 94 94 94 94 94 97 100 23:30 94 94 94 94 94 97 100 20:40 93 93 93 93 93 96 99 23:40 93 93 93 93 94 96 99 20:50 92 92 92 92 93 95 98 23:50 92 92 92 92 93 95 98 21:00 91 91 91 91 92 94 97 100 24:00 91 91 91 91 92 95 97 100 21:10 90 90 90 90 91 94 96 99 24:10 90 90 90 90 91 94 97 99 21:20 89 89 89 89 90 93 95 99 24:20 89 89 89 90 90 93 96 99 21:30 88 88 88 88 89 92 95 98 24:30 88 88 88 89 89 92 95 98 21:40 87 87 87 87 88 91 94 97 24:40 87 87 87 88 88 91 94 97 21:50 86 86 86 86 87 90 93 96 24:50 86 86 86 87 87 90 93 96 22:00 84 84 85 85 86 89 92 96 25:00 85 85 85 86 86 89 92 96 22:10 83 83 84 85 85 88 91 95 25:10 84 84 84 85 85 88 91 95 22:20 82 82 83 84 84 87 90 94 25:20 83 83 83 84 84 87 90 94 22:30 81 81 82 83 83 86 89 93 25:30 82 82 82 83 83 86 90 93 22:40 80 80 81 82 82 85 88 93 25:40 81 81 81 82 82 85 89 93 22:50 79 79 80 81 81 84 87 92 25:50 80 80 80 81 82 85 88 92 23:00 78 78 79 80 80 83 86 91 26:00 79 79 79 80 81 84 87 91 23:10 77 77 78 79 79 82 85 90 26:10 78 78 78 79 80 83 86 90 23:20 76 76 77 78 78 82 85 90 26:20 77 77 77 78 79 82 85 90 23:30 75 75 76 77 78 81 84 89 26:30 76 76 76 77 78 81 84 89 23:40 74 74 75 76 77 80 83 88 26:40 75 75 75 76 77 80 83 88 23:50 73 73 74 75 76 79 82 87 26:50 74 74 74 75 76 79 83 87 24:00 72 72 73 74 75 78 81 87 27:00 73 73 73 74 75 78 82 87 24:10 71 71 72 73 74 77 80 86 27:10 72 72 72 73 74 77 81 86 24:20 70 70 71 72 73 76 79 85 27:20 71 71 71 72 73 76 80 85 24:30 69 69 70 71 72 75 78 84 27:30 69 69 70 71 72 75 79 84 24:40 68 68 69 70 71 74 77 84 27:40 68 68 70 70 71 75 78 84 24:50 67 67 68 69 70 73 76 83 27:50 67 67 69 70 70 74 77 83 25:00 66 66 67 68 69 72 75 82 28:00 66 66 68 69 70 73 77 82 25:10 65 65 66 67 68 71 75 81 28:10 65 65 67 68 69 72 76 81 25:20 64 64 65 66 67 70 74 81 28:20 64 64 66 67 68 71 75 81 25:30 63 63 64 65 66 70 73 80 28:30 63 63 65 66 67 70 74 80 25:40 62 62 63 64 65 69 72 79 28:40 62 62 64 65 66 69 73 79 25:50 61 61 62 63 64 68 71 79 28:50 61 61 63 64 65 68 72 79 26:00 60 60 61 62 63 67 70 78 29:00 60 60 62 63 64 67 71 78 26:10 59 59 60 61 63 66 69 77 29:10 59 59 61 62 63 66 70 77 26:20 58 58 59 60 62 65 68 76 29:20 58 58 60 61 62 65 70 76 26:30 57 57 58 59 61 64 67 76 29:30 57 57 59 60 61 65 69 76 Male 3 Mile Run (Altitude) Female 3 Mile Run (Altitude) MCO 6100.13A 17 JAN 2018 2-20 Enclosure (1) Table 2-6.--PFT 3 Mile Run Altitude Compensation Tables (at or above 4,500 feet mean sea level) (cont.) 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Max 19:30 19:30 19:30 19:30 19:30 20:00 20:30 21:00 Max 22:30 22:30 22:30 22:30 22:30 23:00 23:30 24:00 Min 29:10 29:10 29:30 29:50 30:10 30:50 31:30 34:30 Min 32:20 32:20 32:40 33:00 33:20 34:00 35:00 37:30 Min Pts 40 40 40 40 40 40 40 40 Min Pts 40 40 40 40 40 40 40 40 Male 3 Mile Run (Altitude) Female 3 Mile Run (Altitude) 26:40 56 56 57 58 60 63 66 75 29:40 56 56 58 59 60 64 68 75 26:50 54 54 56 57 59 62 65 74 29:50 55 55 57 58 59 63 67 74 27:00 53 53 55 56 58 61 65 73 30:00 54 54 56 57 58 62 66 73 27:10 52 52 54 55 57 60 64 73 30:10 53 53 55 56 58 61 65 73 27:20 51 51 53 55 56 59 63 72 30:20 52 52 54 55 57 60 64 72 27:30 50 50 52 54 55 58 62 71 30:30 51 51 53 54 56 59 63 71 27:40 49 49 51 53 54 58 61 70 30:40 50 50 52 53 55 58 63 70 27:50 48 48 50 52 53 57 60 70 30:50 49 49 51 52 54 57 62 70 28:00 47 47 49 51 52 56 59 69 31:00 48 48 50 51 53 56 61 69 28:10 46 46 48 50 51 55 58 68 31:10 47 47 49 50 52 55 60 68 28:20 45 45 47 49 50 54 57 67 31:20 46 46 48 50 51 55 59 67 28:30 44 44 46 48 49 53 56 67 31:30 45 45 47 49 50 54 58 67 28:40 43 43 45 47 48 52 55 66 31:40 44 44 46 48 49 53 57 66 28:50 42 42 44 46 48 51 55 65 31:50 43 43 45 47 48 52 57 65 29:00 41 41 43 45 47 50 54 64 32:00 42 42 44 46 47 51 56 64 29:10 40 40 42 44 46 49 53 64 32:10 41 41 43 45 46 50 55 64 29:20 41 43 45 48 52 63 32:20 40 40 42 44 46 49 54 63 29:30 40 42 44 47 51 62 32:30 41 43 45 48 53 62 29:40 41 43 46 50 61 32:40 40 42 44 47 52 61 29:50 40 42 46 49 61 32:50 41 43 46 51 61 30:00 41 45 48 60 33:00 40 42 45 50 60 30:10 40 44 47 59 33:10 41 45 50 59 30:20 43 46 59 33:20 40 44 49 59 30:30 42 45 58 33:30 43 48 58 30:40 41 45 57 33:40 42 47 57 30:50 40 44 56 33:50 41 46 56 31:00 43 56 34:00 40 45 56 31:10 42 55 34:10 44 55 31:20 41 54 34:20 43 54 31:30 40 53 34:30 43 53 31:40 53 34:40 42 53 31:50 52 34:50 41 52 32:00 51 35:00 40 51 32:10 50 35:10 50 32:20 50 35:20 50 32:30 49 35:30 49 32:40 48 35:40 48 32:50 47 35:50 47 33:00 47 36:00 47 33:10 46 36:10 46 33:20 45 36:20 45 33:30 44 36:30 44 33:40 44 36:40 44 33:50 43 36:50 43 34:00 42 37:00 42 34:10 41 37:10 41 34:20 41 37:20 41 34:30 40 37:30 40 MCO 6100.13A 17 JAN 2018 2-21 Enclosure (1) Table 2-7.--5,000m Row Scoring Tables. Male 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Female 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Max 18:00 18:15 18:30 18:45 19:00 19:15 19:35 20:00 Max 21:00 21:15 21:30 21:45 22:00 22:15 22:35 23:00 Min 23:30 23:50 24:10 24:30 24:50 25:10 25:35 26:00 Min 26:30 26:50 27:10 27:30 27:50 28:10 28:35 29:00 Min Pts 40 40 40 40 40 40 40 40 Min Pts 40 40 40 40 40 40 40 40 18:00 100 21:00 100 18:05 99 21:05 99 18:10 98 21:10 98 18:15 97 100 21:15 97 100 18:20 96 99 21:20 96 99 18:25 95 98 21:25 95 98 18:30 95 97 100 21:30 95 97 100 18:35 94 96 99 21:35 94 96 99 18:40 93 96 98 21:40 93 96 98 18:45 92 95 97 100 21:45 92 95 97 100 18:50 91 94 96 99 21:50 91 94 96 99 18:55 90 93 96 98 21:55 90 93 96 98 19:00 89 92 95 97 100 22:00 89 92 95 97 100 19:05 88 91 94 97 99 22:05 88 91 94 97 99 19:10 87 90 93 96 98 22:10 87 90 93 96 98 19:15 86 89 92 95 97 100 22:15 86 89 92 95 97 100 19:20 85 88 91 94 97 99 22:20 85 88 91 94 97 99 19:25 85 87 90 93 96 98 22:25 85 87 90 93 96 98 19:30 84 87 89 92 95 97 22:30 84 87 89 92 95 97 19:35 83 86 89 91 94 97 100 22:35 83 86 89 91 94 97 100 19:40 82 85 88 90 93 96 99 22:40 82 85 88 90 93 96 99 19:45 81 84 87 90 92 95 98 22:45 81 84 87 90 92 95 98 19:50 80 83 86 89 91 94 98 22:50 80 83 86 89 91 94 98 19:55 79 82 85 88 91 93 97 22:55 79 82 85 88 91 93 97 20:00 78 81 84 87 90 92 96 100 23:00 78 81 84 87 90 92 96 100 20:05 77 80 83 86 89 92 95 99 23:05 77 80 83 86 89 92 95 99 20:10 76 79 82 85 88 91 94 98 23:10 76 79 82 85 88 91 94 98 20:15 75 79 81 84 87 90 93 98 23:15 75 79 81 84 87 90 93 98 20:20 75 78 81 83 86 89 93 97 23:20 75 78 81 83 86 89 93 97 20:25 74 77 80 83 85 88 92 96 23:25 74 77 80 83 85 88 92 96 20:30 73 76 79 82 85 87 91 95 23:30 73 76 79 82 85 87 91 95 20:35 72 75 78 81 84 86 90 94 23:35 72 75 78 81 84 86 90 94 20:40 71 74 77 80 83 86 89 93 23:40 71 74 77 80 83 86 89 93 20:45 70 73 76 79 82 85 88 93 23:45 70 73 76 79 82 85 88 93 20:50 69 72 75 78 81 84 88 92 23:50 69 72 75 78 81 84 88 92 20:55 68 71 74 77 80 83 87 91 23:55 68 71 74 77 80 83 87 91 21:00 67 70 74 77 79 82 86 90 24:00 67 70 74 77 79 82 86 90 21:05 66 70 73 76 79 81 85 89 24:05 66 70 73 76 79 81 85 89 21:10 65 69 72 75 78 81 84 88 24:10 65 69 72 75 78 81 84 88 21:15 65 68 71 74 77 80 83 88 24:15 65 68 71 74 77 80 83 88 21:20 64 67 70 73 76 79 83 87 24:20 64 67 70 73 76 79 83 87 21:25 63 66 69 72 75 78 82 86 24:25 63 66 69 72 75 78 82 86 21:30 62 65 68 71 74 77 81 85 24:30 62 65 68 71 74 77 81 85 21:35 61 64 67 70 73 76 80 84 24:35 61 64 67 70 73 76 80 84 21:40 60 63 66 70 73 75 79 83 24:40 60 63 66 70 73 75 79 83 21:45 59 62 66 69 72 75 78 83 24:45 59 62 66 69 72 75 78 83 21:50 58 61 65 68 71 74 78 82 24:50 58 61 65 68 71 74 78 82 21:55 57 61 64 67 70 73 77 81 24:55 57 61 64 67 70 73 77 81 MCO 6100.13A 17 JAN 2018 2-22 Enclosure (1) Table 2-7.--5,000m Row Scoring Tables.  (cont.) Male 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Female 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Max 18:00 18:15 18:30 18:45 19:00 19:15 19:35 20:00 Max 21:00 21:15 21:30 21:45 22:00 22:15 22:35 23:00 Min 23:30 23:50 24:10 24:30 24:50 25:10 25:35 26:00 Min 26:30 26:50 27:10 27:30 27:50 28:10 28:35 29:00 Min Pts 40 40 40 40 40 40 40 40 Min Pts 40 40 40 40 40 40 40 40 22:00 56 60 63 66 69 72 76 80 25:00 56 60 63 66 69 72 76 80 22:05 55 59 62 65 68 71 75 79 25:05 55 59 62 65 68 71 75 79 22:10 55 58 61 64 67 70 74 78 25:10 55 58 61 64 67 70 74 78 22:15 54 57 60 63 67 70 73 78 25:15 54 57 60 63 67 70 73 78 22:20 53 56 59 63 66 69 73 77 25:20 53 56 59 63 66 69 73 77 22:25 52 55 59 62 65 68 72 76 25:25 52 55 59 62 65 68 72 76 22:30 51 54 58 61 64 67 71 75 25:30 51 54 58 61 64 67 71 75 22:35 50 53 57 60 63 66 70 74 25:35 50 53 57 60 63 66 70 74 22:40 49 53 56 59 62 65 69 73 25:40 49 53 56 59 62 65 69 73 22:45 48 52 55 58 61 65 68 73 25:45 48 52 55 58 61 65 68 73 22:50 47 51 54 57 61 64 68 72 25:50 47 51 54 57 61 64 68 72 22:55 46 50 53 57 60 63 67 71 25:55 46 50 53 57 60 63 67 71 23:00 45 49 52 56 59 62 66 70 26:00 45 49 52 56 59 62 66 70 23:05 45 48 51 55 58 61 65 69 26:05 45 48 51 55 58 61 65 69 23:10 44 47 51 54 57 60 64 68 26:10 44 47 51 54 57 60 64 68 23:15 43 46 50 53 56 59 63 68 26:15 43 46 50 53 56 59 63 68 23:20 42 45 49 52 55 59 63 67 26:20 42 45 49 52 55 59 63 67 23:25 41 44 48 51 55 58 62 66 26:25 41 44 48 51 55 58 62 66 23:30 40 44 47 50 54 57 61 65 26:30 40 44 47 50 54 57 61 65 23:35 43 46 50 53 56 60 64 26:35 43 46 50 53 56 60 64 23:40 42 45 49 52 55 59 63 26:40 42 45 49 52 55 59 63 23:45 41 44 48 51 54 58 63 26:45 41 44 48 51 54 58 63 23:50 40 44 47 50 54 58 62 26:50 40 44 47 50 54 58 62 23:55 43 46 49 53 57 61 26:55 43 46 49 53 57 61 24:00 42 45 49 52 56 60 27:00 42 45 49 52 56 60 24:05 41 44 48 51 55 59 27:05 41 44 48 51 55 59 24:10 40 43 47 50 54 58 27:10 40 43 47 50 54 58 24:15 43 46 49 53 58 27:15 43 46 49 53 58 24:20 42 45 48 53 57 27:20 42 45 48 53 57 24:25 41 44 48 52 56 27:25 41 44 48 52 56 24:30 40 43 47 51 55 27:30 40 43 47 51 55 24:35 43 46 50 54 27:35 43 46 50 54 24:40 42 45 49 53 27:40 42 45 49 53 24:45 41 44 48 53 27:45 41 44 48 53 24:50 40 43 48 52 27:50 40 43 48 52 24:55 43 47 51 27:55 43 47 51 25:00 42 46 50 28:00 42 46 50 25:05 41 45 49 28:05 41 45 49 25:10 40 44 48 28:10 40 44 48 25:15 43 48 28:15 43 48 25:20 43 47 28:20 43 47 25:25 42 46 28:25 42 46 25:30 41 45 28:30 41 45 25:35 40 44 28:35 40 44 25:40 43 28:40 43 25:45 43 28:45 43 25:50 42 28:50 42 25:55 41 28:55 41 26:00 40 29:00 40 MCO 6100.13A 17 JAN 2018 2-23 Enclosure (1) Table 2-8.--5,000m Row at Altitude Scoring Tables. Male 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Female 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Max 18:40 18:55 19:10 19:25 19:40 19:55 20:15 20:40 Max 21:40 21:55 22:10 22:25 22:40 22:55 23:15 23:40 Min 24:10 24:30 24:50 25:10 25:30 25:50 26:15 26:40 Min 27:10 27:30 27:50 28:10 28:30 28:50 29:15 29:40 Min Pts 40 40 40 40 40 40 40 40 Min Pts 40 40 40 40 40 40 40 40 18:40 100 21:40 100 18:45 99 21:45 99 18:50 98 21:50 98 18:55 97 100 21:55 97 100 19:00 96 99 22:00 96 99 19:05 95 98 22:05 95 98 19:10 95 97 100 22:10 95 97 100 19:15 94 96 99 22:15 94 96 99 19:20 93 96 98 22:20 93 96 98 19:25 92 95 97 100 22:25 92 95 97 100 19:30 91 94 96 99 22:30 91 94 96 99 19:35 90 93 96 98 22:35 90 93 96 98 19:40 89 92 95 97 100 22:40 89 92 95 97 100 19:45 88 91 94 97 99 22:45 88 91 94 97 99 19:50 87 90 93 96 98 22:50 87 90 93 96 98 19:55 86 89 92 95 97 100 22:55 86 89 92 95 97 100 20:00 85 88 91 94 97 99 23:00 85 88 91 94 97 99 20:05 85 87 90 93 96 98 23:05 85 87 90 93 96 98 20:10 84 87 89 92 95 97 23:10 84 87 89 92 95 97 20:15 83 86 89 91 94 97 100 23:15 83 86 89 91 94 97 100 20:20 82 85 88 90 93 96 99 23:20 82 85 88 90 93 96 99 20:25 81 84 87 90 92 95 98 23:25 81 84 87 90 92 95 98 20:30 80 83 86 89 91 94 98 23:30 80 83 86 89 91 94 98 20:35 79 82 85 88 91 93 97 23:35 79 82 85 88 91 93 97 20:40 78 81 84 87 90 92 96 100 23:40 78 81 84 87 90 92 96 100 20:45 77 80 83 86 89 92 95 99 23:45 77 80 83 86 89 92 95 99 20:50 76 79 82 85 88 91 94 98 23:50 76 79 82 85 88 91 94 98 20:55 75 79 81 84 87 90 93 98 23:55 75 79 81 84 87 90 93 98 21:00 75 78 81 83 86 89 93 97 24:00 75 78 81 83 86 89 93 97 21:05 74 77 80 83 85 88 92 96 24:05 74 77 80 83 85 88 92 96 21:10 73 76 79 82 85 87 91 95 24:10 73 76 79 82 85 87 91 95 21:15 72 75 78 81 84 86 90 94 24:15 72 75 78 81 84 86 90 94 21:20 71 74 77 80 83 86 89 93 24:20 71 74 77 80 83 86 89 93 21:25 70 73 76 79 82 85 88 93 24:25 70 73 76 79 82 85 88 93 21:30 69 72 75 78 81 84 88 92 24:30 69 72 75 78 81 84 88 92 21:35 68 71 74 77 80 83 87 91 24:35 68 71 74 77 80 83 87 91 21:40 67 70 74 77 79 82 86 90 24:40 67 70 74 77 79 82 86 90 21:45 66 70 73 76 79 81 85 89 24:45 66 70 73 76 79 81 85 89 21:50 65 69 72 75 78 81 84 88 24:50 65 69 72 75 78 81 84 88 21:55 65 68 71 74 77 80 83 88 24:55 65 68 71 74 77 80 83 88 22:00 64 67 70 73 76 79 83 87 25:00 64 67 70 73 76 79 83 87 22:05 63 66 69 72 75 78 82 86 25:05 63 66 69 72 75 78 82 86 22:10 62 65 68 71 74 77 81 85 25:10 62 65 68 71 74 77 81 85 22:15 61 64 67 70 73 76 80 84 25:15 61 64 67 70 73 76 80 84 22:20 60 63 66 70 73 75 79 83 25:20 60 63 66 70 73 75 79 83 22:25 59 62 66 69 72 75 78 83 25:25 59 62 66 69 72 75 78 83 22:30 58 61 65 68 71 74 78 82 25:30 58 61 65 68 71 74 78 82 22:35 57 61 64 67 70 73 77 81 25:35 57 61 64 67 70 73 77 81 22:40 56 60 63 66 69 72 76 80 25:40 56 60 63 66 69 72 76 80 MCO 6100.13A 17 JAN 2018 2-24 Enclosure (1) Table 2-8.--5,000m Row at Altitude Scoring Tables.  (cont.) Male 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Female 17-20 21-25 26-30 31-35 36-40 41-45 46-50 51+ Max 18:40 18:55 19:10 19:25 19:40 19:55 20:15 20:40 Max 21:40 21:55 22:10 22:25 22:40 22:55 23:15 23:40 Min 24:10 24:30 24:50 25:10 25:30 25:50 26:15 26:40 Min 27:10 27:30 27:50 28:10 28:30 28:50 29:15 29:40 Min Pts 40 40 40 40 40 40 40 40 Min Pts 40 40 40 40 40 40 40 40 22:45 55 59 62 65 68 71 75 79 25:45 55 59 62 65 68 71 75 79 22:50 55 58 61 64 67 70 74 78 25:50 55 58 61 64 67 70 74 78 22:55 54 57 60 63 67 70 73 78 25:55 54 57 60 63 67 70 73 78 23:00 53 56 59 63 66 69 73 77 26:00 53 56 59 63 66 69 73 77 23:05 52 55 59 62 65 68 72 76 26:05 52 55 59 62 65 68 72 76 23:10 51 54 58 61 64 67 71 75 26:10 51 54 58 61 64 67 71 75 23:15 50 53 57 60 63 66 70 74 26:15 50 53 57 60 63 66 70 74 23:20 49 53 56 59 62 65 69 73 26:20 49 53 56 59 62 65 69 73 23:25 48 52 55 58 61 65 68 73 26:25 48 52 55 58 61 65 68 73 23:30 47 51 54 57 61 64 68 72 26:30 47 51 54 57 61 64 68 72 23:35 46 50 53 57 60 63 67 71 26:35 46 50 53 57 60 63 67 71 23:40 45 49 52 56 59 62 66 70 26:40 45 49 52 56 59 62 66 70 23:45 45 48 51 55 58 61 65 69 26:45 45 48 51 55 58 61 65 69 23:50 44 47 51 54 57 60 64 68 26:50 44 47 51 54 57 60 64 68 23:55 43 46 50 53 56 59 63 68 26:55 43 46 50 53 56 59 63 68 24:00 42 45 49 52 55 59 63 67 27:00 42 45 49 52 55 59 63 67 24:05 41 44 48 51 55 58 62 66 27:05 41 44 48 51 55 58 62 66 24:10 40 44 47 50 54 57 61 65 27:10 40 44 47 50 54 57 61 65 24:15 43 46 50 53 56 60 64 27:15 43 46 50 53 56 60 64 24:20 42 45 49 52 55 59 63 27:20 42 45 49 52 55 59 63 24:25 41 44 48 51 54 58 63 27:25 41 44 48 51 54 58 63 24:30 40 44 47 50 54 58 62 27:30 40 44 47 50 54 58 62 24:35 43 46 49 53 57 61 27:35 43 46 49 53 57 61 24:40 42 45 49 52 56 60 27:40 42 45 49 52 56 60 24:45 41 44 48 51 55 59 27:45 41 44 48 51 55 59 24:50 40 43 47 50 54 58 27:50 40 43 47 50 54 58 24:55 43 46 49 53 58 27:55 43 46 49 53 58 25:00 42 45 48 53 57 28:00 42 45 48 53 57 25:05 41 44 48 52 56 28:05 41 44 48 52 56 25:10 40 43 47 51 55 28:10 40 43 47 51 55 25:15 43 46 50 54 28:15 43 46 50 54 25:20 42 45 49 53 28:20 42 45 49 53 25:25 41 44 48 53 28:25 41 44 48 53 25:30 40 43 48 52 28:30 40 43 48 52 25:35 43 47 51 28:35 43 47 51 25:40 42 46 50 28:40 42 46 50 25:45 41 45 49 28:45 41 45 49 25:50 40 44 48 28:50 40 44 48 25:55 43 48 28:55 43 48 26:00 43 47 29:00 43 47 26:05 42 46 29:05 42 46 26:10 41 45 29:10 41 45 26:15 40 44 29:15 40 44 26:20 43 29:20 43 26:25 43 29:25 43 26:30 42 29:30 42 26:35 41 29:35 41 26:40 40 29:40 40 MCO 6100.13A 17 JAN 2018 3-1 Enclosure (1) Chapter 3 Combat Fitness Test</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-9-3/p9/1" path="p9/1" number="9.1." label="1." depth="1" verification="UNVERIFIED">
+        <text>Purpose.  The CFT is a complement to the PFT and measures additional functional elements of general fitness to include agility, coordination, and anaerobic capacity.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-2-4" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-4" heading="2. Requirement" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-4/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Requirement</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-4/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Active Component.  The CFT is a scored, calendar year annual requirement for all active duty Marines.  It is required to be conducted between 1 July and 31 December of each year.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-4/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Reserve Component.  The CFT is a scored, calendar year annual requirement for all SMCR/IMA Marines.  CFT accomplishment will remain valid for two years for promotional purposes should operational constraints prevent annual testing.  It is required to be conducted between 1 July and 31 December of each year.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-4/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Activated Reservists.  Activated reserve Marines, to include AR, mobilized or those performing ADOS will comply with the active component CFT requirement.  Exceptions and waivers will be administered in accordance with this Order.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-4/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>EAS/Retirement.  Marines are required to complete a CFT during the annual period preceding their EAS or retirement date, unless otherwise directed.  The terminal leave date will not be utilized to determine CFT requirements.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-2-4/p2/e" path="p2/e" number="2.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>EAS/Retirement Final Physical Examination.  Completion of the required final physical examination, regardless of when completed, does not exempt a Marine from performing a CFT.  A Marine, who elects to complete their final physical examination 7-12 months prior to EAS or retirement, is still required to perform the annual CFT for that period.  This policy is also applicable to the reserve component annual requirement.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-3-4" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-4" heading="3. Sequence. The CFT consists of three events: MTC, AL, and MANUF. No" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-4-6" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-6" heading="4. Procedures" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-6/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Procedures</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-6/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Safety.  RM will be utilized in order to ensure CFT participants are not exposed to unnecessary risk.  COs/OICs shall ensure all personnel have a current PHA prior to participating in command PFP activities to include physical fitness testing and combat fitness testing.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-6/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Supervision.  The FFI or CPTR will monitor the CFT and maintain the NAVMC 11622 “PFT/CFT Performance Worksheet.”  The form can be found on the FFD website, https://www.fitness.marines.mil/ or at, https://forms.documentservices.dla.mil/order/.  Prior to the execution of each event, the FFI or CPTR will ask the Marines if they have any injuries that will prevent them from performing the event.  Marines will be kept MCO 6100.13A 17 JAN 2018 3-2 Enclosure (1) advised of their progress as they are performing each event by the FFI or CPTR.  COs/OICs are responsible for the proper administration of the CFT.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-6/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Monitor Certification.  Monitor certification must be completed via MarineNet through the “PFT/CFT Monitor Certification” course before Marines are certified as monitors.  Both FFIs and CPTRs must complete this certification course to be able to serve as monitors.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-6/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Execution.  The FFI or CPTR will monitor the CFT and maintain the PFT/CFT Performance Worksheet.  The FFI or CPTR will ensure proper techniques are employed during the AL and MANUF and will call out each repetition for the AL and time-passed (in intervals) for all events.  The FFI or CPTR will be posted at the start/finish point of the MTC course and provide Marines their split time and finishing time for the MTC.  Prior to the start of the MTC, the FFI will place monitors at various locations to ensure they remain on the course.  During the MTC, the FFI or CPTR will position the fastest runners towards the front and ensure participants are not placed too closely together to allow for a safe start.  Because of the relative proximity and speed of runners throughout the MTC, the FFI or CPTR will ensure the finish area remains clear.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-6/p4/f" path="p4/f" number="4.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Equipment.  The following equipment is required to conduct the CFT:</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-6/p4/f/1" path="p4/f/1" number="4.f.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>A timepiece (digital or stopwatch) that accurately measures time to the second.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-6/p4/f/2" path="p4/f/2" number="4.f.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Calibrated scale.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-6/p4/f/3" path="p4/f/3" number="4.f.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Engineer tape, chalk or other field lining material.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-6/p4/f/4" path="p4/f/4" number="4.f.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>100 foot measuring tape.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-6/p4/f/5" path="p4/f/5" number="4.f.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Dummy grenade(s).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-6/p4/f/6" path="p4/f/6" number="4.f.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>M2A1 5.56mm ammunition cans weighing 30 pounds.  Contents of can should not move excessively when lifted.  Grip tape will be applied to the sides of the can to improve grip.  Ammunition cans used expressly for the CFT should be appropriately marked in order to avoid confusion.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-4-6/p4/f/7" path="p4/f/7" number="4.f.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+          <text>Cones, pylons, utility flags, sand bags, or other visible markers in order to mark the MANUF course.</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-5-6" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6" heading="5. Events" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Events</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Movement to Contact (MTC)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/a/1" path="p5/a/1" number="5.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>This is a timed event that can be conducted either indoors or outdoors. MCO 6100.13A 17 JAN 2018 3-3 Enclosure (1)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/a/2" path="p5/a/2" number="5.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The preparatory command is “Ready” and the execute command is “Go.”</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/a/3" path="p5/a/3" number="5.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>The run course will be 880 yards, must be measured for accuracy, and set over reasonably level ground.  Prior to the conduct of this event, the FFI or CPTR will ensure the running surface is free from hazards or debris that can cause injury to MTC participants.  COs/OICs are responsible for ensuring the accuracy of the MTC course length.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/a/4" path="p5/a/4" number="5.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>This event can be conducted on a track or measured surface and should not include numerous sharp turns that would force a participant to slow down excessively to remain on the course.  A wide turnaround point will be implemented to prevent Marines from having to stop and turnaround, causing a loss in time on the event.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/a/5" path="p5/a/5" number="5.a.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Running this event on a treadmill is not authorized.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/a/6" path="p5/a/6" number="5.a.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>The goal of this event is for Marines to complete the measured course as quickly as possible.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Ammunition Lift (AL)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/b/1" path="p5/b/1" number="5.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>This is a timed event with a two minute time limit.  This event can be conducted either indoors or outdoors.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/b/2" path="p5/b/2" number="5.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The preparatory command is “Ready” and the execute command is “Go.”</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/b/3" path="p5/b/3" number="5.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>The AL is a repetitive lift of a 30-pound ammunition can from shoulder height to overhead.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/b/4" path="p5/b/4" number="5.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Prior to the start of the AL, Marines will be paired up by weight (within 10 pounds) and by approximate height in order to facilitate efficient transition to the MANUF.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/b/5" path="p5/b/5" number="5.b.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>The partner counting repetitions will be located to the side (approximately a 90 degree angle) of the Marine performing the AL in order to observe elbow lockout and prevent injury should the participant drop or return the ammunition can to the deck.  Prior to start of the AL event the Marine executing will demonstrate locking out elbows overhead to their partner in order to allow partner to observe where lock out is achieved.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/b/6" path="p5/b/6" number="5.b.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>When Marines are conducting the AL within close proximity, participants will conduct the event facing away from each other.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/b/7" path="p5/b/7" number="5.b.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+          <text>Starting position for the AL is to hold the ammunition can sideways at shoulder height with both hands, handle facing away from the participant.  The proper lifting technique is head up, chest elevated and lumbar curve maintained.  Feet will remain shoulder-width apart or staggered in a basic-warrior stance position.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/b/8" path="p5/b/8" number="5.b.(8)" label="(8)" depth="2" verification="UNVERIFIED">
+          <text>The ammunition can must be lifted to a point overhead where the elbows are momentarily locked out.  The ammunition can does not have to be lifted directly overhead.  Once lock out is achieved, the ammunition can will be lowered to a point where the top of the can is at or below chin level. Once the ammo can is returned to this level, this counts as one repetition. To reach this level, Marines may have to widen the distance between elbows. MCO 6100.13A 17 JAN 2018 3-4 Enclosure (1)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/b/9" path="p5/b/9" number="5.b.(9)" label="(9)" depth="2" verification="UNVERIFIED">
+          <text>The top of the ammunition can when held in the starting position (handle facing away from the body) is to remain parallel to the deck throughout the entire movement.  This will ensure the AL is an overhead lifting motion than an angled pressing motion, and to ensure safety.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/b/10" path="p5/b/10" number="5.b.(10)" label="(10)" depth="2" verification="UNVERIFIED">
+          <text>A repetition will be counted when a correct and complete overhead lift is performed.  The FFIs/CPTRs will ensure proper repetition counting is conducted.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/b/11" path="p5/b/11" number="5.b.(11)" label="(11)" depth="2" verification="UNVERIFIED">
+          <text>Marines are encouraged to use their legs to generate upward momentum of the ammunition can, especially when fatigued.  There is no penalty if Marines choose not to use their legs.  Alteration of stance during the AL is permissible.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/b/12" path="p5/b/12" number="5.b.(12)" label="(12)" depth="2" verification="UNVERIFIED">
+          <text>Marines are authorized to rest during the AL.  The ammunition can may be held in the starting position or placed on the deck.  If placed on the deck, the ammunition can will be lowered in a controlled movement and not thrown or dropped.  Once lowered to the deck, no assistance can be provided when returning the ammunition can to the starting position.  Proper technique will be utilized when returning to the starting position.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/b/13" path="p5/b/13" number="5.b.(13)" label="(13)" depth="2" verification="UNVERIFIED">
+          <text>The FFI or CPTR will monitor the event ensuring elbows are locked out and the ammunition can is lowered to a point at or just below the chin.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/b/14" path="p5/b/14" number="5.b.(14)" label="(14)" depth="2" verification="UNVERIFIED">
+          <text>The goal of this event is to complete as many correct and complete repetitions as possible in the 2-minute time limit.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Maneuver Under Fire (MANUF)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/1" path="p5/c/1" number="5.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>The MANUF is a timed event to be conducted outdoors or an indoor turf field at least 100 yards in length in accordance with Figure 3-1.  The MANUF course should be constructed on a smooth and level grass surface, preferably a football or soccer field.  Prior to the conduct of this event, the FFI or CPTR will ensure the running surface is free from hazards or debris that can cause injury to participants.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/2" path="p5/c/2" number="5.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The MANUF is a 300 yard shuttle run that includes a variety of combat-related tasks, to include crawls, buddy drags/carries, ammunition re- supply, grenade throw, and agility running.  See Figures 3-1 and 3-2 for MANUF layout. MCO 6100.13A 17 JAN 2018 3-5 Enclosure (1) Figure 3-1.--MANUF Layout. (Diagram not to scale -- All events occur within same lane) MCO 6100.13A 17 JAN 2018 3-6 Enclosure (1) 25 yd 50 yd 75 yd 5 Yds 5 Yds 20 Yds 5 Yds 5 Yds 2.5 Yds 2.5 Yds 1 Yd 1 Yd 7 Yds 30 lb Ammo Cans Dummy grenade (“Blue Body”, empty) Small cone, pylon, red/yellow utility flag, small sandbag or other visible marker Lane Marking (Lane shown is left most lane) 5 Yds 1 Yd 1 Yd 1 Yd 10 Yds 1 Yd Figure 3-2.--MANUF Lane Marking.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/3" path="p5/c/3" number="5.c.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>The number of monitors required is dependent upon the amount of lanes necessary to facilitate maximum throughput of a single running.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/4" path="p5/c/4" number="5.c.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>The FFI or CPTR is the primary MANUF monitor.  Each lane will have one field assistant monitor positioned at the 25 yard line.  One grenade pit observer will verify 2 lanes.  The rank requirement for MANUF assistant monitors is NCO or above.  Grenade pit observers can be any rank.  Monitors may rotate as necessary and are authorized to participate in the CFT.  Mass starts for the MANUF is not necessary and individual field monitors can start Marines in their individual lanes upon approval of the FFI or CPTR. For example, if eight MANUF lanes are established, thirteen monitors/observers are required:  One primary MANUF monitor, eight field monitors and four grenade pit observers.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/5" path="p5/c/5" number="5.c.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Prior to execution, the primary monitor will partner Marines by weight (within 10 pounds) and approximate height (within six inches) and assign a lane.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/6" path="p5/c/6" number="5.c.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>Prior to execution, the primary monitor will ensure partnered pairs are assigned lanes based upon MTC times (from fastest to slowest). Marines with the fastest MTC times will execute the MANUF first in order to ensure a uniform pace that facilitates overall supervision and safety of participants. The Marine from the partnered pair not executing the MANUF first will serve as the simulated casualty (SC).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/7" path="p5/c/7" number="5.c.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+          <text>Prior to execution, the primary monitor will direct designated SCs to proceed to the 75 yard line; sit up facing away with legs straight; one yard inboard from the right lateral limit of the assigned lane.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/8" path="p5/c/8" number="5.c.(8)" label="(8)" depth="2" verification="UNVERIFIED">
+          <text>Prior to execution, a dummy grenade will be placed on the deck in the center of each lane at the 75 yard line.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/9" path="p5/c/9" number="5.c.(9)" label="(9)" depth="2" verification="UNVERIFIED">
+          <text>Prior to execution, the primary monitor will ensure MANUF participants confirm their lane and SC location. MCO 6100.13A 17 JAN 2018 3-7 Enclosure (1)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/10" path="p5/c/10" number="5.c.(10)" label="(10)" depth="2" verification="UNVERIFIED">
+          <text>Marines will start the MANUF while lying in the prone; chest on the ground; one yard inboard from the right lateral limit of the designated lane; on line with the SC located at the 75 yard line.  Staggering placement of the legs is permitted.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/11" path="p5/c/11" number="5.c.(11)" label="(11)" depth="2" verification="UNVERIFIED">
+          <text>The preparatory command is “Ready” and the execute command is “Go.”  On the command “Go” Marines will rise and sprint to the 25 yard line.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/12" path="p5/c/12" number="5.c.(12)" label="(12)" depth="2" verification="UNVERIFIED">
+          <text>Upon reaching the 25 yard line, Marines will decelerate and execute a forward facing clockwise turn (“J” hook) around the marker placed one yard inboard from the right lateral limit of the lane.  Once the forward facing turn has been executed, Marines will assume a high crawl position.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/13" path="p5/c/13" number="5.c.(13)" label="(13)" depth="2" verification="UNVERIFIED">
+          <text>With their chest on or behind the 25 yard line following the “J” hook, Marines will drop and execute a high crawl for 10 yards.  The high crawl is characterized by the Marine maintaining contact with the ground with elbows, knees and torso.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/14" path="p5/c/14" number="5.c.(14)" label="(14)" depth="2" verification="UNVERIFIED">
+          <text>After high crawling 10 yards to the 35 yard line, Marines will then execute a modified high crawl for 15 yards to the 50 yard line.  The modified high crawl is characterized by the Marine maintaining six (6) points of contact (hands, knees, and feet) with the ground.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/15" path="p5/c/15" number="5.c.(15)" label="(15)" depth="2" verification="UNVERIFIED">
+          <text>After reaching the 50 yard line, Marines will rise and negotiate a network of cones (utility flags/other markers) for 25 yards until reaching the 75 yard line.  The SC will be seated at the 75 yard line with legs straight and forearms clasped together.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/16" path="p5/c/16" number="5.c.(16)" label="(16)" depth="2" verification="UNVERIFIED">
+          <text>Upon reaching the SC from the rear, Marines will prepare to conduct a casualty drag by reaching underneath and through the arms of the SC and obtaining a solid grasp on both forearms.  Marines will then lift and drag the SC 10 yards through the first two cones at the 65 yard line. Marines will utilize proper lifting techniques by keeping the head up, chest elevated and the natural curve of the lumbar spine maintained.  Field monitors may verbally guide Marines dragging the SC through the nearest two cones.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/17" path="p5/c/17" number="5.c.(17)" label="(17)" depth="2" verification="UNVERIFIED">
+          <text>The SC must keep knees straight and toes off the deck when being dragged.  The SC may not assist the Marine being tested while being dragged.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/18" path="p5/c/18" number="5.c.(18)" label="(18)" depth="2" verification="UNVERIFIED">
+          <text>Once the feet of the SC have passed the second cone, the field monitor will direct “Casualty Stand.”  Once the SC is standing, Marines will lift the SC into the Fireman’s Carry position.  Marines will utilize proper lifting techniques by keeping the head up, chest elevated and buttocks down. The Marine will ensure the SC is placed high on the shoulders.  The SC will place the palm of one hand in the small of the back of the Marine doing the carry for support.  Marines will then transport the SC 65 yards straight back to the start line without negotiating the remainder of the cone network. Stopping to rest and/or readjust is permitted.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/19" path="p5/c/19" number="5.c.(19)" label="(19)" depth="2" verification="UNVERIFIED">
+          <text>Once the SC is passed through the start line, Marines will place the SC safely on the deck and lift two ammunition cans weighing 30 pounds each.  Marines will utilize proper lifting techniques by keeping the head up, chest elevated and buttocks down.  The Marine will transport the two 30 pound ammunition cans back to the 75 yard line, negotiating the cone network while en route. MCO 6100.13A 17 JAN 2018 3-8 Enclosure (1)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/20" path="p5/c/20" number="5.c.(20)" label="(20)" depth="2" verification="UNVERIFIED">
+          <text>Upon reaching the 75 yard line, Marines will place the ammunition cans next to the dummy grenade while utilizing a good lowering technique by bending at the knees.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/21" path="p5/c/21" number="5.c.(21)" label="(21)" depth="2" verification="UNVERIFIED">
+          <text>Marines will pick up the dummy grenade from the deck and engage the grenade target from the standing position.  After the grenade is thrown, Marines will immediately drop to the deck and execute five push-ups.  The quality of the push-ups will be graded in accordance with hybrid pull- up/push-up test standards.  The grenade pit observer will signal to the field monitor both verbally and via hand signal whether the grenade throw was a hit or miss.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/22" path="p5/c/22" number="5.c.(22)" label="(22)" depth="2" verification="UNVERIFIED">
+          <text>To be counted as a hit, grenade throws must land directly in the grenade pit or strike the line marking the area.  If the grenade lands in the grenade pit area, but rolls out, the throw is considered a hit.  The field monitor will report the results of the grenade throw to the Marine after completion of the MANUF.  Five seconds will be deducted from the overall MANUF time for hits and five seconds will be added to the overall MANUF time for misses.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/23" path="p5/c/23" number="5.c.(23)" label="(23)" depth="2" verification="UNVERIFIED">
+          <text>After conducting five properly executed push-ups, Marines will pick up the ammunition cans, utilizing proper lifting techniques by keeping the head up, chest elevated and buttocks down.  After negotiating the cone network, Marines will transport the ammunition cans back to the start line. The primary monitor will ensure a five yard buffer zone is maintained between the start/finish line and any personnel/equipment.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/24" path="p5/c/24" number="5.c.(24)" label="(24)" depth="2" verification="UNVERIFIED">
+          <text>The primary monitor will sound off as event time elapses.  The field monitor will provide grenade throw results.  Marines will provide MANUF times and grenade throw results at the conclusion of the event.  Scores will be calculated as follows: For example, a Marine with an overall MANUF time of 2:42 and had a hit on the grenade throw portion would report “2:42 with a hit.”  The Marine recording will mark the overall time for this Marine as 2:37.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-5-6/p5/c/25" path="p5/c/25" number="5.c.(25)" label="(25)" depth="2" verification="UNVERIFIED">
+          <text>The goal of this event is for Marines to complete the measured course as quickly as possible.</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-6-4" identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-6-4" heading="6. Performance. The minimum combined score required to pass the CFT is 150." verification="UNVERIFIED">
+  </section>
+  <corrections>
+    <correction date="2026-08-03" against="section text already carried in this record">
+      <change>reparse_provisions.py - provision tree rebuilt after the reference-list and signature-block parser fixes</change>
+      <change>31 path(s) added, 30 removed, 327 provisions total</change>
+      <change>reference and enclosure lists now parse under ref/ and encl/ instead of entering the body marker stack</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+    <correction date="2026-08-03" against="the Subj: field in this record's own front matter text">
+      <change>backfill_subjects.py - subject recovered from the naval letter Subj: field, which the provision parser skips as a label line</change>
+      <change>title rebuilt as doc type, native number, and subject</change>
+      <change>no text was invented; a record with no Subj: field keeps subject null</change>
+    </correction>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>32 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

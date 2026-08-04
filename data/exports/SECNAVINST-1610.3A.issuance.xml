@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/secnavinst/1610_3a" canonicalId="SECNAVINST-1610.3A" docType="SECNAV" nativeNumber="1610.3A" tier="T2" lifecycle="unknown" verification="UNVERIFIED" schemaVersion="2.0">
+  <meta>
+    <title>SECNAVINST 1610.3A - Department of the Navy Policy on Harassment Prevention and Response</title>
+    <subject>DEPARTMENT OF THE NAVY POLICY ON HARASSMENT PREVENTION AND RESPONSE</subject>
+    <provenance sourcePath="E:\GunnyBot\Policies\SECNAV\SECNAVINST_1610.3A.pdf" sourceHash="f74e4ff7ccc0881b307d7cbd96a31f7453696bceb9ded63de89b580cc3bc3f07" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="DODI-1020.03" targetIdentifier="/us/dod/dodi/1020_03" basis="cited" tier="T1" held="absent" from="p-8:ref/a"/>
+    <ref rel="references" target="SECNAVINST-5300.26E" targetIdentifier="/us/dod/don/secnavinst/5300_26e" basis="cited" tier="T2" held="absent" from="p-8:ref/b"/>
+    <ref rel="references" target="ALNAV-2025-001" targetIdentifier="/us/dod/don/usmc/alnav/2025/001" basis="cited" tier="T5" held="absent" from="p-8:ref/c"/>
+    <ref rel="references" target="DODI-1020.04" targetIdentifier="/us/dod/dodi/1020_04" basis="cited" tier="T1" held="absent" from="p-8:ref/d"/>
+    <ref rel="references" target="SECNAVINST-12713.14" targetIdentifier="/us/dod/don/secnavinst/12713_14" basis="cited" tier="T2" held="absent" from="p-8:ref/e"/>
+    <ref rel="references" target="SECNAVM-5210.1" targetIdentifier="/us/dod/don/secnavm/5210_1" basis="cited" tier="T2" held="absent" from="p-8:ref/f"/>
+    <ref rel="references" target="SECNAVM-5214.1" targetIdentifier="/us/dod/don/secnavm/5214_1" basis="cited" tier="T2" held="absent" from="p-8:ref/g"/>
+    <ref rel="references" target="USC-T5-S2105" targetIdentifier="/us/usc/t5/s2105" basis="cited" tier="T0" held="absent" from="p-8:ref/h"/>
+    <ref rel="references" target="DODD-7050.06" targetIdentifier="/us/dod/dodd/7050_06" basis="cited" tier="T1" held="absent" from="p-8:ref/i"/>
+    <ref rel="references" target="USC-T10-S930" targetIdentifier="/us/usc/t10/s930" basis="cited" tier="T0" held="absent" from="p-8:ref/j"/>
+    <ref rel="references" target="USC-T10-S801-950a" targetIdentifier="/us/usc/t10/s801-950a" basis="cited" tier="T0" held="absent" from="p-8:ref/k"/>
+    <ref rel="references" target="SECNAVINST-5800.11B" targetIdentifier="/us/dod/don/secnavinst/5800_11b" basis="cited" tier="T2" held="absent" from="p-8:ref/l"/>
+    <ref rel="references" target="USC-T5-S552a" targetIdentifier="/us/usc/t5/s552a" basis="cited" tier="T0" held="held" from="p-8:ref/m"/>
+    <ref rel="references" target="DODI-5015.02" targetIdentifier="/us/dod/dodi/5015_02" basis="cited" tier="T1" held="absent" from="p-8:ref/n"/>
+    <ref rel="references" target="SECNAVINST-5800.12C" targetIdentifier="/us/dod/don/secnavinst/5800_12c" basis="cited" tier="T2" held="absent" from="p-8:ref/o"/>
+  </authority>
+  <section anchor="front-matter" identifier="/us/dod/don/secnavinst/1610_3a/front-matter" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/front-matter/encl" path="encl" number="Encl:" label="Encl:" depth="0" role="enclosure" verification="UNVERIFIED">
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/front-matter/encl/1" path="encl/1" number="(1)" label="(1)" depth="1" role="enclosure" verification="UNVERIFIED">
+        <text>References</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/front-matter/encl/2" path="encl/2" number="(2)" label="(2)" depth="1" role="enclosure" verification="UNVERIFIED">
+        <text>Definitions</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/front-matter/encl/3" path="encl/3" number="(3)" label="(3)" depth="1" role="enclosure" verification="UNVERIFIED">
+        <text>Policy</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/front-matter/encl/4" path="encl/4" number="(4)" label="(4)" depth="1" role="enclosure" verification="UNVERIFIED">
+        <text>Responsibilities</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-1" identifier="/us/dod/don/secnavinst/1610_3a/p-1" heading="1. Purpose" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-1/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Purpose</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-1/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>To provide a comprehensive Department of the Navy (DON) policy for all military personnel on the identification, response, reporting, prevention, and elimination of harassment; including, but not limited to, cyberharassment, discriminatory harassment, hazing, bullying, and stalking pursuant to the guidance provided by references (a) through (o).  See enclosure</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-1/p1/a/1" path="p1/a/1" number="1.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>for a listing of these references.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-1/p1/b" path="p1/b" number="1.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Significant changes include expansion of policy to address all forms of non-sexual harassment.  Additionally, this instruction incorporates policy and responsibilities promulgated in reference (a).</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-1/p1/c" path="p1/c" number="1.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>The Navy’s sexual harassment response policies are governed by references (b) and (c), and are not covered in this instruction.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-1/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Cancellation.  SECNAVINST 1610.3.</text>
+    </provision>
+  </section>
+  <section anchor="p-3" identifier="/us/dod/don/secnavinst/1610_3a/p-3" heading="3. Definitions. Interpretation of this instruction shall be" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-4" identifier="/us/dod/don/secnavinst/1610_3a/p-4" heading="4. Applicability" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Applicability</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>This instruction applies to all DON military personnel, specifically:  active duty military personnel, both Regular and Reserve; midshipmen of the Naval Academy and the Naval Reserve Officer Training Corps; and Reserve personnel when performing active or inactive duty for training or engaging in any activity related to the performance of Department of War (DoW) Reserve duty or function.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>This instruction does not apply to DON civilian employees.  Policies and remedies on harassment prevention and responses for DON civilian employees are set forth in references</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4/p4/b/d" path="p4/b/d" number="4.b.(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>and (e).</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Policy.  See enclosure (3).</text>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Responsibilities.  See enclosure (4).</text>
+    </provision>
+  </section>
+  <section anchor="p-7" identifier="/us/dod/don/secnavinst/1610_3a/p-7" heading="7. Records Management" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-7/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Records Management</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-7/p7/a" path="p7/a" number="7.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Records created as a result of this instruction, regardless of format or media, must be maintained pursuant to reference (f) and dispositioned according to the records disposition schedules found on the Directives and Records Management Division (DRMD) portal page: https://flankspeed.sharepoint- mil.us/sites/SECNAV_DRMD/SitePages/Records-and-Information- Management-Program.aspx</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-7/p7/b" path="p7/b" number="7.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>For questions concerning the management of records related to this instruction or the records disposition schedules, please contact your local Records Manager or the DRMD program office. SECNAVINST 1610.3A 13 May 2026 3</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-8" identifier="/us/dod/don/secnavinst/1610_3a/p-8" heading="8. Information Management Control. The reporting requirements" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-8/ref" path="ref" number="Ref:" label="Ref:" depth="0" role="reference" verification="UNVERIFIED">
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-8/ref/a" path="ref/a" number="(a)" label="(a)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 1020.03 of 8 February 2018</text>
+        <citation target="DODI-1020.03" targetIdentifier="/us/dod/dodi/1020_03" basis="cited" text="DoD Instruction 1020.03 of 8 February 2018"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-8/ref/b" path="ref/b" number="(b)" label="(b)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAVINST 5300.26E</text>
+        <citation target="SECNAVINST-5300.26E" targetIdentifier="/us/dod/don/secnavinst/5300_26e" basis="cited" text="SECNAVINST 5300.26E"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-8/ref/c" path="ref/c" number="(c)" label="(c)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>CNO WASHINGTON DC 101454Z JAN 25(ALNAV 001/25)</text>
+        <citation target="ALNAV-2025-001" targetIdentifier="/us/dod/don/usmc/alnav/2025/001" basis="cited" text="CNO WASHINGTON DC 101454Z JAN 25(ALNAV 001/25)"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-8/ref/d" path="ref/d" number="(d)" label="(d)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 1020.04 of 30 June 2020</text>
+        <citation target="DODI-1020.04" targetIdentifier="/us/dod/dodi/1020_04" basis="cited" text="DoD Instruction 1020.04 of 30 June 2020"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-8/ref/e" path="ref/e" number="(e)" label="(e)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAVINST 12713.14</text>
+        <citation target="SECNAVINST-12713.14" targetIdentifier="/us/dod/don/secnavinst/12713_14" basis="cited" text="SECNAVINST 12713.14"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-8/ref/f" path="ref/f" number="(f)" label="(f)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAV M-5210.1</text>
+        <citation target="SECNAVM-5210.1" targetIdentifier="/us/dod/don/secnavm/5210_1" basis="cited" text="SECNAV M-5210.1"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-8/ref/g" path="ref/g" number="(g)" label="(g)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAV M-5214.1</text>
+        <citation target="SECNAVM-5214.1" targetIdentifier="/us/dod/don/secnavm/5214_1" basis="cited" text="SECNAV M-5214.1"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-8/ref/h" path="ref/h" number="(h)" label="(h)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>5 U.S.C. §2105</text>
+        <citation target="USC-T5-S2105" targetIdentifier="/us/usc/t5/s2105" basis="cited" text="5 U.S.C. §2105"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-8/ref/i" path="ref/i" number="(i)" label="(i)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Directive 7050.06 of 17 April 2015</text>
+        <citation target="DODD-7050.06" targetIdentifier="/us/dod/dodd/7050_06" basis="cited" text="DoD Directive 7050.06 of 17 April 2015"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-8/ref/j" path="ref/j" number="(j)" label="(j)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>10 U.S.C. §930</text>
+        <citation target="USC-T10-S930" targetIdentifier="/us/usc/t10/s930" basis="cited" text="10 U.S.C. §930"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-8/ref/k" path="ref/k" number="(k)" label="(k)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>10 U.S.C. §§801-950a</text>
+        <citation target="USC-T10-S801-950a" targetIdentifier="/us/usc/t10/s801-950a" basis="cited" text="10 U.S.C. §§801-950a"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-8/ref/l" path="ref/l" number="(l)" label="(l)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAVINST 5800.11B</text>
+        <citation target="SECNAVINST-5800.11B" targetIdentifier="/us/dod/don/secnavinst/5800_11b" basis="cited" text="SECNAVINST 5800.11B"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-8/ref/m" path="ref/m" number="(m)" label="(m)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>5 U.S.C. §552a</text>
+        <citation target="USC-T5-S552a" targetIdentifier="/us/usc/t5/s552a" basis="cited" text="5 U.S.C. §552a"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-8/ref/n" path="ref/n" number="(n)" label="(n)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 5015.02 of 24 February 2015</text>
+        <citation target="DODI-5015.02" targetIdentifier="/us/dod/dodi/5015_02" basis="cited" text="DoD Instruction 5015.02 of 24 February 2015"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-8/ref/o" path="ref/o" number="(o)" label="(o)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAVINST 5800.12C SECNAVINST 1610.3A 13 May 2026 Enclosure (2) DEFINITIONS</text>
+        <citation target="SECNAVINST-5800.12C" targetIdentifier="/us/dod/don/secnavinst/5800_12c" basis="cited" text="SECNAVINST 5800.12C SECNAVINST 1610.3A 13 May 2026 Enclosure (2) DEFINITIONS"/>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-1-2" identifier="/us/dod/don/secnavinst/1610_3a/p-1-2" heading="1. Anonymous Complaint. A complaint received by a commander," verification="UNVERIFIED">
+  </section>
+  <section anchor="p-2" identifier="/us/dod/don/secnavinst/1610_3a/p-2" heading="2. Bullying. A form of harassment that includes acts of" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Bullying.  A form of harassment that includes acts of aggression by Service Members or DON civilian employees, with a nexus to military service, with the intent of harming a Service Members or DON civilian employees either physically or psychologically, without a proper military or other governmental purpose.  Bullying may involve the singling out of an individual from coworkers, or unit, for ridicule because the individual is considered different or weak.  It often involves an imbalance of power between the aggressor and the victim.  Bullying can be conducted through the use of electronic devices, including social media, other forms of communication, as well as in person.  Bullying is evaluated by a reasonable person standard.</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Bullying includes, but is not limited to the following when performed without a proper military or other governmental purpose:</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2/p2/a/1" path="p2/a/1" number="2.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Physically striking another person in any manner or threatening to do the same.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Intimidating, teasing, or taunting another person.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2/p2/a/3" path="p2/a/3" number="2.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Oral or written berating of another person with the purpose of belittling or humiliating.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2/p2/a/4" path="p2/a/4" number="2.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Encouraging another person to engage in illegal, harmful, demeaning, or dangerous acts.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2/p2/a/5" path="p2/a/5" number="2.a.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Playing abusive or malicious tricks.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2/p2/a/6" path="p2/a/6" number="2.a.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>Branding, handcuffing, duct taping, tattooing, shaving, greasing, or painting another person.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2/p2/a/7" path="p2/a/7" number="2.a.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+          <text>Subjecting another person to excessive or abusive use of water. SECNAVINST 1610.3A 13 May 2026 2                 Enclosure (2)</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2/p2/a/8" path="p2/a/8" number="2.a.(8)" label="(8)" depth="2" verification="UNVERIFIED">
+          <text>Forcing another person to consume food, alcohol, drugs, or any other substance.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2/p2/a/9" path="p2/a/9" number="2.a.(9)" label="(9)" depth="2" verification="UNVERIFIED">
+          <text>Degrading or damaging another’s property or reputation.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2/p2/a/10" path="p2/a/10" number="2.a.(10)" label="(10)" depth="2" verification="UNVERIFIED">
+          <text>Soliciting, coercing, or knowingly permitting another person to solicit or coerce acts of bullying.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Bullying does not include properly directed command or organizational activities that serve a proper military or other governmental purpose, or the requisite training activities required to prepare for such activities (e.g., command- authorized physical training).</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Service Members or DoW civilian employees may be responsible for an act of bullying even if there was actual or implied consent from the victim and regardless of the grade or rank, status, or Service of the victim.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Bullying is prohibited in all circumstances and environments, including off-duty or “unofficial” unit functions and settings.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Civilian Employee.  As defined in reference (h).</text>
+    </provision>
+  </section>
+  <section anchor="p-4-2" identifier="/us/dod/don/secnavinst/1610_3a/p-4-2" heading="4. Complaint. An allegation of harassment made by a Service" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-5" identifier="/us/dod/don/secnavinst/1610_3a/p-5" heading="5. Cyberharassment. A form of harassment, as defined herein," verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-5/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Cyberharassment.  A form of harassment, as defined herein, or sexual harassment, as defined in reference (b), occurring through or facilitated by an electronic communications system. As used herein, electronic communication systems include internet enabled devices, online spaces and platforms, computers, mobile devices, cameras and imaging platforms, applications, location tracking devices, smart devices, communication technologies, and other emerging technologies. Cyberharassment may include, but is not limited to, threatening, derogatory, or harassing text or email messages, instant messages, social media comments, blog entries, or similar communications.  The broadcast or public sharing via an SECNAVINST 1610.3A 13 May 2026 3                 Enclosure (2) electronic communications system of non-publicly available information about an individual, also referred to as doxing, can be a form of cyberharassment.</text>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-5/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Discriminatory Harassment.  A form of harassment that is unwelcome conduct based on race, color, national origin, religion, sex (including pregnancy), or sexual orientation.</text>
+    </provision>
+  </section>
+  <section anchor="p-7-2" identifier="/us/dod/don/secnavinst/1610_3a/p-7-2" heading="7. Formal Complaint. An allegation submitted in writing to the" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-8-2" identifier="/us/dod/don/secnavinst/1610_3a/p-8-2" heading="8. Harassment. Behavior that is unwelcome or offensive to a" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-9" identifier="/us/dod/don/secnavinst/1610_3a/p-9" heading="9. Hazing. A form of harassment that includes conduct through" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-9/p9" path="p9" number="9." label="9." depth="0" verification="UNVERIFIED">
+      <text>Hazing.  A form of harassment that includes conduct through which Service Members or DON civilian employees, without a proper military or other governmental purpose, but with a nexus to military service, physically or psychologically injures or creates a risk of physical or psychological injury to Service Members or DON civilian employees for the purpose of: initiation into, admission into, affiliation with, change in status or position within, or a condition for continued membership in any military or DoW civilian organization.  Hazing can be conducted through the use of electronic devices, including social media, other forms of communication, as well as in person.</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-9/p9/a" path="p9/a" number="9.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Hazing is evaluated by a reasonable person standard and includes, but is not limited to, the following when performed without a proper military or other governmental purpose:</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-9/p9/a/1" path="p9/a/1" number="9.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Any form of initiation or congratulatory act that involves physically striking another person in any manner or threatening to do the same.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-9/p9/a/2" path="p9/a/2" number="9.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Pressing any object into another person’s skin, regardless of whether it pierces the skin, such as “pinning” or “tacking on” of rank insignia, aviator wings, jump wings, diver insignia, badges, medals, or any other object. SECNAVINST 1610.3A 13 May 2026 4                 Enclosure (2)</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-9/p9/a/3" path="p9/a/3" number="9.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Oral or written berating of another person with the purpose of belittling or humiliating.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-9/p9/a/4" path="p9/a/4" number="9.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Encouraging another person to engage in illegal, harmful, demeaning, or dangerous acts.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-9/p9/a/5" path="p9/a/5" number="9.a.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Playing abusive or malicious tricks.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-9/p9/a/6" path="p9/a/6" number="9.a.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>Branding, handcuffing, duct taping, tattooing, shaving, greasing, or painting another person.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-9/p9/a/7" path="p9/a/7" number="9.a.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+          <text>Subjecting another person to excessive or abusive use of water.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-9/p9/a/8" path="p9/a/8" number="9.a.(8)" label="(8)" depth="2" verification="UNVERIFIED">
+          <text>Forcing another person to consume food, alcohol, drugs, or any other substance.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-9/p9/a/9" path="p9/a/9" number="9.a.(9)" label="(9)" depth="2" verification="UNVERIFIED">
+          <text>Soliciting, coercing, or knowingly permitting another person to solicit or coerce acts of hazing.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-9/p9/b" path="p9/b" number="9.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Hazing does not include properly directed command or organizational activities that serve a proper military or other governmental purpose, or the requisite training activities required to prepare for such activities (e.g., administrative corrective measures, extra military instruction, or command- authorized physical training).</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-9/p9/c" path="p9/c" number="9.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Service Members or DON civilian employees may be responsible for an act of hazing even if there was actual or implied consent from the victim and regardless of the grade or rank, status, or Service of the victim.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-9/p9/d" path="p9/d" number="9.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Hazing is prohibited in all circumstances and environments including off-duty or “unofficial” unit functions and settings.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-10" identifier="/us/dod/don/secnavinst/1610_3a/p-10" heading="10. Informal Complaint. An allegation, made either orally or" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-10/p10" path="p10" number="10." label="10." depth="0" verification="UNVERIFIED">
+      <text>Informal Complaint.  An allegation, made either orally or in writing, that is not processed or resolved as a formal complaint through the office designated to receive harassment complaints.  The allegation may be submitted to a person in a position of authority within the Service Member’s organization or outside of the Service Member’s organization. SECNAVINST 1610.3A 13 May 2026 5                 Enclosure (2)</text>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-10/p11" path="p11" number="11." label="11." depth="0" verification="UNVERIFIED">
+      <text>Investigation.  An examination into allegations of wrongdoing or misconduct.</text>
+    </provision>
+  </section>
+  <section anchor="p-12" identifier="/us/dod/don/secnavinst/1610_3a/p-12" heading="12. Joint Service Environment. A locality from which" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-13" identifier="/us/dod/don/secnavinst/1610_3a/p-13" heading="13. Reprisal. Taking or threatening to take an unfavorable" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-14" identifier="/us/dod/don/secnavinst/1610_3a/p-14" heading="14. Retaliation. Retaliation encompasses illegal," verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-14/p14" path="p14" number="14." label="14." depth="0" verification="UNVERIFIED">
+      <text>Retaliation.  Retaliation encompasses illegal, impermissible, or hostile actions taken by a Service Member’s chain of command, peers, or coworkers because of making or being suspected of making a protected communication pursuant to reference (i).  Retaliation for reporting a criminal offense can occur in several ways, including reprisal.  Investigation of complaints of non-criminal retaliatory actions other than reprisal will be processed consistent with Service-specific regulations.  Additional retaliatory behaviors include ostracism and maltreatment.</text>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-14/p15" path="p15" number="15." label="15." depth="0" verification="UNVERIFIED">
+      <text>Sexual Harassment.  As defined in reference (b).</text>
+    </provision>
+  </section>
+  <section anchor="p-16" identifier="/us/dod/don/secnavinst/1610_3a/p-16" heading="16. Social Media. Web-based tools, websites, applications, and" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-17" identifier="/us/dod/don/secnavinst/1610_3a/p-17" heading="17. Stalking. Includes, but it is not limited to, when a" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-17/p17" path="p17" number="17." label="17." depth="0" verification="UNVERIFIED">
+      <text>Stalking.  Includes, but it is not limited to, when a person:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-17/p17/a" path="p17/a" number="17.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Wrongfully engages in a course of conduct directed at a specific person that would cause a reasonable person to fear death or bodily harm, including sexual assault, to the specific SECNAVINST 1610.3A 13 May 2026 6                 Enclosure (2) person, to a member of the specific person’s immediate family, or to the specific person’s intimate partner.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-17/p17/b" path="p17/b" number="17.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Has knowledge, or should have knowledge, that a specific person will be placed in reasonable fear of death or bodily harm, including sexual assault, to the specific person, to a member of the specific person’s immediate family, or to the specific person’s intimate partner.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-17/p17/c" path="p17/c" number="17.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Whose conduct induces reasonable fear of death or bodily harm to a specific person, including sexual assault, to the specific person, to a member of the specific person’s immediate family, or to the specific person’s intimate partner.  For further information refer to reference (j).</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-18" identifier="/us/dod/don/secnavinst/1610_3a/p-18" heading="18. Supervisor. A commissioned officer, non-commissioned" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-1-3" identifier="/us/dod/don/secnavinst/1610_3a/p-1-3" heading="1. Harassment. Harassment is contrary to our Core Values of" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-1-3/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Harassment.  Harassment is contrary to our Core Values of Honor, Courage, and Commitment.  Adherence to Core Values by our Sailors and Marines is central to the DON’s ability to meet its global mission.  These values have served the Sea Services well during war and peacetime.  They are our guiding principles for treating every Sailor and Marine with dignity and respect, and as a valued member of the Navy and Marine Corps team. Harassment degrades and diminishes the ability of a Sailor or Marine to function within their unit.  It erodes our members' confidence and trust in their shipmates and is destructive to unit cohesion and combat readiness.  Every member of DON will be afforded the opportunity to be a productive and contributing member, free of harassment and its ill effects.</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-1-3/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>DON leadership has a responsibility to create and maintain an environment free from harassment.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-1-3/p1/b" path="p1/b" number="1.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Harassment is prohibited and will not be tolerated by any member of the Navy or Marine Corps.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-1-3/p1/c" path="p1/c" number="1.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>No Service Member in the DON may engage in harassment or consent to acts of harassment being committed upon them.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-1-3/p1/d" path="p1/d" number="1.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>No commander or supervisor may, by act, word, deed, or omission, condone or ignore harassment if the commander or supervisor knows or reasonably should have known that harassment may or did occur.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-1-3/p1/e" path="p1/e" number="1.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Every Service Member has the responsibility to report each violation of this policy to leadership or appropriate authorities.  Commanders and supervisors must commence, or cause the commencement of, an investigation of a formal complaint of harassment within five duty days of receipt of the complaint using the procedures listed in reference (a).</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-2-2" identifier="/us/dod/don/secnavinst/1610_3a/p-2-2" heading="2. Hazing. Military customs and traditions have long been an" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2-2/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Hazing.  Military customs and traditions have long been an integral part of the Navy and Marine Corps.  These activities, if properly supervised, can be effective leadership tools to instill esprit de corps, unit cohesion, and respect for an accomplishment of another Sailor or Marine.  While most ceremonies commemorate the many selfless acts of bravery of our military, they also commemorate significant events.  These SECNAVINST 1610.3A 13 May 2026 2                 Enclosure (3) actions and events form the basis upon which our Core Values of Honor, Courage, and Commitment were founded.  Graduations, chiefs' initiations, "crossing-the-line" ceremonies, and others are meant to celebrate and recognize the achievements of individual Sailors or Marines or those of entire units.  Service Members must be able to work together, build-up, encourage, and support their shipmates.  Incorporating or condoning behavior that is degrading, embarrassing, abusive, or injurious as part of our ceremonies, initiations, or rites of passage can be illegal and unprofessional.  Hazing is not part of our "time honored traditions" and has no place in the modern Naval Services.</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2-2/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Commanders or supervisors must be aware of all ceremonies and initiations conducted within their organizations and must take active measures to ensure that these activities do not violate this policy.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2-2/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Commanders or supervisors must ensure that Service Members participating in command authorized ceremonies, initiations, and other activities are treated with dignity and respect during these events.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2-2/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Complaints of sexual harassment may be reported pursuant to reference (b) and processed using the procedures outlined in references (b) and (c).</text>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2-2/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Retaliation.  Retaliation or reprisal actions, as defined in this instruction, enclosure (2), against any victim or witness of harassment incidents are strictly prohibited.</text>
+    </provision>
+  </section>
+  <section anchor="p-5-2" identifier="/us/dod/don/secnavinst/1610_3a/p-5-2" heading="5. Applicability. The rules in this instruction, enclosure" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-5-2/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Applicability.  The rules in this instruction, enclosure (3), paragraph 5.a. are regulatory orders and apply to all DON military personnel individually and without further implementation.  A violation of these provisions by military personnel may be punishable pursuant to reference (k).  The prohibitions in this instruction, enclosure (3), paragraph 5.a. apply to all conduct which occurs in or affects a DoW working environment, or otherwise meets the definition of harassment, cyberharassment, discriminatory harassment, hazing, bullying, or stalking as defined in this instruction, enclosure (2). SECNAVINST 1610.3A 13 May 2026 3                 Enclosure (3)</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-5-2/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>DON military personnel will not intentionally or recklessly:</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-5-2/p5/a/1" path="p5/a/1" number="5.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Commit harassment, as defined in this instruction, enclosure (2).</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-5-2/p5/a/2" path="p5/a/2" number="5.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Retaliate against a person who provides information on an incident of alleged harassment, cyberharassment, discriminatory harassment, hazing, bullying or stalking, obstruct an investigation of such an incident, or act to prevent a victim or witness from reporting harassment, cyberharassment, discriminatory harassment, hazing, bullying, or stalking.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-5-2/p5/a/3" path="p5/a/3" number="5.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Make a false accusation of harassment, cyberharassment, discriminatory harassment, hazing, bullying, or stalking.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-5-2/p5/a/4" path="p5/a/4" number="5.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>While in a supervisory or command position, condone or ignore harassment, cyberharassment, discriminatory harassment, hazing, bullying, or stalking of which he or she has knowledge or reasonably should have knowledge.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-5-2/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>The appropriate action to resolve a substantiated incident of harassment will depend upon the circumstances surrounding that incident.  Incidents of harassment cover a wide range of behaviors, from verbal comments to physical acts, and can be subtle or overt.  Likewise, the full range of administrative and disciplinary actions are available to address harassment.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-5-2/p5/b/1" path="p5/b/1" number="5.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>In the case of military personnel, these include, but are not limited to, informal counseling, comments in fitness reports and evaluations, administrative separation, and punitive measures under reference (k).</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-5-2/p5/b/2" path="p5/b/2" number="5.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Substantiated complaints will be annotated on fitness reports, evaluations, or Service-level reporting and tracking system(s).  The Service-level tracking system shall be reviewed for substantiated harassment incidents prior to a Service member’s selection for promotion and other favorable personnel actions.</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-6" identifier="/us/dod/don/secnavinst/1610_3a/p-6" heading="6. Leadership. Sound leadership must be the cornerstone of the" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-7-3" identifier="/us/dod/don/secnavinst/1610_3a/p-7-3" heading="7. Victim and Witness Assistance Program" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-7-3/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Victim and Witness Assistance Program</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-7-3/p7/a" path="p7/a" number="7.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Commanders and supervisors must be informed immediately of any allegation of harassment.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-7-3/p7/b" path="p7/b" number="7.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Victims and witnesses, as defined in reference (l), must be immediately advised of their rights and offered legal advice, medical assistance, and counseling as necessary.  Commanders and supervisors will ensure that victims and witnesses are advised of and given access to victim and witness advocacy services pursuant to reference (l).</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-7-3/p7/c" path="p7/c" number="7.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Dignity, respect, and communication throughout the investigative process is paramount to prevent re-victimization of the individual who experienced the harassment. SECNAVINST 1610.3A 13 May 2026 Enclosure (4) RESPONSIBILITIES</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-1-4" identifier="/us/dod/don/secnavinst/1610_3a/p-1-4" heading="1. The Assistant Secretary of the Navy (Manpower and Reserve" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-1-4/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>The Assistant Secretary of the Navy (Manpower and Reserve Affairs) (ASN (M&amp;RA)) will:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-1-4/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Provide oversight of Navy and Marine Corps harassment prevention and response programs.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-1-4/p1/b" path="p1/b" number="1.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Review annual reports submitted to ASN (M&amp;RA) as required by this instruction, enclosure (4), paragraphs 2a, 2b, 3c, and 4c.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-2-3" identifier="/us/dod/don/secnavinst/1610_3a/p-2-3" heading="2. The Naval Inspector General (NAVINSGEN) and the Deputy Naval" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2-3/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>The Naval Inspector General (NAVINSGEN) and the Deputy Naval Inspector General for Marine Corps Matters/Inspector General of the Marine Corps (IGMC) will:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2-3/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Provide a summary of hotline allegations involving harassment for the previous Fiscal Year (FY) by 15 December annually to ASN (M&amp;RA) and the respective Service MEO manager. Summary must include total number of harassment reports; ranks of the complainant(s) and alleged offender(s); number of substantiated or unsubstantiated reports; and if substantiated, the administrative or disciplinary action that resulted.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2-3/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Provide a summary of allegations against DON senior officials (Flag Officers, General Officers, Senior Executive Service officials, and senior official equivalents) relating to harassment for the previous Fiscal Year (FY) by 15 December annually to ASN (M&amp;RA).  Summary must include the total number of harassment reports; ranks of the complainant(s) and alleged offender(s); number of substantiated or unsubstantiated reports; and if substantiated, the administrative or disciplinary action that resulted.  All allegations against DON senior officials must be reported to NAVINSGEN or IGMC.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-2-3/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Include specific assessments of harassment prevention and response programs in all command inspections and area assessments, and ensure that subordinate inspectors general include harassment program prevention and response assessments in their own unit-level inspection programs. SECNAVINST 1610.3A 13 May 2026 2                 Enclosure (4)</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-3-2" identifier="/us/dod/don/secnavinst/1610_3a/p-3-2" heading="3. The Director, Naval Criminal Investigative Service (NCIS)" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-3-2/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>The Director, Naval Criminal Investigative Service (NCIS) will:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-3-2/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Provide advice and assistance to ASN (M&amp;RA) on stalking, including reviewing and coordinating on all proposed policies, regulations, directives, and instructions that reference stalking.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-3-2/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Investigate all actions related to stalking and respond to information or actions reported via all referral methods as appropriate.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-3-2/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Establish mechanisms to collect, track, assess, and analyze data and information related to stalking complaints pursuant to Section 3 of reference (a).</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-3-2/p3/d" path="p3/d" number="3.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Respond to DoW data calls, via ASN (M&amp;RA), pursuant to Section 7 of reference (a), including data and reports to support annual congressional and DoW FY reports.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-4-3" identifier="/us/dod/don/secnavinst/1610_3a/p-4-3" heading="4. The Chief of Naval Operations and the Commandant of the" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>The Chief of Naval Operations and the Commandant of the Marine Corps will:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Establish harassment prevention and response policies and programs that meet the requirements of reference (a) and this instruction with specific attention to the functional areas of prevention, training, case management, reporting, and accountability  to ensure that:</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/a/1" path="p4/a/1" number="4.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Service Members are treated with dignity and respect.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/a/2" path="p4/a/2" number="4.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Leaders at all levels foster a climate that is free from harassment, does not tolerate retaliation for reporting harassment allegations, and a climate in which leaders are held appropriately accountable for failing to do so.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/a/3" path="p4/a/3" number="4.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Formal and informal resolution procedures are established.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/a/4" path="p4/a/4" number="4.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Harassment complaints are resolved in an impartial and timely manner and all formal complaint investigations are reviewed for legal sufficiency.  Reference (a) includes SECNAVINST 1610.3A 13 May 2026 3                 Enclosure (4) timelines for initiating and completing an investigation for complaints, including anonymous complaints.  A complaint that alleges facts that, if true, would not constitute harassment, need not be investigated using harassment procedures.  However, where the facts alleged, if true, would constitute unlawful harassment or discrimination under another statutory or regulatory basis (e.g., sexual harassment), that matter must be investigated under procedures established for investigations under those other bases; for example, stalking must be reported to NCIS.  Claims that are identical to claims previously filed and resolved may be dismissed as duplicative.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/a/5" path="p4/a/5" number="4.a.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Complainants receive access to available victim services and support, and are afforded an opportunity to provide input regarding disposition.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/a/6" path="p4/a/6" number="4.a.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>Complainants receive ongoing timely information regarding the status of their complaints, commencement of the investigation, and notice of disposition.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Oversee Military Service programs, which will include:</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/b/1" path="p4/b/1" number="4.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Information regarding how to identify harassment.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/b/2" path="p4/b/2" number="4.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Information regarding reporting options, procedures, and applicable timelines to submit harassment complaints, including complaints submitted anonymously, and complaints involving a Service Member’s commander or supervisor, to the appropriate commander or supervisor, the Inspector General’s office, MEO office, or staff designated by the Military Service to receive harassment complaints.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/b/3" path="p4/b/3" number="4.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Procedures for commanders and supervisors to receive, respond to, investigate, and resolve harassment complaints, including those made in Joint Service environments consistent with reference (a), paragraph 4.5.  These procedures shall include forms for the documentation of each step in the formal complaint process, including pre-decision updates and post-decision follow-ups with the complainant consistent with reference (m) and implementing DoW guidance.  Complaint forms and reporting systems should clearly identify the duty status involved in Reserve Component cases.  Service Members should be encouraged to file complaints promptly, normally within 60 days of the incident. SECNAVINST 1610.3A 13 May 2026 4                 Enclosure (4)</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/b/4" path="p4/b/4" number="4.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Training and education requirements for commanders, supervisors, Service Members, and any other appropriate personnel (e.g., chaplains, judge advocates, investigating officers, inspectors general, MEO personnel, and staff designated by the Service to receive complaints).  In addition to requirements in Section 6 of reference (a), training will include, at a minimum, training modules and materials provided by Defense Equal Opportunity Management Institute (DEOMI). Service developed training plans for such personnel will be submitted to DEOMI for review before implementation.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/b/5" path="p4/b/5" number="4.b.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Criteria for the appeal of administrative findings of formally resolved complaints of harassment.  The sole mechanism for appealing the disposition of an informally resolved complaint shall be to file a complaint using the formal resolution process.  Appeal procedures shall be conducted pursuant to reference (a).</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/b/6" path="p4/b/6" number="4.b.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>Information on the policies and procedures for filing a complaint of reprisal under reference (i).</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/b/7" path="p4/b/7" number="4.b.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+          <text>Mechanisms to collect, track, assess, and analyze data and information related to harassment complaints pursuant to Section 7 of reference (a).</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/b/8" path="p4/b/8" number="4.b.(8)" label="(8)" depth="2" verification="UNVERIFIED">
+          <text>Mechanisms to maintain data regarding harassment complaints in a manner that will ensure adequate tracking of complaints from or against Service Members assigned, detailed, or otherwise working in a DoW Component, other than the Navy or Marine Corps, consistent with Service specific record retention policies and procedures, references (f) and (n).</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/b/9" path="p4/b/9" number="4.b.(9)" label="(9)" depth="2" verification="UNVERIFIED">
+          <text>Requirements to prominently post and publicize information regarding DON and Service harassment prevention and response policies and programs, including information regarding how to identify harassment.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Respond to DoW data calls, via ASN (M&amp;RA), pursuant to Section 7 of reference (a), including data and other information to support annual Congressional and DoW FY reports.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/c/1" path="p4/c/1" number="4.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Hazing and bullying data by December 1. SECNAVINST 1610.3A 13 May 2026 5                 Enclosure (4)</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/c/2" path="p4/c/2" number="4.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Data and reports on all other types of harassment, by January 31.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Ensure that a minimum of one 24-hour toll-free or local hotline (or advice line) provides information on harassment policies and procedures covered within this instruction, including how and where to file complaints and the behaviors that constitute harassment.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/e" path="p4/e" number="4.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Verify that appropriate administrative or disciplinary action is taken against Service Members in cases involving substantiated harassment complaints.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/f" path="p4/f" number="4.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Mandate that substantiated complaints are annotated on fitness reports, evaluations, or Service-level reporting and tracking system(s).  The Service-level tracking system shall be reviewed for substantiated harassment incidents prior to Service Members’ selection for promotion and other favorable personnel actions.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/g" path="p4/g" number="4.g." label="g." depth="1" verification="UNVERIFIED">
+        <text>Assist and support harassment complainants pursuant to reference (a).  Complainants should be provided adequate protection and care, and informed about available support resources, including:</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/g/1" path="p4/g/1" number="4.g.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Military and civilian emergency medical and support services.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/g/2" path="p4/g/2" number="4.g.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Public and private programs that are available to provide counseling, treatment, and other support.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_3a/p-4-3/p4/g/3" path="p4/g/3" number="4.g.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Organizations and entities on- and off-base that provide victim and witness services and support.</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-5-3" identifier="/us/dod/don/secnavinst/1610_3a/p-5-3" heading="5. Leaders at all levels will:" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-5-3/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Leaders at all levels will:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-5-3/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Clearly communicate that demeaning attitudes and behavior, bullying, and hazing will not be tolerated.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-5-3/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Demonstrate through actions and words that they will not tolerate a hostile work environment. SECNAVINST 1610.3A 13 May 2026 6                 Enclosure (4)</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-5-3/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Discourage harassing behaviors and immediately and actively intervene if harassing actions/behaviors are observed.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-5-3/p5/d" path="p5/d" number="5.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Encourage members to report all harassment.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-6-2" identifier="/us/dod/don/secnavinst/1610_3a/p-6-2" heading="6. Service Members will:" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_3a/p-6-2/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Service Members will:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-6-2/p6/a" path="p6/a" number="6.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Treat others with dignity and respect.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-6-2/p6/b" path="p6/b" number="6.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Promote a positive command climate.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-6-2/p6/c" path="p6/c" number="6.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Safely intervene, discourage, and/or report harassing behaviors to commander, supervisor, or law enforcement.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_3a/p-6-2/p6/d" path="p6/d" number="6.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Be accountable for their actions and behavior.</text>
+      </provision>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-03" against="section text already carried in this record">
+      <change>reparse_provisions.py - provision tree rebuilt after the reference-list and signature-block parser fixes</change>
+      <change>21 path(s) added, 19 removed, 150 provisions total</change>
+      <change>reference and enclosure lists now parse under ref/ and encl/ instead of entering the body marker stack</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+    <correction date="2026-08-03" against="the Subj: field in this record's own front matter text">
+      <change>backfill_subjects.py - subject recovered from the naval letter Subj: field, which the provision parser skips as a label line</change>
+      <change>title rebuilt as doc type, native number, and subject</change>
+      <change>no text was invented; a record with no Subj: field keeps subject null</change>
+    </correction>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>20 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

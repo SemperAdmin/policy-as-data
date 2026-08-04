@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.5.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/usc/t5" canonicalId="USC-T5" docType="USC" nativeNumber="5 U.S.C." tier="T0" lifecycle="active" verification="UNVERIFIED" schemaVersion="2.0">
+  <meta>
+    <title>Title 5, United States Code - Government Organization and Employees</title>
+    <subject>GOVERNMENT ORGANIZATION AND EMPLOYEES</subject>
+    <provenance sourcePath="https://uscode.house.gov/browse/prelim@title5&amp;edition=prelim" sourceHash="38dc50c713cd2300f78a0effce40be9209daf0136fa1665f505fcc3efcfda5cf" extractionEngine="manual-metadata-entry" convertedAt="2026-08-03T00:00:00+00:00" storeSchemaVersion="0.5.0"/>
+  </meta>
+  <section anchor="front-matter" heading="Title 5, United States Code" verification="UNVERIFIED">
+  </section>
+</issuance>

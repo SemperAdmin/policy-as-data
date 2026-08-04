@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/mco/1200_15c-ch1" canonicalId="MCO-1200.15C-CH1" docType="MCO" nativeNumber="1200.15C" tier="T3" lifecycle="active" verification="UNVERIFIED" schemaVersion="2.0">
+  <meta>
+    <title>MCO 1200.15C - Marine Corps Directives Compliance with Executive Order 14168</title>
+    <subject>MARINE CORPS DIRECTIVES COMPLIANCE WITH EXECUTIVE ORDER 14168</subject>
+    <distributionStatement>DISTRIBUTION STATEMENT A: Approved for public release; distribution is</distributionStatement>
+    <provenance sourcePath="E:\GunnyBot\Policies\MCO\MCO_1200.15C_WADMIN_CH-1.pdf" sourceHash="493024927ba35b0132323ede3a0ebcdc28f70255ed14b83e85dd456b7729e040" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="EO-14168" targetIdentifier="/us/eop/eo/14168" basis="cited" tier="TX" held="absent" from="body:ref/a"/>
+  </authority>
+  <section anchor="body" identifier="/us/dod/don/usmc/mco/1200_15c-ch1/body" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1200_15c-ch1/body/ref" path="ref" number="Ref:" label="Ref:" depth="0" role="reference" verification="UNVERIFIED">
+      <provision identifier="/us/dod/don/usmc/mco/1200_15c-ch1/body/ref/a" path="ref/a" number="(a)" label="(a)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Executive Order (E.O.)14168 Gender Ideology Extremism and Restoring Biological Truth to the Federal Government,  January 20, 2025</text>
+        <citation target="EO-14168" targetIdentifier="/us/eop/eo/14168" basis="cited" text="Executive Order (E.O.)14168 Gender Ideology Extremism and Restoring Biological Truth to the Federal Government, January 20, 2025"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_15c-ch1/body/ref/b" path="ref/b" number="(b)" label="(b)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>United States Office of Personnel Management (OPM), Memorandum, Defending Women September 11, 2009</text>
+      </provision>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-03" against="section text already carried in this record">
+      <change>reparse_provisions.py - provision tree rebuilt after the reference-list and signature-block parser fixes</change>
+      <change>3 path(s) added, 3 removed, 3 provisions total</change>
+      <change>reference and enclosure lists now parse under ref/ and encl/ instead of entering the body marker stack</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+    <correction date="2026-08-03" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>5 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+    <correction date="2026-08-03" against="the Subj: field in this record's own front matter text">
+      <change>backfill_subjects.py - subject recovered from the naval letter Subj: field, which the provision parser skips as a label line</change>
+      <change>title rebuilt as doc type, native number, and subject</change>
+      <change>no text was invented; a record with no Subj: field keeps subject null</change>
+    </correction>
+  </corrections>
+</issuance>

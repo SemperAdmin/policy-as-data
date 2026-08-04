@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2026/274" canonicalId="MARADMIN-2026-274" docType="MARADMIN" nativeNumber="274/26" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2026-06-11" schemaVersion="2.0">
+  <meta>
+    <title>FISCAL YEAR 2027 COMMANDANT'S PROFESSIONAL INTERMEDIATE-LEVEL</title>
+    <subject>FISCAL YEAR 2027 COMMANDANT'S PROFESSIONAL INTERMEDIATE-LEVEL</subject>
+    <originator>CMC WASHINGTON DC MRA MM</originator>
+    <signedDate>2026-06-11</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2026\MARADMIN_274_26_FISCAL_YEAR_2027_COMMANDANTS_PROFESSIONAL_INTERMEDIATE-LEVEL.pdf" sourceHash="6c401698c7ab801b967c098a2bc355dd3e8fef3b11a86d09be32a786f6e9dcbe" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="MCO-1524.1" targetIdentifier="/us/dod/don/usmc/mco/1524_1" basis="cited" tier="T3" held="absent" from="narr:REF A"/>
+    <ref rel="references" target="MCO-1553.4B" targetIdentifier="/us/dod/don/usmc/mco/1553_4b" basis="cited" tier="T3" held="absent" from="narr:REF B"/>
+    <ref rel="references" target="MCO-1540.33" targetIdentifier="/us/dod/don/usmc/mco/1540_33" basis="cited" tier="T3" held="absent" from="narr:REF C"/>
+    <ref rel="references" target="MCO-1300.8-CH2" targetIdentifier="/us/dod/don/usmc/mco/1300_8/ch2" basis="cited" tier="T3" held="absent" from="narr:REF D"/>
+    <ref rel="references" target="MCO-1900.16-CH2" targetIdentifier="/us/dod/don/usmc/mco/1900_16/ch2" basis="cited" tier="T3" held="drift" storeHolds="MCO-1900.16-CH3" from="narr:REF E"/>
+    <ref rel="references" target="MARADMIN-2026-158" targetIdentifier="/us/dod/don/usmc/maradmin/2026/158" basis="cited" tier="T5" held="absent" from="narr:REF F"/>
+    <ref rel="references" target="MARADMIN-2026-127" targetIdentifier="/us/dod/don/usmc/maradmin/2026/127" basis="cited" tier="T5" held="absent" from="narr:REF G"/>
+    <ref rel="references" target="MARADMIN-2026-066" targetIdentifier="/us/dod/don/usmc/maradmin/2026/066" basis="cited" tier="T5" held="absent" from="narr:REF H"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2026/274/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2026/274/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Purpose.  This message announces the Fiscal Year 2027 (FY27) Commandant's Professional Intermediate-Level Education Board (CPIB) convening on 04 August 2026 as part of the Commandant's Education Board (CEB).  The purpose of this message is to announce the available programs, eligibility criteria, and timelines for the CPIB execution.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Changes.  In accordance with reference (g), effective 1 April 2026, Headquarters Marine Corps sponsored non-promotion boards will have access to official military personnel file (OMPF) photographs during the conduct of non-promotion selection boards.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p1/b" path="p1/b" number="1.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>A photograph is considered current if the photograph is taken 365 days prior to a selection boardâ€™s convene date.  It remains the Marineâ€™s responsibility to ensure a current photograph is in their Official Military Personnel File (OMPF) no later than 10 business days prior to the boardâ€™s convene date for which they are eligible.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p1/c" path="p1/c" number="1.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Reference (h) modifies the Height and Weight requirement to a Waist-to-Height Ratio (WHtR) requirement.  At present, there is no method for the Digital Boardroom to pull current WHtR information aside from an officer's official photograph or fitness reports. Accordingly, Marines will not be viewed negatively solely because a current WHtR measurement is not available to the board.  However, previous Height and Weight measurements contained within a Marine's record will be considered, as well as any fitness reports that were processed with a WHtR directed comment.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p1/d" path="p1/d" number="1.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Major milestone timeline (read in two columns): NLT Date                  Milestone Release of this message   Eligibility roster published Release of this message   CEB questionnaire opens 20 July                   All Exceptions to Policy (ETP) due 20 July                   CEB questionnaire closes 20 July                   Applications/board correspondence due 20 July                   Remove by Requests (RBR) due 24 July                   Non-compliance list published 31 July                   Final eligibility list published 04 August                 CEB convenes</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Background.  The CPIB, as part of the CEB, is the premier Professional Military Education (PME) opportunity provided to majors, majors (select), and those in-zone for major.  The board will convene for approximately four weeks to select the best and most fully qualified officers for resident PME programs, graduate education programs, and special duty assignments.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Eligibility criteria</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>All majors and majors (select) who will complete their current tour control factor (TCF) by 30 September 2027.  Officers whose TCF is complete by 31 December 2027 may be considered with PMOS monitor approval.</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p3/a/1" path="p3/a/1" number="3.a.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Direct questions regarding tour lengths and dates of departure to the appropriate PMOS monitor.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p3/a/2" path="p3/a/2" number="3.a.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>All majors and majors (select) interested in attending the Naval Postgraduate School but do not meet the eligibility criteria outlined in 3.a. should reach out to their PMOS monitor and the MMOA-3 Graduate Education Manager.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p3/a/3" path="p3/a/3" number="3.a.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>Captains in-zone on the CY26/FY28 Major Promotion Selection Board who have completed their minimum time-on-station requirement.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p3/a/4" path="p3/a/4" number="3.a.4." label="4." depth="2" verification="UNVERIFIED">
+          <text>Captains who are in-zone for major who have not completed the minimum time-on-station requirement and wish to be considered should submit an ETP request.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Ineligibility criteria</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p3/b/1" path="p3/b/1" number="3.b.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Officers with a training PMOS or departing PMOS training.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p3/b/2" path="p3/b/2" number="3.b.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Captains in the above-zone for promotion to major.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p3/b/3" path="p3/b/3" number="3.b.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>Officers currently enrolled in or who have completed a education program slated by a previous CPIB.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p3/b/4" path="p3/b/4" number="3.b.4." label="4." depth="2" verification="UNVERIFIED">
+          <text>Officers who have not yet fulfilled an obligated utilization tour for a previously attended program by 30 September 2027.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p3/b/5" path="p3/b/5" number="3.b.5." label="5." depth="2" verification="UNVERIFIED">
+          <text>Officers enrolled in or who have completed the Command and Staff Blended Seminar Program (CSCBSP) or have completed Intermediate Level School (ILS) (i.e. SAW, SAMS, MAWS, SAASS) are not eligible for resident PME schools but are eligible for graduate education programs (e.g. NPS, RAO, Olmsted, etc).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p3/b/6" path="p3/b/6" number="3.b.6." label="6." depth="2" verification="UNVERIFIED">
+          <text>Officers with an approved lateral move in CY26 are ineligible for FY27 CPIB selection and attendance due to PMOS training and assignment.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p3/b/7" path="p3/b/7" number="3.b.7." label="7." depth="2" verification="UNVERIFIED">
+          <text>Officers with an approved separation or retirement date.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p3/b/8" path="p3/b/8" number="3.b.8." label="8." depth="2" verification="UNVERIFIED">
+          <text>Restricted officers.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p3/b/4" path="p3/b/4" number="3.b.4." label="4." depth="2" verification="UNVERIFIED">
+          <text>CPIB Available Programs</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>CPIB Resident PME ILS</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/1" path="p4/a/1" number="4.a.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Marine Corps Command and Staff College (MCCSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/2" path="p4/a/2" number="4.a.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Army Command and General Staff College (ACGSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/3" path="p4/a/3" number="4.a.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>College of Naval Command and Staff (CNCS).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/4" path="p4/a/4" number="4.a.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Air Command and Staff College (ACSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/5" path="p4/a/5" number="4.a.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Space Force Command and Staff College (USSFCSC) availability to be determined.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/6" path="p4/a/6" number="4.a.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (FPME).  FPME no longer grants Joint PME (JPME) I credit.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>Commandant of the Marine Corps Fellowships (subject to change)</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/1" path="p4/b/1" number="4.b.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Defense Advanced Research Projects Agency (DARPA).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/2" path="p4/b/2" number="4.b.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Judicial Clerkship Navy Marine Corps Court of Criminal Appeals (NMCC) at the Navy Yard (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/3" path="p4/b/3" number="4.b.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Logistics Fellows, Penn State.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/4" path="p4/b/4" number="4.b.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Federal Express.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/5" path="p4/b/5" number="4.b.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Morgan Stanley.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/6" path="p4/b/6" number="4.b.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Dominion Energy.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/7" path="p4/b/7" number="4.b.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>National Geospatial-Intelligence Agency.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/8" path="p4/b/8" number="4.b.8." label="8." depth="2" verification="UNVERIFIED">
+        <text>U.S. Attorney's Eastern District of Virginia (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/9" path="p4/b/9" number="4.b.9." label="9." depth="2" verification="UNVERIFIED">
+        <text>Office of the Federal Defender (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/10" path="p4/b/10" number="4.b.10." label="10." depth="2" verification="UNVERIFIED">
+        <text>International Security Center, Notre Dame.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/11" path="p4/b/11" number="4.b.11." label="11." depth="2" verification="UNVERIFIED">
+        <text>Apple Inc.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/12" path="p4/b/12" number="4.b.12." label="12." depth="2" verification="UNVERIFIED">
+        <text>Asia Pacific Center.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/13" path="p4/b/13" number="4.b.13." label="13." depth="2" verification="UNVERIFIED">
+        <text>University of Southern Mississippi (0202s only).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+      <text>Graduate Education Programs</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/1" path="p4/c/1" number="4.c.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Naval Postgraduate School (NPS)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/2" path="p4/c/2" number="4.c.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Air Force Institute of Technology (AFIT)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/3" path="p4/c/3" number="4.c.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Civilian Institutions</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/4" path="p4/c/4" number="4.c.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>The Judge Advocate Generals Legal Center and School (TJAGLCS)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/5" path="p4/c/5" number="4.c.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Advanced Civilian Schools Program (ACSP)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/6" path="p4/c/6" number="4.c.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Regional Affairs Officer Program (RAO)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/7" path="p4/c/7" number="4.c.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>Olmsted Scholar Program (OSP)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/8" path="p4/c/8" number="4.c.8." label="8." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (countries subject to change).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>NPS Curricula: 3006, 8824, 8825, 8826, 8834, 8840, 8844, 8846, 8848, 8850, 8852, 8862, 8866, 8870.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/1" path="p4/a/1" number="4.a.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Marine Corps Command and Staff College (MCCSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/2" path="p4/a/2" number="4.a.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Army Command and General Staff College (ACGSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/3" path="p4/a/3" number="4.a.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>College of Naval Command and Staff (CNCS).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/4" path="p4/a/4" number="4.a.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Air Command and Staff College (ACSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/5" path="p4/a/5" number="4.a.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Space Force Command and Staff College (USSFCSC) availability to be determined.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/6" path="p4/a/6" number="4.a.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (FPME).  FPME no longer grants Joint PME (JPME) I credit.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>Marines holding a PMOS of 4402 are not eligible to apply to NPS curricula.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/1" path="p4/b/1" number="4.b.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Defense Advanced Research Projects Agency (DARPA).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/2" path="p4/b/2" number="4.b.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Judicial Clerkship Navy Marine Corps Court of Criminal Appeals (NMCC) at the Navy Yard (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/3" path="p4/b/3" number="4.b.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Logistics Fellows, Penn State.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/4" path="p4/b/4" number="4.b.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Federal Express.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/5" path="p4/b/5" number="4.b.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Morgan Stanley.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/6" path="p4/b/6" number="4.b.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Dominion Energy.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/7" path="p4/b/7" number="4.b.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>National Geospatial-Intelligence Agency.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/8" path="p4/b/8" number="4.b.8." label="8." depth="2" verification="UNVERIFIED">
+        <text>U.S. Attorney's Eastern District of Virginia (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/9" path="p4/b/9" number="4.b.9." label="9." depth="2" verification="UNVERIFIED">
+        <text>Office of the Federal Defender (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/10" path="p4/b/10" number="4.b.10." label="10." depth="2" verification="UNVERIFIED">
+        <text>International Security Center, Notre Dame.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/11" path="p4/b/11" number="4.b.11." label="11." depth="2" verification="UNVERIFIED">
+        <text>Apple Inc.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/12" path="p4/b/12" number="4.b.12." label="12." depth="2" verification="UNVERIFIED">
+        <text>Asia Pacific Center.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/13" path="p4/b/13" number="4.b.13." label="13." depth="2" verification="UNVERIFIED">
+        <text>University of Southern Mississippi (0202s only).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+      <text>8844 is limited to 3404 PMOS. Exceptions made by request to MMOA-3 for other MOSs.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/1" path="p4/c/1" number="4.c.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Naval Postgraduate School (NPS)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/2" path="p4/c/2" number="4.c.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Air Force Institute of Technology (AFIT)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/3" path="p4/c/3" number="4.c.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Civilian Institutions</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/4" path="p4/c/4" number="4.c.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>The Judge Advocate Generals Legal Center and School (TJAGLCS)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/5" path="p4/c/5" number="4.c.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Advanced Civilian Schools Program (ACSP)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/6" path="p4/c/6" number="4.c.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Regional Affairs Officer Program (RAO)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/7" path="p4/c/7" number="4.c.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>Olmsted Scholar Program (OSP)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/8" path="p4/c/8" number="4.c.8." label="8." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (countries subject to change).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+      <text>1706s eligible to screen will only be considered for the 8866 curriculum.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/e" path="p4/e" number="4.e." label="e." depth="1" verification="UNVERIFIED">
+      <text>8870 is limited to 0370 PMOS.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/f" path="p4/f" number="4.f." label="f." depth="1" verification="UNVERIFIED">
+      <text>NPS Curricula information can be found at https://nps. edu/web/usmc/students/prospective.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>AFIT Curricula: 8820, 8831.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/1" path="p4/a/1" number="4.a.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Marine Corps Command and Staff College (MCCSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/2" path="p4/a/2" number="4.a.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Army Command and General Staff College (ACGSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/3" path="p4/a/3" number="4.a.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>College of Naval Command and Staff (CNCS).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/4" path="p4/a/4" number="4.a.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Air Command and Staff College (ACSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/5" path="p4/a/5" number="4.a.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Space Force Command and Staff College (USSFCSC) availability to be determined.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/6" path="p4/a/6" number="4.a.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (FPME).  FPME no longer grants Joint PME (JPME) I credit.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>8820 is restricted to 75XX PMOS.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/1" path="p4/b/1" number="4.b.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Defense Advanced Research Projects Agency (DARPA).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/2" path="p4/b/2" number="4.b.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Judicial Clerkship Navy Marine Corps Court of Criminal Appeals (NMCC) at the Navy Yard (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/3" path="p4/b/3" number="4.b.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Logistics Fellows, Penn State.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/4" path="p4/b/4" number="4.b.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Federal Express.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/5" path="p4/b/5" number="4.b.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Morgan Stanley.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/6" path="p4/b/6" number="4.b.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Dominion Energy.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/7" path="p4/b/7" number="4.b.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>National Geospatial-Intelligence Agency.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/8" path="p4/b/8" number="4.b.8." label="8." depth="2" verification="UNVERIFIED">
+        <text>U.S. Attorney's Eastern District of Virginia (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/9" path="p4/b/9" number="4.b.9." label="9." depth="2" verification="UNVERIFIED">
+        <text>Office of the Federal Defender (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/10" path="p4/b/10" number="4.b.10." label="10." depth="2" verification="UNVERIFIED">
+        <text>International Security Center, Notre Dame.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/11" path="p4/b/11" number="4.b.11." label="11." depth="2" verification="UNVERIFIED">
+        <text>Apple Inc.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/12" path="p4/b/12" number="4.b.12." label="12." depth="2" verification="UNVERIFIED">
+        <text>Asia Pacific Center.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/13" path="p4/b/13" number="4.b.13." label="13." depth="2" verification="UNVERIFIED">
+        <text>University of Southern Mississippi (0202s only).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+      <text>AFIT Curricula information on the Aeronautical Engineering Program (8820) can be found at https://www. afit.edu/EN/programs.cfm?a=view&amp;D=1.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/1" path="p4/c/1" number="4.c.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Naval Postgraduate School (NPS)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/2" path="p4/c/2" number="4.c.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Air Force Institute of Technology (AFIT)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/3" path="p4/c/3" number="4.c.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Civilian Institutions</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/4" path="p4/c/4" number="4.c.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>The Judge Advocate Generals Legal Center and School (TJAGLCS)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/5" path="p4/c/5" number="4.c.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Advanced Civilian Schools Program (ACSP)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/6" path="p4/c/6" number="4.c.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Regional Affairs Officer Program (RAO)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/7" path="p4/c/7" number="4.c.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>Olmsted Scholar Program (OSP)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/8" path="p4/c/8" number="4.c.8." label="8." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (countries subject to change).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+      <text>AFIT Curricula information on the Engineering Management Program (8831) can be found at https://www. afit.edu/EN/programs.cfm?a=view&amp;D=44.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>Curricula: 8802, 8878, 4505.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/1" path="p4/a/1" number="4.a.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Marine Corps Command and Staff College (MCCSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/2" path="p4/a/2" number="4.a.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Army Command and General Staff College (ACGSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/3" path="p4/a/3" number="4.a.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>College of Naval Command and Staff (CNCS).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/4" path="p4/a/4" number="4.a.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Air Command and Staff College (ACSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/5" path="p4/a/5" number="4.a.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Space Force Command and Staff College (USSFCSC) availability to be determined.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/6" path="p4/a/6" number="4.a.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (FPME).  FPME no longer grants Joint PME (JPME) I credit.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>Education (8802) applicants shall compose a letter to the board, submitted through the questionnaire, stating previous education and training experience, the desired focus of education study and three prospective universities.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/1" path="p4/b/1" number="4.b.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Defense Advanced Research Projects Agency (DARPA).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/2" path="p4/b/2" number="4.b.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Judicial Clerkship Navy Marine Corps Court of Criminal Appeals (NMCC) at the Navy Yard (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/3" path="p4/b/3" number="4.b.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Logistics Fellows, Penn State.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/4" path="p4/b/4" number="4.b.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Federal Express.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/5" path="p4/b/5" number="4.b.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Morgan Stanley.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/6" path="p4/b/6" number="4.b.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Dominion Energy.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/7" path="p4/b/7" number="4.b.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>National Geospatial-Intelligence Agency.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/8" path="p4/b/8" number="4.b.8." label="8." depth="2" verification="UNVERIFIED">
+        <text>U.S. Attorney's Eastern District of Virginia (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/9" path="p4/b/9" number="4.b.9." label="9." depth="2" verification="UNVERIFIED">
+        <text>Office of the Federal Defender (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/10" path="p4/b/10" number="4.b.10." label="10." depth="2" verification="UNVERIFIED">
+        <text>International Security Center, Notre Dame.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/11" path="p4/b/11" number="4.b.11." label="11." depth="2" verification="UNVERIFIED">
+        <text>Apple Inc.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/12" path="p4/b/12" number="4.b.12." label="12." depth="2" verification="UNVERIFIED">
+        <text>Asia Pacific Center.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/13" path="p4/b/13" number="4.b.13." label="13." depth="2" verification="UNVERIFIED">
+        <text>University of Southern Mississippi (0202s only).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+      <text>8802 selected officers will earn a Master's degree from a civilian university in 24 months, followed by a utilization tour within Marine Corps Training and Education Command.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/1" path="p4/c/1" number="4.c.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Naval Postgraduate School (NPS)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/2" path="p4/c/2" number="4.c.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Air Force Institute of Technology (AFIT)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/3" path="p4/c/3" number="4.c.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Civilian Institutions</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/4" path="p4/c/4" number="4.c.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>The Judge Advocate Generals Legal Center and School (TJAGLCS)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/5" path="p4/c/5" number="4.c.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Advanced Civilian Schools Program (ACSP)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/6" path="p4/c/6" number="4.c.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Regional Affairs Officer Program (RAO)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/7" path="p4/c/7" number="4.c.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>Olmsted Scholar Program (OSP)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/8" path="p4/c/8" number="4.c.8." label="8." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (countries subject to change).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+      <text>History (8878) applicants shall compose a letter to the board, submitted through the questionnaire, with the preferred area of historical study and three prospective universities.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/e" path="p4/e" number="4.e." label="e." depth="1" verification="UNVERIFIED">
+      <text>8878 selected officers will earn a master's degree from a civilian university in 24 months, followed by a utilization tour as a History Instructor at the US Naval Academy.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/f" path="p4/f" number="4.f." label="f." depth="1" verification="UNVERIFIED">
+      <text>San Diego State University (SDSU) (4505) is limited to 4502s.  Selected 4502s will earn a master's degree in Mass Communication from SDSU.  Interested officers are required to have a minimum undergraduate GPA of 2.9. Applications to SDSU are submitted after the board selection.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/g" path="p4/g" number="4.g." label="g." depth="1" verification="UNVERIFIED">
+      <text>Tuition.  Marine Corps University will provide funding for 8802 and 8878 officers up to $19,500 per year for public or private institutions for up to two years. Any tuition cost exceeding these amounts will be paid by the officer.  There is no cap amount at SDSU.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>TJAGLCS program is restricted to 4402 PMOS Captains and Majors.  It is a graduate-level program located at the University of Virginia in Charlottesville, Virginia where a Master of Laws (LLM) in multiple disciplines can be obtained.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/1" path="p4/a/1" number="4.a.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Marine Corps Command and Staff College (MCCSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/2" path="p4/a/2" number="4.a.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Army Command and General Staff College (ACGSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/3" path="p4/a/3" number="4.a.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>College of Naval Command and Staff (CNCS).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/4" path="p4/a/4" number="4.a.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Air Command and Staff College (ACSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/5" path="p4/a/5" number="4.a.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Space Force Command and Staff College (USSFCSC) availability to be determined.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/6" path="p4/a/6" number="4.a.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (FPME).  FPME no longer grants Joint PME (JPME) I credit.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>ACSP provides officers the ability to devote a year as a resident student to complete a master's degree of their choice while maintaining career progression. Participants are highly encouraged to pursue areas of study and research topics of interest to the Marine Corps.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/1" path="p4/a/1" number="4.a.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Marine Corps Command and Staff College (MCCSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/2" path="p4/a/2" number="4.a.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Army Command and General Staff College (ACGSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/3" path="p4/a/3" number="4.a.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>College of Naval Command and Staff (CNCS).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/4" path="p4/a/4" number="4.a.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Air Command and Staff College (ACSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/5" path="p4/a/5" number="4.a.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Space Force Command and Staff College (USSFCSC) availability to be determined.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/6" path="p4/a/6" number="4.a.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (FPME).  FPME no longer grants Joint PME (JPME) I credit.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>Limited to no longer than 12 months and qualifies as partially funded education per reference (a).</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/1" path="p4/b/1" number="4.b.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Defense Advanced Research Projects Agency (DARPA).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/2" path="p4/b/2" number="4.b.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Judicial Clerkship Navy Marine Corps Court of Criminal Appeals (NMCC) at the Navy Yard (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/3" path="p4/b/3" number="4.b.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Logistics Fellows, Penn State.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/4" path="p4/b/4" number="4.b.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Federal Express.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/5" path="p4/b/5" number="4.b.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Morgan Stanley.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/6" path="p4/b/6" number="4.b.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Dominion Energy.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/7" path="p4/b/7" number="4.b.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>National Geospatial-Intelligence Agency.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/8" path="p4/b/8" number="4.b.8." label="8." depth="2" verification="UNVERIFIED">
+        <text>U.S. Attorney's Eastern District of Virginia (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/9" path="p4/b/9" number="4.b.9." label="9." depth="2" verification="UNVERIFIED">
+        <text>Office of the Federal Defender (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/10" path="p4/b/10" number="4.b.10." label="10." depth="2" verification="UNVERIFIED">
+        <text>International Security Center, Notre Dame.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/11" path="p4/b/11" number="4.b.11." label="11." depth="2" verification="UNVERIFIED">
+        <text>Apple Inc.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/12" path="p4/b/12" number="4.b.12." label="12." depth="2" verification="UNVERIFIED">
+        <text>Asia Pacific Center.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/13" path="p4/b/13" number="4.b.13." label="13." depth="2" verification="UNVERIFIED">
+        <text>University of Southern Mississippi (0202s only).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+      <text>Selected officers will receive their regular pay and allowances, but application fees, tuition, and matriculation fees, cost of textbooks and materials, and all similar fees and expenses will be borne by the officer.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/1" path="p4/c/1" number="4.c.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Naval Postgraduate School (NPS)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/2" path="p4/c/2" number="4.c.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Air Force Institute of Technology (AFIT)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/3" path="p4/c/3" number="4.c.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Civilian Institutions</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/4" path="p4/c/4" number="4.c.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>The Judge Advocate Generals Legal Center and School (TJAGLCS)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/5" path="p4/c/5" number="4.c.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Advanced Civilian Schools Program (ACSP)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/6" path="p4/c/6" number="4.c.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Regional Affairs Officer Program (RAO)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/7" path="p4/c/7" number="4.c.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>Olmsted Scholar Program (OSP)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/8" path="p4/c/8" number="4.c.8." label="8." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (countries subject to change).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+      <text>No utilization tour is required.  The officer's follow-on assignment will be based on the needs of the Marine Corps and the participant's career progression.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/e" path="p4/e" number="4.e." label="e." depth="1" verification="UNVERIFIED">
+      <text>Interested officers are required to have current GRE scores unless proof is provided the GRE is waived.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>Officers interested in the RAO program must be a major or major select having between 9 and 15 years of commissioned service by June 2027.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/1" path="p4/a/1" number="4.a.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Marine Corps Command and Staff College (MCCSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/2" path="p4/a/2" number="4.a.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Army Command and General Staff College (ACGSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/3" path="p4/a/3" number="4.a.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>College of Naval Command and Staff (CNCS).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/4" path="p4/a/4" number="4.a.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Air Command and Staff College (ACSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/5" path="p4/a/5" number="4.a.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Space Force Command and Staff College (USSFCSC) availability to be determined.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/6" path="p4/a/6" number="4.a.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (FPME).  FPME no longer grants Joint PME (JPME) I credit.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>Interested officers must submit a statement highlighting interest in the RAO program, to include planning experience with partner nations, regional exposure, desire to serve as a RAO, and clarification on regional preferences.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/1" path="p4/b/1" number="4.b.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Defense Advanced Research Projects Agency (DARPA).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/2" path="p4/b/2" number="4.b.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Judicial Clerkship Navy Marine Corps Court of Criminal Appeals (NMCC) at the Navy Yard (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/3" path="p4/b/3" number="4.b.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Logistics Fellows, Penn State.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/4" path="p4/b/4" number="4.b.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Federal Express.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/5" path="p4/b/5" number="4.b.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Morgan Stanley.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/6" path="p4/b/6" number="4.b.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Dominion Energy.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/7" path="p4/b/7" number="4.b.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>National Geospatial-Intelligence Agency.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/8" path="p4/b/8" number="4.b.8." label="8." depth="2" verification="UNVERIFIED">
+        <text>U.S. Attorney's Eastern District of Virginia (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/9" path="p4/b/9" number="4.b.9." label="9." depth="2" verification="UNVERIFIED">
+        <text>Office of the Federal Defender (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/10" path="p4/b/10" number="4.b.10." label="10." depth="2" verification="UNVERIFIED">
+        <text>International Security Center, Notre Dame.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/11" path="p4/b/11" number="4.b.11." label="11." depth="2" verification="UNVERIFIED">
+        <text>Apple Inc.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/12" path="p4/b/12" number="4.b.12." label="12." depth="2" verification="UNVERIFIED">
+        <text>Asia Pacific Center.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/13" path="p4/b/13" number="4.b.13." label="13." depth="2" verification="UNVERIFIED">
+        <text>University of Southern Mississippi (0202s only).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+      <text>Additional information about the RAO Program can be found in reference (c).</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/1" path="p4/c/1" number="4.c.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Naval Postgraduate School (NPS)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/2" path="p4/c/2" number="4.c.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Air Force Institute of Technology (AFIT)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/3" path="p4/c/3" number="4.c.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Civilian Institutions</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/4" path="p4/c/4" number="4.c.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>The Judge Advocate Generals Legal Center and School (TJAGLCS)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/5" path="p4/c/5" number="4.c.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Advanced Civilian Schools Program (ACSP)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/6" path="p4/c/6" number="4.c.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Regional Affairs Officer Program (RAO)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/7" path="p4/c/7" number="4.c.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>Olmsted Scholar Program (OSP)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/8" path="p4/c/8" number="4.c.8." label="8." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (countries subject to change).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+      <text>Upload a letter via the questionnaire as a file titled â€œedipi_RAO_lastnameâ€.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>OSP is a strategic leader development program for top performing officers of the U.S. Armed Forces.  The program provides outstanding Marine Corps officers an unsurpassed opportunity to achieve fluency in a foreign language, pursue graduate study in that language at an overseas university, and acquire an in-depth understanding of foreign cultures, thereby further equipping them to serve in positions of great responsibility as senior leaders in the Marine Corps.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/1" path="p4/a/1" number="4.a.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Marine Corps Command and Staff College (MCCSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/2" path="p4/a/2" number="4.a.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Army Command and General Staff College (ACGSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/3" path="p4/a/3" number="4.a.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>College of Naval Command and Staff (CNCS).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/4" path="p4/a/4" number="4.a.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Air Command and Staff College (ACSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/5" path="p4/a/5" number="4.a.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Space Force Command and Staff College (USSFCSC) availability to be determined.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/6" path="p4/a/6" number="4.a.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (FPME).  FPME no longer grants Joint PME (JPME) I credit.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>Limited to officers with no more than 13 years and 6 months of total Federal service as of 1 April 2027. Time at service academies does not count.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/1" path="p4/b/1" number="4.b.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Defense Advanced Research Projects Agency (DARPA).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/2" path="p4/b/2" number="4.b.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Judicial Clerkship Navy Marine Corps Court of Criminal Appeals (NMCC) at the Navy Yard (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/3" path="p4/b/3" number="4.b.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Logistics Fellows, Penn State.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/4" path="p4/b/4" number="4.b.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Federal Express.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/5" path="p4/b/5" number="4.b.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Morgan Stanley.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/6" path="p4/b/6" number="4.b.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Dominion Energy.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/7" path="p4/b/7" number="4.b.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>National Geospatial-Intelligence Agency.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/8" path="p4/b/8" number="4.b.8." label="8." depth="2" verification="UNVERIFIED">
+        <text>U.S. Attorney's Eastern District of Virginia (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/9" path="p4/b/9" number="4.b.9." label="9." depth="2" verification="UNVERIFIED">
+        <text>Office of the Federal Defender (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/10" path="p4/b/10" number="4.b.10." label="10." depth="2" verification="UNVERIFIED">
+        <text>International Security Center, Notre Dame.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/11" path="p4/b/11" number="4.b.11." label="11." depth="2" verification="UNVERIFIED">
+        <text>Apple Inc.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/12" path="p4/b/12" number="4.b.12." label="12." depth="2" verification="UNVERIFIED">
+        <text>Asia Pacific Center.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/13" path="p4/b/13" number="4.b.13." label="13." depth="2" verification="UNVERIFIED">
+        <text>University of Southern Mississippi (0202s only).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+      <text>Limited to the following PMOSs, as determined by the Foundation: 02xx, 03xx, 0402, 0602, 0802, 1302, 17xx, 1803, 3002, 4502, 5803, 60xx, 66xx, 7204, 7209, 7315, 7318 and 75xx.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/1" path="p4/c/1" number="4.c.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Naval Postgraduate School (NPS)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/2" path="p4/c/2" number="4.c.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Air Force Institute of Technology (AFIT)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/3" path="p4/c/3" number="4.c.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Civilian Institutions</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/4" path="p4/c/4" number="4.c.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>The Judge Advocate Generals Legal Center and School (TJAGLCS)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/5" path="p4/c/5" number="4.c.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Advanced Civilian Schools Program (ACSP)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/6" path="p4/c/6" number="4.c.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Regional Affairs Officer Program (RAO)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/7" path="p4/c/7" number="4.c.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>Olmsted Scholar Program (OSP)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/8" path="p4/c/8" number="4.c.8." label="8." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (countries subject to change).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+      <text>Applicants must have completed a Defense Language Aptitude Battery (DLAB) test with a minimum score of 95 in order to be eligible to apply.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/e" path="p4/e" number="4.e." label="e." depth="1" verification="UNVERIFIED">
+      <text>The selection process involves two steps:  (Phase 1) The board nominates up to 8 applicants for further consideration; (Phase 2) the Olmsted Foundation evaluates those nominated, conducts interviews in January 2027 and makes selections in March 2027.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/f" path="p4/f" number="4.f." label="f." depth="1" verification="UNVERIFIED">
+      <text>Nominees not selected by the Olmsted Foundation in the second phase will be slated to other PME or graduate education opportunities.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/g" path="p4/g" number="4.g." label="g." depth="1" verification="UNVERIFIED">
+      <text>For more information on the Olmsted Foundation: https://olmstedfoundation.org.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/h" path="p4/h" number="4.h." label="h." depth="1" verification="UNVERIFIED">
+      <text>Interested officers should submit an initial application to the board questionnaire using the naming protocol: â€œedipi_OSP_lastnameâ€.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/i" path="p4/i" number="4.i." label="i." depth="1" verification="UNVERIFIED">
+      <text>Phase 2 requirements are timely and applicants are recommended to start the process immediately.  Further application instructions can be found at https://www. manpower.marines.mil/Divisions/Manpower-Management/ Officer-Assignments/Plans-and-Programs-MMOA-3/#tab/ graduate-education-boards</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>Foreign PME countries available: Brazil, Canada, Chile, France, Japan, South Korea, Spain, United Kingdom, Fort Benning Western Hemisphere Institute for Security Cooperation (WHINSEC).</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/1" path="p4/a/1" number="4.a.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Marine Corps Command and Staff College (MCCSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/2" path="p4/a/2" number="4.a.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Army Command and General Staff College (ACGSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/3" path="p4/a/3" number="4.a.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>College of Naval Command and Staff (CNCS).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/4" path="p4/a/4" number="4.a.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Air Command and Staff College (ACSC).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/5" path="p4/a/5" number="4.a.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Space Force Command and Staff College (USSFCSC) availability to be determined.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/a/6" path="p4/a/6" number="4.a.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (FPME).  FPME no longer grants Joint PME (JPME) I credit.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>Marines may be assigned to any country listed regardless of their preference provided in the questionnaire.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/1" path="p4/b/1" number="4.b.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Defense Advanced Research Projects Agency (DARPA).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/2" path="p4/b/2" number="4.b.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Judicial Clerkship Navy Marine Corps Court of Criminal Appeals (NMCC) at the Navy Yard (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/3" path="p4/b/3" number="4.b.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Logistics Fellows, Penn State.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/4" path="p4/b/4" number="4.b.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Federal Express.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/5" path="p4/b/5" number="4.b.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Morgan Stanley.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/6" path="p4/b/6" number="4.b.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Dominion Energy.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/7" path="p4/b/7" number="4.b.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>National Geospatial-Intelligence Agency.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/8" path="p4/b/8" number="4.b.8." label="8." depth="2" verification="UNVERIFIED">
+        <text>U.S. Attorney's Eastern District of Virginia (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/9" path="p4/b/9" number="4.b.9." label="9." depth="2" verification="UNVERIFIED">
+        <text>Office of the Federal Defender (4402s only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/10" path="p4/b/10" number="4.b.10." label="10." depth="2" verification="UNVERIFIED">
+        <text>International Security Center, Notre Dame.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/11" path="p4/b/11" number="4.b.11." label="11." depth="2" verification="UNVERIFIED">
+        <text>Apple Inc.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/12" path="p4/b/12" number="4.b.12." label="12." depth="2" verification="UNVERIFIED">
+        <text>Asia Pacific Center.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/b/13" path="p4/b/13" number="4.b.13." label="13." depth="2" verification="UNVERIFIED">
+        <text>University of Southern Mississippi (0202s only).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+      <text>Marines must obtain and submit a DLAB score (regardless of which country they are interested in).  Interested officers must submit a letter to the board with source documentation of DLAB test score results and an explanation of the desire to attend FPME along with any other qualifications.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/1" path="p4/c/1" number="4.c.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Naval Postgraduate School (NPS)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/2" path="p4/c/2" number="4.c.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Air Force Institute of Technology (AFIT)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/3" path="p4/c/3" number="4.c.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Civilian Institutions</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/4" path="p4/c/4" number="4.c.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>The Judge Advocate Generals Legal Center and School (TJAGLCS)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/5" path="p4/c/5" number="4.c.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Advanced Civilian Schools Program (ACSP)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/6" path="p4/c/6" number="4.c.6." label="6." depth="2" verification="UNVERIFIED">
+        <text>Regional Affairs Officer Program (RAO)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/7" path="p4/c/7" number="4.c.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>Olmsted Scholar Program (OSP)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/c/8" path="p4/c/8" number="4.c.8." label="8." depth="2" verification="UNVERIFIED">
+        <text>Foreign PME (countries subject to change).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+      <text>FPME completion grants service PME; however, JPME Phase I is no longer credited for completion of FPME.  Both service PME and JPME Phase I are required to be considered PME complete for grade.  Marines considering FPME who have not completed ILS already should plan accordingly in order to be PME complete in time for their respective promotion board.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+      <text>Program and further curricula information can be found at https://www.manpower.marines.mil/Divisions/Manpower-Management/ Officer-Assignments/Plans-and-Programs-MMOA-3/#tab/graduate- education-boards</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>General instructions for the eligible population</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>The list of eligible officers being considered for CPIB is posted on the USMC Manpower, MMOA-3 Plans and Programs webpage: https://manpower.usmc.mil/Manpower-Management/Officer-Assignments/ Plans-and-Programs-MMOA-3/#tab/graduate-education-boards/. Questions regarding eligibility should be directed to the appropriate PMOS monitor.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>All eligible officers are required to complete the FY27 CEB Questionnaire no later than 2359 EST on 20 July 2026. The questionnaire is located at: https://www2.manpower.usmc.mil/ application_cac/.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Note 1, Note 2 and No Note</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/c/1" path="p5/c/1" number="5.c.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Note 1.  Within the eligibility list, officers with sufficient career timing to participate in programs ranging up to five years (i.e., NPS, AFIT) have a Note 1 next to their name. Officers with a Note 1 beside their name are required to apply and submit undergraduate transcripts to NPS no later than 2359 EST on 20 July 2026.  NPS Admissions website is located at:  https://nps. edu/web/admissions/apply/.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/c/2" path="p5/c/2" number="5.c.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Note 2.  Officers with sufficient career timing to participate in programs ranging up to three years have a Note 2 beside their name.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/c/3" path="p5/c/3" number="5.c.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>No Note.  Officers without a note beside their name only possess the career timing to attend a one-year program.  Officers without a note beside their name who believe they have the career timing to be considered for a Note 1 or 2 program should contact their PMOS monitor.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/c/4" path="p5/c/4" number="5.c.4." label="4." depth="2" verification="UNVERIFIED">
+          <text>Officers outside the FY27 consideration window who are interested in CPIB programs, must submit an Administrative Action (AA) Form endorsed by the first O-6 in the Marineâ€™s chain of command NLT 20 July 2026 via the online questionnaire.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/c/5" path="p5/c/5" number="5.c.5." label="5." depth="2" verification="UNVERIFIED">
+          <text>Marines wanting to change their Note 1, 2 or No Note status must reach out to their PMOS monitor.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/c/6" path="p5/c/6" number="5.c.6." label="6." depth="2" verification="UNVERIFIED">
+          <text>All members requesting an ETP should also fill out the questionnaire NLT 20 July 2026 regardless of ETP status.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>After submitting the NPS application, applicants must order official transcripts from all attended undergraduate and graduate institutions for delivery from the institution(s) directly to NPS Admissions.  Transcripts must come directly from the institution or their designated transcript exchange service.  NPS does not accept transcripts submitted by the applicant.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Officers that have previously applied to NPS must submit an additional application but are not required to resubmit transcripts.  Officers can submit up to three applications for those curricula listed in paragraph 4.b.1.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>NPS will notify MMOA-3 of an officerâ€™s acceptance to NPS with the curricula for which the individual may or may not qualify. NPS does not provide an acceptance letter or status of acceptance to individual officers.</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/c/1" path="p5/c/1" number="5.c.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Note 1.  Within the eligibility list, officers with sufficient career timing to participate in programs ranging up to five years (i.e., NPS, AFIT) have a Note 1 next to their name. Officers with a Note 1 beside their name are required to apply and submit undergraduate transcripts to NPS no later than 2359 EST on 20 July 2026.  NPS Admissions website is located at:  https://nps. edu/web/admissions/apply/.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/c/2" path="p5/c/2" number="5.c.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Note 2.  Officers with sufficient career timing to participate in programs ranging up to three years have a Note 2 beside their name.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/c/3" path="p5/c/3" number="5.c.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>No Note.  Officers without a note beside their name only possess the career timing to attend a one-year program.  Officers without a note beside their name who believe they have the career timing to be considered for a Note 1 or 2 program should contact their PMOS monitor.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/c/4" path="p5/c/4" number="5.c.4." label="4." depth="2" verification="UNVERIFIED">
+          <text>Officers outside the FY27 consideration window who are interested in CPIB programs, must submit an Administrative Action (AA) Form endorsed by the first O-6 in the Marineâ€™s chain of command NLT 20 July 2026 via the online questionnaire.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/c/5" path="p5/c/5" number="5.c.5." label="5." depth="2" verification="UNVERIFIED">
+          <text>Marines wanting to change their Note 1, 2 or No Note status must reach out to their PMOS monitor.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/c/6" path="p5/c/6" number="5.c.6." label="6." depth="2" verification="UNVERIFIED">
+          <text>All members requesting an ETP should also fill out the questionnaire NLT 20 July 2026 regardless of ETP status.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/d" path="p5/d" number="5.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Officers with a Note 1 beside their name who are interested in AFIT should apply and submit undergraduate transcripts to AFIT no later than 2359 EST on 20 July 2026.</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/d/1" path="p5/d/1" number="5.d.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Officers who are listed on the eligibility roster, but do not want to be considered must submit an AA Form, positively or negatively endorsed, by the first O-6 in the Marineâ€™s chain of command NLT 20 July 2026 via the online questionnaire.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/d/2" path="p5/d/2" number="5.d.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>All requests must be labeled "edipi_RBR_lastnameâ€ via the online questionnaire and members requesting an RBR should also fill out the questionnaire NLT 20 July 2026 regardless of pending RBR.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/d/6" path="p5/d/6" number="5.d.6." label="6." depth="2" verification="UNVERIFIED">
+          <text>Coordinating Instructions</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/e" path="p5/e" number="5.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>The AFIT admissions website is located at: https://www. afit.edu/ADMISSIONS/AFITApplicationProcess/.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/f" path="p5/f" number="5.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>All officers must verify that a copy of their undergraduate transcripts is in their OMPF.  Officers must upload all higher learning institutional transcripts to their OMPF. Officers should submit OMPF update requests via OMPF-Records Management Application (O-RMA).  If assistance is required, contact your unit S-1 or local IPAC.  Officers are responsible for ensuring their OMPF is accurate at all times.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/d" path="p5/d" number="5.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Removal by Requests (RBR)</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/d/1" path="p5/d/1" number="5.d.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Officers who are listed on the eligibility roster, but do not want to be considered must submit an AA Form, positively or negatively endorsed, by the first O-6 in the Marineâ€™s chain of command NLT 20 July 2026 via the online questionnaire.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/d/2" path="p5/d/2" number="5.d.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>All requests must be labeled "edipi_RBR_lastnameâ€ via the online questionnaire and members requesting an RBR should also fill out the questionnaire NLT 20 July 2026 regardless of pending RBR.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p5/d/6" path="p5/d/6" number="5.d.6." label="6." depth="2" verification="UNVERIFIED">
+          <text>Coordinating Instructions</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/a" path="p6/a" number="6.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>Graduate education programs are not a service equivalent for PME.  Marines participating in a graduate education program are required to complete a PME program commensurate with their grade on their own initiative to be considered PME complete for their grade. Marines shall complete grade specific PME during their respective Graduate education programs.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/b" path="p6/b" number="6.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>FPME completion grants service PME; however, JPME Phase I is no longer credited for completion of FPME.  Both service PME and JPME Phase 1 are required to be considered PME complete for grade. Marines considering FPME who have not completed ILS already should plan accordingly in order to be PME complete in time for their respective promotion board.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/c" path="p6/c" number="6.c." label="c." depth="1" verification="UNVERIFIED">
+      <text>Obligation</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/c/1" path="p6/c/1" number="6.c.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>All service PME schools are 12 months or less in length and incur a 24-month service obligation.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/c/2" path="p6/c/2" number="6.c.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Graduate programs vary from one to two years followed by a three-year utilization tour, unless otherwise noted, and an additional year of service obligation for a total of four years. Utilization tours will be assigned within this four year service obligation.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/c/3" path="p6/c/3" number="6.c.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>For additional information on program lengths and descriptions, see reference (a) or contact the program officer in paragraph 7 below.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/d" path="p6/d" number="6.d." label="d." depth="1" verification="UNVERIFIED">
+      <text>Questionnaire</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/d/1" path="p6/d/1" number="6.d.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Eligible officers must submit program preferences, applications (expect for NPS and AFIT), letters to the board, RBRs etc.  via the questionnaire.  The questionnaire is the only method for MMOA-3 to receive board correspondence.  Once responses are submitted via the questionnaire, MMOA-3 will receive an automatic notification of completion.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/d/2" path="p6/d/2" number="6.d.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Do not submit more than 7 documents.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/d/3" path="p6/d/3" number="6.d.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Each document must not exceed 800 KB and must be in .pdf format.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/d/4" path="p6/d/4" number="6.d.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>File naming convention is very important for board correspondence collection/consolidation.  Name the file appropriately according to the program you are applying for i.e. â€œedipi_OSP_lastnameâ€ or â€œedipi_FAO_lastnameâ€.  Condense all documents for a specific program application into one scanned PDF. If due to size constraints the application must be split up, label as such  â€œedipi_RAO_lastname (1), edipi_RAO_lastname (2)â€. If submitting a supplemental board correspondence label as such: â€œedipi_LOR_lastnameâ€ and remove by request "edipi_RBR_lastname".</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/d/5" path="p6/d/5" number="6.d.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Direct questionnaire functionality and accessibility questions and issues to MMOA-3 at [contact withheld].</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/e" path="p6/e" number="6.e." label="e." depth="1" verification="UNVERIFIED">
+      <text>Board Correspondence.  All correspondence to the board must originate from the officer being considered.  All submissions (letters of recommendation, clarifying statements of service, etc.) must be uploaded into the questionnaire no later than 2359 EST on 20 July 2026.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/f" path="p6/f" number="6.f." label="f." depth="1" verification="UNVERIFIED">
+      <text>Non-Compliance.  Officers are considered non-compliant with the above instructions:</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/f/1" path="p6/f/1" number="6.f.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>They have a Note 1 next to their name on the eligibility roster and fail to apply and submit transcripts to NPS.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/f/2" path="p6/f/2" number="6.f.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>They have a Note 1 or 2 next to their name and do not complete the questionnaire and upload a legible copy of their transcripts to OMPF.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/f/3" path="p6/f/3" number="6.f.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Officers who fail to complete the questionnaire, fail to apply to NPS, or fail to submit transcripts will still be considered and may be slated to a program at the board's discretion.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/f/4" path="p6/f/4" number="6.f.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>A list of non-compliant officers will be provided to commands on or about 24 July 2026 for those officers who have not yet applied to NPS.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p6/g" path="p6/g" number="6.g." label="g." depth="1" verification="UNVERIFIED">
+      <text>Subsequent MARADMINs will announce FY27 CPIB results and FY27 Graduate Education Program Results.  The results MARADMINS will serve as notification of orders for all primary selectees.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Program Points of Contact</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p7/a" path="p7/a" number="7.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Intermediate Level Schools Contact your PMOS monitor.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p7/b" path="p7/b" number="7.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Foreign PME, CMC Fellowships, Olmsted Scholar Program Maj Taylor Wulff-Morrison [contact withheld], Comm:  [contact withheld] Email:  [contact withheld]</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p7/c" path="p7/c" number="7.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Naval Postgraduate School Admissions Office Comm:  [contact withheld] Email:  [contact withheld]</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p7/d" path="p7/d" number="7.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Master's of Education LtCol Alex P. McGraw (TECOM) Comm:  [contact withheld] Email:  [contact withheld]</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p7/e" path="p7/e" number="7.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Master's of History Maj Bradley S. Worthan (USNA) Comm:  [contact withheld] Email:  [contact withheld]</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p7/f" path="p7/f" number="7.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Engineering Management - 8831 (AFIT) Maj Jason McDonald Comm:  [contact withheld] Email:   [contact withheld]</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p7/g" path="p7/g" number="7.g." label="g." depth="1" verification="UNVERIFIED">
+        <text>Law Programs Maj Matthew W. Schoneweis Comm:  [contact withheld] Email:  [contact withheld]</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p7/h" path="p7/h" number="7.h." label="h." depth="1" verification="UNVERIFIED">
+        <text>San Diego State University (SDSU) Maj Sarah Rhodes Comm:  [contact withheld] Email:  [contact withheld]</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p7/i" path="p7/i" number="7.i." label="i." depth="1" verification="UNVERIFIED">
+        <text>International Affairs Program (IAP) LtCol Brett McCormick [contact withheld], Comm:  [contact withheld] Email:  [contact withheld]</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p7/j" path="p7/j" number="7.j." label="j." depth="1" verification="UNVERIFIED">
+        <text>Graduate Education Manager Maj Delaney Dumanovsky Comm: [contact withheld] Email: [contact withheld]</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN is not applicable to the Marine Corps Reserve.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/274/p9" path="p9" number="9." label="9." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by MajGen Fridrik Fridriksson, Director, Manpower Management Division.//</text>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>5 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

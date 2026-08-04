@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.5.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/dodi/1300_19" canonicalId="DODI-1300.19" docType="DODI" nativeNumber="1300.19" tier="T1" lifecycle="active" verification="UNVERIFIED" startPeriod="2018-04-03" schemaVersion="2.0">
+  <meta>
+    <title>DoD Instruction 1300.19 - DoD Joint Officer Management Program</title>
+    <subject>DOD JOINT OFFICER MANAGEMENT PROGRAM</subject>
+    <signedDate>2018-04-03</signedDate>
+    <provenance sourcePath="https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/130019p.pdf" sourceHash="648c369d7a8ebbf4e8e5fb8fd49e9974ad08a10770aa2c9e9296c00b8598d9e3" extractionEngine="manual-metadata-entry" convertedAt="2026-08-03T00:00:00+00:00" storeSchemaVersion="0.5.0"/>
+  </meta>
+  <authority>
+    <ref rel="supersedes" target="DODI-1300.19-2014" basis="cited" held="held" from="front-matter"/>
+  </authority>
+  <section anchor="front-matter" heading="DoD Instruction 1300.19, DoD Joint Officer Management Program, April 3, 2018, incorporating Change 1, May 18, 2023" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-1" heading="SECTION 1: GENERAL ISSUANCE INFORMATION" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-2" heading="SECTION 2: RESPONSIBILITIES" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-3" heading="SECTION 3: JOINT QUALIFICATIONS" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-4" heading="SECTION 4: JDAS AND THE JDAL" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-5" heading="SECTION 5: JDA CREDIT" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-6" heading="SECTION 6: JOINT EXPERIENCE, TRAINING, AND EDUCATION" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-7" heading="SECTION 7: JDA TOUR LENGTH REQUIREMENTS AND EARLY RELEASES" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-8" heading="SECTION 8: DESIGNATING LEVEL III JQOS" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-9" heading="SECTION 9: PROMOTION SELECTION BOARDS FOR ADL AND RASL" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-10" heading="SECTION 10: GO/FO PROVISIONS" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-11" heading="SECTION 11: REPORT REQUIREMENTS" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-12" heading="SECTION 12: RC OFFICER PROVISIONS" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-13" heading="GLOSSARY" verification="UNVERIFIED">
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>1 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

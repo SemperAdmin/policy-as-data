@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/mco/1200_13g" canonicalId="MCO-1200.13G" docType="MCO" nativeNumber="1200.13G" tier="T3" lifecycle="active" verification="UNVERIFIED" schemaVersion="2.0">
+  <meta>
+    <title>MCO 1200.13G - Marine Corps Front-end Analysis Program</title>
+    <subject>MARINE CORPS FRONT-END ANALYSIS PROGRAM</subject>
+    <distributionStatement>DISTRIBUTION STATEMENT A:</distributionStatement>
+    <provenance sourcePath="E:\GunnyBot\Policies\MCO\MCO_1200.13G.pdf" sourceHash="7f4e02a8f5ba1156bc1f01986a4424ddccdb0eb6e310952fced00a36971969eb" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="NAVMC-1553.1" targetIdentifier="/us/dod/don/usmc/navmc/1553_1" basis="cited" tier="T4" held="drift" storeHolds="NAVMC-1553.1A" from="front-matter:ref/a"/>
+    <ref rel="references" target="MCO-3500.72A" targetIdentifier="/us/dod/don/usmc/mco/3500_72a" basis="cited" tier="T3" held="drift" storeHolds="MCO-3500.72A-CH1" from="front-matter:ref/b"/>
+    <ref rel="references" target="MCO-1200.17C" targetIdentifier="/us/dod/don/usmc/mco/1200_17c" basis="cited" tier="T3" held="absent" from="front-matter:ref/c"/>
+    <ref rel="references" target="SECNAVM-5214.1" targetIdentifier="/us/dod/don/secnavm/5214_1" basis="cited" tier="T2" held="absent" from="front-matter:ref/e"/>
+    <ref rel="references" target="NAVMC-3500.106" targetIdentifier="/us/dod/don/usmc/navmc/3500_106" basis="cited" tier="T4" held="drift" storeHolds="NAVMC-3500.106A" from="front-matter:ref/f"/>
+    <ref rel="references" target="MCO-1200.15C-CH1" targetIdentifier="/us/dod/don/usmc/mco/1200_15c" basis="cited" tier="T3" held="held" from="front-matter:ref/g"/>
+    <ref rel="references" target="SECNAVM-5210.1" targetIdentifier="/us/dod/don/secnavm/5210_1" basis="cited" tier="T2" held="absent" from="front-matter:ref/h"/>
+  </authority>
+  <section anchor="front-matter" identifier="/us/dod/don/usmc/mco/1200_13g/front-matter" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1200_13g/front-matter/ref" path="ref" number="Ref:" label="Ref:" depth="0" role="reference" verification="UNVERIFIED">
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/front-matter/ref/a" path="ref/a" number="(a)" label="(a)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>NAVMC 1553.1</text>
+        <citation target="NAVMC-1553.1" targetIdentifier="/us/dod/don/usmc/navmc/1553_1" basis="cited" text="NAVMC 1553.1"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/front-matter/ref/b" path="ref/b" number="(b)" label="(b)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO P3500.72A</text>
+        <citation target="MCO-3500.72A" targetIdentifier="/us/dod/don/usmc/mco/3500_72a" basis="cited" text="MCO P3500.72A"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/front-matter/ref/c" path="ref/c" number="(c)" label="(c)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 1200.17C</text>
+        <citation target="MCO-1200.17C" targetIdentifier="/us/dod/don/usmc/mco/1200_17c" basis="cited" text="MCO 1200.17C"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/front-matter/ref/d" path="ref/d" number="(d)" label="(d)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 5311.ID</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/front-matter/ref/e" path="ref/e" number="(e)" label="(e)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAV M-5214.1</text>
+        <citation target="SECNAVM-5214.1" targetIdentifier="/us/dod/don/secnavm/5214_1" basis="cited" text="SECNAV M-5214.1"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/front-matter/ref/f" path="ref/f" number="(f)" label="(f)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>NAVMC 3500.106</text>
+        <citation target="NAVMC-3500.106" targetIdentifier="/us/dod/don/usmc/navmc/3500_106" basis="cited" text="NAVMC 3500.106"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/front-matter/ref/g" path="ref/g" number="(g)" label="(g)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 1200.15C</text>
+        <citation target="MCO-1200.15C-CH1" targetIdentifier="/us/dod/don/usmc/mco/1200_15c" basis="cited" text="MCO 1200.15C"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/front-matter/ref/h" path="ref/h" number="(h)" label="(h)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAV M-5210.1</text>
+        <citation target="SECNAVM-5210.1" targetIdentifier="/us/dod/don/secnavm/5210_1" basis="cited" text="SECNAV M-5210.1"/>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/1200_13g/front-matter/c" path="c" number="c." label="c." depth="0" verification="UNVERIFIED">
+      <text>FEA Program. The FEA Program does not analyze the quality performance of Marines; it analyzes jobs being performed by Marines. The FEA Program has been used under various forms and names throughout the U.S. Armed Services and some foreign militaries since 1969 to provide comprehensive review, analysis and evaluation of the work performed by service members. It is a systematic process designed to acquire empirical job performance data from Marines in their assigned billets. This is accomplished by a broad survey of billet holders in related MOSs of an OccFld who identify their job requirements by selecting tasks they perform from a task list developed by subject matter experts in their OccFld. The data is analyzed using statistical software programs to process, organize and compare work in the force to the training system that produces Marines for assignment to billets. The final product is an FEA Report used to adjust training standards in the relevant T&amp;R Manual, which in turn causes change in formal school curricula. The FEA reporting requirement in this Order is exempt from reports control, per reference (e), Information Requirement (Reports) Manual. The FEA also identifies invalid or inefficient occupational structure as evidenced by skills and tasks overlap between MOSs, significant separation of work within a single MOS or other indicators. This approach is a powerful, thoroughly researched tool that provides extensive job performance data analysis.</text>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/front-matter/c/2" path="c/2" number="c.2." label="2." depth="1" verification="UNVERIFIED">
+        <text>Cancellation. MCO 1200.13F.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-3" identifier="/us/dod/don/usmc/mco/1200_13g/p-3" heading="3. Mission." verification="UNVERIFIED">
+  </section>
+  <section anchor="p-4" identifier="/us/dod/don/usmc/mco/1200_13g/p-4" heading="4. Execution" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-4/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Execution</text>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-4/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Commander's Intent and Concept of Operations</text>
+        <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-4/p4/a/1" path="p4/a/1" number="4.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Commander's Intent. FEA will be conducted on a periodic basis as a foundation to validate occupational structure in the MOS Manual, to revise training requirements in T&amp;R Manuals, to revise formal school course curricula, and to educate and train Marines for assignment to billets requiring the unique MOS skills and knowledge for which they have been prepared.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-4/p4/a/2" path="p4/a/2" number="4.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Concept of Operations</text>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-4/p4/a/2/a" path="p4/a/2/a" number="4.a.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>FEA will be performed on an entire OccFld when possible. FEA studies are initiated and scheduled on a regular cycle synchronized with T&amp;R conference in according with the timelines established in reference (f), Training and Readiness Manual Group (TRMG) Charter Terms of Reference, when possible. They are also conducted when directed as emergent circumstances may highlight the benefit of a pre-decisional situation assessment or post implementation evaluation that affects occupational structure or training. Such needs may include: 2 MCO 1200.13G 7 Mar 2012 1 . Introduction of new weapons/equipment systems requiring new operator/maintainer tasks. 2 . Organizational changes, i.e., changes in MOS structure and career field realignments or capability driven force structure changes,</text>
+          </provision>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-3-2" identifier="/us/dod/don/usmc/mco/1200_13g/p-3-2" heading="3. Doctrinal changes required by new laws, Department of" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-3-2/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Doctrinal changes required by new laws, Department of Defense requirements and Marine Corps needs. 4_. Evaluations and inspections indicating that a performance/training deficiency exists.</text>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-3-2/p3/b" path="p3/b" number="3.(b)" label="(b)" depth="1" verification="UNVERIFIED">
+        <text>FEA Process. The FEA process is characterized by several elements. An outline of the steps normally followed in conducting an FEA is listed below: _1. Kickoff Meeting. GTD will hold a kickoff meeting with the OccFld Manager and MOS Specialists to provide overall guidance, expectations and define the scope of the project; determine study objectives, type of survey required, sampling plan, data collection plan and projected timeline; and to discuss special areas of concern. 2 . Task List Development. The task list method is used to conduct job performance surveys for FEA studies. It is critical that the task list be properly constructed because the analysis is based on survey responses to the task list. Subject Matter Experts (SME) are often called upon to assist in preparation of task lists.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-3-3" identifier="/us/dod/don/usmc/mco/1200_13g/p-3-3" heading="3. Sample Design." verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-3-3/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Sample Design. The survey sample is designed to obtain a representation of the target population that is (1) statistically reliable and (2) large enough to provide data that will allow for making inferences necessary to distinguish between jobs and to assess training requirements. j4. Survey Design. The survey contains four parts. Part I consists of demographic information and background questions. Part II contains the task list for the survey. Part III contains the training emphasis section of the survey. Part IV is a section for participants' MOS/OccFld and training comments. Relevant questions can be added to address other issues of concern to the OccFld Manager and TECOM. 5_. Survey Administration</text>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-3-3/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>The survey is administered to the sample population. FEA data can be collected through on-site survey administration, on-line surveys, mail-out surveys or a combination depending upon study requirements.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-3-3/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>The OccFld Manager will provide the FEA analyst with initial points of contact (POC) to serve as major command liaisons for coordination of the survey.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-3-3/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>CG, TECOM will send an Automatic Message Handling System message to notify commanders of the requirement for an FEA survey. Messages will include the proposed dates of the survey, the designated commands/bases where the survey will be conducted and the number and type of Marines required to take the survey. 3 MCO 1200.13G 7 Mar 2012</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-3-3/p3/d" path="p3/d" number="3.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>A 30-day window will normally be allotted for completing all segments of the FEA surveys. Onsite surveys are typically conducted within one work week for each geographic area with up to four onsite survey sessions scheduled per day depending on location of sites. 6. Survey Data Processing. The survey data is processed using a set of computer programs designed to automate, process, organize and report job performance data. 7 . Survey Data Analysis</text>
+        <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-3-3/p3/d/a" path="p3/d/a" number="3.d.a." label="a." depth="2" verification="UNVERIFIED">
+          <text>Occupational Analysis. Occupational analysis deals with manpower and structure related issues. It determines which tasks are being performed by each MOS and grade level. These findings compare those tasks to each MOS in the survey, published MOS descriptions, occupational structures and existing training standards. Each task is examined to determine performance differences and similarities between MOSs and grade levels in order to validate the occupational structure.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-3-3/p3/d/b" path="p3/d/b" number="3.d.b." label="b." depth="2" verification="UNVERIFIED">
+          <text>Training Analysis. Training analysis focuses on determining core and validating core plus tasks. Core tasks are required to qualify for an MOS and are generally trained at entry-level formal school. Core plus tasks are advanced, mission, billet or grade specific tasks that qualify Marines to function at various grade levels in the range of billet assignments and are generally trained on the job or occasionally at command school or other formal settings. Reference (b) designates core tasks based on recommendations from this analysis as considered by a meeting of SMEs. 8^. FEA Report. The data is analyzed and survey findings are summarized in the FEA Report. The report includes recommendations and will be used as the baseline reference document for the development of individual tasks and standards for the applicable T&amp;R Manual. 9_. FEA Report Staffing. FEA Reports that contain OccFld structural change recommendations will be staffed by the OccFld Manager; the Director, Total Force Structure; and Deputy Commandant, M&amp;RA for review, comments and concurrence. FEA Reports that contain only training analysis recommendations will be staffed to the OccFld Manager for information and retention.</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-10" identifier="/us/dod/don/usmc/mco/1200_13g/p-10" heading="10. End of Project Meeting. GTD representatives and the" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-11" identifier="/us/dod/don/usmc/mco/1200_13g/p-11" heading="11. T&amp;R Conference." verification="UNVERIFIED">
+  </section>
+  <section anchor="p-12" identifier="/us/dod/don/usmc/mco/1200_13g/p-12" heading="12. Follow up on recommended changes to structure and" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12" path="p12" number="12." label="12." depth="0" verification="UNVERIFIED">
+      <text>Follow up on recommended changes to structure and training as directed in references (b),(c), and (g), MOS System Modification Process.</text>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b" path="p12/b" number="12.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Subordinate Element Missions</text>
+        <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/1" path="p12/b/1" number="12.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Deputy Commandant, Combat Development and Integration (CD&amp;I)</text>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/1/a" path="p12/b/1/a" number="12.b.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Manage the FEA program.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/1/b" path="p12/b/1/b" number="12.b.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Staff the FEA report to cognizant HQMC offices for review/concurrence.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/1/c" path="p12/b/1/c" number="12.b.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Coordinate the development of training standards'.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/1/d" path="p12/b/1/d" number="12.b.(1)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Serve as the final approval authority for the recommendations contained in the Training Analysis of the FEA Report.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/1/e" path="p12/b/1/e" number="12.b.(1)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Determine impact and supportability of occupational structure recommendations contained in the Occupational Analysis of the FEA Report and provide comments to CG, TECOM (C 4 69).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/1/f" path="p12/b/1/f" number="12.b.(1)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Monitor implementation of approved manpower structure recommendations in accordance with references (d) and (e).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/1/g" path="p12/b/1/g" number="12.b.(1)(g)" label="(g)" depth="3" verification="UNVERIFIED">
+            <text>Serve as the final approval authority for the structure recommendations contained in the Occupational Analysis of the FEA Report.</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/3" path="p12/b/3" number="12.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Deputy Commandant, M&amp;RA</text>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/3/a" path="p12/b/3/a" number="12.b.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Provide comments to CG, TECOM (C 4 69) on the impact and supportability of manpower and training recommendations contained in the FEA Report.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/3/b" path="p12/b/3/b" number="12.b.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Support and monitor the implementation of approved manpower recommendations as established in reference (e).</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4" path="p12/b/4" number="12.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>CGs of the Marine Forces, Supporting Establishment, Commanders of separate organizations (when notified of an impending FEA onsite survey or online survey)</text>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4/a" path="p12/b/4/a" number="12.b.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Provide a staff POC with authority to coordinate survey requirements between Operating Force and Supporting Establishment in the geographic area. Requirements specific to each survey for the geographic area will be provided to commands by the TECOM message and by POC contact.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4/b" path="p12/b/4/b" number="12.b.(4)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Coordinate supportable survey dates with CG, TECOM to ensure that Marines in the OccFld/MOSs being studied are accessible for FEA survey administration.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4/c" path="p12/b/4/c" number="12.b.(4)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>During onsite surveys ensure that adequate survey administration facilities for maximum group size of 50 Marines are made available. (Well-lighted classrooms with desks or service clubs with tables are required; theater-type spaces without integrated desktop, standing or sitting on the floor or ground are not adequate.) 5 MCO 1200.13G MAR 0 7 2012</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4/a" path="p12/b/4/a" number="12.b.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Support CG, TECOM in conduct of FEA by providing adequate representation in project teams formed for FEA of each OccFld/project. _1. Advocate with Operating Force and supporting establishment units for successful surveys through representative participation as designed.</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4" path="p12/b/4" number="12.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Deputy Commandants as OccFld Advocate</text>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4/a" path="p12/b/4/a" number="12.b.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Provide a staff POC with authority to coordinate survey requirements between Operating Force and Supporting Establishment in the geographic area. Requirements specific to each survey for the geographic area will be provided to commands by the TECOM message and by POC contact.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4/b" path="p12/b/4/b" number="12.b.(4)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Coordinate supportable survey dates with CG, TECOM to ensure that Marines in the OccFld/MOSs being studied are accessible for FEA survey administration.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4/c" path="p12/b/4/c" number="12.b.(4)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>During onsite surveys ensure that adequate survey administration facilities for maximum group size of 50 Marines are made available. (Well-lighted classrooms with desks or service clubs with tables are required; theater-type spaces without integrated desktop, standing or sitting on the floor or ground are not adequate.) 5 MCO 1200.13G MAR 0 7 2012</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4/a" path="p12/b/4/a" number="12.b.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Support CG, TECOM in conduct of FEA by providing adequate representation in project teams formed for FEA of each OccFld/project. _1. Advocate with Operating Force and supporting establishment units for successful surveys through representative participation as designed.</text>
+          </provision>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-2" identifier="/us/dod/don/usmc/mco/1200_13g/p-2" heading="2. Provide subject matter input for the task list" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-2/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Provide subject matter input for the task list development and sample design to CG, TECOM (C 469).</text>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-2/p2/b" path="p2/b" number="2.(b)" label="(b)" depth="1" verification="UNVERIFIED">
+        <text>Provide an evaluation of impacts and supportability of manpower structure recommendations contained in the Occupational Analysis of the FEA report to CG, TECOM (C 469).</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-5" identifier="/us/dod/don/usmc/mco/1200_13g/p-5" heading="5. Administration and Logistics" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-5/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Administration and Logistics</text>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-5/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Comments and recommendations concerning the contents of this Order may be forwarded to the CG, TECOM (C 469), 1019 Elliot Road, Quantico, VA 22134-5001 via the appropriate chain of command.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-5/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Records created as a result of this Directive shall include records management requirements to ensure the proper maintenance and use of records, regardless of format or medium, to promote accessibility and authorized retention per the approved records schedule and reference (h), Records Management Manual. 6. Command and Signal</text>
+        <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-5/p5/b/a" path="p5/b/a" number="5.b.a." label="a." depth="2" verification="UNVERIFIED">
+          <text>Command. This Order is applicable to the Marine Corps Total Force. b. Signal. This Order is effective the date signed. RICHARD P. MILLS Deputy Commandant for Combat Development and Integration DISTRIBUTION: PCN 10200770000 Copy to: 7000110 (55) 8145005 (2) 70 00093, 99, 144/81450 01 6</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-03" against="section text already carried in this record">
+      <change>reparse_provisions.py - provision tree rebuilt after the reference-list and signature-block parser fixes</change>
+      <change>10 path(s) added, 9 removed, 50 provisions total</change>
+      <change>reference and enclosure lists now parse under ref/ and encl/ instead of entering the body marker stack</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+    <correction date="2026-08-03" against="the Subj: field in this record's own front matter text">
+      <change>backfill_subjects.py - subject recovered from the naval letter Subj: field, which the provision parser skips as a label line</change>
+      <change>title rebuilt as doc type, native number, and subject</change>
+      <change>no text was invented; a record with no Subj: field keeps subject null</change>
+    </correction>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>14 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

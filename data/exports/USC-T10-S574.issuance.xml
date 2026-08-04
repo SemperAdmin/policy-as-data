@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.5.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/usc/t10/s574" canonicalId="USC-T10-S574" docType="USC" nativeNumber="10 U.S.C. 574" tier="T0" lifecycle="active" verification="UNVERIFIED" schemaVersion="2.0">
+  <meta>
+    <title>10 U.S.C. 574 - Warrant officer active-duty lists; competitive categories; number to be recommended for promotion; promotion zones</title>
+    <subject>WARRANT OFFICER ACTIVE-DUTY LISTS; COMPETITIVE CATEGORIES; NUMBER TO BE RECOMMENDED FOR PROMOTION; PROMOTION ZONES</subject>
+    <provenance sourcePath="https://uscode.house.gov/view.xhtml?req=granuleid%3AUSC-prelim-title10-section574&amp;num=0&amp;edition=prelim" sourceHash="725748e6482aebc24d7569da3e4550f0fa6fe45bf7e89a85157cba7bb7e210cb" extractionEngine="manual-metadata-entry" convertedAt="2026-08-03T00:00:00+00:00" storeSchemaVersion="0.5.0"/>
+  </meta>
+  <section anchor="front-matter" heading="10 U.S.C. 574" verification="UNVERIFIED">
+  </section>
+  <section anchor="subsections" heading="Subsections (a) through (e)" verification="UNVERIFIED">
+  </section>
+</issuance>
