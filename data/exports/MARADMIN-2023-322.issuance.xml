@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2023/322" canonicalId="MARADMIN-2023-322" docType="MARADMIN" nativeNumber="322/23" tier="T5" lifecycle="cancelled" verification="UNVERIFIED" startPeriod="2023-06-23" endPeriod="2023-09-14" schemaVersion="2.0">
+  <meta>
+    <title>PROCUREMENT OF COMMERCIAL AMMUNITION AND EXPLOSIVES (A&amp;E)</title>
+    <subject>PROCUREMENT OF COMMERCIAL AMMUNITION AND EXPLOSIVES (A&amp;E)</subject>
+    <originator>COMMARCORSYSCOM QUANTICO VA</originator>
+    <signedDate>2023-06-23</signedDate>
+    <cancelledDate>2023-09-14</cancelledDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2023\MARADMIN_322_23_PROCUREMENT_OF_COMMERCIAL_AMMUNITION_AND_EXPLOSIVES_AE.pdf" sourceHash="d39200538885cc33f770a600b525f6bfbe9f6cbd4e6ac33f37654fa513216ad6" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="cancelled_by" target="MARADMIN-CANX-2023-022" basis="cited" held="held"/>
+    <ref rel="references" target="MCO-8000.8" targetIdentifier="/us/dod/don/usmc/mco/8000_8" basis="cited" tier="T3" held="absent" from="ref-line:REF A"/>
+    <ref rel="references" target="MCO-5100.29B-V8" targetIdentifier="/us/dod/don/usmc/mco/5100_29b/v8" basis="cited" tier="T3" held="drift" storeHolds="MCO-5100.29C-CH2" from="ref-line:REF B"/>
+    <ref rel="references" target="MCO-8011.5B" targetIdentifier="/us/dod/don/usmc/mco/8011_5b" basis="cited" tier="T3" held="absent" from="ref-line:REF D"/>
+    <ref rel="references" target="MCO-3570.1C" targetIdentifier="/us/dod/don/usmc/mco/3570_1c" basis="cited" tier="T3" held="drift" storeHolds="MCO-3570.1" from="ref-line:REF E"/>
+  </authority>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2023/322/body" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Background.  The Marine Corps shooting team and designated EOD teams supporting installation air shows may require commercial A&amp;E due to specific requirements that cannot be fulfilled by standard-issue Department of Defense (DoD) ammunition. Commercial A&amp;E may offer unique characteristics, such as specific bullet types or loadings that enhance precision, accuracy, or performance.  For clarification, the terms commercial A&amp;E, non-standard ammunition, and non-DOD ammunition throughout this MARADMIN are synonymous. They are defined as A&amp;E that has not been qualified nor fielded through the Naval Munitions Qualification process, or other DoD services respective qualification processes.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Procurement.  Per reference (a), the procurement of ammunition with the intent of fielding and sustaining the Total Munitions Requirement (TMR) is prohibited by any Marine Corps organization, other than MARCORSYSCOM.  All requirements within the TMR are considered DoD standard ammunition.  When commercial A&amp;E is required and requested in the appropriate timeline, the Program Manager for Ammunition (PM Ammo), Marine Corps Systems Command (MARCORSYSCOM), will conduct the procurement actions.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Commercial A&amp;E procurement timelines.</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p3/a/1" path="p3/a/1" number="3.a.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Greater than 6 Months. To support installation air shows and the Marine Corps shooting team, PM Ammo, MARCORSYSCOM, will procure commercial A&amp;E when the detailed requirements list is received, via ETMS2, at least six months prior to the required delivery date. This timeline is required to enable sufficient time for PM Ammo to conduct market research and all contracting actions.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p3/a/2" path="p3/a/2" number="3.a.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Less than 6 Months. If the detailed requirements list is submitted less than six months prior to the required delivery date, the procurement actions will be the responsibility of WTBN or the installation conducting the air show. Prior to starting any contracting actions, PM Ammo will review the requirements list, and provide procurement guidance and funding. Once that occurs, the respective organization and their contracting office are authorized to conduct the procurement action.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p3/a/4" path="p3/a/4" number="3.a.4." label="4." depth="2" verification="UNVERIFIED">
+          <text>Commercial A&amp;E Transfers in support of the Marine Corps Shooting Team.</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>The proximity to other federal entities within the National Capital Region has fostered the opportunity of transfers of excess commercial A&amp;E to WTBN at no cost to the Marine Corps. This presents a great opportunity for cost avoidance while also building important relationships within the marksmanship community.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>The Commanding Officer, WTBN, MCB Quantico is responsible for the safety of use and accountability of these commercial A&amp;E transfers.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Site approval, storage, handling, and use.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Use of commercial A&amp;E on non-certified range training areas, requires a Department of Defense Explosives Safety Board site approval and Standard Operating Procedures per references (b) and (c). The Explosives safety site approval requests must be submitted to PM Ammo, six months in advance of the event.</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p5/a/1" path="p5/a/1" number="5.a.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>In addition to required site approvals, installations requesting or receiving commercial A&amp;E must submit a non-DOD ammunition storage request to PM Ammo for authorization to store and handle commercial A&amp;E per reference (b). Upon approval to store non-DOD ammunition, PM Ammo will provide the installation with a storage authorization letter containing the parameters of the approval.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>The use of commercial A&amp;E is prohibited on Marine Corps operational training ranges without explicit approval of the Commanding General, Training and Education Command (TECOM) (Range and Training Area Management). Per reference (e), once the use of commercial A&amp;E has been authorized, the base or station Commander is the final approval authority for its use.</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p5/b/1" path="p5/b/1" number="5.b.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>For events where Marines and/or government civilians are not directly involved (e.g., only observers, and where contractors will be performing testing and/or demonstrations), the necessary safety documentation shall be coordinated between the responsible contractor and the local base/station Commander and Range Safety organizations.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p5/b/6" path="p5/b/6" number="5.b.6." label="6." depth="2" verification="UNVERIFIED">
+          <text>Accountability. A comprehensive inventory record of all commercial A&amp;E and components must be maintained, including accurate descriptions, quantities, and serial/lot numbers, ensuring it is up-to-date and readily accessible for audit and inspection purposes.  Implementation of a strict control system for the issuance and receipt of commercial A&amp;E and components, including clear documentation of individuals responsible for handling and securing these items, is required.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p5/b/7" path="p5/b/7" number="5.b.7." label="7." depth="2" verification="UNVERIFIED">
+          <text>This is a coordinated message between MARCORSYSCOM AND TECOM.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p5/b/8" path="p5/b/8" number="5.b.8." label="8." depth="2" verification="UNVERIFIED">
+          <text>This MARADMIN applies to WTBN, MCB Quantico and EOD Teams in direct support of installation air shows.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/322/p5/b/9" path="p5/b/9" number="5.b.9." label="9." depth="2" verification="UNVERIFIED">
+          <text>Release authorized by Brigadier General David C. Walsh, Commander, Marine Corps Systems Command.//</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>4 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

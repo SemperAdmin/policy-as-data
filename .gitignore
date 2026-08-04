@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Retired files staged for deletion. The tooling that reaches this disk
+# cannot delete, only move, so these folders are transient by design.
+_to_delete/
+
+# Build scratch
+*.log
+
+# The raw store of record. Carries contact details from the source
+# issuances, so it is not published. Rebuild it with build.sh.
+canonical/
+
+# Retired output staged for deletion. The pattern needs the wildcard -
+# "_to_delete/" alone misses "_to_delete_t/".
+_to_delete*/
+
+# One-off push helper, not part of the project.
+push.bat

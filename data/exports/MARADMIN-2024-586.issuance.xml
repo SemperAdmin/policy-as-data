@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2024/586" canonicalId="MARADMIN-2024-586" docType="MARADMIN" nativeNumber="586/24" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2024-12-05" schemaVersion="2.0">
+  <meta>
+    <title>SEQUENCE TWO FIELDING OF BIOELECTRICAL IMPEDANCE ANALYSIS</title>
+    <subject>SEQUENCE TWO FIELDING OF BIOELECTRICAL IMPEDANCE ANALYSIS</subject>
+    <originator>CG TECOM QUANTICO VA</originator>
+    <signedDate>2024-12-05</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2024\MARADMIN_586_24_SEQUENCE_TWO_FIELDING_OF_BIOELECTRICAL_IMPEDANCE_ANALYSIS.pdf" sourceHash="d0dbbd1707fd52a51226477fc25787adae6ee3954eb9e93b4a23480200ff97b6" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="MARADMIN-2022-652" targetIdentifier="/us/dod/don/usmc/maradmin/2022/652" basis="cited" tier="T5" held="absent" from="narr:REF A"/>
+    <ref rel="references" target="MCBUL-6110" targetIdentifier="/us/dod/don/usmc/mcbul/6110" basis="cited" tier="T3" held="absent" from="narr:REF B"/>
+    <ref rel="references" target="MCO-6110.3A-CH4" targetIdentifier="/us/dod/don/usmc/mco/6110_3a" basis="cited" tier="T3" held="held" from="narr:REF C"/>
+    <ref rel="references" target="MARADMIN-2022-423" targetIdentifier="/us/dod/don/usmc/maradmin/2022/423" basis="cited" tier="T5" held="absent" from="narr:REF D"/>
+    <ref rel="references" target="MARADMIN-2023-277" targetIdentifier="/us/dod/don/usmc/maradmin/2023/277" basis="cited" tier="T5" held="absent" from="narr:REF E"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2024/586/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2024/586/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>The purpose of this MARADMIN is to announce the second sequence of bioelectrical impedance analysis (BIA) device fielding.  Reference (a) was the first BIA device fielding.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Reference (b) announced that effective 1 January 2023, Commanders will not formally assign Marines to the body composition program (BCP) or separate Marines for BCP failure unless body fat is estimated by BIA and validated by a unit representative.  Training and Education Command (TECOM) is conducting sequence two of fielding BIA devices to the Fleet Marine Force and Headquarters Marine Corps units in support of a long-term plan to transition all body composition evaluation from height/weight tables and circumference method to viable alternatives.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>The second fielding of 54 BIAs to selected locations will occur during the first quarter of FY25.  The following commands have been selected to receive one BIA device each:</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>I MEF (I MEF HQSVC)</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a/1" path="p3/a/1" number="3.a.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>1st MARDIV</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a/1/a" path="p3/a/1/a" number="3.a.1.a." label="a." depth="3" verification="UNVERIFIED">
+            <text>1st Marine Regiment</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a/1/b" path="p3/a/1/b" number="3.a.1.b." label="b." depth="3" verification="UNVERIFIED">
+            <text>5th Marine Regiment</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a/1/c" path="p3/a/1/c" number="3.a.1.c." label="c." depth="3" verification="UNVERIFIED">
+            <text>7th Marine Regiment</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a/1/d" path="p3/a/1/d" number="3.a.1.d." label="d." depth="3" verification="UNVERIFIED">
+            <text>11th Marine Regiment</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a/2" path="p3/a/2" number="3.a.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>3rd MAW</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a/2/a" path="p3/a/2/a" number="3.a.2.a." label="a." depth="3" verification="UNVERIFIED">
+            <text>MAG 11</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a/2/b" path="p3/a/2/b" number="3.a.2.b." label="b." depth="3" verification="UNVERIFIED">
+            <text>MAG 13</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a/2/c" path="p3/a/2/c" number="3.a.2.c." label="c." depth="3" verification="UNVERIFIED">
+            <text>MAG 16</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a/2/d" path="p3/a/2/d" number="3.a.2.d." label="d." depth="3" verification="UNVERIFIED">
+            <text>MAG 39</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a/3" path="p3/a/3" number="3.a.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>1st MLG</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a/3/a" path="p3/a/3/a" number="3.a.3.a." label="a." depth="3" verification="UNVERIFIED">
+            <text>CLR 1</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a/3/b" path="p3/a/3/b" number="3.a.3.b." label="b." depth="3" verification="UNVERIFIED">
+            <text>CLR 17</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a/4" path="p3/a/4" number="3.a.4." label="4." depth="2" verification="UNVERIFIED">
+          <text>11 MEU</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a/5" path="p3/a/5" number="3.a.5." label="5." depth="2" verification="UNVERIFIED">
+          <text>13 MEU</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/a/6" path="p3/a/6" number="3.a.6." label="6." depth="2" verification="UNVERIFIED">
+          <text>15 MEU</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>II MEF (II MEF HQSVC)</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b/1" path="p3/b/1" number="3.b.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>2d MARDIV</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b/1/a" path="p3/b/1/a" number="3.b.1.a." label="a." depth="3" verification="UNVERIFIED">
+            <text>2d Marine Regiment</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b/1/b" path="p3/b/1/b" number="3.b.1.b." label="b." depth="3" verification="UNVERIFIED">
+            <text>6th Marine Regiment</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b/1/c" path="p3/b/1/c" number="3.b.1.c." label="c." depth="3" verification="UNVERIFIED">
+            <text>10th Marine Regiment</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b/2" path="p3/b/2" number="3.b.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>2d MAW</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b/2/a" path="p3/b/2/a" number="3.b.2.a." label="a." depth="3" verification="UNVERIFIED">
+            <text>MAG 14</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b/2/b" path="p3/b/2/b" number="3.b.2.b." label="b." depth="3" verification="UNVERIFIED">
+            <text>MAG 26</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b/2/c" path="p3/b/2/c" number="3.b.2.c." label="c." depth="3" verification="UNVERIFIED">
+            <text>MAG 29</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b/2/d" path="p3/b/2/d" number="3.b.2.d." label="d." depth="3" verification="UNVERIFIED">
+            <text>MAG 31</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b/2/e" path="p3/b/2/e" number="3.b.2.e." label="e." depth="3" verification="UNVERIFIED">
+            <text>MACG 28</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b/3" path="p3/b/3" number="3.b.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>2d MLG</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b/3/a" path="p3/b/3/a" number="3.b.3.a." label="a." depth="3" verification="UNVERIFIED">
+            <text>CLR 2</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b/3/b" path="p3/b/3/b" number="3.b.3.b." label="b." depth="3" verification="UNVERIFIED">
+            <text>CLR 27</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b/4" path="p3/b/4" number="3.b.4." label="4." depth="2" verification="UNVERIFIED">
+          <text>22 MEU</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b/5" path="p3/b/5" number="3.b.5." label="5." depth="2" verification="UNVERIFIED">
+          <text>24 MEU</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/b/6" path="p3/b/6" number="3.b.6." label="6." depth="2" verification="UNVERIFIED">
+          <text>26 MEU</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>III MEF (III MEF HQSVC)</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/c/1" path="p3/c/1" number="3.c.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>3d MARDIV</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/c/1/a" path="p3/c/1/a" number="3.c.1.a." label="a." depth="3" verification="UNVERIFIED">
+            <text>3d Marine Littoral Regiment</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/c/1/b" path="p3/c/1/b" number="3.c.1.b." label="b." depth="3" verification="UNVERIFIED">
+            <text>4th Marine Regiment</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/c/1/c" path="p3/c/1/c" number="3.c.1.c." label="c." depth="3" verification="UNVERIFIED">
+            <text>12th Marine Regiment</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/c/2" path="p3/c/2" number="3.c.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>1st MAW</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/c/2/a" path="p3/c/2/a" number="3.c.2.a." label="a." depth="3" verification="UNVERIFIED">
+            <text>MAG 12</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/c/2/b" path="p3/c/2/b" number="3.c.2.b." label="b." depth="3" verification="UNVERIFIED">
+            <text>MAG 24</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/c/2/c" path="p3/c/2/c" number="3.c.2.c." label="c." depth="3" verification="UNVERIFIED">
+            <text>MAG 36</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/c/2/d" path="p3/c/2/d" number="3.c.2.d." label="d." depth="3" verification="UNVERIFIED">
+            <text>MACG 18</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/c/3" path="p3/c/3" number="3.c.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>3d MLG</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/c/3/a" path="p3/c/3/a" number="3.c.3.a." label="a." depth="3" verification="UNVERIFIED">
+            <text>CLR 3</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/c/3/b" path="p3/c/3/b" number="3.c.3.b." label="b." depth="3" verification="UNVERIFIED">
+            <text>CLR 37</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/c/4" path="p3/c/4" number="3.c.4." label="4." depth="2" verification="UNVERIFIED">
+          <text>31 MEU</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/d" path="p3/d" number="3.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>5th Marine Expeditionary Brigade</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/e" path="p3/e" number="3.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>MARFOREURAF</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/f" path="p3/f" number="3.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>FASTEUR- Rota, Spain</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/g" path="p3/g" number="3.g." label="g." depth="1" verification="UNVERIFIED">
+        <text>FASTPAC- Yokosuka, Japan</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/h" path="p3/h" number="3.h." label="h." depth="1" verification="UNVERIFIED">
+        <text>WWBN-East</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p3/i" path="p3/i" number="3.i." label="i." depth="1" verification="UNVERIFIED">
+        <text>WWBN-West</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Commands/units that receive BIA devices in this fielding tranche must support or allow access to any Marine Corps unit that has not been identified to receive a BIA.  Marines requiring body fat verification may be required to conduct unit funded travel to locations where approved devices are fielded.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Units must use TECOM approved BIA models in the conduct of body composition evaluations (BCE).  Currently, the Inbody 770 is the only USMC approved BIA device.  TECOM will continue to monitor the capabilities available in the commercial marketplace.  If another potential source emerges, the Marine Corps will assess whether competition for future requirements is feasible.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>TECOM Human Performance Branch (TECOM HPB) coordinated with commands in paragraph 3 to confirm shipping addresses and unit supply points of contact to receive BIA devices.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>A survey in 2d quarter FY25 will solicit feedback on fielding that will inform potential follow-on fielding.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>Upon receipt, all commands that are a custodian to a base property office must report all key supporting documentation to their base property office so that the BIA device may be added to their DPAS custodian account.  Commands that are not a custodian to a base property office will coordinate with their parent command for their BIA device to be entered into DPAS through a base property office.  The vendor will supply a copy of the warranty, receiving invoice with BIA serial number, item unique identification (IUID) number, and management control number (MCN) for units to enter into DPAS.  The following is the MCN number for the BIA devices: 6515-00-M00-0678.  For assistance with DPAS utilize the following email:  [contact withheld].</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p9" path="p9" number="9." label="9." depth="0" verification="UNVERIFIED">
+      <text>BIA devices have a 4-year warranty as part of the service level contract.  Receiving units are responsible for the daily care and operation of BIAs.  Units must adhere to the daily care and terms within the warranty to receive warranty support.  If warranties are violated, commands are responsible for replacement.  For any device replacement outside of warranty coverage, it is the unitâ€™s responsibility to replace their BIA device via unit funding.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p10" path="p10" number="10." label="10." depth="0" verification="UNVERIFIED">
+      <text>No later than 1 January 2025, command physical training representatives (CPTR) and force fitness instructors (FFI) will conduct initial BIA familiarization training using the materials published per para. 15 until MarineNet training is updated. Commanders will verify that CPTRs and FFIs have conducted BIA Training using the TECOM published materials and will certify each CPTR and FFI prior to any CPTR or FFI administering BIA assessments, using the commanderâ€™s training certification letter. A template of the commanderâ€™s certification letter is published per para 15.  Once MarineNet Course FFDBCP02 is updated, CPTRs and FFIs will be required to recertify their training to include BIA training procedures.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p11" path="p11" number="11." label="11." depth="0" verification="UNVERIFIED">
+      <text>Body composition evaluations (BCE) using BIA are only required for Marines who exceed their maximum weight standard and fail the circumference method (taping) or for Marines that present an unsuitable military appearance due to improper weight distribution, as determined by their commander.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p12" path="p12" number="12." label="12." depth="0" verification="UNVERIFIED">
+      <text>Body fat percentages must be verified by a CPTR or FFI prior to formal assignment to BCP.  The BIA device printed results sheet is required as proof of verification and must be retained in accordance with reference (c).  A CPTR and FFI must sign the bottom of the results sheet and create a separate calendar event in MCTIMS to document body fat verification.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p13" path="p13" number="13." label="13." depth="0" verification="UNVERIFIED">
+      <text>If a Marine is not within height and weight standards, then the CPTR or FFI will conduct a BCE initially using the taping technique. If a Marine is not within standards using this method, then the CPTR or FFI must conduct a BCE using an approved BIA device within 7 working days.  The BCP assignment process may be initiated while Marines await the conduct of a BIA scan.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p14" path="p14" number="14." label="14." depth="0" verification="UNVERIFIED">
+      <text>Marines required to travel for a BIA scan may have their scan verified by a local CPTR or FFI prior to BCP assignment rather than using the CPTR or FFI assigned to the Marineâ€™s command.  If a Marine must travel to another command location for body fat verification, the Marineâ€™s identity must be verified by the local CPTR or FFI conducting the BIA scan via Common Access Card.  A physical copy of the results sheet will be provided to the Marine to take back to their unit.  The verifying CPTR or FFI will also send an electronic copy of the results sheet to the Marineâ€™s unit CPTR, FFI, or unit operations section via encrypted messaging.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p15" path="p15" number="15." label="15." depth="0" verification="UNVERIFIED">
+      <text>The following information can be found at https:(slash)(slash)www.fitness.marines.mil.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p15/a" path="p15/a" number="15.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Initial BIA fielding locations and points of contact.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p15/b" path="p15/b" number="15.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Commanderâ€™s BIA training certification letter template.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p15/c" path="p15/c" number="15.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>BIA warranty information.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p15/d" path="p15/d" number="15.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Vendor reported BIA serial numbers and assigned IUID numbers by fielded unit (as available).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p15/e" path="p15/e" number="15.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Contract technical account manager information.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p15/f" path="p15/f" number="15.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Daily care guidance.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p15/g" path="p15/g" number="15.g." label="g." depth="1" verification="UNVERIFIED">
+        <text>Operating videos and other training materials.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p15/h" path="p15/h" number="15.h." label="h." depth="1" verification="UNVERIFIED">
+        <text>Supply lists.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p15/i" path="p15/i" number="15.i." label="i." depth="1" verification="UNVERIFIED">
+        <text>Frequently asked questions.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p16" path="p16" number="16." label="16." depth="0" verification="UNVERIFIED">
+      <text>For questions contact the Human Performance Branch at [contact withheld] or the listed POC.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p17" path="p17" number="17." label="17." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN is applicable to the Marine Corps Total Force.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/586/p18" path="p18" number="18." label="18." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by Lieutenant General Benjamin T. Watson, Commanding General, Training and Education Command.//</text>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>1 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

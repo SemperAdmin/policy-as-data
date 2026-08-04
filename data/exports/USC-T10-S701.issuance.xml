@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.5.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/usc/t10/s701" canonicalId="USC-T10-S701" docType="USC" nativeNumber="10 U.S.C. 701" tier="T0" lifecycle="active" verification="UNVERIFIED" schemaVersion="2.0">
+  <meta>
+    <title>10 U.S.C. 701 - Entitlement and accumulation</title>
+    <subject>ENTITLEMENT AND ACCUMULATION OF LEAVE</subject>
+    <provenance sourcePath="https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title10-section701&amp;num=0&amp;edition=prelim" sourceHash="811b0aa8988b10d527cbe77fcf259defdb7975baea7020b8cde00c78f93a7831" extractionEngine="manual-metadata-entry" convertedAt="2026-08-03T00:00:00+00:00" storeSchemaVersion="0.5.0"/>
+  </meta>
+  <section anchor="front-matter" heading="10 U.S.C. 701 - Entitlement and accumulation" verification="UNVERIFIED">
+  </section>
+  <section anchor="subsections" heading="Subsections" verification="UNVERIFIED">
+    <provision path="a" number="(a)" label="(a)" depth="0" verification="UNVERIFIED">
+      <text>Basic entitlement. “A member of an armed force is entitled to leave at the rate of 2½ calendar days for each month of active service, excluding periods of-”</text>
+    </provision>
+    <provision path="b" number="(b)" label="(b)" depth="0" verification="UNVERIFIED">
+      <text>Accumulation limits - 60-day cap on accumulated leave.</text>
+    </provision>
+    <provision path="e" number="(e)" label="(e)" depth="0" verification="UNVERIFIED">
+      <text>Excess leave retention - Secretary may authorize retention of up to 30 days excess leave.</text>
+    </provision>
+    <provision path="h" number="(h)" label="(h)" depth="0" verification="UNVERIFIED">
+      <text>Parental leave. “Under regulations prescribed by the Secretary of Defense, a member of the armed forces described in paragraph (2) is allowed up to a total of 12 weeks of parental leave during the one-year period beginning after” specified events including birth, adoption, and foster placement.</text>
+    </provision>
+    <provision path="l" number="(l)" label="(l)" depth="0" verification="UNVERIFIED">
+      <text>Bereavement leave - two weeks for immediate family death.</text>
+    </provision>
+    <provision path="m" number="(m)" label="(m)" depth="0" verification="UNVERIFIED">
+      <text>Convalescent leave - medical provider recommended.</text>
+    </provision>
+  </section>
+</issuance>

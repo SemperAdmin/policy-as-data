@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2018/011" canonicalId="MARADMIN-2018-011" docType="MARADMIN" nativeNumber="011/18" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2018-01-06" schemaVersion="2.0">
+  <meta>
+    <title>CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND STAFF</title>
+    <subject>CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND STAFF</subject>
+    <originator>CG MCCDC QUANTICO VA</originator>
+    <signedDate>2018-01-06</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2018\MARADMIN_011_18_CONVENING_OF_THE_COLLEGE_OF_DISTANCE_EDUCATION_AND_TRAINING.pdf" sourceHash="750e2347f45b09b5ff0fb33ca919e739a75bbb1479a4aae9ed7e10c58ed05f88" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="MCO-1900.16G" targetIdentifier="/us/dod/don/usmc/mco/1900_16g" basis="cited" tier="T3" held="drift" storeHolds="MCO-1900.16-CH3" from="narr:REF A"/>
+    <ref rel="references" target="MCO-1553.4B" targetIdentifier="/us/dod/don/usmc/mco/1553_4b" basis="cited" tier="T3" held="absent" from="narr:REF B"/>
+    <ref rel="references" target="MARADMIN-2008-703" targetIdentifier="/us/dod/don/usmc/maradmin/2008/703" basis="cited" tier="T5" held="absent" from="narr:REF C"/>
+    <ref rel="references" target="MARADMIN-2013-498" targetIdentifier="/us/dod/don/usmc/maradmin/2013/498" basis="cited" tier="T5" held="absent" from="narr:REF D"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2018/011/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2018/011/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>This Marine Administrative Message (MARADMIN)announces the convening of the Academic Year (AY) 2018-19 Command and Staff College and Expeditionary Warfare School funded Blended Seminar Program (BSP) selection board for reserve officers.  The intent of this MARADMIN is to solicit applications from those reserve officers desiring to attend the funded BSP Distance Education Program (DEP) and to detail the application process.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Application.  All applicants must submit their application via the Headquarters Marine Corps Reserve website.  Officers that are board selected for a BSP will be registered in the Marine Corps Training Information Management System by Marine Forces Reserve G-3 Training.  Officers who meet any of the following criteria are ineligible to apply for the funded BSP DEP:</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p2/a" path="p2/a" number="2.A." label="A." depth="1" verification="UNVERIFIED">
+        <text>Officers who are in the above zone on the next scheduled promotion board.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p2/b" path="p2/b" number="2.B." label="B." depth="1" verification="UNVERIFIED">
+        <text>Officers that have completed an equivalent Formal Level School (FLS) or DEP.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p2/c" path="p2/c" number="2.C." label="C." depth="1" verification="UNVERIFIED">
+        <text>Officers with approved retirements, resignations, or pending conditional release.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p2/d" path="p2/d" number="2.D." label="D." depth="1" verification="UNVERIFIED">
+        <text>Officers applying for FLS whose mandatory removal date is 1 October 2021 or earlier will not be considered.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Requirements.  Unrestricted Reserve (UR) officers participating in any funded Professional Military Education (PME) program of study (excluding 2 week staff training courses) will incur a Selected reserve (SELRES) drilling affiliation obligation for 24 continuous months following the completion of the program of study.  This requirement is to ensure that the reserve component effectively realizes a return on the investment made in funding the education of officers through these programs.  To more effectively enforce this requirement, the following applies:</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p3/a" path="p3/a" number="3.A." label="A." depth="1" verification="UNVERIFIED">
+        <text>UR officers will sign a Separate Written Agreement to Train(SWAT) at the time of application to all funded DEP PME programs of study to acknowledge and accept the SELRES drilling affiliation requirement.  DEP applications submitted without a signed SWAT will not be accepted.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p3/b" path="p3/b" number="3.B." label="B." depth="1" verification="UNVERIFIED">
+        <text>Ninety days following graduation, officers must be joined to either a Selected Marine Corps Reserve (SMCR) drilling unit or an Individual Mobilization Augmentee (IMA) billet identification code that matches his or her grade and military occupational specialty.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p3/c" path="p3/c" number="3.C." label="C." depth="1" verification="UNVERIFIED">
+        <text>Subsequent failure to affiliate following graduation will be handled in accordance with the SWAT signed at the time of application.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p3/d" path="p3/d" number="3.D." label="D." depth="1" verification="UNVERIFIED">
+        <text>A mandatory drill stop date of 24 months will be reported on unit diary by Commandant of the Marine Corps (CMC), Reserve Affairs Management-4 upon completion of the course.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>The BSP prerequisites.  UR officers in the SMCR, IMA, or Individual Ready Reserve (IRR) are eligible for consideration if they meet the specific eligibility criteria listed for each respective program below:</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p4/a" path="p4/a" number="4.A." label="A." depth="1" verification="UNVERIFIED">
+        <text>Command and Staff College Blended Seminar Program (CSCBSP)</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p4/a/1" path="p4/a/1" number="4.A.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Eligible officers.  Major and major select, Chief Warrant Officer (CWO) 5 and CWO5 select, CWO4 and CWO4 select.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p4/a/2" path="p4/a/2" number="4.A.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Format.  CSCBSP is designed for delivery in three stages:  Stage 1 is a 4 week resident period, stage 2 is a 28 week online period, and stage three is a 6 week resident period.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p4/a/3" path="p4/a/3" number="4.A.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>CSCBSP class dates: Class Number and Location                    Report 1st Reserve Period Report 2nd Reserve Period 901-902 at Quantico, Virginia                11 June 2018 (901)                29 April 2019 (902) 903-904 at Camp Lejuene, North Carolina      2 August 2018 (903)               15 April 2019 (904) 905-906 at Camp Pendleton, California        2 August 2018 (905)               15 April 2019 (906) 907-908 at Camp Lejuene, North Carolina      20 January 2019 (907)             23 September 2019 (908) 909-910 at Camp Lejuene, North Carolina      30 January 2019 (909)             23 September 2019 (910)</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p4/b" path="p4/b" number="4.B." label="B." depth="1" verification="UNVERIFIED">
+        <text>Expeditionary Warfare School Blended Seminar Program (EWSBSP)</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p4/b/1" path="p4/b/1" number="4.B.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Eligible officers.  Captain and captain select, CWO3 and CWO3 select.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p4/b/2" path="p4/b/2" number="4.B.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Format.  EWSBSP is designed for delivery in three stages:  Stage 1 is a 29 day resident period, stage 2 is a 12 week online period, and stage 3 is a 6 week resident period.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p4/b/3" path="p4/b/3" number="4.B.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>EWSBSP class dates (read in three columns): Class Number and Location                     Report 1st Reserve Period Report 2nd Reserve Period 901-902 at Quantico, Virginia                 9 July 2018 (901)                29 October 2018 (902) 903-904 at Camp Lejuene, North Carolina       9 July 2018 (903)                29 October 2018 (904) 905-906 at Camp Pendleton, California         5 October 2018 (905)             25 March 2019 (906) 907-908 at Camp Lejuene, North Carolina       7 January 2019 (907)             29 April 2019 (908) 909-910 at Camp Lejuene, North Carolina       7 January 2019 (909)             29 April 2019 (910)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p4/b/5" path="p4/b/5" number="4.B.5." label="5." depth="2" verification="UNVERIFIED">
+          <text>Course prerequisites.  Information, course prerequisites, and frequently asked questions can be found by accessing the reserve officer PME website under top requests at www.manpower.usmc.mil.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p4/b/6" path="p4/b/6" number="4.B.6." label="6." depth="2" verification="UNVERIFIED">
+          <text>Application process.  The deadline for submitting the application and updated material for the BSPs is 9 March 2018, 2359 Eastern Standard Time (EST).  The online website for submission of all applications and material is www.manpower.usmc.mil/application.  Officers with a Manpower and Reserve Affairs (MRA) portal account will proceed to the login process. Officers who do not have an MRA portal account will receive a 404 access error.  Within the error message are instructions on how to register for a MRA portal account.  Any active or reserve component Marine requesting a portal account is automatically approved. Upon login, the system will validate the application for which the officer is qualified.  Click RPME-C and complete the RPME-C application for the respective program.  Officers are strongly advised to read the instructions in their entirety before completing the application form.  The web-based application allows for the attachment of documents and offers RPME preference options via drop-down boxes. Ensure upload of documents into the proper document type (e.g., Reserve Qualification Summary (RQS) documents upload into RQS file type).  Officers must complete, sign (digitally or physically) and attach their RQS NAVMC 10476 (Rev. September 2016), which is the current version located on the online application and on the RAM-4 webpage in order for their application to be considered.  All applicants applying for funded BSP must also attach a signed SWAT which is located on the application website, in order for their application to be considered.  Once submitted, officers will receive a confirmation e-mail that theirapplication has been received.  Hard copy applications will not be accepted.  All submitted material will be destroyed upon completion of the selection process.</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p6/a" path="p6/a" number="6.A." label="A." depth="1" verification="UNVERIFIED">
+      <text>Photographs.  A current promotion photograph is required by the RPME board in accordance with reference (d).  Eligible officers are highly encouraged to read and comply with reference (d).  Officers are responsible for verifying receipt of their photograph by CMC Manpower Management Records and Perfomance (MMRP)-20.  The primary means of confirming receipt of a photograph is the online Official Military Personnel File (OMPF) via Marine Online.  Photographs will be available for viewing online within 24 hours of photograph receipt by CMC (MMRP-20). Photographs are considered current if submitted within 12 months preceding the convening date of the RPME-C selection process.  The date listed on the photograph title board, is the date used to determine whether or not an officers promotion photograph is current.  Officers are advised that outdated photographs will remain in the OMPF until an updated photograph is submitted.  Marines have the personal responsibility to ensure that their promotion photograph is current, submitted, and received.  Marines may also confirm receipt of their digital photograph via the MMRP website at:  www.mmsb.usmc.mil.  Click on MMRP-20 OMPF, look under online applications, then click on digital photo inventory.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p6/b" path="p6/b" number="6.B." label="B." depth="1" verification="UNVERIFIED">
+      <text>Fitness reports.  The selection board will review and consider fitness reports.  All fitness reports must be included in an officers OMPF.  Incomplete fitness reports will not be accepted.  This includes those fitness reports missing signatures or reviewing officer certification.  Information regarding fitness reports can be viewed on the MMRP website at www.mmsb.usmc.mil.  Click on MMRP-30 Performance Evaluation Section.  Look under online applications, then click on check your fitness report status.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p6/c" path="p6/c" number="6.C." label="C." depth="1" verification="UNVERIFIED">
+      <text>OMPF material.  Any documents that an officer feels should be part of his or her OMPF, other than fitness reports, must be forwarded to CMC (MMRP-20) by 9 March 2018, 2359 EST.  E-mail is the preferred and fastest way to update the OMPF.  E-mail updated material to [contact withheld].  In the text of the e-mail, indicate AY 2018, 2019 RPME-C selection process as the program for which being considered.  A single black and white multi-page attachment in adobe portable document format will expedite filing.  Ensure all materials contain full name and electronic data interchange personal identifier.  Personally identifiable information privacy is the responsibility of the sender.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Administration.  Ensure correct e-mail addresses and telephone numbers are current and are provided on the application.  Update any changes to point of contact information promptly.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>Notification of selection.  The selection panel will select a number of officers as primaries equal to the number of school seats available.  The selection panel will also select a sufficient number of officers as alternates to meet quota requirements when officers decline or otherwise cannot accept.  Once the results are approved by Reserve Affairs, primary selectees for the BSP will be announced via MARADMIN.  The results MARADMIN will provide administrative guidance for orders processing and issuance.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p9" path="p9" number="9." label="9." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN is applicable to the reserve component (SMCR, IMA and IRR) and has been coordinated with Reserve Affairs and Marine Forces Reserve (MARFORRES). Active Reserve program members must apply via their chain of command to MARFORRES G-3 Training.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2018/011/p10" path="p10" number="10." label="10." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by Lieutenant General Robert S. Walsh, Commanding General, Marine Corps Combat Development Command.// Archived: 2026-07-12 08:08 | Source: marines.mil</text>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>2 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

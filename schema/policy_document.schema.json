@@ -1,0 +1,512 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "gunnybot:policy_document:0.2.1",
+ "title": "GunnyBot Canonical Policy Document",
+ "description": "One record per policy document. The canonical store is the single source of truth. 0.2.0 FROZEN 2026-07-09 after pilot and 200-doc gates. 0.2.1 (2026-07-10) is ADDITIVE: uslm_identifier path IDs, verification status, corrections log, edge_meta with cited-vs-inferred basis. 0.4.0 (2026-07-18) is ADDITIVE: sections[].provisions[] carries provision-depth decomposition (one paragraph per node, stored path absolute, displayed label local) per the P-track and Maj Gannon's HHQ requirements - 0.3.0 records remain valid. 0.3.0 (2026-07-18) is BREAKING per owner ruling N0.3 (ndr-conformance-matrix.md): uslm_identifier re-rooted to full command lineage - /us/usmc/* becomes /us/dod/don/usmc/*, /us/navy/* becomes /us/dod/don/*, /us/dod/fmr unchanged. MIGRATION: prefix substitution only, tails unchanged, document ids untouched - consumers holding 0.2.x uslm identifiers apply the two prefix rewrites. Records at 0.2.x remain schema-valid for archival reads; the live store is regenerated wholesale at 0.3.0.",
+ "type": "object",
+ "required": [
+  "schema_version",
+  "id",
+  "doc_type",
+  "title",
+  "status",
+  "publication",
+  "provenance",
+  "sections"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "schema_version": {
+   "enum": [
+    "0.2.0",
+    "0.2.1",
+    "0.3.0",
+    "0.4.0",
+    "0.5.0"
+   ]
+  },
+  "id": {
+   "type": "string",
+   "description": "Stable citation identifier derived from the native document number.",
+   "pattern": "^[A-Z][A-Z0-9_]+-[A-Za-z0-9._/-]+$"
+  },
+  "doc_type": {
+   "type": "string",
+   "enum": [
+    "MARADMIN",
+    "ALMAR",
+    "ALNAV",
+    "MCO",
+    "MCBUL",
+    "NAVMC",
+    "SECNAV",
+    "DODFMR",
+    "DOCTRINE",
+    "PRIUM",
+    "PAA",
+    "DTMO",
+    "LEGAL",
+    "RFF",
+    "MISC",
+    "USC",
+    "DODI",
+    "DODD",
+    "DODM",
+    "DTM",
+    "EO",
+    "CJCSI",
+    "OPNAVINST",
+    "BUMEDINST",
+    "SECNAVM",
+    "SECNAVNOTE",
+    "NAVSO",
+    "DODREG"
+   ],
+   "description": "Issuance type. 0.5.0 added the authority tiers above the service: statute (USC), DoD (DODI, DODD, DODM, DTM, DODREG), joint (CJCSI), executive (EO), and the Navy forms the reference lists actually name (OPNAVINST, BUMEDINST, SECNAVM, SECNAVNOTE, NAVSO). Additive - no existing record changes."
+  },
+  "native_number": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "The number as printed on the document, e.g. 001/23 or 5215.1K."
+  },
+  "title": {
+   "type": "string",
+   "minLength": 1
+  },
+  "subject": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "status": {
+   "type": "string",
+   "enum": [
+    "active",
+    "cancelled",
+    "superseded",
+    "unknown"
+   ]
+  },
+  "dates": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "signed": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "ISO 8601 date"
+    },
+    "effective": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "cancelled": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "archived": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "When the scraper captured the document"
+    }
+   }
+  },
+  "issuing_authority": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "relationships": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "cancels": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "cancelled_by": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "supersedes": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "superseded_by": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "references": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "edge_meta": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "rel",
+       "target",
+       "basis"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "rel": {
+        "enum": [
+         "cancels",
+         "cancelled_by",
+         "supersedes",
+         "superseded_by",
+         "references"
+        ]
+       },
+       "target": {
+        "type": "string"
+       },
+       "basis": {
+        "enum": [
+         "cited",
+         "inferred"
+        ],
+        "description": "cited = the source text states the link. inferred = resolution or hierarchy inference. Never conflate."
+       },
+       "confidence": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "resolution": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     },
+     "description": "Annotations for edges in the sibling arrays."
+    }
+   }
+  },
+  "publication": {
+   "type": "object",
+   "required": [
+    "publishable"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "publishable": {
+     "type": "boolean"
+    },
+    "reason": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Required when publishable is false"
+    },
+    "distribution_statement": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "adjudication_ref": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Row reference into the adjudication worklist"
+    }
+   }
+  },
+  "provenance": {
+   "type": "object",
+   "required": [
+    "source_path",
+    "source_hash"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "source_path": {
+     "type": "string"
+    },
+    "source_hash": {
+     "type": "string"
+    },
+    "source_site": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "extraction_engine": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "extracted_at": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "cleaned_at": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "converted_at": {
+     "type": "string"
+    }
+   }
+  },
+  "pocs": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Point-of-contact lines, raw. PII review applies before publication rendering."
+  },
+  "sections": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "object",
+    "required": [
+     "anchor",
+     "text"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "anchor": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "description": "Stable within-document citation anchor. Chunk IDs derive as {id}#{anchor}."
+     },
+     "heading": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "text": {
+      "type": "string"
+     },
+     "number": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Native paragraph or chapter number as printed, e.g. 5, 0401, IV."
+     },
+     "uslm_identifier": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Anchor-grade path ID: {doc uslm_identifier}/{anchor}. Provision-grade paths await deeper parsing."
+     },
+     "verification": {
+      "type": "string",
+      "enum": [
+       "VERIFIED",
+       "UNVERIFIED"
+      ]
+     },
+     "provisions": {
+      "type": "array",
+      "description": "Phase P1/P2 - one entry per individual numbered or lettered paragraph, hierarchy explicit. The STORED path is absolute (p8/a/1/b); the DISPLAYED label is local only ((b)), preserving standard naval letter format. Empty when the document is not provision-shaped (tables, flattened extractions, stubs) - absence is an honest answer, never fabricate a tree.",
+      "items": {
+       "type": "object",
+       "required": [
+        "path",
+        "label",
+        "text"
+       ],
+       "additionalProperties": false,
+       "properties": {
+        "path": {
+         "type": "string",
+         "pattern": "^[0-9a-z]+(/[0-9a-z]+)*$",
+         "description": "Relative provision path within its base, e.g. p8/a/1/b. Numbered top-level paragraphs take the pN form; a section opening at a lettered paragraph keeps the bare letter."
+        },
+        "number": {
+         "type": [
+          "string",
+          "null"
+         ],
+         "description": "Full citation form as a Marine would write it, e.g. 8.a.(1)(b)."
+        },
+        "label": {
+         "type": "string",
+         "description": "Local marker exactly as printed, e.g. (b) - the only form shown in print view."
+        },
+        "depth": {
+         "type": "integer",
+         "minimum": 0
+        },
+        "parent": {
+         "type": [
+          "string",
+          "null"
+         ]
+        },
+        "text": {
+         "type": "string",
+         "description": "Paragraph text with the marker stripped."
+        },
+        "raw_marker": {
+         "type": [
+          "string",
+          "null"
+         ],
+         "description": "Exact source marker, retained for round-trip fidelity."
+        },
+        "uslm_identifier": {
+         "type": [
+          "string",
+          "null"
+         ],
+         "pattern": "^/us/[a-z0-9./_-]+$"
+        },
+        "verification": {
+         "type": "string",
+         "enum": [
+          "VERIFIED",
+          "UNVERIFIED"
+         ]
+        },
+        "citations": {
+         "type": "array",
+         "description": "Phase P3 - provision-grade outbound citations found in this paragraph's text. A citation resolves to chapter and verse, not merely to a document.",
+         "items": {
+          "type": "object",
+          "required": [
+           "text",
+           "target_doc",
+           "target_path",
+           "basis"
+          ],
+          "additionalProperties": false,
+          "properties": {
+           "text": {
+            "type": "string",
+            "description": "The citation as written in the source."
+           },
+           "target_doc": {
+            "type": "string"
+           },
+           "target_path": {
+            "type": [
+             "string",
+             "null"
+            ],
+            "description": "Provision path in the target. Null when the citation names a document only."
+           },
+           "target_uslm": {
+            "type": [
+             "string",
+             "null"
+            ]
+           },
+           "basis": {
+            "enum": [
+             "cited",
+             "inferred"
+            ]
+           },
+           "resolution": {
+            "type": [
+             "string",
+             "null"
+            ],
+            "description": "same-document | reference-letter | explicit-citation"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "conversion_notes": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Converter warnings - unparsed dates, missing subjects, fallback paths taken."
+  },
+  "uslm_identifier": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "pattern": "^/us/[a-z0-9./_-]+$",
+   "description": "USLM-convention path identifier, e.g. /us/usmc/maradmin/2023/051. Maps 1:1 from id."
+  },
+  "verification": {
+   "type": "string",
+   "enum": [
+    "VERIFIED",
+    "UNVERIFIED"
+   ],
+   "default": "UNVERIFIED",
+   "description": "UNVERIFIED = faithful machine extraction, not confirmed line-by-line against source. VERIFIED = human-confirmed. Promotion only, never silent."
+  },
+  "corrections": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "date",
+     "against",
+     "changes"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "date": {
+      "type": "string"
+     },
+     "against": {
+      "type": "string"
+     },
+     "changes": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    }
+   },
+   "description": "Dated corrections made against source text. The store carries its own error history."
+  }
+ },
+ "$comment": "0.5.0 (2026-08-03) - doc_type enum widened to the authority tiers above the service. Additive under [VER1]: every 0.4.0 record validates unchanged against 0.5.0. Required to hold the statute and DoD records a top-down authority chain terminates in."
+}

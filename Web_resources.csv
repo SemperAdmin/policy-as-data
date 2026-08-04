@@ -1,0 +1,34 @@
+﻿Resource Title,Description ,Hyperlink 
+GovInfo.gov Developer Hub ,"Welcome to the GovInfo Developer Hub. As part of GPO's continuing mission of America Informed, we are making it easier for developers and the public at large to access and work with the information available on GovInfo.",https://www.govinfo.gov/developers
+United States Government Publishing Office Github repo,"The official GPO Github Repositories
+Information about Bill Status XML Bulk Data including the XML User Guide.
+United States Legislative Markup (USLM) XML Schema ",https://github.com/usgpo
+GPO MCP MD,Public Preview: GPO has built a minimum viable product to gather feedback from the community for enhancements to optimally support LLM access to GovInfo content and metadata.,https://github.com/usgpo/api/blob/main/docs/mcp.md
+Microsoft open XML SDK for Office,"The SDK is built on the System.IO.Packaging API and provides strongly-typed classes to manipulate documents that adhere to the Office Open XML File Formats specification. The Office Open XML File Formats specification is an open, international, ECMA-376, 5th Edition and ISO/IEC 29500 standard. ",https://learn.microsoft.com/en-us/office/open-xml/open-xml-sdk
+Library of Congress Digital Format,"The Office Open XML-based word processing format using .docx as a file extension has been the default format produced for new documents by versions of Microsoft Word since Word 2007. The format was designed to incorporate the full semantics and functionality of the binary .doc format produced by earlier versions of Microsoft Word. For convenience, this format description uses DOCX to identify the corresponding format. ",https://www.loc.gov/preservation/digital/formats/fdd/fdd000397.shtml
+Git HUB Open XML SDK,"The Open XML SDK is a framework for working with Microsoft Office Word, Excel, and PowerPoint documents. It includes APIs for low-level operations related to OPC packages, Flat OPC files, and Open XML markup in two forms (i.e., strongly-typed classes and LINQ to XML).",https://github.com/dotnet/Open-XML-SDK
+LOC Standard Generalized Markup Language (SGML),"SGML (Standard Generalized Markup Language) is an openly documented and freely implementable international standard for semantic markup of textual documents in a manner that permits the separation of the underlying content from the formatting instructions for display or printing. Published as ISO 8879:1986, the standard is maintained and periodically reviewed under the auspices of ISO/IEC JTC 1/SC 34. ",https://www.loc.gov/preservation/digital/formats/fdd/fdd000465.shtml
+S1000D home page,"S1000D, “International specification for technical publications using a common source database”, is an international specification for the production of technical publications. Since its inception over 30 years ago, S1000D has grown to where it is now used widely around the world.  Currently, its uses include:
+
+Defense systems – including land, sea, and air products
+Civil aviation products
+Construction industry products
+Ship industry products",https://s1000d.org/
+ASSIST,DLA Official Source for DoD Standards and Specifications,https://assist.dla.mil/online/start/
+Defense Standardization Program ,"Defense Standardization Program Making Systems Work Together
+On January 12, 2026, the Defense Standardization Program Office (DSPO) released the Digital Standards Strategy, which serves as strategic overarching guidance for the digital transformation of standards development and management practices to support integrated digital and model-based approaches across the Department
+",https://www.dsp.dla.mil/
+National Information Exchange Model Tools,"NIEMOpen is a community-driven, common vocabulary that enables efficient information exchange across diverse public and private organizations. NIEM can save time and money by providing consistent, reusable data terms and definitions, and repeatable processes. This site provides information and resources to help the community use NIEM.",https://niemopen.org/tools-catalog/
+Data.gov resources ,"Data tools
+Software tools and complementary resources to support the hands-on work of data practitioners",https://resources.data.gov/categories/data-tools/
+Comprehensive Knowledge Archive Network (CKAN) ,"is a powerful open source data management system that makes data accessible by providing tools to streamline publishing, sharing, finding, and using data. The Data.gov catalog is based on CKAN, a technology that powers many government open data sites. Inventory.data.gov is a separate instance of CKAN hosted at GSA on the same infrastructure as the Data.gov catalog.",https://ckan.org/
+STANDARD FINANCIAL INFORMATION STRUCTURE (SFIS),STANDARD FINANCIAL INFORMATION STRUCTURE (SFIS),https://comptroller.war.gov/ODCFO/sfis.aspx
+Standford Protégé ,"
+WebProtégé is a web-based ontology editor that supports collaborative viewing and editing of OWL 2 ontologies. There is nothing to install — it runs in your browser.
+
+It supports sharing and permissions, threaded notes and discussions, watches and email notifications, and change tracking with full revision history. Ontologies can be uploaded and downloaded in RDF/XML, Turtle, OWL/XML, OBO, and other formats.",https://protege.stanford.edu/software/
+NPS Monterey Phoenix ,"Monterey Phoenix (MP) is a Navy-developed language, approach, and tool for modeling and reasoning about system and process behaviors.
+
+Why MP?
+System and process designs are based on the set of scenarios we conceive of in advance. That set gets orders of magnitude larger with MP assistance. Lightweight formal methods are employed to generate far more use case scenario variants - more quickly and with less human error - than can be done manually. You will discover requirements you did not know you had until seeing examples of them not being met in the MP event traces.",https://nps.edu/web/monterey-phoenix
+ A Knowledgeable Agent-oriented System,Allow for policies which are human expressible but machine enforceable permit effortless extension of policy vocabulary to suite domain needs and understanding of the domain only limited by the mapping to the business logic of the application. ,https://ontology.ihmc.us/index.html

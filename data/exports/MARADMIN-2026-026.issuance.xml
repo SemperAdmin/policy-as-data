@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2026/026" canonicalId="MARADMIN-2026-026" docType="MARADMIN" nativeNumber="026/26" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2026-01-23" schemaVersion="2.0">
+  <meta>
+    <title>SOLICITATION OF POLICY ISSUES FOR MARINE CORPS RESERVE POLICY</title>
+    <subject>SOLICITATION OF POLICY ISSUES FOR MARINE CORPS RESERVE POLICY</subject>
+    <originator>CMC WASHINGTON DC MRA RA</originator>
+    <signedDate>2026-01-23</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2026\MARADMIN_026_26_SOLICITATION_OF_POLICY_ISSUES_FOR_MARINE_CORPS_RESERVE_POLIC.pdf" sourceHash="3339100bfac4b669ce03e1aabd4dfd32e14844eaf95dfdeada2661c4ee54ebf4" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="USC-T10-S10304" targetIdentifier="/us/usc/t10/s10304" basis="cited" tier="T0" held="absent" from="narr:REF A"/>
+    <ref rel="references" target="SECNAVINST-5420.170N" targetIdentifier="/us/dod/don/secnavinst/5420_170n" basis="cited" tier="T2" held="absent" from="narr:REF B"/>
+    <ref rel="references" target="MCO-5420R.8H" targetIdentifier="/us/dod/don/usmc/mco/5420r_8h" basis="cited" tier="T3" held="drift" storeHolds="MCO-5420R.8H-CH1" from="narr:REF C"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2026/026/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2026/026/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/026/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Purpose.  To solicit policy issues affecting reservists to be considered by the Marine Corps Reserve Policy Board (MCRPB) CY26.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/026/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Background.  The MCRPB is mandated per the references to consider, recommend, and report to the Secretary of the Navy on reserve policy matters.  The MCRPB meets in April each year to review submitted issues, decide if they are actionable, and determine if they can be resolved by addressing Marine Corps processes and procedures or if resolution requires recommending a policy change to the Department of the Navy or the Department of War.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/026/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Action.  Each year, the MCRPB solicits policy issues for consideration.  Submission of policy issues from the Total Force is vital to the success of the board and helps shape future policy of the Marine Corps Reserve.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/026/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Issue Submissions</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/026/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Issue submission preparation</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/026/p4/a/1" path="p4/a/1" number="4.a.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Utilize the "Issue Submission Template" from the MCRPB website via the Manpower portal at: https://www.manpower.marines.mil /Divisions/Plans-and-Policies/Reserve-Affairs-Policy-Plans- Programming-Branch/Reserve-Affairs-Policy/Marine-Corps-Reserve-Policy -Board/.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/026/p4/a/2" path="p4/a/2" number="4.a.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Each submission must summarize the issue, identify the specific policy(ies) or reference(s) to address (e.g. Marine Corps Order, Secretary of the Navy Instruction, Department of Defense Instruction, U.S. Code), recommend a change to the policy, and clearly articulate how that policy affects the Reserve Component.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/026/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Submission method and timeline</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/026/p4/b/1" path="p4/b/1" number="4.b.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Submit completed issue slides via email to [contact withheld] or to any of the MCRPB Members identified on the MCRPB website listed in paragraph 4.a.1.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/026/p4/b/2" path="p4/b/2" number="4.b.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Additional slides, information papers, or other supporting documents may be included, if required.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/026/p4/b/3" path="p4/b/3" number="4.b.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>The deadline to submit policy issues for consideration is 2359 EST, 28 February 2026.  Policy issues received after the deadline may be considered at subsequent board meetings.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/026/p4/b/5" path="p4/b/5" number="4.b.5." label="5." depth="2" verification="UNVERIFIED">
+          <text>This MARADMIN is applicable to the Total Force.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/026/p4/b/6" path="p4/b/6" number="4.b.6." label="6." depth="2" verification="UNVERIFIED">
+          <text>Release authorized by MajGen John F. Kelliher III, Director, Reserve Affairs Division.//</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>2 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

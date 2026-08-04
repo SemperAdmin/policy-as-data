@@ -1,0 +1,320 @@
+{
+  "policy_family": "MOS-MANUAL",
+  "title": "Military Occupational Specialties Manual (MOS Manual)",
+  "note": "One logical policy, 2001-2026. The identifier scheme changed three times; a curated family is required because id-derivation cannot link across the renumberings.",
+  "identifier_lineage": [
+    {
+      "scheme": "MCO P1200.7",
+      "era": "2001-2004",
+      "revisions": [
+        "W",
+        "X",
+        "Y",
+        "Z"
+      ]
+    },
+    {
+      "scheme": "MCBul 1200",
+      "era": "2006",
+      "note": "interim bulletin, issued in 5 parts"
+    },
+    {
+      "scheme": "MCO 1200.17",
+      "era": "2008-2013",
+      "revisions": [
+        "(base)",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "note": "C issued in 5 parts"
+    },
+    {
+      "scheme": "NAVMC 1200.1",
+      "era": "2014-2026",
+      "revisions": [
+        "(base)",
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "L",
+        "M"
+      ],
+      "note": "annual FY editions from FY20"
+    }
+  ],
+  "cadence": "annual (modern era)",
+  "editions": [
+    {
+      "edition_id": "MCO-P1200.7W",
+      "native": "MCO P1200.7W",
+      "year": 2001,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2001 MCO P1200.7W MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCO-P1200.7X",
+      "native": "MCO P1200.7X",
+      "year": 2002,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2002 MCO P1200.7X MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCO-P1200.7Y",
+      "native": "MCO P1200.7Y",
+      "year": 2003,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2003 MCO P1200.7Y MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCO-P1200.7Z",
+      "native": "MCO P1200.7Z",
+      "year": 2004,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2004 MCO P1200.7Z MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCBul-1200-Pt1",
+      "native": "MCBul 1200 Part 1",
+      "year": 2006,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2006 MCBul 1200 Pt 1 MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCBul-1200-Pt2",
+      "native": "MCBul 1200 Part 2",
+      "year": 2006,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2006 MCBul 1200 Pt 2 MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCBul-1200-Pt3",
+      "native": "MCBul 1200 Part 3",
+      "year": 2006,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2006 MCBul 1200 Pt 3 MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCBul-1200-Pt4",
+      "native": "MCBul 1200 Part 4",
+      "year": 2006,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2006 MCBul 1200 Pt 4 MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCBul-1200-Pt5",
+      "native": "MCBul 1200 Part 5",
+      "year": 2006,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2006 MCBul 1200 Pt 5 MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCO-1200.17",
+      "native": "MCO 1200.17",
+      "year": 2008,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2008 MCO 1200.17 MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCO-1200.17A",
+      "native": "MCO 1200.17A",
+      "year": 2009,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2009 MCO 1200.17A MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCO-1200.17B",
+      "native": "MCO 1200.17B",
+      "year": 2010,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2010 MCO 1200.17B MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCO-1200.17C-Pt1",
+      "native": "MCO 1200.17C Part 1",
+      "year": 2011,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2011 MCO 1200.17C Pt 1 MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCO-1200.17C-Pt2",
+      "native": "MCO 1200.17C Part 2",
+      "year": 2011,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2011 MCO 1200.17C Pt 2 MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCO-1200.17C-Pt3",
+      "native": "MCO 1200.17C Part 3",
+      "year": 2011,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2011 MCO 1200.17C Pt 3 MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCO-1200.17C-Pt4",
+      "native": "MCO 1200.17C Part 4",
+      "year": 2011,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2011 MCO 1200.17C Pt 4 MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCO-1200.17C-Pt5",
+      "native": "MCO 1200.17C Part 5",
+      "year": 2011,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2011 MCO 1200.17C Pt 5 MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCO-1200.17D",
+      "native": "MCO 1200.17D",
+      "year": 2012,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2012 MCO 1200.17D MOS Manual.pdf"
+    },
+    {
+      "edition_id": "MCO-1200.17E",
+      "native": "MCO 1200.17E",
+      "year": 2013,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2013 MCO 1200.17E MOS Manual.pdf"
+    },
+    {
+      "edition_id": "NAVMC-1200.1",
+      "native": "NAVMC 1200.1",
+      "year": 2014,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2014 NAVMC 1200.1 MOS Manual.pdf"
+    },
+    {
+      "edition_id": "NAVMC-1200.1A",
+      "native": "NAVMC 1200.1A",
+      "year": 2015,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2015 NAVMC 1200.1A MOS Manual.pdf"
+    },
+    {
+      "edition_id": "NAVMC-1200.1B",
+      "native": "NAVMC 1200.1B",
+      "year": 2016,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2016 NAVMC 1200.1B MOS Manual.pdf"
+    },
+    {
+      "edition_id": "NAVMC-1200.1C",
+      "native": "NAVMC 1200.1C",
+      "year": 2017,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2017 NAVMC 1200.1C MOS Manual.pdf"
+    },
+    {
+      "edition_id": "NAVMC-1200.1D",
+      "native": "NAVMC 1200.1D",
+      "year": 2018,
+      "fiscal_year": null,
+      "format": "pdf",
+      "source_file": "2018 NAVMC 1200.1D MOS Manual wPenChange.pdf",
+      "pen_change": true
+    },
+    {
+      "edition_id": "NAVMC-1200.1E",
+      "native": "NAVMC 1200.1E",
+      "year": 2019,
+      "fiscal_year": "FY2020",
+      "format": "pdf",
+      "source_file": "2019 FY20 NAVMC_1200.1E MOS Manual.pdf"
+    },
+    {
+      "edition_id": "NAVMC-1200.1F",
+      "native": "NAVMC 1200.1F",
+      "year": 2020,
+      "fiscal_year": "FY2021",
+      "format": "pdf",
+      "source_file": "2020 FY21 NAVMC_1200.1F MOS Manual.pdf"
+    },
+    {
+      "edition_id": "NAVMC-1200.1G",
+      "native": "NAVMC 1200.1G",
+      "year": 2021,
+      "fiscal_year": "FY2022",
+      "format": "pdf",
+      "source_file": "2021 FY22 NAVMC 1200.1G MOS Manual.pdf"
+    },
+    {
+      "edition_id": "NAVMC-1200.1H",
+      "native": "NAVMC 1200.1H",
+      "year": 2022,
+      "fiscal_year": "FY2023",
+      "format": "pdf",
+      "source_file": "2022 FY23 NAVMC 1200.1H MOS Manual.pdf"
+    },
+    {
+      "edition_id": "NAVMC-1200.1J",
+      "native": "NAVMC 1200.1J",
+      "year": 2023,
+      "fiscal_year": "FY2024",
+      "format": "pdf",
+      "source_file": "2023 FY24 NAVMC 1200.1J MOS Manual.pdf"
+    },
+    {
+      "edition_id": "NAVMC-1200.1K",
+      "native": "NAVMC 1200.1K",
+      "year": 2024,
+      "fiscal_year": "FY2025",
+      "format": "pdf",
+      "source_file": "2024 FY25 NAVMC 1200.1K MOS Manual.pdf"
+    },
+    {
+      "edition_id": "NAVMC-1200.1L",
+      "native": "NAVMC 1200.1L",
+      "year": 2025,
+      "fiscal_year": "FY2026",
+      "format": "pdf",
+      "source_file": "2025 FY26 NAVMC 1200.1L MOS Manual.pdf"
+    },
+    {
+      "edition_id": "NAVMC-1200.1M",
+      "native": "NAVMC 1200.1M",
+      "year": 2026,
+      "fiscal_year": "FY2027",
+      "format": "pdf",
+      "source_file": "2026 FY27 NAVMC 1200.1M MOS Manual.pdf"
+    }
+  ],
+  "edition_count": 32,
+  "span": [
+    "2001",
+    "2026"
+  ]
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2026/284" canonicalId="MARADMIN-2026-284" docType="MARADMIN" nativeNumber="284/26" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2026-06-23" schemaVersion="2.0">
+  <meta>
+    <title>JULY 2026 ACTIVE-DUTY CORPORAL AND SERGEANT PROMOTION</title>
+    <subject>JULY 2026 ACTIVE-DUTY CORPORAL AND SERGEANT PROMOTION</subject>
+    <originator>CMC WASHINGTON DC MRA MM</originator>
+    <signedDate>2026-06-23</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2026\MARADMIN_284_26_JULY_2026_ACTIVE-DUTY_CORPORAL_AND_SERGEANT_PROMOTION_AUTHO.pdf" sourceHash="6de397c2ebaaba945c97cc00964a1108ec4e677c83d279dd4bcd6524135d3dfa" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="MCO-1400.32D-CH2" targetIdentifier="/us/dod/don/usmc/mco/1400_32d/ch2" basis="cited" tier="T3" held="held" from="narr:REF A"/>
+    <ref rel="references" target="MCO-1616.1" targetIdentifier="/us/dod/don/usmc/mco/1616_1" basis="cited" tier="T3" held="held" from="narr:REF B"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2026/284/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2026/284/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/284/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN is the promotion authority for all lance corporals (LCpls) and corporals (Cpls) of the active duty Marine Corps.  Cutting scores are available in the Marine Corps Total Force System (MCTFS) after the current month select grades post.  Prior to effecting promotions, commands are reminded of their requirement to verify each select grade Marineâ€™s JEPES promotion score meets or exceeds the published cutting score. Retain the current month cutting scores with this MARADMIN for future reference.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/284/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>For additional details regarding requirements related to viewing cutoff scores in MCTFS, time in grade, time in service, professional military education, commander responsibilities, and the junior enlisted remedial process, visit the Enlisted Promotions website at https://www.manpower.marines.mil, click on â€œDivisionsâ€ / â€œManpower Managementâ€ / â€œPerformance Branchâ€ / â€œPromotion Sectionâ€ / â€œEnlisted Promotionsâ€ / â€œSergeants and Below Promotions.â€</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/284/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>References (a) and (b) set forth guidance and instructions for effecting monthly promotions of LCpls and Cpls who meet the following criteria:</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/284/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>SEL CPL ED:     20260701</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/284/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>SEL SGT ED:     20260701</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/284/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>DATE OF RANK:   20260701</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/284/p3/d" path="p3/d" number="3.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>EFFECTIVE DATE: 20260701</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/284/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>The command cutoff for 1 July 2026 promotions is 31 May 2026.  Entries with a date after 31 May 2026 will not count towards a 1 July 2026 promotion score.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/284/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>For Marine enlisted promotion matters, e-mail inquiries to [contact withheld].</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/284/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by MajGen Fridrik Fridriksson, Director, Manpower Management Division.//</text>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>2 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

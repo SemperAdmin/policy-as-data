@@ -1,0 +1,1271 @@
+{
+ "generated_at": "2026-08-04T07:51:03.810945+00:00",
+ "totals": {
+  "docs": 56,
+  "edges": 362,
+  "parsed": 384,
+  "unparsed": 174,
+  "held": 57,
+  "drift": 85,
+  "gaps": 220
+ },
+ "edges_by_tier": {
+  "T0": {
+   "count": 37,
+   "name": "Statute"
+  },
+  "T1": {
+   "count": 56,
+   "name": "Department of Defense"
+  },
+  "T2": {
+   "count": 59,
+   "name": "Department of the Navy"
+  },
+  "T3": {
+   "count": 146,
+   "name": "Service directive"
+  },
+  "T4": {
+   "count": 28,
+   "name": "Service manual"
+  },
+  "T5": {
+   "count": 33,
+   "name": "Message"
+  },
+  "TX": {
+   "count": 3,
+   "name": "Other authority"
+  }
+ },
+ "named_not_held": {
+  "SECNAVM-5210.1": [
+   "MCO-1200.13G",
+   "MCO-1610.7B",
+   "MCO-1616.1",
+   "MCO-6100.14",
+   "MCO-6110.3A-CH4",
+   "SECNAVINST-1610.3A",
+   "SECNAVINST-1610.4A"
+  ],
+  "MCO-1070.12K-CH1": [
+   "MARADMIN-2026-151",
+   "MCO-1400.32D-CH1",
+   "MCO-1400.32D-CH2",
+   "MCO-6100.13A-CH5",
+   "MCO-6110.3A-CH4"
+  ],
+  "MCO-5210.11F": [
+   "MCO-1610.7B",
+   "MCO-1616.1",
+   "MCO-6100.13A-CH5",
+   "MCO-6100.14",
+   "MCO-6110.3A-CH4"
+  ],
+  "MCO-1553.4B": [
+   "MARADMIN-2018-011",
+   "MARADMIN-2021-360",
+   "MARADMIN-2026-151",
+   "MARADMIN-2026-274"
+  ],
+  "MCO-1900.16-CH2": [
+   "MARADMIN-2021-360",
+   "MARADMIN-2024-016",
+   "MARADMIN-2026-274",
+   "MCO-6100.13A-CH5"
+  ],
+  "SECNAVM-5214.1": [
+   "MCO-1200.13G",
+   "SECNAVINST-1400.1D",
+   "SECNAVINST-1610.3A",
+   "SECNAVINST-1610.4A"
+  ],
+  "DODD-5124.02": [
+   "DODI-1308.03",
+   "DODI-1320.14",
+   "DODI-1327.06"
+  ],
+  "MCO-1524.1": [
+   "MARADMIN-2021-360",
+   "MARADMIN-2026-012",
+   "MARADMIN-2026-274"
+  ],
+  "MCO-1300.8-CH1": [
+   "MARADMIN-2024-016",
+   "MARADMIN-2026-043",
+   "NAVMC-1200.1L"
+  ],
+  "MCO-1040.31": [
+   "MARADMIN-2026-043",
+   "MCO-6100.13A-CH5",
+   "MCO-6110.3A-CH4"
+  ],
+  "MCO-5215.1K": [
+   "MCO-1200.18",
+   "MCO-1610.7B",
+   "MCO-1616.1"
+  ],
+  "SECNAVINST-5211.5E": [
+   "MCO-1200.18",
+   "MCO-6100.14",
+   "MCO-6110.3A-CH4"
+  ],
+  "SECNAVNOTE-5210": [
+   "MCO-6100.13A-CH5",
+   "MCO-6100.14",
+   "MCO-6110.3A-CH4"
+  ],
+  "DODI-1310.02": [
+   "DODI-1320.14",
+   "MCO-1400.31D"
+  ],
+  "DODI-1320.04": [
+   "DODI-1320.14",
+   "MCO-1400.31D"
+  ],
+  "DODI-1320.13": [
+   "DODI-1320.14",
+   "MCO-1400.31D"
+  ],
+  "DODI-1334.02": [
+   "DODI-1320.14",
+   "MCO-1400.31D"
+  ],
+  "USC-T37-S501": [
+   "DODI-1327.06",
+   "MCO-1050.3J"
+  ],
+  "DODFMR": [
+   "DODI-1327.06",
+   "MCO-1050.3J"
+  ],
+  "MARADMIN-2008-703": [
+   "MARADMIN-2018-011",
+   "MARADMIN-2026-151"
+  ],
+  "MCO-1000.6": [
+   "MARADMIN-2022-409",
+   "MCO-1610.7B"
+  ],
+  "MCO-6100.13A-CH4": [
+   "MARADMIN-2022-409",
+   "MCO-6100.13A-CH5"
+  ],
+  "MCO-5000.12F-CH1": [
+   "MARADMIN-2023-051",
+   "MARADMIN-2026-191"
+  ],
+  "MARADMIN-2026-066": [
+   "MARADMIN-2026-073",
+   "MARADMIN-2026-274"
+  ],
+  "MCO-1070.12K": [
+   "MCO-1050.3J",
+   "MCO-1610.7B"
+  ],
+  "EO-14168": [
+   "MCO-1200.15C-CH1",
+   "MCO-6100.13A-CH5"
+  ],
+  "SECNAVINST-1420.3": [
+   "MCO-1400.31D",
+   "SECNAVINST-1400.1D"
+  ],
+  "MCO-1001R.1J": [
+   "MCO-1400.32D-CH1",
+   "MCO-1400.32D-CH2"
+  ],
+  "MCO-1080.40C": [
+   "MCO-1400.32D-CH1",
+   "MCO-1400.32D-CH2"
+  ],
+  "MCO-1610.7F-CH2": [
+   "MCO-1400.32D-CH1",
+   "MCO-1400.32D-CH2"
+  ],
+  "MCO-1900.16F-CH2": [
+   "MCO-1400.32D-CH1",
+   "MCO-1400.32D-CH2"
+  ],
+  "MCO-6100.13-CH1": [
+   "MCO-1400.32D-CH1",
+   "MCO-1400.32D-CH2"
+  ],
+  "MCO-1130.53P-CH1": [
+   "MCO-1400.32D-CH1",
+   "MCO-1400.32D-CH2"
+  ],
+  "MCO-1130.62B": [
+   "MCO-1400.32D-CH1",
+   "MCO-1400.32D-CH2"
+  ],
+  "MCO-1130.80A": [
+   "MCO-1400.32D-CH1",
+   "MCO-1400.32D-CH2"
+  ],
+  "MCO-3574.2K": [
+   "MCO-1400.32D-CH1",
+   "MCO-1400.32D-CH2"
+  ],
+  "MARADMIN-2009-003": [
+   "MCO-1400.32D-CH1",
+   "MCO-1400.32D-CH2"
+  ],
+  "SECNAVINST-5211.5F": [
+   "MCO-1610.7B",
+   "MCO-6100.13A-CH5"
+  ],
+  "MCO-3500.27C": [
+   "MCO-6100.13A-CH5",
+   "MCO-6110.3A-CH4"
+  ],
+  "MCO-1400.31C-CH1": [
+   "MCO-6100.13A-CH5",
+   "MCO-6110.3A-CH4"
+  ],
+  "MCO-1326.6D-CH2": [
+   "MCO-6100.13A-CH5",
+   "MCO-6110.3A-CH4"
+  ],
+  "BUMEDINST-6320.66E-CH2": [
+   "MCO-6100.13A-CH5",
+   "MCO-6110.3A-CH4"
+  ],
+  "MCO-5000.12E-CH1": [
+   "MCO-6100.14",
+   "MCO-6110.3A-CH4"
+  ],
+  "MCO-1900.16-CH1": [
+   "MCO-6100.14",
+   "MCO-6110.3A-CH4"
+  ],
+  "SECNAVINST-5800.12C": [
+   "SECNAVINST-1610.3A",
+   "SECNAVINST-1610.4A"
+  ],
+  "DODREG-5400.11-R": [
+   "DODI-1308.03"
+  ],
+  "DODD-5136.01": [
+   "DODI-1308.03"
+  ],
+  "DODI-5400.11": [
+   "DODI-1308.03"
+  ],
+  "DODI-6130.03-V1": [
+   "DODI-1308.03"
+  ],
+  "DODM-8910.01-V1": [
+   "DODI-1308.03"
+  ],
+  "EO-14183": [
+   "DODI-1308.03"
+  ],
+  "DODI-1327.07": [
+   "DODI-1320.14"
+  ],
+  "USC-T37-S603": [
+   "DODI-1327.06"
+  ],
+  "USC-T10-S703": [
+   "DODI-1327.06"
+  ],
+  "USC-T10-S704": [
+   "DODI-1327.06"
+  ],
+  "USC-T10-S709": [
+   "DODI-1327.06"
+  ],
+  "USC-T10-S711": [
+   "DODI-1327.06"
+  ],
+  "USC-T10-S876a": [
+   "DODI-1327.06"
+  ],
+  "DODI-1215.07": [
+   "DODI-1327.06"
+  ],
+  "DODI-1215.13": [
+   "DODI-1327.06"
+  ],
+  "DODI-1315.18": [
+   "DODI-1327.06"
+  ],
+  "DODI-1340.09": [
+   "DODI-1327.06"
+  ],
+  "DODI-1340.25": [
+   "DODI-1327.06"
+  ],
+  "DODI-1340.26": [
+   "DODI-1327.06"
+  ],
+  "DODI-4515.13": [
+   "DODI-1327.06"
+  ],
+  "DODI-6310.09": [
+   "DODI-1327.06"
+  ],
+  "SECNAVINST-1650.1H": [
+   "MARADMIN-2008-418"
+  ],
+  "MCO-1900.16G": [
+   "MARADMIN-2018-011"
+  ],
+  "MARADMIN-2013-498": [
+   "MARADMIN-2018-011"
+  ],
+  "DODI-1322.06": [
+   "MARADMIN-2021-360"
+  ],
+  "MCO-1520.11F": [
+   "MARADMIN-2021-360"
+  ],
+  "MCO-7220.52F": [
+   "MARADMIN-2021-360"
+  ],
+  "SECNAVINST-1520.7G": [
+   "MARADMIN-2021-360"
+  ],
+  "MCO-1300.8": [
+   "MARADMIN-2021-360"
+  ],
+  "MARADMIN-2020-491": [
+   "MARADMIN-2021-360"
+  ],
+  "DODI-1322.10": [
+   "MARADMIN-2021-360"
+  ],
+  "MARADMIN-2021-165": [
+   "MARADMIN-2021-360"
+  ],
+  "MCO-1040.42B": [
+   "MARADMIN-2022-409"
+  ],
+  "MARADMIN-2022-026": [
+   "MARADMIN-2022-409"
+  ],
+  "DODI-1205.21": [
+   "MARADMIN-2022-409"
+  ],
+  "MCO-7220.56A": [
+   "MARADMIN-2022-409"
+  ],
+  "MCO-6110.3A-CH3": [
+   "MARADMIN-2022-409"
+  ],
+  "MARADMIN-2022-523": [
+   "MARADMIN-2023-051"
+  ],
+  "MCO-8000.8": [
+   "MARADMIN-2023-322"
+  ],
+  "MCO-5100.29B-V8": [
+   "MARADMIN-2023-322"
+  ],
+  "MCO-8011.5B": [
+   "MARADMIN-2023-322"
+  ],
+  "MCO-3570.1C": [
+   "MARADMIN-2023-322"
+  ],
+  "MCO-3821.2": [
+   "MARADMIN-2024-016"
+  ],
+  "NAVMC-1200.1J": [
+   "MARADMIN-2024-253"
+  ],
+  "MARADMIN-2022-652": [
+   "MARADMIN-2024-586"
+  ],
+  "MCBUL-6110": [
+   "MARADMIN-2024-586"
+  ],
+  "MARADMIN-2022-423": [
+   "MARADMIN-2024-586"
+  ],
+  "MARADMIN-2023-277": [
+   "MARADMIN-2024-586"
+  ],
+  "MARADMIN-2007-262": [
+   "MARADMIN-2025-237"
+  ],
+  "MARADMIN-2009-254": [
+   "MARADMIN-2025-237"
+  ],
+  "MARADMIN-2009-415": [
+   "MARADMIN-2025-237"
+  ],
+  "MARADMIN-2017-151": [
+   "MARADMIN-2025-237"
+  ],
+  "MARADMIN-2018-667": [
+   "MARADMIN-2025-237"
+  ],
+  "DODI-1322.25-CH3": [
+   "MARADMIN-2026-012"
+  ],
+  "OPNAVINST-1520.23C-CH1": [
+   "MARADMIN-2026-012"
+  ],
+  "OPNAVINST-1520.23C": [
+   "MARADMIN-2026-012"
+  ],
+  "USC-T10-S10304": [
+   "MARADMIN-2026-026"
+  ],
+  "SECNAVINST-5420.170N": [
+   "MARADMIN-2026-026"
+  ],
+  "MCO-5420R.8H": [
+   "MARADMIN-2026-026"
+  ],
+  "MCO-1326.6-CH1": [
+   "MARADMIN-2026-043"
+  ],
+  "MCBUL-1020": [
+   "MARADMIN-2026-043"
+  ],
+  "MARADMIN-2025-317": [
+   "MARADMIN-2026-043"
+  ],
+  "MARADMIN-2025-613": [
+   "MARADMIN-2026-073"
+  ],
+  "MCBUL-6110-CH1": [
+   "MARADMIN-2026-073"
+  ],
+  "MARADMIN-2025-622": [
+   "MARADMIN-2026-151"
+  ],
+  "MCBUL-1400": [
+   "MARADMIN-2026-151"
+  ],
+  "MARADMIN-2023-634": [
+   "MARADMIN-2026-151"
+  ],
+  "MARADMIN-2023-111": [
+   "MARADMIN-2026-191"
+  ],
+  "SECNAVINST-1000.10B": [
+   "MARADMIN-2026-191"
+  ],
+  "MCO-10001R.1L-CH1": [
+   "MARADMIN-2026-191"
+  ],
+  "MCO-3040.4": [
+   "MARADMIN-2026-191"
+  ],
+  "MARADMIN-2026-023": [
+   "MARADMIN-2026-221"
+  ],
+  "MARADMIN-2025-549": [
+   "MARADMIN-2026-221"
+  ],
+  "MARADMIN-2025-400": [
+   "MARADMIN-2026-221"
+  ],
+  "MCO-1540.33": [
+   "MARADMIN-2026-274"
+  ],
+  "MCO-1300.8-CH2": [
+   "MARADMIN-2026-274"
+  ],
+  "MARADMIN-2026-158": [
+   "MARADMIN-2026-274"
+  ],
+  "MARADMIN-2026-127": [
+   "MARADMIN-2026-274"
+  ],
+  "DODREG-4515.13-R": [
+   "MCO-1050.3J"
+  ],
+  "NAVSO-6034": [
+   "MCO-1050.3J"
+  ],
+  "MCO-4630.16C": [
+   "MCO-1050.3J"
+  ],
+  "MCO-1300.8R": [
+   "MCO-1050.3J"
+  ],
+  "DODD-4500.54": [
+   "MCO-1050.3J"
+  ],
+  "MCO-1900.16F": [
+   "MCO-1050.3J"
+  ],
+  "MCO-1050.16A": [
+   "MCO-1050.3J"
+  ],
+  "MCO-7130.1J": [
+   "MCO-1050.3J"
+  ],
+  "MCO-10110.47": [
+   "MCO-1050.3J"
+  ],
+  "USC-T10-S1182": [
+   "MCO-1050.3J"
+  ],
+  "USC-T5-S5534a": [
+   "MCO-1050.3J"
+  ],
+  "USC-T10-S688": [
+   "MCO-1050.3J"
+  ],
+  "USC-T10-S1052": [
+   "MCO-1050.3J"
+  ],
+  "NAVMC-1553.1": [
+   "MCO-1200.13G"
+  ],
+  "MCO-3500.72A": [
+   "MCO-1200.13G"
+  ],
+  "MCO-1200.17C": [
+   "MCO-1200.13G"
+  ],
+  "NAVMC-3500.106": [
+   "MCO-1200.13G"
+  ],
+  "MCO-1000.6G": [
+   "MCO-1200.18"
+  ],
+  "MCO-1300.8R-CH1": [
+   "MCO-1200.18"
+  ],
+  "SECNAVINST-5210.1": [
+   "MCO-1200.18"
+  ],
+  "MCO-5311.1D": [
+   "MCO-1200.18"
+  ],
+  "MCO-1001R.1K": [
+   "MCO-1200.18"
+  ],
+  "NAVMC-1200.1": [
+   "MCO-1200.18"
+  ],
+  "SECNAVINST-1412.8": [
+   "MCO-1400.31D"
+  ],
+  "SECNAVINST-1412.11": [
+   "MCO-1400.31D"
+  ],
+  "SECNAVINST-1421.3M": [
+   "MCO-1400.31D"
+  ],
+  "SECNAVINST-1402.1": [
+   "MCO-1400.31D"
+  ],
+  "DODI-1320.08": [
+   "MCO-1400.31D"
+  ],
+  "SECNAVINST-1920.7C": [
+   "MCO-1400.31D"
+  ],
+  "SECNAVINST-1000.7": [
+   "MCO-1400.31D"
+  ],
+  "SECNAVINST-1120.9B": [
+   "MCO-1400.31D"
+  ],
+  "SECNAVINST-1301.4": [
+   "MCO-1400.31D"
+  ],
+  "SECNAVINST-1301.7": [
+   "MCO-1400.31D"
+  ],
+  "DODI-1332.32": [
+   "MCO-1400.31D"
+  ],
+  "SECNAVINST-1920.8": [
+   "MCO-1400.31D"
+  ],
+  "SECNAVINST-1412.6": [
+   "MCO-1400.31D"
+  ],
+  "SECNAVINST-1400.1": [
+   "MCO-1400.31D"
+  ],
+  "SECNAVINST-1401.4": [
+   "MCO-1400.31D"
+  ],
+  "SECNAVINST-5200.35F": [
+   "MCO-1400.31D"
+  ],
+  "CJCSI-1330.05B": [
+   "MCO-1400.31D"
+  ],
+  "MCO-1500.61": [
+   "MCO-1610.7B"
+  ],
+  "MCO-5300.17A": [
+   "MCO-1610.7B"
+  ],
+  "MCO-1754.11A": [
+   "MCO-1610.7B"
+  ],
+  "SECNAVM-1650.1": [
+   "MCO-1610.7B"
+  ],
+  "MCO-3574.2M": [
+   "MCO-1610.7B"
+  ],
+  "MCO-5100.29C": [
+   "MCO-1610.7B"
+  ],
+  "MCO-5510.18B": [
+   "MCO-1610.7B"
+  ],
+  "MCO-5354.1F": [
+   "MCO-1610.7B"
+  ],
+  "MCO-5800.16-V1": [
+   "MCO-1610.7B"
+  ],
+  "SECNAVM-5210.1-CH1": [
+   "MCO-6100.13A-CH5"
+  ],
+  "MCRP-8-10B.4": [
+   "MCO-6100.13A-CH5"
+  ],
+  "MCO-1610.7A": [
+   "MCO-6100.13A-CH5"
+  ],
+  "SECNAVINST-1920.6D": [
+   "MCO-6100.13A-CH5"
+  ],
+  "CJCSI-3405.01": [
+   "MCO-6100.14"
+  ],
+  "MCO-1500.62": [
+   "MCO-6100.14"
+  ],
+  "MCO-6110.3A-CH1": [
+   "MCO-6100.14"
+  ],
+  "MCO-1700.29": [
+   "MCO-6100.14"
+  ],
+  "MCO-1500.52D": [
+   "MCO-6100.14"
+  ],
+  "MCO-1500.59": [
+   "MCO-6100.14"
+  ],
+  "MCO-6400.2": [
+   "MCO-6100.14"
+  ],
+  "MCO-5102.1B-CH2": [
+   "MCO-6100.14"
+  ],
+  "DODI-6055.07": [
+   "MCO-6100.14"
+  ],
+  "MCO-6100.13A-CH1": [
+   "MCO-6110.3A-CH4"
+  ],
+  "SECNAVINST-1920.6C-CH5": [
+   "MCO-6110.3A-CH4"
+  ],
+  "MCO-1610.7": [
+   "MCO-6110.3A-CH4"
+  ],
+  "NAVMC-3500.94C": [
+   "NAVMC-1200.1L"
+  ],
+  "MCO-5354.1G": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.3E": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.44D": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.27D": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.100C": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.107C": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.56C-CH1": [
+   "NAVMC-1200.1L"
+  ],
+  "SECNAVINST-5510.35C": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.7C": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.12B-CH1": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.121A": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.2C-CH1": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.119-CH1": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.105C-CH1": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.6C": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.64D": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.120C": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.25E": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.35C": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.69C": [
+   "NAVMC-1200.1L"
+  ],
+  "NAVMC-3500.39D": [
+   "NAVMC-1200.1L"
+  ],
+  "USC-T10-S6222": [
+   "NAVMC-1200.1L"
+  ],
+  "SECNAVINST-5200.35G": [
+   "SECNAVINST-1400.1D"
+  ],
+  "NAVMC-1200.1K": [
+   "SECNAVINST-1400.1D"
+  ],
+  "DODI-1020.03": [
+   "SECNAVINST-1610.3A"
+  ],
+  "SECNAVINST-5300.26E": [
+   "SECNAVINST-1610.3A"
+  ],
+  "ALNAV-2025-001": [
+   "SECNAVINST-1610.3A"
+  ],
+  "DODI-1020.04": [
+   "SECNAVINST-1610.3A"
+  ],
+  "SECNAVINST-12713.14": [
+   "SECNAVINST-1610.3A"
+  ],
+  "USC-T5-S2105": [
+   "SECNAVINST-1610.3A"
+  ],
+  "DODD-7050.06": [
+   "SECNAVINST-1610.3A"
+  ],
+  "USC-T10-S930": [
+   "SECNAVINST-1610.3A"
+  ],
+  "USC-T10-S801-950a": [
+   "SECNAVINST-1610.3A"
+  ],
+  "SECNAVINST-5800.11B": [
+   "SECNAVINST-1610.3A"
+  ],
+  "DODI-5015.02": [
+   "SECNAVINST-1610.3A"
+  ],
+  "DODI-1325.06": [
+   "SECNAVINST-1610.4A"
+  ],
+  "SECNAVINST-5350.16A": [
+   "SECNAVINST-1610.4A"
+  ],
+  "USC-T18-S1382": [
+   "SECNAVINST-1610.4A"
+  ],
+  "USC-T10-S801": [
+   "SECNAVINST-1610.4A"
+  ],
+  "DODI-4105.70": [
+   "SECNAVINST-1610.4A"
+  ],
+  "OPNAVINST-1620.2A": [
+   "SECNAVINST-1610.4A"
+  ],
+  "MCO-1620.2D": [
+   "SECNAVINST-1610.4A"
+  ],
+  "DODI-1334.01": [
+   "SECNAVINST-1610.4A"
+  ],
+  "USC-T10-S1034": [
+   "SECNAVINST-1610.4A"
+  ],
+  "DODM-5200.02": [
+   "SECNAVINST-1610.4A"
+  ],
+  "SECNAVINST-5430.107A": [
+   "SECNAVINST-1610.4A"
+  ],
+  "USC-T10-S815": [
+   "SECNAVINST-1610.4A"
+  ]
+ },
+ "per_document": {
+  "DODI-1300.19": {
+   "edges": 0,
+   "parsed": 0,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 0,
+   "gaps": 0
+  },
+  "DODI-1308.03": {
+   "edges": 7,
+   "parsed": 7,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 0,
+   "gaps": 7
+  },
+  "DODI-1308.3": {
+   "edges": 0,
+   "parsed": 0,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 0,
+   "gaps": 0
+  },
+  "DODI-1320.14": {
+   "edges": 8,
+   "parsed": 8,
+   "unparsed": 2,
+   "held": 2,
+   "drift": 0,
+   "gaps": 6
+  },
+  "DODI-1327.06": {
+   "edges": 18,
+   "parsed": 19,
+   "unparsed": 3,
+   "held": 1,
+   "drift": 1,
+   "gaps": 16
+  },
+  "DODI-1327.6": {
+   "edges": 0,
+   "parsed": 0,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 0,
+   "gaps": 0
+  },
+  "MARADMIN-2008-418": {
+   "edges": 1,
+   "parsed": 1,
+   "unparsed": 2,
+   "held": 0,
+   "drift": 0,
+   "gaps": 1
+  },
+  "MARADMIN-2018-011": {
+   "edges": 4,
+   "parsed": 4,
+   "unparsed": 4,
+   "held": 0,
+   "drift": 1,
+   "gaps": 3
+  },
+  "MARADMIN-2018-161": {
+   "edges": 0,
+   "parsed": 0,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 0,
+   "gaps": 0
+  },
+  "MARADMIN-2019-114": {
+   "edges": 0,
+   "parsed": 0,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 0,
+   "gaps": 0
+  },
+  "MARADMIN-2021-360": {
+   "edges": 11,
+   "parsed": 11,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 3,
+   "gaps": 8
+  },
+  "MARADMIN-2021-388": {
+   "edges": 0,
+   "parsed": 0,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 0,
+   "gaps": 0
+  },
+  "MARADMIN-2021-404": {
+   "edges": 1,
+   "parsed": 1,
+   "unparsed": 1,
+   "held": 1,
+   "drift": 0,
+   "gaps": 0
+  },
+  "MARADMIN-2022-408": {
+   "edges": 0,
+   "parsed": 0,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 0,
+   "gaps": 0
+  },
+  "MARADMIN-2022-409": {
+   "edges": 7,
+   "parsed": 7,
+   "unparsed": 2,
+   "held": 0,
+   "drift": 3,
+   "gaps": 4
+  },
+  "MARADMIN-2023-051": {
+   "edges": 3,
+   "parsed": 3,
+   "unparsed": 2,
+   "held": 1,
+   "drift": 1,
+   "gaps": 1
+  },
+  "MARADMIN-2023-129": {
+   "edges": 2,
+   "parsed": 2,
+   "unparsed": 1,
+   "held": 2,
+   "drift": 0,
+   "gaps": 0
+  },
+  "MARADMIN-2023-322": {
+   "edges": 4,
+   "parsed": 4,
+   "unparsed": 6,
+   "held": 0,
+   "drift": 2,
+   "gaps": 2
+  },
+  "MARADMIN-2024-016": {
+   "edges": 3,
+   "parsed": 3,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 2,
+   "gaps": 1
+  },
+  "MARADMIN-2024-253": {
+   "edges": 2,
+   "parsed": 2,
+   "unparsed": 14,
+   "held": 1,
+   "drift": 1,
+   "gaps": 0
+  },
+  "MARADMIN-2024-586": {
+   "edges": 5,
+   "parsed": 5,
+   "unparsed": 5,
+   "held": 1,
+   "drift": 0,
+   "gaps": 4
+  },
+  "MARADMIN-2025-166": {
+   "edges": 0,
+   "parsed": 0,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 0,
+   "gaps": 0
+  },
+  "MARADMIN-2025-237": {
+   "edges": 5,
+   "parsed": 5,
+   "unparsed": 3,
+   "held": 0,
+   "drift": 0,
+   "gaps": 5
+  },
+  "MARADMIN-2026-012": {
+   "edges": 5,
+   "parsed": 7,
+   "unparsed": 0,
+   "held": 1,
+   "drift": 0,
+   "gaps": 4
+  },
+  "MARADMIN-2026-026": {
+   "edges": 3,
+   "parsed": 3,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 1,
+   "gaps": 2
+  },
+  "MARADMIN-2026-043": {
+   "edges": 5,
+   "parsed": 5,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 1,
+   "gaps": 4
+  },
+  "MARADMIN-2026-073": {
+   "edges": 5,
+   "parsed": 5,
+   "unparsed": 5,
+   "held": 2,
+   "drift": 0,
+   "gaps": 3
+  },
+  "MARADMIN-2026-074": {
+   "edges": 0,
+   "parsed": 0,
+   "unparsed": 1,
+   "held": 0,
+   "drift": 0,
+   "gaps": 0
+  },
+  "MARADMIN-2026-151": {
+   "edges": 7,
+   "parsed": 7,
+   "unparsed": 1,
+   "held": 1,
+   "drift": 0,
+   "gaps": 6
+  },
+  "MARADMIN-2026-191": {
+   "edges": 8,
+   "parsed": 8,
+   "unparsed": 14,
+   "held": 3,
+   "drift": 1,
+   "gaps": 4
+  },
+  "MARADMIN-2026-213": {
+   "edges": 1,
+   "parsed": 1,
+   "unparsed": 4,
+   "held": 1,
+   "drift": 0,
+   "gaps": 0
+  },
+  "MARADMIN-2026-221": {
+   "edges": 4,
+   "parsed": 4,
+   "unparsed": 1,
+   "held": 1,
+   "drift": 0,
+   "gaps": 3
+  },
+  "MARADMIN-2026-274": {
+   "edges": 8,
+   "parsed": 8,
+   "unparsed": 8,
+   "held": 0,
+   "drift": 1,
+   "gaps": 7
+  },
+  "MARADMIN-2026-284": {
+   "edges": 2,
+   "parsed": 2,
+   "unparsed": 0,
+   "held": 2,
+   "drift": 0,
+   "gaps": 0
+  },
+  "MARADMIN-CANX-2018-011": {
+   "edges": 0,
+   "parsed": 0,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 0,
+   "gaps": 0
+  },
+  "MCO-1050.3J": {
+   "edges": 18,
+   "parsed": 18,
+   "unparsed": 5,
+   "held": 2,
+   "drift": 4,
+   "gaps": 12
+  },
+  "MCO-1200.13G": {
+   "edges": 7,
+   "parsed": 7,
+   "unparsed": 1,
+   "held": 1,
+   "drift": 3,
+   "gaps": 3
+  },
+  "MCO-1200.15C-CH1": {
+   "edges": 1,
+   "parsed": 1,
+   "unparsed": 1,
+   "held": 0,
+   "drift": 0,
+   "gaps": 1
+  },
+  "MCO-1200.18": {
+   "edges": 11,
+   "parsed": 11,
+   "unparsed": 0,
+   "held": 3,
+   "drift": 6,
+   "gaps": 2
+  },
+  "MCO-1400.31D": {
+   "edges": 25,
+   "parsed": 31,
+   "unparsed": 16,
+   "held": 3,
+   "drift": 8,
+   "gaps": 14
+  },
+  "MCO-1400.32D-CH1": {
+   "edges": 13,
+   "parsed": 18,
+   "unparsed": 14,
+   "held": 2,
+   "drift": 8,
+   "gaps": 3
+  },
+  "MCO-1400.32D-CH2": {
+   "edges": 12,
+   "parsed": 18,
+   "unparsed": 14,
+   "held": 1,
+   "drift": 8,
+   "gaps": 3
+  },
+  "MCO-1610.7B": {
+   "edges": 21,
+   "parsed": 22,
+   "unparsed": 7,
+   "held": 6,
+   "drift": 4,
+   "gaps": 11
+  },
+  "MCO-1616.1": {
+   "edges": 5,
+   "parsed": 5,
+   "unparsed": 5,
+   "held": 2,
+   "drift": 1,
+   "gaps": 2
+  },
+  "MCO-6100.13A-CH5": {
+   "edges": 19,
+   "parsed": 19,
+   "unparsed": 3,
+   "held": 3,
+   "drift": 5,
+   "gaps": 11
+  },
+  "MCO-6100.14": {
+   "edges": 18,
+   "parsed": 18,
+   "unparsed": 3,
+   "held": 3,
+   "drift": 6,
+   "gaps": 9
+  },
+  "MCO-6110.3A-CH4": {
+   "edges": 18,
+   "parsed": 19,
+   "unparsed": 10,
+   "held": 3,
+   "drift": 7,
+   "gaps": 8
+  },
+  "NAVMC-1200.1L": {
+   "edges": 27,
+   "parsed": 27,
+   "unparsed": 2,
+   "held": 3,
+   "drift": 5,
+   "gaps": 19
+  },
+  "SECNAVINST-1400.1D": {
+   "edges": 7,
+   "parsed": 7,
+   "unparsed": 2,
+   "held": 3,
+   "drift": 1,
+   "gaps": 3
+  },
+  "SECNAVINST-1610.3A": {
+   "edges": 15,
+   "parsed": 15,
+   "unparsed": 4,
+   "held": 1,
+   "drift": 0,
+   "gaps": 14
+  },
+  "SECNAVINST-1610.4A": {
+   "edges": 16,
+   "parsed": 16,
+   "unparsed": 8,
+   "held": 1,
+   "drift": 1,
+   "gaps": 14
+  },
+  "USC-T10-S574": {
+   "edges": 0,
+   "parsed": 0,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 0,
+   "gaps": 0
+  },
+  "USC-T10-S701": {
+   "edges": 0,
+   "parsed": 0,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 0,
+   "gaps": 0
+  },
+  "USC-T10": {
+   "edges": 0,
+   "parsed": 0,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 0,
+   "gaps": 0
+  },
+  "USC-T5-S552a": {
+   "edges": 0,
+   "parsed": 0,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 0,
+   "gaps": 0
+  },
+  "USC-T5": {
+   "edges": 0,
+   "parsed": 0,
+   "unparsed": 0,
+   "held": 0,
+   "drift": 0,
+   "gaps": 0
+  }
+ }
+}

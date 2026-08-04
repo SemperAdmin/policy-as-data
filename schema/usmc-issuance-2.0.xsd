@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  usmc-issuance 2.0 - a vocabulary for service policy issuances as data.
+
+  WHAT THIS IS, AND WHAT IT IS NOT
+
+  This is a SIBLING of United States Legislative Markup, not USLM itself.
+  It borrows USLM's referencing model, its identifier discipline, and its
+  small-level hierarchy vocabulary, and it declares its own namespace.
+
+  That is the conformant path rather than a compromise. USLM's own Objective
+  annotation states the schema "is not intended to model executive branch or
+  judicial branch documents," and USLM 2.1 closed the door 2.0 left open:
+  "elements in namespaces other than USLM are not allowed" except inside
+  <foreign>. Service-issuance structure embedded in a real USLM document
+  would now fail 2.1 validation. A sibling namespace is therefore correct.
+
+  WHAT CHANGED FROM 1.0, AND WHY IT IS A MAJOR VERSION
+
+  1.0 carried a single @status attribute holding the value "UNVERIFIED",
+  while the companion authority graph for the same document reported
+  "status": "active". Two published artifacts contradicted each other
+  because one attribute was being asked to carry two orthogonal facts.
+  2.0 separates them:
+
+      @lifecycle     is the policy in force?     active | cancelled |
+                                                 superseded | unknown
+      @verification  has a human confirmed the   VERIFIED | UNVERIFIED
+                     extraction against source?
+
+  A document can be active and UNVERIFIED. Most are. Conflating the two
+  made every export read as though its policy status were unknown.
+
+  1.0 also emitted each section as one flat paragraph containing a raw text
+  dump. The provision tree - the entire point of the encoding - was absent.
+  2.0 emits provisions nested by their parent path, so the hierarchy is
+  structural rather than inferable from indentation.
+
+  Validate with:
+      xmllint noout schema=schema/usmc-issuance-2.0.xsd <file>
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0"
+            targetNamespace="https://policy.usmc.mil/ns/usmc-issuance/2.0"
+            elementFormDefault="qualified"
+            version="2.0">
+
+  <!-- ================================================================ -->
+  <!-- Simple types                                                     -->
+  <!-- ================================================================ -->
+
+  <xsd:simpleType name="IdentifierType">
+    <xsd:annotation>
+      <xsd:documentation>
+        A path identifier on the USLM referencing convention, rooted at the
+        ISO 3166-1 jurisdiction code. The period is EXCLUDED: USLM reserves
+        it for the manifestation suffix (".xml", ".pdf"), so a segment such
+        as "mco/1050.3j" is ambiguous against the published grammar and
+        resolves as work "mco/1050" in format "3j". Directive numbers carry
+        their periods in @nativeNumber and in displayed text instead.
+        Permitted characters are the RFC 3986 unreserved set minus the
+        period. See NAMESPACES.md for the register and the ruling.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="/us(/[a-z0-9_-]+)+"/>
+      <xsd:maxLength value="1024"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="LifecycleType">
+    <xsd:annotation>
+      <xsd:documentation>
+        Is the policy in force. Deliberately NOT mapped onto USLM's
+        StatusEnum: that enumeration has no "superseded" value, and forcing
+        it onto "repealed" or "omitted" would assert something the source
+        never said. Consumers translating to USLM should map active to
+        inEffect and cancelled to cancelled, and should carry superseded as
+        a refinement rather than a substitution.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="active"/>
+      <xsd:enumeration value="cancelled"/>
+      <xsd:enumeration value="superseded"/>
+      <xsd:enumeration value="unknown"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="VerificationType">
+    <xsd:annotation>
+      <xsd:documentation>
+        UNVERIFIED is a faithful machine extraction not confirmed line by
+        line against the authoritative issuance. It is the honest default
+        for all pipeline output. VERIFIED is an explicit, recorded human
+        promotion. Never silent.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="VERIFIED"/>
+      <xsd:enumeration value="UNVERIFIED"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="BasisType">
+    <xsd:annotation>
+      <xsd:documentation>
+        cited - the source text states the link. inferred - resolution or
+        hierarchy inference. Never conflated, at any layer.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="cited"/>
+      <xsd:enumeration value="inferred"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="RelType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="references"/>
+      <xsd:enumeration value="cancels"/>
+      <xsd:enumeration value="cancelled_by"/>
+      <xsd:enumeration value="supersedes"/>
+      <xsd:enumeration value="superseded_by"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="TierType">
+    <xsd:annotation>
+      <xsd:documentation>
+        Issuing level, not importance. T0 statute, T1 Department of Defense,
+        T2 Department of the Navy, T3 service directive, T4 service manual,
+        T5 message, TX other authority.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="T[0-5X]"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="HeldType">
+    <xsd:annotation>
+      <xsd:documentation>
+        Does the corpus hold the cited target. held - yes. drift - the store
+        holds a different revision of the same base number, and the edge
+        still points at the edition the text names. absent - named by the
+        source and not held; a stated gap, never dropped and never resolved
+        onto a similar number.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="held"/>
+      <xsd:enumeration value="drift"/>
+      <xsd:enumeration value="absent"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- ================================================================ -->
+  <!-- Root                                                             -->
+  <!-- ================================================================ -->
+
+  <xsd:element name="issuance">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="meta"/>
+        <xsd:element ref="authority" minOccurs="0"/>
+        <xsd:element ref="section" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="corrections" minOccurs="0"/>
+      </xsd:sequence>
+      <xsd:attribute name="identifier" type="IdentifierType" use="required"/>
+      <xsd:attribute name="canonicalId" type="xsd:string" use="required"/>
+      <xsd:attribute name="docType" type="xsd:string" use="required"/>
+      <xsd:attribute name="nativeNumber" type="xsd:string"/>
+      <xsd:attribute name="tier" type="TierType"/>
+      <xsd:attribute name="lifecycle" type="LifecycleType" use="required"/>
+      <xsd:attribute name="verification" type="VerificationType" use="required"/>
+      <xsd:attribute name="startPeriod" type="xsd:date"/>
+      <xsd:attribute name="endPeriod" type="xsd:date"/>
+      <xsd:attribute name="schemaVersion" type="xsd:string" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="meta">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="title" type="xsd:string" minOccurs="0"/>
+        <xsd:element name="subject" type="xsd:string" minOccurs="0"/>
+        <xsd:element name="originator" type="xsd:string" minOccurs="0"/>
+        <xsd:element name="signedDate" type="xsd:date" minOccurs="0"/>
+        <xsd:element name="cancelledDate" type="xsd:date" minOccurs="0"/>
+        <xsd:element name="distributionStatement" type="xsd:string" minOccurs="0"/>
+        <xsd:element name="provenance" minOccurs="0">
+          <xsd:complexType>
+            <xsd:attribute name="sourcePath" type="xsd:string"/>
+            <xsd:attribute name="sourceHash" type="xsd:string"/>
+            <xsd:attribute name="extractionEngine" type="xsd:string"/>
+            <xsd:attribute name="convertedAt" type="xsd:string"/>
+            <xsd:attribute name="storeSchemaVersion" type="xsd:string"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <!-- ================================================================ -->
+  <!-- Authority - document-level cited edges                           -->
+  <!-- ================================================================ -->
+
+  <xsd:element name="authority">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="ref" minOccurs="0" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:attribute name="rel" type="RelType" use="required"/>
+            <xsd:attribute name="target" type="xsd:string" use="required"/>
+            <xsd:attribute name="targetIdentifier" type="IdentifierType"/>
+            <xsd:attribute name="basis" type="BasisType" use="required"/>
+            <xsd:attribute name="tier" type="TierType"/>
+            <xsd:attribute name="held" type="HeldType"/>
+            <xsd:attribute name="storeHolds" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation>
+                  Set only when held="drift". Names the revision the store
+                  actually holds, so a reader sees both the edition cited
+                  and the edition available.
+                </xsd:documentation>
+              </xsd:annotation>
+            </xsd:attribute>
+            <xsd:attribute name="from" type="xsd:string">
+              <xsd:annotation>
+                <xsd:documentation>
+                  The paragraph this edge was read from, as section anchor
+                  and provision path, or the message reference block that
+                  named it. An edge with no provenance is not written.
+                </xsd:documentation>
+              </xsd:annotation>
+            </xsd:attribute>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <!-- ================================================================ -->
+  <!-- Body                                                             -->
+  <!-- ================================================================ -->
+
+  <xsd:element name="section">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="provision" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attribute name="anchor" type="xsd:string" use="required"/>
+      <xsd:attribute name="identifier" type="IdentifierType"/>
+      <xsd:attribute name="heading" type="xsd:string"/>
+      <xsd:attribute name="verification" type="VerificationType"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="provision">
+    <xsd:annotation>
+      <xsd:documentation>
+        One numbered or lettered paragraph, and no more than one. Provisions
+        nest by their parent path, so the hierarchy is explicit in the data
+        rather than inferable from indentation - which extraction has
+        already destroyed.
+
+        @path is absolute within the document and is the machine name.
+        @label is the marker exactly as printed, and is the only form a
+        reader sees, per standard naval letter format.
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="text" type="xsd:string" minOccurs="0"/>
+        <xsd:element name="citation" minOccurs="0" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:attribute name="target" type="xsd:string" use="required"/>
+            <xsd:attribute name="targetIdentifier" type="IdentifierType"/>
+            <xsd:attribute name="targetPath" type="xsd:string"/>
+            <xsd:attribute name="basis" type="BasisType" use="required"/>
+            <xsd:attribute name="text" type="xsd:string"/>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element ref="provision" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attribute name="identifier" type="IdentifierType"/>
+      <xsd:attribute name="path" type="xsd:string" use="required"/>
+      <xsd:attribute name="number" type="xsd:string"/>
+      <xsd:attribute name="label" type="xsd:string" use="required"/>
+      <xsd:attribute name="depth" type="xsd:nonNegativeInteger"/>
+      <xsd:attribute name="role" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>
+            reference or enclosure for the front-matter lists, which occupy
+            the reserved ref/ and encl/ path prefixes. Absent for body text.
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:attribute>
+      <xsd:attribute name="verification" type="VerificationType"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <!-- ================================================================ -->
+  <!-- Corrections - the record carries its own error history           -->
+  <!-- ================================================================ -->
+
+  <xsd:element name="corrections">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="correction" minOccurs="0" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="change" type="xsd:string"
+                           minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+            <xsd:attribute name="date" type="xsd:string" use="required"/>
+            <xsd:attribute name="against" type="xsd:string" use="required"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+</xsd:schema>

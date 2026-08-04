@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.5.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/dodi/1308_3" canonicalId="DODI-1308.3" docType="DODI" nativeNumber="1308.3" tier="T1" lifecycle="cancelled" verification="UNVERIFIED" startPeriod="2002-11-05" schemaVersion="2.0">
+  <meta>
+    <title>DoD Instruction 1308.3 - DoD Physical Fitness and Body Fat Programs Procedures</title>
+    <subject>DOD PHYSICAL FITNESS AND BODY FAT PROGRAMS PROCEDURES</subject>
+    <signedDate>2002-11-05</signedDate>
+    <provenance sourcePath="https://www.esd.whs.mil/portals/54/documents/dd/issuances/dodi/130803p.pdf" sourceHash="4c0b5860c2561df52a7be3a16c3264fd78ca5f60d787a0515f60e75a2f5947aa" extractionEngine="manual-metadata-entry" convertedAt="2026-08-03T00:00:00+00:00" storeSchemaVersion="0.5.0"/>
+  </meta>
+  <authority>
+    <ref rel="superseded_by" target="DODI-1308.03" basis="cited" held="held"/>
+  </authority>
+  <section anchor="front-matter" heading="DoD Instruction 1308.3, DoD Physical Fitness and Body Fat Programs Procedures, November 5, 2002" verification="UNVERIFIED">
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>1 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

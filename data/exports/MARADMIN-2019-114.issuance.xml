@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2019/114" canonicalId="MARADMIN-2019-114" docType="MARADMIN" nativeNumber="114/19" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2019-02-25" schemaVersion="2.0">
+  <meta>
+    <title>TRANSITION TO A NEW GOVERNMENT TRAVEL CHARGE CARD (GTCC) PROVIDER</title>
+    <subject>TRANSITION TO A NEW GOVERNMENT TRAVEL CHARGE CARD (GTCC) PROVIDER</subject>
+    <originator>CMC WASHINGTON DC PR RFF</originator>
+    <signedDate>2019-02-25</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2019\MARADMIN_114_19_TRANSITION_TO_A_NEW_GOVERNMENT_TRAVEL_CHARGE_CARD_GTCC_PROVI.pdf" sourceHash="2d9554c01bd84e21fb3ee32eb9d410cf99be1bdbb33cd617e1707e6dc34c9add" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2019/114/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2019/114/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Purpose. Provide information and actions to be taken regarding the transition to a new GTCC contract which occurred on 30 Nov 18.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Background. This message is the second in a series of communications, ref (d) being the first, which provides information and actions required by Agency Program Coordinators (APCs), individual cardholders, and general information regarding the transition from the GSA SmartPay2 (SP2) contract.  The following link is to the Defense Travel Management Office (DTMO) website which contains the latest information on the transition: https:(slash)(slash)www.defensetravel.dod.mil/site/SP3_cardholder.cfm</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>General Information.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p3/a" path="p3/a" number="3.A." label="A." depth="1" verification="UNVERIFIED">
+        <text>The current SP2 GTCC contract ended on 29 Nov 18 and the new SP3 contract began on 30 Nov 18.  The Department of Defense (DoD) awarded its SP3 contract for GTCC products and services to Citibank.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p3/b" path="p3/b" number="3.B." label="B." depth="1" verification="UNVERIFIED">
+        <text>The DoD did not require the issuance of new accounts or new cards upon transition. Travelers with Individually Billed Accounts (IBAs) continue to use their current travel card.  Organizations using Centrally Billed Accounts (CBAs) continue to use their current accounts under SP3.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p3/c" path="p3/c" number="3.C." label="C." depth="1" verification="UNVERIFIED">
+        <text>Upon expiration, accounts will be renewed and reissued using the existing account number for both IBAs and CBAs.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p3/d" path="p3/d" number="3.D." label="D." depth="1" verification="UNVERIFIED">
+        <text>As of 30 Nov 18, new and reissued cards will change in appearance; new cards will be blue replacing the current silver travel cards.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p3/e" path="p3/e" number="3.E." label="E." depth="1" verification="UNVERIFIED">
+        <text>New applicants can still â€œopt-outâ€ of a credit check however, effective Jun 19, new applications require credit worthiness (credit check or self-certification using DD Form 2883).  These credit checks are considered â€œsoftâ€ credit inquiries, they do not appear on credit reports and have no impact on credit scores.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p3/f" path="p3/f" number="3.F." label="F." depth="1" verification="UNVERIFIED">
+        <text>Default cash limits for all existing and new accounts will be reduced to $250 from the current $665 for standard accounts and $365 for restricted accounts. Reductions in cash limits began in early Dec 18 and was phased in across the DoD and completed in mid-Jan 19.  Accounts with temporary increases above $665/$365 will remain in effect for the dates specified by the unit APCs in CitiManager, CitiBanksâ€™s online account management system.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p3/g" path="p3/g" number="3.G." label="G." depth="1" verification="UNVERIFIED">
+        <text>ATM fees remain at 2.4% of the transaction value.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p3/h" path="p3/h" number="3.H." label="H." depth="1" verification="UNVERIFIED">
+        <text>CitiBank will no longer charge a fee for expedited card delivery however, new card applicants should plan on using normal mail delivery except in emergencies and in cases where expedited delivery is absolutely necessary.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>APC required actions for all IBAs.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p4/a" path="p4/a" number="4.A." label="A." depth="1" verification="UNVERIFIED">
+        <text>Visit the DTMO web site listed in paragraph 2 for the latest updates on the GTCC program.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p4/b" path="p4/b" number="4.B." label="B." depth="1" verification="UNVERIFIED">
+        <text>Encourage cardholders to:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p4/b/1" path="p4/b/1" number="4.B.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Register for a CitiManager account at www.citimanager.com/login.  Under SP3, cardholders can continue to manage their accounts online through CitiManager.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p4/b/2" path="p4/b/2" number="4.B.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>View and retain statements.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p4/b/3" path="p4/b/3" number="4.B.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>Confirm account balances, make payments, sign up for paperless statements, and set up alerts. Those account holders who had CitiManager accounts established before the transition can continue to use existing login credentials under SP3.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p4/c" path="p4/c" number="4.C." label="C." depth="1" verification="UNVERIFIED">
+        <text>APCs will continue to update card hierarchies in CitiManager to ensure correct contact information is available.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p4/d" path="p4/d" number="4.D." label="D." depth="1" verification="UNVERIFIED">
+        <text>Assist cardholders with updating individual contact information in CitiManager.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p4/e" path="p4/e" number="4.E." label="E." depth="1" verification="UNVERIFIED">
+        <text>Ensure cardholders check in/out with APCs upon transfer.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>APC actions for CBA.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p5/a" path="p5/a" number="5.A." label="A." depth="1" verification="UNVERIFIED">
+        <text>Keep unit contact information up to date in CitiManager.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p5/b" path="p5/b" number="5.B." label="B." depth="1" verification="UNVERIFIED">
+        <text>Close accounts that are no longer used.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p5/c" path="p5/c" number="5.C." label="C." depth="1" verification="UNVERIFIED">
+        <text>Ensure accounts are reconciled and paid after each billing cycle.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p5/d" path="p5/d" number="5.D." label="D." depth="1" verification="UNVERIFIED">
+        <text>Commanders are responsible for ensuring CBAs issued to their command are reconciled and paid in a timely manner.  Delinquent CBA accounts must be settled prior to 29 May 19.  As of 29 May 19, no accounts will be authorized to be greater than 181 days delinquent.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Cardholder Actions.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p6/a" path="p6/a" number="6.A." label="A." depth="1" verification="UNVERIFIED">
+        <text>Keep personal contact information updated in CitiManager.  Cardholders who do not have computer access will contact their APC for assistance.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p6/b" path="p6/b" number="6.B." label="B." depth="1" verification="UNVERIFIED">
+        <text>Ensure prompt acknowledgement of new cards received from Citibank.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p6/c" path="p6/c" number="6.C." label="C." depth="1" verification="UNVERIFIED">
+        <text>Cardholders will contact their unit APC for assistance if they have questions.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p6/d" path="p6/d" number="6.D." label="D." depth="1" verification="UNVERIFIED">
+        <text>Register for a CitiManager account at www.citimanager.com/login to manage accounts online.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p6/e" path="p6/e" number="6.E." label="E." depth="1" verification="UNVERIFIED">
+        <text>Visit the DTMO website listed in para 2 for the latest GTCC information.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2019/114/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by Lieutenant General John M. Jansen, Deputy Commandant for Programs and Resources.//</text>
+    </provision>
+  </section>
+</issuance>

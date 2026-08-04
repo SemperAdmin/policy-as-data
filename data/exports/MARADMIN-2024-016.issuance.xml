@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2024/016" canonicalId="MARADMIN-2024-016" docType="MARADMIN" nativeNumber="016/24" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2024-01-12" schemaVersion="2.0">
+  <meta>
+    <title>FISCAL YEAR 2025 ACTIVE AND RESERVE MARINE ATTACHÉ SELECTION BOARD: OFFICER</title>
+    <subject>FISCAL YEAR 2025 ACTIVE AND RESERVE MARINE ATTACHÉ SELECTION BOARD: OFFICER</subject>
+    <originator>CMC WASHINGTON DC MRA MM</originator>
+    <signedDate>2024-01-12</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2024\MARADMIN_016_24_FISCAL_YEAR_2025_ACTIVE_AND_RESERVE_MARINE_ATTACHÉ_SELECTION.pdf" sourceHash="856b7ca9a81e8de89668cbb351447b85b7d9cf04aa1f1b7e376283463deba97c" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="MCO-3821.2" targetIdentifier="/us/dod/don/usmc/mco/3821_2" basis="cited" tier="T3" held="absent" from="narr:REF A"/>
+    <ref rel="references" target="MCO-1300.8-CH1" targetIdentifier="/us/dod/don/usmc/mco/1300_8/ch1" basis="cited" tier="T3" held="drift" storeHolds="MCO-1300.8-CH2" from="narr:REF B"/>
+    <ref rel="references" target="MCO-1900.16-CH2" targetIdentifier="/us/dod/don/usmc/mco/1900_16/ch2" basis="cited" tier="T3" held="drift" storeHolds="MCO-1900.16-CH3" from="narr:REF C"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2024/016/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2024/016/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/016/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>On 28 August 2023, the Director for Manpower Management convened the Fiscal Year 2025 (FY25) Marine Active and Reserve Attaché (MARA) Selection Board to select Marines as primary candidates and identify alternates for duty with the Defense Attaché Service (DAS) to report in FY25.  The Secretary of the Navy has approved the list of Marines herein and nominated them to the Defense Intelligence Agency (DIA) for final approval.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/016/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>The board considered the packages of 82 qualified applicants and selected 18 officers as primary candidates.  Demonstrated performance, Marine Air Ground Task</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/016/p3/b/2" path="p3/b/2" number="3.b.2." label="2." depth="2" verification="UNVERIFIED">
+      <text>The board selected the following reserve duty officers as alternates: Name                       MOS Crawford, Sebastian S.     0202 Davidhizar, Matthew H.     0402 Myler, Devin R.            7523 Weaver, Jansen F.          0202</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/016/p3/b/4" path="p3/b/4" number="3.b.4." label="4." depth="2" verification="UNVERIFIED">
+      <text>Coordinating instructions</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/016/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>Primary selectees</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/016/p4/a/1" path="p4/a/1" number="4.a.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Active duty acceptance of selection.  Selectees shall accept or decline via email to their PMOS monitor no later than 31 January 2024.  Selectees will copy their acceptance email to the HQMC Marine Attaché Program Office at [contact withheld] to communicate acceptance of assignment and receive further guidance.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/016/p4/a/2" path="p4/a/2" number="4.a.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Reserve duty acceptance of selection.  Selectees shall accept or decline via email to their PMOS monitor no later than 31 January 2024 and will contact the Deputy Commandant for Information Reserve Liaison Office (DCI RLO) to communicate acceptance of assignment and receive further guidance.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/016/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>Alternate selectees.  No action is required on the part of Marines on the alternate list in paragraph 3.b.  In the event that a billet becomes vacant, Manpower Management will fleet-up an officer from the alternate list.  PMOS monitors will directly contact any alternate selected as a fleet-up.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/016/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+      <text>Declinations and deferrals 4.c.1  Declinations.  Marines who decline assignment to a MARA billet must submit a declination in writing (AA form) via the first O6 in their chain of command addressed to HQMC via MMOA-3 NLT 31 January 2024.  Marines who decline will be ineligible for future MARA billets, unless otherwise approved by the Director, Manpower Management.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/016/p4/c/2" path="p4/c/2" number="4.c.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Deferrals.  Marines selected for assignment to a MARA billet who are unable to execute orders due to extraordinary circumstances may request a deferral.  If approved, the Director, Manpower Management will defer the Marine to a future SCO selection panel.  Primary selectees may submit a deferral request in writing (AA Form) via the first general officer in their chain of command addressed to HQMC via MMOA-3 NLT 31 January 2024.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/016/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+      <text>Reporting and training</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/016/p4/d/1" path="p4/d/1" number="4.d.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Selected Marines can expect Permanent Change of Station orders for training in the National Capital Region.  Training start dates are dependent upon the assigned country and corresponding training requirements, but can begin in spring 2024.  Selected officers with competing service requirements which could potentially delay their availability for training must notify their primary MOS monitor in their initial correspondence.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/016/p4/d/2" path="p4/d/2" number="4.d.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>A limited portion of training during the Joint Military Attaché School (JMAS) is available to the spouses of selected officers.  Although spouse attendance is not required, it is highly recommended and does not incur any additional cost to the service member.  Language training is available to the spouse for most billets at the request of the selected officer.  In addition to training, a security clearance will be submitted for the spouse.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/016/p4/d/3" path="p4/d/3" number="4.d.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Spouses must be naturalized U.S. citizens prior to the service member attending JMAS.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/016/p4/d/4" path="p4/d/4" number="4.d.4." label="4." depth="2" verification="UNVERIFIED">
+        <text>Service members must complete a Counter Intelligence Polygraph examination prior to attending JMAS.  This will be coordinated through the selectee's parent command.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/016/p4/d/5" path="p4/d/5" number="4.d.5." label="5." depth="2" verification="UNVERIFIED">
+        <text>Release authorized by BGen Ryan S. Rideout, Director, Manpower Management, Division.// Archived: 2026-07-12 08:18 | Source: marines.mil</text>
+      </provision>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>3 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>
