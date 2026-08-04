@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.5.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/usc/t10" canonicalId="USC-T10" docType="USC" nativeNumber="10 U.S.C." tier="T0" lifecycle="active" verification="UNVERIFIED" schemaVersion="2.0">
+  <meta>
+    <title>Title 10, United States Code - Armed Forces</title>
+    <subject>ARMED FORCES</subject>
+    <provenance sourcePath="https://uscode.house.gov/browse/prelim@title10&amp;edition=prelim" sourceHash="7d574fb575ae5c1d72e437b5f124a5281d8beb29080ecc3ef55a97f60ce116cb" extractionEngine="manual-metadata-entry" convertedAt="2026-08-03T00:00:00+00:00" storeSchemaVersion="0.5.0"/>
+  </meta>
+  <section anchor="front-matter" heading="Title 10, United States Code" verification="UNVERIFIED">
+  </section>
+</issuance>

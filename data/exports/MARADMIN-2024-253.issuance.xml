@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2024/253" canonicalId="MARADMIN-2024-253" docType="MARADMIN" nativeNumber="253/24" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2024-05-30" schemaVersion="2.0">
+  <meta>
+    <title>FISCAL YEAR 2024 MARINE CORPS TALENT ACQUISITION PILOT</title>
+    <subject>FISCAL YEAR 2024 MARINE CORPS TALENT ACQUISITION PILOT</subject>
+    <originator>CMC WASHINGTON DC MRA MP</originator>
+    <signedDate>2024-05-30</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2024\MARADMIN_253_24_FISCAL_YEAR_2024_MARINE_CORPS_TALENT_ACQUISITION_PILOT.pdf" sourceHash="d88756bba48b92c7270ac3e6eed1972b796fea13cae4c124a53553cb0310fe88" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="MCO-1400.32D-CH2" targetIdentifier="/us/dod/don/usmc/mco/1400_32d" basis="cited" tier="T3" held="held" from="narr:REF G"/>
+    <ref rel="references" target="NAVMC-1200.1J" targetIdentifier="/us/dod/don/usmc/navmc/1200_1j" basis="cited" tier="T4" held="drift" storeHolds="NAVMC-1200.1L" from="narr:REF H"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2024/253/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2024/253/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN announces the initiation of the Marine Corps Talent Acquisition Pilot (MCTAP) Program to provide select opportunities for candidates to enlist in the Marine Corps to serve within specific Military Occupational Specialties (MOS) at a rank commensurate with their experience, up to Gunnery Sergeant (E7).</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Purpose. The Marine Corps Talent Acquisition Pilot (MCTAP) Program is designed to address the Corps' need for a rapid process to identify, train, and employ personnel who possess essential skills and relevant experience to meet warfighting requirements at the point and time of need.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Background. Talent Management requires that we recruit, retain, and align the best talent with the needs of the service - to meet Marine Corps warfighting requirements in the Active or Reserve Component. Lateral Entry grants constructive service credit for private sector training or experience.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Eligibility</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Marine Corps prior service.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Prior service other service.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Non-prior service.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Scope. The initial focus is on MOSs with shortfalls that are difficult to recruit, retain, and sustain, and where there are other means of obtaining the credentials and experience outside of the service. Current identified requirements are Cyber and Signals Intelligence. This Pilot Program will also assess the feasibility of expansion into other occupational specialties and ranks.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Active and Reserve Component. Primary Military Occupational Specialty (PMOS) 1721 Cyberspace Warfare Operator.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Active Component. PMOS 2629 Signals Intelligence Collection Manager.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Procedures. MCTAP will follow a four-phase approach: Identify, recruit, earn, and serve. These phases will serve as a roadmap for the Pilot Program, guiding its efforts to identify the Marine Corps' requirements, recruit highly skilled individuals with desired qualifications, provide them with training to earn the title of Marine, and ultimately enable them to serve in roles that align with the Marine Corps' warfighting requirements.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Phase 1 / Identify. Manpower &amp; Reserve Affairs (M&amp;RA), Occupational Field (OccFLD) managers, and OccFLD specialists validated the following requirements for this Pilot Program and communicated them to the Commanding General, Marine Corps Recruiting Command (MCRC).</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>PMOS 1721 Cyberspace Warfare Operator PMOS in both active and reserve component.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p8/a" path="p8/a" number="8.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Description. The Cyberspace Warfare Operator is familiar with all aspects of cyberspace maneuver operations. They employ offensive and defensive cyber tools, tactics, techniques, and procedures. They integrate effects into warfighting functions to achieve tactical, operational, and strategic objectives. The Cyber Warfare Operator provides the means to emulate tactics, techniques, and procedures used by known adversaries to identify unmitigated vulnerabilities through simulated exploitation or attacks on department of defense information systems. They are familiar with digital network concepts and analytical techniques that support tactical cyber operations. Utilizing these skills to enumerate friendly environments, these operators search for and respond to targeted adversary presence within friendly terrain.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p8/b" path="p8/b" number="8.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Duties. Exploitation Analysts are the primary technical planners for offensive cyberspace operations. The exploitation analyst must be an expert with adversary systems, networks, technologies, tools, techniques, and procedures. The duties for this position encompass generating intelligence, converting intelligence to operational planning, developing significant target awareness, and balancing levels of risk against operational goals. Duties increase with experience to encompass the management of target packages and developing new techniques and procedures for offensive cyber operations.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p8/c" path="p8/c" number="8.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Qualifications / Education / Experience</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p8/c/1" path="p8/c/1" number="8.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Prior Service USMC. Former MOS of 2611, 1711, or 1721 Marine. Minimum: Completed the Joint Cyberspace Analyst Course. Preferred: Completed the United States Cyber Command (USCC)/National Security Agency (NSA) exploitation analyst work role certification.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p8/c/2" path="p8/c/2" number="8.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Prior Service-Other Service. Former Army 17 series MOS; Former Air Force 1B series MOS; Former Navy Cryptologic Technician Networks (CTN) / Cyber Warfare Technician series MOS. Preferred: Completed the USCC/NSA Exploitation Analyst work role certification.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p8/c/3" path="p8/c/3" number="8.c.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Non-Prior Service. Degree in computer science, information systems, engineering, or other related discipline. Knowledge/ experience with NSAâ€™s post-apprentice Cryptologic Cyber Network Operator training standards.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p8/c/4" path="p8/c/4" number="8.c.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Desired: Cyberspace Operations Plannersâ€™ Course, 1713 additional MOS.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p8/c/5" path="p8/c/5" number="8.c.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Applicants who have prior service in the USMC or other services but gained experience and education upon being discharged from service and meet criteria as described under non-prior service criteria can apply.</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p9" path="p9" number="9." label="9." depth="0" verification="UNVERIFIED">
+      <text>PMOS 2629 Signals Intelligence Collection Manager in active component.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p9/a" path="p9/a" number="9.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Description. This PMOS requires Signals Intelligence (SIGINT), Electromagnetic Warfare (EW), and support to Cyberspace Operations (CO) training focused on collection management, operational planning and coordination, analysis, reporting, exploitation, and dissemination in support of the seven warfighting functions. Duties encompass the supervision of tasking, collection, processing, exploitation, and dissemination of products related to the three disciplines of SIGINT. Communications Intelligence Electronic Intelligence and Foreign Instrumentation Signals Intelligence. EW duties encompass the planning, coordination, and execution of full spectrum Marine Air Ground Task Force EW operations, including Electromagnetic Warfare Support, Electromagnetic Protect, and Electromagnetic Attack. Provides intelligence support to full spectrum CO defined as Offensive Cyberspace Operations, Defensive Cyberspace Operations, and Department of Defense Information Network Operations. Technicians develop and maintain records on technical aspects of target emitters, develop and maintain communications order of battle files, situation maps, and other related SIGINT/EW/CO files. Technicians prepare and issue reports to include intelligence reports, technical reports, and summaries. Technicians are required to perform SIGINT/EW/CO briefings.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p9/b" path="p9/b" number="9.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Duties. Responsible for performing intelligence collections management functions. Provide technical and analytical advice to headquarters staff sections, subordinate commands, and units in matters relating to intelligence collection. Responsible for issues pertaining to all-source intelligence collection and production requirements and management. Serve as intelligence requirements management projections officer for routing, special access program, and compartmented projects, operations, or exercises. Plan and execute collection management within priorities established through the collection management process while using appropriate collection strategies. Develop collection strategies and address challenges related to gathering information from relevant sources and shortfalls in collection tasking. Provide centralized administration, governance, and coordination of collection management requirements in support of cyberspace operations.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p9/c" path="p9/c" number="9.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Qualifications / Education / Experience</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p9/c/1" path="p9/c/1" number="9.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Prior Service USMC. Former MOS of 2621, 2631, 2641, 2651, entry level training</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p9/c/2" path="p9/c/2" number="9.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Prior Service - Other Service. Former Army 35 series MOS; Former Air Force 1N series MOS; Former Navy Cryptologic Technician (CT) series MOS.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p9/c/3" path="p9/c/3" number="9.c.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Non-Prior Service. Degree in computer science, information systems, engineering, or other related discipline. Knowledge/ experience with the SIGINT/EW/CO collection and ground processing architecture and associated systems. The ideal candidate would be SIGINT/EW/CO systems subject matter expert. They should be familiar with the end-to-end system, including tasking, collection management, collection operations, processing and dissemination components, and processes.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p9/c/4" path="p9/c/4" number="9.c.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Applicants who have prior service in the USMC or other services but gained experience and education upon being discharged from service and meet criteria as described under non-prior service criteria can apply.</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10" path="p10" number="10." label="10." depth="0" verification="UNVERIFIED">
+      <text>Phase 2 / Recruit. MCRC serves as the primary recruiter for prior service applicants. Due to the specific focus and niche capabilities of MCTAP, a representative from the community of interest is responsible for primary recruitment of non-prior service applicants and referring prior service applicants to MCRC.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/a" path="p10/a" number="10.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Interview. Once applicants are identified, they will interview with an Acquisition Panel (AP), composed of the OccFLD specialists, MCRC, and Fleet Marine Force (as required). This panel verifies applicant qualifications, as detailed in the requirement notification. Applicants should be prepared to provide the following prior to the interview:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/a/1" path="p10/a/1" number="10.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Resume</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/a/2" path="p10/a/2" number="10.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Certifications (civilian and military)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/a/3" path="p10/a/3" number="10.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Transcripts (as related to position)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/a/4" path="p10/a/4" number="10.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Letters of recommendation (as directed)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/a/5" path="p10/a/5" number="10.a.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Practical application examination (as directed at the interview)</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/b" path="p10/b" number="10.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Following the interview, the AP will submit their recommendations to MCRC for follow on screening per reference (f). The AP should at a minimum:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/b/1" path="p10/b/1" number="10.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Validate credentials per reference (h)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/b/2" path="p10/b/2" number="10.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Recommended MOS training (if required)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/b/3" path="p10/b/3" number="10.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Recommended professional military education (if required)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/b/4" path="p10/b/4" number="10.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Recommended rank up to Gunnery Sergeant (E7) commensurate with qualifications and experience</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/c" path="p10/c" number="10.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Once qualified for enlistment, MCRC shall submit a complete package to the DC, M&amp;RA for approval. A completed package will include:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/c/1" path="p10/c/1" number="10.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>AP recommendation letter</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/c/2" path="p10/c/2" number="10.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Waiver coversheet</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/c/3" path="p10/c/3" number="10.c.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Waiver documents (if required)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/c/4" path="p10/c/4" number="10.c.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Resume</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/c/5" path="p10/c/5" number="10.c.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Transcripts</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/c/6" path="p10/c/6" number="10.c.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>Certificates</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/c/7" path="p10/c/7" number="10.c.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+          <text>Letters of recommendation (as directed)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/c/8" path="p10/c/8" number="10.c.(8)" label="(8)" depth="2" verification="UNVERIFIED">
+          <text>Practical examination results (as directed)</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/d" path="p10/d" number="10.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Determination. If the DC, M&amp;RA approves, MCRC will receive the final approval letter, to include the contract proposal, and shall process the applicant in accordance with reference (f).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p10/e" path="p10/e" number="10.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Acceptance. MCRC will communicate the DC, M&amp;RAâ€™s determination to the applicant for the applicantâ€™s acceptance.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p11" path="p11" number="11." label="11." depth="0" verification="UNVERIFIED">
+      <text>Phase 3 / Earn. It is a steadfast commitment of the Marine Corps that all new Marines will undergo appropriate entry-level training to earn the title Marine as follows:</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p11/a" path="p11/a" number="11.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Prior Service USMC. Applicants who have successfully completed Marine Corps recruit training are not required to attend Marine Corps recruit training again, as they have already earned the title of Marine.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p11/b" path="p11/b" number="11.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Prior Service Other Service. Applicants must complete Marine Corps recruit training.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p11/c" path="p11/c" number="11.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Non-Prior Service. Applicants must complete Marine Corps recruit training.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p12" path="p12" number="12." label="12." depth="0" verification="UNVERIFIED">
+      <text>Phase 4 / Serve. Applicants will serve in the predetermined billet and location based on identified requirements. Applicants are not eligible for permanent change of station or reassignment during their first enlistment. Applicants who submit, are approved, and accept reenlistment may be subject to follow on assignments in a different geographical location from their initial duty station.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p13" path="p13" number="13." label="13." depth="0" verification="UNVERIFIED">
+      <text>Coordinating Instructions</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p13/a" path="p13/a" number="13.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Term of Enlistment. The specific length of the contract will be determined based on the requirement filled, communicated to the AP, and confirmed with the applicant during their interview.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p13/b" path="p13/b" number="13.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>MOS Training. If MOS training is necessary, the AP will provide appropriate recommendations. For example, depending on the experience of the applicant, MOS training may be customized to provide appropriate overview and orientation to the service. Additionally, applicants may be asked to complete testable sections of basic or advanced MOS schools as part of their training requirements.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p13/c" path="p13/c" number="13.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Grade. The AP shall recommend an initial rank for the applicant up to Gunnery Sergeant (E7). Upon receiving approval from DC, M&amp;RA, the pay for the contracted rank will commence from the basic training phase. Recruits will start receiving their contracted pay as soon as they begin their basic training. Rank will be worn upon completion of any required MOS training.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p13/d" path="p13/d" number="13.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Promotion. Due to the specialized focus and unique competencies of MCTAP, Marines participating in the initial pilot program will have promotion opportunities to the ranks of Master Sergeant and Master Gunnery Sergeant. The option to submit for promotion to ranks of First Sergeant or Sergeant Major will not be available to these Marines. For Marines entering service through MCTAP, their initial promotion opportunity will be based on non-competitive consideration with the exception that professional military education is required.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p13/e" path="p13/e" number="13.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Specialized Recruiting. For the Pilot Program, a representative from the community of interest will serve as subject matter expert recruiter in a Temporary Additional Duty (TAD) / surge (requirement or time) capacity with MCRC and have primary recruitment responsibility of non-prior service applicants.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p13/f" path="p13/f" number="13.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Specialized Recruiting TAD Funding. The community of interest will be responsible for funding TAD expenses for specialized recruiters. TAD funding requests can be submitted to MCRC for consideration.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p13/g" path="p13/g" number="13.g." label="g." depth="1" verification="UNVERIFIED">
+        <text>Feedback. OccFLD specialists shall provide feedback on the performance of MCTAP Marines and the MCTAP process itself to Headquarters United States Marine Corps at 6 months and 12 months from the date the applicant begins serving in their designated billet.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p13/h" path="p13/h" number="13.h." label="h." depth="1" verification="UNVERIFIED">
+        <text>How to Apply. Applicants will submit required documentation per paragraph 10.a. to the following organizational mailbox: [contact withheld], with the subject line reading MCTAP.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2024/253/p14" path="p14" number="14." label="14." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by Lieutenant General James F. Glynn, Deputy Commandant for Manpower and Reserve Affairs.//</text>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>2 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

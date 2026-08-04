@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.5.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/dodi/1308_03" canonicalId="DODI-1308.03" docType="DODI" nativeNumber="1308.03" tier="T1" lifecycle="active" verification="UNVERIFIED" startPeriod="2022-03-10" schemaVersion="2.0">
+  <meta>
+    <title>DoD Instruction 1308.03 - DoD Physical Fitness/Body Composition Program</title>
+    <subject>DOD PHYSICAL FITNESS/BODY COMPOSITION PROGRAM</subject>
+    <signedDate>2022-03-10</signedDate>
+    <provenance sourcePath="https://www.esd.whs.mil/portals/54/documents/dd/issuances/dodi/130803p.pdf" sourceHash="14ccb374445f949f71cb1f90727285eadc3272d067f0f2ddef1b887dd92c682b" extractionEngine="manual-metadata-entry" convertedAt="2026-08-03T00:00:00+00:00" storeSchemaVersion="0.5.0"/>
+  </meta>
+  <authority>
+    <ref rel="supersedes" target="DODI-1308.3" basis="cited" held="held" from="front-matter"/>
+    <ref rel="cancels" target="DODD-1308.1" basis="cited" held="held" from="front-matter"/>
+    <ref rel="cancels" target="DODD-1308.2" basis="cited" held="held" from="front-matter"/>
+    <ref rel="references" target="DODREG-5400.11-R" targetIdentifier="/us/dod/reg/5400_11-r" basis="cited" tier="T1" held="absent" from="front-matter:ref/a"/>
+    <ref rel="references" target="DODD-5124.02" targetIdentifier="/us/dod/dodd/5124_02" basis="cited" tier="T1" held="absent" from="front-matter:ref/b"/>
+    <ref rel="references" target="DODD-5136.01" targetIdentifier="/us/dod/dodd/5136_01" basis="cited" tier="T1" held="absent" from="front-matter:ref/c"/>
+    <ref rel="references" target="DODI-5400.11" targetIdentifier="/us/dod/dodi/5400_11" basis="cited" tier="T1" held="absent" from="front-matter:ref/d"/>
+    <ref rel="references" target="DODI-6130.03-V1" targetIdentifier="/us/dod/dodi/6130_03/v1" basis="cited" tier="T1" held="absent" from="front-matter:ref/e"/>
+    <ref rel="references" target="DODM-8910.01-V1" targetIdentifier="/us/dod/dodm/8910_01/v1" basis="cited" tier="T1" held="absent" from="front-matter:ref/f"/>
+    <ref rel="references" target="EO-14183" targetIdentifier="/us/eop/eo/14183" basis="cited" tier="TX" held="absent" from="front-matter:ref/g"/>
+  </authority>
+  <section anchor="front-matter" heading="DoD Instruction 1308.03, DoD Physical Fitness/Body Composition Program, March 10, 2022, incorporating Change 1, June 25, 2025" verification="UNVERIFIED">
+    <provision path="ref" number="Ref:" label="Ref:" depth="0" role="reference" verification="UNVERIFIED">
+      <provision path="ref/a" number="(a)" label="(a)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD 5400.11-R, “Department of Defense Privacy Program,” May 14, 2007</text>
+        <citation target="DODREG-5400.11-R" targetIdentifier="/us/dod/reg/5400_11-r" basis="cited" text="DoD 5400.11-R, “Department of Defense Privacy Program,” May 14, 2007"/>
+      </provision>
+      <provision path="ref/b" number="(b)" label="(b)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Directive 5124.02, “Under Secretary of Defense for Personnel and Readiness (USD(P&amp;R)),” June 23, 2008</text>
+        <citation target="DODD-5124.02" targetIdentifier="/us/dod/dodd/5124_02" basis="cited" text="DoD Directive 5124.02, “Under Secretary of Defense for Personnel and Readiness (USD(P&amp;R)),” June 23, 2008"/>
+      </provision>
+      <provision path="ref/c" number="(c)" label="(c)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Directive 5136.01, “Assistant Secretary of Defense for Health Affairs (ASD(HA)),” September 30, 2013, as amended</text>
+        <citation target="DODD-5136.01" targetIdentifier="/us/dod/dodd/5136_01" basis="cited" text="DoD Directive 5136.01, “Assistant Secretary of Defense for Health Affairs (ASD(HA)),” September 30, 2013, as amended"/>
+      </provision>
+      <provision path="ref/d" number="(d)" label="(d)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 5400.11, “DoD Privacy and Civil Liberties Program,” January 29, 2019, as amended</text>
+        <citation target="DODI-5400.11" targetIdentifier="/us/dod/dodi/5400_11" basis="cited" text="DoD Instruction 5400.11, “DoD Privacy and Civil Liberties Program,” January 29, 2019, as amended"/>
+      </provision>
+      <provision path="ref/e" number="(e)" label="(e)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 6130.03, Volume 1, “Medical Standards for Military Service: Appointment, Enlistment, or Induction,” May 6, 2018, as amended</text>
+        <citation target="DODI-6130.03-V1" targetIdentifier="/us/dod/dodi/6130_03/v1" basis="cited" text="DoD Instruction 6130.03, Volume 1, “Medical Standards for Military Service: Appointment, Enlistment, or Induction,” May 6, 2018, as amended"/>
+      </provision>
+      <provision path="ref/f" number="(f)" label="(f)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Manual 8910.01, Volume 1, “DoD Information Collections Manual: Procedures for DoD Internal Information Collections,” June 30, 2014, as amended</text>
+        <citation target="DODM-8910.01-V1" targetIdentifier="/us/dod/dodm/8910_01/v1" basis="cited" text="DoD Manual 8910.01, Volume 1, “DoD Information Collections Manual: Procedures for DoD Internal Information Collections,” June 30, 2014, as amended"/>
+      </provision>
+      <provision path="ref/g" number="(g)" label="(g)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Executive Order 14183, “Prioritizing Military Excellence and Readiness,” January 27, 2025</text>
+        <citation target="EO-14183" targetIdentifier="/us/eop/eo/14183" basis="cited" text="Executive Order 14183, “Prioritizing Military Excellence and Readiness,” January 27, 2025"/>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="s-1" heading="SECTION 1: GENERAL ISSUANCE INFORMATION" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-2" heading="SECTION 2: RESPONSIBILITIES" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-3" heading="SECTION 3: PROCEDURES" verification="UNVERIFIED">
+    <provision path="p3/1" number="3.1." label="3.1." depth="1" verification="UNVERIFIED">
+      <text>Physical Fitness</text>
+    </provision>
+    <provision path="p3/2" number="3.2." label="3.2." depth="1" verification="UNVERIFIED">
+      <text>Evaluation</text>
+    </provision>
+    <provision path="p3/3" number="3.3." label="3.3." depth="1" verification="UNVERIFIED">
+      <text>MSK Injury Reporting</text>
+    </provision>
+    <provision path="p3/4" number="3.4." label="3.4." depth="1" verification="UNVERIFIED">
+      <text>Annual Military Service PF/BC Report</text>
+    </provision>
+  </section>
+  <section anchor="glossary" heading="GLOSSARY" verification="UNVERIFIED">
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>13 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

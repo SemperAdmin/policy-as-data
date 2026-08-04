@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/mco/6100_14" canonicalId="MCO-6100.14" docType="MCO" nativeNumber="6100.14" tier="T3" lifecycle="active" verification="UNVERIFIED" schemaVersion="2.0">
+  <meta>
+    <title>MCO 6100.14 - Marine Corps Physical Fitness Program (MCPFP)</title>
+    <subject>MARINE CORPS PHYSICAL FITNESS PROGRAM (MCPFP)</subject>
+    <distributionStatement>DISTRIBUTION STATEMENT A:  Approved for public release; distribution is</distributionStatement>
+    <provenance sourcePath="E:\GunnyBot\Policies\MCO\MCO_6100.14.pdf" sourceHash="5394bde7224a35ce52a61aaacb542c64bf0d4ad20e2059bba55e0133ee83c303" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="DODI-1308.3" targetIdentifier="/us/dod/dodi/1308_3" basis="cited" tier="T1" held="held" from="p-5:ref/a"/>
+    <ref rel="references" target="CJCSI-3405.01" targetIdentifier="/us/dod/cjcs/cjcsi/3405_01" basis="cited" tier="T1" held="absent" from="p-5:ref/b"/>
+    <ref rel="references" target="MCO-6100.13A-CH5" targetIdentifier="/us/dod/don/usmc/mco/6100_13a" basis="cited" tier="T3" held="held" from="p-5:ref/c"/>
+    <ref rel="references" target="MCO-1500.62" targetIdentifier="/us/dod/don/usmc/mco/1500_62" basis="cited" tier="T3" held="absent" from="p-5:ref/d"/>
+    <ref rel="references" target="MCO-6110.3A-CH1" targetIdentifier="/us/dod/don/usmc/mco/6110_3a/ch1" basis="cited" tier="T3" held="drift" storeHolds="MCO-6110.3A-CH4" from="p-5:ref/f"/>
+    <ref rel="references" target="MCO-1700.29" targetIdentifier="/us/dod/don/usmc/mco/1700_29" basis="cited" tier="T3" held="drift" storeHolds="MCO-1700.29-CH1" from="p-5:ref/g"/>
+    <ref rel="references" target="MCO-1500.52D" targetIdentifier="/us/dod/don/usmc/mco/1500_52d" basis="cited" tier="T3" held="drift" storeHolds="MCO-1500.52E" from="p-5:ref/h"/>
+    <ref rel="references" target="MCO-1500.59" targetIdentifier="/us/dod/don/usmc/mco/1500_59" basis="cited" tier="T3" held="drift" storeHolds="MCO-1500.59A" from="p-5:ref/i"/>
+    <ref rel="references" target="MCO-6400.2" targetIdentifier="/us/dod/don/usmc/mco/6400_2" basis="cited" tier="T3" held="absent" from="p-5:ref/j"/>
+    <ref rel="references" target="MCO-5102.1B-CH2" targetIdentifier="/us/dod/don/usmc/mco/5102_1b/ch2" basis="cited" tier="T3" held="absent" from="p-5:ref/k"/>
+    <ref rel="references" target="DODI-6055.07" targetIdentifier="/us/dod/dodi/6055_07" basis="cited" tier="T1" held="absent" from="p-5:ref/l"/>
+    <ref rel="references" target="SECNAVNOTE-5210" targetIdentifier="/us/dod/don/secnavnote/5210" basis="cited" tier="T2" held="absent" from="p-5:ref/o"/>
+    <ref rel="references" target="SECNAVM-5210.1" targetIdentifier="/us/dod/don/secnavm/5210_1" basis="cited" tier="T2" held="absent" from="p-5:ref/p"/>
+    <ref rel="references" target="MCO-5210.11F" targetIdentifier="/us/dod/don/usmc/mco/5210_11f" basis="cited" tier="T3" held="absent" from="p-5:ref/q"/>
+    <ref rel="references" target="USC-T5-S552a" targetIdentifier="/us/usc/t5/s552a" basis="cited" tier="T0" held="held" from="p-5:ref/r"/>
+    <ref rel="references" target="SECNAVINST-5211.5E" targetIdentifier="/us/dod/don/secnavinst/5211_5e" basis="cited" tier="T2" held="absent" from="p-5:ref/s"/>
+    <ref rel="references" target="MCO-5000.12E-CH1" targetIdentifier="/us/dod/don/usmc/mco/5000_12e/ch1" basis="cited" tier="T3" held="drift" storeHolds="MCO-5000.12F,MCO-5000.12F-CH2" from="p-5:ref/t"/>
+    <ref rel="references" target="MCO-1900.16-CH1" targetIdentifier="/us/dod/don/usmc/mco/1900_16/ch1" basis="cited" tier="T3" held="drift" storeHolds="MCO-1900.16-CH3" from="p-5:ref/u"/>
+  </authority>
+  <section anchor="front-matter" identifier="/us/dod/don/usmc/mco/6100_14/front-matter" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/front-matter/ref" path="ref" number="Ref:" label="Ref:" depth="0" role="reference" verification="UNVERIFIED">
+      <text>Enclosure (1)</text>
+    </provision>
+  </section>
+  <section anchor="p-1" identifier="/us/dod/don/usmc/mco/6100_14/p-1" heading="1. Situation. To provide procedural guidance and instructions regarding the" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-1/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Situation.  To provide procedural guidance and instructions regarding the subject Marine Corps Physical Fitness Program in accordance with references</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-1/p1/a" path="p1/a" number="1.(a)" label="(a)" depth="1" verification="UNVERIFIED">
+        <text>through (u).  The 21st Century battlefield will be more dynamic and lethal than in the past.  Multi-domain battle with next generation weapons and advanced technology fielded by near peer enemies will challenge every aspect of our warfighting capability. As we modernize our doctrine, organization, and equipment, we must also see to the mental, moral, and physical preparation of our Marines for the rigors of the modern battlefield. The total fitness and combat readiness of the individual Marine is one of the Corps’ highest priorities.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-2" identifier="/us/dod/don/usmc/mco/6100_14/p-2" heading="2. Mission. Establish a MCPFP that provides a comprehensive approach to" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-3" identifier="/us/dod/don/usmc/mco/6100_14/p-3" heading="3. Execution" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Execution</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Commander’s Intent and Concept of Operations</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/1" path="p3/a/1" number="3.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Commander’s Intent.  My intent is to implement a comprehensive MCPFP focused on the overall health, strength, and fitness of the individual Marine, and the Marine Corps as a whole.</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/1/a" path="p3/a/1/a" number="3.a.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>The MCPFP is comprehensive in that it synchronizes all available assets, ensuring that our efforts across multiple programs and organizations are mutually supporting and relevant to keeping Marines fit and combat ready.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/1/b" path="p3/a/1/b" number="3.a.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>The program is designed to provide commanders, small unit leaders, and individual Marines the tools they need to develop and execute fitness programs which are founded on modern science, functionally based, and take a total approach to fitness, injury prevention, and recovery.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/1/c" path="p3/a/1/c" number="3.a.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>The endstate is a physical fitness program that incentivizes Marines to take a holistic approach to fitness, and dedicate themselves to preparing their bodies and minds for war. The program will result in Marines who are fit, resilient, and more lethal on the modern battlefield. MCO 6100.14 18 DEC 2018 2</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2" path="p3/a/2" number="3.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Concept of Operations</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/a" path="p3/a/2/a" number="3.a.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>The Marine Corps will implement a coordinated program of total fitness aimed at the individual Marine, executed by commanders and small unit leaders at all levels, and supported by Force Fitness Instructors (FFI), existing Marine Corps programs, as well as our appropriated and non- appropriated facilities, assets, and personnel.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/b" path="p3/a/2/b" number="3.a.(2)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Focus of Effort.  The MCPFP is focused on the individual Marine.  Every Marine is responsible for maintaining their overall fitness for immediate deployment and combat regardless of age, grade, or duty assignment.  Informed by their leaders, organizational FFIs, and other recognized experts, Marines will develop individual fitness regimens designed to continually improve their general fitness, occupational fitness, health, and individual readiness.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/c" path="p3/a/2/c" number="3.a.(2)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Main Effort.  Unit level fitness programs are the main effort in the MCPFP.  Commanders will implement unit level physical fitness programs and conduct periodic physical and combat fitness evaluations in accordance with references (a) through (c).  Unit fitness programs will take a comprehensive approach towards fitness, and consist of instructional periods on health, wellness, fitness, nutrition, flexibility, injury prevention, rest, and recovery.  They will also include prescribed periods of aerobic and anaerobic physical activity intended to increase the endurance, strength, mobility, and resiliency of individual Marines and the unit as a whole. Commanders are directed to ensure FFIs exploit all available assets when designing unit fitness programs, including those beyond the organic capability of the unit, (e.g., Semper Fit, base pools, Marine Corps Community Service (MCCS), and nutritionists).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/d" path="p3/a/2/d" number="3.a.(2)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Supporting Effort (SE) #1.  SE #1 is comprised of organizational FFIs.  FFIs will be employed by unit commanders as prescribed in reference (d).  FFIs have been provided specific training in all facets of the MCPFP, as well as the most current science concerning physical conditioning, fitness programing, general nutrition, and injury prevention. In addition to supporting commanders and individual fitness programs, FFIs are part of an interconnected network of experts across the Corps sharing information, observations, and best practices with each other, the Force Fitness Readiness Center, and the Force Fitness Division (FFD) of Training and Education Command (TECOM).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/e" path="p3/a/2/e" number="3.a.(2)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Supporting Effort (SE) #2.  SE #2 consists of existing programs designed to prepare Marines for deployment and combat, specifically the Marine Corps Water Survival Training Program (MCWSTP), the Marine Corps Martial Arts Program (MCMAP), and the SMIP program.  The service level proponent will periodically direct comprehensive reviews of these programs to ensure they meet their program-specific objectives, and they are fully integrated with the total fitness concepts articulated in this Order and reference (b).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/f" path="p3/a/2/f" number="3.a.(2)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Supporting Effort (SE) #3.  SE #3 are those appropriated and non-appropriated assets that are beyond the unit commander’s organic capabilities, but which significantly contribute to unit and individual fitness.  These include base gyms and pools, outdoor training facilities such as tracks and trails, and the Semper Fit program (intramural sports, health educators, dieticians, strength coaches, and High Intensity Tactical Training MCO 6100.14 18 DEC 2018 3 (HITT) locations), as well as dining facilities, dental, medical, counseling, and religious programs.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/g" path="p3/a/2/g" number="3.a.(2)(g)" label="(g)" depth="3" verification="UNVERIFIED">
+            <text>Supporting Effort (SE) #4.  SE #4 is the Fitness Operational Advisory Group (FOAG), which serves as the senior forum at the general officer level for the identification and consideration of health and fitness issues across the force.  The FOAG’s primary role is to approve recommended solutions and follow-on actions in order to increase the overall fitness and readiness of Marines.  The FOAG addresses issues of concern to the Command Element Advocate Board (CEAB) and the Marine Requirements Oversight Council as required per reference (e).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/h" path="p3/a/2/h" number="3.a.(2)(h)" label="(h)" depth="3" verification="UNVERIFIED">
+            <text>Supporting Effort (SE) #5.  SE #5 is the FFD, which serves as the Commandant of the Marine Corps’ (CMC) service level executive agent on all matters relating to the MCPFP.</text>
+          </provision>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Subordinate Element Missions</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/b/1" path="p3/b/1" number="3.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Commanding General (CG), Marine Corps Combat Development Command (MCCDC) (C469).  CG MCCDC is the service level advocate responsible for the development, coordination, and execution of the MCPFP.</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/b/1/a" path="p3/b/1/a" number="3.b.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Establishes the Marine Corps FOAG under auspices of the CEAB per reference (e) for soliciting input from Deputy Commandants (DC), Headquarters Marine Corps (HQMC) activities, operating forces, and supporting establishment commanders in order to ensure that efforts across multiple programs and organizations are mutually supporting, and relevant to keeping Marines fit and combat ready.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/b/1/b" path="p3/b/1/b" number="3.b.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Serves as the senior level exemption and policy waiver authority for MCPFP program issues.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/b/1/c" path="p3/b/1/c" number="3.b.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Commanding General (CG), Training and Education Command (TECOM).  CG TECOM serves as the service-level proponent for the MCPFP, and in this capacity will:</text>
+          </provision>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/c" path="p3/c" number="3.(c)" label="(c)" depth="1" verification="UNVERIFIED">
+        <text>and (f).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/2" path="p3/2" number="3.(2)" label="(2)" depth="1" verification="UNVERIFIED">
+        <text>Deputy Commandant (DC), Programs and Resources (P&amp;R)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/2/a" path="p3/2/a" number="3.(2)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Through the annual PPBE process, provide for the requisite resources in support of the MCPFP.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/2/b" path="p3/2/b" number="3.(2)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Provide a General Officer (GO)/ Senior Executive Service (SES) representative to the FOAG.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3" path="p3/3" number="3.(3)" label="(3)" depth="1" verification="UNVERIFIED">
+        <text>Deputy Commandant (DC), Installations and Logistics (I&amp;L)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/a" path="p3/3/a" number="3.(3)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Develop policy for installation and master planning in order to document and incorporate MCPFP requirements.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/b" path="p3/3/b" number="3.(3)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Ensure that MCPFP Military Construction (MILCON) requirements identified by the FOAG are incorporated into the overall MILCON prioritization.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/c" path="p3/3/c" number="3.(3)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) to provide subject matter expertise on performance nutrition to include evidence-based recommendations for optimizing health and performance.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/d" path="p3/3/d" number="3.(3)(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>Integrate performance nutrition information and resources with MCPFP and Semper Fit activities and programs.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/e" path="p3/3/e" number="3.(3)(e)" label="(e)" depth="2" verification="UNVERIFIED">
+          <text>Support performance nutrition instruction content development for the FFIP of instruction and other nutrition education gaps identified by CG TECOM (C469).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/f" path="p3/3/f" number="3.(3)(f)" label="(f)" depth="2" verification="UNVERIFIED">
+          <text>Provide a GO/SES representative to the FOAG.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4" path="p3/4" number="3.(4)" label="(4)" depth="1" verification="UNVERIFIED">
+        <text>Deputy Commandant (DC), Manpower and Reserve Affairs (M&amp;RA)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4/a" path="p3/4/a" number="3.(4)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Ensure that manpower policy supports assignment of instructors at formal learning centers in order to sustain FFI, MCIWS, and MAI force requirements in accordance with references (d), (h), and (i).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4/b" path="p3/4/b" number="3.(4)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) to provide MCCS support in reference (g) to the MCPFP.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4/c" path="p3/4/c" number="3.(4)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Provide MCCS via Semper Fit to Commanding Officers (CO), Officers In Charge (OIC), FFIs, MCIWSs, and MAIs.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4/d" path="p3/4/d" number="3.(4)(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>Ensure health and wellness information and resources provided by Semper Fit are aligned with the MCPFP and FFD initiatives.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4/e" path="p3/4/e" number="3.(4)(e)" label="(e)" depth="2" verification="UNVERIFIED">
+          <text>Provide a GO/SES representative to the FOAG.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/5" path="p3/5" number="3.(5)" label="(5)" depth="1" verification="UNVERIFIED">
+        <text>Commanders, Marine Forces: Commander United States Marine Forces Command, Pacific, Reserves, and Special Operations Command</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/5/a" path="p3/5/a" number="3.(5)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Commanders of all Marine Corps organizations will ensure their Marines are trained in accordance with this Order. MCO 6100.14 18 DEC 2018 6</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/5/b" path="p3/5/b" number="3.(5)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Ensure subordinate commanders maintain sufficient numbers of FFIs, MCIWSs, and MAIs to support unit commander physical fitness programs.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/5/c" path="p3/5/c" number="3.(5)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Provide CG TECOM (C469) input, observations, and recommendations on all matters pertaining to the MCPFP, general fitness, occupational fitness, health, nutrition, injury prevention, and best practices.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/5/d" path="p3/5/d" number="3.(5)(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>Provide a GO/SES representative to the FOAG.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/6" path="p3/6" number="3.(6)" label="(6)" depth="1" verification="UNVERIFIED">
+        <text>Inspector General of the Marine Corps (IGMC)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/6/a" path="p3/6/a" number="3.(6)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) regarding the integration of provisions of this Order in the IGMC AIRS checklist.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/6/b" path="p3/6/b" number="3.(6)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate support to the MCPFP portion of the Commander’s Inspection Program with CG TECOM (C469).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/6/c" path="p3/6/c" number="3.(6)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Review implementation, execution, and management of the MCPFP during command inspections.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/6/d" path="p3/6/d" number="3.(6)(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>Provide the CMC an annual assessment of the MCPFP execution as part of the annual CMC IGMC report.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/7" path="p3/7" number="3.(7)" label="(7)" depth="1" verification="UNVERIFIED">
+        <text>Director, Headquarters Marine Corps (HQMC) Safety Division (SD)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/7/a" path="p3/7/a" number="3.(7)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) as necessary to review and implement changes to the MCPFP based on assessments of injury trend analysis.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/7/b" path="p3/7/b" number="3.(7)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Provide CG TECOM (C469) an annual assessment of physical fitness related injuries and trends reported in the Web-Enabled Safety System (WESS) per reference (k) no later than 28 February for the period 1 January through 31 December of the previous year.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/7/c" path="p3/7/c" number="3.(7)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Maintain a repository for MCPFP-related injuries (Class A-D) via the WESS.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/8" path="p3/8" number="3.(8)" label="(8)" depth="1" verification="UNVERIFIED">
+        <text>Executive Director, Headquarters Marine Corps (HQMC) Force Preservation Directorate G-10</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/8/a" path="p3/8/a" number="3.(8)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) concerning the integration of force preservation policies and programs and the MCPFP.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/8/b" path="p3/8/b" number="3.(8)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Collaborate information and data analytics between HQMC G-10 and CG TECOM (C469) to ensure the programs are fully coordinated and mutually supporting.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/8/c" path="p3/8/c" number="3.(8)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Provide a representative to the FOAG.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/9" path="p3/9" number="3.(9)" label="(9)" depth="1" verification="UNVERIFIED">
+        <text>Director, Headquarters Marine Corps (HQMC) Health Services (HS)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/9/a" path="p3/9/a" number="3.(9)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) on health and fitness as they relate to the MCPFP.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/9/b" path="p3/9/b" number="3.(9)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Provide a flag officer/SES representative to the FOAG. MCO 6100.14 18 DEC 2018 7</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/10" path="p3/10" number="3.(10)" label="(10)" depth="1" verification="UNVERIFIED">
+        <text>Installation Commanders</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/10/a" path="p3/10/a" number="3.(10)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Provide equipment and facilities as outlined in the references to support the MCPFP.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/10/b" path="p3/10/b" number="3.(10)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Develop installation master plans that incorporate MCPFP requirements.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/10/c" path="p3/10/c" number="3.(10)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with regional installation commands, Commander Marine Corps Installations Command, and DC I&amp;L on all programming associated with the MCPFP, to include MILCON projects and MCPFP related funding.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/11" path="p3/11" number="3.(11)" label="(11)" depth="1" verification="UNVERIFIED">
+        <text>Commanding Officers (COs)/Officers-in-Charge (OICs)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/11/a" path="p3/11/a" number="3.(11)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>COs/OICs are responsible for developing, implementing, and executing holistic unit physical fitness programs, utilizing assigned FFIs, MCIWSs, and MAIs in accordance with this Order and references (a)-(d), (h), (i), (p), (q), (t), and (u).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/11/b" path="p3/11/b" number="3.(11)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Commanders will allow time for Physical Training (PT) as part of the daily routine.  PT requirements can be accomplished through tactical movements or other occupational related activities, swimming, Marine Corps Martial Arts, unit PT, intramural sports, or individual training sessions. PT plans should be challenging, enhance injury prevention, and include endurance, strength, and mobility training.  Strength training sessions done at least twice per week should consist of compound, functional movements in combination with or separate from cardiovascular training.  All PT sessions should include a dynamic warm-up and cool down.  Guidance for a unit PT plan can be found in the PT Playbook Template located under official guidance on the FFD website at: http://www.fitness.marines.mil.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/11/c" path="p3/11/c" number="3.(11)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Ensure command PT programs are conducted in a manner that is progressive in nature and provide adaptations for additional physical demands and individualized performance.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/11/d" path="p3/11/d" number="3.(11)(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>Ensure that command PT programs are not developed solely for the preparation of the physical fitness test or combat fitness test.</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Execute overall staff cognizance for all activities pertaining to the MCPFP.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Serve as the service level point of contact for the coordination of physical fitness and health assets across the Marine Corps in order to provide a progressive, programmed, and holistic approach to improve the physical readiness and resilience of Marines.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Implement and evaluate the Marine Corps general and occupational fitness programs by developing tests, standards, and publishing policy for the Marine Corps Physical Fitness Test, the Combat Fitness Test, Military Occupational Specialty Specific Physical Standards, the Marine Corps Body Composition Program, and the Military Appearance Program per references</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Commander’s Intent and Concept of Operations</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/1" path="p3/a/1" number="3.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Commander’s Intent.  My intent is to implement a comprehensive MCPFP focused on the overall health, strength, and fitness of the individual Marine, and the Marine Corps as a whole.</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/1/a" path="p3/a/1/a" number="3.a.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>The MCPFP is comprehensive in that it synchronizes all available assets, ensuring that our efforts across multiple programs and organizations are mutually supporting and relevant to keeping Marines fit and combat ready.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/1/b" path="p3/a/1/b" number="3.a.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>The program is designed to provide commanders, small unit leaders, and individual Marines the tools they need to develop and execute fitness programs which are founded on modern science, functionally based, and take a total approach to fitness, injury prevention, and recovery.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/1/c" path="p3/a/1/c" number="3.a.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>The endstate is a physical fitness program that incentivizes Marines to take a holistic approach to fitness, and dedicate themselves to preparing their bodies and minds for war. The program will result in Marines who are fit, resilient, and more lethal on the modern battlefield. MCO 6100.14 18 DEC 2018 2</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2" path="p3/a/2" number="3.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Concept of Operations</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/a" path="p3/a/2/a" number="3.a.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>The Marine Corps will implement a coordinated program of total fitness aimed at the individual Marine, executed by commanders and small unit leaders at all levels, and supported by Force Fitness Instructors (FFI), existing Marine Corps programs, as well as our appropriated and non- appropriated facilities, assets, and personnel.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/b" path="p3/a/2/b" number="3.a.(2)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Focus of Effort.  The MCPFP is focused on the individual Marine.  Every Marine is responsible for maintaining their overall fitness for immediate deployment and combat regardless of age, grade, or duty assignment.  Informed by their leaders, organizational FFIs, and other recognized experts, Marines will develop individual fitness regimens designed to continually improve their general fitness, occupational fitness, health, and individual readiness.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/c" path="p3/a/2/c" number="3.a.(2)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Main Effort.  Unit level fitness programs are the main effort in the MCPFP.  Commanders will implement unit level physical fitness programs and conduct periodic physical and combat fitness evaluations in accordance with references (a) through (c).  Unit fitness programs will take a comprehensive approach towards fitness, and consist of instructional periods on health, wellness, fitness, nutrition, flexibility, injury prevention, rest, and recovery.  They will also include prescribed periods of aerobic and anaerobic physical activity intended to increase the endurance, strength, mobility, and resiliency of individual Marines and the unit as a whole. Commanders are directed to ensure FFIs exploit all available assets when designing unit fitness programs, including those beyond the organic capability of the unit, (e.g., Semper Fit, base pools, Marine Corps Community Service (MCCS), and nutritionists).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/d" path="p3/a/2/d" number="3.a.(2)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Supporting Effort (SE) #1.  SE #1 is comprised of organizational FFIs.  FFIs will be employed by unit commanders as prescribed in reference (d).  FFIs have been provided specific training in all facets of the MCPFP, as well as the most current science concerning physical conditioning, fitness programing, general nutrition, and injury prevention. In addition to supporting commanders and individual fitness programs, FFIs are part of an interconnected network of experts across the Corps sharing information, observations, and best practices with each other, the Force Fitness Readiness Center, and the Force Fitness Division (FFD) of Training and Education Command (TECOM).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/e" path="p3/a/2/e" number="3.a.(2)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Supporting Effort (SE) #2.  SE #2 consists of existing programs designed to prepare Marines for deployment and combat, specifically the Marine Corps Water Survival Training Program (MCWSTP), the Marine Corps Martial Arts Program (MCMAP), and the SMIP program.  The service level proponent will periodically direct comprehensive reviews of these programs to ensure they meet their program-specific objectives, and they are fully integrated with the total fitness concepts articulated in this Order and reference (b).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/f" path="p3/a/2/f" number="3.a.(2)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Supporting Effort (SE) #3.  SE #3 are those appropriated and non-appropriated assets that are beyond the unit commander’s organic capabilities, but which significantly contribute to unit and individual fitness.  These include base gyms and pools, outdoor training facilities such as tracks and trails, and the Semper Fit program (intramural sports, health educators, dieticians, strength coaches, and High Intensity Tactical Training MCO 6100.14 18 DEC 2018 3 (HITT) locations), as well as dining facilities, dental, medical, counseling, and religious programs.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/g" path="p3/a/2/g" number="3.a.(2)(g)" label="(g)" depth="3" verification="UNVERIFIED">
+            <text>Supporting Effort (SE) #4.  SE #4 is the Fitness Operational Advisory Group (FOAG), which serves as the senior forum at the general officer level for the identification and consideration of health and fitness issues across the force.  The FOAG’s primary role is to approve recommended solutions and follow-on actions in order to increase the overall fitness and readiness of Marines.  The FOAG addresses issues of concern to the Command Element Advocate Board (CEAB) and the Marine Requirements Oversight Council as required per reference (e).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/h" path="p3/a/2/h" number="3.a.(2)(h)" label="(h)" depth="3" verification="UNVERIFIED">
+            <text>Supporting Effort (SE) #5.  SE #5 is the FFD, which serves as the Commandant of the Marine Corps’ (CMC) service level executive agent on all matters relating to the MCPFP.</text>
+          </provision>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Subordinate Element Missions</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/b/1" path="p3/b/1" number="3.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Commanding General (CG), Marine Corps Combat Development Command (MCCDC) (C469).  CG MCCDC is the service level advocate responsible for the development, coordination, and execution of the MCPFP.</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/b/1/a" path="p3/b/1/a" number="3.b.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Establishes the Marine Corps FOAG under auspices of the CEAB per reference (e) for soliciting input from Deputy Commandants (DC), Headquarters Marine Corps (HQMC) activities, operating forces, and supporting establishment commanders in order to ensure that efforts across multiple programs and organizations are mutually supporting, and relevant to keeping Marines fit and combat ready.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/b/1/b" path="p3/b/1/b" number="3.b.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Serves as the senior level exemption and policy waiver authority for MCPFP program issues.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/b/1/c" path="p3/b/1/c" number="3.b.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Commanding General (CG), Training and Education Command (TECOM).  CG TECOM serves as the service-level proponent for the MCPFP, and in this capacity will:</text>
+          </provision>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/c" path="p3/c" number="3.(c)" label="(c)" depth="1" verification="UNVERIFIED">
+        <text>and (f).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/2" path="p3/2" number="3.(2)" label="(2)" depth="1" verification="UNVERIFIED">
+        <text>Deputy Commandant (DC), Programs and Resources (P&amp;R)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/2/a" path="p3/2/a" number="3.(2)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Through the annual PPBE process, provide for the requisite resources in support of the MCPFP.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/2/b" path="p3/2/b" number="3.(2)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Provide a General Officer (GO)/ Senior Executive Service (SES) representative to the FOAG.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3" path="p3/3" number="3.(3)" label="(3)" depth="1" verification="UNVERIFIED">
+        <text>Deputy Commandant (DC), Installations and Logistics (I&amp;L)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/a" path="p3/3/a" number="3.(3)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Develop policy for installation and master planning in order to document and incorporate MCPFP requirements.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/b" path="p3/3/b" number="3.(3)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Ensure that MCPFP Military Construction (MILCON) requirements identified by the FOAG are incorporated into the overall MILCON prioritization.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/c" path="p3/3/c" number="3.(3)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) to provide subject matter expertise on performance nutrition to include evidence-based recommendations for optimizing health and performance.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/d" path="p3/3/d" number="3.(3)(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>Integrate performance nutrition information and resources with MCPFP and Semper Fit activities and programs.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/e" path="p3/3/e" number="3.(3)(e)" label="(e)" depth="2" verification="UNVERIFIED">
+          <text>Support performance nutrition instruction content development for the FFIP of instruction and other nutrition education gaps identified by CG TECOM (C469).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/f" path="p3/3/f" number="3.(3)(f)" label="(f)" depth="2" verification="UNVERIFIED">
+          <text>Provide a GO/SES representative to the FOAG.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4" path="p3/4" number="3.(4)" label="(4)" depth="1" verification="UNVERIFIED">
+        <text>Deputy Commandant (DC), Manpower and Reserve Affairs (M&amp;RA)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4/a" path="p3/4/a" number="3.(4)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Ensure that manpower policy supports assignment of instructors at formal learning centers in order to sustain FFI, MCIWS, and MAI force requirements in accordance with references (d), (h), and (i).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4/b" path="p3/4/b" number="3.(4)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) to provide MCCS support in reference (g) to the MCPFP.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4/c" path="p3/4/c" number="3.(4)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Provide MCCS via Semper Fit to Commanding Officers (CO), Officers In Charge (OIC), FFIs, MCIWSs, and MAIs.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4/d" path="p3/4/d" number="3.(4)(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>Ensure health and wellness information and resources provided by Semper Fit are aligned with the MCPFP and FFD initiatives.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4/e" path="p3/4/e" number="3.(4)(e)" label="(e)" depth="2" verification="UNVERIFIED">
+          <text>Provide a GO/SES representative to the FOAG.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/5" path="p3/5" number="3.(5)" label="(5)" depth="1" verification="UNVERIFIED">
+        <text>Commanders, Marine Forces: Commander United States Marine Forces Command, Pacific, Reserves, and Special Operations Command</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/5/a" path="p3/5/a" number="3.(5)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Commanders of all Marine Corps organizations will ensure their Marines are trained in accordance with this Order. MCO 6100.14 18 DEC 2018 6</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/5/b" path="p3/5/b" number="3.(5)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Ensure subordinate commanders maintain sufficient numbers of FFIs, MCIWSs, and MAIs to support unit commander physical fitness programs.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/5/c" path="p3/5/c" number="3.(5)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Provide CG TECOM (C469) input, observations, and recommendations on all matters pertaining to the MCPFP, general fitness, occupational fitness, health, nutrition, injury prevention, and best practices.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/5/d" path="p3/5/d" number="3.(5)(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>Provide a GO/SES representative to the FOAG.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/6" path="p3/6" number="3.(6)" label="(6)" depth="1" verification="UNVERIFIED">
+        <text>Inspector General of the Marine Corps (IGMC)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/6/a" path="p3/6/a" number="3.(6)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) regarding the integration of provisions of this Order in the IGMC AIRS checklist.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/6/b" path="p3/6/b" number="3.(6)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate support to the MCPFP portion of the Commander’s Inspection Program with CG TECOM (C469).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/6/c" path="p3/6/c" number="3.(6)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Review implementation, execution, and management of the MCPFP during command inspections.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/6/d" path="p3/6/d" number="3.(6)(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>Provide the CMC an annual assessment of the MCPFP execution as part of the annual CMC IGMC report.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/7" path="p3/7" number="3.(7)" label="(7)" depth="1" verification="UNVERIFIED">
+        <text>Director, Headquarters Marine Corps (HQMC) Safety Division (SD)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/7/a" path="p3/7/a" number="3.(7)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) as necessary to review and implement changes to the MCPFP based on assessments of injury trend analysis.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/7/b" path="p3/7/b" number="3.(7)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Provide CG TECOM (C469) an annual assessment of physical fitness related injuries and trends reported in the Web-Enabled Safety System (WESS) per reference (k) no later than 28 February for the period 1 January through 31 December of the previous year.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/7/c" path="p3/7/c" number="3.(7)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Maintain a repository for MCPFP-related injuries (Class A-D) via the WESS.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/8" path="p3/8" number="3.(8)" label="(8)" depth="1" verification="UNVERIFIED">
+        <text>Executive Director, Headquarters Marine Corps (HQMC) Force Preservation Directorate G-10</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/8/a" path="p3/8/a" number="3.(8)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) concerning the integration of force preservation policies and programs and the MCPFP.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/8/b" path="p3/8/b" number="3.(8)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Collaborate information and data analytics between HQMC G-10 and CG TECOM (C469) to ensure the programs are fully coordinated and mutually supporting.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/8/c" path="p3/8/c" number="3.(8)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Provide a representative to the FOAG.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/9" path="p3/9" number="3.(9)" label="(9)" depth="1" verification="UNVERIFIED">
+        <text>Director, Headquarters Marine Corps (HQMC) Health Services (HS)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/9/a" path="p3/9/a" number="3.(9)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) on health and fitness as they relate to the MCPFP.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/9/b" path="p3/9/b" number="3.(9)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Provide a flag officer/SES representative to the FOAG. MCO 6100.14 18 DEC 2018 7</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/10" path="p3/10" number="3.(10)" label="(10)" depth="1" verification="UNVERIFIED">
+        <text>Installation Commanders</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/10/a" path="p3/10/a" number="3.(10)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Provide equipment and facilities as outlined in the references to support the MCPFP.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/10/b" path="p3/10/b" number="3.(10)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Develop installation master plans that incorporate MCPFP requirements.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/10/c" path="p3/10/c" number="3.(10)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with regional installation commands, Commander Marine Corps Installations Command, and DC I&amp;L on all programming associated with the MCPFP, to include MILCON projects and MCPFP related funding.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/11" path="p3/11" number="3.(11)" label="(11)" depth="1" verification="UNVERIFIED">
+        <text>Commanding Officers (COs)/Officers-in-Charge (OICs)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/11/a" path="p3/11/a" number="3.(11)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>COs/OICs are responsible for developing, implementing, and executing holistic unit physical fitness programs, utilizing assigned FFIs, MCIWSs, and MAIs in accordance with this Order and references (a)-(d), (h), (i), (p), (q), (t), and (u).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/11/b" path="p3/11/b" number="3.(11)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Commanders will allow time for Physical Training (PT) as part of the daily routine.  PT requirements can be accomplished through tactical movements or other occupational related activities, swimming, Marine Corps Martial Arts, unit PT, intramural sports, or individual training sessions. PT plans should be challenging, enhance injury prevention, and include endurance, strength, and mobility training.  Strength training sessions done at least twice per week should consist of compound, functional movements in combination with or separate from cardiovascular training.  All PT sessions should include a dynamic warm-up and cool down.  Guidance for a unit PT plan can be found in the PT Playbook Template located under official guidance on the FFD website at: http://www.fitness.marines.mil.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/11/c" path="p3/11/c" number="3.(11)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Ensure command PT programs are conducted in a manner that is progressive in nature and provide adaptations for additional physical demands and individualized performance.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/11/d" path="p3/11/d" number="3.(11)(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>Ensure that command PT programs are not developed solely for the preparation of the physical fitness test or combat fitness test.</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Assume overall responsibility of the FFI Program (FFIP), MCWSTP, MCMAP, and SMIP program.  Develop and approve all policy and standards, and provide oversight and guidance in order to ensure coordination amongst the programs, and the quality of instruction. MCO 6100.14 18 DEC 2018 4</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Ensure number of FFIs, Marine Corps Instructors of Water Survival (MCIWS), and Martial Arts Instructors (MAI) across the force are sufficient to support the MCPFP, in accordance with references (d),(h), and (i).</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Ensure that appropriate MCPFP instruction and objectives are contained in all entry level training, formal learning center, and professional military education programs of instruction.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Provide policy, procedures, guidance, and assistance to commanders to enable them to develop and implement effective unit fitness programs in accordance with this Order and the references.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>Through the Planning, Programming, Budgeting and Execution (PPBE) program objective memorandum (POM) annual submission for training, plan for and request the requisite resources in support of the MCPFP.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p9" path="p9" number="9." label="9." depth="0" verification="UNVERIFIED">
+      <text>In conjunction with CG MCCDC, coordinate with DC Manpower and Reserve Affairs (DC M&amp;RA) on personnel policy matters affected by the MCPFP, as well as MCCS program support such as the Semper Fit program, HITT training, and base facilities such as base gyms and pools.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p10" path="p10" number="10." label="10." depth="0" verification="UNVERIFIED">
+      <text>In conjunction with CG MCCDC, coordinate with DC Installations and Logistics (I&amp;L) for all logistical support and Marine Corps Base activity coordination required to support the MCPFP.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p11" path="p11" number="11." label="11." depth="0" verification="UNVERIFIED">
+      <text>In conjunction with CG MCCDC, coordinate with the Inspector General of the Marine Corps (IGMC) in support of the commanders’ inspection program and the IGMC Automated Inspection Reporting System (AIRS) checklist.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p12" path="p12" number="12." label="12." depth="0" verification="UNVERIFIED">
+      <text>In conjunction with CG MCCDC, coordinate with HQMC Health Services (HS) on all health related MCPFP issues.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p13" path="p13" number="13." label="13." depth="0" verification="UNVERIFIED">
+      <text>Represent Marine Corps interests in all physical fitness and injury prevention working groups and forums.  This includes, but is not limited to, Semper Fit, HS, the Joint Staff, Office of the Secretary of Defense, other Services, and various boards, bureaus, cells, and working groups.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p14" path="p14" number="14." label="14." depth="0" verification="UNVERIFIED">
+      <text>Identify emerging research requirements, coordinate, and conduct research in support of the MCPFP.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p15" path="p15" number="15." label="15." depth="0" verification="UNVERIFIED">
+      <text>Serve as the chair of the FOAG.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p16" path="p16" number="16." label="16." depth="0" verification="UNVERIFIED">
+      <text>Establish the FFD (C469) as the executive agent, responsible for all proponent level MCPFP tasks per this Order.</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p16/d" path="p16/d" number="16.(d)" label="(d)" depth="1" verification="UNVERIFIED">
+        <text>Commanding General (CG), Training Command</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Create FFIs, MCIWSs, and MAIs in accordance with policy and the training input plan established by CG TECOM (C469).</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Develop and update programs of instruction for the FFIP, MCWSTP, and MCMAP. MCO 6100.14 18 DEC 2018 5</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Submit all recommended changes to the FFIP, MCWSTP, and MCMAP programs or policy to CG TECOM (C469) for approval.</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Commander’s Intent and Concept of Operations</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/1" path="p3/a/1" number="3.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Commander’s Intent.  My intent is to implement a comprehensive MCPFP focused on the overall health, strength, and fitness of the individual Marine, and the Marine Corps as a whole.</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/1/a" path="p3/a/1/a" number="3.a.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>The MCPFP is comprehensive in that it synchronizes all available assets, ensuring that our efforts across multiple programs and organizations are mutually supporting and relevant to keeping Marines fit and combat ready.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/1/b" path="p3/a/1/b" number="3.a.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>The program is designed to provide commanders, small unit leaders, and individual Marines the tools they need to develop and execute fitness programs which are founded on modern science, functionally based, and take a total approach to fitness, injury prevention, and recovery.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/1/c" path="p3/a/1/c" number="3.a.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>The endstate is a physical fitness program that incentivizes Marines to take a holistic approach to fitness, and dedicate themselves to preparing their bodies and minds for war. The program will result in Marines who are fit, resilient, and more lethal on the modern battlefield. MCO 6100.14 18 DEC 2018 2</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2" path="p3/a/2" number="3.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Concept of Operations</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/a" path="p3/a/2/a" number="3.a.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>The Marine Corps will implement a coordinated program of total fitness aimed at the individual Marine, executed by commanders and small unit leaders at all levels, and supported by Force Fitness Instructors (FFI), existing Marine Corps programs, as well as our appropriated and non- appropriated facilities, assets, and personnel.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/b" path="p3/a/2/b" number="3.a.(2)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Focus of Effort.  The MCPFP is focused on the individual Marine.  Every Marine is responsible for maintaining their overall fitness for immediate deployment and combat regardless of age, grade, or duty assignment.  Informed by their leaders, organizational FFIs, and other recognized experts, Marines will develop individual fitness regimens designed to continually improve their general fitness, occupational fitness, health, and individual readiness.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/c" path="p3/a/2/c" number="3.a.(2)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Main Effort.  Unit level fitness programs are the main effort in the MCPFP.  Commanders will implement unit level physical fitness programs and conduct periodic physical and combat fitness evaluations in accordance with references (a) through (c).  Unit fitness programs will take a comprehensive approach towards fitness, and consist of instructional periods on health, wellness, fitness, nutrition, flexibility, injury prevention, rest, and recovery.  They will also include prescribed periods of aerobic and anaerobic physical activity intended to increase the endurance, strength, mobility, and resiliency of individual Marines and the unit as a whole. Commanders are directed to ensure FFIs exploit all available assets when designing unit fitness programs, including those beyond the organic capability of the unit, (e.g., Semper Fit, base pools, Marine Corps Community Service (MCCS), and nutritionists).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/d" path="p3/a/2/d" number="3.a.(2)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Supporting Effort (SE) #1.  SE #1 is comprised of organizational FFIs.  FFIs will be employed by unit commanders as prescribed in reference (d).  FFIs have been provided specific training in all facets of the MCPFP, as well as the most current science concerning physical conditioning, fitness programing, general nutrition, and injury prevention. In addition to supporting commanders and individual fitness programs, FFIs are part of an interconnected network of experts across the Corps sharing information, observations, and best practices with each other, the Force Fitness Readiness Center, and the Force Fitness Division (FFD) of Training and Education Command (TECOM).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/e" path="p3/a/2/e" number="3.a.(2)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Supporting Effort (SE) #2.  SE #2 consists of existing programs designed to prepare Marines for deployment and combat, specifically the Marine Corps Water Survival Training Program (MCWSTP), the Marine Corps Martial Arts Program (MCMAP), and the SMIP program.  The service level proponent will periodically direct comprehensive reviews of these programs to ensure they meet their program-specific objectives, and they are fully integrated with the total fitness concepts articulated in this Order and reference (b).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/f" path="p3/a/2/f" number="3.a.(2)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Supporting Effort (SE) #3.  SE #3 are those appropriated and non-appropriated assets that are beyond the unit commander’s organic capabilities, but which significantly contribute to unit and individual fitness.  These include base gyms and pools, outdoor training facilities such as tracks and trails, and the Semper Fit program (intramural sports, health educators, dieticians, strength coaches, and High Intensity Tactical Training MCO 6100.14 18 DEC 2018 3 (HITT) locations), as well as dining facilities, dental, medical, counseling, and religious programs.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/g" path="p3/a/2/g" number="3.a.(2)(g)" label="(g)" depth="3" verification="UNVERIFIED">
+            <text>Supporting Effort (SE) #4.  SE #4 is the Fitness Operational Advisory Group (FOAG), which serves as the senior forum at the general officer level for the identification and consideration of health and fitness issues across the force.  The FOAG’s primary role is to approve recommended solutions and follow-on actions in order to increase the overall fitness and readiness of Marines.  The FOAG addresses issues of concern to the Command Element Advocate Board (CEAB) and the Marine Requirements Oversight Council as required per reference (e).</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/a/2/h" path="p3/a/2/h" number="3.a.(2)(h)" label="(h)" depth="3" verification="UNVERIFIED">
+            <text>Supporting Effort (SE) #5.  SE #5 is the FFD, which serves as the Commandant of the Marine Corps’ (CMC) service level executive agent on all matters relating to the MCPFP.</text>
+          </provision>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Subordinate Element Missions</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/b/1" path="p3/b/1" number="3.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Commanding General (CG), Marine Corps Combat Development Command (MCCDC) (C469).  CG MCCDC is the service level advocate responsible for the development, coordination, and execution of the MCPFP.</text>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/b/1/a" path="p3/b/1/a" number="3.b.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Establishes the Marine Corps FOAG under auspices of the CEAB per reference (e) for soliciting input from Deputy Commandants (DC), Headquarters Marine Corps (HQMC) activities, operating forces, and supporting establishment commanders in order to ensure that efforts across multiple programs and organizations are mutually supporting, and relevant to keeping Marines fit and combat ready.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/b/1/b" path="p3/b/1/b" number="3.b.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Serves as the senior level exemption and policy waiver authority for MCPFP program issues.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/b/1/c" path="p3/b/1/c" number="3.b.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Commanding General (CG), Training and Education Command (TECOM).  CG TECOM serves as the service-level proponent for the MCPFP, and in this capacity will:</text>
+          </provision>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/c" path="p3/c" number="3.(c)" label="(c)" depth="1" verification="UNVERIFIED">
+        <text>and (f).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/2" path="p3/2" number="3.(2)" label="(2)" depth="1" verification="UNVERIFIED">
+        <text>Deputy Commandant (DC), Programs and Resources (P&amp;R)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/2/a" path="p3/2/a" number="3.(2)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Through the annual PPBE process, provide for the requisite resources in support of the MCPFP.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/2/b" path="p3/2/b" number="3.(2)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Provide a General Officer (GO)/ Senior Executive Service (SES) representative to the FOAG.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3" path="p3/3" number="3.(3)" label="(3)" depth="1" verification="UNVERIFIED">
+        <text>Deputy Commandant (DC), Installations and Logistics (I&amp;L)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/a" path="p3/3/a" number="3.(3)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Develop policy for installation and master planning in order to document and incorporate MCPFP requirements.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/b" path="p3/3/b" number="3.(3)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Ensure that MCPFP Military Construction (MILCON) requirements identified by the FOAG are incorporated into the overall MILCON prioritization.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/c" path="p3/3/c" number="3.(3)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) to provide subject matter expertise on performance nutrition to include evidence-based recommendations for optimizing health and performance.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/d" path="p3/3/d" number="3.(3)(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>Integrate performance nutrition information and resources with MCPFP and Semper Fit activities and programs.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/e" path="p3/3/e" number="3.(3)(e)" label="(e)" depth="2" verification="UNVERIFIED">
+          <text>Support performance nutrition instruction content development for the FFIP of instruction and other nutrition education gaps identified by CG TECOM (C469).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/3/f" path="p3/3/f" number="3.(3)(f)" label="(f)" depth="2" verification="UNVERIFIED">
+          <text>Provide a GO/SES representative to the FOAG.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4" path="p3/4" number="3.(4)" label="(4)" depth="1" verification="UNVERIFIED">
+        <text>Deputy Commandant (DC), Manpower and Reserve Affairs (M&amp;RA)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4/a" path="p3/4/a" number="3.(4)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Ensure that manpower policy supports assignment of instructors at formal learning centers in order to sustain FFI, MCIWS, and MAI force requirements in accordance with references (d), (h), and (i).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4/b" path="p3/4/b" number="3.(4)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) to provide MCCS support in reference (g) to the MCPFP.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4/c" path="p3/4/c" number="3.(4)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Provide MCCS via Semper Fit to Commanding Officers (CO), Officers In Charge (OIC), FFIs, MCIWSs, and MAIs.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4/d" path="p3/4/d" number="3.(4)(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>Ensure health and wellness information and resources provided by Semper Fit are aligned with the MCPFP and FFD initiatives.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/4/e" path="p3/4/e" number="3.(4)(e)" label="(e)" depth="2" verification="UNVERIFIED">
+          <text>Provide a GO/SES representative to the FOAG.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/5" path="p3/5" number="3.(5)" label="(5)" depth="1" verification="UNVERIFIED">
+        <text>Commanders, Marine Forces: Commander United States Marine Forces Command, Pacific, Reserves, and Special Operations Command</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/5/a" path="p3/5/a" number="3.(5)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Commanders of all Marine Corps organizations will ensure their Marines are trained in accordance with this Order. MCO 6100.14 18 DEC 2018 6</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/5/b" path="p3/5/b" number="3.(5)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Ensure subordinate commanders maintain sufficient numbers of FFIs, MCIWSs, and MAIs to support unit commander physical fitness programs.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/5/c" path="p3/5/c" number="3.(5)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Provide CG TECOM (C469) input, observations, and recommendations on all matters pertaining to the MCPFP, general fitness, occupational fitness, health, nutrition, injury prevention, and best practices.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/5/d" path="p3/5/d" number="3.(5)(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>Provide a GO/SES representative to the FOAG.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/6" path="p3/6" number="3.(6)" label="(6)" depth="1" verification="UNVERIFIED">
+        <text>Inspector General of the Marine Corps (IGMC)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/6/a" path="p3/6/a" number="3.(6)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) regarding the integration of provisions of this Order in the IGMC AIRS checklist.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/6/b" path="p3/6/b" number="3.(6)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate support to the MCPFP portion of the Commander’s Inspection Program with CG TECOM (C469).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/6/c" path="p3/6/c" number="3.(6)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Review implementation, execution, and management of the MCPFP during command inspections.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/6/d" path="p3/6/d" number="3.(6)(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>Provide the CMC an annual assessment of the MCPFP execution as part of the annual CMC IGMC report.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/7" path="p3/7" number="3.(7)" label="(7)" depth="1" verification="UNVERIFIED">
+        <text>Director, Headquarters Marine Corps (HQMC) Safety Division (SD)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/7/a" path="p3/7/a" number="3.(7)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) as necessary to review and implement changes to the MCPFP based on assessments of injury trend analysis.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/7/b" path="p3/7/b" number="3.(7)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Provide CG TECOM (C469) an annual assessment of physical fitness related injuries and trends reported in the Web-Enabled Safety System (WESS) per reference (k) no later than 28 February for the period 1 January through 31 December of the previous year.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/7/c" path="p3/7/c" number="3.(7)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Maintain a repository for MCPFP-related injuries (Class A-D) via the WESS.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/8" path="p3/8" number="3.(8)" label="(8)" depth="1" verification="UNVERIFIED">
+        <text>Executive Director, Headquarters Marine Corps (HQMC) Force Preservation Directorate G-10</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/8/a" path="p3/8/a" number="3.(8)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) concerning the integration of force preservation policies and programs and the MCPFP.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/8/b" path="p3/8/b" number="3.(8)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Collaborate information and data analytics between HQMC G-10 and CG TECOM (C469) to ensure the programs are fully coordinated and mutually supporting.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/8/c" path="p3/8/c" number="3.(8)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Provide a representative to the FOAG.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/9" path="p3/9" number="3.(9)" label="(9)" depth="1" verification="UNVERIFIED">
+        <text>Director, Headquarters Marine Corps (HQMC) Health Services (HS)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/9/a" path="p3/9/a" number="3.(9)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with CG TECOM (C469) on health and fitness as they relate to the MCPFP.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/9/b" path="p3/9/b" number="3.(9)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Provide a flag officer/SES representative to the FOAG. MCO 6100.14 18 DEC 2018 7</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/10" path="p3/10" number="3.(10)" label="(10)" depth="1" verification="UNVERIFIED">
+        <text>Installation Commanders</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/10/a" path="p3/10/a" number="3.(10)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>Provide equipment and facilities as outlined in the references to support the MCPFP.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/10/b" path="p3/10/b" number="3.(10)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Develop installation master plans that incorporate MCPFP requirements.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/10/c" path="p3/10/c" number="3.(10)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Coordinate with regional installation commands, Commander Marine Corps Installations Command, and DC I&amp;L on all programming associated with the MCPFP, to include MILCON projects and MCPFP related funding.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/11" path="p3/11" number="3.(11)" label="(11)" depth="1" verification="UNVERIFIED">
+        <text>Commanding Officers (COs)/Officers-in-Charge (OICs)</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/11/a" path="p3/11/a" number="3.(11)(a)" label="(a)" depth="2" verification="UNVERIFIED">
+          <text>COs/OICs are responsible for developing, implementing, and executing holistic unit physical fitness programs, utilizing assigned FFIs, MCIWSs, and MAIs in accordance with this Order and references (a)-(d), (h), (i), (p), (q), (t), and (u).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/11/b" path="p3/11/b" number="3.(11)(b)" label="(b)" depth="2" verification="UNVERIFIED">
+          <text>Commanders will allow time for Physical Training (PT) as part of the daily routine.  PT requirements can be accomplished through tactical movements or other occupational related activities, swimming, Marine Corps Martial Arts, unit PT, intramural sports, or individual training sessions. PT plans should be challenging, enhance injury prevention, and include endurance, strength, and mobility training.  Strength training sessions done at least twice per week should consist of compound, functional movements in combination with or separate from cardiovascular training.  All PT sessions should include a dynamic warm-up and cool down.  Guidance for a unit PT plan can be found in the PT Playbook Template located under official guidance on the FFD website at: http://www.fitness.marines.mil.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/11/c" path="p3/11/c" number="3.(11)(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>Ensure command PT programs are conducted in a manner that is progressive in nature and provide adaptations for additional physical demands and individualized performance.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-3/p3/11/d" path="p3/11/d" number="3.(11)(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>Ensure that command PT programs are not developed solely for the preparation of the physical fitness test or combat fitness test.</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-4" identifier="/us/dod/don/usmc/mco/6100_14/p-4" heading="4. Administration and Logistics" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-4/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Administration and Logistics</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-4/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Submit all recommendations concerning this Order to CG TECOM (C469).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-4/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Unit commanders, with FFI assistance, will report all unit physical training-related injuries that meet mishap reporting criteria per references</text>
+        <provision identifier="/us/dod/don/usmc/mco/6100_14/p-4/p4/b/k" path="p4/b/k" number="4.b.(k)" label="(k)" depth="2" verification="UNVERIFIED">
+          <text>and (o) via the WESS.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-4/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Records Management.  Records created as a result of this Order shall be managed according to National Archives and Records Administration approved dispositions per references (o) and (p) to ensure proper maintenance, use, accessibility and preservation, regardless of format or medium.  Refer to reference (q) for Marine Corps records management policy and procedures.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-4/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Privacy Act.  Any misuse or unauthorized disclosure of Personally Identifiable Information (PII) may result in both civil and criminal penalties.  The Department of the Navy (DON) recognizes that the privacy of an individual is a personal and fundamental right that shall be respected and protected.  The DON's need to collect, use, maintain, or disseminate PII MCO 6100.14 18 DEC 2018 8 about individuals for purposes of discharging its statutory responsibilities will be balanced against the individuals' right to be protected against unwarranted invasion of privacy.  All collection, use, maintenance, or dissemination of PII will be in accordance with the Privacy Act of 1974, as amended (reference (r)) and implemented per reference (s).</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-5" identifier="/us/dod/don/usmc/mco/6100_14/p-5" heading="5. Command and Signal" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref" path="ref" number="Ref:" label="Ref:" depth="0" role="reference" verification="UNVERIFIED">
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/a" path="ref/a" number="(a)" label="(a)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 1308.3, “DoD Physical Fitness and Body Fat Program Procedures,” November 5, 2002</text>
+        <citation target="DODI-1308.3" targetIdentifier="/us/dod/dodi/1308_3" basis="cited" text="DoD Instruction 1308.3, “DoD Physical Fitness and Body Fat Program Procedures,” November 5, 2002"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/b" path="ref/b" number="(b)" label="(b)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>CJCSI 3405.01 “Total Force Fitness Framework,” September 23, 2013</text>
+        <citation target="CJCSI-3405.01" targetIdentifier="/us/dod/cjcs/cjcsi/3405_01" basis="cited" text="CJCSI 3405.01 “Total Force Fitness Framework,” September 23, 2013"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/c" path="ref/c" number="(c)" label="(c)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 6100.13A</text>
+        <citation target="MCO-6100.13A-CH5" targetIdentifier="/us/dod/don/usmc/mco/6100_13a" basis="cited" text="MCO 6100.13A"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/d" path="ref/d" number="(d)" label="(d)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 1500.62</text>
+        <citation target="MCO-1500.62" targetIdentifier="/us/dod/don/usmc/mco/1500_62" basis="cited" text="MCO 1500.62"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/e" path="ref/e" number="(e)" label="(e)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Charter for the Command Element Advocate Board (CEAB)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/f" path="ref/f" number="(f)" label="(f)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 6110.3A W/CH-1</text>
+        <citation target="MCO-6110.3A-CH1" targetIdentifier="/us/dod/don/usmc/mco/6110_3a/ch1" basis="cited" text="MCO 6110.3A W/CH-1"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/g" path="ref/g" number="(g)" label="(g)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 1700.29</text>
+        <citation target="MCO-1700.29" targetIdentifier="/us/dod/don/usmc/mco/1700_29" basis="cited" text="MCO 1700.29"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/h" path="ref/h" number="(h)" label="(h)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 1500.52D</text>
+        <citation target="MCO-1500.52D" targetIdentifier="/us/dod/don/usmc/mco/1500_52d" basis="cited" text="MCO 1500.52D"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/i" path="ref/i" number="(i)" label="(i)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 1500.59</text>
+        <citation target="MCO-1500.59" targetIdentifier="/us/dod/don/usmc/mco/1500_59" basis="cited" text="MCO 1500.59"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/j" path="ref/j" number="(j)" label="(j)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 6400.2</text>
+        <citation target="MCO-6400.2" targetIdentifier="/us/dod/don/usmc/mco/6400_2" basis="cited" text="MCO 6400.2"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/k" path="ref/k" number="(k)" label="(k)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO P5102.1B W/CH-2</text>
+        <citation target="MCO-5102.1B-CH2" targetIdentifier="/us/dod/don/usmc/mco/5102_1b/ch2" basis="cited" text="MCO P5102.1B W/CH-2"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/l" path="ref/l" number="(l)" label="(l)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DODI 6055.07, “Mishap Notification, Investigation, Reporting and Record Keeping,” June 6, 2011</text>
+        <citation target="DODI-6055.07" targetIdentifier="/us/dod/dodi/6055_07" basis="cited" text="DODI 6055.07, “Mishap Notification, Investigation, Reporting and Record Keeping,” June 6, 2011"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/m" path="ref/m" number="(m)" label="(m)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Garber, C.E., Blissner, B.,Deschenes, M.R., et al. ”American College of Sports Medicine position stand. Quantity and quality of exercise for developing and maintaining cardiorespiratory, musculoskeletal, and neuromotor fitness in apparently healthy adults: guidance for prescribing exercise.” Medicine &amp; Science in Sports &amp; Exercise, 2011:43;1334-1359.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/n" path="ref/n" number="(n)" label="(n)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>USDHHS “Physical Activity Guidelines for Americans.” October 12, 2018</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/o" path="ref/o" number="(o)" label="(o)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAV Notice 5210</text>
+        <citation target="SECNAVNOTE-5210" targetIdentifier="/us/dod/don/secnavnote/5210" basis="cited" text="SECNAV Notice 5210"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/p" path="ref/p" number="(p)" label="(p)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAV M-5210.1</text>
+        <citation target="SECNAVM-5210.1" targetIdentifier="/us/dod/don/secnavm/5210_1" basis="cited" text="SECNAV M-5210.1"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/q" path="ref/q" number="(q)" label="(q)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 5210.11F</text>
+        <citation target="MCO-5210.11F" targetIdentifier="/us/dod/don/usmc/mco/5210_11f" basis="cited" text="MCO 5210.11F"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/r" path="ref/r" number="(r)" label="(r)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>5 U.S.C. 552a</text>
+        <citation target="USC-T5-S552a" targetIdentifier="/us/usc/t5/s552a" basis="cited" text="5 U.S.C. 552a"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/s" path="ref/s" number="(s)" label="(s)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAVINST 5211.5E</text>
+        <citation target="SECNAVINST-5211.5E" targetIdentifier="/us/dod/don/secnavinst/5211_5e" basis="cited" text="SECNAVINST 5211.5E"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/t" path="ref/t" number="(t)" label="(t)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 5000.12E W/CH 1-2</text>
+        <citation target="MCO-5000.12E-CH1" targetIdentifier="/us/dod/don/usmc/mco/5000_12e/ch1" basis="cited" text="MCO 5000.12E W/CH 1-2"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/ref/u" path="ref/u" number="(u)" label="(u)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 1900.16 CH 1</text>
+        <citation target="MCO-1900.16-CH1" targetIdentifier="/us/dod/don/usmc/mco/1900_16/ch1" basis="cited" text="MCO 1900.16 CH 1"/>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Command and Signal</text>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Command.  This Order is applicable to the Marine Corps Total Force.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/6100_14/p-5/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Signal.   This Order is effective the date signed. Robert B. Neller DISTRIBUTION:  PCN 10209350600 MCO 6100.14 18 DEC 2018 1-1                      Enclosure (1)</text>
+      </provision>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-03" against="section text already carried in this record">
+      <change>reparse_provisions.py - provision tree rebuilt after the reference-list and signature-block parser fixes</change>
+      <change>23 path(s) added, 21 removed, 121 provisions total</change>
+      <change>reference and enclosure lists now parse under ref/ and encl/ instead of entering the body marker stack</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+    <correction date="2026-08-03" against="the Subj: field in this record's own front matter text">
+      <change>backfill_subjects.py - subject recovered from the naval letter Subj: field, which the provision parser skips as a label line</change>
+      <change>title rebuilt as doc type, native number, and subject</change>
+      <change>no text was invented; a record with no Subj: field keeps subject null</change>
+    </correction>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>32 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

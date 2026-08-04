@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2008/418" canonicalId="MARADMIN-2008-418" docType="MARADMIN" nativeNumber="418/08" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2008-07-31" schemaVersion="2.0">
+  <meta>
+    <title>AWARDS UPDATE</title>
+    <subject>AWARDS UPDATE</subject>
+    <originator>CMC WASHINGTON DC MRA MM</originator>
+    <signedDate>2008-07-31</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2008\MARADMIN_418_08_AWARDS_UPDATE.pdf" sourceHash="0338997231e0bd8ad9a6a3325acb3abfe69c3da09b6f14a80a318599a710229e" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="SECNAVINST-1650.1H" targetIdentifier="/us/dod/don/secnavinst/1650_1h" basis="cited" tier="T2" held="absent" from="narr:REF C"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2008/418/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2008/418/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>THE PURPOSE OF THIS MARADMIN IS TO PROVIDE AN UPDATE OF AWARDS SINCE THE LAST UPDATE, MARADMIN 227/08.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>THE FOLLOWING UNIT AWARDS ARE AUTHORIZED AND ARE INCORPORATED IN</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2/a" path="p2/a" number="2.A." label="A." depth="1" verification="UNVERIFIED">
+        <text>JOINT MERITORIOUS UNIT AWARD (JMUA)</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2/a/1" path="p2/a/1" number="2.A.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>HQ, MULTI-NATIONAL FORCE-IRAQ, BAGHDAD, IRAQ      17DEC06-17DEC07</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2/a/2" path="p2/a/2" number="2.A.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>HQ, COMBINED JOINT TASK FORCE-TROY, BAGHDAD, IRAQ 08DEC06-07FEB08</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2/a/3" path="p2/a/3" number="2.A.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>HQ, COMBINED JOINT SPECIAL OPERATION TASK FORCE-AFGHANISTAN, BAGRAM AIRFIELD, AFGHANISTAN  01APR07-01NOV07</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2/a/4" path="p2/a/4" number="2.A.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>HQ, UNITED STATES CENTRAL COMMAND, MACDILL AFB FL 01JAN06-01MAR08</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2/a/5" path="p2/a/5" number="2.A.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>HQ, JOINT PSYCHOLOGICAL OPERATION TASK FORCE, CAMP AS SAYLIYAH, QATAR                               01OCT06-01NOV07</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2/a/6" path="p2/a/6" number="2.A.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>HQ, JOINT CONTRACTING COMMAND-IRAQ/AFGHANISTAN, BAGHDAD, IRAQ                                         01JAN07-31DEC07 NOTE:  PER REF B, SERVICE UNITS OR INDIVIDUALS DEPLOYED IN SUPPORT OF A JTF, BUT NOT ASSIGNED AND/OR ATTACHED TO THE JTF BY OFFICIAL ORDERS, ARE NOT ELIGIBLE FOR THE JMUA, EVEN IF THEY ARE UNDER THE OPERATIONAL CONTROL OF THE JTF.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2/b" path="p2/b" number="2.B." label="B." depth="1" verification="UNVERIFIED">
+        <text>NAVY UNIT COMMENDATION</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2/b/1" path="p2/b/1" number="2.B.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>I MARINE EXPEDITIONARY FORCE                      02AUG04-01FEB05 ADDITIONAL UNIT/PERSONNEL APPROVED FOR INCLUSION (MOD TO MARADMIN 609/06): MARINE LIGHT ATTACK SQUADRON 775 3D BN, 11TH MARINE REGIMENT -HQ BATTERY -INDIA BATTERY -KILO BATTERY -LIMA BATTERY, 3D BN, 12TH MARINES 2D BN, 1ST MARINE REGIMENT 2D BN, 4TH MARINE REGIMENT -2D PLT, TRUCK CO, HQ BN (ATTACHED) -2D PLT, CO B, 1ST CEB (ATTACHED) -DETACHMENT, 1ST INTEL BN 3D BN, 24TH MARINE REGIMENT -H&amp;S COMPANY -COMPANY I -COMPANY K -COMPANY L 604TH EXPEDITIONARY AIR SUPPORT OPERATIONS SQUADRON (EASOS) U.S. AIR FORCE MWSS 273 FROM 3D MAW MWSS 374 FROM 3D MAW 2D PLT, CO A, 2D MP BN (BY NAME LISTING) 1ST PLT, CO A, 2D MP BN (BY NAME LISTING) DETACHMENT 1, MARSOCOM (BY NAME LISTING) VMAQ-4 MLAH-775 HMM-764, MAG-16 HMH-466, MAG-16 VMA-214, MAG-16 HMM-261, MAG-16 DETACHMENT MALS 13, VMA-311, MAG-16 (-)(REIN)(BY NAME LISTING) DETACH, MALS-13, HMH-265 (REIN), MAG-16(-)(REIN)(BY NAMES LISTING) DETACH, MALS-13, HMM-166 (REIN)(TACON FROM 11TH MEU)(BY NAME LISTING) 3D LOW ALTITUDE AIR DEFENSE BN (SERVED AS THE PROVISIONAL SECURITY BN WITH MWSG-37, 3D MAW (FORWARD) (BY NAME LISTING) D CO, 2D LAR 3D BN, 24 MAR -H&amp;S, CO -CO I -CO K -CO L -WEAPONS CO COALITION MILITARY ASSISTANCE TRAINING TEAM (CMATT) ADVISORS, RCT-1 (BY NAME LISTING) II MEF COMMAND ELEMENT AUGMENTS (ADVANCE PARTY)(BY NAME LISTING) DELETE (ONLY 3 DET FROM MALS 14 DEPLOYED WITH MAG-16): MARINE AIR LOGISTICS SQUADRON 13</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2/c" path="p2/c" number="2.C." label="C." depth="1" verification="UNVERIFIED">
+        <text>AIR FORCE MERITORIOUS UNIT AWARD                  20DEC04-06JUL05 APPROVED MARINE CORPS UNITS FOR INCLUSION ATTACHED TO AIR FORCE 586TH EXPEDITIONARY SECURITY FORCES SQUADRON:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2/c/1" path="p2/c/1" number="2.C.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>26TH  MEU (SOC) COMMAND ELEMENT</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2/c/2" path="p2/c/2" number="2.C.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>FOX COMPANY, BN LANDING TEAM 2ND BN, 8TH MARINES</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2/c/3" path="p2/c/3" number="2.C.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>GOLF COMPANY, BN LANDING TEAM 2ND BN, 8TH MARINES</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2/d" path="p2/d" number="2.D." label="D." depth="1" verification="UNVERIFIED">
+        <text>AIR FORCE OUTSTANDING UNIT AWARD WITH VALOR</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2/d/1" path="p2/d/1" number="2.D.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>DET B, ATC, MACS-4                                01APR02-15SEP02 NOTE:  MARINE CORPS PERSONNEL ARE NOT AUTHORIZED TO WEAR VALOR DEVICES ON UNIT AWARDS</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p2/e" path="p2/e" number="2.E." label="E." depth="1" verification="UNVERIFIED">
+        <text>AIR FORCE ORGANIZATION EXCELLENCE AWARD. PERSONNEL APPROVED FOR INCLUSION: LTCOL BRIGHT, JAMES B.                                01JUN05-01JUN07 MAJ MAZZELLA, THOMAS F.                               07JUN05-08APR07</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>COMBAT ACTION RIBBON (CAR).  NOTE THAT THE POLICY CHANGE ANNOUNCED IN ALNAV 036/08 DOES NOT APPLY TO MARINE CORPS PERSONNEL. MARINE CORPS PERSONNEL ASSIGNED EITHER PERMANENTLY OR TEMPORARILY TO U.S. ARMY OR U.S. AIR FORCE COMMANDS IN COMBAT ARE NOT ELIGIBLE TO ACCEPT, WEAR OR RETAIN THE CIB, THE CAB OR THE CAM.  IN CASES WHERE A MARINE'S ACTIONS IN COMBAT MEETS THE ELIGIBILITY CRITERIA FOR THE CIB, CAB OR CAM, THE U.S. ARMY OR U.S. AIR FORCE COMMAND MUST SUBMIT A PERSONAL AWARD RECOMMENDATION FOR THE CAR TO THE CMC (MMMA) FOR APPROVAL.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>ARMED FORCES SERVICE MEDAL (AFSM).  THE OFFICE OF THE UNDER SECRETARY OF DEFENSE HAS APPROVED THE AFSM FOR OPERATION JUMP START FOR THOSE SERVICE MEMBERS WHO DEPLOYED TO THE STATES OF TEXAS, NEW MEXICO, ARIZONA, AND CALIFORNIA FROM 15 MAY 2006 THROUGH 15 JUL 2008.  ELIGIBILITY CRITERIA FOR THE AFSM ARE OUTLINED IN REFERENCES B AND C.  SERVICE MEMBERS MUST MEET THE AOE ELIGIBILITY CRITERIA.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>HUMANITARIAN SERVICE MEDAL (HSM).   THE DIRECTOR, JOINT STAFF, HAS APPROVED THE HSM FOR THE INDONESIAN EARTHQUAKE RELIEF OPERATION FOR THE PERIOD OF 27 MAY 06 THROUGH 14 JUN 06. NOTE:  ONLY THOSE MARINES WHO DIRECTLY PARTICIPATED IN THE IMMEDIATE INDONESIAN EARTHQUAKE RELIEF HUMANITARIAN OPERATION FOR THE PERIOD OF 27 MAY 06 THROUGH 14 JUN 06 MAY BE ELIGIBLE.  AS STATED IN REF (B), DIRECT PARTICIPATION IS DEFINED AS BEING PHYSICALLY PRESENT AT THE DESIGNATED LOCATION AND HAVING DIRECTLY CONTRIBUTED TO AND INFLUENCED THE ACTION.  DEPLOYMENT TO THE AREA OF HUMANITARIAN ASSISTANCE IN AND OF ITSELF DOES NOT CONSTITUTE HSM ENTITLEMENT.  OPERATIONAL COMMANDERS IN THE GRADE OF 0-6 AND ABOVE HAVE BEEN GIVEN DELEGATION OF AUTHORITY FOR DETERMINING HSM ELIGIBILITY AND COMMANDERS SHALL CONSOLIDATE A ROSTER OF ALL MILITARY PERSONNEL WHO MEET THE ABOVE CRITERIA.  THIS ROSTER SHOULD BE SUBMITTED TO THE CMC (MMMA) USING AN EXCEL SPREADSHEET (HSM.XLS) VIA THE IMPROVED AWARDS PROCESSING SYSTEM AND INCLUDE FULL NAME, RANK, AND SSN.  UPON RECEIPT OF CONSOLIDATED ROSTERS OF ELIGIBLE PERSONNEL, MMMA WILL REPORT THE HSM ON UNIT DIARY AND UPDATE THE 'CAR-HSM' DATABASE POSTED ON THE MMMA WEBSITE.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>NATO MEDAL.  IN ADDITION TO THE NATO MEDAL FOR OPERATIONS IN THE FORMER REPUBLIC OF YUGOSLAVIA AND KOSOVO, THE OFFICE OF THE UNDER SECRETARY OF DEFENSE HAS APPROVED THE NATO MEDAL FOR ACCEPTANCE AND WEAR FOR THE FOLLOWING OPERATIONS: EAGLE ASSIST (NATO ARTICLE 5 MEDAL)                 13OCT01-16MAY02 ACTIVE ENDEAVOUR (NATO ARTICLE 5 MEDAL)             26OCT01-TBD ALL BALKANS OPERATIONS (NATO NON ARTICLE 5 MEDAL)   01JAN03-TBD ISAF AFGHANISTAN (NATO NON ARTICLE 5 MEDAL)         01JUN03-TBD NATO MEDAL FOR TRNG IMPLEMENTATION MISSION-IRAQ     18AUG04-TBD NATO MEDAL FOR IMPLEMENTATION MISSION-IRAQ          18AUG04-TBD</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p6/a" path="p6/a" number="6.A." label="A." depth="1" verification="UNVERIFIED">
+        <text>NAVAL PERSONNEL ARE AUTHORIZED TO WEAR ONLY ONE NATO MEDAL (THE FIRST ONE AWARDED).  SUBSEQUENT NATO MEDALS ARE REPRESENTED BY A BRONZE SERVICE STAR.  THE NATO MEDAL PRESENTATION MAY INCLUDE A RIBBON CLASP DENOTING THE SPECIFIC OPERATION FOR WHICH THE AWARD WAS APPROVED.  NAVAL PERSONNEL MAY ACCEPT AND RETAIN THE RIBBON CLASP, IF PRESENTED; HOWEVER, IT IS NOT AUTHORIZED TO BE WORN ON THE NATO MEDAL OR SERVICE RIBBON.  NAVAL PERSONNEL MAY WEAR ONLY THE BASIC MEDAL OR SERVICE RIBBON.  THE PRECEDENCE OF THE NATO MEDAL IS AFTER THE UNITED NATIONS MEDAL AND BEFORE THE MULTINATIONAL FORCE AND OBSERVERS MEDAL.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p6/b" path="p6/b" number="6.B." label="B." depth="1" verification="UNVERIFIED">
+        <text>THE AWARDING AUTHORITY FOR NATO MEDALS REMAINS WITH THE SUPREME HEADQUARTERS ALLIED POWERS EUROPE (J1).  ALL REQUESTS FOR NATO MEDALS MUST BE SUBMITTED VIA MARFOREUR (G-1), UNITED STATES EUROPEAN COMMAND AND THE NATIONAL MILITARY REPRESENTATIVE.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>CORRECTIONS TO MARADMIN(227/08).  THE NSN'S ANNOUNCED IN MARADMIN 227/08 BELONG TO THE AFGHANISTAN CAMPAIGN AND THE IRAQ CAMPAIGN STEAMERS.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>REF A WILL NO LONGER BE DISTRIBUTED.  INSTEAD, REF A IS UPDATED QUARTERLY AND MAINTAINED ON THE  INTERNET AT THE USMC.MIL WEBSITE.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2008/418/p9" path="p9" number="9." label="9." depth="0" verification="UNVERIFIED">
+      <text>RELEASE AUTHORIZED BY BGEN J. A. KESSLER, DIRECTOR,  MANPOWER MANAGEMENT DIVISION.//</text>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>1 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>
