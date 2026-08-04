@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2018/161" canonicalId="MARADMIN-2018-161" docType="MARADMIN" nativeNumber="161/18" tier="T5" lifecycle="cancelled" verification="UNVERIFIED" startPeriod="2018-03-14" endPeriod="2018-03-19" schemaVersion="2.0">
+  <meta>
+    <title>FY18 APPROVED SELECTED MARINE CORPS RESERVE (SMCR) STAFF NONCOMMISSIONED</title>
+    <subject>FY18 APPROVED SELECTED MARINE CORPS RESERVE (SMCR) STAFF NONCOMMISSIONED</subject>
+    <originator>CMC WASHINGTON DC MRA MM</originator>
+    <signedDate>2018-03-14</signedDate>
+    <cancelledDate>2018-03-19</cancelledDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2018\MARADMIN_161_18_FY18_APPROVED_SELECTED_MARINE_CORPS_RESERVE_SMCR_STAFF_NONCO.pdf" sourceHash="629dbf494f3f8255181471122b649fc452f66a45e22d4131fd8a4797dd668f5f" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="cancelled_by" target="MARADMIN-CANX-2018-011" basis="cited" held="held"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2018/161/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2018/161/body" heading="Remarks" verification="UNVERIFIED">
+  </section>
+</issuance>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2022/408" canonicalId="MARADMIN-2022-408" docType="MARADMIN" nativeNumber="408/22" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2022-08-11" schemaVersion="2.0">
+  <meta>
+    <title>SOLICITATION FOR PARTICIPATION IN THE MARINE CORPS 2022 SEMI-ANNUAL MICROSOFT</title>
+    <subject>SOLICITATION FOR PARTICIPATION IN THE MARINE CORPS 2022 SEMI-ANNUAL MICROSOFT</subject>
+    <originator>CMC DC I WASHINGTON DC</originator>
+    <signedDate>2022-08-11</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2022\MARADMIN_408_22_SOLICITATION_FOR_PARTICIPATION_IN_THE_MARINE_CORPS_2022_SEMI.pdf" sourceHash="52dc6e98c879e1a466f8dd5ff4e0f7f6f2cb4888040943da07da76e60ee95b0b" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2022/408/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2022/408/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Situation.  This MARADMIN serves as an announcement for participation in the Microsoft Office 365 (O365) Software as a Service (SaaS) application development innovation challenge.  The Deputy Commandant for Information (DC I) request interested participants develop and submit O365 SaaS applications that will improve individual/unit readiness and mission effectiveness across all warfighting functions.  Interested participants are encouraged to participate in this challenge that is focused primarily on the development of O365 SaaS applications that supports Force Design, Talent Management 2030, and Marine Corps Doctrinal Publication (MCDP) 8.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Background.  The transition to the Microsoft O365 platform transformed the fabric of our day-to-day operations.  We have an opportunity for the Marine Corps to lead the services by embracing this new technology and maximize its innate capabilities through the development of productivity and collaboration tools.  As Marine Corps organizations expose their data as flat files or via application programming interfaces, we have an opportunity to create innovative applications that enable effective decision-making and increase our information advantage leveraging lessons from the Spring 2022 Innovation Challenge.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Concept of Operations</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p3/a" path="p3/a" number="3.A." label="A." depth="1" verification="UNVERIFIED">
+        <text>Scheme of Maneuver.  The Fall 2022 Microsoft O365 Innovation Challenge will be executed in a three-phased approach.</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p3/a/1" path="p3/a/1" number="3.A.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Phase 1 â€“ Planning.  Phase 1 commences with the release of this message and shall be completed no later than (NLT) 9 Sep 2022 which is the deadline when participants must have their proposals submitted at the following link:  (https:(s lash)(slash)usmc.sharepoint-mil.us/sites/USMC_IKM/SitePages/2022-USMC-Innovation-C hallenge.aspx).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p3/a/2" path="p3/a/2" number="3.A.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Phase 2 â€“ Execution 3.A.2.1.  Selection of Proposals.  The voting members of the Information and Knowledge Management Steering Group (IKMSG) will review the submitted proposal and determine which proposals will be accepted for development.  The criteria for the go/no-go decision will be as follows:  1) No duplication of effort from existing programs of record or other developed tools available from enterprise-wide repositories.  2) Use of seeded and/or premium O365 capabilities.  Selected participants will be notified of the IKMSG decision 12 Sep 2022.  Participants are expected to attend an orientation brief on 14 Sep 2022. 3.A.2.2.  Training Stage.  Participants associated with selected proposals will be provided training to assist with usage of the O365 seeded and premium capabilities.  Some resource training will include self-paced online tutorials through the Enterprise Skills Initiative at (https:(slash)(slash)esi.microsoft.com/), as well as subject matter expert (SME) led training.  DC I will host in-person and virtual training options led by Microsoft, to facilitate technical orientation of the Microsoft tools.  The training will incorporate after-hours support on Tuesdays and Thursday with O365 SME from Microsoft. 3.A.2.3.  SaaS Application Development Stage.  Selected participants develop their application during the Development sprint.  Participants will perform their SaaS application development from their present duty station via the Marine Corps Enterprise Network (MCEN).  Instructions on how to access the Innovation Challenge resources will be presented during the orientation brief and reside at the following link:  https:(slash)(slash)usmc.sharepoint-mil.us/sites/USMC_IKM/SitePag es/2022-USMC-Innovation-Challenge.aspx.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p3/a/3" path="p3/a/3" number="3.A.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>Phase 3 â€“ Evaluation 3.A.3.1.  Demonstration Stage.  Participants will provide a Microsoft Teams video demonstration of their final product for the voting members of the IKMSG NLT 1 Dec 2022 to the 2022 Fall Innovation Challenge Microsoft Teams channel. 3.A.3.2.  Evaluation and Award Phase.  The IKMSG evaluates and determines top 10 developed micro-applications.  The IKMSG will use the following evaluation criteria to evaluate and rank developed micro-applications:  1) applicability to the force on an enterprise-level, 2) Micro-Applicationâ€™s ease of use, and finally 3) the developed app has a high probability to decrease workload while increasing efficiency.  Top 10 candidates will further demonstrate their product to the Service Data Officer (SDO) for selection of Innovation Challenge top three winners.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p3/a/4" path="p3/a/4" number="3.A.4." label="4." depth="2" verification="UNVERIFIED">
+          <text>Scope.  The Fall 2022 Innovation Challenge is restricted to the unclassified network.  Proposals should not include active interface or interoperability with existing programs of record.  Micro-Applications will be solely developed by the participants and must not include any third party or open source coding or other materials.  Participants are prohibited from reverse engineering, decompiling/disassembling, or working around any technical limitations of any Microsoft product (without pre-approval).  Data injects to support SaaS application developed should only include sourcing data that is already within the Microsoft O365 environment.  The participants are limited to capabilities included in the DOD cloud USMC Tenant O365 suite of capabilities for the O365 environment. Application proposals selected by the IKMSG will be granted access to the challenge environment created for the Fall Innovation Challenge and granted a small number of premium PerApp license passes.  These passes will be for developer use only within the challenge environment and granted to the app directly and only for the length of challenge.  The premium capabilities of PowerApps include the use of the Dataverse and the ability to create custom connectors.  Participants are prohibited from sharing or otherwise distributing or providing access to the participantâ€™s micro-applications to anyone not authorized by the sponsors of the 2022 USMC Innovation Challenge without prior written approval by DC I.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p3/a/5" path="p3/a/5" number="3.A.5." label="5." depth="2" verification="UNVERIFIED">
+          <text>Incentives.  The top three winners will receive awards and recognition via MARADMIN.  Additionally, any developed micro-application could potentially transition to an enterprise Marine Corps-wide resource.  Innovation Challenge winners will be provided an opportunity to conduct an out-brief with senior leadership to showcase developed products.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p3/a/6" path="p3/a/6" number="3.A.6." label="6." depth="2" verification="UNVERIFIED">
+          <text>Timeline</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p6/a" path="p6/a" number="6.A." label="A." depth="1" verification="UNVERIFIED">
+      <text>NLT 8 Sep 2022:  Participants register proposal ideas and contact information at https:(slash)(slash)usmc.sharepoint-mil.us/sites/USMC_IKM/Lists/ICP roposalSubmission</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p6/b" path="p6/b" number="6.B." label="B." depth="1" verification="UNVERIFIED">
+      <text>All other timelines will be posted in the following link:  https:(slash)(sla sh)usmc.sharepoint-mil.us/sites/USMC_IKM/SitePages/Innovation-Challenge-POAM.aspx</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Admin and Logistics</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p7/a" path="p7/a" number="7.A." label="A." depth="1" verification="UNVERIFIED">
+        <text>Due to the circumstances in consideration of, or associated with, the opportunity provided to the participants in association with the participantâ€™s micro-application development efforts (including, without limitation, USMCâ€™s authorization for use of government resources including duty time and government equipment and information), all products, items, and materials created, generated, submitted for, and/or associated with this challenge shall be delivered to and are the property of the USMC.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p7/b" path="p7/b" number="7.B." label="B." depth="1" verification="UNVERIFIED">
+        <text>Participants will review the aforementioned website link for additional information, guidance, submission materials, and shall comply with the terms and conditions associated with this 2022 USMC Innovation Challenge.  This may include a requirement to sign an assignment document, which shall be submitted along with each participantâ€™s application.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>Command and Control.  Commanders are encouraged to support participation of all Marines that desire to participate in this event.  Commanders are also encouraged to permit participants to utilize duty hours during the course of this challenge.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p9" path="p9" number="9." label="9." depth="0" verification="UNVERIFIED">
+      <text>Funding.  HQMC DC I will fund the innovation challenge based on pre-approved scope.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p10" path="p10" number="10." label="10." depth="0" verification="UNVERIFIED">
+      <text>Point of Contact.  DCI_IEX_IKM ([contact withheld]).</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/408/p11" path="p11" number="11." label="11." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by LtGen M. G. Glavy, Headquarters Marine Corps, Deputy Commandant for Information.//</text>
+    </provision>
+  </section>
+</issuance>

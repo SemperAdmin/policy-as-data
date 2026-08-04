@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.5.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/dodi/1327_06" canonicalId="DODI-1327.06" docType="DODI" nativeNumber="1327.06" tier="T1" lifecycle="active" verification="UNVERIFIED" startPeriod="2025-08-07" schemaVersion="2.0">
+  <meta>
+    <title>DoD Instruction 1327.06 - Military Leave, Liberty, and Administrative Absence</title>
+    <subject>MILITARY LEAVE, LIBERTY, AND ADMINISTRATIVE ABSENCE</subject>
+    <signedDate>2025-08-07</signedDate>
+    <provenance sourcePath="https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132706p.pdf" sourceHash="92a5ed3c41067f89d8f1734453d0f8a20cf6c4dadd9d19b0a6e30e65e2e7a2af" extractionEngine="manual-metadata-entry" convertedAt="2026-08-03T00:00:00+00:00" storeSchemaVersion="0.5.0"/>
+  </meta>
+  <authority>
+    <ref rel="cancels" target="DTM-23-001" basis="cited" held="held" from="front-matter"/>
+    <ref rel="cancels" target="DTM-22-004" basis="cited" held="held" from="front-matter"/>
+    <ref rel="cancels" target="DTM-23-003" basis="cited" held="held" from="front-matter"/>
+    <ref rel="supersedes" target="DODI-1327.6" basis="cited" held="held" from="front-matter"/>
+    <ref rel="references" target="USC-T37-S501" targetIdentifier="/us/usc/t37/s501" basis="cited" tier="T0" held="absent" from="front-matter:ref/a"/>
+    <ref rel="references" target="USC-T37-S603" targetIdentifier="/us/usc/t37/s603" basis="cited" tier="T0" held="absent" from="front-matter:ref/c"/>
+    <ref rel="references" target="USC-T10-S701" targetIdentifier="/us/usc/t10/s701" basis="cited" tier="T0" held="held" from="front-matter:ref/f"/>
+    <ref rel="references" target="USC-T10-S703" targetIdentifier="/us/usc/t10/s703" basis="cited" tier="T0" held="absent" from="front-matter:ref/g"/>
+    <ref rel="references" target="USC-T10-S704" targetIdentifier="/us/usc/t10/s704" basis="cited" tier="T0" held="absent" from="front-matter:ref/h"/>
+    <ref rel="references" target="USC-T10-S709" targetIdentifier="/us/usc/t10/s709" basis="cited" tier="T0" held="absent" from="front-matter:ref/i"/>
+    <ref rel="references" target="USC-T10-S711" targetIdentifier="/us/usc/t10/s711" basis="cited" tier="T0" held="absent" from="front-matter:ref/j"/>
+    <ref rel="references" target="USC-T10-S876a" targetIdentifier="/us/usc/t10/s876a" basis="cited" tier="T0" held="absent" from="front-matter:ref/k"/>
+    <ref rel="references" target="DODD-5124.02" targetIdentifier="/us/dod/dodd/5124_02" basis="cited" tier="T1" held="absent" from="front-matter:ref/l"/>
+    <ref rel="references" target="DODI-1215.07" targetIdentifier="/us/dod/dodi/1215_07" basis="cited" tier="T1" held="absent" from="front-matter:ref/m"/>
+    <ref rel="references" target="DODI-1215.13" targetIdentifier="/us/dod/dodi/1215_13" basis="cited" tier="T1" held="absent" from="front-matter:ref/n"/>
+    <ref rel="references" target="DODI-1315.18" targetIdentifier="/us/dod/dodi/1315_18" basis="cited" tier="T1" held="absent" from="front-matter:ref/o"/>
+    <ref rel="references" target="DODI-1340.09" targetIdentifier="/us/dod/dodi/1340_09" basis="cited" tier="T1" held="absent" from="front-matter:ref/p"/>
+    <ref rel="references" target="DODI-1340.25" targetIdentifier="/us/dod/dodi/1340_25" basis="cited" tier="T1" held="absent" from="front-matter:ref/q"/>
+    <ref rel="references" target="DODI-1340.26" targetIdentifier="/us/dod/dodi/1340_26" basis="cited" tier="T1" held="absent" from="front-matter:ref/r"/>
+    <ref rel="references" target="DODI-4515.13" targetIdentifier="/us/dod/dodi/4515_13" basis="cited" tier="T1" held="absent" from="front-matter:ref/s"/>
+    <ref rel="references" target="DODI-6310.09" targetIdentifier="/us/dod/dodi/6310_09" basis="cited" tier="T1" held="absent" from="front-matter:ref/t"/>
+    <ref rel="references" target="DODFMR" targetIdentifier="/us/dod/fmr" basis="cited" tier="T1" held="drift" storeHolds="DODFMR-VOL01-CH01,DODFMR-VOL01-CH02,DODFMR-VOL01-CH03" from="front-matter:ref/u"/>
+  </authority>
+  <section anchor="front-matter" heading="DoD Instruction 1327.06, Military Leave, Liberty, and Administrative Absence, August 7, 2025" verification="UNVERIFIED">
+    <provision path="ref" number="Ref:" label="Ref:" depth="0" role="reference" verification="UNVERIFIED">
+      <provision path="ref/a" number="(a)" label="(a)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Section 501 of Title 37, U.S.C.</text>
+        <citation target="USC-T37-S501" targetIdentifier="/us/usc/t37/s501" basis="cited" text="Section 501 of Title 37, U.S.C."/>
+      </provision>
+      <provision path="ref/b" number="(b)" label="(b)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Section 602 of Public Law 116-283</text>
+      </provision>
+      <provision path="ref/c" number="(c)" label="(c)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Section 603 of Title 37, U.S.C.</text>
+        <citation target="USC-T37-S603" targetIdentifier="/us/usc/t37/s603" basis="cited" text="Section 603 of Title 37, U.S.C."/>
+      </provision>
+      <provision path="ref/d" number="(d)" label="(d)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Section 604 of Public Law 116-283</text>
+      </provision>
+      <provision path="ref/e" number="(e)" label="(e)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Section 632 of Public Law 117-263</text>
+      </provision>
+      <provision path="ref/f" number="(f)" label="(f)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Section 701 of Title 10, U.S.C.</text>
+        <citation target="USC-T10-S701" targetIdentifier="/us/usc/t10/s701" basis="cited" text="Section 701 of Title 10, U.S.C."/>
+      </provision>
+      <provision path="ref/g" number="(g)" label="(g)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Section 703(a) of Title 10, U.S.C.</text>
+        <citation target="USC-T10-S703" targetIdentifier="/us/usc/t10/s703" basis="cited" text="Section 703(a) of Title 10, U.S.C."/>
+      </provision>
+      <provision path="ref/h" number="(h)" label="(h)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Section 704 of Title 10, U.S.C.</text>
+        <citation target="USC-T10-S704" targetIdentifier="/us/usc/t10/s704" basis="cited" text="Section 704 of Title 10, U.S.C."/>
+      </provision>
+      <provision path="ref/i" number="(i)" label="(i)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Section 709 of Title 10, U.S.C.</text>
+        <citation target="USC-T10-S709" targetIdentifier="/us/usc/t10/s709" basis="cited" text="Section 709 of Title 10, U.S.C."/>
+      </provision>
+      <provision path="ref/j" number="(j)" label="(j)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Section 711 of Title 10, U.S.C.</text>
+        <citation target="USC-T10-S711" targetIdentifier="/us/usc/t10/s711" basis="cited" text="Section 711 of Title 10, U.S.C."/>
+      </provision>
+      <provision path="ref/k" number="(k)" label="(k)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Section 876a of Title 10, U.S.C.</text>
+        <citation target="USC-T10-S876a" targetIdentifier="/us/usc/t10/s876a" basis="cited" text="Section 876a of Title 10, U.S.C."/>
+      </provision>
+      <provision path="ref/l" number="(l)" label="(l)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Directive 5124.02</text>
+        <citation target="DODD-5124.02" targetIdentifier="/us/dod/dodd/5124_02" basis="cited" text="DoD Directive 5124.02"/>
+      </provision>
+      <provision path="ref/m" number="(m)" label="(m)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoDI 1215.07</text>
+        <citation target="DODI-1215.07" targetIdentifier="/us/dod/dodi/1215_07" basis="cited" text="DoDI 1215.07"/>
+      </provision>
+      <provision path="ref/n" number="(n)" label="(n)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoDI 1215.13</text>
+        <citation target="DODI-1215.13" targetIdentifier="/us/dod/dodi/1215_13" basis="cited" text="DoDI 1215.13"/>
+      </provision>
+      <provision path="ref/o" number="(o)" label="(o)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoDI 1315.18</text>
+        <citation target="DODI-1315.18" targetIdentifier="/us/dod/dodi/1315_18" basis="cited" text="DoDI 1315.18"/>
+      </provision>
+      <provision path="ref/p" number="(p)" label="(p)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoDI 1340.09</text>
+        <citation target="DODI-1340.09" targetIdentifier="/us/dod/dodi/1340_09" basis="cited" text="DoDI 1340.09"/>
+      </provision>
+      <provision path="ref/q" number="(q)" label="(q)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoDI 1340.25</text>
+        <citation target="DODI-1340.25" targetIdentifier="/us/dod/dodi/1340_25" basis="cited" text="DoDI 1340.25"/>
+      </provision>
+      <provision path="ref/r" number="(r)" label="(r)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoDI 1340.26</text>
+        <citation target="DODI-1340.26" targetIdentifier="/us/dod/dodi/1340_26" basis="cited" text="DoDI 1340.26"/>
+      </provision>
+      <provision path="ref/s" number="(s)" label="(s)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoDI 4515.13</text>
+        <citation target="DODI-4515.13" targetIdentifier="/us/dod/dodi/4515_13" basis="cited" text="DoDI 4515.13"/>
+      </provision>
+      <provision path="ref/t" number="(t)" label="(t)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoDI 6310.09</text>
+        <citation target="DODI-6310.09" targetIdentifier="/us/dod/dodi/6310_09" basis="cited" text="DoDI 6310.09"/>
+      </provision>
+      <provision path="ref/u" number="(u)" label="(u)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Chapter 35 of Volume 7A of DoD 7000.14-R</text>
+        <citation target="DODFMR" targetIdentifier="/us/dod/fmr" basis="cited" text="Chapter 35 of Volume 7A of DoD 7000.14-R"/>
+      </provision>
+      <provision path="ref/v" number="(v)" label="(v)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Chapter 44 of Volume 7A of DoD 7000.14-R</text>
+        <citation target="DODFMR" targetIdentifier="/us/dod/fmr" basis="cited" text="Chapter 44 of Volume 7A of DoD 7000.14-R"/>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="s-1" heading="SECTION 1: GENERAL ISSUANCE INFORMATION" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-2" heading="SECTION 2: RESPONSIBILITIES" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-3" heading="SECTION 3: LEAVE PROCEDURES" verification="UNVERIFIED">
+    <provision path="p3/11" number="3.11." label="3.11." depth="1" verification="UNVERIFIED">
+      <text>NON-CHARGEABLE LEAVE</text>
+      <provision path="p3/11/b" number="3.11.b." label="b." depth="2" verification="UNVERIFIED">
+        <text>Reserve Component Maternity Leave</text>
+      </provision>
+      <provision path="p3/11/c" number="3.11.c." label="c." depth="2" verification="UNVERIFIED">
+        <text>Active Duty Parental Leave (ADPL)</text>
+      </provision>
+      <provision path="p3/11/d" number="3.11.d." label="d." depth="2" verification="UNVERIFIED">
+        <text>Inactive Duty Parental Leave (IDPL)</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="s-4" heading="SECTION 4: AUTHORIZED ABSENCES OTHER THAN LEAVE" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-5" heading="SECTION 5: ADMINISTRATIVE REQUIREMENTS" verification="UNVERIFIED">
+  </section>
+  <section anchor="s-6" heading="SECTION 6: FEML PROGRAM DATA SHEET" verification="UNVERIFIED">
+  </section>
+  <section anchor="glossary" heading="GLOSSARY" verification="UNVERIFIED">
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>19 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

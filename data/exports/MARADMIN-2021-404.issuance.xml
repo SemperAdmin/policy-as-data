@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2021/404" canonicalId="MARADMIN-2021-404" docType="MARADMIN" nativeNumber="404/21" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2021-08-04" schemaVersion="2.0">
+  <meta>
+    <title>FORTHCOMING CHANGES TO THE PHYSICAL FITNESS TEST</title>
+    <subject>FORTHCOMING CHANGES TO THE PHYSICAL FITNESS TEST</subject>
+    <originator>CG TECOM QUANTICO VA</originator>
+    <signedDate>2021-08-04</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2021\MARADMIN_404_21_FORTHCOMING_CHANGES_TO_THE_PHYSICAL_FITNESS_TEST.pdf" sourceHash="4af494969691bc0f883cb4117b040ee288c4ec3ac03e69942d92436a38de2589" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="MCO-6100.13A-CH5" targetIdentifier="/us/dod/don/usmc/mco/6100_13a" basis="cited" tier="T3" held="held" from="narr:REF A"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2021/404/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2021/404/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/404/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>The purpose of this MARADMIN is to announce forthcoming changes in calendar year (CY) 2022 and CY 2023 to reference (a) for the plank event of the physical fitness test (PFT).</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/404/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Background.  Marine Corps human performance policies and standards are in a constant state of analysis, assessment, and modification, if necessary, to ensure that they best support the overall readiness of the force.  As such, the Marine Corps adopted the plank in CY 2020 as an alternate to the abdominal crunch for the PFT as a means to measure core stability, strength, and endurance while reducing risk of injury.  The plank's isometric hold requires constant muscle activation, engages almost twice as many muscles as the crunch, and is reliable in measuring midsection endurance required for military tasks and activities of daily living.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/404/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Starting 1 January 2022, the time required to achieve the maximum points will be 3 minutes, 45 seconds.  Additionally, the time required to achieve the minimum points will be 1 minute, 10 seconds.  Reference (a) will be revised to implement this change and provide the complete scoring table prior to 1 January 2022.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/404/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Effective 1 January 2023, the plank will be mandatory for the PFT and the abdominal crunch will no longer be an alternative to the plank.  This MARADMIN serves as advance notice to ensure Marines have sufficient time to train and prepare for the plank event prior to the policy change in CY 2023.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/404/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Additional information and resources to include a plank training guide are available at https:(slant slant)www.fitness.marines.mil.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/404/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>For questions contact the Human Performance Branch at: [contact withheld] or the listed POC.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/404/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN is applicable to the Marine Corps Total Force.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/404/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by Lieutenant General Lewis A. Craparotta, Commanding General, Training and Education Command.//</text>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>1 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

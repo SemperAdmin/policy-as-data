@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin-canx/2018/011" canonicalId="MARADMIN-CANX-2018-011" docType="MARADMIN" nativeNumber="011/18" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2018-03-19" schemaVersion="2.0">
+  <meta>
+    <title>CANCELLATION OF MARADMIN 161/18</title>
+    <subject>CANCELLATION OF MARADMIN 161/18</subject>
+    <originator>CMC WASHINGTON DC MRA MM</originator>
+    <signedDate>2018-03-19</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2018\MARADMIN_011_18_CANCELLATION_OF_MARADMIN_16118.pdf" sourceHash="d6acb19f88ef07bb53db1bcc019d0ba1474666149095416dbe8dd9e85158ae55" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="cancels" target="MARADMIN-2018-161" basis="cited" held="held"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin-canx/2018/011/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin-canx/2018/011/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin-canx/2018/011/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Reference (a) is hereby cancelled.  An updated MARADMIN will be released.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin-canx/2018/011/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by MajGen Robert F. Castellvi, Director, Manpower Management Division.//</text>
+    </provision>
+  </section>
+</issuance>

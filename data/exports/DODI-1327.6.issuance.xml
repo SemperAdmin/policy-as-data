@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.5.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/dodi/1327_6" canonicalId="DODI-1327.6" docType="DODI" nativeNumber="1327.6" tier="T1" lifecycle="superseded" verification="UNVERIFIED" startPeriod="2009-06-16" schemaVersion="2.0">
+  <meta>
+    <title>DoD Instruction 1327.06 - Leave and Liberty Policy and Procedures</title>
+    <subject>LEAVE AND LIBERTY POLICY AND PROCEDURES</subject>
+    <signedDate>2009-06-16</signedDate>
+    <provenance sourcePath="https://www.usff.navy.mil/Portals/36/132706p.pdf" sourceHash="c6bc59105772ebbed55082ca6660ee2344bba28ddc4fc7f017712d1e2f2e3ded" extractionEngine="manual-metadata-entry" convertedAt="2026-08-03T00:00:00+00:00" storeSchemaVersion="0.5.0"/>
+  </meta>
+  <authority>
+    <ref rel="superseded_by" target="DODI-1327.06" basis="cited" held="held"/>
+  </authority>
+  <section anchor="front-matter" heading="DoD Instruction 1327.06, Leave and Liberty Policy and Procedures, June 16, 2009, incorporating Change 3" verification="UNVERIFIED">
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>1 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

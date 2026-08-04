@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/secnavinst/1400_1d" canonicalId="SECNAVINST-1400.1D" docType="SECNAV" nativeNumber="1400.1D" tier="T2" lifecycle="unknown" verification="UNVERIFIED" schemaVersion="2.0">
+  <meta>
+    <title>SECNAVINST 1400.1D - Officer Competitive Categories for the Active Duty List of the Navy and Marine Corps</title>
+    <subject>OFFICER COMPETITIVE CATEGORIES FOR THE ACTIVE DUTY LIST OF THE NAVY AND MARINE CORPS</subject>
+    <provenance sourcePath="E:\GunnyBot\Policies\SECNAV\SECNAVINST_1400.1D.pdf" sourceHash="e8c76cfa1c9b3444032dadaaf8dc881fd3a3c09c8f0e84c3a5c30cebea1a2ceb" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="USC-T10-S574" targetIdentifier="/us/usc/t10/s574" basis="cited" tier="T0" held="held" from="front-matter:ref/a"/>
+    <ref rel="references" target="DODI-1320.14" targetIdentifier="/us/dod/dodi/1320_14" basis="cited" tier="T1" held="held" from="front-matter:ref/b"/>
+    <ref rel="references" target="SECNAVINST-1420.3" targetIdentifier="/us/dod/don/secnavinst/1420_3" basis="cited" tier="T2" held="absent" from="front-matter:ref/c"/>
+    <ref rel="references" target="SECNAVINST-5200.35G" targetIdentifier="/us/dod/don/secnavinst/5200_35g" basis="cited" tier="T2" held="absent" from="front-matter:ref/d"/>
+    <ref rel="references" target="SECNAVM-5214.1" targetIdentifier="/us/dod/don/secnavm/5214_1" basis="cited" tier="T2" held="absent" from="front-matter:ref/e"/>
+    <ref rel="references" target="NAVMC-1200.1K" targetIdentifier="/us/dod/don/usmc/navmc/1200_1k" basis="cited" tier="T4" held="drift" storeHolds="NAVMC-1200.1L" from="front-matter:ref/f"/>
+    <ref rel="references" target="DODI-1300.19" targetIdentifier="/us/dod/dodi/1300_19" basis="cited" tier="T1" held="held" from="front-matter:ref/g"/>
+  </authority>
+  <section anchor="front-matter" identifier="/us/dod/don/secnavinst/1400_1d/front-matter" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1400_1d/front-matter/ref" path="ref" number="Ref:" label="Ref:" depth="0" role="reference" verification="UNVERIFIED">
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/front-matter/ref/a" path="ref/a" number="(a)" label="(a)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>10 U.S.C. §§574, 621, and 649a</text>
+        <citation target="USC-T10-S574" targetIdentifier="/us/usc/t10/s574" basis="cited" text="10 U.S.C. §§574, 621, and 649a"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/front-matter/ref/b" path="ref/b" number="(b)" label="(b)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 1320.14 of 16 December 2020</text>
+        <citation target="DODI-1320.14" targetIdentifier="/us/dod/dodi/1320_14" basis="cited" text="DoD Instruction 1320.14 of 16 December 2020"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/front-matter/ref/c" path="ref/c" number="(c)" label="(c)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAVINST 1420.3</text>
+        <citation target="SECNAVINST-1420.3" targetIdentifier="/us/dod/don/secnavinst/1420_3" basis="cited" text="SECNAVINST 1420.3"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/front-matter/ref/d" path="ref/d" number="(d)" label="(d)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAVINST 5200.35G</text>
+        <citation target="SECNAVINST-5200.35G" targetIdentifier="/us/dod/don/secnavinst/5200_35g" basis="cited" text="SECNAVINST 5200.35G"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/front-matter/ref/e" path="ref/e" number="(e)" label="(e)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAV M-5214.1</text>
+        <citation target="SECNAVM-5214.1" targetIdentifier="/us/dod/don/secnavm/5214_1" basis="cited" text="SECNAV M-5214.1"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/front-matter/ref/f" path="ref/f" number="(f)" label="(f)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>NAVMC 1200.1K</text>
+        <citation target="NAVMC-1200.1K" targetIdentifier="/us/dod/don/usmc/navmc/1200_1k" basis="cited" text="NAVMC 1200.1K"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/front-matter/ref/g" path="ref/g" number="(g)" label="(g)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 1300.19 of 3 April 2018</text>
+        <citation target="DODI-1300.19" targetIdentifier="/us/dod/dodi/1300_19" basis="cited" text="DoD Instruction 1300.19 of 3 April 2018"/>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1400_1d/front-matter/encl" path="encl" number="Encl:" label="Encl:" depth="0" role="enclosure" verification="UNVERIFIED">
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/front-matter/encl/1" path="encl/1" number="(1)" label="(1)" depth="1" role="enclosure" verification="UNVERIFIED">
+        <text>Navy Active-Duty List Competitive Categories</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/front-matter/encl/2" path="encl/2" number="(2)" label="(2)" depth="1" role="enclosure" verification="UNVERIFIED">
+        <text>Marine Corps Active-Duty List Competitive Categories</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-1" identifier="/us/dod/don/secnavinst/1400_1d/p-1" heading="1. Purpose. To establish the officer competitive categories" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1400_1d/p-1/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Purpose.  To establish the officer competitive categories within the United States Navy (USN) and United States Marine Corps (USMC) for officers on the Active-Duty List (ADL) under references (a) and (b), and criteria to assess the need for new competitive categories.  This instruction is a complete revision in accordance with references (a) through (g) and should be reviewed in its entirety.</text>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1400_1d/p-1/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Cancellation.  SECNAVINST 1400.1C.</text>
+    </provision>
+  </section>
+  <section anchor="p-3" identifier="/us/dod/don/secnavinst/1400_1d/p-3" heading="3. Applicability. This instruction applies to the Office of the" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-4" identifier="/us/dod/don/secnavinst/1400_1d/p-4" heading="4. Policy. DON policy is to establish officer competitive" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-5" identifier="/us/dod/don/secnavinst/1400_1d/p-5" heading="5. Criteria for New Competitive Categories. A separate" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1400_1d/p-5/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Criteria for New Competitive Categories.  A separate competitive category for promotion will be considered only when the following criteria are met:</text>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/p-5/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>The specialized education, training, or experience and often relatively narrow utilization of a group of officers makes it impossible for them to compete for promotion on an equitable basis with other officers having more generalized experience.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/p-5/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>It is necessary to protect a substantial investment in education, training, or experience by ensuring equitable promotion opportunity when that education, training, or experience will be utilized within a narrow career field.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/p-5/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>The specialized community can be managed as a separate career field in such a manner as to ensure the most efficient use of the unique resources in the various officer grades.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/p-5/p5/d" path="p5/d" number="5.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>The specialized community will be large enough to sustain a career force in the grades O4 through O6, generally within the promotion guidelines of reference (c).</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-6" identifier="/us/dod/don/secnavinst/1400_1d/p-6" heading="6. Competitive Categories. The competitive categories for ADL" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-7" identifier="/us/dod/don/secnavinst/1400_1d/p-7" heading="7. Request to Establish or Disestablish a Competitive Category." verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1400_1d/p-7/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Request to Establish or Disestablish a Competitive Category. The Deputy Chief of Naval Operations (Personnel, Manpower and Training) (DCNO (PMT)) and the Deputy Commandant for Manpower and Reserve Affairs (DC (M&amp;RA)) may submit a request to the SECNAVINST 1400.1D 08 Apr 2025 3 Assistant Secretary of the Navy (Manpower and Reserve Affairs) (ASN (M&amp;RA)) to establish or disestablish a competitive category when the guidelines in paragraphs 4 and 5 of this instruction are met.  The requests must include:</text>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/p-7/p7/a" path="p7/a" number="7.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>A description of career area or career fields to be established or disestablished as a separate competitive category.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/p-7/p7/b" path="p7/b" number="7.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>A discussion of the unique use of the proposed competitive category compared with other fields not established as separate competitive categories.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/p-7/p7/c" path="p7/c" number="7.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>A projection of proposed promotion outlook (promotion opportunity and timing) for grades O4 through O6 for five years. If the requested category will take time to increase to proposed full strength, an estimate of the ability to attain and sustain the promotion guidelines in reference (e) is required.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/p-7/p7/d" path="p7/d" number="7.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Complete justification for establishing or disestablishing the competitive category.  Include an evaluation of the proposal and how it will enhance the management of the resource.  Evaluate the advantages and disadvantages in terms of officer accession and retention for the proposed category and the category(ies) from which separated or into which merged.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-8" identifier="/us/dod/don/secnavinst/1400_1d/p-8" heading="8. Responsibilities" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1400_1d/p-8/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>Responsibilities</text>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/p-8/p8/a" path="p8/a" number="8.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>The ASN (M&amp;RA) is responsible for overall supervision of the competitive category designation system under this instruction.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/p-8/p8/b" path="p8/b" number="8.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>The DCNO (PMT) and the DC (M&amp;RA) shall periodically review and update the competitive categories in their respective services.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-9" identifier="/us/dod/don/secnavinst/1400_1d/p-9" heading="9. Internal Controls. In accordance with reference (d), the" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-10" identifier="/us/dod/don/secnavinst/1400_1d/p-10" heading="10. Records Management" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1400_1d/p-10/p10" path="p10" number="10." label="10." depth="0" verification="UNVERIFIED">
+      <text>Records Management</text>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/p-10/p10/a" path="p10/a" number="10.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Records created as a result of this instruction, regardless of format or media, must be maintained and dispositioned according to the records disposition schedules found on the Directives and Records Management Division (DRMD) portal page: https://portal.secnav.navy.mil/orgs/DUSNM/DONAA/DRM/SitePages/Ho me.aspx</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1400_1d/p-10/p10/b" path="p10/b" number="10.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>For questions concerning the management of records related to this instruction or the records disposition schedules, please contact your local Records Manager or the DRMD program office.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-11" identifier="/us/dod/don/secnavinst/1400_1d/p-11" heading="11. Information Management Control. The reporting requirement" verification="UNVERIFIED">
+  </section>
+  <corrections>
+    <correction date="2026-08-03" against="section text already carried in this record">
+      <change>reparse_provisions.py - provision tree rebuilt after the reference-list and signature-block parser fixes</change>
+      <change>11 path(s) added, 7 removed, 29 provisions total</change>
+      <change>reference and enclosure lists now parse under ref/ and encl/ instead of entering the body marker stack</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+    <correction date="2026-08-03" against="the Subj: field in this record's own front matter text">
+      <change>backfill_subjects.py - subject recovered from the naval letter Subj: field, which the provision parser skips as a label line</change>
+      <change>title rebuilt as doc type, native number, and subject</change>
+      <change>no text was invented; a record with no Subj: field keeps subject null</change>
+    </correction>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>12 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

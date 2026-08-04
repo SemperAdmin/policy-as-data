@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2021/388" canonicalId="MARADMIN-2021-388" docType="MARADMIN" nativeNumber="388/21" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2021-07-26" schemaVersion="2.0">
+  <meta>
+    <title>CHANGE 1 TO FY22 COMMANDANT'S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD</title>
+    <subject>CHANGE 1 TO FY22 COMMANDANT'S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD</subject>
+    <originator>CMC WASHINGTON DC MRA</originator>
+    <signedDate>2021-07-26</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2021\MARADMIN_388_21_CHANGE_1_TO_FY22_COMMANDANTS_PROFESSIONAL_INTERMEDIATE-LEVEL.pdf" sourceHash="557a4f08edb127e4d6513995a3ca51660ac43e2a4e45e54fdd19210a27d23832" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2021/388/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2021/388/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/388/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN announces changes to the FY22 Commandant's Professional Intermediate-Level Education Board announcement message.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/388/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>The Environmental Engineering Program (8831) will continue to be offered as a program of study at the Air Force Institute of Technology (AFIT).</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/388/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Change to MARADMIN 360/21, paragraph 2.d.4. Remove Environmental Engineering (8831) as a Civilian Institutions-Restricted Program.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/388/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Paragraph 2.i. Change 8831 school description from Civilian to AFIT.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/388/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Paragraph 5.b.2.c. Delete paragraph on civilian university application requirements for Environmental Engineering.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/388/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>The Masters of Education Program (8802) will only be offered on the CCLEB board.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/388/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Change to MARADMIN 360/21, paragraph 2.d.4. Remove Education (8802 AMOS) as a Civilian Institutions-Restricted Program.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/388/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Paragraph 5.c.2.d. Delete paragraph on civilian university application requirements for Masters of Education.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/388/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Foreign PME does not require a separate application.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2021/388/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Change to MARADMIN 360/21, paragraph 5.f. Replace with:  Officers with or without a Note 1 are eligible for Foreign PME.  To be considered, officers must have a DLAB score in their record and rank it accordingly as a preference in the questionnaire.  The DLAB requirement pertains to English speaking programs as well.  A letter to the board explaining the desire to attend FPME along with any other qualifications is also recommended.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/388/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN is not applicable to the Marine Corps Reserve.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2021/388/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by BGen Michael J. Borgschulte, Director, Manpower Management Division.//</text>
+    </provision>
+  </section>
+</issuance>

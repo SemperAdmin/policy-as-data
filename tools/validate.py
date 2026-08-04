@@ -7,6 +7,7 @@ as it grows. No policy logic lives here; this is QA on the encoding only.
 
 Checks:
   1. Schema     - every *.uslm.xml validates against schema/usmc-issuance-1.0.xsd
+                  and every *.issuance.xml against schema/usmc-issuance-2.0.xsd
   2. JSON       - every *.json / *.jsonld is well-formed
   3. Ontology   - schema/authority-ontology.ttl parses        (skipped if no rdflib)
   4. Conformance- every pol: type/predicate used in a *.jsonld is declared in the
@@ -27,7 +28,8 @@ import subprocess
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SCHEMA = os.path.join(ROOT, "schema", "usmc-issuance-1.0.xsd")
+SCHEMA_1 = os.path.join(ROOT, "schema", "usmc-issuance-1.0.xsd")
+SCHEMA_2 = os.path.join(ROOT, "schema", "usmc-issuance-2.0.xsd")
 ONTOLOGY = os.path.join(ROOT, "schema", "authority-ontology.ttl")
 DATA = os.path.join(ROOT, "data")
 
@@ -39,11 +41,13 @@ def rel(path):
     return os.path.relpath(path, ROOT)
 
 
-def check_schema(uslm_files):
-    print("1. Schema validation (xmllint)")
-    for f in uslm_files:
+def check_schema(files, schema, label):
+    print(f"1. Schema validation (xmllint, {label})")
+    if not files:
+        print("   none found")
+    for f in files:
         result = subprocess.run(
-            ["xmllint", "--noout", "--schema", SCHEMA, f],
+            ["xmllint", "--noout", "--schema", schema, f],
             capture_output=True, text=True,
         )
         ok = result.returncode == 0
@@ -169,17 +173,22 @@ def main():
     # Recursive so subdirectories (data/exports/) are held to the same
     # checks - the docstring promises every document in data/, and the
     # implementation now keeps that promise.
-    uslm = sorted(glob.glob(os.path.join(DATA, "**", "*.uslm.xml"),
-                            recursive=True))
-    jsonld = sorted(glob.glob(os.path.join(DATA, "**", "*.jsonld"),
-                              recursive=True))
-    rules = sorted(glob.glob(os.path.join(DATA, "**", "*.rules.json"),
-                             recursive=True))
-    other_json = sorted(set(glob.glob(os.path.join(DATA, "**", "*.json"),
-                                      recursive=True)) - set(rules))
+    def find(pattern):
+        # _to_delete/ holds retired output. It is gitignored, so a local run
+        # that swept it would validate files CI never sees, and the two would
+        # disagree about what passed.
+        hits = glob.glob(os.path.join(DATA, "**", pattern), recursive=True)
+        return sorted(h for h in hits if "_to_delete" not in h.replace("\\", "/").split("/"))
+
+    uslm = find("*.uslm.xml")
+    issuance = find("*.issuance.xml")
+    jsonld = find("*.jsonld")
+    rules = find("*.rules.json")
+    other_json = sorted(set(find("*.json")) - set(rules))
 
     rdflib = load_rdflib()
-    check_schema(uslm)
+    check_schema(uslm, SCHEMA_1, "usmc-issuance-1.0")
+    check_schema(issuance, SCHEMA_2, "usmc-issuance-2.0")
     check_json(rules + other_json + jsonld)
     graph = check_ontology(rdflib)
     check_conformance(graph, rdflib, jsonld)
@@ -194,7 +203,8 @@ def main():
         for x in failures:
             print(f"  - {x}")
         sys.exit(1)
-    print(f"\nPASS: {len(uslm)} document(s) validated, all references resolve.")
+    print(f"\nPASS: {len(uslm)} hand-encoded + {len(issuance)} exported "
+          f"document(s) validated, all references resolve.")
 
 
 if __name__ == "__main__":

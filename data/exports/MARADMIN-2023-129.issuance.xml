@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2023/129" canonicalId="MARADMIN-2023-129" docType="MARADMIN" nativeNumber="129/23" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2023-03-08" schemaVersion="2.0">
+  <meta>
+    <title>Clarification to MARADMIN 051/23</title>
+    <subject>Clarification to MARADMIN 051/23</subject>
+    <originator>CMC WASHINGTON DC MRA MP</originator>
+    <signedDate>2023-03-08</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2023\MARADMIN_129_23_CLARIFICATION_TO_MARADMIN_05123.pdf" sourceHash="5f4d0bd31de51848302a81e6664d95f116e8fc9ac3f0bd9c525a7093c30c289a" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="MARADMIN-2023-051" targetIdentifier="/us/dod/don/usmc/maradmin/2023/051" basis="cited" tier="T5" held="held" from="narr:REF A"/>
+    <ref rel="references" target="MCO-1050.3J" targetIdentifier="/us/dod/don/usmc/mco/1050_3j" basis="cited" tier="T3" held="held" from="narr:REF C"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2023/129/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2023/129/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/129/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN provides clarification to reference (a) concerning the expansion of the Military Parental Leave Program (MPLP).</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/129/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Background.  Reference (a) provided implementing guidance for the expansion of the MPLP as authorized by reference (b).  The new policy in reference (b) removed the designators of Primary Caregiver Leave (PCL) and Secondary Caregiver Leave (SCL) as all Marines with a qualifying event are authorized 12 weeks of parental leave.  Additionally, Maternity Convalescent Leave (MCL) that was set at 42 days and began immediately following discharge from a hospital or similar facility or the first full day after a planned home delivery was removed and replaced with convalescent leave that requires a recommendation by a health care provider and approval from a commander.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/129/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Convalescent Leave.  The period of convalescent leave, under the new policy, is intended to allow the Marine who gave birth, and is not yet fit for duty, time to recover from a medical condition related to the birth event.  It is separate and distinct from parental leave.  Convalescent leave is flexible in that it allows a Marine to receive the proper number of days/weeks needed to properly recover from a birth event, as recommended by their health care provider based on their individual medical circumstances.  Parental leave is not a substitute for convalescent leave for a birth parent.  The approval authority for convalescent leave remains with the commander in accordance with reference (c); however, commanders should not deny convalescent leave for a birth parent Marine based solely on their eligibility for parental leave.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/129/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Special Leave Accrual (SLA).  SLA specifically due to a Marine executing parental leave is not authorized.  Marines must still meet the eligibility criteria in reference (c) to be eligible for SLA.  Marines are encouraged to closely monitor their regular (annual) leave and properly plan the execution of it to preclude lost days at the end of a fiscal year.  Reference (a) authorized annual leave to be executed in conjunction with, or in between, increments of parental leave.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/129/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by Lieutenant General James F. Glynn, Deputy  Commandant for Manpower and Reserve Affairs.//</text>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>1 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>
