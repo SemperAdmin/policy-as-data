@@ -1,0 +1,211 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PROCUREMENT OF COMMERCIAL AMMUNITION AND EXPLOSIVES (A&amp;E) - Semper Admin Policy Library</title>
+<style>
+:root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
+--blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
+--brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
+--bg:#0A1424;--elev:#11203F;--sunken:#060E1A;--fg:#F2E5BE;--card:#11203F;
+--muted:#182A4D;--mutedfg:#B5A988;--border:#233A5C;--borders:#34507A;
+--n950:#0F0C09;--rad:8px;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:400 15px/1.6 "Inter Variable",Inter,system-ui,sans-serif}
+a{color:var(--blue1)}a:hover{color:var(--brass3)}
+:focus-visible{outline:3px solid var(--brass3);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px;
+background:var(--brass3);color:var(--n950)}
+header.chrome,main,footer{max-width:64rem;margin:0 auto;padding:16px 24px}
+header.chrome{margin-top:16px;border-radius:12px;border:1px solid var(--border);
+background:var(--elev);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.wordmark{font:400 28px/1.2 "Bebas Neue",Oswald,system-ui,sans-serif;
+letter-spacing:.04em;color:var(--parch3);text-decoration:none;text-transform:uppercase}
+h1{font:700 28px/1.2 inherit;margin:32px 0 8px}
+h2{font:700 20px/1.2 inherit;border-bottom:1px solid var(--borders);
+padding-bottom:8px;margin-top:40px}
+.lede{color:var(--mutedfg);max-width:52rem}
+.tier{border:1px solid var(--border);border-radius:12px;background:var(--card);
+margin:0 0 4px;padding:16px 20px}
+.tier.gap{background:repeating-linear-gradient(135deg,var(--sunken),
+var(--sunken) 10px,#0b1830 10px,#0b1830 20px);border-style:dashed;
+border-color:var(--aging)}
+.tierhead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
+font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin-bottom:10px}
+.tiercode{color:var(--brass3);font-weight:700}
+.doc{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--muted)}
+.doc:first-of-type{border-top:0;padding-top:0}
+.docid{font:600 14px/1.4 "JetBrains Mono",Menlo,monospace;color:var(--parch3)}
+.doctitle{color:var(--fg)}
+.uslm{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.why{font-size:13px;color:var(--mutedfg);margin-top:4px}
+.pill{display:inline-block;padding:2px 9px;border-radius:9999px;
+font:700 11px/1.6 inherit;border:1px solid var(--borders);
+background:var(--muted);color:var(--parch3);white-space:nowrap}
+.pill.cited{border-color:var(--fresh);color:#9fe0bd}
+.pill.drift{border-color:var(--aging);color:#f0c489}
+.pill.gap{border-color:var(--stale);color:#f3a3a3}
+.pill.held{border-color:var(--blue1);color:#bcd7f2}
+.pill.cancelled,.pill.superseded{background:var(--stale);border-color:var(--stale);
+color:#fff}
+.arrow{text-align:center;color:var(--brass);font:700 13px/1 inherit;
+padding:6px 0;letter-spacing:.08em}
+.arrow span{background:var(--bg);padding:0 10px}
+.arrow{position:relative}
+.arrow:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
+background:var(--brass);z-index:-1}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--muted);
+vertical-align:top}
+th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;
+letter-spacing:.08em}
+code{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+footer{border-top:1px solid var(--border);margin-top:48px;font-size:13px;
+color:var(--mutedfg)}
+
+.crumb{font-size:13px;color:var(--mutedfg);margin:24px 0 0}
+.ident{font:500 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.factrow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.lede2{color:var(--mutedfg);max-width:54rem;margin:6px 0 18px}
+.ladder{border-left:2px solid var(--brass);margin:0 0 4px 10px;padding:0 0 0 18px}
+.rung{position:relative;padding:9px 0}
+.rung:before{content:"";position:absolute;left:-24px;top:16px;width:12px;
+height:2px;background:var(--brass)}
+.rung .t{font:700 11px/1 inherit;letter-spacing:.09em;color:var(--brass3);
+text-transform:uppercase}
+.rung.gaprung{opacity:.72}
+.rung.gaprung .t{color:var(--aging)}
+.small{font-size:13px;color:var(--mutedfg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.panel{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:16px 20px}
+.panel h3{font:700 12px/1.3 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin:0 0 10px}
+.prov{border-left:1px solid var(--muted);margin:0 0 0 4px;padding:2px 0 2px 14px}
+.plabel{font:600 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+.ptext{white-space:pre-wrap;overflow-wrap:break-word}
+.reflist{list-style:none;padding:0;margin:0}
+.reflist li{padding:7px 0;border-bottom:1px solid var(--muted)}
+.reflist li:last-child{border-bottom:0}
+.reflink{font-weight:600}
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{padding:8px 0 8px 16px;border-left:2px solid var(--border);
+position:relative}
+.timeline li:before{content:"";position:absolute;left:-5px;top:15px;width:8px;
+height:8px;border-radius:50%;background:var(--brass)}
+.timeline li.now:before{background:var(--fresh);box-shadow:0 0 0 3px rgba(47,143,92,.25)}
+.timeline li.gone:before{background:var(--stale)}
+details.body{margin-top:10px}
+details.body summary{cursor:pointer;color:var(--blue1);font-weight:600}
+.src{font:500 11px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--mutedfg)}
+.doc-raw{white-space:pre-wrap;overflow-wrap:break-word;
+font:500 12px/1.65 "JetBrains Mono",Menlo,monospace;color:var(--fg);
+background:var(--sunken);border:1px solid var(--border);border-radius:8px;
+padding:14px;max-height:34rem;overflow:auto}
+.typegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));
+gap:10px;margin:12px 0}
+.typecard{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:14px 16px}
+.typecard .n{font:700 26px/1.1 inherit;color:var(--brass3)}
+</style></head><body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="chrome"><a class="wordmark" href="index.html">Semper Admin</a><span>Policy</span><a href="policy-index.html" style="margin-left:auto">All policies</a><a href="authority-index.html">Authority chains</a><a href="sources.html">Sources</a></header>
+<main id="main">
+<p class="crumb"><a href="policy-index.html">All policies</a> &rsaquo; T5 Message</p>
+<h1>PROCUREMENT OF COMMERCIAL AMMUNITION AND EXPLOSIVES (A&amp;E)</h1>
+<div class="ident">/us/dod/don/usmc/maradmin/2023/322</div>
+<div class="factrow"><span class="pill ">T5 Message</span><span class="pill cancelled">cancelled</span><span class="pill ">UNVERIFIED</span><span class="pill ">signed 2023-06-23</span><span class="pill cancelled">cancelled 2023-09-14</span></div>
+<h2>Where this sits</h2>
+<p class="lede2">The ladder above is what governs this policy, one tier at a time. Every rung exists because this document, or one above it, printed the reference. A tier the corpus does not hold is shown rather than skipped.</p>
+<div class="ladder">
+<div class="rung gaprung"><div class="t">T0 Statute <span class="pill gap">tier not held</span></div><div class="small">MCO 1610.7B names 5 U.S.C. 552a and 10 U.S.C. 1034 in its reference list, so this spine does reach statute. The chain above climbs through DoD Instruction 1300.19 instead, whose own reference list could not be retrieved from the authoritative source and is therefore not asserted. Expand the reference table on MCO 1610.7B to see the statutory citations.</div></div>
+<div class="rung gaprung"><div class="t">T1 Department of Defense <span class="pill gap">tier not held</span></div><div class="small">No Department of Defense issuance is named in the reference list of any document on this spine. The MOS Manual carries a DoD occupational conversion report requirement, but the requirement names no issuance number, so no edge is written.</div></div>
+<div class="rung gaprung"><div class="t">T2 Department of the Navy <span class="pill gap">tier not held</span></div><div class="small">The store holds no Department of the Navy physical fitness instruction.</div></div>
+<div class="rung"><div class="t">T3 Service directive</div>
+<div style="padding:3px 0"><code>MCO-3570.1C</code> <span class="pill drift">drift</span> <span class="small">holds <code>MCO-3570.1</code></span><div class="src">named at ref-line:REF E &middot; cited</div></div>
+<div style="padding:3px 0"><code>MCO-5100.29B-V8</code> <span class="pill drift">drift</span> <span class="small">holds <code>MCO-5100.29C-CH2</code></span><div class="src">named at ref-line:REF B &middot; cited</div></div>
+<div style="padding:3px 0"><code>MCO-8000.8</code> <span class="pill gap">not held</span><div class="src">named at ref-line:REF A &middot; cited</div></div>
+<div style="padding:3px 0"><code>MCO-8011.5B</code> <span class="pill gap">not held</span><div class="src">named at ref-line:REF D &middot; cited</div></div>
+</div>
+<div class="rung gaprung"><div class="t">T4 Service manual <span class="pill gap">tier not held</span></div><div class="small">No service manual sits between MCO 1610.7B and the message tier for this subject.</div></div>
+<div class="rung"><div class="t">T5 Message &middot; this document</div><div><strong>PROCUREMENT OF COMMERCIAL AMMUNITION AND EXPLOSIVES (A&amp;E)</strong></div></div>
+</div>
+<h2>What came before</h2>
+<p class="lede2">Assembled from four independent signals. Each row says which one produced it, because a curated family, a change package, a supersession edge, and an inbound citation to a vanished edition are different kinds of evidence.</p>
+<div class="panel"><h3>Supersession</h3><ul class="timeline">
+<li class="gone"><strong>cancelled by</strong> <code>MARADMIN-CANX-2023-022</code> <span class="pill cited">cited</span> <span class="pill gap">not held</span><div class="src">exact</div></li>
+</ul></div>
+<details class="body"><summary>Record history &middot; 1 correction(s) to the DATA, not to the policy</summary><ul class="timeline">
+<li><strong>2026-08-04</strong> <span class="small">checked against USLM User Guide section 12.2, Referencing Model</span><ul class="small"><li>normalize_identifiers.py - period replaced with underscore in every USLM path segment</li><li>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</li><li>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</li><li>4 identifier(s) rewritten in this record</li><li>document id, native number, and displayed text are unchanged</li><li>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</li></ul></li>
+</ul></details>
+<h2>What it says</h2>
+<details class="body"><summary>The full text &middot; 17 addressable paragraph(s) across 1 section(s)</summary>
+<div class="panel" style="margin-top:10px" id="sec-body"><h3>body</h3>
+<div class="prov" id="p2">
+<span class="plabel">2.</span> 
+<span class="ptext">Background.  The Marine Corps shooting team and designated EOD teams supporting installation air shows may require commercial A&amp;E due to specific requirements that cannot be fulfilled by standard-issue Department of Defense (DoD) ammunition. Commercial A&amp;E may offer unique characteristics, such as specific bullet types or loadings that enhance precision, accuracy, or performance.  For clarification, the terms commercial A&amp;E, non-standard ammunition, and non-DOD ammunition throughout this MARADMIN are synonymous. They are defined as A&amp;E that has not been qualified nor fielded through the Naval Munitions Qualification process, or other DoD services respective qualification processes.</span>
+</div>
+<div class="prov" id="p3">
+<span class="plabel">3.</span> 
+<span class="ptext">Procurement.  Per reference (a), the procurement of ammunition with the intent of fielding and sustaining the Total Munitions Requirement (TMR) is prohibited by any Marine Corps organization, other than MARCORSYSCOM.  All requirements within the TMR are considered DoD standard ammunition.  When commercial A&amp;E is required and requested in the appropriate timeline, the Program Manager for Ammunition (PM Ammo), Marine Corps Systems Command (MARCORSYSCOM), will conduct the procurement actions.</span>
+</div>
+<div class="prov" id="p3-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Commercial A&amp;E procurement timelines.</span>
+</div>
+<div class="prov" id="p3-a-1">
+<span class="plabel">1.</span> 
+<span class="ptext">Greater than 6 Months. To support installation air shows and the Marine Corps shooting team, PM Ammo, MARCORSYSCOM, will procure commercial A&amp;E when the detailed requirements list is received, via ETMS2, at least six months prior to the required delivery date. This timeline is required to enable sufficient time for PM Ammo to conduct market research and all contracting actions.</span>
+</div>
+<div class="prov" id="p3-a-2">
+<span class="plabel">2.</span> 
+<span class="ptext">Less than 6 Months. If the detailed requirements list is submitted less than six months prior to the required delivery date, the procurement actions will be the responsibility of WTBN or the installation conducting the air show. Prior to starting any contracting actions, PM Ammo will review the requirements list, and provide procurement guidance and funding. Once that occurs, the respective organization and their contracting office are authorized to conduct the procurement action.</span>
+</div>
+<div class="prov" id="p3-a-4">
+<span class="plabel">4.</span> 
+<span class="ptext">Commercial A&amp;E Transfers in support of the Marine Corps Shooting Team.</span>
+</div>
+<div class="prov" id="p5">
+<span class="plabel">5.</span> 
+<span class="ptext">Site approval, storage, handling, and use.</span>
+</div>
+<div class="prov" id="p5-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Use of commercial A&amp;E on non-certified range training areas, requires a Department of Defense Explosives Safety Board site approval and Standard Operating Procedures per references (b) and (c). The Explosives safety site approval requests must be submitted to PM Ammo, six months in advance of the event.</span>
+</div>
+<div class="prov" id="p5-a-1">
+<span class="plabel">1.</span> 
+<span class="ptext">In addition to required site approvals, installations requesting or receiving commercial A&amp;E must submit a non-DOD ammunition storage request to PM Ammo for authorization to store and handle commercial A&amp;E per reference (b). Upon approval to store non-DOD ammunition, PM Ammo will provide the installation with a storage authorization letter containing the parameters of the approval.</span>
+</div>
+<div class="prov" id="p5-b">
+<span class="plabel">b.</span> 
+<span class="ptext">The use of commercial A&amp;E is prohibited on Marine Corps operational training ranges without explicit approval of the Commanding General, Training and Education Command (TECOM) (Range and Training Area Management). Per reference (e), once the use of commercial A&amp;E has been authorized, the base or station Commander is the final approval authority for its use.</span>
+</div>
+<div class="prov" id="p5-b-1">
+<span class="plabel">1.</span> 
+<span class="ptext">For events where Marines and/or government civilians are not directly involved (e.g., only observers, and where contractors will be performing testing and/or demonstrations), the necessary safety documentation shall be coordinated between the responsible contractor and the local base/station Commander and Range Safety organizations.</span>
+</div>
+<div class="prov" id="p5-b-6">
+<span class="plabel">6.</span> 
+<span class="ptext">Accountability. A comprehensive inventory record of all commercial A&amp;E and components must be maintained, including accurate descriptions, quantities, and serial/lot numbers, ensuring it is up-to-date and readily accessible for audit and inspection purposes.  Implementation of a strict control system for the issuance and receipt of commercial A&amp;E and components, including clear documentation of individuals responsible for handling and securing these items, is required.</span>
+</div>
+<div class="prov" id="p5-b-7">
+<span class="plabel">7.</span> 
+<span class="ptext">This is a coordinated message between MARCORSYSCOM AND TECOM.</span>
+</div>
+<div class="prov" id="p5-b-8">
+<span class="plabel">8.</span> 
+<span class="ptext">This MARADMIN applies to WTBN, MCB Quantico and EOD Teams in direct support of installation air shows.</span>
+</div>
+<div class="prov" id="p5-b-9">
+<span class="plabel">9.</span> 
+<span class="ptext">Release authorized by Brigadier General David C. Walsh, Commander, Marine Corps Systems Command.//</span>
+</div>
+</div>
+</details>
+<h2>Provenance</h2><div class="panel"><p class="small">Source <code>E:\GunnyBot\Policies\MARADMINS\CY2023\MARADMIN_322_23_PROCUREMENT_OF_COMMERCIAL_AMMUNITION_AND_EXPLOSIVES_AE.pdf</code><br>Extracted by pymupdf on 2026-05-16, converted 2026-07-19 against store schema 0.4.0<br>Checksum <code>d39200538885cc33f770a600b525f6bf</code></p></div>
+<footer><p>This record is an UNVERIFIED machine extraction unless marked otherwise. Every link on this page is cited: it exists because the issuing authority printed the reference on the document. This library is an unofficial reference - the issuing authority's copy governs.</p></footer></main></body></html>

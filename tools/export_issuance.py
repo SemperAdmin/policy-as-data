@@ -49,7 +49,7 @@ SCHEMA_VERSION = "2.0"
 XMLSAFE_RX = re.compile("[^\x09\x0a\x0d\x20-퟿-�]")
 EMAIL_RX = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 PHONE_RX = re.compile(
-    r"(?:\(?\d{3}\)?[-. ]\d{3}[-. ]\d{4}|\b\d{3}[-.]\d{4}\b|DSN[:\s]*\d{3}[-. ]?\d{4})",
+    r"(?:\(?\d{3}\)?[-. ]?\d{3}[-. ]\d{4}|\b\d{3}[-.]\d{4}\b|DSN[:\s]*\d{3}[-. ]?\d{4})",
     re.I)
 ORIG_RX = re.compile(r"MSGID/[A-Z]+/([^/\n]+?)//", re.I)
 TIER_RX = re.compile(r"tier=(T[0-9X])")

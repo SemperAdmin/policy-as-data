@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>All policies - Semper Admin Policy Library</title>
+<style>
+:root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
+--blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
+--brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
+--bg:#0A1424;--elev:#11203F;--sunken:#060E1A;--fg:#F2E5BE;--card:#11203F;
+--muted:#182A4D;--mutedfg:#B5A988;--border:#233A5C;--borders:#34507A;
+--n950:#0F0C09;--rad:8px;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:400 15px/1.6 "Inter Variable",Inter,system-ui,sans-serif}
+a{color:var(--blue1)}a:hover{color:var(--brass3)}
+:focus-visible{outline:3px solid var(--brass3);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px;
+background:var(--brass3);color:var(--n950)}
+header.chrome,main,footer{max-width:64rem;margin:0 auto;padding:16px 24px}
+header.chrome{margin-top:16px;border-radius:12px;border:1px solid var(--border);
+background:var(--elev);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.wordmark{font:400 28px/1.2 "Bebas Neue",Oswald,system-ui,sans-serif;
+letter-spacing:.04em;color:var(--parch3);text-decoration:none;text-transform:uppercase}
+h1{font:700 28px/1.2 inherit;margin:32px 0 8px}
+h2{font:700 20px/1.2 inherit;border-bottom:1px solid var(--borders);
+padding-bottom:8px;margin-top:40px}
+.lede{color:var(--mutedfg);max-width:52rem}
+.tier{border:1px solid var(--border);border-radius:12px;background:var(--card);
+margin:0 0 4px;padding:16px 20px}
+.tier.gap{background:repeating-linear-gradient(135deg,var(--sunken),
+var(--sunken) 10px,#0b1830 10px,#0b1830 20px);border-style:dashed;
+border-color:var(--aging)}
+.tierhead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
+font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin-bottom:10px}
+.tiercode{color:var(--brass3);font-weight:700}
+.doc{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--muted)}
+.doc:first-of-type{border-top:0;padding-top:0}
+.docid{font:600 14px/1.4 "JetBrains Mono",Menlo,monospace;color:var(--parch3)}
+.doctitle{color:var(--fg)}
+.uslm{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.why{font-size:13px;color:var(--mutedfg);margin-top:4px}
+.pill{display:inline-block;padding:2px 9px;border-radius:9999px;
+font:700 11px/1.6 inherit;border:1px solid var(--borders);
+background:var(--muted);color:var(--parch3);white-space:nowrap}
+.pill.cited{border-color:var(--fresh);color:#9fe0bd}
+.pill.drift{border-color:var(--aging);color:#f0c489}
+.pill.gap{border-color:var(--stale);color:#f3a3a3}
+.pill.held{border-color:var(--blue1);color:#bcd7f2}
+.pill.cancelled,.pill.superseded{background:var(--stale);border-color:var(--stale);
+color:#fff}
+.arrow{text-align:center;color:var(--brass);font:700 13px/1 inherit;
+padding:6px 0;letter-spacing:.08em}
+.arrow span{background:var(--bg);padding:0 10px}
+.arrow{position:relative}
+.arrow:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
+background:var(--brass);z-index:-1}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--muted);
+vertical-align:top}
+th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;
+letter-spacing:.08em}
+code{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+footer{border-top:1px solid var(--border);margin-top:48px;font-size:13px;
+color:var(--mutedfg)}
+
+.crumb{font-size:13px;color:var(--mutedfg);margin:24px 0 0}
+.ident{font:500 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.factrow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.lede2{color:var(--mutedfg);max-width:54rem;margin:6px 0 18px}
+.ladder{border-left:2px solid var(--brass);margin:0 0 4px 10px;padding:0 0 0 18px}
+.rung{position:relative;padding:9px 0}
+.rung:before{content:"";position:absolute;left:-24px;top:16px;width:12px;
+height:2px;background:var(--brass)}
+.rung .t{font:700 11px/1 inherit;letter-spacing:.09em;color:var(--brass3);
+text-transform:uppercase}
+.rung.gaprung{opacity:.72}
+.rung.gaprung .t{color:var(--aging)}
+.small{font-size:13px;color:var(--mutedfg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.panel{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:16px 20px}
+.panel h3{font:700 12px/1.3 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin:0 0 10px}
+.prov{border-left:1px solid var(--muted);margin:0 0 0 4px;padding:2px 0 2px 14px}
+.plabel{font:600 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+.ptext{white-space:pre-wrap;overflow-wrap:break-word}
+.reflist{list-style:none;padding:0;margin:0}
+.reflist li{padding:7px 0;border-bottom:1px solid var(--muted)}
+.reflist li:last-child{border-bottom:0}
+.reflink{font-weight:600}
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{padding:8px 0 8px 16px;border-left:2px solid var(--border);
+position:relative}
+.timeline li:before{content:"";position:absolute;left:-5px;top:15px;width:8px;
+height:8px;border-radius:50%;background:var(--brass)}
+.timeline li.now:before{background:var(--fresh);box-shadow:0 0 0 3px rgba(47,143,92,.25)}
+.timeline li.gone:before{background:var(--stale)}
+details.body{margin-top:10px}
+details.body summary{cursor:pointer;color:var(--blue1);font-weight:600}
+.src{font:500 11px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--mutedfg)}
+.doc-raw{white-space:pre-wrap;overflow-wrap:break-word;
+font:500 12px/1.65 "JetBrains Mono",Menlo,monospace;color:var(--fg);
+background:var(--sunken);border:1px solid var(--border);border-radius:8px;
+padding:14px;max-height:34rem;overflow:auto}
+.typegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));
+gap:10px;margin:12px 0}
+.typecard{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:14px 16px}
+.typecard .n{font:700 26px/1.1 inherit;color:var(--brass3)}
+</style></head><body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="chrome"><a class="wordmark" href="index.html">Semper Admin</a><span>All policies</span><a href="authority-index.html" style="margin-left:auto">Authority chains</a><a href="sources.html">Sources</a></header>
+<main id="main"><h1>All policies</h1>
+<p class="lede">Every document in the demonstration set, ordered by the level that issued it. Each one opens on a single page carrying its authority, its version history, and its full text - the three questions a reader actually has, answered together.</p>
+<div class="typegrid"><div class="typecard"><div class="n">6</div><a href="type-DODI.html">DoD Instructions</a></div><div class="typecard"><div class="n">29</div><a href="type-MARADMIN.html">MARADMIN Messages</a></div><div class="typecard"><div class="n">12</div><a href="type-MCO.html">Marine Corps Orders</a></div><div class="typecard"><div class="n">1</div><a href="type-NAVMC.html">NAVMC Publications</a></div><div class="typecard"><div class="n">3</div><a href="type-SECNAV.html">SECNAV Instructions</a></div><div class="typecard"><div class="n">5</div><a href="type-USC.html">United States Code</a></div></div>
+<table><tr><th>Tier</th><th>Policy</th><th>Status</th><th>Names</th><th>Named by</th><th>Paragraphs</th></tr>
+<tr><td><code>T0</code> <span class="small">Statute</span></td><td><a href="policy-USC-T10.html">Title 10, United States Code - Armed Forces</a><br><span class="src">/us/usc/t10</span></td><td><span class="pill ">active</span></td><td>0</td><td>5</td><td>0</td></tr>
+<tr><td><code>T0</code> <span class="small">Statute</span></td><td><a href="policy-USC-T10-S574.html">10 U.S.C. 574 - Warrant officer active-duty lists; competitive categories; number to be recommended for promotion; promotion zones</a><br><span class="src">/us/usc/t10/s574</span></td><td><span class="pill ">active</span></td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td><code>T0</code> <span class="small">Statute</span></td><td><a href="policy-USC-T10-S701.html">10 U.S.C. 701 - Entitlement and accumulation</a><br><span class="src">/us/usc/t10/s701</span></td><td><span class="pill ">active</span></td><td>0</td><td>2</td><td>6</td></tr>
+<tr><td><code>T0</code> <span class="small">Statute</span></td><td><a href="policy-USC-T5.html">Title 5, United States Code - Government Organization and Employees</a><br><span class="src">/us/usc/t5</span></td><td><span class="pill ">active</span></td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td><code>T0</code> <span class="small">Statute</span></td><td><a href="policy-USC-T5-S552a.html">5 U.S.C. 552a - Records maintained on individuals</a><br><span class="src">/us/usc/t5/s552a</span></td><td><span class="pill ">active</span></td><td>0</td><td>8</td><td>9</td></tr>
+<tr><td><code>T1</code> <span class="small">Department of Defense</span></td><td><a href="policy-DODI-1300.19.html">DoD Instruction 1300.19 - DoD Joint Officer Management Program</a><br><span class="src">/us/dod/dodi/1300_19</span></td><td><span class="pill ">active</span></td><td>0</td><td>4</td><td>0</td></tr>
+<tr><td><code>T1</code> <span class="small">Department of Defense</span></td><td><a href="policy-DODI-1308.03.html">DoD Instruction 1308.03 - DoD Physical Fitness/Body Composition Program</a><br><span class="src">/us/dod/dodi/1308_03</span></td><td><span class="pill ">active</span></td><td>7</td><td>0</td><td>12</td></tr>
+<tr><td><code>T1</code> <span class="small">Department of Defense</span></td><td><a href="policy-DODI-1308.3.html">DoD Instruction 1308.3 - DoD Physical Fitness and Body Fat Programs Procedures</a><br><span class="src">/us/dod/dodi/1308_3</span></td><td><span class="pill cancelled">cancelled</span></td><td>0</td><td>3</td><td>0</td></tr>
+<tr><td><code>T1</code> <span class="small">Department of Defense</span></td><td><a href="policy-DODI-1320.14.html">DoD Instruction 1320.14 - DoD Commissioned Officer Promotion Program Procedures</a><br><span class="src">/us/dod/dodi/1320_14</span></td><td><span class="pill ">active</span></td><td>8</td><td>2</td><td>11</td></tr>
+<tr><td><code>T1</code> <span class="small">Department of Defense</span></td><td><a href="policy-DODI-1327.06.html">DoD Instruction 1327.06 - Military Leave, Liberty, and Administrative Absence</a><br><span class="src">/us/dod/dodi/1327_06</span></td><td><span class="pill ">active</span></td><td>18</td><td>0</td><td>27</td></tr>
+<tr><td><code>T1</code> <span class="small">Department of Defense</span></td><td><a href="policy-DODI-1327.6.html">DoD Instruction 1327.06 - Leave and Liberty Policy and Procedures</a><br><span class="src">/us/dod/dodi/1327_6</span></td><td><span class="pill superseded">superseded</span></td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td><code>T2</code> <span class="small">Department of the Navy</span></td><td><a href="policy-SECNAVINST-1400.1D.html">SECNAVINST 1400.1D - Officer Competitive Categories for the Active Duty List of the Navy and Marine Corps</a><br><span class="src">/us/dod/don/secnavinst/1400_1d</span></td><td><span class="pill ">unknown</span></td><td>7</td><td>0</td><td>29</td></tr>
+<tr><td><code>T2</code> <span class="small">Department of the Navy</span></td><td><a href="policy-SECNAVINST-1610.3A.html">SECNAVINST 1610.3A - Department of the Navy Policy on Harassment Prevention and Response</a><br><span class="src">/us/dod/don/secnavinst/1610_3a</span></td><td><span class="pill ">unknown</span></td><td>15</td><td>0</td><td>150</td></tr>
+<tr><td><code>T2</code> <span class="small">Department of the Navy</span></td><td><a href="policy-SECNAVINST-1610.4A.html">SECNAVINST 1610.4A - Department of the Navy Policy on Handling Protest, Extremist, and Criminal Gang Activities</a><br><span class="src">/us/dod/don/secnavinst/1610_4a</span></td><td><span class="pill ">unknown</span></td><td>16</td><td>0</td><td>269</td></tr>
+<tr><td><code>T3</code> <span class="small">Service directive</span></td><td><a href="policy-MCO-1050.3J.html">MCO 1050.3J - Regulations for Leave, Liberty, and Administrative Absence</a><br><span class="src">/us/dod/don/usmc/mco/1050_3j</span></td><td><span class="pill ">active</span></td><td>18</td><td>3</td><td>543</td></tr>
+<tr><td><code>T3</code> <span class="small">Service directive</span></td><td><a href="policy-MCO-1200.13G.html">MCO 1200.13G - Marine Corps Front-end Analysis Program</a><br><span class="src">/us/dod/don/usmc/mco/1200_13g</span></td><td><span class="pill ">active</span></td><td>7</td><td>1</td><td>50</td></tr>
+<tr><td><code>T3</code> <span class="small">Service directive</span></td><td><a href="policy-MCO-1200.15C-CH1.html">MCO 1200.15C - Marine Corps Directives Compliance with Executive Order 14168</a><br><span class="src">/us/dod/don/usmc/mco/1200_15c-ch1</span></td><td><span class="pill ">active</span></td><td>1</td><td>3</td><td>3</td></tr>
+<tr><td><code>T3</code> <span class="small">Service directive</span></td><td><a href="policy-MCO-1200.18.html">MCO 1200.18 - Military Occupational Specialties (MOS) Program Order (SHORT TITLE: MOS MANUAL ORDER)</a><br><span class="src">/us/dod/don/usmc/mco/1200_18</span></td><td><span class="pill ">active</span></td><td>11</td><td>3</td><td>29</td></tr>
+<tr><td><code>T3</code> <span class="small">Service directive</span></td><td><a href="policy-MCO-1400.31D.html">MCO 1400.31D - Marine Corps Promotion Manual, Volume 1, Officer Promotions (MARCORPROMMAN, VOL 1, OFFPROM)</a><br><span class="src">/us/dod/don/usmc/mco/1400_31d</span></td><td><span class="pill ">active</span></td><td>25</td><td>0</td><td>378</td></tr>
+<tr><td><code>T3</code> <span class="small">Service directive</span></td><td><a href="policy-MCO-1400.32D-CH1.html">MCO 1400.32D - Marine Corps Promotion Manual, Volume 2, Enlisted Promotions (SHORT TITLE: MARCORPROMAN, VOL 2, ENLPROM) Enel: (1) New page inserts to MCO P1400.32d Situation. to transmit new page inserts to the basic Order. Mission. To</a><br><span class="src">/us/dod/don/usmc/mco/1400_32d-ch1</span></td><td><span class="pill ">unknown</span></td><td>13</td><td>2</td><td>586</td></tr>
+<tr><td><code>T3</code> <span class="small">Service directive</span></td><td><a href="policy-MCO-1400.32D-CH2.html">MCO 1400.32D - Marine Corps Promotion Manual, Volume 2, Enlisted Promotions (SHORT TITLE: MARCORPROMAN, VOL 2, ENLPROM) Enel: (1) New page inserts to MCO P1400.32d Situation. to transmit new page inserts to the basic Order. Mission. To</a><br><span class="src">/us/dod/don/usmc/mco/1400_32d-ch2</span></td><td><span class="pill ">active</span></td><td>12</td><td>5</td><td>586</td></tr>
+<tr><td><code>T3</code> <span class="small">Service directive</span></td><td><a href="policy-MCO-1610.7B.html">MCO 1610.7B - Performance Evaluation System (PES)</a><br><span class="src">/us/dod/don/usmc/mco/1610_7b</span></td><td><span class="pill ">active</span></td><td>21</td><td>2</td><td>1991</td></tr>
+<tr><td><code>T3</code> <span class="small">Service directive</span></td><td><a href="policy-MCO-1616.1.html">MCO 1616.1 - Junior Enlisted Performance Evaluation System (JEPES)</a><br><span class="src">/us/dod/don/usmc/mco/1616_1</span></td><td><span class="pill ">active</span></td><td>5</td><td>1</td><td>191</td></tr>
+<tr><td><code>T3</code> <span class="small">Service directive</span></td><td><a href="policy-MCO-6100.13A-CH5.html">MCO 6100.13A - Marine Corps Directives Compliance with Executive Order 14168</a><br><span class="src">/us/dod/don/usmc/mco/6100_13a-ch5</span></td><td><span class="pill ">active</span></td><td>19</td><td>3</td><td>327</td></tr>
+<tr><td><code>T3</code> <span class="small">Service directive</span></td><td><a href="policy-MCO-6100.14.html">MCO 6100.14 - Marine Corps Physical Fitness Program (MCPFP)</a><br><span class="src">/us/dod/don/usmc/mco/6100_14</span></td><td><span class="pill ">active</span></td><td>18</td><td>0</td><td>121</td></tr>
+<tr><td><code>T3</code> <span class="small">Service directive</span></td><td><a href="policy-MCO-6110.3A-CH4.html">MCO 6110.3A - Marine Corps Directives Compliance with Executive Order 14168</a><br><span class="src">/us/dod/don/usmc/mco/6110_3a-ch4</span></td><td><span class="pill ">active</span></td><td>18</td><td>3</td><td>277</td></tr>
+<tr><td><code>T4</code> <span class="small">Service manual</span></td><td><a href="policy-NAVMC-1200.1L.html">NAVMC 1200.1L - Military Occupational Specialties Manual</a><br><span class="src">/us/dod/don/usmc/navmc/1200_1l</span></td><td><span class="pill ">active</span></td><td>27</td><td>2</td><td>13595</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2008-418.html">AWARDS UPDATE</a><br><span class="src">/us/dod/don/usmc/maradmin/2008/418</span></td><td><span class="pill ">active</span></td><td>1</td><td>0</td><td>27</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2018-011.html">CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND STAFF</a><br><span class="src">/us/dod/don/usmc/maradmin/2018/011</span></td><td><span class="pill ">active</span></td><td>4</td><td>0</td><td>29</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2018-161.html">FY18 APPROVED SELECTED MARINE CORPS RESERVE (SMCR) STAFF NONCOMMISSIONED</a><br><span class="src">/us/dod/don/usmc/maradmin/2018/161</span></td><td><span class="pill cancelled">cancelled</span></td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2019-114.html">TRANSITION TO A NEW GOVERNMENT TRAVEL CHARGE CARD (GTCC) PROVIDER</a><br><span class="src">/us/dod/don/usmc/maradmin/2019/114</span></td><td><span class="pill ">active</span></td><td>0</td><td>0</td><td>32</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2021-360.html">FY22 COMMANDANTâ€™S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD (CPIB)</a><br><span class="src">/us/dod/don/usmc/maradmin/2021/360</span></td><td><span class="pill ">active</span></td><td>11</td><td>0</td><td>78</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2021-388.html">CHANGE 1 TO FY22 COMMANDANT&#x27;S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD</a><br><span class="src">/us/dod/don/usmc/maradmin/2021/388</span></td><td><span class="pill ">active</span></td><td>0</td><td>0</td><td>12</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2021-404.html">FORTHCOMING CHANGES TO THE PHYSICAL FITNESS TEST</a><br><span class="src">/us/dod/don/usmc/maradmin/2021/404</span></td><td><span class="pill ">active</span></td><td>1</td><td>0</td><td>8</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2022-408.html">SOLICITATION FOR PARTICIPATION IN THE MARINE CORPS 2022 SEMI-ANNUAL MICROSOFT</a><br><span class="src">/us/dod/don/usmc/maradmin/2022/408</span></td><td><span class="pill ">active</span></td><td>0</td><td>0</td><td>19</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2022-409.html">FISCAL YEAR 2023 (FY23) ENLISTED TO WARRANT OFFICER (RESERVE) SELECTION BOARD</a><br><span class="src">/us/dod/don/usmc/maradmin/2022/409</span></td><td><span class="pill ">active</span></td><td>7</td><td>0</td><td>59</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2023-051.html">EXPANSION OF THE MARINE CORPS MILITARY PARENTAL LEAVE PROGRAM</a><br><span class="src">/us/dod/don/usmc/maradmin/2023/051</span></td><td><span class="pill ">active</span></td><td>3</td><td>2</td><td>78</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2023-129.html">Clarification to MARADMIN 051/23</a><br><span class="src">/us/dod/don/usmc/maradmin/2023/129</span></td><td><span class="pill ">active</span></td><td>2</td><td>1</td><td>5</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2023-322.html">PROCUREMENT OF COMMERCIAL AMMUNITION AND EXPLOSIVES (A&amp;E)</a><br><span class="src">/us/dod/don/usmc/maradmin/2023/322</span></td><td><span class="pill cancelled">cancelled</span></td><td>4</td><td>0</td><td>17</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2024-016.html">FISCAL YEAR 2025 ACTIVE AND RESERVE MARINE ATTACHÉ SELECTION BOARD: OFFICER</a><br><span class="src">/us/dod/don/usmc/maradmin/2024/016</span></td><td><span class="pill ">active</span></td><td>3</td><td>0</td><td>16</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2024-253.html">FISCAL YEAR 2024 MARINE CORPS TALENT ACQUISITION PILOT</a><br><span class="src">/us/dod/don/usmc/maradmin/2024/253</span></td><td><span class="pill ">active</span></td><td>2</td><td>0</td><td>67</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2024-586.html">SEQUENCE TWO FIELDING OF BIOELECTRICAL IMPEDANCE ANALYSIS</a><br><span class="src">/us/dod/don/usmc/maradmin/2024/586</span></td><td><span class="pill ">active</span></td><td>5</td><td>0</td><td>81</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2025-166.html">ANNOUNCEMENT OF THE WINNERS FOR CY2024 VISUAL INFORMATION AND</a><br><span class="src">/us/dod/don/usmc/maradmin/2025/166</span></td><td><span class="pill ">active</span></td><td>0</td><td>0</td><td>47</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2025-237.html">MARINE CORPS POLICY ON THE WEAR AND PURCHASE OF BODY</a><br><span class="src">/us/dod/don/usmc/maradmin/2025/237</span></td><td><span class="pill ">active</span></td><td>5</td><td>0</td><td>19</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2026-012.html">ACADEMIC YEAR 2026-2027 NAVAL POSTGRADUATE SCHOOL DISTANCE</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/012</span></td><td><span class="pill ">active</span></td><td>5</td><td>0</td><td>33</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2026-026.html">SOLICITATION OF POLICY ISSUES FOR MARINE CORPS RESERVE POLICY</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/026</span></td><td><span class="pill ">active</span></td><td>3</td><td>0</td><td>13</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2026-043.html">FY27 HQMC SPECIAL DUTY ASSIGNMENT SCREENING TEAM (HSST)</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/043</span></td><td><span class="pill ">active</span></td><td>5</td><td>0</td><td>24</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2026-073.html">CHANGE 2 TO THE ADVANCE NOTIFICATION OF CHANGES TO THE MARINE</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/073</span></td><td><span class="pill ">active</span></td><td>5</td><td>0</td><td>3</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2026-074.html">SOLICITATION FOR THE TRAINING AND EDUCATION INSTRUCTOR OF THE</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/074</span></td><td><span class="pill ">active</span></td><td>0</td><td>0</td><td>47</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2026-151.html">CONVENING OF THE FY28 U.S. MARINE CORPS COLONEL, LIEUTENANT</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/151</span></td><td><span class="pill ">active</span></td><td>7</td><td>0</td><td>28</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2026-191.html">CHANGES TO RESERVE COMPONENT MATERNITY LEAVE (RCML) AND RESERVE</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/191</span></td><td><span class="pill ">active</span></td><td>8</td><td>0</td><td>64</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2026-213.html">FY2026 55XX PRIMARY MILITARY OCCUPATIONAL SPECIALTY (PMOS)</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/213</span></td><td><span class="pill ">active</span></td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2026-221.html">SOLICITATION FOR QUALIFIED MARINES TO LATERAL MOVE</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/221</span></td><td><span class="pill ">active</span></td><td>4</td><td>0</td><td>25</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2026-274.html">FISCAL YEAR 2027 COMMANDANT&#x27;S PROFESSIONAL INTERMEDIATE-LEVEL</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/274</span></td><td><span class="pill ">active</span></td><td>8</td><td>0</td><td>145</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-2026-284.html">JULY 2026 ACTIVE-DUTY CORPORAL AND SERGEANT PROMOTION</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/284</span></td><td><span class="pill ">active</span></td><td>2</td><td>0</td><td>10</td></tr>
+<tr><td><code>T5</code> <span class="small">Message</span></td><td><a href="policy-MARADMIN-CANX-2018-011.html">CANCELLATION OF MARADMIN 161/18</a><br><span class="src">/us/dod/don/usmc/maradmin-canx/2018/011</span></td><td><span class="pill ">active</span></td><td>0</td><td>0</td><td>2</td></tr>
+</table>
+<footer><p>Records are UNVERIFIED machine extractions unless promoted. Statute and Department of Defense records are metadata-grade: identity, dates, supersession, and reference lists only, section text not ingested.</p></footer></main></body></html>
