@@ -170,8 +170,26 @@ color:var(--mutedfg)}
 """
 
 
+# Contact masking, same definition the export tier uses, so the rendered site
+# and the XML agree about what a contact is. Masking lives in esc() because
+# every renderer emits through it, and a second emission path is how the XML
+# tier ended up with an unmasked phone number in a heading attribute.
+EMAIL_RX = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
+PHONE_RX = re.compile(
+    r"(?:\(?\d{3}\)?[-. ]?\d{3}[-. ]\d{4}|\b\d{3}[-.]\d{4}\b|DSN[:\s]*\d{3}[-. ]?\d{4})",
+    re.I)
+MASK = "[contact withheld]"
+MASK_ON = True
+
+
+def mask(text):
+    if not MASK_ON:
+        return text
+    return PHONE_RX.sub(MASK, EMAIL_RX.sub(MASK, text))
+
+
 def esc(s):
-    return html.escape(str(s or ""))
+    return html.escape(mask(str(s or "")))
 
 
 TITLE_LEVEL_RX = re.compile(r"^USC-T\d+$")

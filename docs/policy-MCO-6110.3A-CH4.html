@@ -1,0 +1,1863 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MCO 6110.3A - Marine Corps Directives Compliance with Executive Order 14168 - Semper Admin Policy Library</title>
+<style>
+:root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
+--blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
+--brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
+--bg:#0A1424;--elev:#11203F;--sunken:#060E1A;--fg:#F2E5BE;--card:#11203F;
+--muted:#182A4D;--mutedfg:#B5A988;--border:#233A5C;--borders:#34507A;
+--n950:#0F0C09;--rad:8px;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:400 15px/1.6 "Inter Variable",Inter,system-ui,sans-serif}
+a{color:var(--blue1)}a:hover{color:var(--brass3)}
+:focus-visible{outline:3px solid var(--brass3);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px;
+background:var(--brass3);color:var(--n950)}
+header.chrome,main,footer{max-width:64rem;margin:0 auto;padding:16px 24px}
+header.chrome{margin-top:16px;border-radius:12px;border:1px solid var(--border);
+background:var(--elev);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.wordmark{font:400 28px/1.2 "Bebas Neue",Oswald,system-ui,sans-serif;
+letter-spacing:.04em;color:var(--parch3);text-decoration:none;text-transform:uppercase}
+h1{font:700 28px/1.2 inherit;margin:32px 0 8px}
+h2{font:700 20px/1.2 inherit;border-bottom:1px solid var(--borders);
+padding-bottom:8px;margin-top:40px}
+.lede{color:var(--mutedfg);max-width:52rem}
+.tier{border:1px solid var(--border);border-radius:12px;background:var(--card);
+margin:0 0 4px;padding:16px 20px}
+.tier.gap{background:repeating-linear-gradient(135deg,var(--sunken),
+var(--sunken) 10px,#0b1830 10px,#0b1830 20px);border-style:dashed;
+border-color:var(--aging)}
+.tierhead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
+font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin-bottom:10px}
+.tiercode{color:var(--brass3);font-weight:700}
+.doc{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--muted)}
+.doc:first-of-type{border-top:0;padding-top:0}
+.docid{font:600 14px/1.4 "JetBrains Mono",Menlo,monospace;color:var(--parch3)}
+.doctitle{color:var(--fg)}
+.uslm{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.why{font-size:13px;color:var(--mutedfg);margin-top:4px}
+.pill{display:inline-block;padding:2px 9px;border-radius:9999px;
+font:700 11px/1.6 inherit;border:1px solid var(--borders);
+background:var(--muted);color:var(--parch3);white-space:nowrap}
+.pill.cited{border-color:var(--fresh);color:#9fe0bd}
+.pill.drift{border-color:var(--aging);color:#f0c489}
+.pill.gap{border-color:var(--stale);color:#f3a3a3}
+.pill.held{border-color:var(--blue1);color:#bcd7f2}
+.pill.cancelled,.pill.superseded{background:var(--stale);border-color:var(--stale);
+color:#fff}
+.arrow{text-align:center;color:var(--brass);font:700 13px/1 inherit;
+padding:6px 0;letter-spacing:.08em}
+.arrow span{background:var(--bg);padding:0 10px}
+.arrow{position:relative}
+.arrow:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
+background:var(--brass);z-index:-1}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--muted);
+vertical-align:top}
+th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;
+letter-spacing:.08em}
+code{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+footer{border-top:1px solid var(--border);margin-top:48px;font-size:13px;
+color:var(--mutedfg)}
+
+.crumb{font-size:13px;color:var(--mutedfg);margin:24px 0 0}
+.ident{font:500 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.factrow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.lede2{color:var(--mutedfg);max-width:54rem;margin:6px 0 18px}
+.ladder{border-left:2px solid var(--brass);margin:0 0 4px 10px;padding:0 0 0 18px}
+.rung{position:relative;padding:9px 0}
+.rung:before{content:"";position:absolute;left:-24px;top:16px;width:12px;
+height:2px;background:var(--brass)}
+.rung .t{font:700 11px/1 inherit;letter-spacing:.09em;color:var(--brass3);
+text-transform:uppercase}
+.rung.gaprung{opacity:.72}
+.rung.gaprung .t{color:var(--aging)}
+.small{font-size:13px;color:var(--mutedfg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.panel{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:16px 20px}
+.panel h3{font:700 12px/1.3 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin:0 0 10px}
+.prov{border-left:1px solid var(--muted);margin:0 0 0 4px;padding:2px 0 2px 14px}
+.plabel{font:600 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+.ptext{white-space:pre-wrap;overflow-wrap:break-word}
+.reflist{list-style:none;padding:0;margin:0}
+.reflist li{padding:7px 0;border-bottom:1px solid var(--muted)}
+.reflist li:last-child{border-bottom:0}
+.reflink{font-weight:600}
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{padding:8px 0 8px 16px;border-left:2px solid var(--border);
+position:relative}
+.timeline li:before{content:"";position:absolute;left:-5px;top:15px;width:8px;
+height:8px;border-radius:50%;background:var(--brass)}
+.timeline li.now:before{background:var(--fresh);box-shadow:0 0 0 3px rgba(47,143,92,.25)}
+.timeline li.gone:before{background:var(--stale)}
+details.body{margin-top:10px}
+details.body summary{cursor:pointer;color:var(--blue1);font-weight:600}
+.src{font:500 11px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--mutedfg)}
+.doc-raw{white-space:pre-wrap;overflow-wrap:break-word;
+font:500 12px/1.65 "JetBrains Mono",Menlo,monospace;color:var(--fg);
+background:var(--sunken);border:1px solid var(--border);border-radius:8px;
+padding:14px;max-height:34rem;overflow:auto}
+.typegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));
+gap:10px;margin:12px 0}
+.typecard{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:14px 16px}
+.typecard .n{font:700 26px/1.1 inherit;color:var(--brass3)}
+</style></head><body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="chrome"><a class="wordmark" href="index.html">Semper Admin</a><span>Policy</span><a href="policy-index.html" style="margin-left:auto">All policies</a><a href="authority-index.html">Authority chains</a><a href="sources.html">Sources</a></header>
+<main id="main">
+<p class="crumb"><a href="policy-index.html">All policies</a> &rsaquo; T3 Service directive</p>
+<h1>MCO 6110.3A - Marine Corps Directives Compliance with Executive Order 14168</h1>
+<div class="ident">/us/dod/don/usmc/mco/6110_3a-ch4</div>
+<div class="factrow"><span class="pill ">T3 Service directive</span><span class="pill ">active</span><span class="pill ">UNVERIFIED</span></div>
+<h2>Where this sits</h2>
+<p class="lede2">The ladder above is what governs this policy, one tier at a time. Every rung exists because this document, or one above it, printed the reference. A tier the corpus does not hold is shown rather than skipped.</p>
+<div class="ladder">
+<div class="rung"><div class="t">T0 Statute</div>
+<div style="padding:3px 0"><a href="policy-USC-T5-S552a.html">USC-T5-S552a</a> <span class="pill held">in store</span><div class="small">5 U.S.C. 552a - Records maintained on individuals</div><div class="src">named at p-5-3:ref/s &middot; cited</div></div>
+</div>
+<div class="rung"><div class="t">T1 Department of Defense</div>
+<div style="padding:3px 0"><a href="policy-DODI-1308.3.html">DODI-1308.3</a> <span class="pill held">in store</span><div class="small">DoD Instruction 1308.3 - DoD Physical Fitness and Body Fat Programs Procedures</div><div class="src">named at p-5-3:ref/c &middot; cited</div></div>
+</div>
+<div class="rung"><div class="t">T2 Department of the Navy</div>
+<div style="padding:3px 0"><code>BUMEDINST-6320.66E-CH2</code> <span class="pill gap">not held</span><div class="src">named at p-5-3:ref/j &middot; cited</div></div>
+<div style="padding:3px 0"><code>SECNAVINST-1920.6C-CH5</code> <span class="pill drift">drift</span> <span class="small">holds <code>SECNAVINST-1920.6D</code></span><div class="src">named at p-5-3:ref/g &middot; cited</div></div>
+<div style="padding:3px 0"><code>SECNAVINST-5211.5E</code> <span class="pill gap">not held</span><div class="src">named at p-5-3:ref/t &middot; cited</div></div>
+<div style="padding:3px 0"><code>SECNAVM-5210.1</code> <span class="pill gap">not held</span><div class="src">named at p-5-3:ref/r &middot; cited</div></div>
+<div style="padding:3px 0"><code>SECNAVNOTE-5210</code> <span class="pill gap">not held</span><div class="src">named at p-5-3:ref/u &middot; cited</div></div>
+</div>
+<div class="rung"><div class="t">T3 Service directive &middot; this document</div><div><strong>MCO 6110.3A - Marine Corps Directives Compliance with Executive Order 14168</strong></div></div>
+<div class="rung"><div class="t">Below &middot; 3 document(s) name this one</div>
+<div style="padding:3px 0"><a href="policy-MCO-1610.7B.html">MCO-1610.7B</a><div class="small">MCO 1610.7B - Performance Evaluation System (PES)</div><div class="src">names it at p-6:ref/r</div></div>
+<div style="padding:3px 0"><a href="policy-MARADMIN-2026-073.html">MARADMIN-2026-073</a><div class="small">CHANGE 2 TO THE ADVANCE NOTIFICATION OF CHANGES TO THE MARINE</div><div class="src">names it at ref-line:REF C</div></div>
+<div style="padding:3px 0"><a href="policy-MARADMIN-2024-586.html">MARADMIN-2024-586</a><div class="small">SEQUENCE TWO FIELDING OF BIOELECTRICAL IMPEDANCE ANALYSIS</div><div class="src">names it at narr:REF C</div></div>
+</div>
+</div>
+<h2>What came before</h2>
+<p class="lede2">Assembled from four independent signals. Each row says which one produced it, because a curated family, a change package, a supersession edge, and an inbound citation to a vanished edition are different kinds of evidence.</p>
+<div class="panel"><h3>Held in the store</h3><ul class="timeline">
+<li class="now"><a href="policy-MCO-6110.3A-CH4.html">MCO-6110.3A-CH4</a> <span class="pill ">change 4</span> <span class="pill held">this document</span><div class="small">MCO 6110.3A - Marine Corps Directives Compliance with Executive Order 14168</div></li>
+</ul></div>
+<div class="panel"><h3>Cited as an earlier edition</h3><p class="small">These documents name a revision of this policy the store does not hold. Nothing records that an edition existed once it is off the publisher's site; an inbound citation is often the only surviving evidence.</p><ul class="timeline">
+<li class="gone"><a href="policy-MARADMIN-2022-409.html">MARADMIN-2022-409</a> cites <code>MCO-6110.3A-CH3</code> <span class="pill drift">not held</span></li>
+<li class="gone"><a href="policy-MCO-6100.14.html">MCO-6100.14</a> cites <code>MCO-6110.3A-CH1</code> <span class="pill drift">not held</span></li>
+</ul></div>
+<details class="body"><summary>Record history &middot; 3 correction(s) to the DATA, not to the policy</summary><ul class="timeline">
+<li><strong>2026-08-03</strong> <span class="small">checked against section text already carried in this record</span><ul class="small"><li>reparse_provisions.py - provision tree rebuilt after the reference-list and signature-block parser fixes</li><li>45 path(s) added, 38 removed, 277 provisions total</li><li>reference and enclosure lists now parse under ref/ and encl/ instead of entering the body marker stack</li><li>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</li></ul></li>
+<li><strong>2026-08-03</strong> <span class="small">checked against the Subj: field in this record&#x27;s own front matter text</span><ul class="small"><li>backfill_subjects.py - subject recovered from the naval letter Subj: field, which the provision parser skips as a label line</li><li>title rebuilt as doc type, native number, and subject</li><li>no text was invented; a record with no Subj: field keeps subject null</li></ul></li>
+<li><strong>2026-08-04</strong> <span class="small">checked against USLM User Guide section 12.2, Referencing Model</span><ul class="small"><li>normalize_identifiers.py - period replaced with underscore in every USLM path segment</li><li>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</li><li>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</li><li>33 identifier(s) rewritten in this record</li><li>document id, native number, and displayed text are unchanged</li><li>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</li></ul></li>
+</ul></details>
+<h2>What it says</h2>
+<div class="panel"><h3>References this document names</h3><p class="small">Each entry is a link, not a string. This is the join between one policy and the next.</p>
+<ul class="reflist">
+<li><span class="plabel">(1)</span> New enclosure (5) “Temporary Medical Exemption Process” <span class="pill ">no issuance named</span></li>
+</ul>
+<ul class="reflist">
+<li><span class="plabel">(a)</span> MARCORMAN <span class="pill ">no issuance named</span></li>
+<li><span class="plabel">(b)</span> <span class="reflink"><code>MCO 6100.13A CH-1</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/6100_13a/ch1</div></li>
+<li><span class="plabel">(c)</span> <span class="reflink"><a href="policy-DODI-1308.3.html">DoDI 1308.3, &quot;DoD Physical Fitness and Body Fat Programs Procedures,” November 5, 2002</a></span> <span class="pill ">T1 Department of Defense</span> <span class="pill held">in store</span><div class="src">/us/dod/dodi/1308_3</div></li>
+<li><span class="plabel">(d)</span> <span class="reflink"><code>MCO 3500.27C</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/3500_27c</div></li>
+<li><span class="plabel">(e)</span> <span class="reflink"><code>MCO 5210.11F</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/5210_11f</div></li>
+<li><span class="plabel">(f)</span> <span class="reflink"><code>MCO 1900.16 CH-1</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/1900_16/ch1</div></li>
+<li><span class="plabel">(g)</span> <span class="reflink"><code>SECNAVINST 1920.6C CH-5</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/secnavinst/1920_6c/ch5</div></li>
+<li><span class="plabel">(h)</span> NavMed P-117 <span class="pill ">no issuance named</span></li>
+<li><span class="plabel">(i)</span> <span class="reflink"><code>MCO 5000.12E CH 1-2</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/5000_12e/ch1</div></li>
+<li><span class="plabel">(j)</span> <span class="reflink"><code>BUMEDINST 6320.66E CH-2</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/bumedinst/6320_66e/ch2</div></li>
+<li><span class="plabel">(k)</span> MCTFSPRIUM <span class="pill ">no issuance named</span></li>
+<li><span class="plabel">(l)</span> <span class="reflink"><a href="policy-MCO-1400.32D-CH1.html">MCO P1400.32D CH 1-2</a></span> <span class="pill ">T3 Service directive</span> <span class="pill held">in store</span><div class="src">/us/dod/don/usmc/mco/1400_32d/ch1</div></li>
+<li><span class="plabel">(m)</span> <span class="reflink"><code>MCO P1400.31C CH-1</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/1400_31c/ch1</div></li>
+<li><span class="plabel">(n)</span> <span class="reflink"><code>MCO 1040.31</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/1040_31</div></li>
+<li><span class="plabel">(o)</span> <span class="reflink"><code>MCO P1326.6D CH-2</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/1326_6d/ch2</div></li>
+<li><span class="plabel">(p)</span> <span class="reflink"><code>MCO P1070.12K CH-1</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/1070_12k/ch1</div></li>
+<li><span class="plabel">(q)</span> <span class="reflink"><code>MCO 1610.7</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/1610_7</div></li>
+<li><span class="plabel">(r)</span> <span class="reflink"><code>SECNAV M-5210.1</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/secnavm/5210_1</div></li>
+<li><span class="plabel">(s)</span> <span class="reflink"><a href="policy-USC-T5-S552a.html">5 U.S.C 552a</a></span> <span class="pill ">T0 Statute</span> <span class="pill held">in store</span><div class="src">/us/usc/t5/s552a</div></li>
+<li><span class="plabel">(t)</span> <span class="reflink"><code>SECNAVINST 5211.5E</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/secnavinst/5211_5e</div></li>
+<li><span class="plabel">(u)</span> <span class="reflink"><code>SECNAV Notice 5210</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/secnavnote/5210</div></li>
+<li><span class="plabel">(1)</span> Marine Corps Body Composition and Military Appearance Program (MCBCMAP) Procedural Guidance <span class="pill ">no issuance named</span></li>
+<li><span class="plabel">(2)</span> Marine Corps Body Composition and Military Appearance Program (MCBCMAP) Sequence Chart <span class="pill ">no issuance named</span></li>
+<li><span class="plabel">(3)</span> Department of Defense (DoD) Height/Weight Standards Table <span class="pill ">no issuance named</span></li>
+<li><span class="plabel">(4)</span> Department of Defense (DoD) Body Composition Standards Table <span class="pill ">no issuance named</span></li>
+<li><span class="plabel">(5)</span> BCP Medical Waiver Sequence Chart Temporary Medical Exemption Process <span class="pill ">no issuance named</span></li>
+<li><span class="plabel">(6)</span> Pregnancy and Post-Partum Policy Flowchart <span class="pill ">no issuance named</span></li>
+<li><span class="plabel">(7)</span> <span class="reflink"><a href="policy-MCO-6110.3A-CH4.html">Glossary of Terms MCO 6110.3A$GPLQ&amp;+ 2</a></span> <span class="pill ">T3 Service directive</span> <span class="pill held">in store</span><div class="src">/us/dod/don/usmc/mco/6110_3a</div></li>
+</ul>
+</div>
+<details class="body"><summary>The full text &middot; 244 addressable paragraph(s) across 17 section(s), 3 of them held as source text because the parser refused to invent a hierarchy for them</summary>
+<div class="panel" style="margin-top:10px" id="sec-front-matter"><h3>front-matter</h3>
+<div class="prov" id="a">
+<span class="plabel">a.</span> 
+<span class="ptext">Recommendations.  Submit all recommendations concerning this Order to Commanding General, Training and Education Command (CG TECOM).</span>
+</div>
+<div class="prov" id="b">
+<span class="plabel">b.</span> 
+<span class="ptext">Records Management.  Records created as a result of this directive shall be managed according to National Archives and Records Administration (NARA)-approved dispositions per SECNAV M-5210.1 CH-1 to ensure proper maintenance, use, accessibility and preservation, regardless of format or medium.  Records disposition schedules are located on the Department of the Navy/Assistant for Administration (DON/AA), Directives and Records Management Division (DRMD) portal page at: https://portal.secnav.navy.mil/orgs/DUSNM/DONAA/DRM/Records-and-Information- Management/Approved%20Record%20Schedules/Forms/AllItems.aspx.  Refer to MCO 5210.11F for Marine Corps records management policy and procedures.</span>
+</div>
+<div class="prov" id="c">
+<span class="plabel">c.</span> 
+<span class="ptext">Privacy Act.  Any misuse or unauthorized disclosure of Personally Identifiable Information (PII) may result in both civil and criminal penalties.  The Department of the Navy (DON) recognizes that the privacy of an individual is a personal and fundamental right that shall be respected and protected.  The DON&#x27;s need to collect, use, maintain, or disseminate PII about individuals for purposes of discharging its statutory responsibilities shall be balanced against the individuals&#x27; right to be protected against MCO 6110.3A CH-2 23 Feb 2021 2 unwarranted invasion of privacy.  All collection, use, maintenance, or dissemination of PII shall be in accordance with the Privacy Act of 1974, as amended (5 U.S.C. 552a) and implemented per SECNAVINST 5211.5F.</span>
+</div>
+<div class="prov" id="d">
+<span class="plabel">d.</span> 
+<span class="ptext">Forms Management.  Naval Forms Online is the official online resource for Marine Corps forms.  Marine Corps forms identified in this Bulletin may be retrieved from: https://forms.documentservices.dla.mil/order/.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-5"><h3>p-5 &middot; 5.  Command and Signal</h3>
+<div class="prov" id="p5">
+<span class="plabel">5.</span> 
+<span class="ptext">Command and Signal</span>
+</div>
+<div class="prov" id="p5-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Command.  This Order is applicable to the Marine Corps Total Force.</span>
+</div>
+<div class="prov" id="p5-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Signal.  This Order is effective the date signed. LEWIS A. CRAPAROTTA Commanding General Training and Education Command By direction DISTRIBUTION:  PCN 10209357503 DISTRIBUTION STATEMENT A:  Approved for public release; distribution is unlimited. DEPARTMENT OF THE NAVY HEADQUARTERS UNITED STATES MARINE CORPS 3000 MARINE CORPS PENTAGON WASHINGTON DC 20350-3000 MCO 6110.3A ADMIN CH C 469 16 APR 2019 MARINE CORPS ORDER 6110.3A CH-1 AND ADMIN CH</span>
+</div>
+<div class="prov" id="p1">
+<span class="plabel">1.</span> 
+<span class="ptext">Situation.  To transmit changes to the basic Order.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-2"><h3>p-2 &middot; 2.  Mission.  This change revises policy for pregnancy and post-partum</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">2.  Mission.  This change revises policy for pregnancy and post-partum 
+policy.  Marines who are pregnant are exempt from participating in the Body 
+Composition Program (BCP) or the Military Appearance Program (MAP) for at 
+least nine months after the birth event.  Following this nine-month period, a 
+Marine birthparent is expected to meet body composition standards at the next 
+regularly scheduled unit Body Composition Evaluation (BCE).  If already 
+formally assigned to BCP or MAP, Marines will be placed in an inactive status 
+during pregnancy and for nine months after date of the birth event.  After 
+the nine month period, the Marine will continue with the remainder of the BCP 
+or MAP assignment.</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-3"><h3>p-3 &middot; 3.  Execution</h3>
+<div class="prov" id="p3">
+<span class="plabel">3.</span> 
+<span class="ptext">Execution</span>
+</div>
+<div class="prov" id="p3-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Delete Chapter 1, paragraph 6.a. and replace (see inserted language). Page 1-17.</span>
+</div>
+<div class="prov" id="p3-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Delete Chapter 1, paragraph 8.a. item 2 and replace (see inserted language). Page 1-23.</span>
+</div>
+<div class="prov" id="p3-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Delete Enclosure 6-1 and replace with the new flowchart.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-4"><h3>p-4 &middot; 4.  Administration and Logistics</h3>
+<div class="prov" id="p4">
+<span class="plabel">4.</span> 
+<span class="ptext">Administration and Logistics</span>
+</div>
+<div class="prov" id="p4-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Submit all recommendations concerning this Order to Commanding General, Training and Education Command (CG TECOM) via the Force Fitness Division (C469).</span>
+</div>
+<div class="prov" id="p4-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Records Management.  Records created as a result of this Order shall be managed according to National Archives and Records Administration (NARA) approved dispositions per references (u) and (r) to ensure proper maintenance, use, accessibility and preservation, regardless of format or medium.  Refer to reference (e) for Marine Corps records management policy and procedures.</span>
+</div>
+<div class="prov" id="p4-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Privacy Act.  Any misuse or unauthorized disclosure of Personally Identifiable Information (PII) may result in both civil and criminal penalties.  The Department of the Navy (DON) recognizes that the privacy of an individual is a personal and fundamental right that shall be respected and protected.  The DON&#x27;s need to collect, use, maintain, or disseminate PII MCO 6110.3A ADMIN CH 16 APR 2019 2 about individuals for purposes of discharging its statutory responsibilities shall be balanced against the individuals&#x27; right to be protected against unwarranted invasion of privacy.  All collection, use, maintenance, or dissemination of PII shall be in accordance with the Privacy Act of 1974, as amended (reference (s)) and implemented per reference (t).</span>
+</div>
+<div class="prov" id="p4-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Forms Management.  Naval Forms Online is the official online resource for Marine Corps forms.  Marine Corps forms identified in this Bulletin may be retrieved from: https://forms.documentservices.dla.mil/order/.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-5-2"><h3>p-5-2 &middot; 5.  Command and Signal</h3>
+<div class="prov" id="p5">
+<span class="plabel">5.</span> 
+<span class="ptext">Command and Signal</span>
+</div>
+<div class="prov" id="p5-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Command.  This Order is applicable to the Marine Corps Total Force.</span>
+</div>
+<div class="prov" id="p5-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Signal.  This Order is effective the date signed.</span>
+</div>
+<div class="prov" id="p1">
+<span class="plabel">1.</span> 
+<span class="ptext">Situation.  To transmit changes and a new enclosure (5) to the basic Order.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-2-2"><h3>p-2-2 &middot; 2.  Mission.  This change clarifies the responsibilities and roles of</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">2.  Mission.  This change clarifies the responsibilities and roles of 
+medical staff in evaluating and granting a temporary medical exemption 
+due to an underlying medical condition.  This change also revises 
+enclosure (5) to update the temporary medical exemption process 
+flowchart.</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-3-2"><h3>p-3-2 &middot; 3.  Execution</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">3.  Execution 
+ 
+    a.  Replace office code “C 466” with the office code for the 
+Training and Education Command Force Fitness Division “C 469” 
+throughout the Order. 
+ 
+    b.  Replace Enclosure (5) “BCP Medical Waiver Sequence Chart” with 
+the new Enclosure (5) “Temporary Medical Exemption” chart. 
+ 
+    c.  Delete paragraph 2.  “Responsibilities”, sub-paragraph 
+2.a.(2), and replace with “(2) Commanders/OICs will ensure Marines 
+receive a medical evaluation from an authorized medical provider 
+(Independent Duty Corpsman, Nurse Practitioner, Physician, or 
+Physician Assistant) prior to being assigned to BCP or MAP.” 
+ 
+    d.  In paragraph 2.  “Responsibilities”, sub-paragraph 2.a. 
+”Commanders/Officers-In-Charge”, re-number item (3) as item (4).  
+Insert new text for item 2.a.(3) with the language:  “(3) 
+Commanders/OICs will consider recommendations for temporary medical 
+exemptions if they are forwarded by board certified or board eligible 
+military physicians (BCBEMP) as shown in the process chart provided at 
+enclosure (5).” 
+ 
+    e.  Under paragraph 2.  “Responsibilities”, sub-paragraph 2.c. 
+“FFI/CPTR”, items (12) and (13), replace “BCP” with “MAP”. 
+
+
+MCO 6110.3A CH-1 
+12 OCT 2017 
+2 
+    f.  Under paragraph 2.  “Responsibilities”, add a new sub-
+paragraph e. “Medical Providers” with the following language: 
+ 
+    “e.  Medical Providers 
+ 
+        (1) Authorized medical providers (Independent Duty Corpsman, 
+Nurse Practitioner, Physician, or Physician Assistant) will evaluate 
+Marines who have failed an official weigh-in and are being screened 
+for BCP or MAP. 
+ 
+        (2) Authorized medical providers will use the sequence chart 
+provided at enclosure (5) for Marines whose weight gain may be due to 
+a new medical condition or recent change to a medical therapy.  If the 
+provider determines a temporary medical exemption may be appropriate, 
+the recommendation will be forwarded per the sequence chart at 
+enclosure (5). 
+ 
+        (3) Board Certified or Board Eligible Military Physicians 
+(BCBEMP) may originate recommendations for temporary medical 
+exemptions and may endorse recommendations from non-BCBEMPs, 
+Independent Duty Corpsman, Nurse Practitioner, and Physician 
+Assistants as shown in the sequence chart at enclosure (5). 
+ 
+        (4) Authorized Medical providers will refer Marines to a 
+Medical Evaluation Board if the Marine has made two consecutive 
+requests for a temporary medical exemption for the same condition 
+within a 12-month period or has made three requests for any condition 
+within the most recent four year period.” 
+ 
+    g.  In paragraph 4.c.  “BCP Formal Assignment”, after the word 
+“expired” insert the following text:  “with the exception of 
+pregnant/post-partum Marines as specified in Paragraph 4.f.(3).” 
+ 
+    h.  In paragraph 4.c.  “BCP Formal Assignment”, delete sub-
+paragraph 4.c. (4) and replace with: 
+ 
+        “(4) An authorized medical provider (Independent Duty 
+Corpsman, Nurse Practitioner, Physician, or Physician Assistant) will 
+evaluate the Marine and make the following determinations: 
+ 
+            (a) Medical clearance to participate in the 
+BCP/MAP/Remedial Conditioning Program (RCP). 
+ 
+            (b) Physical limitations or restrictions. 
+ 
+            (c) Recommended weight and body composition fat reduction 
+goals. 
+ 
+            (d) Recommended nutritional and dietary measures. 
+ 
+            (e) Referral to BCBEMP for evaluation of possible 
+underlying cause for weight gain.” 
+
+
+MCO 6110.3A CH-1 
+12 OCT 2017 
+3 
+ 
+    i.  In paragraph 4.c.(9) “BCP Formal Assignment” replace “medical 
+waiver” with “temporary medical exemption.” 
+ 
+    j.  In paragraph 6.  “Medical Considerations”, delete section 6.d. 
+“Medical Evaluation” and replace with the following text: 
+ 
+    “d.  Medical Evaluation 
+ 
+        (1) Marines not in compliance with established weight and body 
+composition standards and Marines not meeting military appearance 
+standards require a medical evaluation prior to BCP or MAP formal 
+assignment.  An authorized medical provider (Independent Duty 
+Corpsman, Nurse Practitioner, Physician, or Physician Assistant) will 
+evaluate the Marine and make the following 
+recommendations/determinations: 
+ 
+            (a) Medical clearance to participate in the BCP/MAP/RCP. 
+ 
+            (b) Physical limitations or restrictions. 
+ 
+            (c) Recommended weight and body composition fat reduction 
+goals. 
+ 
+            (d) Recommended nutritional and dietary measures. 
+ 
+            (e) Referral to BCBEMP for evaluation of possible 
+underlying cause for weight gain. 
+ 
+        (2) Marines who suspect that their weight gain is due to an 
+underlying medical condition will be evaluated by an authorized 
+medical provider as shown in the sequence chart provided at enclosure 
+(5).  If the authorized medical provider determines that the weight 
+gain is the result of a medical condition, or medical therapy which 
+has been newly diagnosed, worsened in severity, or increased in dosage 
+in that six-month period which is known to result in weight gain, the 
+provider may recommend a temporary medical exemption.  The inability 
+to exercise is not a valid reason for a temporary medical exemption 
+from weight and body fat standards. 
+ 
+        (3) All recommendations for temporary medical exemptions 
+require the endorsement of a Board Certified or Board Eligible 
+Military Physician (BCBEMP).  If the provider recommending the 
+temporary medical exemption is not a BCBEMP, then the Marine must be 
+referred to a BCBEMP for further evaluation.” 
+ 
+    k.  Within the unit diary example entry in paragraph 7.e. SRB/OQR 
+(3), replace the words “You are advised that failure to take 
+composition” with the phrase “You are advised that failure to take 
+corrective action.” 
+ 
+
+
+MCO 6110.3A CH-1 
+12 OCT 2017 
+4 
+    l.  In paragraph 8.  “Exemptions and Waivers” delete section 8.a. 
+“Exemptions” and replace with: 
+ 
+   “a.  Exemptions 
+ 
+        (1) Temporary medical exemptions may be granted for Marines 
+newly diagnosed or with worsening medical condition or therapy who 
+have followed the process in the sequence chart provided at enclosure 
+(5).  Marines with approved temporary medical exemptions will not be 
+assigned to BCP or MAP during the current six-month period.  Marines 
+are subject to a medical records review by a medical evaluation board 
+(MEB) if: 
+ 
+            (a) Marine receives a temporary medical exemption for the 
+same medical condition over two consecutive six-month periods that 
+resulted in the member not participating in the BCP. 
+ 
+            (b) Marine receives three temporary medical exemptions in 
+the most recent four-year period for any medical condition that 
+resulted in the member not participating in the BCP. 
+ 
+            (c) The CO requests a MEB when the Marine’s fitness/health 
+is questionable for continued service. 
+ 
+        (2) Pregnancy and post-partum:  After confirmation from an 
+authorized medical provider, Marines on BCP/MAP who are pregnant will 
+be placed in an inactive BCP/MAP status.  Pregnant and post-partum 
+Marines not on BCP/MAP will not be evaluated for BCP or MAP.  The 
+period of inactive status and non-evaluation will include pregnancy, 
+and at least nine months after the date of birth.  Active MAP or BCP 
+status will resume after a return to full duty.  For pregnancies that 
+do not come to full term, Marines will be required to meet weight 
+standard requirements after consultation with an authorized medical 
+provider and upon RTFD.”</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-4-2"><h3>p-4-2 &middot; 4.  Administration and Logistics</h3>
+<div class="prov" id="p4">
+<span class="plabel">4.</span> 
+<span class="ptext">Administration and Logistics</span>
+</div>
+<div class="prov" id="p4-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Submit all recommendations concerning this Order to Commanding General, Training and Education Command (CG TECOM) via the Force Fitness Division (C469).</span>
+</div>
+<div class="prov" id="p4-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Records Management.  Records created as a result of this Order shall be managed according to National Archives and Records Administration (NARA) approved dispositions per references (u) and (r) to ensure proper maintenance, use, accessibility and preservation, regardless of format or medium.  Refer to reference (e) for Marine Corps records management policy and procedures.</span>
+</div>
+<div class="prov" id="p4-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Privacy Act.  Any misuse or unauthorized disclosure of Personally Identifiable Information (PII) may result in both civil and criminal penalties.  The Department of the Navy (DON) recognizes that MCO 6110.3A CH-1 12 OCT 2017 5 the privacy of an individual is a personal and fundamental right that shall be respected and protected.  The DON&#x27;s need to collect, use, maintain, or disseminate PII about individuals for purposes of discharging its statutory responsibilities shall be balanced against the individuals&#x27; right to be protected against unwarranted invasion of privacy.  All collection, use, maintenance, or dissemination of PII shall be in accordance with the Privacy Act of 1974, as amended (reference (s)) and implemented per reference (t).</span>
+</div>
+<div class="prov" id="p4-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Forms Management.  Naval Forms Online is the official online resource for Marine Corps forms.  Marine Corps forms identified in this Bulletin may be retrieved from: https://forms.documentservices.dla.mil/order/.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-5-3"><h3>p-5-3 &middot; 5.  Command and Signal</h3>
+<div class="prov" id="p5">
+<span class="plabel">5.</span> 
+<span class="ptext">Command and Signal</span>
+</div>
+<div class="prov" id="p5-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Command.  This Order is applicable to the Marine Corps Total Force.</span>
+</div>
+<div class="prov" id="p5-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Signal.  This Order is effective the date signed. ROBERT S. WALSH Deputy Commandant for Combat Development and Integration DISTRIBUTION:  PCN 10209357501 DISTRIBUTION STATEMENT A:  Approved for public release; distribution is unlimited. DEPARTMENT OF THE NAVY HEADQUARTERS UNITED STATES MARINE CORPS 3000 MARINE CORPS PENTAGON WASHINGTON DC 20350-3000 MCO 6110.3A C 469 15 DEC 2016 MARINE CORPS ORDER 6110.3A 1. Situation.  To provide policy and procedural guidance for implementation of the Marine Corps Body Composition and Military Appearance Program (MCBCMAP), per references (a) through (u). 2. Cancellation.  MCO 6110.3. 3. Mission.  This Order establishes procedures for the effective management of the MCBCMAP.  Commanders will ensure all Marines comply with the requirements and standards contained in this Order.  Policy and procedural guidance is contained in the enclosures. 4. Execution a. Commander’s Intent and Concept of Operations</span>
+</div>
+<div class="prov" id="p5-b-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Commander’s Intent. Every Marine must comply with established body composition standards and present a suitable military appearance, regardless of age, grade, VH[, or duty assignment, as per reference (a).</span>
+</div>
+<div class="prov" id="p5-b-1-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Ensure promotion, retention, assignment and reporting policies are consistent with the policies established in this Order. 28 May 2025 MCO 6110.3A 15 DEC 2016 3</span>
+</div>
+<div class="prov" id="p5-b-1-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Provide a system capable of reporting and recording individual height, weight and body composition data in order to facilitate analysis and policy modification, as required.</span>
+</div>
+<div class="prov" id="p5-b-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">End State.  Combined with the Marine Corps Physical Fitness Program (MCPFP) contained in reference (b) and in recognition that Marines are warrior athletes, it is essential the Marine Corps develops a comprehensive program that will enhance Marine wellness, body composition, and military appearance while diminishing other risk factors in order to improve Marine combat readiness and personal appearance.</span>
+</div>
+<div class="prov" id="p5-b-2-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Serve as program sponsor and provide subject matter experts in order to ensure the currency and relevance of the MCBCMAP.</span>
+</div>
+<div class="prov" id="p5-b-2-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Manage and monitor MCBCMAP through development, implementation and interpretation of standards, policies, and procedures consistent with the requirements contained in reference (c).</span>
+</div>
+<div class="prov" id="p5-b-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Concept of Operations</span>
+</div>
+<div class="prov" id="p5-b-3-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">The MCBCMAP is comprised of two distinct programs that monitor and evaluate the appearance of Marines while providing assistance through focused supervision in order to ensure compliance with established body composition and military appearance standards. Failure to comply with the policies and standards contained in this Order may result in administrative action that limits promotion, retention, and assignment.</span>
+</div>
+<div class="prov" id="p5-b-3-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">The effectiveness and long-term viability of the MCBCMAP are dependent upon uniform application and enforcement by commanders and compliance by all Marines.  Commanders and Officers-In- Charge (OIC) will ensure Marines comply with the standards established in reference (c) and in accordance with the contents of this Order. Failure to do so may jeopardize operational readiness and erode American confidence in the United States Marine Corps. b. Subordinate Element Missions</span>
+</div>
+<div class="prov" id="p5-b-3-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Review implementation and management of the MCBCMAP during command inspections and report findings to the Commandant of the Marine Corps (CMC) following conclusion of periodic IG inspections.</span>
+</div>
+<div class="prov" id="p5-b-3-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Provide an annual assessment of MCBCMAP IG inspection results to the CMC no later 31 January for the period 1 January through 31 December. 4. Administration and Logistics a. Submit all recommendations concerning this Order to Commanding General, Training and Education Command (CG TECOM) via the Force Fitness Division (C469).</span>
+</div>
+<div class="prov" id="p5-b-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Deputy Commandant, Manpower &amp; Reserve Affairs (DC M&amp;RA)</span>
+</div>
+<div class="prov" id="p5-b-1-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Ensure promotion, retention, assignment and reporting policies are consistent with the policies established in this Order. 28 May 2025 MCO 6110.3A 15 DEC 2016 3</span>
+</div>
+<div class="prov" id="p5-b-1-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Provide a system capable of reporting and recording individual height, weight and body composition data in order to facilitate analysis and policy modification, as required.</span>
+</div>
+<div class="prov" id="p5-b-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Commanding General, Training and Education Command (CG TECOM)</span>
+</div>
+<div class="prov" id="p5-b-2-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Serve as program sponsor and provide subject matter experts in order to ensure the currency and relevance of the MCBCMAP.</span>
+</div>
+<div class="prov" id="p5-b-2-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Manage and monitor MCBCMAP through development, implementation and interpretation of standards, policies, and procedures consistent with the requirements contained in reference (c).</span>
+</div>
+<div class="prov" id="p5-b-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Inspector General, Headquarters Marine Corps (IGMC)</span>
+</div>
+<div class="prov" id="p5-b-3-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">The MCBCMAP is comprised of two distinct programs that monitor and evaluate the appearance of Marines while providing assistance through focused supervision in order to ensure compliance with established body composition and military appearance standards. Failure to comply with the policies and standards contained in this Order may result in administrative action that limits promotion, retention, and assignment.</span>
+</div>
+<div class="prov" id="p5-b-3-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">The effectiveness and long-term viability of the MCBCMAP are dependent upon uniform application and enforcement by commanders and compliance by all Marines.  Commanders and Officers-In- Charge (OIC) will ensure Marines comply with the standards established in reference (c) and in accordance with the contents of this Order. Failure to do so may jeopardize operational readiness and erode American confidence in the United States Marine Corps. b. Subordinate Element Missions</span>
+</div>
+<div class="prov" id="p5-b-3-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Review implementation and management of the MCBCMAP during command inspections and report findings to the Commandant of the Marine Corps (CMC) following conclusion of periodic IG inspections.</span>
+</div>
+<div class="prov" id="p5-b-3-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Provide an annual assessment of MCBCMAP IG inspection results to the CMC no later 31 January for the period 1 January through 31 December. 4. Administration and Logistics a. Submit all recommendations concerning this Order to Commanding General, Training and Education Command (CG TECOM) via the Force Fitness Division (C469).</span>
+</div>
+<div class="prov" id="p5-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Records Management.  Records created as a result of this Order shall be managed according to National Archives and Records Administration (NARA) approved dispositions per references (u) and (r) to ensure proper maintenance, use, accessibility and preservation, regardless of format or medium.  Refer to reference (e) for Marine Corps records management policy and procedures.</span>
+</div>
+<div class="prov" id="p5-b-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Commander’s Intent. Every Marine must comply with established body composition standards and present a suitable military appearance, regardless of age, grade, VH[, or duty assignment, as per reference (a).</span>
+</div>
+<div class="prov" id="p5-b-1-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Ensure promotion, retention, assignment and reporting policies are consistent with the policies established in this Order. 28 May 2025 MCO 6110.3A 15 DEC 2016 3</span>
+</div>
+<div class="prov" id="p5-b-1-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Provide a system capable of reporting and recording individual height, weight and body composition data in order to facilitate analysis and policy modification, as required.</span>
+</div>
+<div class="prov" id="p5-b-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">End State.  Combined with the Marine Corps Physical Fitness Program (MCPFP) contained in reference (b) and in recognition that Marines are warrior athletes, it is essential the Marine Corps develops a comprehensive program that will enhance Marine wellness, body composition, and military appearance while diminishing other risk factors in order to improve Marine combat readiness and personal appearance.</span>
+</div>
+<div class="prov" id="p5-b-2-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Serve as program sponsor and provide subject matter experts in order to ensure the currency and relevance of the MCBCMAP.</span>
+</div>
+<div class="prov" id="p5-b-2-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Manage and monitor MCBCMAP through development, implementation and interpretation of standards, policies, and procedures consistent with the requirements contained in reference (c).</span>
+</div>
+<div class="prov" id="p5-b-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Concept of Operations</span>
+</div>
+<div class="prov" id="p5-b-3-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">The MCBCMAP is comprised of two distinct programs that monitor and evaluate the appearance of Marines while providing assistance through focused supervision in order to ensure compliance with established body composition and military appearance standards. Failure to comply with the policies and standards contained in this Order may result in administrative action that limits promotion, retention, and assignment.</span>
+</div>
+<div class="prov" id="p5-b-3-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">The effectiveness and long-term viability of the MCBCMAP are dependent upon uniform application and enforcement by commanders and compliance by all Marines.  Commanders and Officers-In- Charge (OIC) will ensure Marines comply with the standards established in reference (c) and in accordance with the contents of this Order. Failure to do so may jeopardize operational readiness and erode American confidence in the United States Marine Corps. b. Subordinate Element Missions</span>
+</div>
+<div class="prov" id="p5-b-3-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Review implementation and management of the MCBCMAP during command inspections and report findings to the Commandant of the Marine Corps (CMC) following conclusion of periodic IG inspections.</span>
+</div>
+<div class="prov" id="p5-b-3-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Provide an annual assessment of MCBCMAP IG inspection results to the CMC no later 31 January for the period 1 January through 31 December. 4. Administration and Logistics a. Submit all recommendations concerning this Order to Commanding General, Training and Education Command (CG TECOM) via the Force Fitness Division (C469).</span>
+</div>
+<div class="prov" id="p5-b-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Deputy Commandant, Manpower &amp; Reserve Affairs (DC M&amp;RA)</span>
+</div>
+<div class="prov" id="p5-b-1-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Ensure promotion, retention, assignment and reporting policies are consistent with the policies established in this Order. 28 May 2025 MCO 6110.3A 15 DEC 2016 3</span>
+</div>
+<div class="prov" id="p5-b-1-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Provide a system capable of reporting and recording individual height, weight and body composition data in order to facilitate analysis and policy modification, as required.</span>
+</div>
+<div class="prov" id="p5-b-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Commanding General, Training and Education Command (CG TECOM)</span>
+</div>
+<div class="prov" id="p5-b-2-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Serve as program sponsor and provide subject matter experts in order to ensure the currency and relevance of the MCBCMAP.</span>
+</div>
+<div class="prov" id="p5-b-2-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Manage and monitor MCBCMAP through development, implementation and interpretation of standards, policies, and procedures consistent with the requirements contained in reference (c).</span>
+</div>
+<div class="prov" id="p5-b-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Inspector General, Headquarters Marine Corps (IGMC)</span>
+</div>
+<div class="prov" id="p5-b-3-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">The MCBCMAP is comprised of two distinct programs that monitor and evaluate the appearance of Marines while providing assistance through focused supervision in order to ensure compliance with established body composition and military appearance standards. Failure to comply with the policies and standards contained in this Order may result in administrative action that limits promotion, retention, and assignment.</span>
+</div>
+<div class="prov" id="p5-b-3-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">The effectiveness and long-term viability of the MCBCMAP are dependent upon uniform application and enforcement by commanders and compliance by all Marines.  Commanders and Officers-In- Charge (OIC) will ensure Marines comply with the standards established in reference (c) and in accordance with the contents of this Order. Failure to do so may jeopardize operational readiness and erode American confidence in the United States Marine Corps. b. Subordinate Element Missions</span>
+</div>
+<div class="prov" id="p5-b-3-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Review implementation and management of the MCBCMAP during command inspections and report findings to the Commandant of the Marine Corps (CMC) following conclusion of periodic IG inspections.</span>
+</div>
+<div class="prov" id="p5-b-3-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Provide an annual assessment of MCBCMAP IG inspection results to the CMC no later 31 January for the period 1 January through 31 December. 4. Administration and Logistics a. Submit all recommendations concerning this Order to Commanding General, Training and Education Command (CG TECOM) via the Force Fitness Division (C469).</span>
+</div>
+<div class="prov" id="p5-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Privacy Act.  Any misuse or unauthorized disclosure of Personally Identifiable Information (PII) may result in both civil and criminal penalties.  The Department of the Navy (DON) recognizes that the privacy of an individual is a personal and fundamental right that shall be respected and protected.  The DON&#x27;s need to collect, use, maintain, or disseminate PII about individuals for purposes of discharging its statutory responsibilities shall be balanced against the individuals&#x27; right to be protected against unwarranted invasion of privacy.  All collection, use, maintenance, or dissemination of PII shall be in accordance with the Privacy Act of 1974, as amended (reference (s)) and implemented per reference (t). MCO 6110.3A 15 DEC 2016 4</span>
+</div>
+<div class="prov" id="p5-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Forms Management.  Naval Forms Online is the official online resource for Marine Corps forms.  Marine Corps forms identified in this Bulletin may be retrieved from: https://forms.documentservices.dla.mil/order/.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-6"><h3>p-6 &middot; 6.  Command and Signal</h3>
+<div class="prov" id="p6">
+<span class="plabel">6.</span> 
+<span class="ptext">Command and Signal</span>
+</div>
+<div class="prov" id="p6-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Command.  This Order is applicable to the Marine Corps Total Force.</span>
+</div>
+<div class="prov" id="p6-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Signal.  This Order is effective the date signed. ROBERT S. WALSH Deputy Commandant for Combat Development and Integration DISTRIBUTION:  PCN 10209357500 MCO 6110.3A 15 DEC 2016 i TABLE OF CONTENTS IDENTIFICATION TITLE PAGE Enclosure (1) Marine Corps Body Composition and Military Appearance Program (MCBCMAP) Procedural Guidance 1-1 1. Objectives 1-1 2. Responsibilities 1-1 3. Requirement 1-5 4. Assignment Process 1-10 5. Administrative Action 1-15 6. Medical Considerations 1-17 7. Reporting 1-19 8. Exemptions and Waivers 1-22 Enclosure (2) Marine Corps Body Composition and Military Appearance Program Sequence Chart 2-1 Enclosure (3) 1. Department of Defense (DoD)Height and Weight Standards Table 3-1 2. Maximum Body Fat Percentage Table by Age Group 3-2 Enclosure (4) DoD Body Composition Standards Table 4-1 Enclosure (5) Temporary Medical Exemption Process 5-1 Enclosure (6) Pregnancy and Post Partum Policy Flow Chart 6-1 Enclosure (7) Glossary of Terms 7-1 Tables 1. Body Composition Program 1-16 2. Military Appearance Program 1-16 MCO 6110.3A 15 DEC 2016 1-1 Enclosure (1) Marine Corps Body Composition and Military Appearance Program (MCBCMAP) Procedural Guidance 1. Objectives.  It is not uncommon for Marines to experience weight gain and increased body fat as a result of decreased physical activity and improper nutrition.  Marines may also experience weight gain as metabolic rates change with age when no corresponding reduction in caloric intake is made.  Excess body fat is directly associated with high blood pressure, high blood cholesterol, diabetes, cancer, cardiovascular disease, and similar health risks.  Furthermore, increased weight gain and body fat affects fitness levels through reduced stamina, speed, and endurance.  Marines who exceed weight and body fat standards are a detriment to and detract from the combat readiness of their unit.  Furthermore, it can generally be considered that a Marine who meets established height, weight, body composition, grooming, and uniform standards will present a suitable military appearance.  However, there are some Marines that may meet all established standards yet still fail to present a suitable military appearance.  The presentation of an unsuitable military appearance is inconsistent with the Marine Corps leadership principle of setting the example.  Simply put, Marines who do not present a suitable military appearance fail to possess the qualities necessary to effectively lead Marines.  This is especially true for Marines in a leadership or supervisory role who are required to ensure their subordinates comply with established policies and standards.  The objective of the MCBCMAP is to establish healthy weight and body composition standards, and to ensure all Marines present a suitable military appearance.  An effective MCBCMAP achieves the following: a. Provide Marines information and assistance in order to modify the attitudes and behavior consistent with a healthy lifestyle. b. Contribute to the health and well-being of every Marine through continuous monitoring of weight, body composition, and military appearance. c. Motivate Marines to set the example by maintaining established weight and body composition standards. d. Ensure compliance through supervised oversight, remedial conditioning and professional assistance. e. Provides guidance and procedures for both overweight and underweight Marines. 2. Responsibilities a. Commanders/Officers-In-Charge (OICs)</span>
+</div>
+<div class="prov" id="p6-b-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Commanders/OICs possessing special courts-martial convening authority will enforce compliance with weight, body composition, and military appearance standards contained in reference MCO 6110.3A CH-1 12 OCT 2017 1-2 Enclosure (1)</span>
+</div>
+<div class="prov" id="p6-b-1-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">and the contents of this Order through development and uniform application of periodic assessments, assignment, and supervisory procedures.</span>
+</div>
+<div class="prov" id="p6-b-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Commanders/OICs will ensure Marines receive a fair and impartial evaluation, to include a medical determination in order to establish if excess weight and body composition is due to a medical condition or medical therapy which has been newly diagnosed, worsened in severity, or increased in dosage in that six-month period which is known to result in weight gain.   Medical determinations must be made by a board certified or board eligible military physician (BCBEMP) and will include, but not be limited to the following Commanders/OICs will ensure Marines receive a medical evaluation from an authorized medical provider (Independent Duty Corpsman, Nurse Practitioner, Physician, or Physician Assistant) prior to being assigned to Body Composition Program (BCP) or Military Appearance Program (MAP):</span>
+</div>
+<div class="prov" id="p6-b-2-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Current duty status.</span>
+</div>
+<div class="prov" id="p6-b-2-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Recommended dietary plan.</span>
+</div>
+<div class="prov" id="p6-b-2-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">Realistic weight and body composition reduction goals.</span>
+</div>
+<div class="prov" id="p6-b-2-d">
+<span class="plabel">(d)</span> 
+<span class="ptext">Combat conditioning restrictions and limitations.</span>
+</div>
+<div class="prov" id="p6-b-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Commanders/OICs will consider recommendations for temporary medical exemptions if they are forwarded by board certified or board eligible military physicians (BCBEMP) as shown in the process chart provided at enclosure (5).</span>
+</div>
+<div class="prov" id="p6-b-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Commanders/OICs will select and assign in writing a Force Fitness Instructor (FFI) and/or Command Physical Training Representative (CPTR). b. Executive Officers/Senior Enlisted Advisors</span>
+</div>
+<div class="prov" id="p6-b-4-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Executive officers will evaluate officers for compliance with the MAP.</span>
+</div>
+<div class="prov" id="p6-b-4-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Executive officers will provide oversight and supervise the performance of officers assigned to the MAP.</span>
+</div>
+<div class="prov" id="p6-b-4-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Senior enlisted advisors will evaluate enlisted Marines for compliance with the MAP.</span>
+</div>
+<div class="prov" id="p6-b-4-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Senior enlisted advisors will provide oversight and supervise the performance of enlisted personnel assigned to the MAP.</span>
+</div>
+<div class="prov" id="p6-b-4-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">Executive officers/senior enlisted advisors will supervise the implementation of a weight reduction or weight redistribution plan developed by BUMED or certified Semper Fit professional for Marines assigned to the MAP, as required. MCO 6110.3A 15 DEC 2016 1-3 Enclosure (1)</span>
+</div>
+<div class="prov" id="p6-b-4-6">
+<span class="plabel">(6)</span> 
+<span class="ptext">Executive officers/senior enlisted advisors will provide guidance and assistance regarding the supervision and performance of Marines assigned to the MAP, ensuring they receive all available resources and support at the command&#x27;s disposal. c. Force Fitness Instructor (FFI)/Command Physical Training Representative (CPTR)</span>
+</div>
+<div class="prov" id="p6-b-4-6-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">The FFI or CPTR will thoroughly review reference (c) and the contents of this Order immediately upon assignment.</span>
+</div>
+<div class="prov" id="p6-b-4-6-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">The FFI or CPTR is responsible to the commander for development, implementation, management and supervision of the organizational MAP, BCP and remedial conditioning programs.</span>
+</div>
+<div class="prov" id="p6-b-4-6-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">The FFI or CPTR is responsible for applying risk management (RM) fundamentals during the conduct of remedial conditioning in support of MAP or BCP assignment, in accordance with reference (d).</span>
+</div>
+<div class="prov" id="p6-b-4-6-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">The FFI or CPTR is responsible for coordinating and supervising the execution of weigh-ins and BCE utilizing NAVMC 11621, “BCP Evaluation,” form if necessary.  Responsibilities may include, but not be limited to the following:</span>
+</div>
+<div class="prov" id="p6-b-4-6-4-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Select and train BCE evaluators as required.</span>
+</div>
+<div class="prov" id="p6-b-4-6-4-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Report BCE findings for those Marines who exceed weight and body composition standards in accordance with reference (c) and the contents of this Order.</span>
+</div>
+<div class="prov" id="p6-b-4-6-4-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">Document and record BCE data.</span>
+</div>
+<div class="prov" id="p6-b-4-6-4-d">
+<span class="plabel">(d)</span> 
+<span class="ptext">Manage and maintain BCE documentation in accordance with references (e) and (r).  BCE documentation will contain, but not be limited to the following: 1. NAVMC 11621, “BCP Evaluation.” 2. Medical documentation. 3. Counseling records. 4. Weekly weigh-in and BCE results for active duty units. Reserve units will conduct weigh-ins as reasonably practicable. 5. Remedial conditioning training log. 6. Physical Fitness Test (PFT)/Combat Fitness Test (CFT) performance results. 1-4 Enclosure (1)</span>
+</div>
+<div class="prov" id="p6-b-4-6-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">The FFI or CPTR will coordinate diet and nutrition seminars or coordinate appointments with Semper Fit fitness and lifestyle professionals for Marines assigned to the BCP or MAP.</span>
+</div>
+<div class="prov" id="p6-b-4-6-6">
+<span class="plabel">(6)</span> 
+<span class="ptext">The FFI or CPTR will ensure Marines on their first BCP assignment order complete MarineNet MCIZ4133AZ (Semper Fit Basic Fitness Course).</span>
+</div>
+<div class="prov" id="p6-b-4-6-7">
+<span class="plabel">(7)</span> 
+<span class="ptext">The FFI or CPTR will ensure Marines on their second or subsequent BCP assignment order and complete MarineNet MCIZ4134AZ (Semper Fit Advanced Course).</span>
+</div>
+<div class="prov" id="p6-b-4-6-8">
+<span class="plabel">(8)</span> 
+<span class="ptext">The FFI or CPTR is responsible for providing periodic feedback to the senior enlisted advisor, executive officer and commander/OIC regarding the status and performance of Marines assigned to the MAP.</span>
+</div>
+<div class="prov" id="p6-b-4-6-9">
+<span class="plabel">(9)</span> 
+<span class="ptext">Upon notification, the FFI or CPTR will initiate MAP evaluation procedures utilizing NAVMC 11620, “MAP Evaluation,” form.</span>
+</div>
+<div class="prov" id="p6-b-4-6-10">
+<span class="plabel">(10)</span> 
+<span class="ptext">The FFI or CPTR will document and record MAP performance data.</span>
+</div>
+<div class="prov" id="p6-b-4-6-11">
+<span class="plabel">(11)</span> 
+<span class="ptext">The FFI or CPTR will manage and maintain MAP documentation in accordance with reference (e).  MAP documentation will contain, but not be limited to the following: (a) NAVMC 11620, “MAP Evaluation.” (b) Counseling records. (c) Weekly weigh-in and BCE results for active duty units. Reserve units will conduct weigh-ins as reasonably practicable. (d) Remedial conditioning training log.</span>
+</div>
+<div class="prov" id="p6-b-4-6-12">
+<span class="plabel">(12)</span> 
+<span class="ptext">The FFI or CPTR will ensure Marines on their first BCP MAP assignment order complete MarineNet MCIZ4133AZ (Semper Fit Basic Fitness Course).</span>
+</div>
+<div class="prov" id="p6-b-4-6-13">
+<span class="plabel">(13)</span> 
+<span class="ptext">The FFI or CPTR will ensure Marines on their second or subsequent BCP MAP assignment order and complete MarineNet MCIZ4134AZ (Semper Fit Advanced Course). d. Individual Marines</span>
+</div>
+<div class="prov" id="p6-b-4-6-13-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Every Marine will conform to established Marine Corps weight and body composition standards and present a suitable military appearance, regardless of age, grade, VH[ or duty assignment.</span>
+</div>
+<div class="prov" id="p6-b-4-6-13-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Marines who exceed established Marine Corps weight and body composition standards will take necessary action to return to MCO 6110.3A$GPLQ&amp;+ 28 May 2025 MCO 6110.3A CH-1 12 OCT 2017 1-5 Enclosure (1) standards within the prescribed timeline.  Failure to do so may result in formal assignment to the BCP and administrative actions that include limitations on promotion, retention, assignment or administrative separation.</span>
+</div>
+<div class="prov" id="p6-b-4-6-13-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Marines who do not present a suitable military appearance will take all necessary action to improve their appearance within prescribed timelines.  Failure to do so may result in formal assignment to the MAP and administrative action that includes limitations on promotion, retention and assignment. e. Medical Providers</span>
+</div>
+<div class="prov" id="p6-b-4-6-13-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Authorized medical providers (Independent Duty Corpsman, Nurse Practitioner, Physician, or Physician Assistant) will evaluate Marines who have failed an official weigh-in and are being screened for BCP or MAP.</span>
+</div>
+<div class="prov" id="p6-b-4-6-13-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Authorized medical providers will use the sequence chart provided at enclosure (5) for Marines whose weight gain may be due to a new medical condition or recent change to a medical therapy.  If the provider determines a temporary medical exemption may be appropriate, the recommendation will be forwarded per the sequence chart at enclosure (5).</span>
+</div>
+<div class="prov" id="p6-b-4-6-13-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Board Certified or Board Eligible Military Physicians (BCBEMP) may originate recommendations for temporary medical exemptions and may endorse recommendations from non-BCBEMPs, Independent Duty Corpsman, Nurse Practitioner, and Physician Assistants as shown in the sequence chart at enclosure (5).</span>
+</div>
+<div class="prov" id="p6-b-4-6-13-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Authorized Medical providers will refer Marines to a Medical Evaluation Board if the Marine has made two consecutive requests for a temporary medical exemption for the same condition within a 12-month period or has made three requests for any condition within the most recent four year period. 3. Requirement</span>
+</div>
+<div class="prov" id="p6-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Purpose.  The MCBCMAP establishes, evaluates and enforces compliance with optimal weight, body composition, and military appearance standards that are essential to the preservation of good order and discipline and necessary for the maintenance of combat readiness Marine Corps-wide.</span>
+</div>
+<div class="prov" id="p6-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Scope.  All Marines will be periodically evaluated for weight and military appearance in accordance with the sequence described in enclosure (2) and the frequency described below.  However, commanders/OICs are authorized to conduct unit/individual weigh-ins, BCP, or MAP assessments as often as deemed necessary.  Weigh-ins may be conducted on the same day as the PFT/CFT.  Inspector 1-6 Enclosure (1) General/Commanding Generals may also perform weigh-ins while conducting unannounced inspections.</span>
+</div>
+<div class="prov" id="p6-b-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Commanders/OICs possessing special courts-martial convening authority will enforce compliance with weight, body composition, and military appearance standards contained in reference MCO 6110.3A CH-1 12 OCT 2017 1-2 Enclosure (1)</span>
+</div>
+<div class="prov" id="p6-b-1-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">and the contents of this Order through development and uniform application of periodic assessments, assignment, and supervisory procedures.</span>
+</div>
+<div class="prov" id="p6-b-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Commanders/OICs will ensure Marines receive a fair and impartial evaluation, to include a medical determination in order to establish if excess weight and body composition is due to a medical condition or medical therapy which has been newly diagnosed, worsened in severity, or increased in dosage in that six-month period which is known to result in weight gain.   Medical determinations must be made by a board certified or board eligible military physician (BCBEMP) and will include, but not be limited to the following Commanders/OICs will ensure Marines receive a medical evaluation from an authorized medical provider (Independent Duty Corpsman, Nurse Practitioner, Physician, or Physician Assistant) prior to being assigned to Body Composition Program (BCP) or Military Appearance Program (MAP):</span>
+</div>
+<div class="prov" id="p6-b-2-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Current duty status.</span>
+</div>
+<div class="prov" id="p6-b-2-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Recommended dietary plan.</span>
+</div>
+<div class="prov" id="p6-b-2-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">Realistic weight and body composition reduction goals.</span>
+</div>
+<div class="prov" id="p6-b-2-d">
+<span class="plabel">(d)</span> 
+<span class="ptext">Combat conditioning restrictions and limitations.</span>
+</div>
+<div class="prov" id="p6-b-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Commanders/OICs will consider recommendations for temporary medical exemptions if they are forwarded by board certified or board eligible military physicians (BCBEMP) as shown in the process chart provided at enclosure (5).</span>
+</div>
+<div class="prov" id="p6-b-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Commanders/OICs will select and assign in writing a Force Fitness Instructor (FFI) and/or Command Physical Training Representative (CPTR). b. Executive Officers/Senior Enlisted Advisors</span>
+</div>
+<div class="prov" id="p6-b-4-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Executive officers will evaluate officers for compliance with the MAP.</span>
+</div>
+<div class="prov" id="p6-b-4-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Executive officers will provide oversight and supervise the performance of officers assigned to the MAP.</span>
+</div>
+<div class="prov" id="p6-b-4-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Senior enlisted advisors will evaluate enlisted Marines for compliance with the MAP.</span>
+</div>
+<div class="prov" id="p6-b-4-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Senior enlisted advisors will provide oversight and supervise the performance of enlisted personnel assigned to the MAP.</span>
+</div>
+<div class="prov" id="p6-b-4-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">Executive officers/senior enlisted advisors will supervise the implementation of a weight reduction or weight redistribution plan developed by BUMED or certified Semper Fit professional for Marines assigned to the MAP, as required. MCO 6110.3A 15 DEC 2016 1-3 Enclosure (1)</span>
+</div>
+<div class="prov" id="p6-b-4-6">
+<span class="plabel">(6)</span> 
+<span class="ptext">Executive officers/senior enlisted advisors will provide guidance and assistance regarding the supervision and performance of Marines assigned to the MAP, ensuring they receive all available resources and support at the command&#x27;s disposal. c. Force Fitness Instructor (FFI)/Command Physical Training Representative (CPTR)</span>
+</div>
+<div class="prov" id="p6-b-4-6-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">The FFI or CPTR will thoroughly review reference (c) and the contents of this Order immediately upon assignment.</span>
+</div>
+<div class="prov" id="p6-b-4-6-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">The FFI or CPTR is responsible to the commander for development, implementation, management and supervision of the organizational MAP, BCP and remedial conditioning programs.</span>
+</div>
+<div class="prov" id="p6-b-4-6-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">The FFI or CPTR is responsible for applying risk management (RM) fundamentals during the conduct of remedial conditioning in support of MAP or BCP assignment, in accordance with reference (d).</span>
+</div>
+<div class="prov" id="p6-b-4-6-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">The FFI or CPTR is responsible for coordinating and supervising the execution of weigh-ins and BCE utilizing NAVMC 11621, “BCP Evaluation,” form if necessary.  Responsibilities may include, but not be limited to the following:</span>
+</div>
+<div class="prov" id="p6-b-4-6-4-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Select and train BCE evaluators as required.</span>
+</div>
+<div class="prov" id="p6-b-4-6-4-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Report BCE findings for those Marines who exceed weight and body composition standards in accordance with reference (c) and the contents of this Order.</span>
+</div>
+<div class="prov" id="p6-b-4-6-4-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">Document and record BCE data.</span>
+</div>
+<div class="prov" id="p6-b-4-6-4-d">
+<span class="plabel">(d)</span> 
+<span class="ptext">Manage and maintain BCE documentation in accordance with references (e) and (r).  BCE documentation will contain, but not be limited to the following: 1. NAVMC 11621, “BCP Evaluation.” 2. Medical documentation. 3. Counseling records. 4. Weekly weigh-in and BCE results for active duty units. Reserve units will conduct weigh-ins as reasonably practicable. 5. Remedial conditioning training log. 6. Physical Fitness Test (PFT)/Combat Fitness Test (CFT) performance results. 1-4 Enclosure (1)</span>
+</div>
+<div class="prov" id="p6-b-4-6-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">The FFI or CPTR will coordinate diet and nutrition seminars or coordinate appointments with Semper Fit fitness and lifestyle professionals for Marines assigned to the BCP or MAP.</span>
+</div>
+<div class="prov" id="p6-b-4-6-6">
+<span class="plabel">(6)</span> 
+<span class="ptext">The FFI or CPTR will ensure Marines on their first BCP assignment order complete MarineNet MCIZ4133AZ (Semper Fit Basic Fitness Course).</span>
+</div>
+<div class="prov" id="p6-b-4-6-7">
+<span class="plabel">(7)</span> 
+<span class="ptext">The FFI or CPTR will ensure Marines on their second or subsequent BCP assignment order and complete MarineNet MCIZ4134AZ (Semper Fit Advanced Course).</span>
+</div>
+<div class="prov" id="p6-b-4-6-8">
+<span class="plabel">(8)</span> 
+<span class="ptext">The FFI or CPTR is responsible for providing periodic feedback to the senior enlisted advisor, executive officer and commander/OIC regarding the status and performance of Marines assigned to the MAP.</span>
+</div>
+<div class="prov" id="p6-b-4-6-9">
+<span class="plabel">(9)</span> 
+<span class="ptext">Upon notification, the FFI or CPTR will initiate MAP evaluation procedures utilizing NAVMC 11620, “MAP Evaluation,” form.</span>
+</div>
+<div class="prov" id="p6-b-4-6-10">
+<span class="plabel">(10)</span> 
+<span class="ptext">The FFI or CPTR will document and record MAP performance data.</span>
+</div>
+<div class="prov" id="p6-b-4-6-11">
+<span class="plabel">(11)</span> 
+<span class="ptext">The FFI or CPTR will manage and maintain MAP documentation in accordance with reference (e).  MAP documentation will contain, but not be limited to the following: (a) NAVMC 11620, “MAP Evaluation.” (b) Counseling records. (c) Weekly weigh-in and BCE results for active duty units. Reserve units will conduct weigh-ins as reasonably practicable. (d) Remedial conditioning training log.</span>
+</div>
+<div class="prov" id="p6-b-4-6-12">
+<span class="plabel">(12)</span> 
+<span class="ptext">The FFI or CPTR will ensure Marines on their first BCP MAP assignment order complete MarineNet MCIZ4133AZ (Semper Fit Basic Fitness Course).</span>
+</div>
+<div class="prov" id="p6-b-4-6-13">
+<span class="plabel">(13)</span> 
+<span class="ptext">The FFI or CPTR will ensure Marines on their second or subsequent BCP MAP assignment order and complete MarineNet MCIZ4134AZ (Semper Fit Advanced Course). d. Individual Marines</span>
+</div>
+<div class="prov" id="p6-b-4-6-13-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Every Marine will conform to established Marine Corps weight and body composition standards and present a suitable military appearance, regardless of age, grade, VH[ or duty assignment.</span>
+</div>
+<div class="prov" id="p6-b-4-6-13-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Marines who exceed established Marine Corps weight and body composition standards will take necessary action to return to MCO 6110.3A$GPLQ&amp;+ 28 May 2025 MCO 6110.3A CH-1 12 OCT 2017 1-5 Enclosure (1) standards within the prescribed timeline.  Failure to do so may result in formal assignment to the BCP and administrative actions that include limitations on promotion, retention, assignment or administrative separation.</span>
+</div>
+<div class="prov" id="p6-b-4-6-13-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Marines who do not present a suitable military appearance will take all necessary action to improve their appearance within prescribed timelines.  Failure to do so may result in formal assignment to the MAP and administrative action that includes limitations on promotion, retention and assignment. e. Medical Providers</span>
+</div>
+<div class="prov" id="p6-b-4-6-13-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Authorized medical providers (Independent Duty Corpsman, Nurse Practitioner, Physician, or Physician Assistant) will evaluate Marines who have failed an official weigh-in and are being screened for BCP or MAP.</span>
+</div>
+<div class="prov" id="p6-b-4-6-13-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Authorized medical providers will use the sequence chart provided at enclosure (5) for Marines whose weight gain may be due to a new medical condition or recent change to a medical therapy.  If the provider determines a temporary medical exemption may be appropriate, the recommendation will be forwarded per the sequence chart at enclosure (5).</span>
+</div>
+<div class="prov" id="p6-b-4-6-13-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Board Certified or Board Eligible Military Physicians (BCBEMP) may originate recommendations for temporary medical exemptions and may endorse recommendations from non-BCBEMPs, Independent Duty Corpsman, Nurse Practitioner, and Physician Assistants as shown in the sequence chart at enclosure (5).</span>
+</div>
+<div class="prov" id="p6-b-4-6-13-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Authorized Medical providers will refer Marines to a Medical Evaluation Board if the Marine has made two consecutive requests for a temporary medical exemption for the same condition within a 12-month period or has made three requests for any condition within the most recent four year period. 3. Requirement</span>
+</div>
+<div class="prov" id="p6-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Standards.  Marines are considered to exceed standard when their body weight and body fat percentage exceeds the maximum allowable limits for their height, as contained in enclosures (3) and (4).  Reference (c) and this Order primarily focus on Marines who exceed their maximum allowable weight, but Commanders/OICs should provide the same level of assistance and supervision for those Marines who are below their minimum allowable limit. d. Frequency</span>
+</div>
+<div class="prov" id="p6-c-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Active Component.  The weigh-in is a calendar year semi- annual requirement for all active duty Marines, regardless of age, grade, VH[, or duty assignment.</span>
+</div>
+<div class="prov" id="p6-c-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Reserve Component.  The weigh-in is a calendar year annual requirement for all SMCR/IMA Marines, regardless of age, grade, VH[ or duty assignment.</span>
+</div>
+<div class="prov" id="p6-c-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Activated Reservists.  Activated Reserve Marines, to include AR, mobilized or those performing active duty operational support (ADOS) will comply with the active component semi-annual weigh-in requirement.</span>
+</div>
+<div class="prov" id="p6-c-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Permanent Change of Station/Assignment (PCS/PCA) Orders. A Marine can be transferred, receive PCS/PCA orders during an initial assignment, or be extended under an initial BCP assignment.  Marines will not be transferred or execute PCS/PCA orders while on a second assignment to the BCP.  For transferred Marines on their initial BCP assignment, losing commands will ensure the original BCP file in its entirety is forwarded to the gaining command by registered/receipt mail within seven days of departure.  The losing command will retain a copy of the file in accordance with reference (e).  Marines assigned to the MAP are eligible for PCS/PCA.</span>
+</div>
+<div class="prov" id="p6-c-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">End of Active Service (EAS)/Retirement.  Imminent EAS/retirement does not preclude a Marine, who exceeds weight and body composition standards or presents an unsuitable military appearance from being evaluated and assigned to the MAP, BCP, and remedial conditioning.  Commanders/OICs are authorized to evaluate and assign Marines to the MAP, BCP, and remedial conditioning up to their EAS date.  However, commanders/OICs will exercise discretion and judgment regarding final disposition of Marines who fail to meet weight and body composition standards within seven months of EAS.  Regardless of BCP assignment decision, commanders/OICs are encouraged to enforce remedial conditioning compliance.</span>
+</div>
+<div class="prov" id="p6-e">
+<span class="plabel">e.</span> 
+<span class="ptext">Sequence.  Marines will be evaluated in accordance with the sequence contained in enclosure (2).  If a Marine is not within weight standards, then the FFI or CPTR will conduct a BCE utilizing the MCO 6110.3A$GPLQ&amp;+ 28 May 2025 MCO 6110.3A 15 DEC 2016 1-7 Enclosure (1) circumference (taping) technique, on the same day as the weight measurement.  BCE’s are only required for Marines who exceed their maximum weight standard or present an unsuitable military appearance due to improper weight distribution, as determined by the commander/OIC. f. Procedures</span>
+</div>
+<div class="prov" id="p6-e-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Safety.  In accordance with reference (d), RM fundamentals will be applied in order to ensure Marines are not exposed to unnecessary risk.</span>
+</div>
+<div class="prov" id="p6-e-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Supervision.  The commander/OIC is responsible overall for the conduct of the MCBCMAP.  Executive officers/senior enlisted advisors are responsible for organizing and conducting MAP assessments and making appropriate recommendations to the commander/OIC.  The FFI or CPTR or designated evaluator(s) are the only individuals authorized to perform height, weight and body composition measurements in conjunction with MAP assessments.  The FFI or CPTR will supervise the performance and progress of Marines assigned to the BCP, MAP, and remedial conditioning in accordance with the contents of this Order and guidance received from the commander/OIC, executive officer and senior enlisted advisor.  The MAP is comprised of all aspects of the MCBCMAP and is meant to be an organizational aid to improve military appearance and prevent Marines from being assigned to the BCP. However, MAP failure incorporates adverse administrative action in order to encourage and/or enforce compliance.</span>
+</div>
+<div class="prov" id="p6-e-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Uniform.  The only authorized uniform for the weigh-in and BCE (if necessary) is the Marine Corps approved green-on-green T- shirt, shorts and socks.  No other uniform or clothing garment is permitted.  Shoes will be removed prior to evaluation.</span>
+</div>
+<div class="prov" id="p6-e-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Equipment.  Height will be measured utilizing a standard, non-stretching fiberglass tape measure affixed to a vertical surface or a wall mounted stadiometer.  The tape measure will be calibrated using a separate yardstick or metal ruler.  Weight will be measured utilizing a calibrated digital or balance beam scale.  Circumferences will be measured using a self-tensioning taping device (digital or non-digital) for those who require body fat estimation.  Examples of these devices can be found at http://www.fitness.marines.mil.</span>
+</div>
+<div class="prov" id="p6-e-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">Evaluations</span>
+</div>
+<div class="prov" id="p6-e-5-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Height Measurement.  The Marine will stand with their back against the wall, heels flat on the deck, shoulders back, with arms to the side in a relaxed manner, and head straight forward.  For use in height/weight tables and FitRep reporting, height measurement will be recorded to the nearest inch.  If height fraction is less than 1/2-inch, round down to the nearest inch.  If height fraction is 1/2- inch or more, round up.  If Marine exceeds weight on height/weight 1-8 Enclosure (1) tables, height will be re-measured and recorded to the nearest 1/2- inch for use in body fat percentage estimation.</span>
+</div>
+<div class="prov" id="p6-e-5-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Weight Measurement.  Weight will be measured on a calibrated digital or balance beam scale in the required PT uniform, without running shoes.  A one-pound reduction will be granted for the PT uniform; however, no other weight reductions are authorized. Measurement will be recorded to the nearest pound.  If the weight fraction is 1/2-pound or less, round down to the nearest pound.  If more than 1/2-pound, round up.</span>
+</div>
+<div class="prov" id="p6-e-5-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">Circumference Measurement.  Body composition will be estimated using the circumference-based method.  No substitute BCE methods are permitted in accordance with reference (c).  The FFI or CPTR or designated evaluator(s) are the only individuals authorized to perform height, weight and BCE’s, if necessary.  All measurements will be taken on bare skin, the only exception being the female hip measurement.  A confirmation height/weight measurement will be performed prior to conducting a BCE.  Using the self-tensioning device, the FFI will measure Marines at the VH[ specific sites.  The FFI will measure Marines by standing to the right of the Marine being measured.  Pull the end of the tape around the body part being measured. Place the rod at the end of the tape into the circular slot. Press the button in the center and let the tape retract to a snug fit. Read and record your measurement on the outer edge of the tape measure, or as indicated with the digital model (the end opposite the locked in rod).  Circumference measurements will be taken three times by two separate evaluators in order to ensure accuracy.  Each set of measurements will be completed sequentially to discourage assumption of repeated measurements of a specific region.  The lowest body fat percentage estimation (vice circumference measurement) that results from the six sets of circumference measurements by the two BCP evaluators will be utilized for MAP or BCP assessment purposes.  Video instructions can be found at http://www.fitness.marines.mil.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-1"><h3>p-1 &middot; 1.  Male Marines.  Measurements for male Marines will</h3>
+<div class="prov" id="p1">
+<span class="plabel">1.</span> 
+<span class="ptext">Male Marines.  Measurements for male Marines will be taken along the neck and abdominal circumference, at the navel. Measure the neck circumference by placing the curved portion of the self-tensioning device on the right neck muscle so that the taping device conforms to the natural curvature of the neck muscle.  The tape will cross the bottom the larynx and perpendicular to the long axis of the neck.  The Marine should look straight ahead during the measurement, with shoulders down, not hunched.  For neck measurements, round up to the nearest 1/2-inch and record.  Measure the abdominal circumference by placing the curved portion of the self-tensioning taping device on the right side of the Marines abdomen.  The tape will cross the center of the navel and be parallel to the deck. Arms will be straight and relaxed at the sides.  Take measurement at the end of the Marine&#x27;s normal, relaxed exhalation.  For abdominal measurements, round down to the nearest 1/2-inch and record.  The circumference MCO 6110.3A$GPLQ&amp;+ 28 May 2025 MCO 6110.3A 15 DEC 2016 1-9                   Enclosure (1) value is calculated by subtracting the neck from the abdominal measurement. Male body fat percentages can be derived utilizing enclosure (4) by locating the number at the intersection of height measurement and circumference value.</span>
+</div>
+<div class="prov" id="p1-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Uniform inspections (Service &#x27;C&#x27; uniform).</span>
+</div>
+<div class="prov" id="p1-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Personnel inspections that focus on hygiene and grooming standards. Waist + hip - neck = circumference value Abdominal - neck = circumference value MCO 6110.3A 15 DEC 2016 1-10                   Enclosure (1)</span>
+</div>
+<div class="prov" id="p2">
+<span class="plabel">2.</span> 
+<span class="ptext">Female Marines.  Measurements for female Marines will be taken along the neck similar to males, at the waist at the thinnest portion of the abdomen, and at the hips.  Measurements for female Marines will be performed by female evaluators, only.  Measure the natural waist circumference against the skin at the point of minimal abdominal circumference, usually located about halfway between the navel and the lower end of the sternum (breastbone) with the self- tensioning device as indicated in the paragraph above.  When this site is not easily observed, take several measurements at probable sites and use the smallest value.  Ensure the tape is level and parallel to the deck.  Arms will be straight and relaxed at the sides.  Take measurements at the end of a normal, relaxed exhalation.  For natural waist measurement, round down to the nearest 1/2-inch and record. Measure the hip circumference while facing the Marine&#x27;s right side by placing the tape around the hips so that it passes over the greatest protrusion of the buttocks as viewed from the side.  Ensure the tape is level and parallel to the deck.  For hip measurement, round down to the nearest 1/2-inch and record.  The circumference value is calculated by adding the waist and hip measurements and subtracting the neck measurement. Female body fat percentages can be derived utilizing enclosure (4) by locating the number at the intersection of height measurement and circumference value.</span>
+</div>
+<div class="prov" id="p2-d">
+<span class="plabel">(d)</span> 
+<span class="ptext">Military Appearance Program (MAP) Assessments. Commanders will conduct military appearance assessments based upon personal appearance indicators (personal hygiene, grooming and uniform wear) and improper distribution/excessive accumulation of body fat. Specific areas to be evaluated are:</span>
+</div>
+<div class="prov" id="p2-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Established DoD height/weight standards.</span>
+</div>
+<div class="prov" id="p2-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Established Marine Corps body fat percentages, by age group.</span>
+</div>
+<div class="prov" id="p2-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Established DoD body composition standards. Specific target areas are:  neck and abdomen for male Marines, neck, waistline and hips for female Marines.</span>
+</div>
+<div class="prov" id="p1">
+<span class="plabel">1.</span> 
+<span class="ptext">Subjective Indicators</span>
+</div>
+<div class="prov" id="p1-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Uniform inspections (Service &#x27;C&#x27; uniform).</span>
+</div>
+<div class="prov" id="p1-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Personnel inspections that focus on hygiene and grooming standards. Waist + hip - neck = circumference value Abdominal - neck = circumference value MCO 6110.3A 15 DEC 2016 1-10                   Enclosure (1)</span>
+</div>
+<div class="prov" id="p2">
+<span class="plabel">2.</span> 
+<span class="ptext">Objective Indicators</span>
+</div>
+<div class="prov" id="p2-d">
+<span class="plabel">(d)</span> 
+<span class="ptext">Military Appearance Program (MAP) Assessments. Commanders will conduct military appearance assessments based upon personal appearance indicators (personal hygiene, grooming and uniform wear) and improper distribution/excessive accumulation of body fat. Specific areas to be evaluated are:</span>
+</div>
+<div class="prov" id="p2-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Established DoD height/weight standards.</span>
+</div>
+<div class="prov" id="p2-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Established Marine Corps body fat percentages, by age group.</span>
+</div>
+<div class="prov" id="p2-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Established DoD body composition standards. Specific target areas are:  neck and abdomen for male Marines, neck, waistline and hips for female Marines.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-4-3"><h3>p-4-3 &middot; 4.  Assignment Process</h3>
+<div class="prov" id="p4">
+<span class="plabel">4.</span> 
+<span class="ptext">Assignment Process</span>
+</div>
+<div class="prov" id="p4-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Enforcement of Body Composition Program (BCP) and Military Appearance Program (MAP) Standards. Maintenance and monitoring of BCP and MAP standards is a shared individual Marine and command responsibility.  Compliance with BCP and appearance standards is continuous and not tied to a reporting period or event.</span>
+</div>
+<div class="prov" id="p4-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Body Composition Program (BCP) and Military Appearance Program (MAP)</span>
+</div>
+<div class="prov" id="p4-b-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Commander’s Body Composition Program (BCP).  If Marines do not meet established BCP standards they will be notified of their deficiencies and processed for BCP assignment.  Commanders are responsible for ensuring the BCP processing period is completed as soon as possible and not longer than 60 days.  During this period, and any other time a Marine is out of standards, administrative actions (restricted or withheld/delayed promotions, denied reenlistment, denied special school/special duty assignments, etc.) outlined in paragraph 5 of this Enclosure apply whether processing results in BCP assignment or not. The commander also has the power to determine that although a Marine is outside height, weight, and body composition standards that his or her uniformed appearance is commensurate with that of a squared away Marine. Should that be a commander’s determination, the commander has the opportunity to seek a waiver for the Marine through the chain of command.  The final authority for a waiver rests with the first General Officer in the chain of command.</span>
+</div>
+<div class="prov" id="p4-b-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Commander’s Military Appearance Program (MAP).  Because Marines come in all shapes and sizes, there is an imperative to ensure that the commander has a continuous say in the assignment of his or her Marines to programs dealing with body composition and military appearance.  The authority of the commander is such that should he or she decide that a Marine is within height and weight standards, the body composition percentages, or both, that Marine can still be assigned to the MAP.  Such an assignment would normally be oriented towards weight redistribution, vice loss, and a Marine should be given an opportunity to correct deficiencies before being formally assigned to the MAP.  Should an assignment to the formal program be necessary, the commander will provide the appropriate resources, counseling, and unit diary entries.  Should a Marine not show progress while on the MCO 6110.3A CH-1 12 OCT 2017 1-11                   Enclosure (1) program, reenlistment and promotion opportunities could be denied.  To maintain fairness and impartiality, Marines assigned to the MAP will have the right to appeal their status to the next higher officer in the chain of command.</span>
+</div>
+<div class="prov" id="p4-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Body Composition Program (BCP) Formal Assignment. Commanders/OICs possessing special courts-martial convening authority will assign Marines to the BCP and remedial conditioning who fail to comply with established weight and body composition standards, in accordance with reference (c) and the contents of this Order. Commanders/OICs will utilize NAVMC 11621 to notify Marines of their formal BCP assignment.  Marines on their first BCP assignment will not be removed from the program until their initial six-month assignment has expired with the exception of Marines who are pregnant or post- partum as specified in Paragraph 4.f.(3).  This measure is required in order to ensure healthy weight and body fat loss techniques are employed and appropriate attitude and lifestyle adjustments are made. The following steps are required to formally assign and remove Marines to/from the BCP:</span>
+</div>
+<div class="prov" id="p4-c-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Upon notification that a Marine exceeds established weight standards, the FFI or CPTR will conduct a BCE and record results on NAVMC 11621.</span>
+</div>
+<div class="prov" id="p4-c-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">After confirmation that a Marine exceeds established weight and body composition standards, the FFI or CPTR will notify the chain of command that a medical evaluation is required.</span>
+</div>
+<div class="prov" id="p4-c-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">At any time in the BCP assignment processing period, Marines may have additional weigh-ins/BCEs conducted.  If the Marine returns to standard within the BCP assignment processing period, the Marine will not be assigned to BCP. If the Marine is still out of standards at the end of this period the Marine will be assigned to BCP.  If a performance evaluation is due during the period of BCP processing, the Marines HT/WT/BF percentage data will be accurately reported and a statement will be included in the report that the Marine is being evaluated for assignment to BCP.  The Marine will be provided the opportunity to submit a statement regarding this adverse comment.</span>
+</div>
+<div class="prov" id="p4-c-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">A BCBEMP will make the following determination and recommendations:</span>
+</div>
+<div class="prov" id="p4-c-4-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">A determination as to whether weight gain is due to a medical condition or medical therapy which has been newly diagnosed, worsened in severity, or increased in dosage in that six-month period which is known to result in weight gain.  A BCP medical waiver may only be recommended by a physician (board eligible or certified specialist).  The inability to exercise is not a valid reason for a BCP waiver.  All BCP medical waivers recommendations will require two signatures.  If the physician recommending the waiver is civilian, a BCBEMP must endorse the waiver.  If the physician recommending the MCO 6110.3A CH-1 12 OCT 2017 1-12                   Enclosure (1) waiver is a BCBEMP, the waiver must be endorsed by a physician one level higher in the chain of command.</span>
+</div>
+<div class="prov" id="p4-c-4-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Medical clearance to participate in the BCP/RCP.</span>
+</div>
+<div class="prov" id="p4-c-4-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">Physical limitations or restrictions.</span>
+</div>
+<div class="prov" id="p4-c-4-d">
+<span class="plabel">(d)</span> 
+<span class="ptext">Recommended weight and body composition fat reduction goals.</span>
+</div>
+<div class="prov" id="p4-c-4-e">
+<span class="plabel">(e)</span> 
+<span class="ptext">Recommended nutritional and dietary measures.</span>
+</div>
+<div class="prov" id="p4-c-4-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Medical clearance to participate in the BCP/MAP/ remedial conditioning.</span>
+</div>
+<div class="prov" id="p4-c-4-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Physical limitations or restrictions.</span>
+</div>
+<div class="prov" id="p4-c-4-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">Recommended weight and body composition fat reduction goals.</span>
+</div>
+<div class="prov" id="p4-c-4-d">
+<span class="plabel">(d)</span> 
+<span class="ptext">Recommended nutritional and dietary measures.</span>
+</div>
+<div class="prov" id="p4-c-4-e">
+<span class="plabel">(e)</span> 
+<span class="ptext">Referral to BCBEMP for evaluation of possible underlying cause for weight gain.</span>
+</div>
+<div class="prov" id="p4-c-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">An authorized medical provider (Independent Duty Corpsman, Nurse Practitioner, Physician, or Physician Assistant) will evaluate the Marine and make the following determinations:</span>
+</div>
+<div class="prov" id="p4-c-4-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">A determination as to whether weight gain is due to a medical condition or medical therapy which has been newly diagnosed, worsened in severity, or increased in dosage in that six-month period which is known to result in weight gain.  A BCP medical waiver may only be recommended by a physician (board eligible or certified specialist).  The inability to exercise is not a valid reason for a BCP waiver.  All BCP medical waivers recommendations will require two signatures.  If the physician recommending the waiver is civilian, a BCBEMP must endorse the waiver.  If the physician recommending the MCO 6110.3A CH-1 12 OCT 2017 1-12                   Enclosure (1) waiver is a BCBEMP, the waiver must be endorsed by a physician one level higher in the chain of command.</span>
+</div>
+<div class="prov" id="p4-c-4-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Medical clearance to participate in the BCP/RCP.</span>
+</div>
+<div class="prov" id="p4-c-4-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">Physical limitations or restrictions.</span>
+</div>
+<div class="prov" id="p4-c-4-d">
+<span class="plabel">(d)</span> 
+<span class="ptext">Recommended weight and body composition fat reduction goals.</span>
+</div>
+<div class="prov" id="p4-c-4-e">
+<span class="plabel">(e)</span> 
+<span class="ptext">Recommended nutritional and dietary measures.</span>
+</div>
+<div class="prov" id="p4-c-4-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Medical clearance to participate in the BCP/MAP/ remedial conditioning.</span>
+</div>
+<div class="prov" id="p4-c-4-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Physical limitations or restrictions.</span>
+</div>
+<div class="prov" id="p4-c-4-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">Recommended weight and body composition fat reduction goals.</span>
+</div>
+<div class="prov" id="p4-c-4-d">
+<span class="plabel">(d)</span> 
+<span class="ptext">Recommended nutritional and dietary measures.</span>
+</div>
+<div class="prov" id="p4-c-4-e">
+<span class="plabel">(e)</span> 
+<span class="ptext">Referral to BCBEMP for evaluation of possible underlying cause for weight gain.</span>
+</div>
+<div class="prov" id="p4-c-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">After the medical evaluation, the FFI or CPTR will deliver the package to the commander/OIC.  The commander/OIC will conduct an assessment and make a BCP assignment decision.</span>
+</div>
+<div class="prov" id="p4-c-6">
+<span class="plabel">(6)</span> 
+<span class="ptext">If assigned, the Marine will be counseled on his/her deficiencies, corrective action required and information regarding BCP assignment responsibilities.  The Marine will acknowledge notification of deficiencies and BCP assignment by signing the NAVMC 11621 and a NAVMC 118, Administrative Action,” (page 11) entry in accordance with paragraph 6105 of reference (f).</span>
+</div>
+<div class="prov" id="p4-c-7">
+<span class="plabel">(7)</span> 
+<span class="ptext">At the conclusion of the six-month period, the FFI or CPTR will complete the final BCP assessment and deliver the package to the commander/OIC for a final determination.  For Marines on extended or second assignments, this process can occur as soon as the Marine complies with established weight and body composition standards.</span>
+</div>
+<div class="prov" id="p4-c-8">
+<span class="plabel">(8)</span> 
+<span class="ptext">Once the final determination has been made and appropriate unit diary entries entered, the FFI or CPTR will complete documentation of the BCE and retain, in accordance with reference (e).</span>
+</div>
+<div class="prov" id="p4-c-9">
+<span class="plabel">(9)</span> 
+<span class="ptext">A BCP medical waiver temporary medical exemption sequence chart is provided in enclosure (5). MCO 6110.3A 15 DEC 2016 1-13                   Enclosure (1)</span>
+</div>
+<div class="prov" id="p4-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Body Composition Program (BCP) Extension</span>
+</div>
+<div class="prov" id="p4-d-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Only Marines on their first assignment can be granted an extension.</span>
+</div>
+<div class="prov" id="p4-d-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">A Marine who has failed to comply with established weight and body composition standards, but has made satisfactory progress will be afforded a one-time six-month extension.  Additional extensions are not authorized.</span>
+</div>
+<div class="prov" id="p4-d-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Marines who fail to make satisfactory progress will not receive an extension and will be processed for administrative separation in accordance with references (f) and (g).</span>
+</div>
+<div class="prov" id="p4-d-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">An extension does not constitute a second assignment.</span>
+</div>
+<div class="prov" id="p4-e">
+<span class="plabel">e.</span> 
+<span class="ptext">Second Body Composition Program (BCP) Assignment</span>
+</div>
+<div class="prov" id="p4-e-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Marines who have been assigned to and officially removed from the BCP at any time in their career, yet fail to meet established weight and body composition standards, may receive a second one-time six-month assignment to the BCP.</span>
+</div>
+<div class="prov" id="p4-e-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Extensions to second assignments are not authorized.</span>
+</div>
+<div class="prov" id="p4-e-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">All other BCP management policies apply.</span>
+</div>
+<div class="prov" id="p4-f">
+<span class="plabel">f.</span> 
+<span class="ptext">Body Composition Program (BCP) Removal</span>
+</div>
+<div class="prov" id="p4-f-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Marines on their first BCP assignment who comply with established weight and body composition standards at the conclusion of their six-month assignment period will be removed from the BCP by their commander/OIC possessing special courts-martial convening authority utilizing NAVMC 11621, with no further action required.</span>
+</div>
+<div class="prov" id="p4-f-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Marines on their second assignment who comply with established weight and body composition standards can be removed from the BCP at any time during their six-month assignment.</span>
+</div>
+<div class="prov" id="p4-f-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Marines who fail to comply with established weight and body composition standards due to unsatisfactory progress shall receive a page 11 entry in accordance with paragraph 6105 of reference</span>
+</div>
+<div class="prov" id="p4-f-3-f">
+<span class="plabel">(f)</span> 
+<span class="ptext">and be processed for administrative separation (Weight Control Failure).</span>
+</div>
+<div class="prov" id="p4-f-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Marines who fail to comply with established weight and body composition standards due to indifference or apathy shall receive a NAVMC 10274 entry in accordance with paragraph 6105 of reference (f) and be processed for administrative separation (Unsatisfactory Performance). MCO 6110.3A 15 DEC 2016 1-14                   Enclosure (1)</span>
+</div>
+<div class="prov" id="p4-f-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">Administrative separation procedures for officers who fail to comply with established weight and body composition standards will be performed in accordance with reference (g).</span>
+</div>
+<div class="prov" id="p4-g">
+<span class="plabel">g.</span> 
+<span class="ptext">Military Appearance Program (MAP) Formal Assignment. Commanders/OICs possessing special courts-martial convening authority will conduct a MAP assessment and make a formal assignment determination.  Assessments will include a review of all relevant MAP documentation and a commander/OIC Summer Service &#x27;C&#x27; uniform inspection.  Commanders/OICs will utilize NAVMC 11620 to notify Marines of their initial 60-day formal MAP assignment.  Because of the intrinsic link between the BCP and MAP, Marines who do not present a suitable military appearance will be evaluated by a BCBEMP prior to MAP formal assignment in order to rule out the possibility of an underlying medical condition or disease as a primary causal factor behind the improper weight distribution.  Instructions regarding the use of NAVMC 11620 are included with the form upon download.</span>
+</div>
+<div class="prov" id="p4-g-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">The MAP processing period includes the right of the Marine to appeal the pending MAP assignment to the next higher level commander in the chain of command within five (5) working days. MAP appeal authority may not be delegated.  Appeal authority will be provided access to all relevant MAP information and can respond to the request in writing or may require a personal assessment conducted in the “Service ‘C’ uniform”.  MAP appeal requests should be adjudicated in a timely manner. If MAP authority concurs with the initial MAP assessment, the Marine will be assigned to MAP.</span>
+</div>
+<div class="prov" id="p4-g-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">If MAP appeal authority rules in favor of the Marine, the Marine will not be assigned to MAP.</span>
+</div>
+<div class="prov" id="p4-g-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Only after assignment to MAP, either following a denied appeal or if the Marine accepts the initial MAP assignment decision, will provisions in paragraph 5 of this Enclosure apply.  When a Marine is assigned to MAP, this will be reflected in proficiency/conduct marks or on fitness reports.</span>
+</div>
+<div class="prov" id="p4-h">
+<span class="plabel">h.</span> 
+<span class="ptext">Military Appearance Program (MAP) Extension.  Once formally assigned to the MAP, commanders/OICs that possess special courts- martial convening authority will extend Marines who fail to comply with established subjective and objective MAP indicators in sequential 60-day increments until they either present a suitable military appearance (and are removed from MAP) or get assigned to the BCP as a result of failing to meet established weight and body composition standards.</span>
+</div>
+<div class="prov" id="p4-i">
+<span class="plabel">i.</span> 
+<span class="ptext">Military Appearance Program (MAP) Removal.  Commanders/OICs that possess special courts-martial convening authority will immediately remove Marines from the MAP as soon as they present a suitable military appearance utilizing the MAP evaluation form.  No further administrative action is required once a Marine is removed from MAP. MCO 6110.3A 15 DEC 2016 1-15                   Enclosure (1)</span>
+</div>
+<div class="prov" id="p4-j">
+<span class="plabel">j.</span> 
+<span class="ptext">Military Appearance Program (MAP) Failure.  Marines who are formally assigned to the MAP and fail to conform to established body composition standards within the initial 60-day formal MAP assignment period will be subject to adverse administrative action that may affect promotion, assignment, and retention.</span>
+</div>
+<div class="prov" id="p4-k">
+<span class="plabel">k.</span> 
+<span class="ptext">Military Appearance Program (MAP) Appeals.  Upon notification of formal assignment to the MAP by a commander/OIC possessing special courts-martial convening authority, Marines may submit a written request appealing their formal MAP assignment to the next higher level commander in the chain of command within five working days.  The appeal authority will be provided access to all relevant MAP documentation and can respond to the request in writing or may require a personal assessment to be conducted in the Service ‘C’ uniform.  MAP appeal requests should be adjudicated in a timely manner.  If the higher level authority approves the appeal request, Marines will be immediately removed from the MAP with no further administrative action required.  Appeal authority cannot be delegated.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-5-4"><h3>p-5-4 &middot; 5.  Administrative Action.  Tables 1 and 2 contain a summary of</h3>
+<div class="prov" id="p5">
+<span class="plabel">5.</span> 
+<span class="ptext">Administrative Action.  Tables 1 and 2 contain a summary of required administrative actions as a result of BCP or MAP assignment, in accordance with references (f) through (q).</span>
+</div>
+<div class="prov" id="p5-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Promotion</span>
+</div>
+<div class="prov" id="p5-a-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Enlisted Marines.  In accordance with reference (l), enlisted Marines are placed in a promotion restriction status while assigned to the BCP or MAP, regardless of combat zone assignment or BCP status.  Enlisted Marines will no longer be in a promotion restriction status once removed from the BCP or MAP.</span>
+</div>
+<div class="prov" id="p5-a-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Officers.  Commanders may request promotions be delayed for those officers who are deemed not physically qualified for promotion, regardless of combat zone assignment or BCP status, in accordance with reference (m).</span>
+</div>
+<div class="prov" id="p5-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Retention.  Marines who do not meet established weight and body composition standards or fail to present a suitable military appearance are not eligible for reenlistment or voluntary extension, in accordance with reference (n).</span>
+</div>
+<div class="prov" id="p5-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Special Schools/Special Duty Assignment (SDA).  Marines who do not meet established weight and body composition standards or fail to present a suitable military appearance may be ineligible for selection to special schools and assignment to specific SDA billets, in accordance with reference (o).  This provision also applies to selection for and attendance at officer and enlisted resident professional military education (PME).</span>
+</div>
+<div class="prov" id="p5-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Repeat Failure(s).  For Marines processed, but not separated for BCP failure/unsatisfactory performance, or Marines found to be out MCO 6110.3A 15 DEC 2016 1-16                   Enclosure (1) of standards a third time, participation in the BCP and remedial conditioning are mandatory until separation, EAS, retirement, or until compliance with established standards.  Commands will continue BCP and RCP supervision, as required, regardless of separation authority to retain. Table 1.--Body Composition Program (BCP) Administrative Summary. ADMINISTRATIVE ACTION AFTER BODY COMPOSITION PROGRAM (BCP) ASSIGNMENT 1st 2d Mandatory remedial conditioning Yes Yes Page 11 Counseling Entry (NAVMC 10274) Yes * Yes * Adverse Fitness Report Yes Yes Substandard Conduct Marks Yes Yes Promotion Restriction Yes Yes Eligible for PCS/PCA Transfer Yes No Eligible for Reenlistment No No Eligible for Special School Assignment No No Process for AdSep Yes Yes *Note:  A NAVMC 10274, “Administrative Action,” (Page 11) entry in accordance with paragraph 6105 of reference (f) shall be made when a Marine is counseled on deficiencies, corrective action to be taken, and assignment to BCP.  Additional page 11 entries shall be made when a Marine has not made satisfactory progress during BCP assignment in accordance with references (f) and (p). Table 2.—Military Appearance Program (MAP) Administrative Summary. ADMINISTRATIVE ACTION MAP ASSIGNMENT Mentoring (Command Leadership) Yes Health Coaching (Semper Fit Health Promotion) Yes Semper Fit Diet and Nutrition Assistance (MTF) Yes Mandatory remedial conditioning Yes Page 11 Entry, per para. 6105 of reference</span>
+</div>
+<div class="prov" id="p5-d-f">
+<span class="plabel">(f)</span> 
+<span class="ptext">(NAVMC 10274) No Adverse Fitness Report (MAP Failure) Yes Substandard Conduct Marks Yes Promotion Restriction Yes* Eligible for PCS/PCA Transfer Yes Eligible for Reenlistment No* Eligible for Special School Assignment No* Process for AdSep No MCO 6110.3A CH-3 23 Feb 2021 1-17                   Enclosure (1) *Note:  Marines will be placed in a promotion restriction status and cannot be promoted if they fail to comply with MAP standards. Marines are also ineligible for reenlistment and special school/SDA assignment when they are in non-compliance of MAP standards.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-6-2"><h3>p-6-2 &middot; 6.  Medical Considerations</h3>
+<div class="prov" id="p6">
+<span class="plabel">6.</span> 
+<span class="ptext">Medical Considerations</span>
+</div>
+<div class="prov" id="p6-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Pregnancy.  Marines who are pregnant, as verified by a BCBEMP/obstetrician (OB) health care provider, will not be evaluated for MAP or BCP assignment and are exempt from participating in MAP or BCP until at least nine 12 after the birth event.  Following this nine 12-month period after the birth event, a Marine birthparent is expected to meet body composition standards at the next regularly scheduled unit BCE. If already formally assigned, Marines will be placed in an inactive status during pregnancy and are exempt from participating in MAP or BCP until at least nine 12 months after the date of delivery and for nine 12 months after the date of the birth event six months after return to full duty (RTFD) following 12 weeks (post-partum) convalescent leave in accordance with references (h) through (j).  Active MAP or BCP status will resume after a return to full duty.  A flow chart that provides a visual depiction of the process is provided in enclosure (6).</span>
+</div>
+<div class="prov" id="p6-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Light/Limited Duty.  Marines who are assigned light or limited duty or pending medical evaluation board (MEB)/physical evaluation board (PEB) screening are required to comply with established body composition and military appearance standards and may be evaluated for assignment to the BCP or MAP.</span>
+</div>
+<div class="prov" id="p6-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Neuro-Musculoskeletal (NMS) Injuries.  NMS injuries may reduce or inhibit an individual’s normal activity and without a resultant decrease in caloric intake, weight gain will occur.  While the location of the injury will be the determining factor in how activity is limited, NMS injuries are normally of such short duration that they do not serve as a basis for exemption from assignment to the BCP or MAP.</span>
+</div>
+<div class="prov" id="p6-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Medical Evaluation.  Marines who are not in compliance with established weight, body composition or military appearance standards require a BCBEMP evaluation prior to BCP or MAP formal assignment.  A BCBEMP must make a determination if a Marine&#x27;s weight gain is due to a medical condition or medical therapy which has been newly diagnosed, worsened in severity, or increased in dosage in that six-month period which is known to result in weight gain.  The inability to exercise is not a valid reason for a BCP waiver.  All BCP medical waivers recommendations will require two signatures.  If the physician recommending the waiver is civilian, a BCBEMP must endorse the waiver. If the physician recommending the waiver is a BCBEMP, the waiver must be endorsed by a physician one level higher in the chain of command. MCO 6110.3A CH-3 23 Feb 2021 1-18                   Enclosure (1)</span>
+</div>
+<div class="prov" id="p6-d-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Marines not in compliance with established weight and body composition standards and Marines not meeting military appearance standards require a medical evaluation prior to BCP or MAP formal assignment.  An authorized medical provider (Independent Duty Corpsman, Nurse Practitioner, Physician, or Physician Assistant) will evaluate the Marine and make the following recommendations/determinations:</span>
+</div>
+<div class="prov" id="p6-d-1-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Medical clearance to participate in the BCP/MAP/remedial conditioning.</span>
+</div>
+<div class="prov" id="p6-d-1-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Physical limitations or restrictions.</span>
+</div>
+<div class="prov" id="p6-d-1-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">Recommended weight and body composition fat reduction goals.</span>
+</div>
+<div class="prov" id="p6-d-1-d">
+<span class="plabel">(d)</span> 
+<span class="ptext">Recommended nutritional and dietary measures.</span>
+</div>
+<div class="prov" id="p6-d-1-e">
+<span class="plabel">(e)</span> 
+<span class="ptext">Referral to BCBEMP for evaluation of possible underlying cause for weight gain.</span>
+</div>
+<div class="prov" id="p6-d-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Marines who suspect that their weight gain is due to an underlying medical condition will be evaluated by an authorized medical provider as shown in the sequence chart provided in enclosure (5).  If the authorized medical provider determines that the weight gain is the result of a medical condition, or medical therapy which has been newly diagnosed, worsened in severity, or increased in dosage in that six-month period which is known to result in weight gain, the provider may recommend a temporary medical exemption.  The inability to exercise is not a valid reason for a temporary medical exemption from weight and body fat standards.</span>
+</div>
+<div class="prov" id="p6-d-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">All recommendations for temporary medical exemptions require the endorsement of a Board Certified or Board Eligible Military Physician (BCBEMP).  If the provider recommending the temporary medical exemption is not a BCBEMP, then the Marine must be referred to a BCBEMP for further evaluation.</span>
+</div>
+<div class="prov" id="p6-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Medical Evaluation.</span>
+</div>
+<div class="prov" id="p6-d-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Marines not in compliance with established weight and body composition standards and Marines not meeting military appearance standards require a medical evaluation prior to BCP or MAP formal assignment.  An authorized medical provider (Independent Duty Corpsman, Nurse Practitioner, Physician, or Physician Assistant) will evaluate the Marine and make the following recommendations/determinations:</span>
+</div>
+<div class="prov" id="p6-d-1-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Medical clearance to participate in the BCP/MAP/remedial conditioning.</span>
+</div>
+<div class="prov" id="p6-d-1-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Physical limitations or restrictions.</span>
+</div>
+<div class="prov" id="p6-d-1-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">Recommended weight and body composition fat reduction goals.</span>
+</div>
+<div class="prov" id="p6-d-1-d">
+<span class="plabel">(d)</span> 
+<span class="ptext">Recommended nutritional and dietary measures.</span>
+</div>
+<div class="prov" id="p6-d-1-e">
+<span class="plabel">(e)</span> 
+<span class="ptext">Referral to BCBEMP for evaluation of possible underlying cause for weight gain.</span>
+</div>
+<div class="prov" id="p6-d-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Marines who suspect that their weight gain is due to an underlying medical condition will be evaluated by an authorized medical provider as shown in the sequence chart provided in enclosure (5).  If the authorized medical provider determines that the weight gain is the result of a medical condition, or medical therapy which has been newly diagnosed, worsened in severity, or increased in dosage in that six-month period which is known to result in weight gain, the provider may recommend a temporary medical exemption.  The inability to exercise is not a valid reason for a temporary medical exemption from weight and body fat standards.</span>
+</div>
+<div class="prov" id="p6-d-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">All recommendations for temporary medical exemptions require the endorsement of a Board Certified or Board Eligible Military Physician (BCBEMP).  If the provider recommending the temporary medical exemption is not a BCBEMP, then the Marine must be referred to a BCBEMP for further evaluation.</span>
+</div>
+<div class="prov" id="p6-e">
+<span class="plabel">e.</span> 
+<span class="ptext">Newly diagnosed or Worsening Medical Condition or Therapy. When exceeding established body composition standards is due to a medical condition or medical therapy which has been newly diagnosed, worsened in severity, or increased in dosage in that six-month period which is known to result in weight gain, the BCBEMP will make an appropriate annotation in the Marine&#x27;s Health Record and make the following recommendation(s)/take the following action(s):</span>
+</div>
+<div class="prov" id="p6-e-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Treat/alleviate the medical condition, return Marine to full duty, and recommend for assignment to the BCP or MAP.</span>
+</div>
+<div class="prov" id="p6-e-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Forward to a PEB for determination of fitness to continue military service. MCO 6110.3A 15 DEC 2016 1-19                   Enclosure (1)</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-7"><h3>p-7 &middot; 7.  Reporting</h3>
+<div class="prov" id="p7">
+<span class="plabel">7.</span> 
+<span class="ptext">Reporting</span>
+</div>
+<div class="prov" id="p7-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Performance.  The FFI or CPTR is responsible for completing NAVMC 11620 and NAVMC 11621.  The FFI or CPTR will ensure complete and accurate information is presented to the senior enlisted advisor (for enlisted Marines) or the executive officer (for officers) in order to provide a fair and unbiased assessment to the commander/OIC.  A copy of NAVMC 11620 or NAVMC 11621 will be submitted to the appropriate servicing personnel administration center (PAC) for unit diary recording when the commander/OIC has made an appropriate formal assignment or removal determination.  The FFI or CPTR will retain the original forms in accordance with references (e) and (r).</span>
+</div>
+<div class="prov" id="p7-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Unit Diary/ Marine Integrated personnel System (UD-MIPS)/ Marine Corps Total Force System (MCTFS).  Unit diary entries are required for the following circumstances:</span>
+</div>
+<div class="prov" id="p7-b-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">When a Marine is assigned to the BCP following a medical evaluation and commander/OIC assessment.</span>
+</div>
+<div class="prov" id="p7-b-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">When a Marine is granted a BCP extension.</span>
+</div>
+<div class="prov" id="p7-b-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">When a Marine is placed in an inactive status.</span>
+</div>
+<div class="prov" id="p7-b-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">When a Marine returns to an active BCP status.</span>
+</div>
+<div class="prov" id="p7-b-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">When a Marine is removed from the BCP or program assignment has expired.</span>
+</div>
+<div class="prov" id="p7-b-6">
+<span class="plabel">(6)</span> 
+<span class="ptext">When a Marine is formally assigned to the MAP by a commander/OIC possessing Special Courts Martial Authority.</span>
+</div>
+<div class="prov" id="p7-b-7">
+<span class="plabel">(7)</span> 
+<span class="ptext">When a Marine is formally removed from the MAP by a commander/OIC possessing special courts martial authority.</span>
+</div>
+<div class="prov" id="p7-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Conduct Marks.  For Marines, corporals and below, conduct marks will be adjusted commensurate with BCP and MAP assignment, in accordance with reference (p).</span>
+</div>
+<div class="prov" id="p7-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Performance Evaluation</span>
+</div>
+<div class="prov" id="p7-d-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Directed Comments.  A Section I directed comment will be made to address the following circumstances:</span>
+</div>
+<div class="prov" id="p7-d-1-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">When a Marine exceeds established body composition standards, as a result of a medical condition or medical therapy which has been newly diagnosed, worsened in severity, or increased in dosage in that six-month period which is known to result in weight gain. This does not render the report adverse.</span>
+</div>
+<div class="prov" id="p7-d-1-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">When a Marine is assigned to the BCP, at any time during the respective reporting period, as a result of exceeding MCO 6110.3A 15 DEC 2016 1-20                   Enclosure (1) established body composition standards, not the result of an underlying medical condition or disease.  BCP formal assignment renders the fitness report adverse.</span>
+</div>
+<div class="prov" id="p7-d-1-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">A Section I directed comment will be made when a Marine fails to present a suitable military appearance at the conclusion of the first formal MAP assignment.  Failure to present a suitable military appearance at the conclusion of the initial 60-day formal MAP assignment period renders the fitness report adverse.  If a Marine presents a suitable military appearance at any time during MAP assignment, the Marine will be removed from the program without any further administrative action.</span>
+</div>
+<div class="prov" id="p7-d-1-d">
+<span class="plabel">(d)</span> 
+<span class="ptext">Marines who score 285 and higher on both the PFT and CFT are exempt from weight and body fat limits.  These values however will still be reported on the fitness report.  A Section I comment will indicate that due to the Marine’s high PFT and CFT performance, they are exempt from weight and body fat limits.</span>
+</div>
+<div class="prov" id="p7-d-1-e">
+<span class="plabel">(e)</span> 
+<span class="ptext">Marines who score 250 and higher on both the PFT and CFT are allowed an additional 1 percent body fat.  If this additional 1 percent body fat causes the Marine to exceed allowable body fat for their age group, a Section I comment will indicate that due to the Marine’s high PFT and CFT performance, they are allowed an additional 1 percent and are within standards.</span>
+</div>
+<div class="prov" id="p7-e">
+<span class="plabel">e.</span> 
+<span class="ptext">Service Record Book/Officer Qualification Record.  A NAVMC 10274 entry in accordance with paragraph 6105 of reference (f) and per reference (p) shall be made for the following occasions:</span>
+</div>
+<div class="prov" id="p7-e-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">When a Marine is assigned to the BCP. MCO 6110.3A 15 DEC 2016 1-21                   Enclosure (1)</span>
+</div>
+<div class="prov" id="p7-e-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">When a Marine fails to make satisfactory progress while assigned to the BCP.  This entry is to be made during the fourth month of assignment.</span>
+</div>
+<div class="prov" id="p7-e-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">When a Marine makes satisfactory progress, but fails to meet established weight and body compositions standards.  This entry will be made at the conclusion of the six-month BCP assignment period. “Counseled this date concerning your assignment to the Marine Corps BCP.  You are advised that failure to take corrective action and meet established weight/body composition standards may result in processing for administrative separation from the USMC for either weight control failure or unsatisfactory performance per paragraphs 6206 and 6215 of MARCORSEPMAN.  Specific recommendations for corrective action are:  Meet your weight/body fat reduction goals by losing the prescribed __ lbs and __ % body fat per month for six months and actively participate in your diet and exercise program.  Assistance is available through your chain of command.  I was advised that within five working days after acknowledgment of this entry a written rebuttal could be submitted and that such a rebuttal will be filed on the document side of my SRB/OQR.  I choose (to)(not to) make such a statement.” MCO 6110.3A CH-1 12 OCT 2017 1-22                   Enclosure (1)</span>
+</div>
+<div class="prov" id="p7-e-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">When a Marine is granted an extension to the BCP. “Counseled this date concerning your failure to comply with established weight/body composition standards while assigned to the Marine Corps BCP.  You are advised that failure to take composition You are advised that failure to take corrective action may result in processing for administrative separation for unsatisfactory performance per paragraph 6206 of MCO 1900.16_.  Specific recommendations for corrective action are:  Meet your weight/body composition reduction goal and actively participate in your diet and exercise program.  Assistance is available through your chain of command.  I am advised that within five working days after acknowledgment of this entry, a written rebuttal could be submitted and that such a rebuttal will be filed on the document side of my SRB/OQR.  I choose (to)(not to) make such a statement.” “Counseled this date concerning your extension on the Marine Corps BCP.  You have made reasonable progress but have failed to comply with established weight/body composition standards while on your first assignment to the BCP.  Therefore, you have been granted a one- time extension of six months to meet the body composition standards set forth in MCO 6110.3_.  You are advised that failure to take corrective action while on this six-month extension may result in processing for administrative separation for either weight control failure or unsatisfactory performance per paragraphs 6206 and 6215 of MCO 1900.16_. Specific recommendations for corrective action are: Meet your weight/body composition reduction goals by losing the prescribed __ lbs and __ % body fat per month for six months and actively participate in your diet and exercise program.  Assistance is available through your chain of command.  I was advised that within five working days after acknowledgment of this entry a written rebuttal could be submitted and that such a rebuttal will be filed on the document side of my SRB/OQR.  I choose (to)(not to) make such a statement.” MCO 6110.3A CH-1 12 OCT 2017 1-23                   Enclosure (1)</span>
+</div>
+<div class="prov" id="p7-e-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">The following NAVMC 10274 entries will be made upon MAP Assignment/Removal.</span>
+</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-p-8"><h3>p-8 &middot; 8.  Exemptions and Waivers</h3>
+<div class="prov" id="p8">
+<span class="plabel">8.</span> 
+<span class="ptext">Exemptions and Waivers</span>
+</div>
+<div class="prov" id="p8-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Exemptions</span>
+</div>
+<div class="prov" id="p8-a-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Marines with a medical condition or medical therapy which has been newly diagnosed, worsened in severity, or increased in dosage in that six-month period which is known to result in weight gain will remain in an inactive BCP status and are not eligible for formal MAP assignment until the condition is alleviated or the Marine is separated, retired or medically discharged.  Marines are subject to a medical records review by a medical evaluation board (MEB) if:</span>
+</div>
+<div class="prov" id="p8-a-1-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Marine receives a medical waiver for the same medical condition over two consecutive six-month periods that resulted in the member not participating in the BCP.</span>
+</div>
+<div class="prov" id="p8-a-1-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Marine receives three medical waivers in the most recent four-year period for any medical condition that resulted in the member not participating in the BCP.</span>
+</div>
+<div class="prov" id="p8-a-1-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">The CO requests a MEB when the Marine’s fitness/health is questionable for continued service. “Counseled this date concerning your extension on the Marine Corps BCP.  You have made reasonable progress but have failed to comply with established weight/body composition standards while on your first assignment to the BCP.  Therefore, you have been granted a one- time extension of six months to meet the body composition standards set forth in MCO 6110.3_.  You are advised that failure to take corrective action while on this six-month extension may result in processing for administrative separation for either weight control failure or unsatisfactory performance per paragraphs 6206 and 6215 of MCO 1900.16_. Specific recommendations for corrective action are: Meet your weight/body composition reduction goals by losing the prescribed __ lbs and __ % body fat per month for six months and actively participate in your diet and exercise program.  Assistance is available through your chain of command.  I was advised that within five working days after acknowledgment of this entry a written rebuttal could be submitted and that such a rebuttal will be filed on the document side of my SRB/OQR.  I choose (to)(not to) make such a statement.” MCO 6110.3A CH-3 23 Feb 2021 1-24                   Enclosure (1)</span>
+</div>
+<div class="prov" id="p8-a-1-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Marine receives a temporary medical exemption for the same medical condition over two consecutive six-month periods that resulted in the member not participating in the BCP.</span>
+</div>
+<div class="prov" id="p8-a-1-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Marine receives three temporary medical exemptions in the most recent four-year period for any medical condition that resulted in the member not participating in the BCP.</span>
+</div>
+<div class="prov" id="p8-a-1-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">The CO requests a MEB when the Marine’s fitness/health is questionable for continued service.</span>
+</div>
+<div class="prov" id="p8-a-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">After confirmation from a BCBEMP/OB healthcare provider, Marines who are pregnant will be placed in an inactive BCP status and are not eligible for formal MAP assignment during pregnancy, the 12 week (post-partum) convalescent period and for six months following RTFD.  For pregnancies that do not come to full term, Marines will be required to meet weight standard requirements after consultation with a BCBEMP/OB health care provider and upon RTFD.</span>
+</div>
+<div class="prov" id="p8-a-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Temporary medical exemptions may be granted for Marines newly diagnosed or with worsening medical condition or therapy who have followed the process in the sequence chart provided in enclosure (5).  Marines with approved temporary medical exemptions will not be assigned to BCP or MAP during the current six-month period.  Marines are subject to a medical records review by a medical evaluation board (MEB) if:</span>
+</div>
+<div class="prov" id="p8-a-1-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Marine receives a medical waiver for the same medical condition over two consecutive six-month periods that resulted in the member not participating in the BCP.</span>
+</div>
+<div class="prov" id="p8-a-1-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Marine receives three medical waivers in the most recent four-year period for any medical condition that resulted in the member not participating in the BCP.</span>
+</div>
+<div class="prov" id="p8-a-1-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">The CO requests a MEB when the Marine’s fitness/health is questionable for continued service. “Counseled this date concerning your extension on the Marine Corps BCP.  You have made reasonable progress but have failed to comply with established weight/body composition standards while on your first assignment to the BCP.  Therefore, you have been granted a one- time extension of six months to meet the body composition standards set forth in MCO 6110.3_.  You are advised that failure to take corrective action while on this six-month extension may result in processing for administrative separation for either weight control failure or unsatisfactory performance per paragraphs 6206 and 6215 of MCO 1900.16_. Specific recommendations for corrective action are: Meet your weight/body composition reduction goals by losing the prescribed __ lbs and __ % body fat per month for six months and actively participate in your diet and exercise program.  Assistance is available through your chain of command.  I was advised that within five working days after acknowledgment of this entry a written rebuttal could be submitted and that such a rebuttal will be filed on the document side of my SRB/OQR.  I choose (to)(not to) make such a statement.” MCO 6110.3A CH-3 23 Feb 2021 1-24                   Enclosure (1)</span>
+</div>
+<div class="prov" id="p8-a-1-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Marine receives a temporary medical exemption for the same medical condition over two consecutive six-month periods that resulted in the member not participating in the BCP.</span>
+</div>
+<div class="prov" id="p8-a-1-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Marine receives three temporary medical exemptions in the most recent four-year period for any medical condition that resulted in the member not participating in the BCP.</span>
+</div>
+<div class="prov" id="p8-a-1-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">The CO requests a MEB when the Marine’s fitness/health is questionable for continued service.</span>
+</div>
+<div class="prov" id="p8-a-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Pregnancy and post-partum:  After confirmation from an authorized medical provider, Marines on BCP/MAP who are pregnant will be placed in an inactive BCP/MAP status during pregnancy and for nine 12 months after date of the birth event. Marines who are pregnant or post-partum not on BCP/MAP are exempt from participation and will not be evaluated for BCP or MAP.  The period of inactive status and non- evaluation will include pregnancy, the 12 week (post-partum) convalescent period and for six months following RTFD. For pregnancies that do not come to full term, Marines will be required to meet weight standard requirements after consultation with an authorized medical provider and upon RTFD. MCO 6110.3A 15 DEC 2016 1-25                   Enclosure (1)</span>
+</div>
+<div class="prov" id="p8-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Exemptions</span>
+</div>
+<div class="prov" id="p8-a-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Marines with a medical condition or medical therapy which has been newly diagnosed, worsened in severity, or increased in dosage in that six-month period which is known to result in weight gain will remain in an inactive BCP status and are not eligible for formal MAP assignment until the condition is alleviated or the Marine is separated, retired or medically discharged.  Marines are subject to a medical records review by a medical evaluation board (MEB) if:</span>
+</div>
+<div class="prov" id="p8-a-1-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Marine receives a medical waiver for the same medical condition over two consecutive six-month periods that resulted in the member not participating in the BCP.</span>
+</div>
+<div class="prov" id="p8-a-1-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Marine receives three medical waivers in the most recent four-year period for any medical condition that resulted in the member not participating in the BCP.</span>
+</div>
+<div class="prov" id="p8-a-1-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">The CO requests a MEB when the Marine’s fitness/health is questionable for continued service. “Counseled this date concerning your extension on the Marine Corps BCP.  You have made reasonable progress but have failed to comply with established weight/body composition standards while on your first assignment to the BCP.  Therefore, you have been granted a one- time extension of six months to meet the body composition standards set forth in MCO 6110.3_.  You are advised that failure to take corrective action while on this six-month extension may result in processing for administrative separation for either weight control failure or unsatisfactory performance per paragraphs 6206 and 6215 of MCO 1900.16_. Specific recommendations for corrective action are: Meet your weight/body composition reduction goals by losing the prescribed __ lbs and __ % body fat per month for six months and actively participate in your diet and exercise program.  Assistance is available through your chain of command.  I was advised that within five working days after acknowledgment of this entry a written rebuttal could be submitted and that such a rebuttal will be filed on the document side of my SRB/OQR.  I choose (to)(not to) make such a statement.” MCO 6110.3A CH-3 23 Feb 2021 1-24                   Enclosure (1)</span>
+</div>
+<div class="prov" id="p8-a-1-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Marine receives a temporary medical exemption for the same medical condition over two consecutive six-month periods that resulted in the member not participating in the BCP.</span>
+</div>
+<div class="prov" id="p8-a-1-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Marine receives three temporary medical exemptions in the most recent four-year period for any medical condition that resulted in the member not participating in the BCP.</span>
+</div>
+<div class="prov" id="p8-a-1-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">The CO requests a MEB when the Marine’s fitness/health is questionable for continued service.</span>
+</div>
+<div class="prov" id="p8-a-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">After confirmation from a BCBEMP/OB healthcare provider, Marines who are pregnant will be placed in an inactive BCP status and are not eligible for formal MAP assignment during pregnancy, the 12 week (post-partum) convalescent period and for six months following RTFD.  For pregnancies that do not come to full term, Marines will be required to meet weight standard requirements after consultation with a BCBEMP/OB health care provider and upon RTFD.</span>
+</div>
+<div class="prov" id="p8-a-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Temporary medical exemptions may be granted for Marines newly diagnosed or with worsening medical condition or therapy who have followed the process in the sequence chart provided in enclosure (5).  Marines with approved temporary medical exemptions will not be assigned to BCP or MAP during the current six-month period.  Marines are subject to a medical records review by a medical evaluation board (MEB) if:</span>
+</div>
+<div class="prov" id="p8-a-1-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Marine receives a medical waiver for the same medical condition over two consecutive six-month periods that resulted in the member not participating in the BCP.</span>
+</div>
+<div class="prov" id="p8-a-1-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Marine receives three medical waivers in the most recent four-year period for any medical condition that resulted in the member not participating in the BCP.</span>
+</div>
+<div class="prov" id="p8-a-1-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">The CO requests a MEB when the Marine’s fitness/health is questionable for continued service. “Counseled this date concerning your extension on the Marine Corps BCP.  You have made reasonable progress but have failed to comply with established weight/body composition standards while on your first assignment to the BCP.  Therefore, you have been granted a one- time extension of six months to meet the body composition standards set forth in MCO 6110.3_.  You are advised that failure to take corrective action while on this six-month extension may result in processing for administrative separation for either weight control failure or unsatisfactory performance per paragraphs 6206 and 6215 of MCO 1900.16_. Specific recommendations for corrective action are: Meet your weight/body composition reduction goals by losing the prescribed __ lbs and __ % body fat per month for six months and actively participate in your diet and exercise program.  Assistance is available through your chain of command.  I was advised that within five working days after acknowledgment of this entry a written rebuttal could be submitted and that such a rebuttal will be filed on the document side of my SRB/OQR.  I choose (to)(not to) make such a statement.” MCO 6110.3A CH-3 23 Feb 2021 1-24                   Enclosure (1)</span>
+</div>
+<div class="prov" id="p8-a-1-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Marine receives a temporary medical exemption for the same medical condition over two consecutive six-month periods that resulted in the member not participating in the BCP.</span>
+</div>
+<div class="prov" id="p8-a-1-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Marine receives three temporary medical exemptions in the most recent four-year period for any medical condition that resulted in the member not participating in the BCP.</span>
+</div>
+<div class="prov" id="p8-a-1-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">The CO requests a MEB when the Marine’s fitness/health is questionable for continued service.</span>
+</div>
+<div class="prov" id="p8-a-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Pregnancy and post-partum:  After confirmation from an authorized medical provider, Marines on BCP/MAP who are pregnant will be placed in an inactive BCP/MAP status during pregnancy and for nine 12 months after date of the birth event. Marines who are pregnant or post-partum not on BCP/MAP are exempt from participation and will not be evaluated for BCP or MAP.  The period of inactive status and non- evaluation will include pregnancy, the 12 week (post-partum) convalescent period and for six months following RTFD. For pregnancies that do not come to full term, Marines will be required to meet weight standard requirements after consultation with an authorized medical provider and upon RTFD. MCO 6110.3A 15 DEC 2016 1-25                   Enclosure (1)</span>
+</div>
+<div class="prov" id="p8-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Waivers</span>
+</div>
+<div class="prov" id="p8-b-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">Marines who score 285 and higher on both the PFT and CFT are exempt from maximum weight and body fat limits.  Height, weight and body fat will still be recorded and reported.</span>
+</div>
+<div class="prov" id="p8-b-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">Marines who score 250 and higher on both tests are granted an additional 1 percent body fat limit.</span>
+</div>
+<div class="prov" id="p8-b-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">Commanders/OICs possessing special courts-martial convening authority may submit a BCP assignment waiver for the &quot;rare&quot; Marine who exceeds established weight and body composition standards yet still presents a suitable military appearance.  Because of the direct link between body composition, appearance, performance and leadership, Commanders/OICs are required to provide a detailed explanation behind the basis for their request and all relevant evaluation metrics.  Marines being considered for a BCP waiver should display exceptional military appearance, possess a superior level of fitness and perform beyond all reasonable expectations, despite exceeding established height/weight and body composition standards. For example, a 30-year old male staff sergeant who is 68 inches tall and weighs 182 pounds with a body composition of 20 percent, exceeds standards.  However, he is PME complete, tactically and technically proficient, possesses expert rifle and pistol qualifications and routinely achieves a high PFT and CFT, but does not score 285+ on both.  His performance and reputation is renowned throughout the command.  He is routinely relied upon by seniors, respected by peers and emulated by subordinates.  Most importantly, he displays superior military appearance as determined by the commander/OIC.  BCP waiver requests will be submitted to the first General Officer in a Marine’s chain of command.  Evaluation criteria may include, but is not limited to the following:</span>
+</div>
+<div class="prov" id="p8-b-3-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Copy of NAVMC 11621 with commander&#x27;s assessment.</span>
+</div>
+<div class="prov" id="p8-b-3-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Current photograph in Service &#x27;C&#x27; uniform.</span>
+</div>
+<div class="prov" id="p8-b-3-c">
+<span class="plabel">(c)</span> 
+<span class="ptext">Current PFT score.</span>
+</div>
+<div class="prov" id="p8-b-3-d">
+<span class="plabel">(d)</span> 
+<span class="ptext">Current CFT score.</span>
+</div>
+<div class="prov" id="p8-b-3-e">
+<span class="plabel">(e)</span> 
+<span class="ptext">Most recent Proficiency/Conduct Marks, if applicable.</span>
+</div>
+<div class="prov" id="p8-b-3-f">
+<span class="plabel">(f)</span> 
+<span class="ptext">Chain of command endorsement(s).</span>
+</div>
+<div class="prov" id="p8-b-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">Approved BCP waivers are valid for one year from the date of approval or whatever time period is authorized by the waiver authority. MCO 6110.3A CH-1 12 DEC 2017 1-26                   Enclosure (1)</span>
+</div>
+<div class="prov" id="p8-b-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">Commanders may request a BCP or MAP waiver when it is determined that deployment to a combat zone prevents effective BCP or MAP management and participation.</span>
+</div>
+<div class="prov" id="p8-b-5-a">
+<span class="plabel">(a)</span> 
+<span class="ptext">Approval will be dependent upon unit type, anticipated area of operation and command justification.  To be eligible, commands must be serving in a combat zone and be in receipt of hostile fire pay.  Upon approval, a BCP assignment waiver will apply to all Marines within the requesting command.  Affected Marines will be placed in an inactive status and will not be evaluated by their commands.  However, Marines should continue a reasonable attempt to conform to body composition standards and present a suitable military appearance. Should operating conditions change enabling effective BCP and MAP management, commands are encouraged to notify waiver authority and resume normal BCP and MAP management.</span>
+</div>
+<div class="prov" id="p1">
+<span class="plabel">1.</span> 
+<span class="ptext">For separate organizations not commanded by a General Officer, requests to waive BCP or MAP assignment will be submitted to CG MCCDC (C 466469).</span>
+</div>
+<div class="prov" id="p2">
+<span class="plabel">2.</span> 
+<span class="ptext">For Marine activities that are not tenants of Marine Corps posts or stations, requests to waive BCP or MAP management may be submitted to CG MCCDC (C 466469).</span>
+</div>
+<div class="prov" id="p3">
+<span class="plabel">3.</span> 
+<span class="ptext">A BCP medical waiver sequence chart is provided in enclosure (5).  BCP waivers may be granted only if the member is in approved limited duty status for the medical condition prompting the BCA waiver request.</span>
+</div>
+<div class="prov" id="p3-b">
+<span class="plabel">(b)</span> 
+<span class="ptext">Commands authorized by this Order to grant waivers must send a copy of the waiver response to CG MCCDC (C 466469) within 30 days of disposition. MCO 6110.3A 15 DEC 2016 2-1                                 Enclosure (2) Marine Corps Body Composition and Military Appearance Program (MCBCMAP) Sequence Chart MCO 6110.3A 15 DEC 2016 3-1                   Enclosure (3) Department of Defense (DoD) Height/Weight Standards Table Males Females Height Maximum Standard Minimum Standard Height Maximum Standard Minimum Standard (Inches) (Pounds) (Pounds) (Inches) (Pounds) (Pounds) 52&#x27;&#x27; 106 73 52&#x27;&#x27; 100 73 53&#x27;&#x27; 110 76 53&#x27;&#x27; 104 76 54&#x27;&#x27; 114 79 54&#x27;&#x27; 108 79 55&#x27;&#x27; 118 82 55&#x27;&#x27; 112 82 56&quot; 122 85 56&quot; 115 85 57&quot; 127 88 57&quot; 120 88 58&quot; 131 91 58&quot; 124 91 59&quot; 136 94 59&quot; 129 94 60&quot; 141 97 60&quot; 133 97 61&quot; 145 100 61&quot; 137 100 62&quot; 150 104 62&quot; 142 104 63&quot; 155 107 63&quot; 146 107 64&quot; 160 110 64&quot; 151 110 65&quot; 165 114 65&quot; 156 114 66&quot; 170 117 66&quot; 161 117 67&quot; 175 121 67&quot; 166 121 68&quot; 180 125 68&quot; 171 125 69&quot; 186 128 69&quot; 176 128 70&quot; 191 132 70&quot; 181 132 71&quot; 197 136 71&quot; 186 136 72&quot; 202 140 72&quot; 191 140 73&quot; 208 144 73&quot; 197 144 74&quot; 214 148 74&quot; 202 148 75&quot; 220 152 75&quot; 208 152 76&quot; 225 156 76&quot; 213 156 77&quot; 231 160 77&quot; 219 160 78&quot; 237 164 78&quot; 225 164 79&quot; 244 168 79&quot; 230 168 80&quot; 250 173 80&quot; 236 173 81&quot; 256 177 81&quot; 242 177 82&quot; 263 182 82&quot; 248 182 83&#x27;&#x27; 269 186 83&#x27;&#x27; 255 186 84&#x27;&#x27; 276 191 84&#x27;&#x27; 261 191 85&#x27;&#x27; 283 195 85&#x27;&#x27; 267 195 86&#x27;&#x27; 289 200 86&#x27;&#x27; 274 200 MCO 6110.3A 15 DEC 2016 3-2                   Enclosure (3) Maximum Body Fat Percentage Table by Age Group Marine Corps Body Composition Standards Age Group Male Female 17-20 18% BF 26% BF 21-25 18% BF 26% BF 26-30 19% BF 27% BF 31-35 19% BF 27% BF 36-40 20% BF 28% BF 41-45 20% BF 28% BF 46-50 21% BF 29% BF 51+ 21% BF 29% BF MCO 6110.3A 15 DEC 2016 4-1                   Enclosure (4) Department of Defense (DoD) Body Composition Standards Table (Males) 55.0 55.5 56.0 56.5 57.0 57.5 58.0 58.5 59.0 59.5 12.0 8 7 7 7 7 6 6 6 6 5 12.5 9 9 9 8 8 8 8 7 7 7 13.0 11 10 10 10 10 9 9 9 9 8 13.5 12 12 12 11 11 11 10 10 10 10 14.0 13 13 13 13 12 12 12 12 11 11 14.5 15 14 14 14 14 13 13 13 13 12 15.0 16 16 15 15 15 15 14 14 14 14 15.5 17 17 17 16 16 16 16 15 15 15 16.0 18 18 18 18 17 17 17 17 16 16 16.5 20 19 19 19 18 18 18 18 17 17 17.0 21 20 20 20 20 19 19 19 19 18 17.5 22 22 21 21 21 20 20 20 20 19 18.0 23 23 22 22 22 21 21 21 21 20 18.5 24 24 23 23 23 23 22 22 22 21 19.0 25 25 24 24 24 23 23 23 23 22 19.5 26 26 25 25 25 24 24 24 24 23 20.0 27 26 26 26 26 25 25 25 25 24 20.5 28 27 27 27 27 26 26 26 26 25 21.0 29 28 28 28 28 27 27 27 26 26 21.5 29 29 29 29 28 28 28 28 27 27 22.0 30 30 30 30 29 29 29 28 28 28 22.5 31 31 31 30 30 30 30 29 29 29 23.0 32 32 31 31 31 31 30 30 30 30 23.5 33 33 32 32 32 31 31 31 31 30 24.0 34 33 33 33 32 32 32 32 31 31 24.5 34 34 34 34 33 33 33 32 32 32 25.0 35 35 35 34 34 34 33 33 33 33 25.5 36 36 35 35 35 34 34 34 34 33 26.0 37 36 36 36 35 35 35 35 34 34 26.5 37 37 37 36 36 36 36 35 35 35 27.0 38 38 37 37 37 37 36 36 36 36 27.5 39 38 38 38 38 37 37 37 37 36 28.0 39 39 39 39 38 38 38 37 37 37 28.5 40 40 39 39 39 39 38 38 38 38 29.0 41 40 40 40 40 39 39 39 39 38 29.5 41 41 41 40 40 40 40 39 39 39 30.0 42 42 41 41 41 41 40 40 40 40 30.5 43 42 42 42 41 41 41 41 40 40 31.0 43 43 43 42 42 42 42 41 41 41 31.5 44 43 43 43 43 42 42 42 42 41 ﻿Circumference Value* Height (in) * Circumference Value = abdomen circumference – neck circumference (in inches) MCO 6110.3A 15 DEC 2016 4-2                   Enclosure (4) Department of Defense (DoD) Body Composition Standards Table (Males) 60.0 60.5 61.0 61.5 62.0 62.5 63.0 63.5 64.0 64.5 13.5 9 9 9 9 8 8 8 8 7 7 14.0 11 11 10 10 10 10 9 9 9 9 14.5 12 12 12 11 11 11 11 10 10 10 15.0 13 13 13 13 12 12 12 12 11 11 15.5 15 14 14 14 14 13 13 13 13 12 16.0 16 16 15 15 15 15 14 14 14 14 16.5 17 17 16 16 16 16 15 15 15 15 17.0 18 18 18 17 17 17 17 16 16 16 17.5 19 19 19 18 18 18 18 17 17 17 18.0 20 20 20 19 19 19 19 18 18 18 18.5 21 21 21 20 20 20 20 19 19 19 19.0 22 22 22 21 21 21 21 20 20 20 19.5 23 23 23 22 22 22 22 21 21 21 20.0 24 24 24 23 23 23 23 22 22 22 20.5 25 25 25 24 24 24 24 23 23 23 21.0 26 26 25 25 25 25 24 24 24 24 21.5 27 27 26 26 26 26 25 25 25 25 22.0 28 27 27 27 27 26 26 26 26 25 22.5 29 28 28 28 28 27 27 27 27 26 23.0 29 29 29 29 28 28 28 28 27 27 23.5 30 30 30 29 29 29 29 28 28 28 24.0 31 31 30 30 30 30 29 29 29 29 24.5 32 31 31 31 31 30 30 30 30 29 25.0 32 32 32 32 31 31 31 31 30 30 25.5 33 33 33 32 32 32 32 31 31 31 26.0 34 34 33 33 33 33 32 32 32 32 26.5 35 34 34 34 34 33 33 33 33 32 27.0 35 35 35 35 34 34 34 34 33 33 27.5 36 36 36 35 35 35 35 34 34 34 28.0 37 36 36 36 36 35 35 35 35 34 28.5 37 37 37 37 36 36 36 36 35 35 29.0 38 38 37 37 37 37 37 36 36 36 29.5 39 38 38 38 38 37 37 37 37 36 30.0 39 39 39 39 38 38 38 38 37 37 30.5 40 40 39 39 39 39 38 38 38 38 31.0 40 40 40 40 39 39 39 39 39 38 31.5 41 41 41 40 40 40 40 39 39 39 32.0 42 41 41 41 41 40 40 40 40 39 32.5 42 42 42 42 41 41 41 41 40 40 ﻿Circumference Value* Height (in) * Circumference Value = abdomen circumference – neck circumference (in inches) MCO 6110.3A 15 DEC 2016 4-3                   Enclosure (4) Department of Defense (DoD) Body Composition Standards Table (Males) 65.0 65.5 66.0 66.5 67.0 67.5 68.0 68.5 69.0 69.5 14.5 10 9 9 9 9 9 8 8 8 8 15.0 11 11 10 10 10 10 10 9 9 9 15.5 12 12 12 11 11 11 11 11 10 10 16.0 13 13 13 13 12 12 12 12 12 11 16.5 14 14 14 14 14 13 13 13 13 12 17.0 16 15 15 15 15 14 14 14 14 14 17.5 17 16 16 16 16 16 15 15 15 15 18.0 18 18 17 17 17 17 16 16 16 16 18.5 19 19 18 18 18 18 17 17 17 17 19.0 20 20 19 19 19 19 18 18 18 18 19.5 21 21 20 20 20 20 19 19 19 19 20.0 22 21 21 21 21 21 20 20 20 20 20.5 23 22 22 22 22 21 21 21 21 21 21.0 24 23 23 23 23 22 22 22 22 21 21.5 24 24 24 24 23 23 23 23 23 22 22.0 25 25 25 25 24 24 24 24 23 23 22.5 26 26 26 25 25 25 25 24 24 24 23.0 27 27 26 26 26 26 26 25 25 25 23.5 28 27 27 27 27 27 26 26 26 26 24.0 28 28 28 28 28 27 27 27 27 26 24.5 29 29 29 29 28 28 28 28 27 27 25.0 30 30 30 29 29 29 29 28 28 28 25.5 31 31 30 30 30 30 29 29 29 29 26.0 31 31 31 31 31 30 30 30 30 29 26.5 32 32 32 32 31 31 31 31 30 30 27.0 33 33 32 32 32 32 32 31 31 31 27.5 34 33 33 33 33 32 32 32 32 32 28.0 34 34 34 34 33 33 33 33 32 32 28.5 35 35 34 34 34 34 34 33 33 33 29.0 36 35 35 35 35 34 34 34 34 34 29.5 36 36 36 36 35 35 35 35 34 34 30.0 37 37 36 36 36 36 35 35 35 35 30.5 37 37 37 37 37 36 36 36 36 35 31.0 38 38 38 37 37 37 37 36 36 36 31.5 39 38 38 38 38 38 37 37 37 37 32.0 39 39 39 39 38 38 38 38 37 37 32.5 40 40 39 39 39 39 38 38 38 38 33.0 40 40 40 40 39 39 39 39 39 38 33.5 41 41 40 40 40 40 40 39 39 39 * Circumference Value = abdomen circumference – neck circumference (in inches) Height (in) ﻿Circumference Value* MCO 6110.3A 15 DEC 2016 4-4                   Enclosure (4) Department of Defense (DoD) Body Composition Standards Table (Males) 70.0 70.5 71.0 71.5 72.0 72.5 73.0 73.5 74.0 74.5 14.5 7 7 7 7 7 6 6 6 6 6 15.0 9 8 8 8 8 8 7 7 7 7 15.5 10 10 9 9 9 9 9 8 8 8 16.0 11 11 11 10 10 10 10 10 9 9 16.5 12 12 12 12 11 11 11 11 11 10 17.0 13 13 13 13 13 12 12 12 12 11 17.5 14 14 14 14 14 13 13 13 13 13 18.0 15 15 15 15 15 14 14 14 14 14 18.5 17 16 16 16 16 15 15 15 15 15 19.0 18 17 17 17 17 16 16 16 16 16 19.5 18 18 18 18 18 17 17 17 17 17 20.0 19 19 19 19 19 18 18 18 18 18 20.5 20 20 20 20 19 19 19 19 19 18 21.0 21 21 21 21 20 20 20 20 20 19 21.5 22 22 22 21 21 21 21 21 20 20 22.0 23 23 23 22 22 22 22 22 21 21 22.5 24 24 23 23 23 23 23 22 22 22 23.0 25 24 24 24 24 24 23 23 23 23 23.5 25 25 25 25 25 24 24 24 24 24 24.0 26 26 26 26 25 25 25 25 25 24 24.5 27 27 27 26 26 26 26 26 25 25 25.0 28 28 27 27 27 27 26 26 26 26 25.5 29 28 28 28 28 27 27 27 27 27 26.0 29 29 29 29 28 28 28 28 28 27 26.5 30 30 30 29 29 29 29 28 28 28 27.0 31 30 30 30 30 30 29 29 29 29 27.5 31 31 31 31 30 30 30 30 30 29 28.0 32 32 32 31 31 31 31 31 30 30 28.5 33 32 32 32 32 32 31 31 31 31 29.0 33 33 33 33 32 32 32 32 32 31 29.5 34 34 34 33 33 33 33 32 32 32 30.0 35 34 34 34 34 34 33 33 33 33 30.5 35 35 35 35 34 34 34 34 34 33 31.0 36 36 35 35 35 35 35 34 34 34 31.5 36 36 36 36 36 35 35 35 35 35 32.0 37 37 37 36 36 36 36 36 35 35 32.5 38 37 37 37 37 36 36 36 36 36 33.0 38 38 38 37 37 37 37 37 36 36 33.5 39 38 38 38 38 38 37 37 37 37 ﻿Circumference Value* Height (in) * Circumference Value = abdomen circumference – neck circumference (in inches) MCO 6110.3A 15 DEC 2016 4-5                   Enclosure (4) Department of Defense (DoD) Body Composition Standards Table (Males) 75.0 75.5 76.0 76.5 77.0 77.5 78.0 78.5 79.0 79.5 16.0 9 9 9 8 8 8 8 8 7 7 16.5 10 10 10 10 9 9 9 9 9 8 17.0 11 11 11 11 10 10 10 10 10 9 17.5 12 12 12 12 12 11 11 11 11 11 18.0 13 13 13 13 13 12 12 12 12 12 18.5 14 14 14 14 14 13 13 13 13 13 19.0 15 15 15 15 15 14 14 14 14 14 19.5 16 16 16 16 16 15 15 15 15 15 20.0 17 17 17 17 17 16 16 16 16 16 20.5 18 18 18 18 17 17 17 17 17 16 21.0 19 19 19 19 18 18 18 18 18 17 21.5 20 20 20 19 19 19 19 19 18 18 22.0 21 21 20 20 20 20 20 20 19 19 22.5 22 22 21 21 21 21 21 20 20 20 23.0 23 22 22 22 22 22 21 21 21 21 23.5 23 23 23 23 23 22 22 22 22 22 24.0 24 24 24 24 23 23 23 23 23 22 24.5 25 25 25 24 24 24 24 24 23 23 25.0 26 25 25 25 25 25 24 24 24 24 25.5 26 26 26 26 26 25 25 25 25 25 26.0 27 27 27 27 26 26 26 26 26 25 26.5 28 28 27 27 27 27 27 26 26 26 27.0 29 28 28 28 28 28 27 27 27 27 27.5 29 29 29 29 28 28 28 28 28 27 28.0 30 30 29 29 29 29 29 29 28 28 28.5 31 30 30 30 30 30 29 29 29 29 29.0 31 31 31 31 30 30 30 30 30 29 29.5 32 32 31 31 31 31 31 30 30 30 ﻿30.0 32 32 32 32 32 31 31 31 31 31 30.5 33 33 33 32 32 32 32 32 32 31 31.0 34 33 33 33 33 33 33 32 32 32 31.5 34 34 34 34 33 33 33 33 33 33 32.0 35 35 34 34 34 34 34 33 33 33 32.5 35 35 35 35 35 34 34 34 34 34 33.0 36 36 36 35 35 35 35 35 34 34 33.5 37 36 36 36 36 36 35 35 35 35 34.0 37 37 37 37 36 36 36 36 36 35 34.5 38 37 37 37 37 37 37 36 36 36 35.0 38 38 38 38 37 37 37 37 37 36 * Circumference Value = abdomen circumference – neck circumference (in inches) ﻿Circumference Value* Height (in) MCO 6110.3A 15 DEC 2016 4-6                   Enclosure (4) Department of Defense (DoD) Body Composition Standards Table (Females) 53.0 53.5 54.0 54.5 55.0 55.5 56.0 56.5 57.0 57.5 40.0 16 16 15 15 15 14 14 13 13 13 40.5 17 17 16 16 15 15 15 14 14 14 41.0 18 17 17 17 16 16 16 15 15 14 41.5 19 18 18 18 17 17 16 16 16 15 42.0 20 19 19 18 18 18 17 17 17 16 42.5 20 20 20 19 19 18 18 18 17 17 43.0 21 21 20 20 20 19 19 19 18 18 43.5 22 22 21 21 21 20 20 19 19 19 44.0 23 23 22 22 21 21 21 20 20 19 44.5 24 23 23 23 22 22 21 21 21 20 45.0 24 24 24 23 23 23 22 22 21 21 45.5 25 25 24 24 24 23 23 23 22 22 46.0 26 26 25 25 24 24 24 23 23 23 46.5 27 26 26 26 25 25 24 24 24 23 47.0 28 27 27 26 26 26 25 25 24 24 47.5 28 28 28 27 27 26 26 26 25 25 48.0 29 29 28 28 27 27 27 26 26 26 48.5 30 29 29 29 28 28 27 27 27 26 49.0 31 30 30 29 29 29 28 28 27 27 49.5 31 31 30 30 30 29 29 29 28 28 50.0 32 32 31 31 30 30 30 29 29 29 50.5 33 32 32 31 31 31 30 30 30 29 51.0 33 33 33 32 32 31 31 31 30 30 51.5 34 34 33 33 32 32 32 31 31 31 52.0 35 34 34 34 33 33 32 32 32 31 52.5 35 35 35 34 34 33 33 33 32 32 53.0 36 36 35 35 35 34 34 33 33 33 53.5 37 36 36 36 35 35 34 34 34 33 54.0 37 37 37 36 36 35 35 35 34 34 54.5 38 38 37 37 36 36 36 35 35 35 55.0 39 38 38 38 37 37 36 36 36 35 55.5 39 39 39 38 38 37 37 37 36 36 56.0 40 40 39 39 38 38 38 37 37 37 56.5 41 40 40 39 39 39 38 38 38 37 57.0 41 41 40 40 40 39 39 39 38 38 57.5 42 41 41 41 40 40 40 39 39 38 58.0 42 42 42 41 41 41 40 40 39 39 58.5 43 43 42 42 42 41 41 40 40 40 59.0 44 43 43 43 42 42 41 41 41 40 59.5 44 44 43 43 43 42 42 42 41 41 Height (in) * Circumference Value = waist circumference + hip circumference – neck circumference (in inches) ﻿Circumference Value* MCO 6110.3A 15 DEC 2016 4-7                   Enclosure (4) Department of Defense (DoD) Body Composition Standards Table (Females) 58.0 58.5 59.0 59.5 60.0 60.5 61.0 61.5 62.0 62.5 42.5 16 15 15 15 14 14 13 13 13 12 43.0 16 16 16 15 15 15 14 14 14 13 43.5 17 17 17 16 16 15 15 15 14 14 44.0 18 18 17 17 17 16 16 16 15 15 44.5 19 19 18 18 17 17 17 16 16 16 45.0 19 19 19 19 18 18 18 17 17 16 45.5 20 20 19 19 19 19 18 18 18 17 46.0 21 20 20 20 19 19 19 19 18 18 46.5 21 21 21 20 20 20 19 19 19 19 47.0 22 22 22 21 21 20 20 20 19 19 47.5 23 23 22 22 22 21 21 21 20 20 48.0 24 23 23 23 22 22 22 21 21 21 48.5 24 24 24 23 23 23 22 22 22 21 49.0 25 25 24 24 24 23 23 23 22 22 49.5 26 26 25 25 24 24 24 23 23 23 50.0 27 26 26 26 25 25 24 24 24 23 50.5 27 27 27 26 26 26 25 25 25 24 51.0 28 28 27 27 27 26 26 26 25 25 51.5 29 28 28 28 27 27 27 26 26 26 52.0 29 29 29 28 28 28 27 27 27 26 52.5 30 30 29 29 29 28 28 28 27 27 53.0 31 30 30 30 29 29 29 28 28 28 53.5 31 31 31 30 30 30 29 29 29 28 54.0 32 32 31 31 31 30 30 30 29 29 54.5 33 32 32 32 31 31 31 30 30 30 55.0 33 33 33 32 32 32 31 31 31 30 55.5 34 34 33 33 33 32 32 32 31 31 56.0 35 34 34 34 33 33 33 32 32 31 56.5 35 35 35 34 34 34 33 33 32 32 57.0 36 36 35 35 34 34 34 33 33 33 57.5 37 36 36 35 35 35 34 34 34 33 58.0 37 37 36 36 36 35 35 35 34 34 58.5 38 37 37 37 36 36 36 35 35 35 59.0 38 38 38 37 37 37 36 36 36 35 59.5 39 39 38 38 38 37 37 36 36 36 60.0 40 39 39 38 38 38 37 37 37 36 60.5 40 40 39 39 39 38 38 38 37 37 61.0 41 40 40 40 39 39 39 38 38 38 61.5 41 41 41 40 40 40 39 39 38 38 Height (in) ﻿Circumference Value* * Circumference Value = waist circumference + hip circumference – neck circumference (in inches) MCO 6110.3A 15 DEC 2016 4-8                   Enclosure (4) Department of Defense (DoD) Body Composition Standards Table (Females) 58.0 58.5 59.0 59.5 60.0 60.5 61.0 61.5 62.0 62.5 62.0 42 42 41 41 40 40 40 39 39 39 ﻿62.5 42 42 42 41 41 41 40 40 40 39 63.0 43 43 42 42 42 41 41 41 40 40 63.5 44 43 43 42 42 42 41 41 41 40 64.0 44 44 43 43 43 42 42 42 41 41 64.5 45 44 44 44 43 43 43 42 42 42 65.0 45 45 45 44 44 43 43 43 42 42 65.5 46 45 45 45 44 44 44 43 43 43 66.0 46 46 46 45 45 45 44 44 43 43 66.5 47 46 46 46 45 45 45 44 44 44 67.0 48 48 47 46 46 46 45 45 45 44 67.5 49 49 48 47 46 46 46 45 45 45 68.0 49 49 49 48 47 47 46 46 46 45 68.5 50 50 49 49 49 48 47 46 46 46 69.0 50 50 50 49 49 49 48 47 47 46 69.5 51 51 50 50 50 49 49 48 48 47 * Circumference Value = waist circumference + hip circumference – neck circumference (in inches) ﻿Circumference Value* Height (in) 63.0 63.5 64.0 64.5 65.0 65.5 66.0 66.5 67.0 67.5 45.0 16 16 15 15 15 15 14 14 14 13 45.5 17 17 16 16 16 15 15 15 14 14 46.0 18 17 17 17 16 16 16 15 15 15 46.5 18 18 18 17 17 17 17 16 16 16 47.0 19 19 19 18 18 18 17 17 17 16 47.5 19 19 19 19 19 18 18 18 17 17 48.0 20 20 20 19 19 19 19 18 18 18 48.5 21 21 20 20 20 19 19 19 19 19 49.0 22 21 21 21 20 20 20 19 19 19 49.5 22 22 22 21 21 21 20 20 20 19 50.0 23 23 22 22 22 21 21 21 21 20 50.5 24 23 23 23 23 22 22 22 21 21 51.0 25 24 24 24 23 23 23 22 22 22 51.5 25 25 25 24 24 24 23 23 23 22 52.0 26 26 25 25 25 24 24 24 23 23 52.5 27 26 26 26 25 25 25 24 24 24 53.0 27 27 27 26 26 26 25 25 25 24 * Circumference Value = waist circumference + hip circumference – neck circumference (in inches) ﻿Circumference Value* Height (in) MCO 6110.3A 15 DEC 2016 4-9                   Enclosure (4) Department of Defense (DoD) Body Composition Standards Table (Females) 63.0 63.5 64.0 64.5 65.0 65.5 66.0 66.5 67.0 67.5 53.5 28 28 27 27 27 26 26 26 25 25 54.0 29 28 28 28 27 27 27 26 26 26 54.5 29 29 29 28 28 28 27 27 27 26 55.0 30 30 29 29 29 28 28 28 27 27 55.5 31 30 30 30 29 29 29 28 28 28 56.0 31 31 30 30 30 30 29 29 29 28 56.5 32 31 31 31 30 30 30 29 29 29 57.0 32 32 32 31 31 31 30 30 30 29 57.5 33 33 32 32 32 31 31 31 30 30 58.0 34 33 33 33 32 32 32 31 31 31 58.5 34 34 34 33 33 33 32 32 32 31 59.0 35 35 34 34 34 33 33 33 32 32 59.5 35 35 35 34 34 34 33 33 33 33 60.0 36 36 35 35 35 34 34 34 33 33 60.5 37 36 36 36 35 35 35 34 34 34 61.0 37 37 37 36 36 36 35 35 35 34 61.5 38 37 37 37 36 36 36 36 35 35 62.0 38 38 38 37 37 37 36 36 36 35 62.5 39 39 38 38 38 37 37 37 36 36 63.0 40 39 39 39 38 38 38 37 37 37 63.5 40 40 39 39 39 38 38 38 37 37 64.0 41 40 40 40 39 39 39 38 38 38 64.5 41 41 41 40 40 40 39 39 39 38 65.0 42 41 41 41 40 40 40 39 39 39 65.5 42 42 42 41 41 41 40 40 40 39 66.0 43 42 42 42 41 41 41 41 40 40 66.5 43 43 43 42 42 42 41 41 41 40 67.0 44 44 43 43 43 42 42 42 41 41 67.5 44 44 44 43 43 43 42 42 42 41 68.0 45 45 44 44 44 43 43 43 42 42 68.5 45 45 45 44 44 44 43 43 43 43 69.0 46 46 45 45 45 44 44 44 43 43 69.5 46 46 46 45 45 45 44 44 44 44 70.0 47 47 46 46 46 45 45 45 44 44 70.5 48 48 47 46 46 46 46 45 45 45 71.0 49 49 48 47 47 46 46 46 45 45 71.5 49 49 49 48 48 47 47 46 46 46 72.0 50 50 49 49 49 48 47 47 46 46 72.5 50 50 50 49 49 49 48 48 47 47 ﻿Circumference Value* Height (in) * Circumference Value = waist circumference + hip circumference – neck circumference (in inches) MCO 6110.3A 15 DEC 2016 4-10                   Enclosure (4) Department of Defense (DoD) Body Composition Standards Table (Females) 68.0 68.5 69.0 69.5 70.0 70.5 71.0 71.5 72.0 72.5 46.0 15 15 14 14 14 13 13 13 13 12 46.5 16 15 15 15 15 14 14 14 13 13 47.0 17 16 16 16 15 15 15 14 14 14 47.5 17 17 17 16 16 16 15 15 15 15 48.0 18 18 17 17 17 16 16 16 16 15 48.5 19 18 18 18 17 17 17 17 16 16 49.0 19 19 19 19 18 18 18 17 17 17 49.5 19 20 20 19 19 19 18 18 18 17 50.0 20 20 19 20 20 19 19 19 18 18 50.5 21 20 20 20 19 19 20 19 19 19 51.0 21 21 21 20 20 20 19 19 20 20 51.5 22 22 21 21 21 20 20 20 20 19 52.0 23 22 22 22 21 21 21 21 20 20 52.5 23 23 23 22 22 22 22 21 21 21 53.0 24 24 23 23 23 22 22 22 22 21 53.5 25 24 24 24 23 23 23 23 22 22 54.0 25 25 25 24 24 24 24 23 23 23 54.5 26 26 25 25 25 24 24 24 24 23 55.0 27 26 26 26 25 25 25 25 24 24 55.5 27 27 27 26 26 26 25 25 25 25 56.0 28 28 27 27 27 26 26 26 25 25 56.5 29 28 28 28 27 27 27 26 26 26 57.0 29 29 29 28 28 28 27 27 27 26 57.5 30 29 29 29 29 28 28 28 27 27 58.0 30 30 30 29 29 29 29 28 28 28 58.5 31 31 30 30 30 29 29 29 29 28 59.0 32 31 31 31 30 30 30 29 29 29 59.5 32 32 32 31 31 31 30 30 30 29 60.0 33 32 32 32 32 31 31 31 30 30 60.5 33 33 33 32 32 32 32 31 31 31 61.0 34 34 33 33 33 32 32 32 32 31 61.5 35 34 34 34 33 33 33 32 32 32 62.0 35 35 35 34 34 34 33 33 33 32 62.5 36 35 35 35 34 34 34 34 33 33 63.0 36 36 36 35 35 35 34 34 34 34 63.5 37 37 36 36 36 35 35 35 34 34 64.0 37 37 37 36 36 36 36 35 35 35 64.5 38 38 37 37 37 36 36 36 36 35 65.0 38 38 38 38 37 37 37 36 36 36 ﻿Circumference Value* Height (in) * Circumference Value = waist circumference + hip circumference – neck circumference (in inches) MCO 6110.3A 15 DEC 2016 4-11                   Enclosure (4) Department of Defense (DoD) Body Composition Standards Table (Females) 68.0 68.5 69.0 69.5 70.0 70.5 71.0 71.5 72.0 72.5 65.5 39 39 38 38 38 37 37 37 37 36 66.0 40 39 39 39 38 38 38 37 37 37 66.5 40 40 39 39 39 39 38 38 38 37 67.0 41 40 40 40 39 39 39 39 38 38 67.5 41 41 41 40 40 40 39 39 39 38 68.0 42 41 41 41 40 40 40 40 39 39 68.5 42 42 42 41 41 41 40 40 40 39 69.0 43 42 42 42 41 41 41 41 40 40 69.5 43 43 43 42 42 42 41 41 41 41 70.0 44 43 43 43 43 42 42 42 41 41 70.5 44 44 44 43 43 43 42 42 42 42 71.0 45 44 44 44 44 43 43 43 42 42 71.5 45 45 45 44 44 44 43 43 43 43 72.0 46 45 45 45 45 44 44 44 43 43 72.5 46 46 46 45 45 45 44 44 44 44 73.0 47 46 46 46 45 45 45 45 44 44 73.5 48 47 47 46 46 46 45 45 45 44 74.0 49 48 48 47 46 46 46 46 45 45 74.5 49 49 49 48 47 47 46 46 46 45 75.0 50 49 49 49 48 48 47 46 46 46 75.5 50 50 49 49 49 49 48 47 47 46 76.0 51 50 50 50 49 49 49 48 48 47 * Circumference Value = waist circumference + hip circumference – neck circumference (in inches) ﻿Circumference Value* Height (in) 73.0 73.5 74.0 74.5 75.0 75.5 76.0 76.5 77.0 77.5 48.0 15 15 14 14 14 14 13 13 13 12 48.5 16 15 15 15 15 14 14 14 13 13 49.0 16 16 16 16 15 15 15 14 14 14 49.5 17 17 17 16 16 16 15 15 15 15 50.0 18 18 17 17 17 16 16 16 16 15 50.5 19 18 18 18 17 17 17 17 16 16 51.0 19 19 19 18 18 18 18 17 17 17 51.5 20 20 19 19 19 19 18 18 18 17 52.0 20 19 19 20 20 19 19 19 18 18 52.5 20 20 20 19 19 20 20 19 19 19 Height (in) ﻿Circumference Value* * Circumference Value = waist circumference + hip circumference – neck circumference (in inches) MCO 6110.3A 15 DEC 2016 4-12                   Enclosure (4) Department of Defense (DoD) Body Composition Standards Table (Females) 73.0 73.5 74.0 74.5 75.0 75.5 76.0 76.5 77.0 77.5 53.0 21 21 20 20 20 20 19 19 20 19 53.5 22 21 21 21 21 20 20 20 19 19 54.0 22 22 22 21 21 21 21 20 20 20 54.5 23 23 22 22 22 22 21 21 21 20 55.0 24 23 23 23 22 22 22 22 21 21 55.5 24 24 24 23 23 23 23 22 22 22 56.0 25 25 24 24 24 23 23 23 23 22 56.5 26 25 25 25 24 24 24 24 23 23 57.0 26 26 26 25 25 25 24 24 24 24 57.5 27 26 26 26 26 25 25 25 25 24 58.0 27 27 27 27 26 26 26 25 25 25 58.5 28 28 27 27 27 27 26 26 26 25 59.0 29 28 28 28 27 27 27 27 26 26 59.5 29 29 29 28 28 28 27 27 27 27 60.0 30 30 29 29 29 28 28 28 28 27 60.5 30 30 30 30 29 29 29 28 28 28 61.0 31 31 30 30 30 30 29 29 29 28 61.5 32 31 31 31 30 30 30 30 29 29 62.0 32 32 32 31 31 31 30 30 30 30 62.5 33 32 32 32 32 31 31 31 30 30 63.0 33 33 33 32 32 32 32 31 31 31 63.5 34 34 33 33 33 32 32 32 32 31 64.0 34 34 34 34 33 33 33 32 32 32 64.5 35 35 34 34 34 33 33 33 33 32 65.0 35 35 35 35 34 34 34 33 33 33 65.5 36 36 35 35 35 35 34 34 34 33 66.0 37 36 36 36 35 35 35 35 34 34 66.5 37 37 37 36 36 36 35 35 35 35 67.0 38 37 37 37 36 36 36 36 35 35 67.5 38 38 38 37 37 37 36 36 36 36 68.0 39 38 38 38 38 37 37 37 36 36 68.5 39 39 39 38 38 38 37 37 37 37 69.0 40 39 39 39 39 38 38 38 37 37 69.5 40 40 40 39 39 39 39 38 38 38 70.0 41 40 40 40 40 39 39 39 38 38 70.5 41 41 41 40 40 40 40 39 39 39 71.0 42 41 41 41 41 40 40 40 39 39 71.5 42 42 42 41 41 41 41 40 40 40 72.0 43 42 42 42 42 41 41 41 40 40 * Circumference Value = waist circumference + hip circumference – neck circumference (in inches) ﻿Circumference Value* Height (in) MCO 6110.3A 15 DEC 2016 4-13                   Enclosure (4) Department of Defense (DoD) Body Composition Standards Table (Females) 73.0 73.5 74.0 74.5 75.0 75.5 76.0 76.5 77.0 77.5 72.5 43 43 43 42 42 42 42 41 41 41 73.0 44 43 43 43 43 42 42 42 41 41 73.5 44 44 44 43 43 43 42 42 42 42 74.0 45 44 44 44 44 43 43 43 42 42 74.5 45 45 45 44 44 44 43 43 43 43 75.0 46 45 45 45 44 44 44 44 43 43 75.5 46 46 46 45 45 45 44 44 44 44 76.0 47 46 46 46 45 45 45 45 44 44 76.5 48 47 46 46 46 46 45 45 45 44 77.0 48 48 47 47 46 46 46 45 45 45 77.5 49 49 48 48 47 47 46 46 46 45 78.0 49 49 49 49 48 47 47 46 46 46 78.5 50 50 49 49 49 48 48 47 47 46 79.0 50 50 50 49 49 49 49 48 48 47 79.5 51 50 50 50 50 49 49 49 48 48 * Circumference Value = waist circumference + hip circumference – neck circumference (in inches) Height (in) ﻿Circumference Value* MCO 6110.3A CH-1 12 OCT 2017 5-1                                 Enclosure (5) BCP Medical Waiver Sequence Chart Temporary Medical Exemption Process (new chart below) MCO 6110.3A CH-3 23 Feb 2021 6-1                                 Enclosure (6) Pregnancy and Post-Partum Policy Flowchart MCO 6110.3A 15 DEC 2016 7-1                     Enclosure (7) Glossary of Terms ACRONYM DESCRIPTION/DEFINITION BCE Body Composition Evaluation BCMEMP Board Certified Board Eligible Medical Provider BCP Body Composition Program BUMED United States Department of the Navy and the Bureau of Medicine and Surgery CG Commanding General CO Commanding Officer CPTR Command Physical Training Representative DoD Department of Defense DON Department of the Navy EAS End of Active Service/Retirement FFD Force Fitness Division FFI Force Fitness Instructor IGMC Inspector General, Headquarters Marine Corps MAP Military Appearance Program MCBCMAP Marine Corps Body Composition and Military Appearance Program MCCDC Marine Corps Combat Development Command MCTFS Marine Corps Total Force System MEB Medical Evaluation Board NARA National Archives and Records Administration NMS Non-Musculoskeletal OIC Commanding Officer/Officer in Charge OQR Officer Qualification Record PCS/PCA Permanent Change of Station/Assignment PEB Physical Evaluation Board PII Personally Identifiable Information PME Professional Military Education RM Risk Management SRB Service Record Book TECOM Training and Education Command UD-MIPS Unit Diary/ Marine Integrated Personnel System</span>
+</div>
+</div>
+</details>
+<h2>Provenance</h2><div class="panel"><p class="small">Source <code>E:\GunnyBot\Policies\MCO\MCO_6110.3A_WADMIN_CH-4.pdf</code><br>Extracted by pymupdf on 2026-04-28, converted 2026-07-19 against store schema 0.4.0<br>Checksum <code>39de0911b6aec5bc46e043de71deb268</code></p></div>
+<footer><p>This record is an UNVERIFIED machine extraction unless marked otherwise. Every link on this page is cited: it exists because the issuing authority printed the reference on the document. This library is an unofficial reference - the issuing authority's copy governs.</p></footer></main></body></html>

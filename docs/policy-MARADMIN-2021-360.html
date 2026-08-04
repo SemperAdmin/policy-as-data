@@ -1,0 +1,490 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FY22 COMMANDANTâ€™S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD (CPIB) - Semper Admin Policy Library</title>
+<style>
+:root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
+--blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
+--brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
+--bg:#0A1424;--elev:#11203F;--sunken:#060E1A;--fg:#F2E5BE;--card:#11203F;
+--muted:#182A4D;--mutedfg:#B5A988;--border:#233A5C;--borders:#34507A;
+--n950:#0F0C09;--rad:8px;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:400 15px/1.6 "Inter Variable",Inter,system-ui,sans-serif}
+a{color:var(--blue1)}a:hover{color:var(--brass3)}
+:focus-visible{outline:3px solid var(--brass3);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px;
+background:var(--brass3);color:var(--n950)}
+header.chrome,main,footer{max-width:64rem;margin:0 auto;padding:16px 24px}
+header.chrome{margin-top:16px;border-radius:12px;border:1px solid var(--border);
+background:var(--elev);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.wordmark{font:400 28px/1.2 "Bebas Neue",Oswald,system-ui,sans-serif;
+letter-spacing:.04em;color:var(--parch3);text-decoration:none;text-transform:uppercase}
+h1{font:700 28px/1.2 inherit;margin:32px 0 8px}
+h2{font:700 20px/1.2 inherit;border-bottom:1px solid var(--borders);
+padding-bottom:8px;margin-top:40px}
+.lede{color:var(--mutedfg);max-width:52rem}
+.tier{border:1px solid var(--border);border-radius:12px;background:var(--card);
+margin:0 0 4px;padding:16px 20px}
+.tier.gap{background:repeating-linear-gradient(135deg,var(--sunken),
+var(--sunken) 10px,#0b1830 10px,#0b1830 20px);border-style:dashed;
+border-color:var(--aging)}
+.tierhead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
+font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin-bottom:10px}
+.tiercode{color:var(--brass3);font-weight:700}
+.doc{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--muted)}
+.doc:first-of-type{border-top:0;padding-top:0}
+.docid{font:600 14px/1.4 "JetBrains Mono",Menlo,monospace;color:var(--parch3)}
+.doctitle{color:var(--fg)}
+.uslm{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.why{font-size:13px;color:var(--mutedfg);margin-top:4px}
+.pill{display:inline-block;padding:2px 9px;border-radius:9999px;
+font:700 11px/1.6 inherit;border:1px solid var(--borders);
+background:var(--muted);color:var(--parch3);white-space:nowrap}
+.pill.cited{border-color:var(--fresh);color:#9fe0bd}
+.pill.drift{border-color:var(--aging);color:#f0c489}
+.pill.gap{border-color:var(--stale);color:#f3a3a3}
+.pill.held{border-color:var(--blue1);color:#bcd7f2}
+.pill.cancelled,.pill.superseded{background:var(--stale);border-color:var(--stale);
+color:#fff}
+.arrow{text-align:center;color:var(--brass);font:700 13px/1 inherit;
+padding:6px 0;letter-spacing:.08em}
+.arrow span{background:var(--bg);padding:0 10px}
+.arrow{position:relative}
+.arrow:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
+background:var(--brass);z-index:-1}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--muted);
+vertical-align:top}
+th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;
+letter-spacing:.08em}
+code{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+footer{border-top:1px solid var(--border);margin-top:48px;font-size:13px;
+color:var(--mutedfg)}
+
+.crumb{font-size:13px;color:var(--mutedfg);margin:24px 0 0}
+.ident{font:500 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.factrow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.lede2{color:var(--mutedfg);max-width:54rem;margin:6px 0 18px}
+.ladder{border-left:2px solid var(--brass);margin:0 0 4px 10px;padding:0 0 0 18px}
+.rung{position:relative;padding:9px 0}
+.rung:before{content:"";position:absolute;left:-24px;top:16px;width:12px;
+height:2px;background:var(--brass)}
+.rung .t{font:700 11px/1 inherit;letter-spacing:.09em;color:var(--brass3);
+text-transform:uppercase}
+.rung.gaprung{opacity:.72}
+.rung.gaprung .t{color:var(--aging)}
+.small{font-size:13px;color:var(--mutedfg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.panel{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:16px 20px}
+.panel h3{font:700 12px/1.3 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin:0 0 10px}
+.prov{border-left:1px solid var(--muted);margin:0 0 0 4px;padding:2px 0 2px 14px}
+.plabel{font:600 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+.ptext{white-space:pre-wrap;overflow-wrap:break-word}
+.reflist{list-style:none;padding:0;margin:0}
+.reflist li{padding:7px 0;border-bottom:1px solid var(--muted)}
+.reflist li:last-child{border-bottom:0}
+.reflink{font-weight:600}
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{padding:8px 0 8px 16px;border-left:2px solid var(--border);
+position:relative}
+.timeline li:before{content:"";position:absolute;left:-5px;top:15px;width:8px;
+height:8px;border-radius:50%;background:var(--brass)}
+.timeline li.now:before{background:var(--fresh);box-shadow:0 0 0 3px rgba(47,143,92,.25)}
+.timeline li.gone:before{background:var(--stale)}
+details.body{margin-top:10px}
+details.body summary{cursor:pointer;color:var(--blue1);font-weight:600}
+.src{font:500 11px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--mutedfg)}
+.doc-raw{white-space:pre-wrap;overflow-wrap:break-word;
+font:500 12px/1.65 "JetBrains Mono",Menlo,monospace;color:var(--fg);
+background:var(--sunken);border:1px solid var(--border);border-radius:8px;
+padding:14px;max-height:34rem;overflow:auto}
+.typegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));
+gap:10px;margin:12px 0}
+.typecard{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:14px 16px}
+.typecard .n{font:700 26px/1.1 inherit;color:var(--brass3)}
+</style></head><body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="chrome"><a class="wordmark" href="index.html">Semper Admin</a><span>Policy</span><a href="policy-index.html" style="margin-left:auto">All policies</a><a href="authority-index.html">Authority chains</a><a href="sources.html">Sources</a></header>
+<main id="main">
+<p class="crumb"><a href="policy-index.html">All policies</a> &rsaquo; T5 Message</p>
+<h1>FY22 COMMANDANTâ€™S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD (CPIB)</h1>
+<div class="ident">/us/dod/don/usmc/maradmin/2021/360</div>
+<div class="factrow"><span class="pill ">T5 Message</span><span class="pill ">active</span><span class="pill ">UNVERIFIED</span><span class="pill ">signed 2021-07-09</span></div>
+<h2>Where this sits</h2>
+<p class="lede2">The ladder above is what governs this policy, one tier at a time. Every rung exists because this document, or one above it, printed the reference. A tier the corpus does not hold is shown rather than skipped.</p>
+<div class="ladder">
+<div class="rung gaprung"><div class="t">T0 Statute <span class="pill gap">tier not held</span></div><div class="small">MCO 1610.7B names 5 U.S.C. 552a and 10 U.S.C. 1034 in its reference list, so this spine does reach statute. The chain above climbs through DoD Instruction 1300.19 instead, whose own reference list could not be retrieved from the authoritative source and is therefore not asserted. Expand the reference table on MCO 1610.7B to see the statutory citations.</div></div>
+<div class="rung"><div class="t">T1 Department of Defense</div>
+<div style="padding:3px 0"><code>DODI-1322.06</code> <span class="pill gap">not held</span><div class="src">named at narr:REF B &middot; cited</div></div>
+<div style="padding:3px 0"><code>DODI-1322.10</code> <span class="pill gap">not held</span><div class="src">named at narr:REF H &middot; cited</div></div>
+</div>
+<div class="rung"><div class="t">T2 Department of the Navy</div>
+<div style="padding:3px 0"><code>SECNAVINST-1520.7G</code> <span class="pill gap">not held</span><div class="src">named at narr:REF E &middot; cited</div></div>
+</div>
+<div class="rung"><div class="t">T3 Service directive</div>
+<div style="padding:3px 0"><code>MCO-1300.8</code> <span class="pill drift">drift</span> <span class="small">holds <code>MCO-1300.8-CH2</code></span><div class="src">named at narr:REF F &middot; cited</div></div>
+<div style="padding:3px 0"><code>MCO-1520.11F</code> <span class="pill gap">not held</span><div class="src">named at narr:REF C &middot; cited</div></div>
+<div style="padding:3px 0"><code>MCO-1524.1</code> <span class="pill gap">not held</span><div class="src">named at narr:REF A &middot; cited</div></div>
+<div style="padding:3px 0"><code>MCO-1553.4B</code> <span class="pill gap">not held</span><div class="src">named at narr:REF I &middot; cited</div></div>
+<div style="padding:3px 0"><code>MCO-1900.16-CH2</code> <span class="pill drift">drift</span> <span class="small">holds <code>MCO-1900.16-CH3</code></span><div class="src">named at narr:REF J &middot; cited</div></div>
+<div style="padding:3px 0"><code>MCO-7220.52F</code> <span class="pill drift">drift</span> <span class="small">holds <code>MCO-7220.52G</code></span><div class="src">named at narr:REF D &middot; cited</div></div>
+</div>
+<div class="rung gaprung"><div class="t">T4 Service manual <span class="pill gap">tier not held</span></div><div class="small">No service manual sits between MCO 1610.7B and the message tier for this subject.</div></div>
+<div class="rung"><div class="t">T5 Message &middot; this document</div><div><strong>FY22 COMMANDANTâ€™S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD (CPIB)</strong></div></div>
+</div>
+<h2>What came before</h2>
+<p class="lede2">The corpus holds one edition of this policy and no document cites an earlier one. That is the honest answer, not a missing feature: a superseded edition is usually gone from the publisher's site before a scraper reaches it.</p>
+<details class="body"><summary>Record history &middot; 1 correction(s) to the DATA, not to the policy</summary><ul class="timeline">
+<li><strong>2026-08-04</strong> <span class="small">checked against USLM User Guide section 12.2, Referencing Model</span><ul class="small"><li>normalize_identifiers.py - period replaced with underscore in every USLM path segment</li><li>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</li><li>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</li><li>9 identifier(s) rewritten in this record</li><li>document id, native number, and displayed text are unchanged</li><li>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</li></ul></li>
+</ul></details>
+<h2>What it says</h2>
+<details class="body"><summary>The full text &middot; 78 addressable paragraph(s) across 2 section(s), 1 of them held as source text because the parser refused to invent a hierarchy for them</summary>
+<div class="panel" style="margin-top:10px" id="sec-header"><h3>header</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">MARADMIN 360/21
+R 092332Z JUL 21
+MARADMIN 360/21
+MSGID/GENADMIN/CMC WASHINGTON DC MRA MM//
+SUBJ/FY22 COMMANDANTâ€™S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD (CPIB)//
+REF/A/MSGID: DOC/MM/YMD: 20190530//
+REF/B/MSGID: DOC/DOD/YMD: 20161012//
+REF/C/MSGID: DOC/IAP/YMD: 20160927//
+REF/D/MSGID: DOC/PLU/YMD: 20130327//
+REF/E/MSGID: DOC/SECNAV/YMD: 20190122//
+REF/F/MSGID: DOC/MPP-56/YMD: 20140918//
+REF/G/MSGID: MSG/CMC WASHINGTON DC/281924Z JAN 19//
+REF/H/MSGID: MSG/DOD/YMD: 20080429//
+REF/I/MSGID: MSG/MCCDC/YMD: 20080125//
+REF/J/MSGID: DOC/MMSR/YMD: 20190215//
+REF/K/MSGID: MSG/CG EDCOM PRES MCU QUANTICO VA/YMD:20181218//
+NARR/REF A IS MCO 1524.1, MARINE CORPS GRADUATE EDUCATION PROGRAM. REF B IS DOD
+INSTRUCTION 1322.06, FELLOWSHIPS, LEGISLATIVE FELLOWSHIPS, INTERNSHIPS,
+SCHOLARSHIPS, TRAINING-WITH-INDUSTRY (TWI), AND GRANTS PROVIDED TO DOD OR DOD
+PERSONNEL FOR EDUCATION AND TRAINING. REF C IS MCO 1520.11F, THE INTERNATIONAL
+AFFAIRS PROGRAM (IAP). REF D IS MCO 7220.52F, FOREIGN LANGUAGE PROFICIENCY PAY
+(FLPP) PROGRAM. REF E IS SECNAVINST 1520.7G LAW EDUCATION PROGRAM. REF F IS MCO
+1300.8, MARINE CORPS PERSONNEL ASSIGNMENT POLICY. REF G IS MARADMIN 491/20,
+REMOVAL OF PHOTOGRAPHS FROM CONSIDERATION BY PROMOTION BOARDS AND SELECTION
+PROCESS PERTAINING TO ASSIGNMENT, TRAINING, EDUCATION, AND COMMAND. REF H IS DOD
+INSTRUCTION 1322.10, POLICY ON GRADUATE EDUCATION FOR MILITARY OFFICERS. REF I IS
+MCO 1553.4B PROFESSIONAL MILITARY EDUCATION (PME). REF J IS MCO 1900.16 CH 2,
+MARINE CORPS SEPARATION AND RETIREMENT MANUAL (MARCORSEPMAN). REF K IS MARADMIN
+165/21, OFFICER PROFESSIONAL MILITARY EDUCATION BLENDED SEMINAR PROGRAM FY21-22
+SEAT QUOTA ASSIGNMENTS.//
+POC/DAVID P. FOLEY/MAJ/MMOA-3/USMC/[contact withheld]/TEL [contact withheld]/EMAIL:
+[contact withheld]//</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-body"><h3>body &middot; Remarks</h3>
+<div class="prov" id="p1">
+<span class="plabel">1.</span> 
+<span class="ptext">Purpose.  To announce the Fiscal Year 2022 (FY22) Commandantâ€™s Intermediate-Level Education Board (CPIB) convening on 7 September 2021.  The deadline to complete board instructions (contained within this message) and submit letters to the board is 8 August 2021.  Letters to the board are not required and are at the discretion of the officer being screened.</span>
+</div>
+<div class="prov" id="p1-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Marines are encouraged to review the graduate education order (ref a) found at:  https:(slash)(slash)www.marines.mil/portals/1/Publications/MCO%201524.1.pdf?v er=2019-06-03-083458-743.</span>
+</div>
+<div class="prov" id="p2">
+<span class="plabel">2.</span> 
+<span class="ptext">Programs.  The board will convene for approximately four weeks to select officers for:</span>
+</div>
+<div class="prov" id="p2-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Intermediate-Level Schools (ILS) to include Foreign Professional Military Education.</span>
+</div>
+<div class="prov" id="p2-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Fellowships to include the Congressional Fellowship Program (CFP), the Commandantâ€™s National Fellows, and the Commandantâ€™s Fellows.</span>
+</div>
+<div class="prov" id="p2-c">
+<span class="plabel">c.</span> 
+<span class="ptext">International Affairs Programs (IAP).</span>
+</div>
+<div class="prov" id="p2-c-1">
+<span class="plabel">1.</span> 
+<span class="ptext">Regional Affairs Officer Program (RAO) (Must be a major or major select having between nine and 15 years of commissioned service).</span>
+</div>
+<div class="prov" id="p2-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Graduate Education at:</span>
+</div>
+<div class="prov" id="p2-d-1">
+<span class="plabel">1.</span> 
+<span class="ptext">Naval Postgraduate School (NPS).</span>
+</div>
+<div class="prov" id="p2-d-2">
+<span class="plabel">2.</span> 
+<span class="ptext">Air Force Institute of Technology (AFIT).</span>
+</div>
+<div class="prov" id="p2-d-3">
+<span class="plabel">3.</span> 
+<span class="ptext">San Diego State University (SDSU)-Restricted to 4502 Primary Military Occupational Specialty (PMOS).</span>
+</div>
+<div class="prov" id="p2-d-4">
+<span class="plabel">4.</span> 
+<span class="ptext">Civilian Institutions-Restricted to Education (8802 AMOS),History (8878 AMOS), and Environmental Engineering (8831).</span>
+</div>
+<div class="prov" id="p2-d-5">
+<span class="plabel">5.</span> 
+<span class="ptext">Advanced Civilian Schools Program (ACSP).</span>
+</div>
+<div class="prov" id="p2-e">
+<span class="plabel">e.</span> 
+<span class="ptext">Criminal Law Fellowship- Restricted to 4402 PMOS.</span>
+</div>
+<div class="prov" id="p2-f">
+<span class="plabel">f.</span> 
+<span class="ptext">National Geospatial Intelligence Agency Fellowship-Restricted to 4402 PMOS.</span>
+</div>
+<div class="prov" id="p2-g">
+<span class="plabel">g.</span> 
+<span class="ptext">The Judge Advocate Generals Legal Center and School (TJAGLCS)-Restricted to 4402 PMOS.</span>
+</div>
+<div class="prov" id="p2-h">
+<span class="plabel">h.</span> 
+<span class="ptext">Olmsted Scholar Program (OSP)-Limited to officers with no more than 13 years of total federal service as of 1 April 2022 and certain PMOSs, as determined by the Olmsted Scholar Foundation.  See https:(slash)(slash)olmstedfoundation.org/wha t-we-do/career-fields-eligible-to-apply/for eligible MOSs.</span>
+</div>
+<div class="prov" id="p2-i">
+<span class="plabel">i.</span> 
+<span class="ptext">The following AMOSs are associated with the corresponding graduate education disciplines and schools: AMOS    DISCIPLINE                                    SCHOOL 3006    Contingency Contracting                       NPS 4505    Communication Strategy and Operations Planner SDSU 8820    Aeronautical Engineering                      AFIT 8824    Electrical Engineering                        NPS 8825    Modeling and Simulation                       NPS 8826    Combat Systems Science and Technology         NPS 8831    Environmental Engineering                     Civilian 8834    Information Warfare Systems                   NPS 8840    Manpower Management                           NPS 8844    Financial Management                          NPS 8846    Computer Science                              NPS 8848    Info Systems Management                       NPS 8850    Operations Analysis                           NPS 8852    Defense Systems Analysis                      NPS 8862    Material Logistics Support Management         NPS 8866    Space Systems Operations                      NPS 8870    Special Operations (Irregular Warfare)        NPS 8878    History                                       Civilian</span>
+</div>
+<div class="prov" id="p3">
+<span class="plabel">3.</span> 
+<span class="ptext">General Eligibility Guidelines.</span>
+</div>
+<div class="prov" id="p3-a">
+<span class="plabel">a.</span> 
+<span class="ptext">All majors, major selects, and those in zone for the CY21 (FY23) Majors Promotion Selection Board with a date of departure from their current command no later than 30 September 2022 will be screened on the FY23 CPIB.  Specific questions regarding tour lengths should be directed to the appropriate PMOS monitor.</span>
+</div>
+<div class="prov" id="p3-b">
+<span class="plabel">b.</span> 
+<span class="ptext">The following are not eligible for consideration:</span>
+</div>
+<div class="prov" id="p3-b-1">
+<span class="plabel">1.</span> 
+<span class="ptext">Officers in the above-zone for promotion to major.</span>
+</div>
+<div class="prov" id="p3-b-2">
+<span class="plabel">2.</span> 
+<span class="ptext">Majors who are in zone for the CY21(FY23) Lieutenant Colonels Promotion Selection Board.</span>
+</div>
+<div class="prov" id="p3-b-3">
+<span class="plabel">3.</span> 
+<span class="ptext">Majors previously passed for promotion to lieutenant colonel.</span>
+</div>
+<div class="prov" id="p3-b-4">
+<span class="plabel">4.</span> 
+<span class="ptext">Officers who are currently enrolled in a program designated to them by a previous Commandantâ€™s Education Board (CCLEB or CPIB).</span>
+</div>
+<div class="prov" id="p3-b-5">
+<span class="plabel">5.</span> 
+<span class="ptext">Officers who have not fulfilled an obligated payback tour for a previously attended program CCLEB or CPIB.</span>
+</div>
+<div class="prov" id="p3-b-6">
+<span class="plabel">6.</span> 
+<span class="ptext">Officers participating in or having completed the Command and Staff Blended Seminar Program (BSP) for PME in-grade or have completed Advanced-ILS (i.e. SAW, SAMS, MAWS, SAASS).  Officers in this category, who are interested in programs other than ILS, must submit a request to be considered via Administrative Action Form (NAVMC 10274) to their PMOS monitor NLT 1 August 2021 to be considered by the board.</span>
+</div>
+<div class="prov" id="p3-b-7">
+<span class="plabel">7.</span> 
+<span class="ptext">Officers with an approved separation or retirement date.</span>
+</div>
+<div class="prov" id="p3-b-8">
+<span class="plabel">8.</span> 
+<span class="ptext">Restricted Officers.</span>
+</div>
+<div class="prov" id="p3-b-4">
+<span class="plabel">4.</span> 
+<span class="ptext">Eligible Population.  All officers due for permanent change of duty orders (PCS/PCA) in FY22 are required to complete the specific instructions outlined in paragraph 5.</span>
+</div>
+<div class="prov" id="p5">
+<span class="plabel">5.</span> 
+<span class="ptext">Instructions for the Eligible Population.</span>
+</div>
+<div class="prov" id="p5-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Officers are responsible to ensure their OMPFs are current and contain documents authorized for the OMPF that adequately describe their Marine Corps service.</span>
+</div>
+<div class="prov" id="p5-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Officers with a Note 1 beside their name are required to complete the questions on the FY22 Commandantâ€™s Education Board Questionnaire and upload a copy of their undergraduate transcripts to the questionnaire.  Do not request to have transcripts sent directly to MMOA-3 by mail or sent electronically.  All transcripts must be copies uploaded as a Transcript file within the FY22 Commandantâ€™s Education Board Questionnaire.  Transcripts uploaded to the questionnaire will not be sent to Official Military Personnel Files (OMPF) by MMOA-3.  Officers should have their transcripts put in their record by sending a copy to MMRP at:  [contact withheld].  Each page in the copy must contain the grade, full name and EDIPI (DOD ID) legibly handwritten or typed.</span>
+</div>
+<div class="prov" id="p5-c">
+<span class="plabel">c.</span> 
+<span class="ptext">The below subparagraphs also apply to officers with a Note 1 by their name:</span>
+</div>
+<div class="prov" id="p5-c-1">
+<span class="plabel">1.</span> 
+<span class="ptext">Officers are required to apply to the NPS NLT 8 August 2021.  After submitting an application, official transcripts must be ordered from all attended undergraduate and graduate institutions and delivered from the institution(s) directly to NPS Admissions.  Transcripts must come directly from the institution or their designated transcript exchange service, NPS does not accept transcripts submitted by the applicant.  Officers that have previously applied to NPS must submit an additional application, but do not have to resubmit transcripts. Officers can submit up to three applications for different programs at NPS listed in paragraph 2.i above.  NPS will notify MMOA-3 of an officerâ€™s acceptance.  NPS does not provide an acceptance letter or status of acceptance to individual officers.  Officers desiring graduate education are required to have â€œGraduate Educationâ€ within their top three preferences for available programs listed on the questionnaire.  Marines holding a PMOS of 4402 are not required to apply to NPS. NPS Admissions website can be found at: https:(slash)(slash)nps.edu/web/admissions/apply.</span>
+</div>
+<div class="prov" id="p5-c-2">
+<span class="plabel">2.</span> 
+<span class="ptext">Officers who prefer a graduate education program not offered at NPS are required to take the GRE and submit applications to the desired school.  Upload GRE scores, conditional acceptance letters, and transcripts into the questionnaire in order to be considered.  These programs include:</span>
+</div>
+<div class="prov" id="p5-c-2-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Mass Communication and Media Studies at San Diego State University - Restricted to 4502 PMOS.</span>
+</div>
+<div class="prov" id="p5-c-2-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Aeronautical Engineering at AFIT-Restricted to 75XX PMOSs.</span>
+</div>
+<div class="prov" id="p5-c-2-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Masters of Education (8802) from a civilian university-Curriculums must be verified by the program officer listed in paragraph 10 below.  Interested officers are required to have current GRE scores and rank this program within their top three choices for graduate education preferences.  Interested officers shall also compose a letter to the board which states your educational philosophy and desired focus of education study (ex:  curriculum design/development, methodology, policy, embodied learning, learning analytics, emerging technology, etc).</span>
+</div>
+<div class="prov" id="p5-c-2-e">
+<span class="plabel">e.</span> 
+<span class="ptext">Masters of History (8878) from a civilian university must be verified by the program officer listed in paragraph 10 below.  Interested officers are required to have current GRE scores and rank this program within their top three choices for graduate education preferences.  Officers who list 8878 as their top choice are encouraged to submit a letter to the board stating their preferred area of historical study and three prospective universities.</span>
+</div>
+<div class="prov" id="p5-c-2-f">
+<span class="plabel">f.</span> 
+<span class="ptext">Advanced Civilian Schools Program (ACSP).</span>
+</div>
+<div class="prov" id="p5-c-2-f-1">
+<span class="plabel">1.</span> 
+<span class="ptext">The purpose for ACSP is to provide additional education opportunities for Marine Corps officers.  The ACSP allows officers the opportunity to earn an advance degree while maintaining career progression.  Participants are highly encouraged to pursue areas of study and research topics of interest to the Marine Corps.  Interested officers are required to have current GRE scores, submit an application, and rank this program within their top three choices for graduate education preferences.</span>
+</div>
+<div class="prov" id="p5-c-2-f-2">
+<span class="plabel">2.</span> 
+<span class="ptext">Program  Details.  The board will select up to five officers to participate in this education program lasting no longer than 12-months.  This program qualifies as partially-funded education per reference (h).  Participating officers will receive their regular pay and allowances, but application fees, tuition and matriculation fees, cost of textbooks and materials, and all similar fees and expenses will be borne by the officer.  The area of study and research is at the discretion of the officer and no utilization tour is required. Participants follow-on assignment will be based on the needs of the Marine Corps and the participants career progression.</span>
+</div>
+<div class="prov" id="p5-c-2-f-3">
+<span class="plabel">3.</span> 
+<span class="ptext">Marines who complete the ACSP are required to have their diplomas and transcripts included in their OMPF.</span>
+</div>
+<div class="prov" id="p5-c-2-f-4">
+<span class="plabel">4.</span> 
+<span class="ptext">Marines may be awarded a secondary FMOS (i.e. 88XX) for their masters degree if approved by the Occupational Field Manager for that discipline.</span>
+</div>
+<div class="prov" id="p5-c-2-f-5">
+<span class="plabel">5.</span> 
+<span class="ptext">Selectees must send an official acceptance letter to MMOA-3 via [contact withheld] no later than 1 April 2022.  Failure to produce an acceptance letter or failure to communicate a potential delay in receiving an acceptance letter by this deadline will result in removal from the program.</span>
+</div>
+<div class="prov" id="p5-c-2-f-6">
+<span class="plabel">6.</span> 
+<span class="ptext">Professional Military Education (PME) Requirement.  This program is not a service equivalent for PME and does not meet any JPME requirements.  Marines participating in ACSP are required to pursue completion of a PME program commensurate with their grade.</span>
+</div>
+<div class="prov" id="p5-c-2-f-7">
+<span class="plabel">7.</span> 
+<span class="ptext">Questions may be directed to MMOA-3 via e-mail at [contact withheld], subject titled â€œAdvanced Civilian Schools Program.â€</span>
+</div>
+<div class="prov" id="p5-c-2-f-8">
+<span class="plabel">8.</span> 
+<span class="ptext">The ACSP application detailing all requirements are found at the CCLEB/CPIB website provided in paragraph 4.</span>
+</div>
+<div class="prov" id="p5-c-3">
+<span class="plabel">3.</span> 
+<span class="ptext">Officers interested in the RAO program must annotate the program as one of their top three preferences but are not required to have a DLAB score in their record.  Officers must have more than nine years and less than 15 years of commissioned service by December 2022 for the RAO program.  Additionally, interested applicants must submit a memorandum to the board in naval letter format to include a statement highlighting interest in the RAO program, international experience, and desire to serve in RAO billets across the Marine Corps.</span>
+</div>
+<div class="prov" id="p5-c-4">
+<span class="plabel">4.</span> 
+<span class="ptext">Officers interested in the Olmsted Scholar Program should submit completed and signed applications to the questionnaire.  Application formats are provided at the CPIB/CCLEB updates website.  Applicants are responsible for ensuring time-in-service and PMOS requirements are met before applying.  Additional information may be found at: http:(slash)(slash)www.olmstedfoundation.org/what-we-do/eligibility-requirements.</span>
+</div>
+<div class="prov" id="p5-c-4-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Olmsted Scholar applications now require the submission of a command photo taken in Service &quot;A&quot; with National Ensign and Service flag in the background.  A high-quality digital file of this photo must be sent with the Olmsted application.</span>
+</div>
+<div class="prov" id="p5-c-4-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Electronic photos  must be less than 10MB in file size and  should be emailed to the MMOA-3 email address:  [contact withheld] with a subject and file titled, â€œLNAME_FNAME_OLMSTED_PHOTO.â€</span>
+</div>
+<div class="prov" id="p5-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Officers without a Note 1 beside their name are still required to complete and submit the FY22 Commandantâ€™s Education Board Questionnaire prior to 8 August 2021.  The option for longer programs (e.g., NPS, CFP, RAO, Olmsted, etc.) will only be available to those designated by a Note 1 on the eligibility roster. Officers without a Note 1 who believe they have the career timing to screen for long programs should contact their PMOS monitor.  Questions concerning overall career timing should be directed to the respective PMOS monitor.</span>
+</div>
+<div class="prov" id="p5-e">
+<span class="plabel">e.</span> 
+<span class="ptext">For specifics on any of the programs, reference the PME order and/or contact the program officer in paragraph 10 below.  Program information can also be found under Grad Ed Programs Info section on the CPIB/CCLEB Updates webpage.</span>
+</div>
+<div class="prov" id="p5-f">
+<span class="plabel">f.</span> 
+<span class="ptext">Foreign PME.  Officers with or without a Note 1 are eligible to apply for Foreign PME.  To be considered, officers must have a DLAB score in their record and rank it accordingly as a preference in the questionnaire.  The DLAB requirement pertains to English speaking programs as well.  All applications can be found on the CCLEB/CPIB updates page in paragraph 4 and are due to the program POCS NLT 1 August 2021.</span>
+</div>
+<div class="prov" id="p5-g">
+<span class="plabel">g.</span> 
+<span class="ptext">Officers applying for CFP must submit their applications to The Office of Legislative Affairs (OLA) at [contact withheld].  Applications are due to OLA no later than 2359 on 6 August 2021.  Unlike in past years this message is applicable to all 3404 officer CFP applicants.  For more information, guidance and FAQ reference:  https:(slash)(slash)www.hqmc.marines.mil/Agencies/Office-of-Legisl ative-Affairs/Congressional-Fellowship-Program/.</span>
+</div>
+<div class="prov" id="p6">
+<span class="plabel">6.</span> 
+<span class="ptext">Board Correspondence.  All correspondence to the board must originate from or be endorsed by the officer being screened.  All submissions (letters of recommendation, clarifying statements of service, etc.) must be uploaded into the Letters to the Board file on the FY22 Commandantâ€™s Education Board Questionnaire no later than 8 August 2021.</span>
+</div>
+<div class="prov" id="p7">
+<span class="plabel">7.</span> 
+<span class="ptext">FY22 Commandantâ€™s Education Board Questionnaire can be found at https:(slash)(slash)go.max.gov/dod/FY22CEB.  The questionnaire will be made available until the deadline for those listed on the eligibility roster.  See paragraph 4 above for directions to the roster.  Eligible officers will be able to submit program preferences as well as upload transcripts, GRE scores, applications, and letters to the board.  All eligible officers are directed to the manpower website for further information and eligibility requirements for each program.  Note:  Your EDIPI is required to access the website.</span>
+</div>
+<div class="prov" id="p8">
+<span class="plabel">8.</span> 
+<span class="ptext">Non-Compliance.  Officers are considered non-compliant with the above instructions:</span>
+</div>
+<div class="prov" id="p8-a">
+<span class="plabel">a.</span> 
+<span class="ptext">If they have a Note 1 next to their name on the eligibility roster and do not complete the questionnaire and upload a legible copy of their transcripts.</span>
+</div>
+<div class="prov" id="p8-b">
+<span class="plabel">b.</span> 
+<span class="ptext">If they are listed in the eligibility roster with a Note 1 next to their name and they do not complete the questionnaire or fail to apply to NPS.</span>
+</div>
+<div class="prov" id="p8-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Officers who fail to complete the questionnaire, fail to apply to NPS or submit transcripts will still screen and may be slated/assigned to a program at the board&#x27;s discretion.</span>
+</div>
+<div class="prov" id="p8-d">
+<span class="plabel">d.</span> 
+<span class="ptext">A list of non-compliant officers will be provided to a Marines command on a weekly basis starting on 2 August 2021.</span>
+</div>
+<div class="prov" id="p9">
+<span class="plabel">9.</span> 
+<span class="ptext">A subsequent MARADMIN will announce FY22 CPIB board results.  The results MARADMIN will serve as notification of orders for all primary selectees.</span>
+</div>
+<div class="prov" id="p10">
+<span class="plabel">10.</span> 
+<span class="ptext">Program Points of Contact</span>
+</div>
+<div class="prov" id="p10-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Intermediate-Level Schools (ILS), Foreign PME, and Fellowships Contact your PMOS monitor.</span>
+</div>
+<div class="prov" id="p10-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Olmsted Scholar Program Mr. Michael Cooper (Marine Corps University) [contact withheld], Comm:  [contact withheld] Email:  [contact withheld]</span>
+</div>
+<div class="prov" id="p10-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Congressional Fellowship Program Maj Lucas Huisenga (OLA) Comm:  [contact withheld] Email:  [contact withheld] Email:  [contact withheld]</span>
+</div>
+<div class="prov" id="p10-d">
+<span class="plabel">d.</span> 
+<span class="ptext">International Affairs Program (IAP) Mr. Clayton Fisher (PLU-8) [contact withheld], Comm:  [contact withheld] Email:  [contact withheld]</span>
+</div>
+<div class="prov" id="p10-e">
+<span class="plabel">e.</span> 
+<span class="ptext">Law Programs Maj John Boyer [contact withheld], Comm:  [contact withheld] Email:  [contact withheld]</span>
+</div>
+<div class="prov" id="p10-f">
+<span class="plabel">f.</span> 
+<span class="ptext">Masters of History Maj Benjamin Brewster (United States Naval Academy) Comm:  [contact withheld] Email:  [contact withheld]</span>
+</div>
+<div class="prov" id="p10-g">
+<span class="plabel">g.</span> 
+<span class="ptext">Environmental Engineering - 8831 Maj Colton J. Dickman Comm:  [contact withheld] Email:  [contact withheld]</span>
+</div>
+<div class="prov" id="p11">
+<span class="plabel">11.</span> 
+<span class="ptext">This MARADMIN is not applicable to the Marine Corps Reserve.</span>
+</div>
+<div class="prov" id="p12">
+<span class="plabel">12.</span> 
+<span class="ptext">Release authorized by BGen Michael J. Borgschulte, Director, Manpower Management Division.//</span>
+</div>
+</div>
+</details>
+<h2>Provenance</h2><div class="panel"><p class="small">Source <code>E:\GunnyBot\Policies\MARADMINS\CY2021\MARADMIN_360_21_FY22_COMMANDANTS_PROFESSIONAL_INTERMEDIATE-LEVEL_EDUCATION_B.pdf</code><br>Extracted by pymupdf on 2026-05-16, converted 2026-07-19 against store schema 0.4.0<br>Checksum <code>2236fc4f82603e585af9c9945d182821</code></p></div>
+<footer><p>This record is an UNVERIFIED machine extraction unless marked otherwise. Every link on this page is cited: it exists because the issuing authority printed the reference on the document. This library is an unofficial reference - the issuing authority's copy governs.</p></footer></main></body></html>

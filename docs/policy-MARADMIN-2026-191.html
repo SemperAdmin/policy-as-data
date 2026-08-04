@@ -1,0 +1,407 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CHANGES TO RESERVE COMPONENT MATERNITY LEAVE (RCML) AND RESERVE - Semper Admin Policy Library</title>
+<style>
+:root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
+--blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
+--brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
+--bg:#0A1424;--elev:#11203F;--sunken:#060E1A;--fg:#F2E5BE;--card:#11203F;
+--muted:#182A4D;--mutedfg:#B5A988;--border:#233A5C;--borders:#34507A;
+--n950:#0F0C09;--rad:8px;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:400 15px/1.6 "Inter Variable",Inter,system-ui,sans-serif}
+a{color:var(--blue1)}a:hover{color:var(--brass3)}
+:focus-visible{outline:3px solid var(--brass3);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px;
+background:var(--brass3);color:var(--n950)}
+header.chrome,main,footer{max-width:64rem;margin:0 auto;padding:16px 24px}
+header.chrome{margin-top:16px;border-radius:12px;border:1px solid var(--border);
+background:var(--elev);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.wordmark{font:400 28px/1.2 "Bebas Neue",Oswald,system-ui,sans-serif;
+letter-spacing:.04em;color:var(--parch3);text-decoration:none;text-transform:uppercase}
+h1{font:700 28px/1.2 inherit;margin:32px 0 8px}
+h2{font:700 20px/1.2 inherit;border-bottom:1px solid var(--borders);
+padding-bottom:8px;margin-top:40px}
+.lede{color:var(--mutedfg);max-width:52rem}
+.tier{border:1px solid var(--border);border-radius:12px;background:var(--card);
+margin:0 0 4px;padding:16px 20px}
+.tier.gap{background:repeating-linear-gradient(135deg,var(--sunken),
+var(--sunken) 10px,#0b1830 10px,#0b1830 20px);border-style:dashed;
+border-color:var(--aging)}
+.tierhead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
+font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin-bottom:10px}
+.tiercode{color:var(--brass3);font-weight:700}
+.doc{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--muted)}
+.doc:first-of-type{border-top:0;padding-top:0}
+.docid{font:600 14px/1.4 "JetBrains Mono",Menlo,monospace;color:var(--parch3)}
+.doctitle{color:var(--fg)}
+.uslm{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.why{font-size:13px;color:var(--mutedfg);margin-top:4px}
+.pill{display:inline-block;padding:2px 9px;border-radius:9999px;
+font:700 11px/1.6 inherit;border:1px solid var(--borders);
+background:var(--muted);color:var(--parch3);white-space:nowrap}
+.pill.cited{border-color:var(--fresh);color:#9fe0bd}
+.pill.drift{border-color:var(--aging);color:#f0c489}
+.pill.gap{border-color:var(--stale);color:#f3a3a3}
+.pill.held{border-color:var(--blue1);color:#bcd7f2}
+.pill.cancelled,.pill.superseded{background:var(--stale);border-color:var(--stale);
+color:#fff}
+.arrow{text-align:center;color:var(--brass);font:700 13px/1 inherit;
+padding:6px 0;letter-spacing:.08em}
+.arrow span{background:var(--bg);padding:0 10px}
+.arrow{position:relative}
+.arrow:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
+background:var(--brass);z-index:-1}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--muted);
+vertical-align:top}
+th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;
+letter-spacing:.08em}
+code{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+footer{border-top:1px solid var(--border);margin-top:48px;font-size:13px;
+color:var(--mutedfg)}
+
+.crumb{font-size:13px;color:var(--mutedfg);margin:24px 0 0}
+.ident{font:500 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.factrow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.lede2{color:var(--mutedfg);max-width:54rem;margin:6px 0 18px}
+.ladder{border-left:2px solid var(--brass);margin:0 0 4px 10px;padding:0 0 0 18px}
+.rung{position:relative;padding:9px 0}
+.rung:before{content:"";position:absolute;left:-24px;top:16px;width:12px;
+height:2px;background:var(--brass)}
+.rung .t{font:700 11px/1 inherit;letter-spacing:.09em;color:var(--brass3);
+text-transform:uppercase}
+.rung.gaprung{opacity:.72}
+.rung.gaprung .t{color:var(--aging)}
+.small{font-size:13px;color:var(--mutedfg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.panel{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:16px 20px}
+.panel h3{font:700 12px/1.3 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin:0 0 10px}
+.prov{border-left:1px solid var(--muted);margin:0 0 0 4px;padding:2px 0 2px 14px}
+.plabel{font:600 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+.ptext{white-space:pre-wrap;overflow-wrap:break-word}
+.reflist{list-style:none;padding:0;margin:0}
+.reflist li{padding:7px 0;border-bottom:1px solid var(--muted)}
+.reflist li:last-child{border-bottom:0}
+.reflink{font-weight:600}
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{padding:8px 0 8px 16px;border-left:2px solid var(--border);
+position:relative}
+.timeline li:before{content:"";position:absolute;left:-5px;top:15px;width:8px;
+height:8px;border-radius:50%;background:var(--brass)}
+.timeline li.now:before{background:var(--fresh);box-shadow:0 0 0 3px rgba(47,143,92,.25)}
+.timeline li.gone:before{background:var(--stale)}
+details.body{margin-top:10px}
+details.body summary{cursor:pointer;color:var(--blue1);font-weight:600}
+.src{font:500 11px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--mutedfg)}
+.doc-raw{white-space:pre-wrap;overflow-wrap:break-word;
+font:500 12px/1.65 "JetBrains Mono",Menlo,monospace;color:var(--fg);
+background:var(--sunken);border:1px solid var(--border);border-radius:8px;
+padding:14px;max-height:34rem;overflow:auto}
+.typegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));
+gap:10px;margin:12px 0}
+.typecard{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:14px 16px}
+.typecard .n{font:700 26px/1.1 inherit;color:var(--brass3)}
+</style></head><body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="chrome"><a class="wordmark" href="index.html">Semper Admin</a><span>Policy</span><a href="policy-index.html" style="margin-left:auto">All policies</a><a href="authority-index.html">Authority chains</a><a href="sources.html">Sources</a></header>
+<main id="main">
+<p class="crumb"><a href="policy-index.html">All policies</a> &rsaquo; T5 Message</p>
+<h1>CHANGES TO RESERVE COMPONENT MATERNITY LEAVE (RCML) AND RESERVE</h1>
+<div class="ident">/us/dod/don/usmc/maradmin/2026/191</div>
+<div class="factrow"><span class="pill ">T5 Message</span><span class="pill ">active</span><span class="pill ">UNVERIFIED</span><span class="pill ">signed 2026-04-23</span></div>
+<h2>Where this sits</h2>
+<p class="lede2">The ladder above is what governs this policy, one tier at a time. Every rung exists because this document, or one above it, printed the reference. A tier the corpus does not hold is shown rather than skipped.</p>
+<div class="ladder">
+<div class="rung gaprung"><div class="t">T0 Statute <span class="pill gap">tier not held</span></div><div class="small">MCO 1610.7B names 5 U.S.C. 552a and 10 U.S.C. 1034 in its reference list, so this spine does reach statute. The chain above climbs through DoD Instruction 1300.19 instead, whose own reference list could not be retrieved from the authoritative source and is therefore not asserted. Expand the reference table on MCO 1610.7B to see the statutory citations.</div></div>
+<div class="rung gaprung"><div class="t">T1 Department of Defense <span class="pill gap">tier not held</span></div><div class="small">No Department of Defense issuance is named in the reference list of any document on this spine. The MOS Manual carries a DoD occupational conversion report requirement, but the requirement names no issuance number, so no edge is written.</div></div>
+<div class="rung"><div class="t">T2 Department of the Navy</div>
+<div style="padding:3px 0"><code>SECNAVINST-1000.10B</code> <span class="pill gap">not held</span><div class="src">named at narr:REF H &middot; cited</div></div>
+</div>
+<div class="rung"><div class="t">T3 Service directive</div>
+<div style="padding:3px 0"><code>MCO-10001R.1L-CH1</code> <span class="pill gap">not held</span><div class="src">named at narr:REF I &middot; cited</div></div>
+<div style="padding:3px 0"><a href="policy-MCO-1050.3J.html">MCO-1050.3J</a> <span class="pill held">in store</span><div class="small">MCO 1050.3J - Regulations for Leave, Liberty, and Administrative Absence</div><div class="src">named at narr:REF A &middot; cited</div></div>
+<div style="padding:3px 0"><code>MCO-3040.4</code> <span class="pill gap">not held</span><div class="src">named at narr:REF J &middot; cited</div></div>
+<div style="padding:3px 0"><code>MCO-5000.12F-CH1</code> <span class="pill drift">drift</span> <span class="small">holds <code>MCO-5000.12F,MCO-5000.12F-CH2</code></span><div class="src">named at narr:REF D &middot; cited</div></div>
+</div>
+<div class="rung gaprung"><div class="t">T4 Service manual <span class="pill gap">tier not held</span></div><div class="small">No service manual sits between MCO 1610.7B and the message tier for this subject.</div></div>
+<div class="rung"><div class="t">T5 Message &middot; this document</div><div><strong>CHANGES TO RESERVE COMPONENT MATERNITY LEAVE (RCML) AND RESERVE</strong></div></div>
+</div>
+<h2>What came before</h2>
+<p class="lede2">The corpus holds one edition of this policy and no document cites an earlier one. That is the honest answer, not a missing feature: a superseded edition is usually gone from the publisher's site before a scraper reaches it.</p>
+<details class="body"><summary>Record history &middot; 1 correction(s) to the DATA, not to the policy</summary><ul class="timeline">
+<li><strong>2026-08-04</strong> <span class="small">checked against USLM User Guide section 12.2, Referencing Model</span><ul class="small"><li>normalize_identifiers.py - period replaced with underscore in every USLM path segment</li><li>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</li><li>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</li><li>5 identifier(s) rewritten in this record</li><li>document id, native number, and displayed text are unchanged</li><li>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</li></ul></li>
+</ul></details>
+<h2>What it says</h2>
+<details class="body"><summary>The full text &middot; 64 addressable paragraph(s) across 2 section(s), 1 of them held as source text because the parser refused to invent a hierarchy for them</summary>
+<div class="panel" style="margin-top:10px" id="sec-header"><h3>header</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">MARADMIN 191/26
+R 231714Z APR 26
+MARADMIN 191/26
+MSGID/GENADMIN/WASHINGTON DC MRA MP//
+SUBJ/CHANGES TO RESERVE COMPONENT MATERNITY LEAVE (RCML) AND RESERVE
+COMPONENT PARENTAL LEAVE (RCPL)//
+REF/A/DOC/CMC/10MAR21//
+REF/B/DOC/PUBLIC LAW 118-31/22DEC23//
+REF/C/DOC/DOD/7AUG25//
+REF/D/DOC/CMC/19MAY09//
+REF/E/MSG/CMC/R272030ZJAN23//
+REF/F/MSG/CMC/R081100ZMAR23//
+REF/G/MSG/CMC/R272350ZFEB23//
+REF/H/MSG/USN/16JAN19//
+REF/I/DOC/CMC/15MAR18//
+REF/J/DOC/CMC/1MAR11//
+REF/K/DOC/ASN/19MAR26//
+NARR/REF A IS MCO 1050.3J, REGULATIONS FOR LEAVE, LIBERTY, AND
+ADMINISTRATIVE ABSENCE.  REF B IS THE NATIONAL DEFENSE
+AUTHORIZATION ACT FOR FISCAL YEAR 2024.  REF C IS DEPARTMENT
+OF DEFENSE INSTRUCTION (DODI) LEAVE, LIBERTY, AND ADMINISTRATIVE
+ABSENCE.  REF D IS MCO 5000.12F W/ CH1 PARENTHOOD AND PREGNANCY.
+REF E IS MARADMIN 051/23 EXPANSION OF THE MILITARY PARENTAL LEAVE
+PROGRAM.  REF F IS MARADMIN 129/23 CLARIFICATION TO MARADMIN 051/23.
+REF G IS MARADMIN 111/23 UPDATE TO PREGNANCY NOTIFICATION.  REF H IS
+SECNAVINST 1000.10B PARENTHOOD AND PREGNANCY.  REF I IS MCO
+10001R.1L W/ CH1 MARINE CORPS RESERVE ADMINISTRATIVE MANAGEMENT
+MANUAL.  REF J IS MCO 3040.4 MARINE CORPS CASUALTY ASSISTANCE
+PROGRAM (MARCORCASASTPRO).  REF K IS ASSISTANT SECRETARY OF
+NAVY FOR MANPOWER AND RESERVE AFFAIRS MEMORANDUM.//
+
+
+POC/MILITARY POLICY BRANCH (MPO)/EMAIL: [contact withheld]//
+POC/RESERVE AFFAIRS POLICY BRANCH(RAP-1)/EMAIL: [contact withheld]//</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-body"><h3>body &middot; Remarks</h3>
+<div class="prov" id="p1">
+<span class="plabel">1.</span> 
+<span class="ptext">This MARADMIN announces forthcoming changes to the Regulations for Leave, Liberty, and Administrative Absence, reference (a), and provides interim implementation guidance. These changes address Reserve Component Maternity Leave (RCML) and Reserve Component Parental Leave (RCPL).</span>
+</div>
+<div class="prov" id="p2">
+<span class="plabel">2.</span> 
+<span class="ptext">Background.  The Marine Corps has completed a comprehensive review of its leave and parenthood policies to align with the FY24 National Defense Authorization Act, reference (b), and Department of War initiatives, reference (c).  To simplify and centralize these benefits, this MARADMIN officially transfers all parental leave entitlements from the Parenthood and Pregnancy Order, reference (d), and consolidates them into the Regulations for Leave, Liberty, and Administrative Absence, reference (a).  This consolidation establishes reference (a) as the single, authoritative source for all Marine Corps leave, liberty, and administrative absence policies.</span>
+</div>
+<div class="prov" id="p2-a">
+<span class="plabel">a.</span> 
+<span class="ptext">This MARADMIN is effective immediately.</span>
+</div>
+<div class="prov" id="p2-b">
+<span class="plabel">b.</span> 
+<span class="ptext">This MARADMIN supersedes references (e) and (f).</span>
+</div>
+<div class="prov" id="p3">
+<span class="plabel">3.</span> 
+<span class="ptext">Retroactive Application.  Reserve Marines who experienced a qualifying event between 1 October 2024 and 7 August 2025 are retroactively eligible for RCPL.  These Marines must use this entitlement before 6 August 2026 in accordance with reference (k).</span>
+</div>
+<div class="prov" id="p4">
+<span class="plabel">4.</span> 
+<span class="ptext">Entitlement.  Eligible Reserve Marines, regardless of sex or their role as a birth parent, receive 12 paid Inactive Duty Training (IDT) periods as RCPL following a qualifying event.</span>
+</div>
+<div class="prov" id="p4-a">
+<span class="plabel">a.</span> 
+<span class="ptext">One RCPL period is equivalent to one standard four-hour IDT. A maximum of two RCPL periods may be used per day.</span>
+</div>
+<div class="prov" id="p4-b">
+<span class="plabel">b.</span> 
+<span class="ptext">This entire benefit must be used within one year of the qualifying event.</span>
+</div>
+<div class="prov" id="p5">
+<span class="plabel">5.</span> 
+<span class="ptext">Eligibility.  To be eligible for RCPL, a Marine must meet all of the following requirements:</span>
+</div>
+<div class="prov" id="p5-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Be a member of the Selected Reserve, either Selected Marine Corps Reserve (SMCR) or Individual Mobilization Augmentee (IMA) Program, in good standing.</span>
+</div>
+<div class="prov" id="p5-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Experience a qualifying event (birth, adoption, or the placement of a minor child for adoption or long-term foster care).</span>
+</div>
+<div class="prov" id="p5-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Provide command-required documentation of the qualifying event, as outlined in reference (g).</span>
+</div>
+<div class="prov" id="p6">
+<span class="plabel">6.</span> 
+<span class="ptext">Ineligibility.  The following populations are not eligible for RCPL:</span>
+</div>
+<div class="prov" id="p6-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Marines in a retired status or in the Fleet Marine Corps Reserve.</span>
+</div>
+<div class="prov" id="p6-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Marines in the Standby Reserve (both Active and Inactive Status Lists).</span>
+</div>
+<div class="prov" id="p6-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Individual Ready Reserve (IRR) Marines.</span>
+</div>
+<div class="prov" id="p6-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Any Reserve Marine who is otherwise determined to be an unsatisfactory participant or is not entitled to receive inactive duty pay.</span>
+</div>
+<div class="prov" id="p7">
+<span class="plabel">7.</span> 
+<span class="ptext">Rules for Use.</span>
+</div>
+<div class="prov" id="p7-a">
+<span class="plabel">a.</span> 
+<span class="ptext">RCPL periods count toward the 48 paid IDTs authorized per fiscal year and contribute to a satisfactory anniversary year. Use of RCPL will not cause a Marine to exceed 48 total paid IDTs in a fiscal year.</span>
+</div>
+<div class="prov" id="p7-b">
+<span class="plabel">b.</span> 
+<span class="ptext">RCPL may be taken in segments, with a minimum of two periods (one full drill day) per segment.</span>
+</div>
+<div class="prov" id="p7-c">
+<span class="plabel">c.</span> 
+<span class="ptext">RCPL cannot be used for rescheduled or excused IDT periods.</span>
+</div>
+<div class="prov" id="p7-d">
+<span class="plabel">d.</span> 
+<span class="ptext">RCPL is a non-transferable benefit and cannot be shared.</span>
+</div>
+<div class="prov" id="p8">
+<span class="plabel">8.</span> 
+<span class="ptext">Extension of the One-Year Usage Period.</span>
+</div>
+<div class="prov" id="p8-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Approval Authority.  The first O-5 commander with Special Court-Martial Convening Authority in the Marineâ€™s administrative chain of command is the approval authority for all RCPL extension requests.</span>
+</div>
+<div class="prov" id="p8-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Qualifying Circumstances.  An extension to the one-year usage period may be granted if the Marine served 90 or more consecutive days in any of the following capacities:</span>
+</div>
+<div class="prov" id="p8-b-1">
+<span class="plabel">1.</span> 
+<span class="ptext">On active duty orders.</span>
+</div>
+<div class="prov" id="p8-b-2">
+<span class="plabel">2.</span> 
+<span class="ptext">In-residence at a Professional Military Education (PME) course.</span>
+</div>
+<div class="prov" id="p8-b-3">
+<span class="plabel">3.</span> 
+<span class="ptext">Hospitalized or receiving in-patient care.</span>
+</div>
+<div class="prov" id="p8-b-9">
+<span class="plabel">9.</span> 
+<span class="ptext">Multiple Qualifying Events.</span>
+</div>
+<div class="prov" id="p10">
+<span class="plabel">10.</span> 
+<span class="ptext">Impact of Active Duty Service on RCPL.</span>
+</div>
+<div class="prov" id="p10-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Deferment of Existing RCPL.  A Reserve Marine with unused RCPL who goes on Active-Duty Operational Support (ADOS) orders will defer the use of any remaining RCPL until the conclusion of their active duty period.  The one-year usage period will be extended by the number of months the Marine served on ADOS.</span>
+</div>
+<div class="prov" id="p10-a-1">
+<span class="plabel">1.</span> 
+<span class="ptext">Example: A Marine with 8 unused RCPL periods goes on ADOS orders for 6 months.  Use of RCPL is deferred during the ADOS period. Upon completion, the Marineâ€™s one-year usage window is extended by 6 months.</span>
+</div>
+<div class="prov" id="p10-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Qualifying Event During Active Duty.  If a Reserve Marine on ADOS orders for 30 or more consecutive days experiences a new qualifying event, they are not eligible to use RCPL while on active duty.  Instead, their one-year RCPL usage period will begin on the first day following the conclusion of their ADOS orders.</span>
+</div>
+<div class="prov" id="p10-b-1">
+<span class="plabel">1.</span> 
+<span class="ptext">Example: A Marine on 12-month ADOS orders has a qualifying birth three months into their tour.  The Marine must wait until their ADOS period ends.  The one-year period to use their 12 RCPL periods begins the day after their active duty service concludes.</span>
+</div>
+<div class="prov" id="p10-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Documentation.  The command that issued the ADOS orders is responsible for providing the Marineâ€™s parent Reserve unit with documentation verifying the period of active service to support any extension.</span>
+</div>
+<div class="prov" id="p10-d">
+<span class="plabel">d.</span> 
+<span class="ptext">A Reserve Marine who is performing active duty under orders issued for a cumulative period greater than 12 consecutive months (&gt;365 days) and who meet the criteria in accordance with reference (e), may be eligible for Active-Duty Parental Leave (ADPL).</span>
+</div>
+<div class="prov" id="p11">
+<span class="plabel">11.</span> 
+<span class="ptext">Conversion of ADPL to RCPL.</span>
+</div>
+<div class="prov" id="p11-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Eligibility.  A Marine separating from the Active Component or Active Reserve Program with unused ADPL may convert it to RCPL if they join the Selected Reserve and the conversion occurs within 12 months of their separation date.</span>
+</div>
+<div class="prov" id="p11-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Usage Deadline.  All converted RCPL periods must be used within one year of the original qualifying event.</span>
+</div>
+<div class="prov" id="p11-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Conversion Rate.  The conversion rate is one RCPL period for every seven full days of unused ADPL.  Partial weeks are not converted.  The number of RCPL periods authorized upon conversion cannot exceed the number of IDT periods the Marine is reasonably expected to perform within the one-year usage window or their remaining service obligation, whichever is shorter.</span>
+</div>
+<div class="prov" id="p11-c-1">
+<span class="plabel">1.</span> 
+<span class="ptext">Example: A Marine separates with 58 days of unused ADPL. This equals eight full weeks.  The Marine is authorized eight RCPL periods upon joining the Selected Reserve, provided they have at least eight IDTs scheduled within their usage window and remaining service obligation.</span>
+</div>
+<div class="prov" id="p11-c-12">
+<span class="plabel">12.</span> 
+<span class="ptext">Reserve Component Maternity Leave (RCML).</span>
+</div>
+<div class="prov" id="p13">
+<span class="plabel">13.</span> 
+<span class="ptext">Administration and Tracking.</span>
+</div>
+<div class="prov" id="p13-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Procedure After System Update.  Following the RTAMMS update, the following procedures apply:</span>
+</div>
+<div class="prov" id="p13-a-1">
+<span class="plabel">1.</span> 
+<span class="ptext">Marines must request RCPL or RCML in advance of the scheduled IDT period and receive approval from the Unit Drill Manager.</span>
+</div>
+<div class="prov" id="p13-a-2">
+<span class="plabel">2.</span> 
+<span class="ptext">Individual Mobilization Augmentee (IMA) Marines must ensure 12 IDT periods are scheduled in RTAMMS to utilize the RCPL benefit.</span>
+</div>
+<div class="prov" id="p13-a-3">
+<span class="plabel">3.</span> 
+<span class="ptext">Upon execution of the drill, Muster Managers will record the leave in the Drill Management Module (DMM) by marking the Marine &quot;(X)-Present Satisfactory&quot; and applying reason code &quot;04-RC Maternity Leave&quot; or &quot;06-RC Parental Leave&quot; as appropriate. These entries will be submitted to the Reserve Marineâ€™s electronic record.</span>
+</div>
+<div class="prov" id="p13-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Command Accountability.  Commanders are responsible for ensuring all RCPL and RCML periods are properly tracked and that Marines do not exceed the authorized number of periods for each benefit within the stipulated timeframes.</span>
+</div>
+<div class="prov" id="p14">
+<span class="plabel">14.</span> 
+<span class="ptext">Fetal, Infant, and Perinatal Loss.</span>
+</div>
+<div class="prov" id="p14-a">
+<span class="plabel">a.</span> 
+<span class="ptext">Stillbirth or Miscarriage.  In the event of a stillbirth or miscarriage, a healthcare provider may recommend that the birth parent use up to 6 RCML periods for recovery.  In these circumstances, neither parent is eligible for RCPL.</span>
+</div>
+<div class="prov" id="p14-b">
+<span class="plabel">b.</span> 
+<span class="ptext">Death of a Child.  If a Marine experiences the death of a child during their one-year RCPL eligibility period, any unused RCPL is immediately forfeited and no longer authorized for use.</span>
+</div>
+<div class="prov" id="p14-c">
+<span class="plabel">c.</span> 
+<span class="ptext">Bereavement Options.  Following any perinatal loss or death of a child, Marines may request to be excused from or to reschedule a scheduled IDT period.  Commands should liberally approve such requests.</span>
+</div>
+<div class="prov" id="p14-d">
+<span class="plabel">d.</span> 
+<span class="ptext">Casualty Reporting.  In accordance with the Marine Corps Casualty Assistance Program, reference (j), commands will contact the HQMC Casualty Section for specific reporting instructions following the death of a Marineâ€™s dependent.</span>
+</div>
+<div class="prov" id="p15">
+<span class="plabel">15.</span> 
+<span class="ptext">This MARADMIN is applicable to the Reserve Component.</span>
+</div>
+<div class="prov" id="p16">
+<span class="plabel">16.</span> 
+<span class="ptext">Release authorized by Brigadier General Lauren S. Edwards, Director Manpower Plans and Policy Division, Manpower and Reserve Affairs.//</span>
+</div>
+</div>
+</details>
+<h2>Provenance</h2><div class="panel"><p class="small">Source <code>E:\GunnyBot\Policies\MARADMINS\CY2026\MARADMIN_191_26_CHANGES_TO_RESERVE_COMPONENT_MATERNITY_LEAVE_RCML_AND_RESERV.pdf</code><br>Extracted by pymupdf on 2026-05-16, converted 2026-07-19 against store schema 0.4.0<br>Checksum <code>385b5ff207e1a4f4512924548ee79271</code></p></div>
+<footer><p>This record is an UNVERIFIED machine extraction unless marked otherwise. Every link on this page is cited: it exists because the issuing authority printed the reference on the document. This library is an unofficial reference - the issuing authority's copy governs.</p></footer></main></body></html>

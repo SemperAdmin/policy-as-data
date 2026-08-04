@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MARADMIN Messages - Semper Admin Policy Library</title>
+<style>
+:root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
+--blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
+--brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
+--bg:#0A1424;--elev:#11203F;--sunken:#060E1A;--fg:#F2E5BE;--card:#11203F;
+--muted:#182A4D;--mutedfg:#B5A988;--border:#233A5C;--borders:#34507A;
+--n950:#0F0C09;--rad:8px;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:400 15px/1.6 "Inter Variable",Inter,system-ui,sans-serif}
+a{color:var(--blue1)}a:hover{color:var(--brass3)}
+:focus-visible{outline:3px solid var(--brass3);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px;
+background:var(--brass3);color:var(--n950)}
+header.chrome,main,footer{max-width:64rem;margin:0 auto;padding:16px 24px}
+header.chrome{margin-top:16px;border-radius:12px;border:1px solid var(--border);
+background:var(--elev);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.wordmark{font:400 28px/1.2 "Bebas Neue",Oswald,system-ui,sans-serif;
+letter-spacing:.04em;color:var(--parch3);text-decoration:none;text-transform:uppercase}
+h1{font:700 28px/1.2 inherit;margin:32px 0 8px}
+h2{font:700 20px/1.2 inherit;border-bottom:1px solid var(--borders);
+padding-bottom:8px;margin-top:40px}
+.lede{color:var(--mutedfg);max-width:52rem}
+.tier{border:1px solid var(--border);border-radius:12px;background:var(--card);
+margin:0 0 4px;padding:16px 20px}
+.tier.gap{background:repeating-linear-gradient(135deg,var(--sunken),
+var(--sunken) 10px,#0b1830 10px,#0b1830 20px);border-style:dashed;
+border-color:var(--aging)}
+.tierhead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
+font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin-bottom:10px}
+.tiercode{color:var(--brass3);font-weight:700}
+.doc{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--muted)}
+.doc:first-of-type{border-top:0;padding-top:0}
+.docid{font:600 14px/1.4 "JetBrains Mono",Menlo,monospace;color:var(--parch3)}
+.doctitle{color:var(--fg)}
+.uslm{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.why{font-size:13px;color:var(--mutedfg);margin-top:4px}
+.pill{display:inline-block;padding:2px 9px;border-radius:9999px;
+font:700 11px/1.6 inherit;border:1px solid var(--borders);
+background:var(--muted);color:var(--parch3);white-space:nowrap}
+.pill.cited{border-color:var(--fresh);color:#9fe0bd}
+.pill.drift{border-color:var(--aging);color:#f0c489}
+.pill.gap{border-color:var(--stale);color:#f3a3a3}
+.pill.held{border-color:var(--blue1);color:#bcd7f2}
+.pill.cancelled,.pill.superseded{background:var(--stale);border-color:var(--stale);
+color:#fff}
+.arrow{text-align:center;color:var(--brass);font:700 13px/1 inherit;
+padding:6px 0;letter-spacing:.08em}
+.arrow span{background:var(--bg);padding:0 10px}
+.arrow{position:relative}
+.arrow:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
+background:var(--brass);z-index:-1}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--muted);
+vertical-align:top}
+th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;
+letter-spacing:.08em}
+code{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+footer{border-top:1px solid var(--border);margin-top:48px;font-size:13px;
+color:var(--mutedfg)}
+
+.crumb{font-size:13px;color:var(--mutedfg);margin:24px 0 0}
+.ident{font:500 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.factrow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.lede2{color:var(--mutedfg);max-width:54rem;margin:6px 0 18px}
+.ladder{border-left:2px solid var(--brass);margin:0 0 4px 10px;padding:0 0 0 18px}
+.rung{position:relative;padding:9px 0}
+.rung:before{content:"";position:absolute;left:-24px;top:16px;width:12px;
+height:2px;background:var(--brass)}
+.rung .t{font:700 11px/1 inherit;letter-spacing:.09em;color:var(--brass3);
+text-transform:uppercase}
+.rung.gaprung{opacity:.72}
+.rung.gaprung .t{color:var(--aging)}
+.small{font-size:13px;color:var(--mutedfg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.panel{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:16px 20px}
+.panel h3{font:700 12px/1.3 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin:0 0 10px}
+.prov{border-left:1px solid var(--muted);margin:0 0 0 4px;padding:2px 0 2px 14px}
+.plabel{font:600 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+.ptext{white-space:pre-wrap;overflow-wrap:break-word}
+.reflist{list-style:none;padding:0;margin:0}
+.reflist li{padding:7px 0;border-bottom:1px solid var(--muted)}
+.reflist li:last-child{border-bottom:0}
+.reflink{font-weight:600}
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{padding:8px 0 8px 16px;border-left:2px solid var(--border);
+position:relative}
+.timeline li:before{content:"";position:absolute;left:-5px;top:15px;width:8px;
+height:8px;border-radius:50%;background:var(--brass)}
+.timeline li.now:before{background:var(--fresh);box-shadow:0 0 0 3px rgba(47,143,92,.25)}
+.timeline li.gone:before{background:var(--stale)}
+details.body{margin-top:10px}
+details.body summary{cursor:pointer;color:var(--blue1);font-weight:600}
+.src{font:500 11px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--mutedfg)}
+.doc-raw{white-space:pre-wrap;overflow-wrap:break-word;
+font:500 12px/1.65 "JetBrains Mono",Menlo,monospace;color:var(--fg);
+background:var(--sunken);border:1px solid var(--border);border-radius:8px;
+padding:14px;max-height:34rem;overflow:auto}
+.typegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));
+gap:10px;margin:12px 0}
+.typecard{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:14px 16px}
+.typecard .n{font:700 26px/1.1 inherit;color:var(--brass3)}
+</style></head><body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="chrome"><a class="wordmark" href="index.html">Semper Admin</a><span>Documents by type</span><a href="policy-index.html" style="margin-left:auto">All policies</a><a href="authority-index.html">Authority chains</a><a href="connections.html">Connections</a><a href="sources.html">Sources</a></header>
+<main id="main">
+<p class="crumb"><a href="index.html">Home</a> &rsaquo; MARADMIN Messages</p>
+<h1>MARADMIN Messages <span class="small">(29)</span></h1>
+<table><tr><th>Document</th><th>Status</th><th>Names</th><th>Named by</th><th>Paragraphs</th></tr>
+<tr><td><a href="policy-MARADMIN-2008-418.html">AWARDS UPDATE</a><br><span class="src">/us/dod/don/usmc/maradmin/2008/418</span></td><td><span class="pill ">active</span></td><td>1</td><td>0</td><td>27</td></tr>
+<tr><td><a href="policy-MARADMIN-2018-011.html">CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND STAFF</a><br><span class="src">/us/dod/don/usmc/maradmin/2018/011</span></td><td><span class="pill ">active</span></td><td>4</td><td>0</td><td>29</td></tr>
+<tr><td><a href="policy-MARADMIN-2019-114.html">TRANSITION TO A NEW GOVERNMENT TRAVEL CHARGE CARD (GTCC) PROVIDER</a><br><span class="src">/us/dod/don/usmc/maradmin/2019/114</span></td><td><span class="pill ">active</span></td><td>0</td><td>0</td><td>32</td></tr>
+<tr><td><a href="policy-MARADMIN-2021-360.html">FY22 COMMANDANTâ€™S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD (CPIB)</a><br><span class="src">/us/dod/don/usmc/maradmin/2021/360</span></td><td><span class="pill ">active</span></td><td>11</td><td>0</td><td>78</td></tr>
+<tr><td><a href="policy-MARADMIN-2021-388.html">CHANGE 1 TO FY22 COMMANDANT&#x27;S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD</a><br><span class="src">/us/dod/don/usmc/maradmin/2021/388</span></td><td><span class="pill ">active</span></td><td>0</td><td>0</td><td>12</td></tr>
+<tr><td><a href="policy-MARADMIN-2021-404.html">FORTHCOMING CHANGES TO THE PHYSICAL FITNESS TEST</a><br><span class="src">/us/dod/don/usmc/maradmin/2021/404</span></td><td><span class="pill ">active</span></td><td>1</td><td>0</td><td>8</td></tr>
+<tr><td><a href="policy-MARADMIN-2022-408.html">SOLICITATION FOR PARTICIPATION IN THE MARINE CORPS 2022 SEMI-ANNUAL MICROSOFT</a><br><span class="src">/us/dod/don/usmc/maradmin/2022/408</span></td><td><span class="pill ">active</span></td><td>0</td><td>0</td><td>19</td></tr>
+<tr><td><a href="policy-MARADMIN-2022-409.html">FISCAL YEAR 2023 (FY23) ENLISTED TO WARRANT OFFICER (RESERVE) SELECTION BOARD</a><br><span class="src">/us/dod/don/usmc/maradmin/2022/409</span></td><td><span class="pill ">active</span></td><td>7</td><td>0</td><td>59</td></tr>
+<tr><td><a href="policy-MARADMIN-2023-051.html">EXPANSION OF THE MARINE CORPS MILITARY PARENTAL LEAVE PROGRAM</a><br><span class="src">/us/dod/don/usmc/maradmin/2023/051</span></td><td><span class="pill ">active</span></td><td>3</td><td>2</td><td>78</td></tr>
+<tr><td><a href="policy-MARADMIN-2023-129.html">Clarification to MARADMIN 051/23</a><br><span class="src">/us/dod/don/usmc/maradmin/2023/129</span></td><td><span class="pill ">active</span></td><td>2</td><td>1</td><td>5</td></tr>
+<tr><td><a href="policy-MARADMIN-2024-016.html">FISCAL YEAR 2025 ACTIVE AND RESERVE MARINE ATTACHÉ SELECTION BOARD: OFFICER</a><br><span class="src">/us/dod/don/usmc/maradmin/2024/016</span></td><td><span class="pill ">active</span></td><td>3</td><td>0</td><td>16</td></tr>
+<tr><td><a href="policy-MARADMIN-2024-253.html">FISCAL YEAR 2024 MARINE CORPS TALENT ACQUISITION PILOT</a><br><span class="src">/us/dod/don/usmc/maradmin/2024/253</span></td><td><span class="pill ">active</span></td><td>2</td><td>0</td><td>67</td></tr>
+<tr><td><a href="policy-MARADMIN-2024-586.html">SEQUENCE TWO FIELDING OF BIOELECTRICAL IMPEDANCE ANALYSIS</a><br><span class="src">/us/dod/don/usmc/maradmin/2024/586</span></td><td><span class="pill ">active</span></td><td>5</td><td>0</td><td>81</td></tr>
+<tr><td><a href="policy-MARADMIN-2025-166.html">ANNOUNCEMENT OF THE WINNERS FOR CY2024 VISUAL INFORMATION AND</a><br><span class="src">/us/dod/don/usmc/maradmin/2025/166</span></td><td><span class="pill ">active</span></td><td>0</td><td>0</td><td>47</td></tr>
+<tr><td><a href="policy-MARADMIN-2025-237.html">MARINE CORPS POLICY ON THE WEAR AND PURCHASE OF BODY</a><br><span class="src">/us/dod/don/usmc/maradmin/2025/237</span></td><td><span class="pill ">active</span></td><td>5</td><td>0</td><td>19</td></tr>
+<tr><td><a href="policy-MARADMIN-2026-012.html">ACADEMIC YEAR 2026-2027 NAVAL POSTGRADUATE SCHOOL DISTANCE</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/012</span></td><td><span class="pill ">active</span></td><td>5</td><td>0</td><td>33</td></tr>
+<tr><td><a href="policy-MARADMIN-2026-026.html">SOLICITATION OF POLICY ISSUES FOR MARINE CORPS RESERVE POLICY</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/026</span></td><td><span class="pill ">active</span></td><td>3</td><td>0</td><td>13</td></tr>
+<tr><td><a href="policy-MARADMIN-2026-043.html">FY27 HQMC SPECIAL DUTY ASSIGNMENT SCREENING TEAM (HSST)</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/043</span></td><td><span class="pill ">active</span></td><td>5</td><td>0</td><td>24</td></tr>
+<tr><td><a href="policy-MARADMIN-2026-073.html">CHANGE 2 TO THE ADVANCE NOTIFICATION OF CHANGES TO THE MARINE</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/073</span></td><td><span class="pill ">active</span></td><td>5</td><td>0</td><td>3</td></tr>
+<tr><td><a href="policy-MARADMIN-2026-074.html">SOLICITATION FOR THE TRAINING AND EDUCATION INSTRUCTOR OF THE</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/074</span></td><td><span class="pill ">active</span></td><td>0</td><td>0</td><td>47</td></tr>
+<tr><td><a href="policy-MARADMIN-2026-151.html">CONVENING OF THE FY28 U.S. MARINE CORPS COLONEL, LIEUTENANT</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/151</span></td><td><span class="pill ">active</span></td><td>7</td><td>0</td><td>28</td></tr>
+<tr><td><a href="policy-MARADMIN-2026-191.html">CHANGES TO RESERVE COMPONENT MATERNITY LEAVE (RCML) AND RESERVE</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/191</span></td><td><span class="pill ">active</span></td><td>8</td><td>0</td><td>64</td></tr>
+<tr><td><a href="policy-MARADMIN-2026-213.html">FY2026 55XX PRIMARY MILITARY OCCUPATIONAL SPECIALTY (PMOS)</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/213</span></td><td><span class="pill ">active</span></td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td><a href="policy-MARADMIN-2026-221.html">SOLICITATION FOR QUALIFIED MARINES TO LATERAL MOVE</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/221</span></td><td><span class="pill ">active</span></td><td>4</td><td>0</td><td>25</td></tr>
+<tr><td><a href="policy-MARADMIN-2026-274.html">FISCAL YEAR 2027 COMMANDANT&#x27;S PROFESSIONAL INTERMEDIATE-LEVEL</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/274</span></td><td><span class="pill ">active</span></td><td>8</td><td>0</td><td>145</td></tr>
+<tr><td><a href="policy-MARADMIN-2026-284.html">JULY 2026 ACTIVE-DUTY CORPORAL AND SERGEANT PROMOTION</a><br><span class="src">/us/dod/don/usmc/maradmin/2026/284</span></td><td><span class="pill ">active</span></td><td>2</td><td>0</td><td>10</td></tr>
+<tr><td><a href="policy-MARADMIN-CANX-2018-011.html">CANCELLATION OF MARADMIN 161/18</a><br><span class="src">/us/dod/don/usmc/maradmin-canx/2018/011</span></td><td><span class="pill ">active</span></td><td>0</td><td>0</td><td>2</td></tr>
+<tr><td><a href="policy-MARADMIN-2018-161.html">FY18 APPROVED SELECTED MARINE CORPS RESERVE (SMCR) STAFF NONCOMMISSIONED</a><br><span class="src">/us/dod/don/usmc/maradmin/2018/161</span></td><td><span class="pill cancelled">cancelled</span></td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td><a href="policy-MARADMIN-2023-322.html">PROCUREMENT OF COMMERCIAL AMMUNITION AND EXPLOSIVES (A&amp;E)</a><br><span class="src">/us/dod/don/usmc/maradmin/2023/322</span></td><td><span class="pill cancelled">cancelled</span></td><td>4</td><td>0</td><td>17</td></tr>
+</table>
+<footer><p>Generated from the canonical policy store. Records are UNVERIFIED machine extractions unless promoted. This site is an unofficial reference - the issuing authority's copy governs.</p></footer></main></body></html>

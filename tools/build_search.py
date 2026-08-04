@@ -31,6 +31,19 @@ that the this to was were will with shall may must not all any""".split())
 MAX_TOKENS_PER_DOC = 4000
 
 
+# Contact masking, same definition the export tier and the renderers use.
+# The index is built from the store rather than from rendered HTML, so it does
+# not inherit esc()'s masking and needs its own.
+EMAIL_RX = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
+PHONE_RX = re.compile(
+    r"(?:\(?\d{3}\)?[-. ]?\d{3}[-. ]\d{4}|\b\d{3}[-.]\d{4}\b|DSN[:\s]*\d{3}[-. ]?\d{4})",
+    re.I)
+
+
+def mask(text):
+    return PHONE_RX.sub(" ", EMAIL_RX.sub(" ", text or ""))
+
+
 def tokenize(text):
     for t in TOKEN_RX.findall((text or "").lower()):
         t = t.strip("./-")
@@ -45,7 +58,19 @@ def main():
     ap.add_argument("--out", default="docs/search")
     args = ap.parse_args()
 
-    os.makedirs(os.path.join(args.out, "t"), exist_ok=True)
+    # Remove this stage's own prior output before writing. Without it a token
+    # that disappears leaves its shard behind forever, and the client keeps
+    # serving a hit that no longer exists in the corpus. This is the stage that
+    # produced the 1,332 stale shards found in docs/search/_to_delete_t.
+    shard_dir = os.path.join(args.out, "t")
+    if os.path.isdir(shard_dir):
+        for stale in os.listdir(shard_dir):
+            if stale.endswith(".json"):
+                try:
+                    os.remove(os.path.join(shard_dir, stale))
+                except OSError as exc:
+                    print(f"  WARNING could not remove stale shard {stale}: {exc}")
+    os.makedirs(shard_dir, exist_ok=True)
     docs, postings = [], defaultdict(lambda: defaultdict(int))
 
     names = sorted(f for f in os.listdir(args.src) if f.endswith(".json"))
@@ -67,7 +92,7 @@ def main():
             for p in sec.get("provisions") or []:
                 parts.append(p.get("text") or "")
         seen = 0
-        for tok in tokenize(" ".join(parts)):
+        for tok in tokenize(mask(" ".join(parts))):
             postings[tok][i] += 1
             seen += 1
             if seen >= MAX_TOKENS_PER_DOC:

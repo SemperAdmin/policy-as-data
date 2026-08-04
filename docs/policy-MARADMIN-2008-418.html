@@ -1,0 +1,268 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWARDS UPDATE - Semper Admin Policy Library</title>
+<style>
+:root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
+--blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
+--brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
+--bg:#0A1424;--elev:#11203F;--sunken:#060E1A;--fg:#F2E5BE;--card:#11203F;
+--muted:#182A4D;--mutedfg:#B5A988;--border:#233A5C;--borders:#34507A;
+--n950:#0F0C09;--rad:8px;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:400 15px/1.6 "Inter Variable",Inter,system-ui,sans-serif}
+a{color:var(--blue1)}a:hover{color:var(--brass3)}
+:focus-visible{outline:3px solid var(--brass3);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px;
+background:var(--brass3);color:var(--n950)}
+header.chrome,main,footer{max-width:64rem;margin:0 auto;padding:16px 24px}
+header.chrome{margin-top:16px;border-radius:12px;border:1px solid var(--border);
+background:var(--elev);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.wordmark{font:400 28px/1.2 "Bebas Neue",Oswald,system-ui,sans-serif;
+letter-spacing:.04em;color:var(--parch3);text-decoration:none;text-transform:uppercase}
+h1{font:700 28px/1.2 inherit;margin:32px 0 8px}
+h2{font:700 20px/1.2 inherit;border-bottom:1px solid var(--borders);
+padding-bottom:8px;margin-top:40px}
+.lede{color:var(--mutedfg);max-width:52rem}
+.tier{border:1px solid var(--border);border-radius:12px;background:var(--card);
+margin:0 0 4px;padding:16px 20px}
+.tier.gap{background:repeating-linear-gradient(135deg,var(--sunken),
+var(--sunken) 10px,#0b1830 10px,#0b1830 20px);border-style:dashed;
+border-color:var(--aging)}
+.tierhead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
+font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin-bottom:10px}
+.tiercode{color:var(--brass3);font-weight:700}
+.doc{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--muted)}
+.doc:first-of-type{border-top:0;padding-top:0}
+.docid{font:600 14px/1.4 "JetBrains Mono",Menlo,monospace;color:var(--parch3)}
+.doctitle{color:var(--fg)}
+.uslm{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.why{font-size:13px;color:var(--mutedfg);margin-top:4px}
+.pill{display:inline-block;padding:2px 9px;border-radius:9999px;
+font:700 11px/1.6 inherit;border:1px solid var(--borders);
+background:var(--muted);color:var(--parch3);white-space:nowrap}
+.pill.cited{border-color:var(--fresh);color:#9fe0bd}
+.pill.drift{border-color:var(--aging);color:#f0c489}
+.pill.gap{border-color:var(--stale);color:#f3a3a3}
+.pill.held{border-color:var(--blue1);color:#bcd7f2}
+.pill.cancelled,.pill.superseded{background:var(--stale);border-color:var(--stale);
+color:#fff}
+.arrow{text-align:center;color:var(--brass);font:700 13px/1 inherit;
+padding:6px 0;letter-spacing:.08em}
+.arrow span{background:var(--bg);padding:0 10px}
+.arrow{position:relative}
+.arrow:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
+background:var(--brass);z-index:-1}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--muted);
+vertical-align:top}
+th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;
+letter-spacing:.08em}
+code{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+footer{border-top:1px solid var(--border);margin-top:48px;font-size:13px;
+color:var(--mutedfg)}
+
+.crumb{font-size:13px;color:var(--mutedfg);margin:24px 0 0}
+.ident{font:500 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.factrow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.lede2{color:var(--mutedfg);max-width:54rem;margin:6px 0 18px}
+.ladder{border-left:2px solid var(--brass);margin:0 0 4px 10px;padding:0 0 0 18px}
+.rung{position:relative;padding:9px 0}
+.rung:before{content:"";position:absolute;left:-24px;top:16px;width:12px;
+height:2px;background:var(--brass)}
+.rung .t{font:700 11px/1 inherit;letter-spacing:.09em;color:var(--brass3);
+text-transform:uppercase}
+.rung.gaprung{opacity:.72}
+.rung.gaprung .t{color:var(--aging)}
+.small{font-size:13px;color:var(--mutedfg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.panel{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:16px 20px}
+.panel h3{font:700 12px/1.3 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin:0 0 10px}
+.prov{border-left:1px solid var(--muted);margin:0 0 0 4px;padding:2px 0 2px 14px}
+.plabel{font:600 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+.ptext{white-space:pre-wrap;overflow-wrap:break-word}
+.reflist{list-style:none;padding:0;margin:0}
+.reflist li{padding:7px 0;border-bottom:1px solid var(--muted)}
+.reflist li:last-child{border-bottom:0}
+.reflink{font-weight:600}
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{padding:8px 0 8px 16px;border-left:2px solid var(--border);
+position:relative}
+.timeline li:before{content:"";position:absolute;left:-5px;top:15px;width:8px;
+height:8px;border-radius:50%;background:var(--brass)}
+.timeline li.now:before{background:var(--fresh);box-shadow:0 0 0 3px rgba(47,143,92,.25)}
+.timeline li.gone:before{background:var(--stale)}
+details.body{margin-top:10px}
+details.body summary{cursor:pointer;color:var(--blue1);font-weight:600}
+.src{font:500 11px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--mutedfg)}
+.doc-raw{white-space:pre-wrap;overflow-wrap:break-word;
+font:500 12px/1.65 "JetBrains Mono",Menlo,monospace;color:var(--fg);
+background:var(--sunken);border:1px solid var(--border);border-radius:8px;
+padding:14px;max-height:34rem;overflow:auto}
+.typegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));
+gap:10px;margin:12px 0}
+.typecard{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:14px 16px}
+.typecard .n{font:700 26px/1.1 inherit;color:var(--brass3)}
+</style></head><body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="chrome"><a class="wordmark" href="index.html">Semper Admin</a><span>Policy</span><a href="policy-index.html" style="margin-left:auto">All policies</a><a href="authority-index.html">Authority chains</a><a href="sources.html">Sources</a></header>
+<main id="main">
+<p class="crumb"><a href="policy-index.html">All policies</a> &rsaquo; T5 Message</p>
+<h1>AWARDS UPDATE</h1>
+<div class="ident">/us/dod/don/usmc/maradmin/2008/418</div>
+<div class="factrow"><span class="pill ">T5 Message</span><span class="pill ">active</span><span class="pill ">UNVERIFIED</span><span class="pill ">signed 2008-07-31</span></div>
+<h2>Where this sits</h2>
+<p class="lede2">The ladder above is what governs this policy, one tier at a time. Every rung exists because this document, or one above it, printed the reference. A tier the corpus does not hold is shown rather than skipped.</p>
+<div class="ladder">
+<div class="rung gaprung"><div class="t">T0 Statute <span class="pill gap">tier not held</span></div><div class="small">MCO 1610.7B names 5 U.S.C. 552a and 10 U.S.C. 1034 in its reference list, so this spine does reach statute. The chain above climbs through DoD Instruction 1300.19 instead, whose own reference list could not be retrieved from the authoritative source and is therefore not asserted. Expand the reference table on MCO 1610.7B to see the statutory citations.</div></div>
+<div class="rung gaprung"><div class="t">T1 Department of Defense <span class="pill gap">tier not held</span></div><div class="small">No Department of Defense issuance is named in the reference list of any document on this spine. The MOS Manual carries a DoD occupational conversion report requirement, but the requirement names no issuance number, so no edge is written.</div></div>
+<div class="rung"><div class="t">T2 Department of the Navy</div>
+<div style="padding:3px 0"><code>SECNAVINST-1650.1H</code> <span class="pill gap">not held</span><div class="src">named at narr:REF C &middot; cited</div></div>
+</div>
+<div class="rung gaprung"><div class="t">T4 Service manual <span class="pill gap">tier not held</span></div><div class="small">No service manual sits between MCO 1610.7B and the message tier for this subject.</div></div>
+<div class="rung"><div class="t">T5 Message &middot; this document</div><div><strong>AWARDS UPDATE</strong></div></div>
+</div>
+<h2>What came before</h2>
+<p class="lede2">The corpus holds one edition of this policy and no document cites an earlier one. That is the honest answer, not a missing feature: a superseded edition is usually gone from the publisher's site before a scraper reaches it.</p>
+<details class="body"><summary>Record history &middot; 1 correction(s) to the DATA, not to the policy</summary><ul class="timeline">
+<li><strong>2026-08-04</strong> <span class="small">checked against USLM User Guide section 12.2, Referencing Model</span><ul class="small"><li>normalize_identifiers.py - period replaced with underscore in every USLM path segment</li><li>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</li><li>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</li><li>1 identifier(s) rewritten in this record</li><li>document id, native number, and displayed text are unchanged</li><li>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</li></ul></li>
+</ul></details>
+<h2>What it says</h2>
+<details class="body"><summary>The full text &middot; 27 addressable paragraph(s) across 2 section(s), 1 of them held as source text because the parser refused to invent a hierarchy for them</summary>
+<div class="panel" style="margin-top:10px" id="sec-header"><h3>header</h3>
+<p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
+<div class="doc-raw">MARADMIN 418/08
+R 310830Z JUL 08
+MARADMIN 418/08
+MSGID/GENADMIN/CMC WASHINGTON DC MRA MM//
+SUBJ/AWARDS UPDATE//
+REF/A/MSGID:DOC/CMC MMMA/04APR2008//
+REF/B/MSGID:DOC/DOD/12SEP1996//
+REF/C/MSGID:DOC/SECNAV/22AUG2006//
+NARR/REF A IS NAVMC 2922, MARINE CORPS UNIT AWARDS MANUAL. REF B IS
+DOD 1348.33M, MANUAL OF MILITARY DECORATIONS AND AWARDS.  REF C IS
+SECNAVINST 1650.1H, NAVY AND MARINE CORPS AWARDS MANUAL.//
+POC/J. A. WHITEN/SSGT/HQMC MMMA/-/TEL:[contact withheld]
+/EMAIL:[contact withheld]//</div>
+</div>
+<div class="panel" style="margin-top:10px" id="sec-body"><h3>body &middot; Remarks</h3>
+<div class="prov" id="p1">
+<span class="plabel">1.</span> 
+<span class="ptext">THE PURPOSE OF THIS MARADMIN IS TO PROVIDE AN UPDATE OF AWARDS SINCE THE LAST UPDATE, MARADMIN 227/08.</span>
+</div>
+<div class="prov" id="p2">
+<span class="plabel">2.</span> 
+<span class="ptext">THE FOLLOWING UNIT AWARDS ARE AUTHORIZED AND ARE INCORPORATED IN</span>
+</div>
+<div class="prov" id="p2-a">
+<span class="plabel">A.</span> 
+<span class="ptext">JOINT MERITORIOUS UNIT AWARD (JMUA)</span>
+</div>
+<div class="prov" id="p2-a-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">HQ, MULTI-NATIONAL FORCE-IRAQ, BAGHDAD, IRAQ      17DEC06-17DEC07</span>
+</div>
+<div class="prov" id="p2-a-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">HQ, COMBINED JOINT TASK FORCE-TROY, BAGHDAD, IRAQ 08DEC06-07FEB08</span>
+</div>
+<div class="prov" id="p2-a-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">HQ, COMBINED JOINT SPECIAL OPERATION TASK FORCE-AFGHANISTAN, BAGRAM AIRFIELD, AFGHANISTAN  01APR07-01NOV07</span>
+</div>
+<div class="prov" id="p2-a-4">
+<span class="plabel">(4)</span> 
+<span class="ptext">HQ, UNITED STATES CENTRAL COMMAND, MACDILL AFB FL 01JAN06-01MAR08</span>
+</div>
+<div class="prov" id="p2-a-5">
+<span class="plabel">(5)</span> 
+<span class="ptext">HQ, JOINT PSYCHOLOGICAL OPERATION TASK FORCE, CAMP AS SAYLIYAH, QATAR                               01OCT06-01NOV07</span>
+</div>
+<div class="prov" id="p2-a-6">
+<span class="plabel">(6)</span> 
+<span class="ptext">HQ, JOINT CONTRACTING COMMAND-IRAQ/AFGHANISTAN, BAGHDAD, IRAQ                                         01JAN07-31DEC07 NOTE:  PER REF B, SERVICE UNITS OR INDIVIDUALS DEPLOYED IN SUPPORT OF A JTF, BUT NOT ASSIGNED AND/OR ATTACHED TO THE JTF BY OFFICIAL ORDERS, ARE NOT ELIGIBLE FOR THE JMUA, EVEN IF THEY ARE UNDER THE OPERATIONAL CONTROL OF THE JTF.</span>
+</div>
+<div class="prov" id="p2-b">
+<span class="plabel">B.</span> 
+<span class="ptext">NAVY UNIT COMMENDATION</span>
+</div>
+<div class="prov" id="p2-b-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">I MARINE EXPEDITIONARY FORCE                      02AUG04-01FEB05 ADDITIONAL UNIT/PERSONNEL APPROVED FOR INCLUSION (MOD TO MARADMIN 609/06): MARINE LIGHT ATTACK SQUADRON 775 3D BN, 11TH MARINE REGIMENT -HQ BATTERY -INDIA BATTERY -KILO BATTERY -LIMA BATTERY, 3D BN, 12TH MARINES 2D BN, 1ST MARINE REGIMENT 2D BN, 4TH MARINE REGIMENT -2D PLT, TRUCK CO, HQ BN (ATTACHED) -2D PLT, CO B, 1ST CEB (ATTACHED) -DETACHMENT, 1ST INTEL BN 3D BN, 24TH MARINE REGIMENT -H&amp;S COMPANY -COMPANY I -COMPANY K -COMPANY L 604TH EXPEDITIONARY AIR SUPPORT OPERATIONS SQUADRON (EASOS) U.S. AIR FORCE MWSS 273 FROM 3D MAW MWSS 374 FROM 3D MAW 2D PLT, CO A, 2D MP BN (BY NAME LISTING) 1ST PLT, CO A, 2D MP BN (BY NAME LISTING) DETACHMENT 1, MARSOCOM (BY NAME LISTING) VMAQ-4 MLAH-775 HMM-764, MAG-16 HMH-466, MAG-16 VMA-214, MAG-16 HMM-261, MAG-16 DETACHMENT MALS 13, VMA-311, MAG-16 (-)(REIN)(BY NAME LISTING) DETACH, MALS-13, HMH-265 (REIN), MAG-16(-)(REIN)(BY NAMES LISTING) DETACH, MALS-13, HMM-166 (REIN)(TACON FROM 11TH MEU)(BY NAME LISTING) 3D LOW ALTITUDE AIR DEFENSE BN (SERVED AS THE PROVISIONAL SECURITY BN WITH MWSG-37, 3D MAW (FORWARD) (BY NAME LISTING) D CO, 2D LAR 3D BN, 24 MAR -H&amp;S, CO -CO I -CO K -CO L -WEAPONS CO COALITION MILITARY ASSISTANCE TRAINING TEAM (CMATT) ADVISORS, RCT-1 (BY NAME LISTING) II MEF COMMAND ELEMENT AUGMENTS (ADVANCE PARTY)(BY NAME LISTING) DELETE (ONLY 3 DET FROM MALS 14 DEPLOYED WITH MAG-16): MARINE AIR LOGISTICS SQUADRON 13</span>
+</div>
+<div class="prov" id="p2-c">
+<span class="plabel">C.</span> 
+<span class="ptext">AIR FORCE MERITORIOUS UNIT AWARD                  20DEC04-06JUL05 APPROVED MARINE CORPS UNITS FOR INCLUSION ATTACHED TO AIR FORCE 586TH EXPEDITIONARY SECURITY FORCES SQUADRON:</span>
+</div>
+<div class="prov" id="p2-c-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">26TH  MEU (SOC) COMMAND ELEMENT</span>
+</div>
+<div class="prov" id="p2-c-2">
+<span class="plabel">(2)</span> 
+<span class="ptext">FOX COMPANY, BN LANDING TEAM 2ND BN, 8TH MARINES</span>
+</div>
+<div class="prov" id="p2-c-3">
+<span class="plabel">(3)</span> 
+<span class="ptext">GOLF COMPANY, BN LANDING TEAM 2ND BN, 8TH MARINES</span>
+</div>
+<div class="prov" id="p2-d">
+<span class="plabel">D.</span> 
+<span class="ptext">AIR FORCE OUTSTANDING UNIT AWARD WITH VALOR</span>
+</div>
+<div class="prov" id="p2-d-1">
+<span class="plabel">(1)</span> 
+<span class="ptext">DET B, ATC, MACS-4                                01APR02-15SEP02 NOTE:  MARINE CORPS PERSONNEL ARE NOT AUTHORIZED TO WEAR VALOR DEVICES ON UNIT AWARDS</span>
+</div>
+<div class="prov" id="p2-e">
+<span class="plabel">E.</span> 
+<span class="ptext">AIR FORCE ORGANIZATION EXCELLENCE AWARD. PERSONNEL APPROVED FOR INCLUSION: LTCOL BRIGHT, JAMES B.                                01JUN05-01JUN07 MAJ MAZZELLA, THOMAS F.                               07JUN05-08APR07</span>
+</div>
+<div class="prov" id="p3">
+<span class="plabel">3.</span> 
+<span class="ptext">COMBAT ACTION RIBBON (CAR).  NOTE THAT THE POLICY CHANGE ANNOUNCED IN ALNAV 036/08 DOES NOT APPLY TO MARINE CORPS PERSONNEL. MARINE CORPS PERSONNEL ASSIGNED EITHER PERMANENTLY OR TEMPORARILY TO U.S. ARMY OR U.S. AIR FORCE COMMANDS IN COMBAT ARE NOT ELIGIBLE TO ACCEPT, WEAR OR RETAIN THE CIB, THE CAB OR THE CAM.  IN CASES WHERE A MARINE&#x27;S ACTIONS IN COMBAT MEETS THE ELIGIBILITY CRITERIA FOR THE CIB, CAB OR CAM, THE U.S. ARMY OR U.S. AIR FORCE COMMAND MUST SUBMIT A PERSONAL AWARD RECOMMENDATION FOR THE CAR TO THE CMC (MMMA) FOR APPROVAL.</span>
+</div>
+<div class="prov" id="p4">
+<span class="plabel">4.</span> 
+<span class="ptext">ARMED FORCES SERVICE MEDAL (AFSM).  THE OFFICE OF THE UNDER SECRETARY OF DEFENSE HAS APPROVED THE AFSM FOR OPERATION JUMP START FOR THOSE SERVICE MEMBERS WHO DEPLOYED TO THE STATES OF TEXAS, NEW MEXICO, ARIZONA, AND CALIFORNIA FROM 15 MAY 2006 THROUGH 15 JUL 2008.  ELIGIBILITY CRITERIA FOR THE AFSM ARE OUTLINED IN REFERENCES B AND C.  SERVICE MEMBERS MUST MEET THE AOE ELIGIBILITY CRITERIA.</span>
+</div>
+<div class="prov" id="p5">
+<span class="plabel">5.</span> 
+<span class="ptext">HUMANITARIAN SERVICE MEDAL (HSM).   THE DIRECTOR, JOINT STAFF, HAS APPROVED THE HSM FOR THE INDONESIAN EARTHQUAKE RELIEF OPERATION FOR THE PERIOD OF 27 MAY 06 THROUGH 14 JUN 06. NOTE:  ONLY THOSE MARINES WHO DIRECTLY PARTICIPATED IN THE IMMEDIATE INDONESIAN EARTHQUAKE RELIEF HUMANITARIAN OPERATION FOR THE PERIOD OF 27 MAY 06 THROUGH 14 JUN 06 MAY BE ELIGIBLE.  AS STATED IN REF (B), DIRECT PARTICIPATION IS DEFINED AS BEING PHYSICALLY PRESENT AT THE DESIGNATED LOCATION AND HAVING DIRECTLY CONTRIBUTED TO AND INFLUENCED THE ACTION.  DEPLOYMENT TO THE AREA OF HUMANITARIAN ASSISTANCE IN AND OF ITSELF DOES NOT CONSTITUTE HSM ENTITLEMENT.  OPERATIONAL COMMANDERS IN THE GRADE OF 0-6 AND ABOVE HAVE BEEN GIVEN DELEGATION OF AUTHORITY FOR DETERMINING HSM ELIGIBILITY AND COMMANDERS SHALL CONSOLIDATE A ROSTER OF ALL MILITARY PERSONNEL WHO MEET THE ABOVE CRITERIA.  THIS ROSTER SHOULD BE SUBMITTED TO THE CMC (MMMA) USING AN EXCEL SPREADSHEET (HSM.XLS) VIA THE IMPROVED AWARDS PROCESSING SYSTEM AND INCLUDE FULL NAME, RANK, AND SSN.  UPON RECEIPT OF CONSOLIDATED ROSTERS OF ELIGIBLE PERSONNEL, MMMA WILL REPORT THE HSM ON UNIT DIARY AND UPDATE THE &#x27;CAR-HSM&#x27; DATABASE POSTED ON THE MMMA WEBSITE.</span>
+</div>
+<div class="prov" id="p6">
+<span class="plabel">6.</span> 
+<span class="ptext">NATO MEDAL.  IN ADDITION TO THE NATO MEDAL FOR OPERATIONS IN THE FORMER REPUBLIC OF YUGOSLAVIA AND KOSOVO, THE OFFICE OF THE UNDER SECRETARY OF DEFENSE HAS APPROVED THE NATO MEDAL FOR ACCEPTANCE AND WEAR FOR THE FOLLOWING OPERATIONS: EAGLE ASSIST (NATO ARTICLE 5 MEDAL)                 13OCT01-16MAY02 ACTIVE ENDEAVOUR (NATO ARTICLE 5 MEDAL)             26OCT01-TBD ALL BALKANS OPERATIONS (NATO NON ARTICLE 5 MEDAL)   01JAN03-TBD ISAF AFGHANISTAN (NATO NON ARTICLE 5 MEDAL)         01JUN03-TBD NATO MEDAL FOR TRNG IMPLEMENTATION MISSION-IRAQ     18AUG04-TBD NATO MEDAL FOR IMPLEMENTATION MISSION-IRAQ          18AUG04-TBD</span>
+</div>
+<div class="prov" id="p6-a">
+<span class="plabel">A.</span> 
+<span class="ptext">NAVAL PERSONNEL ARE AUTHORIZED TO WEAR ONLY ONE NATO MEDAL (THE FIRST ONE AWARDED).  SUBSEQUENT NATO MEDALS ARE REPRESENTED BY A BRONZE SERVICE STAR.  THE NATO MEDAL PRESENTATION MAY INCLUDE A RIBBON CLASP DENOTING THE SPECIFIC OPERATION FOR WHICH THE AWARD WAS APPROVED.  NAVAL PERSONNEL MAY ACCEPT AND RETAIN THE RIBBON CLASP, IF PRESENTED; HOWEVER, IT IS NOT AUTHORIZED TO BE WORN ON THE NATO MEDAL OR SERVICE RIBBON.  NAVAL PERSONNEL MAY WEAR ONLY THE BASIC MEDAL OR SERVICE RIBBON.  THE PRECEDENCE OF THE NATO MEDAL IS AFTER THE UNITED NATIONS MEDAL AND BEFORE THE MULTINATIONAL FORCE AND OBSERVERS MEDAL.</span>
+</div>
+<div class="prov" id="p6-b">
+<span class="plabel">B.</span> 
+<span class="ptext">THE AWARDING AUTHORITY FOR NATO MEDALS REMAINS WITH THE SUPREME HEADQUARTERS ALLIED POWERS EUROPE (J1).  ALL REQUESTS FOR NATO MEDALS MUST BE SUBMITTED VIA MARFOREUR (G-1), UNITED STATES EUROPEAN COMMAND AND THE NATIONAL MILITARY REPRESENTATIVE.</span>
+</div>
+<div class="prov" id="p7">
+<span class="plabel">7.</span> 
+<span class="ptext">CORRECTIONS TO MARADMIN(227/08).  THE NSN&#x27;S ANNOUNCED IN MARADMIN 227/08 BELONG TO THE AFGHANISTAN CAMPAIGN AND THE IRAQ CAMPAIGN STEAMERS.</span>
+</div>
+<div class="prov" id="p8">
+<span class="plabel">8.</span> 
+<span class="ptext">REF A WILL NO LONGER BE DISTRIBUTED.  INSTEAD, REF A IS UPDATED QUARTERLY AND MAINTAINED ON THE  INTERNET AT THE USMC.MIL WEBSITE.</span>
+</div>
+<div class="prov" id="p9">
+<span class="plabel">9.</span> 
+<span class="ptext">RELEASE AUTHORIZED BY BGEN J. A. KESSLER, DIRECTOR,  MANPOWER MANAGEMENT DIVISION.//</span>
+</div>
+</div>
+</details>
+<h2>Provenance</h2><div class="panel"><p class="small">Source <code>E:\GunnyBot\Policies\MARADMINS\CY2008\MARADMIN_418_08_AWARDS_UPDATE.pdf</code><br>Extracted by pymupdf on 2026-05-16, converted 2026-07-19 against store schema 0.4.0<br>Checksum <code>0338997231e0bd8ad9a6a3325acb3abf</code></p></div>
+<footer><p>This record is an UNVERIFIED machine extraction unless marked otherwise. Every link on this page is cited: it exists because the issuing authority printed the reference on the document. This library is an unofficial reference - the issuing authority's copy governs.</p></footer></main></body></html>

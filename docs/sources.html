@@ -1,0 +1,336 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sources - Semper Admin Policy Library</title>
+<style>
+:root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
+--blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
+--brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
+--bg:#0A1424;--elev:#11203F;--sunken:#060E1A;--fg:#F2E5BE;--card:#11203F;
+--muted:#182A4D;--mutedfg:#B5A988;--border:#233A5C;--borders:#34507A;
+--n950:#0F0C09;--rad:8px;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:400 15px/1.6 "Inter Variable",Inter,system-ui,sans-serif}
+a{color:var(--blue1)}a:hover{color:var(--brass3)}
+:focus-visible{outline:3px solid var(--brass3);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px;
+background:var(--brass3);color:var(--n950)}
+header.chrome,main,footer{max-width:64rem;margin:0 auto;padding:16px 24px}
+header.chrome{margin-top:16px;border-radius:12px;border:1px solid var(--border);
+background:var(--elev);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.wordmark{font:400 28px/1.2 "Bebas Neue",Oswald,system-ui,sans-serif;
+letter-spacing:.04em;color:var(--parch3);text-decoration:none;text-transform:uppercase}
+h1{font:700 28px/1.2 inherit;margin:32px 0 8px}
+h2{font:700 20px/1.2 inherit;border-bottom:1px solid var(--borders);
+padding-bottom:8px;margin-top:40px}
+.lede{color:var(--mutedfg);max-width:52rem}
+.tier{border:1px solid var(--border);border-radius:12px;background:var(--card);
+margin:0 0 4px;padding:16px 20px}
+.tier.gap{background:repeating-linear-gradient(135deg,var(--sunken),
+var(--sunken) 10px,#0b1830 10px,#0b1830 20px);border-style:dashed;
+border-color:var(--aging)}
+.tierhead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
+font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin-bottom:10px}
+.tiercode{color:var(--brass3);font-weight:700}
+.doc{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--muted)}
+.doc:first-of-type{border-top:0;padding-top:0}
+.docid{font:600 14px/1.4 "JetBrains Mono",Menlo,monospace;color:var(--parch3)}
+.doctitle{color:var(--fg)}
+.uslm{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.why{font-size:13px;color:var(--mutedfg);margin-top:4px}
+.pill{display:inline-block;padding:2px 9px;border-radius:9999px;
+font:700 11px/1.6 inherit;border:1px solid var(--borders);
+background:var(--muted);color:var(--parch3);white-space:nowrap}
+.pill.cited{border-color:var(--fresh);color:#9fe0bd}
+.pill.drift{border-color:var(--aging);color:#f0c489}
+.pill.gap{border-color:var(--stale);color:#f3a3a3}
+.pill.held{border-color:var(--blue1);color:#bcd7f2}
+.pill.cancelled,.pill.superseded{background:var(--stale);border-color:var(--stale);
+color:#fff}
+.arrow{text-align:center;color:var(--brass);font:700 13px/1 inherit;
+padding:6px 0;letter-spacing:.08em}
+.arrow span{background:var(--bg);padding:0 10px}
+.arrow{position:relative}
+.arrow:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
+background:var(--brass);z-index:-1}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--muted);
+vertical-align:top}
+th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;
+letter-spacing:.08em}
+code{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+footer{border-top:1px solid var(--border);margin-top:48px;font-size:13px;
+color:var(--mutedfg)}
+
+.crumb{font-size:13px;color:var(--mutedfg);margin:24px 0 0}
+.ident{font:500 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.factrow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.lede2{color:var(--mutedfg);max-width:54rem;margin:6px 0 18px}
+.ladder{border-left:2px solid var(--brass);margin:0 0 4px 10px;padding:0 0 0 18px}
+.rung{position:relative;padding:9px 0}
+.rung:before{content:"";position:absolute;left:-24px;top:16px;width:12px;
+height:2px;background:var(--brass)}
+.rung .t{font:700 11px/1 inherit;letter-spacing:.09em;color:var(--brass3);
+text-transform:uppercase}
+.rung.gaprung{opacity:.72}
+.rung.gaprung .t{color:var(--aging)}
+.small{font-size:13px;color:var(--mutedfg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.panel{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:16px 20px}
+.panel h3{font:700 12px/1.3 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin:0 0 10px}
+.prov{border-left:1px solid var(--muted);margin:0 0 0 4px;padding:2px 0 2px 14px}
+.plabel{font:600 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+.ptext{white-space:pre-wrap;overflow-wrap:break-word}
+.reflist{list-style:none;padding:0;margin:0}
+.reflist li{padding:7px 0;border-bottom:1px solid var(--muted)}
+.reflist li:last-child{border-bottom:0}
+.reflink{font-weight:600}
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{padding:8px 0 8px 16px;border-left:2px solid var(--border);
+position:relative}
+.timeline li:before{content:"";position:absolute;left:-5px;top:15px;width:8px;
+height:8px;border-radius:50%;background:var(--brass)}
+.timeline li.now:before{background:var(--fresh);box-shadow:0 0 0 3px rgba(47,143,92,.25)}
+.timeline li.gone:before{background:var(--stale)}
+details.body{margin-top:10px}
+details.body summary{cursor:pointer;color:var(--blue1);font-weight:600}
+.src{font:500 11px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--mutedfg)}
+.doc-raw{white-space:pre-wrap;overflow-wrap:break-word;
+font:500 12px/1.65 "JetBrains Mono",Menlo,monospace;color:var(--fg);
+background:var(--sunken);border:1px solid var(--border);border-radius:8px;
+padding:14px;max-height:34rem;overflow:auto}
+.typegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));
+gap:10px;margin:12px 0}
+.typecard{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:14px 16px}
+.typecard .n{font:700 26px/1.1 inherit;color:var(--brass3)}
+
+.grp{margin:34px 0 0}
+.grp > p{color:var(--mutedfg);max-width:54rem}
+.srcitem{border:1px solid var(--border);border-radius:12px;background:var(--card);
+padding:16px 20px;margin:12px 0}
+.srcitem h3{margin:0 0 2px;font:700 16px/1.35 inherit}
+.srcitem h3 a{text-decoration:none}
+.meta{font-size:13px;color:var(--mutedfg);margin:0 0 10px}
+.took{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--muted)}
+.took dt{font:700 11px/1.6 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg)}
+.took dd{margin:2px 0 10px}
+.took dd:last-child{margin-bottom:0}
+.where{font-size:13px}
+.quote{border-left:3px solid var(--brass);padding:2px 0 2px 14px;margin:10px 0;
+color:var(--parch3);font-style:normal}
+</style></head><body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="chrome"><a class="wordmark" href="index.html">Semper Admin</a><span>Sources</span><a href="policy-index.html" style="margin-left:auto">All policies</a><a href="authority-index.html">Authority chains</a></header>
+<main id="main">
+<h1>What this was built from</h1>
+<p class="lede">Every standard, specification, and issuance that shaped this library, and the specific element taken from each. Sources that were considered and set aside stay on the page with the reason - a provenance page that lists only the influences that worked is a marketing page.</p>
+<p class="lede">Every claim below was checked against a primary source rather than a summary of one. Where a specification is quoted, the words are its own.</p>
+<div class="grp"><h2>Structure and identity</h2><p>How a policy document becomes addressable data. These decided the shape of a record and the form of an identifier.</p>
+<div class="srcitem">
+<h3><a href="https://github.com/usgpo/uslm" rel="noopener">United States Legislative Markup (USLM)</a></h3>
+<p class="meta">U.S. Government Publishing Office &middot; 2.1.0, released 2024-08-22 <span class="pill held">live</span></p>
+<p>The XML vocabulary Congress publishes statute in, and its referencing model for addressing a provision inside a document.</p>
+<dl class="took">
+<dt>The referencing model</dt><dd>Identifiers are a logical path rooted at the jurisdiction - <code>/us/usc/t10/s701</code> for statute, and by the same construction rule <code>/us/dod/don/usmc/mco/1050_3j</code> for a Marine Corps order. A citation resolves to chapter and verse, not to a whole document.</dd>
+<dt>The small-level hierarchy</dt><dd>Section, subsection, paragraph, subparagraph, clause, subclause, item. Our provision depths map onto it directly.</dd>
+<dt>The versioning model</dt><dd>Multiple versions of an element coexisting with start and end periods, rather than a new document per amendment.</dd>
+<dt>What we did NOT take</dt><dd>The namespace. USLM's own scope statement is that it &ldquo;is not intended to model executive branch or judicial branch documents,&rdquo; and since version 2.1 a USLM document may not contain foreign-namespace elements. Our XML is a sibling vocabulary in its own namespace. This library never claims to be USLM conformant.</dd>
+<dt>A correction it forced</dt><dd>USLM reserves the period for the file-format suffix, so <code>mco/1050.3j</code> is ambiguous - it reads as document <code>mco/1050</code> in format <code>3j</code>. Every identifier in the corpus was rewritten to use an underscore.</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> Every identifier on every page &middot; policy-index.html &middot; schema/usmc-issuance-2.0.xsd</p>
+</div>
+<div class="srcitem">
+<h3><a href="https://s1000d.org/" rel="noopener">S1000D</a></h3>
+<p class="meta">ASD, AIA, and ATA e-Business &middot; Issue 6, September 2024 <span class="pill held">live</span></p>
+<p>The international specification for technical publications built on a common source database. Thirty years of production use in defense, aviation, and shipbuilding.</p>
+<dl class="took">
+<dt>Confirmation of the architecture</dt><dd>S1000D reached the same design from the technical-publications side that we reached from the legislative side. Its Data Module is our canonical record, its Common Source DataBase is our canonical store, its Data Module Requirements List is our document set, and its issue-number and in-work counters are our VERIFIED and UNVERIFIED states. Two communities, same answer, independently.</dd>
+<dt>Fragment-level cross-references</dt><dd>S1000D addresses a fragment inside another data module by CODE rather than by location, so a reference survives the repository being reorganized. Our provision-path citations work the same way.</dd>
+<dt>What we have not taken yet</dt><dd>The information code - a controlled vocabulary of information KINDS rather than subjects - and the applicability model, where a declared property vocabulary and boolean expressions bind to arbitrary content nodes. Both are on the list.</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> The provision tree on every policy page &middot; Reference lists that resolve to a target</p>
+</div>
+<div class="srcitem">
+<h3><a href="https://www.loc.gov/preservation/digital/formats/fdd/fdd000465.shtml" rel="noopener">Standard Generalized Markup Language, ISO 8879</a></h3>
+<p class="meta">ISO/IEC JTC 1/SC 34, via the Library of Congress registry &middot; ISO 8879:1986 <span class="pill ">reference</span></p>
+<p>The ancestor of XML and the origin of separating content from presentation.</p>
+<dl class="took">
+<dt>The founding principle</dt><dd>Content and presentation are different things. A paragraph knows its own place in the hierarchy; how it is printed is a separate question. That is why the stored path is <code>p8/a/1/b</code> while the printed label is only <code>(b)</code>.</dd>
+<dt>A lineage note worth knowing</dt><dd>MIL-STD-2361, which set SGML requirements for Army doctrine publications, was cancelled in 2021. Its lineage now runs through MIL-STD-40051E. The idea outlived the standard that carried it.</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> The printed view on every policy page, which shows only the local marker while the data carries the full path</p>
+</div>
+</div>
+<div class="grp"><h2>Governance and conformance</h2><p>What the Department actually requires, verified against the issuances themselves rather than against summaries of them.</p>
+<div class="srcitem">
+<h3><a href="https://www.dsp.dla.mil/" rel="noopener">DoW Digital Standards Strategy</a></h3>
+<p class="meta">Defense Standardization Program Office &middot; January 2026 <span class="pill drift">not binding</span></p>
+<p>The Department&#x27;s stated direction for moving standards from documents to data.</p>
+<dl class="took">
+<dt>The three-tier model</dt><dd>Adapted from ISO/IEC SMART: human-readable, machine-readable, and machine-interpretable. This library produces all three - the rendered pages, the JSON and XML, and the tier vocabulary and authority graph that carry semantics.</dd>
+<dt>An honest reading of its force</dt><dd>It is not a mandate. Section II states the guidance &ldquo;is not intended to be prescriptive.&rdquo; There is no compliance date and no tasking table. We cite it as direction, never as an obligation.</dd>
+<dt>The gap it exposes</dt><dd>DoD requires structured XML for technical manuals and has committed to converting standards to XML. Policy issuances - the layer directing all of it - are governed by Word templates. DoWI 5025.01 was reissued 20 January 2026, eight days after this strategy, with no machine-readability provision at all. That inconsistency is the reason this project exists, and it is stated in the Department's own documents.</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> conformance-matrix.md section 4</p>
+</div>
+<div class="srcitem">
+<h3><a href="https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/832007p.pdf" rel="noopener">DoDI 8320.07</a></h3>
+<p class="meta">DoD Chief Information Officer &middot; 3 August 2015, incorporating Change 1 <span class="pill cited">required</span></p>
+<p>The instruction governing data sharing, and the source of the &amp;ldquo;consider NIEM first&amp;rdquo; obligation.</p>
+<dl class="took">
+<dt>A requirement we owed and had not met</dt><dd>It requires that organizations &ldquo;perform a business case assessment to compare the suitability of NIEM to that of any potential alternative approaches&rdquo; and, where NIEM is not chosen, &ldquo;document the technical, fiscal, and operational reasons why.&rdquo; This library publishes an XML exchange. The assessment was missing. It is now written.</dd>
+<dt>The conclusion it produced</dt><dd>NIEM has no domain for policy, directives, or document management, and no vocabulary for a provision hierarchy inside a document - it models exchanges between systems, not the internal structure of a legal text. Considered, not adopted for the encoding, planned for the exchange layer when a partner system first consumes this corpus.</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> conformance-matrix.md section 6</p>
+</div>
+<div class="srcitem">
+<h3><a href="https://niemopen.org/" rel="noopener">NIEM, the National Information Exchange Model</a></h3>
+<p class="meta">OASIS Open &middot; NIEM 6.0 and NDR 6.0, OASIS Standards, 28 November 2025 <span class="pill held">live</span></p>
+<p>The federal common vocabulary for information exchange between organizations.</p>
+<dl class="took">
+<dt>The extension point, for later</dt><dd><code>nc:DocumentType</code> carries 65 child properties, a meaningful set of them records-management oriented - effective date, expiration date, issue date, approval indicator, disposition authority. That is where a future exchange layer attaches.</dd>
+<dt>A precision that matters in any briefing</dt><dd>NDR 6.0 forecloses a claim people make casually: &ldquo;NIEM does not define conformance for applications, systems, databases, or tools. It is therefore impossible for any of these to properly claim NIEM conformance.&rdquo; Only namespaces, schema documents, models, and messages conform. This system never claims it.</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> conformance-matrix.md section 6</p>
+</div>
+<div class="srcitem">
+<h3><a href="https://www.doncio.navy.mil/" rel="noopener">DON XML Naming and Design Rules</a></h3>
+<p class="meta">Office of the DON Chief Information Officer &middot; Version 2.0, January 2005 <span class="pill ">reference</span></p>
+<p>The Department of the Navy&#x27;s own rules for XML namespaces, versioning, and promotion between development and enterprise.</p>
+<dl class="took">
+<dt>Namespace and version discipline</dt><dd>The base-URN lineage rule, the major-versus-minor version rules, and the requirement that a change pass approval before entering a published copy. Our schema versioning and the staging-to-store promotion gate follow it.</dd>
+<dt>The continuity mechanism</dt><dd>A deleted rule is recorded with its reason rather than removed. Our namespace register does the same for retired identifier tokens.</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> NAMESPACES.md &middot; The promotion report</p>
+</div>
+<div class="srcitem">
+<h3><a href="https://assist.dla.mil/online/start/" rel="noopener">ASSIST and the Defense Standardization Program</a></h3>
+<p class="meta">Defense Logistics Agency &middot; DoDI 4120.24, 31 March 2022 <span class="pill ">reference</span></p>
+<p>The official source for DoD specifications and standards.</p>
+<dl class="took">
+<dt>A cautionary finding, not a component</dt><dd>ASSIST governs standards, not policy issuances, so it constrains nothing here. What it demonstrates is the problem: it is the authoritative index of DoD standards and it exposes no public API, no bulk data, and no machine-readable index. The Digital Standards Strategy makes fixing that a line of effort with no date attached.</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> conformance-matrix.md section 5</p>
+</div>
+</div>
+<div class="grp"><h2>Publication and cataloging</h2><p>How the corpus reaches a reader, and what federal law requires of the metadata that describes it.</p>
+<div class="srcitem">
+<h3><a href="https://resources.data.gov/resources/dcat-us3/" rel="noopener">DCAT-US 3.0 and OMB M-25-05</a></h3>
+<p class="meta">Office of Management and Budget, and the Federal CDO Council &middot; M-25-05 issued 15 January 2025 <span class="pill cited">required</span></p>
+<p>The federal metadata standard for data catalogs, and the memo that requires it.</p>
+<dl class="took">
+<dt>The catalog format</dt><dd>M-25-05 rescinded and replaced M-13-13 and states the approved schema &ldquo;will conform to the United States profile of the W3C Data Catalog Vocabulary Version 3, known as the DCAT-US 3.0.&rdquo; Agency inventories are due in that format by 30 September 2026. The corpus emits a conformant catalog record.</dd>
+<dt>Two details that break implementations</dt><dd>The schema moved from JSON Schema Draft-04 to 2020-12, so an old validator gives a false pass. And <code>accessLevel</code> is not a v3.0 core field - <code>accessRights</code> carries that meaning.</dd>
+<dt>A precision about its status</dt><dd>DCAT-US 3.0 is promulgated and required, but its prose specification is still a Candidate Recommendation and its implementation guidance is labelled draft. Say &ldquo;required under M-25-05,&rdquo; not &ldquo;final.&rdquo;</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> data.json &middot; tools/emit_dcat.py</p>
+</div>
+<div class="srcitem">
+<h3><a href="https://www.govinfo.gov/developers" rel="noopener">GovInfo Developer Hub</a></h3>
+<p class="meta">U.S. Government Publishing Office &middot; current <span class="pill held">live</span></p>
+<p>GPO&#x27;s access channel for federal publications and the schemas they are published against.</p>
+<dl class="took">
+<dt>Statute text and its provenance</dt><dd>The statute records in this corpus cite their exact granule URL in the provenance block, so a reader can go to the authoritative copy in one click.</dd>
+<dt>Schema hosting</dt><dd>Every adopted USLM version is hosted for offline validation against a pinned version.</dd>
+<dt>What its MCP preview does not do</dt><dd>GPO's Model Context Protocol preview offers two tools over GovInfo packages. It has no USLM awareness - no identifier resolution, no section-level extraction. It cannot resolve our references, and no resolver for USLM identifiers exists anywhere yet.</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> The provenance block on every statute page</p>
+</div>
+<div class="srcitem">
+<h3><a href="https://ckan.org/" rel="noopener">Data.gov and CKAN</a></h3>
+<p class="meta">General Services Administration &middot; CKAN 2.11.2 at catalog.data.gov <span class="pill held">live</span></p>
+<p>The platform running the federal data catalog and its harvester.</p>
+<dl class="took">
+<dt>The publication pattern</dt><dd>Publish a catalog file at a stable public URL with no authentication, then register a harvest source. Nothing about the encoding changes.</dd>
+<dt>A discipline it enforces</dt><dd>The harvester reads the source verbatim: &ldquo;It does not correct typos, normalize field values, or fill in missing information.&rdquo; Whatever we publish is what appears. That is the same standard the publication gate already holds us to.</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> data.json</p>
+</div>
+</div>
+<div class="grp"><h2>Authoring</h2><p>The write side. A policy that is born as data never needs to be recovered from a PDF.</p>
+<div class="srcitem">
+<h3><a href="https://learn.microsoft.com/en-us/office/open-xml/open-xml-sdk" rel="noopener">Open XML SDK and the DOCX format</a></h3>
+<p class="meta">Microsoft, ECMA-376, ISO/IEC 29500 &middot; current <span class="pill held">live</span></p>
+<p>The API and file format for Word documents.</p>
+<dl class="took">
+<dt>The authoring path</dt><dd>This governs SemperScribe rather than this library. It matters because DoWI 5025.01 makes Word the production format for DoD issuances - &ldquo;the FP sends the MS Word file of the issuance ... to the Directives Division&rdquo; - and SECNAV M-5215.1 prescribes the typography down to the font. A tool that produces a compliant naval letter AND exports policy-as-data in one step has to speak Open XML properly.</dd>
+<dt>The preservation posture</dt><dd>The Library of Congress format description is the reference for what survives long term, which is the question behind all of this.</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> SemperScribe, not this library</p>
+</div>
+<div class="srcitem">
+<h3><a href="https://www.secnav.navy.mil/doni/" rel="noopener">SECNAV M-5215.1 and DoWI 5025.01</a></h3>
+<p class="meta">DON Directives and Records Management, and WHS Directives Division &middot; September 2020 and 20 January 2026 <span class="pill cited">required</span></p>
+<p>The manuals governing how directives themselves are written, numbered, and formatted.</p>
+<dl class="took">
+<dt>The numbering scheme</dt><dd>The Standard Subject Identification Code is what makes a directive number meaningful rather than sequential, and it is why the corpus can group by subject series at all.</dd>
+<dt>The printed convention we preserve exactly</dt><dd>Standard naval letter format prints only the local marker - <code>(1)</code>, not <code>1.a.(1)</code>. Every page here honors that, while the data carries the full path underneath.</dd>
+<dt>The gap they leave</dt><dd>Neither contains the word XML. Both govern format and typography; neither requires structure. SECNAV M-5215.1 goes as far as &ldquo;Courier New 12 font is the only authorized font.&rdquo;</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> The printed view on every policy page &middot; SSIC-based grouping</p>
+</div>
+</div>
+<div class="grp"><h2>Reasoning and rules</h2><p>How a policy becomes something a machine can act on rather than merely retrieve. This is the part still being built.</p>
+<div class="srcitem">
+<h3><a href="https://protege.stanford.edu/software/" rel="noopener">Prot&eacute;g&eacute; and WebProt&eacute;g&eacute;</a></h3>
+<p class="meta">Stanford Center for Biomedical Informatics Research &middot; Desktop 5.6.9, released 7 March 2025 <span class="pill held">live</span></p>
+<p>The reference editor for OWL 2 ontologies.</p>
+<dl class="took">
+<dt>A tool held in reserve, deliberately</dt><dd>The authority graph here is JSON-LD, not OWL, because asserting that one document cites another needs no description logic. Prot&eacute;g&eacute; earns its place when the ontology grows classes and inference - deriving that a provision is in force from the status of everything above it. Adopting it earlier would have been ceremony.</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> Not yet used - recorded so the choice is visible</p>
+</div>
+<div class="srcitem">
+<h3><a href="https://ontology.ihmc.us/index.html" rel="noopener">IHMC KAoS</a></h3>
+<p class="meta">Florida Institute for Human and Machine Cognition &middot; last user guide January 2013 <span class="pill gap">dormant</span></p>
+<p>A framework for expressing policy as ontology so that applicability is decided by reasoning rather than string matching.</p>
+<dl class="took">
+<dt>The conceptual model, and nothing else</dt><dd>Policy as a constraint on a defined class of actions, and the division of policies into authorizations and obligations, each positive or negative. That framing is still the right one.</dd>
+<dt>Why it is not a dependency</dt><dd>The project is dormant. Last publication 2008, site frozen between 2010 and 2012, download pages return 404, and it was distributed by a Java technology removed from the JDK in 2018. We list it because it shaped the thinking, and because a provenance page that hides the dead ends is not one.</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> Read, not used</p>
+</div>
+<div class="srcitem">
+<h3><a href="https://www.oasis-open.org/standards/" rel="noopener">LegalRuleML Core 1.0</a></h3>
+<p class="meta">OASIS &middot; OASIS Standard, 8 September 2021 <span class="pill held">live</span></p>
+<p>A vocabulary for representing legal and regulatory norms as machine-processable rules.</p>
+<dl class="took">
+<dt>The next thing to adopt</dt><dd>It carries deontic operators, defeasibility, temporal validity, jurisdiction, and - the property that matters most here - isomorphism, meaning a rule stays traceable to the provision that states it. That is the discipline this corpus already practices informally. When the decision engine generalizes past parental leave, this is the vocabulary to speak.</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> Planned - the rules layer</p>
+</div>
+</div>
+<div class="grp"><h2>Considered and set aside</h2><p>Listed with the reason, because knowing what was ruled out is part of knowing what a thing is.</p>
+<div class="srcitem">
+<h3><a href="https://comptroller.war.gov/ODCFO/sfis.aspx" rel="noopener">Standard Financial Information Structure</a></h3>
+<p class="meta">DoD Office of the Deputy Chief Financial Officer &middot; current <span class="pill ">reference</span></p>
+<p>The DoD enterprise standard for financial data elements.</p>
+<dl class="took">
+<dt>Nothing, and here is why</dt><dd>It governs financial reporting elements. Nothing in this corpus is a financial transaction. The nearest adjacency is that MCO 1050.3J cites the DoD Financial Management Regulation - a policy document citing a financial regulation, which is not financial data.</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> Not applicable</p>
+</div>
+<div class="srcitem">
+<h3><a href="https://nps.edu/web/monterey-phoenix" rel="noopener">Monterey Phoenix</a></h3>
+<p class="meta">Naval Postgraduate School &middot; current <span class="pill held">live</span></p>
+<p>A language and tool for modeling and reasoning about system and process behaviors, generating use-case variants automatically.</p>
+<dl class="took">
+<dt>Nothing yet, but the fit is real</dt><dd>It models processes, not data, so it constrains nothing about the encoding. Where it could earn a place is the publish-review-republish loop, which has real failure modes and whose absence is the thing that makes a public corpus stale within a quarter.</dd>
+</dl>
+<p class="where"><strong>Where it shows up:</strong> Not applicable to the data model</p>
+</div>
+</div>
+<h2>What the demonstration set contains</h2>
+<div class="panel"><p>56 documents, 20,178 addressable paragraphs, 378 relationship edges. Every edge is cited: it exists because the issuing authority printed the reference on the document. Nothing is inferred from subject matter or numbering.</p><p class="small">These counts are read from the canonical store when this page is generated, so they cannot drift from what the corpus actually holds.</p></div>
+<h2>Standing honesty</h2>
+<div class="panel"><p class="small">This library never claims USLM conformance - USLM excludes executive branch documents by design. It never claims NIEM conformance - the NIEM rules state that no system can. It cites the DoW Digital Standards Strategy as direction rather than obligation, because the strategy says it is not prescriptive. Statute and Department of Defense records here are metadata-grade: identity, dates, supersession, and reference lists are transcribed from the authoritative source, and section text is not ingested. Records are UNVERIFIED machine extractions until a human confirms them line by line. This library is an unofficial reference and the issuing authority's copy governs.</p></div>
+<footer><p>Full conformance verdicts, with the specification text each one turns on, are in conformance-matrix.md. The identifier register is in NAMESPACES.md.</p></footer></main></body></html>

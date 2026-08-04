@@ -21,3 +21,5 @@ _to_delete*/
 
 # One-off push helper, not part of the project.
 push.bat
+finish_main.bat
+publish.bat
