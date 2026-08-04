@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2026/221" canonicalId="MARADMIN-2026-221" docType="MARADMIN" nativeNumber="221/26" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2026-05-13" schemaVersion="2.0">
+  <meta>
+    <title>SOLICITATION FOR QUALIFIED MARINES TO LATERAL MOVE</title>
+    <subject>SOLICITATION FOR QUALIFIED MARINES TO LATERAL MOVE</subject>
+    <originator>CMC WASHINGTON DC MRA MM</originator>
+    <signedDate>2026-05-13</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2026\MARADMIN_221_26_SOLICITATION_FOR_QUALIFIED_MARINES_TO_LATERAL_MOVE_LATMOVE.pdf" sourceHash="ec122c68e8b0b01773f66310cf4d8a99aab342d29443edbe77e1677caa3a45d5" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="NAVMC-1200.1L" targetIdentifier="/us/dod/don/usmc/navmc/1200_1l" basis="cited" tier="T4" held="held" from="narr:REF A"/>
+    <ref rel="references" target="MARADMIN-2026-023" targetIdentifier="/us/dod/don/usmc/maradmin/2026/023" basis="cited" tier="T5" held="absent" from="narr:REF C"/>
+    <ref rel="references" target="MARADMIN-2025-549" targetIdentifier="/us/dod/don/usmc/maradmin/2025/549" basis="cited" tier="T5" held="absent" from="narr:REF D"/>
+    <ref rel="references" target="MARADMIN-2025-400" targetIdentifier="/us/dod/don/usmc/maradmin/2025/400" basis="cited" tier="T5" held="absent" from="narr:REF E"/>
+  </authority>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2026/221/body" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Background.  Marine Reconnaissance Battalions and Force Reconnaissance Companies are specialized units trained to conduct multi-domain reconnaissance, surveillance, and specialized limited scale raids in support of the ground combat element, Marine Air Ground Task Force, or Joint Task Force.  They are responsible for gathering and reporting information about the enemy, terrain, and weather conditions in contested maritime environments as part of an integrated naval campaign.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Reconnaissance Marines represent the epitome of physical fitness and mental aptitude and are part of a highly trained force that is critical to the Marine Corps' mission against global threats.  They must possess a range of skills unique to reconnaissance formations and thrive in politically sensitive or geographically denied operational environments.  They must have strong communication skills and be able to operate independently or as part of a small team under austere circumstances.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Reconnaissance Marines undergo extensive training in amphibious reconnaissance, combat diving, parachuting, sensor operation, and advanced combat marksmanship.  They may also receive qualifications as Snipers, Army Rangers, explosive breachers, additional joint terminal attack controllers, and advanced survival, evasion, resistance, and escape specialists.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Reconnaissance Marines serve in both the active and reserve components (RC) and may be assigned to a variety of units across the Fleet Marine Force, supporting establishment, and external special missions units.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Reconnaissance LATMOVE applicants must meet The following criteria:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/d/1" path="p2/d/1" number="2.d.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Must be a U.S. citizen.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/d/2" path="p2/d/2" number="2.d.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Must be a volunteer.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/d/3" path="p2/d/3" number="2.d.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>No derogatory page 11 entries within the last 12-months.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/d/4" path="p2/d/4" number="2.d.4." label="4." depth="2" verification="UNVERIFIED">
+          <text>No Non-Judicial Punishment (NJP) within the last 12- months and with no more than one NJP during the current contract.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/d/5" path="p2/d/5" number="2.d.5." label="5." depth="2" verification="UNVERIFIED">
+          <text>No courts martial convictions.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/d/6" path="p2/d/6" number="2.d.6." label="6." depth="2" verification="UNVERIFIED">
+          <text>Security requirement: Must have an interim secret security clearance based on national agency check, law enforcement and credit check.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/d/7" path="p2/d/7" number="2.d.7." label="7." depth="2" verification="UNVERIFIED">
+          <text>Must possess a minimum general technical score of 105 or a minimum clerical score of 105.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/d/8" path="p2/d/8" number="2.d.8." label="8." depth="2" verification="UNVERIFIED">
+          <text>All Marines in any MOS up to E5 with no more than two years time in grade (TIG) and E6 03XX MOS with no more than one year TIG are eligible for LATMOVE. Marines who do not meet this criteria will be accepted on a case-by-case basis.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/d/9" path="p2/d/9" number="2.d.9." label="9." depth="2" verification="UNVERIFIED">
+          <text>All non-03XX Marines are required to attend Infantry Common Core (ICC) and Infantry Riflemanâ€™s Course (IRC) at School of Infantry East or West before attending Ground Reconnaissance Course (GRC) and Amphibious Reconnaissance Course (ARC).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/d/10" path="p2/d/10" number="2.d.10." label="10." depth="2" verification="UNVERIFIED">
+          <text>Must be medically qualified to perform parachute and combatant dive operations.  LATMOVE enlisted Marines must have completed a Naval Special Warfare/Special Operations (NSW/SO) physical prior to reporting to GRC/ARC. This includes a report of medical history (DD Form 2807-1) and a report of requested MOS change (DD Form 2808). The completed NSW/SO physical must be reviewed and countersigned by an Undersea Medical Officer.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/d/11" path="p2/d/11" number="2.d.11." label="11." depth="2" verification="UNVERIFIED">
+          <text>Active component Marines approved for LATMOVE into the 0321 PMOS may rate a Selective Retention Bonus (SRB).  For example, per reference (c), a qualified zone A E5 who agrees to reenlist in conjunction with a LATMOVE will qualify for both the $50,000 84-month LATMOVE kicker and the $66,500 PMOS bonus, totaling $116,500, once they have gained the 0321 PMOS.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/d/12" path="p2/d/12" number="2.d.12." label="12." depth="2" verification="UNVERIFIED">
+          <text>Active and Reserve Marines approved for LATMOVE into the 0321 PMOS may be eligible for the Selected Marine Corps Reserve (SMCR) Retention and Affiliation Bonus (RAB) in accordance with reference (d). Per reference (d), Marines requesting a LATMOVE may only accept the 24 or 36-month RAB options ($10,000 for 24 months or $20,000 for 36 months).</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p2/e" path="p2/e" number="2.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>To be eligible for the 0321 PMOS in the RC, Marines must meet the criteria found in reference (e).  Reference (e) also covers the methodology for obligation incurred and agreed upon via a mandatory, signed Statement of Understanding (SOU).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Execution.  Interested Marines are encouraged to contact the Reconnaissance Recruiters at [contact withheld]/ [contact withheld] (School of Infantry - East) or [contact withheld]/ [contact withheld] (School of Infantry - West). Additional details can be found at: Https://www.manpower.marines.mil/divisions/manpower- management/enlisted-assignments/stay-marine/lateral-move- opportunities/#tab/0321-recon-reconnaissance-marine</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Personnel seeking to initiate the LATMOVE process should contact their Career Counselor or Prior Service Recruiter. Eligible Marines must complete reference (b), which includes screening and suitability assessment information.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Marines approved for LATMOVE by Manpower and Reserve Affairs will execute Temporary Additional Duty orders to Reconnaissance Training Company, School of Infantry-West, Camp Pendleton, CA.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>This MARADMIN is applicable to the Total Force.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p3/d" path="p3/d" number="3.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Commanders and Senior Enlisted Leaders are encouraged to disseminate the information contained in this MARADMIN to all hands.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Direct all questions to MARADMIN POCs.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/221/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by MajGen Fridrik Fridriksson, Director, Manpower Management Division.//</text>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>1 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

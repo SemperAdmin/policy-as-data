@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/mco/1200_18" canonicalId="MCO-1200.18" docType="MCO" nativeNumber="1200.18" tier="T3" lifecycle="active" verification="UNVERIFIED" schemaVersion="2.0">
+  <meta>
+    <title>MCO 1200.18 - Military Occupational Specialties (MOS) Program Order (SHORT TITLE: MOS MANUAL ORDER)</title>
+    <subject>MILITARY OCCUPATIONAL SPECIALTIES (MOS) PROGRAM ORDER (SHORT TITLE: MOS MANUAL ORDER)</subject>
+    <distributionStatement>DISTRIBUTION STATEMENT A:  Approved for public release; distribution is</distributionStatement>
+    <provenance sourcePath="E:\GunnyBot\Policies\MCO\MCO_1200.18.pdf" sourceHash="a1c7cf78386eda49cd512379c0597fb519f3ac7ec99c0b7e9b10e1f3b2c9178c" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="MCO-1200.15C-CH1" targetIdentifier="/us/dod/don/usmc/mco/1200_15c" basis="cited" tier="T3" held="held" from="front-matter:ref/a"/>
+    <ref rel="references" target="MCO-1000.6G" targetIdentifier="/us/dod/don/usmc/mco/1000_6g" basis="cited" tier="T3" held="drift" storeHolds="MCO-1000.6" from="front-matter:ref/b"/>
+    <ref rel="references" target="MCO-1200.13G" targetIdentifier="/us/dod/don/usmc/mco/1200_13g" basis="cited" tier="T3" held="held" from="front-matter:ref/c"/>
+    <ref rel="references" target="MCO-1300.8R-CH1" targetIdentifier="/us/dod/don/usmc/mco/1300_8r/ch1" basis="cited" tier="T3" held="drift" storeHolds="MCO-1300.8-CH2" from="front-matter:ref/d"/>
+    <ref rel="references" target="SECNAVINST-5210.1" targetIdentifier="/us/dod/don/secnavinst/5210_1" basis="cited" tier="T2" held="absent" from="front-matter:ref/e"/>
+    <ref rel="references" target="MCO-5311.1D" targetIdentifier="/us/dod/don/usmc/mco/5311_1d" basis="cited" tier="T3" held="drift" storeHolds="MCO-5311.1E-CH1" from="front-matter:ref/f"/>
+    <ref rel="references" target="MCO-1001R.1K" targetIdentifier="/us/dod/don/usmc/mco/1001r_1k" basis="cited" tier="T3" held="drift" storeHolds="MCO-1001R.1L-CH2" from="front-matter:ref/g"/>
+    <ref rel="references" target="NAVMC-1200.1" targetIdentifier="/us/dod/don/usmc/navmc/1200_1" basis="cited" tier="T4" held="drift" storeHolds="NAVMC-1200.1L" from="front-matter:ref/h"/>
+    <ref rel="references" target="MCO-5215.1K" targetIdentifier="/us/dod/don/usmc/mco/5215_1k" basis="cited" tier="T3" held="drift" storeHolds="MCO-5215.1K-CH3" from="front-matter:ref/i"/>
+    <ref rel="references" target="USC-T5-S552a" targetIdentifier="/us/usc/t5/s552a" basis="cited" tier="T0" held="held" from="front-matter:ref/j"/>
+    <ref rel="references" target="SECNAVINST-5211.5E" targetIdentifier="/us/dod/don/secnavinst/5211_5e" basis="cited" tier="T2" held="absent" from="front-matter:ref/k"/>
+  </authority>
+  <section anchor="front-matter" identifier="/us/dod/don/usmc/mco/1200_18/front-matter" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1200_18/front-matter/ref" path="ref" number="Ref:" label="Ref:" depth="0" role="reference" verification="UNVERIFIED">
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/front-matter/ref/a" path="ref/a" number="(a)" label="(a)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 1200.15C</text>
+        <citation target="MCO-1200.15C-CH1" targetIdentifier="/us/dod/don/usmc/mco/1200_15c" basis="cited" text="MCO 1200.15C"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/front-matter/ref/b" path="ref/b" number="(b)" label="(b)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO P1000.6G</text>
+        <citation target="MCO-1000.6G" targetIdentifier="/us/dod/don/usmc/mco/1000_6g" basis="cited" text="MCO P1000.6G"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/front-matter/ref/c" path="ref/c" number="(c)" label="(c)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 1200.13G</text>
+        <citation target="MCO-1200.13G" targetIdentifier="/us/dod/don/usmc/mco/1200_13g" basis="cited" text="MCO 1200.13G"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/front-matter/ref/d" path="ref/d" number="(d)" label="(d)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO P1300.8R W/CH 1-8</text>
+        <citation target="MCO-1300.8R-CH1" targetIdentifier="/us/dod/don/usmc/mco/1300_8r/ch1" basis="cited" text="MCO P1300.8R W/CH 1-8"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/front-matter/ref/e" path="ref/e" number="(e)" label="(e)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAVINST 5210.1</text>
+        <citation target="SECNAVINST-5210.1" targetIdentifier="/us/dod/don/secnavinst/5210_1" basis="cited" text="SECNAVINST 5210.1"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/front-matter/ref/f" path="ref/f" number="(f)" label="(f)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 5311.1D</text>
+        <citation target="MCO-5311.1D" targetIdentifier="/us/dod/don/usmc/mco/5311_1d" basis="cited" text="MCO 5311.1D"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/front-matter/ref/g" path="ref/g" number="(g)" label="(g)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 1001R.1K</text>
+        <citation target="MCO-1001R.1K" targetIdentifier="/us/dod/don/usmc/mco/1001r_1k" basis="cited" text="MCO 1001R.1K"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/front-matter/ref/h" path="ref/h" number="(h)" label="(h)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>NAVMC 1200.1</text>
+        <citation target="NAVMC-1200.1" targetIdentifier="/us/dod/don/usmc/navmc/1200_1" basis="cited" text="NAVMC 1200.1"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/front-matter/ref/i" path="ref/i" number="(i)" label="(i)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 5215.1K</text>
+        <citation target="MCO-5215.1K" targetIdentifier="/us/dod/don/usmc/mco/5215_1k" basis="cited" text="MCO 5215.1K"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/front-matter/ref/j" path="ref/j" number="(j)" label="(j)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>5 U.S.C. 552a</text>
+        <citation target="USC-T5-S552a" targetIdentifier="/us/usc/t5/s552a" basis="cited" text="5 U.S.C. 552a"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/front-matter/ref/k" path="ref/k" number="(k)" label="(k)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAVINST 5211.5E</text>
+        <citation target="SECNAVINST-5211.5E" targetIdentifier="/us/dod/don/secnavinst/5211_5e" basis="cited" text="SECNAVINST 5211.5E"/>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-1" identifier="/us/dod/don/usmc/mco/1200_18/p-1" heading="1. Situation. This is a new Order that, in conjunction with other Marine" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1200_18/p-1/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Situation.  This is a new Order that, in conjunction with other Marine Corps Orders, synchronizes the Marine Corps Human Resources Development Process (HRDP).  References (a) through (k) authorize and guide this Order and sanction the policies outlined herein.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/1200_18/p-1/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Cancellation.  MCO 1200.17E.</text>
+    </provision>
+  </section>
+  <section anchor="p-3" identifier="/us/dod/don/usmc/mco/1200_18/p-3" heading="3. Mission. Reference (h), a new annual NAVMC 1200.1, will be published in" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-4" identifier="/us/dod/don/usmc/mco/1200_18/p-4" heading="4. Execution" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1200_18/p-4/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Execution</text>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/p-4/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Commander’s Intent and Concept of Operations</text>
+        <provision identifier="/us/dod/don/usmc/mco/1200_18/p-4/p4/a/1" path="p4/a/1" number="4.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Commander's Intent.  The MOS Manual will update the Total Force Structure Management System (TFSMS), Marine Corps Training Information Management System (MCTIMS), and the Marine Corps Total Force System (MCTFS). Commanding Officers of schools and all personnel associated with the Occupational System and the HRDP shall familiarize themselves with and make all MOS changes as summarized in Chapters 2 and 4, Officer/Enlisted Conversion Guidance; and as further guided by reference (a), MOS System Modification Process; by direction from the Deputy Commandant of the Marine Corps, Manpower and Reserve Affairs (M&amp;RA); and by separate implementing instructions. MCO 1200.18 8 Dec 14 2</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1200_18/p-4/p4/a/2" path="p4/a/2" number="4.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Concept of Operations.  This Order provides policy to define and organize MOSs used to identify billet requirements on tables of organization in TFSMS, to identify skills qualification of individual Marines in MCTFS, and to identify required training necessary MOS skills qualifications.  MOSs identify billet requirements leading to a matching inventory of Marines enabling the Marine Corps to man the force and carry out assigned missions. The HRDP is designed around MOSs to organize recruit, classify, train, assign, and manage the force that meets mission based manpower requirements. Reference (c), the Marine Corps Front-End Analysis Program, governs the gathering of data and analysis used to define job task requirements, organize MOS structure, and guide development of training standards and prioritized formal school instruction based upon valid Marine Corps needs.  This Order establishes the organization of the occupational system in reference (h) by identifying number, grouped by occupational field, and it describes MOSs by name, type, category, grade, narrative, prerequisites, required training, duties, and related and associated MOSs.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1200_18/p-4/p4/a/3" path="p4/a/3" number="4.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Summary of Revision.  This is a new Order that shifts annual publication of the current format for MCO 1200.17E, MOS Manual, to provide annual update to the Occupational System.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/p-4/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Subordinate Element Mission</text>
+        <provision identifier="/us/dod/don/usmc/mco/1200_18/p-4/p4/b/1" path="p4/b/1" number="4.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Deputy Commandants, Commanding Officers of schools, and all personnel associated with the Marine Corps Occupational System shall ensure adherence to the policies in this Order and the annually updated requirements and prerequisites in reference (h).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1200_18/p-4/p4/b/2" path="p4/b/2" number="4.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Commanding General, Training and Education Command, shall publish an annual MOS Manual.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/p-4/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Coordinating Instructions.  Submit recommended changes of any particular MOS or occupational field, or to policy set forth under authority of this Order, to CG, Training and Education Command (C 466), 1019 Elliot Road, Quantico, VA 22134-5001, via the appropriate chain of command and the Headquarters Marine Corps occupational field advocate and in accordance with reference (d).</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-5" identifier="/us/dod/don/usmc/mco/1200_18/p-5" heading="5. Administration and Logistics" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1200_18/p-5/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Administration and Logistics</text>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/p-5/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>This Order is published electronically and can be accessed online via the Marine Corps homepage at http://www.marines.mil/news/publications/ electroniclibrary.aspx.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/p-5/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Records created as a result of this Order shall be managed according to National Archives and Records Administration approved dispositions per reference (e) to ensure proper maintenance, use, accessibility and preservation, regardless of format or medium.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/p-5/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>The generation, collection, or distribution of personally identifiable information (PII) and management of privacy sensitive information shall be in accordance with the Privacy Act of 1974, as amended, per references (j) and (k).  Any unauthorized review, use, disclosure, or distribution is prohibited.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/1200_18/p-5/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Command and Signal</text>
+      <provision identifier="/us/dod/don/usmc/mco/1200_18/p-5/p6/a" path="p6/a" number="6.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Command.  This Order is applicable to the Marine Corps Total Force.</text>
+      </provision>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-03" against="section text already carried in this record">
+      <change>reparse_provisions.py - provision tree rebuilt after the reference-list and signature-block parser fixes</change>
+      <change>12 path(s) added, 10 removed, 29 provisions total</change>
+      <change>reference and enclosure lists now parse under ref/ and encl/ instead of entering the body marker stack</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+    <correction date="2026-08-03" against="the Subj: field in this record's own front matter text">
+      <change>backfill_subjects.py - subject recovered from the naval letter Subj: field, which the provision parser skips as a label line</change>
+      <change>title rebuilt as doc type, native number, and subject</change>
+      <change>no text was invented; a record with no Subj: field keeps subject null</change>
+    </correction>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>20 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

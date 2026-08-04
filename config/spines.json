@@ -1,0 +1,129 @@
+{
+ "_comment": [
+  "Spine definitions for render_authority_chain.py. Data, not code, so a seed",
+  "changes without touching the renderer.",
+  "",
+  "seed_candidates is ordered. The renderer takes the first id present in the",
+  "store, so a spine still renders when its best implementing message has not",
+  "been converted yet, and improves automatically when it has.",
+  "",
+  "gaps states WHY a tier is absent. A tier with no entry here and no document",
+  "simply does not print - silence is for tiers a spine never had, and a",
+  "stated gap is for tiers it should have had.",
+  "",
+  "prefer is a CURATION choice, not a data claim. When two cited targets sit at the same tier, it says which one this page should climb through. It can only pick among edges the extractor already found in the source text - it can never create one."
+ ],
+ "spines": [
+  {
+   "key": "leave",
+   "out": "authority-leave.html",
+   "title": "Authority chain - Marine Corps Parental Leave",
+   "subtitle": "From a clarification message to the statute it rests on. Read bottom to top for authority, top to bottom for implementation.",
+   "seed_candidates": [
+    "MARADMIN-2023-129",
+    "MARADMIN-2023-051",
+    "MCO-1050.3J"
+   ],
+   "gaps": {
+    "T2": "The store holds no Department of the Navy leave instruction. The chain skips this tier. Nothing is inferred to close it.",
+    "T4": "No service manual sits between MCO 1050.3J and the message tier for this subject."
+   },
+   "prefer": [
+    "MARADMIN-2023-051",
+    "MCO-1050.3J",
+    "DODI-1327.6",
+    "DODI-1327.06",
+    "USC-T10-S701"
+   ]
+  },
+  {
+   "key": "promotion",
+   "out": "authority-promotion.html",
+   "title": "Authority chain - Officer Promotion",
+   "subtitle": "The officer promotion manual up to the DoD instruction that governs it. The enlisted branch runs through MCO P1400.32D and MCO 1616.1 and is reachable from the reference tables below.",
+   "seed_candidates": [
+    "MCO-1400.31D",
+    "MCO-1400.32D-CH2",
+    "SECNAVINST-1400.1D"
+   ],
+   "gaps": {
+    "T2": "MCO 1400.31D names five SECNAV instructions in its reference list, none of them the promotion instruction itself. SECNAVINST 1400.1D is held in the store and names the same DoD instruction, but no document on this path cites it, so no edge is drawn.",
+    "T4": "No service manual sits between the promotion manual and the message tier.",
+    "T5": "No message in the 6,000 most recent MARADMINs scanned names MCO 1400.31D in its reference block. MCO P1400.32D, the enlisted volume, has 19 such messages."
+   },
+   "prefer": [
+    "MCO-1616.1",
+    "MCO-1400.32D-CH1",
+    "MCO-1400.31D",
+    "SECNAVINST-1400.1D",
+    "DODI-1320.14",
+    "USC-T10"
+   ]
+  },
+  {
+   "key": "mos",
+   "out": "authority-mos.html",
+   "title": "Authority chain - Occupational Classification",
+   "subtitle": "The MOS Manual and the orders around it. This spine names no Department of Defense authority anywhere in its cited text, and the page says so.",
+   "seed_candidates": [
+    "MARADMIN-2026-221",
+    "MARADMIN-2026-213",
+    "NAVMC-1200.1L"
+   ],
+   "gaps": {
+    "T1": "No Department of Defense issuance is named in the reference list of any document on this spine. The MOS Manual carries a DoD occupational conversion report requirement, but the requirement names no issuance number, so no edge is written.",
+    "T2": "No Department of the Navy occupational classification instruction is named on this spine."
+   },
+   "prefer": [
+    "NAVMC-1200.1L",
+    "MCO-1200.18",
+    "MCO-1200.13G"
+   ]
+  },
+  {
+   "key": "fitness",
+   "out": "authority-fitness.html",
+   "title": "Authority chain - Physical Fitness and Body Composition",
+   "subtitle": "Three current Marine Corps orders cite a DoD instruction that was cancelled in 2022. The chain shows both editions.",
+   "seed_candidates": [
+    "MARADMIN-2021-404",
+    "MARADMIN-2024-586",
+    "MCO-6110.3A-CH4",
+    "MCO-6100.13A-CH5"
+   ],
+   "gaps": {
+    "T0": "DoD Instruction 1308.03 carries no statutory citation in its reference list - seven entries, all DoD issuances plus one Executive Order. This chain terminates at the Department of Defense because its sources do.",
+    "T2": "The store holds no Department of the Navy physical fitness instruction.",
+    "T4": "No service manual sits between the orders and the message tier for this subject."
+   },
+   "prefer": [
+    "MCO-6100.13A-CH5",
+    "MCO-6110.3A-CH4",
+    "DODI-1308.3",
+    "DODI-1308.03"
+   ]
+  },
+  {
+   "key": "pes",
+   "out": "authority-pes.html",
+   "title": "Authority chain - Performance Evaluation",
+   "subtitle": "The only spine holding a live supersession pair above service level: SECNAVINST 1610.3A and its successor 1610.4A.",
+   "seed_candidates": [
+    "MARADMIN-2026-073",
+    "MARADMIN-2026-151",
+    "MCO-1610.7B"
+   ],
+   "gaps": {
+    "T4": "No service manual sits between MCO 1610.7B and the message tier for this subject.",
+    "T0": "MCO 1610.7B names 5 U.S.C. 552a and 10 U.S.C. 1034 in its reference list, so this spine does reach statute. The chain above climbs through DoD Instruction 1300.19 instead, whose own reference list could not be retrieved from the authoritative source and is therefore not asserted. Expand the reference table on MCO 1610.7B to see the statutory citations."
+   },
+   "prefer": [
+    "MCO-1610.7B",
+    "SECNAVINST-1610.4A",
+    "SECNAVINST-1610.3A",
+    "DODI-1300.19",
+    "USC-T5-S552a"
+   ]
+  }
+ ]
+}

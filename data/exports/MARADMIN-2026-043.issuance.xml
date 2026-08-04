@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2026/043" canonicalId="MARADMIN-2026-043" docType="MARADMIN" nativeNumber="043/26" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2026-02-11" schemaVersion="2.0">
+  <meta>
+    <title>FY27 HQMC SPECIAL DUTY ASSIGNMENT SCREENING TEAM (HSST)</title>
+    <subject>FY27 HQMC SPECIAL DUTY ASSIGNMENT SCREENING TEAM (HSST)</subject>
+    <originator>CMC WASHINGTON DC MRA MM</originator>
+    <signedDate>2026-02-11</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2026\MARADMIN_043_26_FY27_HQMC_SPECIAL_DUTY_ASSIGNMENT_SCREENING_TEAM_HSST.pdf" sourceHash="c8fde7e76ba43504d9ead6503821f3ff7af56f8a73c715030fbfc66321c21e30" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="MCO-1326.6-CH1" targetIdentifier="/us/dod/don/usmc/mco/1326_6/ch1" basis="cited" tier="T3" held="absent" from="narr:REF A"/>
+    <ref rel="references" target="MCBUL-1020" targetIdentifier="/us/dod/don/usmc/mcbul/1020" basis="cited" tier="T3" held="absent" from="narr:REF B"/>
+    <ref rel="references" target="MCO-1300.8-CH1" targetIdentifier="/us/dod/don/usmc/mco/1300_8/ch1" basis="cited" tier="T3" held="drift" storeHolds="MCO-1300.8-CH2" from="narr:REF C"/>
+    <ref rel="references" target="MCO-1040.31" targetIdentifier="/us/dod/don/usmc/mco/1040_31" basis="cited" tier="T3" held="absent" from="narr:REF D"/>
+    <ref rel="references" target="MARADMIN-2025-317" targetIdentifier="/us/dod/don/usmc/maradmin/2025/317" basis="cited" tier="T5" held="absent" from="narr:REF E"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2026/043/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2026/043/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>This message initiates the Fiscal Year 2027 (FY27) Headquarters Marine Corps (HQMC) Special Duty Assignment (SDA) Screening Team (HSST) screening process.  HQMC selects and assigns the most qualified and capable Marines to duties as a Recruiter, Drill Instructor, Combat Instructor, and Marine Security Guard (MSG) Detachment Commander.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Eligible Marines.  Manpower Management Enlisted Assignments (MMEA) will release the list of Marines that meet the criteria for assignment to SDA via the Total Force Retention System (TFRS) on or about 1 March 2026.  The identified Marines must be screened by Commanding Officers, utilizing the instructions and checklists available per reference (a).</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Volunteer Consideration.  Per reference (e), Marines with an active and complete volunteer Reenlistment, Extension, and Lateral Move (RELM) request for an SDA (Recruiting, Drill Instructor, Combat Instructor or MSG Detachment Commander) and a RELM â€œSubmitted Dateâ€ of 28 February 2026 or earlier will be considered a volunteer for SDA.  Marines with a request for a non-SDA screenable duty (i.e., MSG WatchStander) that is still pending in TFRS after 1 March 2026 and are disapproved for the initial request are required to submit HSST screening materials if identified for HSST screening.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>If a Marine submitted a volunteer package before 28 February 2026 and was simultaneously identified on the HSST, the Marine should accept the volunteer assignment.  Those Marines that decline to gain the obligated service necessary for their volunteer assignment will be issued a RE-3O reenlistment code per references</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p2/b/c" path="p2/b/c" number="2.b.(c)" label="(c)" depth="2" verification="UNVERIFIED">
+          <text>and (d).</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Submission Guidelines.  Commands will submit completed SDA packages on all identified Marines to MMEA electronically via a TFRS SDA RELM request no later than 15 April 2026.  Marines who do not submit by this deadline will be assumed eligible and be directly assigned to an SDA.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>SDA RELMs that exceed 14 days in a Pending Additional Information status may be pulled back to HQMC for processing.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Marines with an End of Current Contract (ECC) prior to 30 September 2027 will submit a completed SDA package to MMEA electronically via TFRS RELM request as "SDA / Reenlistment / HSST" RELM type.  Each package will include, at a minimum, the items listed in paragraphs 3d-3k, and the requirements for reenlistment prerequisites in accordance with the most current processing guidelines in TFRS.  Please coordinate with your Career Counselors for required information.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Marines with an ECC of 1 October 2027 and beyond will submit completed SDA packages to MMEA electronically via TFRS RELM request as "SDA w/ Extension / HSST" RELM type.  Each package will include, at a minimum the items listed in paragraphs 3d-3k.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p3/d" path="p3/d" number="3.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>The applicable Screening Checklists per paragraph (3k) and Financial Worksheet, per reference (a) are available via TFRS.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p3/e" path="p3/e" number="3.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Only close up photos of tattoos visible in PT gear must be attached.  Screening documents must include a detailed description, size, location, meaning, and the date received for each tattoo.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p3/f" path="p3/f" number="3.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Individual Medical Readiness (IMR) is authorized, must reflect "Fully Medically Ready". IMR usage removes requirement for Medical Officer signature on an SDA RELM unless deemed not qualified for SDA.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p3/g" path="p3/g" number="3.g." label="g." depth="1" verification="UNVERIFIED">
+        <text>Records of disciplinary actions in Marineâ€™s service record.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p3/h" path="p3/h" number="3.h." label="h." depth="1" verification="UNVERIFIED">
+        <text>Chain of command RELM comments and recommendations.  Commander recommendations must address retention and the SDA request.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p3/i" path="p3/i" number="3.i." label="i." depth="1" verification="UNVERIFIED">
+        <text>Security Clearance Eligibility Letter.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p3/j" path="p3/j" number="3.j." label="j." depth="1" verification="UNVERIFIED">
+        <text>Fitness Report Inventory.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p3/k" path="p3/k" number="3.k." label="k." depth="1" verification="UNVERIFIED">
+        <text>Checklists must be completed for Marines pertaining to the Marineâ€™s grade.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p3/l" path="p3/l" number="3.l." label="l." depth="1" verification="UNVERIFIED">
+        <text>Recruiting Duty and Drill Instructor Duty checklists are required for all Marines. Combat Instructor checklists are required for infantry and female Marines only.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>For Marines unqualified for SDA, Commanders will provide source documentation of disqualifying criteria and/or estimated return date to a qualified status to determine SDA class assignment and retention accurately via a TFRS "SDA Only" request. 4.1.  Examples include Medical Officer prognosis letters for projected date of SDA assignability, legal documents that should cause date conflicts with SDA class dates, page 11 entries for assignment to Body Composition Program, or physical fitness test/ combat fitness test failures. 4.2.  Unit Diary entries must be reflected in the Marine Corps Total Force System for the disqualifying status to validate disqualification.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Marines not directed for HSST screening but who want to volunteer for SDA are encouraged to continue to submit applications per paragraph 3.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>HSST members will screen electronic packages and assign qualified Marines to available SDA classes.  During the screening, HSST members make SDA class assignments on a â€œfirst-come, first-serveâ€ basis per each Marineâ€™s qualifications, command recommendations, and remaining SDA vacancies upon receipt of the SDA package.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>HSST assignments are announced via separate correspondence, and a by-name list will be published via TFRS NLT August 2026. Upon return of the approved RELM with a designated class assignment to the unit, Marines will have no more than 15 days to accept the obligated service.  Those Marines that decline to gain the obligated service necessary for their assignment to an SDA will be issued a RE-3O reenlistment code per references (c) and (d).</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>Commanders must re-certify Marines between 60 and 45 days before their SDA class report date to ensure they remain qualified. Failure to properly re-screen Marines for SDA will result in a determination of non-compliance.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/043/p9" path="p9" number="9." label="9." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by BGen Fridrik Fridriksson, Director, Manpower Management Division.//</text>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>3 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

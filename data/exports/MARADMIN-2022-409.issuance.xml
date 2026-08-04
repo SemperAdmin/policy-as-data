@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2022/409" canonicalId="MARADMIN-2022-409" docType="MARADMIN" nativeNumber="409/22" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2022-08-11" schemaVersion="2.0">
+  <meta>
+    <title>FISCAL YEAR 2023 (FY23) ENLISTED TO WARRANT OFFICER (RESERVE) SELECTION BOARD</title>
+    <subject>FISCAL YEAR 2023 (FY23) ENLISTED TO WARRANT OFFICER (RESERVE) SELECTION BOARD</subject>
+    <originator>CG MCRC QUANTICO VA</originator>
+    <signedDate>2022-08-11</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2022\MARADMIN_409_22_FISCAL_YEAR_2023_FY23_ENLISTED_TO_WARRANT_OFFICER_RESERVE_SE.pdf" sourceHash="762293cff3eacaca50c2a5a835dc58a41de6d68166b828aa0fc3485e94204d87" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="MCO-1040.42B" targetIdentifier="/us/dod/don/usmc/mco/1040_42b" basis="cited" tier="T3" held="drift" storeHolds="MCO-1040.42B-CH1" from="narr:REF A"/>
+    <ref rel="references" target="MARADMIN-2022-026" targetIdentifier="/us/dod/don/usmc/maradmin/2022/026" basis="cited" tier="T5" held="absent" from="narr:REF B"/>
+    <ref rel="references" target="DODI-1205.21" targetIdentifier="/us/dod/dodi/1205_21" basis="cited" tier="T1" held="absent" from="narr:REF C"/>
+    <ref rel="references" target="MCO-1000.6" targetIdentifier="/us/dod/don/usmc/mco/1000_6" basis="cited" tier="T3" held="absent" from="narr:REF D"/>
+    <ref rel="references" target="MCO-7220.56A" targetIdentifier="/us/dod/don/usmc/mco/7220_56a" basis="cited" tier="T3" held="absent" from="narr:REF F"/>
+    <ref rel="references" target="MCO-6100.13A-CH4" targetIdentifier="/us/dod/don/usmc/mco/6100_13a/ch4" basis="cited" tier="T3" held="drift" storeHolds="MCO-6100.13A-CH5" from="narr:REF G"/>
+    <ref rel="references" target="MCO-6110.3A-CH3" targetIdentifier="/us/dod/don/usmc/mco/6110_3a/ch3" basis="cited" tier="T3" held="drift" storeHolds="MCO-6110.3A-CH4" from="narr:REF H"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2022/409/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2022/409/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Per references (a) and (b), the Commandant of the Marine Corps (CMC) has approved the FY23 Enlisted to WO (Reserve) Selection Board report.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>The following personnel have been selected for appointment to the permanent grade of WO in the U.S. Marine Corps Reserve in the Selected Marine Corps Reserve (SMCR) Military Occupational Specialty (MOS) and site-specific Reporting Unit Code (RUC) listed below: Name                       SMOS   SRUC   Billet Alvarez, Oscar             0630   04048  Greensboro Biscuiti, Scott M.         0210   14803  San Antonio Champagne, Daniel E.       0210   14803  San Antonio Elizarraras, Carlos        3510   14331  Bristol Farber, Wesley J.          0210   14803  Oceana Geary, John V. III         1310   00527  Selfridge ANGB Guillaume, Nancy           0170   00407  Great Lakes Hammond, Thomas R.         0210   14803  San Diego Jimenez, James S.          2120   14031  Camp Pendleton Johnston, Jai V.           2340   04059  Greenville Nassir, Crystal M.         0620   04048  Greensboro Skvortsov, Yevgeniy A.     0210   14804  Anacostia Varga, Janos               0210   14804  Washingon</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p1/b" path="p1/b" number="1.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>The following personnel have been selected for appointment to the permanent grade of WO in the U.S. Marine Corps Reserve in the Active Reserve (AR) MOS listed below: Name                         SMOS Borambayev, Sanzhar          6004 Herrarte, Khristopher C.     0170 Sandoval, Christopher        0170 Sweeney, Kevin K.            0170 Trinidad, Richardo           0170 Whitehouse, David H.         0170</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p1/c" path="p1/c" number="1.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>AR WO selects are directed to contact CWO5 Pataki, Headquarters, Marine Corps (HQMC) (RAM-2) at [contact withheld] or commercial [contact withheld].  Individual guidance for each Marine will be provided to coordinate his/her orders to MOS schools and permanent duty assignments.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Selectees who desire to decline appointment in the primary MOS or billet vacancy in which selected shall submit a letter of declination via their chain of command to the Commanding General (CG)  Marine Corps Recruiting Command (ON-E) (CG, MCRC).</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Per paragraph 8 of reference (a), selectees may defer to the next available WOBC if they are not medically qualified by BUMED or due to a personal hardship. Selectees should submit a Request for Deferment through their chain of command to CG MCRC.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Commanding officers shall ensure the selectee meets the appointment requirements set forth in reference (a).  If a selectee fails to meet those requirements, the commanding officer will initiate an appointment delay in accordance with reference (a) and the appointment will not be effected.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Appointment</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Selectees are slated to be appointed on 1 February 2023 at a ceremony aboard Marine Corps Base, Quantico.  Selectees will report to the Commanding General, Marine Corps Combat Development Command (MCCDC), to attend the WOBC, which is scheduled to convene on 17 January 2023.  Selectees must report no earlier than 0600 on 17 January 2023 and no later than 1200 on 17 January 2023.  The report date to the WOBC was modified in order to effectively screen selectees and ensure they meet appointment and training standards per reference (a).  Failure to do so may result in revocation of appointment.  The mission of the WOBC is to train and educate newly appointed or commissioned warrant officers in the high standards of professional knowledge, esprit-de-corps, and leadership required to transition from enlisted Marines to officers with particular emphasis on the duties, responsibilities and warfighting skills required of a provisional rifle platoon commander.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>SMCR selectees must affiliate with the units, for which selected, immediately following successful completion of the WOBC and any follow-on MOS schools.  WOs not required to attend MOS schools, or whose MOS schools begin 30 days or more after the WOBC graduation date, will execute an inter-unit transfer immediately upon return to their original units.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Reference (c) requires SMCR selectees who have served less than 12 months on a contract and received an incentive bonus to contact their unit administration office to establish a preferred method of reimbursement of the bonus received.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Obligation</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p6/a" path="p6/a" number="6.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>SMCR selectees are required to affiliate with the designated SMCR units, and serve in the billet for which selected for a minimum period of 3 years.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p6/b" path="p6/b" number="6.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Per reference (a), Commanding Officers must ensure that SMCR selectees sign the following page 11 entry prior to appointment:  "I understand that appointment as a permanent Reserve Warrant Officer is for an indefinite term, and that SECNAV may terminate the appointment of any Warrant Officer who fails to complete the Warrant Officer Basic Course, any required MOS follow-on schools within 18 months of appointment, or the 3-year SMCR unit obligation.  A Marine whose appointment is terminated may, upon request, and at the discretion of the SECNAV, enlist in a grade not lower than that held immediately prior to appointment."</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p6/c" path="p6/c" number="6.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Both SMCR and AR WOs are in a probationary status for 5 years from the date of appointment.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Funding and Orders for Training</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p7/a" path="p7/a" number="7.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>RA will schedule all SMCR selectees for WOBC and primary MOS school.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p7/b" path="p7/b" number="7.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Units shall submit orders for the SMCR selects via the Marine Resource Order Writing Service (MROWS) utilizing RA (HQ/WO) funding no later than 1 January 2023. Appropriation data and MROWS procedures are available at www.manpower.usmc.mil under Reserve Marine/Reserve Continuation and Transition Branch/FY23 Enlisted to Warrant Officer (Reserve) Selection Order Writing Instructions.  Contact RA at</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p7/b/703" path="p7/b/703" number="7.b.(703)" label="(703)" depth="2" verification="UNVERIFIED">
+          <text>[contact withheld] with any questions.  It is imperative that Marines arrive with fully funded orders to avoid a delay in the 30-day partial per diem settlements. Historically, delays in MROWS orders modifications from enlisted funding to officer funding have negatively impacted timely partial settlements.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p7/c" path="p7/c" number="7.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Attendance of WOBC and primary MOS school training take precedence over unit annual training, operational commitments and mobilization.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p7/d" path="p7/d" number="7.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>References (d) and (e) define the differences in Duty Under Instructions, Temporary Additional Duty, Temporary Duty Under Instructions, and Reassignment Orders in relation to per diem, and other allowances.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p7/e" path="p7/e" number="7.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Per reference (f), Reserve Marines attending WOBC under MROWS orders will receive BAH with or without dependents at their primary residence locality rate.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>Administration</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p8/a" path="p8/a" number="8.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>WOBC seats are limited.  Marines selected for WO may be deferred to future WOBC classes as needed.  Individuals deferred will be notified by Headquarters Marine Corps.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p8/b" path="p8/b" number="8.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Check-in procedures and initial information for WOBC will be posted on the TBS website and Moodle upon release of this message.  Additionally, check-in information and documents will be posted on the WOBC 1-23 MarineNet Moodle Page upon release of this message.  TBS will add all selected Marines to the MarineNet Moodle Page approximately one week after the release of this message. The TBS point of contact is The Student Liaison Office and can be reached at [contact withheld].  The website address is www.trngcmd.marines.mil/units/northeast/the-basic-school/.  Students should direct their attention to the right hand side of the page and find "Welcome Aboard" under the WOBC drop down menu.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p8/c" path="p8/c" number="8.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Selectees must report to TBS with original orders, Defense Travel System travel authorizations, and complete health and dental records.  A DD Form 214 will also be issued at TBS if the selectee is released from active duty upon graduation, otherwise, the follow-on MOS school will issue and prepare a final settlement.  The Appointment Acceptance Record (NAVMC 763), the Officer Qualification Record, and Identification Card will be completed/issued at WOBC. Selectees should report in the MARPAT Digital Woodland Camouflage uniform. Selectees should either purchase their officer Service Alpha uniform or be prepared to have their uniforms tailored prior to the appointment ceremony. Specific information for uniform requirements can be found on the TBS website.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p8/d" path="p8/d" number="8.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>SMCR selectees may contact Force Recruiting, Marine Forces Reserve at [contact withheld] or commercial [contact withheld] for questions regarding billet assignments.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p8/e" path="p8/e" number="8.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>SMCR selectees are eligible for the FY23 SMCR Warrant Officer Accession Bonus. All requests must be submitted in accordance with MARADMIN 346/22.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p8/f" path="p8/f" number="8.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>All required training must be completed within 18 months of appointment in order to considered and selected for promotion to Chief Warrant 2.  If all training is not completed within 18 months of appointment, the appointment will be terminated.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p9" path="p9" number="9." label="9." depth="0" verification="UNVERIFIED">
+      <text>Training Requirement</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p9/a" path="p9/a" number="9.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Selectees are encouraged to arrive at WOBC in peak physical condition due to the rigors of the course.  Selectees must achieve a first class physical fitness test (PFT) prior to appointment as outlined in reference (g), and maintain Marine Corps Body Composition and Military Appearance per reference (h).  Marines who are not within the standards, or do not score a first-class PFT after two attempts, will be dropped from the course during the first week of training.  If a Marine is dropped from training, CO TBS has the discretion to delay the appointment or allow the Marine to defer to the next WOBC.  There will be extended field time at the WOBC.  Selectees are encouraged to practice running the obstacle course with emphasis on rope climbing. Hiking under load and running in boots and utilities are also recommended.  Passing a 10-mile hike under prescribed load, a double standard Marine Corps Obstacle Course, and the TBS Endurance Course are required to graduate from WOBC.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p9/b" path="p9/b" number="9.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Selectees with less than 13 years of service are encouraged to be current rifle and pistol qualified prior to attending WOBC 1-23 as the number of range seats available at first duty station as an officer will be limited, if available at all.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p9/c" path="p9/c" number="9.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Selectees are required to read and review the following publications prior to check in:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p9/c/1" path="p9/c/1" number="9.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>MCDP 1</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p9/c/2" path="p9/c/2" number="9.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>MCDP 1-3</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p9/c/3" path="p9/c/3" number="9.c.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>MCDP 6</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p9/c/4" path="p9/c/4" number="9.c.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>MCWP 6-10</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p9/d" path="p9/d" number="9.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Once selectees have been in-processed, there will be an appointment ceremony on 1 February 2023.  Further details will be made available on the TBS website and through follow-on correspondence with India Company staff.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p10" path="p10" number="10." label="10." depth="0" verification="UNVERIFIED">
+      <text>Physical Qualifications</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p10/a" path="p10/a" number="10.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Selectees who do not meet the qualifications established in references (g),</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p10/a/h" path="p10/a/h" number="10.a.(h)" label="(h)" depth="2" verification="UNVERIFIED">
+          <text>and (i) will not be appointed.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p10/b" path="p10/b" number="10.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>These individuals will remain on the list of Marines approved for appointment to the grade of WO and once medically qualified, will have an appointment date of the first day of the month prior to the month in which the members attend WOBC.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p10/c" path="p10/c" number="10.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Immediately upon release of this message, all selectees are required to provide (via email) a letter on command letterhead with their point of contact information, DSN, commercial telephone numbers, and electronic mail addresses to the point of contact at MCRC, Mr. Brent Reidenbach, at [contact withheld].</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p10/d" path="p10/d" number="10.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Per reference (i), prior to appointment, selectees must be determined physically qualified for appointment by the Bureau Of Medicine and Surgery and must pass with a first class PFT as outlined in reference (g).  Failure to comply with requirements may delay receipt of the appointment documents at TBS, and may subsequently result in a forfeiture of the date of rank.  Commanding officers of deployed Marines can contact MCRC, ON-E to establish arrangements to complete this task, if needed.  If not done already, selectees must submit a current commissioning physical examination, to include a Report of Medical Examination (DD Form 2808), A Report of Medical History (DD Form 2807-1), and an Annual Certification if applicable.  The date of the physical exam must not be older than 1 February 2021.  If the physical examination was completed prior to 1 February 2022, then copies of the current and previous years preventative health assessment (PHA) is required in addition to the physical examination.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p10/e" path="p10/e" number="10.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Commanding officers must closely review a selectees medical and dental records to ensure accuracy and completeness prior to their arrival at TBS.  Selectees should arrive at TBS fully medically ready to train at the time of check in with no outstanding medical issues that would preclude training.  Pay particular attention to the following items:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p10/e/1" path="p10/e/1" number="10.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Marks and scars must be listed.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p10/e/2" path="p10/e/2" number="10.e.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Selectees must be dental class type 1 or 2, documented on the DD Form 2808 in block 43, and have block 83.a signed by a dentist or submit a dental examination as a separate enclosure.  Dental records should be updated to reflect the most current dental examination.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p10/e/3" path="p10/e/3" number="10.e.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>HIV results must be within 24 months of check-in to include date tested and roster number.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p10/e/4" path="p10/e/4" number="10.e.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Distance vision must be documented in block 61 of the DD Form 2808.  If vision does not correct to 20/20, a current manifest refraction and ophthalmology evaluation is required.  WO selectees with a history of vision correction surgery must have all pre-operative and post-operative reports included with the medical documents.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p10/e/5" path="p10/e/5" number="10.e.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>The results of an updated audiogram must be included in DD Form 2808 block</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p71/a" path="p71/a" number="71.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>or as a separate enclosure.  If any result is outside the normal range, per reference (I), section 38, submit an Ear, Nose, Throat (ENT) or Audiology consultation/evaluation and interpretation.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p71/a/6" path="p71/a/6" number="71.a.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+        <text>Female selectees, over the age of 21, must have a current Papanicolaou (PAP) test within the past 36 months.  The pathology report from the most recent test must be submitted.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p71/a/7" path="p71/a/7" number="71.a.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+        <text>Ensure all "yes" answers on DD Form 2807-1 are explained by the physician in block 29. All pertinent medical clearance documents for each condition disclosed in the DD Form 2807 should be provided.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p71/a/8" path="p71/a/8" number="71.a.(8)" label="(8)" depth="2" verification="UNVERIFIED">
+        <text>Ensure all answers on DD Form 2808 blocks 17-42 (excluding block 41 for males) are marked normal or abnormal.  "NE" is not an acceptable answer.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p11" path="p11" number="11." label="11." depth="0" verification="UNVERIFIED">
+      <text>Questions from medical personnel concerning the medical requirements may be addressed to HMC Tabios at [contact withheld] or HM1 Adkins at [contact withheld] or by phone at [contact withheld] or commercial [contact withheld].  MCRC, ON-E is the approval authority for medical deferment for selectees who have not yet been appointed.  Request for medical deferments with supporting documentation must be routed via their chain of commands, to include a general officer level endorsement, and forwarded to MCRC, ON-E, for consideration. All requests for deferment must be received by MCRC before the projected date of appointment.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p12" path="p12" number="12." label="12." depth="0" verification="UNVERIFIED">
+      <text>Selectees who fail to comply with the aforementioned requirements will delay receipt of their appointment documents at TBS, and will subsequently result in a forfeiture of their date of rank.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p13" path="p13" number="13." label="13." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN is applicable to the Marine Corps Reserve.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p14" path="p14" number="14." label="14." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN will be cancelled on 31 March 2023.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2022/409/p15" path="p15" number="15." label="15." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by Major General W. J. Bowers, Commanding General, Marine Corps Recruiting Command.//</text>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>6 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2023/051" canonicalId="MARADMIN-2023-051" docType="MARADMIN" nativeNumber="051/23" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2023-01-27" schemaVersion="2.0">
+  <meta>
+    <title>EXPANSION OF THE MARINE CORPS MILITARY PARENTAL LEAVE PROGRAM</title>
+    <subject>EXPANSION OF THE MARINE CORPS MILITARY PARENTAL LEAVE PROGRAM</subject>
+    <originator>CMC WASHINGTON DC MRA MP</originator>
+    <signedDate>2023-01-27</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2023\MARADMIN_051_23_EXPANSION_OF_THE_MARINE_CORPS_MILITARY_PARENTAL_LEAVE_PROGRA.pdf" sourceHash="376fded5142ec0ae1c5900cda46286ec16ebac0dbe734209e40863ee8ffc0e13" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="MCO-5000.12F-CH1" targetIdentifier="/us/dod/don/usmc/mco/5000_12f/ch1" basis="cited" tier="T3" held="drift" storeHolds="MCO-5000.12F,MCO-5000.12F-CH2" from="narr:REF C"/>
+    <ref rel="references" target="MCO-1050.3J" targetIdentifier="/us/dod/don/usmc/mco/1050_3j" basis="cited" tier="T3" held="held" from="narr:REF D"/>
+    <ref rel="references" target="MARADMIN-2022-523" targetIdentifier="/us/dod/don/usmc/maradmin/2022/523" basis="cited" tier="T5" held="absent" from="narr:REF E"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2023/051/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2023/051/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN announces the expansion of the Military Parental Leave Program (MPLP) as directed by OSD and DON in references (a) and (b) and provides implementing guidance until these changes are incorporated into references (c) and (d).</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN modifies previous policy concerning parental leave and supersedes previous MARADMINs concerning parental leave.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Summary of Policy Changes</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Expands authorized leave to 12 weeks for parents following child birth, a qualifying adoption of a minor child, or the placement of a minor child for adoption or long-term foster care.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Primary and secondary caregiver designations are no longer applicable as the parental leave period is the same for all Marines.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Maternity Convalescent Leave, standardized at six weeks from the previous policy, is removed with this change.  Marines who give birth may still be eligible for convalescent leave following a birth in accordance with this MARADMIN.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Effective immediately, commanders with leave approving authority shall grant parental leave in accordance with the parameters of this MARADMIN.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>The parental leave described in this MARADMIN applies to a Marine when a qualifying event occurred on or after 27 Dec 22 or a Marine who may be eligible to transition from the previous policy in accordance with paragraph 10 of this MARADMIN.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Definitions</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p6/a" path="p6/a" number="6.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Parental Leave.  A period of non-chargeable leave granted to a Marine following the birth of the Marineâ€™s child, adoption of a minor child by the Marine, or placement of a minor child with the Marine for adoption or long-term foster care in order to care for the child.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p6/b" path="p6/b" number="6.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Qualifying Birth.  Any live birth of a child to a Marine designated as a parent.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p6/c" path="p6/c" number="6.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Qualifying Adoption.  An adoption arranged by a â€œqualified adoption agencyâ€ as that term is defined in Section 1052 Title 10, United States Code.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p6/d" path="p6/d" number="6.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Placement for Adoption.  The action of placing a minor child with the prospective adoptive parents in which there is a contractual agreement between the prospective adoptive parents and the qualifying adoption agency occurring before the legal finalization of the adoption.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p6/e" path="p6/e" number="6.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Placement for Long-term Foster Care.  The action of placing a minor child in foster care in which there is an expectation and contractual agreement between the foster parents and the child placing agency that the child remain in the home of the foster parents for a minimum of 24 months.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p6/f" path="p6/f" number="6.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Qualifying Event.  Either a qualifying birth, qualifying adoption, placement for adoption, or placement for long-term foster care.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Parental Leave</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7/a" path="p7/a" number="7.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Parental Leave for Qualifying Birth.  Marines are authorized parental leave for the birth of their child and to care for the child.</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7/a/1" path="p7/a/1" number="7.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>For the birth parent, 12 weeks (84 days) of parental leave during the 1-year period beginning on the date of birth of the child is authorized following a period of convalescence from childbirth.</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7/a/1/a" path="p7/a/1/a" number="7.a.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Convalescent leave may be authorized for a diagnosed medical condition associated with the qualifying birth immediately following a birth event when specifically recommended, in writing, by the health care provider of the birth parent and subsequently approved by the commander.  Such leave will begin on the first full day after the birth of the child or the date of release of the Marine from the hospital or similar facility where the birth took place, whichever is later.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7/a/1/b" path="p7/a/1/b" number="7.a.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Commanders may grant convalescent leave only to the birth parent for recovery from a birth event, if such leave is specifically recommended in writing, by the health care provider of the birth parent.  Commanders are authorized to approve convalescent leave in excess of 30 days in this instance without prior coordination with the CMC (MMEA/MMOA, or RA, as applicable).</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7/a/2" path="p7/a/2" number="7.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>For the non-birth parent, 12 weeks of parental leave is authorized for a 1-year period beginning on the date of birth of the child.</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7/a/2/a" path="p7/a/2/a" number="7.a.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>If the child is born outside of marriage, the non-birth parentâ€™s parentage of the child must first be established.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7/a/2/b" path="p7/a/2/b" number="7.a.(2)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Proof of parentage includes designation as a parent, with consent, on the childâ€™s birth certificate, certificate of live birth, or other government issued document; acknowledgement, in writing, of an obligation to support the child, either by voluntary agreement or court order; or registration, or pending registration, in Defense Enrollment Eligibility Reporting System (DEERS).</text>
+          </provision>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7/b" path="p7/b" number="7.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Parental Leave for Qualifying Adoption or Placement for Adoption.  Marines, to include dual military couples, are authorized 12 weeks of parental leave, for each parent, during a 1-year period following the date of a placement for adoption of the minor child with the Marine or the date of the qualifying adoption.</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7/b/1" path="p7/b/1" number="7.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>If a Marine (or a dual military couple) uses a surrogate and they become the legal parent(s) of a newborn child, the event is treated the same as an adoption and the Marine(s) is authorized 12 weeks of parental leave.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7/b/2" path="p7/b/2" number="7.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>A Marine is not authorized an additional 12 weeks of parental leave when the placement of a minor child with the Marine for adoption is legally finalized as an adoption.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7/b/3" path="p7/b/3" number="7.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Example:  A child is placed with the prospective adoptive Marine, with a contractual agreement between the prospective Marine and the qualifying adoption agency, on 1 Jan 23.  The adoption is legally finalized on 1 Feb 23.  The Marine has until 31 Dec 23 to execute the 84 days of parental leave.  The Marine is not authorized an additional 84 days when the adoption is finalized on 1 Feb 23.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7/c" path="p7/c" number="7.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Parental Leave for Placement for Long-term Foster Care.  Marines, to include dual military couples, are authorized 12 weeks of parental leave for each parent during the 1-year period after the date of placement of a minor child with the Marine for long-term foster care of the placed child.  A Marine is not authorized an additional 12 weeks of parental leave when the placement of a minor child with the Marine for long-term foster care is:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7/c/1" path="p7/c/1" number="7.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Converted to a placement for adoption with the Marine; or</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7/c/2" path="p7/c/2" number="7.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Finalized as an adoption by the Marine.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7/d" path="p7/d" number="7.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Commanders may consider a Marineâ€™s self-certification of a qualifying event to approve a request for parental leave.  However, in the cases of birth or adoption, a Marine must add their dependent child in the Marine Corps Total Force System (MCTFS) within 30 days.  If the Marine fails to add their dependent in MCTFS, parental leave executed will be converted and charged as annual leave to the Marineâ€™s annual leave account.  The Marine should also add their dependent child in DEERS within 30 days.  For long-term foster care, the contractual agreement must be provided within 30 days and retained by the command to prevent parental leave from being charged as annual leave.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p7/e" path="p7/e" number="7.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Marines are expected to notify their command as soon as practicable of a qualifying event to ensure the health and welfare of the parents and child. Additionally, this notification enables commanders to facilitate leave plans and unit mission accomplishment.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>Amplifying Instructions</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/a" path="p8/a" number="8.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Commanderâ€™s Authority</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/a/1" path="p8/a/1" number="8.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Commanders will make every effort to approve requests and may authorize parental leave in one continuous period or in increments consistent with operational requirements.  Parental leave may be approved in conjunction with annual leave and other types of special leave and liberty, and annual leave may be approved in between increments of parental leave.</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/a/1/a" path="p8/a/1/a" number="8.a.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>In instances where the commander has carefully evaluated the operational requirements of the unit, and incremental periods of leave for the Marine are not feasible or have an immediate detriment to the unitâ€™s mission accomplishment over the 1-year period, commanders shall approve the Marine to execute the total authorized leave in one continuous increment.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/a/1/b" path="p8/a/1/b" number="8.a.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Parental leave used in more than one increment must be in periods of at least 7 days for a maximum of 12 increments.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/a/1/c" path="p8/a/1/c" number="8.a.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Parental leave requests must be submitted within the timelines established by the commandâ€™s normal leave request procedures and policies.  If a commander disapproves the request, the decision may be appealed through established procedures.</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/a/2" path="p8/a/2" number="8.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Deployed Marines must normally defer parental leave until their deployment is complete, which may extend their 1-year period if criteria in paragraph 8a(3) is met and approved by the commander.  However, in exceptional and compelling circumstances, a commander may approve parental leave while deployed if the commander determines that the unitâ€™s readiness will not be adversely impacted.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/a/3" path="p8/a/3" number="8.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>For a commander to approve a Marine to take parental leave after the 1-year period if they would lose unused parental leave at the end of the 1-year period, one or more of the following conditions must be met:</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/a/3/a" path="p8/a/3/a" number="8.a.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>A Marineâ€™s participation in a deployment and/or military exercise for a consecutive period of 90 or more consecutive days within the 1-year period concerned.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/a/3/b" path="p8/a/3/b" number="8.a.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>A Marineâ€™s attendance at an in-residence professional military education course for a consecutive period of 90 or more days within the 1-year period concerned.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/a/3/c" path="p8/a/3/c" number="8.a.(3)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>A Marineâ€™s execution of permanent change-of-station orders with temporary duty en route to a new permanent duty station of 90 or more consecutive days that would interfere with the taking of parental leave within the 1-year period concerned.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/a/3/d" path="p8/a/3/d" number="8.a.(3)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>A Marine conducted routine temporary duty away from the permanent duty station for a consecutive period of 90 or more days within the 1-year period.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/a/3/e" path="p8/a/3/e" number="8.a.(3)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>A Marine serving in a billet identified as critical for mission accomplishment by the commander for a consecutive period of 90 or more days within the 1-year period concerned.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/a/3/f" path="p8/a/3/f" number="8.a.(3)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>A Marineâ€™s hospitalization or placement in an in-patient status for 90 or more days within the 1-year period concerned.</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/a/4" path="p8/a/4" number="8.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>For such qualifying circumstances outlined in paragraph 8a(3), the 1-year period may be extended on a day-for-day basis based on the period of such circumstance.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/b" path="p8/b" number="8.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Multiple Qualifying Events</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/b/1" path="p8/b/1" number="8.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Multiple qualifying events occurring within the same 72-hour period are treated as a single event for the allocation of parental leave.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/b/2" path="p8/b/2" number="8.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Multiple qualifying events that do not occur within the same 72-hour period are treated as separate events for the allocation of parental leave.</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/b/2/a" path="p8/b/2/a" number="8.b.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>In separate qualifying events, any new parental leave must run concurrently with any pre-existing parental leave that has not expired or been used as of the date of the new event.  For example, a non-birth parent Marine has a child born on 1 Jan 23.  From 1 Jan 23 until 11 Mar 23, the Marine was authorized and took 70 days of parental leave and has 14 days of unused parental leave.  On 12 Mar 23, the Marine has a qualifying adoption of a child.  The Marine is authorized an additional 70 days for the adoption to be added to the 14 days remaining from the birth of the child for a total of 84 days.  Any of these days that the Marine does not use by 11 Mar 24 (1-year from the second event) are forfeited.</text>
+          </provision>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/c" path="p8/c" number="8.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Un-used Parental Leave</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/c/1" path="p8/c/1" number="8.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Any amount of parental leave remaining un-used at the time of separation from active service is forfeited.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/c/2" path="p8/c/2" number="8.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Parental leave may not be transferred between members to create a shared benefit.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/c/3" path="p8/c/3" number="8.c.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Parental leave that is not executed before the expiration of 1-year from the date of a birth of the child, adoption of a minor child by the Marine, or placement of a minor child with the Marine for adoption or long-term foster care is forfeited, unless paragraph 8a(3) of this MARADMIN applies.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/c/4" path="p8/c/4" number="8.c.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Parental leave is authorized for Reserve Component (RC) Marines who meet the criteria outlined in paragraph 12 of this MARADMIN.  For pregnant RC Marines, the provisions of enclosure (1), chapter 2, paragraph 16 of reference (c) still apply.  Any parental leave not taken by the time of separation from active service is forfeited.  Additionally, an RC Marine on Active Duty Operational Support (ADOS) orders will forfeit any unused parental leave on the end date of their set of orders that were current on the day of the qualifying event.</text>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/c/4/1" path="p8/c/4/1" number="8.c.(4)(1)" label="(1)" depth="3" verification="UNVERIFIED">
+            <text>The period of active service of a RC Marine may not be extended solely to permit them to take leave authorized by this MARADMIN.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/c/4/2" path="p8/c/4/2" number="8.c.(4)(2)" label="(2)" depth="3" verification="UNVERIFIED">
+            <text>RC Marines will not be recalled to active service to use any category of leave, either singly or in combination, authorized by this MARADMIN.</text>
+          </provision>
+          <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p8/c/4/3" path="p8/c/4/3" number="8.c.(4)(3)" label="(3)" depth="3" verification="UNVERIFIED">
+            <text>RC Marines on active duty who are released from active duty, or Active Component (AC) Marines who transition to the Selected Marine Corps Reserve or Individual Mobilization Augmentee Program who have unused parental leave may be eligible for Reserve Component Maternity Leave in accordance with reference (e).</text>
+          </provision>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p9" path="p9" number="9." label="9." depth="0" verification="UNVERIFIED">
+      <text>Limitations</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p9/a" path="p9/a" number="9.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Surrogacy or Child Placed for Adoption.  A Marine who either places their child up for adoption or has their parental rights terminated by consent or court order is not eligible for parental leave.  However, the Marine may be authorized convalescent leave as recommended by a health care provider in accordance with medical practice standards.  A Marine whose spouse meets the conditions above is not authorized parental leave.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p9/b" path="p9/b" number="9.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Stillbirth or Miscarriage.  In cases when a Marine experiences a stillbirth or miscarriage, a health care provider may recommend convalescent leave, approved by the commander, in accordance with medical practice standards.  In such cases, neither the Marine nor their spouse (if a Marine) are eligible for parental leave.  However, either may be authorized emergency leave.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p9/c" path="p9/c" number="9.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Leave Following Death of a Child.  Parental leave eligibility, or the parental leave, if started, terminates upon the death of the child, adopted child, or child placed for adoption or long-term foster care.  However, in such cases, Marines may be transitioned to other types of leave such as convalescent leave, if recommend by a DoD health care provider; emergency leave; or other types of leave, as appropriate.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p10" path="p10" number="10." label="10." depth="0" verification="UNVERIFIED">
+      <text>Transitioning of Primary Caregiver Leave (PCL) and Secondary Caregiver Leave (SCL) to Parental Leave</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p10/a" path="p10/a" number="10.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Parental leave authorized by this MARADMIN also applies to Marines who have unused PCL, SCL or Maternity Convalescent Leave (MCL) as of 27 Dec 22, if such unused leave was authorized by reference (c).  Marines must have been in the execution or had not started their PCL, SCL, or MCL as of 27 Dec 22 to be eligible for this transition. All provisions in this MARADMIN apply to such Marines.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p10/b" path="p10/b" number="10.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>The total of any used PCL or SCL of a Marine when combined with the parental leave authorized by this MARADMIN must not exceed a total of 12 weeks.  A birth parent who is in a maternity convalescent status as of 27 Dec 22, is authorized to continue in such a status until the birth parent completes the approved period of Maternity Convalescent Leave (MCL) and is then authorized 12 weeks of parental leave.</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p10/b/1" path="p10/b/1" number="10.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Example 1:  A Marine who is a secondary caregiver executed their 3 weeks of SCL from 10 Dec 22 to 31 Dec 22.  Since the Marine was in a SCL status on 27 Dec 22 and has executed 3 weeks in connection to a qualifying event, the Marine is authorized an additional 9 weeks of parental leave.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p10/b/2" path="p10/b/2" number="10.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Example 2:  A Marine who is a secondary caregiver only executed 14 of 21 days of secondary caregiver leave from 1 Oct 22 to 14 Oct 22.  Since PCL and SCL must be taken in one increment, in accordance with previous policy, the Marine is not eligible for the additional parental leave authorized by this MARADMIN.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p10/b/3" path="p10/b/3" number="10.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Example 3:  A Marine was approved for 6 weeks of MCL on 16 Dec 22.  The Marine is authorized to complete their approved convalescent leave and then is authorized an additional 12 weeks of Parental leave.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p10/c" path="p10/c" number="10.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Such leave that remains unused within 1-year of the qualifying event is forfeited unless paragraph 8a(2) or 8a(3) of this MARADMIN applies.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p11" path="p11" number="11." label="11." depth="0" verification="UNVERIFIED">
+      <text>Temporary Administrative Procedures.  Until a permanent parental leave code that tracks the number of days utilized in Marine Online (MOL) is implemented, the following temporary administrative procedures will be utilized:</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p11/a" path="p11/a" number="11.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Marines will submit all parental leave requests under â€œPTAD, Parental Leaveâ€ in MOL.  Any Marine who is currently on â€œParental Leave, Primary Caregiverâ€ or â€œParental Leave, Secondary Caregiverâ€, must have their leave transitioned to â€œPTAD, Parental Leaveâ€ by 1 Mar 23.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p11/b" path="p11/b" number="11.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Marines who give birth will now utilize â€œLeave, Convalescent Leaveâ€ following the birth of their child in accordance with paragraph 7a.  Any Marine who is currently on â€œLeave, Maternityâ€, must have any remaining authorized MCL transitioned to â€œLeave, Convalescent Leaveâ€ by 1 Mar 23.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p11/c" path="p11/c" number="11.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Commands are responsible for locally tracking and maintaining records of a Marineâ€™s eligibility and execution of parental leave in accordance with this MARADMIN.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p11/d" path="p11/d" number="11.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Commands and Marines are responsible for ensuring the Marine authorized this leave does not use over 84 days of parental leave, except in circumstance identified in paragraph 8b(2).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p11/e" path="p11/e" number="11.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Commands are responsible for ensuring the criteria in paragraph 7d are met during the interim to effect the charge of annual leave as may be required until Marine Corps personnel systems are updated.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p12" path="p12" number="12." label="12." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN is applicable to all AC Marines, and all RC Marines who perform active duty for more than 12 consecutive months.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2023/051/p13" path="p13" number="13." label="13." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by Lieutenant General James F. Glynn, Deputy Commandant for Manpower and Reserve Affairs.//</text>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>2 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

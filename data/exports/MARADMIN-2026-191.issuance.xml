@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2026/191" canonicalId="MARADMIN-2026-191" docType="MARADMIN" nativeNumber="191/26" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2026-04-23" schemaVersion="2.0">
+  <meta>
+    <title>CHANGES TO RESERVE COMPONENT MATERNITY LEAVE (RCML) AND RESERVE</title>
+    <subject>CHANGES TO RESERVE COMPONENT MATERNITY LEAVE (RCML) AND RESERVE</subject>
+    <originator>WASHINGTON DC MRA MP</originator>
+    <signedDate>2026-04-23</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2026\MARADMIN_191_26_CHANGES_TO_RESERVE_COMPONENT_MATERNITY_LEAVE_RCML_AND_RESERV.pdf" sourceHash="385b5ff207e1a4f4512924548ee79271360764f8b20286bbb4530bacb96ccad2" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="MCO-1050.3J" targetIdentifier="/us/dod/don/usmc/mco/1050_3j" basis="cited" tier="T3" held="held" from="narr:REF A"/>
+    <ref rel="references" target="MCO-5000.12F-CH1" targetIdentifier="/us/dod/don/usmc/mco/5000_12f/ch1" basis="cited" tier="T3" held="drift" storeHolds="MCO-5000.12F,MCO-5000.12F-CH2" from="narr:REF D"/>
+    <ref rel="references" target="MARADMIN-2023-051" targetIdentifier="/us/dod/don/usmc/maradmin/2023/051" basis="cited" tier="T5" held="held" from="narr:REF E"/>
+    <ref rel="references" target="MARADMIN-2023-129" targetIdentifier="/us/dod/don/usmc/maradmin/2023/129" basis="cited" tier="T5" held="held" from="narr:REF F"/>
+    <ref rel="references" target="MARADMIN-2023-111" targetIdentifier="/us/dod/don/usmc/maradmin/2023/111" basis="cited" tier="T5" held="absent" from="narr:REF G"/>
+    <ref rel="references" target="SECNAVINST-1000.10B" targetIdentifier="/us/dod/don/secnavinst/1000_10b" basis="cited" tier="T2" held="absent" from="narr:REF H"/>
+    <ref rel="references" target="MCO-10001R.1L-CH1" targetIdentifier="/us/dod/don/usmc/mco/10001r_1l/ch1" basis="cited" tier="T3" held="absent" from="narr:REF I"/>
+    <ref rel="references" target="MCO-3040.4" targetIdentifier="/us/dod/don/usmc/mco/3040_4" basis="cited" tier="T3" held="absent" from="narr:REF J"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2026/191/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2026/191/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN announces forthcoming changes to the Regulations for Leave, Liberty, and Administrative Absence, reference (a), and provides interim implementation guidance. These changes address Reserve Component Maternity Leave (RCML) and Reserve Component Parental Leave (RCPL).</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Background.  The Marine Corps has completed a comprehensive review of its leave and parenthood policies to align with the FY24 National Defense Authorization Act, reference (b), and Department of War initiatives, reference (c).  To simplify and centralize these benefits, this MARADMIN officially transfers all parental leave entitlements from the Parenthood and Pregnancy Order, reference (d), and consolidates them into the Regulations for Leave, Liberty, and Administrative Absence, reference (a).  This consolidation establishes reference (a) as the single, authoritative source for all Marine Corps leave, liberty, and administrative absence policies.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>This MARADMIN is effective immediately.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>This MARADMIN supersedes references (e) and (f).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Retroactive Application.  Reserve Marines who experienced a qualifying event between 1 October 2024 and 7 August 2025 are retroactively eligible for RCPL.  These Marines must use this entitlement before 6 August 2026 in accordance with reference (k).</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Entitlement.  Eligible Reserve Marines, regardless of sex or their role as a birth parent, receive 12 paid Inactive Duty Training (IDT) periods as RCPL following a qualifying event.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>One RCPL period is equivalent to one standard four-hour IDT. A maximum of two RCPL periods may be used per day.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>This entire benefit must be used within one year of the qualifying event.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Eligibility.  To be eligible for RCPL, a Marine must meet all of the following requirements:</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Be a member of the Selected Reserve, either Selected Marine Corps Reserve (SMCR) or Individual Mobilization Augmentee (IMA) Program, in good standing.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Experience a qualifying event (birth, adoption, or the placement of a minor child for adoption or long-term foster care).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Provide command-required documentation of the qualifying event, as outlined in reference (g).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Ineligibility.  The following populations are not eligible for RCPL:</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p6/a" path="p6/a" number="6.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Marines in a retired status or in the Fleet Marine Corps Reserve.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p6/b" path="p6/b" number="6.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Marines in the Standby Reserve (both Active and Inactive Status Lists).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p6/c" path="p6/c" number="6.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Individual Ready Reserve (IRR) Marines.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p6/d" path="p6/d" number="6.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Any Reserve Marine who is otherwise determined to be an unsatisfactory participant or is not entitled to receive inactive duty pay.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Rules for Use.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p7/a" path="p7/a" number="7.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>RCPL periods count toward the 48 paid IDTs authorized per fiscal year and contribute to a satisfactory anniversary year. Use of RCPL will not cause a Marine to exceed 48 total paid IDTs in a fiscal year.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p7/b" path="p7/b" number="7.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>RCPL may be taken in segments, with a minimum of two periods (one full drill day) per segment.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p7/c" path="p7/c" number="7.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>RCPL cannot be used for rescheduled or excused IDT periods.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p7/d" path="p7/d" number="7.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>RCPL is a non-transferable benefit and cannot be shared.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>Extension of the One-Year Usage Period.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p8/a" path="p8/a" number="8.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Approval Authority.  The first O-5 commander with Special Court-Martial Convening Authority in the Marineâ€™s administrative chain of command is the approval authority for all RCPL extension requests.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p8/b" path="p8/b" number="8.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Qualifying Circumstances.  An extension to the one-year usage period may be granted if the Marine served 90 or more consecutive days in any of the following capacities:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p8/b/1" path="p8/b/1" number="8.b.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>On active duty orders.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p8/b/2" path="p8/b/2" number="8.b.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>In-residence at a Professional Military Education (PME) course.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p8/b/3" path="p8/b/3" number="8.b.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>Hospitalized or receiving in-patient care.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p8/b/9" path="p8/b/9" number="8.b.9." label="9." depth="2" verification="UNVERIFIED">
+          <text>Multiple Qualifying Events.</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p9/a" path="p9/a" number="9.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>Separate Events.  If a Marine experiences a new qualifying event more than 72 hours after a previous one, they will receive a new 12-period RCPL allocation.  Upon receiving the new allocation, the Marine forfeits any unused RCPL from the original event.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p9/a/1" path="p9/a/1" number="9.a.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Example 1: A Marine has a birth and uses 8 of their 12 RCPL periods.  Sixty days later, the Marine adopts a child. The Marine receives a new 12-period allocation for the adoption and forfeits the remaining 4 periods from the birth.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p9/a/2" path="p9/a/2" number="9.a.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Example 2: A Marine has a birth and uses all 12 RCPL periods. Two months later, the Marine adopts a child.  They receive a new, full 12-period allocation for the adoption.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p9/a/3" path="p9/a/3" number="9.a.3." label="3." depth="2" verification="UNVERIFIED">
+        <text>Example 3: A Marine has a birth but uses no RCPL periods. Three months later, the Marine adopts a child.  They receive a new 12-period allocation for the adoption and forfeit all 12 periods from the birth.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p9/b" path="p9/b" number="9.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>Single Event.  Qualifying events that occur within 72 hours of each other are considered a single event, entitling the Marine to one 12-period RCPL allocation.  For example, a Marine who adopts two children in separate proceedings over a single weekend receives only one 12-period allocation.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p10" path="p10" number="10." label="10." depth="0" verification="UNVERIFIED">
+      <text>Impact of Active Duty Service on RCPL.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p10/a" path="p10/a" number="10.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Deferment of Existing RCPL.  A Reserve Marine with unused RCPL who goes on Active-Duty Operational Support (ADOS) orders will defer the use of any remaining RCPL until the conclusion of their active duty period.  The one-year usage period will be extended by the number of months the Marine served on ADOS.</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p10/a/1" path="p10/a/1" number="10.a.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Example: A Marine with 8 unused RCPL periods goes on ADOS orders for 6 months.  Use of RCPL is deferred during the ADOS period. Upon completion, the Marineâ€™s one-year usage window is extended by 6 months.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p10/b" path="p10/b" number="10.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Qualifying Event During Active Duty.  If a Reserve Marine on ADOS orders for 30 or more consecutive days experiences a new qualifying event, they are not eligible to use RCPL while on active duty.  Instead, their one-year RCPL usage period will begin on the first day following the conclusion of their ADOS orders.</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p10/b/1" path="p10/b/1" number="10.b.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Example: A Marine on 12-month ADOS orders has a qualifying birth three months into their tour.  The Marine must wait until their ADOS period ends.  The one-year period to use their 12 RCPL periods begins the day after their active duty service concludes.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p10/c" path="p10/c" number="10.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Documentation.  The command that issued the ADOS orders is responsible for providing the Marineâ€™s parent Reserve unit with documentation verifying the period of active service to support any extension.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p10/d" path="p10/d" number="10.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>A Reserve Marine who is performing active duty under orders issued for a cumulative period greater than 12 consecutive months (&gt;365 days) and who meet the criteria in accordance with reference (e), may be eligible for Active-Duty Parental Leave (ADPL).</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p11" path="p11" number="11." label="11." depth="0" verification="UNVERIFIED">
+      <text>Conversion of ADPL to RCPL.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p11/a" path="p11/a" number="11.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Eligibility.  A Marine separating from the Active Component or Active Reserve Program with unused ADPL may convert it to RCPL if they join the Selected Reserve and the conversion occurs within 12 months of their separation date.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p11/b" path="p11/b" number="11.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Usage Deadline.  All converted RCPL periods must be used within one year of the original qualifying event.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p11/c" path="p11/c" number="11.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Conversion Rate.  The conversion rate is one RCPL period for every seven full days of unused ADPL.  Partial weeks are not converted.  The number of RCPL periods authorized upon conversion cannot exceed the number of IDT periods the Marine is reasonably expected to perform within the one-year usage window or their remaining service obligation, whichever is shorter.</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p11/c/1" path="p11/c/1" number="11.c.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Example: A Marine separates with 58 days of unused ADPL. This equals eight full weeks.  The Marine is authorized eight RCPL periods upon joining the Selected Reserve, provided they have at least eight IDTs scheduled within their usage window and remaining service obligation.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p11/c/12" path="p11/c/12" number="11.c.12." label="12." depth="2" verification="UNVERIFIED">
+          <text>Reserve Component Maternity Leave (RCML).</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p12/a" path="p12/a" number="12.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>Initial Postpartum Period.  A Reserve Marine approved for RCML will not be scheduled to perform, nor be authorized to request, inactive duty training for the first 6 weeks immediately following a birth.  This 6-week period is the initial convalescent portion of the RCML benefit.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p12/b" path="p12/b" number="12.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>Entitlement.  The birth parent is authorized up to 6 paid IDT periods as RCML, regardless of whether the birth was vaginal or cesarean.  This benefit must be used within the 8-week period immediately following the birth.  Any unused RCML is forfeited after this 8-week period.  One RCML period is equivalent to one standard four-hour IDT, with a maximum of two periods used per day.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p12/c" path="p12/c" number="12.c." label="c." depth="1" verification="UNVERIFIED">
+      <text>Transition to RCPL.  A birth parent may begin using RCPL after the 6-week convalescent period ends, provided all authorized RCML has been used.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p12/d" path="p12/d" number="12.d." label="d." depth="1" verification="UNVERIFIED">
+      <text>Combining RCML and RCPL.  A birth parent may request to use their RCML and RCPL entitlements consecutively.  While requests to use these benefits within the first 18 weeks following childbirth should be approved, commanders have the authority to deny requests to use RCPL that extend beyond this 18-week period based on unit operational and training requirements.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p13" path="p13" number="13." label="13." depth="0" verification="UNVERIFIED">
+      <text>Administration and Tracking.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p13/a" path="p13/a" number="13.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Procedure After System Update.  Following the RTAMMS update, the following procedures apply:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p13/a/1" path="p13/a/1" number="13.a.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Marines must request RCPL or RCML in advance of the scheduled IDT period and receive approval from the Unit Drill Manager.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p13/a/2" path="p13/a/2" number="13.a.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Individual Mobilization Augmentee (IMA) Marines must ensure 12 IDT periods are scheduled in RTAMMS to utilize the RCPL benefit.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p13/a/3" path="p13/a/3" number="13.a.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>Upon execution of the drill, Muster Managers will record the leave in the Drill Management Module (DMM) by marking the Marine "(X)-Present Satisfactory" and applying reason code "04-RC Maternity Leave" or "06-RC Parental Leave" as appropriate. These entries will be submitted to the Reserve Marineâ€™s electronic record.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p13/b" path="p13/b" number="13.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Command Accountability.  Commanders are responsible for ensuring all RCPL and RCML periods are properly tracked and that Marines do not exceed the authorized number of periods for each benefit within the stipulated timeframes.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p14" path="p14" number="14." label="14." depth="0" verification="UNVERIFIED">
+      <text>Fetal, Infant, and Perinatal Loss.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p14/a" path="p14/a" number="14.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Stillbirth or Miscarriage.  In the event of a stillbirth or miscarriage, a healthcare provider may recommend that the birth parent use up to 6 RCML periods for recovery.  In these circumstances, neither parent is eligible for RCPL.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p14/b" path="p14/b" number="14.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Death of a Child.  If a Marine experiences the death of a child during their one-year RCPL eligibility period, any unused RCPL is immediately forfeited and no longer authorized for use.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p14/c" path="p14/c" number="14.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Bereavement Options.  Following any perinatal loss or death of a child, Marines may request to be excused from or to reschedule a scheduled IDT period.  Commands should liberally approve such requests.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p14/d" path="p14/d" number="14.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Casualty Reporting.  In accordance with the Marine Corps Casualty Assistance Program, reference (j), commands will contact the HQMC Casualty Section for specific reporting instructions following the death of a Marineâ€™s dependent.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p15" path="p15" number="15." label="15." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN is applicable to the Reserve Component.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/191/p16" path="p16" number="16." label="16." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by Brigadier General Lauren S. Edwards, Director Manpower Plans and Policy Division, Manpower and Reserve Affairs.//</text>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>5 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

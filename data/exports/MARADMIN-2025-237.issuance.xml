@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2025/237" canonicalId="MARADMIN-2025-237" docType="MARADMIN" nativeNumber="237/25" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2025-05-20" schemaVersion="2.0">
+  <meta>
+    <title>MARINE CORPS POLICY ON THE WEAR AND PURCHASE OF BODY</title>
+    <subject>MARINE CORPS POLICY ON THE WEAR AND PURCHASE OF BODY</subject>
+    <signedDate>2025-05-20</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2025\MARADMIN_237_25_MARINE_CORPS_POLICY_ON_THE_WEAR_AND_PURCHASE_OF_BODY.pdf" sourceHash="cb8d130bf0e1b741aa5dd72a8d67eaf9275f9a510ba6394981f1c8e6fc872372" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="MARADMIN-2007-262" targetIdentifier="/us/dod/don/usmc/maradmin/2007/262" basis="cited" tier="T5" held="absent" from="narr:REF A"/>
+    <ref rel="references" target="MARADMIN-2009-254" targetIdentifier="/us/dod/don/usmc/maradmin/2009/254" basis="cited" tier="T5" held="absent" from="narr:REF B"/>
+    <ref rel="references" target="MARADMIN-2009-415" targetIdentifier="/us/dod/don/usmc/maradmin/2009/415" basis="cited" tier="T5" held="absent" from="narr:REF C"/>
+    <ref rel="references" target="MARADMIN-2017-151" targetIdentifier="/us/dod/don/usmc/maradmin/2017/151" basis="cited" tier="T5" held="absent" from="narr:REF D"/>
+    <ref rel="references" target="MARADMIN-2018-667" targetIdentifier="/us/dod/don/usmc/maradmin/2018/667" basis="cited" tier="T5" held="absent" from="narr:REF E"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2025/237/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2025/237/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>The Commandant of the Marine Corps directs the following policy for Marines and Sailors assigned to USMC and joint commands, on the wear and purchase of body armor and PPE. This MARADMIN supersedes references (a, b, c, d, and e). PPE refers to Marine Corps approved body armor, helmets, goggles, gloves, clothing, and other gear designed to protect the wearerâ€™s body from battlefield injuries. The equipment and training information for service-approved PPE systems can be found at https:(slash)(slash)app.mcboss.usmc.mil searching via program office: PMM-154.3 and via Marine Net course # mcsppe0306 -  Proper use of Personal Protective Equipment</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Individual Marines/Sailors may not use commercial PPE in lieu of government tested, approved, and issued PPE as outlined in the product information sheets referenced in paragraph 1. Commanders are not authorized to utilize unit funds to purchase commercial PPE items that have not been approved for use by Marine Corps Systems Command.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Ballistic spectacles and goggles authorized for use are listed on the authorized protective eyewear list (APEL) and are compatible with the universal prescription lens carrier.  While the Marine Corps will continue to issue a single spectacle and a single goggle, units may purchase other authorized ballistic eyewear on the APEL through the defense logistics agency or the post-exchange. The latest APEL can be found at: https:(slash)(slash)www.peosoldier.army.mil/equipment/ approved-eyewear-qpl/</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>All forms of hearing protection devices are considered PPE, and the Marine Corps issues Hearing Enhancement Devices (HED) (TAMCN C01142F) and High Noise Hearing Enhancement Devices (HN-HED) (TAMCN C00142F). Commanders must ensure Marines comply with ref (f) or ref (g) for helmet configuration and ref (h) guidelines to select appropriate hearing protection devices. HEDS shall be evaluated at least twice per year for appropriate use and to replace any worn/deteriorated seals per ref (h). Commanders will consult navy medicine occupational audiologists or industrial hygienists to determine from sound pressure measurements appropriate hearing protective devices for their operational needs, ensuring Marines have the correct single or dual hearing protection when necessary.  Per ref (h), the safety objective is to protect Marinesâ€™ exposure to any steady-state noise having an 8-hour time-weighted average noise level greater than or equal to 85 decibels: or a single exposure to impulse and/or impact noise of 140 decibels peak or greater, regardless of duration.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Marine Corps Body Armor Protection Levels (APLS).</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>A service-level policy defining specific armor protection levels has been established with the intent of standardizing APLS, enabling commanders to tailor armor protection based on their estimate of the situation or based on guidance from service/joint/theater combatant commanders.  Higher APLS provide increased ballistic protection through the addition of modular armor components, increasing the areas of coverage and/or ballistic protection. Higher APLS correspond to greater weight, increased thermal loading, and reduced mobility, thus degrading individual and unit performance over extended periods of time.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>The following APLS are established and apply to all Marine Corps-issued armor systems. Read in two columns: APL             Description Level 0         No body armor worn Level 1         Marine Corps-issued plate carrier with soft armor only (defeats handgun and fragmentation threats) Level 2         Marine Corps-issued plate carrier with soft armor, and front and back hard armor plates (defeats rifle and fragmentation threats) Level 3         Marine Corps-issued plate carrier with soft armor, front and back hard armor plates, and side hard armor plates (defeats rifle and fragmentation threats). Removal of the soft armor from the plate carrier compromises the ballistic protection of the issued armor systems.  Soft armor must be worn in conjunction with ballistic plates in the issued plate carrier â€“ failure to do so may result in severe bodily injury or death.  There are currently two variants of ballistic plates fielded to the Fleet Marine Force: the Enhanced Small Arms Plate Insert (ESAPI) (TAMCN C30202E) and the Lightweight Plate (LWP) (TAMCN C01342F). Commanders may choose to utilize either variant based on the threat.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>The Marine Corps-issued helmets authorized for operations include the Enhanced Combat Vehicle Crewman Helmet (ECVCH) (TAMCN C49942F), Enhanced Combat Helmet (ECH) (TAMCN C01202E), High Cut Enhanced Combat Helmet (HC ECH) (TAMCN C02222F), and the Integrated Helmet System (IHS) (TAMCN C02222F) which were designed to provide both ballistic and blunt impact protection across the full spectrum of operational environments. The helmets consist of a shell, a suspension system (pads), a retention system (chinstrap), and include other accessories such as a night vision device mounting bracket and rail systems. The ballistic protection of these systems is provided by the construction and materials of the shell. The blunt impact protection is provided by the construction, materials, and configuration of the suspension system. The suspension system must have pads in an approved configuration. In accordance with replaced with commercial pads.  The screws in the helmet support the ballistic integrity and shall not be replaced with commercial screws. Unit leaders will ensure initial training is conducted for Marines upon issue of the helmet. Commanders shall ensure approved helmets are worn in an approved configuration.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p5/d" path="p5/d" number="5.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Diving life preserver and buoyancy compensator listed in the authorized for navy use (ANU) are not authorized for ballistic protection until the configuration has been certified and approved by Marine Corps Systems Command. Commanders interested in requesting diving life preserver and buoyancy compensator for certification must follow the universal needs process.  Information can be found at: https:(slash)(slash) www.cdi.marines.mil/units/cdd/universal-needs-process/</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p5/e" path="p5/e" number="5.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Protective attachments may be worn with Marine Corps-issued body armor. It is impractical to establish APLS that incorporate every possible configuration in which these attachments may be worn. Commanders will designate the wear of Marine Corps approved helmets; ballistic eyewear; and groin, neck, and throat protection as required by their units' mission, the threat, and local environmental considerations.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p5/f" path="p5/f" number="5.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>The lightweight helmet (TAMCN C32152E) and the small arms protective body armor (stocklist-3 item of TAMCN C35012E) are only authorized for use by training command.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p5/g" path="p5/g" number="5.g." label="g." depth="1" verification="UNVERIFIED">
+        <text>Ballistic protection vendor samples are not authorized for use without Marine Corps Systems Command oversight and approved safety releases for limited user evaluations.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Authority</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p6/a" path="p6/a" number="6.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Operating force commanders at the Lieutenant Colonel (O-5) level or higher are authorized to determine the required level of PPE (or APL when established) for wear by assigned personnel within the Marine Corps Systems Command approved systems.  This determination will be made based on mission (including during training), unit type, threat, and environmental factors.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p6/b" path="p6/b" number="6.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Combatant, Joint Task Force (JTF), and service component commanders retain the authority to prescribe the level of protection worn by all assigned personnel.  In cases where combatant, JTF, and/ or service component commanders have established a required level of PPE that is more restrictive than that set by Marine Unit Commanders, Marines will adhere to the highest level.  In cases where the APL is not designated, the Marine Corps service policy places the authority to designate the APL on commanders, Lieutenant Colonel (O-5) and higher.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p6/c" path="p6/c" number="6.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Based on their unique mission requirements, Marine Special Operations Command (MARSOC) personnel may, within published MARSOC policies and subject to their commanders' approval, wear special operations command-approved special purpose body armor.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p6/d" path="p6/d" number="6.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Installation commanders are authorized to use government funds to purchase commercial off-the-shelf (COTS) body armor and PPE only for use by Military Police performing law enforcement duties aboard Marine Corps installations. COTS body armor must, at a minimum, meet National Institute of Justice (NIJ)-certified level RF2 as listed on the NIJ website. Https:(slash)(slash)www.nij.gov/topics/technology/body-armor/ pages/compliant-ballistic-armor.aspx.  COTS body armor purchased for installation law enforcement duty will not be worn by Marines as a substitute for Marine Corps approved body armor and PPE in a combat zone or theater of operation.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Marine Corps organizations that do not receive class II PPE materiel support from the Logistics Command should direct all materiel requirements to DC, IL, IP.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2025/237/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by MajGen J. L. Morris, Assistant Deputy Commandant for Plans, Policies, and Operations.//</text>
+    </provision>
+  </section>
+</issuance>

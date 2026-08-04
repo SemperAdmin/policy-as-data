@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/secnavinst/1610_4a" canonicalId="SECNAVINST-1610.4A" docType="SECNAV" nativeNumber="1610.4A" tier="T2" lifecycle="unknown" verification="UNVERIFIED" schemaVersion="2.0">
+  <meta>
+    <title>SECNAVINST 1610.4A - Department of the Navy Policy on Handling Protest, Extremist, and Criminal Gang Activities</title>
+    <subject>DEPARTMENT OF THE NAVY POLICY ON HANDLING PROTEST, EXTREMIST, AND CRIMINAL GANG ACTIVITIES</subject>
+    <provenance sourcePath="E:\Policies\SECNAV\SECNAVINST_1610.4A.pdf" sourceHash="2b836fd52ca805de40c7bff972338481c760a20613e75d76c062b460981f6b68" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="DODI-1325.06" targetIdentifier="/us/dod/dodi/1325_06" basis="cited" tier="T1" held="absent" from="p-10:ref/a"/>
+    <ref rel="references" target="SECNAVINST-5350.16A" targetIdentifier="/us/dod/don/secnavinst/5350_16a" basis="cited" tier="T2" held="absent" from="p-10:ref/b"/>
+    <ref rel="references" target="USC-T18-S1382" targetIdentifier="/us/usc/t18/s1382" basis="cited" tier="T0" held="absent" from="p-10:ref/c"/>
+    <ref rel="references" target="USC-T10-S801" targetIdentifier="/us/usc/t10/s801" basis="cited" tier="T0" held="absent" from="p-10:ref/e"/>
+    <ref rel="references" target="USC-T5-S552a" targetIdentifier="/us/usc/t5/s552a" basis="cited" tier="T0" held="held" from="p-10:ref/f"/>
+    <ref rel="references" target="SECNAVM-5210.1" targetIdentifier="/us/dod/don/secnavm/5210_1" basis="cited" tier="T2" held="absent" from="p-10:ref/g"/>
+    <ref rel="references" target="SECNAVM-5214.1" targetIdentifier="/us/dod/don/secnavm/5214_1" basis="cited" tier="T2" held="absent" from="p-10:ref/h"/>
+    <ref rel="references" target="DODI-4105.70" targetIdentifier="/us/dod/dodi/4105_70" basis="cited" tier="T1" held="absent" from="p-10:ref/i"/>
+    <ref rel="references" target="OPNAVINST-1620.2A" targetIdentifier="/us/dod/don/opnavinst/1620_2a" basis="cited" tier="T2" held="absent" from="p-10:ref/j"/>
+    <ref rel="references" target="MCO-1620.2D" targetIdentifier="/us/dod/don/usmc/mco/1620_2d" basis="cited" tier="T3" held="drift" storeHolds="MCO-1620.2" from="p-10:ref/k"/>
+    <ref rel="references" target="DODI-1334.01" targetIdentifier="/us/dod/dodi/1334_01" basis="cited" tier="T1" held="absent" from="p-10:ref/m"/>
+    <ref rel="references" target="USC-T10-S1034" targetIdentifier="/us/usc/t10/s1034" basis="cited" tier="T0" held="absent" from="p-10:ref/n"/>
+    <ref rel="references" target="DODM-5200.02" targetIdentifier="/us/dod/dodm/5200_02" basis="cited" tier="T1" held="absent" from="p-10:ref/o"/>
+    <ref rel="references" target="SECNAVINST-5430.107A" targetIdentifier="/us/dod/don/secnavinst/5430_107a" basis="cited" tier="T2" held="absent" from="p-10:ref/q"/>
+    <ref rel="references" target="SECNAVINST-5800.12C" targetIdentifier="/us/dod/don/secnavinst/5800_12c" basis="cited" tier="T2" held="absent" from="p-10:ref/r"/>
+    <ref rel="references" target="USC-T10-S815" targetIdentifier="/us/usc/t10/s815" basis="cited" tier="T0" held="absent" from="p-10:ref/s"/>
+  </authority>
+  <section anchor="front-matter" identifier="/us/dod/don/secnavinst/1610_4a/front-matter" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/front-matter/encl" path="encl" number="Encl:" label="Encl:" depth="0" role="enclosure" verification="UNVERIFIED">
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/front-matter/encl/1" path="encl/1" number="(1)" label="(1)" depth="1" role="enclosure" verification="UNVERIFIED">
+        <text>References</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/front-matter/encl/2" path="encl/2" number="(2)" label="(2)" depth="1" role="enclosure" verification="UNVERIFIED">
+        <text>Definitions</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/front-matter/encl/3" path="encl/3" number="(3)" label="(3)" depth="1" role="enclosure" verification="UNVERIFIED">
+        <text>Procedures</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/front-matter/encl/4" path="encl/4" number="(4)" label="(4)" depth="1" role="enclosure" verification="UNVERIFIED">
+        <text>Responsibilities</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/front-matter/encl/5" path="encl/5" number="(5)" label="(5)" depth="1" role="enclosure" verification="UNVERIFIED">
+        <text>Data Collection and Reporting Requirements</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-1" identifier="/us/dod/don/secnavinst/1610_4a/p-1" heading="1. Purpose" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Purpose</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>To provide a comprehensive Department of the Navy (DON) policy for handling protest, extremist, and criminal gang activities by Service Members pursuant to the guidance provided by references (a) through (s).  See enclosure (1) for a listing of these references.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1/p1/b" path="p1/b" number="1.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>The DON’s Military Equal Opportunity Policy is governed by reference (b) and is not covered in this instruction.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Cancellation.  SECNAVINST 1610.4.</text>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Definitions.  See enclosure (2).</text>
+    </provision>
+  </section>
+  <section anchor="p-4" identifier="/us/dod/don/secnavinst/1610_4a/p-4" heading="4. Applicability" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Applicability</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>This instruction applies to all DON Service Members, specifically:  members of the Active and Reserve Components (RC), as well as midshipmen of the United States (U.S.) Naval Academy and the Naval Reserve Officer Training Corps.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>This instruction does not apply to DON civilian employees.  DON civilian employees, as well as Service Members, are subject to reference (c). SECNAVINST 1610.4A 13 May 2026 2</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-5" identifier="/us/dod/don/secnavinst/1610_4a/p-5" heading="5. Policy" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Policy</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>A Service Member’s right of expression should be preserved to the maximum extent possible pursuant to reference</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5/p5/a/d" path="p5/a/d" number="5.a.(d)" label="(d)" depth="2" verification="UNVERIFIED">
+          <text>and statutory provisions of Titles 10 and 18, U.S. Code, consistent with good order and discipline and national security.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Commanders must not be indifferent to conduct that, if allowed to proceed unchecked, would destroy or diminish the effectiveness of their unit.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>The proper balancing of these interests depends largely upon the calm and prudent judgment of the responsible commander.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5/p5/d" path="p5/d" number="5.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Enclosure (3), paragraphs 4, 6, 8, and 10 of this instruction constitute lawful general orders, effective immediately without further implementation.  Any violations of enclosure (3), paragraphs 4, 6, 8, and 10 of this instruction may be used as the basis for adverse administrative action and/or disciplinary action under reference (e), as appropriate.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Procedures.  See enclosure (3).</text>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Responsibilities.  See enclosure (4).</text>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>Data Collection and Reporting Requirements.  See enclosure (5).  All data collected under this instruction must comply with reference (f), including a relevant system of records notice.</text>
+    </provision>
+  </section>
+  <section anchor="p-9" identifier="/us/dod/don/secnavinst/1610_4a/p-9" heading="9. Records Management" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-9/p9" path="p9" number="9." label="9." depth="0" verification="UNVERIFIED">
+      <text>Records Management</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-9/p9/a" path="p9/a" number="9.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Records created as a result of this instruction, regardless of format or media, must be maintained pursuant to reference (g) and dispositioned according to the records disposition schedules found on the Directives and Records Management Division (DRMD) portal page: https://flankspeed.sharepoint- mil.us/sites/SECNAV_DRMD/SitePages/Records-and-Information- Management-Program.aspx.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-9/p9/b" path="p9/b" number="9.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>For questions concerning the management of records related to this instruction or the records disposition schedules, please contact your local Records Manager or the DRMD program office. SECNAVINST 1610.4A 13 May 2026 3</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-10" identifier="/us/dod/don/secnavinst/1610_4a/p-10" heading="10. Information Management Control. The reporting requirements" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref" path="ref" number="Ref:" label="Ref:" depth="0" role="reference" verification="UNVERIFIED">
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/a" path="ref/a" number="(a)" label="(a)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 1325.06 of 27 November 2009</text>
+        <citation target="DODI-1325.06" targetIdentifier="/us/dod/dodi/1325_06" basis="cited" text="DoD Instruction 1325.06 of 27 November 2009"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/b" path="ref/b" number="(b)" label="(b)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAVINST 5350.16A</text>
+        <citation target="SECNAVINST-5350.16A" targetIdentifier="/us/dod/don/secnavinst/5350_16a" basis="cited" text="SECNAVINST 5350.16A"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/c" path="ref/c" number="(c)" label="(c)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>18 U.S.C. §1382</text>
+        <citation target="USC-T18-S1382" targetIdentifier="/us/usc/t18/s1382" basis="cited" text="18 U.S.C. §1382"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/d" path="ref/d" number="(d)" label="(d)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>First Amendment to the Constitution of the United States</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/e" path="ref/e" number="(e)" label="(e)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>10 U.S.C. §801 - §946a</text>
+        <citation target="USC-T10-S801" targetIdentifier="/us/usc/t10/s801" basis="cited" text="10 U.S.C. §801 - §946a"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/f" path="ref/f" number="(f)" label="(f)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>5 U.S.C §552a</text>
+        <citation target="USC-T5-S552a" targetIdentifier="/us/usc/t5/s552a" basis="cited" text="5 U.S.C §552a"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/g" path="ref/g" number="(g)" label="(g)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAV M-5210.1</text>
+        <citation target="SECNAVM-5210.1" targetIdentifier="/us/dod/don/secnavm/5210_1" basis="cited" text="SECNAV M-5210.1"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/h" path="ref/h" number="(h)" label="(h)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAV M-5214.1</text>
+        <citation target="SECNAVM-5214.1" targetIdentifier="/us/dod/don/secnavm/5214_1" basis="cited" text="SECNAV M-5214.1"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/i" path="ref/i" number="(i)" label="(i)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 4105.70 of 30 November 2016</text>
+        <citation target="DODI-4105.70" targetIdentifier="/us/dod/dodi/4105_70" basis="cited" text="DoD Instruction 4105.70 of 30 November 2016"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/j" path="ref/j" number="(j)" label="(j)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>OPNAVINST 1620.2A</text>
+        <citation target="OPNAVINST-1620.2A" targetIdentifier="/us/dod/don/opnavinst/1620_2a" basis="cited" text="OPNAVINST 1620.2A"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/k" path="ref/k" number="(k)" label="(k)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 1620.2D</text>
+        <citation target="MCO-1620.2D" targetIdentifier="/us/dod/don/usmc/mco/1620_2d" basis="cited" text="MCO 1620.2D"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/l" path="ref/l" number="(l)" label="(l)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Joint Ethics Regulation, of 15 May 2024</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/m" path="ref/m" number="(m)" label="(m)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoD Instruction 1334.01 of 13 July 2021</text>
+        <citation target="DODI-1334.01" targetIdentifier="/us/dod/dodi/1334_01" basis="cited" text="DoD Instruction 1334.01 of 13 July 2021"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/n" path="ref/n" number="(n)" label="(n)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>10 U.S.C. §1034</text>
+        <citation target="USC-T10-S1034" targetIdentifier="/us/usc/t10/s1034" basis="cited" text="10 U.S.C. §1034"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/o" path="ref/o" number="(o)" label="(o)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>DoDM 5200.02, Procedures for the DoD Personnel Security Program of 3 April 2017</text>
+        <citation target="DODM-5200.02" targetIdentifier="/us/dod/dodm/5200_02" basis="cited" text="DoDM 5200.02, Procedures for the DoD Personnel Security Program of 3 April 2017"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/p" path="ref/p" number="(p)" label="(p)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Section 554 of Public Law 116-283</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/q" path="ref/q" number="(q)" label="(q)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAVINST 5430.107A</text>
+        <citation target="SECNAVINST-5430.107A" targetIdentifier="/us/dod/don/secnavinst/5430_107a" basis="cited" text="SECNAVINST 5430.107A"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/r" path="ref/r" number="(r)" label="(r)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAVINST 5800.12C</text>
+        <citation target="SECNAVINST-5800.12C" targetIdentifier="/us/dod/don/secnavinst/5800_12c" basis="cited" text="SECNAVINST 5800.12C"/>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-10/ref/s" path="ref/s" number="(s)" label="(s)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>10 U.S.C. §815 SECNAVINST 1610.4A 13 May 2026 Enclosure (2) DEFINITIONS</text>
+        <citation target="USC-T10-S815" targetIdentifier="/us/usc/t10/s815" basis="cited" text="10 U.S.C. §815 SECNAVINST 1610.4A 13 May 2026 Enclosure (2) DEFINITIONS"/>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-1-2" identifier="/us/dod/don/secnavinst/1610_4a/p-1-2" heading="1. Advocacy. When made with the intent to promote or endorse" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-2" identifier="/us/dod/don/secnavinst/1610_4a/p-2" heading="2. Allegation. Statement or assertion of wrongdoing by an" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Allegation.  Statement or assertion of wrongdoing by an individual containing four essential elements:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Who committed the alleged violation(s) (if known).</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>What alleged violation(s) was or were committed.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>What law(s), regulation(s), procedure(s), policy, or policies was or were violated.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>When the alleged violation(s) occurred (if known).</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-3" identifier="/us/dod/don/secnavinst/1610_4a/p-3" heading="3. Extremist and (/or) Criminal Gang Activities. Conduct" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-4-2" identifier="/us/dod/don/secnavinst/1610_4a/p-4-2" heading="4. Liking. The use of the “like” function on social media" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-2/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Liking.  The use of the “like” function on social media platforms, generally to signal endorsement or support of the “liked” content.  Liking includes the use of emojis or reactions that signal endorsement or support, or platform-specific actions such as “favoriting,” when also implying endorsement.  Liking, in the context of the communication concerned, must imply or state endorsement, agreement, or promoting of the content.</text>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-2/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Literature.  Printed materials, leaflets, circulars, or other written materials, including electronic or cyber content.</text>
+    </provision>
+  </section>
+  <section anchor="p-6" identifier="/us/dod/don/secnavinst/1610_4a/p-6" heading="6. Material Support or Resources. Any property, tangible or" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-7" identifier="/us/dod/don/secnavinst/1610_4a/p-7" heading="7. Personal Identifiable Information (PII). Any representation" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-8" identifier="/us/dod/don/secnavinst/1610_4a/p-8" heading="8. Senior Official/Senior Officials. An active duty, retired," verification="UNVERIFIED">
+  </section>
+  <section anchor="p-9-2" identifier="/us/dod/don/secnavinst/1610_4a/p-9-2" heading="9. Sharing. In the social media, electronic, or cyber context," verification="UNVERIFIED">
+  </section>
+  <section anchor="p-10-2" identifier="/us/dod/don/secnavinst/1610_4a/p-10-2" heading="10. Subversion. Actions designed to undermine the military," verification="UNVERIFIED">
+  </section>
+  <section anchor="p-11" identifier="/us/dod/don/secnavinst/1610_4a/p-11" heading="11. Terrorism. The unlawful use of violence or threat of" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-11/p11" path="p11" number="11." label="11." depth="0" verification="UNVERIFIED">
+      <text>Terrorism.  The unlawful use of violence or threat of violence, often motivated by religious, political, or other ideological beliefs, to instill fear and coerce individuals, governments, or societies in pursuit of terrorist goals.</text>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-11/p12" path="p12" number="12." label="12." depth="0" verification="UNVERIFIED">
+      <text>Victim.  A person who has suffered direct physical, emotional, or pecuniary harm as a result of the commission of a crime committed in violation of reference (e).</text>
+    </provision>
+  </section>
+  <section anchor="p-13" identifier="/us/dod/don/secnavinst/1610_4a/p-13" heading="13. Widespread Unlawful Discrimination. Extensive" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-1-3" identifier="/us/dod/don/secnavinst/1610_4a/p-1-3" heading="1. Possession and Distribution of Printed and Electronic" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-3/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Possession and Distribution of Printed and Electronic Materials on Installation</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-3/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>A commander is not authorized to prohibit the distribution of a specific issue of a publication distributed through official outlets such as Navy or Marine Corps exchanges and military libraries.  Prohibiting the sale or rental of sexually explicit material on Department of War (DoW) property is governed by reference (i).</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-3/p1/a/1" path="p1/a/1" number="1.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>A commander may require prior approval of publications to be distributed on a military installation through other than official outlets to determine if the publication would:</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-3/p1/a/1/a" path="p1/a/1/a" number="1.a.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Create a clear danger to the loyalty, discipline, or morale of Service Members.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-3/p1/a/1/b" path="p1/a/1/b" number="1.a.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Materially interfere with the accomplishment of the military mission.</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-3/p1/a/2" path="p1/a/2" number="1.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Distribution of any publication determined to be a danger in any of the areas in paragraphs 1.a.(1)(a) and 1.a.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-3/p1/b" path="p1/b" number="(1)(b)" label="(b)" depth="1" verification="UNVERIFIED">
+        <text>of this enclosure will be prohibited.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-3/p1/b/b" path="p1/b/b" number="(1)(b)b." label="b." depth="2" verification="UNVERIFIED">
+          <text>While the mere possession of unauthorized printed material may not be prohibited, printed material that is prohibited from distribution will be impounded if the commander determines that an attempt will be made to distribute it.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-3/p1/b/c" path="p1/b/c" number="(1)(b)c." label="c." depth="2" verification="UNVERIFIED">
+          <text>The fact that a publication is critical of government policies or officials is not, in itself, a ground on which distribution may be prohibited.</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-2-2" identifier="/us/dod/don/secnavinst/1610_4a/p-2-2" heading="2. Off-Installation Gathering Places. Commanders have the" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-2/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Off-Installation Gathering Places.  Commanders have the authority to place establishments off-limits pursuant to reference (j) and reference (k), when, for example, the activities taking place at these establishments include, but are not limited to, counseling, encouraging, or inciting Service Members to refuse to perform duty or to desert, pose a significant adverse effect on Service Members’ health, morale, SECNAVINST 1610.4A 13 May 2026 2                   Enclosure (3) or welfare; or otherwise present a clear danger to the loyalty, discipline, or morale of a member or military unit.</text>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-2/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Service Member Organizations.  Commanders are not authorized to recognize or to bargain with any union representing or seeking recognition to represent Service Members.</text>
+    </provision>
+  </section>
+  <section anchor="p-4-3" identifier="/us/dod/don/secnavinst/1610_4a/p-4-3" heading="4. Publication of Personal Writing Matters (to include" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-5-2" identifier="/us/dod/don/secnavinst/1610_4a/p-5-2" heading="5. On-Installation Demonstrations and Similar Activities" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5-2/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>On-Installation Demonstrations and Similar Activities</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5-2/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>The commander of a military installation or other military-controlled facility under the jurisdiction of the U.S. will prohibit any demonstration or activity on the installation or facility that could:</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5-2/p5/a/1" path="p5/a/1" number="5.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Result in interference with or prevention of orderly accomplishment of the mission of the installation or facility.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5-2/p5/a/2" path="p5/a/2" number="5.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Present a clear danger to the loyalty, discipline, or morale of Service Members.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5-2/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>It is a crime for any person to enter a military reservation for any purpose prohibited by law or lawful regulations, or for any person to enter or re-enter an installation after having been barred by order of the commander pursuant to reference (c). SECNAVINST 1610.4A 13 May 2026 3                   Enclosure (3)</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5-2/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Service Members are prohibited from participating in on- installation demonstrations and similar activities as described under paragraph 5.a. of this enclosure.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-6-2" identifier="/us/dod/don/secnavinst/1610_4a/p-6-2" heading="6. Off-Installation Demonstrations by Service Members. Service" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-6-2/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Off-Installation Demonstrations by Service Members.  Service Members are prohibited from participating in off-installation demonstrations under any of these circumstances:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-6-2/p6/a" path="p6/a" number="6.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>They are on-duty.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-6-2/p6/b" path="p6/b" number="6.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>They are in a foreign country.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-6-2/p6/c" path="p6/c" number="6.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>The activities constitute a breach of law and order.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-6-2/p6/d" path="p6/d" number="6.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Violence is likely to result.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-6-2/p6/e" path="p6/e" number="6.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>They are in uniform in violation of reference (m).</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-7-2" identifier="/us/dod/don/secnavinst/1610_4a/p-7-2" heading="7. Grievances. The right of members to complain and request" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-8-2" identifier="/us/dod/don/secnavinst/1610_4a/p-8-2" heading="8. Extremist Activities" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>Extremist Activities</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/a" path="p8/a" number="8.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Extremist activities are inconsistent with the responsibilities and obligations of Military Service, as well as the oaths of office and enlistment, and can be prohibited even in some circumstances in which such activities would be constitutionally protected in a civilian setting.  Active participation in extremist activities as defined below is prohibited and, as appropriate, may be punished in the military context for several overlapping, compelling reasons.  First, such active participation undermines morale and reduces combat readiness.  Second, it calls into question the individual’s ability to follow orders from, or effectively lead and serve with, persons of diverse backgrounds, preventing maximum utilization and development of the DON’s most valuable asset: SECNAVINST 1610.4A 13 May 2026 4                   Enclosure (3) its people.  Finally, such behavior damages the Nation’s trust and confidence in the DON as an institution and the military as a professional fighting force.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/b" path="p8/b" number="8.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Enforcement of this policy is the responsibility of every commander.  It is the commander’s responsibility to maintain good order and discipline in the unit, and every commander has the inherent authority and responsibility to take appropriate actions to accomplish this goal.  Active participation in extremist activities (which includes some forms of conduct with respect to groups and organizations that actively participate in extremist activities) does not accord with military values and is not conducive to good order and discipline.  Service Members will be held appropriately accountable for active participation in extremist activities, whether in their individual capacity or on behalf of a group.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c" path="p8/c" number="8.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Service Members are prohibited from actively participating in extremist activities.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c/1" path="p8/c/1" number="8.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Extremist Activities.  For the purposes of this instruction, the term “extremist activities” means the following:</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c/1/a" path="p8/c/1/a" number="8.c.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Advocating for or engaging in unlawful force, unlawful violence, or other illegal means to deprive individuals of their rights under the U.S. Constitution or the laws of the U.S., including those of any state, commonwealth, territory, or the District of Columbia, or any political subdivision thereof.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c/1/b" path="p8/c/1/b" number="8.c.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Advocating for or engaging in unlawful force or violence to achieve goals that are political, religious, discriminatory, or ideological in nature.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c/1/c" path="p8/c/1/c" number="8.c.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Advocating for, engaging in, or supporting terrorism, within the U.S. or abroad.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c/1/d" path="p8/c/1/d" number="8.c.(1)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Advocating for, engaging in, or supporting the overthrow of the government of the U.S., or any political subdivision thereof, including that of any state, commonwealth, territory, or the District of Columbia, by force or violence; or seeking to alter the form of these governments by unconstitutional or other unlawful means (e.g., sedition). SECNAVINST 1610.4A 13 May 2026 5                   Enclosure (3)</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c/1/e" path="p8/c/1/e" number="8.c.(1)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Advocating for or encouraging military, civilian, or contractor personnel within the DoW or U.S. Coast Guard to violate the laws of the U.S., or any political subdivision thereof, including those of any state, commonwealth, territory, or the District of Columbia, or to disobey lawful orders or regulations, for the purpose of disrupting military activities (e.g., subversion), or personally undertaking the same.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c/1/f" path="p8/c/1/f" number="8.c.(1)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Advocating for widespread unlawful discrimination based on race, color, national origin, religion, sex (including pregnancy), or sexual orientation.</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c/2" path="p8/c/2" number="8.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Active Participation.  For purposes of this paragraph, the term “active participation” means the following, except where such activity is within the scope of an official duty (e.g., intelligence or law enforcement operations):</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c/2/a" path="p8/c/2/a" number="8.c.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Advocating for or engaging in the use or threat of unlawful force or violence in support of extremist activities.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c/2/b" path="p8/c/2/b" number="8.c.(2)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Advocating for, or providing material support or resources to, individuals or organizations that promote or threaten the unlawful use of force or violence in support of extremist activities, with the intent to support such promotion or threats.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c/2/c" path="p8/c/2/c" number="8.c.(2)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Knowingly communicating information that compromises the operational security of any military organization or mission, in support of extremist activities.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c/2/d" path="p8/c/2/d" number="8.c.(2)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Recruiting or training others to engage in extremist activities.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c/2/e" path="p8/c/2/e" number="8.c.(2)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Fundraising for, or making personal contributions through donations of any kind (including but not limited to the solicitation, collection, or payment of fees or dues) to, a group or organization that engages in extremist activities, with the intent to support those activities.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c/2/f" path="p8/c/2/f" number="8.c.(2)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Creating, organizing, or taking a leadership role in a group or organization that engages in or advocates for extremist activities, with knowledge of those activities. SECNAVINST 1610.4A 13 May 2026 6                   Enclosure (3)</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c/2/g" path="p8/c/2/g" number="8.c.(2)(g)" label="(g)" depth="3" verification="UNVERIFIED">
+            <text>Actively demonstrating or rallying in support of extremist activities (but not merely observing such demonstrations or rallies as a spectator).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p8/c/2/h" path="p8/c/2/h" number="8.c.(2)(h)" label="(h)" depth="3" verification="UNVERIFIED">
+            <text>Attending a meeting or activity with the knowledge that the meeting or activity involves extremist activities, with the intent to support those activities:</text>
+          </provision>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>When the nature of the meeting or activity constitutes a breach of law and order.</text>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>When a reasonable person would determine the meeting or activity is likely to result in violence.</text>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>In violation of off-limits sanctions or other lawful orders.</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/i" path="p3/i" number="3.(i)" label="(i)" depth="1" verification="UNVERIFIED">
+        <text>Distributing literature or other promotional materials, on or off a military installation, the primary purpose and content of which is to advocate for extremist activities, with the intent to promote that advocacy.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/j" path="p3/j" number="3.(j)" label="(j)" depth="1" verification="UNVERIFIED">
+        <text>Knowingly receiving material support or resources from a person or organization that advocates or actively participates in extremist activities with the intent to use the material support or resources in support of extremist activities.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/k" path="p3/k" number="3.(k)" label="(k)" depth="1" verification="UNVERIFIED">
+        <text>When using a government communications system and with the intent to support extremist activities, knowingly accessing internet websites or other materials that promote or advocate extremist activities.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/l" path="p3/l" number="3.(l)" label="(l)" depth="1" verification="UNVERIFIED">
+        <text>Knowingly displaying paraphernalia, words, or symbols in support of extremist activities or in support of groups or organizations that support extremist activities, such as flags, clothing, tattoos, and bumper stickers, whether on or off a military installation.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/m" path="p3/m" number="3.(m)" label="(m)" depth="1" verification="UNVERIFIED">
+        <text>Engaging in electronic and cyber activities regarding extremist activities, or groups that support extremist activities – including posting, liking, sharing, re-tweeting, or otherwise distributing content – when such action is taken with SECNAVINST 1610.4A 13 May 2026 7                   Enclosure (3) the intent to promote or otherwise endorse extremist activities. Service Members are responsible for the content they publish on all personal and public internet domains, including social media sites, blogs, websites, and applications.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/n" path="p3/n" number="3.(n)" label="(n)" depth="1" verification="UNVERIFIED">
+        <text>Knowingly taking any other action in support of, or engaging in, extremist activities, when such conduct is prejudicial to good order and discipline or is Service- discrediting.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/n/d" path="p3/n/d" number="3.(n)d." label="d." depth="2" verification="UNVERIFIED">
+          <text>Command Authority and Responsibilities</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/n/d/1" path="p3/n/d/1" number="3.(n)d.(1)" label="(1)" depth="3" verification="UNVERIFIED">
+            <text>Commanders have the authority and responsibility to prohibit Service Members from active participation in extremist activities, and other activities that adversely affect good order and discipline within the command.  This includes, but is not limited to, the authority to order the removal of symbols, flags, posters, or other displays from military-controlled areas; to place areas or activities off-limits; and to order Service Members not to participate in activities that are contrary to the good order and discipline of the unit, or pose a threat to the health, safety, and security of Service Members or a military installation.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/n/d/2" path="p3/n/d/2" number="3.(n)d.(2)" label="(2)" depth="3" verification="UNVERIFIED">
+            <text>Commanders may, as appropriate, pursue adverse administrative action in addition to or in lieu of punitive action in response to a Service Member’s active participation in extremist activities, pursuant to Military Service regulations and other existing authorities.  Adverse administrative action may include involuntary separation, reassignment, loss of security clearance, denial of reenlistment, and other administrative or disciplinary actions deemed appropriate by the commander, based on the specific facts and circumstances of the particular case.</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/n/e" path="p3/n/e" number="3.(n)e." label="e." depth="2" verification="UNVERIFIED">
+          <text>Preventive Activities</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/n/e/1" path="p3/n/e/1" number="3.(n)e.(1)" label="(1)" depth="3" verification="UNVERIFIED">
+            <text>Commanders will remain alert for signs of possible future extremist activities.  Commanders will intervene early, primarily through counseling, when observing such signs even though the signs may not rise to the level of active participation or threaten good order and discipline, but only suggest such potential.  The goal of early intervention is to minimize the risk of future extremist activities.  In these SECNAVINST 1610.4A 13 May 2026 8                   Enclosure (3) situations, commanders will educate the Service member regarding the potential adverse effects of their actions.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/n/e/2" path="p3/n/e/2" number="3.(n)e.(2)" label="(2)" depth="3" verification="UNVERIFIED">
+            <text>For example, commanders may advise Service Members that extremist activities are inconsistent with the military’s goals, beliefs, and values, as well as the oaths of office and enlistment.  Additionally, commanders may advise Service Members that active participation in extremist activities:</text>
+          </provision>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/a" path="p3/a" number="3.(a)" label="(a)" depth="1" verification="UNVERIFIED">
+        <text>Will be taken into consideration when evaluating duty performance, to include appropriate remarks on evaluation reports.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/b" path="p3/b" number="3.(b)" label="(b)" depth="1" verification="UNVERIFIED">
+        <text>Will be taken into consideration when selections for positions of leadership and responsibility or military educational opportunities are made.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/c" path="p3/c" number="3.(c)" label="(c)" depth="1" verification="UNVERIFIED">
+        <text>Will result in a report to the appropriate agency for possible revocation of security clearance, which may lead to separation from the Armed Forces.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/d" path="p3/d" number="3.(d)" label="(d)" depth="1" verification="UNVERIFIED">
+        <text>May result in reassignment.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/e" path="p3/e" number="3.(e)" label="(e)" depth="1" verification="UNVERIFIED">
+        <text>May result in reclassification or bar to reenlistment actions, as appropriate.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/f" path="p3/f" number="3.(f)" label="(f)" depth="1" verification="UNVERIFIED">
+        <text>Will result in reports to law enforcement and/or counterintelligence authorities, as appropriate, pursuant to enclosure (5).</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/f/3" path="p3/f/3" number="3.(f)(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Commanders will consider all available resources to assist Service Members showing signs of potential involvement in extremist activities, such as command-directed mental health evaluations, financial counseling sessions, etc.</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/f/3/f" path="p3/f/3/f" number="3.(f)(3)f." label="f." depth="3" verification="UNVERIFIED">
+            <text>Reporting Requirements.  Commanders will remain attentive for signs of extremism involving Service Members in their command, even though the signs may not rise to the level of active participation or threaten good order and discipline, but only suggest such potential.  A commander notified of suspected extremist activities will take appropriate actions to investigate and address the allegations in consultation with their first Staff Judge Advocate in the chain of command. SECNAVINST 1610.4A 13 May 2026 9                   Enclosure (3)</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/f/1" path="p3/f/1" number="3.(f)(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Upon receipt of any allegation that a Service Member engaged in an activity prohibited under enclosure (3), paragraph 8 of this instruction, commanders will submit timely reporting in connection with all reported allegations pursuant to enclosure (5) of this instruction.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-8-2/p3/f/2" path="p3/f/2" number="3.(f)(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Additionally, where appropriate, commanders will ensure substantiated derogatory information is recorded as an incident report in the personnel system of record, pursuant to reference (o) and applicable Navy or Marine Corps guidance.</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-9-3" identifier="/us/dod/don/secnavinst/1610_4a/p-9-3" heading="9. Criminal Gangs" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-9-3/p9" path="p9" number="9." label="9." depth="0" verification="UNVERIFIED">
+      <text>Criminal Gangs</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-9-3/p9/a" path="p9/a" number="9.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Service Members must not actively advocate criminal gang doctrine, ideology, or causes.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-9-3/p9/b" path="p9/b" number="9.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Service Members are prohibited from active participation in criminal gangs pursuant to reference (p) and in other organizations that advocate criminal gang doctrine, ideology, or causes.  Active participation in criminal gangs or organizations is prohibited.  Active participation, as applied to such criminal gangs and organizations, includes, but is not limited to, fundraising; demonstrating or rallying; recruiting, training, organizing, or leading members; distributing material (including posting on-line); knowingly wearing gang colors or clothing; having tattoos or body markings associated with such gangs or organizations; or otherwise engaging in activities in furtherance of the objective of such gangs or organizations that are detrimental to good order, discipline, or mission accomplishment or are otherwise incompatible with Military Service.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-9-3/p9/c" path="p9/c" number="9.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Commanders have the authority to employ, as appropriate, the full range of administrative and disciplinary actions, including processing for administrative separation or criminal action, against Service Members who engage in prohibited criminal gang activities.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-9-3/p9/d" path="p9/d" number="9.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>The functions of command include vigilance about the existence of such activities; active use of investigative authority to include a prompt and fair complaint process; and use of administrative powers such as counseling, reprimands, orders, and performance evaluations to deter such activities. SECNAVINST 1610.4A 13 May 2026 10                   Enclosure (3)</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-9-3/p9/e" path="p9/e" number="9.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Preventive Activities.  Commanders will remain alert for signs of future criminal gang activities.  They will intervene early, primarily through counseling, when observing such signs even though the signs may not rise to active advocacy or active participation or may not threaten good order and discipline, but only suggest such potential.  The goal of early intervention is to minimize the risk of future criminal gang activities.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-9-3/p9/f" path="p9/f" number="9.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Reporting Requirements.  Commanders will remain attentive for signs of criminal gang activities involving Service Members in their command, even though the signs may not rise to the level of active participation or threaten good order and discipline, but only suggest such potential.  A commander notified of suspected criminal gang activities will take appropriate actions to investigate and address the allegations in consultation with their first Staff Judge Advocate in the chain of command.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-9-3/p9/f/1" path="p9/f/1" number="9.f.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Upon receipt of any allegation that a Service Member engaged in a criminal gang activity prohibited under enclosure (3), paragraph 9 of this instruction, commanders will submit timely reporting in connection with all reported allegations pursuant to enclosure (5) of this instruction.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-9-3/p9/f/2" path="p9/f/2" number="9.f.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Additionally, where appropriate, commanders will ensure substantiated derogatory information is recorded as an incident report in the personnel system of record, pursuant to reference (e) and applicable Navy or Marine Corps guidance. SECNAVINST 1610.4A 13 May 2026 Enclosure (4) RESPONSIBILITIES</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-1-4" identifier="/us/dod/don/secnavinst/1610_4a/p-1-4" heading="1. The Assistant Secretary of the Navy (Manpower and Reserve" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-4/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>The Assistant Secretary of the Navy (Manpower and Reserve Affairs) (ASN (M&amp;RA)) will:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-4/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Provide oversight of Navy and Marine Corps policies on handling protest, extremist, and criminal gang activities.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-4/p1/b" path="p1/b" number="1.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Ensure compliance with the requirements of reference (p) and enclosure (5) of this instruction, including submission of quarterly reports to the SECNAV for forwarding to the Office of the Under Secretary of War for Personnel and Readiness (OUSW (P&amp;R)) and the Office of the Under Secretary of War for Intelligence and Security (OUSW (I&amp;S)).</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-2-3" identifier="/us/dod/don/secnavinst/1610_4a/p-2-3" heading="2. The Naval Inspector General (NAVINSGEN) and the Inspector" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>The Naval Inspector General (NAVINSGEN) and the Inspector General of the Marine Corps (IGMC) will:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Cooperate with the DoW Deputy IG for Evaluations (DIG (EVAL)) in carrying out responsibilities under reference (p), including in the design of a system of unique identification codes to assign to each allegation.  If more than one Sailor or Marine is implicated by an allegation, the identifier will reflect this fact so that each allegation, and the number of Service Members involved, can be tracked without over-reporting the total number of allegations (for example, an allegation that the joint actions of three Service Members constituted active participation in extremist activities might be coded as [Code]- 01, [Code]-02, and [Code]-03).</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>To the maximum extent possible, work with the Offices of the Army IG and Air Force IG to ensure that allegations implicating Service Members from multiple Military Services are assigned corresponding identification codes for concurrent tracking.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Coordinate with office of primary responsibility for extremist and criminal gang activity to develop processes and procedures that support reporting requirements for allegations of allegations of extremist and criminal gang activities as set forth in enclosure (5).</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Following coordination with the office of primary responsibility and other stakeholders as necessary, submit SECNAVINST 1610.4A 13 May 2026 2                   Enclosure (4) timely reporting of required data related to allegations of extremist and criminal gang activities to the DIG (EVAL), pursuant to enclosure (5) of this instruction, including:</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/d/1" path="p2/d/1" number="2.d.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Any allegation that a Service Member engaged in extremist or criminal gang activities under reference (a).</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/d/2" path="p2/d/2" number="2.d.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The referral of any such allegation for purposes of investigation or inquiry, to:</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/d/2/a" path="p2/d/2/a" number="2.d.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>A military criminal investigative organization.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/d/2/b" path="p2/d/2/b" number="2.d.(2)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>An IG.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/d/2/c" path="p2/d/2/c" number="2.d.(2)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>A military police or security police organization.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/d/2/d" path="p2/d/2/d" number="2.d.(2)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>A military commander.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/d/2/e" path="p2/d/2/e" number="2.d.(2)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Service Insider Threat Analytic Hub.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/d/2/f" path="p2/d/2/f" number="2.d.(2)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Another organization or official of the DoW.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/d/2/g" path="p2/d/2/g" number="2.d.(2)(g)" label="(g)" depth="3" verification="UNVERIFIED">
+            <text>A civilian law enforcement organization or official.</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/d/3" path="p2/d/3" number="2.d.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>The referral of the final report of any such investigation or inquiry to a military commander or other appropriate authority for action for each allegation.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/d/4" path="p2/d/4" number="2.d.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>The final determination of whether any reported allegation was substantiated.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/d/5" path="p2/d/5" number="2.d.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Any resulting action taken against a Service Member (including judicial, disciplinary, adverse, or corrective administrative action, Insider Threat mitigation, counseling, or no action taken), based on the determination described in enclosure (4), paragraph 2.c.(4) of this instruction.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-3/p2/e" path="p2/e" number="2.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>On a quarterly basis as described in enclosure (5), submit timely reporting of required data to ASN (M&amp;RA).</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-3-2" identifier="/us/dod/don/secnavinst/1610_4a/p-3-2" heading="3. The Director, Naval Criminal Investigative Service (NCIS)," verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-2/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>The Director, Naval Criminal Investigative Service (NCIS), will: SECNAVINST 1610.4A 13 May 2026 3                   Enclosure (4)</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-2/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Initiate, conduct, and direct independent investigations and associated activities related to extremist or criminal gang allegations that fall within the NCIS’s investigative purview consistent with reference (q).</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-2/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Establish mechanisms to collect, track, assess, and analyze data and information related to extremist or criminal gang activities and, as appropriate, conduct investigations and associated operations and activities.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-2/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>For allegations of extremism or criminal gang activity made directly to the NCIS, notify alleged offender’s command within 72 hours pursuant to enclosure (5).</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-4-4" identifier="/us/dod/don/secnavinst/1610_4a/p-4-4" heading="4. The Chief of Naval Operations and the Commandant of the" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-4/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>The Chief of Naval Operations and the Commandant of the Marine Corps, will:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-4/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Align Military Service policy to meet the requirements of reference (a) and this instruction pursuant to the following additional provisions:</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-4/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Appoint an office of primary responsibility for extremist and criminal gang activity prevention, response, and reporting.  This entity will support the NAVINSGEN or the IGMC in managing and meeting reporting requirements under enclosure</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-4/p4/b/5" path="p4/b/5" number="4.b.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>of this instruction, including receiving, tracking and consolidating data related to allegations.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-4/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Leadership Message.  Issue Service-wide policy statements and use other available mechanisms to visibly promote a consistent top-down leadership message of respect for all individuals and intolerance for extremist behavior.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-4/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Ensure that policy and procedures in this instruction and reference (a) are included in initial active duty training, accessions training, pre-commissioning training, professional military education, commander training, recruiter training, law enforcement personnel training, legal advisor training, and other appropriate Service-training programs.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-4/p4/d/1" path="p4/d/1" number="4.d.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Senior officer leadership courses, senior enlisted courses, law enforcement training, legal adviser training, and SECNAVINST 1610.4A 13 May 2026 4                   Enclosure (4) recruiter training must include recognizing and addressing active participation in extremist activity.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-4/p4/d/2" path="p4/d/2" number="4.d.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Training must focus on enlisted and officer oaths, the Constitution of the U.S., and our shared ethos, values, and standards, rather than only focusing on prohibited activities.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-4/p4/e" path="p4/e" number="4.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Create a policy and checklist mechanism to ensure that all administrative separations of Service Members based on extremist or criminal gang activities are reported to local military law enforcement, the NCIS, Service Insider Threat Analytic Hub, and DoW Consolidated Adjudication Facility.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-4/p4/f" path="p4/f" number="4.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Ensure transitioning Service members are provided information during pre-separation counseling on the following:</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-4/p4/f/1" path="p4/f/1" number="4.f.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Potential targeting of veterans by extremist groups.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-4/p4/f/2" path="p4/f/2" number="4.f.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The means by which to report extremist activities to law enforcement agencies.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-4/p4/f/3" path="p4/f/3" number="4.f.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Information on reference (e) jurisdiction over retirees.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-4/p4/g" path="p4/g" number="4.g." label="g." depth="1" verification="UNVERIFIED">
+        <text>Mandate that substantiated allegations are annotated on fitness reports, evaluations, and appropriate Service-level reporting and tracking system(s).  The Service-level tracking system will be reviewed for substantiated engagement in extremist or criminal gang activities prior to Service Members’ selection for promotion and other favorable personnel actions.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-4-4/p4/h" path="p4/h" number="4.h." label="h." depth="1" verification="UNVERIFIED">
+        <text>Review and standardize accession screening questionnaires to solicit specific information about current or previous extremist activity.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-5-3" identifier="/us/dod/don/secnavinst/1610_4a/p-5-3" heading="5. Commanders will:" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5-3/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Commanders will:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5-3/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Ensure a command climate that treats everyone with dignity and respect.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5-3/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Ensure a command climate supports the commander’s promulgated guidance that directs all members of the command to be familiar with how to report allegations of extremist or criminal gang activities to ensure a warm handoff to the SECNAVINST 1610.4A 13 May 2026 5                   Enclosure (4) appropriate office.  The source of reporting may include, but is not limited to, military law enforcement; Service Insider Threat Analytic Hub; counterintelligence or other security officials; military equal opportunity professionals; members of the command's servicing legal office; family advocacy professionals; IG representatives; and individual Service Members or family members.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5-3/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Ensure all allegations of extremist or criminal gang activities are investigated, as appropriate and required under this policy.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5-3/p5/d" path="p5/d" number="5.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Immediately report all allegations of extremist or criminal gang activities pursuant to reference (p), enclosure (3), paragraph 9.d. of this instruction, and enclosure (5) of this instruction.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5-3/p5/e" path="p5/e" number="5.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Carry out appropriate administrative or disciplinary action against Service Members in cases involving substantiated allegations of prohibited protest, extremist, or criminal gang activities.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-5-3/p5/f" path="p5/f" number="5.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Provide in writing all disposition data to local military law enforcement and the NCIS, including any administrative or judicial action taken, stemming from an investigation of extremist or criminal gang activity.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-6-3" identifier="/us/dod/don/secnavinst/1610_4a/p-6-3" heading="6. Leaders at all levels will:" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-6-3/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Leaders at all levels will:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-6-3/p6/a" path="p6/a" number="6.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Promote a command climate that treats everyone with dignity and respect.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-6-3/p6/b" path="p6/b" number="6.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Clearly communicate that active participation in prohibited extremist and criminal gang activities will not be tolerated.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-6-3/p6/c" path="p6/c" number="6.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Demonstrate through actions and words that unlawful discrimination will not be tolerated.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-6-3/p6/d" path="p6/d" number="6.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Promote a command climate that encourages Service Members to report all prohibited protest, extremist, or criminal gang activities. SECNAVINST 1610.4A 13 May 2026 6                   Enclosure (4)</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-6-3/p6/e" path="p6/e" number="6.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Discourage prohibited extremist and criminal gang activities, and immediately report and ensure reporting of all allegations of such behavior.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-7-3" identifier="/us/dod/don/secnavinst/1610_4a/p-7-3" heading="7. Service Members will:" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-7-3/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Service Members will:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-7-3/p7/a" path="p7/a" number="7.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Treat others with dignity and respect.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-7-3/p7/b" path="p7/b" number="7.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Promote a positive command climate and cultivate an environment free from extremist activities.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-7-3/p7/c" path="p7/c" number="7.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Report prohibited extremist and criminal gang activities. SECNAVINST 1610.4A 13 May 2026 Enclosure (5) DATA COLLECTION AND REPORTING REQUIREMENTS</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-1-5" identifier="/us/dod/don/secnavinst/1610_4a/p-1-5" heading="1. Reporting Extremist and Criminal Gang Activities" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Reporting Extremist and Criminal Gang Activities</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>An allegation is “received” when it is reported to any member of the chain of command of either the individual who reports the allegation or the alleged offender to a military law enforcement, counter-insider threat, counterintelligence or other security official to a military equal opportunity professional, to a member of the command's servicing legal office, to a family advocacy professional, or to an IG representative.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/a/1" path="p1/a/1" number="1.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Allegations within this enclosure refer to reports of extremist and criminal gang activities.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/a/2" path="p1/a/2" number="1.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>If the recipient of an allegation (for example, a family advocacy professional receiving a restricted report from a victim) is prohibited from conveying an allegation to a commander or other authority due to confidentiality obligations pursuant to established Navy or Marine Corps policy, then the report to the NAVINSGEN or the IGMC will also indicate that no additional reports regarding the allegation are forthcoming, and identify the specific Navy or Marine Corps policy and circumstances that prohibit additional disclosure to the chain of command.  The NAVINSGEN or the IGMC will communicate this to DIG (EVAL).</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b" path="p1/b" number="1.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Timelines for Reporting</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/1" path="p1/b/1" number="1.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Any allegation that a non-senior Service Member engaged in extremist or criminal gang activities will be provided to the immediate commander of the alleged offender within three working days of receipt.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/2" path="p1/b/2" number="1.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Allegations against senior officials will comply with the requirement to report to the NAVINSGEN and the IGMC within one working day pursuant to reference (r).</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3" path="p1/b/3" number="1.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Within three working days following receipt of a non- senior Service Member allegation, the commander will notify the following entities for the purposes of tracking, reporting, investigation and/or inquiry, depending on the entities’ mission and function: SECNAVINST 1610.4A 13 May 2026 2                   Enclosure (5)</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3/a" path="p1/b/3/a" number="1.b.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>The NCIS.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3/b" path="p1/b/3/b" number="1.b.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Counterintelligence organization(s), as appropriate.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3/c" path="p1/b/3/c" number="1.b.(3)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Command Security Manager, if the military member possesses a security clearance.  The commander will determine if access to classified material should be suspended and if/when an entry should be made into the Defense Information System for Security based on credibility determination.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3/d" path="p1/b/3/d" number="1.b.(3)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Staff Judge Advocate in the chain of command.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3/e" path="p1/b/3/e" number="1.b.(3)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Service Insider Threat Analytic Hub.</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3" path="p1/b/3" number="1.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Commanders have 30 calendar days (or 60 calendar days for RC officials) to notify the NAVINSGEN or the IGMC when an allegation is received.  The NAVINSGEN or the IGMC then have 15 calendar days to electronically transmit certain information to DIG (EVAL).</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3/a" path="p1/b/3/a" number="1.b.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>The NCIS.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3/b" path="p1/b/3/b" number="1.b.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Counterintelligence organization(s), as appropriate.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3/c" path="p1/b/3/c" number="1.b.(3)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Command Security Manager, if the military member possesses a security clearance.  The commander will determine if access to classified material should be suspended and if/when an entry should be made into the Defense Information System for Security based on credibility determination.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3/d" path="p1/b/3/d" number="1.b.(3)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Staff Judge Advocate in the chain of command.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3/e" path="p1/b/3/e" number="1.b.(3)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Service Insider Threat Analytic Hub.</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/4" path="p1/b/4" number="1.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Commanders will make every effort to report enclosure (5), paragraphs 2.a. and 2.b. of this instruction simultaneously within the 30 calendar days (or 60 calendar days for RC officials), prior to reporting to the NAVINSGEN or the IGMC.  When the information required to report enclosure (5), paragraph 2b of this instruction is not available within this timeline, enclosure (5), paragraphs 2.a. and 2.b. of this instruction  will be reported separately.</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-2-4" identifier="/us/dod/don/secnavinst/1610_4a/p-2-4" heading="2. Commanders will work with the NAVINSGEN or the IGMC to" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Commanders will work with the NAVINSGEN or the IGMC to ensure the DIG (EVAL) is notified of the following:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Any allegation that a Service member engaged in prohibited extremist or criminal gang activities.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/1" path="p2/a/1" number="2.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Timing.  Allegations must be transmitted by commanders to the NAVINSGEN or the IGMC within 30 calendar days after the allegation is received.  Transmission is required within 60 calendar days for allegations reported to the RC.  The NAVINSGEN or the IGMC, as appropriate, will electronically transmit this information to DIG (EVAL) within 15 calendar days through a mechanism coordinated with DIG (EVAL).  The NAVINSGEN SECNAVINST 1610.4A 13 May 2026 3                   Enclosure (5) and the IGMC will electronically transmit all information to DIG (EVAL) via unique identification codes assigned to each allegation.  This unique identifier will be provided to the commander of any alleged offender, to the party or parties that reported the allegation to the NAVINSGEN or the IGMC (unless reported in a non-official duty capacity), and to DIG (EVAL). It will be associated with any future reporting or tracking requirements relating to the same incident.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Allegations received must be reported to the office designated as primary responsibility, the NAVINSGEN or the IGMC, and to the DIG (EVAL) in de-identified form and will not include the name, DoD ID number, phone number, or other PII that would directly identify alleged offenders or victims.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3" path="p2/a/3" number="2.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Reports will contain the following information for the alleged offender:</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/a" path="p2/a/3/a" number="2.a.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Grade/Rank.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/b" path="p2/a/3/b" number="2.a.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Unit.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/c" path="p2/a/3/c" number="2.a.(3)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Occupational or specialty code.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/d" path="p2/a/3/d" number="2.a.(3)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Age.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/e" path="p2/a/3/e" number="2.a.(3)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Sex.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/f" path="p2/a/3/f" number="2.a.(3)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Military Service.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/g" path="p2/a/3/g" number="2.a.(3)(g)" label="(g)" depth="3" verification="UNVERIFIED">
+            <text>How the offender is alleged to have violated reference (a), this instruction, or other relevant Military Department or Service policies (if applicable).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/h" path="p2/a/3/h" number="2.a.(3)(h)" label="(h)" depth="3" verification="UNVERIFIED">
+            <text>Date and location of the alleged prohibited conduct (if known).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/i" path="p2/a/3/i" number="2.a.(3)(i)" label="(i)" depth="3" verification="UNVERIFIED">
+            <text>Date the allegation was provided to the Commander.</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4" path="p2/a/4" number="2.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>If applicable, reports including information on victims (if known) should only contain the following: SECNAVINST 1610.4A 13 May 2026 4                   Enclosure (5)</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/a" path="p2/a/4/a" number="2.a.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Age.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/b" path="p2/a/4/b" number="2.a.(4)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Sex.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/c" path="p2/a/4/c" number="2.a.(4)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Military Service or other military affiliation (as applicable).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/d" path="p2/a/4/d" number="2.a.(4)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Grade/rank (as applicable).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/e" path="p2/a/4/e" number="2.a.(4)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Occupational or specialty code (as applicable).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/f" path="p2/a/4/f" number="2.a.(4)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Unit (as applicable).</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, the entity to which the allegation is referred for investigation or inquiry (including contact information), and the date of the referral (if one occurred).  When an allegation is not referred for investigation or inquiry, notification to the NAVINSGEN or the IGMC must occur within 30 days (60 days for RC officials) of the decision and include the reason an investigation or inquiry was not necessary. SECNAVINST 1610.4A 13 May 2026 5                   Enclosure (5)</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Referral or non-referral of any such allegation for the purposes of investigation or inquiry.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/b/1" path="p2/b/1" number="2.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Timing.  Commanders or other authorities responsible for referring allegations described in enclosure (5), paragraph</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>of this instruction for investigation or inquiry to one of the following entities – the NCIS; the NAVINSGEN or the IGMC; a military police or security police organization; a military commander; Service Insider Threat Hub; another organization or official of the DoW; or a civilian law enforcement organization or official - must notify the NAVINSGEN or the IGMC, as appropriate, within 30 calendar days (or 60 calendar days for RC officials) of referral.  The timeline for notification of referral to civilian law enforcement begins when any individual or entity who may receive an allegation becomes aware of the civilian law enforcement referral.  The NAVINSGEN or the IGMC will electronically transmit this information to DIG (EVAL) within 15 calendar days of notification.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/1" path="p2/a/1" number="2.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Timing.  Allegations must be transmitted by commanders to the NAVINSGEN or the IGMC within 30 calendar days after the allegation is received.  Transmission is required within 60 calendar days for allegations reported to the RC.  The NAVINSGEN or the IGMC, as appropriate, will electronically transmit this information to DIG (EVAL) within 15 calendar days through a mechanism coordinated with DIG (EVAL).  The NAVINSGEN SECNAVINST 1610.4A 13 May 2026 3                   Enclosure (5) and the IGMC will electronically transmit all information to DIG (EVAL) via unique identification codes assigned to each allegation.  This unique identifier will be provided to the commander of any alleged offender, to the party or parties that reported the allegation to the NAVINSGEN or the IGMC (unless reported in a non-official duty capacity), and to DIG (EVAL). It will be associated with any future reporting or tracking requirements relating to the same incident.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Allegations received must be reported to the office designated as primary responsibility, the NAVINSGEN or the IGMC, and to the DIG (EVAL) in de-identified form and will not include the name, DoD ID number, phone number, or other PII that would directly identify alleged offenders or victims.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3" path="p2/a/3" number="2.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Reports will contain the following information for the alleged offender:</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/a" path="p2/a/3/a" number="2.a.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Grade/Rank.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/b" path="p2/a/3/b" number="2.a.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Unit.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/c" path="p2/a/3/c" number="2.a.(3)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Occupational or specialty code.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/d" path="p2/a/3/d" number="2.a.(3)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Age.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/e" path="p2/a/3/e" number="2.a.(3)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Sex.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/f" path="p2/a/3/f" number="2.a.(3)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Military Service.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/g" path="p2/a/3/g" number="2.a.(3)(g)" label="(g)" depth="3" verification="UNVERIFIED">
+            <text>How the offender is alleged to have violated reference (a), this instruction, or other relevant Military Department or Service policies (if applicable).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/h" path="p2/a/3/h" number="2.a.(3)(h)" label="(h)" depth="3" verification="UNVERIFIED">
+            <text>Date and location of the alleged prohibited conduct (if known).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/i" path="p2/a/3/i" number="2.a.(3)(i)" label="(i)" depth="3" verification="UNVERIFIED">
+            <text>Date the allegation was provided to the Commander.</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4" path="p2/a/4" number="2.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>If applicable, reports including information on victims (if known) should only contain the following: SECNAVINST 1610.4A 13 May 2026 4                   Enclosure (5)</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/a" path="p2/a/4/a" number="2.a.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Age.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/b" path="p2/a/4/b" number="2.a.(4)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Sex.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/c" path="p2/a/4/c" number="2.a.(4)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Military Service or other military affiliation (as applicable).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/d" path="p2/a/4/d" number="2.a.(4)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Grade/rank (as applicable).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/e" path="p2/a/4/e" number="2.a.(4)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Occupational or specialty code (as applicable).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/f" path="p2/a/4/f" number="2.a.(4)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Unit (as applicable).</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, the entity to which the allegation is referred for investigation or inquiry (including contact information), and the date of the referral (if one occurred).  When an allegation is not referred for investigation or inquiry, notification to the NAVINSGEN or the IGMC must occur within 30 days (60 days for RC officials) of the decision and include the reason an investigation or inquiry was not necessary. SECNAVINST 1610.4A 13 May 2026 5                   Enclosure (5)</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Reporting of the referral of the final report of an investigation or inquiry to a military commander or other appropriate authority for action.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/c/1" path="p2/c/1" number="2.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Timing.  Upon receipt of the final report of an investigation or inquiry for an allegation described in enclosure (5), paragraph 2.a. of this instruction, the commander or other appropriate authority must notify the NAVINSGEN or the IGMC within 15 calendar days (or 30 calendar days for RC members).  Within 15 calendar days of receiving the notification, the NAVINSGEN or the IGMC will electronically transmit the information to DIG (EVAL).</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/c/2" path="p2/c/2" number="2.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, the name of the military commander, servicing legal office, or other authority that received the final report of the investigation or inquiry for action (including contact information); the date of the final report; and the date of receipt of the final report.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/c/3" path="p2/c/3" number="2.c.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Non-Reporting.  If the NAVINSGEN or the IGMC was previously notified that an allegation described in enclosure (5), paragraphs 2a of this instruction did not require further investigation or inquiry, and reported this information to the DIG (EVAL), no additional action is required.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>The final determination of whether an allegation described in enclosure (5), paragraph 2.a. of this instruction was substantiated or not substantiated.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/d/1" path="p2/d/1" number="2.d.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Timing.  Commanders or other appropriate authority must notify the NAVINSGEN or the IGMC within 15 calendar days of a final determination of whether an allegation is substantiated (or 30 calendar days for RC members).  Within 15 calendar days of receiving the notification, the NAVINSGEN or the IGMC will electronically transmit this information to DIG (EVAL).</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/d/2" path="p2/d/2" number="2.d.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation; the name of the military commander or other authority who assessed the allegation was substantiated (including, if possible, contact information); the date that the allegation was deemed SECNAVINST 1610.4A 13 May 2026 6                   Enclosure (5) substantiated; and the date of receipt of the determination of whether a Service Member engaged in a prohibited activity under reference (a) and this instruction.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e" path="p2/e" number="2.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Any resulting action taken against a Service Member (to include no action).</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/1" path="p2/e/1" number="2.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Report any resulting action taken against a Service Member (including judicial, disciplinary, adverse, or corrective administrative action, counseling, or no action taken) based on the determination described in enclosure (5), paragraph 2.d. of this instruction.</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/1/c" path="p2/e/1/c" number="2.e.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, and whether any action was taken against a Service Member on the basis of a determination reached under enclosure (5), paragraph 2.d. of this enclosure. SECNAVINST 1610.4A 13 May 2026 7                   Enclosure (5)</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/2" path="p2/e/2" number="2.e.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>For purposes of this reporting requirement, types of action include court-martial, other criminal prosecution, non-judicial punishment under reference (s), administrative action (involuntary discharge), administrative action (denial of continuation or re-enlistment), and administrative action (counseling).</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/3" path="p2/e/3" number="2.e.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Timing.  Commanders or other appropriate authority must notify the NAVINSGEN or the IGMC of such action (or non- actions), within 15 calendar days of a final decision (or 30 calendar days for RC officials).</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/3/a" path="p2/e/3/a" number="2.e.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>For purposes of this reporting requirement, a final decision is the DON’s final approval of an action after all stages of in-service review and appeal have completed.  For courts martial, notification should be filed upon conviction or acquittal of charges.  If the decision is appealed, then a second notification should be filed once the appeal is fully adjudicated.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/3/b" path="p2/e/3/b" number="2.e.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>The NAVINSGEN and the IGMC will electronically submit this information described in enclosure (5), paragraph</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/1" path="p2/e/1" number="2.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>of this instruction to DIG (EVAL) within 15 calendar days of notification.</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/1/c" path="p2/e/1/c" number="2.e.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, and whether any action was taken against a Service Member on the basis of a determination reached under enclosure (5), paragraph 2.d. of this enclosure. SECNAVINST 1610.4A 13 May 2026 7                   Enclosure (5)</text>
+          </provision>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>If action was taken against the Service Member, the transmission should also include the type(s) of action taken, and in the case of an administrative separation or judicial action, the basis for the action (i.e., the specific policy or article violated), the sentence or decision reached (e.g., acquittal or conviction and sentence, retention or separation and characterization of discharge) and contact information for the servicing legal office.</text>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>If no action was taken despite a finding that an allegation was substantiated under enclosure (5), paragraph 2.d. of this instruction, the transmission should note and explain the reasons why no action was warranted.</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Any allegation that a Service member engaged in prohibited extremist or criminal gang activities.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/1" path="p2/a/1" number="2.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Timing.  Allegations must be transmitted by commanders to the NAVINSGEN or the IGMC within 30 calendar days after the allegation is received.  Transmission is required within 60 calendar days for allegations reported to the RC.  The NAVINSGEN or the IGMC, as appropriate, will electronically transmit this information to DIG (EVAL) within 15 calendar days through a mechanism coordinated with DIG (EVAL).  The NAVINSGEN SECNAVINST 1610.4A 13 May 2026 3                   Enclosure (5) and the IGMC will electronically transmit all information to DIG (EVAL) via unique identification codes assigned to each allegation.  This unique identifier will be provided to the commander of any alleged offender, to the party or parties that reported the allegation to the NAVINSGEN or the IGMC (unless reported in a non-official duty capacity), and to DIG (EVAL). It will be associated with any future reporting or tracking requirements relating to the same incident.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Allegations received must be reported to the office designated as primary responsibility, the NAVINSGEN or the IGMC, and to the DIG (EVAL) in de-identified form and will not include the name, DoD ID number, phone number, or other PII that would directly identify alleged offenders or victims.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3" path="p2/a/3" number="2.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Reports will contain the following information for the alleged offender:</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/a" path="p2/a/3/a" number="2.a.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Grade/Rank.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/b" path="p2/a/3/b" number="2.a.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Unit.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/c" path="p2/a/3/c" number="2.a.(3)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Occupational or specialty code.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/d" path="p2/a/3/d" number="2.a.(3)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Age.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/e" path="p2/a/3/e" number="2.a.(3)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Sex.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/f" path="p2/a/3/f" number="2.a.(3)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Military Service.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/g" path="p2/a/3/g" number="2.a.(3)(g)" label="(g)" depth="3" verification="UNVERIFIED">
+            <text>How the offender is alleged to have violated reference (a), this instruction, or other relevant Military Department or Service policies (if applicable).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/h" path="p2/a/3/h" number="2.a.(3)(h)" label="(h)" depth="3" verification="UNVERIFIED">
+            <text>Date and location of the alleged prohibited conduct (if known).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/i" path="p2/a/3/i" number="2.a.(3)(i)" label="(i)" depth="3" verification="UNVERIFIED">
+            <text>Date the allegation was provided to the Commander.</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4" path="p2/a/4" number="2.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>If applicable, reports including information on victims (if known) should only contain the following: SECNAVINST 1610.4A 13 May 2026 4                   Enclosure (5)</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/a" path="p2/a/4/a" number="2.a.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Age.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/b" path="p2/a/4/b" number="2.a.(4)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Sex.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/c" path="p2/a/4/c" number="2.a.(4)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Military Service or other military affiliation (as applicable).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/d" path="p2/a/4/d" number="2.a.(4)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Grade/rank (as applicable).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/e" path="p2/a/4/e" number="2.a.(4)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Occupational or specialty code (as applicable).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/f" path="p2/a/4/f" number="2.a.(4)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Unit (as applicable).</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, the entity to which the allegation is referred for investigation or inquiry (including contact information), and the date of the referral (if one occurred).  When an allegation is not referred for investigation or inquiry, notification to the NAVINSGEN or the IGMC must occur within 30 days (60 days for RC officials) of the decision and include the reason an investigation or inquiry was not necessary. SECNAVINST 1610.4A 13 May 2026 5                   Enclosure (5)</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Referral or non-referral of any such allegation for the purposes of investigation or inquiry.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/b/1" path="p2/b/1" number="2.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Timing.  Commanders or other authorities responsible for referring allegations described in enclosure (5), paragraph</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>of this instruction for investigation or inquiry to one of the following entities – the NCIS; the NAVINSGEN or the IGMC; a military police or security police organization; a military commander; Service Insider Threat Hub; another organization or official of the DoW; or a civilian law enforcement organization or official - must notify the NAVINSGEN or the IGMC, as appropriate, within 30 calendar days (or 60 calendar days for RC officials) of referral.  The timeline for notification of referral to civilian law enforcement begins when any individual or entity who may receive an allegation becomes aware of the civilian law enforcement referral.  The NAVINSGEN or the IGMC will electronically transmit this information to DIG (EVAL) within 15 calendar days of notification.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/1" path="p2/a/1" number="2.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Timing.  Allegations must be transmitted by commanders to the NAVINSGEN or the IGMC within 30 calendar days after the allegation is received.  Transmission is required within 60 calendar days for allegations reported to the RC.  The NAVINSGEN or the IGMC, as appropriate, will electronically transmit this information to DIG (EVAL) within 15 calendar days through a mechanism coordinated with DIG (EVAL).  The NAVINSGEN SECNAVINST 1610.4A 13 May 2026 3                   Enclosure (5) and the IGMC will electronically transmit all information to DIG (EVAL) via unique identification codes assigned to each allegation.  This unique identifier will be provided to the commander of any alleged offender, to the party or parties that reported the allegation to the NAVINSGEN or the IGMC (unless reported in a non-official duty capacity), and to DIG (EVAL). It will be associated with any future reporting or tracking requirements relating to the same incident.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Allegations received must be reported to the office designated as primary responsibility, the NAVINSGEN or the IGMC, and to the DIG (EVAL) in de-identified form and will not include the name, DoD ID number, phone number, or other PII that would directly identify alleged offenders or victims.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3" path="p2/a/3" number="2.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Reports will contain the following information for the alleged offender:</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/a" path="p2/a/3/a" number="2.a.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Grade/Rank.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/b" path="p2/a/3/b" number="2.a.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Unit.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/c" path="p2/a/3/c" number="2.a.(3)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Occupational or specialty code.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/d" path="p2/a/3/d" number="2.a.(3)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Age.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/e" path="p2/a/3/e" number="2.a.(3)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Sex.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/f" path="p2/a/3/f" number="2.a.(3)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Military Service.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/g" path="p2/a/3/g" number="2.a.(3)(g)" label="(g)" depth="3" verification="UNVERIFIED">
+            <text>How the offender is alleged to have violated reference (a), this instruction, or other relevant Military Department or Service policies (if applicable).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/h" path="p2/a/3/h" number="2.a.(3)(h)" label="(h)" depth="3" verification="UNVERIFIED">
+            <text>Date and location of the alleged prohibited conduct (if known).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/i" path="p2/a/3/i" number="2.a.(3)(i)" label="(i)" depth="3" verification="UNVERIFIED">
+            <text>Date the allegation was provided to the Commander.</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4" path="p2/a/4" number="2.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>If applicable, reports including information on victims (if known) should only contain the following: SECNAVINST 1610.4A 13 May 2026 4                   Enclosure (5)</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/a" path="p2/a/4/a" number="2.a.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>Age.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/b" path="p2/a/4/b" number="2.a.(4)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>Sex.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/c" path="p2/a/4/c" number="2.a.(4)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>Military Service or other military affiliation (as applicable).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/d" path="p2/a/4/d" number="2.a.(4)(d)" label="(d)" depth="3" verification="UNVERIFIED">
+            <text>Grade/rank (as applicable).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/e" path="p2/a/4/e" number="2.a.(4)(e)" label="(e)" depth="3" verification="UNVERIFIED">
+            <text>Occupational or specialty code (as applicable).</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/f" path="p2/a/4/f" number="2.a.(4)(f)" label="(f)" depth="3" verification="UNVERIFIED">
+            <text>Unit (as applicable).</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, the entity to which the allegation is referred for investigation or inquiry (including contact information), and the date of the referral (if one occurred).  When an allegation is not referred for investigation or inquiry, notification to the NAVINSGEN or the IGMC must occur within 30 days (60 days for RC officials) of the decision and include the reason an investigation or inquiry was not necessary. SECNAVINST 1610.4A 13 May 2026 5                   Enclosure (5)</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Reporting of the referral of the final report of an investigation or inquiry to a military commander or other appropriate authority for action.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/c/1" path="p2/c/1" number="2.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Timing.  Upon receipt of the final report of an investigation or inquiry for an allegation described in enclosure (5), paragraph 2.a. of this instruction, the commander or other appropriate authority must notify the NAVINSGEN or the IGMC within 15 calendar days (or 30 calendar days for RC members).  Within 15 calendar days of receiving the notification, the NAVINSGEN or the IGMC will electronically transmit the information to DIG (EVAL).</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/c/2" path="p2/c/2" number="2.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, the name of the military commander, servicing legal office, or other authority that received the final report of the investigation or inquiry for action (including contact information); the date of the final report; and the date of receipt of the final report.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/c/3" path="p2/c/3" number="2.c.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Non-Reporting.  If the NAVINSGEN or the IGMC was previously notified that an allegation described in enclosure (5), paragraphs 2a of this instruction did not require further investigation or inquiry, and reported this information to the DIG (EVAL), no additional action is required.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>The final determination of whether an allegation described in enclosure (5), paragraph 2.a. of this instruction was substantiated or not substantiated.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/d/1" path="p2/d/1" number="2.d.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Timing.  Commanders or other appropriate authority must notify the NAVINSGEN or the IGMC within 15 calendar days of a final determination of whether an allegation is substantiated (or 30 calendar days for RC members).  Within 15 calendar days of receiving the notification, the NAVINSGEN or the IGMC will electronically transmit this information to DIG (EVAL).</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/d/2" path="p2/d/2" number="2.d.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation; the name of the military commander or other authority who assessed the allegation was substantiated (including, if possible, contact information); the date that the allegation was deemed SECNAVINST 1610.4A 13 May 2026 6                   Enclosure (5) substantiated; and the date of receipt of the determination of whether a Service Member engaged in a prohibited activity under reference (a) and this instruction.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e" path="p2/e" number="2.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Any resulting action taken against a Service Member (to include no action).</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/1" path="p2/e/1" number="2.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Report any resulting action taken against a Service Member (including judicial, disciplinary, adverse, or corrective administrative action, counseling, or no action taken) based on the determination described in enclosure (5), paragraph 2.d. of this instruction.</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/1/c" path="p2/e/1/c" number="2.e.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, and whether any action was taken against a Service Member on the basis of a determination reached under enclosure (5), paragraph 2.d. of this enclosure. SECNAVINST 1610.4A 13 May 2026 7                   Enclosure (5)</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/2" path="p2/e/2" number="2.e.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>For purposes of this reporting requirement, types of action include court-martial, other criminal prosecution, non-judicial punishment under reference (s), administrative action (involuntary discharge), administrative action (denial of continuation or re-enlistment), and administrative action (counseling).</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/3" path="p2/e/3" number="2.e.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Timing.  Commanders or other appropriate authority must notify the NAVINSGEN or the IGMC of such action (or non- actions), within 15 calendar days of a final decision (or 30 calendar days for RC officials).</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/3/a" path="p2/e/3/a" number="2.e.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
+            <text>For purposes of this reporting requirement, a final decision is the DON’s final approval of an action after all stages of in-service review and appeal have completed.  For courts martial, notification should be filed upon conviction or acquittal of charges.  If the decision is appealed, then a second notification should be filed once the appeal is fully adjudicated.</text>
+          </provision>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/3/b" path="p2/e/3/b" number="2.e.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
+            <text>The NAVINSGEN and the IGMC will electronically submit this information described in enclosure (5), paragraph</text>
+          </provision>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/1" path="p2/e/1" number="2.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>of this instruction to DIG (EVAL) within 15 calendar days of notification.</text>
+          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/1/c" path="p2/e/1/c" number="2.e.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
+            <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, and whether any action was taken against a Service Member on the basis of a determination reached under enclosure (5), paragraph 2.d. of this enclosure. SECNAVINST 1610.4A 13 May 2026 7                   Enclosure (5)</text>
+          </provision>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-3-3" identifier="/us/dod/don/secnavinst/1610_4a/p-3-3" heading="3. Quarterly Reporting Requirements" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Quarterly Reporting Requirements</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>The NAVINSGEN and the IGMC respective submissions of quarterly reports containing data for the preceding fiscal quarter to OUSW (P&amp;R) and the OUSW (I&amp;S) will be within 30 calendar days of the end of each quarter of the Fiscal Year (FY) (including the fiscal quarter during which the policies are published).  At a minimum, the report will aggregate the following data for the reporting period, broken down by Service and component (Active or Reserve), as referred or reported to DIG (EVAL):</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p3/a/1" path="p3/a/1" number="3.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>The number of allegations.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p3/a/2" path="p3/a/2" number="3.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The number of investigations and inquiries.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p3/a/3" path="p3/a/3" number="3.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>The number of allegations not referred for investigation or inquiry.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p3/a/4" path="p3/a/4" number="3.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>The number of final reports of investigation or inquiry referred to military commanders or other appropriate authorities for action.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p3/a/5" path="p3/a/5" number="3.a.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>The number of allegations found to be substantiated and not substantiated.</text>
+        </provision>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p3/a/6" path="p3/a/6" number="3.a.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>The number of Service Members who, on the basis of determinations as reported pursuant to enclosure (5), paragraph</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
+      <text>of this instruction (that the Service Member(s) engaged in SECNAVINST 1610.4A 13 May 2026 8                   Enclosure (5) extremist or criminal gang activities), were subject to some form of punitive and/or administrative action.</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/7" path="p2/d/7" number="2.d.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+        <text>The number of Service Members who, on the basis of determinations reported pursuant to enclosure (5), paragraph</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/a" path="p2/d/a" number="2.d.(a)" label="(a)" depth="2" verification="UNVERIFIED">
+        <text>Court martial.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/b" path="p2/d/b" number="2.d.(b)" label="(b)" depth="2" verification="UNVERIFIED">
+        <text>Other criminal prosecution.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/c" path="p2/d/c" number="2.d.(c)" label="(c)" depth="2" verification="UNVERIFIED">
+        <text>Non-judicial punishment under references (r) and (s).</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/d" path="p2/d/d" number="2.d.(d)" label="(d)" depth="2" verification="UNVERIFIED">
+        <text>Involuntary administrative separation from the Armed Forces.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/e" path="p2/d/e" number="2.d.(e)" label="(e)" depth="2" verification="UNVERIFIED">
+        <text>Denial of reenlistment due to a substantiated allegation.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/f" path="p2/d/f" number="2.d.(f)" label="(f)" depth="2" verification="UNVERIFIED">
+        <text>Counseling.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/f/8" path="p2/d/f/8" number="2.d.(f)(8)" label="(8)" depth="3" verification="UNVERIFIED">
+          <text>The number of Service Members who, notwithstanding determinations that allegations were reported as substantiated under enclosure (5), paragraph 2.d. of this instruction, were not subject to any action reported under enclosure (5), paragraph 2.e.(1) of this instruction.</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
+      <text>of this instruction (that the Service Member(s) engaged in extremist or criminal gang activities), were subject to each of the following forms of punitive and/or administrative action:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/7" path="p2/d/7" number="2.d.(7)" label="(7)" depth="2" verification="UNVERIFIED">
+        <text>The number of Service Members who, on the basis of determinations reported pursuant to enclosure (5), paragraph</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/a" path="p2/d/a" number="2.d.(a)" label="(a)" depth="2" verification="UNVERIFIED">
+        <text>Court martial.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/b" path="p2/d/b" number="2.d.(b)" label="(b)" depth="2" verification="UNVERIFIED">
+        <text>Other criminal prosecution.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/c" path="p2/d/c" number="2.d.(c)" label="(c)" depth="2" verification="UNVERIFIED">
+        <text>Non-judicial punishment under references (r) and (s).</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/d" path="p2/d/d" number="2.d.(d)" label="(d)" depth="2" verification="UNVERIFIED">
+        <text>Involuntary administrative separation from the Armed Forces.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/e" path="p2/d/e" number="2.d.(e)" label="(e)" depth="2" verification="UNVERIFIED">
+        <text>Denial of reenlistment due to a substantiated allegation.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/f" path="p2/d/f" number="2.d.(f)" label="(f)" depth="2" verification="UNVERIFIED">
+        <text>Counseling.</text>
+        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/f/8" path="p2/d/f/8" number="2.d.(f)(8)" label="(8)" depth="3" verification="UNVERIFIED">
+          <text>The number of Service Members who, notwithstanding determinations that allegations were reported as substantiated under enclosure (5), paragraph 2.d. of this instruction, were not subject to any action reported under enclosure (5), paragraph 2.e.(1) of this instruction.</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>The NAVINSGEN or the IGMC respective submissions of their second, third, and final quarterly report of each FY will also contain aggregate data for the FY-to-date and comply with all reporting requirements in enclosure (5), paragraph 6a of this instruction.  The final report of each FY will also include the following:</text>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/b/1" path="p2/b/1" number="2.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+        <text>Discussion of any new or amended Military Service policies, processes, and mechanisms implementing the requirements of reference (p) as laid out in this instruction.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/b/2" path="p2/b/2" number="2.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+        <text>Discussion of the data submitted for the preceding FY, noting any major incidents or trends observed. SECNAVINST 1610.4A 13 May 2026 9                   Enclosure (5)</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/b/3" path="p2/b/3" number="2.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+        <text>An attachment containing the raw data submitted to the DIG (EVAL) in de-identified form, as described in enclosure (5), paragraph 2 of this instruction during the preceding FY.</text>
+      </provision>
+      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/b/4" path="p2/b/4" number="2.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+        <text>Starting in FY 2026, discussion on data trends observed across at least the preceding three FYs.</text>
+      </provision>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-03" against="section text already carried in this record">
+      <change>reparse_provisions.py - provision tree rebuilt after the reference-list and signature-block parser fixes</change>
+      <change>26 path(s) added, 24 removed, 269 provisions total</change>
+      <change>reference and enclosure lists now parse under ref/ and encl/ instead of entering the body marker stack</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+    <correction date="2026-08-03" against="the Subj: field in this record's own front matter text">
+      <change>backfill_subjects.py - subject recovered from the naval letter Subj: field, which the provision parser skips as a label line</change>
+      <change>title rebuilt as doc type, native number, and subject</change>
+      <change>no text was invented; a record with no Subj: field keeps subject null</change>
+    </correction>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>22 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

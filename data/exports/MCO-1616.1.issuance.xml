@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/mco/1616_1" canonicalId="MCO-1616.1" docType="MCO" nativeNumber="1616.1" tier="T3" lifecycle="active" verification="UNVERIFIED" schemaVersion="2.0">
+  <meta>
+    <title>MCO 1616.1 - Junior Enlisted Performance Evaluation System (JEPES)</title>
+    <subject>JUNIOR ENLISTED PERFORMANCE EVALUATION SYSTEM (JEPES)</subject>
+    <distributionStatement>DISTRIBUTION STATEMENT A:  Approved for public release; distribution is</distributionStatement>
+    <provenance sourcePath="E:\GunnyBot\Policies\MCO\MCO_1616.1.pdf" sourceHash="eeb9b0c4b7c2e99580df0b641a8b58c08ea0f69cac7012ad2e9d2c32e0a44951" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="SECNAVM-5210.1" targetIdentifier="/us/dod/don/secnavm/5210_1" basis="cited" tier="T2" held="absent" from="front-matter:ref/c"/>
+    <ref rel="references" target="USC-T5-S552a" targetIdentifier="/us/usc/t5/s552a" basis="cited" tier="T0" held="held" from="front-matter:ref/d"/>
+    <ref rel="references" target="MCO-5215.1K" targetIdentifier="/us/dod/don/usmc/mco/5215_1k" basis="cited" tier="T3" held="drift" storeHolds="MCO-5215.1K-CH3" from="front-matter:ref/f"/>
+    <ref rel="references" target="MCO-1400.32D-CH1" targetIdentifier="/us/dod/don/usmc/mco/1400_32d/ch1" basis="cited" tier="T3" held="held" from="front-matter:ref/g"/>
+    <ref rel="references" target="MCO-5210.11F" targetIdentifier="/us/dod/don/usmc/mco/5210_11f" basis="cited" tier="T3" held="absent" from="front-matter:ref/i"/>
+  </authority>
+  <section anchor="front-matter" identifier="/us/dod/don/usmc/mco/1616_1/front-matter" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/front-matter/ref" path="ref" number="Ref:" label="Ref:" depth="0" role="reference" verification="UNVERIFIED">
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/front-matter/ref/a" path="ref/a" number="(a)" label="(a)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>U.S. Navy Regulations, 1990</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/front-matter/ref/b" path="ref/b" number="(b)" label="(b)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Marine Corps Manual W/CH 1-3</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/front-matter/ref/c" path="ref/c" number="(c)" label="(c)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAV M-5210.1</text>
+        <citation target="SECNAVM-5210.1" targetIdentifier="/us/dod/don/secnavm/5210_1" basis="cited" text="SECNAV M-5210.1"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/front-matter/ref/d" path="ref/d" number="(d)" label="(d)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>5 U.S.C. 552a</text>
+        <citation target="USC-T5-S552a" targetIdentifier="/us/usc/t5/s552a" basis="cited" text="5 U.S.C. 552a"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/front-matter/ref/e" path="ref/e" number="(e)" label="(e)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>SECNAV 5211.5F</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/front-matter/ref/f" path="ref/f" number="(f)" label="(f)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 5215.1K</text>
+        <citation target="MCO-5215.1K" targetIdentifier="/us/dod/don/usmc/mco/5215_1k" basis="cited" text="MCO 5215.1K"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/front-matter/ref/g" path="ref/g" number="(g)" label="(g)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO P1400.32D W/CH 1-2</text>
+        <citation target="MCO-1400.32D-CH1" targetIdentifier="/us/dod/don/usmc/mco/1400_32d/ch1" basis="cited" text="MCO P1400.32D W/CH 1-2"/>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/front-matter/ref/h" path="ref/h" number="(h)" label="(h)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>Commandant’s Planning Guidance 2019</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/front-matter/ref/i" path="ref/i" number="(i)" label="(i)" depth="1" role="reference" verification="UNVERIFIED">
+        <text>MCO 5210.11F</text>
+        <citation target="MCO-5210.11F" targetIdentifier="/us/dod/don/usmc/mco/5210_11f" basis="cited" text="MCO 5210.11F"/>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/front-matter/encl" path="encl" number="Encl:" label="Encl:" depth="0" role="enclosure" verification="UNVERIFIED">
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/front-matter/encl/1" path="encl/1" number="(1)" label="(1)" depth="1" role="enclosure" verification="UNVERIFIED">
+        <text>Junior Enlisted Performance Evaluation System Overview</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-1" identifier="/us/dod/don/usmc/mco/1616_1/p-1" heading="1. Situation. In accordance with the 2019 Commandant’s Planning Guidance," verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Situation.  In accordance with the 2019 Commandant’s Planning Guidance, our Commandant has directed a change and modernization of the way the Marine Corps should “identify skills, performance and future potential.”  The Junior Enlisted Performance Evaluation System (JEPES) is a new system that supports the promotion and retention of the highest quality Marines in a new information age.  JEPES replaces the legacy Proficiency and Conduct system and associated Individual Records Administrative Manual (IRAM) that served the Marine Corps for decades.  This Marine Corps Order establishes the policies, procedures, and standards for the operation and maintenance of the JEPES in accordance with references (a) through (i), and the submission of performance evaluations for Marines in the rank of Private through Corporal as required by article 1129 of the U.S. Navy Regulations and paragraph 2503.1 of the Marine Corps Manual.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Cancellation.  On the date effective, 1 February 2021, this Order replaces paragraph 4005, pages 4-31 through 4-43, the pro/con section of the IRAM, MCO P1070.12K W/CH 1.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Mission.  To establish the JEPES as the means by which to evaluate the performance of junior Marines, and set conditions for publishing revisions and improvements to the JEPES.</text>
+    </provision>
+  </section>
+  <section anchor="p-4" identifier="/us/dod/don/usmc/mco/1616_1/p-4" heading="4. Execution" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Execution</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Commander’s Intent and Concept of Operations</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4/p4/a/1" path="p4/a/1" number="4.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Commander’s Intent.  The JEPES provides for the accurate performance evaluation of all Marines of the rank Private through Corporal and supports the promotion and retention of the highest quality Marines. MCO 1616.1 25 Nov 2020 2</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4/p4/a/2" path="p4/a/2" number="4.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Concept of Operations.  This order establishes the concepts and overview of the JEPES.  Subsequent revisions will include the detailed JEPES software help guide and periodic system upgrades.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Subordinate Element Missions.  Commanders and officers-in-charge (OICs) must ensure that all reporting officials and Marines (Private through Corporal) under their charge are well versed in the spirit and intent of this Order.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-5" identifier="/us/dod/don/usmc/mco/1616_1/p-5" heading="5. Administration and Logistics" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Administration and Logistics</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>This Order is published electronically and can be accessed on-line via the Marine Corps Publications Electronic Library (MCPEL) at: http://www.marines.mil/News/Publications/ELECTRONICLIBRARY.aspx.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Recommendations.  Recommendations concerning the contents of this Order may be submitted to the CMC, Manpower Management Records and Performance Branch (MMRP-33) via the appropriate chain of command.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Records Management.  Records created as a result of this Order shall be managed according to National Archives and Records Administration (NARA)- approved dispositions per SECNAV M-5210.1 CH-1 to ensure proper maintenance, use, accessibility and preservation, regardless of format or medium.  Records disposition schedules are located on the Department of Navy/Assistant for Administration (DON/AA), Directives and Records Management Division (DRMD) portal page at:  https://portal.secnav.navy.mil/orgs/DUSNM/DONAA/DRM/Records- and-Information-Management/Approved%20Record%20Schedules/Forms/AllItems.aspx. Refer to MCO 5210.11F for Marine Corps records management policy and procedures.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5/p5/d" path="p5/d" number="5.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Privacy Act.  Any misuse or unauthorized disclosure of Personally Identifiable Information (PII) may result in both civil and criminal penalties.  The Department of the Navy (DON) recognizes that the privacy of an individual is a personal and fundamental right that shall be respected and protected.  The DON's need to collect, use, maintain, or disseminate PII about individuals for purposes of discharging its statutory responsibilities shall be balanced against the individuals' right to be protected against unwarranted invasion of privacy.  All collection, use, maintenance, or dissemination of PII shall be in accordance with the Privacy Act of 1974, as amended (5 U.S.C. 552a) and implemented per SECNAVINST 5211.5F.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-6" identifier="/us/dod/don/usmc/mco/1616_1/p-6" heading="6. Command and Signal" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-6/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Command and Signal</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-6/p6/a" path="p6/a" number="6.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Command.  This Order is applicable to the Marine Corps Total Force.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-6/p6/b" path="p6/b" number="6.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Signal.  This Order is effective on the 1st of February, 2021.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-1-2" identifier="/us/dod/don/usmc/mco/1616_1/p-1-2" heading="1. Purpose. This order publishes the policies, procedures, and" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-2" identifier="/us/dod/don/usmc/mco/1616_1/p-2" heading="2. Significance. The 38th Commandant of the Marine Corps, General David G." verification="UNVERIFIED">
+  </section>
+  <section anchor="p-3" identifier="/us/dod/don/usmc/mco/1616_1/p-3" heading="3. Status" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Status</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Requirements in this Order are binding on all commanders, OICs, Senior Enlisted Leaders and personnel serving as reporting officials.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Any deviation from instructions in this Order and future revisions must be authorized by the CMC (MMRP-33).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Any points of friction or improvement identified by those serving as reporting officials, are to be expediently sent to MMRP-33 as feedback.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Scope.  This Order defines junior enlisted performance evaluation authority, responsibilities, and the overall intent of the system.</text>
+    </provision>
+  </section>
+  <section anchor="p-5-2" identifier="/us/dod/don/usmc/mco/1616_1/p-5-2" heading="5. Responsibility. The currency, accuracy, and modification of this Order" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-2/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>Responsibility.  The currency, accuracy, and modification of this Order is the responsibility of the CMC (MMRP-33).  Distribution is the responsibility of the HQMC Administration and Resource Management Division (AR).  HQMC staff agencies and field commands are responsible for timely entry of changes and physical maintenance of their copies of this Order.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-2/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Publications Listing.  This Order is published electronically and can be accessed on-line via the MCPEL at: http://www.marines.mil/News/Publications/ELECTRONICLIBRARY.aspx.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-2/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Organization.  This Order is organized in chapters numbered sequentially and listed in the contents.</text>
+    </provision>
+  </section>
+  <section anchor="p-8" identifier="/us/dod/don/usmc/mco/1616_1/p-8" heading="8. Changes. Changes to this Order will follow instructions in the current" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-1-3" identifier="/us/dod/don/usmc/mco/1616_1/p-1-3" heading="1. Scope" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-3/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Scope</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-3/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>The Marine Corps Junior Enlisted Performance Evaluation System (JEPES) is the means by which Marines in the grades Private through Corporal are evaluated and recommended for promotion to the next higher grade. Following the release of subsequent revisions, the JEPES will also aid in enlisted retention and future assignments by more precisely showing how a Marine has compared to peers throughout their career.  JEPES replaces the legacy Proficiency and Conduct system and the associated portions of the IRAM.  The information provided by JEPES is readily accessible to the individual Marine, the Marine’s chain of command, career planner, occupational field sponsor, and monitor in order to ensure the best, most qualified Marines are promoted and retained.  Its fundamental concepts are transparency, accessibility, accuracy, consistency of evaluation metrics across the total force, and efficient processing.  This requires standardization of evaluation procedures, the discipline to follow them, supervision throughout the system, and the education of all participants.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-3/p1/b" path="p1/b" number="1.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>JEPES is automated under a single, user-friendly system within Marine Online (MOL), alongside the Performance Evaluation System (PES) which evaluates Marines in the grades of Sergeant through Major General.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-3/p1/c" path="p1/c" number="1.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>The Junior Enlisted Performance Evaluation System Worksheet.  The JEPES worksheet has two purposes.  First, it projects the Marine Reported On (MRO)’s current objective scores and how they compare to peers in rank and MOS.  Second, it is the means by which the performance and promotion recommendations of junior Marines (Private through Corporal) are captured and evaluated by the chain of command during a specific period of time.  The completed JEPES worksheet is accessed via the MRO Dashboard depicted  in appendix A.</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-3/p1/c/1" path="p1/c/1" number="1.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>The primary output of the JEPES worksheet is a Performance Evaluation System (PES) score that is used for promotion on a monthly basis in accordance with MCO P1400.32D, reference (g).  The PES score is comprised of four equally weighted pillars each worth 25 percent of the Marine’s score as depicted appendix D:</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-3/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Warfighting (25 percent). Consists of the MRO’s current rifle score percentile against peers of the same rank and Marine Corps Martial Arts Program (MCMAP) Belt, each worth 12.5 percent of the PES Score.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-3/p1/b" path="p1/b" number="1.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Physical Toughness (25 percent). Consists of the MRO’s current Physical Fitness Test (PFT) and Combat Fitness Test (CFT) score percentiles against peers of the same rank, each worth 12.5 percent of the PES Score.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-3/p1/c" path="p1/c" number="1.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Mental Agility (25 percent). Consists of an MRO’s informal PME in grade (MarineNet) and in service/in grade civilian self-education (college/vocational courses and degrees), each worth 12.5 percent of the PES Score.</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-3/p1/c/1" path="p1/c/1" number="1.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>The primary output of the JEPES worksheet is a Performance Evaluation System (PES) score that is used for promotion on a monthly basis in accordance with MCO P1400.32D, reference (g).  The PES score is comprised of four equally weighted pillars each worth 25 percent of the Marine’s score as depicted appendix D:</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-3/p1/d" path="p1/d" number="1.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Command Input (25 percent). Consists of the average marks in grade of three lines of subjective evaluation:  Individual Character, MCO 1616.1 25 Nov 2020 1-2 Enclosure (1) Military Occupational Specialty (MOS) and/or Mission Accomplishment, and Leadership.  This is the command’s chance to highlight superior or inferior MOS proficiency, acts of personal integrity, and leadership. NOTE:  Marines may be eligible for Special Duty Assignment (SDA) or Command Recruiting Bonus (CRB) bonus points which are added to the total PES score.</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-3/p1/d/2" path="p1/d/2" number="1.d.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The JEPES worksheet is a transparent document which shows individual Marines how their objective scores (Rifle, MCMAP, PFT, CFT, Informal PME, Self-Education) reported in the Marine Corps Total Force System (MCTFS) compare to peers of the same rank and MOS.  Additionally, it shows the recommended Command Input Marks and comments from the MRO’s entire reporting chain.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-3/p1/d/3" path="p1/d/3" number="1.d.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>The JEPES is not a communication tool, nor a counseling document for, the Marine.  However, the content of the JEPES worksheet will provide quantifiable information for a debriefing at the end of the reporting period and reinforce counseling sessions throughout the reporting period.</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-2-2" identifier="/us/dod/don/usmc/mco/1616_1/p-2-2" heading="2. Purpose. The purpose of JEPES is to create transparency and" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-3-2" identifier="/us/dod/don/usmc/mco/1616_1/p-3-2" heading="3. Objectives of the System. The JEPES must accomplish the following" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-2/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Objectives of the System.  The JEPES must accomplish the following objectives:</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-2/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Accurate and Standardized Assessment.  The evaluation must:</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-2/p3/a/1" path="p3/a/1" number="3.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Reflect an assessment of tangible results achieved over the reporting period by presenting current objective scores reported in the Marine Corps Total Force System (MCTFS).</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-2/p3/a/2" path="p3/a/2" number="3.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Allow the chain of command to provide input that utilizes well- understood metrics that complete the whole picture of the Marine’s performance and effectively aids the promotion process per reference (g).</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-2/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Preventing Score Inflation.  Countering inflation begins with the chain of command properly utilizing the JEPES command input evaluation metrics, figure 1-2, and accurately reporting the Marine’s performance.</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-2/p3/b/1" path="p3/b/1" number="3.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>The design of the JEPES Worksheet limits the ability of the chain of command to unjustifiably inflate promotion scores.  This check and balance is accomplished by weighting command input equally with each of the other pillars of JEPES, while maintaining the commander’s ability to “not recommend” a Marine for promotion.  The worksheet also shows how the individual Marine’s objective scores compares with Marines of the same grade and MOS.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-2/p3/b/2" path="p3/b/2" number="3.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Command input must be based on the Marine’s accomplishments utilizing the JEPES command input evaluation metrics during the reporting period.  Inflating command input marks does a disservice to the individual Marine and the institution by interfering with the promotion of the best, MCO 1616.1 25 Nov 2020 1-3 Enclosure (1) most qualified Marines and portraying an inaccurate record of the Marine’s service.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-2/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Timely Completion.  JEPES reporting occasions must be completed and approved by the end of the reporting period in order to ensure timely and accurate evaluations.  The reporting chain may begin forwarding recommended command input marks 45 days prior to the end of the reporting period. Occasions not approved by the end of the reporting period are considered delinquent and will be captured in command reporting.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-4-2" identifier="/us/dod/don/usmc/mco/1616_1/p-4-2" heading="4. Key Concepts" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4-2/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Key Concepts</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4-2/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Transparency.  The objective data and subjective command input attributes that comprise the JEPES Worksheet, as well as the grading criteria, are easily viewable to the MRO and the chain of command. Additionally, all parties are able to see how the MRO compares to peers.</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4-2/p4/a/1" path="p4/a/1" number="4.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>The MRO and chain of command can view what percentile the Marine falls into when compared against peers in the same rank, MOS, or cohort for each attribute.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4-2/p4/a/2" path="p4/a/2" number="4.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The MRO can view the status and location of the JEPES worksheet, all markings and comments from the chain of command once they are complete, and receives notification in JEPES when the occasion has been approved.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4-2/p4/a/3" path="p4/a/3" number="4.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>The finalized evaluation and comments are viewable by the chain of command, promotions branch (MMPR), retention branch (MMEA), career planners, and monitors, all of which synchronize efforts in promoting and retaining the highest quality Marines.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4-2/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Accuracy.  The weight of the objective attributes in the JEPES (75 percent of total) ensures that the preponderance of the PES score is a result of the Marine’s most current training scores recorded in MCTFS.  The MRO and leadership must review all information projected in JEPES to ensure it is current and accurate.  This includes commendatory or adverse material, as well as individual accomplishments which inform the command input.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4-2/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Consistency of Evaluation Metrics Across the Total Force.  The chain of command must reasonably apply the JEPES command input evaluation metrics and definitions, appendix B, to guide the command input portion.  The chain of command may not use a personal or unit set of precepts or unreasonable expectations, as this would disrupt fair and uniform assessments.  There is flexibility built into these metrics to be able to apply them to any MOS.</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4-2/p4/c/1" path="p4/c/1" number="4.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>The chain of command must embody, preserve, and personally represent the high standards of Marine Corps integrity and moral courage. Personal biases, double standards, and a grading philosophy that is not in accordance with this Order or Marine Corps Core Values are unacceptable and violate the spirit and intent of JEPES.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4-2/p4/c/2" path="p4/c/2" number="4.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Marines who suspect personal bias, double standards, or a grading philosophy not adhering to this Order, may engage their reporting chain and make their case to the Approver via the request mast process and using items such as their billet accomplishments as references. MCO 1616.1 25 Nov 2020 1-4 Enclosure (1)</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4-2/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Accessibility.  Because JEPES requires input from the lowest-level leadership, it is readily accessible from a variety of government-owned and personal electronic devices via username and password.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4-2/p4/e" path="p4/e" number="4.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Efficient Processing.  JEPES is designed to facilitate the evaluation of the entire population of privates through corporals, the largest percentage of the Marine Corps Total Force.  Therefore, the system is designed to efficiently process a large quantity of JEPES Worksheets without increasing administrative burden.</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4-2/p4/e/1" path="p4/e/1" number="4.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>JEPES maximizes automated processes, while facilitating the appropriate amount of human input to the MRO’s evaluation.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-4-2/p4/e/2" path="p4/e/2" number="4.e.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Commanders are able to view and batch process large quantities of JEPES Worksheets.</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-5-3" identifier="/us/dod/don/usmc/mco/1616_1/p-5-3" heading="5. General Responsibilities" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-3/p5" path="p5" number="5." label="5." depth="0" verification="UNVERIFIED">
+      <text>General Responsibilities</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-3/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Marine Reported On (MRO).  The MRO is the subject of the JEPES Worksheet.  The MRO is encouraged, but is not required to, submit accomplishments during the reporting period in JEPES.  The MRO shall ensure that all objective scores are accurate.  The MRO must possess a clear understanding of the concepts of the JEPES, his or her role in accomplishing the unit’s mission, and the expectations of the chain of command.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-3/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>First Line Supervisor (FLS).  The FLS is a leader who has direct supervision over the MRO and is charged with providing thorough and accurate observation and guidance.  The FLS is the first person in the MRO’s reporting chain to provide recommended command input markings and comments.  This role is not rank or billet specific, but careful consideration should be taken when assigning a leader as an FLS, as their input will form the basis of the recommended command input markings.  As an example, the FLS could be the MRO’s team leader, squad leader, or section leader.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-3/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Evaluator.  The Evaluator is a leader who has direct supervision over the FLS and responsibility for the MRO.  The Evaluator also provides recommended command input markings and comments.  This role is not rank or billet specific, however it typically is filled by platoon-level leadership. As an example, the Evaluator could be the MRO’s platoon commander, OIC, or SNCOIC.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-3/p5/d" path="p5/d" number="5.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Senior Enlisted Reviewer (SER).  The SER is an enlisted leader (E6 or above) who reviews JEPES Worksheets and command marks for accuracy at the platoon and company levels.  The SER provides the FLS, Evaluator, and Reviewer comments and recommendations, however does not have the ability to submit draft marks, return reports, or stop the flow of the evaluation through the reporting chain.  An SER could be the platoon sergeant, first sergeant, or any SNCO in the unit.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-3/p5/e" path="p5/e" number="5.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Reviewer.  The Reviewer is a leader who has direct supervision over the Evaluator and responsibility for the MRO, typically at the company level. This position is also not rank or billet-specific, but the Reviewer should have the requisite experience and seniority to provide quality recommendations to an O-5 level commander or OIC. As an example, the Reviewer could be a company commander or first sergeant, officer in charge, department head, or staff primary/chief. MCO 1616.1 25 Nov 2020 1-5 Enclosure (1)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-3/p5/f" path="p5/f" number="5.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Command Reviewer.  The Command Reviewer is an enlisted leader appointed by the Approver (O-5 level commander or OIC equivalent) who reviews JEPES Worksheets and command marks for accuracy at the battalion/squadron level.  The Command Reviewer provides the Reviewer and Approver comments and recommendations, however does not have the ability to submit draft marks, return reports, or stop the flow of the evaluation through the reporting chain.  The Command Reviewer could be the command sergeant major or any SNCO in the unit.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-3/p5/g" path="p5/g" number="5.g." label="g." depth="1" verification="UNVERIFIED">
+        <text>Approver.  The Approver is the O-5 level commander or OIC equivalent in the MRO’s chain of command who is responsible for setting and approving final command input marks, thereby certifying the JEPES worksheet for inclusion in the promotion process.  As a commander and representative of the CMC, the Approver must ensure reporting officials uphold JEPES policy and protect against inflation.  The Approver should only delegate approval authority to one trusted leader in special cases when not able to perform duties.  This delegation of approval authority must be documented via an official appointment letter.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-3/p5/h" path="p5/h" number="5.h." label="h." depth="1" verification="UNVERIFIED">
+        <text>MOL Manager.  Marines fulfilling the role of a MOL manager at the battalion/squadron and company level have administrative permissions to assign Marines roles and permissions, establish reporting chains, and assist their commanders in the management of the JEPES in order to ensure that all Marines are properly evaluated.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-3/p5/i" path="p5/i" number="5.i." label="i." depth="1" verification="UNVERIFIED">
+        <text>Headquarters Marine Corps (HQMC).  MMRP-33 promulgates policy and processes, maintains JEPES Worksheet information, and serves as the administrator of the JEPES.  While the Approver is charged with final approval authority for all JEPES worksheets, MMRP-33 has the capability to assist with complex situations and advise on policy.  Additionally, the section provides education to the total force, help desk services, and generates reporting on unit performance, compliance and timeliness.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-3/p5/j" path="p5/j" number="5.j." label="j." depth="1" verification="UNVERIFIED">
+        <text>All Leaders.  All leaders have an obligation to know, understand, and promulgate this Order to their subordinates.  The integrity of the JEPES depends on this, as well as strict compliance to policy.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-6-2" identifier="/us/dod/don/usmc/mco/1616_1/p-6-2" heading="6. Junior Enlisted Performance Evaluation Cycle. The JEPES evaluation cycle" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-6-2/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Junior Enlisted Performance Evaluation Cycle.  The JEPES evaluation cycle is based on the annual and semi-annual reporting periods which end on 31 January and 31 July respectively.  PES scores are calculated monthly and thus allow Marines to compete for promotion on a monthly basis in accordance with this Order and reference (g).  Below reflects the routing of a JEPES worksheet for an MRO in a battalion with a standard squad-platoon-company structure, visually depicted in figure 1-0.  Not all units will have this structure, at a minimum the MRO must have an Approver and one other reporting chain role as depicted in figure 1-1.</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-6-2/p6/a" path="p6/a" number="6.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Marine Reported On (MRO) Checks in to Unit.  The evaluation cycle begins when the MRO checks into a new unit.  The MRO is assigned a reporting chain appropriate to the unit type via permissions management by the battalion and company administrative chiefs.  This reporting chain must include an Approver and one other reporting chain role at a minimum.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-6-2/p6/b" path="p6/b" number="6.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>MRO’s First Line Supervisor Conducts Initial Counseling.  Once the MRO has an established reporting chain, the FLS or first leader in the MRO’s reporting chain will conduct an initial written counseling within 30 days MCO 1616.1 25 Nov 2020 1-6 Enclosure (1) with the MRO and establish billet expectations.  At this point the MRO and FLS will validate objective scores and initiate any corrective action.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-6-2/p6/c" path="p6/c" number="6.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Reporting Occasion Occurs.  Known reporting occasions (annual, semi- annual, and planned transfers) initiate automated notifications to the chain of command in the JEPES to take action and conduct evaluation no earlier than 45 days prior to the end of the reporting period.  The MRO will review objective scores again, take any corrective actions, and have the opportunity to provide the FLS billet accomplishments throughout the reporting period up until the occasion is routed.  The FLS may view and make draft command input marks on the MRO’s JEPES worksheet throughout the reporting period, but may not submit recommended marks to the next higher level of the reporting chain any earlier than 45 days prior to the end of the reporting period.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-6-2/p6/d" path="p6/d" number="6.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Reporting Chain Conducts Evaluation of MRO.  The FLS will select draft marks for the command input attributes, provide promotion recommendations as necessary (NOT REC), select comments as required, and submit to a SER (optional) and the Evaluator. The Evaluator and Reviewer will follow the same evaluation process until the JEPES worksheet reaches the Approver.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-6-2/p6/e" path="p6/e" number="6.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Approver Submits Final Marks.  The Approver will review draft marks from the chain of command, any comments from the Command Reviewer, and provide comments as required.  The Approver will then approve final command input marks.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-6-2/p6/f" path="p6/f" number="6.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>MRO is Debriefed on Report.  The evaluation cycle ends when the MRO receives a debriefing from the First Line Supervisor and/or the reporting chain.  Although this debriefing is focused on past performance during the reporting period, it should also inform areas to focus on during future performance. Figure 1-0.—Full JEPES Reporting Chain. MCO 1616.1 25 Nov 2020 1-7 Enclosure (1) Figure 1-1.—Minimum JEPES Reporting Chain. NOTE:  Requires an Approver and either a FLS, Evaluator, or Reviewer at a minimum.</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-7" identifier="/us/dod/don/usmc/mco/1616_1/p-7" heading="7. Authority. The CMC vests central authority and responsibility for the" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-1-4" identifier="/us/dod/don/usmc/mco/1616_1/p-1-4" heading="1. Reporting Chain Responsibilities" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Reporting Chain Responsibilities</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Purpose.  The reporting chain serves two functions:</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/a/1" path="p1/a/1" number="1.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Provides the Marine a clear understanding of his or her role in the unit, responsibilities, and performance expectations.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/a/2" path="p1/a/2" number="1.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Provides the Approver accurate recommendations on the MRO’s command input marks and fitness for promotion.  None of the reporting chain assignments have a required rank or billet in order to allow for maximum flexibility.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/b" path="p1/b" number="1.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>First Line Supervisor (FLS).  The FLS, as defined in Chapter 1, has direct supervision over the MRO and is the first person in the reporting chain to provide recommended command input marks. The FLS shall:</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/b/1" path="p1/b/1" number="1.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Provide the MRO an initial written counseling within 30 days of the relationship being established, defining the MRO’s billet description, role in the unit, responsibilities, and performance expectations.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/b/2" path="p1/b/2" number="1.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Review the MRO’s objective scores in order to ensure accuracy. This includes ensuring that the appropriate waiver is reported in MCTFS for Marines who rate exemptions (Medical, Combat, Unit Waiver) for Rifle, PFT, and CFT, bringing forward a previous score for calculation.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/b/3" path="p1/b/3" number="1.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Provide recommended subjective command marks and comments/justifications as required in JEPES.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/c" path="p1/c" number="1.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Evaluator.  The Evaluator, as defined in Chapter 1, has direct supervision over the FLS and responsibility over the MRO. The Evaluator shall:</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/c/1" path="p1/c/1" number="1.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Ensure the FLS is performing his or her responsibilities in JEPES as defined by this Order.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/c/2" path="p1/c/2" number="1.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Provide recommended subjective command marks and comments/justifications as required in JEPES.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/d" path="p1/d" number="1.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Reviewer.  The Reviewer, as defined in Chapter 1, has direct supervision over the Evaluator and responsibility over the MRO. The Reviewer is the last member of the reporting chain to provide recommended subjective marks before the Approver. The Reviewer shall:</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/d/1" path="p1/d/1" number="1.d.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Ensure the FLS and Evaluator are performing their responsibilities in JEPES as defined by this Order.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/d/2" path="p1/d/2" number="1.d.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Provide recommended subjective command marks and comments/justifications as required in JEPES.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/e" path="p1/e" number="1.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Senior Enlisted Reviewer (SER).  The SER, as defined in Chapter 1, is a SNCO who serves in an advisory role for the FLS, Evaluator, Reviewer, or Approver. The SER reviews JEPES worksheets for accuracy and can provide comments to a member of the reporting chain; however, the SER does not make MCO 1616.1 25 Nov 2020 2-2 Enclosure (1) recommended command input marks.  The SER review is encouraged but not required for JEPES worksheet processing.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/f" path="p1/f" number="1.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Approver.  The Approver, as defined in Chapter 1, is the O-5 level commander or OIC equivalent who has final approval authority for JEPES worksheets.  The Approver is ultimately responsible for the accuracy of JEPES worksheets and the integrity of the system.  The Approver may, if unable to perform duties, delegate permissions to perform the below tasks to one trusted leader via appointment letter.  However, the Approver always holds ultimate responsibility.  The Approver shall:</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/f/1" path="p1/f/1" number="1.f.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Ensure an MRO’s command input marks are accurate and made in accordance with this Order.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/f/2" path="p1/f/2" number="1.f.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Input “not recommended for promotion” as required with every reporting occasion.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/f/3" path="p1/f/3" number="1.f.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Meet the timelines set forth in this Order for approving JEPES worksheets.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/f/4" path="p1/f/4" number="1.f.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>Ensure all Marines have a reporting chain and are receiving performance evaluations.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-4/p1/f/5" path="p1/f/5" number="1.f.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Ensure all reporting chain members are fulfilling their responsibilities in accordance with this Order.</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-2-3" identifier="/us/dod/don/usmc/mco/1616_1/p-2-3" heading="2. Reporting Occasions" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Reporting Occasions</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>All Marines fall under the JEPES for performance evaluation from the time they enter Recruit Training until they attain the rank of sergeant. Understanding and adherence to the JEPES reporting occasions ensures that there are no gaps in a Marine’s record.  JEPES facilitates this by auto- preparing Semi-Annual and Annual JEPES worksheets and notifying the reporting chain of upcoming occasions and due dates.  However, timely completion of reports is ultimately the responsibility of the O-5 level commander.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Below are the JEPES reporting occasions, their associated “TO” dates, and other pertinent information.  Unless noted otherwise, the “FROM” date will always be the day following the last day of the previous occasion.  In the event that two or more occasions occur at the same time, the higher occasion on the list will be utilized:</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/b/1" path="p2/b/1" number="2.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>PR (Promotion).  Complete an evaluation when the MRO is promoted to the rank of Corporal or Sergeant. TO DATE:  The day prior to the MRO’s new date of rank.  Promotion to the rank of private first class and lance corporal do not qualify as a reporting occasion.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/b/2" path="p2/b/2" number="2.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>TR (Transfer).  Complete an evaluation when an MRO is transferred externally to another RUC/MCC or temporary RUC/MCC. TO DATE:  The MRO’s date of transfer.  The following situations also rate TR occasions:</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Assignment to Active Duty (Reserve Component only).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Assignment to Involuntary Active Duty (Reserve Component only).</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/b/1" path="p2/b/1" number="2.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>PR (Promotion).  Complete an evaluation when the MRO is promoted to the rank of Corporal or Sergeant. TO DATE:  The day prior to the MRO’s new date of rank.  Promotion to the rank of private first class and lance corporal do not qualify as a reporting occasion.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/b/2" path="p2/b/2" number="2.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>TR (Transfer).  Complete an evaluation when an MRO is transferred externally to another RUC/MCC or temporary RUC/MCC. TO DATE:  The MRO’s date of transfer.  The following situations also rate TR occasions:</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Release from Active Duty. MCO 1616.1 25 Nov 2020 2-3 Enclosure (1)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Release from Extended Active Duty (EAD) or Active Reserve (AR) (Reserve Component Only).</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/d/1" path="p2/d/1" number="2.d.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Another reporting occasion under the same command occurred 30 days or less prior to the end date of the AN or SA reporting period.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/d/2" path="p2/d/2" number="2.d.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The MRO received an evaluation from a previous unit and transferred within 30 days of the AN or SA reporting period.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/d/3" path="p2/d/3" number="2.d.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>A reservist activates for 365 days or more and is covered by an active duty unit under SA occasions negating the requirement for an AN.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/d/4" path="p2/d/4" number="2.d.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>The MRO is undergoing initial skills training (IST) that is over six months long, or the IST is under six months but straddles the end of the SA or AN reporting period.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/e" path="p2/e" number="2.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Completion of Recruit Training.</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/e/1" path="p2/e/1" number="2.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>For occasions outside of AN and SA which are unknown until relatively shortly before they occur, for example an unexpected TR or PR occasion, the command shall make every effort to complete the evaluation by the end date.  Commands are still required to complete transfer occasions even after the Marine physically leaves the unit and falls under the gaining command’s accountability.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/e/2" path="p2/e/2" number="2.e.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Timeliness of evaluations are tracked in the JEPES both by the command and Headquarters Marine Corps.  Delinquent JEPES worksheets will be reported within a RUC/MCC every 15 days and externally every 30 days.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/f" path="p2/f" number="2.f." label="f." depth="1" verification="UNVERIFIED">
+        <text>Completion of Initial Skills Training (formal schools required to earn Primary MOS).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/g" path="p2/g" number="2.g." label="g." depth="1" verification="UNVERIFIED">
+        <text>Transfer to Temporary Disability Retired List (TRDL).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/h" path="p2/h" number="2.h." label="h." depth="1" verification="UNVERIFIED">
+        <text>Transfer to school in TEMINS.  EXAMPLE: MRO is going to recruiters school and not returning to command.</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/h/4" path="p2/h/4" number="2.h.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>TD (To TAD).  Complete an evaluation when the MRO is going TAD for more than 30 days in include schools that are not part of Initial Skills Training.  TO DATE:  The MRO’s date of departure to TAD.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/h/5" path="p2/h/5" number="2.h.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>TC (TAD Complete).  Complete an evaluation when the MRO returns from TAD of more than 30 Days.  The RUC/MCC to which the MRO was temporarily assigned is responsible for this occasion.  TO DATE:  The MRO’s date of departure from TAD site.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/h/6" path="p2/h/6" number="2.h.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>AN (Annual).  Complete an evaluation annually for Marines in the Reserve Component.  FROM DATE:  1 January.  TO DATE:  31 December.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/h/8" path="p2/h/8" number="2.h.(8)" label="(8)" depth="2" verification="UNVERIFIED">
+          <text>AT (Completion of Annual Training).  Complete an evaluation when an MRO in the Reserve Component has completed annual training.  If the Marine attends annual training within 90 days of the end of the annual reporting period, report AN.  If the MRO receives marks for any other occasion within 90 days of the end of the annual reporting period, omit AN marks.  FROM DATE: First day of annual training.  TO DATE:  Last day of annual training.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/h/9" path="p2/h/9" number="2.h.(9)" label="(9)" depth="2" verification="UNVERIFIED">
+          <text>DC (Discharge).  Complete an evaluation when the MRO is discharged from the service.  TO DATE:  Day before discharge.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/h/10" path="p2/h/10" number="2.h.(10)" label="(10)" depth="2" verification="UNVERIFIED">
+          <text>RD (Reduction).  Complete an evaluation when the MRO is reduced in rank.  TO DATE:  Last day at previous rank.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/h/11" path="p2/h/11" number="2.h.(11)" label="(11)" depth="2" verification="UNVERIFIED">
+          <text>DD (Declared Deserter).  TO DATE:  First day Marine in Deserter Status.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/h/12" path="p2/h/12" number="2.h.(12)" label="(12)" depth="2" verification="UNVERIFIED">
+          <text>RT (Active Duty Operational Support).  Complete an evaluation when the MRO completes ADOS.  FROM DATE:  First day of ADOS.  END DATE:  Last day of ADOS. MCO 1616.1 25 Nov 2020 2-4 Enclosure (1)</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Minimum Observation Time.  The minimum observation time for JEPES worksheets is 30 days.  Exceptions include service schools that are less than 30 days.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Omitted Occasions. Under certain circumstances, occasions are omitted in order to reduce administrative burden.  The AN or SA occasion are omitted when:</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/d/1" path="p2/d/1" number="2.d.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Another reporting occasion under the same command occurred 30 days or less prior to the end date of the AN or SA reporting period.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/d/2" path="p2/d/2" number="2.d.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>The MRO received an evaluation from a previous unit and transferred within 30 days of the AN or SA reporting period.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/d/3" path="p2/d/3" number="2.d.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>A reservist activates for 365 days or more and is covered by an active duty unit under SA occasions negating the requirement for an AN.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/d/4" path="p2/d/4" number="2.d.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>The MRO is undergoing initial skills training (IST) that is over six months long, or the IST is under six months but straddles the end of the SA or AN reporting period.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/e" path="p2/e" number="2.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Completion Due Dates.  Commanders have until January 31st and July 31st to complete their SA evaluations respectively, and until December 31st to complete AN evaluations.  Commanders may complete their AN and SA evaluations well in advance of these due dates, however this should be balanced with consideration for actions and accomplishments towards the end of the reporting period that could influence marks.</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/e/1" path="p2/e/1" number="2.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>For occasions outside of AN and SA which are unknown until relatively shortly before they occur, for example an unexpected TR or PR occasion, the command shall make every effort to complete the evaluation by the end date.  Commands are still required to complete transfer occasions even after the Marine physically leaves the unit and falls under the gaining command’s accountability.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/e/2" path="p2/e/2" number="2.e.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Timeliness of evaluations are tracked in the JEPES both by the command and Headquarters Marine Corps.  Delinquent JEPES worksheets will be reported within a RUC/MCC every 15 days and externally every 30 days.</text>
+        </provision>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-3-3" identifier="/us/dod/don/usmc/mco/1616_1/p-3-3" heading="3. Command Input Instructions. The purpose of the Command Input is to" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Command Input Instructions.  The purpose of the Command Input is to complete the whole picture of the MRO’s performance.  As the fourth pillar of JEPES equally weighted with Warfighting, Physical Toughness, and Mental Agility, it is the Commander’s voice to break out those Marines most or least deserving of promotion.  The entire reporting chain will utilize Figure 1-2 JEPES Command Input Evaluation Metrics when making recommended marks or approving final marks. MCO 1616.1 25 Nov 2020 2-5 Enclosure (1) MCO 1616.1 25 Nov 2020 2-6 Enclosure (1) Figure 1-2 JEPES Command Input Evaluation Metrics</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>JEPES Command Input Evaluation Metrics Guidelines.  The above metrics have enough inherent flexibility to be applied to Marines of all ranks and MOSs.  The below guidelines shall be utilized by the reporting chain when making marks:</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/a/1" path="p3/a/1" number="3.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>5.0 – 4.1.  Only those Marines who have displayed the highest levels of Individual Character, MOS and/or Missions accomplishment, and Leadership should be marked “Exceptional” between 4.1 and 5.0.  High marks in any category require a justification comment from the drop-down list of directed comments in JEPES, supported by formal commendatory material visible in JEPES under the Adversity/Commendatory display.  Marking a Marine in the “Exceptional” range should be a rarity and may apply only to a select handful of Marines throughout an annual or semi-annual reporting period.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/a/2" path="p3/a/2" number="3.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>4.0 – 3.1.  Solid performers whose accomplishments did not rate formal commendatory material may fall into the category of “Exceeds Expectations” and be marked between 3.1 through 4.0.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/a/3" path="p3/a/3" number="3.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>3.0 – 2.0.  A Marine who “Meet’s Expectations” for their grade in the areas of Character, MOS and or Mission Accomplishment, and Leadership fall between 2.0 and 3.0.  Until proven otherwise, a Marine should begin at 2.5 in all three categories.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/a/4" path="p3/a/4" number="3.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>1.9 – 1.0.  Marines struggling, but making concerted efforts in any of the three categories should fall between 1.0 and 1.9 “Working Towards Expectations.”  This may apply to a Marine who is behind peers in learning a new job or skill.  This is not adverse,  nor does it require the Commander to “NOT REC” the MRO for promotion. MCO 1616.1 25 Nov 2020 2-7 Enclosure (1)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/a/5" path="p3/a/5" number="3.a.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>0.9 – 0.1.  Marines in the category of “Below Expectations” fall between 0.1 and 0.9 when the MRO struggles in any of the three categories as evidenced by counseling, documented or informal, that occurred during the reporting period.  Marking an MRO in this category requires a justification comment from the drop-down list of directed comments in JEPES, however is not adverse and does not by itself “NOT REC” the MRO for promotion. NOTE:  It is recognized that the bulk, approximately 80% +/- 10%, of any given unit will likely be found between 2.0 and 4.0.  Above 4.1 is for the most exceptional Marine, with 5.0 being the near-unattainable score of perfection achievable in only the most remarkable of situations with exploits that exceed the bounds of the unit responsible for that Marine.  Each point above 4.1 should increase in difficulty of achievement at an exponential rate.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Not Recommended for Promotion.  Commanders have the ability in JEPES to “NOT REC” an MRO.  Unless the commander approves a “NOT REC,” the MRO is by default recommended for promotion.</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/b/1" path="p3/b/1" number="3.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>“NOT RECS” will occur with every reporting occasion and be in effect either until the next occasion, or when lifted by the commander.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/b/2" path="p3/b/2" number="3.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Marking a “0.0” in any category will, by default, “NOT REC” the Marine.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/b/3" path="p3/b/3" number="3.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>The commander may “NOT REC” a Marine, with a directed justified comment, regardless of how high or low their command input markings may be.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/b/4" path="p3/b/4" number="3.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>The commander may “NOT REC” a Marine, or lift the “NOT REC” and recommend the Marine for promotion, at any time as may be required.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Adverse Material.  Adverse material carry with them promotion restrictions in accordance with MCO P1400.32D, reference (g), that will prevent the MRO from being promoted while the restriction lasts.  The command will take these circumstances into account when giving command input marks and will “NOT REC” the MRO for adverse material as appropriate.  Adverse material that warrant a “NOT REC” for the reporting period are:</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/c/1" path="p3/c/1" number="3.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Pending or completed legal action</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/c/2" path="p3/c/2" number="3.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Notification of separation proceedings</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/c/3" path="p3/c/3" number="3.c.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>Assignment to the Body Composition (BCP)/Military Appearance Program (MAP)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/c/4" path="p3/c/4" number="3.c.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>PFT/CFT failure</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/c/5" path="p3/c/5" number="3.c.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>Training failure</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/c/6" path="p3/c/6" number="3.c.(6)" label="(6)" depth="2" verification="UNVERIFIED">
+          <text>Subject of a Competency Review Board (CRB)</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/d" path="p3/d" number="3.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Guidance for Recruit Training and Entry-Level Schoolhouses.  The below guidance applies to the Marine Corps Recruit Depots, Initial Skills Training, and Schoolhouses where Marines earn their primary MOS:</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/d/1" path="p3/d/1" number="3.d.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>A recruit or student who successfully graduates will receive marks of 2.5 “Meets all Expectations” for all three command input attributes. MCO 1616.1 25 Nov 2020 2-8 Enclosure (1)</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p3/d/2" path="p3/d/2" number="3.d.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>Honor graduates and Marines specially recognized may receive markings in the “Exceeds Expectations” category 3.1-4.0 in one or more command input attributes.  EXAMPLE:  Marine was a honor graduate or recipient of a leadership award.</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Corrective Procedures.  Corrective procedures for JEPES worksheets fall into three situations:  those in which late-run objective scores or command input marks could result in an automatic remedial promotion, those in which previously approved command input marks must be corrected, or administrative changes to a JEPES worksheet that do not impact the MRO’s PES Score.</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>The MRO’s PES score will automatically recalculate when objective scores and command input marks are reported late in MCTFS.   If that new PES score meets or exceeds the cutting score applicable to the month of the late score’s effective date, the command will be notified in JEPES that the Marine rates a remedial promotion in accordance with MCO P1400.32D, reference (g).</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Previously approved command input marks may need to be changed due to either human error on the part of the reporting chain or unexpected circumstances.</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p4/b/1" path="p4/b/1" number="4.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>If the Approver is still in the MRO’s reporting chain, the Approver may directly correct the command input markings of the occasion or return to a member of the reporting chain to re-evaluate.  If returned to a member of the reporting chain, the occasion is delinquent until final marks are approved by the Approver.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p4/b/2" path="p4/b/2" number="4.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>If the Approver for the occasion requiring correction is not still in the MRO’s reporting chain, the MRO’s current Approver may delete the command input marks as erroneous and remove them from the MRO’s average in grade.  With supporting documentation, appropriate command input marks may be replaced.  EXAMPLE:  MRO’s Non-judicial punishment from two years ago is overturned.  Command input marks during the occasion in which the NJP occurred are deleted.  MRO’s previous Evaluator provides Administrator with appropriate recommended command input marks which are routed to the Approver.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-3/p4/c" path="p4/c" number="4.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Administrative changes to JEPES worksheets that do not impact an MRO’s PES score.  For example, a change to the occasion type or “to date,” are conducted at the battalion/squadron level and are routed to the Approver. MCO 1616.1 25 Nov 2020 A-1 APPENDIX Appendix A JEPES MRO DASHBOARD</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-1-5" identifier="/us/dod/don/usmc/mco/1616_1/p-1-5" heading="1. The below figure is the JEPES MRO Dashboard, available to all Marines of" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-1-6" identifier="/us/dod/don/usmc/mco/1616_1/p-1-6" heading="1. Warfighting" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-6/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Warfighting (SCORE)      (VALUE) (DATE OF QUAL)</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-6/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Rifle Score: _______     = ________        _____________</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-6/p1/c" path="p1/c" number="1.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>LINE (1a + 1b) VALUE:           ________</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-6/p1/d" path="p1/d" number="1.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Warfighting Comp.(1c x 1.25):   ________ (ROUND-MAX 250)</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-2-4" identifier="/us/dod/don/usmc/mco/1616_1/p-2-4" heading="2. Physical Toughness" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-3-4" identifier="/us/dod/don/usmc/mco/1616_1/p-3-4" heading="3. Mental Agility: (SEE ATTACHED DOCUMENTATION FOR VALUE COMPUTATION)" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-4/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Mental Agility:  (SEE ATTACHED DOCUMENTATION FOR VALUE COMPUTATION) (VALUE)</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-4/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>MARINENET courses: = ________ (MAX 100)</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-3-4/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Degrees: = ________ (MAX 40)</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-4-3" identifier="/us/dod/don/usmc/mco/1616_1/p-4-3" heading="4. CMD Input" verification="UNVERIFIED">
+  </section>
+  <section anchor="p-5-4" identifier="/us/dod/don/usmc/mco/1616_1/p-5-4" heading="5. Bonus" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-4/f" path="f" number="f." label="f." depth="0" verification="UNVERIFIED">
+      <text>Command Rec. Bonus:_______x20 = ________ (MAX 100)</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-4/g" path="g" number="g." label="g." depth="0" verification="UNVERIFIED">
+      <text>LINE (5a+5b+5c+5d+5e+5f) VALUE: ________</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-5-4/h" path="h" number="h." label="h." depth="0" verification="UNVERIFIED">
+      <text>Bonus Comp. (5g): ________ (MAX 100)</text>
+    </provision>
+  </section>
+  <section anchor="p-6-3" identifier="/us/dod/don/usmc/mco/1616_1/p-6-3" heading="6. Total PES Score:" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-6-3/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Total PES Score:</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-6-3/p6/a" path="p6/a" number="6.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>LINE (1d+2d+3f+4e+5h): ________ (MAX 1000) MCO 1616.1 25 Nov 2020 B-2 APPENDIX Worksheet Instructions The below instructions for manual computation of the PES score reflect automated procedures in MCTFS and the JEPES.  In most cases, Marines will not be required to compute these values manually.  However, this step-by-step process provides a back-up manual computation capability as well as shows Marines how to manually compute their PES score. Points awarded for the MRO’s Rifle, PFT, and the CFT scores are derived by comparing the MRO’s score against peers of the same rank to produce a percentile between 0 and 100.  The tables for these comparisons (tables 3 and 4) are updated yearly.  Points awarded for all other attributes (MCMAP belt level, informal PME, self-education, and command input values) are not compared against peers and derived from the rules outlined in this document. LINE 1:  Warfighting: 1a:  Rifle:  Identify current rank for MRO. o If Lance Corporal, use Table 3, pg. B-8. o If Corporal, use Table 4, pg. B-9.  Write the MRO’s current rifle score under score on line 1a (0-350).  Using the appropriate table, find the row under the rifle columns that includes the MRO’s rifle score.  For example, a score of 300 will either be displayed as its specific value (i.e. 300) or as a range of values (i.e. 298-302).  Extract that row’s “value” column and write this number down under value on line 1a.  Write down the MRO’s rifle date of qualification under date of qual on line 1a. 1b:  MCMAP:  Identify current rank for MRO o If Lance Corporal, use Table 1, pg. B-7. o If Corporal, use Table 2, pg. B-7.  Write the MRO’s current belt level under belt level on line 1b.  Using the appropriate table, extract value for the selected belt level.  Write this “value” under value on line 1b.  Write down the MRO’s MCMAP qualification date under date of qual on line 1b. 1c:  Sum:  Add up the values from rows 1a and 1b.  Write this number on line 1c. 1d:  Warfighting Composite:  Multiply the number from 1c by 1.25.  Round to the nearest whole number.  If the decimal point ends in “.5” (i.e. 200.5) or above, round up (i.e. 201).  Write this number on line 1d.  This represents the MRO’s Warfighting Composite.  Valid composites are between 0 and 250. MCO 1616.1 25 Nov 2020 B-3 APPENDIX LINE 2:  Physical Toughness: 2a:  PFT:  Identify current rank for MRO. o If Lance Corporal, use Table 3, pg. B-8. o If Corporal, use Table 4, pg. B-9.  Write the MRO’s current PFT score under score on line 2a (0-300).  Using the appropriate table, find the row under the PFT columns that includes the MRO’s PFT score.  For example, a score of 280 will either be displayed as its specific value (i.e. 280) or as a range of values (i.e. 278-282).  Extract that row’s “value” column and write this number down under value on line 2a.  Write down the effective date of the MRO’s PFT score under effective date on line 2a. 2b:  CFT:  Identify current rank for MRO. o If Lance Corporal, use Table 3, pg. B-8. o If Corporal, use Table 4, pg. B-9.  Write the MRO’s current CFT score under score on line 2b (0-300).  Using the appropriate table, find the row under the CFT columns that includes the MRO’s CFT score.  For example, a score of 280 will either be displayed as its specific value (i.e. 280) or as a range of values (i.e. 278-282).  Extract that row’s “value” column and write this number down under value on line 2b.  Write down the effective date of the MRO’s CFT score under effective date on line 2b. 2c:  Sum:  Add up the values from lines 2a and 2b.  Write this number on line 2c. 2d:  Physical Toughness Composite:  Multiply the number from 2c by 1.25.  Round to the nearest whole number.  If the decimal point ends in “.5” (i.e. 200.5) or above, round up (i.e. 201).  Write this number on line 2d.  This represents the MRO’s Physical Toughness Composite.  Valid composites are between 0 and 250. LINE 3:  Mental Agility: 3a:  Informal PME In-Grade  All Marines:  Find a list of eligible MarineNet courses at the following link: https://www.marinenet.usmc.mil/MarineNet/Links/Points.aspx  For all courses listed on the above link, identify those completed by the MRO on MarineNet since present date of rank.  For each completed course, extract the Continuing Education Unit (CEU) score listed from the link above. MCO 1616.1 25 Nov 2020 B-4 APPENDIX  Repeat for all courses listed at the above link and completed by the MRO since present date of rank.  Add all extracted CEU scores together (the value may not exceed 100).  Write this number down under value on line 3a. 3b:  Self Education:  Bachelor and Associate Degrees:  For the MRO, identify all bachelor and associate degrees listed in MCTFS, regardless of date completed.  If the MRO has no bachelor (code K) or associate degrees (code D) in MCTFS, write the number 0 under value of line 3b.  If the MRO has one or more bachelor degrees (code K) in MCTFS, write the number 40 under value of line 3b.  If the MRO does not have a bachelor degree (code K) but has one associate degree (code D) in MCTFS, place the number 20 under the value column of line 3b.  If the MRO does not have a bachelor degree (code K) but has two or more associate degrees (code D) in MCTFS, write the number 40 under value of line 3b. 3c:  Self Education:  Off duty education course in service (CRS-SVS):  For the MRO, identify all off-duty education courses listed in MCTFS completed and passed between MRO’s armed forces active duty base date (AFADBD) and the date prior to the present date of rank.  Write this number under “number of completed courses” on line 3c.  Multiply this above number by 10.  If this product is less than or equal to 30, write this number under value on line 3c.  If the above multiplied number exceeds 30, write the number 30 under value on line 3c. 3d:  Self Education:  Off duty education course in grade (CRS-GRD):  For the MRO, identify all off-duty education courses listed in MCTFS completed and passed since the MRO’s present date of rank.  Write this number under “number of completed courses” on line 3d.  Multiply this above number by 10.  If this product is less than or equal to 30, write this number under value on line 3d.  If the above multiplied number exceeds 30, write the number 30 under value on line 3d. 3e:  Sum:  Add up the values from lines 3a, 3b, 3c, and 3d.  Write this number on row 3e. 3f:  Mental Agility Composite:  Multiply the number from 3e by 1.25.  Round to the nearest whole number.  If the decimal point ends in “.5” (i.e. 200.5) or above, round up (i.e. 201).  Write this number on line 3f.  This represents MRO’s Mental Agility Composite.  Valid composites are between 0 and 250. MCO 1616.1 25 Nov 2020 B-5 APPENDIX LINE 4:  Command Input: 4a:  MOS/MSN Accomplishment:  Extract the MRO’s average MOS/MSN Accomplishment score in grade (0.0- 5.0).  Write this score under average score in grade under line 4a.  Multiply the above number by 50.  Write this number under value on line 4a. 4b:  Leadership:  Extract the MRO’s average leadership score in grade (0.0-5.0).  Write this score under average score in grade under line 4b.  Multiply the above number by 50.  Write this number under value on line 4b. 4c:  Character:  Extract the MRO’s average character score in grade (0.0-5.0).  Write this score under average score in grade under line 4c.  Multiply the above number by 50.  Write this number under value on line 4c. 4d:  Sum:  Add up the values from lines 4a, 4b, and 4c.  Write this number on line 4d. 4e:  Command Input Composite:  Divide the number from 4d by 3.  Round to the nearest whole number.  If the decimal point ends in “.5” (i.e. 200.5) or above, round up (i.e. 201).  Write this number on line 4e.  This represents the MRO’s Command Input Composite.  Valid composites are between 0 and 250. LINE 5:  Bonus: 5a:  DI School:  If the MRO attended DI School at any point since the AFADBD and passed, circle “yes” on the first line and write 50 under value on line 5a.  If not, circle “no” and write 0 under value on line 5a. 5b:  Recruiting School:  If the MRO attended Recruiter School at any point since the AFADBD and passed, circle “yes” on the first line and write 50 under value on line 5b.  If not, circle “no” and write 0 under value on line 5b. 5c:  MSG School:  If the MRO attended MSG school at any point since the AFADBD and passed, circle “yes” on the first line and write 50 under value on line 5c.  If not, circle “no” and write 0 under value on line 5c. 5d:  Combat Instructor:  If the MRO is a combat instructor, circle “yes” on the first line and write 50 under value on line 5d. MCO 1616.1 25 Nov 2020 B-6 APPENDIX  If not, circle “no” and write 0 under value on line 5d. 5e:  Marine Corps Security Forces:  If the MRO is assigned under Marine Corps Security Forces, circle “yes” on the first line and write 50 under value on line 5e.  If not, circle “no” and write 100 under value on line 5e. 5f:  Command Recruiting:  If the MRO refers one or more applicant that subsequently enlists in the Marine Corps, SMCR, or reenlists into the regular component of the Marine Corps in accordance with MCO 1130.62B, write the number of applicants referred under number on line 5f (Marines may not carry forward recruiting bonus points to the next higher grade).  If not, write 0 under number on line 5f.  Multiply the number written under number on line 5f by 20 and write the product under value on line 5f (maximum of 100). 5g:  Sum:  Add up the values from lines 5a, 5b, 5c, 5d, 5e, and 5f.  Write this number on line 5g. 5h:  Bonus Composite:  Write the number from line 5g onto 5h.  Note:  If the value from 5g is greater than 100, write 100 on line 5h.  This represents the MRO’s Bonus Score.  Valid scores are between 0 and 100. LINE 6:  PES Score: 6a:  Add up the values from lines 1d, 1d, 3f, 4e, and 5h.  If the sum is over 1000, use 1000.  Place this number on line 6a.  The maximum value for line 6a is 1000. MCO 1616.1 25 Nov 2020 B-7 APPENDIX Table 1:  Lance Corporal MCMAP Scoring Table Table 2:  Corporal MCMAP Scoring Table Belt Level Belt Code Value UNQUAL MMA 0 TAN MMB 16 GREY MMC 33 GREEN MMD 50 GREEN INSTRUCTOR MME 66 BROWN MMF 83 BROWN INSTRUCTOR OR ABOVE MMG + 100 Belt Level Belt Code Value UNQUAL MMA 0 TAN MMB 33 GREY MMC 67 GREEN MMD 100 MCO 1616.1 25 Nov 2020 B-8 APPENDIX Table 3:  Lance Corporal &amp; Below PFT, CFT, and Rifle table PFT Score CFT Score Rifle Score Value PFT Score CFT Score Rifle Score Value 0-149 0-149 0-249 0 244 51 150 150-173 1 245 268 52 151-158 174-187 2 269 309 53 159-166 188-196 3 246 270 54 167-173 197-202 250 4 247 310 55 174-178 203-207 251-266 5 248 271 56 179-183 208-211 267-272 6 272 57 184-187 212-215 273-275 7 249 311 58 188-190 216-218 276-278 8 250 273 59 191-193 219-220 279 9 251 274 312 60 194-196 221-223 280-281 10 252 61 197-198 224-225 282 11 275 313 62 199-200 226-227 283 12 253 276 63 201-202 228-229 284 13 254 64 203-204 230-231 285 14 255 277 314 65 205-206 232-233 286 15 256 278 66 207 234 287 16 257 315 67 208-209 235-236 288 17 279 68 210 237 289 18 258 280 316 69 211-212 238-239 290 19 259 281 70 213 240 20 260 71 214-215 241 291 21 261 282 317 72 216 242 292 22 262 73 217 243-244 293 23 283 318 74 218 245 24 263 284 75 219-220 246 294 25 264 285 319 76 221 247 295 26 265 77 222 248 27 266 286 320 78 223 249 296 28 267 287 79 224 250 297 29 268 321 80 225 251 30 269 288 81 226 252 298 31 270 289 322 82 227 253 32 271 290 83 228-229 299 33 272 323 84 230 254 300 34 273 291 85 231 255 35 274 292 324 86 232 256 301 36 275 293 87 233 257 37 276 325 88 234 258 302 38 277 294 326 89 39 278 295 327 90 235 259 303 40 279 296 328 91 236 260 41 280 297 92 237 261 304 42 281-282 298 329 93 238 43 283 299 330 94 262 305 44 284-285 331 95 239 263 45 286-287 332 96 240 264 306 46 288-289 333 97 241 47 290-291 334-335 98 265 307 48 292-294 336-338 99 242 266 49 295-300 300 339-350 100 243 267 308 50 MCO 1616.1 25 Nov 2020 B-9 APPENDIX Table 4:  Corporal PFT, CFT, and Rifle table PFT Score CFT Score Rifle Score Value PFT Score CFT Score Rifle Score Value 0-149 0-149 0-249 0 276 313 51 150 150-192 250 1 253 277 52 151-168 193-204 251-258 2 254 314 53 169-179 205-212 259-274 3 255 278 54 180-188 213-218 275-279 4 55 189-194 219-222 280-281 5 256 279 315 56 195-198 223-226 282-284 6 257 280 57 199-202 227-230 285 7 258 58 203-205 231-233 286-287 8 281 316 59 206-207 234-235 288 9 259 60 208-209 236 289 10 260 282 317 61 210-211 237-238 290 11 283 62 212-213 239-240 291 12 261 63 214-215 241-242 292 13 262 284 318 64 216-217 243 293 14 285 65 218-219 244-245 294 15 263 319 66 220 246 295 16 264 286 67 221-222 247 296 17 265 68 223 248-249 18 287 320 69 224 250 297 19 266 70 225-226 251 298 20 267 288 321 71 227 252 299 21 72 228-229 253 22 268 289 73 230 254 300 23 269 290 322 74 231 255 301 24 75 232 256 25 270 291 323 76 233 257 302 26 271 77 234 258 303 27 272 292 324 78 235 259 28 293 79 236 260 304 29 273 80 237 261 30 274 294 325 81 238 305 31 275 82 262 32 295 326 83 239 263 306 33 276 84 240 264 34 277 296 327 85 241 265 35 278 297 86 266 307 36 279 328 87 242 37 280 298 329 88 243 267 308 38 281 299 89 244 268 39 282 330 90 269 40 283 91 245 309 41 284 331 92 246 270 42 285-286 332 93 247 271 310 43 287 333 94 248 44 288 334 95 272 311 45 289-290 335 96 249 273 46 291-292 336 97 250 47 293-294 337-338 98 274 312 48 295-298 339-340 99 251 275 49 299-300 300 341-350 100 252 50 MCO 1616.1 25 Nov 2020 C-1 APPENDIX Appendix C JEPES AND JUNIOR ENLISTED PROMOTIONS</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-1-7" identifier="/us/dod/don/usmc/mco/1616_1/p-1-7" heading="1. PES Score and Promotion Cycle. Marines who meet the TIG/TIS requirements" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-7/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>PES Score and Promotion Cycle.  Marines who meet the TIG/TIS requirements for promotion to the ranks of Corporal and Sergeant will compete for promotion on a monthly basis.  Every month, eligible Marines will receive a calculated PES score based off of data effective prior to the last day of the previous month, to compete for available MOS vacancies for the following month’s promotions. NOTE:  Reservists will still receive a monthly calculated PES score, but will compete for promotions in the months of January, April, July, and October. EXAMPLE:  In the month of March a promotion eligible Marine will receive a PES score calculated from data current as of the last day of February.  This PES score will compete for MOS vacancies for promotion on the first day of April.</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-7/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>The cycle of MCTFS cutoff, JEPES score calculation, and promotion follows the below schedule that is applicable any month of the year.  The below example is for the month of March:</text>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-7/p1/a/1" path="p1/a/1" number="1.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
+          <text>Last day of previous month: MCTFS cutoff for objective scores/data and command input marks to be used for JEPES score calculation in current month.  EXAMPLE:  28 February.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-7/p1/a/2" path="p1/a/2" number="1.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
+          <text>On or about 11th-13th of current month:  MOS vacancies identified for following month.  EXAMPLE:  12 March.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-7/p1/a/3" path="p1/a/3" number="1.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
+          <text>On or about the 24th of current month:  PES score calculated using data from 28 February MCTFS cutoff. Cutting score identified and Select Grades released.  EXAMPLE:  24 March.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-7/p1/a/4" path="p1/a/4" number="1.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
+          <text>1st day of following month:  Marines with select grades receive certificate of appointment and have promotion ceremony.  EXAMPLE:  1 April.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-7/p1/a/5" path="p1/a/5" number="1.a.(5)" label="(5)" depth="2" verification="UNVERIFIED">
+          <text>On or about the 7th of following month (last day of U&amp;E cycle): Last day “NOT RECS” accepted for Marines with select grades. EXAMPLE:  7 April.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-7/p1/b" path="p1/b" number="1.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Marines who do not meet the TIG/TIS requirements for promotion to the ranks of Corporal and Sergeant will receive a “projected PES score” updated every time the MRO’s objective scores or average command input marks change. This is not used for promotion and simply for the MRO’s awareness.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-7/p1/c" path="p1/c" number="1.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Per Chapter 2, paragraph 3.b.1 of this order, “NOT RECS” will occur with every reporting occasion and be in effect either until the next occasion, or when lifted by the commander.  This will pull the MRO from the eligible population of Marines for promotion.  The promotion restrictions from  MCO P1400.32D paragraph 1204 are still in effect.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-7/p1/d" path="p1/d" number="1.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>JEPES will automatically identify Marines who rate a remedial promotion for those who fall into the situation outlined in Chapter 2, paragraph 4.  In case JEPES connectivity is lost, remedial promotion packages may be mailed into MMPR-2 in accordance with MCO P1400.32D, reference (g). MCO 1616.1 25 Nov 2020 C-2 APPENDIX Figure 1-4 JEPES Promotion Cycle MCO 1616.1 25 Nov 2020 D-1 APPENDIX Appendix D FOUR PILLARS OF JEPES MCO 1616.1 25 Nov 2020 E-1 APPENDIX Appendix E BILLET ACCOMPLISHMENTS</text>
+      </provision>
+    </provision>
+  </section>
+  <section anchor="p-1-8" identifier="/us/dod/don/usmc/mco/1616_1/p-1-8" heading="1. Marines may submit billet accomplishments via their MRO Dashboard for an" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-8/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>Marines may submit billet accomplishments via their MRO Dashboard for an active occasion up until it has been routed from the FLS for approval. Billet accomplishments are the MRO’s opportunity to inform the reporting chain of everything that he or she has achieved during the reporting period.</text>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-8/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>They should be specific, quantifiable, and directly related to the three areas of command input: individual character, MOS and/or mission accomplishment, and leadership. For the most part billet accomplishments should cover those professional achievements performed on duty, though some circumstances may warrant including heroic or extraordinary acts off duty, or volunteer service.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-8/p1/b" path="p1/b" number="1.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Billet accomplishments may include: metrics associated with the MRO’s MOS, successful performance in a leadership role, successful completion of a field training event while performing in billet, successful completion of a MOS-enhancing or PME course, acquiring a new qualification, and community engagement volunteer service.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-8/p1/c" path="p1/c" number="1.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>The following are not billet accomplishments: Performing required annual training, receiving an award for actions during a previous reporting period, achievements related to personal hobbies. EXAMPLE Billet Accomplishments: -Supervised the safe and accurate processing of 300 fire missions during Integrated Training Exercise 20-1. -Served has a Position Safety Officer (PSO) for three live fire and maneuver ranges, safely training over 100 Marines and Sailors. -Performed corrective maintenance on 75 aircraft resulting in 100% mission readiness. -Planned, coordinated and lead three MCMAP courses resulting in 150 Marines advancing to Green Belt. -Served as the barracks manager, successfully in-processing 45 Marines and rectifying over 200 maintenance discrepancies. -Provided 20 hours of mentorship and instruction to 50 new Corporals during the Battalion’s Corporals Course. -Volunteered 10 hours in community as a coach for the base little league baseball team. MCO 1616.1 25 Nov 2020 F-1 APPENDIX Appendix F GLOSSARY OF TERMS AND DEFINITIONS Approver.  The Approver is the O-5 level commander or OIC equivalent in the MRO’s chain of command who is responsible for setting and approving final command input marks, thereby certifying the JEPES worksheet for inclusion in the promotion process. Command Input Marks.  The subjective evaluation in the areas of Individual Character, MOS and/or Mission Accomplishment, and Leadership that is performed by the reporting chain.  The average marks in grade from these three lines of evaluation are factored into 25 percent of the MRO’s total PES score. Command Reviewer.  The Command Reviewer is an enlisted leader appointed by the Approver (O-5 level commander or OIC equivalent) who reviews JEPES Worksheets and command marks for accuracy at the battalion/squadron level. The Command Reviewer provides the Reviewer and Approver comments and recommendations, however does not have the ability to submit draft marks, return reports, or stop the flow of the evaluation through the reporting chain. Continuing Education Unit (CEU).  The point value assigned to MarineNet courses based on the time required to complete them.  CEUs are used to calculate the Informal PME component of the Mental Agility Score. Cutting Score.  A PES Score announced by HQMC on a monthly basis for each MOS or occupational field to which individual PES scores are compared to control the number of promotions to Corporal and Sergeant. MROs who are eligible for promotion and have a PES score that meets or exceeds the Cutting Score may be promoted in a given month. Delinquent Occasion.  An occasion that has not been approved after its “to date.” Evaluator.  The Evaluator is a leader who has direct supervision over the FLS and responsibility for the MRO.  The Evaluator provides recommended command input markings and comments. First Line Supervisor (FLS).  The FLS is a leader who has direct supervision over the MRO and is charged with providing thorough and accurate observation of and guidance to the MRO.  The FLS is the first leader in the MRO’s reporting chain to provide recommended command input markings and comments. Informal Professional Military Education (PME).  PME beyond what is required for promotion to the next grade.  Informal PME courses are hosted by MarineNet and credit points towards an MRO’s Mental Agility Score. JEPES Worksheet.  The graphical representation of an MRO’s occasion. Includes the MRO’s identifying information, a comparative assessment of the MRO’s objective scores against peers in rank/MOS by percentile, command input markings and comments, and projected PES score. Marine Reported On (MRO).  The MRO is the subject of the JEPES Worksheet. MCO 1616.1 25 Nov 2020 F-1 APPENDIX Marine Corps Total Force System (MCTFS).  The authoritative source of data for all Marine Corps pay and personnel information which JEPES uses to present information to users and calculate PES scores. MCTFS Cutoff.  The last calendar day of every month, for which current objective scores and command input markings recorded in MCTFS are used to calculate a PES score in the following month for promotions in the month after. EXAMPLE:  MCTFS cutoff of 31 January effects promotions on 1 March. Objective Scores.  Training recorded in MCTFS that contributes to the Warfighting, Physical Toughness, and Mental Agility portions of the PES Score. Occasion.  The reporting period with a “from” and “to” date in which the MRO is evaluated. Mental Agility Score.  One of the four pillars of JEPES worth 25 percent of the MRO’s PES Score.  Consists of an MRO’s informal PME in grade (MarineNet) and in service/in grade civilian self-education (college/vocational courses and degrees), each worth 12.5 percent of the PES Score. PES Score.  The composite of an MRO’s Warfighting, Physical Toughness, Mental Agility, and Command Input Scores.  It is computed monthly and compared against a cutting score for promotion purposes. Physical Toughness Score.  One of the four pillars of JEPES worth 25 percent of the MRO’s PES Score.  Consists of the MRO’s current PFT and CFT score percentiles against peers of the same rank, each worth 12.5 percent of the PES Score. Projected PES Score.  An MRO’s PES score based off of most current scores and command input marks recorded in MCTFS.  The projected PES score changes with every update to score inputs. Reporting Chain.  The leaders responsible for evaluating an individual MRO. The Approver is at the top of the reporting chain and ultimately responsible for the accuracy and integrity of the occasion. Reviewer.  The Reviewer is a leader who has direct supervision over the Evaluator and responsibility for the MRO, typically at the company level. Self-Education.  Education, usually from a non-military source, that works toward a civilian degree or vocational certification.  Includes credit hours towards earning or completed Associates and Bachelor’s Degrees.  Credit hours and degrees credit points towards an MRO’s Mental Agility Score. Senior Enlisted Reviewer (SER).  The SER is an enlisted leader (E6 or above) who reviews JEPES Worksheets and command input marks for accuracy at the platoon and company levels.  The SER provides the FLS, Evaluator, and Reviewer comments and recommendations, however does not have the ability to submit draft marks, return reports, or stop the flow of the evaluation through the reporting chain. Warfighting Score.  One of the four pillars of JEPES worth 25 percent of the MRO’s PES Score.  Consists of the MRO’s current rifle score percentile against peers of the same rank and MCMAP Belt, each worth 12.5 percent of the PES Score. MCO 1616.1 25 Nov 2020 G-1 APPENDIX Appendix G GLOSSARY OF ACRONYMS AND ABBREVIATIONS AFADBD ARMED FORCES ACTIVE DUTY BASE DATE AN ANNUAL AR ACTIVE RESERVE BCP BODY COMPOSITION PROGRAM CEU CONTINUING EDUCATION UNIT CFT COMBAT FITNESS TEST CMC COMMANDANT OF THE MARINE CORPS DC M&amp;RA DEPUTY COMMANDANT MANPOWER AND RESERVE AFFAIRS EAD EXTENDED ACTIVE DUTY CRB COMMAND RECRUITING BONUS FLS FIRST LINE SUPERVISOR HQMC HEADQUARTERS MARINE CORPS JEPES JUNIOR ENLISTED PERFORMANCE EVALUATION SYSTEM MAP MILITARY APPEARANCE PROGRAM MCC MONITORED COMMAND CODE MCMAP MARINE CORPS MARTIAL ARTS PROGRAM MCTFS MARINE CORPS TOTAL FORCE SYSTEM MMRP MANPOWER MANAGEMENT RECORDS AND PERFORMANCE NOT REC NOT RECOMMENDED PES PERFORMANCE EVALUATION SYSTEM PFT PHYSICAL FITNESS TEST PME PROFESSIONAL MILITARY EDUCATION RUC REPORTING UNIT CODE SA SEMI ANNUAL SER SENIOR ENLISTED REVIEWER SDA SPECIAL DUTY ASSIGNMENT SMCR SELECTED MARINE CORPS RESERVE SNCO STAFF NONCOMMISIONED OFFICER TAD TEMPORARY ASSIGNED DUTY TIG TIME IN GRADE TIS TIME IN SERVICE TR TRANSFER</text>
+      </provision>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-03" against="section text already carried in this record">
+      <change>reparse_provisions.py - provision tree rebuilt after the reference-list and signature-block parser fixes</change>
+      <change>12 path(s) added, 9 removed, 191 provisions total</change>
+      <change>reference and enclosure lists now parse under ref/ and encl/ instead of entering the body marker stack</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+    <correction date="2026-08-03" against="the Subj: field in this record's own front matter text">
+      <change>backfill_subjects.py - subject recovered from the naval letter Subj: field, which the provision parser skips as a label line</change>
+      <change>title rebuilt as doc type, native number, and subject</change>
+      <change>no text was invented; a record with no Subj: field keeps subject null</change>
+    </correction>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>8 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2026/012" canonicalId="MARADMIN-2026-012" docType="MARADMIN" nativeNumber="012/26" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2026-01-15" schemaVersion="2.0">
+  <meta>
+    <title>ACADEMIC YEAR 2026-2027 NAVAL POSTGRADUATE SCHOOL DISTANCE</title>
+    <subject>ACADEMIC YEAR 2026-2027 NAVAL POSTGRADUATE SCHOOL DISTANCE</subject>
+    <originator>CG EDCOM PRES MCU QUANTICO VA</originator>
+    <signedDate>2026-01-15</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2026\MARADMIN_012_26_ACADEMIC_YEAR_2026-2027_NAVAL_POSTGRADUATE_SCHOOL_DISTANCE.pdf" sourceHash="437cc73f6a8c60e445e7dd0b13480ce378d4fa2f1dac9d7209d52c67b5b39563" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="DODI-1322.25-CH3" targetIdentifier="/us/dod/dodi/1322_25/ch3" basis="cited" tier="T1" held="absent" from="narr:REF A"/>
+    <ref rel="references" target="OPNAVINST-1520.23C-CH1" targetIdentifier="/us/dod/don/opnavinst/1520_23c/ch1" basis="cited" tier="T2" held="absent" from="narr:REF B"/>
+    <ref rel="references" target="MCO-1524.1" targetIdentifier="/us/dod/don/usmc/mco/1524_1" basis="cited" tier="T3" held="absent" from="narr:REF C"/>
+    <ref rel="references" target="MCO-1200.18" targetIdentifier="/us/dod/don/usmc/mco/1200_18" basis="cited" tier="T3" held="held" from="narr:REF D"/>
+    <ref rel="references" target="OPNAVINST-1520.23C" targetIdentifier="/us/dod/don/opnavinst/1520_23c" basis="cited" tier="T2" held="absent" from="ref-line:REF B"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2026/012/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2026/012/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>The purpose of this message is to solicit applicants for Advanced Degree Distance Learning and Certificate Distance Learning Programs administered through the Naval Postgraduate School (NPS) in accordance with the references. Distance learning provides unique opportunities for Marines to complete advanced education in subject areas relevant to their primary occupational specialty and needs of the Service.  Program start dates begin during Academic Year (AY) 2026 fourth quarter (Q4) (July-September 2026) through AY 2027 Q4 (July-September 2027).</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>The list of all available distance learning programs and certificates are located on the NPS Distance Learning graduate education website https:(slash)(slash)online.nps.edu/offerings. Contact the NPS Admissions Office point of contact (POC) with specific questions regarding application and enrollment.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Education opportunities are available that align with Force Design and Talent Management concepts and capabilities including (but not exclusive to) programs in Contested Logistics, Operations in the Information Environment, Artificial Intelligence, Machine Learning, Space Systems, Cyber Warfare/Operations/Security, Data Science, Robotics, Information Systems, Innovation and Design, Computer Science, Energy, Additive Manufacturing, and Undersea Warfare.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Programs not available to all Marines at this time include 805 Executive Master of Business Administration, Doctor of Philosophy Technical programs, and any program for which the Marine applicant is not qualified or able to receive a waiver.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Several of the degree programs have either admissions or execution requirements that are unique and require special consideration, qualifications, time, MOS, blended learning, etc. If you are interested in the following programs, you must contact NPS Admissions for additional information for the following graduate curricula: 311, 312, and 613.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
+      <text>Eligibility Requirements</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Active-duty Marines of the grade O1 to O5, CWO2 to CWO4, and E6 to E7 are eligible to participate in mission-funded, non-resident Distance Learning (DL) graduate degree programs and certificate offerings at NPS.</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p3/a/1" path="p3/a/1" number="3.a.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Applications from Marines of other ranks will be considered on a case-by-case basis by the Graduate Education Program Office at Headquarters Marine Corps and the NPS Senior Marine Representative in conjunction with the NPS Admissions Office.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p3/a/2" path="p3/a/2" number="3.a.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Participation in this program does not preclude consideration by the Commandant's Education Board.</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>The Marine must have sufficient time remaining in service to fulfill obligations specified in paragraph 4 below.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>The Marine must have a bachelor's degree from an institutionally accredited undergraduate institution.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p3/d" path="p3/d" number="3.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>Officers and staff noncommissioned officers who are in the above zone for promotion are not eligible for a program at NPS due to not having sufficient service time remaining to complete the education program and incurred service obligation.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p3/e" path="p3/e" number="3.e." label="e." depth="1" verification="UNVERIFIED">
+        <text>Officers and staff noncommissioned officers who have already earned a graduate degree from NPS (DL or Resident) or earned a graduate degree utilizing Tuition Assistance are not eligible for additional mission-funded DL degrees; however, these Marines are eligible for certificate programs.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
+      <text>Service Obligation.  Marines must include the following statement in the application: â€œIf selected, I agree to remain on active duty in accordance with service obligation requirements outlined in reference c.  I agree not to tender my resignation or request separation or retirement while participating in the program. This obligation will be served concurrently with any other service obligation previously incurred.â€  Note: If the officer is not offered, or does not elect, career designation, obligated service may be executed in the Marine Corps Force Reserve.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Per reference c, Chapter 1, Section 13, officers assigned to full-time, fully or partially funded graduate education programs must agree not to tender resignation or request separation or retirement while participating in the program.  Officers participating in funded full-time, part-time, or off-duty education programs, to include distance education, shall agree to remain on active duty for the period stipulated in reference c.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p4/b" path="p4/b" number="4.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Per reference c, officers and SNCOs accepting orders to a Graduate Education Program (GEP), to include graduate certificate programs, shall:</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p4/b/1" path="p4/b/1" number="4.b.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Not tender resignation or request separation while participating in the program.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p4/b/2" path="p4/b/2" number="4.b.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Obligated service incurred through graduate education and training can simultaneously overlap with previous obligations.  The service obligation that has the farthest date into the future will take precedence over a concurrent obligation with an earlier date.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p4/b/3" path="p4/b/3" number="4.b.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>Service obligation for an academic program lasting 12 months or less is 36 months of obligation.  Service obligation for an academic program lasting longer than one calendar year is capped at no more than 48 months.  Incurred service obligation begins at the completion of the academic program.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p4/b/5" path="p4/b/5" number="4.b.5." label="5." depth="2" verification="UNVERIFIED">
+          <text>Application requirements and procedures</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p5/a" path="p5/a" number="5.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>Each applicant must submit an online NPS application no later than (NLT) the start date of the preceding academic quarter for which the desired program of study begins. The NPS academic calendar is located at https:(slash)(slash)nps.edu/web/registrar/calendar for reference to AY quarter start dates.  General information on how to apply is located at https:(slash)(slash)nps.edu/web/admissions.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p5/a/1" path="p5/a/1" number="5.a.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>Applicants must submit one application at a time for the requested program of study.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p5/a/2" path="p5/a/2" number="5.a.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>Acceptance of the application does not guarantee enrollment into the desired program of study.  Enrollment is based on academic eligibility and space available.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>If you have already earned a graduate degree from NPS, Marines can only apply to certificate programs.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
+      <text>An official transcript from every college/university attended with credits and letter grades must be submitted to NPS prior to the application deadline.  Physically mail transcripts to Admissions Office (Official Transcripts), Naval Postgraduate School, 1 University Circle Herrmann Hall Room 046, Monterey, CA 93943-5100 or electronically send from the attended institution(s) to [contact withheld].</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p6" path="p6" number="6." label="6." depth="0" verification="UNVERIFIED">
+      <text>Curricula not offered at NPS will not be considered. Matriculation fees, textbooks, education materials, and all similar fees will be borne by the student.  Program commencement is subject to the availability of funds.  All applicants should submit applications via the online admissions portal annotating the desired curriculum number.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p7" path="p7" number="7." label="7." depth="0" verification="UNVERIFIED">
+      <text>Most programs contain synchronous courses that require participation at specific times.  Officer and Enlisted Assignment Branches will not favorably endorse requests to extend on station for the sole purpose of completing participation in this program. Marines are to notify their gaining command of their enrollment upon acceptance.  If a Marine is unable to continue the program, regardless of the reason, he or she must notify the NPS Registrar immediately.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p8" path="p8" number="8." label="8." depth="0" verification="UNVERIFIED">
+      <text>Points of Contact:</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p8/a" path="p8/a" number="8.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Naval Postgraduate School Admissions Office Comm:  [contact withheld] Email:  [contact withheld]</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p8/b" path="p8/b" number="8.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Naval Postgraduate School Senior Marine Representative Comm:  [contact withheld] Email: [contact withheld]</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p8/c" path="p8/c" number="8.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Graduate Education, Manpower Management-3 (MMOA-3) Comm:  [contact withheld] Email:  [contact withheld]</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p9" path="p9" number="9." label="9." depth="0" verification="UNVERIFIED">
+      <text>This MARADMIN is not applicable to the Marine Corps Forces Reserve.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/012/p10" path="p10" number="10." label="10." depth="0" verification="UNVERIFIED">
+      <text>Release authorized by Brigadier General Matthew Tracy, President, Marine Corps University.//</text>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>5 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>

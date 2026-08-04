@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Machine export from the canonical store (schema 0.4.0).
+     Every provision is UNVERIFIED until a human confirms it against
+     source per DATA_CONTRACT.md. Contact details are masked.
+     @lifecycle is whether the policy is in force. @verification is
+     whether the extraction has been confirmed. They are different
+     questions and this schema keeps them apart. -->
+<issuance xmlns="https://policy.usmc.mil/ns/usmc-issuance/2.0" identifier="/us/dod/don/usmc/maradmin/2026/151" canonicalId="MARADMIN-2026-151" docType="MARADMIN" nativeNumber="151/26" tier="T5" lifecycle="active" verification="UNVERIFIED" startPeriod="2026-04-02" schemaVersion="2.0">
+  <meta>
+    <title>CONVENING OF THE FY28 U.S. MARINE CORPS COLONEL, LIEUTENANT</title>
+    <subject>CONVENING OF THE FY28 U.S. MARINE CORPS COLONEL, LIEUTENANT</subject>
+    <originator>CMC WASHINGTON DC MRA MM</originator>
+    <signedDate>2026-04-02</signedDate>
+    <provenance sourcePath="E:\GunnyBot\Policies\MARADMINS\CY2026\MARADMIN_151_26_CONVENING_OF_THE_FY28_US_MARINE_CORPS_COLONEL_LIEUTENANT.pdf" sourceHash="8777693c0bb34d37cf5651fd9302cedeb8e2ef51abcb1162b7e4bac1723606d6" extractionEngine="pymupdf" convertedAt="2026-07-19T10:08:28.386816+00:00" storeSchemaVersion="0.4.0"/>
+  </meta>
+  <authority>
+    <ref rel="references" target="MARADMIN-2025-622" targetIdentifier="/us/dod/don/usmc/maradmin/2025/622" basis="cited" tier="T5" held="absent" from="narr:REF A"/>
+    <ref rel="references" target="MCBUL-1400" targetIdentifier="/us/dod/don/usmc/mcbul/1400" basis="cited" tier="T3" held="absent" from="narr:REF B"/>
+    <ref rel="references" target="MCO-1070.12K-CH1" targetIdentifier="/us/dod/don/usmc/mco/1070_12k/ch1" basis="cited" tier="T3" held="absent" from="narr:REF C"/>
+    <ref rel="references" target="MCO-1610.7B" targetIdentifier="/us/dod/don/usmc/mco/1610_7b" basis="cited" tier="T3" held="held" from="narr:REF D"/>
+    <ref rel="references" target="MCO-1553.4B" targetIdentifier="/us/dod/don/usmc/mco/1553_4b" basis="cited" tier="T3" held="absent" from="narr:REF E"/>
+    <ref rel="references" target="MARADMIN-2008-703" targetIdentifier="/us/dod/don/usmc/maradmin/2008/703" basis="cited" tier="T5" held="absent" from="narr:REF F"/>
+    <ref rel="references" target="MARADMIN-2023-634" targetIdentifier="/us/dod/don/usmc/maradmin/2023/634" basis="cited" tier="T5" held="absent" from="narr:REF G"/>
+  </authority>
+  <section anchor="header" identifier="/us/dod/don/usmc/maradmin/2026/151/header" verification="UNVERIFIED">
+  </section>
+  <section anchor="body" identifier="/us/dod/don/usmc/maradmin/2026/151/body" heading="Remarks" verification="UNVERIFIED">
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
+      <text>As announced by reference (a), the FY28 U.S. Marine Corps Colonel, Lieutenant Colonel and Major Promotion Selection Boards, and All-Fully-Qualified-Officers List (AFQOL) screening process for promotion to Captain will convene at 2008 Elliot Road, Quantico, VA 22134, as follows: Selection To         Component     Bd.Corr.Due     Convening Date Col                  Active        24 Apr 26        5 May 26 LtCol                Active         1 May 26       12 May 26 Maj                  Active        22 May 26        2 Jun 26 Capt*                Active        22 Jan 27        2 Feb 27 * For promotion to the grade of captain, a promotion selection board will not be convened.  Instead, eligible officers will undergo an All-Fully-Qualified-Officers List (AFQOL) process.  The official military records of all officers eligible for promotion to captain will be screened to identify those officers fully qualified for promotion to captain. Those officers determined not fully qualified for promotion will be omitted from the AFQOL and incur a failure of selection (FOS).  The provisions set forth in this MARADMIN are applicable to AFQOL process, to include reviewing and preparing records for promotion consideration and submission of correspondence.</text>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
+      <text>Promotion Boards.  The colonel through major promotion boards will consider three categories of officers:  above-zone, in-zone, and below-zone.  Officers defined as active-duty list (ADL) in reference (b) on the date the board or process convenes are eligible for their respective board.  Officers with established separation/retirement dates within 90 days of the convening date of their respective board (except first lieutenants eligible for the captain AFQOL screening process) will not be considered by the board if the separation/retirement date is established by 2359 Eastern Standard Time (EST) on the day before the board convenes.  Captains who are not U.S. citizens will not be considered for promotion to major.  Officers whose lineal control number (LCN) precedes the senior officer in-zone are defined as above-zone.  Those above-zone officers who have not been previously considered are defined as "above-zone, not previously considered."  Officers in this status are considered by the board to be in-zone.  Officers may review reference (b) and their eligibility for the board or process on the internet at the officer promotion homepage.  The senior and junior officers in-zone and the junior officer eligible below-zone are as follows (encl (1) of reference (b) applies):</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
+        <text>Colonel Promotion Selection Board</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/a/1" path="p2/a/1" number="2.a.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Senior Officer In-Zone - LtCol Kearney, Christopher J. DOR 1 Dec 21 LCN 13757000</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/a/2" path="p2/a/2" number="2.a.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Junior Officer In-Zone - LtCol Baker, Isaac S. DOR 1 Sep 22 LCN 14099000</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/a/3" path="p2/a/3" number="2.a.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>Junior Officer Below-Zone - LtCol Wisniewski III, Stanley C. DOR 1 Aug 23 LCN 14558000</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
+        <text>Lieutenant Colonel Promotion Selection Board</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/b/1" path="p2/b/1" number="2.b.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Senior Officer In-Zone - Maj Castro, Victor G. DOR 1 Aug 21 LCN 25232000</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/b/2" path="p2/b/2" number="2.b.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Junior Officer In-Zone - Maj Eklund, David A. DOR 1 Jul 22 LCN 26244000</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/b/3" path="p2/b/3" number="2.b.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>Junior Officer Below-Zone - Maj Rocco, Zachariah R. DOR 1 Jul 23 LCN 27274000</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
+        <text>Major Promotion Selection Board</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/c/1" path="p2/c/1" number="2.c.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Senior Officer In-Zone - Capt Battle, Kyle A. DOR 1 Dec 21 LCN 38219000</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/c/2" path="p2/c/2" number="2.c.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Junior Officer In-Zone - Capt Hansen, Jessica R. DOR 1 Dec 22 LCN 39779000</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/c/3" path="p2/c/3" number="2.c.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>Junior Officer Below-Zone - Capt Sugg, Jacob M. DOR 1 Nov 23 LCN 41658000</text>
+        </provision>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
+        <text>AFQOL Selection Process for Captain</text>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/d/1" path="p2/d/1" number="2.d.1." label="1." depth="2" verification="UNVERIFIED">
+          <text>Senior Officer In-Zone - 1stLt Cauchi, Nicholas J. DOR 23 May 25 LCN 41300000</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/d/2" path="p2/d/2" number="2.d.2." label="2." depth="2" verification="UNVERIFIED">
+          <text>Junior Officer In-Zone -* 1stLt Towle, Malachi S. DOR 7 May 26 LCN 45294000 *First Lieutenants must attain 2 years' time in grade before promotion to Captain.  This information provides officers with an approximate indication of when they may expect to be considered for promotion.  Senior and/or junior officers may be adjusted before the convening date depending upon attrition or status changes.  An officer's eligibility for consideration for promotion is determined as of the date the board convenes.  If an officer's DOR is such that he or she will meet the minimum TIG by the convening date of the board, then the officer is advised to prepare for consideration and ensure ample time for review of their record.  Information on preparing for a promotion board is available at the officer promotion homepage.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/d/3" path="p2/d/3" number="2.d.3." label="3." depth="2" verification="UNVERIFIED">
+          <text>Deferment of eligibility.  Marine Corps Officers who would be eligible for consideration by a promotion selection board (PSB) as an in-zone or above-zone eligible officer within one year of placement on the ADL shall be informed that their eligibility for such consideration will be deferred unless they specifically request consideration.  The officer may waive this deferment and request consideration for promotion, in writing, as specified in the MARADMIN which announced the officer's eligibility.  Requests must be received no later than the convening date of the board. The Deputy Commandant (DC), Manpower and Reserve Affairs (M&amp;RA) shall normally place such officers' records before the PSB.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/d/4" path="p2/d/4" number="2.d.4." label="4." depth="2" verification="UNVERIFIED">
+          <text>Merit-Based Promotion List Reorder.  Section 616h of Title 10, U.S. Code, allows the Secretary of the Navy (SECNAV) to authorize promotion boards to reorder recommended promotion lists based on particular merit.  The SECNAV has authorized both FY28 USMC Colonel and Lieutenant Colonel Selection Boards to reorder 15 percent of their respective selection lists atop the promotion list.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/d/5" path="p2/d/5" number="2.d.5." label="5." depth="2" verification="UNVERIFIED">
+          <text>Body Composition.  Reference (h) modifies the Height and Weight requirement to a Waist-to-Height Ratio (WHtR) requirement.  At present, there is no method for the Digital Boardroom to pull current WHtR information.  Accordingly, an officer will not be viewed negatively solely because a current WHtR measurement is not available to the board.  However, previous Height and Weight measurements contained within an officer's record will be considered, as well as any fitness reports that were processed with a WHtR directed comment.  Officers who desire to have their current WHtR made available to the board may submit WHtR documentation signed by their Command Physical Training Representative as an enclosure to their letter to the board pursuant to the instructions outlined in reference (a).  Submission of WHtR is optional.</text>
+        </provision>
+        <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p2/d/6" path="p2/d/6" number="2.d.6." label="6." depth="2" verification="UNVERIFIED">
+          <text>Continuation Boards.  A colonel continuation board will be held separate from the brigadier general board and information regarding that continuation board will be released by a separate message. Upon conclusion of the lieutenant colonel and major promotion selection boards, the boards will reconvene as continuation boards as specified below.  Officers may verify their eligibility for consideration by contacting Commandant Marine Corps (CMC), Manpower Management Separations and Retirement (MMSR).  CMC (MMSR) will adjust the mandatory retirement dates and/or notify the officers selected for continuation, as applicable, after the promotion selection results have been announced, or continuation in the case of the FY28 USMC Colonel Continuation board. The following continuation boards will be convened:</text>
+        </provision>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p6/a" path="p6/a" number="6.a." label="a." depth="1" verification="UNVERIFIED">
+      <text>FY28 USMC Major Continuation Board</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p6/a/1" path="p6/a/1" number="6.a.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>The board will consider regular unrestricted majors who, on the day prescribed for removal from active duty, possess less than 18 years of active service, who have twice failed selection for promotion to lieutenant colonel, who, as a result of not being selected for promotion, are subject to involuntary discharge, who are deemed by a majority of the members of the board to be fully qualified for continuation and whose continuation is in the best interests of the Marine Corps.  The officers selected for continuation will be continued on active duty until retirement- eligible in accordance with (IAW) section 8323 of Title 10, U.S. Code or until the age of 62, whichever is earlier.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p6/a/2" path="p6/a/2" number="6.a.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>In addition, the board will select for continuation Regular Majors with a primary MOS of 1803, 4402; and across occupational fields (Occfields) 17XX, 73XX, and 75XX who are subject to involuntary discharge or retirement, this includes any officer previously continued, and who are deemed by a majority of the members of the board to be fully qualified for continuation or continuation is in the best interests of the Marine Corps.  The period of continuation will be 5 years, 24 years of active commissioned service, or until the age of 62, whichever is earlier.</text>
+      </provision>
+    </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p6/b" path="p6/b" number="6.b." label="b." depth="1" verification="UNVERIFIED">
+      <text>FY28 USMC Captain Continuation Board.</text>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p6/b/1" path="p6/b/1" number="6.b.1." label="1." depth="2" verification="UNVERIFIED">
+        <text>The board will consider captains who possess over 15 years of active service but less than 18 years of active service on the day prescribed for removal from active duty, who have twice failed selection for promotion to major, who, as a result of not being selected for promotion, are subject to involuntary discharge, and who are deemed by a majority of the members of the board to be fully qualified for continuation and whose continuation is in the best interests of the Marine Corps.  The period of continuation will be for 5 years or until the officers are retirement eligible under section 8323 of Title 10, U.S. Code or until the age of 62, whichever is earlier.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p6/b/2" path="p6/b/2" number="6.b.2." label="2." depth="2" verification="UNVERIFIED">
+        <text>In addition, the board will select for continuation for a period of 3 years, or until the age of 62, whichever is earlier, those captains in the primary MOS of 4402; and across Occfields 17XX, 73XX and 75XX who, on the date of mandatory discharge, will have less than 15 years of active commissioned service, including any officer previously continued who is deemed by a majority of the members of the board to be fully qualified for continuation and whose continuation is in the best interests of the Marine Corps.</text>
+      </provision>
+      <provision identifier="/us/dod/don/usmc/maradmin/2026/151/p6/b/7" path="p6/b/7" number="6.b.7." label="7." depth="2" verification="UNVERIFIED">
+        <text>Release authorized by BGen Fridrik Fridriksson, Director, Manpower Management Division.//</text>
+      </provision>
+    </provision>
+  </section>
+  <corrections>
+    <correction date="2026-08-04" against="USLM User Guide section 12.2, Referencing Model">
+      <change>normalize_identifiers.py - period replaced with underscore in every USLM path segment</change>
+      <change>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</change>
+      <change>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</change>
+      <change>3 identifier(s) rewritten in this record</change>
+      <change>document id, native number, and displayed text are unchanged</change>
+      <change>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</change>
+    </correction>
+  </corrections>
+</issuance>
