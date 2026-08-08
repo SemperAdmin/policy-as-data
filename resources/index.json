@@ -1,0 +1,423 @@
+{
+  "$comment": "Machine-readable register for the 2026-08-08 resource review pass. Companion to resources/README.md and to conformance-matrix.md. The verdict scale is quoted from conformance-matrix.md. NOTE: that document sources the scale from hhq-alignment-plan.md N0.2, which is not present in this repository - see ACTION-REGISTER.md item 0.7. 'UNCONFIRMED' is a retrieval state, not a verdict; 'EVALUATE' applies to row 24 only.",
+  "schema_version": "1.0",
+  "generated": "2026-08-08",
+  "owner": "Stephen",
+  "status": "draft",
+  "merges_into": {
+    "document": "conformance-matrix.md",
+    "sections": "17-24",
+    "note": "Section 16 of that document is the exporter rebuild, not a reference. Reference numbering there ends at 15 and resumes at 17."
+  },
+  "verdict_scale": [
+    "CONFORMANT",
+    "ADAPTED",
+    "NOT APPLICABLE",
+    "GAP"
+  ],
+  "retrieval_states": [
+    "RETRIEVED",
+    "PARTIAL",
+    "REFUSED",
+    "AUTHENTICATED"
+  ],
+  "resources": [
+    {
+      "id": 17,
+      "key": "rules-as-code",
+      "title": "Rules as Code (RaC)",
+      "publisher": "European Commission, DG DIGIT",
+      "collection": "Interoperable Europe Portal, EUGovTech",
+      "url": "https://interoperable-europe.ec.europa.eu/collection/eugovtech/news/rules-code-rac",
+      "cite_url": "https://interoperable-europe.ec.europa.eu/collection/eugovtech/news/rules-code-rac",
+      "retrieved": "2026-08-08",
+      "retrieval_state": "RETRIEVED",
+      "source_type": "opinion-piece",
+      "authority": "advocacy, not specification",
+      "binds_this_project": false,
+      "verdict": "ADAPTED",
+      "confidence": 0.85,
+      "review": "resources/17-rules-as-code.md",
+      "one_line": "Same socio-technical model, reached from the legislative side. Two ideas worth adopting.",
+      "standards_named": [
+        "CPSV-AP",
+        "CCCEV",
+        "ELI",
+        "RIF",
+        "RDF",
+        "Turtle",
+        "SHACL",
+        "JSON-LD",
+        "OWL",
+        "SKOS",
+        "ISO 42010:2022",
+        "eIDAS 2.0"
+      ],
+      "touches": [
+        "schema/authority-ontology.ttl",
+        "NAMESPACES.md",
+        "data/*.rules.json",
+        "tools/evaluate.py",
+        "VERIFICATION.md"
+      ],
+      "actions": [
+        {
+          "action": "Reframe the 85 drift findings as a compliance risk register rather than a housekeeping artifact.",
+          "type": "documentation",
+          "state": "OPEN"
+        },
+        {
+          "action": "Name verification as an incident-and-change process in VERIFICATION.md, per the five service processes.",
+          "type": "documentation",
+          "state": "OPEN"
+        },
+        {
+          "action": "Record config/revision_index.json as a static-snapshot limit against the single-knowledge-source rule.",
+          "type": "documentation",
+          "state": "OPEN"
+        }
+      ],
+      "rejected": [
+        "RIF / RIF-CASPD rule interchange - no live tooling ecosystem",
+        "OWL migration - conformance-matrix.md section 12 already ruled JSON-LD",
+        "ELI, CPSV-AP, CCCEV - wrong jurisdiction, address no DoD issuance"
+      ],
+      "unconfirmed": [
+        "The author's promised CPSV-AP / RIF-CASPD publication via GitLab, stated as end-2024. No artifact located."
+      ]
+    },
+    {
+      "id": 18,
+      "key": "digital-ready-policymaking",
+      "title": "Digital-Ready Policymaking (DRPM)",
+      "publisher": "European Commission, DG DIGIT",
+      "collection": "Interoperable Europe Portal",
+      "url": "https://interoperable-europe.ec.europa.eu/collection/digital-ready-policymaking",
+      "cite_url": "https://interoperable-europe.ec.europa.eu/collection/digital-ready-policymaking",
+      "retrieved": "2026-08-08",
+      "retrieval_state": "PARTIAL",
+      "source_type": "portal-collection",
+      "authority": "EU public-sector instrument under Regulation (EU) 2024/903",
+      "binds_this_project": false,
+      "verdict": "ADAPTED",
+      "verdict_qualifier": "no obligation attaches",
+      "confidence": 0.7,
+      "review": "resources/18-digital-ready-policymaking.md",
+      "one_line": "EU public-sector instrument. The method transfers, the law does not.",
+      "legal_basis": {
+        "instrument": "Interoperable Europe Act",
+        "celex": "32024R0903",
+        "adopted": "2024-03-13",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R0903",
+        "scope": "Union institutions and Member State public sector bodies",
+        "reaches_dod": false
+      },
+      "instruments_named_not_retrieved": [
+        "DRPM Framework",
+        "ICT Impact Assessment Guidelines",
+        "LIMAPS legal interoperability self-assessment",
+        "Decision Support Tool",
+        "Better Regulation Toolbox, Tool 28"
+      ],
+      "touches": [
+        "SemperScribe (authoring side, see conformance-matrix.md section 10)"
+      ],
+      "actions": [
+        {
+          "action": "Carry the upstream argument into the SemperScribe case: structure at authoring time removes extraction entirely.",
+          "type": "strategy",
+          "state": "OPEN"
+        },
+        {
+          "action": "Pull Better Regulation Tool 28 and the CELEX 32024R0903 article text before any deliverable quotes the assessment obligation.",
+          "type": "research",
+          "state": "OPEN"
+        }
+      ],
+      "do_not_use": [
+        "The portal's 'over EUR 50 billion in yearly savings' EU-wide extrapolation. No method shown. The Danish e-invoicing figure it scales from is traceable; the scale-up is not."
+      ],
+      "unconfirmed": [
+        "Commencement date and scope thresholds of the mandatory interoperability assessment. EUR-Lex returned page furniture only on 2026-08-08."
+      ]
+    },
+    {
+      "id": 19,
+      "key": "nist-ocr-pipeline",
+      "title": "usnistgov/ocr-pipeline",
+      "publisher": "National Institute of Standards and Technology",
+      "url": "https://code.nist.gov/repo/#/usnistgov/ocr-pipeline",
+      "cite_url": "https://github.com/usnistgov/ocr-pipeline",
+      "cite_note": "The code.nist.gov URL is a single-page-application fragment and resolves to an unrendered template on server retrieval. Cite the GitHub URL.",
+      "retrieved": "2026-08-08",
+      "retrieval_state": "RETRIEVED",
+      "source_type": "software",
+      "license": "US Government work, 17 U.S.C. 105, NIST AS-IS notice",
+      "binds_this_project": false,
+      "verdict": "NOT APPLICABLE",
+      "verdict_qualifier": "acquisition-side; belongs to GunnyBot",
+      "confidence": 0.9,
+      "review": "resources/19-nist-ocr-pipeline.md",
+      "one_line": "Acquisition and extraction belong to GunnyBot. Stack is also dead: Python 2.7, Ocropy.",
+      "architecture": {
+        "stages": [
+          "PDF to PNG via PythonMagick",
+          "PNG to TXT via Ocropy",
+          "TXT cleaning to remove garbage strings"
+        ],
+        "topology": "master reads input into a Redis queue; workers pull jobs",
+        "io": {
+          "input": "data.in",
+          "output": "data.out"
+        }
+      },
+      "obsolescence": [
+        "Python 2.7 - end of life 2020-01-01, unpatched",
+        "Ocropy - superseded and unmaintained",
+        "PythonMagick - no maintained wheel for current Python"
+      ],
+      "keep": "The decomposition: queue between reader and worker pool, with a separately testable cleaning stage.",
+      "related_blocker": {
+        "identifier": "/us/dod/don/asn-mra/2023/mplp-guidance",
+        "recorded_in": "REFERENCES.md",
+        "issue": "scanned image PDF with no text layer; extraction blocked",
+        "note": "Right category of solution, wrong instance. Any OCR path runs in GunnyBot and enters here at UNVERIFIED."
+      }
+    },
+    {
+      "id": 20,
+      "key": "nist-code-portal",
+      "title": "NIST Software Portal (code.nist.gov)",
+      "publisher": "National Institute of Standards and Technology",
+      "url": "https://code.nist.gov/category/#/ALLSOFTWARE",
+      "cite_url": "https://code.nist.gov/",
+      "cite_note": "The #/ALLSOFTWARE fragment never reaches the server. Catalogue contents are UNCONFIRMED. Cite the portal root.",
+      "governing_source": "https://www.nist.gov/open/license",
+      "retrieved": "2026-08-08",
+      "retrieval_state": "PARTIAL",
+      "source_type": "portal-and-licensing-statement",
+      "binds_this_project": false,
+      "verdict": "ADAPTED",
+      "verdict_qualifier": "surfaces one GAP against this repository",
+      "confidence": 0.8,
+      "review": "resources/20-nist-code-portal.md",
+      "one_line": "The federal release pattern is directly copyable. This repository ships no LICENSE.",
+      "licensing_model": {
+        "basis": "17 U.S.C. 105 - not subject to copyright in the United States",
+        "foreign": "copyright may subsist outside the United States",
+        "notice_required": true,
+        "notice": "NIST-developed software is provided by NIST as a public service. You may use, copy, and distribute copies of the software in any medium, provided that you keep intact this entire notice.",
+        "conditions": [
+          "provided AS IS, no warranty of merchantability, fitness, or non-infringement",
+          "no liability for use or results",
+          "derivative works permitted",
+          "modified versions must carry notice of the change, its date, and its nature",
+          "original source must be acknowledged",
+          "third-party components carry their own statements"
+        ]
+      },
+      "gaps": [
+        {
+          "gap": "No LICENSE, COPYING, NOTICE, CITATION.cff, or code.json anywhere in the repository tree. Verified by directory walk 2026-08-08. The repository is published via GitHub Pages and targeted at cloud.gov.",
+          "affects": [
+            "tools/ - 23 scripts, the reusable asset",
+            "schema/usmc-issuance-2.0.xsd and NAMESPACES.md - the artifacts most likely to be adopted externally",
+            "data/exports/*.xml - leave the repository with no statement of authority on them"
+          ],
+          "fix": "Add LICENSE stating applicable terms, and NOTICE carrying the not-authoritative disclaimer in the NIST AS-IS form. Consider a processing instruction or header comment carrying the disclaimer into exported XML.",
+          "state": "OPEN"
+        }
+      ],
+      "actions": [
+        {
+          "action": "Emit code.json at the repository root, per the Federal Source Code Policy. tools/emit_dcat.py is the natural home.",
+          "type": "optional",
+          "state": "OPEN",
+          "note": "Not a requirement. No agency inventory currently pulls this repository."
+        }
+      ],
+      "transfers": [
+        "Catalogue-over-repositories pattern, validated by federal precedent - mirrors docs/sources.html and config/revision_index.json.",
+        "Disclaimer attached to the artifact rather than to the website."
+      ],
+      "unconfirmed": [
+        "Contents of the ALLSOFTWARE catalogue. No repository list obtained."
+      ]
+    },
+    {
+      "id": 21,
+      "key": "nps-fast",
+      "title": "FAST (Naval Postgraduate School)",
+      "publisher": "Naval Postgraduate School, Monterey - apparent, not confirmed",
+      "url": "https://fast.mfr.nps.edu/",
+      "retrieved": null,
+      "attempted": "2026-08-08",
+      "retrieval_state": "REFUSED",
+      "retrieval_error": "robots.txt could not be fetched or parsed; request refused. Reproduced on both https://fast.mfr.nps.edu/ and https://fast.mfr.nps.edu",
+      "public_search": "No result names this host or expands the acronym. Four query formulations run.",
+      "verdict": null,
+      "verdict_state": "UNCONFIRMED",
+      "confidence": null,
+      "review": "resources/21-nps-fast.md",
+      "one_line": "Host refuses automated retrieval. No public documentation names the tool.",
+      "discharge_requires": [
+        "Landing-page, About, and documentation text pasted from a browser session",
+        "The acronym expansion and the owning NPS organisation",
+        "Whether it is publicly reachable or CAC-gated"
+      ],
+      "second_pass_questions": [
+        "Documents or structure? Documents compete with or feed canonical/. Structure is a different axis, likely NOT APPLICABLE as Monterey Phoenix was.",
+        "Stable identifiers? Check for collision against the NAMESPACES.md grammar in the /us/dod/don/usmc/ space.",
+        "API or bulk export? Would relax the human-in-the-loop acquisition constraint in REFERENCES.md.",
+        "Authority status? An NPS research product cannot promote a record to VERIFIED."
+      ],
+      "state": "OPEN"
+    },
+    {
+      "id": 22,
+      "key": "books24x7-umgc",
+      "title": null,
+      "publisher": "Skillsoft Books24x7, via University of Maryland Global Campus EZproxy",
+      "url": "http://ezproxy.umgc.edu/login?url=http://library.books24x7.com.ezproxy.umgc.edu/library.asp?%5EB&bookID=166577",
+      "vendor_id": "bookID=166577",
+      "retrieved": null,
+      "attempted": "2026-08-08",
+      "retrieval_state": "AUTHENTICATED",
+      "retrieval_error": "Authenticated proxy redirect. Resolves only for a signed-in UMGC account. No bibliographic metadata recoverable from the URL.",
+      "verdict": null,
+      "verdict_state": "UNCONFIRMED",
+      "confidence": null,
+      "review": "resources/22-books24x7-umgc.md",
+      "one_line": "Authenticated proxy link. Title and author not recoverable from the URL.",
+      "citation_rule": "Cite the book, not the proxy. The EZproxy link is institution-scoped, session-scoped, and vendor-keyed, so it cannot resolve for a reader outside UMGC and is not durable.",
+      "required_fields": {
+        "title": null,
+        "authors": null,
+        "publisher": null,
+        "year": null,
+        "edition": null,
+        "isbn": null,
+        "relevant_chapters": null,
+        "why_registered": null
+      },
+      "second_pass_questions": [
+        "Does it contradict a ruling already in NAMESPACES.md or conformance-matrix.md? A contradiction is a finding; agreement is not.",
+        "Primary or secondary? A textbook is secondary by construction and can never be the text a verdict turns on.",
+        "Current or historical? Pre-2015 technical titles follow the section 11 precedent: doctrinal ancestor, live descendants bind."
+      ],
+      "state": "OPEN"
+    },
+    {
+      "id": 23,
+      "key": "eu-oss-catalogue",
+      "title": "EU Open Source Solutions Catalogue",
+      "publisher": "European Commission, DG DIGIT",
+      "collection": "Interoperable Europe Portal",
+      "url": "https://interoperable-europe.ec.europa.eu/eu-oss-catalogue/solutions",
+      "cite_url": "https://interoperable-europe.ec.europa.eu/eu-oss-catalogue/solutions",
+      "retrieved": "2026-08-08",
+      "retrieval_state": "PARTIAL",
+      "source_type": "software-catalogue",
+      "binds_this_project": false,
+      "verdict": "ADAPTED",
+      "verdict_qualifier": "as a source; REJECTED as a dependency",
+      "confidence": 0.75,
+      "review": "resources/23-eu-oss-catalogue.md",
+      "one_line": "1,076 solutions and none for legal-rule encoding. Metadata schema transfers, code does not.",
+      "measures": {
+        "solutions": 1076,
+        "pages": 54,
+        "largest_contributors": {
+          "Developers Italia": 531,
+          "Open Code (Germany)": 396
+        },
+        "development_status": {
+          "Stable": 782,
+          "Development": 122,
+          "Beta": 106,
+          "Concept": 23,
+          "Obsolete": 10
+        },
+        "category_tags": "200+",
+        "audience_tags": "40+",
+        "software_types": 19,
+        "entry_metadata": [
+          "version",
+          "description",
+          "categories",
+          "licence",
+          "followers",
+          "ratings"
+        ]
+      },
+      "core_finding": "No catalogued solution targets legislation markup, legal-rule encoding, or decision automation. Closest tags are compliance-management (30) and workflow-management (76), both process tooling.",
+      "transfers": [
+        "Aggregate-do-not-host pattern, a second federal-scale precedent alongside the NIST portal.",
+        "Per-entry metadata schema, serviceable as-is for a GOATS solutions register.",
+        "Development status as a published first-class field. This project publishes no equivalent for its own tools."
+      ],
+      "rulings": [
+        "No code from this catalogue enters this repository until a LICENSE exists and the specific candidate's terms are cleared against it.",
+        "EUPL and other copyleft terms are incompatible with a 17 U.S.C. 105 public-domain target in the direction that matters: a derivative of copyleft code cannot be placed in the public domain."
+      ],
+      "unconfirmed": [
+        "Per-entry licences. EUPL dominance is a characterisation of European public-sector practice, not a count taken from this catalogue.",
+        "Exhaustive walk of all 54 pages was not performed. The absence finding is drawn from the taxonomy and the visible result set."
+      ],
+      "related": [
+        "REUSE-ASSESSMENT.md",
+        "resources/20-nist-code-portal.md"
+      ]
+    },
+    {
+      "id": 24,
+      "key": "leos",
+      "title": "LEOS - Legislation Editing Open Software",
+      "publisher": "European Commission, DG DIGIT",
+      "url": "https://interoperable-europe.ec.europa.eu/eu-oss-catalogue/solutions/leos-core-0",
+      "cite_url": "https://interoperable-europe.ec.europa.eu/eu-oss-catalogue/solutions/leos-core-0",
+      "repo_seen": "https://github.com/MinBZK/leos",
+      "repo_note": "MinBZK is a Ministry of the Interior fork describing itself as a proof of concept not meant for production. That is the fork's status, not upstream LEOS's. Upstream is at code.europa.eu and was not retrieved.",
+      "retrieved": "2026-08-08",
+      "retrieval_state": "PARTIAL",
+      "source_type": "software",
+      "version": "5.4.2",
+      "released": "2026-07-10",
+      "development_status": "Stable",
+      "license": "EUPL-1.2",
+      "format": "XML, Akoma Ntoso V3 (OASIS LegalDocML), AKN4EU instantiation",
+      "platform": "containerized web application; Docker Compose and Kubernetes manifests present",
+      "binds_this_project": false,
+      "verdict": "EVALUATE",
+      "verdict_qualifier": "not a drop-in replacement for SemperScribe; not a component of this repository",
+      "confidence": 0.8,
+      "review": "resources/24-leos.md",
+      "one_line": "Stable EU drafting platform emitting Akoma Ntoso. Models EU legal acts, not naval correspondence. EUPL and containers fail two reuse gates.",
+      "reuse_gates": {
+        "licence": "FAIL - EUPL-1.2 copyleft against a 17 U.S.C. 105 target, and no LICENSE exists here yet. Applies to forking into this repository, not to running LEOS as a separate system.",
+        "standalone": "FAIL - containerized web application; build.sh must succeed on a fresh clone",
+        "scale": "FAIL - drafting platform against a static-site encoding project",
+        "substitution": "PARTIAL - would replace SemperScribe, not repository code",
+        "exit": "PASS - stable, actively released, EU institutional maintainer"
+      },
+      "argument_for": "Akoma Ntoso output satisfies INTEGRATION-SEMPERSCRIBE.md requirement R2 by construction, removing the largest unknown in that design and replacing a proprietary NLDP with an OASIS standard interface.",
+      "argument_against": "Models EU legislative instruments in AKN4EU. A Marine Corps Order under MCO 5215.1K - Situation, Mission, Execution, Cancellation - is not one of those. Teaching it means maintaining a fork of an EUPL web application.",
+      "decision_tree": [
+        "1. Ask whether SemperScribe meets R2, structured provisions with native designators. One conversation.",
+        "2. If yes, build the Option A bridge and this question closes.",
+        "3. If no, evaluate LEOS as a SEPARATE system emitting AKN, never as a fork inside this repository.",
+        "4. Either way, require structured XML export with native designators, and prefer AKN over a private format."
+      ],
+      "unconfirmed": [
+        "Full technical prerequisites - language, framework, repository backend. The fork exposes only Dockerfiles and shell; upstream at code.europa.eu was not retrieved.",
+        "The AKN4EU versus MCO 5215.1K structural mismatch is a reasoned conclusion from both models, not a quoted statement."
+      ],
+      "related": [
+        "REUSE-ASSESSMENT.md",
+        "INTEGRATION-SEMPERSCRIBE.md",
+        "resources/18-digital-ready-policymaking.md",
+        "resources/23-eu-oss-catalogue.md"
+      ]
+    }
+  ]
+}

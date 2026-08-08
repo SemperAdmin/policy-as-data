@@ -7,6 +7,7 @@ disk and an unmasked one in the object store cannot be confused.
 
   python tools/contact_guard.py                 scan the staging index
   python tools/contact_guard.py pipeline-x      scan a branch, tag, or commit
+  python tools/contact_guard.py docs            scan a directory on disk
 
 Uses `git grep`, so a 1,100-file tree scans in seconds. Exit 1 on any hit.
 
@@ -19,6 +20,7 @@ than the narrow miss. The maskers in export_issuance.py, render_authority_chain.
 and build_search.py stay broader, because over-masking prose is harmless.
 """
 
+import os
 import re
 import subprocess
 import sys
@@ -62,20 +64,48 @@ def parse(line, ref):
     return (parts[0], parts[2]) if len(parts) == 3 else (body, "")
 
 
-def main():
-    ref = sys.argv[1] if len(sys.argv) > 1 else None
-    target = ref or "the staging index"
-
+def scan_dir(root):
+    """Walk a directory on disk. `cf push` uploads the working tree, not a git
+    ref, so a git-only guard would pass a directory that has drifted from the
+    commit."""
     hits = {}
-    for pattern in PATTERNS:
-        for line in git_grep(pattern, ref):
-            path, text = parse(line, ref)
-            if EXCLUDE.search(path):
+    for base, dirs, files in os.walk(root):
+        dirs[:] = [d for d in dirs if not EXCLUDE.search(d + "/")]
+        for name in files:
+            path = os.path.join(base, name)
+            rel = os.path.relpath(path, ".").replace("\\", "/")
+            if EXCLUDE.search(rel):
+                continue
+            try:
+                text = open(path, encoding="utf-8", errors="replace").read()
+            except OSError:
                 continue
             found = [m.group(0) for m in EXTRACT.finditer(text)
                      if not ALLOW.fullmatch(m.group(0))]
             if found:
-                hits.setdefault(path, set()).update(found)
+                hits.setdefault(rel, set()).update(found)
+    return hits
+
+
+def main():
+    arg = sys.argv[1] if len(sys.argv) > 1 else None
+
+    if arg and os.path.isdir(arg):
+        target = f"{arg}/ on disk"
+        hits = scan_dir(arg)
+    else:
+        ref = arg
+        target = ref or "the staging index"
+        hits = {}
+        for pattern in PATTERNS:
+            for line in git_grep(pattern, ref):
+                path, text = parse(line, ref)
+                if EXCLUDE.search(path):
+                    continue
+                found = [m.group(0) for m in EXTRACT.finditer(text)
+                         if not ALLOW.fullmatch(m.group(0))]
+                if found:
+                    hits.setdefault(path, set()).update(found)
 
     if not hits:
         print(f"   clean - no contact data in {target}")

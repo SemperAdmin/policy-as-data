@@ -1,0 +1,109 @@
+NOTICE
+======
+
+policy-as-data, the encoding component of GOATS by Semper Admin.
+
+This file states what is licensed, what carries no copyright, what is excluded
+from the grant, and what this repository is not. Read it before reusing
+anything here.
+
+
+1. NOT AN OFFICIAL REFERENCE
+----------------------------
+
+The issuing authority's copy of every issuance governs. Nothing in this
+repository is authoritative for any purpose.
+
+Statute and Department of Defense records here are metadata-grade: identity,
+dates, supersession, and reference lists transcribed from the authoritative
+source, with section text not ingested. Every such record says so on its face.
+
+Machine-produced content is stamped UNVERIFIED, meaning no human has confirmed
+it line by line against the source. Most of the corpus is UNVERIFIED. Promotion
+to VERIFIED is explicit and recorded.
+
+This is not United States Marine Corps, Department of the Navy, or Department of
+Defense software. It carries no Authority to Operate and is maintained on a
+personal basis. Use is at the user's discretion and risk.
+
+
+2. THE MIT GRANT COVERS
+-----------------------
+
+Original work of the contributors:
+
+  tools/          the pipeline
+  schema/         the JSON contract, the XSDs, the ontology
+  config/         spine definitions, manifests, indexes
+  viewer/         the read-only viewer
+  build.sh
+  the markup, structure, identifiers, and authority graph produced by the
+    encoding, as distinct from the underlying text
+  the documentation in this repository, except where section 4 applies
+
+The identifier grammar in NAMESPACES.md, the two-tier verification model, and
+the conformance verdicts are contributions of this project and are offered for
+reuse under the same terms. Attribution is appreciated and not required.
+
+
+3. UNITED STATES GOVERNMENT MATERIAL - NO COPYRIGHT ASSERTED
+------------------------------------------------------------
+
+The text of the issuances encoded here - Marine Corps Orders, MARADMINs,
+NAVMCs, SECNAV instructions, Department of Defense instructions and directives,
+and the United States Code - is United States Government material. Works of the
+United States Government are not subject to copyright protection in the United
+States under 17 U.S.C. 105.
+
+No contributor asserts any copyright over that text. The MIT grant in section 2
+applies to the encoding, not to the words being encoded, and nothing here
+enlarges or restricts the public's rights in the underlying documents.
+
+
+4. EXCLUDED FROM THE GRANT
+--------------------------
+
+  branding/            Inherited, not owned. The source of truth is
+                       src/app/globals.css in the SemperAdminPortal repository.
+                       Mirrored here read-only.
+
+  branding/semper-logo.jpg, docs/semper-logo.jpg, and any military emblem,
+  seal, or insignia appearing in this repository or its rendered output.
+
+Military emblems, seals, and insignia are governed by statute and by service
+regulation, not by this licence. Nothing in the MIT grant conveys any right to
+use them, and their presence here does not imply endorsement by, or affiliation
+with, the United States Marine Corps, the Department of the Navy, or the
+Department of Defense.
+
+
+5. PRIVACY
+----------
+
+The canonical store is not published. It carries contact details transcribed
+from source issuances, and masking happens at the export boundary rather than in
+the store, so the store stays a faithful record and the repository stays free of
+personal contact data.
+
+A clone therefore carries the standard, the schema, the tooling, and the masked
+exports, but not the store the exports were produced from. That is a stated gap,
+not an oversight.
+
+Do not add contact details, personally identifiable information, or controlled
+unclassified information to any published artifact in this repository.
+
+
+6. THIRD-PARTY COMPONENTS
+-------------------------
+
+None. The pipeline is Python 3 standard library. If that ever changes, each
+component's own copyright and licensing statement is added here, and the
+dependency gate in REUSE-ASSESSMENT.md section 6 must pass first.
+
+
+7. WARRANTY
+-----------
+
+Provided "AS IS", without warranty of any kind. See LICENSE. No contributor is
+liable for any claim arising from use of this repository or reliance on its
+contents.
