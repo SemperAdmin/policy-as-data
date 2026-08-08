@@ -226,12 +226,25 @@ so rather than hanging - browsers refuse `fetch()` for `file:` URLs.
    Until then the two tiers use different identifier grammars, which is stated
    rather than hidden.
 
-3. **SemperScribe integration.** Option A - `tools/nldp_to_canonical.py`, a
-   bridge in this pipeline that reads SemperScribe's Naval Letter Data Package
-   JSON and emits a canonical record. Zero changes to SemperScribe, fastest,
-   keeps XSD logic in one place. Option B is native TypeScript export in
-   SemperScribe, better long-term, duplicates the logic. A is recommended
-   first. Neither is built.
+3. **SemperScribe integration. CORRECTED 2026-08-08 - Option B exists.**
+   `src/lib/policy-as-data.ts` in `github.com/SemperAdmin/semperscribe` emits a
+   canonical record at `schema_version: "0.4.0"`, with a test file beside it.
+   Audited at commit `f843a95`. It carries ten defects, four serious, and two of
+   those are re-finds of defects fixed here on 2026-08-04: an identifier
+   carrying a period (`/us/dod/don/usmc/mco/5215.1k`), `converted_at` stamped
+   from `datetime.now()`, `publication.publishable` hardcoded `true` while the
+   distribution statement code is read and ignored, and `status` hardcoded
+   `active` while the package says `draft`. Full register in
+   `NLDP-CONTRACT.md` section 3.
+
+   **Do not trust its output and do not rebuild it.** The ruling is that the
+   mapping moves here - Option A, `tools/nldp_to_canonical.py` - because the
+   identifier grammar, the quarantine gate, the schema version, and the
+   idempotence requirement all live in this repository and none is visible from
+   a TypeScript file in another one. SemperScribe emits NLDP and nothing else.
+   Its side of the work is specified in `SEMPERSCRIBE-HANDOFF.md` and is in
+   flight. The receiving side here is deferred until the POC ships, per
+   `ACTION-REGISTER.md` Track 3.
 
 4. **Delete seven folders.** The bridge that reaches the disk can move files
    but cannot remove them.
