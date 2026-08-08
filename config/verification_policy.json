@@ -1,0 +1,28 @@
+{
+  "$comment": "Quorum policy for verification. Kept in config rather than in code so a deviation is a recorded decision with a reason attached, not an edit somebody has to find in a Python file.",
+  "schema_version": "1.0",
+  "owner": "Stephen",
+  "established": "2026-08-08",
+  "quorum": {
+    "rule": 1,
+    "provision": 1
+  },
+  "target_quorum": {
+    "rule": 2,
+    "provision": 1
+  },
+  "deviation": {
+    "in_force": true,
+    "since": "2026-08-08",
+    "affects": "rule",
+    "reduced_from": 2,
+    "reduced_to": 1,
+    "reason": "One verifier exists. A two-person rule with one available person produces either permanent QUORUM_SHORT or invented second identities, and an invented identity is far worse than an honest quorum of one. The deviation is recorded here and reported by tools/verify_status.py on every run rather than hidden in a default.",
+    "conditions": [
+      "Every rule value still carries a named verifier, a source edition, a date, and a bound content hash. Nothing about the attestation weakens.",
+      "An imported seed carrying no named verifier still counts for nothing, at any quorum.",
+      "This deviation does not extend to any evaluator output shown to a Marine. Before a computed entitlement reaches a member, restore quorum 2.",
+      "Revisit when a second verifier exists, or before the first production use, whichever comes first."
+    ]
+  }
+}

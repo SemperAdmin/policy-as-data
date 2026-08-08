@@ -1,0 +1,58 @@
+{
+  "$comment": "The rule concept register. A concept is what makes a value stated at one tier comparable to a value stated at another. Concept assignment is a human judgement about two paragraphs and is recorded here, never inferred from rule-id similarity, unit compatibility, or subject proximity. Same discipline as a cited edge: no assignment without a person who read both.",
+  "schema_version": "1.0",
+  "owner": "Stephen",
+  "established": "2026-08-08",
+  "concepts": [
+    {
+      "id": "PARENTAL_LEAVE_MAX_DURATION",
+      "label": "Maximum parental leave authorized for a qualifying event",
+      "definition": "The total parental leave a member may use arising from a single qualifying birth, adoption, or placement, before any commander-approved extension.",
+      "canonical_unit": "days",
+      "established": "2026-08-08",
+      "assigned_by": "owner",
+      "basis": "Read against DoDI 1327.06 para 3.11.c and MARADMIN 051/23 paras 7.a.(1) and 11.d. MARADMIN 051/23 para 7.a.(1) states the entitlement as '12 weeks (84 days)', which is the sentence that makes the two tiers the same concept rather than two similar ones.",
+      "excludes": [
+        "Convalescent leave. A different entitlement with a different basis, per MARADMIN 051/23 para 7.a.(1)(a).",
+        "Any extension granted under MARADMIN 051/23 para 8.a.(3). That is a commander determination, not a stated maximum."
+      ]
+    },
+    {
+      "id": "PARENTAL_LEAVE_MIN_INCREMENT",
+      "label": "Minimum length of a parental leave increment",
+      "definition": "The smallest block a member may request when taking parental leave in more than one increment.",
+      "canonical_unit": "days",
+      "established": "2026-08-08",
+      "assigned_by": "owner",
+      "basis": "DoWI 1327.06 para 3.11.c.(7)(a) 'blocks of at least 7 days each'; MARADMIN 051/23 para 8.a.(1)(b)."
+    },
+    {
+      "id": "PARENTAL_LEAVE_MAX_INCREMENTS",
+      "label": "Maximum number of parental leave increments",
+      "definition": "The greatest number of separate increments a member may take for one entitlement.",
+      "canonical_unit": "increments",
+      "established": "2026-08-08",
+      "assigned_by": "owner",
+      "basis": "DoWI 1327.06 para 3.11.c.(7)(a) 'for a maximum of 12 increments'; MARADMIN 051/23 para 8.a.(1)(b)."
+    },
+    {
+      "id": "QUALIFYING_EVENT_MERGE_WINDOW",
+      "label": "Window within which multiple qualifying events count as one",
+      "definition": "The period within which two or more qualifying events are treated as a single event for allocation.",
+      "canonical_unit": "hours",
+      "established": "2026-08-08",
+      "assigned_by": "owner",
+      "basis": "DoWI 1327.06 paras 3.11.c.(6)(a) and (b) 'the same 72-hour period'; MARADMIN 051/23 para 8.b.(1)."
+    },
+    {
+      "id": "PARENTAL_LEAVE_FORFEITURE_WINDOW",
+      "label": "Period after the qualifying event before unused leave is forfeited",
+      "definition": "The time from the qualifying event within which parental leave must be taken or it is forfeited.",
+      "canonical_unit": "days",
+      "established": "2026-08-08",
+      "assigned_by": "owner",
+      "basis": "DoWI 1327.06 para 3.11.c.(10)(c) 'before the expiration of 1 year from the date'; MARADMIN 051/23 para 8.c.(3).",
+      "note": "The two tiers state this in DIFFERENT units - the issuance says '1 year', the corpus records 365 days. config/units.json refuses years, so this concept is expected to report NOT_COMPARABLE. That refusal is the point, not a gap: see verification/findings-forfeiture-window.md."
+    }
+  ]
+}
