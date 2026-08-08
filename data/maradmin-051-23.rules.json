@@ -3,7 +3,10 @@
     "identifier": "/us/dod/don/usmc/maradmin/2023/051",
     "label": "MARADMIN 051/23, Expansion of the Marine Corps Military Parental Leave Program",
     "dtg": "272030Z JAN 23",
-    "originator": "CMC WASHINGTON DC MRA MP"
+    "originator": "CMC WASHINGTON DC MRA MP",
+    "url": "https://www.marines.mil/News/Messages/Messages-Display/Article/3281525/expansion-of-the-marine-corps-military-parental-leave-program/",
+    "url_basis": "Located by public search 2026-08-08; the article title matches the message subject exactly. UNCONFIRMED: not fetched from this environment, and marines.mil is recorded in REFERENCES.md as unreachable here. Confirm it resolves before relying on it.",
+    "artifact": null
   },
   "authorityChain": [
     "/us/usc/10/701",
@@ -22,11 +25,26 @@
         "EVENT_PROXIMITY_MERGE confirmed at para 8.b.(1); status UNVERIFIED -> VERIFIED. Source states a 72-hour period, so the rule is re-expressed in hours (id EVENT_PROXIMITY_MERGE_HOURS, 72) rather than the prior approximation of 3 days.",
         "Added MAX_INCREMENTS (12), stated in the same source line as the minimum increment."
       ]
+    },
+    {
+      "date": "2026-08-08",
+      "against": "No re-reading of the message. Metadata only.",
+      "changes": [
+        "Added source.url and source.url_basis. No rule value, unit, or citation changed, so no attestation hash moved and nothing was invalidated."
+      ]
+    },
+    {
+      "date": "2026-08-08",
+      "against": "No re-reading of the message. Concept assignment only.",
+      "changes": [
+        "Attached concepts to four rules so they can be compared with the DoD tier. No value, unit, or citation changed, so no attestation hash moved."
+      ]
     }
   ],
   "rules": [
     {
       "id": "MAX_PARENTAL_LEAVE_DAYS",
+      "concept": "PARENTAL_LEAVE_MAX_DURATION",
       "value": 84,
       "unit": "days",
       "status": "VERIFIED",
@@ -39,6 +57,7 @@
     },
     {
       "id": "ENTITLEMENT_WINDOW_DAYS",
+      "concept": "PARENTAL_LEAVE_FORFEITURE_WINDOW",
       "value": 365,
       "unit": "days",
       "status": "VERIFIED",
@@ -51,6 +70,7 @@
     },
     {
       "id": "MIN_INCREMENT_DAYS",
+      "concept": "PARENTAL_LEAVE_MIN_INCREMENT",
       "value": 7,
       "unit": "days",
       "status": "VERIFIED",
@@ -63,6 +83,7 @@
     },
     {
       "id": "MAX_INCREMENTS",
+      "concept": "PARENTAL_LEAVE_MAX_INCREMENTS",
       "value": 12,
       "unit": "increments",
       "status": "VERIFIED",
@@ -75,6 +96,7 @@
     },
     {
       "id": "EVENT_PROXIMITY_MERGE_HOURS",
+      "concept": "QUALIFYING_EVENT_MERGE_WINDOW",
       "value": 72,
       "unit": "hours",
       "status": "VERIFIED",
