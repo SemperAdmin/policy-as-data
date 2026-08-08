@@ -74,5 +74,33 @@ python3 tools/build_search.py --src "$SRC" --out "$SITE/search"
 echo "### 14 verify"
 python3 tools/verify_authority.py "$SRC" "$IDX" | tail -3
 
-echo "### 15 check the site actually works"
+echo "### 15 verification status, derived from the attestation ledger"
+# Reads two inputs and writes nothing, so it is idempotent by construction.
+# Fails the build only on INVALIDATED - an attestation whose content changed
+# since a human confirmed it. QUORUM_SHORT and UNVERIFIED are reported, not
+# fatal; most of the corpus is unverified and that is stated, not hidden.
+#
+# MOVE THIS AHEAD OF STAGE 7 when per-provision verification badges are
+# rendered. A badge is a published claim, and publishing a stale one is the
+# defect this stage exists to prevent.
+python3 tools/verify_status.py --fail-on-invalidated | tail -4
+
+echo "### 16 cross-tier rule reconciliation"
+# Compares values carrying the same concept across authority tiers. Reads
+# data/*.rules.json, config/rule_concepts.json, config/units.json, and the
+# attestation ledger; writes one report. Idempotent: same inputs, same bytes.
+#
+# A value that is not VERIFIED is withheld and the verdict becomes
+# NOT_COMPARABLE - decision B1, 2026-08-08. Until the DoD tier of the parental
+# leave concept is read and attested, this stage reports NOT_COMPARABLE and
+# that is the correct output, not a failure.
+python3 tools/reconcile.py --out config/reconciliation.json | tail -6
+
+echo "### 17 verification page - queue, worked examples, and the process"
+# Renders from the ledger and the rule store by importing verify_status and
+# reconcile. It does not re-decide status, quorum, or verdicts; a fourth
+# implementation of those rules is how they drift apart.
+python3 tools/render_verification.py
+
+echo "### 18 check the site actually works"
 python3 tools/check_site.py "$SITE" index.html | tail -12
