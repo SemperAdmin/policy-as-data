@@ -403,6 +403,25 @@ the way it does.
   `a.href = "policy-"` as an HTML attribute; the regex now refuses a match
   preceded by a dot or word character. And it reported `_to_delete` files as
   orphans; those folders are skipped.
+- **The header forced a 900px page on phones.** The hand-authored pages
+  (index, how-it-works, accessibility, search) carried a copy of the chrome
+  CSS without the `flex-wrap` the generated pages had, so the nav row set the
+  whole document's width and every paragraph scrolled sideways. Fixed
+  2026-08-08: `flex-wrap` restored, and a shared `max-width:640px` media query
+  (in the `CSS` constants of `render_authority_chain.py` and
+  `render_verification.py`, mirrored into the hand pages) stacks the chrome
+  and turns the nav links into wrapping pill targets. Wide tables now scroll
+  in place (`display:block;overflow-x:auto`) instead of stretching the page.
+  The trap: the chrome CSS exists in FOUR copies - the two renderer constants
+  and the hand pages' two dialects - and a rule added to one is silently
+  missing from the rest. Measured at 390px across all 78 pages, zero
+  horizontal overflow. Note: `docs/` was patched directly this session because
+  `canonical/` is (deliberately) not in the GitHub clone and the build cannot
+  run without it; the patch bytes were derived from the renderer constants so
+  the owner's next `build.sh` reproduces them.
+- **`&middot;` rendered as text on verification.html.** The summary line was
+  joined with the entity and then passed through `esc()`, which escaped the
+  ampersand. The join string is now a literal `·`.
 
 ### Integrity, fixed 2026-08-04
 
