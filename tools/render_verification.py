@@ -120,6 +120,23 @@ button:hover{background:var(--color-brass-300)}
 .note{border-left:3px solid var(--color-brass);padding:8px 0 8px 14px;margin:14px 0;
 color:var(--color-muted-foreground);font-size:14px}
 footer{border-top:1px solid var(--color-border);margin-top:48px;color:var(--color-muted-foreground);font-size:13px}
+/* Small screens: the chrome stacks - wordmark row, page label, then nav links
+   as wrapping pill targets (the inline margin-left:auto that right-aligns the
+   first link on desktop needs the !important to release). Wide tables scroll
+   in place instead of stretching the page, and long identifiers break. */
+@media (max-width:640px){
+header.chrome{align-items:center;column-gap:12px;row-gap:8px;padding:12px 16px}
+.wordmark{font-size:22px}
+header.chrome span{flex-basis:100%;order:2;font:700 11px/1 var(--font-body);
+text-transform:uppercase;letter-spacing:.08em;color:var(--color-muted-foreground)}
+header.chrome a:not(.wordmark){order:3;margin-left:0!important;
+font:600 13px/1.1 var(--font-body);padding:8px 12px;
+border:1px solid var(--color-border-strong);border-radius:9999px;
+background:var(--color-muted);color:var(--color-parchment-300);
+text-decoration:none}
+table{display:block;overflow-x:auto}
+code{overflow-wrap:anywhere}
+}
 """
 
 FLOW = [
@@ -212,7 +229,9 @@ def render(data_dir: Path, ledger_path: Path, policy_path: Path,
         f"<tr><td>{badge(k)}</td><td>{E(v[2])}</td></tr>"
         for k, v in BADGE.items())
 
-    summary = " &middot; ".join(
+    # A literal middle dot, not the entity: this string passes through E()
+    # at emission, which would turn "&middot;" into visible "&amp;middot;".
+    summary = " · ".join(
         f"{E(k)} {v}" for k, v in sorted(counts.items()))
 
     dev = ""
