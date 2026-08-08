@@ -434,6 +434,21 @@ None changed a published fact. All three made the build dishonest about what it
 had done, which is the more expensive kind of defect here, because the whole
 claim of this project is that its provenance can be trusted.
 
+### Cross-tier, fixed 2026-08-08
+
+- **Rules were re-cited deeper than the markup was encoded.** Commit `5370202`
+  re-pointed the DoWI 1327.06 rules at exact paragraphs read from the Change 1
+  PDF (e.g. `3.11.c.(3)(a)1`), but `data/dodi-1327.06.uslm.xml` still encoded
+  3.11 only to the lettered level, so `validate.py` check 5 failed six
+  references and CI went red - on main too, because PR #5 merged while
+  failing. Fixed by deepening the markup: the cited paragraphs are now
+  encoded, transcribed UNVERIFIED from the verbatim quotes the rules file and
+  `verification/findings-dodi-1327.06.md` already carried, with partial
+  transcriptions marked as excerpts and untranscribed siblings stated as gaps.
+  The trap: a citation edge and its markup anchor must move in the same
+  commit, and `python tools/validate.py` is the pre-push check that would have
+  caught it locally.
+
 ---
 
 ## 11. Environment - the bridge to the user's disk
