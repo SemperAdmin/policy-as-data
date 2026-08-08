@@ -12,8 +12,23 @@
   SCOPE: the Purpose is encoded in full, and the complete Section/paragraph
   structure is encoded from the table of contents (headings are verbatim; status
   VERIFIED as to their existence and titles). Section and paragraph BODIES are
-  large and NOT yet encoded. The current parental-leave procedures live at
-  3.11.c (ADPL) and 3.11.d (IDPL).
+  large and NOT yet encoded, except as stated below. The current parental-leave
+  procedures live at 3.11.c (ADPL) and 3.11.d (IDPL).
+
+  DEEPENING, 2026-08-08: selected paragraph bodies under 3.11.c and 3.11.d are
+  now encoded from the Change 1 edition (DoWI 1327.06, August 7, 2025,
+  incorporating Change 1, June 30, 2026; sha256:1718797f...; full artifact
+  record in data/dodi-1327.06.rules.json). The skeleton above and around them
+  remains encoded from the base August 7, 2025 edition's table of contents -
+  the two editions' 3.11 structure is identical for the paragraphs encoded
+  here, per the corrections record in data/dodi-1327.06.rules.json. The
+  transcriptions were machine-read from that PDF and carried here via the
+  verbatim quotes recorded in data/dodi-1327.06.rules.json and
+  verification/findings-dodi-1327.06.md, so every deepened node is UNVERIFIED
+  until a human attests it. Where only part of a paragraph's text was
+  transcribed, the node says so in an adjacent comment; sibling paragraphs that
+  exist in the source but are not transcribed are a stated gap, not an
+  omission by accident.
 -->
 <issuance xmlns="https://policy.usmc.mil/ns/uslm/1.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -97,10 +112,76 @@
         <num style="alpha-lower">c</num>
         <heading>ADPL (Active Duty Parental Leave)</heading>
         <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/c/adpl-entitlement" status="UNVERIFIED">
-          <content><p>Asserted entitlement: up to 12 weeks (84 days) of Active Duty Parental Leave during the one-year period following a qualifying event. The body of paragraph 3.11.c is not yet encoded; this value is recorded as an unverified subject-matter assertion, pending confirmation against the issuance text.</p></content>
+          <content><p>Retired editorial anchor. This identifier was the citation target for the 12-week ADPL entitlement before the paragraph bodies below were encoded; the entitlement is stated in the source at 3.11.c.(3)(a)1, now encoded below. The identifier is kept because it was allocated and cited; nothing should cite it going forward.</p></content>
+        </paragraph>
+        <!-- (1), (2) exist in the source; not transcribed. -->
+        <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/c/3" status="UNVERIFIED">
+          <num style="paren-arabic">(3)</num>
+          <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/c/3/a" status="UNVERIFIED">
+            <num style="paren-alpha">(a)</num>
+            <content><p>For the birth parent, 12 weeks of ADPL is authorized following a period of convalescence from childbirth.</p></content>
+            <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/c/3/a/1" status="UNVERIFIED">
+              <num style="arabic">1</num>
+              <content><p>Twelve weeks of ADPL is authorized during the 1-year period beginning after the child's date of birth.</p></content>
+            </paragraph>
+          </paragraph>
+          <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/c/3/b" status="UNVERIFIED">
+            <num style="paren-alpha">(b)</num>
+            <content><p>For the non-birth parent, 12 weeks of ADPL is authorized during the 1-year period beginning after the child's date of birth.</p></content>
+          </paragraph>
+        </paragraph>
+        <!-- (4), (5) state the same 12 weeks for adoption and long-term foster
+             care; their transcriptions in verification/findings-dodi-1327.06.md
+             are truncated, so they are not encoded yet. -->
+        <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/c/6" status="UNVERIFIED">
+          <num style="paren-arabic">(6)</num>
+          <!-- (a) states the converse (events outside the 72-hour period are
+               separate events); not transcribed. -->
+          <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/c/6/b" status="UNVERIFIED">
+            <num style="paren-alpha">(b)</num>
+            <content><p>Multiple qualifying events occurring within the same 72-hour period will be treated as a single event for the allocation of ADPL.</p></content>
+          </paragraph>
+        </paragraph>
+        <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/c/7" status="UNVERIFIED">
+          <num style="paren-arabic">(7)</num>
+          <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/c/7/a" status="UNVERIFIED">
+            <num style="paren-alpha">(a)</num>
+            <!-- Excerpt: the sentence continues in the source; the remainder is
+                 not transcribed. -->
+            <content><p>Service members choosing to take ADPL in multiple increments must request such proposed leave in blocks of at least 7 days each for a maximum of 12 increments</p></content>
+          </paragraph>
+        </paragraph>
+        <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/c/10" status="UNVERIFIED">
+          <num style="paren-arabic">(10)</num>
+          <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/c/10/c" status="UNVERIFIED">
+            <num style="paren-alpha">(c)</num>
+            <content><p>ADPL that is not taken before the expiration of 1 year from the date of a child's birth, minor child's adoption by the Service member, or minor child's placement with the Service member for adoption or long-term foster care will be forfeited, unless Paragraph 3.11.c.(11) applies.</p></content>
+          </paragraph>
+        </paragraph>
+        <!-- (11), the Change 1 two-year extension for a qualifying circumstance
+             with first GO/FO approval, exists only in Change 1; not transcribed. -->
+      </paragraph>
+      <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/d" status="VERIFIED">
+        <num style="alpha-lower">d</num>
+        <heading>IDPL (Inactive Duty Parental Leave)</heading>
+        <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/d/1" status="UNVERIFIED">
+          <num style="paren-arabic">(1)</num>
+          <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/d/1/c" status="UNVERIFIED">
+            <num style="paren-alpha">(c)</num>
+            <content><p>IDPL will be taken in increments equivalent to a 4-hour inactive duty training period of which a maximum of two such increments may be taken per day. Each such 4-hour increment constitutes an IDPL period.</p></content>
+          </paragraph>
+        </paragraph>
+        <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/d/3" status="UNVERIFIED">
+          <num style="paren-arabic">(3)</num>
+          <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/d/3/a" status="UNVERIFIED">
+            <num style="paren-alpha">(a)</num>
+            <!-- Excerpt: Change 1 wording ("Birth parent, ..."; the base edition
+                 reads "For the birth parent"). The sentence continues in the
+                 source; the remainder is not transcribed. -->
+            <content><p>Birth parent, 12 IDPL periods will be authorized during the 1-year period</p></content>
+          </paragraph>
         </paragraph>
       </paragraph>
-      <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/d" status="VERIFIED"><num style="alpha-lower">d</num><heading>IDPL (Inactive Duty Parental Leave)</heading></paragraph>
       <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/e" status="VERIFIED"><num style="alpha-lower">e</num><heading>NCR&amp;R Leave Program</heading></paragraph>
       <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/f" status="VERIFIED"><num style="alpha-lower">f</num><heading>Special Rest and Recuperation (SR&amp;R) Leave Program</heading></paragraph>
       <paragraph identifier="/us/dod/dodi/1327.06/s3/3.11/g" status="VERIFIED"><num style="alpha-lower">g</num><heading>Graduation Leave</heading></paragraph>
