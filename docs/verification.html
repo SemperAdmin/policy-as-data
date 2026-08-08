@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verification - Semper Admin Policy Library</title>
+<style>
+:root{--color-usmc-scarlet:#B82230;--color-marine-blue:#0F1F3D;--color-marine-blue-100:#6B9BD2;
+--color-parchment:#F2E5BE;--color-parchment-300:#FAF1D8;--color-brass:#B89042;--color-brass-300:#D4AF67;
+--color-status-fresh:#2F8F5C;--color-status-aging:#C97D1F;--color-status-stale:#B83232;
+--color-status-info:#2F5FA8;--color-background:#0A1424;--color-bg-elev:#11203F;--color-bg-sunken:#060E1A;
+--color-foreground:#F2E5BE;--color-card:#11203F;--color-muted:#182A4D;--color-muted-foreground:#B5A988;
+--color-border:#233A5C;--color-border-strong:#34507A;--color-ring-dark:#D4AF67;--color-neutral-950:#0F0C09;
+--font-display:"Bebas Neue","Oswald",system-ui,sans-serif;--font-body:"Inter Variable","Inter",system-ui,sans-serif;
+--font-mono:"JetBrains Mono Variable","JetBrains Mono","Cascadia Code",Menlo,monospace;
+--radius-sm:6px;--radius-md:8px;--radius-lg:12px;
+--shadow-card:0 1px 2px rgba(0,0,0,.4),0 0 0 1px rgba(242,229,190,.04);
+--shadow-md:0 2px 4px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.45);color-scheme:dark;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--color-background);color:var(--color-foreground);font:400 15px/1.6 var(--font-body)}
+a{color:var(--color-marine-blue-100)}a:hover{color:var(--color-brass-300)}
+:focus-visible{outline:3px solid var(--color-ring-dark);outline-offset:2px;border-radius:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px;background:var(--color-brass-300);color:var(--color-neutral-950)}
+header.chrome,main,footer{max-width:60rem;margin:0 auto;padding:16px 24px}
+header.chrome{margin-top:16px;border-radius:var(--radius-lg);border:1px solid var(--color-border);
+background:var(--color-bg-elev);box-shadow:var(--shadow-md);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.wordmark{font:400 28px/1.2 var(--font-display);letter-spacing:.04em;color:var(--color-parchment-300);
+text-decoration:none;text-transform:uppercase}
+.eyebrow{font:700 11px/1 var(--font-body);text-transform:uppercase;letter-spacing:.08em;
+color:var(--color-muted-foreground)}
+h1{font:400 40px/1.1 var(--font-display);letter-spacing:.02em;margin:24px 0 8px;text-transform:uppercase}
+h2{font:400 26px/1.2 var(--font-display);letter-spacing:.02em;margin:36px 0 10px;text-transform:uppercase;
+border-bottom:1px solid var(--color-border);padding-bottom:6px}
+h3{font:700 14px/1.3 var(--font-body);text-transform:uppercase;letter-spacing:.06em;
+color:var(--color-muted-foreground);margin:22px 0 8px}
+.prose{max-width:70ch}
+.card{background:var(--color-card);border:1px solid var(--color-border);border-radius:var(--radius-lg);
+padding:16px 18px;margin:12px 0;box-shadow:var(--shadow-card)}
+.mono{font-family:var(--font-mono);font-size:13px;word-break:break-all}
+.muted{color:var(--color-muted-foreground)}
+.badge{display:inline-block;padding:3px 11px;border-radius:9999px;font:700 11px/1.5 var(--font-body);
+text-transform:uppercase;letter-spacing:.06em;border:1px solid}
+.v-ok{border-color:var(--color-status-fresh);color:#8FE0B4}
+.v-part{border-color:var(--color-status-aging);color:#F0C083}
+.v-warn{border-color:var(--color-status-info);color:#9EC0F0}
+.v-bad{border-color:var(--color-status-stale);color:#F09A9A}
+.v-none{border-color:var(--color-border-strong);color:var(--color-muted-foreground)}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch;margin:16px 0;padding:0;list-style:none}
+.flow li{flex:1 1 150px;background:var(--color-bg-sunken);border:1px solid var(--color-border);
+border-radius:var(--radius-md);padding:10px 12px}
+.flow li.gate{border-color:var(--color-brass);background:#1b2440}
+.flow .n{font:700 11px/1 var(--font-body);color:var(--color-brass-300);letter-spacing:.08em}
+.flow .t{font:700 13px/1.35 var(--font-body);margin:4px 0 2px}
+.flow .d{font-size:12px;color:var(--color-muted-foreground)}
+.two{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:52rem){.two{grid-template-columns:1fr 1fr}}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:10px 0}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--color-border);vertical-align:top}
+th{font:700 11px/1.4 var(--font-body);text-transform:uppercase;letter-spacing:.06em;color:var(--color-muted-foreground)}
+.withheld{color:var(--color-muted-foreground);font-style:italic}
+label{display:block;font:700 12px/1.6 var(--font-body);text-transform:uppercase;
+letter-spacing:.05em;color:var(--color-muted-foreground);margin-top:12px}
+input,select,textarea{width:100%;padding:8px 10px;background:var(--color-bg-sunken);
+color:var(--color-foreground);border:1px solid var(--color-border-strong);border-radius:var(--radius-sm);
+font:400 14px/1.5 var(--font-body)}
+button{margin-top:16px;padding:10px 18px;background:var(--color-brass);color:var(--color-neutral-950);
+border:0;border-radius:var(--radius-sm);font:700 13px/1 var(--font-body);text-transform:uppercase;
+letter-spacing:.06em;cursor:pointer}
+button:hover{background:var(--color-brass-300)}
+.note{border-left:3px solid var(--color-brass);padding:8px 0 8px 14px;margin:14px 0;
+color:var(--color-muted-foreground);font-size:14px}
+footer{border-top:1px solid var(--color-border);margin-top:48px;color:var(--color-muted-foreground);font-size:13px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="chrome">
+<img src="semper-logo.jpg" alt="Semper Admin emblem" height="40" style="align-self:center">
+<a class="wordmark" href="index.html">Semper Admin</a>
+<span class="eyebrow">Verification</span>
+<a href="how-it-works.html" style="margin-left:auto">How it works</a>
+<a href="policy-index.html">All policies</a>
+<a href="authority-index.html">Authority chains</a>
+<a href="sources.html">Sources</a>
+</header>
+<main id="main">
+<h1>Verification</h1>
+<div class="prose">
+<p>Nothing here is trusted because a machine produced it. A value is used only
+after a named person has opened the issuing authority's copy and confirmed it,
+and that reading is bound to the exact content confirmed. If the content later
+changes, the reading stops applying and the page says so.</p>
+<p><strong>QUORUM_SHORT 4 &amp;middot; UNVERIFIED 1 &amp;middot; VERIFIED 2</strong></p>
+<p class="note"><strong>Quorum deviation in force since 2026-08-08.</strong> rule claims require 1 independent reading(s) rather than 2. Reason: One verifier exists. A two-person rule with one available person produces either permanent QUORUM_SHORT or invented second identities, and an invented identity is far worse than an honest quorum of one. The deviation is recorded here and reported by tools/verify_status.py on every run rather than hidden in a default.</p>
+</div>
+
+<h2>The process</h2>
+<p class="muted">Steps 4 and 5 are the ones a person does. Everything else is
+mechanical.</p>
+<ul class="flow"><li class=""><span class="n">1</span><div class="t">Issuance</div><div class="d">The issuing authority publishes. Their copy governs, always.</div></li><li class=""><span class="n">2</span><div class="t">Encode</div><div class="d">A provision or a rule value is recorded with the paragraph it was read from.</div></li><li class=""><span class="n">3</span><div class="t">UNVERIFIED</div><div class="d">Everything machine-produced enters here. Nothing is assumed correct.</div></li><li class="gate"><span class="n">4</span><div class="t">A human reads</div><div class="d">A named person opens the authority&#x27;s copy and compares. This step cannot be automated.</div></li><li class="gate"><span class="n">5</span><div class="t">Attest</div><div class="d">The reading is recorded against a hash of the exact content confirmed.</div></li><li class=""><span class="n">6</span><div class="t">VERIFIED</div><div class="d">Derived, never stored. If the content changes, the reading stops applying.</div></li><li class=""><span class="n">7</span><div class="t">Used</div><div class="d">Only verified values are compared or published. Unverified ones are withheld and say so.</div></li></ul>
+
+<h2>What the states mean</h2>
+<table><tr><th>State</th><th>Meaning</th></tr><tr><td><span class="badge v-ok">VERIFIED</span></td><td>A named person read the issuing authority&#x27;s copy and confirmed this.</td></tr><tr><td><span class="badge v-part">QUORUM SHORT</span></td><td>Read and confirmed, but short of the independent readings this kind of claim requires.</td></tr><tr><td><span class="badge v-bad">INVALIDATED</span></td><td>Confirmed once, then the content changed. The earlier reading no longer applies.</td></tr><tr><td><span class="badge v-bad">REJECTED</span></td><td>A person read the source and says the encoding is wrong. A found defect.</td></tr><tr><td><span class="badge v-warn">UNABLE</span></td><td>A person tried and could not, usually because the source could not be obtained.</td></tr><tr><td><span class="badge v-none">UNVERIFIED</span></td><td>Nobody has read the source against this record.</td></tr></table>
+
+<h2>How a value appears, verified and unverified</h2>
+<p class="muted">Real records from this corpus, not mock-ups.</p>
+<div class="two"><div><h3>Verified - shown and used</h3><div class="card">
+<span class="badge v-ok">VERIFIED</span>
+<p style="font:700 30px/1.1 var(--font-display);margin:6px 0">12 weeks</p>
+<p class="muted" style="margin:2px 0;font-size:13px">DoWI 1327.06, para 3.11.c.(3)(a)1</p>
+<p class="mono muted" style="margin:2px 0">/us/dod/dodi/1327.06#ADPL_MAX_WEEKS</p>
+<p class="muted" style="font-size:13px;margin:6px 0 0">Read by <strong>V-001</strong> on 2026-08-08, against DoWI 1327.06, Military Leave, Liberty, and Administrative Absence.</p><p style="margin:6px 0 0;font-size:13px"><a href="https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132706p.pdf" rel="noopener">Open the issuing authority's copy</a></p>
+<p class="note" style="margin-top:12px">A named person read the issuing authority&#x27;s copy and confirmed this.</p>
+</div></div><div><h3>Unverified - withheld</h3><div class="card">
+<span class="badge v-none">UNVERIFIED</span>
+<p class="withheld" style="margin:6px 0">Value withheld. Not shown, and not used in any comparison, until a person has read the source.</p>
+<p class="muted" style="margin:2px 0;font-size:13px">DoWI 1327.06, para 3.11.d.(3)(a)</p>
+<p class="mono muted" style="margin:2px 0">/us/dod/dodi/1327.06#IDPL_MAX_PERIODS</p>
+<p style="margin:6px 0 0;font-size:13px"><a href="https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132706p.pdf" rel="noopener">Open the issuing authority's copy</a></p>
+<p class="note" style="margin-top:12px">Nobody has read the source against this record.</p>
+</div></div></div>
+
+
+<h2>Walkthrough - one claim, end to end</h2>
+<p class="muted">A live claim from this corpus. Nothing below is illustrative;
+the "after" is produced by the same code that produces the "before".</p>
+
+<h3>Step 1 &middot; Before - the claim is withheld</h3>
+<p class="note">This claim has already been through the process. It is shown here with that step reversed, so the change is visible.</p>
+<div class="card">
+<span class="badge v-ok">VERIFIED</span>
+<p class="withheld" style="margin:6px 0">Value withheld. The record holds one,
+but no person has read the source, so it is neither shown nor compared.</p>
+<p class="muted" style="margin:2px 0;font-size:13px">DoWI 1327.06, para 3.11.c.(3)(a)1</p>
+<p class="mono muted" style="margin:2px 0">/us/dod/dodi/1327.06#ADPL_MAX_WEEKS</p>
+<p style="margin:6px 0 0;font-size:13px"><a href="https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132706p.pdf" rel="noopener">Open the issuing authority's copy</a></p>
+</div>
+<div class="card"><span class="badge v-none">NOT_COMPARABLE</span><h3 style="margin-top:8px">Maximum parental leave authorized for a qualifying event</h3><p class="muted" style="font-size:13px">T1 value present but UNVERIFIED; withheld per the publication rule for unverified values</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T5</td><td>84 days</td><td>84 days</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 11.d</td></tr><tr><td class="mono">T1</td><td colspan="3" class="withheld">value present but UNVERIFIED; withheld per the publication rule for unverified values</td></tr></table></div>
+
+<h3>Step 2 &middot; The reading</h3>
+<div class="card">
+<p style="margin:0">Open the issuing authority's copy. Find the cited paragraph.
+Confirm it states this value, in these units, at that paragraph and not a
+neighbouring one.</p>
+<p class="note" style="margin-bottom:0">Do not confirm from the note on the
+record, from another tier, or from memory. If the paragraph says something else,
+answer <strong>rejected</strong> - a found defect is worth more than a
+confirmation.</p>
+</div>
+
+<h3>Step 3 &middot; What the form produces</h3>
+<p class="muted">The page writes no data. Filling the form below downloads
+exactly this, and nothing leaves your browser.</p>
+<div class="card"><pre class="mono" style="margin:0;white-space:pre-wrap">{
+  &quot;assertion&quot;: &quot;/us/dod/dodi/1327.06#ADPL_MAX_WEEKS&quot;,
+  &quot;kind&quot;: &quot;rule&quot;,
+  &quot;content_hash_seen&quot;: null,
+  &quot;verified_against&quot;: {
+    &quot;edition&quot;: &quot;&lt;the edition you opened&gt;&quot;,
+    &quot;obtained&quot;: &quot;&lt;site, and the date you got it&gt;&quot;,
+    &quot;url&quot;: null,
+    &quot;artifact_hash&quot;: null
+  },
+  &quot;verifier&quot;: &quot;V-002&quot;,
+  &quot;at&quot;: &quot;&lt;YYYY-MM-DD&gt;T00:00:00+00:00&quot;,
+  &quot;method&quot;: &quot;read-and-compare&quot;,
+  &quot;result&quot;: &quot;VERIFIED&quot;,
+  &quot;note&quot;: &quot;&quot;,
+  &quot;produced_by&quot;: &quot;docs/verification.html&quot;
+}</pre></div>
+
+<h3>Step 4 &middot; Admitting it</h3>
+<div class="card">
+<p style="margin:0 0 8px">Put the file in <span class="mono">verification/incoming/</span>
+and a maintainer runs:</p>
+<p class="mono" style="margin:0">python tools/attest.py --ingest</p>
+<p class="muted" style="font-size:13px;margin:8px 0 0">That step recomputes the
+hash from the corpus and compares it with the one your browser saw. If they
+differ, the record changed after you read it and the file is refused - the
+reading has to happen again. Nothing is repaired silently.</p>
+<p class="muted" style="font-size:13px;margin:6px 0 0">Then
+<span class="mono">bash build.sh</span> regenerates this page and every page that
+uses the value.</p>
+</div>
+
+<h3>Step 5 &middot; After - the value is in use</h3>
+<p class="muted">What the same engine produces with this one claim read and
+every other claim left exactly as it is. Marked a projection because it previews
+the mechanism, not because the values are in doubt. If it still says
+NOT_COMPARABLE, that is the honest answer: another tier is unread too, and one
+reading is not enough.</p>
+<div class="card"><span class="badge v-ok">AGREE</span> <span class="badge v-warn">PROJECTION</span><h3 style="margin-top:8px">Maximum parental leave authorized for a qualifying event</h3><p class="muted" style="font-size:13px">2 tiers agree at 84 days</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T1</td><td>12 weeks</td><td>84 days</td><td class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(3)(a)1</td></tr><tr><td class="mono">T5</td><td>84 days</td><td>84 days</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 11.d</td></tr></table></div>
+
+
+<h2>Cross-tier comparison, as it stands now</h2>
+<p class="muted">A value is compared with the authority above it only when both
+sides have been read by a person. An unverified side is withheld and the
+comparison is refused rather than guessed.</p>
+<div class="card"><span class="badge v-ok">AGREE</span><h3 style="margin-top:8px">Maximum parental leave authorized for a qualifying event</h3><p class="muted" style="font-size:13px">2 tiers agree at 84 days</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T1</td><td>12 weeks</td><td>84 days</td><td class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(3)(a)1</td></tr><tr><td class="mono">T5</td><td>84 days</td><td>84 days</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 11.d</td></tr></table></div>
+
+<h2>The queue</h2>
+<table><tr><th>State</th><th>Claim</th><th>Detail</th></tr><tr><td><span class="badge v-ok">VERIFIED</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_MAX_WEEKS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(3)(a)1</span></td><td class="muted" style="font-size:13px">1 independent attestation(s)</td></tr><tr><td><span class="badge v-none">UNVERIFIED</span></td><td><span class="mono">/us/dod/dodi/1327.06#IDPL_MAX_PERIODS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.d.(3)(a)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-part">QUORUM SHORT</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#ENTITLEMENT_WINDOW_DAYS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.c.(3)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr><tr><td><span class="badge v-part">QUORUM SHORT</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#EVENT_PROXIMITY_MERGE_HOURS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.b.(1)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr><tr><td><span class="badge v-part">QUORUM SHORT</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#MAX_INCREMENTS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.a.(1)(b)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr><tr><td><span class="badge v-ok">VERIFIED</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#MAX_PARENTAL_LEAVE_DAYS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 11.d</span></td><td class="muted" style="font-size:13px">1 independent attestation(s)</td></tr><tr><td><span class="badge v-part">QUORUM SHORT</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#MIN_INCREMENT_DAYS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.a.(1)(b)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr></table>
+
+<h2>Validate a claim</h2>
+<div class="prose">
+<p>This page cannot write to the library. It produces an attestation file that a
+maintainer admits with <span class="mono">python tools/attest.py --ingest</span>,
+which recomputes the hash from the corpus rather than trusting the one in the
+file. If they differ, the file is refused - that means the record changed after
+you read it, and the reading has to happen again.</p>
+<p class="note"><strong>Open the issuing authority's copy first.</strong> Do not
+confirm from this page, from a note, or from memory. The link is on the claim.</p>
+</div>
+<form id="f" class="card" onsubmit="return mk(event)">
+<label for="a">Claim</label>
+<select id="a" required><option value="/us/dod/dodi/1327.06#IDPL_MAX_PERIODS" data-hash="">/us/dod/dodi/1327.06#IDPL_MAX_PERIODS</option><option value="/us/dod/don/usmc/maradmin/2023/051#ENTITLEMENT_WINDOW_DAYS" data-hash="">/us/dod/don/usmc/maradmin/2023/051#ENTITLEMENT_WINDOW_DAYS</option><option value="/us/dod/don/usmc/maradmin/2023/051#EVENT_PROXIMITY_MERGE_HOURS" data-hash="">/us/dod/don/usmc/maradmin/2023/051#EVENT_PROXIMITY_MERGE_HOURS</option><option value="/us/dod/don/usmc/maradmin/2023/051#MAX_INCREMENTS" data-hash="">/us/dod/don/usmc/maradmin/2023/051#MAX_INCREMENTS</option><option value="/us/dod/don/usmc/maradmin/2023/051#MIN_INCREMENT_DAYS" data-hash="">/us/dod/don/usmc/maradmin/2023/051#MIN_INCREMENT_DAYS</option></select>
+<label for="v">Your verifier id</label>
+<input id="v" required placeholder="V-002" pattern="[A-Za-z0-9_-]{2,32}">
+<label for="r">Your reading</label>
+<select id="r"><option value="VERIFIED">Confirmed - the cited paragraph states this</option>
+<option value="REJECTED">Rejected - the source says something else</option>
+<option value="UNABLE">Unable - I could not obtain the source</option></select>
+<label for="e">Edition you read</label>
+<input id="e" required placeholder="e.g. DoWI 1327.06, Aug 7 2025, Change 1 Jun 30 2026">
+<label for="o">Where and when you obtained it</label>
+<input id="o" required minlength="12" placeholder="e.g. esd.whs.mil, PDF downloaded 2026-08-08">
+<label for="d">Date you read it</label>
+<input id="d" required type="date">
+<label for="n">Note - required if rejected or unable</label>
+<textarea id="n" rows="3"></textarea>
+<button type="submit">Download attestation</button>
+<p id="msg" class="muted" style="font-size:13px"></p>
+</form>
+</main>
+<footer>
+<p>Generated from the attestation ledger and the rule store. Verifier identities
+are opaque ids; the roster that maps them to people is never published. This
+site is an unofficial reference - the issuing authority's copy governs.</p>
+<p><a href="index.html">Home</a> &middot;
+<a href="accessibility.html">Accessibility statement</a></p>
+</footer>
+<script>
+function mk(ev){
+  ev.preventDefault();
+  var s=document.getElementById('a'), o=s.options[s.selectedIndex];
+  var res=document.getElementById('r').value;
+  var note=document.getElementById('n').value.trim();
+  if(res!=='VERIFIED'&&!note){
+    document.getElementById('msg').textContent='A reason is required for rejected or unable.';
+    return false;
+  }
+  var rec={
+    assertion:s.value, kind:'rule',
+    content_hash_seen:o.getAttribute('data-hash'),
+    verified_against:{edition:document.getElementById('e').value.trim(),
+      obtained:document.getElementById('o').value.trim(), url:null, artifact_hash:null},
+    verifier:document.getElementById('v').value.trim(),
+    at:document.getElementById('d').value+'T00:00:00+00:00',
+    method:'read-and-compare', result:res, note:note,
+    produced_by:'docs/verification.html'
+  };
+  var name='attestation-'+rec.verifier+'-'+
+    rec.assertion.replace(/[^A-Za-z0-9]+/g,'-').replace(/^-|-$/g,'')+'.json';
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([JSON.stringify(rec,null,2)],{type:'application/json'}));
+  a.download=name; a.click(); URL.revokeObjectURL(a.href);
+  document.getElementById('msg').textContent=
+    'Saved '+name+'. Put it in verification/incoming/ and a maintainer runs '+
+    'python tools/attest.py --ingest';
+  return false;
+}
+</script>
+</body>
+</html>
