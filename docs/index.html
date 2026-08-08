@@ -55,7 +55,7 @@ header.chrome, main, footer { max-width: 60rem; margin: 0 auto; padding: 16px 24
 header.chrome { margin-top: 16px; border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
   background: var(--color-bg-elev); box-shadow: var(--shadow-md);
-  display: flex; align-items: baseline; gap: 12px; }
+  display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
 .wordmark { font: 400 28px/1.2 var(--font-display); letter-spacing: 0.04em;
   color: var(--color-parchment-300); text-decoration: none; text-transform: uppercase; }
 .wordmark:hover { color: var(--color-brass-300); }
@@ -147,6 +147,24 @@ details.alt div { font-size: 14px; margin-top: 8px; }
   body { background: #fff; color: #1A1610; }
   .doc-text, dl.meta { background: #fff; color: #1A1610; border-color: #999; }
   header.chrome { box-shadow: none; }
+}
+
+/* Small screens: the chrome stacks - wordmark row, page label, then nav links
+   as wrapping pill targets (the inline margin-left:auto that right-aligns the
+   first link on desktop needs the !important to release). Wide tables scroll
+   in place instead of stretching the page, and long identifiers break. */
+@media (max-width: 640px) {
+  header.chrome { align-items: center; column-gap: 12px; row-gap: 8px; padding: 12px 16px; }
+  .wordmark { font-size: 22px; }
+  header.chrome span { flex-basis: 100%; order: 2; font: 700 11px/1 var(--font-body);
+    text-transform: uppercase; letter-spacing: .08em; color: var(--color-muted-foreground); }
+  header.chrome a:not(.wordmark) { order: 3; margin-left: 0 !important;
+    font: 600 13px/1.1 var(--font-body); padding: 8px 12px;
+    border: 1px solid var(--color-border-strong); border-radius: 9999px;
+    background: var(--color-muted); color: var(--color-parchment-300);
+    text-decoration: none; }
+  table { display: block; overflow-x: auto; }
+  code { overflow-wrap: anywhere; }
 }
 </style>
 </head>
