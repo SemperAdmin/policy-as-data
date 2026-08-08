@@ -1,0 +1,84 @@
+{
+  "quorum": {
+    "rule": 1,
+    "provision": 1
+  },
+  "deviation": {
+    "in_force": true,
+    "since": "2026-08-08",
+    "affects": "rule",
+    "reduced_from": 2,
+    "reduced_to": 1,
+    "reason": "One verifier exists. A two-person rule with one available person produces either permanent QUORUM_SHORT or invented second identities, and an invented identity is far worse than an honest quorum of one. The deviation is recorded here and reported by tools/verify_status.py on every run rather than hidden in a default.",
+    "conditions": [
+      "Every rule value still carries a named verifier, a source edition, a date, and a bound content hash. Nothing about the attestation weakens.",
+      "An imported seed carrying no named verifier still counts for nothing, at any quorum.",
+      "This deviation does not extend to any evaluator output shown to a Marine. Before a computed entitlement reaches a member, restore quorum 2.",
+      "Revisit when a second verifier exists, or before the first production use, whichever comes first."
+    ]
+  },
+  "findings": [
+    {
+      "concept": "PARENTAL_LEAVE_MAX_DURATION",
+      "label": "Maximum parental leave authorized for a qualifying event",
+      "canonical_unit": "days",
+      "verdict": "AGREE",
+      "detail": "2 tiers agree at 84 days",
+      "tiers": [
+        {
+          "tier": "T1",
+          "tier_label": "department of defense",
+          "document": "DoWI 1327.06, Military Leave, Liberty, and Administrative Absence",
+          "source_url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132706p.pdf",
+          "citation_label": "DoWI 1327.06, para 3.11.c.(3)(a)1",
+          "citation_identifier": "/us/dod/dodi/1327.06/s3/3.11/c/3/a/1",
+          "assertion": "/us/dod/dodi/1327.06#ADPL_MAX_WEEKS",
+          "verification": "VERIFIED",
+          "stated": "12 weeks",
+          "canonical": 84
+        },
+        {
+          "tier": "T5",
+          "tier_label": "message",
+          "document": "MARADMIN 051/23, Expansion of the Marine Corps Military Parental Leave Program",
+          "source_url": "https://www.marines.mil/News/Messages/Messages-Display/Article/3281525/expansion-of-the-marine-corps-military-parental-leave-program/",
+          "citation_label": "MARADMIN 051/23, para 11.d",
+          "citation_identifier": "/us/dod/don/usmc/maradmin/2023/051/p11/d",
+          "assertion": "/us/dod/don/usmc/maradmin/2023/051#MAX_PARENTAL_LEAVE_DAYS",
+          "verification": "VERIFIED",
+          "stated": "84 days",
+          "canonical": 84
+        }
+      ],
+      "withheld": [],
+      "not_comparable": []
+    }
+  ],
+  "unassigned_rules": [
+    {
+      "assertion": "/us/dod/dodi/1327.06#IDPL_MAX_PERIODS",
+      "tier": "T1",
+      "citation": "DoWI 1327.06, para 3.11.d.(3)(a)"
+    },
+    {
+      "assertion": "/us/dod/don/usmc/maradmin/2023/051#ENTITLEMENT_WINDOW_DAYS",
+      "tier": "T5",
+      "citation": "MARADMIN 051/23, para 8.c.(3)"
+    },
+    {
+      "assertion": "/us/dod/don/usmc/maradmin/2023/051#MIN_INCREMENT_DAYS",
+      "tier": "T5",
+      "citation": "MARADMIN 051/23, para 8.a.(1)(b)"
+    },
+    {
+      "assertion": "/us/dod/don/usmc/maradmin/2023/051#MAX_INCREMENTS",
+      "tier": "T5",
+      "citation": "MARADMIN 051/23, para 8.a.(1)(b)"
+    },
+    {
+      "assertion": "/us/dod/don/usmc/maradmin/2023/051#EVENT_PROXIMITY_MERGE_HOURS",
+      "tier": "T5",
+      "citation": "MARADMIN 051/23, para 8.b.(1)"
+    }
+  ]
+}

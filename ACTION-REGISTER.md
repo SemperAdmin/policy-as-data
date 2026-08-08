@@ -21,11 +21,11 @@ document that owns it.
 Nothing in Track 1 starts without these. They were asked in `POC-PLAN.md`
 section 11 and are still open.
 
-| | Question | My recommendation |
+| | Question | Decision |
 |---|---|---|
-| **B1** | May a finding publish a value drawn from an UNVERIFIED rule? | **Refuse for values, downgrade for structure.** Say "DoD tier not verified" rather than "DoD says 12 weeks, unverified." A downgraded number gets screenshotted and forwarded without the banner. |
-| **B2** | Which second spine for the generality test? | **Promotion.** It reaches T0/T1/T3, and a cross-tier test touching statute proves more than one stopping at DoD. Not MOS - it names no DoD authority at all. |
-| **B3** | Can you obtain DoDI 1327.06 para 3.11.c and 3.11.d text? | If no, pick a different concept **before** writing code. This is the POC's critical path and it is transcription, not software. |
+| ~~**B1**~~ | May a finding publish a value drawn from an UNVERIFIED rule? | **DECIDED 2026-08-08: WITHHOLD.** A value that is not VERIFIED is not printed and not compared; the tier is reported as present, cited, and withheld, and the verdict becomes NOT_COMPARABLE. Implemented in `tools/reconcile.py`. |
+| ~~**B2**~~ | Which second spine for the generality test? | **DECIDED 2026-08-08: PROMOTION.** Owner decision, over a recommendation of fitness. Carry forward: promotion's rules are more often conditions than scalars, so concept selection at M5 needs care, and `DECISION-BRIEF-B1-B3.md` section B2 holds the fitness case if promotion proves thin. |
+| **B3** | Can you obtain DoDI 1327.06 para 3.11.c and 3.11.d text? | **STILL OPEN. The only remaining blocker on Track 1.** Everything that does not depend on the text is now built. If the answer is no, the fallback in `DECISION-BRIEF-B1-B3.md` section B3 applies. |
 
 ---
 
@@ -56,10 +56,10 @@ Sequential. Nothing here starts before section 0 is answered.
 | # | Milestone | Item | Blocked by |
 |---|---|---|---|
 | **1.0** | M0 | Encode DoDI 1327.06 para 3.11.c and 3.11.d from the authoritative text. Promote to VERIFIED. **No code.** | B3 |
-| **1.1** | M1 | `config/rule_concepts.json` and `config/units.json`. One concept, one conversion. Read OpenFisca's parameter model first. | 1.0 |
-| **1.2** | M1 | Add `concept` to the six existing rules in the two `rules.json` files. | 1.1 |
-| **1.3** | M2 | `tools/reconcile.py`. One concept, two tiers, four verdicts, citations on every line, refusal register. CLI and JSON out, no rendering. | 1.2, B1 |
-| **1.4** | M3 | Idempotence proven by hashing. Malformed concept references fail the build. One new stage. | 1.3 |
+| ~~1.1~~ | M1 | ~~`config/rule_concepts.json` and `config/units.json`~~ **BUILT 2026-08-08.** One concept, `PARENTAL_LEAVE_MAX_DURATION`, canonical unit days. Two conversions, weeks and hours, each naming the text that supports the factor. Months and years explicitly **refused** rather than approximated. | done |
+| ~~1.2~~ | M1 | ~~Add `concept`~~ **DONE 2026-08-08.** Added to the two rules that share a concept. The other four carry none and `reconcile.py` lists them as unassigned rather than dropping them. **Verified that adding the field leaves every attestation hash unchanged** - the hash covers value, unit, and citation identifier only, which is why the schema could grow without invalidating the ledger. | done |
+| ~~1.3~~ | M2 | ~~`tools/reconcile.py`~~ **BUILT 2026-08-08.** Four verdicts, tier derived from the identifier per `NAMESPACES.md`, citations on every line, `--json`, `--out`. All four paths tested: NOT_COMPARABLE on unverified input, DIVERGE at 70 vs 84 days, AGREE at 84, and the units refusal. | done |
+| **1.4** | M3 | **PARTIAL 2026-08-08.** Stage 16 added to `build.sh`, `check_site` renumbered to 17, `bash -n` clean. Report proven byte-identical across two runs. **Still open:** a malformed concept reference should fail the build, and that check is not written. | 1.3 |
 | **1.5** | M4 | Render into `docs/`, link from the leave spine. Both paragraphs printed in full for any DIVERGE. | 1.4 |
 | **1.6** | — | **Stop and show it to someone who did not build it.** | 1.5 |
 | **1.7** | M5 | Second spine. The milestone that decides whether the design was shaped around leave. | 1.6, B2 |
@@ -78,12 +78,12 @@ needs the same ledger. It is the shared dependency, so it is not optional.
 
 | # | Item | Priority |
 |---|---|---|
-| **2.1** | Define the **normalization rule** before anything else. Line endings, whitespace, NFC, text-only hashing. Test it against the CRLF problem in `SESSION_HANDOFF.md` 8. Get this wrong and every attestation invalidates on a round trip. | P0, first |
-| **2.2** | `verification/attestations.jsonl` format. Append-only, outside `canonical/`. | P0 |
-| **2.3** | `.gitignore` the verifier roster **before** the first attestation is written. | P0 |
-| **2.4** | `tools/attest.py` - present one assertion, capture the decision, append. Never writes `canonical/`. | P0 |
-| **2.5** | `tools/verify_status.py` plus a build stage deriving status and reporting invalidations. | P0 |
-| **2.6** | Seed the ledger from existing inline statuses as `method: "imported"`, honestly marked as carrying no verifier and no source edition. | P0 |
+| ~~2.1~~ | ~~Normalization rule~~ **BUILT 2026-08-08.** `tools/normalize.py`. CRLF/LF, per-line strip, internal whitespace collapse, NFC, text-only. Smoke check proves variants collapse to one hash and a real change moves it. The first draft had an inverted line-strip that failed the check; caught and fixed. | done |
+| ~~2.2~~ | ~~Ledger format~~ **BUILT 2026-08-08.** Spec in `verification/README.md`. Append-only JSONL, outside `canonical/`. | done |
+| ~~2.3~~ | ~~Gitignore the roster~~ **DONE 2026-08-08.** `verification/roster.json` added to `.gitignore`, before any attestation exists. | done |
+| ~~2.4~~ | ~~`tools/attest.py`~~ **BUILT 2026-08-08.** `--list`, `--next`, `--assertion`, `--seed`. Writes only `verification/`. A rejection writes a correction **request**; the change goes through `tools/corrections.py`. | done |
+| ~~2.5~~ | ~~`tools/verify_status.py`~~ **BUILT 2026-08-08.** Six verdicts, `--json`, `--fail-on-invalidated` exits 1 on drift and 0 otherwise, both tested. **Build stage still to be wired into `build.sh`.** | tool done, wiring open |
+| **2.6** | Seed the ledger. **Tool built, run it yourself:** `python tools/attest.py --seed`. Imports 5 inline VERIFIED rules with `method: "imported"`, binding the hash now. Optionally `--seed --verifier V-000` if the documented 2026-06-24 corrections pass is genuinely attributable to you - see section 10. | one command |
 | **2.7** | **V1: attest all six rule values, two-person.** Smallest set, highest consequence, and it is the POC's input. | P0 |
 | **2.8** | V2: the source paragraphs behind the 362 cited edges. Compute the distinct count first - the ~300 estimate is not measured. | P1 |
 | **2.9** | Per-provision verification badge on the site, showing state, method, and date. Never a name. | P1 |
@@ -178,6 +178,34 @@ Named so they cannot creep back in.
 
 ---
 
+## 10. Consequence you should see before running the seed
+
+Seeding does **not** leave the five MARADMIN 051/23 rules showing VERIFIED. It
+leaves them `QUORUM_SHORT`.
+
+An evaluator-consumed rule value requires two attestations by different
+verifiers. The imported seed carries `verifier: null`, because the 2026-06-24
+corrections entry records a date and a source but no person, so it counts as
+zero independent readings. The five rules read:
+
+    0 of 2 independent attestations plus 1 imported seed carrying no named verifier
+
+That is the honest state, and it is a downgrade from what the data currently
+asserts inline. Three ways forward, and I recommend the first:
+
+1. **Accept it and attest.** Five values, two readings each, against a message
+   you already have. An afternoon, and it makes the POC's inputs real.
+2. **Attribute the seed.** `--seed --verifier V-000` if that corrections pass
+   was genuinely your reading. Then the five sit at 1 of 2, needing one
+   independent second. Legitimate, and it is a claim about a past act, so it is
+   your call and not a default.
+3. **Lower the quorum for rules to 1.** I would not. A wrong rule value produces
+   a wrong computed answer about a Marine's leave with nobody between the error
+   and the reader, and even at quorum 1 a seed with no named verifier still does
+   not qualify.
+
+---
+
 ## 9. Correction: the licence model changed, and I was wrong the first time
 
 `resources/20-nist-code-portal.md` leaned on the NIST 17 U.S.C. 105 public-domain
@@ -198,11 +226,14 @@ Personal-time work is **not** section 105 material. Copyright subsists, and a
 work with copyright and no licence is all-rights-reserved by default, which is
 strictly worse for reuse than either alternative. It needs an actual grant.
 
-**MIT, and the reason is consistency as much as permissiveness.** It matches the
-sibling repository, so the programme carries one licence rather than two; it
-imposes no obligation on a government body adopting the schema; and it is
-compatible with everything, which keeps reuse gate 1 open instead of trading one
-copyleft trap for another.
+**MIT, and there is a DoD authority for it that beats my original reasoning.**
+SemperScribe's `LICENSES.md` cites DoD CIO memorandum "Software Development and
+Open Source Software," 24 January 2022, Attachment 2 paragraph 3G, which names
+Apache-2.0, BSD, GPL, LGPL, and MIT as "acceptable for DoD use," with anything
+else needing Component CIO permission. **MIT is on the approved-without-action
+list.** That is a better basis than sibling-consistency, and it independently
+confirms the EUPL rejection in `resources/23`: EUPL is not on the list and would
+need Component CIO sign-off on top of its copyleft problem.
 
 **The one fact that would change this:** if any part of this repository was
 produced by a federal employee as part of official duties, section 105 applies
@@ -213,10 +244,26 @@ statement. Confirm before committing.
 
 1. The copyright line reads "policy-as-data contributors", parallel to
    SemperScribe. Substitute a personal or organisational name if you prefer.
-2. `NOTICE` section 4 carves out `branding/` and every military emblem, seal,
-   and insignia. That carve-out is deliberate. An MIT grant that appeared to
-   licence the Marine Corps emblem would be wrong, and emblem use is governed by
-   statute and service regulation rather than by any licence you can write.
+2. `NOTICE` section 4 **revised 2026-08-08** after checking the asset. You are
+   right for this repository: `semper-logo.jpg` is original Semper Admin
+   artwork, not an official emblem file. It is now carved out as a **mark**,
+   not as government material, and the emblem clause is forward-looking rather
+   than descriptive. One observation, not a legal conclusion and I am not a
+   lawyer: the illustration renders an Eagle, Globe and Anchor device on the
+   cover cap. Original artwork depicting a protected device is a different
+   question from using the official asset, and it is worth a look by someone
+   qualified.
+
+3. **SemperScribe is the other answer, and it needs a carve-out.**
+   `src/lib/dod-seal-data.ts` is 3.8 MB of base64 holding `DOD_SEAL_DETAILED`
+   and `NAVY_SEAL_BLUE`, stamped into DOCX letterheads via
+   `docx-generator.ts:117` and into PDF via `pdf-seal.ts`. That is official
+   symbol use. **It is also correct behaviour** - a letterhead generator under
+   SECNAV M-5216.5 should place the seal. The problem is narrower: an MIT file
+   at the repository root appears to licence 3.8 MB of DoD and Navy seal data.
+   Fix: add a seal carve-out to `LICENSES.md`, which is already the right home,
+   since it is an inventory of what is governed by what and seals are governed
+   by regulation rather than by a licence. **Do not remove the seals.**
 
 ---
 

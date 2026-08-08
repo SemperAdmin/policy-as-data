@@ -67,14 +67,21 @@ enlarges or restricts the public's rights in the underlying documents.
                        src/app/globals.css in the SemperAdminPortal repository.
                        Mirrored here read-only.
 
-  branding/semper-logo.jpg, docs/semper-logo.jpg, and any military emblem,
-  seal, or insignia appearing in this repository or its rendered output.
+  branding/semper-logo.jpg and docs/semper-logo.jpg
+                       The Semper Admin mark. Original artwork belonging to the
+                       project, excluded as a mark rather than as government
+                       material. Reuse of the code and schema does not carry a
+                       right to use the mark.
 
-Military emblems, seals, and insignia are governed by statute and by service
-regulation, not by this licence. Nothing in the MIT grant conveys any right to
-use them, and their presence here does not imply endorsement by, or affiliation
-with, the United States Marine Corps, the Department of the Navy, or the
-Department of Defense.
+No official military emblem, seal, or insignia asset is used in this repository.
+The Semper Admin mark is original artwork.
+
+Should any official emblem, seal, or insignia ever be added here or appear in
+rendered output, it is excluded from this grant automatically. Such marks are
+governed by statute and by service regulation, not by any licence, and nothing
+in the MIT grant conveys a right to use them. Their presence would not imply
+endorsement by, or affiliation with, the United States Marine Corps, the
+Department of the Navy, or the Department of Defense.
 
 
 5. PRIVACY
@@ -99,6 +106,25 @@ unclassified information to any published artifact in this repository.
 None. The pipeline is Python 3 standard library. If that ever changes, each
 component's own copyright and licensing statement is added here, and the
 dependency gate in REUSE-ASSESSMENT.md section 6 must pass first.
+
+
+6a. WHY MIT
+-----------
+
+DoD Chief Information Officer memorandum "Software Development and Open Source
+Software," 24 January 2022, Attachment 2 paragraph 3G:
+
+  "DoD programs releasing code as OSS may use any of the following licenses,
+  which have been shown to be acceptable for DoD use: Apache-2.0, BSD, GPL,
+  LGPL, and MIT licenses. Component CIOs may grant permission to use other
+  licenses if required."
+
+MIT is on the approved-without-action list. It also matches SemperScribe, so the
+programme carries one licence rather than two.
+
+This is also why EUPL-licensed European public-sector software is not imported
+here: EUPL is not on that list and would require Component CIO permission, on
+top of the copyleft problem recorded in resources/23-eu-oss-catalogue.md.
 
 
 7. WARRANTY
