@@ -64,6 +64,22 @@ letter-spacing:.08em}
 code{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
 footer{border-top:1px solid var(--border);margin-top:48px;font-size:13px;
 color:var(--mutedfg)}
+/* Small screens: the chrome stacks - wordmark row, page label, then nav links
+   as wrapping pill targets (the inline margin-left:auto that right-aligns the
+   first link on desktop needs the !important to release). Wide tables scroll
+   in place instead of stretching the page, and long identifiers break. */
+@media (max-width:640px){
+header.chrome{align-items:center;column-gap:12px;row-gap:8px;padding:12px 16px}
+.wordmark{font-size:22px}
+header.chrome span{flex-basis:100%;order:2;font:700 11px/1 inherit;
+text-transform:uppercase;letter-spacing:.08em;color:var(--mutedfg)}
+header.chrome a:not(.wordmark){order:3;margin-left:0!important;
+font:600 13px/1.1 inherit;padding:8px 12px;border:1px solid var(--borders);
+border-radius:9999px;background:var(--muted);color:var(--parch3);
+text-decoration:none}
+table{display:block;overflow-x:auto}
+code{overflow-wrap:anywhere}
+}
 </style></head><body>
 <a class="skip" href="#main">Skip to main content</a>
 <header class="chrome"><a class="wordmark" href="index.html">Semper Admin</a><span>Authority chain</span></header>
