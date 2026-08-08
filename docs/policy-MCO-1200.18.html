@@ -78,7 +78,7 @@ font:600 13px/1.1 inherit;padding:8px 12px;border:1px solid var(--borders);
 border-radius:9999px;background:var(--muted);color:var(--parch3);
 text-decoration:none}
 table{display:block;overflow-x:auto}
-code{overflow-wrap:anywhere}
+code,h3{overflow-wrap:anywhere}
 }
 
 .crumb{font-size:13px;color:var(--mutedfg);margin:24px 0 0}
@@ -135,48 +135,8 @@ padding:14px 16px}
 <h1>MCO 1200.18 - Military Occupational Specialties (MOS) Program Order (SHORT TITLE: MOS MANUAL ORDER)</h1>
 <div class="ident">/us/dod/don/usmc/mco/1200_18</div>
 <div class="factrow"><span class="pill ">T3 Service directive</span><span class="pill ">active</span><span class="pill ">UNVERIFIED</span></div>
-<h2>Where this sits</h2>
-<p class="lede2">The ladder above is what governs this policy, one tier at a time. Every rung exists because this document, or one above it, printed the reference. A tier the corpus does not hold is shown rather than skipped.</p>
-<div class="ladder">
-<div class="rung"><div class="t">T0 Statute</div>
-<div style="padding:3px 0"><a href="policy-USC-T5-S552a.html">USC-T5-S552a</a> <span class="pill held">in store</span><div class="small">5 U.S.C. 552a - Records maintained on individuals</div><div class="src">named at front-matter:ref/j &middot; cited</div></div>
-</div>
-<div class="rung gaprung"><div class="t">T1 Department of Defense <span class="pill gap">tier not held</span></div><div class="small">No Department of Defense issuance is named in the reference list of any document on this spine. The MOS Manual carries a DoD occupational conversion report requirement, but the requirement names no issuance number, so no edge is written.</div></div>
-<div class="rung"><div class="t">T2 Department of the Navy</div>
-<div style="padding:3px 0"><code>SECNAVINST-5210.1</code> <span class="pill gap">not held</span><div class="src">named at front-matter:ref/e &middot; cited</div></div>
-<div style="padding:3px 0"><code>SECNAVINST-5211.5E</code> <span class="pill gap">not held</span><div class="src">named at front-matter:ref/k &middot; cited</div></div>
-</div>
-<div class="rung"><div class="t">T3 Service directive &middot; this document</div><div><strong>MCO 1200.18 - Military Occupational Specialties (MOS) Program Order (SHORT TITLE: MOS MANUAL ORDER)</strong></div></div>
-<div class="rung"><div class="t">Below &middot; 3 document(s) name this one</div>
-<div style="padding:3px 0"><a href="policy-NAVMC-1200.1L.html">NAVMC-1200.1L</a><div class="small">NAVMC 1200.1L - Military Occupational Specialties Manual</div><div class="src">names it at front-matter:ref/a</div></div>
-<div style="padding:3px 0"><a href="policy-MCO-1610.7B.html">MCO-1610.7B</a><div class="small">MCO 1610.7B - Performance Evaluation System (PES)</div><div class="src">names it at p-6:ref/s</div></div>
-<div style="padding:3px 0"><a href="policy-MARADMIN-2026-012.html">MARADMIN-2026-012</a><div class="small">ACADEMIC YEAR 2026-2027 NAVAL POSTGRADUATE SCHOOL DISTANCE</div><div class="src">names it at narr:REF D</div></div>
-</div>
-</div>
-<h2>What came before</h2>
-<p class="lede2">The corpus holds one edition of this policy and no document cites an earlier one. That is the honest answer, not a missing feature: a superseded edition is usually gone from the publisher's site before a scraper reaches it.</p>
-<details class="body"><summary>Record history &middot; 3 correction(s) to the DATA, not to the policy</summary><ul class="timeline">
-<li><strong>2026-08-03</strong> <span class="small">checked against section text already carried in this record</span><ul class="small"><li>reparse_provisions.py - provision tree rebuilt after the reference-list and signature-block parser fixes</li><li>12 path(s) added, 10 removed, 29 provisions total</li><li>reference and enclosure lists now parse under ref/ and encl/ instead of entering the body marker stack</li><li>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</li></ul></li>
-<li><strong>2026-08-03</strong> <span class="small">checked against the Subj: field in this record&#x27;s own front matter text</span><ul class="small"><li>backfill_subjects.py - subject recovered from the naval letter Subj: field, which the provision parser skips as a label line</li><li>title rebuilt as doc type, native number, and subject</li><li>no text was invented; a record with no Subj: field keeps subject null</li></ul></li>
-<li><strong>2026-08-04</strong> <span class="small">checked against USLM User Guide section 12.2, Referencing Model</span><ul class="small"><li>normalize_identifiers.py - period replaced with underscore in every USLM path segment</li><li>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</li><li>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</li><li>20 identifier(s) rewritten in this record</li><li>document id, native number, and displayed text are unchanged</li><li>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</li></ul></li>
-</ul></details>
 <h2>What it says</h2>
-<div class="panel"><h3>References this document names</h3><p class="small">Each entry is a link, not a string. This is the join between one policy and the next.</p>
-<ul class="reflist">
-<li><span class="plabel">(a)</span> <span class="reflink"><a href="policy-MCO-1200.15C-CH1.html">MCO 1200.15C</a></span> <span class="pill ">T3 Service directive</span> <span class="pill held">in store</span><div class="src">/us/dod/don/usmc/mco/1200_15c</div></li>
-<li><span class="plabel">(b)</span> <span class="reflink"><code>MCO P1000.6G</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/1000_6g</div></li>
-<li><span class="plabel">(c)</span> <span class="reflink"><a href="policy-MCO-1200.13G.html">MCO 1200.13G</a></span> <span class="pill ">T3 Service directive</span> <span class="pill held">in store</span><div class="src">/us/dod/don/usmc/mco/1200_13g</div></li>
-<li><span class="plabel">(d)</span> <span class="reflink"><code>MCO P1300.8R W/CH 1-8</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/1300_8r/ch1</div></li>
-<li><span class="plabel">(e)</span> <span class="reflink"><code>SECNAVINST 5210.1</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/secnavinst/5210_1</div></li>
-<li><span class="plabel">(f)</span> <span class="reflink"><code>MCO 5311.1D</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/5311_1d</div></li>
-<li><span class="plabel">(g)</span> <span class="reflink"><code>MCO 1001R.1K</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/1001r_1k</div></li>
-<li><span class="plabel">(h)</span> <span class="reflink"><code>NAVMC 1200.1</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/navmc/1200_1</div></li>
-<li><span class="plabel">(i)</span> <span class="reflink"><code>MCO 5215.1K</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/5215_1k</div></li>
-<li><span class="plabel">(j)</span> <span class="reflink"><a href="policy-USC-T5-S552a.html">5 U.S.C. 552a</a></span> <span class="pill ">T0 Statute</span> <span class="pill held">in store</span><div class="src">/us/usc/t5/s552a</div></li>
-<li><span class="plabel">(k)</span> <span class="reflink"><code>SECNAVINST 5211.5E</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/secnavinst/5211_5e</div></li>
-</ul>
-</div>
-<details class="body"><summary>The full text &middot; 17 addressable paragraph(s) across 5 section(s), 2 of them held as source text because the parser refused to invent a hierarchy for them</summary>
+<details class="body" open><summary>The full text &middot; 17 addressable paragraph(s) across 5 section(s), 2 of them held as source text because the parser refused to invent a hierarchy for them</summary>
 <div class="panel" style="margin-top:10px" id="sec-front-matter"><h3>front-matter</h3>
 <p class="small">No provision hierarchy was parsed for this section. Its source text is shown as extracted, unaltered.</p>
 <div class="doc-raw">DEPARTMENT OF THE NAVY 
@@ -293,5 +253,45 @@ Marines prepared for assignment to conduct unit missions.</div>
 </div>
 </div>
 </details>
+<div class="panel"><h3>References this document names</h3><p class="small">Each entry is a link, not a string. This is the join between one policy and the next.</p>
+<ul class="reflist">
+<li><span class="plabel">(a)</span> <span class="reflink"><a href="policy-MCO-1200.15C-CH1.html">MCO 1200.15C</a></span> <span class="pill ">T3 Service directive</span> <span class="pill held">in store</span><div class="src">/us/dod/don/usmc/mco/1200_15c</div></li>
+<li><span class="plabel">(b)</span> <span class="reflink"><code>MCO P1000.6G</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/1000_6g</div></li>
+<li><span class="plabel">(c)</span> <span class="reflink"><a href="policy-MCO-1200.13G.html">MCO 1200.13G</a></span> <span class="pill ">T3 Service directive</span> <span class="pill held">in store</span><div class="src">/us/dod/don/usmc/mco/1200_13g</div></li>
+<li><span class="plabel">(d)</span> <span class="reflink"><code>MCO P1300.8R W/CH 1-8</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/1300_8r/ch1</div></li>
+<li><span class="plabel">(e)</span> <span class="reflink"><code>SECNAVINST 5210.1</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/secnavinst/5210_1</div></li>
+<li><span class="plabel">(f)</span> <span class="reflink"><code>MCO 5311.1D</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/5311_1d</div></li>
+<li><span class="plabel">(g)</span> <span class="reflink"><code>MCO 1001R.1K</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/1001r_1k</div></li>
+<li><span class="plabel">(h)</span> <span class="reflink"><code>NAVMC 1200.1</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/navmc/1200_1</div></li>
+<li><span class="plabel">(i)</span> <span class="reflink"><code>MCO 5215.1K</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/usmc/mco/5215_1k</div></li>
+<li><span class="plabel">(j)</span> <span class="reflink"><a href="policy-USC-T5-S552a.html">5 U.S.C. 552a</a></span> <span class="pill ">T0 Statute</span> <span class="pill held">in store</span><div class="src">/us/usc/t5/s552a</div></li>
+<li><span class="plabel">(k)</span> <span class="reflink"><code>SECNAVINST 5211.5E</code></span> <span class="pill gap">named, not held</span><div class="src">/us/dod/don/secnavinst/5211_5e</div></li>
+</ul>
+</div>
+<h2>Where this sits</h2>
+<p class="lede2">The ladder above is what governs this policy, one tier at a time. Every rung exists because this document, or one above it, printed the reference. A tier the corpus does not hold is shown rather than skipped.</p>
+<div class="ladder">
+<div class="rung"><div class="t">T0 Statute</div>
+<div style="padding:3px 0"><a href="policy-USC-T5-S552a.html">USC-T5-S552a</a> <span class="pill held">in store</span><div class="small">5 U.S.C. 552a - Records maintained on individuals</div><div class="src">named at front-matter:ref/j &middot; cited</div></div>
+</div>
+<div class="rung gaprung"><div class="t">T1 Department of Defense <span class="pill gap">tier not held</span></div><div class="small">No Department of Defense issuance is named in the reference list of any document on this spine. The MOS Manual carries a DoD occupational conversion report requirement, but the requirement names no issuance number, so no edge is written.</div></div>
+<div class="rung"><div class="t">T2 Department of the Navy</div>
+<div style="padding:3px 0"><code>SECNAVINST-5210.1</code> <span class="pill gap">not held</span><div class="src">named at front-matter:ref/e &middot; cited</div></div>
+<div style="padding:3px 0"><code>SECNAVINST-5211.5E</code> <span class="pill gap">not held</span><div class="src">named at front-matter:ref/k &middot; cited</div></div>
+</div>
+<div class="rung"><div class="t">T3 Service directive &middot; this document</div><div><strong>MCO 1200.18 - Military Occupational Specialties (MOS) Program Order (SHORT TITLE: MOS MANUAL ORDER)</strong></div></div>
+<div class="rung"><div class="t">Below &middot; 3 document(s) name this one</div>
+<div style="padding:3px 0"><a href="policy-NAVMC-1200.1L.html">NAVMC-1200.1L</a><div class="small">NAVMC 1200.1L - Military Occupational Specialties Manual</div><div class="src">names it at front-matter:ref/a</div></div>
+<div style="padding:3px 0"><a href="policy-MCO-1610.7B.html">MCO-1610.7B</a><div class="small">MCO 1610.7B - Performance Evaluation System (PES)</div><div class="src">names it at p-6:ref/s</div></div>
+<div style="padding:3px 0"><a href="policy-MARADMIN-2026-012.html">MARADMIN-2026-012</a><div class="small">ACADEMIC YEAR 2026-2027 NAVAL POSTGRADUATE SCHOOL DISTANCE</div><div class="src">names it at narr:REF D</div></div>
+</div>
+</div>
+<h2>What came before</h2>
+<p class="lede2">The corpus holds one edition of this policy and no document cites an earlier one. That is the honest answer, not a missing feature: a superseded edition is usually gone from the publisher's site before a scraper reaches it.</p>
+<details class="body"><summary>Record history &middot; 3 correction(s) to the DATA, not to the policy</summary><ul class="timeline">
+<li><strong>2026-08-03</strong> <span class="small">checked against section text already carried in this record</span><ul class="small"><li>reparse_provisions.py - provision tree rebuilt after the reference-list and signature-block parser fixes</li><li>12 path(s) added, 10 removed, 29 provisions total</li><li>reference and enclosure lists now parse under ref/ and encl/ instead of entering the body marker stack</li><li>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</li></ul></li>
+<li><strong>2026-08-03</strong> <span class="small">checked against the Subj: field in this record&#x27;s own front matter text</span><ul class="small"><li>backfill_subjects.py - subject recovered from the naval letter Subj: field, which the provision parser skips as a label line</li><li>title rebuilt as doc type, native number, and subject</li><li>no text was invented; a record with no Subj: field keeps subject null</li></ul></li>
+<li><strong>2026-08-04</strong> <span class="small">checked against USLM User Guide section 12.2, Referencing Model</span><ul class="small"><li>normalize_identifiers.py - period replaced with underscore in every USLM path segment</li><li>the period is reserved in USLM for the manifestation suffix, so a segment such as mco/1050.3j is ambiguous against the published grammar</li><li>underscore is drawn from the RFC 3986 unreserved set, which the USLM 2.1 Review Guide already requires for version strings</li><li>20 identifier(s) rewritten in this record</li><li>document id, native number, and displayed text are unchanged</li><li>IDENTITY CHANGE - owner adjudication required under [ID2] before promotion out of staging</li></ul></li>
+</ul></details>
 <h2>Provenance</h2><div class="panel"><p class="small">Source <code>E:\GunnyBot\Policies\MCO\MCO_1200.18.pdf</code><br>Extracted by pymupdf on 2026-04-29, converted 2026-07-19 against store schema 0.4.0<br>Checksum <code>a1c7cf78386eda49cd512379c0597fb5</code></p></div>
 <footer><p>This record is an UNVERIFIED machine extraction unless marked otherwise. Every link on this page is cited: it exists because the issuing authority printed the reference on the document. This library is an unofficial reference - the issuing authority's copy governs.</p></footer></main></body></html>
