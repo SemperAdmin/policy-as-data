@@ -1,0 +1,29 @@
+{
+  "$comment": "Unit conversions for reconciliation. Explicit and reviewable. Anything absent from this table is REFUSED, never inferred. A conversion is a claim about what a source means, so every factor names the text that supports it. Months and years are deliberately absent: 'one month' is not a fixed number of days in any issuance here, and guessing would manufacture precision the source does not have.",
+  "schema_version": "1.0",
+  "canonical_units": ["days", "hours", "increments"],
+  "conversions": [
+    {
+      "from": "weeks",
+      "to": "days",
+      "factor": 7,
+      "basis": "A week is seven days. MARADMIN 051/23 para 7.a.(1) states the same entitlement as '12 weeks (84 days)', which confirms the factor is what the issuing authority itself applies to this concept."
+    },
+    {
+      "from": "days",
+      "to": "hours",
+      "factor": 24,
+      "basis": "A day is twenty-four hours. Used only where a source states a period in hours, as MARADMIN 051/23 para 8.b.(1) does with the 72-hour merge period."
+    }
+  ],
+  "refused": [
+    {
+      "unit": "months",
+      "reason": "No fixed day count. No issuance in this corpus defines it, and inferring 30 or 31 would manufacture precision."
+    },
+    {
+      "unit": "years",
+      "reason": "The one-year forfeiture period in MARADMIN 051/23 para 8.c.(3) is already encoded as 365 days by the source's own arithmetic. Converting elsewhere would invite a leap-year error nobody would catch."
+    }
+  ]
+}

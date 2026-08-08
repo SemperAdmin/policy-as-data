@@ -23,3 +23,9 @@ _to_delete*/
 push.bat
 finish_main.bat
 publish.bat
+deploy_cloudgov.bat
+
+# The verifier roster. Maps opaque verifier ids to people, so it is personal
+# data attached to an official act. Same treatment as canonical/: held, never
+# published. The site shows state, method, and date - never a name.
+verification/roster.json
