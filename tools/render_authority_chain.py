@@ -23,6 +23,11 @@ import os
 import re
 from datetime import datetime, timezone
 
+# Tab icon, one definition for every page head. The SVG is the icon;
+# the PNG is the fallback for browsers that do not take SVG favicons.
+FAVICON = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n'
+           '<link rel="alternate icon" href="favicon.png">')
+
 TIER_ORDER = ["T0", "T1", "T2", "T3", "T4", "T5"]
 TIER_NAME = {
     "T0": "Statute",
@@ -299,6 +304,7 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
     P = [
         "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\">",
         "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">",
+        FAVICON,
         f"<title>{esc(title)} - Semper Admin Policy Library</title>",
         f"<style>{CSS}</style></head><body>",
         "<a class=\"skip\" href=\"#main\">Skip to main content</a>",
@@ -428,6 +434,7 @@ def render_index(results, out_path):
     P = [
         "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\">",
         "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">",
+        FAVICON,
         "<title>Authority chains - Semper Admin Policy Library</title>",
         f"<style>{CSS}{INDEX_CSS_EXTRA}</style></head><body>",
         "<a class=\"skip\" href=\"#main\">Skip to main content</a>",

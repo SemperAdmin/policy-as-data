@@ -34,7 +34,7 @@ from lineage import (build, build_inbound, load_families,      # noqa: E402
                      base_id, revision_letter, change_number)
 from render_authority_chain import (CSS, TIER_NAME, TIER_OF_TYPE,  # noqa: E402
                                     TIER_ORDER, tier_of, esc, load,
-                                    SRC_RX, HOLDS_RX, TIER_RX)
+                                    SRC_RX, HOLDS_RX, TIER_RX, FAVICON)
 
 EXTRA_CSS = """
 .crumb{font-size:13px;color:var(--mutedfg);margin:24px 0 0}
@@ -439,6 +439,7 @@ def render_one(rec, records, pages, inbound_t, inbound_b, families, gaps, out_di
 
     P = ['<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">',
          '<meta name="viewport" content="width=device-width,initial-scale=1">',
+         FAVICON,
          f'<title>{esc(rec.get("title") or did)} - Semper Admin Policy Library</title>',
          f"<style>{CSS}{EXTRA_CSS}</style></head><body>",
          '<a class="skip" href="#main">Skip to main content</a>',
@@ -504,6 +505,7 @@ def render_index(records, pages, inbound_t, out_dir, types=None):
 
     P = ['<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">',
          '<meta name="viewport" content="width=device-width,initial-scale=1">',
+         FAVICON,
          '<title>All policies - Semper Admin Policy Library</title>',
          f"<style>{CSS}{EXTRA_CSS}</style></head><body>",
          '<a class="skip" href="#main">Skip to main content</a>',
@@ -572,6 +574,7 @@ def render_type_indexes(records, pages, inbound_t, out_dir):
         rows = sorted(ids, key=lambda d: (records[d].get("status") != "active", d))
         P = ['<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">',
              '<meta name="viewport" content="width=device-width,initial-scale=1">',
+         FAVICON,
              f'<title>{esc(label)} - Semper Admin Policy Library</title>',
              f"<style>{CSS}{EXTRA_CSS}</style></head><body>",
              '<a class="skip" href="#main">Skip to main content</a>',
