@@ -7,11 +7,12 @@ those as three questions, and splitting them made the connection between
 them the reader's job.
 
 This renders one page per policy carrying all three, in the order a reader
-actually needs them:
+actually needs them - the text first, because the text is what the page was
+opened for; the authority and the lineage read as context after it:
 
+    WHAT IT SAYS       the provision tree, with every reference resolving
     WHERE IT SITS      the authority above it and the traffic below it
     WHAT CAME BEFORE   editions, change packages, supersession, reverse drift
-    WHAT IT SAYS       the provision tree, with every reference resolving
 
 The third section is where the concepts join. A reference-list item is not
 printed as text - it is printed as a link to the policy it names, carrying
@@ -353,6 +354,45 @@ def content_section(rec, records, pages):
         if body:
             body_secs.append((sec, body))
 
+    # Every section, in document order. A section the parser refused - a
+    # table, a flattened extraction - has no provisions, and dropping it
+    # would silently remove content from the document. Those render as
+    # source text, labelled, so the page is the whole policy rather than
+    # the parseable part of it.
+    ordered = [(sec, [p for p in (sec.get("provisions") or [])
+                      if p["path"].split("/")[0].rstrip("0123456789")
+                      not in ("ref", "encl")])
+               for sec in rec.get("sections", [])]
+    total = sum(len(b) for _, b in ordered)
+    raw_only = sum(1 for sec, b in ordered if not b and (sec.get("text") or "").strip())
+    if total or raw_only:
+        label = (f'The full text &middot; {total} addressable paragraph(s) '
+                 f'across {len(ordered)} section(s)')
+        if raw_only:
+            label += (f', {raw_only} of them held as source text because the '
+                      f'parser refused to invent a hierarchy for them')
+        # Open by default: the text is the point of the page, not an appendix.
+        out.append(f'<details class="body" open><summary>{label}</summary>')
+        for sec, body in ordered:
+            anchor = esc(sec.get("anchor") or "")
+            out.append(f'<div class="panel" style="margin-top:10px" '
+                       f'id="sec-{anchor}">'
+                       f'<h3>{anchor}'
+                       + (f' &middot; {esc(sec.get("heading"))}'
+                          if sec.get("heading") else "")
+                       + "</h3>")
+            if body:
+                out.extend(provision_tree(body, records, pages))
+            elif (sec.get("text") or "").strip():
+                out.append('<p class="small">No provision hierarchy was parsed '
+                           'for this section. Its source text is shown as '
+                           'extracted, unaltered.</p>')
+                out.append(f'<div class="doc-raw">{esc(sec["text"])}</div>')
+            out.append("</div>")
+        out.append("</details>")
+
+    # The reference join follows the text: it is the page's connective
+    # tissue, not its subject.
     if ref_secs:
         out.append('<div class="panel"><h3>References this document names</h3>'
                    '<p class="small">Each entry is a link, not a string. This is '
@@ -385,42 +425,6 @@ def content_section(rec, records, pages):
                                f'{pill("", "no issuance named")}</li>')
             out.append("</ul>")
         out.append("</div>")
-
-    # Every section, in document order. A section the parser refused - a
-    # table, a flattened extraction - has no provisions, and dropping it
-    # would silently remove content from the document. Those render as
-    # source text, labelled, so the page is the whole policy rather than
-    # the parseable part of it.
-    ordered = [(sec, [p for p in (sec.get("provisions") or [])
-                      if p["path"].split("/")[0].rstrip("0123456789")
-                      not in ("ref", "encl")])
-               for sec in rec.get("sections", [])]
-    total = sum(len(b) for _, b in ordered)
-    raw_only = sum(1 for sec, b in ordered if not b and (sec.get("text") or "").strip())
-    if total or raw_only:
-        label = (f'The full text &middot; {total} addressable paragraph(s) '
-                 f'across {len(ordered)} section(s)')
-        if raw_only:
-            label += (f', {raw_only} of them held as source text because the '
-                      f'parser refused to invent a hierarchy for them')
-        out.append(f'<details class="body"><summary>{label}</summary>')
-        for sec, body in ordered:
-            anchor = esc(sec.get("anchor") or "")
-            out.append(f'<div class="panel" style="margin-top:10px" '
-                       f'id="sec-{anchor}">'
-                       f'<h3>{anchor}'
-                       + (f' &middot; {esc(sec.get("heading"))}'
-                          if sec.get("heading") else "")
-                       + "</h3>")
-            if body:
-                out.extend(provision_tree(body, records, pages))
-            elif (sec.get("text") or "").strip():
-                out.append('<p class="small">No provision hierarchy was parsed '
-                           'for this section. Its source text is shown as '
-                           'extracted, unaltered.</p>')
-                out.append(f'<div class="doc-raw">{esc(sec["text"])}</div>')
-            out.append("</div>")
-        out.append("</details>")
     return out
 
 
@@ -459,9 +463,11 @@ def render_one(rec, records, pages, inbound_t, inbound_b, families, gaps, out_di
             if dates.get("cancelled") else "")
          + "</div>"]
 
+    # The document's own text leads - it is what a reader opened the page
+    # for. The authority ladder and the lineage are context and follow it.
+    P += content_section(rec, records, pages)
     P += authority_section(rec, records, pages, inbound_t, gaps)
     P += lineage_section(rec, tracks, records, pages)
-    P += content_section(rec, records, pages)
 
     prov = rec.get("provenance") or {}
     P.append('<h2>Provenance</h2><div class="panel"><p class="small">'
@@ -508,7 +514,7 @@ def render_index(records, pages, inbound_t, out_dir, types=None):
          '<main id="main"><h1>All policies</h1>',
          '<p class="lede">Every document in the demonstration set, ordered by '
          'the level that issued it. Each one opens on a single page carrying '
-         'its authority, its version history, and its full text - the three '
+         'its full text, its authority, and its version history - the three '
          'questions a reader actually has, answered together.</p>',
          ('<div class="typegrid">' + "".join(
              f'<div class="typecard"><div class="n">{n}</div>'
