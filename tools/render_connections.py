@@ -25,7 +25,8 @@ from collections import Counter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from render_authority_chain import (CSS, TIER_NAME, TIER_ORDER,   # noqa: E402
-                                    tier_of, esc, load, TIER_RX, HOLDS_RX)
+                                    tier_of, esc, load, TIER_RX, HOLDS_RX,
+                                    FAVICON)
 from render_policy import EXTRA_CSS, page_name                    # noqa: E402
 
 CONN_CSS = """
@@ -191,6 +192,7 @@ def render(records, out_path):
 
     P = ['<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">',
          '<meta name="viewport" content="width=device-width,initial-scale=1">',
+         FAVICON,
          '<title>Policy connections - Semper Admin Policy Library</title>',
          f"<style>{CSS}{EXTRA_CSS}{CONN_CSS}</style></head><body>",
          '<a class="skip" href="#main">Skip to main content</a>',
