@@ -32,7 +32,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lineage import (build, build_inbound, load_families,      # noqa: E402
                      base_id, revision_letter, change_number)
-from render_authority_chain import (CSS, TIER_NAME, TIER_OF_TYPE,  # noqa: E402
+from render_authority_chain import (BRAND, CSS, TIER_NAME, TIER_OF_TYPE,  # noqa: E402
                                     TIER_ORDER, tier_of, esc, load,
                                     SRC_RX, HOLDS_RX, TIER_RX, FAVICON)
 
@@ -443,8 +443,7 @@ def render_one(rec, records, pages, inbound_t, inbound_b, families, gaps, out_di
          f'<title>{esc(rec.get("title") or did)} - Semper Admin Policy Library</title>',
          f"<style>{CSS}{EXTRA_CSS}</style></head><body>",
          '<a class="skip" href="#main">Skip to main content</a>',
-         '<header class="chrome"><a class="wordmark" href="index.html">'
-         'Semper Admin</a><span>Policy</span>'
+         f'<header class="chrome">{BRAND}<span>Policy</span>'
          '<a href="policy-index.html" style="margin-left:auto">All policies</a>'
          '<a href="authority-index.html">Authority chains</a>'
          '<a href="sources.html">Sources</a></header>',
@@ -509,8 +508,7 @@ def render_index(records, pages, inbound_t, out_dir, types=None):
          '<title>All policies - Semper Admin Policy Library</title>',
          f"<style>{CSS}{EXTRA_CSS}</style></head><body>",
          '<a class="skip" href="#main">Skip to main content</a>',
-         '<header class="chrome"><a class="wordmark" href="index.html">'
-         'Semper Admin</a><span>All policies</span>'
+         f'<header class="chrome">{BRAND}<span>All policies</span>'
          '<a href="authority-index.html" style="margin-left:auto">Authority chains</a>'
          '<a href="sources.html">Sources</a></header>',
          '<main id="main"><h1>All policies</h1>',
@@ -578,8 +576,7 @@ def render_type_indexes(records, pages, inbound_t, out_dir):
              f'<title>{esc(label)} - Semper Admin Policy Library</title>',
              f"<style>{CSS}{EXTRA_CSS}</style></head><body>",
              '<a class="skip" href="#main">Skip to main content</a>',
-             '<header class="chrome"><a class="wordmark" href="index.html">'
-             'Semper Admin</a><span>Documents by type</span>'
+             f'<header class="chrome">{BRAND}<span>Documents by type</span>'
              '<a href="policy-index.html" style="margin-left:auto">All policies</a>'
              '<a href="authority-index.html">Authority chains</a>'
              '<a href="connections.html">Connections</a>'
