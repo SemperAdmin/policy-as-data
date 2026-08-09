@@ -23,18 +23,6 @@ import os
 import re
 from datetime import datetime, timezone
 
-# The programme identity, one definition for every page footer. Wording is
-# the corrected edition adopted in CHARTER.md section 3 - the name and the
-# scope sentences only. The EU-derived mission clauses stay off the public
-# site until the source page's reuse licence is confirmed (CHARTER.md
-# section 2, reason 3); these two sentences are original text and carry no
-# attribution obligation.
-PROGRAMME_P = (
-    '<p>Semper Admin is the public identity of GOATS, the Generalized Orders '
-    'Administrative Tools programme. The programme is scoped to the United '
-    'States Government; the Marine Corps and the Department of the Navy are '
-    'the first use case and the proof of concept.</p>')
-
 TIER_ORDER = ["T0", "T1", "T2", "T3", "T4", "T5"]
 TIER_NAME = {
     "T0": "Statute",
@@ -416,7 +404,7 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
              f"but not held). Records are UNVERIFIED machine extractions unless "
              f"promoted. Statute and Department of Defense records are "
              f"metadata-grade: identity, dates, supersession, and reference lists "
-             f"only, section text not ingested.</p>{PROGRAMME_P}</footer>")
+             f"only, section text not ingested.</p></footer>")
     P.append("</main></body></html>")
 
     with open(out_path, "w", encoding="utf-8") as fh:
@@ -503,7 +491,7 @@ def render_index(results, out_path):
              f"Records are UNVERIFIED machine extractions unless promoted. "
              f"Statute and Department of Defense records are metadata-grade: "
              f"identity, dates, supersession, and reference lists only, section "
-             f"text not ingested.</p>{PROGRAMME_P}</footer></main></body></html>")
+             f"text not ingested.</p></footer></main></body></html>")
     with open(out_path, "w", encoding="utf-8") as fh:
         fh.write("\n".join(P))
 

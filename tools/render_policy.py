@@ -34,7 +34,7 @@ from lineage import (build, build_inbound, load_families,      # noqa: E402
                      base_id, revision_letter, change_number)
 from render_authority_chain import (CSS, TIER_NAME, TIER_OF_TYPE,  # noqa: E402
                                     TIER_ORDER, tier_of, esc, load,
-                                    SRC_RX, HOLDS_RX, TIER_RX, PROGRAMME_P)
+                                    SRC_RX, HOLDS_RX, TIER_RX)
 
 EXTRA_CSS = """
 .crumb{font-size:13px;color:var(--mutedfg);margin:24px 0 0}
@@ -482,7 +482,7 @@ def render_one(rec, records, pages, inbound_t, inbound_b, families, gaps, out_di
              'marked otherwise. Every link on this page is cited: it exists '
              'because the issuing authority printed the reference on the '
              'document. This library is an unofficial reference - the issuing '
-             f'authority\'s copy governs.</p>{PROGRAMME_P}</footer></main></body></html>')
+             'authority\'s copy governs.</p></footer></main></body></html>')
 
     with open(os.path.join(out_dir, page_name(did)), "w", encoding="utf-8") as fh:
         fh.write("\n".join(P))
@@ -535,7 +535,7 @@ def render_index(records, pages, inbound_t, out_dir, types=None):
     P.append('<footer><p>Records are UNVERIFIED machine extractions unless '
              'promoted. Statute and Department of Defense records are '
              'metadata-grade: identity, dates, supersession, and reference '
-             f'lists only, section text not ingested.</p>{PROGRAMME_P}</footer>'
+             'lists only, section text not ingested.</p></footer>'
              '</main></body></html>')
     with open(os.path.join(out_dir, "policy-index.html"), "w",
               encoding="utf-8") as fh:
@@ -607,7 +607,7 @@ def render_type_indexes(records, pages, inbound_t, out_dir):
         P.append('<footer><p>Generated from the canonical policy store. Records '
                  'are UNVERIFIED machine extractions unless promoted. This site '
                  'is an unofficial reference - the issuing authority\'s copy '
-                 f'governs.</p>{PROGRAMME_P}</footer></main></body></html>')
+                 'governs.</p></footer></main></body></html>')
         with open(os.path.join(out_dir, type_page_name(doc_type)), "w",
                   encoding="utf-8") as fh:
             fh.write("\n".join(P))

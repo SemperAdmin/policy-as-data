@@ -38,7 +38,6 @@ from reconcile import (  # noqa: E402
 from verify_status import (  # noqa: E402
     DATA, LEDGER, POLICY, derive, live_rule_assertions, load_ledger, load_policy,
 )
-from render_authority_chain import PROGRAMME_P  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "docs" / "verification.html"
@@ -476,7 +475,6 @@ are opaque ids; the roster that maps them to people is never published. This
 site is an unofficial reference - the issuing authority's copy governs.</p>
 <p><a href="index.html">Home</a> &middot;
 <a href="accessibility.html">Accessibility statement</a></p>
-{PROGRAMME_P}
 </footer>
 <script>
 function mk(ev){{
