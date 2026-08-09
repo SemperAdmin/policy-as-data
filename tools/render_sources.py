@@ -16,7 +16,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from render_authority_chain import CSS, esc, load, PROGRAMME_P  # noqa: E402
+from render_authority_chain import CSS, esc, load          # noqa: E402
 from render_policy import EXTRA_CSS                        # noqa: E402
 
 SOURCES_CSS = """
@@ -523,7 +523,7 @@ def render(records, out_path):
              'authority\'s copy governs.</p></div>')
     P.append('<footer><p>Full conformance verdicts, with the specification '
              'text each one turns on, are in conformance-matrix.md. The '
-             f'identifier register is in NAMESPACES.md.</p>{PROGRAMME_P}</footer>'
+             'identifier register is in NAMESPACES.md.</p></footer>'
              '</main></body></html>')
 
     with open(out_path, "w", encoding="utf-8") as fh:
