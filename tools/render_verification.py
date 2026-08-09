@@ -38,7 +38,7 @@ from reconcile import (  # noqa: E402
 from verify_status import (  # noqa: E402
     DATA, LEDGER, POLICY, derive, live_rule_assertions, load_ledger, load_policy,
 )
-from render_authority_chain import FAVICON  # noqa: E402
+from render_authority_chain import BRAND, BRAND_CSS, FAVICON  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "docs" / "verification.html"
@@ -138,7 +138,7 @@ text-decoration:none}
 table{display:block;overflow-x:auto}
 code,h3{overflow-wrap:anywhere}
 }
-"""
+""" + BRAND_CSS
 
 FLOW = [
     ("1", "Issuance", "The issuing authority publishes. Their copy governs, always.", False),
@@ -392,15 +392,14 @@ reading is not enough.</p>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {FAVICON}
-<title>Verification - Semper Admin Policy Library</title>
+<title>Verification - G.O.A.T.S. Policy Library</title>
 <style>{CSS}</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
 <header class="chrome">
 <img src="semper-logo.jpg" alt="Semper Admin emblem" height="40" style="align-self:center">
-<a class="wordmark" href="index.html">Semper Admin</a>
-<span class="eyebrow">Verification</span>
+{BRAND}<span class="eyebrow">Verification</span>
 <a href="how-it-works.html" style="margin-left:auto">How it works</a>
 <a href="policy-index.html">All policies</a>
 <a href="authority-index.html">Authority chains</a>

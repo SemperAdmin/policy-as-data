@@ -24,7 +24,7 @@ import sys
 from collections import Counter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from render_authority_chain import (CSS, TIER_NAME, TIER_ORDER,   # noqa: E402
+from render_authority_chain import (BRAND, CSS, TIER_NAME, TIER_ORDER,   # noqa: E402
                                     tier_of, esc, load, TIER_RX, HOLDS_RX,
                                     FAVICON)
 from render_policy import EXTRA_CSS, page_name                    # noqa: E402
@@ -196,8 +196,7 @@ def render(records, out_path):
          '<title>Policy connections - Semper Admin Policy Library</title>',
          f"<style>{CSS}{EXTRA_CSS}{CONN_CSS}</style></head><body>",
          '<a class="skip" href="#main">Skip to main content</a>',
-         '<header class="chrome"><a class="wordmark" href="index.html">'
-         'Semper Admin</a><span>Connections</span>'
+         f'<header class="chrome">{BRAND}<span>Connections</span>'
          '<a href="policy-index.html" style="margin-left:auto">All policies</a>'
          '<a href="authority-index.html">Authority chains</a>'
          '<a href="sources.html">Sources</a></header>',

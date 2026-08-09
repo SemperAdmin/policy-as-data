@@ -28,6 +28,20 @@ from datetime import datetime, timezone
 FAVICON = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n'
            '<link rel="alternate icon" href="favicon.png">')
 
+# The brand block, in one place. Every renderer emits this and nothing emits a
+# wordmark of its own. The rebrand of 2026-08-08 reached the four hand-authored
+# pages and missed all 74 generated ones, because the wordmark was a literal in
+# four separate files. Same defect shape as the quorum rule: decide it once.
+BRAND = ('<div class="brand">'
+         '<a class="wordmark" href="index.html">G.O.A.T.S.</a>'
+         '<span class="eyebrow">By Semper Admin</span></div>')
+
+# Companion CSS. index.html carries these two rules inline; generated pages
+# need them too or the wordmark and eyebrow sit side by side.
+BRAND_CSS = ('.brand{display:flex;flex-direction:column;align-items:flex-start}'
+             '.brand .eyebrow{margin-top:2px}')
+
+
 TIER_ORDER = ["T0", "T1", "T2", "T3", "T4", "T5"]
 TIER_NAME = {
     "T0": "Statute",
@@ -127,6 +141,8 @@ background:var(--brass3);color:var(--n950)}
 header.chrome,main,footer{max-width:64rem;margin:0 auto;padding:16px 24px}
 header.chrome{margin-top:16px;border-radius:12px;border:1px solid var(--border);
 background:var(--elev);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.brand{display:flex;flex-direction:column;align-items:flex-start}
+.brand .eyebrow{margin-top:2px}
 .wordmark{font:400 28px/1.2 "Bebas Neue",Oswald,system-ui,sans-serif;
 letter-spacing:.04em;color:var(--parch3);text-decoration:none;text-transform:uppercase}
 h1{font:700 28px/1.2 inherit;margin:32px 0 8px}
@@ -308,8 +324,7 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
         f"<title>{esc(title)} - Semper Admin Policy Library</title>",
         f"<style>{CSS}</style></head><body>",
         "<a class=\"skip\" href=\"#main\">Skip to main content</a>",
-        "<header class=\"chrome\"><a class=\"wordmark\" href=\"index.html\">"
-        "Semper Admin</a><span>Authority chain</span></header>",
+        f"<header class=\"chrome\">{BRAND}<span>Authority chain</span></header>",
         "<main id=\"main\">",
         f"<h1>{esc(title)}</h1>",
         f"<p class=\"lede\">{esc(subtitle)}</p>",
@@ -438,8 +453,7 @@ def render_index(results, out_path):
         "<title>Authority chains - Semper Admin Policy Library</title>",
         f"<style>{CSS}{INDEX_CSS_EXTRA}</style></head><body>",
         "<a class=\"skip\" href=\"#main\">Skip to main content</a>",
-        "<header class=\"chrome\"><a class=\"wordmark\" href=\"index.html\">"
-        "Semper Admin</a><span>Authority chains</span></header>",
+        f"<header class=\"chrome\">{BRAND}<span>Authority chains</span></header>",
         "<main id=\"main\"><h1>Authority chains</h1>",
         "<p class=\"lede\">Five policy spines, each traced from the message a "
         "Marine reads up to the authority it rests on. The grid states what each "
