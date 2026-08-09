@@ -25,7 +25,8 @@ from collections import Counter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from render_authority_chain import (CSS, TIER_NAME, TIER_ORDER,   # noqa: E402
-                                    tier_of, esc, load, TIER_RX, HOLDS_RX)
+                                    tier_of, esc, load, TIER_RX, HOLDS_RX,
+                                    PROGRAMME_P)
 from render_policy import EXTRA_CSS, page_name                    # noqa: E402
 
 CONN_CSS = """
@@ -272,7 +273,7 @@ def render(records, out_path):
     P.append('<footer><p>Generated from the canonical store. Every edge is '
              'cited and names the paragraph it was read from; open a document '
              'to see it. Records are UNVERIFIED machine extractions unless '
-             'promoted.</p></footer></main></body></html>')
+             f'promoted.</p>{PROGRAMME_P}</footer></main></body></html>')
 
     with open(out_path, "w", encoding="utf-8") as fh:
         fh.write("\n".join(P))
