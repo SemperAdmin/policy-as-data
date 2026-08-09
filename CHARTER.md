@@ -108,9 +108,10 @@ sixth was introduced by this statement.
 
 **Where the identity appears, 2026-08-09.** The rendered site carries the
 programme identity in the chrome and on the home page, by owner decision of
-the same date: the header eyebrow on the hand-authored pages reads
-"G.O.A.T.S.", the home page headline reads "Generalized Orders Administrative
-Tools programme", and the home page states, in the corrected wording of
+the same date: the brand block on the hand-authored pages reads "G.O.A.T.S."
+with "By Semper Admin" beneath it, the home page headline reads "Generalized
+Orders Administrative Tools programme", and the home page states, in the
+corrected wording of
 section 3, that Semper Admin is the public identity of GOATS, scoped to the
 United States Government with the Marine Corps and the Department of the Navy
 as the first use case and proof of concept. A per-page footer line carrying
