@@ -106,6 +106,15 @@ sixth was introduced by this statement.
 | **GunnyBot** | the factory. Acquisition, extraction, the corpus at ~17,500 documents. | `E:\GunnyBot` | upstream. The boundary is held in `HANDOFF.md`. |
 | **SemperScribe** | the authoring side. Naval Letter Data Package, MCO 5215.1K structure. | separate | downstream of drafting, upstream of encoding. Integration is an open decision in `SESSION_HANDOFF.md` section 3. |
 
+**Where the identity appears, 2026-08-09.** The rendered site now carries the
+programme identity: every page footer states, in the corrected wording of
+section 3, that Semper Admin is the public identity of GOATS, scoped to the
+United States Government with the Marine Corps and the Department of the Navy
+as the first use case and proof of concept. The home page carries the same
+paragraph above the fold. The EU-derived mission clauses remain unpublished
+pending the licence confirmation in section 2 - the two published sentences
+are original text and carry no attribution obligation.
+
 Two rulings follow from the table.
 
 **GOATS does not get a repository.** A programme name with a repository behind
