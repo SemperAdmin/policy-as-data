@@ -16,7 +16,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from render_authority_chain import CSS, esc, load, FAVICON  # noqa: E402
+from render_authority_chain import BRAND, CSS, esc, load, FAVICON  # noqa: E402
 from render_policy import EXTRA_CSS                        # noqa: E402
 
 SOURCES_CSS = """
@@ -464,8 +464,7 @@ def render(records, out_path):
          '<title>Sources - Semper Admin Policy Library</title>',
          f"<style>{CSS}{EXTRA_CSS}{SOURCES_CSS}</style></head><body>",
          '<a class="skip" href="#main">Skip to main content</a>',
-         '<header class="chrome"><a class="wordmark" href="index.html">'
-         'Semper Admin</a><span>Sources</span>'
+         f'<header class="chrome">{BRAND}<span>Sources</span>'
          '<a href="policy-index.html" style="margin-left:auto">All policies</a>'
          '<a href="authority-index.html">Authority chains</a></header>',
          '<main id="main">',

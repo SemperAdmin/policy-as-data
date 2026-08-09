@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="alternate icon" href="favicon.png">
-<title>Verification - Semper Admin Policy Library</title>
+<title>Verification - G.O.A.T.S. Policy Library</title>
 <style>
 :root{--color-usmc-scarlet:#B82230;--color-marine-blue:#0F1F3D;--color-marine-blue-100:#6B9BD2;
 --color-parchment:#F2E5BE;--color-parchment-300:#FAF1D8;--color-brass:#B89042;--color-brass-300:#D4AF67;
@@ -90,14 +90,13 @@ text-decoration:none}
 table{display:block;overflow-x:auto}
 code,h3{overflow-wrap:anywhere}
 }
-</style>
+.brand{display:flex;flex-direction:column;align-items:flex-start}.brand .eyebrow{margin-top:2px}</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
 <header class="chrome">
 <img src="semper-logo.jpg" alt="Semper Admin emblem" height="40" style="align-self:center">
-<a class="wordmark" href="index.html">Semper Admin</a>
-<span class="eyebrow">Verification</span>
+<div class="brand"><a class="wordmark" href="index.html">G.O.A.T.S.</a><span class="eyebrow">By Semper Admin</span></div><span class="eyebrow">Verification</span>
 <a href="how-it-works.html" style="margin-left:auto">How it works</a>
 <a href="policy-index.html">All policies</a>
 <a href="authority-index.html">Authority chains</a>
@@ -110,7 +109,7 @@ code,h3{overflow-wrap:anywhere}
 after a named person has opened the issuing authority's copy and confirmed it,
 and that reading is bound to the exact content confirmed. If the content later
 changes, the reading stops applying and the page says so.</p>
-<p><strong>QUORUM_SHORT 4 · UNVERIFIED 1 · VERIFIED 2</strong></p>
+<p><strong>QUORUM_SHORT 3 · UNVERIFIED 5 · VERIFIED 3</strong></p>
 <p class="note"><strong>Quorum deviation in force since 2026-08-08.</strong> rule claims require 1 independent reading(s) rather than 2. Reason: One verifier exists. A two-person rule with one available person produces either permanent QUORUM_SHORT or invented second identities, and an invented identity is far worse than an honest quorum of one. The deviation is recorded here and reported by tools/verify_status.py on every run rather than hidden in a default.</p>
 </div>
 
@@ -134,8 +133,8 @@ mechanical.</p>
 </div></div><div><h3>Unverified - withheld</h3><div class="card">
 <span class="badge v-none">UNVERIFIED</span>
 <p class="withheld" style="margin:6px 0">Value withheld. Not shown, and not used in any comparison, until a person has read the source.</p>
-<p class="muted" style="margin:2px 0;font-size:13px">DoWI 1327.06, para 3.11.d.(3)(a)</p>
-<p class="mono muted" style="margin:2px 0">/us/dod/dodi/1327.06#IDPL_MAX_PERIODS</p>
+<p class="muted" style="margin:2px 0;font-size:13px">DoWI 1327.06, para 3.11.c.(6)(b)</p>
+<p class="mono muted" style="margin:2px 0">/us/dod/dodi/1327.06#ADPL_EVENT_MERGE_HOURS</p>
 <p style="margin:6px 0 0;font-size:13px"><a href="https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132706p.pdf" rel="noopener">Open the issuing authority's copy</a></p>
 <p class="note" style="margin-top:12px">Nobody has read the source against this record.</p>
 </div></div></div>
@@ -146,16 +145,16 @@ mechanical.</p>
 the "after" is produced by the same code that produces the "before".</p>
 
 <h3>Step 1 &middot; Before - the claim is withheld</h3>
-<p class="note">This claim has already been through the process. It is shown here with that step reversed, so the change is visible.</p>
+
 <div class="card">
-<span class="badge v-ok">VERIFIED</span>
+<span class="badge v-none">UNVERIFIED</span>
 <p class="withheld" style="margin:6px 0">Value withheld. The record holds one,
 but no person has read the source, so it is neither shown nor compared.</p>
-<p class="muted" style="margin:2px 0;font-size:13px">DoWI 1327.06, para 3.11.c.(3)(a)1</p>
-<p class="mono muted" style="margin:2px 0">/us/dod/dodi/1327.06#ADPL_MAX_WEEKS</p>
+<p class="muted" style="margin:2px 0;font-size:13px">DoWI 1327.06, para 3.11.c.(6)(b)</p>
+<p class="mono muted" style="margin:2px 0">/us/dod/dodi/1327.06#ADPL_EVENT_MERGE_HOURS</p>
 <p style="margin:6px 0 0;font-size:13px"><a href="https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132706p.pdf" rel="noopener">Open the issuing authority's copy</a></p>
 </div>
-<div class="card"><span class="badge v-none">NOT_COMPARABLE</span><h3 style="margin-top:8px">Maximum parental leave authorized for a qualifying event</h3><p class="muted" style="font-size:13px">T1 value present but UNVERIFIED; withheld per the publication rule for unverified values</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T5</td><td>84 days</td><td>84 days</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 11.d</td></tr><tr><td class="mono">T1</td><td colspan="3" class="withheld">value present but UNVERIFIED; withheld per the publication rule for unverified values</td></tr></table></div>
+<div class="card"><span class="badge v-none">NOT_COMPARABLE</span><h3 style="margin-top:8px">Window within which multiple qualifying events count as one</h3><p class="muted" style="font-size:13px">T1 value present but UNVERIFIED; withheld per the publication rule for unverified values; T5 value present but QUORUM_SHORT; withheld per the publication rule for unverified values</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T1</td><td colspan="3" class="withheld">value present but UNVERIFIED; withheld per the publication rule for unverified values</td></tr><tr><td class="mono">T5</td><td colspan="3" class="withheld">value present but QUORUM_SHORT; withheld per the publication rule for unverified values</td></tr></table></div>
 
 <h3>Step 2 &middot; The reading</h3>
 <div class="card">
@@ -172,7 +171,7 @@ confirmation.</p>
 <p class="muted">The page writes no data. Filling the form below downloads
 exactly this, and nothing leaves your browser.</p>
 <div class="card"><pre class="mono" style="margin:0;white-space:pre-wrap">{
-  &quot;assertion&quot;: &quot;/us/dod/dodi/1327.06#ADPL_MAX_WEEKS&quot;,
+  &quot;assertion&quot;: &quot;/us/dod/dodi/1327.06#ADPL_EVENT_MERGE_HOURS&quot;,
   &quot;kind&quot;: &quot;rule&quot;,
   &quot;content_hash_seen&quot;: null,
   &quot;verified_against&quot;: {
@@ -209,17 +208,17 @@ every other claim left exactly as it is. Marked a projection because it previews
 the mechanism, not because the values are in doubt. If it still says
 NOT_COMPARABLE, that is the honest answer: another tier is unread too, and one
 reading is not enough.</p>
-<div class="card"><span class="badge v-ok">AGREE</span> <span class="badge v-warn">PROJECTION</span><h3 style="margin-top:8px">Maximum parental leave authorized for a qualifying event</h3><p class="muted" style="font-size:13px">2 tiers agree at 84 days</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T1</td><td>12 weeks</td><td>84 days</td><td class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(3)(a)1</td></tr><tr><td class="mono">T5</td><td>84 days</td><td>84 days</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 11.d</td></tr></table></div>
+<div class="card"><span class="badge v-none">NOT_COMPARABLE</span> <span class="badge v-warn">PROJECTION</span><h3 style="margin-top:8px">Window within which multiple qualifying events count as one</h3><p class="muted" style="font-size:13px">T5 value present but QUORUM_SHORT; withheld per the publication rule for unverified values</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T1</td><td>72 hours</td><td>72 hours</td><td class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(6)(b)</td></tr><tr><td class="mono">T5</td><td colspan="3" class="withheld">value present but QUORUM_SHORT; withheld per the publication rule for unverified values</td></tr></table></div>
 
 
 <h2>Cross-tier comparison, as it stands now</h2>
 <p class="muted">A value is compared with the authority above it only when both
 sides have been read by a person. An unverified side is withheld and the
 comparison is refused rather than guessed.</p>
-<div class="card"><span class="badge v-ok">AGREE</span><h3 style="margin-top:8px">Maximum parental leave authorized for a qualifying event</h3><p class="muted" style="font-size:13px">2 tiers agree at 84 days</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T1</td><td>12 weeks</td><td>84 days</td><td class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(3)(a)1</td></tr><tr><td class="mono">T5</td><td>84 days</td><td>84 days</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 11.d</td></tr></table></div>
+<div class="card"><span class="badge v-ok">AGREE</span><h3 style="margin-top:8px">Maximum parental leave authorized for a qualifying event</h3><p class="muted" style="font-size:13px">2 tiers agree at 84 days</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T1</td><td>12 weeks</td><td>84 days</td><td class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(3)(a)1</td></tr><tr><td class="mono">T5</td><td>84 days</td><td>84 days</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 11.d</td></tr></table></div><div class="card"><span class="badge v-none">NOT_COMPARABLE</span><h3 style="margin-top:8px">Minimum length of a parental leave increment</h3><p class="muted" style="font-size:13px">T1 value present but UNVERIFIED; withheld per the publication rule for unverified values; T5 value present but QUORUM_SHORT; withheld per the publication rule for unverified values</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T1</td><td colspan="3" class="withheld">value present but UNVERIFIED; withheld per the publication rule for unverified values</td></tr><tr><td class="mono">T5</td><td colspan="3" class="withheld">value present but QUORUM_SHORT; withheld per the publication rule for unverified values</td></tr></table></div><div class="card"><span class="badge v-none">NOT_COMPARABLE</span><h3 style="margin-top:8px">Maximum number of parental leave increments</h3><p class="muted" style="font-size:13px">T1 value present but UNVERIFIED; withheld per the publication rule for unverified values; T5 value present but QUORUM_SHORT; withheld per the publication rule for unverified values</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T1</td><td colspan="3" class="withheld">value present but UNVERIFIED; withheld per the publication rule for unverified values</td></tr><tr><td class="mono">T5</td><td colspan="3" class="withheld">value present but QUORUM_SHORT; withheld per the publication rule for unverified values</td></tr></table></div><div class="card"><span class="badge v-none">NOT_COMPARABLE</span><h3 style="margin-top:8px">Window within which multiple qualifying events count as one</h3><p class="muted" style="font-size:13px">T1 value present but UNVERIFIED; withheld per the publication rule for unverified values; T5 value present but QUORUM_SHORT; withheld per the publication rule for unverified values</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T1</td><td colspan="3" class="withheld">value present but UNVERIFIED; withheld per the publication rule for unverified values</td></tr><tr><td class="mono">T5</td><td colspan="3" class="withheld">value present but QUORUM_SHORT; withheld per the publication rule for unverified values</td></tr></table></div><div class="card"><span class="badge v-none">NOT_COMPARABLE</span><h3 style="margin-top:8px">Period after the qualifying event before unused leave is forfeited</h3><p class="muted" style="font-size:13px">T1 value present but UNVERIFIED; withheld per the publication rule for unverified values</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T5</td><td>365 days</td><td>365 days</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 8.c.(3)</td></tr><tr><td class="mono">T1</td><td colspan="3" class="withheld">value present but UNVERIFIED; withheld per the publication rule for unverified values</td></tr></table></div>
 
 <h2>The queue</h2>
-<table><tr><th>State</th><th>Claim</th><th>Detail</th></tr><tr><td><span class="badge v-ok">VERIFIED</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_MAX_WEEKS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(3)(a)1</span></td><td class="muted" style="font-size:13px">1 independent attestation(s)</td></tr><tr><td><span class="badge v-none">UNVERIFIED</span></td><td><span class="mono">/us/dod/dodi/1327.06#IDPL_MAX_PERIODS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.d.(3)(a)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-part">QUORUM SHORT</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#ENTITLEMENT_WINDOW_DAYS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.c.(3)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr><tr><td><span class="badge v-part">QUORUM SHORT</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#EVENT_PROXIMITY_MERGE_HOURS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.b.(1)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr><tr><td><span class="badge v-part">QUORUM SHORT</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#MAX_INCREMENTS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.a.(1)(b)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr><tr><td><span class="badge v-ok">VERIFIED</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#MAX_PARENTAL_LEAVE_DAYS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 11.d</span></td><td class="muted" style="font-size:13px">1 independent attestation(s)</td></tr><tr><td><span class="badge v-part">QUORUM SHORT</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#MIN_INCREMENT_DAYS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.a.(1)(b)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr></table>
+<table><tr><th>State</th><th>Claim</th><th>Detail</th></tr><tr><td><span class="badge v-none">UNVERIFIED</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_EVENT_MERGE_HOURS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(6)(b)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-none">UNVERIFIED</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_FORFEITURE_WINDOW_YEARS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(10)(c)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-none">UNVERIFIED</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_MAX_INCREMENTS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(7)(a)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-ok">VERIFIED</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_MAX_WEEKS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(3)(a)1</span></td><td class="muted" style="font-size:13px">1 independent attestation(s)</td></tr><tr><td><span class="badge v-none">UNVERIFIED</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_MIN_INCREMENT_DAYS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(7)(a)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-none">UNVERIFIED</span></td><td><span class="mono">/us/dod/dodi/1327.06#IDPL_MAX_PERIODS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.d.(3)(a)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-ok">VERIFIED</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#ENTITLEMENT_WINDOW_DAYS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.c.(3)</span></td><td class="muted" style="font-size:13px">1 independent attestation(s)</td></tr><tr><td><span class="badge v-part">QUORUM SHORT</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#EVENT_PROXIMITY_MERGE_HOURS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.b.(1)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr><tr><td><span class="badge v-part">QUORUM SHORT</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#MAX_INCREMENTS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.a.(1)(b)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr><tr><td><span class="badge v-ok">VERIFIED</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#MAX_PARENTAL_LEAVE_DAYS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 11.d</span></td><td class="muted" style="font-size:13px">1 independent attestation(s)</td></tr><tr><td><span class="badge v-part">QUORUM SHORT</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#MIN_INCREMENT_DAYS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.a.(1)(b)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr></table>
 
 <h2>Validate a claim</h2>
 <div class="prose">
@@ -233,7 +232,7 @@ confirm from this page, from a note, or from memory. The link is on the claim.</
 </div>
 <form id="f" class="card" onsubmit="return mk(event)">
 <label for="a">Claim</label>
-<select id="a" required><option value="/us/dod/dodi/1327.06#IDPL_MAX_PERIODS" data-hash="">/us/dod/dodi/1327.06#IDPL_MAX_PERIODS</option><option value="/us/dod/don/usmc/maradmin/2023/051#ENTITLEMENT_WINDOW_DAYS" data-hash="">/us/dod/don/usmc/maradmin/2023/051#ENTITLEMENT_WINDOW_DAYS</option><option value="/us/dod/don/usmc/maradmin/2023/051#EVENT_PROXIMITY_MERGE_HOURS" data-hash="">/us/dod/don/usmc/maradmin/2023/051#EVENT_PROXIMITY_MERGE_HOURS</option><option value="/us/dod/don/usmc/maradmin/2023/051#MAX_INCREMENTS" data-hash="">/us/dod/don/usmc/maradmin/2023/051#MAX_INCREMENTS</option><option value="/us/dod/don/usmc/maradmin/2023/051#MIN_INCREMENT_DAYS" data-hash="">/us/dod/don/usmc/maradmin/2023/051#MIN_INCREMENT_DAYS</option></select>
+<select id="a" required><option value="/us/dod/dodi/1327.06#ADPL_EVENT_MERGE_HOURS" data-hash="">/us/dod/dodi/1327.06#ADPL_EVENT_MERGE_HOURS</option><option value="/us/dod/dodi/1327.06#ADPL_FORFEITURE_WINDOW_YEARS" data-hash="">/us/dod/dodi/1327.06#ADPL_FORFEITURE_WINDOW_YEARS</option><option value="/us/dod/dodi/1327.06#ADPL_MAX_INCREMENTS" data-hash="">/us/dod/dodi/1327.06#ADPL_MAX_INCREMENTS</option><option value="/us/dod/dodi/1327.06#ADPL_MIN_INCREMENT_DAYS" data-hash="">/us/dod/dodi/1327.06#ADPL_MIN_INCREMENT_DAYS</option><option value="/us/dod/dodi/1327.06#IDPL_MAX_PERIODS" data-hash="">/us/dod/dodi/1327.06#IDPL_MAX_PERIODS</option><option value="/us/dod/don/usmc/maradmin/2023/051#EVENT_PROXIMITY_MERGE_HOURS" data-hash="">/us/dod/don/usmc/maradmin/2023/051#EVENT_PROXIMITY_MERGE_HOURS</option><option value="/us/dod/don/usmc/maradmin/2023/051#MAX_INCREMENTS" data-hash="">/us/dod/don/usmc/maradmin/2023/051#MAX_INCREMENTS</option><option value="/us/dod/don/usmc/maradmin/2023/051#MIN_INCREMENT_DAYS" data-hash="">/us/dod/don/usmc/maradmin/2023/051#MIN_INCREMENT_DAYS</option></select>
 <label for="v">Your verifier id</label>
 <input id="v" required placeholder="V-002" pattern="[A-Za-z0-9_-]{2,32}">
 <label for="r">Your reading</label>

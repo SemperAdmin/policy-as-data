@@ -52,6 +52,140 @@
       ],
       "withheld": [],
       "not_comparable": []
+    },
+    {
+      "concept": "PARENTAL_LEAVE_MIN_INCREMENT",
+      "label": "Minimum length of a parental leave increment",
+      "canonical_unit": "days",
+      "verdict": "NOT_COMPARABLE",
+      "detail": "T1 value present but UNVERIFIED; withheld per the publication rule for unverified values; T5 value present but QUORUM_SHORT; withheld per the publication rule for unverified values",
+      "tiers": [],
+      "withheld": [
+        {
+          "tier": "T1",
+          "tier_label": "department of defense",
+          "document": "DoWI 1327.06, Military Leave, Liberty, and Administrative Absence",
+          "source_url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132706p.pdf",
+          "citation_label": "DoWI 1327.06, para 3.11.c.(7)(a)",
+          "citation_identifier": "/us/dod/dodi/1327.06/s3/3.11/c/7/a",
+          "assertion": "/us/dod/dodi/1327.06#ADPL_MIN_INCREMENT_DAYS",
+          "verification": "UNVERIFIED",
+          "reason": "value present but UNVERIFIED; withheld per the publication rule for unverified values"
+        },
+        {
+          "tier": "T5",
+          "tier_label": "message",
+          "document": "MARADMIN 051/23, Expansion of the Marine Corps Military Parental Leave Program",
+          "source_url": "https://www.marines.mil/News/Messages/Messages-Display/Article/3281525/expansion-of-the-marine-corps-military-parental-leave-program/",
+          "citation_label": "MARADMIN 051/23, para 8.a.(1)(b)",
+          "citation_identifier": "/us/dod/don/usmc/maradmin/2023/051/p8/a/1/b",
+          "assertion": "/us/dod/don/usmc/maradmin/2023/051#MIN_INCREMENT_DAYS",
+          "verification": "QUORUM_SHORT",
+          "reason": "value present but QUORUM_SHORT; withheld per the publication rule for unverified values"
+        }
+      ],
+      "not_comparable": []
+    },
+    {
+      "concept": "PARENTAL_LEAVE_MAX_INCREMENTS",
+      "label": "Maximum number of parental leave increments",
+      "canonical_unit": "increments",
+      "verdict": "NOT_COMPARABLE",
+      "detail": "T1 value present but UNVERIFIED; withheld per the publication rule for unverified values; T5 value present but QUORUM_SHORT; withheld per the publication rule for unverified values",
+      "tiers": [],
+      "withheld": [
+        {
+          "tier": "T1",
+          "tier_label": "department of defense",
+          "document": "DoWI 1327.06, Military Leave, Liberty, and Administrative Absence",
+          "source_url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132706p.pdf",
+          "citation_label": "DoWI 1327.06, para 3.11.c.(7)(a)",
+          "citation_identifier": "/us/dod/dodi/1327.06/s3/3.11/c/7/a",
+          "assertion": "/us/dod/dodi/1327.06#ADPL_MAX_INCREMENTS",
+          "verification": "UNVERIFIED",
+          "reason": "value present but UNVERIFIED; withheld per the publication rule for unverified values"
+        },
+        {
+          "tier": "T5",
+          "tier_label": "message",
+          "document": "MARADMIN 051/23, Expansion of the Marine Corps Military Parental Leave Program",
+          "source_url": "https://www.marines.mil/News/Messages/Messages-Display/Article/3281525/expansion-of-the-marine-corps-military-parental-leave-program/",
+          "citation_label": "MARADMIN 051/23, para 8.a.(1)(b)",
+          "citation_identifier": "/us/dod/don/usmc/maradmin/2023/051/p8/a/1/b",
+          "assertion": "/us/dod/don/usmc/maradmin/2023/051#MAX_INCREMENTS",
+          "verification": "QUORUM_SHORT",
+          "reason": "value present but QUORUM_SHORT; withheld per the publication rule for unverified values"
+        }
+      ],
+      "not_comparable": []
+    },
+    {
+      "concept": "QUALIFYING_EVENT_MERGE_WINDOW",
+      "label": "Window within which multiple qualifying events count as one",
+      "canonical_unit": "hours",
+      "verdict": "NOT_COMPARABLE",
+      "detail": "T1 value present but UNVERIFIED; withheld per the publication rule for unverified values; T5 value present but QUORUM_SHORT; withheld per the publication rule for unverified values",
+      "tiers": [],
+      "withheld": [
+        {
+          "tier": "T1",
+          "tier_label": "department of defense",
+          "document": "DoWI 1327.06, Military Leave, Liberty, and Administrative Absence",
+          "source_url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132706p.pdf",
+          "citation_label": "DoWI 1327.06, para 3.11.c.(6)(b)",
+          "citation_identifier": "/us/dod/dodi/1327.06/s3/3.11/c/6/b",
+          "assertion": "/us/dod/dodi/1327.06#ADPL_EVENT_MERGE_HOURS",
+          "verification": "UNVERIFIED",
+          "reason": "value present but UNVERIFIED; withheld per the publication rule for unverified values"
+        },
+        {
+          "tier": "T5",
+          "tier_label": "message",
+          "document": "MARADMIN 051/23, Expansion of the Marine Corps Military Parental Leave Program",
+          "source_url": "https://www.marines.mil/News/Messages/Messages-Display/Article/3281525/expansion-of-the-marine-corps-military-parental-leave-program/",
+          "citation_label": "MARADMIN 051/23, para 8.b.(1)",
+          "citation_identifier": "/us/dod/don/usmc/maradmin/2023/051/p8/b/1",
+          "assertion": "/us/dod/don/usmc/maradmin/2023/051#EVENT_PROXIMITY_MERGE_HOURS",
+          "verification": "QUORUM_SHORT",
+          "reason": "value present but QUORUM_SHORT; withheld per the publication rule for unverified values"
+        }
+      ],
+      "not_comparable": []
+    },
+    {
+      "concept": "PARENTAL_LEAVE_FORFEITURE_WINDOW",
+      "label": "Period after the qualifying event before unused leave is forfeited",
+      "canonical_unit": "days",
+      "verdict": "NOT_COMPARABLE",
+      "detail": "T1 value present but UNVERIFIED; withheld per the publication rule for unverified values",
+      "tiers": [
+        {
+          "tier": "T5",
+          "tier_label": "message",
+          "document": "MARADMIN 051/23, Expansion of the Marine Corps Military Parental Leave Program",
+          "source_url": "https://www.marines.mil/News/Messages/Messages-Display/Article/3281525/expansion-of-the-marine-corps-military-parental-leave-program/",
+          "citation_label": "MARADMIN 051/23, para 8.c.(3)",
+          "citation_identifier": "/us/dod/don/usmc/maradmin/2023/051/p8/c/3",
+          "assertion": "/us/dod/don/usmc/maradmin/2023/051#ENTITLEMENT_WINDOW_DAYS",
+          "verification": "VERIFIED",
+          "stated": "365 days",
+          "canonical": 365
+        }
+      ],
+      "withheld": [
+        {
+          "tier": "T1",
+          "tier_label": "department of defense",
+          "document": "DoWI 1327.06, Military Leave, Liberty, and Administrative Absence",
+          "source_url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132706p.pdf",
+          "citation_label": "DoWI 1327.06, para 3.11.c.(10)(c)",
+          "citation_identifier": "/us/dod/dodi/1327.06/s3/3.11/c/10/c",
+          "assertion": "/us/dod/dodi/1327.06#ADPL_FORFEITURE_WINDOW_YEARS",
+          "verification": "UNVERIFIED",
+          "reason": "value present but UNVERIFIED; withheld per the publication rule for unverified values"
+        }
+      ],
+      "not_comparable": []
     }
   ],
   "unassigned_rules": [
@@ -59,26 +193,6 @@
       "assertion": "/us/dod/dodi/1327.06#IDPL_MAX_PERIODS",
       "tier": "T1",
       "citation": "DoWI 1327.06, para 3.11.d.(3)(a)"
-    },
-    {
-      "assertion": "/us/dod/don/usmc/maradmin/2023/051#ENTITLEMENT_WINDOW_DAYS",
-      "tier": "T5",
-      "citation": "MARADMIN 051/23, para 8.c.(3)"
-    },
-    {
-      "assertion": "/us/dod/don/usmc/maradmin/2023/051#MIN_INCREMENT_DAYS",
-      "tier": "T5",
-      "citation": "MARADMIN 051/23, para 8.a.(1)(b)"
-    },
-    {
-      "assertion": "/us/dod/don/usmc/maradmin/2023/051#MAX_INCREMENTS",
-      "tier": "T5",
-      "citation": "MARADMIN 051/23, para 8.a.(1)(b)"
-    },
-    {
-      "assertion": "/us/dod/don/usmc/maradmin/2023/051#EVENT_PROXIMITY_MERGE_HOURS",
-      "tier": "T5",
-      "citation": "MARADMIN 051/23, para 8.b.(1)"
     }
   ]
 }
