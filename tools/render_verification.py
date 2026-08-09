@@ -38,6 +38,7 @@ from reconcile import (  # noqa: E402
 from verify_status import (  # noqa: E402
     DATA, LEDGER, POLICY, derive, live_rule_assertions, load_ledger, load_policy,
 )
+from render_authority_chain import FAVICON  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "docs" / "verification.html"
@@ -390,6 +391,7 @@ reading is not enough.</p>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{FAVICON}
 <title>Verification - Semper Admin Policy Library</title>
 <style>{CSS}</style>
 </head>
