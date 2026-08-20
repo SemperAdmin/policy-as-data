@@ -4,8 +4,12 @@ The chain pages answer "how does THIS policy reach statute". This answers a
 different question: what does the corpus look like as a whole, and where is
 it dense or thin.
 
-Drawn as inline SVG with no script and no external dependency, so it works
-from a file:// URL, survives being emailed as a single file, and prints. A
+Drawn as inline SVG with one small inline script and no external dependency,
+so it works from a file:// URL, survives being emailed as a single file, and
+prints. Without script the nodes stay ordinary links and one click opens the
+document, which is the pre-selection behaviour. With script, one click lights
+the clicked document's connection web and a second click on the same node
+opens its page. A
 force-directed graph would look livelier and say less - the one thing a
 reader needs from this picture is WHICH TIER a document sits in, so tier is
 the vertical axis and nothing is left to a physics simulation.
@@ -43,6 +47,150 @@ gap:10px;margin:14px 0}
 padding:12px 14px}
 .stat .n{font:700 24px/1.1 inherit;color:var(--brass3)}
 .stat .l{font-size:12px;color:var(--mutedfg)}
+
+.viz svg .node circle,.viz svg .edge,.viz svg .stub,.viz svg .nlabel{
+transition:opacity .12s linear,stroke-width .12s linear}
+.viz svg .node{cursor:pointer}
+.viz svg.sel .edge,.viz svg.sel .stub{opacity:.06}
+.viz svg.sel .node circle{opacity:.18}
+.viz svg.sel .nlabel{opacity:.18}
+.viz svg.sel .edge.on{opacity:.95;stroke-width:2.2}
+.viz svg.sel .edge.on.hop2{opacity:.62;stroke-width:1.6}
+.viz svg.sel .edge.on.hop3{opacity:.34;stroke-width:1.2}
+.viz svg.sel .stub.on{opacity:.85;stroke-width:1.8}
+.viz svg.sel .node.on circle{opacity:1}
+.viz svg.sel .node.on.hop2 circle{opacity:.78}
+.viz svg.sel .node.on.hop3 circle{opacity:.5}
+.viz svg.sel .nlabel.on{opacity:1}
+.viz svg.sel .node.src circle{stroke:#D4AF67;stroke-width:3.4}
+.vizsel{margin:10px 0 0;padding:10px 12px;border:1px solid var(--border);
+border-radius:8px;background:var(--card);font-size:13px;color:var(--mutedfg);
+min-height:1px}
+.vizsel:empty{display:none}
+.vizsel b{color:var(--parch3);font-family:"JetBrains Mono",Menlo,monospace}
+.vizsel .hint{color:var(--mutedfg)}
+@media (prefers-reduced-motion:reduce){
+.viz svg .node circle,.viz svg .edge,.viz svg .stub,.viz svg .nlabel{
+transition:none}}
+"""
+
+VIZ_JS = """
+<script>
+/* Progressive enhancement. With script off, every node stays a plain link and
+   one click opens the document, which is exactly what shipped before. With
+   script on, one click lights the clicked document's connection web and a
+   second click on the same node opens its page. */
+(function(){
+  var svg = document.querySelector('.viz svg');
+  var note = document.getElementById('vizsel');
+  if (!svg || !note || !svg.querySelector('.node')) { return; }
+  var nodes  = [].slice.call(svg.querySelectorAll('.node'));
+  var edges  = [].slice.call(svg.querySelectorAll('.edge'));
+  var stubs  = [].slice.call(svg.querySelectorAll('.stub'));
+  var labels = [].slice.call(svg.querySelectorAll('.nlabel'));
+  var all    = nodes.concat(edges, stubs, labels);
+  var adj = {}, active = null;
+  edges.forEach(function(e){
+    var a = e.getAttribute('data-a'), b = e.getAttribute('data-b');
+    (adj[a] = adj[a] || []).push(b);
+    (adj[b] = adj[b] || []).push(a);
+  });
+  function ancestor(el){
+    while (el && el !== svg) {
+      if (el.getAttribute && el.getAttribute('data-node')) { return el; }
+      el = el.parentNode;
+    }
+    return null;
+  }
+  function hops(id){
+    var d = {}, q = [id], i = 0;
+    d[id] = 0;
+    while (i < q.length) {
+      var x = q[i++], nb = adj[x] || [];
+      for (var k = 0; k < nb.length; k++) {
+        if (!(nb[k] in d)) { d[nb[k]] = d[x] + 1; q.push(nb[k]); }
+      }
+    }
+    return d;
+  }
+  function band(n){ return n <= 1 ? 'hop1' : (n === 2 ? 'hop2' : 'hop3'); }
+  function clear(){
+    active = null;
+    svg.classList.remove('sel');
+    all.forEach(function(el){
+      el.classList.remove('on', 'src', 'hop1', 'hop2', 'hop3');
+    });
+    note.textContent = '';
+  }
+  function select(id){
+    clear();
+    active = id;
+    svg.classList.add('sel');
+    var d = hops(id), reached = 0, direct = 0;
+    nodes.forEach(function(n){
+      var i = n.getAttribute('data-node');
+      if (i in d) {
+        n.classList.add('on', band(d[i]));
+        if (i === id) { n.classList.add('src'); } else { reached++; }
+        if (d[i] === 1) { direct++; }
+      }
+    });
+    labels.forEach(function(l){
+      if (l.getAttribute('data-label') in d) { l.classList.add('on'); }
+    });
+    edges.forEach(function(e){
+      var a = e.getAttribute('data-a'), b = e.getAttribute('data-b');
+      if (a in d && b in d) {
+        e.classList.add('on', band(Math.min(d[a], d[b]) + 1));
+      }
+    });
+    stubs.forEach(function(st){
+      if (st.getAttribute('data-a') === id) { st.classList.add('on', 'hop1'); }
+    });
+    var el = nodes.filter(function(n){
+      return n.getAttribute('data-node') === id;
+    })[0];
+    var title = el ? el.getAttribute('data-title') : id;
+    /* Built as text nodes, not innerHTML - a document title is store data and
+       is never treated as markup. */
+    var strong = document.createElement('b');
+    strong.textContent = id;
+    var body = document.createTextNode(
+      ' - ' + title + '. ' + direct
+      + ' document(s) cite it or are cited by it, ' + reached
+      + ' in the connected web. The brightest lines are the direct citations '
+      + 'and the web fades with each further step. ');
+    var hint = document.createElement('span');
+    hint.className = 'hint';
+    hint.textContent = 'Click ' + id + ' again to open its page. '
+      + 'Click empty space or press Escape to clear.';
+    note.textContent = '';
+    note.appendChild(strong);
+    note.appendChild(body);
+    note.appendChild(hint);
+  }
+  svg.addEventListener('click', function(ev){
+    var a = ancestor(ev.target);
+    if (!a) { clear(); return; }
+    ev.preventDefault();
+    var id = a.getAttribute('data-node');
+    if (active === id) { window.location.href = a.getAttribute('href'); return; }
+    select(id);
+  });
+  svg.addEventListener('keydown', function(ev){
+    var a = ancestor(ev.target);
+    if (!a) { return; }
+    if (ev.key === ' ' || ev.key === 'Spacebar') {
+      ev.preventDefault();
+      var id = a.getAttribute('data-node');
+      if (active === id) { clear(); } else { select(id); }
+    }
+  });
+  document.addEventListener('keydown', function(ev){
+    if (ev.key === 'Escape' || ev.key === 'Esc') { clear(); }
+  });
+})();
+</script>
 """
 
 EDGE_STYLE = {
@@ -130,7 +278,9 @@ def svg(records, pos, rows, tiers, height, edges):
         colour = EDGE_STYLE.get(e["conf"], EDGE_STYLE["named-not-held"])[0]
         # a gentle arc so parallel edges between the same two tiers separate
         mx, my = (x1 + x2) / 2, (y1 + y2) / 2 - abs(x2 - x1) * 0.10
-        P.append(f'<path d="M{x1:.1f},{y1:.1f} Q{mx:.1f},{my:.1f} '
+        P.append(f'<path class="edge" data-a="{esc(e["src"])}" '
+                 f'data-b="{esc(e["tgt"])}" '
+                 f'd="M{x1:.1f},{y1:.1f} Q{mx:.1f},{my:.1f} '
                  f'{x2:.1f},{y2:.1f}" fill="none" stroke="{colour}" '
                  f'stroke-width="1.1" opacity="0.5"/>')
 
@@ -140,7 +290,8 @@ def svg(records, pos, rows, tiers, height, edges):
             continue
         x1, y1, _ = pos[e["src"]]
         colour = EDGE_STYLE.get(e["conf"], EDGE_STYLE["named-not-held"])[0]
-        P.append(f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x1:.1f}" '
+        P.append(f'<line class="stub" data-a="{esc(e["src"])}" '
+                 f'x1="{x1:.1f}" y1="{y1:.1f}" x2="{x1:.1f}" '
                  f'y2="{y1 - 15:.1f}" stroke="{colour}" stroke-width="1" '
                  f'opacity="0.42" stroke-dasharray="2 2"/>')
 
@@ -156,7 +307,9 @@ def svg(records, pos, rows, tiers, height, edges):
         fill = ("#B83232" if st == "cancelled" else
                 "#C97D1F" if st == "superseded" else "#6B9BD2")
         rad = R + min(4.5, math.sqrt(degree.get(did, 0)) * 1.1)
-        P.append(f'<a href="{esc(page_name(did))}">'
+        P.append(f'<a class="node" data-node="{esc(did)}" '
+                 f'data-title="{esc(rec.get("title") or did)}" '
+                 f'href="{esc(page_name(did))}">'
                  f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{rad:.1f}" '
                  f'fill="{fill}" stroke="#0A1424" stroke-width="1.4">'
                  f'<title>{esc(rec.get("title") or did)} &#8212; {esc(st or "")}'
@@ -171,7 +324,8 @@ def svg(records, pos, rows, tiers, height, edges):
         if degree.get(top, 0) < 3:
             continue
         x, y, _ = pos[top]
-        P.append(f'<text x="{x:.1f}" y="{y - 12:.1f}" fill="#F2E5BE" '
+        P.append(f'<text class="nlabel" data-label="{esc(top)}" '
+                 f'x="{x:.1f}" y="{y - 12:.1f}" fill="#F2E5BE" '
                  f'font-family="monospace" font-size="10" '
                  f'text-anchor="middle">{esc(top)}</text>')
 
@@ -219,6 +373,7 @@ def render(records, out_path):
            f'<div class="l">naming a document not held</div></div>'
          + '</div>',
          '<div class="viz">' + fig + '</div>',
+         '<p class="vizsel" id="vizsel" role="status" aria-live="polite"></p>',
          '<div class="key">'
          + "".join(f'<span><span class="sw" style="border-top-color:{c}">'
                    f'</span>{esc(lbl)}</span>'
@@ -226,6 +381,9 @@ def render(records, out_path):
          + '<span>Node size is the number of connections. '
            'Red is cancelled, amber superseded, blue active. '
            'A dashed stub is a reference to a document outside this set.</span>'
+         + '<span>Click a document to light its connection web. Click it a '
+           'second time to open its page. Keyboard: Tab to a document, Space '
+           'to light it, Enter to open it, Escape to clear.</span>'
          + '</div>']
 
     P.append('<h2>How to read the shape</h2>')
@@ -273,7 +431,7 @@ def render(records, out_path):
     P.append('<footer><p>Generated from the canonical store. Every edge is '
              'cited and names the paragraph it was read from; open a document '
              'to see it. Records are UNVERIFIED machine extractions unless '
-             'promoted.</p></footer></main></body></html>')
+             'promoted.</p></footer></main>' + VIZ_JS + '</body></html>')
 
     with open(out_path, "w", encoding="utf-8") as fh:
         fh.write("\n".join(P))

@@ -51,11 +51,19 @@ as dashed stubs running off the edge of what was collected. Seven documents
 have no cited connection to any other in the set, which is a statement about
 the demonstration set rather than about the policies.
 
-Drawn as inline SVG with no script and no external dependency, so it works
-from a file:// URL and prints. Tier is the vertical axis rather than a physics
-simulation, because the one thing a reader needs from the picture is which
-level issued a document. Node size is connection count, so the hubs are
-visible without reading a title.
+Drawn as inline SVG with one small inline script and no external dependency,
+so it works from a file:// URL and prints. Tier is the vertical axis rather
+than a physics simulation, because the one thing a reader needs from the
+picture is which level issued a document. Node size is connection count, so
+the hubs are visible without reading a title.
+
+One click on a document lights its connection web: the clicked node takes a
+brass ring, its direct citations draw at full strength, and the rest of the
+connected component fades one step at a time so the shape of the reach stays
+readable. A second click on the same node opens that document's page. Escape
+or a click on empty space clears. Keyboard: Tab to a node, Space to light it,
+Enter to open it. With script off every node stays an ordinary link and one
+click opens the document, which is the behaviour that shipped before.
 
 An SVG network is invisible to a screen reader however well it is labelled, so
 every connection in the figure is also emitted as a table below it.
