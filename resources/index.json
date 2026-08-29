@@ -1,13 +1,13 @@
 {
-  "$comment": "Machine-readable register for the 2026-08-08 resource review pass. Companion to resources/README.md and to conformance-matrix.md. The verdict scale is quoted from conformance-matrix.md. NOTE: that document sources the scale from hhq-alignment-plan.md N0.2, which is not present in this repository - see ACTION-REGISTER.md item 0.7. 'UNCONFIRMED' is a retrieval state, not a verdict; 'EVALUATE' applies to row 24 only.",
+  "$comment": "Machine-readable register for the 2026-08-08 resource review pass. Companion to resources/README.md and to conformance-matrix.md. The verdict scale is quoted from conformance-matrix.md. NOTE: that document sources the scale from hhq-alignment-plan.md N0.2, which is not present in this repository - see ACTION-REGISTER.md item 0.7. 'UNCONFIRMED' is a retrieval state, not a verdict; 'EVALUATE' applies to row 24 only. 2026-08-20: rows 25-30 added for the ontology pass. EVALUATE now applies to rows 24, 28, and 29, extending the single-row restriction stated for the 2026-08-08 pass.",
   "schema_version": "1.0",
-  "generated": "2026-08-08",
+  "generated": "2026-08-20",
   "owner": "Stephen",
   "status": "draft",
   "merges_into": {
     "document": "conformance-matrix.md",
-    "sections": "17-24",
-    "note": "Section 16 of that document is the exporter rebuild, not a reference. Reference numbering there ends at 15 and resumes at 17."
+    "sections": "17-30",
+    "note": "Section 16 of that document is the exporter rebuild, not a reference. Reference numbering there ends at 15 and resumes at 17. Rows 17-24 are the 2026-08-08 pass. Rows 25-30 are the 2026-08-20 ontology pass."
   },
   "verdict_scale": [
     "CONFORMANT",
@@ -418,6 +418,200 @@
         "resources/18-digital-ready-policymaking.md",
         "resources/23-eu-oss-catalogue.md"
       ]
+    },
+    {
+      "id": 25,
+      "key": "sep-ontology-and-information-systems",
+      "title": "Ontology and Information Systems (Stanford Encyclopedia of Philosophy)",
+      "publisher": "Stanford Encyclopedia of Philosophy, Metaphysics Research Lab, CSLI, Stanford University",
+      "author": "Adam Pease",
+      "url": "https://plato.stanford.edu/entries/ontology-is/",
+      "cite_url": "https://plato.stanford.edu/archives/spr2026/entries/ontology-is/",
+      "cite_note": "Cite the edition-pinned archive URL. The bare entry URL tracks the current edition and changes silently under a citation.",
+      "published": "2026-01-03",
+      "last_modified": "2026-01-03",
+      "edition": "Spring 2026",
+      "retrieved": "2026-08-20",
+      "retrieval_state": "RETRIEVED",
+      "source_type": "refereed encyclopedia entry",
+      "authority": "reference literature, not specification",
+      "binds_this_project": false,
+      "verdict": "NOT APPLICABLE",
+      "confidence": 0.9,
+      "review": "resources/25-sep-ontology-and-information-systems.md",
+      "one_line": "The definitional citation for the project's use of the word ontology. States no requirement.",
+      "touches": [
+        "schema/authority-ontology.ttl",
+        "NAMESPACES.md"
+      ],
+      "conflict_of_interest": "Written by the author who supplied this reading list. SEP entries are commissioned and refereed, so the entry's standing is unaffected."
+    },
+    {
+      "id": 26,
+      "key": "ontology-talk-intro-video",
+      "title": "Taming Digital Volatility (Ontology Talk with Adam Pease)",
+      "publisher": "Ontology Talk with Adam Pease, YouTube",
+      "url": "https://www.youtube.com/watch?v=fdGx6tJID8k",
+      "cite_url": "https://www.youtube.com/watch?v=fdGx6tJID8k",
+      "retrieved": "2026-08-20",
+      "retrieval_state": "PARTIAL",
+      "retrieval_error": "Watch page returned HTTP 429 on two attempts. Title and channel come from the YouTube oEmbed endpoint. Upload date, duration, and description were not retrieved and stay unfilled.",
+      "source_type": "video",
+      "authority": "orientation media, never a citation for a technical claim",
+      "binds_this_project": false,
+      "verdict": "NOT APPLICABLE",
+      "confidence": 0.6,
+      "review": "resources/26-ontology-talk-intro-video.md",
+      "one_line": "Supplied as the quick entry point to the author's work. Title confirmed, content unverified.",
+      "related": [
+        30
+      ]
+    },
+    {
+      "id": 27,
+      "key": "adam-pease-papers",
+      "title": "Adam Pease, papers and site",
+      "publisher": "Adam Pease, Naval Postgraduate School and Articulate Software",
+      "url_as_supplied": "https://www.adampease.org",
+      "url": "https://www.adampease.com/",
+      "cite_url": "https://www.adampease.com/",
+      "cite_note": "adampease.org 302-redirects to adampease.com. Cite the resolved host. A citation through someone else's redirect carries a hidden third party.",
+      "retrieved": "2026-08-20",
+      "retrieval_state": "RETRIEVED",
+      "source_type": "personal bibliography",
+      "authority": "index to primary literature, not specification",
+      "binds_this_project": false,
+      "verdict": "NOT APPLICABLE",
+      "confidence": 0.85,
+      "review": "resources/27-adam-pease-papers.md",
+      "one_line": "Publication list 1990s to 2026, the 2011 book, and the third NPS entry point in this register.",
+      "related": [
+        16,
+        22,
+        28,
+        29
+      ],
+      "book": "Ontology: A Practical Guide, 2011, Articulate Software Press"
+    },
+    {
+      "id": 28,
+      "key": "sumo-ontology-portal",
+      "title": "SUMO, Suggested Upper Merged Ontology, and the Ontology Portal",
+      "publisher": "The Ontology Portal project",
+      "url": "https://ontologyportal.org/",
+      "cite_url": "https://ontologyportal.org/",
+      "repo_seen": "https://github.com/ontologyportal/sumo",
+      "retrieved": "2026-08-20",
+      "retrieval_state": "RETRIEVED",
+      "source_type": "knowledge base",
+      "format": "SUO-KIF, first-order logic with higher-order extension. Exports to TPTP, OWL, and Neo4j.",
+      "measures": {
+        "terms": "~25,000",
+        "axioms": "~80,000",
+        "repo_commits": 3850,
+        "repo_stars": 264,
+        "repo_forks": 84,
+        "tagged_releases": 1,
+        "law_kif_lines": 507,
+        "law_kif_bytes": 17300
+      },
+      "license": "CONTRADICTORY. ontologyportal.org states SUMO is free and owned by the IEEE with extensions under GPL. The GitHub repository header states GNU Public License over a repository holding both.",
+      "binds_this_project": false,
+      "verdict": "EVALUATE",
+      "verdict_qualifier": "Extends EVALUATE past row 24, which the 2026-08-08 pass restricted it to. Deliberate, recorded in resources/README.md.",
+      "confidence": 0.8,
+      "review": "resources/28-sumo-ontology-portal.md",
+      "one_line": "A world model with a prover behind it, complementing rather than competing with LegalRuleML. Licensing unresolved, and the corpus's live problem is provenance, not inference.",
+      "argument_for": [
+        "LegalRuleML, named in conformance-matrix.md section 13 as the closest fit, carries deontic operators and no model of the world the rules quantify over. SUMO is the opposite shape.",
+        "Law.kif defines permits, prohibits, confersRight, confersObligation, confersNorm, deprivesNorm, holdsRight, and holdsObligation.",
+        "A theorem prover stands behind it, which no other register entry offers."
+      ],
+      "argument_against": [
+        "The live problem is provenance. 85 drift findings and 220 references to documents never held are a collection problem, not an inference problem.",
+        "conformance-matrix.md section 12 already ruled this question for OWL and Protege. Correct tool, not yet needed. Reversing it for a heavier formalism needs more evidence, not less.",
+        "SUO-KIF is outside every interchange path the consumers read, which is NIEM, USLM, DCAT, and OWL or RDF. The OWL export is lossy against the axioms, which are the point.",
+        "Law.kif is 507 lines and defines no statute, regulation, or jurisdiction primitive."
+      ],
+      "decision_tree": "Does data/*.rules.json need cross-document consistency checking, and does that check require a model of the entities the rules quantify over. Trigger: when rules.json generalizes past parental leave to two or more interacting orders. Then evaluate SUMO plus Sigma against LegalRuleML plus SHACL on one worked example, and decide once.",
+      "unconfirmed": [
+        "IEEE ownership of SUMO. No standard number confirmed this pass. The claim traces to the former IEEE Standard Upper Ontology working group.",
+        "No independent, third-party assessment of SUMO is held in this register. Every source in this pass traces to one author. One independent evaluation is required before adoption, with BFO under ISO/IEC 21838-2 as the comparison baseline."
+      ],
+      "touches": [
+        "data/*.rules.json",
+        "schema/authority-ontology.ttl",
+        "conformance-matrix.md"
+      ],
+      "related": [
+        12,
+        13,
+        15,
+        17,
+        24,
+        29
+      ]
+    },
+    {
+      "id": 29,
+      "key": "sigmakee",
+      "title": "SigmaKEE, ontology browser, editor, and theorem prover",
+      "publisher": "The Ontology Portal project",
+      "url": "https://sigmakee.dev/",
+      "cite_url": "https://sigmakee.dev/",
+      "repo_seen": "https://github.com/ontologyportal/sigmakee",
+      "repo_note": "sigma-rs at https://github.com/ontologyportal/sigma-rs is the Rust rewrite. GPL-3.0. SUO-KIF parser, validator, and prover interface. LMDB storage in conjunctive normal form. WASM bindings published as the sigmakee npm package, with nightly tests against current SUMO.",
+      "retrieved": "2026-08-20",
+      "retrieval_state": "RETRIEVED",
+      "source_type": "software",
+      "development_status": "sigmakee.dev self-describes as a dev build",
+      "license": "GPL-3.0 on both sigmakee and sigma-rs",
+      "platform": "sigmakee.dev runs the prover as WebAssembly in the browser with no server. Upstream sigmakee is Java, with an Ant build and install guides for Linux, MacOS, Windows, and Docker.",
+      "requirements": "sigmakee README states at least 16 GB RAM",
+      "binds_this_project": false,
+      "verdict": "EVALUATE",
+      "verdict_qualifier": "Blocked by row 28. Tooling for a knowledge base the project has not adopted is not a separate decision.",
+      "confidence": 0.75,
+      "review": "resources/29-sigmakee-dev.md",
+      "one_line": "Read Law.kif in the hosted browser before deciding row 28. Costs nothing, commits nothing. Never a dev build in a pipeline.",
+      "related_blocker": 28
+    },
+    {
+      "id": 30,
+      "key": "ontology-talk-channel",
+      "title": "Ontology Talk with Adam Pease, YouTube channel",
+      "publisher": "Ontology Talk with Adam Pease, YouTube",
+      "url": "https://www.youtube.com/@adampease",
+      "cite_url": "https://www.youtube.com/@adampease",
+      "vendor_id": "UCVyCle22zz5gZjWvNWCBq9Q",
+      "cite_note": "The legacy path https://www.youtube.com/user/peaseadam serves the same channel. Cite the handle URL. The channel id is the only one of the three identifiers that cannot be reassigned.",
+      "retrieved": "2026-08-20",
+      "retrieval_state": "PARTIAL",
+      "retrieval_error": "Subscriber count and video count were not returned by the channel page and stay unfilled.",
+      "source_type": "video channel",
+      "authority": "media index, never a citation for a technical claim",
+      "binds_this_project": false,
+      "verdict": "NOT APPLICABLE",
+      "confidence": 0.8,
+      "review": "resources/30-ontology-talk-channel.md",
+      "one_line": "Index to row 26 and to the rest of the author's talks on SUMO and Sigma.",
+      "related": [
+        26
+      ]
+    }
+  ],
+  "passes": [
+    {
+      "date": "2026-08-08",
+      "ids": "17-24",
+      "subject": "EU rules-as-code, NIST, NPS, and drafting tools"
+    },
+    {
+      "date": "2026-08-20",
+      "ids": "25-30",
+      "subject": "Formal ontology. SUMO, Sigma, and the literature around them.",
+      "supplied_by": "external reading list",
+      "independence_note": "All six sources trace to one author. Four are his own properties and two are projects he leads. No third-party assessment of SUMO is held in this register."
     }
   ]
 }
