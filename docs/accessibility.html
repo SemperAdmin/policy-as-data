@@ -162,7 +162,7 @@ details.alt div { font-size: 14px; margin-top: 8px; }
   .wordmark { font-size: 22px; }
   header.chrome > span { flex-basis: 100%; order: 2; font: 700 11px/1 var(--font-body);
     text-transform: uppercase; letter-spacing: .08em; color: var(--color-muted-foreground); }
-  header.chrome a:not(.wordmark) { order: 3; margin-left: 0 !important;
+  header.chrome a:not(.wordmark):not(.emblem) { order: 3; margin-left: 0 !important;
     font: 600 13px/1.1 var(--font-body); padding: 8px 12px;
     border: 1px solid var(--color-border-strong); border-radius: 9999px;
     background: var(--color-muted); color: var(--color-parchment-300);
@@ -175,7 +175,7 @@ details.alt div { font-size: 14px; margin-top: 8px; }
 <body>
 <a class="skip" href="#main">Skip to main content</a>
 <header class="chrome">
-<img src="semper-logo.jpg" alt="Semper Admin emblem" height="40" style="align-self:center">
+<a class="emblem" href="https://semper-admin-portal.app.cloud.gov/" target="_blank" rel="noopener noreferrer" style="align-self:center;display:flex" title="Semper Admin portal (opens in a new tab)"><img src="semper-logo.jpg" alt="Semper Admin portal (opens in a new tab)" height="40"></a>
 <div class="brand">
 <a class="wordmark" href="index.html">G.O.A.T.S.</a>
 <span class="eyebrow">By Semper Admin</span>
