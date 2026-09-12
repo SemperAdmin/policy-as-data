@@ -1,6 +1,6 @@
 # Resource reviews
 
-Dates: 2026-08-08, rows 17 to 24. 2026-08-20, rows 25 to 30. Owner: Stephen.
+Dates: 2026-08-08, rows 17 to 24. 2026-08-20, rows 25 to 30. 2026-09-11, row 31. Owner: Stephen.
 Status: draft, pending merge into `conformance-matrix.md`.
 
 This directory holds the per-source review for external resources added after
@@ -74,6 +74,12 @@ A sixth state applies to two rows in this pass and is not a verdict:
 | 29 | SigmaKEE | EVALUATE, blocked by 28 | Read Law.kif in the hosted browser first. Never a dev build in a pipeline. |
 | 30 | Ontology Talk channel | NOT APPLICABLE | Media index. |
 
+### 2026-09-11
+
+| # | Resource | Verdict | One line |
+|---|---|---|---|
+| 31 | Genişel and Pease, SUMO for COLREGs and ROE | ADAPTED | Four mechanisms adopted without the formalism: attested absence, binding kind, a claims table with negatives, derivation steps. Row 28 EVALUATE unchanged, trigger sharpened. |
+
 Three findings from this pass sit above the individual rows.
 
 1. **The set is not independent.** All six sources trace to one author. Four are his own properties and two are projects he leads. Nothing here is disqualifying, and SEP entries are refereed, but the register now holds **no third-party assessment of SUMO**. One independent evaluation is required before any adoption decision, with BFO under ISO/IEC 21838-2 as the comparison baseline.
@@ -101,6 +107,7 @@ day and its build-versus-reuse consequences are worked out in
 - `28-sumo-ontology-portal.md`
 - `29-sigmakee-dev.md`
 - `30-ontology-talk-channel.md`
+- `31-oceans-sumo-roe-paper.md`
 - `index.json`
 
 ## Research method
