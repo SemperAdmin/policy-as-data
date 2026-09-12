@@ -28,7 +28,6 @@ import json
 import re
 import os
 import sys
-from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from atomicio import write_json  # noqa: E402
@@ -36,6 +35,14 @@ from authority import classify, TIERS  # noqa: E402
 
 REF_ROOTS = ("ref", "encl")
 TOOL = "extract_authority.py"
+
+# The date this ruling was applied, a fact about the change and not about
+# when the build last ran. A literal, per the ENTERED precedent in
+# ingest_authority_tiers.py: reading the clock here re-dated the correction
+# on every build, so a 2026-08-04 change read as today, and two builds on
+# different days left every record and export different with no changed
+# content. Bump it when the change this tool makes actually changes.
+DATED = "2026-08-04"
 
 
 def _root(path):
@@ -308,9 +315,8 @@ def extract(record, store_ids, base_index=None, known=None):
     rel["edge_meta"] = meta
 
     if edges or parsed or unparsed:
-        stamp = datetime.now(timezone.utc).date().isoformat()
         record.setdefault("conversion_notes", []).append(
-            f"{TOOL} {stamp} - authority edges from reference lists: "
+            f"{TOOL} {DATED} - authority edges from reference lists: "
             f"{len(edges)} written, {parsed} item(s) classified, "
             f"{unparsed} item(s) left unparsed (raw text retained)")
     return {"edges": len(edges), "parsed": parsed, "unparsed": unparsed,
@@ -374,8 +380,9 @@ def main():
                 gap_docs.setdefault(m["target"], []).append(rec["id"])
         write_json(os.path.join(args.out, name), rec)
 
+    # No generated_at. The report is a pure function of the store and the
+    # index; a clock field made two identical builds differ by one line.
     report = {
-        "generated_at": datetime.now(timezone.utc).isoformat(),
         "totals": totals,
         "edges_by_tier": {k: {"count": v, "name": TIERS.get(k, k)}
                           for k, v in sorted(by_tier.items())},

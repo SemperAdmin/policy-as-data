@@ -35,7 +35,6 @@ import argparse
 import json
 import os
 from collections import Counter
-from datetime import datetime, timezone
 
 SCHEMA = ("https://raw.githubusercontent.com/GSA/dcat-us/main/schemas/"
           "dataset.json")
@@ -58,8 +57,14 @@ def build(store, base_url, publisher, contact_name, contact_email):
             oldest = signed if not oldest or signed < oldest else oldest
             newest = signed if not newest or signed > newest else newest
 
-    now = datetime.now(timezone.utc).isoformat()
-    today = now[:10]
+    # issued: the date this catalog was first published. A literal, bumped by
+    # hand only if the dataset is re-issued. modified: the newest recorded
+    # correction across the corpus, so the field states when the data last
+    # changed rather than when the build last ran.
+    ISSUED = "2026-08-09"
+    modified = max((c.get("date") or "" for r in recs
+                    for c in (r.get("corrections") or [])), default="") or ISSUED
+    today = modified
     type_list = ", ".join(f"{k} ({v})" for k, v in types.most_common())
 
     dataset = {
@@ -81,8 +86,8 @@ def build(store, base_url, publisher, contact_name, contact_email):
         "keyword": ["policy", "directives", "Marine Corps", "Department of the Navy",
                     "military personnel", "issuances", "USLM", "policy as data",
                     "authority chain", "supersession"],
-        "issued": today,
-        "modified": today,
+        "issued": ISSUED,
+        "modified": modified,
         "publisher": {"@type": "org:Organization", "name": publisher},
         "contactPoint": {"@type": "vcard:Contact",
                          "fn": contact_name,

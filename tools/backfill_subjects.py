@@ -22,11 +22,18 @@ import json
 import os
 import sys
 import re
-from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from atomicio import write_json  # noqa: E402
 from corrections import record as record_correction  # noqa: E402
+
+# The date this ruling was applied, a fact about the change and not about
+# when the build last ran. A literal, per the ENTERED precedent in
+# ingest_authority_tiers.py: reading the clock here re-dated the correction
+# on every build, so a 2026-08-04 change read as today, and two builds on
+# different days left every record and export different with no changed
+# content. Bump it when the change this tool makes actually changes.
+DATED = "2026-08-03"
 
 # Subj: opens; the next naval letter label or a blank line closes.
 SUBJ_RX = re.compile(
@@ -140,7 +147,7 @@ def main():
         native = rec.get("native_number") or rec["id"]
         rec["title"] = f"{prefix} {native} - {titlecase(subject)}"
         record_correction(rec, "backfill_subjects.py", {
-            "date": datetime.now(timezone.utc).date().isoformat(),
+            "date": DATED,
             "against": "the Subj: field in this record's own front matter text",
             "changes": [
                 "backfill_subjects.py - subject recovered from the naval letter "
