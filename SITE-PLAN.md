@@ -1,8 +1,8 @@
 # Site plan - one application, then the pages that explain it
 
-Date: 2026-09-11. Owner: Stephen. Status: **proposed, not adopted.** One
-owner decision in section 8. Everything else is decidable on the engineering
-side and is decided here.
+Date: 2026-09-11. Owner: Stephen. Status: **adopted 2026-09-11.** The one
+owner decision, section 8, was taken the same day: fold. Everything else was
+decidable on the engineering side and is decided here.
 
 The tasking: the site is mixed in how it functions. It should be a single
 application working fully at small scale, with separate pages explaining the
@@ -238,7 +238,7 @@ It is not a site item and it is not code.
 
 ---
 
-## 8. The owner decision: the MOS strand
+## 8. The owner decision: the MOS strand - DECIDED 2026-09-11: FOLD
 
 Two hand pages carry the 25-year edition history of the MOS Manual across four
 identifier schemes. Nothing else on the site tells that story, and the "what
@@ -255,7 +255,7 @@ renderer, medium. Gain: the strand joins the build and the chrome.
 retired editor, with the ruling recorded. Cost: near zero. Loss: the only
 edition-history narrative on the site.
 
-Recommendation: fold. The lineage data is already computed every build and
+Decision: fold, per the owner 2026-09-11. The reasoning that was put to him: the lineage data is already computed every build and
 rendered on every policy page one document at a time; a page showing one
 family across 32 editions is the natural index over it, and it is a claim
 the corpus can actually prove. The intro page is the weaker half and can be
