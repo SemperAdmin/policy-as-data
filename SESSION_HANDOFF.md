@@ -183,14 +183,20 @@ real source paragraph containing the target's number, does every edge resolve
 as marked, is every edge cited rather than inferred.
 
 **Prove idempotency by hashing, not by counts.** Counts matched for weeks while
-the corpus changed underneath them.
+the corpus changed underneath them. Hash every output, not only the store:
+hashing `canonical/` alone missed a clock stamp in `config/` for five weeks
+(section 10, clock stamps).
 
 ```
-find canonical -name '*.json' | sort | xargs md5sum > /tmp/a
+find docs canonical data/exports config -type f | sort | xargs md5sum > /tmp/a
 ./build.sh
-find canonical -name '*.json' | sort | xargs md5sum > /tmp/b
+find docs canonical data/exports config -type f | sort | xargs md5sum > /tmp/b
 cmp /tmp/a /tmp/b
 ```
+
+On Windows, `python3` may resolve to the Microsoft Store stub. Put a shim
+named `python3` that execs `python` ahead of it on `PATH` before running
+`build.sh`.
 
 ### Opening the site
 
@@ -452,6 +458,28 @@ changing what it should not.
 None changed a published fact. All three made the build dishonest about what it
 had done, which is the more expensive kind of defect here, because the whole
 claim of this project is that its provenance can be trusted.
+
+### Clock stamps, fixed 2026-09-11
+
+- **The build was idempotent within a day only.** Six sites read the clock:
+  the corrections date written by `normalize_identifiers.py`,
+  `backfill_subjects.py`, and `reparse_provisions.py`; the conversion note
+  and the `generated_at` field written by `extract_authority.py`; DCAT
+  `issued` and `modified` in `emit_dcat.py`; and the "Generated <date>"
+  footer on every spine page. Hashing `canonical/` across two same-day runs,
+  as section 6 advised, could not see it. Hashing `docs/`, `data/exports/`,
+  and `config/` across two runs found `authority_report.json` differing by a
+  microsecond stamp, and a rebuild on a later day re-dated a correction made
+  on 2026-08-04 to that day in every record, every export, and every policy
+  page's provenance list. Same class as the eleven top-tier records fixed
+  2026-08-04. Fix: each tool carries a literal date for the change it makes,
+  bumped by hand when the change changes, per the `ENTERED` precedent;
+  `generated_at` is gone, because a report that is a pure function of its
+  inputs needs no clock; DCAT `issued` is the literal first-publication date
+  and `modified` is the newest correction date in the corpus; footers say
+  "Generated from the canonical store" with no date. **770 files
+  byte-identical across two builds**, and exports identical to what was
+  committed before the fix. The trap: hash every output, not the store.
 
 ### Cross-tier, fixed 2026-08-08
 

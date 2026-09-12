@@ -43,11 +43,18 @@ import json
 import os
 import sys
 import re
-from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from atomicio import write_json  # noqa: E402
 from corrections import record as record_correction  # noqa: E402
+
+# The date this ruling was applied, a fact about the change and not about
+# when the build last ran. A literal, per the ENTERED precedent in
+# ingest_authority_tiers.py: reading the clock here re-dated the correction
+# on every build, so a 2026-08-04 change read as today, and two builds on
+# different days left every record and export different with no changed
+# content. Bump it when the change this tool makes actually changes.
+RULED = "2026-08-04"
 
 USLM_RX = re.compile(r"^/us/")
 
@@ -120,7 +127,7 @@ def main():
         if args.dry_run:
             continue
         record_correction(rec, "normalize_identifiers.py", {
-            "date": datetime.now(timezone.utc).date().isoformat(),
+            "date": RULED,
             "against": "USLM User Guide section 12.2, Referencing Model",
             "changes": [
                 "normalize_identifiers.py - period replaced with underscore in "
