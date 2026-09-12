@@ -38,7 +38,7 @@ from reconcile import (  # noqa: E402
 from verify_status import (  # noqa: E402
     DATA, LEDGER, POLICY, derive, live_rule_assertions, load_ledger, load_policy,
 )
-from render_authority_chain import BRAND, BRAND_CSS, FAVICON  # noqa: E402
+from chrome import head, header  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "docs" / "verification.html"
@@ -54,7 +54,10 @@ BADGE = {
     "UNVERIFIED": ("v-none", "UNVERIFIED", "Nobody has read the source against this record."),
 }
 
-CSS = """
+# Page-specific rules only. The chrome, the type scale, and the small-screen
+# rules come from chrome.py; the long-form --color-* names stay because every
+# rule below uses them.
+PAGE_CSS = """
 :root{--color-usmc-scarlet:#B82230;--color-marine-blue:#0F1F3D;--color-marine-blue-100:#6B9BD2;
 --color-parchment:#F2E5BE;--color-parchment-300:#FAF1D8;--color-brass:#B89042;--color-brass-300:#D4AF67;
 --color-status-fresh:#2F8F5C;--color-status-aging:#C97D1F;--color-status-stale:#B83232;
@@ -66,22 +69,6 @@ CSS = """
 --radius-sm:6px;--radius-md:8px;--radius-lg:12px;
 --shadow-card:0 1px 2px rgba(0,0,0,.4),0 0 0 1px rgba(242,229,190,.04);
 --shadow-md:0 2px 4px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.45);color-scheme:dark;}
-*{box-sizing:border-box}
-body{margin:0;background:var(--color-background);color:var(--color-foreground);font:400 15px/1.6 var(--font-body)}
-a{color:var(--color-marine-blue-100)}a:hover{color:var(--color-brass-300)}
-:focus-visible{outline:3px solid var(--color-ring-dark);outline-offset:2px;border-radius:2px}
-.skip{position:absolute;left:-9999px}
-.skip:focus{position:static;display:inline-block;padding:8px;background:var(--color-brass-300);color:var(--color-neutral-950)}
-header.chrome,main,footer{max-width:60rem;margin:0 auto;padding:16px 24px}
-header.chrome{margin-top:16px;border-radius:var(--radius-lg);border:1px solid var(--color-border);
-background:var(--color-bg-elev);box-shadow:var(--shadow-md);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
-.wordmark{font:400 28px/1.2 var(--font-display);letter-spacing:.04em;color:var(--color-parchment-300);
-text-decoration:none;text-transform:uppercase}
-.eyebrow{font:700 11px/1 var(--font-body);text-transform:uppercase;letter-spacing:.08em;
-color:var(--color-muted-foreground)}
-h1{font:400 40px/1.1 var(--font-display);letter-spacing:.02em;margin:24px 0 8px;text-transform:uppercase}
-h2{font:400 26px/1.2 var(--font-display);letter-spacing:.02em;margin:36px 0 10px;text-transform:uppercase;
-border-bottom:1px solid var(--color-border);padding-bottom:6px}
 h3{font:700 14px/1.3 var(--font-body);text-transform:uppercase;letter-spacing:.06em;
 color:var(--color-muted-foreground);margin:22px 0 8px}
 .prose{max-width:70ch}
@@ -120,25 +107,7 @@ letter-spacing:.06em;cursor:pointer}
 button:hover{background:var(--color-brass-300)}
 .note{border-left:3px solid var(--color-brass);padding:8px 0 8px 14px;margin:14px 0;
 color:var(--color-muted-foreground);font-size:14px}
-footer{border-top:1px solid var(--color-border);margin-top:48px;color:var(--color-muted-foreground);font-size:13px}
-/* Small screens: the chrome stacks - wordmark row, page label, then nav links
-   as wrapping pill targets (the inline margin-left:auto that right-aligns the
-   first link on desktop needs the !important to release). Wide tables scroll
-   in place instead of stretching the page, and long identifiers break. */
-@media (max-width:640px){
-header.chrome{align-items:center;column-gap:12px;row-gap:8px;padding:12px 16px}
-.wordmark{font-size:22px}
-header.chrome span{flex-basis:100%;order:2;font:700 11px/1 var(--font-body);
-text-transform:uppercase;letter-spacing:.08em;color:var(--color-muted-foreground)}
-header.chrome a:not(.wordmark):not(.emblem){order:3;margin-left:0!important;
-font:600 13px/1.1 var(--font-body);padding:8px 12px;
-border:1px solid var(--color-border-strong);border-radius:9999px;
-background:var(--color-muted);color:var(--color-parchment-300);
-text-decoration:none}
-table{display:block;overflow-x:auto}
-code,h3{overflow-wrap:anywhere}
-}
-""" + BRAND_CSS
+"""
 
 FLOW = [
     ("1", "Issuance", "The issuing authority publishes. Their copy governs, always.", False),
@@ -386,25 +355,7 @@ reading is not enough.</p>
     if unver:
         examples += f'<div><h3>Unverified - withheld</h3>{example_card(unver, ledger)}</div>'
 
-    return f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-{FAVICON}
-<title>Verification - G.O.A.T.S. Policy Library</title>
-<style>{CSS}</style>
-</head>
-<body>
-<a class="skip" href="#main">Skip to main content</a>
-<header class="chrome">
-<a class="emblem" href="https://semper-admin-portal.app.cloud.gov/" target="_blank" rel="noopener noreferrer" style="align-self:center;display:flex" title="Semper Admin portal (opens in a new tab)"><img src="semper-logo.jpg" alt="Semper Admin portal (opens in a new tab)" height="40"></a>
-{BRAND}<span class="eyebrow">Verification</span>
-<a href="how-it-works.html" style="margin-left:auto">How it works</a>
-<a href="policy-index.html">All policies</a>
-<a href="authority-index.html">Authority chains</a>
-<a href="sources.html">Sources</a>
-</header>
+    return head("Verification", extra_css=PAGE_CSS) + header("Verification", current="verification.html") + f"""
 <main id="main">
 <h1>Verification</h1>
 <div class="prose">

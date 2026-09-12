@@ -1,5 +1,57 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="favicon.png"><title>NAVMC Publications - Semper Admin Policy Library</title><style>
+"""The site chrome, in one place.
+
+Every generated page gets its <head>, header, brand block, and navigation from
+here, and nothing else emits a wordmark, a nav link, or a copy of the chrome
+CSS. Before 2026-09-11 the header was a literal in five renderers and four hand
+pages, and a measurement found ten distinct header link sets across 78 pages.
+Same defect shape as the four-copy CSS trap in SESSION_HANDOFF.md section 10:
+decide it once. ACTION-REGISTER 5.1.
+
+The navigation is data: config/site_nav.json. A page is listed there only once
+it exists in docs/, because check_site.py fails the build on a dead link.
+
+Usage from a renderer:
+
+    from chrome import head, header
+    P = [head("Authority chains", extra_css=INDEX_CSS_EXTRA),
+         header("Authority chains", current="authority-index.html"),
+         '<main id="main">', ...]
+"""
+
+from __future__ import annotations
+
+import html
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+NAV_PATH = ROOT / "config" / "site_nav.json"
+SITE_TITLE = "Semper Admin Policy Library"
+
+NAV = json.loads(NAV_PATH.read_text(encoding="utf-8"))
+
+# Tab icon, one definition for every page head. The SVG is the icon;
+# the PNG is the fallback for browsers that do not take SVG favicons.
+FAVICON = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n'
+           '<link rel="alternate icon" href="favicon.png">')
+
+# The brand block. Wordmark and eyebrow come from the nav file.
+BRAND = ('<div class="brand">'
+         f'<a class="wordmark" href="{html.escape(NAV["home"]["href"])}">'
+         f'{html.escape(NAV["home"]["label"])}</a>'
+         f'<span class="eyebrow">{html.escape(NAV["home"]["eyebrow"])}</span></div>')
+
+# The portal emblem, left of the brand, opening in a new tab.
+EMBLEM = (f'<a class="emblem" href="{html.escape(NAV["emblem"]["href"])}" target="_blank" '
+          f'rel="noopener noreferrer" title="{html.escape(NAV["emblem"]["alt"])}">'
+          f'<img src="{html.escape(NAV["emblem"]["src"])}" '
+          f'alt="{html.escape(NAV["emblem"]["alt"])}" height="40"></a>')
+
+# Kept for callers that import it by name. The rules are inside CSS below.
+BRAND_CSS = ('.brand{display:flex;flex-direction:column;align-items:flex-start}'
+             '.brand .eyebrow{margin-top:2px}')
+
+CSS = """
 :root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
 --blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
 --brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
@@ -84,59 +136,36 @@ text-decoration:none}
 table{display:block;overflow-x:auto}
 code,h3{overflow-wrap:anywhere}
 }
+"""
 
-.crumb{font-size:13px;color:var(--mutedfg);margin:24px 0 0}
-.ident{font:500 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
-word-break:break-all}
-.factrow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
-.lede2{color:var(--mutedfg);max-width:54rem;margin:6px 0 18px}
-.ladder{border-left:2px solid var(--brass);margin:0 0 4px 10px;padding:0 0 0 18px}
-.rung{position:relative;padding:9px 0}
-.rung:before{content:"";position:absolute;left:-24px;top:16px;width:12px;
-height:2px;background:var(--brass)}
-.rung .t{font:700 11px/1 inherit;letter-spacing:.09em;color:var(--brass3);
-text-transform:uppercase}
-.rung.gaprung{opacity:.72}
-.rung.gaprung .t{color:var(--aging)}
-.small{font-size:13px;color:var(--mutedfg)}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-@media(max-width:820px){.two{grid-template-columns:1fr}}
-.panel{border:1px solid var(--border);border-radius:12px;background:var(--card);
-padding:16px 20px}
-.panel h3{font:700 12px/1.3 inherit;text-transform:uppercase;letter-spacing:.09em;
-color:var(--mutedfg);margin:0 0 10px}
-.prov{border-left:1px solid var(--muted);margin:0 0 0 4px;padding:2px 0 2px 14px}
-.plabel{font:600 12px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
-.ptext{white-space:pre-wrap;overflow-wrap:break-word}
-.reflist{list-style:none;padding:0;margin:0}
-.reflist li{padding:7px 0;border-bottom:1px solid var(--muted)}
-.reflist li:last-child{border-bottom:0}
-.reflink{font-weight:600}
-.timeline{list-style:none;padding:0;margin:0}
-.timeline li{padding:8px 0 8px 16px;border-left:2px solid var(--border);
-position:relative}
-.timeline li:before{content:"";position:absolute;left:-5px;top:15px;width:8px;
-height:8px;border-radius:50%;background:var(--brass)}
-.timeline li.now:before{background:var(--fresh);box-shadow:0 0 0 3px rgba(47,143,92,.25)}
-.timeline li.gone:before{background:var(--stale)}
-details.body{margin-top:10px}
-details.body summary{cursor:pointer;color:var(--blue1);font-weight:600}
-.src{font:500 11px/1.6 "JetBrains Mono",Menlo,monospace;color:var(--mutedfg)}
-.doc-raw{white-space:pre-wrap;overflow-wrap:break-word;
-font:500 12px/1.65 "JetBrains Mono",Menlo,monospace;color:var(--fg);
-background:var(--sunken);border:1px solid var(--border);border-radius:8px;
-padding:14px;max-height:34rem;overflow:auto}
-.typegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));
-gap:10px;margin:12px 0}
-.typecard{border:1px solid var(--border);border-radius:12px;background:var(--card);
-padding:14px 16px}
-.typecard .n{font:700 26px/1.1 inherit;color:var(--brass3)}
-</style></head><body><a class="skip" href="#main">Skip to main content</a>
-<header class="chrome"><a class="emblem" href="https://semper-admin-portal.app.cloud.gov/" target="_blank" rel="noopener noreferrer" title="Semper Admin portal (opens in a new tab)"><img src="semper-logo.jpg" alt="Semper Admin portal (opens in a new tab)" height="40"></a><div class="brand"><a class="wordmark" href="index.html">G.O.A.T.S.</a><span class="eyebrow">By Semper Admin</span></div><span class="eyebrow">Documents by type</span><a href="how-it-works.html" style="margin-left:auto">How it works</a><a href="policy-index.html" aria-current="page">Library</a><a href="authority-index.html">Authority chains</a><a href="connections.html">Connections</a><a href="verification.html">Verification</a><a href="sources.html">Sources</a><a href="search.html">Search</a><a href="https://forms.osi.apps.mil/r/k5QWzJDL9P" rel="noopener">Feedback</a></header>
-<main id="main">
-<p class="crumb"><a href="index.html">Home</a> &rsaquo; NAVMC Publications</p>
-<h1>NAVMC Publications <span class="small">(1)</span></h1>
-<table><tr><th>Document</th><th>Status</th><th>Names</th><th>Named by</th><th>Paragraphs</th></tr>
-<tr><td><a href="policy-NAVMC-1200.1L.html">NAVMC 1200.1L - Military Occupational Specialties Manual</a><br><span class="src">/us/dod/don/usmc/navmc/1200_1l</span></td><td><span class="pill ">active</span></td><td>27</td><td>2</td><td>13595</td></tr>
-</table>
-<footer><p>Generated from the canonical policy store. Records are UNVERIFIED machine extractions unless promoted. This site is an unofficial reference - the issuing authority's copy governs.</p></footer></main></body></html>
+
+def esc_title(s) -> str:
+    return html.escape(str(s or ""), quote=True)
+
+
+def head(title: str, extra_css: str = "") -> str:
+    """Doctype through the skip link. The caller opens <main>."""
+    return ('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
+            '<meta name="viewport" content="width=device-width,initial-scale=1">'
+            f'{FAVICON}'
+            f'<title>{esc_title(title)} - {SITE_TITLE}</title>'
+            f'<style>{CSS}{extra_css}</style></head><body>'
+            '<a class="skip" href="#main">Skip to main content</a>')
+
+
+def header(label: str, current: str | None = None) -> str:
+    """The chrome header: emblem, brand, page label, then every nav item.
+    `current` is the href of the page being rendered; that link is marked
+    aria-current so a reader and a screen reader both know where they are."""
+    links = []
+    for i, item in enumerate(NAV["items"]):
+        attrs = ' style="margin-left:auto"' if i == 0 else ""
+        if item.get("external"):
+            attrs += ' rel="noopener"'
+        if current and item["href"] == current:
+            attrs += ' aria-current="page"'
+        links.append(f'<a href="{html.escape(item["href"])}"{attrs}>'
+                     f'{html.escape(item["label"])}</a>')
+    return (f'<header class="chrome">{EMBLEM}{BRAND}'
+            f'<span class="eyebrow">{html.escape(label)}</span>'
+            + "".join(links) + '</header>')

@@ -1,0 +1,21 @@
+{
+  "$comment": "The site navigation, as data. One copy, read by tools/chrome.py and emitted on every page. A page is listed here only once it exists in docs/; check_site.py fails the build on a dead link. Scenarios and About join this list when their pages land (ACTION-REGISTER 5.6, 5.9).",
+  "schema_version": "1.0",
+  "established": "2026-09-11",
+  "home": {"label": "G.O.A.T.S.", "href": "index.html", "eyebrow": "By Semper Admin"},
+  "emblem": {
+    "href": "https://semper-admin-portal.app.cloud.gov/",
+    "src": "semper-logo.jpg",
+    "alt": "Semper Admin portal (opens in a new tab)"
+  },
+  "items": [
+    {"label": "How it works", "href": "how-it-works.html"},
+    {"label": "Library", "href": "policy-index.html"},
+    {"label": "Authority chains", "href": "authority-index.html"},
+    {"label": "Connections", "href": "connections.html"},
+    {"label": "Verification", "href": "verification.html"},
+    {"label": "Sources", "href": "sources.html"},
+    {"label": "Search", "href": "search.html"},
+    {"label": "Feedback", "href": "https://forms.osi.apps.mil/r/k5QWzJDL9P", "external": true}
+  ]
+}
