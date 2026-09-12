@@ -190,7 +190,54 @@ def mech_reconcile_cli(fx, fixtures):
         }
 
 
+def mech_evaluate_fixture(fx, fixtures):
+    """Evaluator against a fixture rules file and a fixture ledger, so the
+    claim is about the evaluator's discipline, not about today's ledger."""
+    from normalize import rule_assertion_id, rule_hash  # noqa: E402
+    rules_doc = fixtures[fx["rules"]]
+    ident = rules_doc["source"]["identifier"]
+    by_id = {r["id"]: r for r in rules_doc["rules"]}
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = Path(tmp)
+        rules_path = tmp / "fixture.rules.json"
+        rules_path.write_text(json.dumps(rules_doc, indent=2), encoding="utf-8")
+        lines = []
+        for a in fx.get("attest", []):
+            rule = by_id[a["rule"]]
+            for v in a["verifiers"]:
+                lines.append(json.dumps({
+                    "assertion": rule_assertion_id(ident, rule["id"]), "kind": "rule",
+                    "content_hash": rule_hash(rule), "result": "VERIFIED",
+                    "verifier": v, "at": "2026-09-11T00:00:00+00:00",
+                    "method": "read-and-compare",
+                    "verified_against": {"edition": "fixture", "obtained": "fixture",
+                                         "artifact_hash": None}}))
+        (tmp / "ledger.jsonl").write_text(chr(10).join(lines) + (chr(10) if lines else ""),
+                                          encoding="utf-8")
+        policy = tmp / "policy.json"
+        policy.write_text(json.dumps({"quorum": fx.get("quorum", {"rule": 2, "provision": 1})}),
+                          encoding="utf-8")
+        proc = subprocess.run(
+            [sys.executable, str(TOOLS / "evaluate.py"), "--rules", str(rules_path),
+             "--ledger", str(tmp / "ledger.jsonl"), "--policy", str(policy),
+             *fx["args"], "--json"],
+            capture_output=True, text=True, cwd=str(ROOT))
+    if proc.returncode != 0:
+        return {"error": proc.stderr.strip()[-400:]}
+    out = json.loads(proc.stdout)
+    dec, wh = out["decision"], out["withheld"]
+    return {
+        "decision_lines": len(dec),
+        "decision_items": [l["item"] for l in dec],
+        "withheld_min": len(wh),
+        "every_withheld_names_rule": all(w.get("withheld_because") for w in wh),
+        "every_withheld_has_identifier": all(
+            str(w.get("identifier", "")).startswith("/us/") for w in wh),
+    }
+
+
 MECHANISMS = {
+    "evaluate_fixture": mech_evaluate_fixture,
     "reconcile": mech_reconcile,
     "reconcile_unassigned": mech_reconcile_unassigned,
     "units": mech_units,
@@ -200,7 +247,8 @@ MECHANISMS = {
 }
 
 # Keys handled by eval_extra_checks rather than plain equality.
-NON_EQUALITY = {"refusals_mention", "min_decision_lines", "no_decision_item_matching"}
+NON_EQUALITY = {"refusals_mention", "min_decision_lines", "no_decision_item_matching",
+                "withheld_min"}
 
 
 def run_claim(claim, fixtures):
@@ -215,6 +263,10 @@ def run_claim(claim, fixtures):
     fails = check(plain, result)
     if extra is not None:
         fails += eval_extra_checks(claim["expect"], result, extra)
+    if "withheld_min" in claim["expect"]:
+        if result.get("withheld_min", 0) < claim["expect"]["withheld_min"]:
+            fails.append(f"withheld {result.get('withheld_min')} lines, "
+                         f"expected at least {claim['expect']['withheld_min']}")
     return result, fails
 
 
