@@ -2,7 +2,7 @@
 
 Date: 2026-08-08. Owner: Stephen. Status: current.
 Last verified against disk: 2026-08-08, items 0.1, 0.4, 0.7, 0.8.
-Updated 2026-09-11: items 1.8 to 1.11 added from `resources/31-oceans-sumo-roe-paper.md`, accepted by the owner. Track 5 added from `SITE-PLAN.md`, proposed.
+Updated 2026-09-11: items 1.8 to 1.11 added from `resources/31-oceans-sumo-roe-paper.md`, accepted by the owner. Track 5 added from `SITE-PLAN.md`, adopted; 5.10 decided, fold.
 
 Consolidates every open item raised this session across `CHARTER.md`,
 `POC-PLAN.md`, `REUSE-ASSESSMENT.md`, `VERIFICATION-DESIGN.md`,
@@ -154,7 +154,7 @@ end-to-end thread walked by no page. Order: 5.1 and 5.4 first, in parallel.
 | **5.7** | Reconciliation panel on `policy-MARADMIN-2023-051.html`, `policy-DODI-1327.06.html`, and `authority-leave.html`. This is item 1.5 placed in order. | 5.1 | P0 |
 | **5.8** | Verified excerpts on `policy-DODI-1327.06.html` rendered from `data/dodi-1327.06.uslm.xml` with badges. Closes the thread's step 4 gap. | 5.1 | P1 |
 | **5.9** | `about.html`: charter with attribution, licence summary, non-official and no-ATO posture, accessibility, feedback. Standards section moves from How it works to Sources. | 5.2 | P1 |
-| **5.10** | MOS strand: fold into the build or archive to `prototypes/`. **Owner decision, `SITE-PLAN.md` section 8.** Recommendation: fold. | owner | P1 |
+| **5.10** | MOS strand. **DECIDED 2026-09-11: FOLD.** `mos-manual-lineage.html` becomes a generated editions page from `config/mos-family-manifest.json` and `tools/lineage.py`; `mos-manual-intro.html` becomes the "What it says" section of `policy-NAVMC-1200.1L.html`. Both hand pages leave `docs/` as sources once the generated pages exist. | 5.1 | P1 |
 | **5.11** | `viewer/` ruling recorded in one line; `README.md` "What is here" stops listing retired code as current. | - | P1 |
 | **5.12** | Interactive evaluator. Needs a decision on where logic lives before any code. | 5.6 shown to someone | P2 |
 
