@@ -1,0 +1,100 @@
+# Deploy to cloud.gov, on Linux.
+#
+# Modeled on SemperAdmin/semperscribe's deploy-cloudgov.yml. Same shape for
+# every Semper Admin app: gate on the repo's own validator, prove the bundle,
+# push with a space-deployer service account, smoke-test the live route.
+# The site is the docs/ directory; manifest.yml and Staticfile live there
+# and cf push runs from there.
+#
+# workflow_dispatch only, not a push trigger: a deploy to a government
+# sandbox is an explicit act, not a side effect of merging to main.
+#
+# CREDENTIALS. CF_USERNAME / CF_PASSWORD are a cloud.gov space-deployer
+# service account, never an SSO user (service accounts have no MFA prompt,
+# so they are the only credential CI can use unattended). One account can
+# serve every repo: store the pair as organization secrets on SemperAdmin,
+# or per repo under Settings > Secrets and variables > Actions. To mint one:
+#   cf create-service cloud-gov-service-account space-deployer <name>
+#   cf create-service-key <name> github-actions
+#   cf service-key <name> github-actions
+# The sandbox purge (90 days) deletes the account; mint again afterwards.
+name: Deploy to cloud.gov
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudgov
+  cancel-in-progress: false
+
+env:
+  CF_API: https://api.fr.cloud.gov
+  CF_ORG: sandbox-usmc
+  CF_SPACE: stephen.shorter
+  APP_ROUTE: https://policy-as-data.app.cloud.gov/
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: cloudgov
+      url: https://policy-as-data.app.cloud.gov/
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      # Same gate as validate.yml: XSD plus schema checks over data/.
+      - name: Install validator dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y libxml2-utils
+          pip install rdflib
+
+      - name: Validate corpus
+        run: python tools/validate.py
+
+      # Refuses to publish contact data. Exit 1 on any hit.
+      - name: Contact guard over docs/
+        run: python tools/contact_guard.py docs
+
+      - name: Prove the bundle
+        working-directory: docs
+        run: |
+          test -f index.html || { echo "::error::docs/index.html missing"; exit 1; }
+          test -f manifest.yml || { echo "::error::docs/manifest.yml missing"; exit 1; }
+          grep -q '^force_https: true' Staticfile || { echo "::error::docs/Staticfile must set force_https: true"; exit 1; }
+
+      # Official apt repo, no third-party action: one less supply-chain hop
+      # ahead of the step that hands this runner production credentials.
+      - name: Install cf CLI
+        run: |
+          curl -fsSL https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo gpg --dearmor -o /usr/share/keyrings/cloudfoundry-keyring.gpg
+          echo "deb [signed-by=/usr/share/keyrings/cloudfoundry-keyring.gpg] https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry.list
+          sudo apt-get update && sudo apt-get install --yes cf8-cli
+          cf version
+
+      - name: Push
+        working-directory: docs
+        env:
+          CF_USERNAME: ${{ secrets.CF_USERNAME }}
+          CF_PASSWORD: ${{ secrets.CF_PASSWORD }}
+        run: |
+          cf api "$CF_API"
+          cf auth "$CF_USERNAME" "$CF_PASSWORD"
+          cf target -o "$CF_ORG" -s "$CF_SPACE"
+          cf push
+
+      - name: Post-deploy smoke
+        run: |
+          code=$(curl -sS -o /tmp/live.html -w '%{http_code}' "$APP_ROUTE")
+          [ "$code" = "200" ] || { echo "::error::$APP_ROUTE returned HTTP $code"; exit 1; }
+          grep -qi '<html' /tmp/live.html || { echo "::error::$APP_ROUTE body carries no <html>"; exit 1; }
+          curl -sSI "$APP_ROUTE" | grep -qi '^strict-transport-security:' || echo "::warning::No Strict-Transport-Security header on $APP_ROUTE"
