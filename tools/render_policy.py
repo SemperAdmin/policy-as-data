@@ -32,6 +32,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lineage import (build, build_inbound, load_families,      # noqa: E402
                      base_id, revision_letter, change_number)
+from chrome import head, header  # noqa: E402
 from render_authority_chain import (BRAND, CSS, TIER_NAME, TIER_OF_TYPE,  # noqa: E402
                                     TIER_ORDER, tier_of, esc, load,
                                     SRC_RX, HOLDS_RX, TIER_RX, FAVICON)
@@ -437,16 +438,8 @@ def render_one(rec, records, pages, inbound_t, inbound_b, families, gaps, out_di
     tier = tier_of(did, rec)
     dates = rec.get("dates") or {}
 
-    P = ['<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">',
-         '<meta name="viewport" content="width=device-width,initial-scale=1">',
-         FAVICON,
-         f'<title>{esc(rec.get("title") or did)} - Semper Admin Policy Library</title>',
-         f"<style>{CSS}{EXTRA_CSS}</style></head><body>",
-         '<a class="skip" href="#main">Skip to main content</a>',
-         f'<header class="chrome">{BRAND}<span>Policy</span>'
-         '<a href="policy-index.html" style="margin-left:auto">All policies</a>'
-         '<a href="authority-index.html">Authority chains</a>'
-         '<a href="sources.html">Sources</a></header>',
+    P = [head(rec.get("title") or did, extra_css=EXTRA_CSS),
+         header("Policy", current="policy-index.html"),
          '<main id="main">',
          f'<p class="crumb"><a href="policy-index.html">All policies</a> '
          f'&rsaquo; {esc(tier)} {esc(TIER_NAME.get(tier, tier))}</p>',
@@ -502,15 +495,8 @@ def render_index(records, pages, inbound_t, out_dir, types=None):
                      did, rec, tier, outb, inb, provs))
     rows.sort()
 
-    P = ['<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">',
-         '<meta name="viewport" content="width=device-width,initial-scale=1">',
-         FAVICON,
-         '<title>All policies - Semper Admin Policy Library</title>',
-         f"<style>{CSS}{EXTRA_CSS}</style></head><body>",
-         '<a class="skip" href="#main">Skip to main content</a>',
-         f'<header class="chrome">{BRAND}<span>All policies</span>'
-         '<a href="authority-index.html" style="margin-left:auto">Authority chains</a>'
-         '<a href="sources.html">Sources</a></header>',
+    P = [head("All policies", extra_css=EXTRA_CSS),
+         header("Library", current="policy-index.html"),
          '<main id="main"><h1>All policies</h1>',
          '<p class="lede">Every document in the demonstration set, ordered by '
          'the level that issued it. Each one opens on a single page carrying '
@@ -570,17 +556,8 @@ def render_type_indexes(records, pages, inbound_t, out_dir):
     for doc_type, ids in sorted(groups.items()):
         label = TYPE_LABEL.get(doc_type, doc_type)
         rows = sorted(ids, key=lambda d: (records[d].get("status") != "active", d))
-        P = ['<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">',
-             '<meta name="viewport" content="width=device-width,initial-scale=1">',
-         FAVICON,
-             f'<title>{esc(label)} - Semper Admin Policy Library</title>',
-             f"<style>{CSS}{EXTRA_CSS}</style></head><body>",
-             '<a class="skip" href="#main">Skip to main content</a>',
-             f'<header class="chrome">{BRAND}<span>Documents by type</span>'
-             '<a href="policy-index.html" style="margin-left:auto">All policies</a>'
-             '<a href="authority-index.html">Authority chains</a>'
-             '<a href="connections.html">Connections</a>'
-             '<a href="sources.html">Sources</a></header>',
+        P = [head(label, extra_css=EXTRA_CSS),
+             header("Documents by type", current="policy-index.html"),
              '<main id="main">',
              f'<p class="crumb"><a href="index.html">Home</a> &rsaquo; '
              f'{esc(label)}</p>',
