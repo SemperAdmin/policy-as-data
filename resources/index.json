@@ -1,12 +1,12 @@
 {
-  "$comment": "Machine-readable register for the 2026-08-08 resource review pass. Companion to resources/README.md and to conformance-matrix.md. The verdict scale is quoted from conformance-matrix.md. NOTE: that document sources the scale from hhq-alignment-plan.md N0.2, which is not present in this repository - see ACTION-REGISTER.md item 0.7. 'UNCONFIRMED' is a retrieval state, not a verdict; 'EVALUATE' applies to row 24 only. 2026-08-20: rows 25-30 added for the ontology pass. EVALUATE now applies to rows 24, 28, and 29, extending the single-row restriction stated for the 2026-08-08 pass.",
+  "$comment": "Machine-readable register for the 2026-08-08 resource review pass. Companion to resources/README.md and to conformance-matrix.md. The verdict scale is quoted from conformance-matrix.md. NOTE: that document sources the scale from hhq-alignment-plan.md N0.2, which is not present in this repository - see ACTION-REGISTER.md item 0.7. 'UNCONFIRMED' is a retrieval state, not a verdict; 'EVALUATE' applies to row 24 only. 2026-08-20: rows 25-30 added for the ontology pass. EVALUATE now applies to rows 24, 28, and 29, extending the single-row restriction stated for the 2026-08-08 pass. 2026-09-11: row 31 added, verdict ADAPTED; EVALUATE rows unchanged.",
   "schema_version": "1.0",
-  "generated": "2026-08-20",
+  "generated": "2026-09-11",
   "owner": "Stephen",
   "status": "draft",
   "merges_into": {
     "document": "conformance-matrix.md",
-    "sections": "17-30",
+    "sections": "17-31",
     "note": "Section 16 of that document is the exporter rebuild, not a reference. Reference numbering there ends at 15 and resumes at 17. Rows 17-24 are the 2026-08-08 pass. Rows 25-30 are the 2026-08-20 ontology pass."
   },
   "verdict_scale": [
@@ -598,6 +598,75 @@
       "related": [
         26
       ]
+    },
+    {
+      "id": 31,
+      "key": "oceans-sumo-roe-paper",
+      "title": "Formal Ontology for Maritime Operations in SUMO: From Collision Avoidance to Rules of Engagement",
+      "publisher": "Naval Postgraduate School, Genişel and Pease",
+      "url": null,
+      "cite_url": null,
+      "supplied_as": {
+        "filename": "OCEANS_Paper.pdf",
+        "sha256": "sha256:51fcaa983d5811679223d55ca3220e0a32584d00513cd2f97718605d223b999e",
+        "bytes": 113474,
+        "pages": 7,
+        "obtained": "supplied by the owner 2026-09-11"
+      },
+      "repo_seen": "https://github.com/ontologyportal/sumo/tree/master/tests/ROE (stated in the paper, not retrieved)",
+      "retrieved": "2026-09-11",
+      "retrieval_state": "RETRIEVED",
+      "source_type": "paper",
+      "format": "PDF. Venue UNCONFIRMED; the filename says OCEANS, the paper names none.",
+      "measures": {
+        "pages": 7,
+        "roe_measures_formalized": 24,
+        "roe_series": 5,
+        "validation_queries": 11,
+        "queries_positive": 7,
+        "queries_negative": 4,
+        "queries_as_expected": 9,
+        "queries_open": 2,
+        "colregs_scenarios_prior_work": 288
+      },
+      "license": "Not stated in the PDF. Companion code sits in the SUMO repository, whose licence is CONTRADICTORY per row 28.",
+      "binds_this_project": false,
+      "verdict": "ADAPTED",
+      "verdict_qualifier": "Technique adopted in stdlib tooling; the formalism stays at row 28 EVALUATE. Trigger sharpened: fires when a rule value is a class, not a number.",
+      "confidence": 0.85,
+      "review": "resources/31-oceans-sumo-roe-paper.md",
+      "one_line": "Authorization derived by subsumption, restrictive default derived explicitly, closure asserted over the authoritative message only, a proof per determination. Four of those transfer without a prover.",
+      "adopted": [
+        "Attested absence: split reconcile NOT_HELD into NOT_ENCODED and SILENT, the latter requiring an attestation of kind absence.",
+        "Binding kind at the authority tier: fixed, floor, ceiling, delegated. DIVERGE gains direction and consequence.",
+        "A claims table with negative expectations, run in CI. Counts are not evidence; a table of claims is.",
+        "Derivation steps in evaluate.py output, each with a basis. The forfeiture-window defect was a hidden step."
+      ],
+      "argument_against_adopting_formalism": [
+        "Dependency surface violates the fresh-clone, stdlib-only build requirement.",
+        "Two of four negative validation queries did not complete against the full knowledge base.",
+        "Row 28 licence contradiction unresolved.",
+        "Fifth source from one author; no independent assessment held."
+      ],
+      "unconfirmed": [
+        "Venue and publication state.",
+        "Companion code at the stated repository path."
+      ],
+      "touches": [
+        "tools/reconcile.py",
+        "tools/evaluate.py",
+        "config/rule_concepts.json",
+        "verification/README.md",
+        "README.md",
+        "CHARTER.md"
+      ],
+      "related": [
+        13,
+        17,
+        27,
+        28,
+        29
+      ]
     }
   ],
   "passes": [
@@ -612,6 +681,13 @@
       "subject": "Formal ontology. SUMO, Sigma, and the literature around them.",
       "supplied_by": "external reading list",
       "independence_note": "All six sources trace to one author. Four are his own properties and two are projects he leads. No third-party assessment of SUMO is held in this register."
+    },
+    {
+      "date": "2026-09-11",
+      "ids": "31",
+      "subject": "One NPS paper applying SUMO and a theorem prover to COLREGs and ROE, read for technique transfer to the reconciliation POC.",
+      "supplied_by": "owner, as a PDF",
+      "independence_note": "Same author as rows 27 to 30. Independence gap unchanged."
     }
   ]
 }

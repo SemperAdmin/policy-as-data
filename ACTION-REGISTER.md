@@ -2,6 +2,7 @@
 
 Date: 2026-08-08. Owner: Stephen. Status: current.
 Last verified against disk: 2026-08-08, items 0.1, 0.4, 0.7, 0.8.
+Updated 2026-09-11: items 1.8 to 1.11 added from `resources/31-oceans-sumo-roe-paper.md`, accepted by the owner.
 
 Consolidates every open item raised this session across `CHARTER.md`,
 `POC-PLAN.md`, `REUSE-ASSESSMENT.md`, `VERIFICATION-DESIGN.md`,
@@ -63,6 +64,10 @@ Sequential. Nothing here starts before section 0 is answered.
 | **1.5** | M4 | Render into `docs/`, link from the leave spine. Both paragraphs printed in full for any DIVERGE. | 1.4 |
 | **1.6** | — | **Stop and show it to someone who did not build it.** | 1.5 |
 | **1.7** | M5 | Second spine. The milestone that decides whether the design was shaped around leave. | 1.6, B2 |
+| **1.8** | M3 | **ADDED 2026-09-11, from `resources/31`.** Claims table: `tests/claims.json`, one row per claim with expected verdict, positive and negative, run by a stdlib script in `validate.yml`. Negatives are the point: never AGREE from an unverified input, never convert years, never answer past the encoded rules. Closes the open half of 1.4 too - a malformed concept reference is a claim row. | 1.3 |
+| **1.9** | M4 | **ADDED 2026-09-11, from `resources/31`.** Attested absence. Split `reconcile.py` NOT_HELD into NOT_ENCODED (no rule file carries the concept at that tier) and SILENT (a named verifier read the tier and attested it states no value). New attestation kind `absence`, specified in `verification/README.md` first. Before the page renders: a NOT_HELD that means "nobody looked" must not publish as "the authority is silent". | 1.4 |
+| **1.10** | M4 | **ADDED 2026-09-11, from `resources/31`.** Binding kind on the authority tier of each concept in `config/rule_concepts.json`: `fixed`, `floor`, `ceiling`, `delegated`. DIVERGE gains direction: below a floor is a finding, variance on a delegated value is conforming and must not read as one. Before the page renders, for the reason `POC-PLAN.md` section 7 gives. | 1.4 |
+| **1.11** | - | **ADDED 2026-09-11, from `resources/31`.** Derivation steps in `evaluate.py` output: inputs, operation, basis per step; a unit conversion cites its `config/units.json` entry; a date shift says whether it is a day count or a calendar year. Same commit as the forfeiture-window decision in `verification/findings-forfeiture-window.md`, since both touch the evaluator. | owner decision on the forfeiture finding |
 
 **Success turns on S6:** at least one DIVERGE or NOT_HELD finding across two
 spines that nobody had on their list beforehand. If that is zero, the concept is
