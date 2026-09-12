@@ -2,7 +2,7 @@
 
 Date: 2026-08-08. Owner: Stephen. Status: current.
 Last verified against disk: 2026-08-08, items 0.1, 0.4, 0.7, 0.8.
-Updated 2026-09-11: items 1.8 to 1.11 added from `resources/31-oceans-sumo-roe-paper.md`, accepted by the owner.
+Updated 2026-09-11: items 1.8 to 1.11 added from `resources/31-oceans-sumo-roe-paper.md`, accepted by the owner. Track 5 added from `SITE-PLAN.md`, proposed.
 
 Consolidates every open item raised this session across `CHARTER.md`,
 `POC-PLAN.md`, `REUSE-ASSESSMENT.md`, `VERIFICATION-DESIGN.md`,
@@ -133,6 +133,30 @@ Small, and they keep the record honest.
 | **4.7** | Discharge `resources/21`, NPS FAST. Paste the landing page, About, and any documentation from a browser, or confirm it is CAC-gated. | `resources/21` |
 | **4.8** | Fill the table in `resources/22`. Title, author, publisher, year, ISBN. | `resources/22` |
 | **4.9** | Carry the authority statement into exported XML as a processing instruction or header comment. Near-zero cost. | `resources/20` |
+
+---
+
+## 5a. Track 5 - the site as one application. Added 2026-09-11.
+
+From `SITE-PLAN.md`, proposed. Measured state: ten header variants across 78
+pages, six hand-authored pages outside the build, stale counts on the home
+page, the evaluator on no page, reconciliation unlinked, and the one
+end-to-end thread walked by no page. Order: 5.1 and 5.4 first, in parallel.
+
+| # | Item | Blocked by | Priority |
+|---|---|---|---|
+| **5.1** | `config/site_nav.json` and `tools/chrome.py`; five renderers import it; four CSS copies removed. Zero header variants after a build, measured. | - | P0 |
+| **5.2** | `site/` fragments and `tools/render_pages.py`. The six hand pages leave `docs/` as sources. Counts substituted from build measurement, never typed. Idempotent, hashed. | 5.1 | P0 |
+| **5.3** | Home page body is the thread, `SITE-PLAN.md` section 3, eight steps, each linked. | 5.2, 5.5, 5.6 | P0 |
+| **5.4** | **DEFECT.** `tools/evaluate.py` reads inline `status` from `rules.json`, not the ledger. Inline says VERIFIED for all five MARADMIN rules; the ledger derives QUORUM_SHORT for four. Invisible today because the evaluator has no page; a page would publish values the process has not admitted, against the deviation's own condition in `config/verification_policy.json`. Fix: derive status through `verify_status.derive`, apply B1, withhold and name the rule. Claims rows added. | - | P0, blocks 5.6 |
+| **5.5** | Anchors on `verification.html` sections and `authority-*.html` tiers. | 5.1 | P0 |
+| **5.6** | `scenarios.html`, `config/scenarios.json`, new build stage. Three fixed inputs, evaluator in-process, every line cited, refusals listed, no JavaScript decision path. Titled Scenarios, not Calculator. | 5.4, and 2.7 for it to show more than withheld lines | P0 |
+| **5.7** | Reconciliation panel on `policy-MARADMIN-2023-051.html`, `policy-DODI-1327.06.html`, and `authority-leave.html`. This is item 1.5 placed in order. | 5.1 | P0 |
+| **5.8** | Verified excerpts on `policy-DODI-1327.06.html` rendered from `data/dodi-1327.06.uslm.xml` with badges. Closes the thread's step 4 gap. | 5.1 | P1 |
+| **5.9** | `about.html`: charter with attribution, licence summary, non-official and no-ATO posture, accessibility, feedback. Standards section moves from How it works to Sources. | 5.2 | P1 |
+| **5.10** | MOS strand: fold into the build or archive to `prototypes/`. **Owner decision, `SITE-PLAN.md` section 8.** Recommendation: fold. | owner | P1 |
+| **5.11** | `viewer/` ruling recorded in one line; `README.md` "What is here" stops listing retired code as current. | - | P1 |
+| **5.12** | Interactive evaluator. Needs a decision on where logic lives before any code. | 5.6 shown to someone | P2 |
 
 ---
 
