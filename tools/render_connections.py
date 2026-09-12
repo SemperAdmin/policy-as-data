@@ -28,6 +28,7 @@ import sys
 from collections import Counter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from chrome import head, header  # noqa: E402
 from render_authority_chain import (BRAND, CSS, TIER_NAME, TIER_ORDER,   # noqa: E402
                                     tier_of, esc, load, TIER_RX, HOLDS_RX,
                                     FAVICON)
@@ -344,16 +345,8 @@ def render(records, out_path):
     internal = sum(1 for e in edges if e["held"])
     isolated = [d for d in pos if degree.get(d, 0) == 0]
 
-    P = ['<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">',
-         '<meta name="viewport" content="width=device-width,initial-scale=1">',
-         FAVICON,
-         '<title>Policy connections - Semper Admin Policy Library</title>',
-         f"<style>{CSS}{EXTRA_CSS}{CONN_CSS}</style></head><body>",
-         '<a class="skip" href="#main">Skip to main content</a>',
-         f'<header class="chrome">{BRAND}<span>Connections</span>'
-         '<a href="policy-index.html" style="margin-left:auto">All policies</a>'
-         '<a href="authority-index.html">Authority chains</a>'
-         '<a href="sources.html">Sources</a></header>',
+    P = [head("Policy connections", extra_css=EXTRA_CSS + CONN_CSS),
+         header("Connections", current="connections.html"),
          '<main id="main"><h1>Policy connections</h1>',
          '<p class="lede">Every document in the set and every cited reference '
          'between them. Statute at the top, messages at the bottom, and each '
