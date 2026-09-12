@@ -1,0 +1,175 @@
+{
+  "$comment": "The claims table. One row per claim the tooling makes about itself, with the mechanism that tests it, the fixture, and the expected result. Modelled on the validation table in resources/31: positive rows expect a result to be derivable, negative rows expect it NOT to be, and the negatives are the ones that matter, because a tool that answered everything asked of it would pass every positive row. Run by tests/run_claims.py, which writes nothing and exits 1 on any FAIL. Counts are not evidence; this table is.",
+  "schema_version": "1.0",
+  "established": "2026-09-11",
+  "fixtures": {
+    "concepts_days": [
+      {"id": "C_DAYS", "label": "test concept in days", "canonical_unit": "days"}
+    ],
+    "units_weeks": {
+      "conversions": [{"from": "weeks", "to": "days", "factor": 7}],
+      "refused": [{"unit": "years", "reason": "test refusal"}]
+    }
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "polarity": "positive",
+      "claim": "Two VERIFIED tiers stating the same value in different units AGREE after conversion",
+      "mechanism": "reconcile",
+      "fixture": {"concepts": "concepts_days", "units": "units_weeks", "items": [
+        {"tier": "T1", "concept": "C_DAYS", "value": 12, "unit": "weeks", "verification": "VERIFIED"},
+        {"tier": "T5", "concept": "C_DAYS", "value": 84, "unit": "days", "verification": "VERIFIED"}
+      ]},
+      "expect": {"verdict": "AGREE", "tiers_printed": 2, "canonical": [84, 84]}
+    },
+    {
+      "id": "C2",
+      "polarity": "positive",
+      "claim": "Two VERIFIED tiers stating different values DIVERGE",
+      "mechanism": "reconcile",
+      "fixture": {"concepts": "concepts_days", "units": "units_weeks", "items": [
+        {"tier": "T1", "concept": "C_DAYS", "value": 84, "unit": "days", "verification": "VERIFIED"},
+        {"tier": "T5", "concept": "C_DAYS", "value": 70, "unit": "days", "verification": "VERIFIED"}
+      ]},
+      "expect": {"verdict": "DIVERGE", "tiers_printed": 2}
+    },
+    {
+      "id": "C3",
+      "polarity": "positive",
+      "claim": "A concept held at one tier only is reported NOT_HELD, as a finding, not skipped",
+      "mechanism": "reconcile",
+      "fixture": {"concepts": "concepts_days", "units": "units_weeks", "items": [
+        {"tier": "T5", "concept": "C_DAYS", "value": 84, "unit": "days", "verification": "VERIFIED"}
+      ]},
+      "expect": {"verdict": "NOT_HELD", "tiers_printed": 1}
+    },
+    {
+      "id": "C4",
+      "polarity": "positive",
+      "claim": "A rule carrying no concept is listed as unassigned, never dropped",
+      "mechanism": "reconcile_unassigned",
+      "fixture": {"concepts": "concepts_days", "units": "units_weeks", "items": [
+        {"tier": "T5", "concept": null, "value": 84, "unit": "days", "verification": "VERIFIED"}
+      ]},
+      "expect": {"unassigned": 1}
+    },
+    {
+      "id": "C5",
+      "polarity": "positive",
+      "claim": "A rule value attested by two named verifiers with a matching hash derives VERIFIED at the target quorum",
+      "mechanism": "verify_status",
+      "fixture": {"kind": "rule", "hash": "sha256:live", "quorum": {"rule": 2, "provision": 1}, "attestations": [
+        {"verifier": "V-001", "result": "VERIFIED", "content_hash": "sha256:live", "at": "2026-08-08T00:00:00+00:00"},
+        {"verifier": "V-002", "result": "VERIFIED", "content_hash": "sha256:live", "at": "2026-08-09T00:00:00+00:00"}
+      ]},
+      "expect": {"status": "VERIFIED"}
+    },
+    {
+      "id": "C6",
+      "polarity": "positive",
+      "claim": "An attestation whose content has since changed derives INVALIDATED, reported rather than absorbed as unverified",
+      "mechanism": "verify_status",
+      "fixture": {"kind": "rule", "hash": "sha256:changed", "quorum": {"rule": 1, "provision": 1}, "attestations": [
+        {"verifier": "V-001", "result": "VERIFIED", "content_hash": "sha256:original", "at": "2026-08-08T00:00:00+00:00"}
+      ]},
+      "expect": {"status": "INVALIDATED"}
+    },
+    {
+      "id": "C7",
+      "polarity": "positive",
+      "claim": "Every line of an evaluator decision carries a provision identifier (POC-PLAN S2)",
+      "mechanism": "evaluate",
+      "fixture": {"args": ["--event-date", "2027-03-01", "--as-of", "2027-06-01", "--proposed-increment", "5"]},
+      "expect": {"every_decision_line_has_identifier": true, "min_decision_lines": 4}
+    },
+    {
+      "id": "C8",
+      "polarity": "positive",
+      "claim": "The evaluator refuses convalescent leave and the commander extension by name (POC-PLAN S3)",
+      "mechanism": "evaluate",
+      "fixture": {"args": ["--event-date", "2027-03-01", "--as-of", "2027-06-01"]},
+      "expect": {"refusals_mention": ["Convalescent", "8.a.(3)"]}
+    },
+    {
+      "id": "C9",
+      "polarity": "positive",
+      "claim": "A rule referencing a concept absent from the register fails the reconcile stage with a non-zero exit and writes nothing (ACTION-REGISTER 1.4)",
+      "mechanism": "reconcile_cli",
+      "fixture": {"rules_file": {
+        "source": {"identifier": "/us/dod/don/usmc/maradmin/2099/001", "label": "fixture"},
+        "rules": [{"id": "X", "concept": "NO_SUCH_CONCEPT", "value": 1, "unit": "days", "status": "VERIFIED",
+                   "citation": {"identifier": "/us/dod/don/usmc/maradmin/2099/001/p1", "label": "fixture para 1"}}]
+      }},
+      "expect": {"exit_nonzero": true, "stderr_mentions": "NO_SUCH_CONCEPT", "out_file_written": false}
+    },
+    {
+      "id": "N1",
+      "polarity": "negative",
+      "claim": "AGREE is never derived when one tier is UNVERIFIED; the value is withheld and the verdict is NOT_COMPARABLE (decision B1)",
+      "mechanism": "reconcile",
+      "fixture": {"concepts": "concepts_days", "units": "units_weeks", "items": [
+        {"tier": "T1", "concept": "C_DAYS", "value": 12, "unit": "weeks", "verification": "UNVERIFIED"},
+        {"tier": "T5", "concept": "C_DAYS", "value": 84, "unit": "days", "verification": "VERIFIED"}
+      ]},
+      "expect": {"verdict_not": "AGREE", "verdict": "NOT_COMPARABLE", "withheld": 1, "withheld_value_absent": true}
+    },
+    {
+      "id": "N2",
+      "polarity": "negative",
+      "claim": "AGREE is never derived when one tier is QUORUM_SHORT; an attested-but-short value is withheld like an unverified one",
+      "mechanism": "reconcile",
+      "fixture": {"concepts": "concepts_days", "units": "units_weeks", "items": [
+        {"tier": "T1", "concept": "C_DAYS", "value": 84, "unit": "days", "verification": "VERIFIED"},
+        {"tier": "T5", "concept": "C_DAYS", "value": 84, "unit": "days", "verification": "QUORUM_SHORT"}
+      ]},
+      "expect": {"verdict_not": "AGREE", "withheld": 1}
+    },
+    {
+      "id": "N3",
+      "polarity": "negative",
+      "claim": "The live units table never converts years to days; the refusal names its reason",
+      "mechanism": "units",
+      "fixture": {"units": "config", "value": 1, "unit": "years", "target": "days"},
+      "expect": {"refused": true}
+    },
+    {
+      "id": "N4",
+      "polarity": "negative",
+      "claim": "A unit absent from the live table is refused, never inferred",
+      "mechanism": "units",
+      "fixture": {"units": "config", "value": 2, "unit": "fortnights", "target": "days"},
+      "expect": {"refused": true}
+    },
+    {
+      "id": "N5",
+      "polarity": "negative",
+      "claim": "Two imported seed attestations carrying no named verifier never reach VERIFIED; a legacy claim is not two independent readings",
+      "mechanism": "verify_status",
+      "fixture": {"kind": "rule", "hash": "sha256:live", "quorum": {"rule": 2, "provision": 1}, "attestations": [
+        {"verifier": null, "result": "VERIFIED", "content_hash": "sha256:live", "at": "2026-06-24T00:00:00+00:00", "method": "imported"},
+        {"verifier": null, "result": "VERIFIED", "content_hash": "sha256:live", "at": "2026-06-25T00:00:00+00:00", "method": "imported"}
+      ]},
+      "expect": {"status_not": "VERIFIED"}
+    },
+    {
+      "id": "N6",
+      "polarity": "negative",
+      "claim": "The evaluator never computes an extended forfeiture date; the extension is a commander determination and is refused, not estimated",
+      "mechanism": "evaluate",
+      "fixture": {"args": ["--event-date", "2027-03-01", "--as-of", "2027-06-01"]},
+      "expect": {"no_decision_item_matching": "extend", "refusals_mention": ["8.a.(3)"]}
+    },
+    {
+      "id": "N7",
+      "polarity": "negative",
+      "claim": "A concept with a VERIFIED value at one tier and a refused unit at another is NOT_COMPARABLE, never NOT_HELD; a refusal is not an absence",
+      "mechanism": "reconcile",
+      "fixture": {"concepts": "concepts_days", "units": "units_weeks", "items": [
+        {"tier": "T1", "concept": "C_DAYS", "value": 1, "unit": "years", "verification": "VERIFIED"},
+        {"tier": "T5", "concept": "C_DAYS", "value": 365, "unit": "days", "verification": "VERIFIED"}
+      ]},
+      "expect": {"verdict_not": "NOT_HELD", "verdict": "NOT_COMPARABLE", "not_comparable": 1}
+    }
+  ]
+}
