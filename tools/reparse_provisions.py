@@ -13,11 +13,18 @@ import argparse
 import json
 import os
 import sys
-from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from atomicio import write_json  # noqa: E402
 from corrections import record as record_correction  # noqa: E402
+
+# The date this ruling was applied, a fact about the change and not about
+# when the build last ran. A literal, per the ENTERED precedent in
+# ingest_authority_tiers.py: reading the clock here re-dated the correction
+# on every build, so a 2026-08-04 change read as today, and two builds on
+# different days left every record and export different with no changed
+# content. Bump it when the change this tool makes actually changes.
+DATED = "2026-08-03"
 from provisions import parse_provisions, uslm_paths      # noqa: E402
 from profile_readability import classify, metrics        # noqa: E402
 
@@ -45,7 +52,7 @@ def reparse(rec):
     added, removed = after - before, before - after
     if added or removed:
         record_correction(rec, "reparse_provisions.py", {
-            "date": datetime.now(timezone.utc).date().isoformat(),
+            "date": DATED,
             "against": "section text already carried in this record",
             "changes": [
                 f"reparse_provisions.py - provision tree rebuilt after the "
