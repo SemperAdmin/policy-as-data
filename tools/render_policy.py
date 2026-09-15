@@ -33,6 +33,81 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lineage import (build, build_inbound, load_families,      # noqa: E402
                      base_id, revision_letter, change_number)
 from chrome import head, header  # noqa: E402
+import json as _json  # noqa: E402
+
+RECON_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                          "config", "reconciliation.json")
+VERDICT_WORD = {"AGREE": "Agree", "DIVERGE": "Differ", "NOT_HELD": "One tier only",
+                "NOT_COMPARABLE": "Not yet comparable"}
+TIER_WORD = {"T0": "Statute", "T1": "DoD instruction", "T2": "Navy instruction",
+             "T3": "Marine Corps order", "T4": "Manual", "T5": "Marine Corps message"}
+STATE_WORD = {"VERIFIED": "confirmed by a person", "QUORUM_SHORT": "confirmed by one, needs a second",
+              "INVALIDATED": "changed since confirmed", "REJECTED": "read and found wrong",
+              "UNABLE": "source not obtainable", "UNVERIFIED": "not yet read by a person"}
+
+
+def _load_recon():
+    try:
+        with open(RECON_PATH, encoding="utf-8") as fh:
+            return _json.load(fh).get("findings") or []
+    except FileNotFoundError:
+        return []
+
+
+RECON = _load_recon()
+
+
+def _same_doc(a, b):
+    """The hand tier writes 1327.06 and the machine tier 1327_06; the period
+    ruling has not reached the verified tier (SESSION_HANDOFF section 7.2)."""
+    return (a or "").replace(".", "_") == (b or "").replace(".", "_")
+
+
+def reconciliation_section(rec):
+    """The cross-tier comparison rows this document takes part in, from
+    config/reconciliation.json. Verdicts and withholding are the reconcile
+    tool's; this only renders them. ACTION-REGISTER 5.7."""
+    me = rec.get("uslm_identifier") or ""
+    paths = {p["path"] for sec in rec.get("sections") or [] for p in sec.get("provisions") or []}
+    mine = []
+    for f in RECON:
+        rows = f["tiers"] + f["withheld"] + f["not_comparable"]
+        if any(_same_doc(r["assertion"].split("#")[0], me) for r in rows):
+            mine.append((f, rows))
+    if not mine:
+        return []
+    out = ['<h2>Compared with its authority</h2>',
+           '<p class="small">Values this document states, set against the same '
+           'value at the tiers above or below it. A side is compared only after a '
+           'person has read it; an unread side is withheld and the comparison '
+           'refused rather than guessed. <a href="verification.html#cross-tier">'
+           'The full comparison</a>.</p>']
+    for f, rows in mine:
+        cls = ("cited" if f["verdict"] == "AGREE" else "gap" if f["verdict"] == "DIVERGE" else "")
+        out.append(f'<div class="panel"><p><strong>{esc(f["label"])}</strong> '
+                   f'{pill(cls, VERDICT_WORD.get(f["verdict"], f["verdict"]))}</p><table>'
+                   '<tr><th>tier</th><th>states</th><th>paragraph</th></tr>')
+        for r in sorted(rows, key=lambda r: r["tier"]):
+            here = _same_doc(r["assertion"].split("#")[0], me)
+            cid = r.get("citation_identifier") or ""
+            rel = cid.split("#")[0]
+            anchor = None
+            if here:
+                tail = rel[len(rel.split("/p", 1)[0]) + 1:] if "/p" in rel else ""
+                if tail in paths:
+                    anchor = tail.replace("/", "-")
+            label = esc(r.get("citation_label") or "")
+            cite = f'<a href="#{esc(anchor)}">{label}</a>' if anchor else label
+            if "stated" in r:
+                states = esc(r["stated"])
+            else:
+                states = (f'<span class="small">withheld - '
+                          f'{esc(STATE_WORD.get(r.get("verification"), "not yet confirmed"))}</span>')
+            who = TIER_WORD.get(r["tier"], r.get("tier_label", r["tier"]))
+            out.append(f'<tr><td>{esc(who)}{" (this document)" if here else ""}</td>'
+                       f'<td>{states}</td><td>{cite}</td></tr>')
+        out.append('</table></div>')
+    return out
 from render_authority_chain import (BRAND, CSS, TIER_NAME, TIER_OF_TYPE,  # noqa: E402
                                     TIER_ORDER, tier_of, esc, load,
                                     SRC_RX, HOLDS_RX, TIER_RX, FAVICON)
@@ -460,6 +535,7 @@ def render_one(rec, records, pages, inbound_t, inbound_b, families, gaps, out_di
     # for. The authority ladder and the lineage are context and follow it.
     P += content_section(rec, records, pages)
     P += authority_section(rec, records, pages, inbound_t, gaps)
+    P += reconciliation_section(rec)
     P += lineage_section(rec, tracks, records, pages)
 
     prov = rec.get("provenance") or {}
