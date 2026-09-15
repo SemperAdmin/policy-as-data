@@ -16,6 +16,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from atomicio import write_text  # noqa: E402
 from chrome import head, header  # noqa: E402
 from render_authority_chain import esc, load  # noqa: E402
 from render_policy import EXTRA_CSS                        # noqa: E402
@@ -520,8 +521,7 @@ def render(records, out_path):
              'identifier register is in NAMESPACES.md.</p></footer>'
              '</main></body></html>')
 
-    with open(out_path, "w", encoding="utf-8") as fh:
-        fh.write("\n".join(P))
+    write_text(out_path, "\n".join(P))
     return sum(len(g["items"]) for g in GROUPS)
 
 

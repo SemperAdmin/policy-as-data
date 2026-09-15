@@ -557,6 +557,37 @@
         ],
         "withheld_min": 2
       }
+    },
+    {
+      "id": "C11",
+      "polarity": "positive",
+      "claim": "Every target on the currency page's strongest tier is held by the set as cancelled or superseded, and every citing document is in force (ACTION-REGISTER 6.1)",
+      "mechanism": "report",
+      "fixture": {},
+      "expect": {
+        "gone_targets_all_gone": true,
+        "gone_citers_all_active": true
+      }
+    },
+    {
+      "id": "N9",
+      "polarity": "negative",
+      "claim": "No drift row names the edition it holds as the edition it cites; drift is only ever a different edition, never the same one restated",
+      "mechanism": "report",
+      "fixture": {},
+      "expect": {
+        "drift_holds_equal_target": 0
+      }
+    },
+    {
+      "id": "C12",
+      "polarity": "positive",
+      "claim": "The impact index accounts for every cited reference edge exactly once: named_by sums to totals.edges",
+      "mechanism": "report",
+      "fixture": {},
+      "expect": {
+        "named_by_sum_equals_edges": true
+      }
     }
   ]
 }
