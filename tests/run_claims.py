@@ -262,7 +262,7 @@ def mech_exports(fx, fixtures):
     mismatch, total_el = [], 0
     for f in (ROOT / "data" / "exports").glob("*.issuance.xml"):
         did = f.name[:-len(".issuance.xml")]
-        n = len(re.findall(r"<provision", f.read_text(encoding="utf-8", errors="replace")))
+        n = len(re.findall(r"<provision\b", f.read_text(encoding="utf-8", errors="replace")))
         total_el += n
         want = per.get(did, {}).get("provisions")
         if want is not None and want != n:
