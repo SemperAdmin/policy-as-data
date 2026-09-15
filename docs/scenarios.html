@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="favicon.png"><title>Scenarios - Semper Admin Policy Library</title><style>
+:root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
+--blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
+--brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
+--bg:#0A1424;--elev:#11203F;--sunken:#060E1A;--fg:#F2E5BE;--card:#11203F;
+--muted:#182A4D;--mutedfg:#B5A988;--border:#233A5C;--borders:#34507A;
+--n950:#0F0C09;--rad:8px;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:400 15px/1.6 "Inter Variable",Inter,system-ui,sans-serif}
+a{color:var(--blue1)}a:hover{color:var(--brass3)}
+:focus-visible{outline:3px solid var(--brass3);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px;
+background:var(--brass3);color:var(--n950)}
+header.chrome,main,footer{max-width:64rem;margin:0 auto;padding:16px 24px}
+header.chrome{margin-top:16px;border-radius:12px;border:1px solid var(--border);
+background:var(--elev);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.brand{display:flex;flex-direction:column;align-items:flex-start}
+.brand .eyebrow{margin-top:2px}
+.eyebrow{font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.08em;
+color:var(--mutedfg)}
+header.chrome a[aria-current="page"]{color:var(--parch3);text-decoration-thickness:2px}
+.emblem{align-self:center;display:flex}
+.wordmark{font:400 28px/1.2 "Bebas Neue",Oswald,system-ui,sans-serif;
+letter-spacing:.04em;color:var(--parch3);text-decoration:none;text-transform:uppercase}
+h1{font:700 28px/1.2 inherit;margin:32px 0 8px}
+h2{font:700 20px/1.2 inherit;border-bottom:1px solid var(--borders);
+padding-bottom:8px;margin-top:40px}
+.lede{color:var(--mutedfg);max-width:52rem}
+.tier{border:1px solid var(--border);border-radius:12px;background:var(--card);
+margin:0 0 4px;padding:16px 20px}
+.tier.gap{background:repeating-linear-gradient(135deg,var(--sunken),
+var(--sunken) 10px,#0b1830 10px,#0b1830 20px);border-style:dashed;
+border-color:var(--aging)}
+.tierhead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
+font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin-bottom:10px}
+.tiercode{color:var(--brass3);font-weight:700}
+.doc{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--muted)}
+.doc:first-of-type{border-top:0;padding-top:0}
+.docid{font:600 14px/1.4 "JetBrains Mono",Menlo,monospace;color:var(--parch3)}
+.doctitle{color:var(--fg)}
+.uslm{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.why{font-size:13px;color:var(--mutedfg);margin-top:4px}
+.pill{display:inline-block;padding:2px 9px;border-radius:9999px;
+font:700 11px/1.6 inherit;border:1px solid var(--borders);
+background:var(--muted);color:var(--parch3);white-space:nowrap}
+.pill.cited{border-color:var(--fresh);color:#9fe0bd}
+.pill.drift{border-color:var(--aging);color:#f0c489}
+.pill.gap{border-color:var(--stale);color:#f3a3a3}
+.pill.held{border-color:var(--blue1);color:#bcd7f2}
+.pill.cancelled,.pill.superseded{background:var(--stale);border-color:var(--stale);
+color:#fff}
+.arrow{text-align:center;color:var(--brass);font:700 13px/1 inherit;
+padding:6px 0;letter-spacing:.08em}
+.arrow span{background:var(--bg);padding:0 10px}
+.arrow{position:relative}
+.arrow:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
+background:var(--brass);z-index:-1}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--muted);
+vertical-align:top}
+th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;
+letter-spacing:.08em}
+code{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+footer{border-top:1px solid var(--border);margin-top:48px;font-size:13px;
+color:var(--mutedfg)}
+/* Small screens: the chrome stacks - wordmark row, page label, then nav links
+   as wrapping pill targets (the inline margin-left:auto that right-aligns the
+   first link on desktop needs the !important to release). Wide tables scroll
+   in place instead of stretching the page, and long identifiers break. */
+@media (max-width:640px){
+header.chrome{align-items:center;column-gap:12px;row-gap:8px;padding:12px 16px}
+.wordmark{font-size:22px}
+header.chrome span{flex-basis:100%;order:2;font:700 11px/1 inherit;
+text-transform:uppercase;letter-spacing:.08em;color:var(--mutedfg)}
+header.chrome a:not(.wordmark):not(.emblem){order:3;margin-left:0!important;
+font:600 13px/1.1 inherit;padding:8px 12px;border:1px solid var(--borders);
+border-radius:9999px;background:var(--muted);color:var(--parch3);
+text-decoration:none}
+table{display:block;overflow-x:auto}
+code,h3{overflow-wrap:anywhere}
+}
+
+.sc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 20px;margin:16px 0}
+.sc h3{margin:0 0 4px;font:700 16px/1.3 inherit}
+.sc .narr{color:var(--mutedfg);margin:0 0 10px}
+.sc table{border-collapse:collapse;width:100%;font-size:14px;margin:8px 0}
+.sc th,.sc td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--muted);vertical-align:top}
+.sc th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+.sc .item{font-weight:700}
+.sc .withheld{color:var(--mutedfg);font-style:italic}
+.sc .cite{font-size:13px;color:var(--mutedfg)}
+.sc .inputs{font-size:13px;color:var(--mutedfg)}
+.note{border-left:3px solid var(--brass);padding:8px 0 8px 14px;margin:14px 0;color:var(--mutedfg);font-size:14px}
+ul.refuse li{margin:4px 0;font-size:14px}
+</style></head><body><a class="skip" href="#main">Skip to main content</a><header class="chrome"><a class="emblem" href="https://semper-admin-portal.app.cloud.gov/" target="_blank" rel="noopener noreferrer" title="Semper Admin portal (opens in a new tab)"><img src="semper-logo.jpg" alt="Semper Admin portal (opens in a new tab)" height="40"></a><div class="brand"><a class="wordmark" href="index.html">G.O.A.T.S.</a><span class="eyebrow">By Semper Admin</span></div><span class="eyebrow">Scenarios</span><a href="how-it-works.html" style="margin-left:auto">How it works</a><a href="currency.html">Currency</a><a href="impact.html">Impact</a><a href="policy-index.html">Library</a><a href="authority-index.html">Authority chains</a><a href="connections.html">Connections</a><a href="verification.html">Verification</a><a href="scenarios.html" aria-current="page">Scenarios</a><a href="about.html">About</a><a href="search.html">Search</a></header><main id="main">
+<h1>Scenarios</h1>
+<p class="lede">Three fixed cases run through the rules encoded from
+MARADMIN 051/23, Expansion of the Marine Corps Military Parental Leave Program. Every line names the paragraph it rests on. A line that rests on a
+value no person has yet confirmed against the issuing authority's copy is
+withheld and says which value. This is a demonstration of cited computation,
+not a calculator and not a determination of anyone's entitlement.</p>
+<p class="note">Rules: 2 of 5 encoded values confirmed by a person; lines resting on the minimum increment, the maximum number of increments, the merge window are withheld. The source paragraph for every value
+is on <a href="policy-MARADMIN-2023-051.html">the message's page</a>; the
+confirmation state of each is on <a href="verification.html#queue">the
+verification queue</a>.</p>
+<p class="note"><strong>One verifier is available.</strong> Since 2026-08-08 a value is admitted on 1 reading rather than the 2 the policy requires. No figure on this page is an entitlement determination, and none reaches a Marine under this deviation.</p>
+<div class="sc" id="birth-no-leave-taken"><h3>A birth, no leave taken yet</h3><p class="narr">A qualifying birth on 1 March 2027. Evaluated on 1 June 2027 with no parental leave used.</p><p class="inputs">Inputs: event date 2027-03-01, as of 2027-06-01, used days 0</p><table><tr><th>Line</th><th>Result</th><th>Rests on</th></tr><tr><td class="item">Days authorized in total</td><td>84</td><td class="cite"><a href="policy-MARADMIN-2023-051.html#p11-d">MARADMIN 051/23, para 11.d</a></td></tr><tr><td class="item">Days remaining</td><td>84 <span class="cite">(84 authorized minus 0 used)</span></td><td class="cite"><a href="policy-MARADMIN-2023-051.html#p11-d">MARADMIN 051/23, para 11.d</a></td></tr><tr><td class="item">Unused leave forfeits after</td><td>2028-02-29 <span class="cite">(unused leave forfeits after this date unless para 8.a.(3) applies - commander determination, not computed here)</span> <span class="cite">Computed as 365 days from the event; the source says one year. <a href="verification.html#findings-forfeiture-window">An open finding</a>.</span></td><td class="cite"><a href="policy-MARADMIN-2023-051.html#p8-c-3">MARADMIN 051/23, para 8.c.(3)</a></td></tr><tr><td class="item">Window</td><td>273 days remain in the entitlement window</td><td class="cite"><a href="policy-MARADMIN-2023-051.html#p8-c-3">MARADMIN 051/23, para 8.c.(3)</a></td></tr></table></div><div class="sc" id="birth-short-increment"><h3>Seventy days used, a five-day block proposed</h3><p class="narr">The same birth. Seventy days already used and a further five-day increment proposed on 1 June 2027.</p><p class="inputs">Inputs: event date 2027-03-01, as of 2027-06-01, used days 70, increments used 2, proposed increment 5</p><table><tr><th>Line</th><th>Result</th><th>Rests on</th></tr><tr><td class="item">Days authorized in total</td><td>84</td><td class="cite"><a href="policy-MARADMIN-2023-051.html#p11-d">MARADMIN 051/23, para 11.d</a></td></tr><tr><td class="item">Days remaining</td><td>14 <span class="cite">(84 authorized minus 70 used)</span></td><td class="cite"><a href="policy-MARADMIN-2023-051.html#p11-d">MARADMIN 051/23, para 11.d</a></td></tr><tr><td class="item">Unused leave forfeits after</td><td>2028-02-29 <span class="cite">(unused leave forfeits after this date unless para 8.a.(3) applies - commander determination, not computed here)</span> <span class="cite">Computed as 365 days from the event; the source says one year. <a href="verification.html#findings-forfeiture-window">An open finding</a>.</span></td><td class="cite"><a href="policy-MARADMIN-2023-051.html#p8-c-3">MARADMIN 051/23, para 8.c.(3)</a></td></tr><tr><td class="item">Window</td><td>273 days remain in the entitlement window</td><td class="cite"><a href="policy-MARADMIN-2023-051.html#p8-c-3">MARADMIN 051/23, para 8.c.(3)</a></td></tr><tr><td class="item">Proposed increment</td><td class="withheld">Withheld. Rests on the minimum increment (confirmed by one, needs a second), the maximum number of increments (confirmed by one, needs a second).</td><td class="cite">would cite <a href="policy-MARADMIN-2023-051.html#p8-a-1-b">MARADMIN 051/23, para 8.a.(1)(b)</a></td></tr></table></div><div class="sc" id="two-events-one-day-apart"><h3>Two qualifying events a day apart</h3><p class="narr">Two qualifying events, 1 and 2 March 2027. Whether they count as one event turns on the merge window.</p><p class="inputs">Inputs: event date 2027-03-01, as of 2027-06-01, second event date 2027-03-02, used days 0</p><table><tr><th>Line</th><th>Result</th><th>Rests on</th></tr><tr><td class="item">Days authorized in total</td><td>84</td><td class="cite"><a href="policy-MARADMIN-2023-051.html#p11-d">MARADMIN 051/23, para 11.d</a></td></tr><tr><td class="item">Days remaining</td><td>84 <span class="cite">(84 authorized minus 0 used)</span></td><td class="cite"><a href="policy-MARADMIN-2023-051.html#p11-d">MARADMIN 051/23, para 11.d</a></td></tr><tr><td class="item">Multiple events</td><td class="withheld">Withheld. Rests on the merge window (confirmed by one, needs a second).</td><td class="cite">would cite <a href="policy-MARADMIN-2023-051.html#p8-b-1">MARADMIN 051/23, para 8.b.(1)</a></td></tr><tr><td class="item">Unused leave forfeits after</td><td class="withheld">Withheld. Rests on the merge window (confirmed by one, needs a second).</td><td class="cite">would cite <a href="policy-MARADMIN-2023-051.html#p8-c-3">MARADMIN 051/23, para 8.c.(3)</a></td></tr><tr><td class="item">Window</td><td class="withheld">Withheld. Rests on the merge window (confirmed by one, needs a second).</td><td class="cite">would cite <a href="policy-MARADMIN-2023-051.html#p8-c-3">MARADMIN 051/23, para 8.c.(3)</a></td></tr></table></div>
+<h2>What the engine refuses, by name</h2>
+<p class="lede">Questions the encoded rules cannot answer are refused with the
+reason, never estimated.</p>
+<ul class="refuse"><li>Convalescent leave - requires a health care provider recommendation and commander approval (para 7.a.(1)(a)); not computable from encoded rules.</li><li>Window extension under para 8.a.(3) - a commander determination against six qualifying conditions; the engine reports the unextended date only.</li><li>Reserve Component forfeiture particulars (para 8.c.(4)) - not yet encoded in rules.json.</li></ul>
+<footer><p>Generated from data/maradmin-051-23.rules.json and the attestation
+ledger by tools/evaluate.py, the same code as the command line. This site is an
+unofficial reference - the issuing authority's copy governs.</p></footer>
+</main></body></html>

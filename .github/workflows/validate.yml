@@ -27,3 +27,7 @@ jobs:
           pip install rdflib
       - name: Validate corpus
         run: python tools/validate.py
+      - name: Run the claims table
+        # tests/claims.json: what the tooling claims about itself, positive
+        # and negative, with the negatives as the gate. Writes nothing.
+        run: python tests/run_claims.py

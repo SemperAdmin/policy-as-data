@@ -38,6 +38,11 @@ Consequence, stated rather than discovered: until the DoD tier of the parental
 leave concept is verified, this tool reports NOT_COMPARABLE and nothing else.
 That is correct.
 
+Failure
+-------
+A rule whose `concept` is not in config/rule_concepts.json is a malformed
+reference. The tool exits 1 and writes nothing. It never drops the rule.
+
 Usage
 -----
     python tools/reconcile.py
@@ -53,6 +58,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from atomicio import write_text  # noqa: E402
 from verify_status import (  # noqa: E402
     DATA, LEDGER, POLICY, VERIFIED, derive, live_rule_assertions, load_ledger,
     load_policy,
@@ -226,6 +232,20 @@ def main() -> int:
     concepts = json.loads(Path(args.concepts).read_text(encoding="utf-8"))["concepts"]
     table, refused = load_units(Path(args.units))
     items = gather(data_dir, status)
+
+    # A concept the register does not know is a malformed reference, and the
+    # earlier version dropped such a rule silently: not in any finding, not in
+    # the unassigned list, gone. That is the failure mode this project forbids,
+    # so it fails the stage before any report is written. ACTION-REGISTER 1.4.
+    known = {c["id"] for c in concepts}
+    unknown = [i for i in items if i.get("concept") and i["concept"] not in known]
+    if unknown:
+        print(f"FAIL: {len(unknown)} rule(s) reference a concept absent from "
+              f"{args.concepts}; nothing written", file=sys.stderr)
+        for i in unknown:
+            print(f"  {i['assertion']}  concept={i['concept']!r}", file=sys.stderr)
+        return 1
+
     findings = reconcile(concepts, items, table, refused)
 
     unassigned = [i for i in items if not i.get("concept")]
@@ -240,8 +260,7 @@ def main() -> int:
     }
 
     if args.out:
-        Path(args.out).write_text(
-            json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        write_text(args.out, json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
         print(f"wrote {args.out}")
     if args.json:
         print(json.dumps(payload, indent=2, ensure_ascii=False))

@@ -1,0 +1,57 @@
+{
+  "$comment": "The site navigation, as data. One copy, read by tools/chrome.py and emitted on every page. A page is listed here only once it exists in docs/; check_site.py fails the build on a dead link. Sources and Feedback left the nav 2026-09-15 to keep it to ten; both are reachable from About and How it works.",
+  "schema_version": "1.0",
+  "established": "2026-09-11",
+  "home": {
+    "label": "G.O.A.T.S.",
+    "href": "index.html",
+    "eyebrow": "By Semper Admin"
+  },
+  "emblem": {
+    "href": "https://semper-admin-portal.app.cloud.gov/",
+    "src": "semper-logo.jpg",
+    "alt": "Semper Admin portal (opens in a new tab)"
+  },
+  "items": [
+    {
+      "label": "How it works",
+      "href": "how-it-works.html"
+    },
+    {
+      "label": "Currency",
+      "href": "currency.html"
+    },
+    {
+      "label": "Impact",
+      "href": "impact.html"
+    },
+    {
+      "label": "Library",
+      "href": "policy-index.html"
+    },
+    {
+      "label": "Authority chains",
+      "href": "authority-index.html"
+    },
+    {
+      "label": "Connections",
+      "href": "connections.html"
+    },
+    {
+      "label": "Verification",
+      "href": "verification.html"
+    },
+    {
+      "label": "Scenarios",
+      "href": "scenarios.html"
+    },
+    {
+      "label": "About",
+      "href": "about.html"
+    },
+    {
+      "label": "Search",
+      "href": "search.html"
+    }
+  ]
+}

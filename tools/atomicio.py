@@ -17,6 +17,24 @@ import os
 import tempfile
 
 
+def _replace(tmp, path, tries=8, wait=0.25):
+    """os.replace with a bounded retry. On Windows a file that another process
+    holds open - a browser serving the site, an indexer, a virus scanner -
+    refuses the rename with EINVAL or EACCES for a moment. Two builds died on
+    docs/verification.html that way on 2026-09-15. A transient lock is not a
+    reason for a build to report failure, so retry briefly; a lock that
+    outlasts two seconds is real and the error is raised unchanged."""
+    import time
+    for attempt in range(tries):
+        try:
+            os.replace(tmp, path)
+            return
+        except OSError as exc:
+            if exc.errno not in (22, 13, 5) or attempt == tries - 1:
+                raise
+            time.sleep(wait)
+
+
 def write_json(path, obj, indent=1):
     """Serialize fully, then swap. Never leave a partial file at `path`."""
     directory = os.path.dirname(os.path.abspath(path)) or "."
@@ -27,7 +45,7 @@ def write_json(path, obj, indent=1):
             json.dump(obj, fh, indent=indent, ensure_ascii=False)
             fh.flush()
             os.fsync(fh.fileno())
-        os.replace(tmp, path)
+        _replace(tmp, path)
     except BaseException:
         # BaseException, not Exception: KeyboardInterrupt is the case this
         # function exists for, and it does not inherit from Exception.
@@ -47,7 +65,7 @@ def write_text(path, text):
             fh.write(text)
             fh.flush()
             os.fsync(fh.fileno())
-        os.replace(tmp, path)
+        _replace(tmp, path)
     except BaseException:
         try:
             os.unlink(tmp)

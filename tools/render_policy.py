@@ -30,8 +30,85 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from atomicio import write_text  # noqa: E402
 from lineage import (build, build_inbound, load_families,      # noqa: E402
                      base_id, revision_letter, change_number)
+from chrome import head, header  # noqa: E402
+import json as _json  # noqa: E402
+
+RECON_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                          "config", "reconciliation.json")
+VERDICT_WORD = {"AGREE": "Agree", "DIVERGE": "Differ", "NOT_HELD": "One tier only",
+                "NOT_COMPARABLE": "Not yet comparable"}
+TIER_WORD = {"T0": "Statute", "T1": "DoD instruction", "T2": "Navy instruction",
+             "T3": "Marine Corps order", "T4": "Manual", "T5": "Marine Corps message"}
+STATE_WORD = {"VERIFIED": "confirmed by a person", "QUORUM_SHORT": "confirmed by one, needs a second",
+              "INVALIDATED": "changed since confirmed", "REJECTED": "read and found wrong",
+              "UNABLE": "source not obtainable", "UNVERIFIED": "not yet read by a person"}
+
+
+def _load_recon():
+    try:
+        with open(RECON_PATH, encoding="utf-8") as fh:
+            return _json.load(fh).get("findings") or []
+    except FileNotFoundError:
+        return []
+
+
+RECON = _load_recon()
+
+
+def _same_doc(a, b):
+    """The hand tier writes 1327.06 and the machine tier 1327_06; the period
+    ruling has not reached the verified tier (SESSION_HANDOFF section 7.2)."""
+    return (a or "").replace(".", "_") == (b or "").replace(".", "_")
+
+
+def reconciliation_section(rec):
+    """The cross-tier comparison rows this document takes part in, from
+    config/reconciliation.json. Verdicts and withholding are the reconcile
+    tool's; this only renders them. ACTION-REGISTER 5.7."""
+    me = rec.get("uslm_identifier") or ""
+    paths = {p["path"] for sec in rec.get("sections") or [] for p in sec.get("provisions") or []}
+    mine = []
+    for f in RECON:
+        rows = f["tiers"] + f["withheld"] + f["not_comparable"]
+        if any(_same_doc(r["assertion"].split("#")[0], me) for r in rows):
+            mine.append((f, rows))
+    if not mine:
+        return []
+    out = ['<h2>Compared with its authority</h2>',
+           '<p class="small">Values this document states, set against the same '
+           'value at the tiers above or below it. A side is compared only after a '
+           'person has read it; an unread side is withheld and the comparison '
+           'refused rather than guessed. <a href="verification.html#cross-tier">'
+           'The full comparison</a>.</p>']
+    for f, rows in mine:
+        cls = ("cited" if f["verdict"] == "AGREE" else "gap" if f["verdict"] == "DIVERGE" else "")
+        out.append(f'<div class="panel"><p><strong>{esc(f["label"])}</strong> '
+                   f'{pill(cls, VERDICT_WORD.get(f["verdict"], f["verdict"]))}</p><table>'
+                   '<tr><th>tier</th><th>states</th><th>paragraph</th></tr>')
+        for r in sorted(rows, key=lambda r: r["tier"]):
+            here = _same_doc(r["assertion"].split("#")[0], me)
+            cid = r.get("citation_identifier") or ""
+            rel = cid.split("#")[0]
+            anchor = None
+            if here:
+                tail = rel[len(rel.split("/p", 1)[0]) + 1:] if "/p" in rel else ""
+                if tail in paths:
+                    anchor = tail.replace("/", "-")
+            label = esc(r.get("citation_label") or "")
+            cite = f'<a href="#{esc(anchor)}">{label}</a>' if anchor else label
+            if "stated" in r:
+                states = esc(r["stated"])
+            else:
+                states = (f'<span class="small">withheld - '
+                          f'{esc(STATE_WORD.get(r.get("verification"), "not yet confirmed"))}</span>')
+            who = TIER_WORD.get(r["tier"], r.get("tier_label", r["tier"]))
+            out.append(f'<tr><td>{esc(who)}{" (this document)" if here else ""}</td>'
+                       f'<td>{states}</td><td>{cite}</td></tr>')
+        out.append('</table></div>')
+    return out
 from render_authority_chain import (BRAND, CSS, TIER_NAME, TIER_OF_TYPE,  # noqa: E402
                                     TIER_ORDER, tier_of, esc, load,
                                     SRC_RX, HOLDS_RX, TIER_RX, FAVICON)
@@ -175,8 +252,11 @@ def authority_section(rec, records, pages, inbound, gaps):
         msgs = [e for e in citers if (records.get(e["src"]) or {}).get("doc_type")
                 in MESSAGE_TYPES]
         others = [e for e in citers if e not in msgs]
-        out.append('<div class="rung"><div class="t">Below &middot; '
-                   f'{len(citers)} document(s) name this one</div>')
+        out.append('<div class="rung" id="impact"><div class="t">If this document reissues &middot; '
+                   f'{len(citers)} document(s) name it and would need review</div>'
+                   '<div class="small">Every one below printed a reference to this document. '
+                   'A change here is a change they inherit. <a href="impact.html">All documents, '
+                   'by how many depend on them</a></div>')
         for e in sorted(citers, key=lambda e: e["src"], reverse=True)[:8]:
             src = SRC_RX.search(e.get("resolution", ""))
             out.append(
@@ -437,16 +517,8 @@ def render_one(rec, records, pages, inbound_t, inbound_b, families, gaps, out_di
     tier = tier_of(did, rec)
     dates = rec.get("dates") or {}
 
-    P = ['<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">',
-         '<meta name="viewport" content="width=device-width,initial-scale=1">',
-         FAVICON,
-         f'<title>{esc(rec.get("title") or did)} - Semper Admin Policy Library</title>',
-         f"<style>{CSS}{EXTRA_CSS}</style></head><body>",
-         '<a class="skip" href="#main">Skip to main content</a>',
-         f'<header class="chrome">{BRAND}<span>Policy</span>'
-         '<a href="policy-index.html" style="margin-left:auto">All policies</a>'
-         '<a href="authority-index.html">Authority chains</a>'
-         '<a href="sources.html">Sources</a></header>',
+    P = [head(rec.get("title") or did, extra_css=EXTRA_CSS),
+         header("Policy", current="policy-index.html"),
          '<main id="main">',
          f'<p class="crumb"><a href="policy-index.html">All policies</a> '
          f'&rsaquo; {esc(tier)} {esc(TIER_NAME.get(tier, tier))}</p>',
@@ -467,6 +539,7 @@ def render_one(rec, records, pages, inbound_t, inbound_b, families, gaps, out_di
     # for. The authority ladder and the lineage are context and follow it.
     P += content_section(rec, records, pages)
     P += authority_section(rec, records, pages, inbound_t, gaps)
+    P += reconciliation_section(rec)
     P += lineage_section(rec, tracks, records, pages)
 
     prov = rec.get("provenance") or {}
@@ -484,8 +557,7 @@ def render_one(rec, records, pages, inbound_t, inbound_b, families, gaps, out_di
              'document. This library is an unofficial reference - the issuing '
              'authority\'s copy governs.</p></footer></main></body></html>')
 
-    with open(os.path.join(out_dir, page_name(did)), "w", encoding="utf-8") as fh:
-        fh.write("\n".join(P))
+    write_text(os.path.join(out_dir, page_name(did)), "\n".join(P))
     return tracks
 
 
@@ -502,15 +574,8 @@ def render_index(records, pages, inbound_t, out_dir, types=None):
                      did, rec, tier, outb, inb, provs))
     rows.sort()
 
-    P = ['<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">',
-         '<meta name="viewport" content="width=device-width,initial-scale=1">',
-         FAVICON,
-         '<title>All policies - Semper Admin Policy Library</title>',
-         f"<style>{CSS}{EXTRA_CSS}</style></head><body>",
-         '<a class="skip" href="#main">Skip to main content</a>',
-         f'<header class="chrome">{BRAND}<span>All policies</span>'
-         '<a href="authority-index.html" style="margin-left:auto">Authority chains</a>'
-         '<a href="sources.html">Sources</a></header>',
+    P = [head("All policies", extra_css=EXTRA_CSS),
+         header("Library", current="policy-index.html"),
          '<main id="main"><h1>All policies</h1>',
          '<p class="lede">Every document in the demonstration set, ordered by '
          'the level that issued it. Each one opens on a single page carrying '
@@ -570,17 +635,8 @@ def render_type_indexes(records, pages, inbound_t, out_dir):
     for doc_type, ids in sorted(groups.items()):
         label = TYPE_LABEL.get(doc_type, doc_type)
         rows = sorted(ids, key=lambda d: (records[d].get("status") != "active", d))
-        P = ['<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">',
-             '<meta name="viewport" content="width=device-width,initial-scale=1">',
-         FAVICON,
-             f'<title>{esc(label)} - Semper Admin Policy Library</title>',
-             f"<style>{CSS}{EXTRA_CSS}</style></head><body>",
-             '<a class="skip" href="#main">Skip to main content</a>',
-             f'<header class="chrome">{BRAND}<span>Documents by type</span>'
-             '<a href="policy-index.html" style="margin-left:auto">All policies</a>'
-             '<a href="authority-index.html">Authority chains</a>'
-             '<a href="connections.html">Connections</a>'
-             '<a href="sources.html">Sources</a></header>',
+        P = [head(label, extra_css=EXTRA_CSS),
+             header("Documents by type", current="policy-index.html"),
              '<main id="main">',
              f'<p class="crumb"><a href="index.html">Home</a> &rsaquo; '
              f'{esc(label)}</p>',

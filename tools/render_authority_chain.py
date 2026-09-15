@@ -19,27 +19,30 @@ Three rules the rendering obeys, all inherited from the store's discipline:
 import argparse
 import html
 import json
+from atomicio import write_text
 import os
 import re
-from datetime import datetime, timezone
 
-# Tab icon, one definition for every page head. The SVG is the icon;
-# the PNG is the fallback for browsers that do not take SVG favicons.
-FAVICON = ('<link rel="icon" href="favicon.svg" type="image/svg+xml">\n'
-           '<link rel="alternate icon" href="favicon.png">')
+from chrome import FAVICON, BRAND, BRAND_CSS, CSS, head, header  # noqa: E402
 
-# The brand block, in one place. Every renderer emits this and nothing emits a
-# wordmark of its own. The rebrand of 2026-08-08 reached the four hand-authored
-# pages and missed all 74 generated ones, because the wordmark was a literal in
-# four separate files. Same defect shape as the quorum rule: decide it once.
-BRAND = ('<div class="brand">'
-         '<a class="wordmark" href="index.html">G.O.A.T.S.</a>'
-         '<span class="eyebrow">By Semper Admin</span></div>')
 
-# Companion CSS. index.html carries these two rules inline; generated pages
-# need them too or the wordmark and eyebrow sit side by side.
-BRAND_CSS = ('.brand{display:flex;flex-direction:column;align-items:flex-start}'
-             '.brand .eyebrow{margin-top:2px}')
+def _recon_docs():
+    """Document identifiers that take part in a cross-tier comparison."""
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "config", "reconciliation.json")
+    try:
+        with open(path, encoding="utf-8") as fh:
+            findings = json.load(fh).get("findings") or []
+    except FileNotFoundError:
+        return {}
+    out = {}
+    for f in findings:
+        for r in f["tiers"] + f["withheld"] + f["not_comparable"]:
+            out.setdefault(r["assertion"].split("#")[0].replace(".", "_"), set()).add(f["label"])
+    return out
+
+
+RECON_DOCS = _recon_docs()
 
 
 TIER_ORDER = ["T0", "T1", "T2", "T3", "T4", "T5"]
@@ -66,6 +69,36 @@ TIER_OF_TYPE = {
 TIER_RX = re.compile(r"tier=(T[0-9X])")
 SRC_RX = re.compile(r"^([^;]+);")
 HOLDS_RX = re.compile(r"store-holds=([^;]+)")
+
+
+def cite_words(src: str) -> str:
+    """The place a citation was read from, in words. The machine form
+    (front-matter:ref/f, narr:REF D, p-5-3:ref/c) stays in the title attribute
+    so nothing is lost; the page says where a reader would look."""
+    src = (src or "").strip()
+    m = re.match(r"^front-matter:ref(2?)/(\w+)$", src)
+    if m:
+        which = "second reference list" if m.group(1) else "reference list"
+        return f"reference ({m.group(2)}) in the {which}"
+    m = re.match(r"^narr:REF\s+(\w+)$", src)
+    if m:
+        return f"reference {m.group(1)} in the message"
+    m = re.match(r"^ref-line:REF\s+(\w+)$", src)
+    if m:
+        return f"reference {m.group(1)} on the reference line"
+    m = re.match(r"^p-([\d-]+):ref(2?)/(\w+)$", src)
+    if m:
+        sec = m.group(1).replace("-", ".")
+        return f"reference ({m.group(3)}) in section {sec}"
+    if src == "front-matter":
+        return "the front matter"
+    if src == "exact":
+        return "an exact citation in the text"
+    return src
+
+
+def cite_html(src: str) -> str:
+    return f"<span title=\"{esc(src)}\">{esc(cite_words(src))}</span>"
 
 
 def tier_of(doc_id, record=None):
@@ -123,88 +156,6 @@ def walk(records, seed, max_hops=6):
     return nodes, edges
 
 
-CSS = """
-:root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
---blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
---brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
---bg:#0A1424;--elev:#11203F;--sunken:#060E1A;--fg:#F2E5BE;--card:#11203F;
---muted:#182A4D;--mutedfg:#B5A988;--border:#233A5C;--borders:#34507A;
---n950:#0F0C09;--rad:8px;color-scheme:dark}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);
-font:400 15px/1.6 "Inter Variable",Inter,system-ui,sans-serif}
-a{color:var(--blue1)}a:hover{color:var(--brass3)}
-:focus-visible{outline:3px solid var(--brass3);outline-offset:2px}
-.skip{position:absolute;left:-9999px}
-.skip:focus{position:static;display:inline-block;padding:8px;
-background:var(--brass3);color:var(--n950)}
-header.chrome,main,footer{max-width:64rem;margin:0 auto;padding:16px 24px}
-header.chrome{margin-top:16px;border-radius:12px;border:1px solid var(--border);
-background:var(--elev);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
-.brand{display:flex;flex-direction:column;align-items:flex-start}
-.brand .eyebrow{margin-top:2px}
-.wordmark{font:400 28px/1.2 "Bebas Neue",Oswald,system-ui,sans-serif;
-letter-spacing:.04em;color:var(--parch3);text-decoration:none;text-transform:uppercase}
-h1{font:700 28px/1.2 inherit;margin:32px 0 8px}
-h2{font:700 20px/1.2 inherit;border-bottom:1px solid var(--borders);
-padding-bottom:8px;margin-top:40px}
-.lede{color:var(--mutedfg);max-width:52rem}
-.tier{border:1px solid var(--border);border-radius:12px;background:var(--card);
-margin:0 0 4px;padding:16px 20px}
-.tier.gap{background:repeating-linear-gradient(135deg,var(--sunken),
-var(--sunken) 10px,#0b1830 10px,#0b1830 20px);border-style:dashed;
-border-color:var(--aging)}
-.tierhead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
-font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.09em;
-color:var(--mutedfg);margin-bottom:10px}
-.tiercode{color:var(--brass3);font-weight:700}
-.doc{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--muted)}
-.doc:first-of-type{border-top:0;padding-top:0}
-.docid{font:600 14px/1.4 "JetBrains Mono",Menlo,monospace;color:var(--parch3)}
-.doctitle{color:var(--fg)}
-.uslm{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
-word-break:break-all}
-.why{font-size:13px;color:var(--mutedfg);margin-top:4px}
-.pill{display:inline-block;padding:2px 9px;border-radius:9999px;
-font:700 11px/1.6 inherit;border:1px solid var(--borders);
-background:var(--muted);color:var(--parch3);white-space:nowrap}
-.pill.cited{border-color:var(--fresh);color:#9fe0bd}
-.pill.drift{border-color:var(--aging);color:#f0c489}
-.pill.gap{border-color:var(--stale);color:#f3a3a3}
-.pill.held{border-color:var(--blue1);color:#bcd7f2}
-.pill.cancelled,.pill.superseded{background:var(--stale);border-color:var(--stale);
-color:#fff}
-.arrow{text-align:center;color:var(--brass);font:700 13px/1 inherit;
-padding:6px 0;letter-spacing:.08em}
-.arrow span{background:var(--bg);padding:0 10px}
-.arrow{position:relative}
-.arrow:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
-background:var(--brass);z-index:-1}
-table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
-th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--muted);
-vertical-align:top}
-th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;
-letter-spacing:.08em}
-code{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
-footer{border-top:1px solid var(--border);margin-top:48px;font-size:13px;
-color:var(--mutedfg)}
-/* Small screens: the chrome stacks - wordmark row, page label, then nav links
-   as wrapping pill targets (the inline margin-left:auto that right-aligns the
-   first link on desktop needs the !important to release). Wide tables scroll
-   in place instead of stretching the page, and long identifiers break. */
-@media (max-width:640px){
-header.chrome{align-items:center;column-gap:12px;row-gap:8px;padding:12px 16px}
-.wordmark{font-size:22px}
-header.chrome span{flex-basis:100%;order:2;font:700 11px/1 inherit;
-text-transform:uppercase;letter-spacing:.08em;color:var(--mutedfg)}
-header.chrome a:not(.wordmark){order:3;margin-left:0!important;
-font:600 13px/1.1 inherit;padding:8px 12px;border:1px solid var(--borders);
-border-radius:9999px;background:var(--muted);color:var(--parch3);
-text-decoration:none}
-table{display:block;overflow-x:auto}
-code,h3{overflow-wrap:anywhere}
-}
-"""
 
 
 # Contact masking, same definition the export tier uses, so the rendered site
@@ -316,15 +267,9 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
     for e in edges:
         inbound.setdefault(e["dst"], []).append(e)
 
-    stamp = datetime.now(timezone.utc).date().isoformat()
     P = [
-        "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\">",
-        "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">",
-        FAVICON,
-        f"<title>{esc(title)} - Semper Admin Policy Library</title>",
-        f"<style>{CSS}</style></head><body>",
-        "<a class=\"skip\" href=\"#main\">Skip to main content</a>",
-        f"<header class=\"chrome\">{BRAND}<span>Authority chain</span></header>",
+        head(title),
+        header("Authority chain", current="authority-index.html"),
         "<main id=\"main\">",
         f"<h1>{esc(title)}</h1>",
         f"<p class=\"lede\">{esc(subtitle)}</p>",
@@ -348,7 +293,7 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
                 shown_gaps.add(skipped)
                 P.append("<div class=\"arrow\"><span>implemented by</span></div>")
                 P.append(
-                    f"<div class=\"tier gap\"><div class=\"tierhead\">"
+                    f"<div class=\"tier gap\" id=\"gap-{skipped}\"><div class=\"tierhead\">"
                     f"<span class=\"tiercode\">{skipped}</span>"
                     f"<span>{esc(TIER_NAME[skipped])}</span>"
                     f"<span class=\"pill gap\">tier not held</span></div>"
@@ -357,7 +302,7 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
             label = "supersedes" if m and m.get("rel") == "superseded_by" else "implemented by"
             P.append(f"<div class=\"arrow\"><span>{esc(label)}</span></div>")
 
-        P.append(f"<div class=\"tier\"><div class=\"tierhead\">"
+        P.append(f"<div class=\"tier\" id=\"{esc(did)}\"><div class=\"tierhead\">"
                  f"<span class=\"tiercode\">{tier}</span>"
                  f"<span>{esc(TIER_NAME.get(tier, tier))}</span></div>")
         P.append("<div class=\"doc\">")
@@ -376,8 +321,8 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
                     extra = (" <span class=\"pill drift\">revision drift</span> "
                              f"store holds <code>{esc(holds.group(1) if holds else '')}</code>")
                 P.append(
-                    f"<p class=\"why\"><code>{esc(walk_up[i + 1])}</code> names it at "
-                    f"<code>{esc(src.group(1) if src else '')}</code> "
+                    f"<p class=\"why\"><code>{esc(walk_up[i + 1])}</code> names it"
+                    f"{', ' + cite_html(src.group(1)) + ' ' if src and src.group(1).strip() else ' '}"
                     f"<span class=\"pill cited\">{esc(m.get('basis', 'cited'))}</span>"
                     f"{extra}</p>")
         breadth = sorted(inbound.get(did, []), key=lambda e: e["src"])
@@ -387,7 +332,7 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
                      f"{'The 1 reference' if len(outbound) == 1 else f'All {len(outbound)} references'}"
                      f" this document names</summary><table><tr><th>target</th>"
                      f"<th>tier</th><th>relation</th><th>basis</th>"
-                     f"<th>from paragraph</th><th>note</th></tr>")
+                     f"<th>read from</th><th>note</th></tr>")
             for e in sorted(outbound, key=lambda e: (e["tier"], e["dst"])):
                 src = SRC_RX.search(e["resolution"])
                 holds = HOLDS_RX.search(e["resolution"])
@@ -402,7 +347,7 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
                 P.append(f"<tr><td><code>{esc(e['dst'])}</code></td>"
                          f"<td>{esc(e['tier'])}</td><td>{esc(e['rel'])}</td>"
                          f"<td><span class=\"pill cited\">{esc(e['basis'])}</span></td>"
-                         f"<td><code>{esc(src.group(1) if src else '')}</code></td>"
+                         f"<td>{cite_html(src.group(1) if src else '')}</td>"
                          f"<td>{note}</td></tr>")
             P.append("</table></details>")
         P.append("</div></div>")
@@ -410,6 +355,17 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
     held = sum(1 for e in edges if e["confidence"] == "high")
     drift = sum(1 for e in edges if e["confidence"] == "revision-drift")
     gap_n = sum(1 for e in edges if e["confidence"] == "named-not-held")
+    compared = [d for d in chain
+                if (records.get(d) or {}).get("uslm_identifier", "").replace(".", "_") in RECON_DOCS]
+    if compared:
+        labels = sorted({l for d in compared
+                         for l in RECON_DOCS[records[d]["uslm_identifier"].replace(".", "_")]})
+        P.append("<h2>Compared across tiers</h2><p class=\"lede\">Values stated on "
+                 "this chain that have been set against the same value at another "
+                 "tier: " + "; ".join(esc(l) for l in labels) + ". Each is compared "
+                 "only after a person has read both sides. "
+                 "<a href=\"verification.html#cross-tier\">The comparison</a>, and the "
+                 "panel on each document's page.</p>")
     P.append("<h2>How to read this page</h2><p class=\"lede\">Every step states "
              "the paragraph the citation came from and whether the link is cited "
              "or inferred. Every link here is <strong>cited</strong>: it exists "
@@ -418,7 +374,7 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
              "reason, never as a closed link. A citation naming a superseded "
              "edition prints as revision drift, showing the edition named and the "
              "edition held, and is never silently upgraded to the current one.</p>")
-    P.append(f"<footer><p>Generated {stamp} from the canonical store. Chain of "
+    P.append(f"<footer><p>Generated from the canonical store. Chain of "
              f"{len(chain)} documents across {len({tier_of(d, records.get(d)) for d in chain})} "
              f"tiers, drawn from {len(edges)} cited edges "
              f"({held} resolving in store, {drift} revision drift, {gap_n} named "
@@ -428,8 +384,7 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
              f"only, section text not ingested.</p></footer>")
     P.append("</main></body></html>")
 
-    with open(out_path, "w", encoding="utf-8") as fh:
-        fh.write("\n".join(P))
+    write_text(out_path, "\n".join(P))
     return nodes, edges, chain
 
 
@@ -445,15 +400,9 @@ padding:8px 4px;overflow-x:auto}
 
 def render_index(results, out_path):
     """Landing page: which tiers each spine actually holds."""
-    stamp = datetime.now(timezone.utc).date().isoformat()
     P = [
-        "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"utf-8\">",
-        "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">",
-        FAVICON,
-        "<title>Authority chains - Semper Admin Policy Library</title>",
-        f"<style>{CSS}{INDEX_CSS_EXTRA}</style></head><body>",
-        "<a class=\"skip\" href=\"#main\">Skip to main content</a>",
-        f"<header class=\"chrome\">{BRAND}<span>Authority chains</span></header>",
+        head("Authority chains", extra_css=INDEX_CSS_EXTRA),
+        header("Authority chains", current="authority-index.html"),
         "<main id=\"main\"><h1>Authority chains</h1>",
         "<p class=\"lede\">Five policy spines, each traced from the message a "
         "Marine reads up to the authority it rests on. The grid states what each "
@@ -506,15 +455,14 @@ def render_index(results, out_path):
              "as a stated gap with its reason. A citation naming a superseded "
              "edition prints as revision drift, showing the edition named and the "
              "edition held, and is never silently upgraded.</p>")
-    P.append(f"<footer><p>Generated {stamp} from the canonical store. "
+    P.append(f"<footer><p>Generated from the canonical store. "
              f"{len(results)} spines, {total_edges} cited edges, {total_drift} of "
              f"them naming an edition the store no longer holds as current. "
              f"Records are UNVERIFIED machine extractions unless promoted. "
              f"Statute and Department of Defense records are metadata-grade: "
              f"identity, dates, supersession, and reference lists only, section "
              f"text not ingested.</p></footer></main></body></html>")
-    with open(out_path, "w", encoding="utf-8") as fh:
-        fh.write("\n".join(P))
+    write_text(out_path, "\n".join(P))
 
 
 def main():
