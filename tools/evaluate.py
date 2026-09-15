@@ -74,31 +74,22 @@ def d(s: str) -> date:
     return datetime.strptime(s, "%Y-%m-%d").date()
 
 
-def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--rules", default=str(RULES_DEFAULT))
-    ap.add_argument("--ledger", default=str(LEDGER))
-    ap.add_argument("--policy", default=str(POLICY))
-    ap.add_argument("--event-date", required=True, help="qualifying event date, YYYY-MM-DD")
-    ap.add_argument("--second-event-date", help="second qualifying event date, if any")
-    ap.add_argument("--used-days", type=int, default=0,
-                    help="parental leave days already used")
-    ap.add_argument("--increments-used", type=int, default=0)
-    ap.add_argument("--proposed-increment", type=int,
-                    help="length in days of a proposed leave increment")
-    ap.add_argument("--as-of", help="evaluation date, default today")
-    ap.add_argument("--json", action="store_true")
-    args = ap.parse_args()
-
-    rules, source, deviation = load_rules(Path(args.rules), Path(args.ledger), Path(args.policy))
+def evaluate(rules, source, deviation, *, event_date, as_of=None, second_event_date=None,
+             used_days=0, increments_used=0, proposed_increment=None) -> dict:
+    """The decision, as data. Every line cites; every line resting on a rule
+    the ledger has not admitted is withheld and names the rule. Callable
+    in-process by docs/scenarios.html's renderer so the page and the CLI
+    are one implementation, not two."""
+    scenario = {"event_date": event_date, "as_of": as_of, "second_event_date": second_event_date,
+                "used_days": used_days, "increments_used": increments_used,
+                "proposed_increment": proposed_increment}
     MAX = rules["MAX_PARENTAL_LEAVE_DAYS"]
     WINDOW = rules["ENTITLEMENT_WINDOW_DAYS"]
     MININC = rules["MIN_INCREMENT_DAYS"]
     MAXINC = rules["MAX_INCREMENTS"]
     MERGE = rules["EVENT_PROXIMITY_MERGE_HOURS"]
-
-    event = d(args.event_date)
-    as_of = d(args.as_of) if args.as_of else date.today()
+    event = d(event_date)
+    as_of = d(as_of) if as_of else date.today()
     findings, withheld, refusals = [], [], []
 
     def admitted(*deps) -> bool:
@@ -125,8 +116,8 @@ def main() -> int:
     # merge rule is unadmitted the forfeiture line is withheld as well.
     governing_event = event
     merge_deps = ()
-    if args.second_event_date:
-        e2 = d(args.second_event_date)
+    if second_event_date:
+        e2 = d(second_event_date)
         gap_hours = abs((e2 - event).days) * 24
         merge_deps = (MERGE,)
         if admitted(MERGE) and gap_hours <= MERGE["value"]:
@@ -143,9 +134,9 @@ def main() -> int:
 
     add("authorized_total_days", MAX["value"], MAX)
     if admitted(MAX):
-        remaining = max(0, MAX["value"] - args.used_days)
+        remaining = max(0, MAX["value"] - used_days)
         add("remaining_days", remaining, MAX,
-            f"{MAX['value']} authorized minus {args.used_days} used")
+            f"{MAX['value']} authorized minus {used_days} used")
     else:
         add("remaining_days", None, MAX)
 
@@ -165,17 +156,17 @@ def main() -> int:
         add("forfeiture_date", None, WINDOW, also=merge_deps)
         add("window_status", None, WINDOW, also=merge_deps)
 
-    if args.proposed_increment is not None:
+    if proposed_increment is not None:
         if not admitted(MININC, MAXINC):
             add("proposed_increment", None, MININC, also=(MAXINC,))
-        elif args.proposed_increment < MININC["value"]:
-            add("proposed_increment", f"INVALID - {args.proposed_increment} days "
+        elif proposed_increment < MININC["value"]:
+            add("proposed_increment", f"INVALID - {proposed_increment} days "
                 f"is under the {MININC['value']}-day minimum", MININC)
-        elif args.increments_used >= MAXINC["value"]:
+        elif increments_used >= MAXINC["value"]:
             add("proposed_increment", f"INVALID - {MAXINC['value']}-increment "
                 "maximum already reached", MAXINC)
         else:
-            add("proposed_increment", f"valid - increment {args.increments_used + 1} "
+            add("proposed_increment", f"valid - increment {increments_used + 1} "
                 f"of at most {MAXINC['value']}", MININC, also=(MAXINC,))
 
     refusals.append("Convalescent leave - requires a health care provider "
@@ -189,7 +180,7 @@ def main() -> int:
 
     status = {rid: r["verification"] for rid, r in rules.items()}
     unadmitted = sorted(rid for rid, st in status.items() if st != VERIFIED)
-    result = {"source": source, "scenario": vars(args),
+    result = {"source": source, "scenario": scenario,
               "decision": findings, "withheld": withheld,
               "out_of_scope": refusals,
               "verification": {"by_rule": status,
@@ -197,6 +188,33 @@ def main() -> int:
                                "summary": ("all rules VERIFIED in the ledger" if not unadmitted
                                            else f"{len(unadmitted)} rule(s) not admitted; "
                                                 f"lines depending on them withheld: {unadmitted}")}}
+
+    return result
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--rules", default=str(RULES_DEFAULT))
+    ap.add_argument("--ledger", default=str(LEDGER))
+    ap.add_argument("--policy", default=str(POLICY))
+    ap.add_argument("--event-date", required=True, help="qualifying event date, YYYY-MM-DD")
+    ap.add_argument("--second-event-date", help="second qualifying event date, if any")
+    ap.add_argument("--used-days", type=int, default=0,
+                    help="parental leave days already used")
+    ap.add_argument("--increments-used", type=int, default=0)
+    ap.add_argument("--proposed-increment", type=int,
+                    help="length in days of a proposed leave increment")
+    ap.add_argument("--as-of", help="evaluation date, default today")
+    ap.add_argument("--json", action="store_true")
+    args = ap.parse_args()
+
+    rules, source, deviation = load_rules(Path(args.rules), Path(args.ledger), Path(args.policy))
+
+    result = evaluate(rules, source, deviation, event_date=args.event_date, as_of=args.as_of,
+                      second_event_date=args.second_event_date, used_days=args.used_days,
+                      increments_used=args.increments_used,
+                      proposed_increment=args.proposed_increment)
+    findings, withheld, refusals = result["decision"], result["withheld"], result["out_of_scope"]
 
     if args.json:
         print(json.dumps(result, indent=2, default=str))

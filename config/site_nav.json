@@ -1,5 +1,5 @@
 {
-  "$comment": "The site navigation, as data. One copy, read by tools/chrome.py and emitted on every page. A page is listed here only once it exists in docs/; check_site.py fails the build on a dead link. Scenarios and About join this list when their pages land (ACTION-REGISTER 5.6, 5.9).",
+  "$comment": "The site navigation, as data. One copy, read by tools/chrome.py and emitted on every page. A page is listed here only once it exists in docs/; check_site.py fails the build on a dead link.",
   "schema_version": "1.0",
   "established": "2026-09-11",
   "home": {
@@ -32,6 +32,10 @@
     {
       "label": "Verification",
       "href": "verification.html"
+    },
+    {
+      "label": "Scenarios",
+      "href": "scenarios.html"
     },
     {
       "label": "Sources",
