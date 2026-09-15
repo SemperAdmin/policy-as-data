@@ -79,6 +79,69 @@ version-history signals, each row naming which signal produced it), and **what
 it says** (full text, with reference-list entries rendered as links to the
 policy they name).
 
+### Addendum, 2026-09-15 - the site restructured for a decision-maker
+
+Measured after `./build.sh` on 2026-09-15, end of day: 83 pages, 777 files
+byte-identical across two builds, 0 dead links, 0 orphans, claims table 22 of
+22, every page on one header. Track 6 in `ACTION-REGISTER.md` is the demo
+path and `CONCEPT.md` is why. Since the morning measurement:
+
+- **The site opens on the question people asked.** `currency.html`: four
+  documents in force cite an instruction this set holds as cancelled or
+  superseded, each with the paragraph that cites it; 85 references name a
+  superseded edition, the held edition beside each; 220 name something not
+  held, stated as unknown. `impact.html`: every named document, sorted by how
+  many depend on it. Every policy page frames its citers as what a reissue
+  would touch.
+- **The same measurement at scale.** `extract_authority.py --report-only`
+  over the 17,514-document store on E, read-only, 169 seconds: 887 documents
+  in force cite an instruction the corpus holds as cancelled, 5,169 of
+  21,198 references name a superseded edition, 7 quarantined records never
+  read. `config/scale_report.json`, `docs/scale.html`, and the home page.
+  The run is not a build stage; a fresh clone has no full corpus.
+- **The exporter no longer multiplies a store defect.** 585 of 20,178
+  provisions carry a path repeated within their section (parser, item 6.12);
+  the exporter nested by path and emitted children once per repeat. Fixed to
+  emit each provision once; claim C13 holds the count per document.
+- **Every write goes through `atomicio`**, with a bounded retry for a
+  transient Windows lock. Two builds had died on `verification.html` while a
+  browser served the site.
+- **The MOS pages take the chrome** as fragments; generating the lineage
+  page from the manifest is the open half of 5.10.
+
+The site now leads with what the encoding found rather than with the
+programme name. `SITE-PLAN.md` is the plan, adopted; `ACTION-REGISTER.md`
+Track 5 is the ledger. What changed on the site:
+
+- **Home** asks "does the order say what its authority says?", states three
+  findings computed from the build (85 of 362 references naming a superseded
+  edition; four current orders citing an instruction no longer in force; the
+  forfeiture-window error), then walks the parental-leave thread in seven
+  linked steps. Every number is a placeholder filled by `render_pages.py`.
+- **One chrome** from `tools/chrome.py` and `config/site_nav.json`; 78 of
+  80 pages on it. The two MOS hand pages wait on item 5.10 (fold).
+- **Five hand pages became fragments** in `site/`, rendered by stage 19.
+- **New pages:** `scenarios.html` (the evaluator on three fixed inputs,
+  stage 18) and `about.html` (what this is not, terms, posture).
+- **Reader words everywhere.** No `QUORUM_SHORT` or `NOT_COMPARABLE` on a
+  page; the code stays in the data and the legend. Maintainer material sits
+  behind disclosures. Spine pages say where a citation was read from in words.
+- **Comparison panels** on the policy pages that take part and a pointer on
+  the leave spine (item 1.5 closed by 5.7).
+- **Findings** from `verification/findings-*.md` render on the verification
+  page through `tools/mdlite.py`.
+- **The evaluator reads the ledger** and withholds what it has not admitted
+  (5.4). `evaluate()` is a function the CLI wraps.
+
+Two defects found and registered, one fixed: the build read the clock at
+six sites (fixed, section 10); exported identifiers are not unique within a
+document (open, section 9, item 5.13).
+
+Two owner decisions the brief still needs, neither engineering: the emblem
+on an unofficial site (`NOTICE` section 4), and the DoD forms feedback link.
+And item 2.7: attest the five MARADMIN 051/23 values, so the scenarios page
+and four of five comparisons stop being withheld. An afternoon, no code.
+
 ### The five spines
 
 | spine | seed | tiers reached | edges |
@@ -183,14 +246,20 @@ real source paragraph containing the target's number, does every edge resolve
 as marked, is every edge cited rather than inferred.
 
 **Prove idempotency by hashing, not by counts.** Counts matched for weeks while
-the corpus changed underneath them.
+the corpus changed underneath them. Hash every output, not only the store:
+hashing `canonical/` alone missed a clock stamp in `config/` for five weeks
+(section 10, clock stamps).
 
 ```
-find canonical -name '*.json' | sort | xargs md5sum > /tmp/a
+find docs canonical data/exports config -type f | sort | xargs md5sum > /tmp/a
 ./build.sh
-find canonical -name '*.json' | sort | xargs md5sum > /tmp/b
+find docs canonical data/exports config -type f | sort | xargs md5sum > /tmp/b
 cmp /tmp/a /tmp/b
 ```
+
+On Windows, `python3` may resolve to the Microsoft Store stub. Put a shim
+named `python3` that execs `python` ahead of it on `PATH` before running
+`build.sh`.
 
 ### Opening the site
 
@@ -298,6 +367,18 @@ Windows git, not through a Linux view.
 **Page weight.** `policy-NAVMC-1200.1L.html` is 3.5 MB - a 975-page manual with
 13,595 addressable paragraphs. The text sits inside a collapsed disclosure so
 nothing draws until asked. It is heavy on a phone.
+
+**Provision paths collide inside the store, found 2026-09-15.** 585 of
+20,178 provisions across 15 documents carry a path already used in the same
+section; MCO 1610.7B has 242, MCO 1400.31D 122. A repeated marker under a
+repeated heading gets the same path, so the identifier collides. The exporter
+used to multiply the defect by nesting children by path (MCO 1400.31D exported
+3,932 elements for 378 provisions); that is fixed and each provision now
+exports exactly once. The collision itself is a parser defect,
+`ACTION-REGISTER.md` 6.12, and fixing it changes machine-tier identifiers.
+The XSD does not require uniqueness, so "ALL VALID" says nothing about it.
+Stated on the site as a known limit; do not offer the exports to a consumer
+before it is fixed.
 
 **Two round-trip weld artifacts.** MCO 1050.3J `p-1-4` and NAVMC 1200.1L
 `p-3-36` carry a paragraph whose text spans a page break, so it does not appear
@@ -452,6 +533,28 @@ changing what it should not.
 None changed a published fact. All three made the build dishonest about what it
 had done, which is the more expensive kind of defect here, because the whole
 claim of this project is that its provenance can be trusted.
+
+### Clock stamps, fixed 2026-09-11
+
+- **The build was idempotent within a day only.** Six sites read the clock:
+  the corrections date written by `normalize_identifiers.py`,
+  `backfill_subjects.py`, and `reparse_provisions.py`; the conversion note
+  and the `generated_at` field written by `extract_authority.py`; DCAT
+  `issued` and `modified` in `emit_dcat.py`; and the "Generated <date>"
+  footer on every spine page. Hashing `canonical/` across two same-day runs,
+  as section 6 advised, could not see it. Hashing `docs/`, `data/exports/`,
+  and `config/` across two runs found `authority_report.json` differing by a
+  microsecond stamp, and a rebuild on a later day re-dated a correction made
+  on 2026-08-04 to that day in every record, every export, and every policy
+  page's provenance list. Same class as the eleven top-tier records fixed
+  2026-08-04. Fix: each tool carries a literal date for the change it makes,
+  bumped by hand when the change changes, per the `ENTERED` precedent;
+  `generated_at` is gone, because a report that is a pure function of its
+  inputs needs no clock; DCAT `issued` is the literal first-publication date
+  and `modified` is the newest correction date in the corpus; footers say
+  "Generated from the canonical store" with no date. **770 files
+  byte-identical across two builds**, and exports identical to what was
+  committed before the fix. The trap: hash every output, not the store.
 
 ### Cross-tier, fixed 2026-08-08
 

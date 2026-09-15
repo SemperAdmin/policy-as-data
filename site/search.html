@@ -1,0 +1,110 @@
+<h1>Search the policy library</h1>
+<p>Full-text search across every published document. Multiple words narrow
+the results (all words must appear). Policy numbers work - try 5215.1k or
+parental leave.</p>
+<form id="sf" role="search" onsubmit="return false">
+  <label for="q" style="font-weight:700">Search terms</label><br>
+  <input id="q" type="search" autocomplete="off" style="width:60%;max-width:28rem;
+    padding:8px 12px;font:inherit;background:var(--sunken);
+    color:var(--fg);border:1px solid var(--borders);
+    border-radius:6px" >
+  <button id="go" style="padding:8px 16px;font:inherit;font-weight:700;
+    background:var(--scarlet);color:var(--parch3);
+    border:none;border-radius:6px;cursor:pointer">Search</button>
+</form>
+<p id="count" role="status" aria-live="polite"></p>
+<ol id="results"></ol>
+<noscript><p>Search requires JavaScript - the only page on this site that
+does. Browse the type indexes from the home page instead.</p></noscript>
+<script>
+(function () {
+  "use strict";
+  var docs = null, shardCache = {};
+  var STOP = new Set(("a an and are as at be by for from has have in is it its "
+    + "of on or that the this to was were will with shall may not any all such under per").split(" "));
+  function tokenize(s) {
+    var out = [], m, rx = /[a-z0-9][a-z0-9.\-\/]{1,29}/g;
+    s = s.toLowerCase();
+    while ((m = rx.exec(s))) {
+      var t = m[0].replace(/^[.\-\/]+|[.\-\/]+$/g, "");
+      if (t.length >= 2 && !STOP.has(t)) out.push(t);
+    }
+    return out;
+  }
+  function getJSON(url) {
+    // A rejected fetch here used to leave the page on "Searching…" forever.
+    // Browsers refuse fetch() for file: URLs, so opening this folder directly
+    // breaks search and nothing else - and the old code reported that by
+    // hanging, which reads as a broken site rather than a missing server.
+    return fetch(url).then(function (r) { return r.ok ? r.json() : {}; })
+      .catch(function (e) {
+        var offline = location.protocol === "file:";
+        var c = document.getElementById("count");
+        if (c) {
+          c.textContent = offline
+            ? "Search needs this folder served over HTTP. Everything else on "
+              + "this site works offline. Run: python -m http.server 8000 "
+              + "in this folder, then open http://localhost:8000/search.html"
+            : "The search index could not be loaded (" + url + ").";
+        }
+        throw e;
+      });
+  }
+  function shardFor(term) {
+    var p = term.slice(0, 2).replace(/[^a-z0-9]/g, "_");
+    if (shardCache[p]) return Promise.resolve(shardCache[p]);
+    return getJSON("search/t/" + p + ".json").then(function (j) {
+      shardCache[p] = j; return j;
+    });
+  }
+  function run() {
+    var terms = tokenize(document.getElementById("q").value);
+    var count = document.getElementById("count");
+    var list = document.getElementById("results");
+    list.innerHTML = "";
+    if (!terms.length) { count.textContent = "Enter a search term."; return; }
+    count.textContent = "Searching…";
+    var docsP = docs ? Promise.resolve(docs)
+                     : getJSON("search/docs.json").then(function (d) { docs = d; return d; });
+    Promise.all([docsP].concat(terms.map(shardFor))).then(function (all) {
+      var d = all[0], scores = null;
+      terms.forEach(function (term, i) {
+        var plist = all[i + 1][term];
+        var cur = {};
+        if (plist) plist.split(",").forEach(function (e) {
+          var kv = e.split(":"); cur[kv[0]] = parseInt(kv[1], 10);
+        });
+        if (scores === null) { scores = cur; }
+        else {
+          var next = {};
+          Object.keys(scores).forEach(function (k) {
+            if (k in cur) next[k] = scores[k] + cur[k];
+          });
+          scores = next;
+        }
+      });
+      var hits = Object.keys(scores || {}).map(function (k) {
+        return [parseInt(k, 10), scores[k]];
+      }).sort(function (a, b) { return b[1] - a[1]; }).slice(0, 100);
+      count.textContent = hits.length
+        ? hits.length + " result" + (hits.length === 1 ? "" : "s")
+          + (hits.length === 100 ? " (top 100 shown)" : "")
+        : "No documents contain all of those terms.";
+      hits.forEach(function (h) {
+        var doc = d[h[0]];
+        var li = document.createElement("li");
+        var a = document.createElement("a");
+        a.href = "policy-" + doc.id + ".html";
+        a.textContent = doc.id;
+        li.appendChild(a);
+        li.appendChild(document.createTextNode(" - " + doc.t + " (" + doc.y + ", " + doc.s + ")"));
+        list.appendChild(li);
+      });
+    });
+  }
+  document.getElementById("go").addEventListener("click", run);
+  document.getElementById("q").addEventListener("keydown", function (e) {
+    if (e.key === "Enter") { e.preventDefault(); run(); }
+  });
+})();
+</script>

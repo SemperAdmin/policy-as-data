@@ -479,36 +479,6 @@
     </provision>
     <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
       <text>Medical basis for PPFT/PCFT</text>
-      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
-        <text>Physical Fitness Test, Combat Fitness Test, Partial Physical Fitness Test, Partial Combat Fitness Test (PFT/CFT/PPFT/PCFT).  FFI or CPTR monitors will ensure the timely submission of final PFT/CFT/PPFT/PCFT Performance Worksheets in accordance with reference (d) and locally established administrative procedures.  Only a command approved, FFI or CPTR monitored PFT/CFT/PPFT/PCFT satisfies the annual requirement.  Only a command approved, FFI or CPTR monitored PFT/CFT/PPFT/PCFT will be recorded as an entry in MCTIMS, Marine Corps Total Force System (MCTFS), MOL, or as an item 8b/c of Section A entry on NAVMC 10835 “USMC Fitness Report”.  PFT/CFT/PPFT/PCFTs run for official score and recording are only conducted in their current season. For exemptions and waivers, refer to paragraph six of this Order, and utilize reference (h) for data entry.  For Marines in a light or limited duty status that miss the semi-annual requirement, refer to paragraph 5 “Medical Considerations” for make-up tests.</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
-        <text>Multiple Attempts</text>
-        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/b/1" path="p3/b/1" number="3.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Marines are allowed to take multiple PFT/CFT/PPFT/PCFTs to improve their score during the current PFT/CFT season.  Every official PFT/PPFT/CFT/PCFT taken will be entered into MCTIMS regardless of whether the score is higher, lower, or the same as previous attempts.  If a Marine has failed an official PFT/PPFT/CFT/PCFT, COs/OICs will comply with paragraph 3d below.  Any PFT/CFT that is a monitored by a properly assigned FFI/CPTR is considered an official PFT/CFT.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/b/2" path="p3/b/2" number="3.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Since recruits are subject to multiple PFTs as part of recruit training, it will be the decision of the CGs of the Marine Corps Recruit Depots (MCRD) to designate which PFT/CFT score taken during recruit training is designated as their graduation requirement and entered into MCTIMS.</text>
-        </provision>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
-        <text>Required Did Not Take (RDNT).  If a Marine was required, but did not take (RDNT) the PFT or CFT, this renders a fitness report adverse if the MCO 6100.13A 17 JAN 2018 1-3 Enclosure (1) Reporting Senior (RS) deems the Marine Reported On (MRO) did not exercise due diligence in meeting the PFT/CFT/PPFT/PCFT semi-annual/annual requirement.</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/d" path="p3/d" number="3.d." label="d." depth="1" verification="UNVERIFIED">
-        <text>PFT/CFT/PPFT/PCFT failure.  A failure in any of the PFT/CFT/PPFT/PCFTs taken during the testing period, will render a fitness report adverse, have proficiency mark implications, will place a Marine in a promotion restriction status until a PFT/CFT/PPFT/PCFT is passed, and may result in other administrative consequences.  A page 11, 6105 counseling entry is required when a Marine has failed a PFT/CFT/PPFT/PCFT in accordance with reference (i) for enlisted personnel, and enclosure (3) of reference (l) for officers.  Once a Marine has passed a failed PFT/CFT/PPFT/PCFT, the Marine will receive the minimum passing score until the next applicable semi- annual period.  If a Marine fails consecutive PFTs/PPFTs or CFTs/PCFTs (not multiple attempts within the same semi-annual reporting period), they will be considered for administrative separation (in accordance with reference (k)). For example, if a Marine fails a PFT and CFT in the same year, they will not be considered for administrative separation.  However, in the following year if the Marine fails a PFT or CFT they will be considered for administrative separation. For example, if a Marine fails a PFT and passes the CFT in one year and then they fail the PFT the following year the Marine will be considered for administrative separation. Additionally, if a Marine fails a PFT/PPFT or CFT/PCFT and passes on a subsequent attempt they will still be considered for administrative separation if they fail the same event the following year.</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/e" path="p3/e" number="3.e." label="e." depth="1" verification="UNVERIFIED">
-        <text>Performance Evaluation</text>
-        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/e/1" path="p3/e/1" number="3.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Proficiency Marks.  For corporals and below, Proficiency Marks will be adjusted commensurate with PFT/CFT/PPFT/PCFT performance, in accordance with paragraph 4005 of reference (i).</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/e/2" path="p3/e/2" number="3.e.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Fitness Reports</text>
-          <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p3/e/2/a" path="p3/e/2/a" number="3.e.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Directed Comments.  For sergeants and above, PFT/CFT/PPFT/PCFT scores will be recorded on item 8b/c of Section A for the respective reporting period, in accordance with reference (j). PFT/CFT/PPFT/PCFT failures render a fitness report adverse. PFT/CFT/PPFT/PCFT failures will be addressed within the reporting period in which they occur, regardless of performance on a more recent PFT/CFT/PPFT/PCFT.  Failure of PFT/CFTs conducted at formal schools or as part of unit inspector general (IG) inspections constitute a failure even if they are taken out of season.  A Section I directed comment will be made to address the following circumstances:</text>
-          </provision>
-        </provision>
-      </provision>
     </provision>
     <provision identifier="/us/dod/don/usmc/mco/6100_13a-ch5/p-3-2/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
       <text>RDNT MCO 6100.13A 17 JAN 2018 1-4 Enclosure (1)</text>

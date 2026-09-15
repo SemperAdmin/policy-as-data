@@ -12367,33 +12367,6 @@
     </provision>
     <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-1-43/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
       <text>Pilot Flight Screening Course (C70RPB1), at USAF Air Education and Training Command, Pueblo, CO.</text>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-1-43/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
-        <text>Summary.  UAS Officers employ a network enabled and digitally interoperable UAS, from a Ground Control Station, to provide reconnaissance, surveillance, targeting and acquisition (RSTA), aviation fires, and electro- magnetic support across the full spectrum of combat operations.  UAS Officers will advise supported commanders on matters pertaining to UAS integration; and provide information of intelligence value not readily available from normal sources.  UAS Officers are the supported commander’s subject matter expert on UAS tactics, techniques, and procedures.</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-1-43/p1/b" path="p1/b" number="1.b." label="b." depth="1" verification="UNVERIFIED">
-        <text>Prerequisites</text>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-1-43/p1/b/1" path="p1/b/1" number="1.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Must be a U.S. citizen.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-1-43/p1/b/2" path="p1/b/2" number="1.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Security requirement:  eligibility for top secret clearance with sensitive compartmented information (TS/SCI).</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-1-43/p1/b/3" path="p1/b/3" number="1.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>Must meet the physical requirements per reference (ai), Manual of the Medical Department, section IV, article 15-100.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-1-43/p1/b/4" path="p1/b/4" number="1.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
-          <text>Must take the aviation standard test battery (ASTB) and score a four or higher on the academic qualification rating (AQR) and a six or higher on either the pilot flight aptitude rating (PFAR) or the flight officer flight aptitude rating (FOFAR).</text>
-        </provision>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-1-43/p1/c" path="p1/c" number="1.c." label="c." depth="1" verification="UNVERIFIED">
-        <text>Requirements</text>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-1-43/p1/c/1" path="p1/c/1" number="1.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Complete the requirements for Basic Unmanned Qualification IV (BUQ-4) in accordance with CJCSI 3255.01 by any of the following methods:</text>
-          <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-1-43/p1/c/1/a" path="p1/c/1/a" number="1.c.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Complete the USAF Remotely Piloted Aircraft (RPA) Course:</text>
-          </provision>
-        </provision>
-      </provision>
     </provision>
     <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-1-43/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
       <text>Remotely Piloted Aircraft Instrument Qualification (RIQ) Course (F16RPA4) at USAF 558 FTS, Randolph AFB, TX.</text>
@@ -12424,9 +12397,6 @@
         </provision>
         <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-29/p3/c/3" path="p3/c/3" number="3.(c)(3)" label="(3)" depth="2" verification="UNVERIFIED">
           <text>Performs the duties as a member of the supported commander’s Cyber Electronic Warfare Coordination Cell (CEWCC).</text>
-          <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-29/p3/c/3/d" path="p3/c/3/d" number="3.(c)(3)d." label="d." depth="3" verification="UNVERIFIED">
-            <text>Duties</text>
-          </provision>
         </provision>
         <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-29/p3/c/4" path="p3/c/4" number="3.(c)(4)" label="(4)" depth="2" verification="UNVERIFIED">
           <text>Executes offensive and defensive tactics.</text>
@@ -12479,33 +12449,6 @@
     </provision>
     <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-35/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
       <text>RIQ Course (F16RPA4) at USAF 558 FTS, Randolph AFB, TX.</text>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-35/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
-        <text>Summary.  MQ-9 Officers employ a network enabled and digitally interoperable UAS, from a  Ground Control Station, to provide RSTA, aviation fires, and electromagnetic  support across the full spectrum of combat operations.  MQ-9 Officers will advise supported commanders on matters regarding UAS integration and provide  information of intelligence value not readily available from normal sources.</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-35/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
-        <text>Prerequisites</text>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-35/p2/b/1" path="p2/b/1" number="2.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Must be a U.S. citizen.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-35/p2/b/2" path="p2/b/2" number="2.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Security requirement:  eligibility for top secret clearance with sensitive compartmented information (TS/SCI).</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-35/p2/b/3" path="p2/b/3" number="2.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>Must meet the physical requirements per Manual of the Medical Department, section IV, and article 15-100.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-35/p2/b/4" path="p2/b/4" number="2.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
-          <text>Must take the ASTB and score a four or higher on the AQR and a six or higher on either the PFAR or the FOFAR.</text>
-        </provision>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-35/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
-        <text>Requirements</text>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-35/p2/c/1" path="p2/c/1" number="2.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Complete the requirements for the BUQ-4 in accordance with CJCSI 3255.01 by any of the following methods:</text>
-          <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-35/p2/c/1/a" path="p2/c/1/a" number="2.c.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Compete the USAF RPA Course:</text>
-          </provision>
-        </provision>
-      </provision>
     </provision>
   </section>
   <section anchor="p-3-30" identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-30" heading="3. RPA Fundamentals Course (RFC) (F16RPC4) at USAF 558 FTS," verification="UNVERIFIED">
@@ -12524,9 +12467,6 @@
         </provision>
         <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-30/p3/b/2" path="p3/b/2" number="3.(b)(2)" label="(2)" depth="2" verification="UNVERIFIED">
           <text>Performs EMSO against enemy communications, RADAR, and cyber networks; plans and executes multi sensor imagery reconnaissance and surveillance over assigned areas; advises, coordinates, and controls supporting arms on behalf of the supported commander; and when directed, destroys targets through kinetic or non-kinetic means.</text>
-          <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-30/p3/b/2/d" path="p3/b/2/d" number="3.(b)(2)d." label="d." depth="3" verification="UNVERIFIED">
-            <text>Duties</text>
-          </provision>
         </provision>
         <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-30/p3/b/3" path="p3/b/3" number="3.(b)(3)" label="(3)" depth="2" verification="UNVERIFIED">
           <text>Performs the duties as a member of the supported commander's MAGTF information group (MIG).</text>
@@ -17431,45 +17371,6 @@
     </provision>
     <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-38/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
       <text>Deleted MOS</text>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-38/p3/i" path="p3/i" number="3.(I)" label="(I)" depth="1" verification="UNVERIFIED">
-        <text>(NMOS) (0202) LtCol- Maj 0209 Marine Air Ground Task Force (MAGTF) Intelligence Planner</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-38/p3/i" path="p3/i" number="3.(I)" label="(I)" depth="1" verification="UNVERIFIED">
-        <text>(NMOS) (0202) LtCol- Maj 7 0210 Counterintelligence/ Human Source Intelligence (CI/ HUMINT) Operations Officer (III) (PMOS) CWO5- WO 0210 Counterintelligence/ Human Source Intelligence (CI/ HUMINT) Operations and Sensitive Activities Officer (III) (PMOS) CWO5- WO 2, 7 0302 Infantry Officer (I) (PMOS) LtCol- 2ndLt 0302 Infantry Officer (I) (PMOS) LtCol- 2ndLt 7 0306 Infantry Weapons Officer (III) (PMOS) CWO5- CWO2 0306 Infantry Weapons Officer (III) (PMOS) CWO5- CWO2 7 0370 Special Operations Officer (I) (PMOS) LtCol- Capt 0370 Marine Raider Officer</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-38/p3/i" path="p3/i" number="3.(I)" label="(I)" depth="1" verification="UNVERIFIED">
-        <text>(PMOS) LtCol- Capt 2, 7 0408 Fatality Management Officer (III) (PMOS) CWO5- WO 0408 Fatality Management Officer (III) (PMOS) CWO5- WO 7 0502 Force Deployment Planning and Execution (FDP&amp;E) Officer (I) (FMOS) LtCol- Maj 0502 Force Deployment Planning and Execution (FDP&amp;E) Officer (I) (FMOS) LtCol- Maj 7 0560 Security Cooperation (SC) Planner (I) (FMOS) LtCol- 2ndLt 0560 Security Cooperation (SC) Planner (I) (FMOS) LtCol- 2ndLt 7 0570 Advisor (II/III) (FMOS) Col- 1stLt &amp; CWO5- WO 0570 Advisor (II/III) (FMOS) Col- 1stLt &amp; CWO5- WO 7 0571 Operational Advisor (II/III) (FMOS) Col- 1stLt &amp; CWO5- WO 0571 Operational Advisor (II/III) (FMOS) Col- 1stLt &amp; CWO5- WO 7 NAVMC 1200.1L Figure 2-1.--Officer Conversion Table/Guidance (continued) 2-4 Enclosure (1) PRESENT MOS CODE PRESENT MOS TITLE GRADE NEW MOS CODE NEW MOS TITLE GRADE REMAR KS 0620 Space and Propagation Engineering Officer (SPEO) (III) (PMOS) CWO5- WO 0620 Space and Propagation Engineering Officer (SPEO) (III) (PMOS) CWO5- WO 7 0803 Target Acquisition Officer (III) (PMOS) CWO5- WO 0803 Target Acquisition Officer (III) (PMOS) CWO5- WO 7 1310 Engineer Equipment Officer (III) (PMOS) CWO5- WO 1310 Engineer Equipment Officer (III) (PMOS) CWO5- WO 7 1702 Cyberspace Warfare Officer (I) (PMOS) LtCol- 2ndLt 1702 Cyberspace Warfare Officer (I) (PMOS) LtCol- 2ndLt 7 1706 Maritime Space Officer (I) (PMOS) LtCol- Capt 1706 Maritime Space Officer (I) (PMOS) LtCol- Capt 7 1707 Influence Officer (I) (PMOS) LtCol- 2ndLt 1707 Influence Officer (I) (PMOS) LtCol- 2ndLt 7 1760 Maritime Space Operations Mission Commander (I) (NMOS) (0202, 0602, 1702, 1706) LtCol- 2ndLt 1760 Maritime Space Operations Mission Commander (I) (NMOS) (0202, 0602, 1702, 1706) LtCol- 2ndLt 7 1786 Space Operations Staff Officer (I) (FMOS) LtCol- 2ndLt 1786 Space Operations Staff Officer (I) (FMOS) LtCol- 2ndLt 7 2120 Weapons Repair Officer (III) (PMOS) CWO5- WO 2120 Ground Ordnance Maintenance Officer (III) (PMOS) CWO5- WO 2, 7 2125 Electro-Optic Instrument Repair Officer (III) (PMOS) CWO4- WO 3 2305 Explosive Ordnance Disposal Officer (II/ III) (PMOS) LtCol- Capt &amp; CWO5- WO 2305 Explosive Ordnance Disposal Officer (II/ III) (PMOS) LtCol- Capt &amp; CWO5- WO 7 2339 Marine EOD Diver Officer (II/III) (NMOS) (2305) LtCol- Capt &amp; CWO5- WO 2339 Marine EOD Diver Officer (II/III) (NMOS) (2305) LtCol- Capt &amp; CWO5- WO 7 2802 Electronics Maintenance Officer (Ground) (II) (PMOS) LtCol- Capt 2802 Electronics Maintenance Officer (Ground) (II) (PMOS) LtCol- Capt 7 3002 Ground Supply Officer</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-38/p3/i" path="p3/i" number="3.(I)" label="(I)" depth="1" verification="UNVERIFIED">
-        <text>(PMOS) LtCol- 2ndLt 3002 Ground Supply Officer</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-38/p3/i" path="p3/i" number="3.(I)" label="(I)" depth="1" verification="UNVERIFIED">
-        <text>(PMOS) LtCol- 2ndLt 7 NAVMC 1200.1L Figure 2-1.--Officer Conversion Table/Guidance (continued) 2-5 Enclosure (1) PRESENT MOS CODE PRESENT MOS TITLE GRADE NEW MOS CODE NEW MOS TITLE GRADE REMAR KS 3006 Operational Contract Support (OCS) Officer</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-38/p3/i" path="p3/i" number="3.(I)" label="(I)" depth="1" verification="UNVERIFIED">
-        <text>(NMOS) (3002) LtCol- Capt 3006 Operational Contract Support (OCS) Officer</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-38/p3/i" path="p3/i" number="3.(I)" label="(I)" depth="1" verification="UNVERIFIED">
-        <text>(NMOS) (3002) LtCol- Capt 7 3010 Ground Supply Operations Officer (III) (PMOS) CWO5- WO 3010 Ground Supply Operations Officer (III) (PMOS) CWO5- WO 7 3408 Financial Management Resource Officer (III) (PMOS) CWO5- WO 3408 Financial Management Resource Officer (III) (PMOS) CWO5- WO 7 4402 Judge Advocate (I) (PMOS) Col- 2ndLt 4402 Judge Advocate (I) (PMOS) Col- 2ndLt 7 4405 Master of International Law (I) (NMOS) (4402) LtCol- Maj 4405 Master of International Law (I) (NMOS) (4402) LtCol- Maj 7 4409 Master of Criminal Law (I) (NMOS) (4402) Col- Maj 4409 Master of Criminal Law (I) (NMOS) (4402) Col- Maj 7 4417 Master of Cyber, Intelligence, and Information Law (I) (NMOS) (4402) LtCol- Maj 4417 Master of Cyber, Intelligence, and Information Law (I) (NMOS) (4402) LtCol- Maj 7 4430 Legal Administrative Officer (III) (PMOS) CWO5- WO 4430 Legal Administrative Officer (III) (PMOS) CWO5- WO 7 4450 Litigator (I) (NMOS) (4402) Col- 1stLt 4450 Litigator (I) (NMOS) (4402) Col- 1stLt 7 4451 Senior Litigator (I) (NMOS) (4402) Col- Maj 4451 Senior Litigator (I) (NMOS) (4402) Col- Maj 7 4452 Supervisory Litigator</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-38/p3/i" path="p3/i" number="3.(I)" label="(I)" depth="1" verification="UNVERIFIED">
-        <text>(NMOS) (4402) Col- Maj 4452 Supervisory Litigator</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-38/p3/i" path="p3/i" number="3.(I)" label="(I)" depth="1" verification="UNVERIFIED">
-        <text>(NMOS) (4402) Col- Maj 7 4453 Expert Litigator (I) (NMOS) (4402) Col- LtCol 4453 Expert Litigator (I) (NMOS) (4402) Col- LtCol 7 4503 Visual Information Officer (III) (PMOS) CWO5- WO 4503 Visual Information Officer (III) (PMOS) CWO5- WO 7 4810 Career Recruiting Officer (III) (PMOS) CWO5- CWO2 4810 Career Recruiting Officer (III) (PMOS) CWO5- CWO2 7 5702 Chemical, Biological, Radiological and Nuclear (CBRN) Defense Officer (III) (PMOS) CWO5- WO 5702 Chemical, Biological, Radiological and Nuclear (CBRN) Defense Officer (III) (PMOS) CWO5- WO 7 NAVMC 1200.1L Figure 2-1.--Officer Conversion Table/Guidance (continued) 2-6 Enclosure (1) PRESENT MOS CODE PRESENT MOS TITLE GRADE NEW MOS CODE NEW MOS TITLE GRADE REMAR KS 5804 Corrections Officer (III) (PMOS) CWO5- WO 5804 Corrections Officer (III) (PMOS) CWO5- WO 7 5805 Criminal Investigation Officer (III) (PMOS) CWO5- WO 5805 Criminal Investigation Officer (III) (PMOS) CWO5- WO 2 5902 Electronics Maintenance Officer Aviation Command and Control (C2) (II) (PMOS) LtCol- Capt 5902 Electronics Maintenance Officer Aviation Command and Control (C2) (II) (PMOS) LtCol- Capt 7 5970 Tactical Data Systems Officer (III) (PMOS) CWO5- WO 5970 Tactical Data Systems Officer (III) (PMOS) CWO5- WO 7 6302 Avionics Officer (II/III) (PMOS) LtCol- Capt &amp; CWO5- WO 6302 Avionics Officer (II/III) (PMOS) LtCol- Capt &amp; CWO5- WO 7 6502 Aviation Ordnance Officer (II/III) (PMOS) LtCol- Capt &amp; CWO5- WO 6502 Aviation Ordnance Officer (II/III) (PMOS) LtCol- Capt &amp; CWO5- WO 7 6607 Aviation Logistician (II/III) (NMOS) (6002, 6302, 6502, 6602) LtCol- 2ndLt &amp; CWO5- WO 6607 Aviation Logistician (II/III) (NMOS) (6002, 6302, 6502, 6602) LtCol- 2ndLt &amp; CWO5- WO 7 6802 Meteorological and Oceanographic (METOC) Services Officer (II/ III) (PMOS) LtCol- Capt &amp; CWO5- WO 6802 Meteorological and Oceanographic (METOC) Services Officer (II/ III) (PMOS) LtCol- Capt &amp; CWO5- WO 7 7202 Air Command and Control Officer (I) (PMOS) LtCol- Maj 7202 Command and Control Officer (I) (PMOS) LtCol- Maj 2, 7 7209 Air Command and Control Officer (I) (PMOS) Capt- 2ndLt 1 7216 Command and Control Interface Control Officer (III) (PMOS) CWO5- WO 7216 Command and Control Interface Control Officer (III) (PMOS) CWO5- WO 7 8008 GCE Officer (I) (FMOS) LtCol- 2ndLt 8008 GCE Officer (I) (FMOS) LtCol- 2ndLt 7 NAVMC 1200.1L Figure 2-1.--Officer Conversion Table/Guidance (continued) 2-7 Enclosure (1) PRESENT MOS CODE PRESENT MOS TITLE GRADE NEW MOS CODE NEW MOS TITLE GRADE REMAR KS 8017 Billet Designator- Unrestricted Information Officer</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-38/p3/i" path="p3/i" number="3.(I)" label="(I)" depth="1" verification="UNVERIFIED">
-        <text>(EMOS) LtCol- Capt 8017 Billet Designator- Unrestricted Information Officer</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-38/p3/i" path="p3/i" number="3.(I)" label="(I)" depth="1" verification="UNVERIFIED">
-        <text>(EMOS) LtCol- Capt 7 8023 Parachutist Officer (II/III) (NMOS) (0202, 0302, 0306, 0370 +) Gen- 2ndLt &amp; CWO5- WO 8023 Parachutist Officer (II/III) (NMOS) (0202, 0302, 0306, 0370 +) Gen- 2ndLt &amp; CWO5- WO 7 8049 Inspector General Officer (I) (FMOS) Col- 2ndLt 1 8055 Information Management Officer (IMO) (I) (FMOS) Maj- Capt 8055 Knowledge Management Officer (KMO) (I) (FMOS) Maj- Capt 2 8056 Hazardous Material/ Hazardous Waste (HM/ HW) Officer (II/III) (FMOS) Capt- 2ndLt &amp; CWO3- WO 8056 Hazardous Material/ Hazardous Waste (HM/ HW) Officer (II/III) (FMOS) Capt- 2ndLt &amp; CWO3- WO 7 8242 Foreign Area Officer- Eurasia (I) (FMOS) Gen- 2ndLt 8242 Foreign Area Officer- Europe (I) (FMOS) Gen- 2ndLt 2 8243 Foreign Area Officer- Northeast Asia (I) (FMOS) Gen- 2ndLt 8243 Foreign Area Officer Indo-Pacific (I) (FMOS) Gen- 2ndLt 2 8246 Foreign Area Officer- South Asia (I) (FMOS) Gen- 2ndLt 3 8247 Foreign Area Officer- Europe (I) (FMOS) Gen- 2ndLt 3 8248 Foreign Area Officer- Southeast Asia (I) (FMOS) Gen- 2ndLt 3 8623 Small Unmanned Aircraft System Specialist (FMOS) LtCol- 2ndLt 8623 Small Unmanned Aircraft System Operator (FMOS) LtCol- 2ndLt 2, 7 8640 Requirements Manager (II/III) (FMOS) LtCol- Capt &amp; CWO5- CWO2 8640 Requirements Manager (II/III) (FMOS) LtCol- Capt &amp; CWO5- CWO2 7 8834 Technical Information Operations Officer</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-38/p3/i" path="p3/i" number="3.(I)" label="(I)" depth="1" verification="UNVERIFIED">
-        <text>(FMOS) LtCol- 2ndLt 8834 Technical Information Operations Officer</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-38/p3/i" path="p3/i" number="3.(I)" label="(I)" depth="1" verification="UNVERIFIED">
-        <text>(FMOS) LtCol- 2ndLt 7 NAVMC 1200.1L Figure 2-1.--Officer Conversion Table/Guidance (continued) 2-8 Enclosure (1) PRESENT MOS CODE PRESENT MOS TITLE GRADE NEW MOS CODE NEW MOS TITLE GRADE REMAR KS 8870 Special Operations Concepts and Strategy Specialist (I) (FMOS) LtCol- Capt 8870 Special Operations Concepts and Strategy Specialist (I) (FMOS) LtCol- Capt 7 NOTE:</text>
-      </provision>
     </provision>
     <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-38/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
       <text>Entry or terminal grade/category MOS revised.</text>
@@ -24909,57 +24810,6 @@
     </provision>
     <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
       <text>IED defeat operations.</text>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
-        <text>Summary.  Explosive Ordnance Disposal (EOD) Technicians perform various duties may include locating, accessing, identifying, rendering safe, neutralizing, and disposing of hazards from foreign and domestic, chemical biological radiological nuclear and high-yield explosive (CBRNE), unexploded explosive ordnance (UXO), improvised explosive device (IED), and weapons of mass destruction (WMD) that present a threat to operations, installations, personal, or material.</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
-        <text>Prerequisites</text>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/b/1" path="p3/b/1" number="3.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Must possess a GT score of 110 or higher.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/b/2" path="p3/b/2" number="3.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Must be a U.S. citizen (cannot be a dual citizen).</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/b/3" path="p3/b/3" number="3.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>Must be screened per NAVMC Form 11361, Explosive Ordnance Disposal (EOD) Lateral Move Screening Checklist.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/b/4" path="p3/b/4" number="3.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
-          <text>Prior to entry into EOD School, Marines must have sufficient obligated service to allow 36 months remaining upon graduation.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/b/5" path="p3/b/5" number="3.b.(5)" label="(5)" depth="2" verification="UNVERIFIED">
-          <text>Must meet the medical requirements listed in article 15-107 of reference (aj) for explosive handling and/or explosive driver.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/b/6" path="p3/b/6" number="3.b.(6)" label="(6)" depth="2" verification="UNVERIFIED">
-          <text>Must have a first class physical fitness test (PFT) and combat fitness test (CFT) (accomplished during the EOD screening process).</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/b/7" path="p3/b/7" number="3.b.(7)" label="(7)" depth="2" verification="UNVERIFIED">
-          <text>Must have normal color vision and no claustrophobic tendencies (bomb suit agility test will be administered during the EOD screening).</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/b/8" path="p3/b/8" number="3.b.(8)" label="(8)" depth="2" verification="UNVERIFIED">
-          <text>Be a volunteer in the grade of sergeant or corporal in any MOS. Sergeants requesting a lateral move to EOD must not be selected for staff sergeant in their current MOS.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/b/9" path="p3/b/9" number="3.b.(9)" label="(9)" depth="2" verification="UNVERIFIED">
-          <text>Must undergo computerized neurocognitive assessment testing at NAVSCOLEOD  using the automated neuropsychological assessment metrics (ANAM) test prior to beginning training.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/b/10" path="p3/b/10" number="3.b.(10)" label="(10)" depth="2" verification="UNVERIFIED">
-          <text>Security requirement:  must be eligible for a top-secret security clearance based on a completed single scope background investigation (SSBI)/tier 5 (T-5) investigation.  Applications for the SSBI/T-5 must be submitted prior to attendance of EOD School, Eglin AFB Florida.</text>
-        </provision>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
-        <text>Requirements</text>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/c/1" path="p3/c/1" number="3.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Complete the DOD Joint Explosive Ordnance Disposal Basic (Common Core) Course (N56GPX1) at Eglin AFB, FL.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/c/2" path="p3/c/2" number="3.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Requirements for continued qualification and progression training are:</text>
-          <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/c/2/a" path="p3/c/2/a" number="3.c.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>All EOD Technicians will be annually screened for continued service in the EOD MOS using NAVMC Form 11362.  Based on the comprehensive standards covered under NAVMC 11362, EOD technicians will not be screened using NAVMC Form 11386. 3121 NAVMC 1200.1L 3-153 Enclosure (1)</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p3/c/2/b" path="p3/c/2/b" number="3.c.(2)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>The following core competencies must be trained to sustained by all EOD technicians:</text>
-          </provision>
-        </provision>
-      </provision>
     </provision>
     <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-53/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
       <text>Disassembly and inerting.</text>
@@ -41426,33 +41276,6 @@
     </provision>
     <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-91/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
       <text>Six months of foreign immersion or regional experience.</text>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-91/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
-        <text>Summary.  Foreign Area Staff Non-Commissioned Officers (FAS) provide language skills, regional expertise and cultural capabilities (LREC) to MAGTF commanders throughout the phases of military operations and across the range of military operations to achieve US government objectives.  FAS’s will apply LREC to the Marine Corps Planning Process, Security Cooperation and combined exercise planning, and serve as LREC trainers for operational force units, members of Forward Command Elements, and inter-organizational liaisons. FAS’s will acquire core plus skills in civil affairs and information operations through skill progression and enhancement training as available/ required.  FAS’s are proficient in their PMOS.  This MOS may be assigned only as a FMOS and is available to ground and aviation Marines.</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-91/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
-        <text>Prerequisites</text>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-91/p2/b/1" path="p2/b/1" number="2.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Meet prerequisites prescribed in reference (cn).</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-91/p2/b/2" path="p2/b/2" number="2.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Regional and Culture Studies Program (RCSP) complete in grade. 3151 NAVMC 1200.1L 3-486 Enclosure (1)</text>
-        </provision>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-91/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
-        <text>Requirements</text>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-91/p2/c/1" path="p2/c/1" number="2.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Security requirement:  TS/SCI security clearance eligibility based on a tier 5 background investigation.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-91/p2/c/2" path="p2/c/2" number="2.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Completion of (a) or (b) below:</text>
-          <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-91/p2/c/2/a" path="p2/c/2/a" number="2.c.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Completion of prescribed study track curriculum in accordance with reference (cn).</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/navmc/1200_1l/p-2-91/p2/c/2/b" path="p2/c/2/b" number="2.c.(2)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Completion of the following:</text>
-          </provision>
-        </provision>
-      </provision>
     </provision>
   </section>
   <section anchor="p-3-85" identifier="/us/dod/don/usmc/navmc/1200_1l/p-3-85" heading="3. Must demonstrate intermediate level foreign language" verification="UNVERIFIED">

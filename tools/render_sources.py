@@ -16,7 +16,9 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from render_authority_chain import BRAND, CSS, esc, load, FAVICON  # noqa: E402
+from atomicio import write_text  # noqa: E402
+from chrome import head, header  # noqa: E402
+from render_authority_chain import esc, load  # noqa: E402
 from render_policy import EXTRA_CSS                        # noqa: E402
 
 SOURCES_CSS = """
@@ -458,15 +460,8 @@ def render(records, out_path):
     edges = sum(len(r.get("relationships", {}).get("edge_meta") or [])
                 for r in records.values())
 
-    P = ['<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">',
-         '<meta name="viewport" content="width=device-width,initial-scale=1">',
-         FAVICON,
-         '<title>Sources - Semper Admin Policy Library</title>',
-         f"<style>{CSS}{EXTRA_CSS}{SOURCES_CSS}</style></head><body>",
-         '<a class="skip" href="#main">Skip to main content</a>',
-         f'<header class="chrome">{BRAND}<span>Sources</span>'
-         '<a href="policy-index.html" style="margin-left:auto">All policies</a>'
-         '<a href="authority-index.html">Authority chains</a></header>',
+    P = [head("Sources", extra_css=EXTRA_CSS + SOURCES_CSS),
+         header("Sources", current="sources.html"),
          '<main id="main">',
          '<h1>What this was built from</h1>',
          '<p class="lede">Every standard, specification, and issuance that '
@@ -526,8 +521,7 @@ def render(records, out_path):
              'identifier register is in NAMESPACES.md.</p></footer>'
              '</main></body></html>')
 
-    with open(out_path, "w", encoding="utf-8") as fh:
-        fh.write("\n".join(P))
+    write_text(out_path, "\n".join(P))
     return sum(len(g["items"]) for g in GROUPS)
 
 
