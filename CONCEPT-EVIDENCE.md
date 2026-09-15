@@ -24,6 +24,7 @@ Check here before analysing anything new.
 | S1 | 2026-09-15 | email | Announcement to an AI working group, signed jointly by Maj Gannon and MSgt Shorter | Names the public URLs and the help wanted |
 | S2 | 2026-09-15 | transcript | Teams call, ~25 min. Shorter, Gannon, Chiofalo | Shorter on leave. Informal sync |
 | S3 | 2026-09-15 | transcript | **Duplicate of S2.** Same text, email omitted | No new content |
+| S6 | 2026-09-15 | transcript, **longer slice of S4** | The GPO call again, from 1:26:39 rather than 1:27:47 | Three extra minutes, and they carry the largest single finding in the record. Owner also confirms TNR is Training and Readiness, and that **nothing was followed up** |
 | S5 | 2026-09-15 | transcript, **fragment** | Teams call, ~66 min. Shorter, Gannon, Amaya Ashe (civilian) | **First 35 seconds and last 90 seconds only; ~63 minutes missing.** Carries the best user-research datum in the record and an action with a date |
 | S4 | 2026-09-15 | transcript, **fragment** | Teams call with the Government Publishing Office. ~90 min. Shorter, Gannon, Lisa LaPlant, Matt L (GPO), Brad Chang, Lauren Wood | **First 20 seconds and last 2 minutes only. The middle 87 minutes are missing and are the highest-value unrecovered material in the project.** Affiliations of Chang and Wood not stated |
 
@@ -216,6 +217,55 @@ opposite ways.
 Ashe also says "sounds like this was perfect timing." What was timed is not
 recoverable from the fragment.
 
+### S6, the GPO call, three minutes further back
+
+A longer slice of S4. Still not the missing 87 minutes, but it reaches back to
+1:26:39 and recovers the exchange that matters most.
+
+**GPO offered to propagate the project.** Lisa LaPlant:
+
+> do you mind that we share with our legislative branch data partners that we
+> met today and ... just to you know get them a little bit up to to speed on
+> this
+
+> would you be interested if there's, you know, the the Library of Congress or
+> House or Senate support staff. If there's interest in asking you to to maybe
+> give us some similar presentation again for some of those folks.
+
+Two offers: brief GPO's legislative branch data partners, and arrange a repeat
+presentation to Library of Congress, House, or Senate support staff. **The
+owner confirms neither was followed up.**
+
+Why this outranks most of the record:
+
+- Ninety minutes with the body that publishes the standard this project
+  follows, and the response was not a correction. It was an offer to
+  introduce.
+- `conformance-matrix.md` section 1 refuses USLM conformance on the grounds
+  that USLM "is not intended to model executive branch or judicial branch
+  documents." That ruling was reached by reading GPO's documents. Having heard
+  the work in person, GPO offered to show it to the legislative data community.
+  The ruling may still be right on the letter; the posture it implies is
+  wrong.
+- `CHARTER.md` section 5 rates whole-of-government as **aspiration**, with zero
+  civilian documents encoded. This is the first evidence for that claim and it
+  arrived from the outside in, without encoding anything.
+
+**Gannon's window, and why he pitches everywhere:**
+
+> if I don't put in the work and just champion this thing through while I've
+> been given that unique opportunity because right, we're creating the CDA ...
+> nobody knows what I should be doing to include myself ... the environment
+> right now within the organizations is is we need to digitally transform. And
+> we need to get after it ... yesterday ... the appetite is there
+
+A role being invented, undefined duties, organizational appetite, and a closing
+window. This is the resourcing picture and it **contradicts Chiofalo in S2**,
+who read it as "they don't want to make this a full-time project yet."
+Chiofalo was describing the AI working group's view. Gannon holds a mandate he
+is actively spending. What CDA stands for is not decoded and it matters,
+because it names where the mandate comes from.
+
 ---
 
 ## 3. The pain statement, in the owner's words
@@ -243,7 +293,7 @@ product, and the difference has never been written down.
 | B | Reconciliation. Does the order match its authority | `POC-PLAN.md`, and the site as it stands | Yes, and it is now the whole site |
 | C | An interrogable substrate, for a model or a systematic method | Shorter, S2 | Built, and never named. The enabling discipline exists; nothing says that is what it is for |
 | D | Authoring. How a directive is actually made | Shorter, S2, second half. SemperScribe | Deferred. `ACTION-REGISTER.md` Track 3 |
-| E | Training and Readiness. **Inference, see section 5** | Gannon, S2, if TNR is T&R | No. Zero T&R manuals held |
+| E | Training and Readiness. **Confirmed, section 5** | Gannon, S2 | No. Zero T&R manuals held, and the identifier grammar would take them unchanged |
 | F | Administrative burden reduction. Time returned to warfighting | Gannon, S4, to GPO | No. **Nothing built measures time.** The site counts documents, references, drift findings and confirmed values. Not one minute |
 | G | Remediation. "I need to fix all the orders in my command" | Gannon, S5, quoting the user | No. Every other candidate reports that something is wrong. None helps correct it |
 
@@ -283,10 +333,10 @@ settles.
 
 ---
 
-## 5. The T&R inference
+## 5. Training and Readiness - CONFIRMED 2026-09-15
 
-**Claim, not fact.** "TNR" in S2 is most likely **T&R, Training and
-Readiness**. Gannon uses it twice in one sentence, from the Personnel
+**Confirmed by the owner, 2026-09-15.** TNR in S2 is **T&R, Training and
+Readiness**. What follows was written as an inference and is now evidenced. Gannon uses it twice in one sentence, from the Personnel
 Administration School, about briefs before a summit.
 
 If it is right, it is the strongest product fit in the record and it is in a
@@ -372,7 +422,7 @@ Pease appears only as a literature citation.
 | TECOM readiness and standards | Doctrine and standards, not directives | No. The tier map carries a doctrine tier holding zero documents |
 | Col Wilkerson, TECOM G1 | Manpower and administration | No. Closest constituency to the encoded leave use case |
 | Personnel Administration School | Does this belong in the course | No. A schoolhouse insertion point is a different adoption path from the directives control point |
-| **Government Publishing Office** | Publishes the standard this project follows. Owns USLM, GovInfo, and the resolution grammar | **Fragment only.** Ninety minutes, opening and closing preserved, middle lost. Section 5a |
+| **Government Publishing Office** | Publishes the standard this project follows. Owns USLM, GovInfo, and the resolution grammar | Fragment. **They offered to brief their legislative branch data partners and to arrange a presentation to Library of Congress, House, or Senate staff. Neither was followed up.** Sections 5a and S6 |
 | **Amaya Ashe, civilian** | Office not stated. Thanks them for "contributions to the Corps", which suggests a headquarters or programme role. **Has a wish list due the 23rd** | Fragment only. Her one recorded judgement is that the explanation lost her and the visual saved it |
 | MIU | Adjacent, via Chiofalo's separate project | No. Also competition for the same volunteer pool |
 
@@ -385,17 +435,21 @@ Pease appears only as a literature citation.
 | U1 | Whether Gannon and Shorter hold the same concept. S1 leads with AI across three activities; S2 leads with substrate | Ask each other, before the next brief |
 | U2 | What Pease, ARDB, and TECOM actually said and asked for | Write down what was said, from memory or notes, while it is recoverable |
 | U3 | Whether the database and UI ask is a requirement or recruitment language | A requirement legitimately changes the architecture ruling. A phrase burns a volunteer's weekend |
-| U4 | TNR. Section 5 | One line |
+| ~~U4~~ | ~~TNR~~ **CLOSED 2026-09-15. T&R, Training and Readiness.** Candidate E is evidenced | done |
 | U5 | "six AI" and "Aegis code" | Name them before someone assumes overlap |
 | U6 | Whether either published URL is current with this repository | Compare the deployed site against a local build |
 | U7 | Who did not join the call. "whenever he decided to come join us would be fantastic" | Who, and does it matter |
 | U8 | **What was said in the missing 87 minutes of the GPO call.** The highest-value unknown in this file | Recover it now: the recording, the chat, notes, or both men writing down what they remember before it fades |
 | U9 | Whether the period defect in the published grammar was raised with GPO | It changes what can be asked for next |
 | U10 | Affiliations of Brad Chang and Lauren Wood | One line each |
-| U12 | **Amaya Ashe's office, and what the wish list on the 23rd feeds.** Requirements, funding, tasking, or a brief | One line. It is the nearest thing to a resourcing decision in the record |
+| U12 | **Amaya Ashe's office, and what the wish list on the 23rd feeds.** Owner confirms **it was never followed up.** Whether it can still be picked up is open | Ask her |
 | U13 | Which visual closed it for her: a site diagram, the rendered page, or a live demo | Decides what to build more of |
 | U14 | What "perfect timing" referred to | One line |
 | U15 | What the sentence "it's gone from ... " was going to end with. The demo answered it and the fragment does not | Ask Gannon what he showed |
+| U16 | **What CDA stands for, and what Gannon's role in creating it is.** It names where his mandate comes from and how long it lasts | Ask Gannon |
+| U17 | Whether GPO's two offers can still be taken up, five sources later | One reply |
+| U18 | Whether Brad Chang and Lauren Wood were the legislative branch data partners already in the room | One line |
+| U19 | Real T&R manual structure: event codes, prerequisite chains, how a reissue propagates | Read one manual before it enters a plan. Currently asserted from general knowledge, not from this tree |
 | U11 | Whether candidate F is measurable. How long a person takes today to answer one of these questions from the source PDFs | Time one. It is the only proof F admits, and nothing in the tree measures time |
 
 ---
