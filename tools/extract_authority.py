@@ -395,8 +395,9 @@ def main():
         for k in ("edges", "parsed", "unparsed", "held", "drift", "gaps"):
             totals[k] += s[k]
         totals["docs"] += 1
-        totals["provisions"] = totals.get("provisions", 0) + sum(
-            len(sec.get("provisions") or []) for sec in rec.get("sections") or [])
+        n_prov = sum(len(sec.get("provisions") or []) for sec in rec.get("sections") or [])
+        totals["provisions"] = totals.get("provisions", 0) + n_prov
+        s["provisions"] = n_prov
         per_doc[rec["id"]] = s
         for m in rec.get("relationships", {}).get("edge_meta", []):
             if m.get("rel") != "references":

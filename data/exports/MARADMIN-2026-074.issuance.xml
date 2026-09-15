@@ -49,32 +49,11 @@
         <text>Nominating major subordinate commands will draft a Certificate of Commendation citation for any civilian nominees and forward that as part of the nomination package requirements listed in subparagraph</text>
       </provision>
     </provision>
+    <provision identifier="/us/dod/don/usmc/maradmin/2026/074/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
+      <text>of this MARADMIN.</text>
+    </provision>
     <provision identifier="/us/dod/don/usmc/maradmin/2026/074/p4" path="p4" number="4." label="4." depth="0" verification="UNVERIFIED">
       <text>Coordinating Instructions</text>
-      <provision identifier="/us/dod/don/usmc/maradmin/2026/074/p4/d" path="p4/d" number="4.d." label="d." depth="1" verification="UNVERIFIED">
-        <text>of this MARADMIN.</text>
-        <provision identifier="/us/dod/don/usmc/maradmin/2026/074/p4/d/1" path="p4/d/1" number="4.d.1." label="1." depth="2" verification="UNVERIFIED">
-          <text>Chain of command endorsements, up to and including the first general officer in the chain of command.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/maradmin/2026/074/p4/d/2" path="p4/d/2" number="4.d.2." label="2." depth="2" verification="UNVERIFIED">
-          <text>Nomination letter from the first commanding officer or equivalent in the nomineeâ€™s chain of command with the following items as enclosures:</text>
-          <provision identifier="/us/dod/don/usmc/maradmin/2026/074/p4/d/2/a" path="p4/d/2/a" number="4.d.2.a." label="a." depth="3" verification="UNVERIFIED">
-            <text>Nomineeâ€™s professional resume (1 page).</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/maradmin/2026/074/p4/d/2/b" path="p4/d/2/b" number="4.d.2.b." label="b." depth="3" verification="UNVERIFIED">
-            <text>Nomineeâ€™s professional narrative biography (no more than 2 pages).</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/maradmin/2026/074/p4/d/2/c" path="p4/d/2/c" number="4.d.2.c." label="c." depth="3" verification="UNVERIFIED">
-            <text>The iAPS-generated NAVMC 11533 with the Navy and Marine Corps Commendation Medal citation and summary of action for military nominees (no more than 1 page for the summary of action) or a Certificate of Commendation citation (no more than 1 page with a 1250-character limit) for civilian nominees.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/maradmin/2026/074/p4/d/2/d" path="p4/d/2/d" number="4.d.2.d." label="d." depth="3" verification="UNVERIFIED">
-            <text>Nominee professional photograph submitted separately as a high-resolution JPG/JPEG file, with no banner or text box. The photo must be a command-style photograph featuring the U.S. National Ensign. Uniform for military nominees is the Service Alpha uniform, and for civilian nominees is business attire.</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/maradmin/2026/074/p4/d/5" path="p4/d/5" number="4.d.5." label="5." depth="2" verification="UNVERIFIED">
-          <text>Administration and Logistics</text>
-        </provision>
-      </provision>
       <provision identifier="/us/dod/don/usmc/maradmin/2026/074/p4/a" path="p4/a" number="4.a." label="a." depth="1" verification="UNVERIFIED">
         <text>Submit nomination packages to CG TECOM using the Department of the Navy Enterprise Task Management Software Solutions (ETMS2) to â€œUSMC TECOMâ€ no later than 27 March 2026. Nominations received by USMC TECOM after 27 March 2026 will not be accepted.</text>
       </provision>

@@ -125,20 +125,28 @@ def nest(provisions):
     whose parent path is absent, which happens when a parent line failed to
     parse - are attached at the top level rather than dropped.
     """
-    by_path, children, roots = {}, {}, []
-    for p in provisions:
-        by_path[p["path"]] = p
-        children[p["path"]] = []
-    for p in provisions:
+    # Keyed by position, not by path. 585 of the store's 20,178 provisions
+    # carry a path already used in the same section (a parser defect, found
+    # 2026-09-15, ACTION-REGISTER 6.12). Keyed by path, every child of a
+    # repeated path was emitted once per repeat, and MCO 1400.31D exported
+    # 3,932 elements for 378 provisions. A child now attaches to the nearest
+    # preceding provision with its parent's path, which is the order the
+    # parser produced them in, and every provision is emitted exactly once.
+    # The collision itself is not hidden: the identifiers still repeat, and a
+    # claim in tests/claims.json counts them.
+    children = {i: [] for i in range(len(provisions))}
+    roots, last_seen = [], {}
+    for i, p in enumerate(provisions):
         parent = p.get("parent")
-        if parent and parent in children:
-            children[parent].append(p)
+        if parent and parent in last_seen:
+            children[last_seen[parent]].append(i)
         else:
-            roots.append(p)
-    return roots, children
+            roots.append(i)
+        last_seen[p["path"]] = i
+    return roots, children, provisions
 
 
-def provision_xml(prov, children, indent, do_mask, out):
+def provision_xml(prov, children, indent, do_mask, out, provisions=None):
     sp = " " * indent
     path = prov.get("path", "")
     role = ("reference" if path.split("/")[0].rstrip("0123456789") == "ref"
@@ -166,8 +174,8 @@ def provision_xml(prov, children, indent, do_mask, out):
             + attr("basis", cit.get("basis") or "cited")
             + attr("text", (cit.get("text") or "")[:300])
             + "/>")
-    for child in children.get(path, []):
-        provision_xml(child, children, indent + 2, do_mask, out)
+    for ci in children.get(prov["_i"], []):
+        provision_xml(provisions[ci], children, indent + 2, do_mask, out, provisions)
     out.append(f"{sp}</provision>")
 
 
@@ -264,9 +272,13 @@ def to_xml(rec, do_mask=True):
             + attr("heading", sec.get("heading"))
             + attr("verification", sec.get("verification") or "UNVERIFIED")
             + ">")
-        roots, children = nest(provisions)
-        for p in roots:
-            provision_xml(p, children, 4, do_mask, out)
+        roots, children, provisions = nest(provisions)
+        for i, p in enumerate(provisions):
+            p["_i"] = i
+        for ri in roots:
+            provision_xml(provisions[ri], children, 4, do_mask, out, provisions)
+        for p in provisions:
+            p.pop("_i", None)
         out.append("  </section>")
 
     # ---- corrections
