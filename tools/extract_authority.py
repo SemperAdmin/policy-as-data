@@ -363,6 +363,15 @@ def main():
             known = set(json.load(fh))
     base_index = build_base_index(store_ids, known)
 
+    # Status of every record in the set, so a citation from an active document
+    # to a superseded or cancelled one can be reported. Ids and status only.
+    status_of = {}
+    for name in names:
+        with open(os.path.join(args.src, name), encoding="utf-8") as fh:
+            r0 = json.load(fh)
+        status_of[r0["id"]] = r0.get("status")
+    cites_superseded = {}
+
     for name in names:
         with open(os.path.join(args.src, name), encoding="utf-8") as fh:
             rec = json.load(fh)
@@ -370,6 +379,8 @@ def main():
         for k in ("edges", "parsed", "unparsed", "held", "drift", "gaps"):
             totals[k] += s[k]
         totals["docs"] += 1
+        totals["provisions"] = totals.get("provisions", 0) + sum(
+            len(sec.get("provisions") or []) for sec in rec.get("sections") or [])
         per_doc[rec["id"]] = s
         for m in rec.get("relationships", {}).get("edge_meta", []):
             if m.get("rel") != "references":
@@ -378,6 +389,9 @@ def main():
             by_tier[tier] = by_tier.get(tier, 0) + 1
             if m.get("confidence") in ("named-not-held", "revision-drift"):
                 gap_docs.setdefault(m["target"], []).append(rec["id"])
+            if (rec.get("status") == "active"
+                    and status_of.get(m.get("target")) in ("superseded", "cancelled")):
+                cites_superseded.setdefault(m["target"], []).append(rec["id"])
         write_json(os.path.join(args.out, name), rec)
 
     # No generated_at. The report is a pure function of the store and the
@@ -389,6 +403,13 @@ def main():
         "named_not_held": {k: sorted(set(v))
                            for k, v in sorted(gap_docs.items(),
                                               key=lambda kv: -len(kv[1]))},
+        # Active documents whose own reference list names a record this set
+        # holds as superseded or cancelled. The citation is real and cited;
+        # the thing cited is no longer in force. A currency finding.
+        "cites_superseded": {k: sorted(set(v))
+                             for k, v in sorted(cites_superseded.items(),
+                                                key=lambda kv: -len(kv[1]))},
+        "superseded_status": {k: status_of[k] for k in cites_superseded},
         "per_document": per_doc,
     }
     with open(args.report, "w", encoding="utf-8") as fh:
