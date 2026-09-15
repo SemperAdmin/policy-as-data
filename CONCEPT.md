@@ -68,7 +68,7 @@ are in play, they have different users, and they are not the same product.
 | B | Does this order match its authority | `POC-PLAN.md` | Yes. The whole site |
 | C | A corpus a model or a method can interrogate | Shorter | The enabling discipline exists, unnamed |
 | D | How a directive is made, structured at birth | Shorter, SemperScribe | Deferred |
-| E | Training and Readiness. **Inference** | Gannon, if TNR is T&R | No. Zero held |
+| E | Training and Readiness | Gannon, **confirmed 2026-09-15** | No. Zero held |
 | F | Time returned to warfighting | Gannon, to GPO | No. Nothing measures time |
 | G | Fix all the orders in my command | Gannon, quoting a user | No. Everything reports; nothing remediates |
 
@@ -169,17 +169,32 @@ reviewer who has not appeared in any transcript. Every stakeholder who has
 appeared needed less: a graph, a picture, a time argument, a peer conversation
 about a grammar.
 
-### 3.6 The relationships are the asset and they live in memory
+### 3.6 The programme converts nothing it generates
 
-Ninety minutes with the Government Publishing Office, who publish the standard
-this project follows. Four load-bearing rulings about GPO in this repository
-were reached by reading their published documents rather than asking them, and
-`conformance-matrix.md` section 1 records a defect this project found in GPO's
-own reference grammar. Whether that was raised is unknown.
+**Revised 2026-09-15. It is numbered sixth and it belongs second.** The first draft of this section said the
+relationships live only in memory. That was too gentle. They also produce
+concrete offers, and the conversion rate is zero.
 
-Pease, the Directive Control Point, TECOM, the Personnel Administration School,
-and Ashe's wish list due the 23rd are recorded nowhere in the tree. `CLAUDE.md`
-section 16 exists to prevent exactly this.
+| Opening | From | Cost to claim | State |
+|---|---|---|---|
+| Brief GPO's legislative branch data partners on the project | LaPlant, S6 | Reply yes | **Not followed up** |
+| Present to Library of Congress, House, or Senate support staff | LaPlant, S6 | Reply yes | **Not followed up** |
+| Amaya Ashe's wish list, due the 23rd | Ashe, S5 | One conversation | **Not followed up** |
+
+The first two came from the body that publishes the standard this project
+follows, after ninety minutes in which their response to the work was not a
+correction but an offer to introduce it to the legislative data community.
+
+This outranks most of what is above it. A narrow product can be re-pointed in a
+week. An unanswered offer may not come back, and there is no evidence anyone
+noticed these were offers.
+
+**The recording problem underneath it is real too.** Four load-bearing rulings
+about GPO in this repository were reached by reading their published documents
+rather than asking them, while GPO sat in a room for ninety minutes. Pease, the
+Directive Control Point, TECOM, and the Personnel Administration School are
+recorded nowhere in the tree. `CLAUDE.md` section 16 exists to prevent exactly
+this.
 
 ### 3.7 And the author of this file made 3.1 worse
 
@@ -218,6 +233,25 @@ Reconciliation does not go away. It becomes the second act: here is the shallow
 answer across everything, and here is the deep answer where two people have
 read both sides.
 
+**Where to point it, now that T&R is confirmed.** Three things that were
+separate converge on one product:
+
+- **A**, the impact question, is the one three constituencies actually asked.
+- **E**, Training and Readiness, is a corpus with a named owner in TECOM, a
+  summit that has happened, and Gannon already briefing it at the Personnel
+  Administration School.
+- **F**, time saved, is the currency the pitch already uses.
+
+They converge because a T&R manual is the place where the impact question is
+the *daily* question rather than an occasional one: events carry stable codes
+and chain by prerequisite, so a reissue propagates mechanically. The corpus
+holds zero T&R manuals and `NAMESPACES.md` would take them with no schema
+change.
+
+**Caveat, and it is mine.** That description of T&R structure is general
+knowledge, not anything measured in this repository. Read one real manual
+before it enters a plan.
+
 **What this does not settle.** Whether the programme is candidate A, C, F, or
 G at the top. Those are different pitches to different sponsors and the owner
 decides. The layering in section 2 holds regardless, which is why it is worth
@@ -229,9 +263,17 @@ writing down before the choice is made.
 
 Three, and each is cheap.
 
-1. **Is TNR Training and Readiness?** If so, candidate E is the best product
-   fit in the record and the corpus holds none of it.
-2. **What was said in the missing 87 minutes with GPO?** Four rulings in this
+**Answered 2026-09-15.** TNR is Training and Readiness, so candidate E is
+evidenced. The GPO slice reached back three more minutes and produced two
+standing offers. Nothing was followed up.
+
+What is still open, in order of what it changes:
+
+1. **Can GPO's two offers still be taken up?** One reply each. They are the
+   only evidence the whole-of-government claim has ever had.
+2. **What does CDA stand for, and what is Gannon's part in creating it?** It
+   names where his mandate comes from and how long it lasts, and the whole
+   programme is currently running on that mandate.
+3. **What was said in the missing 87 minutes with GPO?** Four rulings in this
    repository turn on it.
-3. **What goes on Amaya Ashe's wish list, due the 23rd?** It is the nearest
-   thing to a resourcing decision anywhere in the record, and nobody has asked.
+4. **Does a real T&R manual have the structure section 4 assumes?** Read one.
