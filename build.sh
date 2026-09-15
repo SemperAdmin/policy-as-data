@@ -111,17 +111,23 @@ python3 tools/render_currency.py
 echo "### 19 impact - if this reissues, what names it"
 python3 tools/render_impact.py
 
-echo "### 20 scenarios - the evaluator on three fixed inputs, every line cited"
+echo "### 20 at scale - the same measurement across the full corpus, if run"
+# Reads config/scale_report.json if a report-only run has been made over the
+# full store; otherwise renders an honest "not yet run" page. The run itself
+# is not a build stage: a fresh clone has no full corpus.
+python3 tools/render_scale.py
+
+echo "### 21 scenarios - the evaluator on three fixed inputs, every line cited"
 # Imports evaluate.py and runs it in-process; the page and the CLI are one
 # implementation. Status comes from the ledger, so a line resting on a value
 # nobody has admitted is withheld on the page exactly as it is on the CLI.
 python3 tools/render_scenarios.py
 
-echo "### 21 site pages from fragments"
+echo "### 22 site pages from fragments"
 # Home, How it works, About, Search, Accessibility: bodies in site/, chrome
 # and counts applied here. Every number on these pages is measured by an
 # earlier stage; a placeholder that cannot be filled fails the build.
 python3 tools/render_pages.py
 
-echo "### 22 check the site actually works"
+echo "### 23 check the site actually works"
 python3 tools/check_site.py "$SITE" index.html | tail -12
