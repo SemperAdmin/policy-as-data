@@ -384,15 +384,9 @@
         </provision>
         <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-5-2/p3/e/2" path="p3/e/2" number="3.(e)(2)" label="(2)" depth="2" verification="UNVERIFIED">
           <text>Required Documentation.  Appropriate U.S. Armed Forces Identification Card and/or Uniformed Services Identification and Privilege Card and valid leave authorization are required to present to air terminal personnel.  Leave papers (NAVMC 3) may be printed from Marine OnLine (MOL). See chapter 4 paragraph 2b.</text>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-5-2/p3/e/2/f" path="p3/e/2/f" number="3.(e)(2)f." label="f." depth="3" verification="UNVERIFIED">
-            <text>Space Available Privileges on Department of Defense (DOD) Aircraft</text>
-          </provision>
         </provision>
         <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-5-2/p3/e/3" path="p3/e/3" number="3.(e)(3)" label="(3)" depth="2" verification="UNVERIFIED">
           <text>Marines in appellate leave status are not authorized space available travel.</text>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-5-2/p3/e/3/c" path="p3/e/3/c" number="3.(e)(3)c." label="c." depth="3" verification="UNVERIFIED">
-            <text>Combining Leave and Special Liberty.  Marines are authorized to take leave in conjunction with special liberty.  Leave may commence immediately upon termination of a special liberty period, or terminate just prior to the commencement of a special liberty period.  However, it is emphasized that leave must commence and terminate in the vicinity of the local area of the Marine’s Primary Duty Station.  Once leave starts, and until it ends, all included calendar days (duty days, non-duty days, weekend days, special liberty days, and holidays) are to be charged as leave.  Marines are considered in an authorized leave status from the time and date they are checked out on leave until the time and date they are checked in from leave. Marines departing the local area prior to commencement of authorized leave, or who fail to return to the local area prior to its expiration, are considered to be in an unauthorized absence status.  The intent of authorizing the combination of leave and special liberty is to allow Marines to take leave prior to, or after, special liberty without having to use annual leave days to cover those days designated as special liberty.  The intent is not to avoid charging included weekend, holiday, and special liberty calendar days as leave for Marines.  The following examples apply:</text>
-          </provision>
         </provision>
       </provision>
     </provision>
@@ -856,27 +850,12 @@
         <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-20/p20/b/2" path="p20/b/2" number="20.(b)(2)" label="(2)" depth="2" verification="UNVERIFIED">
           <text>Absence over regular liberty, if determined to be unavoidable and the entire period of authorized and excused unauthorized absence is:</text>
         </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-20/p20/b/3" path="p20/b/3" number="20.(b)(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>Absence over special liberty, if determined to be unavoidable, will be charged to the leave account to include both the authorized special liberty portion and the excused unauthorized portion.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-20/p20/b/4" path="p20/b/4" number="20.(b)(4)" label="(4)" depth="2" verification="UNVERIFIED">
-          <text>Periods of absence over liberty determined to be chargeable against a Marine's leave account shall be charged at the rate of one full day for each day of absence.  A leave authorization (NAVMC 3), using MOL, will be prepared for documentation.</text>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-20/p20/b/4/c" path="p20/b/4/c" number="20.(b)(4)c." label="c." depth="3" verification="UNVERIFIED">
-            <text>Exceptions.  Absences over leave or liberty caused by mental incapacity, or early departure of a unit due to operational commitments, whether determined to be avoidable or excused as unavoidable, shall not be charged as leave, regardless of the duration.  Detention by civilian authorities is covered by references (d) and (i).</text>
-          </provision>
-        </provision>
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-20/p20/a" path="p20/a" number="20.(a)" label="(a)" depth="1" verification="UNVERIFIED">
         <text>Three days or less, the entire period shall be considered liberty.</text>
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-20/p20/b" path="p20/b" number="20.(b)" label="(b)" depth="1" verification="UNVERIFIED">
         <text>In excess of 3 days, the excused unauthorized absence portions shall be considered as leave and charged to the member’s leave account.</text>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-20/p20/b/1" path="p20/b/1" number="20.(b)(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Absence over liberty, if determined to be avoidable shall be considered as unauthorized.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-20/p20/b/2" path="p20/b/2" number="20.(b)(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Absence over regular liberty, if determined to be unavoidable and the entire period of authorized and excused unauthorized absence is:</text>
-        </provision>
         <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-20/p20/b/3" path="p20/b/3" number="20.(b)(3)" label="(3)" depth="2" verification="UNVERIFIED">
           <text>Absence over special liberty, if determined to be unavoidable, will be charged to the leave account to include both the authorized special liberty portion and the excused unauthorized portion.</text>
         </provision>
@@ -1356,36 +1335,12 @@
       <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-7-2/p2/g" path="p2/g" number="2.(g)" label="(g)" depth="1" verification="UNVERIFIED">
         <text>To raise safety awareness and ensure the safe return of all Marines from leave, commanders shall ensure that all leave papers contain the leave conduct pledge which the Marine and first supervisor in the leave approval chain will execute before the Marine begins leave.  The implementation of this policy will further emphasize the importance of safe and professional conduct by all Marines, both on and off duty, and is a vitally important tool for improving safety awareness and preserving overall combat readiness.</text>
       </provision>
-      <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-7-2/p2/2" path="p2/2" number="2.(2)" label="(2)" depth="1" verification="UNVERIFIED">
-        <text>Disbursing Officers.  Disbursing officers are responsible for processing PCS orders involving delay en route and ensuring that the delay en route is promptly and properly entered into MCTFS.  This responsibility pertains to all types of PCS and reassignment orders, to include PTAD and non- appropriated orders funded by the Marine Corps or from civilian sources.</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-7-2/p2/3" path="p2/3" number="2.(3)" label="(3)" depth="1" verification="UNVERIFIED">
-        <text>Staff Officers of Senior Headquarters.  Commanders of major headquarters may delegate authority for the management and approval of leave to senior staff officers (G-staffs, department heads, division heads, branch heads, etc.).  These senior staff officers are responsible for ensuring that a Leave Management Program is established so that annual leave, special liberty, or PTAD is promptly and properly reported to the Marines' commanding officer using the MOL procedures.</text>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-7-2/p2/3/c" path="p2/3/c" number="2.(3)c." label="c." depth="2" verification="UNVERIFIED">
-          <text>Administrative Procedures for Leave Accounting</text>
-        </provision>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-7-2/p2/1" path="p2/1" number="2.(1)" label="(1)" depth="1" verification="UNVERIFIED">
-        <text>Except for those orders identified in paragraph 3, MOL should normally be used for granting, reporting, and liquidating all annual leave periods.</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-7-2/p2/2" path="p2/2" number="2.(2)" label="(2)" depth="1" verification="UNVERIFIED">
-        <text>Senior staff officers will ensure Marines submit leave requests using MOL to ensure leave is promptly and properly entered into the MCTFS.</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-7-2/p2/3" path="p2/3" number="2.(3)" label="(3)" depth="1" verification="UNVERIFIED">
-        <text>For geographically separated commands, other forms (such as naval messages) may be used, but the procedures in paragraph 8 still apply.</text>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-7-2/p2/3/c" path="p2/3/c" number="2.(3)c." label="c." depth="2" verification="UNVERIFIED">
-          <text>Administrative Procedures for Leave Accounting</text>
-        </provision>
-      </provision>
     </provision>
     <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-7-2/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
       <text>For MOL, the pledge will appear on the confirmation page for each request.  When a Marine requesting leave clicks "confirm," it will signify signature of the pledge.  The supervisor's pledge will appear on the confirmation page of the active reviewer and approver; the same process for pledge confirmation applies.</text>
     </provision>
     <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-7-2/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
       <text>For UD/MIPS, units must print the pledge by selecting "original copy front" and "original copy back" of the NAVMC 3 form. MCO 1050.3J Enclosure (1) 4-7</text>
-      <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-7-2/p2/g" path="p2/g" number="2.(g)" label="(g)" depth="1" verification="UNVERIFIED">
-        <text>To raise safety awareness and ensure the safe return of all Marines from leave, commanders shall ensure that all leave papers contain the leave conduct pledge which the Marine and first supervisor in the leave approval chain will execute before the Marine begins leave.  The implementation of this policy will further emphasize the importance of safe and professional conduct by all Marines, both on and off duty, and is a vitally important tool for improving safety awareness and preserving overall combat readiness.</text>
-      </provision>
       <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-7-2/p2/2" path="p2/2" number="2.(2)" label="(2)" depth="1" verification="UNVERIFIED">
         <text>Disbursing Officers.  Disbursing officers are responsible for processing PCS orders involving delay en route and ensuring that the delay en route is promptly and properly entered into MCTFS.  This responsibility pertains to all types of PCS and reassignment orders, to include PTAD and non- appropriated orders funded by the Marine Corps or from civilian sources.</text>
       </provision>
@@ -1403,9 +1358,6 @@
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-7-2/p2/3" path="p2/3" number="2.(3)" label="(3)" depth="1" verification="UNVERIFIED">
         <text>For geographically separated commands, other forms (such as naval messages) may be used, but the procedures in paragraph 8 still apply.</text>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-7-2/p2/3/c" path="p2/3/c" number="2.(3)c." label="c." depth="2" verification="UNVERIFIED">
-          <text>Administrative Procedures for Leave Accounting</text>
-        </provision>
       </provision>
     </provision>
   </section>
@@ -1534,93 +1486,6 @@
     </provision>
     <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
       <text>Officers or enlisted Marines selected for involuntary separation by Selective Early Release or Retirement Boards (SERBs).</text>
-      <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
-        <text>Purpose.  Administrative absence, also known as Permissive Temporary Additional Duty (PTAD), for any of the purposes outlined below may be authorized for Marines.  In approving such requests, care must be taken to ensure that the planned absence clearly falls within the criteria provided. If it does not, the absence shall be handled under normal leave or liberty procedures.  Commanders with standing authorization to grant administrative absence and those who may be authorized to warrant such absence on a specific basis shall ensure that this program is monitored closely to preclude adverse criticism and to prevent use of this program to accumulate, rather than expend, accrued leave.  Administrative absence will not be used in place of valid TAD requirements because TAD funds are not available. Additionally, and with the exception of PDMRA per chapter 6, Marines executing administrative absence/PTAD shall not be authorized to remain past their contract, extension, or mobilization in order to complete periods of administrative absence/PTAD being executed or to be taken later.</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/b" path="p1/b" number="1.b." label="b." depth="1" verification="UNVERIFIED">
-        <text>Authorization</text>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/b/1" path="p1/b/1" number="1.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Commanding generals and separate/detached organizational commanding officers are authorized to grant periods of PTAD not to exceed 30 days.  This may be further delegated.  Other commanders who desire to grant administrative absence, general officers in command who desire to grant periods in excess of 30 days, and any commander who desires authority to grant administrative absence for a purpose not defined below, shall request such authorization from CMC (MP).  Requests shall contain at least the following information:</text>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/b/1/a" path="p1/b/1/a" number="1.b.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Number and grade of military and or civilian personnel involved.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/b/1/b" path="p1/b/1/b" number="1.b.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Purpose, duration, and location.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/b/1/c" path="p1/b/1/c" number="1.b.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>Justification.</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/b/2" path="p1/b/2" number="1.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Leave may be granted in conjunction with PTAD.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/b/3" path="p1/b/3" number="1.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>PTAD may be granted before or after funded TAD periods as separate orders.</text>
-        </provision>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c" path="p1/c" number="1.c." label="c." depth="1" verification="UNVERIFIED">
-        <text>Permissive TAD may be authorized for the following purposes:</text>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/1" path="p1/c/1" number="1.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Attendance at meetings sponsored by recognized non-Federal technical, scientific, professional medical, professional dental, professional legal, and professional ecclesiastical societies and organizations, when the meetings bear a direct relationship to the member's professional background or primary military duties and clearly enhance the Marine's value to the Marine Corps.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/2" path="p1/c/2" number="1.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Attendance of a member of the board of directors of a DOD credit union, at meetings of associations, leagues, or councils formed by DOD credit unions, the purpose of which is directly related to the DOD credit union program. MCO 1050.3J 5-2                       Enclosure (1)</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/3" path="p1/c/3" number="1.c.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>Participation in competitive sports events and essential support of participants in competitive sports events (e.g., all Marine Corps team, Olympics).</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/4" path="p1/c/4" number="1.c.(4)" label="(4)" depth="2" verification="UNVERIFIED">
-          <text>Attendance in response to a subpoena, summons, or request in lieu of process, as a witness at a state criminal investigative proceeding or criminal prosecution involving substantial public interest, such as major crimes in which the member would be an essential witness.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/5" path="p1/c/5" number="1.c.(5)" label="(5)" depth="2" verification="UNVERIFIED">
-          <text>Travel to new permanent duty station area for the purpose of house hunting for up to 10 days.  Marines issued PCS orders to any location where Government quarters will not be available, Marines authorized to occupy non- Government quarters at their new permanent duty stations, or Marines scheduled for restrictive tours who wish to move their family members to a designated place are eligible to request PTAD.  Permissive TAD for house hunting may be used in conjunction with leave and liberty, but not with travel and proceed time.  If the Marine does not perform PTAD prior to detaching from the old duty station, PTAD may be authorized by the commanding officer at the new duty station after the Marine reports for duty.  A period of PTAD for house hunting may not exceed 10 days total, including work days and non-work days.  Marines separating or retiring are not eligible for PTAD for house hunting under this paragraph, but may be eligible for transition PTAD covered in paragraph 1c(11) of this Order.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/6" path="p1/c/6" number="1.c.(6)" label="(6)" depth="2" verification="UNVERIFIED">
-          <text>Participation in an official military retirement ceremony as the presiding official.  The permissive absence authorized may not exceed three days and is limited on one presiding official per retirement ceremony.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/7" path="p1/c/7" number="1.c.(7)" label="(7)" depth="2" verification="UNVERIFIED">
-          <text>Participation in other official or semi-official programs of the Marine Corps, for which funded TAD is not appropriate, which will enhance the Marine's value to the Marine Corps or the Marine's understanding of the Marine Corps and the Marine's relationship to it.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/8" path="p1/c/8" number="1.c.(8)" label="(8)" depth="2" verification="UNVERIFIED">
-          <text>Post-Deployment/Mobilization Respite Absence (PDMRA).  PDMRA is authorized to Marines who are deployed/mobilized at less than the deployment- dwell ratio, 1:2 for the active component (AC) Marines, and 1:5 for reserve component (RC) Marines.  See enclosure (2) for specific instructions.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/9" path="p1/c/9" number="1.c.(9)" label="(9)" depth="2" verification="UNVERIFIED">
-          <text>Paternity.  PTAD for paternity is authorized as discussed below:</text>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/9/a" path="p1/c/9/a" number="1.c.(9)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Authorization.  Commanders shall authorize 10 consecutive days of (PTAD) for a married male Marine when his spouse gives birth.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/9/b" path="p1/c/9/b" number="1.c.(9)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Granting PTAD. The timing of PTAD will be granted at the commander’s discretion depending on the unit's mission and specific operational circumstances.  However, commanders will ensure, absent any immediate or future operational requirements, that PTAD is taken and completed within 25 days after the child's birth.  Additionally, it will be taken before any other leave (i.e., combat, annual, or post deployment mobilization respite absence).</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/9/c" path="p1/c/9/c" number="1.c.(9)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>Deployment.  In instances where Marines are deployed, or scheduled to deploy prior to the birth, or immediately following the birth, commanders will have the discretion to postpone PTAD.  Marines unable to take PTAD as stated above will execute their PTAD within 90 days from the date of return.  Commanders retain the discretion to authorize PTAD outside the 90 day window (post-deployment) based on exigent circumstances.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/9/d" path="p1/c/9/d" number="1.c.(9)(d)" label="(d)" depth="3" verification="UNVERIFIED">
-            <text>Medical Facilities.  If appropriate medical facilities are not available for delivery, then PTAD may be authorized for the male Marine to accompany his spouse prior to and immediately following delivery.  This MCO 1050.3J 5-3                       Enclosure (1) authorization may be extended to unmarried male Marines in circumstances such as, but not limited to, when the unmarried male Marine has sole-custody of the baby.</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/10" path="p1/c/10" number="1.c.(10)" label="(10)" depth="2" verification="UNVERIFIED">
-          <text>Adoption.  PTAD for adoption is authorized as discussed below:</text>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/10/a" path="p1/c/10/a" number="1.c.(10)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Authorization.  Commanders shall authorize up to 21 days PTAD for any Marine adopting a child in a child qualifying adoption, or one parent of a dual military couple.  Adoption of a child by a member is a qualifying child adoption if the member is eligible for reimbursement of qualified adoption expenses for such adoption, per reference (v).</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/10/b" path="p1/c/10/b" number="1.c.(10)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Granting PTAD.  The number of days granted will be at the discretion of the commanders, but no less than 10 days. Due to the complex and rigorous process of adopting a child, commanders should allow Marines the greatest latitude possible while also taking into consideration associated risks related to mission accomplishment.  PTAD will not be granted to adoptions where the child being adopted currently resides with the adopting parent or parents</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/10/c" path="p1/c/10/c" number="1.c.(10)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>Commencement.  The PTAD period should commence when the child is ready for placement in order to assist the parent(s) in relocating the adoptive child, formalizing legal requirements, establishing a child care program, and other tasks as required.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/10/d" path="p1/c/10/d" number="1.c.(10)(d)" label="(d)" depth="3" verification="UNVERIFIED">
-            <text>Intermittent Request.  Due to the arduous process involved when adopting, Marines may take PTAD intermittently when the child is ready for placement.  For example, a Marine may request to take 3 days PTAD to finalize legal documents and then return to duty. Later, use 5 more days to establish child care then return to duty, and finally take 13 days (totaling 21) to physically take custody and relocate the child to the home.</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/11" path="p1/c/11" number="1.c.(11)" label="(11)" depth="2" verification="UNVERIFIED">
-          <text>Transition.  Transition PTAD is authorized for Marines being involuntarily separated from active duty if discharged under honorable or general (under honorable conditions) and as discussed below.</text>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p1/c/11/a" path="p1/c/11/a" number="1.c.(11)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Transition PTAD is only authorized in the following circumstances:</text>
-          </provision>
-        </provision>
-      </provision>
     </provision>
     <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-1-4/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
       <text>Officers and enlisted Marines with a mandatory retirement date.</text>
@@ -1851,117 +1716,6 @@
     </provision>
     <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3" path="p3" number="3." label="3." depth="0" verification="UNVERIFIED">
       <text>May.  This word is used in the permissive sense and means those addressed are given full option to choose whether or not to do something.</text>
-      <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/a" path="p3/a" number="3.a." label="a." depth="1" verification="UNVERIFIED">
-        <text>Active Component</text>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/a/1" path="p3/a/1" number="3.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>The minimum duration of initial deployment to the area of responsibility (AOR) is four consecutive months (120-consecutive days) to be eligible for PDMRA.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/a/2" path="p3/a/2" number="3.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>A deployment begins when an AC Marine enters the AOR.  The deployment ends when an AC Marine departs the AOR.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/a/3" path="p3/a/3" number="3.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>Dwell time begins when an AC Marine departs the AOR and ends when an AC Marine reenters the AOR for a subsequent deployment.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/a/4" path="p3/a/4" number="3.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
-          <text>An exception to the above creditable deployed time is for AC Marines assigned to a MEU or a squadron on a CV/CVN.  For such AC Marines, creditable deployed time for deployed-dwell purposes starts when the command element departs homeport and ends when the command element returns to homeport.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/a/5" path="p3/a/5" number="3.a.(5)" label="(5)" depth="2" verification="UNVERIFIED">
-          <text>Training, deployment certifications, pre-deployment exercises and other routine local operations that may require an AC Marine to be away from his or her home station prior to a deployment as defined above will occur during the dwell period and does not count for this purpose.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/a/6" path="p3/a/6" number="3.a.(6)" label="(6)" depth="2" verification="UNVERIFIED">
-          <text>Subsequent deployment duration to the AOR must be a minimum of four consecutive months (120-consecutive days) to be eligible for PDMRA.</text>
-        </provision>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/b" path="p3/b" number="3.b." label="b." depth="1" verification="UNVERIFIED">
-        <text>Reserve Component and Retired List</text>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/b/1" path="p3/b/1" number="3.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Reserve Component Marines and Retired Marines activated or recalled in support of a designated contingency operation per reference (u) under 12301(a), 12301(d), 12302, 12304, or 12307 are eligible for PDMRA. Those RC Marines under 12301(d) orders must be on Active Duty for Operational Support-Contingency Orders (ADOS-CO).  RC Marines on conventional ADOS orders are not eligible for PDMRA. MCO 1050.3J 6-4                       Enclosure (1)</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/b/2" path="p3/b/2" number="3.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>The minimum duration of initial activation/recall is four consecutive months (120-consecutive days).</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/b/3" path="p3/b/3" number="3.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>On the subsequent activation/recall in support of a designated contingency operation, an RC Marine must be activated/recalled for a minimum of four consecutive months (120-consecutive days).</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/b/4" path="p3/b/4" number="3.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
-          <text>Reserve Component and Retired Marines may request to extend under their activation/recall orders to use PDMRA prior to deactivation.  The total period of activation and PDMRA for RC Marines under reference (u) section 12302 shall not exceed 24 consecutive months, or section 12304 shall not exceed 12 consecutive months.  Extensions for all RC Marines and Retired RC Marines must not place them beyond 18-years of active duty.  Extensions that would place the RC Marine or Retired RC Marine beyond 18-years of active duty service must be approved by DC, M&amp;RA.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/b/5" path="p3/b/5" number="3.b.(5)" label="(5)" depth="2" verification="UNVERIFIED">
-          <text>Reserve Component Marines may request retention on medical hold beyond their expiration of active service (EAS) as stated on their original activation orders.  Any command having an injured RC Marine who may require retention on medical hold shall contact the reserve medical entitlements determination (RMED) section of the Wounded Warrior Regiment at [contact withheld] or [contact withheld].</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/b/6" path="p3/b/6" number="3.b.(6)" label="(6)" depth="2" verification="UNVERIFIED">
-          <text>RC Marines in sanctuary fall under the RC rules for PDMRA. However, extensions will not be granted beyond the first day of the month following the month in which 20 years of active duty service are attained.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/b/7" path="p3/b/7" number="3.b.(7)" label="(7)" depth="2" verification="UNVERIFIED">
-          <text>Active Reserve (AR) Marines that are ordered to temporary duty in support of a contingency operation, away from their permanent duty stations, are eligible to accrue PDMRA days using the AC 1:2 ratio.  The AR Marines will follow the AC rules.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/b/8" path="p3/b/8" number="3.b.(8)" label="(8)" depth="2" verification="UNVERIFIED">
-          <text>Periods of back-to-back orders or extensions are considered to be an extension of the original orders and do not constitute a break in service. There shall be a definitive break between activation (i.e., DD 214 issued) for PDMRA accrual.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/b/9" path="p3/b/9" number="3.b.(9)" label="(9)" depth="2" verification="UNVERIFIED">
-          <text>Reserve Component Marines who are federal, state, or local government civilian employees may be precluded by law from being paid by two entities for simultaneously serving on active duty and in their civilian government jobs; thus, they may be prohibited from returning to their civilian job while on PDMRA.  For this purpose, Marines may elect to earn Assignment Incentive Pay (AIP) in lieu of being awarded administrative absence days. Marines must make this election prior to accumulating PDMRA; there is no option to cash in administrative absence days already earned.  The AIP is valued at a rate of $200 for each day of PDMRA that otherwise would have been authorized, not to exceed the $3,000 monthly maximum payable to an individual member as established by reference (q) section 307a.</text>
-        </provision>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/c" path="p3/c" number="3.c." label="c." depth="1" verification="UNVERIFIED">
-        <text>Verification Procedures.  Commands will establish internal control procedures to account for the PDMRA program.  At a minimum, commands will account for individuals eligible for PDMRA, total PDMRA days earned, suspension period of creditable time and dates PDMRA used (see paragraph d.7 of this Order for applicability).</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d" path="p3/d" number="3.d." label="d." depth="1" verification="UNVERIFIED">
-        <text>Limitations</text>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/1" path="p3/d/1" number="3.d.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Marines who transition between components (i.e., AC to RC) will be considered under the guidelines applicable to the component of their current service. MCO 1050.3J 6-5                       Enclosure (1)</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/2" path="p3/d/2" number="3.d.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>The maximum PDMRA that may be earned for a Marine (AC or RC) will be limited to 23 days for each occasion the deployment-dwell ratio is not achieved (1:2 for AC, 1:5 for RC).</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/3" path="p3/d/3" number="3.d.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>PDMRA will not be credited or accrued until the minimum four months (120 days) consecutive qualifier has been meet.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/4" path="p3/d/4" number="3.d.(4)" label="(4)" depth="2" verification="UNVERIFIED">
-          <text>Computation of PDMRA is based on the total number of months of the subsequent deployment/activation if the minimum 1:2/1:5 ratio is not achieved. See example in paragraph 1.c of this Order.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/5" path="p3/d/5" number="3.d.(5)" label="(5)" depth="2" verification="UNVERIFIED">
-          <text>PDMRA is based on a 30-day month for accrual purposes.  A single day of service (partial month) in the AOR qualifies the entire month for PDMRA. For example, a subsequent deployment, from 28 March–26 September (seven months), generates 9 days of PDMRA (1 PDMRA day per month for months 1-5 = 5 days of PDMRA; 2 PDMRA days per month for months 6-7 = 4 days of PDMRA, for a total of 9 days of PDMRA).</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/6" path="p3/d/6" number="3.d.(6)" label="(6)" depth="2" verification="UNVERIFIED">
-          <text>Active Component Marines hospitalized as a result of injuries incurred in a combat zone are considered as remaining deployed for purposes of PDMRA accrual.  They will continue to accrue PDMRA until 90 days after the evacuation date from the AOR or date inpatient status terminates or date discharged, whichever date occurs first.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/7" path="p3/d/7" number="3.d.(7)" label="(7)" depth="2" verification="UNVERIFIED">
-          <text>Court martial or other adverse administrative action.  Marines pending court martial or other adverse administrative action (e.g., ADSEP, deserter, IHCA, NJP, UA) shall have their creditable time suspended beginning with the day that charges are preferred, or other adverse administrative action has been initiated, until final resolution.  Commanders shall document the suspension period of creditable time.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/8" path="p3/d/8" number="3.d.(8)" label="(8)" depth="2" verification="UNVERIFIED">
-          <text>Rest and Recuperation (R&amp;R) Program</text>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/8/a" path="p3/d/8/a" number="3.d.(8)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Accrued PDMRA may be used in lieu of leave.  However, if there are insufficient PDMRA days to cover the R&amp;R leave period, leave will be used to account for the remaining days of the R&amp;R leave period.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/8/b" path="p3/d/8/b" number="3.d.(8)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>PDMRA and leave combined shall not exceed the R&amp;R leave period.</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/9" path="p3/d/9" number="3.d.(9)" label="(9)" depth="2" verification="UNVERIFIED">
-          <text>Leave may be granted in conjunction with PDMRA and may be combined with other types of administrative absence (i.e., PDMRA with transitional administrative absence).</text>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/9/a" path="p3/d/9/a" number="3.d.(9)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Authorization for delay en route and PDMRA for periods of 46 days or more may be included in the PCS orders only when approved by the CMC (MMEA/MMOA).</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/9/b" path="p3/d/9/b" number="3.d.(9)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>PDMRA may be granted before or after funded TAD periods as separate orders.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/9/c" path="p3/d/9/c" number="3.d.(9)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>PDMRA and special liberty may only be combined when the Marine will physically be within the vicinity of the local area (as established by the local commander) and available for recall to duty during the special liberty period.</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/10" path="p3/d/10" number="3.d.(10)" label="(10)" depth="2" verification="UNVERIFIED">
-          <text>Per reference (o), standard policy regarding subsistence applies to the PDMRA program.  Marines who are issued a meal card shall turn in their meal cards to the commanding officer or the designated representative before commencing a period of PDMRA, and a credit discounted meal rate will be reported in the MCTFS. MCO 1050.3J 6-6                       Enclosure (1)</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/11" path="p3/d/11" number="3.d.(11)" label="(11)" depth="2" verification="UNVERIFIED">
-          <text>PDMRA shall not be used as justification for authorizing special leave accrual. (l2) PDMRA is a use or lose entitlement.  It shall be used prior to a Marine’s EAS or deactivation, transition between components, accession/release from the Active Reserve program, or retirement.  It shall be used prior to or in conjunction with the next permanent change of station/permanent change of assignment orders.  PDMRA will reset to zero upon a Marine transferring to the next duty station, separating, deactivating, or transitioning between components, accession/release from the Active Reserve program, or retiring. Failure to use PDMRA days within the designated time frame will result in loss of the benefit (i.e., PDMRA will be reset to zero).</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/13" path="p3/d/13" number="3.d.(13)" label="(13)" depth="2" verification="UNVERIFIED">
-          <text>For the purpose of PDMRA, the following specified temporary absences count as continuous days deployed or activated in support of a contingency operation:  emergency leave, rest and recuperation leave, funded TAD, and the absence of casualties hospitalized away from their deployment but are returned to their deployment.  Such temporary absences must be inclusive of a deployment or activation in support of a contingency operation in order to count as continuous.  Temporary absences that occur at the beginning or end of a deployment shorten the duration of the deployment and do not count as continuous days deployed or activated in support of a contingency operation.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1050_3j/p-3-7/p3/d/14" path="p3/d/14" number="3.d.(14)" label="(14)" depth="2" verification="UNVERIFIED">
-          <text>PDMRA is a non-monetary compensation.  Marines may not sell back PDMRA at any time with the exception as specified in paragraph 3.b.9 of this Order. MCO 1050.3J Enclosure (1) A-1 Appendix A Definitions The following words and terms are not defined elsewhere in the Order.  The words and terms used in this Order should be interpreted as meaning the following:</text>
-        </provision>
-      </provision>
     </provision>
   </section>
   <section anchor="p-4-4" identifier="/us/dod/don/usmc/mco/1050_3j/p-4-4" heading="4. Administrative Absence. A period of authorized absence (including" verification="UNVERIFIED">

@@ -1,12 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="favicon.png">
-<title>Verification - G.O.A.T.S. Policy Library</title>
-<style>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="favicon.png"><title>Verification - Semper Admin Policy Library</title><style>
+:root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
+--blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
+--brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
+--bg:#0A1424;--elev:#11203F;--sunken:#060E1A;--fg:#F2E5BE;--card:#11203F;
+--muted:#182A4D;--mutedfg:#B5A988;--border:#233A5C;--borders:#34507A;
+--n950:#0F0C09;--rad:8px;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:400 15px/1.6 "Inter Variable",Inter,system-ui,sans-serif}
+a{color:var(--blue1)}a:hover{color:var(--brass3)}
+:focus-visible{outline:3px solid var(--brass3);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px;
+background:var(--brass3);color:var(--n950)}
+header.chrome,main,footer{max-width:64rem;margin:0 auto;padding:16px 24px}
+header.chrome{margin-top:16px;border-radius:12px;border:1px solid var(--border);
+background:var(--elev);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.brand{display:flex;flex-direction:column;align-items:flex-start}
+.brand .eyebrow{margin-top:2px}
+.eyebrow{font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.08em;
+color:var(--mutedfg)}
+header.chrome a[aria-current="page"]{color:var(--parch3);text-decoration-thickness:2px}
+.emblem{align-self:center;display:flex}
+.wordmark{font:400 28px/1.2 "Bebas Neue",Oswald,system-ui,sans-serif;
+letter-spacing:.04em;color:var(--parch3);text-decoration:none;text-transform:uppercase}
+h1{font:700 28px/1.2 inherit;margin:32px 0 8px}
+h2{font:700 20px/1.2 inherit;border-bottom:1px solid var(--borders);
+padding-bottom:8px;margin-top:40px}
+.lede{color:var(--mutedfg);max-width:52rem}
+.tier{border:1px solid var(--border);border-radius:12px;background:var(--card);
+margin:0 0 4px;padding:16px 20px}
+.tier.gap{background:repeating-linear-gradient(135deg,var(--sunken),
+var(--sunken) 10px,#0b1830 10px,#0b1830 20px);border-style:dashed;
+border-color:var(--aging)}
+.tierhead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
+font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin-bottom:10px}
+.tiercode{color:var(--brass3);font-weight:700}
+.doc{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--muted)}
+.doc:first-of-type{border-top:0;padding-top:0}
+.docid{font:600 14px/1.4 "JetBrains Mono",Menlo,monospace;color:var(--parch3)}
+.doctitle{color:var(--fg)}
+.uslm{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.why{font-size:13px;color:var(--mutedfg);margin-top:4px}
+.pill{display:inline-block;padding:2px 9px;border-radius:9999px;
+font:700 11px/1.6 inherit;border:1px solid var(--borders);
+background:var(--muted);color:var(--parch3);white-space:nowrap}
+.pill.cited{border-color:var(--fresh);color:#9fe0bd}
+.pill.drift{border-color:var(--aging);color:#f0c489}
+.pill.gap{border-color:var(--stale);color:#f3a3a3}
+.pill.held{border-color:var(--blue1);color:#bcd7f2}
+.pill.cancelled,.pill.superseded{background:var(--stale);border-color:var(--stale);
+color:#fff}
+.arrow{text-align:center;color:var(--brass);font:700 13px/1 inherit;
+padding:6px 0;letter-spacing:.08em}
+.arrow span{background:var(--bg);padding:0 10px}
+.arrow{position:relative}
+.arrow:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
+background:var(--brass);z-index:-1}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--muted);
+vertical-align:top}
+th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;
+letter-spacing:.08em}
+code{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+footer{border-top:1px solid var(--border);margin-top:48px;font-size:13px;
+color:var(--mutedfg)}
+/* Small screens: the chrome stacks - wordmark row, page label, then nav links
+   as wrapping pill targets (the inline margin-left:auto that right-aligns the
+   first link on desktop needs the !important to release). Wide tables scroll
+   in place instead of stretching the page, and long identifiers break. */
+@media (max-width:640px){
+header.chrome{align-items:center;column-gap:12px;row-gap:8px;padding:12px 16px}
+.wordmark{font-size:22px}
+header.chrome span{flex-basis:100%;order:2;font:700 11px/1 inherit;
+text-transform:uppercase;letter-spacing:.08em;color:var(--mutedfg)}
+header.chrome a:not(.wordmark):not(.emblem){order:3;margin-left:0!important;
+font:600 13px/1.1 inherit;padding:8px 12px;border:1px solid var(--borders);
+border-radius:9999px;background:var(--muted);color:var(--parch3);
+text-decoration:none}
+table{display:block;overflow-x:auto}
+code,h3{overflow-wrap:anywhere}
+}
+
+details.maintainers{margin:12px 0;border:1px dashed var(--color-border-strong);border-radius:8px;padding:8px 12px}
+details.maintainers summary{cursor:pointer;color:var(--color-muted-foreground);font-size:13px;text-transform:uppercase;letter-spacing:.06em}
+details.finding{margin:10px 0}details.finding summary{cursor:pointer;font-weight:700}
+details.finding pre{overflow-x:auto;background:var(--color-bg-sunken);padding:10px;border-radius:6px}
 :root{--color-usmc-scarlet:#B82230;--color-marine-blue:#0F1F3D;--color-marine-blue-100:#6B9BD2;
 --color-parchment:#F2E5BE;--color-parchment-300:#FAF1D8;--color-brass:#B89042;--color-brass-300:#D4AF67;
 --color-status-fresh:#2F8F5C;--color-status-aging:#C97D1F;--color-status-stale:#B83232;
@@ -18,22 +100,6 @@
 --radius-sm:6px;--radius-md:8px;--radius-lg:12px;
 --shadow-card:0 1px 2px rgba(0,0,0,.4),0 0 0 1px rgba(242,229,190,.04);
 --shadow-md:0 2px 4px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.45);color-scheme:dark;}
-*{box-sizing:border-box}
-body{margin:0;background:var(--color-background);color:var(--color-foreground);font:400 15px/1.6 var(--font-body)}
-a{color:var(--color-marine-blue-100)}a:hover{color:var(--color-brass-300)}
-:focus-visible{outline:3px solid var(--color-ring-dark);outline-offset:2px;border-radius:2px}
-.skip{position:absolute;left:-9999px}
-.skip:focus{position:static;display:inline-block;padding:8px;background:var(--color-brass-300);color:var(--color-neutral-950)}
-header.chrome,main,footer{max-width:60rem;margin:0 auto;padding:16px 24px}
-header.chrome{margin-top:16px;border-radius:var(--radius-lg);border:1px solid var(--color-border);
-background:var(--color-bg-elev);box-shadow:var(--shadow-md);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
-.wordmark{font:400 28px/1.2 var(--font-display);letter-spacing:.04em;color:var(--color-parchment-300);
-text-decoration:none;text-transform:uppercase}
-.eyebrow{font:700 11px/1 var(--font-body);text-transform:uppercase;letter-spacing:.08em;
-color:var(--color-muted-foreground)}
-h1{font:400 40px/1.1 var(--font-display);letter-spacing:.02em;margin:24px 0 8px;text-transform:uppercase}
-h2{font:400 26px/1.2 var(--font-display);letter-spacing:.02em;margin:36px 0 10px;text-transform:uppercase;
-border-bottom:1px solid var(--color-border);padding-bottom:6px}
 h3{font:700 14px/1.3 var(--font-body);text-transform:uppercase;letter-spacing:.06em;
 color:var(--color-muted-foreground);margin:22px 0 8px}
 .prose{max-width:70ch}
@@ -72,36 +138,7 @@ letter-spacing:.06em;cursor:pointer}
 button:hover{background:var(--color-brass-300)}
 .note{border-left:3px solid var(--color-brass);padding:8px 0 8px 14px;margin:14px 0;
 color:var(--color-muted-foreground);font-size:14px}
-footer{border-top:1px solid var(--color-border);margin-top:48px;color:var(--color-muted-foreground);font-size:13px}
-/* Small screens: the chrome stacks - wordmark row, page label, then nav links
-   as wrapping pill targets (the inline margin-left:auto that right-aligns the
-   first link on desktop needs the !important to release). Wide tables scroll
-   in place instead of stretching the page, and long identifiers break. */
-@media (max-width:640px){
-header.chrome{align-items:center;column-gap:12px;row-gap:8px;padding:12px 16px}
-.wordmark{font-size:22px}
-header.chrome span{flex-basis:100%;order:2;font:700 11px/1 var(--font-body);
-text-transform:uppercase;letter-spacing:.08em;color:var(--color-muted-foreground)}
-header.chrome a:not(.wordmark):not(.emblem){order:3;margin-left:0!important;
-font:600 13px/1.1 var(--font-body);padding:8px 12px;
-border:1px solid var(--color-border-strong);border-radius:9999px;
-background:var(--color-muted);color:var(--color-parchment-300);
-text-decoration:none}
-table{display:block;overflow-x:auto}
-code,h3{overflow-wrap:anywhere}
-}
-.brand{display:flex;flex-direction:column;align-items:flex-start}.brand .eyebrow{margin-top:2px}</style>
-</head>
-<body>
-<a class="skip" href="#main">Skip to main content</a>
-<header class="chrome">
-<a class="emblem" href="https://semper-admin-portal.app.cloud.gov/" target="_blank" rel="noopener noreferrer" style="align-self:center;display:flex" title="Semper Admin portal (opens in a new tab)"><img src="semper-logo.jpg" alt="Semper Admin portal (opens in a new tab)" height="40"></a>
-<div class="brand"><a class="wordmark" href="index.html">G.O.A.T.S.</a><span class="eyebrow">By Semper Admin</span></div><span class="eyebrow">Verification</span>
-<a href="how-it-works.html" style="margin-left:auto">How it works</a>
-<a href="policy-index.html">All policies</a>
-<a href="authority-index.html">Authority chains</a>
-<a href="sources.html">Sources</a>
-</header>
+</style></head><body><a class="skip" href="#main">Skip to main content</a><header class="chrome"><a class="emblem" href="https://semper-admin-portal.app.cloud.gov/" target="_blank" rel="noopener noreferrer" title="Semper Admin portal (opens in a new tab)"><img src="semper-logo.jpg" alt="Semper Admin portal (opens in a new tab)" height="40"></a><div class="brand"><a class="wordmark" href="index.html">G.O.A.T.S.</a><span class="eyebrow">By Semper Admin</span></div><span class="eyebrow">Verification</span><a href="how-it-works.html" style="margin-left:auto">How it works</a><a href="currency.html">Currency</a><a href="impact.html">Impact</a><a href="policy-index.html">Library</a><a href="authority-index.html">Authority chains</a><a href="connections.html">Connections</a><a href="verification.html" aria-current="page">Verification</a><a href="scenarios.html">Scenarios</a><a href="about.html">About</a><a href="search.html">Search</a></header>
 <main id="main">
 <h1>Verification</h1>
 <div class="prose">
@@ -109,29 +146,29 @@ code,h3{overflow-wrap:anywhere}
 after a named person has opened the issuing authority's copy and confirmed it,
 and that reading is bound to the exact content confirmed. If the content later
 changes, the reading stops applying and the page says so.</p>
-<p><strong>QUORUM_SHORT 3 · UNVERIFIED 5 · VERIFIED 3</strong></p>
-<p class="note"><strong>Quorum deviation in force since 2026-08-08.</strong> rule claims require 1 independent reading(s) rather than 2. Reason: One verifier exists. A two-person rule with one available person produces either permanent QUORUM_SHORT or invented second identities, and an invented identity is far worse than an honest quorum of one. The deviation is recorded here and reported by tools/verify_status.py on every run rather than hidden in a default.</p>
+<p><strong>3 confirmed by one, needs a second · 5 not yet read by a person · 3 confirmed by a person</strong></p>
+<p class="note"><strong>One verifier is available.</strong> Since 2026-08-08 a value is admitted on 1 reading rather than the 2 the policy requires. Recorded as a deviation and restated on every build. No computed figure reaches a Marine under it.</p>
 </div>
 
-<h2>The process</h2>
+<h2 id="process">The process</h2>
 <p class="muted">Steps 4 and 5 are the ones a person does. Everything else is
 mechanical.</p>
-<ul class="flow"><li class=""><span class="n">1</span><div class="t">Issuance</div><div class="d">The issuing authority publishes. Their copy governs, always.</div></li><li class=""><span class="n">2</span><div class="t">Encode</div><div class="d">A provision or a rule value is recorded with the paragraph it was read from.</div></li><li class=""><span class="n">3</span><div class="t">UNVERIFIED</div><div class="d">Everything machine-produced enters here. Nothing is assumed correct.</div></li><li class="gate"><span class="n">4</span><div class="t">A human reads</div><div class="d">A named person opens the authority&#x27;s copy and compares. This step cannot be automated.</div></li><li class="gate"><span class="n">5</span><div class="t">Attest</div><div class="d">The reading is recorded against a hash of the exact content confirmed.</div></li><li class=""><span class="n">6</span><div class="t">VERIFIED</div><div class="d">Derived, never stored. If the content changes, the reading stops applying.</div></li><li class=""><span class="n">7</span><div class="t">Used</div><div class="d">Only verified values are compared or published. Unverified ones are withheld and say so.</div></li></ul>
+<ul class="flow"><li class=""><span class="n">1</span><div class="t">Issuance</div><div class="d">The issuing authority publishes. Their copy governs, always.</div></li><li class=""><span class="n">2</span><div class="t">Encode</div><div class="d">A provision or a rule value is recorded with the paragraph it was read from.</div></li><li class=""><span class="n">3</span><div class="t">Not yet read</div><div class="d">Everything machine-produced enters here. Nothing is assumed correct.</div></li><li class="gate"><span class="n">4</span><div class="t">A human reads</div><div class="d">A named person opens the authority&#x27;s copy and compares. This step cannot be automated.</div></li><li class="gate"><span class="n">5</span><div class="t">Attest</div><div class="d">The reading is recorded against a hash of the exact content confirmed.</div></li><li class=""><span class="n">6</span><div class="t">Confirmed</div><div class="d">Derived, never stored. If the content changes, the reading stops applying.</div></li><li class=""><span class="n">7</span><div class="t">Used</div><div class="d">Only verified values are compared or published. Unverified ones are withheld and say so.</div></li></ul>
 
-<h2>What the states mean</h2>
-<table><tr><th>State</th><th>Meaning</th></tr><tr><td><span class="badge v-ok">VERIFIED</span></td><td>A named person read the issuing authority&#x27;s copy and confirmed this.</td></tr><tr><td><span class="badge v-part">QUORUM SHORT</span></td><td>Read and confirmed, but short of the independent readings this kind of claim requires.</td></tr><tr><td><span class="badge v-bad">INVALIDATED</span></td><td>Confirmed once, then the content changed. The earlier reading no longer applies.</td></tr><tr><td><span class="badge v-bad">REJECTED</span></td><td>A person read the source and says the encoding is wrong. A found defect.</td></tr><tr><td><span class="badge v-warn">UNABLE</span></td><td>A person tried and could not, usually because the source could not be obtained.</td></tr><tr><td><span class="badge v-none">UNVERIFIED</span></td><td>Nobody has read the source against this record.</td></tr></table>
+<h2 id="states">What the states mean</h2>
+<table><tr><th>State</th><th>Meaning</th><th>In the data</th></tr><tr><td><span class="badge v-ok">Confirmed by a person</span></td><td>A named person read the issuing authority&#x27;s copy and confirmed this.</td><td class="mono muted">VERIFIED</td></tr><tr><td><span class="badge v-part">Confirmed by one, needs a second</span></td><td>Read and confirmed by one person; this kind of claim requires a second, independent reading before it is used.</td><td class="mono muted">QUORUM_SHORT</td></tr><tr><td><span class="badge v-bad">Changed since confirmed</span></td><td>Confirmed once, then the content changed. The earlier reading no longer applies.</td><td class="mono muted">INVALIDATED</td></tr><tr><td><span class="badge v-bad">Read and found wrong</span></td><td>A person read the source and says the encoding is wrong. A found defect.</td><td class="mono muted">REJECTED</td></tr><tr><td><span class="badge v-warn">Source not obtainable</span></td><td>A person tried and could not, usually because the source could not be obtained.</td><td class="mono muted">UNABLE</td></tr><tr><td><span class="badge v-none">Not yet read by a person</span></td><td>Nobody has read the source against this record.</td><td class="mono muted">UNVERIFIED</td></tr></table>
 
-<h2>How a value appears, verified and unverified</h2>
+<h2 id="examples">How a value appears, verified and unverified</h2>
 <p class="muted">Real records from this corpus, not mock-ups.</p>
 <div class="two"><div><h3>Verified - shown and used</h3><div class="card">
-<span class="badge v-ok">VERIFIED</span>
+<span class="badge v-ok">Confirmed by a person</span>
 <p style="font:700 30px/1.1 var(--font-display);margin:6px 0">12 weeks</p>
 <p class="muted" style="margin:2px 0;font-size:13px">DoWI 1327.06, para 3.11.c.(3)(a)1</p>
 <p class="mono muted" style="margin:2px 0">/us/dod/dodi/1327.06#ADPL_MAX_WEEKS</p>
 <p class="muted" style="font-size:13px;margin:6px 0 0">Read by <strong>V-001</strong> on 2026-08-08, against DoWI 1327.06, Military Leave, Liberty, and Administrative Absence.</p><p style="margin:6px 0 0;font-size:13px"><a href="https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132706p.pdf" rel="noopener">Open the issuing authority's copy</a></p>
 <p class="note" style="margin-top:12px">A named person read the issuing authority&#x27;s copy and confirmed this.</p>
 </div></div><div><h3>Unverified - withheld</h3><div class="card">
-<span class="badge v-none">UNVERIFIED</span>
+<span class="badge v-none">Not yet read by a person</span>
 <p class="withheld" style="margin:6px 0">Value withheld. Not shown, and not used in any comparison, until a person has read the source.</p>
 <p class="muted" style="margin:2px 0;font-size:13px">DoWI 1327.06, para 3.11.c.(6)(b)</p>
 <p class="mono muted" style="margin:2px 0">/us/dod/dodi/1327.06#ADPL_EVENT_MERGE_HOURS</p>
@@ -140,21 +177,21 @@ mechanical.</p>
 </div></div></div>
 
 
-<h2>Walkthrough - one claim, end to end</h2>
+<h2 id="walkthrough">Walkthrough - one claim, end to end</h2>
 <p class="muted">A live claim from this corpus. Nothing below is illustrative;
 the "after" is produced by the same code that produces the "before".</p>
 
 <h3>Step 1 &middot; Before - the claim is withheld</h3>
 
 <div class="card">
-<span class="badge v-none">UNVERIFIED</span>
+<span class="badge v-none">Not yet read by a person</span>
 <p class="withheld" style="margin:6px 0">Value withheld. The record holds one,
 but no person has read the source, so it is neither shown nor compared.</p>
 <p class="muted" style="margin:2px 0;font-size:13px">DoWI 1327.06, para 3.11.c.(6)(b)</p>
 <p class="mono muted" style="margin:2px 0">/us/dod/dodi/1327.06#ADPL_EVENT_MERGE_HOURS</p>
 <p style="margin:6px 0 0;font-size:13px"><a href="https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/132706p.pdf" rel="noopener">Open the issuing authority's copy</a></p>
 </div>
-<div class="card"><span class="badge v-none">NOT_COMPARABLE</span><h3 style="margin-top:8px">Window within which multiple qualifying events count as one</h3><p class="muted" style="font-size:13px">T1 value present but UNVERIFIED; withheld per the publication rule for unverified values; T5 value present but QUORUM_SHORT; withheld per the publication rule for unverified values</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T1</td><td colspan="3" class="withheld">value present but UNVERIFIED; withheld per the publication rule for unverified values</td></tr><tr><td class="mono">T5</td><td colspan="3" class="withheld">value present but QUORUM_SHORT; withheld per the publication rule for unverified values</td></tr></table></div>
+<div class="card" data-verdict="NOT_COMPARABLE"><span class="badge v-none">Not yet comparable</span><h3 style="margin-top:8px">Window within which multiple qualifying events count as one</h3><p class="muted" style="font-size:13px">2 sides withheld until a person has read the source. Nothing is compared until both sides are confirmed.</p><table><tr><th>Tier</th><th>Stated</th><th>In common units</th><th>Paragraph</th></tr><tr><td>DoD instruction</td><td colspan="2" class="withheld">A value is recorded but not yet read by a person. Withheld.</td><td class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(6)(b)</td></tr><tr><td>Marine Corps message</td><td colspan="2" class="withheld">A value is recorded but confirmed by one, needs a second. Withheld.</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 8.b.(1)</td></tr></table></div>
 
 <h3>Step 2 &middot; The reading</h3>
 <div class="card">
@@ -167,10 +204,16 @@ answer <strong>rejected</strong> - a found defect is worth more than a
 confirmation.</p>
 </div>
 
-<h3>Step 3 &middot; What the form produces</h3>
-<p class="muted">The page writes no data. Filling the form below downloads
-exactly this, and nothing leaves your browser.</p>
-<div class="card"><pre class="mono" style="margin:0;white-space:pre-wrap">{
+<h3>Step 3 &middot; Recording it</h3>
+<div class="card">
+<p style="margin:0">The reading is written down: who read, which edition, on
+what date, and a fingerprint of the exact text confirmed. A maintainer admits
+it. If the text changed between the reading and the admission, the record is
+refused and the reading happens again. Nothing is repaired silently.</p>
+<details class="maintainers"><summary>For maintainers - the file and the commands</summary>
+<p class="muted" style="font-size:13px">The form at the foot of this page writes no
+data. It downloads exactly this, and nothing leaves the browser:</p>
+<pre class="mono" style="white-space:pre-wrap">{
   &quot;assertion&quot;: &quot;/us/dod/dodi/1327.06#ADPL_EVENT_MERGE_HOURS&quot;,
   &quot;kind&quot;: &quot;rule&quot;,
   &quot;content_hash_seen&quot;: null,
@@ -186,47 +229,133 @@ exactly this, and nothing leaves your browser.</p>
   &quot;result&quot;: &quot;VERIFIED&quot;,
   &quot;note&quot;: &quot;&quot;,
   &quot;produced_by&quot;: &quot;docs/verification.html&quot;
-}</pre></div>
-
-<h3>Step 4 &middot; Admitting it</h3>
-<div class="card">
-<p style="margin:0 0 8px">Put the file in <span class="mono">verification/incoming/</span>
-and a maintainer runs:</p>
-<p class="mono" style="margin:0">python tools/attest.py --ingest</p>
-<p class="muted" style="font-size:13px;margin:8px 0 0">That step recomputes the
-hash from the corpus and compares it with the one your browser saw. If they
-differ, the record changed after you read it and the file is refused - the
-reading has to happen again. Nothing is repaired silently.</p>
-<p class="muted" style="font-size:13px;margin:6px 0 0">Then
-<span class="mono">bash build.sh</span> regenerates this page and every page that
-uses the value.</p>
+}</pre>
+<p class="muted" style="font-size:13px;margin:8px 0 0">Put the file in
+<span class="mono">verification/incoming/</span> and run
+<span class="mono">python tools/attest.py --ingest</span>. That recomputes the
+hash from the corpus and compares it with the one the browser saw; a mismatch
+refuses the file. Then <span class="mono">bash build.sh</span> regenerates this
+page and every page that uses the value.</p>
+</details>
 </div>
 
-<h3>Step 5 &middot; After - the value is in use</h3>
+<h3>Step 4 &middot; After - the value is in use</h3>
 <p class="muted">What the same engine produces with this one claim read and
 every other claim left exactly as it is. Marked a projection because it previews
-the mechanism, not because the values are in doubt. If it still says
-NOT_COMPARABLE, that is the honest answer: another tier is unread too, and one
+the mechanism, not because the values are in doubt. If it still says not yet
+comparable, that is the honest answer: another tier is unread too, and one
 reading is not enough.</p>
-<div class="card"><span class="badge v-none">NOT_COMPARABLE</span> <span class="badge v-warn">PROJECTION</span><h3 style="margin-top:8px">Window within which multiple qualifying events count as one</h3><p class="muted" style="font-size:13px">T5 value present but QUORUM_SHORT; withheld per the publication rule for unverified values</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T1</td><td>72 hours</td><td>72 hours</td><td class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(6)(b)</td></tr><tr><td class="mono">T5</td><td colspan="3" class="withheld">value present but QUORUM_SHORT; withheld per the publication rule for unverified values</td></tr></table></div>
+<div class="card" data-verdict="NOT_COMPARABLE"><span class="badge v-none">Not yet comparable</span> <span class="badge v-warn">Projection</span><h3 style="margin-top:8px">Window within which multiple qualifying events count as one</h3><p class="muted" style="font-size:13px">1 side withheld until a person has read the source. Nothing is compared until both sides are confirmed.</p><table><tr><th>Tier</th><th>Stated</th><th>In common units</th><th>Paragraph</th></tr><tr><td>DoD instruction</td><td>72 hours</td><td>72 hours</td><td class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(6)(b)</td></tr><tr><td>Marine Corps message</td><td colspan="2" class="withheld">A value is recorded but confirmed by one, needs a second. Withheld.</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 8.b.(1)</td></tr></table></div>
 
 
-<h2>Cross-tier comparison, as it stands now</h2>
+<h2 id="cross-tier">Cross-tier comparison, as it stands now</h2>
 <p class="muted">A value is compared with the authority above it only when both
 sides have been read by a person. An unverified side is withheld and the
 comparison is refused rather than guessed.</p>
-<div class="card"><span class="badge v-ok">AGREE</span><h3 style="margin-top:8px">Maximum parental leave authorized for a qualifying event</h3><p class="muted" style="font-size:13px">2 tiers agree at 84 days</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T1</td><td>12 weeks</td><td>84 days</td><td class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(3)(a)1</td></tr><tr><td class="mono">T5</td><td>84 days</td><td>84 days</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 11.d</td></tr></table></div><div class="card"><span class="badge v-none">NOT_COMPARABLE</span><h3 style="margin-top:8px">Minimum length of a parental leave increment</h3><p class="muted" style="font-size:13px">T1 value present but UNVERIFIED; withheld per the publication rule for unverified values; T5 value present but QUORUM_SHORT; withheld per the publication rule for unverified values</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T1</td><td colspan="3" class="withheld">value present but UNVERIFIED; withheld per the publication rule for unverified values</td></tr><tr><td class="mono">T5</td><td colspan="3" class="withheld">value present but QUORUM_SHORT; withheld per the publication rule for unverified values</td></tr></table></div><div class="card"><span class="badge v-none">NOT_COMPARABLE</span><h3 style="margin-top:8px">Maximum number of parental leave increments</h3><p class="muted" style="font-size:13px">T1 value present but UNVERIFIED; withheld per the publication rule for unverified values; T5 value present but QUORUM_SHORT; withheld per the publication rule for unverified values</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T1</td><td colspan="3" class="withheld">value present but UNVERIFIED; withheld per the publication rule for unverified values</td></tr><tr><td class="mono">T5</td><td colspan="3" class="withheld">value present but QUORUM_SHORT; withheld per the publication rule for unverified values</td></tr></table></div><div class="card"><span class="badge v-none">NOT_COMPARABLE</span><h3 style="margin-top:8px">Window within which multiple qualifying events count as one</h3><p class="muted" style="font-size:13px">T1 value present but UNVERIFIED; withheld per the publication rule for unverified values; T5 value present but QUORUM_SHORT; withheld per the publication rule for unverified values</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T1</td><td colspan="3" class="withheld">value present but UNVERIFIED; withheld per the publication rule for unverified values</td></tr><tr><td class="mono">T5</td><td colspan="3" class="withheld">value present but QUORUM_SHORT; withheld per the publication rule for unverified values</td></tr></table></div><div class="card"><span class="badge v-none">NOT_COMPARABLE</span><h3 style="margin-top:8px">Period after the qualifying event before unused leave is forfeited</h3><p class="muted" style="font-size:13px">T1 value present but UNVERIFIED; withheld per the publication rule for unverified values</p><table><tr><th>Tier</th><th>Stated</th><th>Normalised</th><th>Paragraph</th></tr><tr><td class="mono">T5</td><td>365 days</td><td>365 days</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 8.c.(3)</td></tr><tr><td class="mono">T1</td><td colspan="3" class="withheld">value present but UNVERIFIED; withheld per the publication rule for unverified values</td></tr></table></div>
+<div class="card" data-verdict="AGREE"><span class="badge v-ok">Agree</span><h3 style="margin-top:8px">Maximum parental leave authorized for a qualifying event</h3><p class="muted" style="font-size:13px">2 tiers agree at 84 days</p><table><tr><th>Tier</th><th>Stated</th><th>In common units</th><th>Paragraph</th></tr><tr><td>DoD instruction</td><td>12 weeks</td><td>84 days</td><td class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(3)(a)1</td></tr><tr><td>Marine Corps message</td><td>84 days</td><td>84 days</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 11.d</td></tr></table></div><div class="card" data-verdict="NOT_COMPARABLE"><span class="badge v-none">Not yet comparable</span><h3 style="margin-top:8px">Minimum length of a parental leave increment</h3><p class="muted" style="font-size:13px">2 sides withheld until a person has read the source. Nothing is compared until both sides are confirmed.</p><table><tr><th>Tier</th><th>Stated</th><th>In common units</th><th>Paragraph</th></tr><tr><td>DoD instruction</td><td colspan="2" class="withheld">A value is recorded but not yet read by a person. Withheld.</td><td class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(7)(a)</td></tr><tr><td>Marine Corps message</td><td colspan="2" class="withheld">A value is recorded but confirmed by one, needs a second. Withheld.</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 8.a.(1)(b)</td></tr></table></div><div class="card" data-verdict="NOT_COMPARABLE"><span class="badge v-none">Not yet comparable</span><h3 style="margin-top:8px">Maximum number of parental leave increments</h3><p class="muted" style="font-size:13px">2 sides withheld until a person has read the source. Nothing is compared until both sides are confirmed.</p><table><tr><th>Tier</th><th>Stated</th><th>In common units</th><th>Paragraph</th></tr><tr><td>DoD instruction</td><td colspan="2" class="withheld">A value is recorded but not yet read by a person. Withheld.</td><td class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(7)(a)</td></tr><tr><td>Marine Corps message</td><td colspan="2" class="withheld">A value is recorded but confirmed by one, needs a second. Withheld.</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 8.a.(1)(b)</td></tr></table></div><div class="card" data-verdict="NOT_COMPARABLE"><span class="badge v-none">Not yet comparable</span><h3 style="margin-top:8px">Window within which multiple qualifying events count as one</h3><p class="muted" style="font-size:13px">2 sides withheld until a person has read the source. Nothing is compared until both sides are confirmed.</p><table><tr><th>Tier</th><th>Stated</th><th>In common units</th><th>Paragraph</th></tr><tr><td>DoD instruction</td><td colspan="2" class="withheld">A value is recorded but not yet read by a person. Withheld.</td><td class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(6)(b)</td></tr><tr><td>Marine Corps message</td><td colspan="2" class="withheld">A value is recorded but confirmed by one, needs a second. Withheld.</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 8.b.(1)</td></tr></table></div><div class="card" data-verdict="NOT_COMPARABLE"><span class="badge v-none">Not yet comparable</span><h3 style="margin-top:8px">Period after the qualifying event before unused leave is forfeited</h3><p class="muted" style="font-size:13px">1 side withheld until a person has read the source. Nothing is compared until both sides are confirmed.</p><table><tr><th>Tier</th><th>Stated</th><th>In common units</th><th>Paragraph</th></tr><tr><td>Marine Corps message</td><td>365 days</td><td>365 days</td><td class="muted" style="font-size:13px">MARADMIN 051/23, para 8.c.(3)</td></tr><tr><td>DoD instruction</td><td colspan="2" class="withheld">A value is recorded but not yet read by a person. Withheld.</td><td class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(10)(c)</td></tr></table></div>
 
-<h2>The queue</h2>
-<table><tr><th>State</th><th>Claim</th><th>Detail</th></tr><tr><td><span class="badge v-none">UNVERIFIED</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_EVENT_MERGE_HOURS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(6)(b)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-none">UNVERIFIED</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_FORFEITURE_WINDOW_YEARS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(10)(c)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-none">UNVERIFIED</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_MAX_INCREMENTS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(7)(a)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-ok">VERIFIED</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_MAX_WEEKS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(3)(a)1</span></td><td class="muted" style="font-size:13px">1 independent attestation(s)</td></tr><tr><td><span class="badge v-none">UNVERIFIED</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_MIN_INCREMENT_DAYS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(7)(a)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-none">UNVERIFIED</span></td><td><span class="mono">/us/dod/dodi/1327.06#IDPL_MAX_PERIODS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.d.(3)(a)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-ok">VERIFIED</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#ENTITLEMENT_WINDOW_DAYS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.c.(3)</span></td><td class="muted" style="font-size:13px">1 independent attestation(s)</td></tr><tr><td><span class="badge v-part">QUORUM SHORT</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#EVENT_PROXIMITY_MERGE_HOURS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.b.(1)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr><tr><td><span class="badge v-part">QUORUM SHORT</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#MAX_INCREMENTS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.a.(1)(b)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr><tr><td><span class="badge v-ok">VERIFIED</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#MAX_PARENTAL_LEAVE_DAYS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 11.d</span></td><td class="muted" style="font-size:13px">1 independent attestation(s)</td></tr><tr><td><span class="badge v-part">QUORUM SHORT</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#MIN_INCREMENT_DAYS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.a.(1)(b)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr></table>
+<h2 id="findings">Findings</h2>
+<p class="muted">What the process found, written up as it was found. Each is a
+file in verification/ rendered here unchanged.</p>
+<details class="finding" id="findings-forfeiture-window"><summary>Finding - the forfeiture window is encoded as a number the source does not state</summary><div class="prose"><h3>Finding - the forfeiture window is encoded as a number the source does not state</h3>
+<p>Date: 2026-08-08. Raised by: <code>tools/reconcile.py</code>, via a refused unit conversion. Severity: <strong>a computed date given to a Marine can be one day early.</strong> Status: <strong>OPEN. Owner decision required.</strong> Nothing was changed.</p>
+<hr>
+<h4>The finding</h4>
+<p>Both tiers state the forfeiture window as <strong>one year</strong>. The corpus records it as <strong>365 days</strong>.</p>
+<table><tr><th></th><th>Text</th><th>Encoded</th></tr><tr><td>DoWI 1327.06 para 3.11.c.(10)(c)</td><td>"ADPL that is not taken before the expiration of <strong>1 year</strong> from the date of a child's birth, minor child's adoption... will be forfeited"</td><td><code>ADPL_FORFEITURE_WINDOW_YEARS</code> = 1 <strong>years</strong></td></tr><tr><td>MARADMIN 051/23 para 8.c.(3)</td><td>"Parental leave not executed before the expiration of <strong>1 year</strong> from the date of the qualifying event is forfeited"</td><td><code>ENTITLEMENT_WINDOW_DAYS</code> = 365 <strong>days</strong></td></tr></table>
+<p><strong>365 is not in either issuance.</strong> It is an arithmetic step taken during encoding and then presented as a cited value. Under this project's own rule - a cited value is what the paragraph says, and anything else is inferred - it should never have been recorded as a citation to para 8.c.(3).</p>
+<h4>How it surfaced</h4>
+<p>Not by anyone reading it. <code>config/units.json</code> refuses to convert years, with this reason written when the table was built:</p>
+<p>&gt; No fixed day count. The one-year forfeiture period in MARADMIN 051/23 para &gt; 8.c.(3) is already encoded as 365 days by the source's own arithmetic. &gt; Converting elsewhere would invite a leap-year error nobody would catch.</p>
+<p>When the DoD counterpart was encoded in the unit the source actually uses, reconciliation returned <code>NOT_COMPARABLE</code> and named the refusal. The refusal was correct and the reason it gave turned out to be the defect itself.</p>
+<h4>The consequence, measured</h4>
+<p><code>tools/evaluate.py</code> computes the forfeiture date as <code>governing_event + timedelta(days=WINDOW[&quot;value&quot;])</code>, with the value 365.</p>
+<pre><code>event 2027-03-01   +365d = 2028-02-29   &quot;1 year from&quot; = 2028-03-01   ONE DAY EARLY
+event 2023-01-01   +365d = 2024-01-01   &quot;1 year from&quot; = 2024-01-01   correct
+event 2027-02-28   +365d = 2028-02-28   &quot;1 year from&quot; = 2028-02-28   correct</code></pre>
+<p>Any qualifying event falling on or after 1 March in the year before a leap year, or on or before 29 February of a leap year, produces a date one day early.</p>
+<p><strong>732 of 2,922 qualifying-event dates across 2024 to 2031 - 25%.</strong> In 2027, 306 of 365 dates are affected. The engine would tell a Marine their parental leave expires a day before it does, on a quarter of all possible event dates.</p>
+<p>The error direction matters: it is always <strong>early</strong>, never late. It shortens the entitlement rather than extending it.</p>
+<h4>Why this is the POC's proof</h4>
+<p><code>POC-PLAN.md</code> success criterion S6: *at least one DIVERGE or NOT_HELD finding that was not on anyone's list beforehand. If this is zero, the concept is not proven.*</p>
+<p>This was not on anyone's list. It was produced by encoding a value in the unit its source uses and letting an explicit conversion table refuse to guess. A search index over PDFs cannot find it. A human reading either issuance would not find it, because <strong>neither issuance is wrong</strong> - the defect is in the encoding between them, which is precisely the layer this project exists to make visible.</p>
+<h4>What was NOT done</h4>
+<p>The MARADMIN value was not changed. It carries an attestation, and altering it would invalidate a human's reading without that human's involvement - which is the whole thing the ledger exists to prevent. This is a report, not a repair.</p>
+<h4>Options</h4>
+<p><strong>1. Encode both tiers in years, teach the evaluator calendar arithmetic.</strong> Correct. <code>ENTITLEMENT_WINDOW_DAYS</code> becomes <code>..._YEARS</code> = 1, and <code>evaluate.py</code> uses a date-shift rather than a day-count. Costs an attestation - the value changes, so the existing reading invalidates and must be redone. That is the system working.</p>
+<p><strong>2. Keep 365 and label it an approximation.</strong> Cheapest, and dishonest in the one place this project cannot afford to be. It would also leave the evaluator producing wrong dates.</p>
+<p><strong>3. Encode both, mark the day-count as derived.</strong> Keeps the fast path, records that 365 is inferred rather than cited. Middle ground, and it still leaves <code>evaluate.py</code> computing the wrong date unless it is taught to prefer the years-based value.</p>
+<p><strong>Recommendation: option 1.</strong> The entitlement is a date a Marine plans around. An off-by-one that is always early, on a quarter of event dates, is not an acceptable rounding.</p>
+<h4>Follow-on</h4>
+<ul><li><code>evaluate.py</code> uses <code>ENTITLEMENT_WINDOW_DAYS</code> in exactly one place; the change is small.</li><li>Check whether any other rule in the corpus records a converted number where the source states a period. This is the first place to look for a second instance.</li><li>Consider a <code>derived: true</code> flag on any rule value that is not verbatim from its cited paragraph, so this class is visible without a reconciliation run.</li></ul>
+<h4>Confidence</h4>
+<p>0.95. Both quotations are verbatim from the issuances. The arithmetic was computed rather than reasoned, and the 25% figure is an exhaustive count over 2024-2031 rather than an estimate. The <code>evaluate.py</code> line was read.</p>
+<p>The one thing not established: whether MARADMIN 051/23's own text anywhere states a day count for the forfeiture window, which would make 365 a quotation after all. The encoded note quotes only "1 year". <strong>Check para 8.c.(3) in the message before adopting any option.</strong></p></div></details>
+<details class="finding" id="findings-dodi-1327.06"><summary>Source reading - DoWI 1327.06, for M0</summary><div class="prose"><h3>Source reading - DoWI 1327.06, for M0</h3>
+<p>Date: 2026-08-08. Read by: machine, from the PDF you supplied. Edition read: <strong>DoWI 1327.06, August 7, 2025, incorporating Change 1, June 30, 2026.</strong> 75 pages, full text extracted.</p>
+<p><strong>This is not an attestation.</strong> A machine read the PDF. Verification is a human act and the ledger records a person. What follows is the evidence a verifier needs in order to run <code>tools/attest.py</code> in minutes rather than hours.</p>
+<hr>
+<h4>1. The five findings, in order of consequence</h4>
+<h5>F1. DTM 23-001 is cancelled, and it sits in the parental-leave authority chain</h5>
+<p>Paragraph 1.3.a, verbatim:</p>
+<p>&gt; This issuance incorporates and cancels: &gt; ... &gt; (2) Directive-type Memorandum 23-001, "Expansion of the Military Parental &gt; Leave Program," January 4, 2023, as amended.</p>
+<p><code>data/maradmin-051-23.rules.json</code> carries this chain:</p>
+<pre><code>/us/usc/10/701  -&gt;  /us/dod/dodi/1327.06  -&gt;  /us/dod/dtm/2023/23-001
+                -&gt;  /us/dod/don/usmc/maradmin/2023/051</code></pre>
+<p>The chain routes <strong>through a document that DoDI 1327.06 itself absorbed and cancelled.</strong> MARADMIN 051/23 implemented the DTM in January 2023; the DTM was folded into the instruction in August 2025. The service message's live authority is now the instruction directly, and the DTM link is historical.</p>
+<p><code>REFERENCES.md</code> records DTM 23-001 as encoded "full" with no cancellation. Nothing in the corpus knows it is cancelled.</p>
+<p><strong>This is the kind of finding S6 asks for</strong> - a currency defect on a live authority chain that nobody had on a list. Note honestly what produced it: a human reading a source, not the reconciliation tool. The tool would have found it only if the chain carried an encoded currency check, which is a candidate for a later concept.</p>
+<h5>F2. The issuance is styled DoW, not DoD</h5>
+<p>Cover page: <strong>"DOW INSTRUCTION 1327.06"</strong>. Originating Component: "Office of the Under Secretary of War for Personnel and Readiness". Change 1 approved by "Sean O'Keefe, Deputy Under Secretary of War for Personnel and Readiness". Every page footer: <code>DoWI 1327.06, August 7, 2025 / Change 1, June 30, 2026</code>.</p>
+<p>Paragraph 1.4.d gives the reason: <strong>"Update reference and organizational titles for currency."</strong></p>
+<p>Two consequences, and I have made a decision on one and flagged the other.</p>
+<ul><li><strong>Labels updated</strong> to DoWI, because a label should say what the document says.</li><li><strong>The identifier keeps <code>/us/dod/</code>.</strong> <code>NAMESPACES.md</code> allocates that token, an allocated token is not reused, and the identifier is a machine name a reader never sees. Whether a <code>DOWI</code> doc_type is needed, and whether <code>/us/dow/</code> should ever be allocated, is <strong>a register question for you</strong>, not a silent rename. Note it also affects the <code>doc_type</code> enum in <code>schema/policy_document.schema.json</code>.</li></ul>
+<h5>F3. Change 1 exists and the corpus did not record it</h5>
+<p>The record carried "Effective August 7, 2025" only. Change 1 is effective <strong>June 30, 2026</strong> and is administrative in scope, per paragraph 1.4:</p>
+<p>&gt; The changes to this issuance are administrative and: &gt; a. Update language to comply with Section 631 of Public Law (PL) 119-60. &gt; b. Authorize a Service member who meets a qualifying circumstance in &gt; Paragraph 3.11.c.(11) to use active duty parental leave (ADPL) during a 2-year &gt; period beginning after an event described in Paragraph 3.11.c.(1)(c) with &gt; approval from the first general officer/flag officer (GO/FO) in the member's &gt; chain of command. &gt; c. Incorporate language in accordance with the October 10, 2025 Secretary of &gt; War (SecWar) Memorandum. &gt; d. Update reference and organizational titles for currency.</p>
+<p>Item b is a <strong>2-year</strong> ADPL window in a defined circumstance. It does not change the 12-week maximum, but any evaluator that computes a forfeiture date must know it exists.</p>
+<h5>F4. The 12-week value is right. The citation was not.</h5>
+<p>The encoded citation was <code>/us/dod/dodi/1327.06/s3/3.11/c/adpl-entitlement</code>, labelled "para 3.11.c (ADPL)". <strong>Paragraph 3.11.c is the ADPL heading and states no value.</strong> The figure appears in four sub-paragraphs:</p>
+<table><tr><th>Paragraph</th><th>Verbatim</th></tr><tr><td>3.11.c.(3)(a)</td><td>"For the birth parent, 12 weeks of ADPL is authorized following a period of convalescence from childbirth."</td></tr><tr><td><strong>3.11.c.(3)(a)1</strong></td><td><strong>"Twelve weeks of ADPL is authorized during the 1-year period beginning after the child's date of birth."</strong></td></tr><tr><td>3.11.c.(3)(b)</td><td>"For the non-birth parent, 12 weeks of ADPL is authorized during the 1-year period beginning after the child's date of birth."</td></tr><tr><td>3.11.c.(4)</td><td>"Service members, including dual military couples, are each authorized 12 weeks of ADPL during the 1-year period beginning after a minor child is placed with the Service member for adoption or the date of the minor child's adoption..."</td></tr><tr><td>3.11.c.(5)</td><td>"Service members, including dual military couples, are each authorized 12 weeks of ADPL during the 1-year period beginning after a minor child is placed with the Service member for long-term foster care..."</td></tr></table>
+<p>Corrected to <strong>3.11.c.(3)(a)1</strong>, the sentence that states the number and the period together.</p>
+<p>This is why "the value is right" is not the same as "the record is right." Under this project's discipline an edge names the paragraph it was read from, and the old citation named a heading.</p>
+<h5>F5. IDPL is not 12 weeks, and assuming it were would be wrong by a factor of 14</h5>
+<p>Paragraph 3.11.d.(3)(a): "Birth parent, 12 IDPL periods will be authorized during the 1-year period".</p>
+<p>Paragraph 3.11.d.(1)(c) defines the unit:</p>
+<p>&gt; IDPL will be taken in increments equivalent to a 4-hour inactive duty training &gt; period of which a maximum of two such increments may be taken per day. Each &gt; such 4-hour increment constitutes an IDPL period.</p>
+<p>Twelve IDPL periods is <strong>48 hours</strong>. Twelve weeks of ADPL is 84 days. The two entitlements share a number and nothing else.</p>
+<p>Encoded as <code>IDPL_MAX_PERIODS</code>, unit <code>idpl_periods</code>, and deliberately carrying <strong>no concept</strong>. Putting it under <code>PARENTAL_LEAVE_MAX_DURATION</code> would let the units table be asked to bridge periods to days, and it would refuse - correctly, but for the wrong reason. The right reason is that it is a different entitlement for a different population.</p>
+<hr>
+<h4>2. What changed in the data</h4>
+<p><code>data/dodi-1327.06.rules.json</code>, with a <code>corrections</code> entry recording all of it. Status stays <strong>UNVERIFIED</strong> throughout: a machine read the PDF, and promotion is yours.</p>
+<table><tr><th></th><th>Before</th><th>After</th></tr><tr><td>label</td><td>DoDI 1327.06</td><td>DoWI 1327.06</td></tr><tr><td>date</td><td>Effective August 7, 2025</td><td>+ Change 1 effective June 30, 2026</td></tr><tr><td>originator</td><td>OUSD(P&amp;R)</td><td>Office of the Under Secretary of War for P&amp;R</td></tr><tr><td>rule id</td><td>CURRENT_DOD_PARENTAL_LEAVE_WEEKS</td><td>ADPL_MAX_WEEKS</td></tr><tr><td>citation</td><td><code>.../s3/3.11/c/adpl-entitlement</code></td><td><code>.../s3/3.11/c/3/a/1</code></td></tr><tr><td>rules</td><td>1</td><td>2, IDPL added</td></tr></table>
+<p>No attestation was invalidated, because this rule never had one.</p>
+<hr>
+<h4>3. What a verifier does now</h4>
+<p>Everything needed is above. The reading is confirming these against the PDF, not finding them.</p>
+<pre><code>python tools/attest.py --assertion &quot;/us/dod/dodi/1327.06#ADPL_MAX_WEEKS&quot; --verifier V-001</code></pre>
+<p>Answer <code>v</code>, edition <code>DoWI 1327.06, August 7, 2025, Change 1 June 30, 2026</code>, obtained <code>esd.whs.mil, PDF supplied 2026-08-08</code>, date today. Then a second verifier repeats it, because a rule value consumed by an evaluator needs two independent readings.</p>
+<p>Do the same for the MARADMIN side:</p>
+<pre><code>python tools/attest.py --assertion &quot;/us/dod/don/usmc/maradmin/2023/051#MAX_PARENTAL_LEAVE_DAYS&quot; --verifier V-001</code></pre>
+<p><strong>When both sides reach two verifiers, <code>reconcile.py</code> prints your first real cross-tier comparison.</strong> Expected: <code>AGREE</code>, 12 weeks = 84 days at T1, 84 days at T5. No code change required.</p>
+<hr>
+<h4>4. Follow-on work this reading created</h4>
+<table><tr><th></th><th>Item</th><th>Where</th></tr><tr><td>1</td><td>Record DTM 23-001 as cancelled by DoWI 1327.06, and mark the MARADMIN 051/23 authority chain accordingly</td><td><code>canonical/</code>, and it is a lineage change, so it is an owner action</td></tr><tr><td>2</td><td>Decide the DoW register question: a <code>DOWI</code> doc_type, and whether <code>/us/dow/</code> is ever allocated</td><td><code>NAMESPACES.md</code>, <code>schema/policy_document.schema.json</code></td></tr><tr><td>3</td><td>Encode the 2-year ADPL window from Change 1 para 1.4.b before any evaluator computes a forfeiture date</td><td><code>data/dodi-1327.06.rules.json</code></td></tr><tr><td>4</td><td>DTM 23-001, DTM 22-004, and DTM 23-003 are all cancelled by this issuance. Check whether the other two are in the corpus.</td><td><code>REFERENCES.md</code></td></tr><tr><td>5</td><td>Consider a <code>CANCELLED_BY</code> concept so the tool finds F1-class defects rather than a human having to</td><td><code>config/rule_concepts.json</code></td></tr></table>
+<p>Item 5 is the interesting one. F1 was found by reading, which does not scale. The reconciliation machinery could find it if currency were encoded as a comparable fact.</p>
+<hr>
+<h4>5. Confidence</h4>
+<p>0.9 on everything quoted. Every passage above is verbatim from the PDF you supplied, located by paragraph, and the arithmetic on IDPL is from the issuance's own definition.</p>
+<p>Lower on two points. Whether <code>/us/dod/dtm/2023/23-001</code> in your corpus is the January 4, 2023 DTM the cancellation names was <strong>not</strong> cross-checked against the canonical record; <code>REFERENCES.md</code> calls it "OSD DTM 23-001, Expansion of the MPLP" which matches, but confirm before recording the cancellation. And whether Change 1 alters anything in 3.11.d was <strong>not</strong> exhaustively checked - the Summary of Change 1 does not mention IDPL, and I did not diff the base edition against Change 1 paragraph by paragraph.</p></div></details>
 
-<h2>Validate a claim</h2>
+<h2 id="queue">The queue</h2>
+<table><tr><th>State</th><th>Claim</th><th>Detail</th></tr><tr><td><span class="badge v-none">Not yet read by a person</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_EVENT_MERGE_HOURS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(6)(b)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-none">Not yet read by a person</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_FORFEITURE_WINDOW_YEARS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(10)(c)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-none">Not yet read by a person</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_MAX_INCREMENTS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(7)(a)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-ok">Confirmed by a person</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_MAX_WEEKS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(3)(a)1</span></td><td class="muted" style="font-size:13px">1 independent attestation(s)</td></tr><tr><td><span class="badge v-none">Not yet read by a person</span></td><td><span class="mono">/us/dod/dodi/1327.06#ADPL_MIN_INCREMENT_DAYS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.c.(7)(a)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-none">Not yet read by a person</span></td><td><span class="mono">/us/dod/dodi/1327.06#IDPL_MAX_PERIODS</span><br><span class="muted" style="font-size:13px">DoWI 1327.06, para 3.11.d.(3)(a)</span></td><td class="muted" style="font-size:13px">no attestation</td></tr><tr><td><span class="badge v-ok">Confirmed by a person</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#ENTITLEMENT_WINDOW_DAYS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.c.(3)</span></td><td class="muted" style="font-size:13px">1 independent attestation(s)</td></tr><tr><td><span class="badge v-part">Confirmed by one, needs a second</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#EVENT_PROXIMITY_MERGE_HOURS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.b.(1)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr><tr><td><span class="badge v-part">Confirmed by one, needs a second</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#MAX_INCREMENTS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.a.(1)(b)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr><tr><td><span class="badge v-ok">Confirmed by a person</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#MAX_PARENTAL_LEAVE_DAYS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 11.d</span></td><td class="muted" style="font-size:13px">1 independent attestation(s)</td></tr><tr><td><span class="badge v-part">Confirmed by one, needs a second</span></td><td><span class="mono">/us/dod/don/usmc/maradmin/2023/051#MIN_INCREMENT_DAYS</span><br><span class="muted" style="font-size:13px">MARADMIN 051/23, para 8.a.(1)(b)</span></td><td class="muted" style="font-size:13px">0 independent plus 1 imported seed carrying no named verifier; 1 independent required</td></tr></table>
+
+<details class="maintainers" id="validate"><summary>Record a reading - for verifiers</summary>
 <div class="prose">
-<p>This page cannot write to the library. It produces an attestation file that a
-maintainer admits with <span class="mono">python tools/attest.py --ingest</span>,
-which recomputes the hash from the corpus rather than trusting the one in the
-file. If they differ, the file is refused - that means the record changed after
-you read it, and the reading has to happen again.</p>
+<p>This page cannot write to the library. It produces a file that a maintainer
+admits after recomputing the fingerprint from the corpus rather than trusting
+the one in the file. If they differ, the file is refused: the record changed
+after you read it, and the reading has to happen again.</p>
 <p class="note"><strong>Open the issuing authority's copy first.</strong> Do not
 confirm from this page, from a note, or from memory. The link is on the claim.</p>
 </div>
@@ -249,7 +378,7 @@ confirm from this page, from a note, or from memory. The link is on the claim.</
 <textarea id="n" rows="3"></textarea>
 <button type="submit">Download attestation</button>
 <p id="msg" class="muted" style="font-size:13px"></p>
-</form>
+</form></details>
 </main>
 <footer>
 <p>Generated from the attestation ledger and the rule store. Verifier identities

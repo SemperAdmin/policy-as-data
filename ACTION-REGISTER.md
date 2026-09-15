@@ -2,6 +2,8 @@
 
 Date: 2026-08-08. Owner: Stephen. Status: current.
 Last verified against disk: 2026-08-08, items 0.1, 0.4, 0.7, 0.8.
+Updated 2026-09-11: items 1.8 to 1.11 added from `resources/31-oceans-sumo-roe-paper.md`, accepted by the owner. Track 5 added from `SITE-PLAN.md`, adopted; 5.10 decided, fold.
+Updated 2026-09-15: Track 6, demo readiness, added from `CONCEPT.md`. Tracks 1 and 5 are not cancelled and are not the demo path; see `CONCEPT.md` section 3.1 for why.
 
 Consolidates every open item raised this session across `CHARTER.md`,
 `POC-PLAN.md`, `REUSE-ASSESSMENT.md`, `VERIFICATION-DESIGN.md`,
@@ -59,10 +61,14 @@ Sequential. Nothing here starts before section 0 is answered.
 | ~~1.1~~ | M1 | ~~`config/rule_concepts.json` and `config/units.json`~~ **BUILT 2026-08-08.** One concept, `PARENTAL_LEAVE_MAX_DURATION`, canonical unit days. Two conversions, weeks and hours, each naming the text that supports the factor. Months and years explicitly **refused** rather than approximated. | done |
 | ~~1.2~~ | M1 | ~~Add `concept`~~ **DONE 2026-08-08.** Added to the two rules that share a concept. The other four carry none and `reconcile.py` lists them as unassigned rather than dropping them. **Verified that adding the field leaves every attestation hash unchanged** - the hash covers value, unit, and citation identifier only, which is why the schema could grow without invalidating the ledger. | done |
 | ~~1.3~~ | M2 | ~~`tools/reconcile.py`~~ **BUILT 2026-08-08.** Four verdicts, tier derived from the identifier per `NAMESPACES.md`, citations on every line, `--json`, `--out`. All four paths tested: NOT_COMPARABLE on unverified input, DIVERGE at 70 vs 84 days, AGREE at 84, and the units refusal. | done |
-| **1.4** | M3 | **PARTIAL 2026-08-08.** Stage 16 added to `build.sh`, `check_site` renumbered to 17, `bash -n` clean. Report proven byte-identical across two runs. **Still open:** a malformed concept reference should fail the build, and that check is not written. | 1.3 |
+| ~~1.4~~ | M3 | ~~Stage 16, malformed concept check~~ **CLOSED 2026-09-11.** Stage wired 2026-08-08. The malformed-concept check is now in `tools/reconcile.py`: a rule whose `concept` is absent from the register exits 1 before anything is written. The earlier code dropped such a rule silently, not in any finding and not in the unassigned list. Claim C9 in `tests/claims.json` holds it. | done |
 | **1.5** | M4 | Render into `docs/`, link from the leave spine. Both paragraphs printed in full for any DIVERGE. | 1.4 |
 | **1.6** | — | **Stop and show it to someone who did not build it.** | 1.5 |
 | **1.7** | M5 | Second spine. The milestone that decides whether the design was shaped around leave. | 1.6, B2 |
+| ~~1.8~~ | M3 | **BUILT 2026-09-11.** `tests/claims.json`, 16 claims, 9 positive and 7 negative, run by `tests/run_claims.py` in `validate.yml`. Mutation-checked: disabling B1 withholding in `reconcile.py` fails N1 and N2 and nothing else. Original item: Claims table: `tests/claims.json`, one row per claim with expected verdict, positive and negative, run by a stdlib script in `validate.yml`. Negatives are the point: never AGREE from an unverified input, never convert years, never answer past the encoded rules. Closes the open half of 1.4 too - a malformed concept reference is a claim row. | 1.3 |
+| **1.9** | M4 | **ADDED 2026-09-11, from `resources/31`.** Attested absence. Split `reconcile.py` NOT_HELD into NOT_ENCODED (no rule file carries the concept at that tier) and SILENT (a named verifier read the tier and attested it states no value). New attestation kind `absence`, specified in `verification/README.md` first. Before the page renders: a NOT_HELD that means "nobody looked" must not publish as "the authority is silent". | 1.4 |
+| **1.10** | M4 | **ADDED 2026-09-11, from `resources/31`.** Binding kind on the authority tier of each concept in `config/rule_concepts.json`: `fixed`, `floor`, `ceiling`, `delegated`. DIVERGE gains direction: below a floor is a finding, variance on a delegated value is conforming and must not read as one. Before the page renders, for the reason `POC-PLAN.md` section 7 gives. | 1.4 |
+| **1.11** | - | **ADDED 2026-09-11, from `resources/31`.** Derivation steps in `evaluate.py` output: inputs, operation, basis per step; a unit conversion cites its `config/units.json` entry; a date shift says whether it is a day count or a calendar year. Same commit as the forfeiture-window decision in `verification/findings-forfeiture-window.md`, since both touch the evaluator. | owner decision on the forfeiture finding |
 
 **Success turns on S6:** at least one DIVERGE or NOT_HELD finding across two
 spines that nobody had on their list beforehand. If that is zero, the concept is
@@ -128,6 +134,91 @@ Small, and they keep the record honest.
 | **4.7** | Discharge `resources/21`, NPS FAST. Paste the landing page, About, and any documentation from a browser, or confirm it is CAC-gated. | `resources/21` |
 | **4.8** | Fill the table in `resources/22`. Title, author, publisher, year, ISBN. | `resources/22` |
 | **4.9** | Carry the authority statement into exported XML as a processing instruction or header comment. Near-zero cost. | `resources/20` |
+
+---
+
+## 5a. Track 5 - the site as one application. Added 2026-09-11.
+
+From `SITE-PLAN.md`, proposed. Measured state: ten header variants across 78
+pages, six hand-authored pages outside the build, stale counts on the home
+page, the evaluator on no page, reconciliation unlinked, and the one
+end-to-end thread walked by no page. Order: 5.1 and 5.4 first, in parallel.
+
+| # | Item | Blocked by | Priority |
+|---|---|---|---|
+| ~~5.1~~ | **BUILT 2026-09-11.** `config/site_nav.json` and `tools/chrome.py`; five renderers import `head()` and `header()`; the two chrome CSS copies in the renderers are gone (the hand pages' copies go with 5.2). Measured after a build: 72 generated pages, one header, nine links, current page marked `aria-current`. Hand pages still carry four variants until 5.2. Along the way: the build was idempotent within a day only - six clock stamps, now literals; 770 files byte-identical across two builds. `SESSION_HANDOFF.md` section 10. | done |
+| ~~5.2~~ | **BUILT 2026-09-15.** `site/` holds five fragments; `tools/render_pages.py` is stage 18 and writes Home, How it works, About, Search, Accessibility. Every count is a placeholder filled from `config/authority_report.json`, `config/reconciliation.json`, and the ledger; an unfillable placeholder fails the stage. The two MOS pages stay hand pages until 5.10. | done |
+| ~~5.3~~ | **BUILT 2026-09-15**, reframed for the audience in `SITE-PLAN.md` section 2: the home page leads with the question and the three findings (drift count, current documents citing a superseded instruction, the forfeiture-window error), then walks the thread in six steps, each linked. The scenario step waits on 5.6. | done, 5.6 pending |
+| ~~5.4~~ | **FIXED 2026-09-11.** `evaluate.py` now derives status through `verify_status.derive` and withholds every line resting on a rule below VERIFIED, naming the rule; withheld lines still cite. Claims N8 and C10 hold it. Original: **DEFECT.** `tools/evaluate.py` reads inline `status` from `rules.json`, not the ledger. Inline says VERIFIED for all five MARADMIN rules; the ledger derives QUORUM_SHORT for four. Invisible today because the evaluator has no page; a page would publish values the process has not admitted, against the deviation's own condition in `config/verification_policy.json`. Fix: derive status through `verify_status.derive`, apply B1, withhold and name the rule. Claims rows added. | - | P0, blocks 5.6 |
+| ~~5.5~~ | **BUILT 2026-09-15.** Section ids on `verification.html` (process, states, examples, walkthrough, cross-tier, findings, queue, validate); each spine tier block carries the document id, each gap `gap-Tn`. | done |
+| ~~5.6~~ | **BUILT 2026-09-15.** `docs/scenarios.html` from `config/scenarios.json`, stage 18, `tools/render_scenarios.py` importing `evaluate()` from `evaluate.py` (the CLI now wraps the same function). Three cases; every line links its paragraph; withheld lines name the value and its state in words; refusals listed. The forfeiture line carries the open finding on its face. With today's ledger two of five values are admitted, so the increment and merge lines are withheld - 2.7 changes that, nothing on the page does. | done; 2.7 for the rest |
+| ~~5.7~~ | **BUILT 2026-09-15.** "Compared with its authority" panel on every policy page that takes part in a comparison (today 051/23 and DoWI 1327.06), rows in reader words, paragraph links where the page holds the anchor; "Compared across tiers" pointer on the leave spine. Verdicts and withholding come from `config/reconciliation.json`, never re-decided. Also: every state and verdict now has reader-facing words on the site, with the code kept in the data and the legend; maintainer material (the attestation file, the commands) sits behind a disclosure; spine pages say where a citation was read from in words. Closes 1.5. | done |
+| **5.8** | Verified excerpts on `policy-DODI-1327.06.html` rendered from `data/dodi-1327.06.uslm.xml` with badges. Closes the thread's step 4 gap. | 5.1 | P1 |
+| ~~5.9~~ | **BUILT 2026-09-15.** `site/about.html`: what this is not (official, a decision, complete, automated judgement), where documents come from, terms, accessibility, feedback. The Standards section left How it works with a pointer to Sources; the upstream pipeline diagram (17,514 documents, a training corpus) left with it, since neither number nor claim belongs to this site. | done |
+| **5.10** | **HALF DONE 2026-09-15.** Both MOS pages now render from `site/` fragments through the pages stage, so they take the chrome and the nav and the strand no longer looks like a different site. Generating the lineage page from the family manifest and `lineage.py`, and moving the intro into the NAVMC page, is the remaining half. MOS strand. **DECIDED 2026-09-11: FOLD.** `mos-manual-lineage.html` becomes a generated editions page from `config/mos-family-manifest.json` and `tools/lineage.py`; `mos-manual-intro.html` becomes the "What it says" section of `policy-NAVMC-1200.1L.html`. Both hand pages leave `docs/` as sources once the generated pages exist. | 5.1 | P1 |
+| **5.11** | `viewer/` ruling recorded in one line; `README.md` "What is here" stops listing retired code as current. | - | P1 |
+| **5.12** | Interactive evaluator. Needs a decision on where logic lives before any code. | 5.6 shown to someone | P2 |
+| ~~5.13~~ | **CORRECTED 2026-09-15: see 6.6 and 6.12.** The export multiplication is fixed; the identifier collision is the store's and is item 6.12. Original entry, wrong in attributing it to the export: Exported XML repeats provision elements and collides identifiers. 14 of 56 exports carry more `<provision>` elements than the store holds provisions; `MCO-1400.31D.issuance.xml` carries 3,932 elements for 378 provisions and one identifier 378 times. Across all exports 19,528 distinct identifiers against 20,178 store provisions. The store is right; the export is wrong. Every export still validates against the XSD, so schema validation did not catch it. Investigate `export_issuance.py` before the exports are offered to anyone; the identifier claim ("every provision has a stable identifier") is false for these files as published. | - | P0 |
+
+---
+
+## 5b. Track 6 - demo readiness. Added 2026-09-15.
+
+Scope: what the application needs to be demonstrable to a general officer and
+defensible under approval. Derived from `CONCEPT.md` and the six sources in
+`CONCEPT-EVIDENCE.md`. **The owner's role is the application.** Outreach,
+the duplication question, and the ask are named in section 5c and are not this
+track.
+
+### The demo, five beats
+
+A general gives five minutes. Each beat lands a number and needs no
+explanation; Ashe in S5 is the evidence for what happens otherwise.
+
+| # | Beat | State |
+|---|---|---|
+| 1 | Which of your orders rest on something that no longer exists? Four today, each naming the citing order, the dead target, and why it is dead | Data exists, no page. **6.1** |
+| 2 | Click one. MCO 6100.14, paragraph 5, reference (a), cites DoDI 1308.3, cancelled March 2022 | Works today |
+| 3 | If DoDI 1327.06 reissues tomorrow, what breaks? | Computed, not framed. **6.2** |
+| 4 | How do I know this is right? One withheld value | Works today |
+| 5 | Is this just 56 documents? | Missing. **6.3**, and it decides the brief |
+
+### The work
+
+| # | Item | Why | Size |
+|---|---|---|---|
+| ~~6.1~~ | **BUILT 2026-09-15**, commit dd688b1. `docs/currency.html`, three tiers, citing paragraph in words on every row. Original: **Currency page.** What rests on something no longer in force. Rows from `authority_report.cites_superseded` and `superseded_status`; each links the citing paragraph, which `edge_meta.resolution` already carries (e.g. `p-5:ref/a`). Reader words, no codes | Beat 1, the opening | small, data exists |
+| ~~6.2~~ | **BUILT 2026-09-15**, commit dd688b1. `docs/impact.html` sorted by dependents, and every policy page frames its citers as what would need review on a reissue. Original: **Impact view.** For any document: what names it, at which paragraph, framed as what breaks if this reissues. `lineage.build_inbound` already computes it and every policy page already shows it as inbound traffic; this is framing plus an index sorted by how many documents name a target | Beat 3, and the question three constituencies actually asked | small |
+| ~~6.3~~ | **RUN 2026-09-15.** 169 seconds over `E:\GunnyBot\canonical`, read-only, newest file there still dated July. 17,507 documents read, 7 quarantined and never read. **887 documents in force cite an instruction the corpus holds as cancelled; 5,169 of 21,198 references name a superseded edition; 6,005 name something not held.** Report is `config/scale_report.json`, 3 MB, identifiers and counts only; rendered at `docs/scale.html` and on the home page. Tooling: `extract_authority.py --report-only` applies the publication gate, writes no record, and emits a compact report; `render_scale.py` renders it or an honest not-run page; the home page carries the counts when the report exists. Original: **Scale run.** Edge extraction and the currency and drift measurements across all 17,514 documents at `E:\GunnyBot\canonical`. **Report only: counts and identifiers, no text, no contacts, no rendered pages.** Needs a `--report-only` flag so nothing is written back. `SESSION_HANDOFF.md` non-negotiable 1 keeps that store untouched; non-negotiable 2 keeps the seven Statement C records out, and that gate must hold even for a counts report | Beat 5. Today the honest answer to "how many orders does the Marine Corps have" is 17,500 and we did 56, which is a scale a person can do by hand. This is the number that makes the brief | medium |
+| ~~6.4~~ | **BUILT 2026-09-15**, commit dd688b1. Original: **Home opens on the currency finding**, not the reconciliation thread. Most of the page already reads this way; the lead and the order of the three findings change | The demo opens correctly | small |
+| **6.5** | **One time measurement.** Time a person answering one of these questions from the source PDFs, then with the tool. N of 1, and say so on its face | The whole pitch is priced in time and the project has never measured a minute. `POC-PLAN.md` S1 to S7 all measure correctness | tiny |
+| ~~6.6~~ | **FIXED 2026-09-15, and the diagnosis in 5.13 was backwards.** The store carries the collision, not the export: 585 of 20,178 provisions in 15 documents have a path already used in the same section, a parser defect now item 6.12. The exporter nested children by path and so emitted every child of a repeated path once per repeat; MCO 1400.31D exported 3,932 elements for 378 provisions. It now attaches each child to the nearest preceding parent and emits every provision exactly once: 378. Claim C13 holds element count against the store count per document. The repeated identifiers remain, stated, until 6.12. Original: **Fix the export identifier defect**, item 5.13. `MCO-1400.31D.issuance.xml` carries 3,932 provision elements for 378 provisions and one identifier 378 times | If a technical reviewer opens the XML, that is the moment the room turns. The identifier claim is false for these files as published | unknown until diagnosed |
+| ~~6.7~~ | **CHECKED 2026-09-15.** The live site at policy-as-data.app.cloud.gov serves the pre-session home page: programme prose, 54 documents, 351 references. Expected, since nothing has been pushed. Owner deploys via GitHub when this branch lands; check again then. | done, recheck after push |
+| ~~6.8~~ | **DECIDED 2026-09-15: the emblem stays.** About already states the site is not official and carries no Authority to Operate; `NOTICE` section 4 carves the mark out of the licence. Nothing further. | done |
+
+Order: 6.1, 6.2, 6.4 together, about a day. 6.3 and 6.5 in parallel, and they
+are the pair that makes the demo land. Then 6.6 to 6.8.
+
+### Needed the moment leadership says yes, not before
+
+| # | Item | Why |
+|---|---|---|
+| **6.9** | A fresh clone that builds. `canonical/` is gitignored, `build.sh` reads it at stage 1, and `CLAUDE.md` constraint 10 claims a fresh clone builds. Both cannot be true | Approval means other people. Today nobody but the owner can run this |
+| **6.10** | `CONTRIBUTING.md` and a governance stub. `CHARTER.md` 5 records the collaborative space as not started, and the announcement recruited volunteers for four things the repository forbids | Same |
+| **6.12** | **Parser: provision paths are not unique within a section.** 585 of 20,178 provisions across 15 documents (MCO 1610.7B 242, MCO 1400.31D 122, the two 1400.32D changes 50 each, MARADMIN 274/26 40). A repeated marker under a repeated heading gets the same path, so the identifier collides. Fixing it changes machine-tier identifiers, which is the [ID2] promotion question in `SESSION_HANDOFF.md` 7.1 again. Not for the demo; stated on the site as a known limit until fixed | needed before exports are offered to a consumer |
+| **6.11** | One Training and Readiness manual encoded, as the second corpus. T&R is confirmed (S2, owner 2026-09-15), TECOM owns it, the grammar takes it unchanged, and the corpus holds none | The impact question is the daily question in a T&R manual rather than an occasional one. **Read one real manual first**; its structure is currently asserted from general knowledge, not measured here |
+
+---
+
+## 5c. Not the application, and not this owner's lane
+
+Recorded so they are not lost. `CONCEPT.md` section 3.6.
+
+| # | Item | Why it matters to the brief |
+|---|---|---|
+| **6.A** | **The duplication question.** Why does the Directive Control Point not already do this. Open since the first analysis, answered nowhere in the tree | The first question a general asks. The app supplies part of the answer: the current system did not catch four orders resting on a cancelled instruction |
+| **6.B** | **The ask.** Nobody has written down what leadership is being asked to approve: people, corpus access, a decision on where it lives, or permission to continue | A brief with no ask gets a nod and no follow-up |
+| **6.C** | GPO's two standing offers and Ashe's wish list, all unanswered | The only outside validation the programme has |
 
 ---
 

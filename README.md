@@ -29,6 +29,7 @@ canonical/          56 documents, the corpus of record for this project
 config/             spine definitions, the curated MOS family, the id indexes
 schema/             the JSON contract and the published XSD
 tools/              the pipeline, 23 scripts
+tests/              the claims table and its runner, run in CI
 prototypes/         editor.html, retired 2026-07-19, kept as a reference sketch
 branding/           the style guide and emblem, mirrored from SemperAdminPortal
 data/               the VERIFIED tier, hand-encoded (see Two tiers)

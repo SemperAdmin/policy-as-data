@@ -28,7 +28,6 @@ import json
 import re
 import os
 import sys
-from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from atomicio import write_json  # noqa: E402
@@ -36,6 +35,14 @@ from authority import classify, TIERS  # noqa: E402
 
 REF_ROOTS = ("ref", "encl")
 TOOL = "extract_authority.py"
+
+# The date this ruling was applied, a fact about the change and not about
+# when the build last ran. A literal, per the ENTERED precedent in
+# ingest_authority_tiers.py: reading the clock here re-dated the correction
+# on every build, so a 2026-08-04 change read as today, and two builds on
+# different days left every record and export different with no changed
+# content. Bump it when the change this tool makes actually changes.
+DATED = "2026-08-04"
 
 
 def _root(path):
@@ -308,9 +315,8 @@ def extract(record, store_ids, base_index=None, known=None):
     rel["edge_meta"] = meta
 
     if edges or parsed or unparsed:
-        stamp = datetime.now(timezone.utc).date().isoformat()
         record.setdefault("conversion_notes", []).append(
-            f"{TOOL} {stamp} - authority edges from reference lists: "
+            f"{TOOL} {DATED} - authority edges from reference lists: "
             f"{len(edges)} written, {parsed} item(s) classified, "
             f"{unparsed} item(s) left unparsed (raw text retained)")
     return {"edges": len(edges), "parsed": parsed, "unparsed": unparsed,
@@ -331,6 +337,14 @@ def main():
                          "to decide whether a cited edition has been superseded. "
                          "Omit and drift is judged against --store-index, which "
                          "understates it.")
+    ap.add_argument("--report-only", action="store_true",
+                    help="Measure and write the report; write no records. For a "
+                         "run over a store that must stay untouched, such as the "
+                         "full corpus on E:. Applies the publication gate: a "
+                         "record with publication.publishable false is skipped "
+                         "and counted, never read into the report. The report is "
+                         "compacted: identifiers, statuses, counts, and titles "
+                         "for the documents that appear in a list. No text.")
     ap.add_argument("--store-index",
                     help="JSON array of every doc id in the full store. "
                          "Without it, in-store is judged against --src only, "
@@ -341,7 +355,8 @@ def main():
     if args.only:
         want = set(args.only)
         names = [f for f in names if f[:-5] in want]
-    os.makedirs(args.out, exist_ok=True)
+    if not args.report_only:
+        os.makedirs(args.out, exist_ok=True)
 
     totals = {"docs": 0, "edges": 0, "parsed": 0, "unparsed": 0,
               "held": 0, "drift": 0, "gaps": 0}
@@ -357,6 +372,22 @@ def main():
             known = set(json.load(fh))
     base_index = build_base_index(store_ids, known)
 
+    # Status of every record in the set, so a citation from an active document
+    # to a superseded or cancelled one can be reported. Ids and status only.
+    status_of, title_of, quarantined = {}, {}, []
+    for name in names:
+        with open(os.path.join(args.src, name), encoding="utf-8") as fh:
+            r0 = json.load(fh)
+        if args.report_only and (r0.get("publication") or {}).get("publishable") is False:
+            quarantined.append(r0["id"])
+            continue
+        status_of[r0["id"]] = r0.get("status")
+        title_of[r0["id"]] = r0.get("title") or r0["id"]
+    if quarantined:
+        names = [n for n in names if n[:-5] not in set(quarantined)]
+    cites_superseded, cites_superseded_detail, drift_edges, named_by = {}, [], [], {}
+    holds_rx = re.compile(r"store-holds=([^;]+)")
+
     for name in names:
         with open(os.path.join(args.src, name), encoding="utf-8") as fh:
             rec = json.load(fh)
@@ -364,6 +395,22 @@ def main():
         for k in ("edges", "parsed", "unparsed", "held", "drift", "gaps"):
             totals[k] += s[k]
         totals["docs"] += 1
+        n_prov = sum(len(sec.get("provisions") or []) for sec in rec.get("sections") or [])
+        totals["provisions"] = totals.get("provisions", 0) + n_prov
+        s["provisions"] = n_prov
+        # Provision paths that repeat within a section. A parser defect the
+        # site states rather than hides (ACTION-REGISTER 6.12).
+        seen, coll = set(), 0
+        for sec in rec.get("sections") or []:
+            for prov in sec.get("provisions") or []:
+                key = (sec.get("anchor"), prov.get("path"))
+                if key in seen:
+                    coll += 1
+                seen.add(key)
+        s["path_collisions"] = coll
+        totals["path_collisions"] = totals.get("path_collisions", 0) + coll
+        if coll:
+            totals["docs_with_path_collisions"] = totals.get("docs_with_path_collisions", 0) + 1
         per_doc[rec["id"]] = s
         for m in rec.get("relationships", {}).get("edge_meta", []):
             if m.get("rel") != "references":
@@ -372,20 +419,94 @@ def main():
             by_tier[tier] = by_tier.get(tier, 0) + 1
             if m.get("confidence") in ("named-not-held", "revision-drift"):
                 gap_docs.setdefault(m["target"], []).append(rec["id"])
-        write_json(os.path.join(args.out, name), rec)
+            read_from = (m.get("resolution") or "").split(";")[0].strip()
+            named_by.setdefault(m["target"], []).append(
+                {"citing": rec["id"], "read_from": read_from,
+                 "confidence": m.get("confidence")})
+            if m.get("confidence") == "revision-drift":
+                h = holds_rx.search(m.get("resolution") or "")
+                drift_edges.append({"citing": rec["id"], "target": m["target"],
+                                    "holds": (h.group(1).split(",") if h else []),
+                                    "read_from": read_from})
+            if (rec.get("status") == "active"
+                    and status_of.get(m.get("target")) in ("superseded", "cancelled")):
+                cites_superseded.setdefault(m["target"], []).append(rec["id"])
+                cites_superseded_detail.append({
+                    "citing": rec["id"], "target": m["target"],
+                    "target_status": status_of[m["target"]], "read_from": read_from})
+        if not args.report_only:
+            write_json(os.path.join(args.out, name), rec)
 
+    # No generated_at. The report is a pure function of the store and the
+    # index; a clock field made two identical builds differ by one line.
+    totals["known"] = len(known) if known else len(store_ids)
+    totals["quarantined"] = len(quarantined)
+    if args.report_only:
+        # Compact form for a run over the full corpus. Every list keeps its
+        # identifiers; the inbound index keeps a count per target and the
+        # detail rows for the hundred most-named; titles only for documents
+        # that appear somewhere in the report. The per-document block goes,
+        # because at 17,514 documents it is a second copy of the store index.
+        top = sorted(named_by.items(), key=lambda kv: (-len(kv[1]), kv[0]))[:100]
+        mentioned = set(cites_superseded) | {d["citing"] for d in cites_superseded_detail}
+        mentioned |= {t for t, _ in top} | {d["citing"] for t, rows in top for d in rows}
+        mentioned |= {d["citing"] for d in drift_edges} | {d["target"] for d in drift_edges}
+        report = {
+            "scope": "report-only run; no record written, publication gate applied",
+            "totals": totals,
+            "edges_by_tier": {k: {"count": v, "name": TIERS.get(k, k)}
+                              for k, v in sorted(by_tier.items())},
+            "cites_superseded": {k: sorted(set(v)) for k, v in sorted(
+                cites_superseded.items(), key=lambda kv: -len(kv[1]))},
+            "superseded_status": {k: status_of[k] for k in cites_superseded},
+            "cites_superseded_detail": sorted(cites_superseded_detail,
+                                              key=lambda d: (d["target"], d["citing"])),
+            "drift_edges": sorted(drift_edges, key=lambda d: (d["citing"], d["target"])),
+            "named_by_counts": {k: len(v) for k, v in sorted(
+                named_by.items(), key=lambda kv: (-len(kv[1]), kv[0]))},
+            "named_by_top": {k: sorted(v, key=lambda d: d["citing"]) for k, v in top},
+            "status": {k: status_of[k] for k in sorted(mentioned) if k in status_of},
+            "titles": {k: title_of[k] for k in sorted(mentioned) if k in title_of},
+            "status_counts": dict(sorted(
+                {s: list(status_of.values()).count(s) for s in set(status_of.values())}.items(),
+                key=lambda kv: str(kv[0]))),
+        }
+        write_json(args.report, report, indent=1)
+        print(f"documents        {totals['docs']}  (quarantined {len(quarantined)}, not read)")
+        print(f"edges            {totals['edges']}  held {totals['held']}  "
+              f"revision-drift {totals['drift']}  named-not-held {totals['gaps']}")
+        print(f"cites superseded {len(cites_superseded_detail)} edge(s) from "
+              f"{len({d['citing'] for d in cites_superseded_detail})} active document(s)")
+        print(f"report           {args.report}")
+        return 0
     report = {
-        "generated_at": datetime.now(timezone.utc).isoformat(),
         "totals": totals,
         "edges_by_tier": {k: {"count": v, "name": TIERS.get(k, k)}
                           for k, v in sorted(by_tier.items())},
         "named_not_held": {k: sorted(set(v))
                            for k, v in sorted(gap_docs.items(),
                                               key=lambda kv: -len(kv[1]))},
+        # Active documents whose own reference list names a record this set
+        # holds as superseded or cancelled. The citation is real and cited;
+        # the thing cited is no longer in force. A currency finding.
+        "cites_superseded": {k: sorted(set(v))
+                             for k, v in sorted(cites_superseded.items(),
+                                                key=lambda kv: -len(kv[1]))},
+        "superseded_status": {k: status_of[k] for k in cites_superseded},
+        # Detail for the currency and impact pages, so they read config only.
+        # Identifiers, statuses, titles, and the paragraph a citation was read
+        # from. No provision text, so nothing here can carry a contact.
+        "cites_superseded_detail": sorted(cites_superseded_detail,
+                                          key=lambda d: (d["target"], d["citing"])),
+        "drift_edges": sorted(drift_edges, key=lambda d: (d["citing"], d["target"])),
+        "named_by": {k: sorted(v, key=lambda d: d["citing"])
+                     for k, v in sorted(named_by.items(),
+                                        key=lambda kv: (-len(kv[1]), kv[0]))},
+        "status": dict(sorted(status_of.items())),
+        "titles": dict(sorted(title_of.items())),
         "per_document": per_doc,
     }
-    with open(args.report, "w", encoding="utf-8") as fh:
-        json.dump(report, fh, indent=1)
+    write_json(args.report, report, indent=1)
 
     print(f"documents        {totals['docs']}")
     if known:

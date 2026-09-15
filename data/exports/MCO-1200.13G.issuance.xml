@@ -165,21 +165,9 @@
           <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4/c" path="p12/b/4/c" number="12.b.(4)(c)" label="(c)" depth="3" verification="UNVERIFIED">
             <text>During onsite surveys ensure that adequate survey administration facilities for maximum group size of 50 Marines are made available. (Well-lighted classrooms with desks or service clubs with tables are required; theater-type spaces without integrated desktop, standing or sitting on the floor or ground are not adequate.) 5 MCO 1200.13G MAR 0 7 2012</text>
           </provision>
-          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4/a" path="p12/b/4/a" number="12.b.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Support CG, TECOM in conduct of FEA by providing adequate representation in project teams formed for FEA of each OccFld/project. _1. Advocate with Operating Force and supporting establishment units for successful surveys through representative participation as designed.</text>
-          </provision>
         </provision>
         <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4" path="p12/b/4" number="12.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
           <text>Deputy Commandants as OccFld Advocate</text>
-          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4/a" path="p12/b/4/a" number="12.b.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Provide a staff POC with authority to coordinate survey requirements between Operating Force and Supporting Establishment in the geographic area. Requirements specific to each survey for the geographic area will be provided to commands by the TECOM message and by POC contact.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4/b" path="p12/b/4/b" number="12.b.(4)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Coordinate supportable survey dates with CG, TECOM to ensure that Marines in the OccFld/MOSs being studied are accessible for FEA survey administration.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4/c" path="p12/b/4/c" number="12.b.(4)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>During onsite surveys ensure that adequate survey administration facilities for maximum group size of 50 Marines are made available. (Well-lighted classrooms with desks or service clubs with tables are required; theater-type spaces without integrated desktop, standing or sitting on the floor or ground are not adequate.) 5 MCO 1200.13G MAR 0 7 2012</text>
-          </provision>
           <provision identifier="/us/dod/don/usmc/mco/1200_13g/p-12/p12/b/4/a" path="p12/b/4/a" number="12.b.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
             <text>Support CG, TECOM in conduct of FEA by providing adequate representation in project teams formed for FEA of each OccFld/project. _1. Advocate with Operating Force and supporting establishment units for successful surveys through representative participation as designed.</text>
           </provision>

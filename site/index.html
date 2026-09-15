@@ -1,0 +1,92 @@
+<h1>Does the order say what its authority says?</h1>
+<p class="lede">Marine Corps orders cite the DoD instructions and statutes they
+implement. Nobody can check today, at scale, whether a citation still points at
+something in force, or whether the number in the order matches the number in the
+authority above it. This site is a proof that both checks can be made mechanical.
+{{docs}} documents, {{provisions}} paragraphs, every claim traceable to the
+paragraph that states it.</p>
+
+<h2>What it found</h2>
+<div class="findings">
+<div class="finding">
+<div class="big">{{n_cites_superseded}}</div>
+<p>documents in force today cite, in their own reference list, an instruction
+that no longer is: {{cites_superseded}}. <a href="currency.html">Every one,
+with the paragraph that cites it</a></p>
+</div>
+<div class="finding">
+<div class="big">{{drift}} of {{edges}}</div>
+<p>references in these {{docs}} documents name an edition that has since been
+superseded. A currency report nobody compiled; it fell out of the encoding.
+<a href="currency.html#editions">The list</a></p>
+</div>
+<div class="finding">
+<div class="big">1 day</div>
+<p>An error in our own encoding, caught by the machine: a computed forfeiture
+date one day early on a quarter of possible event dates. Neither issuance was
+wrong. The encoding between them was. <a href="verification.html#findings">The
+finding</a></p>
+</div>
+</div>
+
+{{scale_block}}
+
+<p class="lede">And the question in the other direction: if one of these documents
+reissues tomorrow, what breaks? <a href="impact.html">{{most_named_n}} documents
+name {{most_named}}</a>, the most depended-upon document in the set. Every
+policy page carries its own answer.</p>
+
+<h2>One question, walked end to end</h2>
+<p class="lede">Does MARADMIN 051/23 give a Marine the parental leave the DoD
+instruction authorizes?</p>
+<ol class="thread">
+<li><strong>The message.</strong> MARADMIN 051/23, paragraph 11.d, states 84
+days. <a href="policy-MARADMIN-2023-051.html#p11-d">Read the paragraph</a></li>
+<li><strong>Where it sits.</strong> Statute, DoD instruction, Marine Corps
+order, message. Every step is a citation printed on the document below it, and a
+tier the corpus does not hold is stated as a gap, never inferred.
+<a href="authority-leave.html">The chain</a></li>
+<li><strong>The authority.</strong> DoD Instruction 1327.06, paragraph
+3.11.c.(3)(a)1, states twelve weeks. <a href="verification.html#examples">As read
+and confirmed</a></li>
+<li><strong>Do they agree.</strong> {{thread_verdict}}
+<a href="verification.html#cross-tier">The comparison</a></li>
+<li><strong>Who confirmed it.</strong> {{verified}} of {{assertions}} encoded
+values have been read against the issuing authority's copy by a named person.
+{{n_not_compared}} of {{n_findings}} comparisons are withheld until both sides
+have been read. Withheld, not guessed. <a href="verification.html">The
+ledger</a></li>
+<li><strong>What follows.</strong> Three fixed cases run through the encoded
+rules: days remaining, the forfeiture date, whether a proposed block is valid.
+Every line cites its paragraph; a line resting on a value nobody has confirmed
+is withheld and says which. <a href="scenarios.html">The scenarios</a></li>
+<li><strong>What this proves, and what it does not.</strong> It compares encoded
+values, never the issuances themselves. The issuing authority's copy governs.
+Where a value has not been read by a person, the page says so instead of showing
+a number. A wrong entitlement figure with a caveat under it is worse than no
+figure.</li>
+</ol>
+
+<h2>What is here</h2>
+<ul class="sections">
+<li><a href="currency.html">Currency</a> - what rests on something that no
+longer exists, with the paragraph that cites it.</li>
+<li><a href="impact.html">Impact</a> - if a document reissues, what names it and
+would need review.</li>
+<li><a href="policy-index.html">Library</a> - {{policy_pages}} documents, each on
+one page: its text to the paragraph, the authority above it, the versions before
+it. {{type_counts}}.</li>
+<li><a href="authority-index.html">Authority chains</a> - five subjects traced
+from the message a Marine reads to the statute it rests on.</li>
+<li><a href="connections.html">Connections</a> - every document and every cited
+reference between them, on one map.</li>
+<li><a href="verification.html">Verification</a> - what a person has confirmed,
+what is still unread, and how a value is admitted.</li>
+<li><a href="mos-manual-lineage.html">Version history</a> - the MOS Manual
+across 25 years and four numbering schemes.</li>
+<li><a href="how-it-works.html">How it works</a> - the three ideas underneath:
+a paragraph is the unit, a reference is a link only if it resolves, and nothing
+is trusted until a person confirms it.</li>
+<li><a href="about.html">About</a> - who this is from, what it is not, and the
+terms it is shared under.</li>
+</ul>

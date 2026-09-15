@@ -173,9 +173,6 @@
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-3/p1/c" path="p1/c" number="1.c." label="c." depth="1" verification="UNVERIFIED">
         <text>Mental Agility (25 percent). Consists of an MRO’s informal PME in grade (MarineNet) and in service/in grade civilian self-education (college/vocational courses and degrees), each worth 12.5 percent of the PES Score.</text>
-        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-3/p1/c/1" path="p1/c/1" number="1.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>The primary output of the JEPES worksheet is a Performance Evaluation System (PES) score that is used for promotion on a monthly basis in accordance with MCO P1400.32D, reference (g).  The PES score is comprised of four equally weighted pillars each worth 25 percent of the Marine’s score as depicted appendix D:</text>
-        </provision>
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/1616_1/p-1-3/p1/d" path="p1/d" number="1.d." label="d." depth="1" verification="UNVERIFIED">
         <text>Command Input (25 percent). Consists of the average marks in grade of three lines of subjective evaluation:  Individual Character, MCO 1616.1 25 Nov 2020 1-2 Enclosure (1) Military Occupational Specialty (MOS) and/or Mission Accomplishment, and Leadership.  This is the command’s chance to highlight superior or inferior MOS proficiency, acts of personal integrity, and leadership. NOTE:  Marines may be eligible for Special Duty Assignment (SDA) or Command Recruiting Bonus (CRB) bonus points which are added to the total PES score.</text>
@@ -402,39 +399,15 @@
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
         <text>Assignment to Involuntary Active Duty (Reserve Component only).</text>
-        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/b/1" path="p2/b/1" number="2.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>PR (Promotion).  Complete an evaluation when the MRO is promoted to the rank of Corporal or Sergeant. TO DATE:  The day prior to the MRO’s new date of rank.  Promotion to the rank of private first class and lance corporal do not qualify as a reporting occasion.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/b/2" path="p2/b/2" number="2.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>TR (Transfer).  Complete an evaluation when an MRO is transferred externally to another RUC/MCC or temporary RUC/MCC. TO DATE:  The MRO’s date of transfer.  The following situations also rate TR occasions:</text>
-        </provision>
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
         <text>Release from Active Duty. MCO 1616.1 25 Nov 2020 2-3 Enclosure (1)</text>
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
         <text>Release from Extended Active Duty (EAD) or Active Reserve (AR) (Reserve Component Only).</text>
-        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/d/1" path="p2/d/1" number="2.d.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Another reporting occasion under the same command occurred 30 days or less prior to the end date of the AN or SA reporting period.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/d/2" path="p2/d/2" number="2.d.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>The MRO received an evaluation from a previous unit and transferred within 30 days of the AN or SA reporting period.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/d/3" path="p2/d/3" number="2.d.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>A reservist activates for 365 days or more and is covered by an active duty unit under SA occasions negating the requirement for an AN.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/d/4" path="p2/d/4" number="2.d.(4)" label="(4)" depth="2" verification="UNVERIFIED">
-          <text>The MRO is undergoing initial skills training (IST) that is over six months long, or the IST is under six months but straddles the end of the SA or AN reporting period.</text>
-        </provision>
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/e" path="p2/e" number="2.e." label="e." depth="1" verification="UNVERIFIED">
         <text>Completion of Recruit Training.</text>
-        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/e/1" path="p2/e/1" number="2.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>For occasions outside of AN and SA which are unknown until relatively shortly before they occur, for example an unexpected TR or PR occasion, the command shall make every effort to complete the evaluation by the end date.  Commands are still required to complete transfer occasions even after the Marine physically leaves the unit and falls under the gaining command’s accountability.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/e/2" path="p2/e/2" number="2.e.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Timeliness of evaluations are tracked in the JEPES both by the command and Headquarters Marine Corps.  Delinquent JEPES worksheets will be reported within a RUC/MCC every 15 days and externally every 30 days.</text>
-        </provision>
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/1616_1/p-2-3/p2/f" path="p2/f" number="2.f." label="f." depth="1" verification="UNVERIFIED">
         <text>Completion of Initial Skills Training (formal schools required to earn Primary MOS).</text>
