@@ -24,6 +24,7 @@ Check here before analysing anything new.
 | S1 | 2026-09-15 | email | Announcement to an AI working group, signed jointly by Maj Gannon and MSgt Shorter | Names the public URLs and the help wanted |
 | S2 | 2026-09-15 | transcript | Teams call, ~25 min. Shorter, Gannon, Chiofalo | Shorter on leave. Informal sync |
 | S3 | 2026-09-15 | transcript | **Duplicate of S2.** Same text, email omitted | No new content |
+| S4 | 2026-09-15 | transcript, **fragment** | Teams call with the Government Publishing Office. ~90 min. Shorter, Gannon, Lisa LaPlant, Matt L (GPO), Brad Chang, Lauren Wood | **First 20 seconds and last 2 minutes only. The middle 87 minutes are missing and are the highest-value unrecovered material in the project.** Affiliations of Chang and Wood not stated |
 
 ---
 
@@ -109,6 +110,37 @@ that "gets really crazy."
 
 "prescribe" is SemperScribe. "six AI" and "Aegis code" are not decoded.
 
+### S4, the GPO call
+
+**A fragment.** What survives is the opening seconds of introductions and the
+closing two minutes. Everything substantive happened in the missing 87 minutes.
+
+Establishes, from what survives:
+
+- **The Government Publishing Office has been engaged for ninety minutes.**
+  That is a working session, not a courtesy call.
+- Attendees named: Lisa LaPlant and Matt L, both GPO side; Brad Chang and
+  Lauren Wood, affiliation not stated on the transcript. LaPlant ran the
+  meeting flow and closed it.
+- Shorter's assessment: "a great use of resources." Brad Chang and Lisa LaPlant
+  both call it a great discussion. No content survives to say why.
+
+**Gannon's closing argument**, the one substantive passage in the fragment:
+
+> the more we break down some of these barriers, especially with data and
+> interoperability will decrease a lot of the time that we spend on compliance
+> ... I'm not saying compliance is bad, I'm not saying we shouldn't comply with
+> Congress and be accountable to the United States people ... our primary
+> mission is still train man and equip for fighting battles ... the time we
+> spend doing this administrative stuff is the time we're not focused on
+> warfighting ... If we don't get after automating this stuff and making this
+> far more efficient, we're going to just eat into our enterprise and
+> organizational warfighting capabilities.
+
+A readiness argument, priced in time. Candidate F in section 4. The hedge on
+compliance is pre-emptive and rehearsed, which suggests this is the standing
+pitch rather than an improvisation.
+
 ---
 
 ## 3. The pain statement, in the owner's words
@@ -127,7 +159,7 @@ it is framed that way.
 
 ## 4. Concept candidates
 
-Five, each with a constituency. They share a substrate. They are not one
+Six, each with a constituency. They share a substrate. They are not one
 product, and the difference has never been written down.
 
 | # | Concept | Whose words | Built? |
@@ -137,6 +169,7 @@ product, and the difference has never been written down.
 | C | An interrogable substrate, for a model or a systematic method | Shorter, S2 | Built, and never named. The enabling discipline exists; nothing says that is what it is for |
 | D | Authoring. How a directive is actually made | Shorter, S2, second half. SemperScribe | Deferred. `ACTION-REGISTER.md` Track 3 |
 | E | Training and Readiness. **Inference, see section 5** | Gannon, S2, if TNR is T&R | No. Zero T&R manuals held |
+| F | Administrative burden reduction. Time returned to warfighting | Gannon, S4, to GPO | No. **Nothing built measures time.** The site counts documents, references, drift findings and confirmed values. Not one minute |
 
 **The layering that is missing.** Layer 0 is the encoding: the paragraph as the
 addressable unit, the identifier grammar, cited versus inferred, the
@@ -144,6 +177,20 @@ attestation ledger. It is done, it is defensible, and every candidate above
 needs it. Layers 1 are products over it. The repository's governing documents
 scope candidate B as though it were the whole project, and forbid the
 architecture that C and the announcement's asks would need.
+
+**The two framings, and who holds each.** Three sources now show the same
+split. Gannon frames outward and Shorter frames inward.
+
+| Source | Gannon | Shorter |
+|---|---|---|
+| S1, the announcement | "leverage AI in policy making, drafting, and reconciliation" | not separately stated; signed jointly |
+| S2, the call | the stakeholder list, T&R | substrate, interrogable, 17,000 ways, the methodology |
+| S4, GPO | data and interoperability barriers, compliance time, warfighting capability | "we're definitely doing the right thing" |
+
+This is a natural division: one pitches, one builds. It is not a conflict and
+it is not a problem in itself. It becomes one because **neither half is written
+down**, so each new audience hears whichever man is in the room, and the two
+accounts drift further apart with every briefing.
 
 **C and the "no LLM" rule are not in conflict, and saying so costs nothing.**
 "No LLM in the decision path" and "a corpus a model can interrogate" are the
@@ -184,6 +231,39 @@ about T&R manuals.
 
 ---
 
+## 5a. GPO, and the four rulings made without asking them
+
+The tree carries three GPO-related verdicts, every one reached by reading
+published documents rather than by asking. `conformance-matrix.md` sections 1,
+2, and 3. GPO has now been in the room for ninety minutes and the record of it
+is a fragment.
+
+Each row below is an assertion currently load-bearing in this repository, and a
+question the missing 87 minutes may already have answered.
+
+| The tree asserts | Turns on |
+|---|---|
+| United States Legislative Markup "is not intended to model executive branch or judicial branch documents", so this vocabulary is a **sibling** in its own namespace and conformance is refused. `conformance-matrix.md` 1 | Whether that scope is settled policy or present scope. If GPO would extend or bless an executive-branch profile, section 1 changes and so does `NAMESPACES.md` |
+| "GPO reserves nothing and operates no registry." Only `usc`, `pl`, and `stat` are defined in prose | Whether a Defense Department branch could be registered, and with whom |
+| "A preferred resolver does not currently exist for USLM", quoting the User Guide | Whether one is planned. The whole value of adopting the convention is that a third party can resolve a reference without asking what was meant |
+| The GPO model-context preview has no identifier awareness and "cannot resolve our references". Stated revisit trigger: "if GPO adds an identifier-resolution tool" | Whether they are adding one. A ninety-minute meeting is the moment that trigger fires |
+
+**And one finding that runs the other way.** `conformance-matrix.md` section 1
+records a defect found in GPO's own published reference grammar: the period is
+reserved for the manifestation suffix, so `/us/dod/don/usmc/mco/1050.3j`
+resolves as the work `mco/1050` in the format `3j`. This project found it,
+fixed it locally with an underscore drawn from the vocabulary the specification
+itself uses, and wrote up why. If that was raised in the missing 87 minutes,
+the relationship is not a small project asking a large agency for help. It is a
+finding delivered to the body that owns the specification, and that changes
+what can reasonably be asked for next.
+
+**GPO is also the first civilian-agency contact.** `CHARTER.md` section 5 rates
+whole-of-government as aspiration with zero civilian documents encoded. This is
+the first engagement outside the Department of Defense.
+
+---
+
 ## 6. Where the announcement and the repository disagree
 
 Not editorial. Each row is a written rule.
@@ -216,6 +296,7 @@ Pease appears only as a literature citation.
 | TECOM readiness and standards | Doctrine and standards, not directives | No. The tier map carries a doctrine tier holding zero documents |
 | Col Wilkerson, TECOM G1 | Manpower and administration | No. Closest constituency to the encoded leave use case |
 | Personnel Administration School | Does this belong in the course | No. A schoolhouse insertion point is a different adoption path from the directives control point |
+| **Government Publishing Office** | Publishes the standard this project follows. Owns USLM, GovInfo, and the resolution grammar | **Fragment only.** Ninety minutes, opening and closing preserved, middle lost. Section 5a |
 | MIU | Adjacent, via Chiofalo's separate project | No. Also competition for the same volunteer pool |
 
 ---
@@ -231,6 +312,10 @@ Pease appears only as a literature citation.
 | U5 | "six AI" and "Aegis code" | Name them before someone assumes overlap |
 | U6 | Whether either published URL is current with this repository | Compare the deployed site against a local build |
 | U7 | Who did not join the call. "whenever he decided to come join us would be fantastic" | Who, and does it matter |
+| U8 | **What was said in the missing 87 minutes of the GPO call.** The highest-value unknown in this file | Recover it now: the recording, the chat, notes, or both men writing down what they remember before it fades |
+| U9 | Whether the period defect in the published grammar was raised with GPO | It changes what can be asked for next |
+| U10 | Affiliations of Brad Chang and Lauren Wood | One line each |
+| U11 | Whether candidate F is measurable. How long a person takes today to answer one of these questions from the source PDFs | Time one. It is the only proof F admits, and nothing in the tree measures time |
 
 ---
 
