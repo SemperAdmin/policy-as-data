@@ -253,21 +253,9 @@
         <text>Signal.  This Order is effective the date signed. ROBERT S. WALSH Deputy Commandant for Combat Development and Integration DISTRIBUTION:  PCN 10209357501 DISTRIBUTION STATEMENT A:  Approved for public release; distribution is unlimited. DEPARTMENT OF THE NAVY HEADQUARTERS UNITED STATES MARINE CORPS 3000 MARINE CORPS PENTAGON WASHINGTON DC 20350-3000 MCO 6110.3A C 469 15 DEC 2016 MARINE CORPS ORDER 6110.3A 1. Situation.  To provide policy and procedural guidance for implementation of the Marine Corps Body Composition and Military Appearance Program (MCBCMAP), per references (a) through (u). 2. Cancellation.  MCO 6110.3. 3. Mission.  This Order establishes procedures for the effective management of the MCBCMAP.  Commanders will ensure all Marines comply with the requirements and standards contained in this Order.  Policy and procedural guidance is contained in the enclosures. 4. Execution a. Commander’s Intent and Concept of Operations</text>
         <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/1" path="p5/b/1" number="5.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
           <text>Commander’s Intent. Every Marine must comply with established body composition standards and present a suitable military appearance, regardless of age, grade, VH[, or duty assignment, as per reference (a).</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/1/a" path="p5/b/1/a" number="5.b.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Ensure promotion, retention, assignment and reporting policies are consistent with the policies established in this Order. 28 May 2025 MCO 6110.3A 15 DEC 2016 3</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/1/b" path="p5/b/1/b" number="5.b.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Provide a system capable of reporting and recording individual height, weight and body composition data in order to facilitate analysis and policy modification, as required.</text>
-          </provision>
         </provision>
         <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/2" path="p5/b/2" number="5.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
           <text>End State.  Combined with the Marine Corps Physical Fitness Program (MCPFP) contained in reference (b) and in recognition that Marines are warrior athletes, it is essential the Marine Corps develops a comprehensive program that will enhance Marine wellness, body composition, and military appearance while diminishing other risk factors in order to improve Marine combat readiness and personal appearance.</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/2/a" path="p5/b/2/a" number="5.b.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Serve as program sponsor and provide subject matter experts in order to ensure the currency and relevance of the MCBCMAP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/2/b" path="p5/b/2/b" number="5.b.(2)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Manage and monitor MCBCMAP through development, implementation and interpretation of standards, policies, and procedures consistent with the requirements contained in reference (c).</text>
-          </provision>
         </provision>
         <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3" path="p5/b/3" number="5.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
           <text>Concept of Operations</text>
@@ -276,12 +264,6 @@
           </provision>
           <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3/b" path="p5/b/3/b" number="5.b.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
             <text>The effectiveness and long-term viability of the MCBCMAP are dependent upon uniform application and enforcement by commanders and compliance by all Marines.  Commanders and Officers-In- Charge (OIC) will ensure Marines comply with the standards established in reference (c) and in accordance with the contents of this Order. Failure to do so may jeopardize operational readiness and erode American confidence in the United States Marine Corps. b. Subordinate Element Missions</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3/a" path="p5/b/3/a" number="5.b.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Review implementation and management of the MCBCMAP during command inspections and report findings to the Commandant of the Marine Corps (CMC) following conclusion of periodic IG inspections.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3/b" path="p5/b/3/b" number="5.b.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Provide an annual assessment of MCBCMAP IG inspection results to the CMC no later 31 January for the period 1 January through 31 December. 4. Administration and Logistics a. Submit all recommendations concerning this Order to Commanding General, Training and Education Command (CG TECOM) via the Force Fitness Division (C469).</text>
           </provision>
         </provision>
         <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/1" path="p5/b/1" number="5.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
@@ -304,12 +286,6 @@
         </provision>
         <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3" path="p5/b/3" number="5.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
           <text>Inspector General, Headquarters Marine Corps (IGMC)</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3/a" path="p5/b/3/a" number="5.b.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>The MCBCMAP is comprised of two distinct programs that monitor and evaluate the appearance of Marines while providing assistance through focused supervision in order to ensure compliance with established body composition and military appearance standards. Failure to comply with the policies and standards contained in this Order may result in administrative action that limits promotion, retention, and assignment.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3/b" path="p5/b/3/b" number="5.b.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>The effectiveness and long-term viability of the MCBCMAP are dependent upon uniform application and enforcement by commanders and compliance by all Marines.  Commanders and Officers-In- Charge (OIC) will ensure Marines comply with the standards established in reference (c) and in accordance with the contents of this Order. Failure to do so may jeopardize operational readiness and erode American confidence in the United States Marine Corps. b. Subordinate Element Missions</text>
-          </provision>
           <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3/a" path="p5/b/3/a" number="5.b.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
             <text>Review implementation and management of the MCBCMAP during command inspections and report findings to the Commandant of the Marine Corps (CMC) following conclusion of periodic IG inspections.</text>
           </provision>
@@ -320,72 +296,6 @@
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b" path="p5/b" number="5.b." label="b." depth="1" verification="UNVERIFIED">
         <text>Records Management.  Records created as a result of this Order shall be managed according to National Archives and Records Administration (NARA) approved dispositions per references (u) and (r) to ensure proper maintenance, use, accessibility and preservation, regardless of format or medium.  Refer to reference (e) for Marine Corps records management policy and procedures.</text>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/1" path="p5/b/1" number="5.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Commander’s Intent. Every Marine must comply with established body composition standards and present a suitable military appearance, regardless of age, grade, VH[, or duty assignment, as per reference (a).</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/1/a" path="p5/b/1/a" number="5.b.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Ensure promotion, retention, assignment and reporting policies are consistent with the policies established in this Order. 28 May 2025 MCO 6110.3A 15 DEC 2016 3</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/1/b" path="p5/b/1/b" number="5.b.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Provide a system capable of reporting and recording individual height, weight and body composition data in order to facilitate analysis and policy modification, as required.</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/2" path="p5/b/2" number="5.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>End State.  Combined with the Marine Corps Physical Fitness Program (MCPFP) contained in reference (b) and in recognition that Marines are warrior athletes, it is essential the Marine Corps develops a comprehensive program that will enhance Marine wellness, body composition, and military appearance while diminishing other risk factors in order to improve Marine combat readiness and personal appearance.</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/2/a" path="p5/b/2/a" number="5.b.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Serve as program sponsor and provide subject matter experts in order to ensure the currency and relevance of the MCBCMAP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/2/b" path="p5/b/2/b" number="5.b.(2)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Manage and monitor MCBCMAP through development, implementation and interpretation of standards, policies, and procedures consistent with the requirements contained in reference (c).</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3" path="p5/b/3" number="5.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>Concept of Operations</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3/a" path="p5/b/3/a" number="5.b.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>The MCBCMAP is comprised of two distinct programs that monitor and evaluate the appearance of Marines while providing assistance through focused supervision in order to ensure compliance with established body composition and military appearance standards. Failure to comply with the policies and standards contained in this Order may result in administrative action that limits promotion, retention, and assignment.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3/b" path="p5/b/3/b" number="5.b.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>The effectiveness and long-term viability of the MCBCMAP are dependent upon uniform application and enforcement by commanders and compliance by all Marines.  Commanders and Officers-In- Charge (OIC) will ensure Marines comply with the standards established in reference (c) and in accordance with the contents of this Order. Failure to do so may jeopardize operational readiness and erode American confidence in the United States Marine Corps. b. Subordinate Element Missions</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3/a" path="p5/b/3/a" number="5.b.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Review implementation and management of the MCBCMAP during command inspections and report findings to the Commandant of the Marine Corps (CMC) following conclusion of periodic IG inspections.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3/b" path="p5/b/3/b" number="5.b.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Provide an annual assessment of MCBCMAP IG inspection results to the CMC no later 31 January for the period 1 January through 31 December. 4. Administration and Logistics a. Submit all recommendations concerning this Order to Commanding General, Training and Education Command (CG TECOM) via the Force Fitness Division (C469).</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/1" path="p5/b/1" number="5.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Deputy Commandant, Manpower &amp; Reserve Affairs (DC M&amp;RA)</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/1/a" path="p5/b/1/a" number="5.b.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Ensure promotion, retention, assignment and reporting policies are consistent with the policies established in this Order. 28 May 2025 MCO 6110.3A 15 DEC 2016 3</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/1/b" path="p5/b/1/b" number="5.b.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Provide a system capable of reporting and recording individual height, weight and body composition data in order to facilitate analysis and policy modification, as required.</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/2" path="p5/b/2" number="5.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Commanding General, Training and Education Command (CG TECOM)</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/2/a" path="p5/b/2/a" number="5.b.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Serve as program sponsor and provide subject matter experts in order to ensure the currency and relevance of the MCBCMAP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/2/b" path="p5/b/2/b" number="5.b.(2)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Manage and monitor MCBCMAP through development, implementation and interpretation of standards, policies, and procedures consistent with the requirements contained in reference (c).</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3" path="p5/b/3" number="5.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>Inspector General, Headquarters Marine Corps (IGMC)</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3/a" path="p5/b/3/a" number="5.b.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>The MCBCMAP is comprised of two distinct programs that monitor and evaluate the appearance of Marines while providing assistance through focused supervision in order to ensure compliance with established body composition and military appearance standards. Failure to comply with the policies and standards contained in this Order may result in administrative action that limits promotion, retention, and assignment.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3/b" path="p5/b/3/b" number="5.b.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>The effectiveness and long-term viability of the MCBCMAP are dependent upon uniform application and enforcement by commanders and compliance by all Marines.  Commanders and Officers-In- Charge (OIC) will ensure Marines comply with the standards established in reference (c) and in accordance with the contents of this Order. Failure to do so may jeopardize operational readiness and erode American confidence in the United States Marine Corps. b. Subordinate Element Missions</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3/a" path="p5/b/3/a" number="5.b.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Review implementation and management of the MCBCMAP during command inspections and report findings to the Commandant of the Marine Corps (CMC) following conclusion of periodic IG inspections.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/b/3/b" path="p5/b/3/b" number="5.b.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Provide an annual assessment of MCBCMAP IG inspection results to the CMC no later 31 January for the period 1 January through 31 December. 4. Administration and Logistics a. Submit all recommendations concerning this Order to Commanding General, Training and Education Command (CG TECOM) via the Force Fitness Division (C469).</text>
-          </provision>
-        </provision>
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-5-3/p5/c" path="p5/c" number="5.c." label="c." depth="1" verification="UNVERIFIED">
         <text>Privacy Act.  Any misuse or unauthorized disclosure of Personally Identifiable Information (PII) may result in both civil and criminal penalties.  The Department of the Navy (DON) recognizes that the privacy of an individual is a personal and fundamental right that shall be respected and protected.  The DON's need to collect, use, maintain, or disseminate PII about individuals for purposes of discharging its statutory responsibilities shall be balanced against the individuals' right to be protected against unwarranted invasion of privacy.  All collection, use, maintenance, or dissemination of PII shall be in accordance with the Privacy Act of 1974, as amended (reference (s)) and implemented per reference (t). MCO 6110.3A 15 DEC 2016 4</text>
@@ -526,123 +436,6 @@
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b" path="p6/b" number="6.b." label="b." depth="1" verification="UNVERIFIED">
         <text>Scope.  All Marines will be periodically evaluated for weight and military appearance in accordance with the sequence described in enclosure (2) and the frequency described below.  However, commanders/OICs are authorized to conduct unit/individual weigh-ins, BCP, or MAP assessments as often as deemed necessary.  Weigh-ins may be conducted on the same day as the PFT/CFT.  Inspector 1-6 Enclosure (1) General/Commanding Generals may also perform weigh-ins while conducting unannounced inspections.</text>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/1" path="p6/b/1" number="6.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Commanders/OICs possessing special courts-martial convening authority will enforce compliance with weight, body composition, and military appearance standards contained in reference MCO 6110.3A CH-1 12 OCT 2017 1-2 Enclosure (1)</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/1/c" path="p6/b/1/c" number="6.b.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>and the contents of this Order through development and uniform application of periodic assessments, assignment, and supervisory procedures.</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/2" path="p6/b/2" number="6.b.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Commanders/OICs will ensure Marines receive a fair and impartial evaluation, to include a medical determination in order to establish if excess weight and body composition is due to a medical condition or medical therapy which has been newly diagnosed, worsened in severity, or increased in dosage in that six-month period which is known to result in weight gain.   Medical determinations must be made by a board certified or board eligible military physician (BCBEMP) and will include, but not be limited to the following Commanders/OICs will ensure Marines receive a medical evaluation from an authorized medical provider (Independent Duty Corpsman, Nurse Practitioner, Physician, or Physician Assistant) prior to being assigned to Body Composition Program (BCP) or Military Appearance Program (MAP):</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/2/a" path="p6/b/2/a" number="6.b.(2)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Current duty status.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/2/b" path="p6/b/2/b" number="6.b.(2)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Recommended dietary plan.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/2/c" path="p6/b/2/c" number="6.b.(2)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>Realistic weight and body composition reduction goals.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/2/d" path="p6/b/2/d" number="6.b.(2)(d)" label="(d)" depth="3" verification="UNVERIFIED">
-            <text>Combat conditioning restrictions and limitations.</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/3" path="p6/b/3" number="6.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>Commanders/OICs will consider recommendations for temporary medical exemptions if they are forwarded by board certified or board eligible military physicians (BCBEMP) as shown in the process chart provided at enclosure (5).</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4" path="p6/b/4" number="6.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
-          <text>Commanders/OICs will select and assign in writing a Force Fitness Instructor (FFI) and/or Command Physical Training Representative (CPTR). b. Executive Officers/Senior Enlisted Advisors</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/1" path="p6/b/4/1" number="6.b.(4)(1)" label="(1)" depth="3" verification="UNVERIFIED">
-            <text>Executive officers will evaluate officers for compliance with the MAP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/2" path="p6/b/4/2" number="6.b.(4)(2)" label="(2)" depth="3" verification="UNVERIFIED">
-            <text>Executive officers will provide oversight and supervise the performance of officers assigned to the MAP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/3" path="p6/b/4/3" number="6.b.(4)(3)" label="(3)" depth="3" verification="UNVERIFIED">
-            <text>Senior enlisted advisors will evaluate enlisted Marines for compliance with the MAP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/4" path="p6/b/4/4" number="6.b.(4)(4)" label="(4)" depth="3" verification="UNVERIFIED">
-            <text>Senior enlisted advisors will provide oversight and supervise the performance of enlisted personnel assigned to the MAP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/5" path="p6/b/4/5" number="6.b.(4)(5)" label="(5)" depth="3" verification="UNVERIFIED">
-            <text>Executive officers/senior enlisted advisors will supervise the implementation of a weight reduction or weight redistribution plan developed by BUMED or certified Semper Fit professional for Marines assigned to the MAP, as required. MCO 6110.3A 15 DEC 2016 1-3 Enclosure (1)</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6" path="p6/b/4/6" number="6.b.(4)(6)" label="(6)" depth="3" verification="UNVERIFIED">
-            <text>Executive officers/senior enlisted advisors will provide guidance and assistance regarding the supervision and performance of Marines assigned to the MAP, ensuring they receive all available resources and support at the command's disposal. c. Force Fitness Instructor (FFI)/Command Physical Training Representative (CPTR)</text>
-            <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/1" path="p6/b/4/6/1" number="6.b.(4)(6)(1)" label="(1)" depth="4" verification="UNVERIFIED">
-              <text>The FFI or CPTR will thoroughly review reference (c) and the contents of this Order immediately upon assignment.</text>
-            </provision>
-            <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/2" path="p6/b/4/6/2" number="6.b.(4)(6)(2)" label="(2)" depth="4" verification="UNVERIFIED">
-              <text>The FFI or CPTR is responsible to the commander for development, implementation, management and supervision of the organizational MAP, BCP and remedial conditioning programs.</text>
-            </provision>
-            <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/3" path="p6/b/4/6/3" number="6.b.(4)(6)(3)" label="(3)" depth="4" verification="UNVERIFIED">
-              <text>The FFI or CPTR is responsible for applying risk management (RM) fundamentals during the conduct of remedial conditioning in support of MAP or BCP assignment, in accordance with reference (d).</text>
-            </provision>
-            <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/4" path="p6/b/4/6/4" number="6.b.(4)(6)(4)" label="(4)" depth="4" verification="UNVERIFIED">
-              <text>The FFI or CPTR is responsible for coordinating and supervising the execution of weigh-ins and BCE utilizing NAVMC 11621, “BCP Evaluation,” form if necessary.  Responsibilities may include, but not be limited to the following:</text>
-              <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/4/a" path="p6/b/4/6/4/a" number="6.b.(4)(6)(4)(a)" label="(a)" depth="5" verification="UNVERIFIED">
-                <text>Select and train BCE evaluators as required.</text>
-              </provision>
-              <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/4/b" path="p6/b/4/6/4/b" number="6.b.(4)(6)(4)(b)" label="(b)" depth="5" verification="UNVERIFIED">
-                <text>Report BCE findings for those Marines who exceed weight and body composition standards in accordance with reference (c) and the contents of this Order.</text>
-              </provision>
-              <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/4/c" path="p6/b/4/6/4/c" number="6.b.(4)(6)(4)(c)" label="(c)" depth="5" verification="UNVERIFIED">
-                <text>Document and record BCE data.</text>
-              </provision>
-              <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/4/d" path="p6/b/4/6/4/d" number="6.b.(4)(6)(4)(d)" label="(d)" depth="5" verification="UNVERIFIED">
-                <text>Manage and maintain BCE documentation in accordance with references (e) and (r).  BCE documentation will contain, but not be limited to the following: 1. NAVMC 11621, “BCP Evaluation.” 2. Medical documentation. 3. Counseling records. 4. Weekly weigh-in and BCE results for active duty units. Reserve units will conduct weigh-ins as reasonably practicable. 5. Remedial conditioning training log. 6. Physical Fitness Test (PFT)/Combat Fitness Test (CFT) performance results. 1-4 Enclosure (1)</text>
-              </provision>
-            </provision>
-            <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/5" path="p6/b/4/6/5" number="6.b.(4)(6)(5)" label="(5)" depth="4" verification="UNVERIFIED">
-              <text>The FFI or CPTR will coordinate diet and nutrition seminars or coordinate appointments with Semper Fit fitness and lifestyle professionals for Marines assigned to the BCP or MAP.</text>
-            </provision>
-            <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/6" path="p6/b/4/6/6" number="6.b.(4)(6)(6)" label="(6)" depth="4" verification="UNVERIFIED">
-              <text>The FFI or CPTR will ensure Marines on their first BCP assignment order complete MarineNet MCIZ4133AZ (Semper Fit Basic Fitness Course).</text>
-            </provision>
-            <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/7" path="p6/b/4/6/7" number="6.b.(4)(6)(7)" label="(7)" depth="4" verification="UNVERIFIED">
-              <text>The FFI or CPTR will ensure Marines on their second or subsequent BCP assignment order and complete MarineNet MCIZ4134AZ (Semper Fit Advanced Course).</text>
-            </provision>
-            <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/8" path="p6/b/4/6/8" number="6.b.(4)(6)(8)" label="(8)" depth="4" verification="UNVERIFIED">
-              <text>The FFI or CPTR is responsible for providing periodic feedback to the senior enlisted advisor, executive officer and commander/OIC regarding the status and performance of Marines assigned to the MAP.</text>
-            </provision>
-            <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/9" path="p6/b/4/6/9" number="6.b.(4)(6)(9)" label="(9)" depth="4" verification="UNVERIFIED">
-              <text>Upon notification, the FFI or CPTR will initiate MAP evaluation procedures utilizing NAVMC 11620, “MAP Evaluation,” form.</text>
-            </provision>
-            <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/10" path="p6/b/4/6/10" number="6.b.(4)(6)(10)" label="(10)" depth="4" verification="UNVERIFIED">
-              <text>The FFI or CPTR will document and record MAP performance data.</text>
-            </provision>
-            <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/11" path="p6/b/4/6/11" number="6.b.(4)(6)(11)" label="(11)" depth="4" verification="UNVERIFIED">
-              <text>The FFI or CPTR will manage and maintain MAP documentation in accordance with reference (e).  MAP documentation will contain, but not be limited to the following: (a) NAVMC 11620, “MAP Evaluation.” (b) Counseling records. (c) Weekly weigh-in and BCE results for active duty units. Reserve units will conduct weigh-ins as reasonably practicable. (d) Remedial conditioning training log.</text>
-            </provision>
-            <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/12" path="p6/b/4/6/12" number="6.b.(4)(6)(12)" label="(12)" depth="4" verification="UNVERIFIED">
-              <text>The FFI or CPTR will ensure Marines on their first BCP MAP assignment order complete MarineNet MCIZ4133AZ (Semper Fit Basic Fitness Course).</text>
-            </provision>
-            <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/13" path="p6/b/4/6/13" number="6.b.(4)(6)(13)" label="(13)" depth="4" verification="UNVERIFIED">
-              <text>The FFI or CPTR will ensure Marines on their second or subsequent BCP MAP assignment order and complete MarineNet MCIZ4134AZ (Semper Fit Advanced Course). d. Individual Marines</text>
-              <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/13/1" path="p6/b/4/6/13/1" number="6.b.(4)(6)(13)(1)" label="(1)" depth="5" verification="UNVERIFIED">
-                <text>Every Marine will conform to established Marine Corps weight and body composition standards and present a suitable military appearance, regardless of age, grade, VH[ or duty assignment.</text>
-              </provision>
-              <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/13/2" path="p6/b/4/6/13/2" number="6.b.(4)(6)(13)(2)" label="(2)" depth="5" verification="UNVERIFIED">
-                <text>Marines who exceed established Marine Corps weight and body composition standards will take necessary action to return to MCO 6110.3A$GPLQ&amp;+ 28 May 2025 MCO 6110.3A CH-1 12 OCT 2017 1-5 Enclosure (1) standards within the prescribed timeline.  Failure to do so may result in formal assignment to the BCP and administrative actions that include limitations on promotion, retention, assignment or administrative separation.</text>
-              </provision>
-              <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/13/3" path="p6/b/4/6/13/3" number="6.b.(4)(6)(13)(3)" label="(3)" depth="5" verification="UNVERIFIED">
-                <text>Marines who do not present a suitable military appearance will take all necessary action to improve their appearance within prescribed timelines.  Failure to do so may result in formal assignment to the MAP and administrative action that includes limitations on promotion, retention and assignment. e. Medical Providers</text>
-              </provision>
-              <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/13/1" path="p6/b/4/6/13/1" number="6.b.(4)(6)(13)(1)" label="(1)" depth="5" verification="UNVERIFIED">
-                <text>Authorized medical providers (Independent Duty Corpsman, Nurse Practitioner, Physician, or Physician Assistant) will evaluate Marines who have failed an official weigh-in and are being screened for BCP or MAP.</text>
-              </provision>
-              <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/13/2" path="p6/b/4/6/13/2" number="6.b.(4)(6)(13)(2)" label="(2)" depth="5" verification="UNVERIFIED">
-                <text>Authorized medical providers will use the sequence chart provided at enclosure (5) for Marines whose weight gain may be due to a new medical condition or recent change to a medical therapy.  If the provider determines a temporary medical exemption may be appropriate, the recommendation will be forwarded per the sequence chart at enclosure (5).</text>
-              </provision>
-              <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/13/3" path="p6/b/4/6/13/3" number="6.b.(4)(6)(13)(3)" label="(3)" depth="5" verification="UNVERIFIED">
-                <text>Board Certified or Board Eligible Military Physicians (BCBEMP) may originate recommendations for temporary medical exemptions and may endorse recommendations from non-BCBEMPs, Independent Duty Corpsman, Nurse Practitioner, and Physician Assistants as shown in the sequence chart at enclosure (5).</text>
-              </provision>
-              <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/b/4/6/13/4" path="p6/b/4/6/13/4" number="6.b.(4)(6)(13)(4)" label="(4)" depth="5" verification="UNVERIFIED">
-                <text>Authorized Medical providers will refer Marines to a Medical Evaluation Board if the Marine has made two consecutive requests for a temporary medical exemption for the same condition within a 12-month period or has made three requests for any condition within the most recent four year period. 3. Requirement</text>
-              </provision>
-            </provision>
-          </provision>
-        </provision>
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6/p6/c" path="p6/c" number="6.c." label="c." depth="1" verification="UNVERIFIED">
         <text>Standards.  Marines are considered to exceed standard when their body weight and body fat percentage exceeds the maximum allowable limits for their height, as contained in enclosures (3) and (4).  Reference (c) and this Order primarily focus on Marines who exceed their maximum allowable weight, but Commanders/OICs should provide the same level of assistance and supervision for those Marines who are below their minimum allowable limit. d. Frequency</text>
@@ -694,26 +487,11 @@
   <section anchor="p-1" identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-1" heading="1. Male Marines. Measurements for male Marines will" verification="UNVERIFIED">
     <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-1/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
       <text>Male Marines.  Measurements for male Marines will be taken along the neck and abdominal circumference, at the navel. Measure the neck circumference by placing the curved portion of the self-tensioning device on the right neck muscle so that the taping device conforms to the natural curvature of the neck muscle.  The tape will cross the bottom the larynx and perpendicular to the long axis of the neck.  The Marine should look straight ahead during the measurement, with shoulders down, not hunched.  For neck measurements, round up to the nearest 1/2-inch and record.  Measure the abdominal circumference by placing the curved portion of the self-tensioning taping device on the right side of the Marines abdomen.  The tape will cross the center of the navel and be parallel to the deck. Arms will be straight and relaxed at the sides.  Take measurement at the end of the Marine's normal, relaxed exhalation.  For abdominal measurements, round down to the nearest 1/2-inch and record.  The circumference MCO 6110.3A$GPLQ&amp;+ 28 May 2025 MCO 6110.3A 15 DEC 2016 1-9                   Enclosure (1) value is calculated by subtracting the neck from the abdominal measurement. Male body fat percentages can be derived utilizing enclosure (4) by locating the number at the intersection of height measurement and circumference value.</text>
-      <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-1/p1/a" path="p1/a" number="1.a." label="a." depth="1" verification="UNVERIFIED">
-        <text>Uniform inspections (Service 'C' uniform).</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-1/p1/b" path="p1/b" number="1.b." label="b." depth="1" verification="UNVERIFIED">
-        <text>Personnel inspections that focus on hygiene and grooming standards. Waist + hip - neck = circumference value Abdominal - neck = circumference value MCO 6110.3A 15 DEC 2016 1-10                   Enclosure (1)</text>
-      </provision>
     </provision>
     <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-1/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
       <text>Female Marines.  Measurements for female Marines will be taken along the neck similar to males, at the waist at the thinnest portion of the abdomen, and at the hips.  Measurements for female Marines will be performed by female evaluators, only.  Measure the natural waist circumference against the skin at the point of minimal abdominal circumference, usually located about halfway between the navel and the lower end of the sternum (breastbone) with the self- tensioning device as indicated in the paragraph above.  When this site is not easily observed, take several measurements at probable sites and use the smallest value.  Ensure the tape is level and parallel to the deck.  Arms will be straight and relaxed at the sides.  Take measurements at the end of a normal, relaxed exhalation.  For natural waist measurement, round down to the nearest 1/2-inch and record. Measure the hip circumference while facing the Marine's right side by placing the tape around the hips so that it passes over the greatest protrusion of the buttocks as viewed from the side.  Ensure the tape is level and parallel to the deck.  For hip measurement, round down to the nearest 1/2-inch and record.  The circumference value is calculated by adding the waist and hip measurements and subtracting the neck measurement. Female body fat percentages can be derived utilizing enclosure (4) by locating the number at the intersection of height measurement and circumference value.</text>
       <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-1/p2/d" path="p2/d" number="2.(d)" label="(d)" depth="1" verification="UNVERIFIED">
         <text>Military Appearance Program (MAP) Assessments. Commanders will conduct military appearance assessments based upon personal appearance indicators (personal hygiene, grooming and uniform wear) and improper distribution/excessive accumulation of body fat. Specific areas to be evaluated are:</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-1/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
-        <text>Established DoD height/weight standards.</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-1/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
-        <text>Established Marine Corps body fat percentages, by age group.</text>
-      </provision>
-      <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-1/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
-        <text>Established DoD body composition standards. Specific target areas are:  neck and abdomen for male Marines, neck, waistline and hips for female Marines.</text>
       </provision>
     </provision>
     <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-1/p1" path="p1" number="1." label="1." depth="0" verification="UNVERIFIED">
@@ -727,9 +505,6 @@
     </provision>
     <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-1/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
       <text>Objective Indicators</text>
-      <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-1/p2/d" path="p2/d" number="2.(d)" label="(d)" depth="1" verification="UNVERIFIED">
-        <text>Military Appearance Program (MAP) Assessments. Commanders will conduct military appearance assessments based upon personal appearance indicators (personal hygiene, grooming and uniform wear) and improper distribution/excessive accumulation of body fat. Specific areas to be evaluated are:</text>
-      </provision>
       <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-1/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
         <text>Established DoD height/weight standards.</text>
       </provision>
@@ -784,39 +559,9 @@
           <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-4-3/p4/c/4/e" path="p4/c/4/e" number="4.c.(4)(e)" label="(e)" depth="3" verification="UNVERIFIED">
             <text>Recommended nutritional and dietary measures.</text>
           </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-4-3/p4/c/4/a" path="p4/c/4/a" number="4.c.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Medical clearance to participate in the BCP/MAP/ remedial conditioning.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-4-3/p4/c/4/b" path="p4/c/4/b" number="4.c.(4)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Physical limitations or restrictions.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-4-3/p4/c/4/c" path="p4/c/4/c" number="4.c.(4)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>Recommended weight and body composition fat reduction goals.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-4-3/p4/c/4/d" path="p4/c/4/d" number="4.c.(4)(d)" label="(d)" depth="3" verification="UNVERIFIED">
-            <text>Recommended nutritional and dietary measures.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-4-3/p4/c/4/e" path="p4/c/4/e" number="4.c.(4)(e)" label="(e)" depth="3" verification="UNVERIFIED">
-            <text>Referral to BCBEMP for evaluation of possible underlying cause for weight gain.</text>
-          </provision>
         </provision>
         <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-4-3/p4/c/4" path="p4/c/4" number="4.c.(4)" label="(4)" depth="2" verification="UNVERIFIED">
           <text>An authorized medical provider (Independent Duty Corpsman, Nurse Practitioner, Physician, or Physician Assistant) will evaluate the Marine and make the following determinations:</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-4-3/p4/c/4/a" path="p4/c/4/a" number="4.c.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>A determination as to whether weight gain is due to a medical condition or medical therapy which has been newly diagnosed, worsened in severity, or increased in dosage in that six-month period which is known to result in weight gain.  A BCP medical waiver may only be recommended by a physician (board eligible or certified specialist).  The inability to exercise is not a valid reason for a BCP waiver.  All BCP medical waivers recommendations will require two signatures.  If the physician recommending the waiver is civilian, a BCBEMP must endorse the waiver.  If the physician recommending the MCO 6110.3A CH-1 12 OCT 2017 1-12                   Enclosure (1) waiver is a BCBEMP, the waiver must be endorsed by a physician one level higher in the chain of command.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-4-3/p4/c/4/b" path="p4/c/4/b" number="4.c.(4)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Medical clearance to participate in the BCP/RCP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-4-3/p4/c/4/c" path="p4/c/4/c" number="4.c.(4)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>Physical limitations or restrictions.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-4-3/p4/c/4/d" path="p4/c/4/d" number="4.c.(4)(d)" label="(d)" depth="3" verification="UNVERIFIED">
-            <text>Recommended weight and body composition fat reduction goals.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-4-3/p4/c/4/e" path="p4/c/4/e" number="4.c.(4)(e)" label="(e)" depth="3" verification="UNVERIFIED">
-            <text>Recommended nutritional and dietary measures.</text>
-          </provision>
           <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-4-3/p4/c/4/a" path="p4/c/4/a" number="4.c.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
             <text>Medical clearance to participate in the BCP/MAP/ remedial conditioning.</text>
           </provision>
@@ -963,30 +708,6 @@
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6-2/p6/d" path="p6/d" number="6.d." label="d." depth="1" verification="UNVERIFIED">
         <text>Medical Evaluation.  Marines who are not in compliance with established weight, body composition or military appearance standards require a BCBEMP evaluation prior to BCP or MAP formal assignment.  A BCBEMP must make a determination if a Marine's weight gain is due to a medical condition or medical therapy which has been newly diagnosed, worsened in severity, or increased in dosage in that six-month period which is known to result in weight gain.  The inability to exercise is not a valid reason for a BCP waiver.  All BCP medical waivers recommendations will require two signatures.  If the physician recommending the waiver is civilian, a BCBEMP must endorse the waiver. If the physician recommending the waiver is a BCBEMP, the waiver must be endorsed by a physician one level higher in the chain of command. MCO 6110.3A CH-3 23 Feb 2021 1-18                   Enclosure (1)</text>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6-2/p6/d/1" path="p6/d/1" number="6.d.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Marines not in compliance with established weight and body composition standards and Marines not meeting military appearance standards require a medical evaluation prior to BCP or MAP formal assignment.  An authorized medical provider (Independent Duty Corpsman, Nurse Practitioner, Physician, or Physician Assistant) will evaluate the Marine and make the following recommendations/determinations:</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6-2/p6/d/1/a" path="p6/d/1/a" number="6.d.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Medical clearance to participate in the BCP/MAP/remedial conditioning.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6-2/p6/d/1/b" path="p6/d/1/b" number="6.d.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Physical limitations or restrictions.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6-2/p6/d/1/c" path="p6/d/1/c" number="6.d.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>Recommended weight and body composition fat reduction goals.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6-2/p6/d/1/d" path="p6/d/1/d" number="6.d.(1)(d)" label="(d)" depth="3" verification="UNVERIFIED">
-            <text>Recommended nutritional and dietary measures.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6-2/p6/d/1/e" path="p6/d/1/e" number="6.d.(1)(e)" label="(e)" depth="3" verification="UNVERIFIED">
-            <text>Referral to BCBEMP for evaluation of possible underlying cause for weight gain.</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6-2/p6/d/2" path="p6/d/2" number="6.d.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Marines who suspect that their weight gain is due to an underlying medical condition will be evaluated by an authorized medical provider as shown in the sequence chart provided in enclosure (5).  If the authorized medical provider determines that the weight gain is the result of a medical condition, or medical therapy which has been newly diagnosed, worsened in severity, or increased in dosage in that six-month period which is known to result in weight gain, the provider may recommend a temporary medical exemption.  The inability to exercise is not a valid reason for a temporary medical exemption from weight and body fat standards.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6-2/p6/d/3" path="p6/d/3" number="6.d.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>All recommendations for temporary medical exemptions require the endorsement of a Board Certified or Board Eligible Military Physician (BCBEMP).  If the provider recommending the temporary medical exemption is not a BCBEMP, then the Marine must be referred to a BCBEMP for further evaluation.</text>
-        </provision>
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-6-2/p6/d" path="p6/d" number="6.d." label="d." depth="1" verification="UNVERIFIED">
         <text>Medical Evaluation.</text>
@@ -1116,81 +837,15 @@
           <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/c" path="p8/a/1/c" number="8.a.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
             <text>The CO requests a MEB when the Marine’s fitness/health is questionable for continued service. “Counseled this date concerning your extension on the Marine Corps BCP.  You have made reasonable progress but have failed to comply with established weight/body composition standards while on your first assignment to the BCP.  Therefore, you have been granted a one- time extension of six months to meet the body composition standards set forth in MCO 6110.3_.  You are advised that failure to take corrective action while on this six-month extension may result in processing for administrative separation for either weight control failure or unsatisfactory performance per paragraphs 6206 and 6215 of MCO 1900.16_. Specific recommendations for corrective action are: Meet your weight/body composition reduction goals by losing the prescribed __ lbs and __ % body fat per month for six months and actively participate in your diet and exercise program.  Assistance is available through your chain of command.  I was advised that within five working days after acknowledgment of this entry a written rebuttal could be submitted and that such a rebuttal will be filed on the document side of my SRB/OQR.  I choose (to)(not to) make such a statement.” MCO 6110.3A CH-3 23 Feb 2021 1-24                   Enclosure (1)</text>
           </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/a" path="p8/a/1/a" number="8.a.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Marine receives a temporary medical exemption for the same medical condition over two consecutive six-month periods that resulted in the member not participating in the BCP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/b" path="p8/a/1/b" number="8.a.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Marine receives three temporary medical exemptions in the most recent four-year period for any medical condition that resulted in the member not participating in the BCP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/c" path="p8/a/1/c" number="8.a.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>The CO requests a MEB when the Marine’s fitness/health is questionable for continued service.</text>
-          </provision>
         </provision>
         <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/2" path="p8/a/2" number="8.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
           <text>After confirmation from a BCBEMP/OB healthcare provider, Marines who are pregnant will be placed in an inactive BCP status and are not eligible for formal MAP assignment during pregnancy, the 12 week (post-partum) convalescent period and for six months following RTFD.  For pregnancies that do not come to full term, Marines will be required to meet weight standard requirements after consultation with a BCBEMP/OB health care provider and upon RTFD.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1" path="p8/a/1" number="8.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Temporary medical exemptions may be granted for Marines newly diagnosed or with worsening medical condition or therapy who have followed the process in the sequence chart provided in enclosure (5).  Marines with approved temporary medical exemptions will not be assigned to BCP or MAP during the current six-month period.  Marines are subject to a medical records review by a medical evaluation board (MEB) if:</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/a" path="p8/a/1/a" number="8.a.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Marine receives a medical waiver for the same medical condition over two consecutive six-month periods that resulted in the member not participating in the BCP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/b" path="p8/a/1/b" number="8.a.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Marine receives three medical waivers in the most recent four-year period for any medical condition that resulted in the member not participating in the BCP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/c" path="p8/a/1/c" number="8.a.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>The CO requests a MEB when the Marine’s fitness/health is questionable for continued service. “Counseled this date concerning your extension on the Marine Corps BCP.  You have made reasonable progress but have failed to comply with established weight/body composition standards while on your first assignment to the BCP.  Therefore, you have been granted a one- time extension of six months to meet the body composition standards set forth in MCO 6110.3_.  You are advised that failure to take corrective action while on this six-month extension may result in processing for administrative separation for either weight control failure or unsatisfactory performance per paragraphs 6206 and 6215 of MCO 1900.16_. Specific recommendations for corrective action are: Meet your weight/body composition reduction goals by losing the prescribed __ lbs and __ % body fat per month for six months and actively participate in your diet and exercise program.  Assistance is available through your chain of command.  I was advised that within five working days after acknowledgment of this entry a written rebuttal could be submitted and that such a rebuttal will be filed on the document side of my SRB/OQR.  I choose (to)(not to) make such a statement.” MCO 6110.3A CH-3 23 Feb 2021 1-24                   Enclosure (1)</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/a" path="p8/a/1/a" number="8.a.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Marine receives a temporary medical exemption for the same medical condition over two consecutive six-month periods that resulted in the member not participating in the BCP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/b" path="p8/a/1/b" number="8.a.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Marine receives three temporary medical exemptions in the most recent four-year period for any medical condition that resulted in the member not participating in the BCP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/c" path="p8/a/1/c" number="8.a.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>The CO requests a MEB when the Marine’s fitness/health is questionable for continued service.</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/2" path="p8/a/2" number="8.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Pregnancy and post-partum:  After confirmation from an authorized medical provider, Marines on BCP/MAP who are pregnant will be placed in an inactive BCP/MAP status during pregnancy and for nine 12 months after date of the birth event. Marines who are pregnant or post-partum not on BCP/MAP are exempt from participation and will not be evaluated for BCP or MAP.  The period of inactive status and non- evaluation will include pregnancy, the 12 week (post-partum) convalescent period and for six months following RTFD. For pregnancies that do not come to full term, Marines will be required to meet weight standard requirements after consultation with an authorized medical provider and upon RTFD. MCO 6110.3A 15 DEC 2016 1-25                   Enclosure (1)</text>
         </provision>
       </provision>
       <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a" path="p8/a" number="8.a." label="a." depth="1" verification="UNVERIFIED">
         <text>Exemptions</text>
         <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1" path="p8/a/1" number="8.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Marines with a medical condition or medical therapy which has been newly diagnosed, worsened in severity, or increased in dosage in that six-month period which is known to result in weight gain will remain in an inactive BCP status and are not eligible for formal MAP assignment until the condition is alleviated or the Marine is separated, retired or medically discharged.  Marines are subject to a medical records review by a medical evaluation board (MEB) if:</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/a" path="p8/a/1/a" number="8.a.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Marine receives a medical waiver for the same medical condition over two consecutive six-month periods that resulted in the member not participating in the BCP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/b" path="p8/a/1/b" number="8.a.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Marine receives three medical waivers in the most recent four-year period for any medical condition that resulted in the member not participating in the BCP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/c" path="p8/a/1/c" number="8.a.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>The CO requests a MEB when the Marine’s fitness/health is questionable for continued service. “Counseled this date concerning your extension on the Marine Corps BCP.  You have made reasonable progress but have failed to comply with established weight/body composition standards while on your first assignment to the BCP.  Therefore, you have been granted a one- time extension of six months to meet the body composition standards set forth in MCO 6110.3_.  You are advised that failure to take corrective action while on this six-month extension may result in processing for administrative separation for either weight control failure or unsatisfactory performance per paragraphs 6206 and 6215 of MCO 1900.16_. Specific recommendations for corrective action are: Meet your weight/body composition reduction goals by losing the prescribed __ lbs and __ % body fat per month for six months and actively participate in your diet and exercise program.  Assistance is available through your chain of command.  I was advised that within five working days after acknowledgment of this entry a written rebuttal could be submitted and that such a rebuttal will be filed on the document side of my SRB/OQR.  I choose (to)(not to) make such a statement.” MCO 6110.3A CH-3 23 Feb 2021 1-24                   Enclosure (1)</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/a" path="p8/a/1/a" number="8.a.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Marine receives a temporary medical exemption for the same medical condition over two consecutive six-month periods that resulted in the member not participating in the BCP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/b" path="p8/a/1/b" number="8.a.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Marine receives three temporary medical exemptions in the most recent four-year period for any medical condition that resulted in the member not participating in the BCP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/c" path="p8/a/1/c" number="8.a.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>The CO requests a MEB when the Marine’s fitness/health is questionable for continued service.</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/2" path="p8/a/2" number="8.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>After confirmation from a BCBEMP/OB healthcare provider, Marines who are pregnant will be placed in an inactive BCP status and are not eligible for formal MAP assignment during pregnancy, the 12 week (post-partum) convalescent period and for six months following RTFD.  For pregnancies that do not come to full term, Marines will be required to meet weight standard requirements after consultation with a BCBEMP/OB health care provider and upon RTFD.</text>
-        </provision>
-        <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1" path="p8/a/1" number="8.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
           <text>Temporary medical exemptions may be granted for Marines newly diagnosed or with worsening medical condition or therapy who have followed the process in the sequence chart provided in enclosure (5).  Marines with approved temporary medical exemptions will not be assigned to BCP or MAP during the current six-month period.  Marines are subject to a medical records review by a medical evaluation board (MEB) if:</text>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/a" path="p8/a/1/a" number="8.a.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Marine receives a medical waiver for the same medical condition over two consecutive six-month periods that resulted in the member not participating in the BCP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/b" path="p8/a/1/b" number="8.a.(1)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Marine receives three medical waivers in the most recent four-year period for any medical condition that resulted in the member not participating in the BCP.</text>
-          </provision>
-          <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/c" path="p8/a/1/c" number="8.a.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>The CO requests a MEB when the Marine’s fitness/health is questionable for continued service. “Counseled this date concerning your extension on the Marine Corps BCP.  You have made reasonable progress but have failed to comply with established weight/body composition standards while on your first assignment to the BCP.  Therefore, you have been granted a one- time extension of six months to meet the body composition standards set forth in MCO 6110.3_.  You are advised that failure to take corrective action while on this six-month extension may result in processing for administrative separation for either weight control failure or unsatisfactory performance per paragraphs 6206 and 6215 of MCO 1900.16_. Specific recommendations for corrective action are: Meet your weight/body composition reduction goals by losing the prescribed __ lbs and __ % body fat per month for six months and actively participate in your diet and exercise program.  Assistance is available through your chain of command.  I was advised that within five working days after acknowledgment of this entry a written rebuttal could be submitted and that such a rebuttal will be filed on the document side of my SRB/OQR.  I choose (to)(not to) make such a statement.” MCO 6110.3A CH-3 23 Feb 2021 1-24                   Enclosure (1)</text>
-          </provision>
           <provision identifier="/us/dod/don/usmc/mco/6110_3a-ch4/p-8/p8/a/1/a" path="p8/a/1/a" number="8.a.(1)(a)" label="(a)" depth="3" verification="UNVERIFIED">
             <text>Marine receives a temporary medical exemption for the same medical condition over two consecutive six-month periods that resulted in the member not participating in the BCP.</text>
           </provision>

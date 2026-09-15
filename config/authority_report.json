@@ -7,7 +7,9 @@
   "held": 57,
   "drift": 85,
   "gaps": 220,
-  "provisions": 20178
+  "provisions": 20178,
+  "known": 17514,
+  "quarantined": 0
  },
  "edges_by_tier": {
   "T0": {
@@ -832,6 +834,3167 @@
   "DODI-1327.6": "superseded",
   "DODI-1308.3": "cancelled"
  },
+ "cites_superseded_detail": [
+  {
+   "citing": "MCO-6100.13A-CH5",
+   "target": "DODI-1308.3",
+   "target_status": "cancelled",
+   "read_from": "p-6:ref/a"
+  },
+  {
+   "citing": "MCO-6100.14",
+   "target": "DODI-1308.3",
+   "target_status": "cancelled",
+   "read_from": "p-5:ref/a"
+  },
+  {
+   "citing": "MCO-6110.3A-CH4",
+   "target": "DODI-1308.3",
+   "target_status": "cancelled",
+   "read_from": "p-5-3:ref/c"
+  },
+  {
+   "citing": "MCO-1050.3J",
+   "target": "DODI-1327.6",
+   "target_status": "superseded",
+   "read_from": "front-matter:ref/h"
+  }
+ ],
+ "drift_edges": [
+  {
+   "citing": "DODI-1327.06",
+   "target": "DODFMR",
+   "holds": [
+    "DODFMR-VOL01-CH01",
+    "DODFMR-VOL01-CH02",
+    "DODFMR-VOL01-CH03"
+   ],
+   "read_from": "front-matter:ref/u"
+  },
+  {
+   "citing": "MARADMIN-2018-011",
+   "target": "MCO-1900.16G",
+   "holds": [
+    "MCO-1900.16-CH3"
+   ],
+   "read_from": "narr:REF A"
+  },
+  {
+   "citing": "MARADMIN-2021-360",
+   "target": "MCO-1300.8",
+   "holds": [
+    "MCO-1300.8-CH2"
+   ],
+   "read_from": "narr:REF F"
+  },
+  {
+   "citing": "MARADMIN-2021-360",
+   "target": "MCO-1900.16-CH2",
+   "holds": [
+    "MCO-1900.16-CH3"
+   ],
+   "read_from": "narr:REF J"
+  },
+  {
+   "citing": "MARADMIN-2021-360",
+   "target": "MCO-7220.52F",
+   "holds": [
+    "MCO-7220.52G"
+   ],
+   "read_from": "narr:REF D"
+  },
+  {
+   "citing": "MARADMIN-2022-409",
+   "target": "MCO-1040.42B",
+   "holds": [
+    "MCO-1040.42B-CH1"
+   ],
+   "read_from": "narr:REF A"
+  },
+  {
+   "citing": "MARADMIN-2022-409",
+   "target": "MCO-6100.13A-CH4",
+   "holds": [
+    "MCO-6100.13A-CH5"
+   ],
+   "read_from": "narr:REF G"
+  },
+  {
+   "citing": "MARADMIN-2022-409",
+   "target": "MCO-6110.3A-CH3",
+   "holds": [
+    "MCO-6110.3A-CH4"
+   ],
+   "read_from": "narr:REF H"
+  },
+  {
+   "citing": "MARADMIN-2023-051",
+   "target": "MCO-5000.12F-CH1",
+   "holds": [
+    "MCO-5000.12F",
+    "MCO-5000.12F-CH2"
+   ],
+   "read_from": "narr:REF C"
+  },
+  {
+   "citing": "MARADMIN-2023-322",
+   "target": "MCO-3570.1C",
+   "holds": [
+    "MCO-3570.1"
+   ],
+   "read_from": "ref-line:REF E"
+  },
+  {
+   "citing": "MARADMIN-2023-322",
+   "target": "MCO-5100.29B-V8",
+   "holds": [
+    "MCO-5100.29C-CH2"
+   ],
+   "read_from": "ref-line:REF B"
+  },
+  {
+   "citing": "MARADMIN-2024-016",
+   "target": "MCO-1300.8-CH1",
+   "holds": [
+    "MCO-1300.8-CH2"
+   ],
+   "read_from": "narr:REF B"
+  },
+  {
+   "citing": "MARADMIN-2024-016",
+   "target": "MCO-1900.16-CH2",
+   "holds": [
+    "MCO-1900.16-CH3"
+   ],
+   "read_from": "narr:REF C"
+  },
+  {
+   "citing": "MARADMIN-2024-253",
+   "target": "NAVMC-1200.1J",
+   "holds": [
+    "NAVMC-1200.1L"
+   ],
+   "read_from": "narr:REF H"
+  },
+  {
+   "citing": "MARADMIN-2026-026",
+   "target": "MCO-5420R.8H",
+   "holds": [
+    "MCO-5420R.8H-CH1"
+   ],
+   "read_from": "narr:REF C"
+  },
+  {
+   "citing": "MARADMIN-2026-043",
+   "target": "MCO-1300.8-CH1",
+   "holds": [
+    "MCO-1300.8-CH2"
+   ],
+   "read_from": "narr:REF C"
+  },
+  {
+   "citing": "MARADMIN-2026-191",
+   "target": "MCO-5000.12F-CH1",
+   "holds": [
+    "MCO-5000.12F",
+    "MCO-5000.12F-CH2"
+   ],
+   "read_from": "narr:REF D"
+  },
+  {
+   "citing": "MARADMIN-2026-274",
+   "target": "MCO-1900.16-CH2",
+   "holds": [
+    "MCO-1900.16-CH3"
+   ],
+   "read_from": "narr:REF E"
+  },
+  {
+   "citing": "MCO-1050.3J",
+   "target": "DODFMR",
+   "holds": [
+    "DODFMR-VOL01-CH01",
+    "DODFMR-VOL01-CH02",
+    "DODFMR-VOL01-CH03"
+   ],
+   "read_from": "front-matter:ref/b"
+  },
+  {
+   "citing": "MCO-1050.3J",
+   "target": "MCO-10110.47",
+   "holds": [
+    "MCO-10110.47A"
+   ],
+   "read_from": "front-matter:ref/o"
+  },
+  {
+   "citing": "MCO-1050.3J",
+   "target": "MCO-1300.8R",
+   "holds": [
+    "MCO-1300.8-CH2"
+   ],
+   "read_from": "front-matter:ref/g"
+  },
+  {
+   "citing": "MCO-1050.3J",
+   "target": "MCO-1900.16F",
+   "holds": [
+    "MCO-1900.16-CH3"
+   ],
+   "read_from": "front-matter:ref/k"
+  },
+  {
+   "citing": "MCO-1200.13G",
+   "target": "MCO-3500.72A",
+   "holds": [
+    "MCO-3500.72A-CH1"
+   ],
+   "read_from": "front-matter:ref/b"
+  },
+  {
+   "citing": "MCO-1200.13G",
+   "target": "NAVMC-1553.1",
+   "holds": [
+    "NAVMC-1553.1A"
+   ],
+   "read_from": "front-matter:ref/a"
+  },
+  {
+   "citing": "MCO-1200.13G",
+   "target": "NAVMC-3500.106",
+   "holds": [
+    "NAVMC-3500.106A"
+   ],
+   "read_from": "front-matter:ref/f"
+  },
+  {
+   "citing": "MCO-1200.18",
+   "target": "MCO-1000.6G",
+   "holds": [
+    "MCO-1000.6"
+   ],
+   "read_from": "front-matter:ref/b"
+  },
+  {
+   "citing": "MCO-1200.18",
+   "target": "MCO-1001R.1K",
+   "holds": [
+    "MCO-1001R.1L-CH2"
+   ],
+   "read_from": "front-matter:ref/g"
+  },
+  {
+   "citing": "MCO-1200.18",
+   "target": "MCO-1300.8R-CH1",
+   "holds": [
+    "MCO-1300.8-CH2"
+   ],
+   "read_from": "front-matter:ref/d"
+  },
+  {
+   "citing": "MCO-1200.18",
+   "target": "MCO-5215.1K",
+   "holds": [
+    "MCO-5215.1K-CH3"
+   ],
+   "read_from": "front-matter:ref/i"
+  },
+  {
+   "citing": "MCO-1200.18",
+   "target": "MCO-5311.1D",
+   "holds": [
+    "MCO-5311.1E-CH1"
+   ],
+   "read_from": "front-matter:ref/f"
+  },
+  {
+   "citing": "MCO-1200.18",
+   "target": "NAVMC-1200.1",
+   "holds": [
+    "NAVMC-1200.1L"
+   ],
+   "read_from": "front-matter:ref/h"
+  },
+  {
+   "citing": "MCO-1400.31D",
+   "target": "SECNAVINST-1000.7",
+   "holds": [
+    "SECNAVINST-1000.7G"
+   ],
+   "read_from": "p-6:ref/l"
+  },
+  {
+   "citing": "MCO-1400.31D",
+   "target": "SECNAVINST-1301.4",
+   "holds": [
+    "SECNAVINST-1301.4B"
+   ],
+   "read_from": "p-6:ref/n"
+  },
+  {
+   "citing": "MCO-1400.31D",
+   "target": "SECNAVINST-1301.7",
+   "holds": [
+    "SECNAVINST-1301.7B"
+   ],
+   "read_from": "p-6:ref/o"
+  },
+  {
+   "citing": "MCO-1400.31D",
+   "target": "SECNAVINST-1400.1",
+   "holds": [
+    "SECNAVINST-1400.1D"
+   ],
+   "read_from": "p-6:ref/u"
+  },
+  {
+   "citing": "MCO-1400.31D",
+   "target": "SECNAVINST-1401.4",
+   "holds": [
+    "SECNAVINST-1401.4B"
+   ],
+   "read_from": "p-6:ref/v"
+  },
+  {
+   "citing": "MCO-1400.31D",
+   "target": "SECNAVINST-1412.6",
+   "holds": [
+    "SECNAVINST-1412.6M"
+   ],
+   "read_from": "p-6:ref/t"
+  },
+  {
+   "citing": "MCO-1400.31D",
+   "target": "SECNAVINST-1412.8",
+   "holds": [
+    "SECNAVINST-1412.8C"
+   ],
+   "read_from": "p-6:ref/e"
+  },
+  {
+   "citing": "MCO-1400.31D",
+   "target": "SECNAVINST-1421.3M",
+   "holds": [
+    "SECNAVINST-1421.3N"
+   ],
+   "read_from": "p-6:ref/g"
+  },
+  {
+   "citing": "MCO-1400.32D-CH1",
+   "target": "MCO-1001R.1J",
+   "holds": [
+    "MCO-1001R.1L-CH2"
+   ],
+   "read_from": "p-2:ref/e"
+  },
+  {
+   "citing": "MCO-1400.32D-CH1",
+   "target": "MCO-1130.53P-CH1",
+   "holds": [
+    "MCO-1130.53R"
+   ],
+   "read_from": "p-2:ref/l"
+  },
+  {
+   "citing": "MCO-1400.32D-CH1",
+   "target": "MCO-1130.62B",
+   "holds": [
+    "MCO-1130.62C"
+   ],
+   "read_from": "p-2:ref/m"
+  },
+  {
+   "citing": "MCO-1400.32D-CH1",
+   "target": "MCO-1130.80A",
+   "holds": [
+    "MCO-1130.80B"
+   ],
+   "read_from": "p-2:ref/n"
+  },
+  {
+   "citing": "MCO-1400.32D-CH1",
+   "target": "MCO-1610.7F-CH2",
+   "holds": [
+    "MCO-1610.7B"
+   ],
+   "read_from": "p-2:ref/i"
+  },
+  {
+   "citing": "MCO-1400.32D-CH1",
+   "target": "MCO-1900.16F-CH2",
+   "holds": [
+    "MCO-1900.16-CH3"
+   ],
+   "read_from": "p-2:ref/j"
+  },
+  {
+   "citing": "MCO-1400.32D-CH1",
+   "target": "MCO-3574.2K",
+   "holds": [
+    "MCO-3574.2M"
+   ],
+   "read_from": "p-2:ref/p"
+  },
+  {
+   "citing": "MCO-1400.32D-CH1",
+   "target": "MCO-6100.13-CH1",
+   "holds": [
+    "MCO-6100.13A-CH5"
+   ],
+   "read_from": "p-2:ref/k"
+  },
+  {
+   "citing": "MCO-1400.32D-CH2",
+   "target": "MCO-1001R.1J",
+   "holds": [
+    "MCO-1001R.1L-CH2"
+   ],
+   "read_from": "p-2:ref/e"
+  },
+  {
+   "citing": "MCO-1400.32D-CH2",
+   "target": "MCO-1130.53P-CH1",
+   "holds": [
+    "MCO-1130.53R"
+   ],
+   "read_from": "p-2:ref/l"
+  },
+  {
+   "citing": "MCO-1400.32D-CH2",
+   "target": "MCO-1130.62B",
+   "holds": [
+    "MCO-1130.62C"
+   ],
+   "read_from": "p-2:ref/m"
+  },
+  {
+   "citing": "MCO-1400.32D-CH2",
+   "target": "MCO-1130.80A",
+   "holds": [
+    "MCO-1130.80B"
+   ],
+   "read_from": "p-2:ref/n"
+  },
+  {
+   "citing": "MCO-1400.32D-CH2",
+   "target": "MCO-1610.7F-CH2",
+   "holds": [
+    "MCO-1610.7B"
+   ],
+   "read_from": "p-2:ref/i"
+  },
+  {
+   "citing": "MCO-1400.32D-CH2",
+   "target": "MCO-1900.16F-CH2",
+   "holds": [
+    "MCO-1900.16-CH3"
+   ],
+   "read_from": "p-2:ref/j"
+  },
+  {
+   "citing": "MCO-1400.32D-CH2",
+   "target": "MCO-3574.2K",
+   "holds": [
+    "MCO-3574.2M"
+   ],
+   "read_from": "p-2:ref/p"
+  },
+  {
+   "citing": "MCO-1400.32D-CH2",
+   "target": "MCO-6100.13-CH1",
+   "holds": [
+    "MCO-6100.13A-CH5"
+   ],
+   "read_from": "p-2:ref/k"
+  },
+  {
+   "citing": "MCO-1610.7B",
+   "target": "MCO-5100.29C",
+   "holds": [
+    "MCO-5100.29C-CH2"
+   ],
+   "read_from": "p-6:ref/u"
+  },
+  {
+   "citing": "MCO-1610.7B",
+   "target": "MCO-5215.1K",
+   "holds": [
+    "MCO-5215.1K-CH3"
+   ],
+   "read_from": "p-6:ref/f"
+  },
+  {
+   "citing": "MCO-1610.7B",
+   "target": "MCO-5354.1F",
+   "holds": [
+    "MCO-5354.1G",
+    "MCO-5354.1G-CH1"
+   ],
+   "read_from": "p-6:ref/x"
+  },
+  {
+   "citing": "MCO-1610.7B",
+   "target": "MCO-5800.16-V1",
+   "holds": [
+    "MCO-5800.16-CH1",
+    "MCO-5800.16-V01",
+    "MCO-5800.16-V02"
+   ],
+   "read_from": "p-6:ref/y"
+  },
+  {
+   "citing": "MCO-1616.1",
+   "target": "MCO-5215.1K",
+   "holds": [
+    "MCO-5215.1K-CH3"
+   ],
+   "read_from": "front-matter:ref/f"
+  },
+  {
+   "citing": "MCO-6100.13A-CH5",
+   "target": "MCO-1326.6D-CH2",
+   "holds": [
+    "MCO-1326.6-CH1"
+   ],
+   "read_from": "p-6:ref/p"
+  },
+  {
+   "citing": "MCO-6100.13A-CH5",
+   "target": "MCO-1400.31C-CH1",
+   "holds": [
+    "MCO-1400.31D"
+   ],
+   "read_from": "p-6:ref/n"
+  },
+  {
+   "citing": "MCO-6100.13A-CH5",
+   "target": "MCO-1610.7A",
+   "holds": [
+    "MCO-1610.7B"
+   ],
+   "read_from": "p-6:ref/j"
+  },
+  {
+   "citing": "MCO-6100.13A-CH5",
+   "target": "MCO-1900.16-CH2",
+   "holds": [
+    "MCO-1900.16-CH3"
+   ],
+   "read_from": "p-6:ref/k"
+  },
+  {
+   "citing": "MCO-6100.13A-CH5",
+   "target": "MCO-6100.13A-CH4",
+   "holds": [
+    "MCO-6100.13A-CH5"
+   ],
+   "read_from": "front-matter:ref/c"
+  },
+  {
+   "citing": "MCO-6100.14",
+   "target": "MCO-1500.52D",
+   "holds": [
+    "MCO-1500.52E"
+   ],
+   "read_from": "p-5:ref/h"
+  },
+  {
+   "citing": "MCO-6100.14",
+   "target": "MCO-1500.59",
+   "holds": [
+    "MCO-1500.59A"
+   ],
+   "read_from": "p-5:ref/i"
+  },
+  {
+   "citing": "MCO-6100.14",
+   "target": "MCO-1700.29",
+   "holds": [
+    "MCO-1700.29-CH1"
+   ],
+   "read_from": "p-5:ref/g"
+  },
+  {
+   "citing": "MCO-6100.14",
+   "target": "MCO-1900.16-CH1",
+   "holds": [
+    "MCO-1900.16-CH3"
+   ],
+   "read_from": "p-5:ref/u"
+  },
+  {
+   "citing": "MCO-6100.14",
+   "target": "MCO-5000.12E-CH1",
+   "holds": [
+    "MCO-5000.12F",
+    "MCO-5000.12F-CH2"
+   ],
+   "read_from": "p-5:ref/t"
+  },
+  {
+   "citing": "MCO-6100.14",
+   "target": "MCO-6110.3A-CH1",
+   "holds": [
+    "MCO-6110.3A-CH4"
+   ],
+   "read_from": "p-5:ref/f"
+  },
+  {
+   "citing": "MCO-6110.3A-CH4",
+   "target": "MCO-1326.6D-CH2",
+   "holds": [
+    "MCO-1326.6-CH1"
+   ],
+   "read_from": "p-5-3:ref/o"
+  },
+  {
+   "citing": "MCO-6110.3A-CH4",
+   "target": "MCO-1400.31C-CH1",
+   "holds": [
+    "MCO-1400.31D"
+   ],
+   "read_from": "p-5-3:ref/m"
+  },
+  {
+   "citing": "MCO-6110.3A-CH4",
+   "target": "MCO-1610.7",
+   "holds": [
+    "MCO-1610.7B"
+   ],
+   "read_from": "p-5-3:ref/q"
+  },
+  {
+   "citing": "MCO-6110.3A-CH4",
+   "target": "MCO-1900.16-CH1",
+   "holds": [
+    "MCO-1900.16-CH3"
+   ],
+   "read_from": "p-5-3:ref/f"
+  },
+  {
+   "citing": "MCO-6110.3A-CH4",
+   "target": "MCO-5000.12E-CH1",
+   "holds": [
+    "MCO-5000.12F",
+    "MCO-5000.12F-CH2"
+   ],
+   "read_from": "p-5-3:ref/i"
+  },
+  {
+   "citing": "MCO-6110.3A-CH4",
+   "target": "MCO-6100.13A-CH1",
+   "holds": [
+    "MCO-6100.13A-CH5"
+   ],
+   "read_from": "p-5-3:ref/b"
+  },
+  {
+   "citing": "MCO-6110.3A-CH4",
+   "target": "SECNAVINST-1920.6C-CH5",
+   "holds": [
+    "SECNAVINST-1920.6D"
+   ],
+   "read_from": "p-5-3:ref/g"
+  },
+  {
+   "citing": "NAVMC-1200.1L",
+   "target": "MCO-1300.8-CH1",
+   "holds": [
+    "MCO-1300.8-CH2"
+   ],
+   "read_from": "front-matter:ref2/c"
+  },
+  {
+   "citing": "NAVMC-1200.1L",
+   "target": "NAVMC-3500.105C-CH1",
+   "holds": [
+    "NAVMC-3500.105C"
+   ],
+   "read_from": "front-matter:ref2/p"
+  },
+  {
+   "citing": "NAVMC-1200.1L",
+   "target": "NAVMC-3500.119-CH1",
+   "holds": [
+    "NAVMC-3500.119B"
+   ],
+   "read_from": "front-matter:ref2/o"
+  },
+  {
+   "citing": "NAVMC-1200.1L",
+   "target": "NAVMC-3500.2C-CH1",
+   "holds": [
+    "NAVMC-3500.2D"
+   ],
+   "read_from": "front-matter:ref2/n"
+  },
+  {
+   "citing": "NAVMC-1200.1L",
+   "target": "NAVMC-3500.56C-CH1",
+   "holds": [
+    "NAVMC-3500.56C"
+   ],
+   "read_from": "front-matter:ref2/i"
+  },
+  {
+   "citing": "SECNAVINST-1400.1D",
+   "target": "NAVMC-1200.1K",
+   "holds": [
+    "NAVMC-1200.1L"
+   ],
+   "read_from": "front-matter:ref/f"
+  },
+  {
+   "citing": "SECNAVINST-1610.4A",
+   "target": "MCO-1620.2D",
+   "holds": [
+    "MCO-1620.2"
+   ],
+   "read_from": "p-10:ref/k"
+  }
+ ],
+ "named_by": {
+  "USC-T5-S552a": [
+   {
+    "citing": "MCO-1200.18",
+    "read_from": "front-matter:ref/j",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/d",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-1616.1",
+    "read_from": "front-matter:ref/d",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/c",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/r",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/s",
+    "confidence": "high"
+   },
+   {
+    "citing": "SECNAVINST-1610.3A",
+    "read_from": "p-8:ref/m",
+    "confidence": "high"
+   },
+   {
+    "citing": "SECNAVINST-1610.4A",
+    "read_from": "p-10:ref/f",
+    "confidence": "high"
+   }
+  ],
+  "SECNAVM-5210.1": [
+   {
+    "citing": "MCO-1200.13G",
+    "read_from": "front-matter:ref/h",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/c",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-1616.1",
+    "read_from": "front-matter:ref/c",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/p",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/r",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "SECNAVINST-1610.3A",
+    "read_from": "p-8:ref/f",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "SECNAVINST-1610.4A",
+    "read_from": "p-10:ref/g",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1070.12K-CH1": [
+   {
+    "citing": "MARADMIN-2026-151",
+    "read_from": "narr:REF C",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-1400.32D-CH1",
+    "read_from": "p-2:ref/f",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-1400.32D-CH2",
+    "read_from": "p-2:ref/f",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/i",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/p",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1400.32D-CH2": [
+   {
+    "citing": "MARADMIN-2024-253",
+    "read_from": "narr:REF G",
+    "confidence": "high"
+   },
+   {
+    "citing": "MARADMIN-2026-284",
+    "read_from": "narr:REF A",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-1400.32D-CH1",
+    "read_from": "p-4-8:ref/a",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/o",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/o",
+    "confidence": "high"
+   }
+  ],
+  "MCO-5210.11F": [
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/v",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-1616.1",
+    "read_from": "front-matter:ref/i",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/g",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/q",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/e",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10": [
+   {
+    "citing": "DODI-1320.14",
+    "read_from": "front-matter:ref/j",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/a",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-1400.32D-CH1",
+    "read_from": "p-2:ref/a",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-1400.32D-CH2",
+    "read_from": "p-2:ref/a",
+    "confidence": "high"
+   },
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/s",
+    "confidence": "high"
+   }
+  ],
+  "DODI-1300.19": [
+   {
+    "citing": "DODI-1320.14",
+    "read_from": "front-matter:ref/d",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/y",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/t",
+    "confidence": "high"
+   },
+   {
+    "citing": "SECNAVINST-1400.1D",
+    "read_from": "front-matter:ref/g",
+    "confidence": "high"
+   }
+  ],
+  "MCO-1553.4B": [
+   {
+    "citing": "MARADMIN-2018-011",
+    "read_from": "narr:REF B",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MARADMIN-2021-360",
+    "read_from": "narr:REF I",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MARADMIN-2026-151",
+    "read_from": "narr:REF E",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MARADMIN-2026-274",
+    "read_from": "narr:REF B",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1900.16-CH2": [
+   {
+    "citing": "MARADMIN-2021-360",
+    "read_from": "narr:REF J",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MARADMIN-2024-016",
+    "read_from": "narr:REF C",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MARADMIN-2026-274",
+    "read_from": "narr:REF E",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/k",
+    "confidence": "revision-drift"
+   }
+  ],
+  "SECNAVM-5214.1": [
+   {
+    "citing": "MCO-1200.13G",
+    "read_from": "front-matter:ref/e",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "SECNAVINST-1400.1D",
+    "read_from": "front-matter:ref/e",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "SECNAVINST-1610.3A",
+    "read_from": "p-8:ref/g",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "SECNAVINST-1610.4A",
+    "read_from": "p-10:ref/h",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODD-5124.02": [
+   {
+    "citing": "DODI-1308.03",
+    "read_from": "front-matter:ref/b",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "DODI-1320.14",
+    "read_from": "front-matter:ref/c",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/l",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1308.3": [
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/a",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/a",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/c",
+    "confidence": "high"
+   }
+  ],
+  "MCO-1040.31": [
+   {
+    "citing": "MARADMIN-2026-043",
+    "read_from": "narr:REF D",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/m",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/n",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1050.3J": [
+   {
+    "citing": "MARADMIN-2023-051",
+    "read_from": "narr:REF D",
+    "confidence": "high"
+   },
+   {
+    "citing": "MARADMIN-2023-129",
+    "read_from": "narr:REF C",
+    "confidence": "high"
+   },
+   {
+    "citing": "MARADMIN-2026-191",
+    "read_from": "narr:REF A",
+    "confidence": "high"
+   }
+  ],
+  "MCO-1200.15C-CH1": [
+   {
+    "citing": "MCO-1200.13G",
+    "read_from": "front-matter:ref/g",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-1200.18",
+    "read_from": "front-matter:ref/a",
+    "confidence": "high"
+   },
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref/b",
+    "confidence": "high"
+   }
+  ],
+  "MCO-1200.18": [
+   {
+    "citing": "MARADMIN-2026-012",
+    "read_from": "narr:REF D",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/s",
+    "confidence": "high"
+   },
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref/a",
+    "confidence": "high"
+   }
+  ],
+  "MCO-1300.8-CH1": [
+   {
+    "citing": "MARADMIN-2024-016",
+    "read_from": "narr:REF B",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MARADMIN-2026-043",
+    "read_from": "narr:REF C",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/c",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1524.1": [
+   {
+    "citing": "MARADMIN-2021-360",
+    "read_from": "narr:REF A",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MARADMIN-2026-012",
+    "read_from": "narr:REF C",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MARADMIN-2026-274",
+    "read_from": "narr:REF A",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-5215.1K": [
+   {
+    "citing": "MCO-1200.18",
+    "read_from": "front-matter:ref/i",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/f",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-1616.1",
+    "read_from": "front-matter:ref/f",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-6100.13A-CH5": [
+   {
+    "citing": "MARADMIN-2021-404",
+    "read_from": "narr:REF A",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/q",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/c",
+    "confidence": "high"
+   }
+  ],
+  "MCO-6110.3A-CH4": [
+   {
+    "citing": "MARADMIN-2024-586",
+    "read_from": "narr:REF C",
+    "confidence": "high"
+   },
+   {
+    "citing": "MARADMIN-2026-073",
+    "read_from": "ref-line:REF C",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/r",
+    "confidence": "high"
+   }
+  ],
+  "SECNAVINST-5211.5E": [
+   {
+    "citing": "MCO-1200.18",
+    "read_from": "front-matter:ref/k",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/s",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/t",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVNOTE-5210": [
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/r",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/o",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/u",
+    "confidence": "named-not-held"
+   }
+  ],
+  "BUMEDINST-6320.66E-CH2": [
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/q",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/j",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODFMR": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/u",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/b",
+    "confidence": "revision-drift"
+   }
+  ],
+  "DODI-1310.02": [
+   {
+    "citing": "DODI-1320.14",
+    "read_from": "front-matter:ref/e",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/k",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1320.04": [
+   {
+    "citing": "DODI-1320.14",
+    "read_from": "front-matter:ref/f",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/b",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1320.13": [
+   {
+    "citing": "DODI-1320.14",
+    "read_from": "front-matter:ref/g",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/c",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1320.14": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/d",
+    "confidence": "high"
+   },
+   {
+    "citing": "SECNAVINST-1400.1D",
+    "read_from": "front-matter:ref/b",
+    "confidence": "high"
+   }
+  ],
+  "DODI-1334.02": [
+   {
+    "citing": "DODI-1320.14",
+    "read_from": "front-matter:ref/i",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/p",
+    "confidence": "named-not-held"
+   }
+  ],
+  "EO-14168": [
+   {
+    "citing": "MCO-1200.15C-CH1",
+    "read_from": "body:ref/a",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "front-matter:ref/a",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2008-703": [
+   {
+    "citing": "MARADMIN-2018-011",
+    "read_from": "narr:REF C",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MARADMIN-2026-151",
+    "read_from": "narr:REF F",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2009-003": [
+   {
+    "citing": "MCO-1400.32D-CH1",
+    "read_from": "p-2:ref/q",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-1400.32D-CH2",
+    "read_from": "p-2:ref/q",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2023-051": [
+   {
+    "citing": "MARADMIN-2023-129",
+    "read_from": "narr:REF A",
+    "confidence": "high"
+   },
+   {
+    "citing": "MARADMIN-2026-191",
+    "read_from": "narr:REF E",
+    "confidence": "high"
+   }
+  ],
+  "MARADMIN-2026-066": [
+   {
+    "citing": "MARADMIN-2026-073",
+    "read_from": "narr:REF F",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MARADMIN-2026-274",
+    "read_from": "narr:REF H",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1000.6": [
+   {
+    "citing": "MARADMIN-2022-409",
+    "read_from": "narr:REF D",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/j",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1001R.1J": [
+   {
+    "citing": "MCO-1400.32D-CH1",
+    "read_from": "p-2:ref/e",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-1400.32D-CH2",
+    "read_from": "p-2:ref/e",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1070.12K": [
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/i",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/m",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1080.40C": [
+   {
+    "citing": "MCO-1400.32D-CH1",
+    "read_from": "p-2:ref/g",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-1400.32D-CH2",
+    "read_from": "p-2:ref/g",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1130.53P-CH1": [
+   {
+    "citing": "MCO-1400.32D-CH1",
+    "read_from": "p-2:ref/l",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-1400.32D-CH2",
+    "read_from": "p-2:ref/l",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1130.62B": [
+   {
+    "citing": "MCO-1400.32D-CH1",
+    "read_from": "p-2:ref/m",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-1400.32D-CH2",
+    "read_from": "p-2:ref/m",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1130.80A": [
+   {
+    "citing": "MCO-1400.32D-CH1",
+    "read_from": "p-2:ref/n",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-1400.32D-CH2",
+    "read_from": "p-2:ref/n",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1326.6D-CH2": [
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/p",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/o",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1400.31C-CH1": [
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/n",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/m",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1400.32D-CH1": [
+   {
+    "citing": "MCO-1616.1",
+    "read_from": "front-matter:ref/g",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/l",
+    "confidence": "high"
+   }
+  ],
+  "MCO-1610.7B": [
+   {
+    "citing": "MARADMIN-2026-073",
+    "read_from": "ref-line:REF E",
+    "confidence": "high"
+   },
+   {
+    "citing": "MARADMIN-2026-151",
+    "read_from": "narr:REF D",
+    "confidence": "high"
+   }
+  ],
+  "MCO-1610.7F-CH2": [
+   {
+    "citing": "MCO-1400.32D-CH1",
+    "read_from": "p-2:ref/i",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-1400.32D-CH2",
+    "read_from": "p-2:ref/i",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1900.16-CH1": [
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/u",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/f",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1900.16F-CH2": [
+   {
+    "citing": "MCO-1400.32D-CH1",
+    "read_from": "p-2:ref/j",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-1400.32D-CH2",
+    "read_from": "p-2:ref/j",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-3500.27C": [
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/f",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/d",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-3574.2K": [
+   {
+    "citing": "MCO-1400.32D-CH1",
+    "read_from": "p-2:ref/p",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-1400.32D-CH2",
+    "read_from": "p-2:ref/p",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-5000.12E-CH1": [
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/t",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/i",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-5000.12F-CH1": [
+   {
+    "citing": "MARADMIN-2023-051",
+    "read_from": "narr:REF C",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MARADMIN-2026-191",
+    "read_from": "narr:REF D",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-6100.13-CH1": [
+   {
+    "citing": "MCO-1400.32D-CH1",
+    "read_from": "p-2:ref/k",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-1400.32D-CH2",
+    "read_from": "p-2:ref/k",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-6100.13A-CH4": [
+   {
+    "citing": "MARADMIN-2022-409",
+    "read_from": "narr:REF G",
+    "confidence": "revision-drift"
+   },
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "front-matter:ref/c",
+    "confidence": "revision-drift"
+   }
+  ],
+  "NAVMC-1200.1L": [
+   {
+    "citing": "MARADMIN-2026-213",
+    "read_from": "ref-line:REF A",
+    "confidence": "high"
+   },
+   {
+    "citing": "MARADMIN-2026-221",
+    "read_from": "narr:REF A",
+    "confidence": "high"
+   }
+  ],
+  "SECNAVINST-1420.3": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/q",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "SECNAVINST-1400.1D",
+    "read_from": "front-matter:ref/c",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-5211.5F": [
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/e",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/d",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-5800.12C": [
+   {
+    "citing": "SECNAVINST-1610.3A",
+    "read_from": "p-8:ref/o",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "SECNAVINST-1610.4A",
+    "read_from": "p-10:ref/r",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10-S701": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/f",
+    "confidence": "high"
+   },
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/p",
+    "confidence": "high"
+   }
+  ],
+  "USC-T37-S501": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/a",
+    "confidence": "named-not-held"
+   },
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/q",
+    "confidence": "named-not-held"
+   }
+  ],
+  "ALNAV-2025-001": [
+   {
+    "citing": "SECNAVINST-1610.3A",
+    "read_from": "p-8:ref/c",
+    "confidence": "named-not-held"
+   }
+  ],
+  "CJCSI-1330.05B": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/x",
+    "confidence": "named-not-held"
+   }
+  ],
+  "CJCSI-3405.01": [
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/b",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODD-4500.54": [
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/j",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODD-5136.01": [
+   {
+    "citing": "DODI-1308.03",
+    "read_from": "front-matter:ref/c",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODD-7050.06": [
+   {
+    "citing": "SECNAVINST-1610.3A",
+    "read_from": "p-8:ref/i",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1020.03": [
+   {
+    "citing": "SECNAVINST-1610.3A",
+    "read_from": "p-8:ref/a",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1020.04": [
+   {
+    "citing": "SECNAVINST-1610.3A",
+    "read_from": "p-8:ref/d",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1205.21": [
+   {
+    "citing": "MARADMIN-2022-409",
+    "read_from": "narr:REF C",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1215.07": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/m",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1215.13": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/n",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1315.18": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/o",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1320.08": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/i",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1322.06": [
+   {
+    "citing": "MARADMIN-2021-360",
+    "read_from": "narr:REF B",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1322.10": [
+   {
+    "citing": "MARADMIN-2021-360",
+    "read_from": "narr:REF H",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1322.25-CH3": [
+   {
+    "citing": "MARADMIN-2026-012",
+    "read_from": "narr:REF A",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1325.06": [
+   {
+    "citing": "SECNAVINST-1610.4A",
+    "read_from": "p-10:ref/a",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1327.07": [
+   {
+    "citing": "DODI-1320.14",
+    "read_from": "front-matter:ref/h",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1327.6": [
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/h",
+    "confidence": "high"
+   }
+  ],
+  "DODI-1332.32": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/r",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1334.01": [
+   {
+    "citing": "SECNAVINST-1610.4A",
+    "read_from": "p-10:ref/m",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1340.09": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/p",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1340.25": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/q",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-1340.26": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/r",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-4105.70": [
+   {
+    "citing": "SECNAVINST-1610.4A",
+    "read_from": "p-10:ref/i",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-4515.13": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/s",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-5015.02": [
+   {
+    "citing": "SECNAVINST-1610.3A",
+    "read_from": "p-8:ref/n",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-5400.11": [
+   {
+    "citing": "DODI-1308.03",
+    "read_from": "front-matter:ref/d",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-6055.07": [
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/l",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-6130.03-V1": [
+   {
+    "citing": "DODI-1308.03",
+    "read_from": "front-matter:ref/e",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODI-6310.09": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/t",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODM-5200.02": [
+   {
+    "citing": "SECNAVINST-1610.4A",
+    "read_from": "p-10:ref/o",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODM-8910.01-V1": [
+   {
+    "citing": "DODI-1308.03",
+    "read_from": "front-matter:ref/f",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODREG-4515.13-R": [
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/c",
+    "confidence": "named-not-held"
+   }
+  ],
+  "DODREG-5400.11-R": [
+   {
+    "citing": "DODI-1308.03",
+    "read_from": "front-matter:ref/a",
+    "confidence": "named-not-held"
+   }
+  ],
+  "EO-14183": [
+   {
+    "citing": "DODI-1308.03",
+    "read_from": "front-matter:ref/g",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2007-262": [
+   {
+    "citing": "MARADMIN-2025-237",
+    "read_from": "narr:REF A",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2009-254": [
+   {
+    "citing": "MARADMIN-2025-237",
+    "read_from": "narr:REF B",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2009-415": [
+   {
+    "citing": "MARADMIN-2025-237",
+    "read_from": "narr:REF C",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2013-498": [
+   {
+    "citing": "MARADMIN-2018-011",
+    "read_from": "narr:REF D",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2017-151": [
+   {
+    "citing": "MARADMIN-2025-237",
+    "read_from": "narr:REF D",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2018-667": [
+   {
+    "citing": "MARADMIN-2025-237",
+    "read_from": "narr:REF E",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2020-491": [
+   {
+    "citing": "MARADMIN-2021-360",
+    "read_from": "narr:REF G",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2021-165": [
+   {
+    "citing": "MARADMIN-2021-360",
+    "read_from": "narr:REF K",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2022-026": [
+   {
+    "citing": "MARADMIN-2022-409",
+    "read_from": "narr:REF B",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2022-423": [
+   {
+    "citing": "MARADMIN-2024-586",
+    "read_from": "narr:REF D",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2022-523": [
+   {
+    "citing": "MARADMIN-2023-051",
+    "read_from": "narr:REF E",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2022-652": [
+   {
+    "citing": "MARADMIN-2024-586",
+    "read_from": "narr:REF A",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2023-111": [
+   {
+    "citing": "MARADMIN-2026-191",
+    "read_from": "narr:REF G",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2023-129": [
+   {
+    "citing": "MARADMIN-2026-191",
+    "read_from": "narr:REF F",
+    "confidence": "high"
+   }
+  ],
+  "MARADMIN-2023-277": [
+   {
+    "citing": "MARADMIN-2024-586",
+    "read_from": "narr:REF E",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2023-634": [
+   {
+    "citing": "MARADMIN-2026-151",
+    "read_from": "narr:REF G",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2025-317": [
+   {
+    "citing": "MARADMIN-2026-043",
+    "read_from": "narr:REF E",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2025-400": [
+   {
+    "citing": "MARADMIN-2026-221",
+    "read_from": "narr:REF E",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2025-549": [
+   {
+    "citing": "MARADMIN-2026-221",
+    "read_from": "narr:REF D",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2025-613": [
+   {
+    "citing": "MARADMIN-2026-073",
+    "read_from": "narr:REF A",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2025-622": [
+   {
+    "citing": "MARADMIN-2026-151",
+    "read_from": "narr:REF A",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2026-023": [
+   {
+    "citing": "MARADMIN-2026-221",
+    "read_from": "narr:REF C",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2026-127": [
+   {
+    "citing": "MARADMIN-2026-274",
+    "read_from": "narr:REF G",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MARADMIN-2026-158": [
+   {
+    "citing": "MARADMIN-2026-274",
+    "read_from": "narr:REF F",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCBUL-1020": [
+   {
+    "citing": "MARADMIN-2026-043",
+    "read_from": "narr:REF B",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCBUL-1400": [
+   {
+    "citing": "MARADMIN-2026-151",
+    "read_from": "narr:REF B",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCBUL-6110": [
+   {
+    "citing": "MARADMIN-2024-586",
+    "read_from": "narr:REF B",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCBUL-6110-CH1": [
+   {
+    "citing": "MARADMIN-2026-073",
+    "read_from": "ref-line:REF D",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1000.6G": [
+   {
+    "citing": "MCO-1200.18",
+    "read_from": "front-matter:ref/b",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-10001R.1L-CH1": [
+   {
+    "citing": "MARADMIN-2026-191",
+    "read_from": "narr:REF I",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1001R.1K": [
+   {
+    "citing": "MCO-1200.18",
+    "read_from": "front-matter:ref/g",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-10110.47": [
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/o",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1040.42B": [
+   {
+    "citing": "MARADMIN-2022-409",
+    "read_from": "narr:REF A",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1050.16A": [
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/l",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1200.13G": [
+   {
+    "citing": "MCO-1200.18",
+    "read_from": "front-matter:ref/c",
+    "confidence": "high"
+   }
+  ],
+  "MCO-1200.17C": [
+   {
+    "citing": "MCO-1200.13G",
+    "read_from": "front-matter:ref/c",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1300.8": [
+   {
+    "citing": "MARADMIN-2021-360",
+    "read_from": "narr:REF F",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1300.8-CH2": [
+   {
+    "citing": "MARADMIN-2026-274",
+    "read_from": "narr:REF D",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1300.8R": [
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/g",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1300.8R-CH1": [
+   {
+    "citing": "MCO-1200.18",
+    "read_from": "front-matter:ref/d",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1326.6-CH1": [
+   {
+    "citing": "MARADMIN-2026-043",
+    "read_from": "narr:REF A",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1500.52D": [
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/h",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1500.59": [
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/i",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1500.61": [
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/g",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1500.62": [
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/d",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1520.11F": [
+   {
+    "citing": "MARADMIN-2021-360",
+    "read_from": "narr:REF C",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1540.33": [
+   {
+    "citing": "MARADMIN-2026-274",
+    "read_from": "narr:REF C",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1610.7": [
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/q",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1610.7A": [
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/j",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1616.1": [
+   {
+    "citing": "MARADMIN-2026-284",
+    "read_from": "narr:REF B",
+    "confidence": "high"
+   }
+  ],
+  "MCO-1620.2D": [
+   {
+    "citing": "SECNAVINST-1610.4A",
+    "read_from": "p-10:ref/k",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1700.29": [
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/g",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1754.11A": [
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/k",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-1900.16F": [
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/k",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-1900.16G": [
+   {
+    "citing": "MARADMIN-2018-011",
+    "read_from": "narr:REF A",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-3040.4": [
+   {
+    "citing": "MARADMIN-2026-191",
+    "read_from": "narr:REF J",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-3500.72A": [
+   {
+    "citing": "MCO-1200.13G",
+    "read_from": "front-matter:ref/b",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-3570.1C": [
+   {
+    "citing": "MARADMIN-2023-322",
+    "read_from": "ref-line:REF E",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-3574.2M": [
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/p",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-3821.2": [
+   {
+    "citing": "MARADMIN-2024-016",
+    "read_from": "narr:REF A",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-4630.16C": [
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/f",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-5100.29B-V8": [
+   {
+    "citing": "MARADMIN-2023-322",
+    "read_from": "ref-line:REF B",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-5100.29C": [
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/u",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-5102.1B-CH2": [
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/k",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-5300.17A": [
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/i",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-5311.1D": [
+   {
+    "citing": "MCO-1200.18",
+    "read_from": "front-matter:ref/f",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-5354.1F": [
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/x",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-5354.1G": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/b",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-5420R.8H": [
+   {
+    "citing": "MARADMIN-2026-026",
+    "read_from": "narr:REF C",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-5510.18B": [
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/w",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-5800.16-V1": [
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/y",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-6100.13A-CH1": [
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/b",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-6110.3A-CH1": [
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/f",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-6110.3A-CH3": [
+   {
+    "citing": "MARADMIN-2022-409",
+    "read_from": "narr:REF H",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-6400.2": [
+   {
+    "citing": "MCO-6100.14",
+    "read_from": "p-5:ref/j",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-7130.1J": [
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/n",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-7220.52F": [
+   {
+    "citing": "MARADMIN-2021-360",
+    "read_from": "narr:REF D",
+    "confidence": "revision-drift"
+   }
+  ],
+  "MCO-7220.56A": [
+   {
+    "citing": "MARADMIN-2022-409",
+    "read_from": "narr:REF F",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-8000.8": [
+   {
+    "citing": "MARADMIN-2023-322",
+    "read_from": "ref-line:REF A",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCO-8011.5B": [
+   {
+    "citing": "MARADMIN-2023-322",
+    "read_from": "ref-line:REF D",
+    "confidence": "named-not-held"
+   }
+  ],
+  "MCRP-8-10B.4": [
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/e",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVMC-1200.1": [
+   {
+    "citing": "MCO-1200.18",
+    "read_from": "front-matter:ref/h",
+    "confidence": "revision-drift"
+   }
+  ],
+  "NAVMC-1200.1J": [
+   {
+    "citing": "MARADMIN-2024-253",
+    "read_from": "narr:REF H",
+    "confidence": "revision-drift"
+   }
+  ],
+  "NAVMC-1200.1K": [
+   {
+    "citing": "SECNAVINST-1400.1D",
+    "read_from": "front-matter:ref/f",
+    "confidence": "revision-drift"
+   }
+  ],
+  "NAVMC-1553.1": [
+   {
+    "citing": "MCO-1200.13G",
+    "read_from": "front-matter:ref/a",
+    "confidence": "revision-drift"
+   }
+  ],
+  "NAVMC-3500.100C": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/g",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVMC-3500.105C-CH1": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/p",
+    "confidence": "revision-drift"
+   }
+  ],
+  "NAVMC-3500.106": [
+   {
+    "citing": "MCO-1200.13G",
+    "read_from": "front-matter:ref/f",
+    "confidence": "revision-drift"
+   }
+  ],
+  "NAVMC-3500.107C": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/h",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVMC-3500.119-CH1": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/o",
+    "confidence": "revision-drift"
+   }
+  ],
+  "NAVMC-3500.120C": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/t",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVMC-3500.121A": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/m",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVMC-3500.12B-CH1": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/l",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVMC-3500.25E": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/u",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVMC-3500.27D": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/f",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVMC-3500.2C-CH1": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/n",
+    "confidence": "revision-drift"
+   }
+  ],
+  "NAVMC-3500.35C": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/v",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVMC-3500.39D": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/x",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVMC-3500.3E": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/d",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVMC-3500.44D": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/e",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVMC-3500.56C-CH1": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/i",
+    "confidence": "revision-drift"
+   }
+  ],
+  "NAVMC-3500.64D": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/r",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVMC-3500.69C": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/w",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVMC-3500.6C": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/q",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVMC-3500.7C": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/k",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVMC-3500.94C": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/a",
+    "confidence": "named-not-held"
+   }
+  ],
+  "NAVSO-6034": [
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/e",
+    "confidence": "named-not-held"
+   }
+  ],
+  "OPNAVINST-1520.23C": [
+   {
+    "citing": "MARADMIN-2026-012",
+    "read_from": "ref-line:REF B",
+    "confidence": "named-not-held"
+   }
+  ],
+  "OPNAVINST-1520.23C-CH1": [
+   {
+    "citing": "MARADMIN-2026-012",
+    "read_from": "narr:REF B",
+    "confidence": "named-not-held"
+   }
+  ],
+  "OPNAVINST-1620.2A": [
+   {
+    "citing": "SECNAVINST-1610.4A",
+    "read_from": "p-10:ref/j",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-1000.10B": [
+   {
+    "citing": "MARADMIN-2026-191",
+    "read_from": "narr:REF H",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-1000.7": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/l",
+    "confidence": "revision-drift"
+   }
+  ],
+  "SECNAVINST-1120.9B": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/m",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-12713.14": [
+   {
+    "citing": "SECNAVINST-1610.3A",
+    "read_from": "p-8:ref/e",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-1301.4": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/n",
+    "confidence": "revision-drift"
+   }
+  ],
+  "SECNAVINST-1301.7": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/o",
+    "confidence": "revision-drift"
+   }
+  ],
+  "SECNAVINST-1400.1": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/u",
+    "confidence": "revision-drift"
+   }
+  ],
+  "SECNAVINST-1401.4": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/v",
+    "confidence": "revision-drift"
+   }
+  ],
+  "SECNAVINST-1402.1": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/h",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-1412.11": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/f",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-1412.6": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/t",
+    "confidence": "revision-drift"
+   }
+  ],
+  "SECNAVINST-1412.8": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/e",
+    "confidence": "revision-drift"
+   }
+  ],
+  "SECNAVINST-1421.3M": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/g",
+    "confidence": "revision-drift"
+   }
+  ],
+  "SECNAVINST-1520.7G": [
+   {
+    "citing": "MARADMIN-2021-360",
+    "read_from": "narr:REF E",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-1650.1H": [
+   {
+    "citing": "MARADMIN-2008-418",
+    "read_from": "narr:REF C",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-1920.6C-CH5": [
+   {
+    "citing": "MCO-6110.3A-CH4",
+    "read_from": "p-5-3:ref/g",
+    "confidence": "revision-drift"
+   }
+  ],
+  "SECNAVINST-1920.6D": [
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/l",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-1920.7C": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/j",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-1920.8": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/s",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-5200.35F": [
+   {
+    "citing": "MCO-1400.31D",
+    "read_from": "p-6:ref/w",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-5200.35G": [
+   {
+    "citing": "SECNAVINST-1400.1D",
+    "read_from": "front-matter:ref/d",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-5210.1": [
+   {
+    "citing": "MCO-1200.18",
+    "read_from": "front-matter:ref/e",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-5300.26E": [
+   {
+    "citing": "SECNAVINST-1610.3A",
+    "read_from": "p-8:ref/b",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-5350.16A": [
+   {
+    "citing": "SECNAVINST-1610.4A",
+    "read_from": "p-10:ref/b",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-5420.170N": [
+   {
+    "citing": "MARADMIN-2026-026",
+    "read_from": "narr:REF B",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-5430.107A": [
+   {
+    "citing": "SECNAVINST-1610.4A",
+    "read_from": "p-10:ref/q",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-5510.35C": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/j",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVINST-5800.11B": [
+   {
+    "citing": "SECNAVINST-1610.3A",
+    "read_from": "p-8:ref/l",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVM-1650.1": [
+   {
+    "citing": "MCO-1610.7B",
+    "read_from": "p-6:ref/n",
+    "confidence": "named-not-held"
+   }
+  ],
+  "SECNAVM-5210.1-CH1": [
+   {
+    "citing": "MCO-6100.13A-CH5",
+    "read_from": "p-6:ref/b",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10-S10304": [
+   {
+    "citing": "MARADMIN-2026-026",
+    "read_from": "narr:REF A",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10-S1034": [
+   {
+    "citing": "SECNAVINST-1610.4A",
+    "read_from": "p-10:ref/n",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10-S1052": [
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/v",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10-S1182": [
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/s",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10-S574": [
+   {
+    "citing": "SECNAVINST-1400.1D",
+    "read_from": "front-matter:ref/a",
+    "confidence": "high"
+   }
+  ],
+  "USC-T10-S6222": [
+   {
+    "citing": "NAVMC-1200.1L",
+    "read_from": "front-matter:ref2/z",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10-S688": [
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/u",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10-S703": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/g",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10-S704": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/h",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10-S709": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/i",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10-S711": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/j",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10-S801": [
+   {
+    "citing": "SECNAVINST-1610.4A",
+    "read_from": "p-10:ref/e",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10-S801-950a": [
+   {
+    "citing": "SECNAVINST-1610.3A",
+    "read_from": "p-8:ref/k",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10-S815": [
+   {
+    "citing": "SECNAVINST-1610.4A",
+    "read_from": "p-10:ref/s",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10-S876a": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/k",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T10-S930": [
+   {
+    "citing": "SECNAVINST-1610.3A",
+    "read_from": "p-8:ref/j",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T18-S1382": [
+   {
+    "citing": "SECNAVINST-1610.4A",
+    "read_from": "p-10:ref/c",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T37-S603": [
+   {
+    "citing": "DODI-1327.06",
+    "read_from": "front-matter:ref/c",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T5-S2105": [
+   {
+    "citing": "SECNAVINST-1610.3A",
+    "read_from": "p-8:ref/h",
+    "confidence": "named-not-held"
+   }
+  ],
+  "USC-T5-S5534a": [
+   {
+    "citing": "MCO-1050.3J",
+    "read_from": "front-matter:ref/t",
+    "confidence": "named-not-held"
+   }
+  ]
+ },
+ "status": {
+  "DODI-1300.19": "active",
+  "DODI-1308.03": "active",
+  "DODI-1308.3": "cancelled",
+  "DODI-1320.14": "active",
+  "DODI-1327.06": "active",
+  "DODI-1327.6": "superseded",
+  "MARADMIN-2008-418": "active",
+  "MARADMIN-2018-011": "active",
+  "MARADMIN-2018-161": "cancelled",
+  "MARADMIN-2019-114": "active",
+  "MARADMIN-2021-360": "active",
+  "MARADMIN-2021-388": "active",
+  "MARADMIN-2021-404": "active",
+  "MARADMIN-2022-408": "active",
+  "MARADMIN-2022-409": "active",
+  "MARADMIN-2023-051": "active",
+  "MARADMIN-2023-129": "active",
+  "MARADMIN-2023-322": "cancelled",
+  "MARADMIN-2024-016": "active",
+  "MARADMIN-2024-253": "active",
+  "MARADMIN-2024-586": "active",
+  "MARADMIN-2025-166": "active",
+  "MARADMIN-2025-237": "active",
+  "MARADMIN-2026-012": "active",
+  "MARADMIN-2026-026": "active",
+  "MARADMIN-2026-043": "active",
+  "MARADMIN-2026-073": "active",
+  "MARADMIN-2026-074": "active",
+  "MARADMIN-2026-151": "active",
+  "MARADMIN-2026-191": "active",
+  "MARADMIN-2026-213": "active",
+  "MARADMIN-2026-221": "active",
+  "MARADMIN-2026-274": "active",
+  "MARADMIN-2026-284": "active",
+  "MARADMIN-CANX-2018-011": "active",
+  "MCO-1050.3J": "active",
+  "MCO-1200.13G": "active",
+  "MCO-1200.15C-CH1": "active",
+  "MCO-1200.18": "active",
+  "MCO-1400.31D": "active",
+  "MCO-1400.32D-CH1": "unknown",
+  "MCO-1400.32D-CH2": "active",
+  "MCO-1610.7B": "active",
+  "MCO-1616.1": "active",
+  "MCO-6100.13A-CH5": "active",
+  "MCO-6100.14": "active",
+  "MCO-6110.3A-CH4": "active",
+  "NAVMC-1200.1L": "active",
+  "SECNAVINST-1400.1D": "unknown",
+  "SECNAVINST-1610.3A": "unknown",
+  "SECNAVINST-1610.4A": "unknown",
+  "USC-T10": "active",
+  "USC-T10-S574": "active",
+  "USC-T10-S701": "active",
+  "USC-T5": "active",
+  "USC-T5-S552a": "active"
+ },
+ "titles": {
+  "DODI-1300.19": "DoD Instruction 1300.19 - DoD Joint Officer Management Program",
+  "DODI-1308.03": "DoD Instruction 1308.03 - DoD Physical Fitness/Body Composition Program",
+  "DODI-1308.3": "DoD Instruction 1308.3 - DoD Physical Fitness and Body Fat Programs Procedures",
+  "DODI-1320.14": "DoD Instruction 1320.14 - DoD Commissioned Officer Promotion Program Procedures",
+  "DODI-1327.06": "DoD Instruction 1327.06 - Military Leave, Liberty, and Administrative Absence",
+  "DODI-1327.6": "DoD Instruction 1327.06 - Leave and Liberty Policy and Procedures",
+  "MARADMIN-2008-418": "AWARDS UPDATE",
+  "MARADMIN-2018-011": "CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND STAFF",
+  "MARADMIN-2018-161": "FY18 APPROVED SELECTED MARINE CORPS RESERVE (SMCR) STAFF NONCOMMISSIONED",
+  "MARADMIN-2019-114": "TRANSITION TO A NEW GOVERNMENT TRAVEL CHARGE CARD (GTCC) PROVIDER",
+  "MARADMIN-2021-360": "FY22 COMMANDANTâ€™S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD (CPIB)",
+  "MARADMIN-2021-388": "CHANGE 1 TO FY22 COMMANDANT'S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD",
+  "MARADMIN-2021-404": "FORTHCOMING CHANGES TO THE PHYSICAL FITNESS TEST",
+  "MARADMIN-2022-408": "SOLICITATION FOR PARTICIPATION IN THE MARINE CORPS 2022 SEMI-ANNUAL MICROSOFT",
+  "MARADMIN-2022-409": "FISCAL YEAR 2023 (FY23) ENLISTED TO WARRANT OFFICER (RESERVE) SELECTION BOARD",
+  "MARADMIN-2023-051": "EXPANSION OF THE MARINE CORPS MILITARY PARENTAL LEAVE PROGRAM",
+  "MARADMIN-2023-129": "Clarification to MARADMIN 051/23",
+  "MARADMIN-2023-322": "PROCUREMENT OF COMMERCIAL AMMUNITION AND EXPLOSIVES (A&E)",
+  "MARADMIN-2024-016": "FISCAL YEAR 2025 ACTIVE AND RESERVE MARINE ATTACHÉ SELECTION BOARD: OFFICER",
+  "MARADMIN-2024-253": "FISCAL YEAR 2024 MARINE CORPS TALENT ACQUISITION PILOT",
+  "MARADMIN-2024-586": "SEQUENCE TWO FIELDING OF BIOELECTRICAL IMPEDANCE ANALYSIS",
+  "MARADMIN-2025-166": "ANNOUNCEMENT OF THE WINNERS FOR CY2024 VISUAL INFORMATION AND",
+  "MARADMIN-2025-237": "MARINE CORPS POLICY ON THE WEAR AND PURCHASE OF BODY",
+  "MARADMIN-2026-012": "ACADEMIC YEAR 2026-2027 NAVAL POSTGRADUATE SCHOOL DISTANCE",
+  "MARADMIN-2026-026": "SOLICITATION OF POLICY ISSUES FOR MARINE CORPS RESERVE POLICY",
+  "MARADMIN-2026-043": "FY27 HQMC SPECIAL DUTY ASSIGNMENT SCREENING TEAM (HSST)",
+  "MARADMIN-2026-073": "CHANGE 2 TO THE ADVANCE NOTIFICATION OF CHANGES TO THE MARINE",
+  "MARADMIN-2026-074": "SOLICITATION FOR THE TRAINING AND EDUCATION INSTRUCTOR OF THE",
+  "MARADMIN-2026-151": "CONVENING OF THE FY28 U.S. MARINE CORPS COLONEL, LIEUTENANT",
+  "MARADMIN-2026-191": "CHANGES TO RESERVE COMPONENT MATERNITY LEAVE (RCML) AND RESERVE",
+  "MARADMIN-2026-213": "FY2026 55XX PRIMARY MILITARY OCCUPATIONAL SPECIALTY (PMOS)",
+  "MARADMIN-2026-221": "SOLICITATION FOR QUALIFIED MARINES TO LATERAL MOVE",
+  "MARADMIN-2026-274": "FISCAL YEAR 2027 COMMANDANT'S PROFESSIONAL INTERMEDIATE-LEVEL",
+  "MARADMIN-2026-284": "JULY 2026 ACTIVE-DUTY CORPORAL AND SERGEANT PROMOTION",
+  "MARADMIN-CANX-2018-011": "CANCELLATION OF MARADMIN 161/18",
+  "MCO-1050.3J": "MCO 1050.3J - Regulations for Leave, Liberty, and Administrative Absence",
+  "MCO-1200.13G": "MCO 1200.13G - Marine Corps Front-end Analysis Program",
+  "MCO-1200.15C-CH1": "MCO 1200.15C - Marine Corps Directives Compliance with Executive Order 14168",
+  "MCO-1200.18": "MCO 1200.18 - Military Occupational Specialties (MOS) Program Order (SHORT TITLE: MOS MANUAL ORDER)",
+  "MCO-1400.31D": "MCO 1400.31D - Marine Corps Promotion Manual, Volume 1, Officer Promotions (MARCORPROMMAN, VOL 1, OFFPROM)",
+  "MCO-1400.32D-CH1": "MCO 1400.32D - Marine Corps Promotion Manual, Volume 2, Enlisted Promotions (SHORT TITLE: MARCORPROMAN, VOL 2, ENLPROM) Enel: (1) New page inserts to MCO P1400.32d Situation. to transmit new page inserts to the basic Order. Mission. To",
+  "MCO-1400.32D-CH2": "MCO 1400.32D - Marine Corps Promotion Manual, Volume 2, Enlisted Promotions (SHORT TITLE: MARCORPROMAN, VOL 2, ENLPROM) Enel: (1) New page inserts to MCO P1400.32d Situation. to transmit new page inserts to the basic Order. Mission. To",
+  "MCO-1610.7B": "MCO 1610.7B - Performance Evaluation System (PES)",
+  "MCO-1616.1": "MCO 1616.1 - Junior Enlisted Performance Evaluation System (JEPES)",
+  "MCO-6100.13A-CH5": "MCO 6100.13A - Marine Corps Directives Compliance with Executive Order 14168",
+  "MCO-6100.14": "MCO 6100.14 - Marine Corps Physical Fitness Program (MCPFP)",
+  "MCO-6110.3A-CH4": "MCO 6110.3A - Marine Corps Directives Compliance with Executive Order 14168",
+  "NAVMC-1200.1L": "NAVMC 1200.1L - Military Occupational Specialties Manual",
+  "SECNAVINST-1400.1D": "SECNAVINST 1400.1D - Officer Competitive Categories for the Active Duty List of the Navy and Marine Corps",
+  "SECNAVINST-1610.3A": "SECNAVINST 1610.3A - Department of the Navy Policy on Harassment Prevention and Response",
+  "SECNAVINST-1610.4A": "SECNAVINST 1610.4A - Department of the Navy Policy on Handling Protest, Extremist, and Criminal Gang Activities",
+  "USC-T10": "Title 10, United States Code - Armed Forces",
+  "USC-T10-S574": "10 U.S.C. 574 - Warrant officer active-duty lists; competitive categories; number to be recommended for promotion; promotion zones",
+  "USC-T10-S701": "10 U.S.C. 701 - Entitlement and accumulation",
+  "USC-T5": "Title 5, United States Code - Government Organization and Employees",
+  "USC-T5-S552a": "5 U.S.C. 552a - Records maintained on individuals"
+ },
  "per_document": {
   "DODI-1300.19": {
    "edges": 0,
@@ -839,7 +4002,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 0
   },
   "DODI-1308.03": {
    "edges": 7,
@@ -847,7 +4011,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 0,
-   "gaps": 7
+   "gaps": 7,
+   "provisions": 12
   },
   "DODI-1308.3": {
    "edges": 0,
@@ -855,7 +4020,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 0
   },
   "DODI-1320.14": {
    "edges": 8,
@@ -863,7 +4029,8 @@
    "unparsed": 2,
    "held": 2,
    "drift": 0,
-   "gaps": 6
+   "gaps": 6,
+   "provisions": 11
   },
   "DODI-1327.06": {
    "edges": 18,
@@ -871,7 +4038,8 @@
    "unparsed": 3,
    "held": 1,
    "drift": 1,
-   "gaps": 16
+   "gaps": 16,
+   "provisions": 27
   },
   "DODI-1327.6": {
    "edges": 0,
@@ -879,7 +4047,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 0
   },
   "MARADMIN-2008-418": {
    "edges": 1,
@@ -887,7 +4056,8 @@
    "unparsed": 2,
    "held": 0,
    "drift": 0,
-   "gaps": 1
+   "gaps": 1,
+   "provisions": 27
   },
   "MARADMIN-2018-011": {
    "edges": 4,
@@ -895,7 +4065,8 @@
    "unparsed": 4,
    "held": 0,
    "drift": 1,
-   "gaps": 3
+   "gaps": 3,
+   "provisions": 29
   },
   "MARADMIN-2018-161": {
    "edges": 0,
@@ -903,7 +4074,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 0
   },
   "MARADMIN-2019-114": {
    "edges": 0,
@@ -911,7 +4083,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 32
   },
   "MARADMIN-2021-360": {
    "edges": 11,
@@ -919,7 +4092,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 3,
-   "gaps": 8
+   "gaps": 8,
+   "provisions": 78
   },
   "MARADMIN-2021-388": {
    "edges": 0,
@@ -927,7 +4101,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 12
   },
   "MARADMIN-2021-404": {
    "edges": 1,
@@ -935,7 +4110,8 @@
    "unparsed": 1,
    "held": 1,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 8
   },
   "MARADMIN-2022-408": {
    "edges": 0,
@@ -943,7 +4119,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 19
   },
   "MARADMIN-2022-409": {
    "edges": 7,
@@ -951,7 +4128,8 @@
    "unparsed": 2,
    "held": 0,
    "drift": 3,
-   "gaps": 4
+   "gaps": 4,
+   "provisions": 59
   },
   "MARADMIN-2023-051": {
    "edges": 3,
@@ -959,7 +4137,8 @@
    "unparsed": 2,
    "held": 1,
    "drift": 1,
-   "gaps": 1
+   "gaps": 1,
+   "provisions": 78
   },
   "MARADMIN-2023-129": {
    "edges": 2,
@@ -967,7 +4146,8 @@
    "unparsed": 1,
    "held": 2,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 5
   },
   "MARADMIN-2023-322": {
    "edges": 4,
@@ -975,7 +4155,8 @@
    "unparsed": 6,
    "held": 0,
    "drift": 2,
-   "gaps": 2
+   "gaps": 2,
+   "provisions": 17
   },
   "MARADMIN-2024-016": {
    "edges": 3,
@@ -983,7 +4164,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 2,
-   "gaps": 1
+   "gaps": 1,
+   "provisions": 16
   },
   "MARADMIN-2024-253": {
    "edges": 2,
@@ -991,7 +4173,8 @@
    "unparsed": 14,
    "held": 1,
    "drift": 1,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 67
   },
   "MARADMIN-2024-586": {
    "edges": 5,
@@ -999,7 +4182,8 @@
    "unparsed": 5,
    "held": 1,
    "drift": 0,
-   "gaps": 4
+   "gaps": 4,
+   "provisions": 81
   },
   "MARADMIN-2025-166": {
    "edges": 0,
@@ -1007,7 +4191,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 47
   },
   "MARADMIN-2025-237": {
    "edges": 5,
@@ -1015,7 +4200,8 @@
    "unparsed": 3,
    "held": 0,
    "drift": 0,
-   "gaps": 5
+   "gaps": 5,
+   "provisions": 19
   },
   "MARADMIN-2026-012": {
    "edges": 5,
@@ -1023,7 +4209,8 @@
    "unparsed": 0,
    "held": 1,
    "drift": 0,
-   "gaps": 4
+   "gaps": 4,
+   "provisions": 33
   },
   "MARADMIN-2026-026": {
    "edges": 3,
@@ -1031,7 +4218,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 1,
-   "gaps": 2
+   "gaps": 2,
+   "provisions": 13
   },
   "MARADMIN-2026-043": {
    "edges": 5,
@@ -1039,7 +4227,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 1,
-   "gaps": 4
+   "gaps": 4,
+   "provisions": 24
   },
   "MARADMIN-2026-073": {
    "edges": 5,
@@ -1047,7 +4236,8 @@
    "unparsed": 5,
    "held": 2,
    "drift": 0,
-   "gaps": 3
+   "gaps": 3,
+   "provisions": 3
   },
   "MARADMIN-2026-074": {
    "edges": 0,
@@ -1055,7 +4245,8 @@
    "unparsed": 1,
    "held": 0,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 47
   },
   "MARADMIN-2026-151": {
    "edges": 7,
@@ -1063,7 +4254,8 @@
    "unparsed": 1,
    "held": 1,
    "drift": 0,
-   "gaps": 6
+   "gaps": 6,
+   "provisions": 28
   },
   "MARADMIN-2026-191": {
    "edges": 8,
@@ -1071,7 +4263,8 @@
    "unparsed": 14,
    "held": 3,
    "drift": 1,
-   "gaps": 4
+   "gaps": 4,
+   "provisions": 64
   },
   "MARADMIN-2026-213": {
    "edges": 1,
@@ -1079,7 +4272,8 @@
    "unparsed": 4,
    "held": 1,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 0
   },
   "MARADMIN-2026-221": {
    "edges": 4,
@@ -1087,7 +4281,8 @@
    "unparsed": 1,
    "held": 1,
    "drift": 0,
-   "gaps": 3
+   "gaps": 3,
+   "provisions": 25
   },
   "MARADMIN-2026-274": {
    "edges": 8,
@@ -1095,7 +4290,8 @@
    "unparsed": 8,
    "held": 0,
    "drift": 1,
-   "gaps": 7
+   "gaps": 7,
+   "provisions": 145
   },
   "MARADMIN-2026-284": {
    "edges": 2,
@@ -1103,7 +4299,8 @@
    "unparsed": 0,
    "held": 2,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 10
   },
   "MARADMIN-CANX-2018-011": {
    "edges": 0,
@@ -1111,7 +4308,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 2
   },
   "MCO-1050.3J": {
    "edges": 18,
@@ -1119,7 +4317,8 @@
    "unparsed": 5,
    "held": 2,
    "drift": 4,
-   "gaps": 12
+   "gaps": 12,
+   "provisions": 543
   },
   "MCO-1200.13G": {
    "edges": 7,
@@ -1127,7 +4326,8 @@
    "unparsed": 1,
    "held": 1,
    "drift": 3,
-   "gaps": 3
+   "gaps": 3,
+   "provisions": 50
   },
   "MCO-1200.15C-CH1": {
    "edges": 1,
@@ -1135,7 +4335,8 @@
    "unparsed": 1,
    "held": 0,
    "drift": 0,
-   "gaps": 1
+   "gaps": 1,
+   "provisions": 3
   },
   "MCO-1200.18": {
    "edges": 11,
@@ -1143,7 +4344,8 @@
    "unparsed": 0,
    "held": 3,
    "drift": 6,
-   "gaps": 2
+   "gaps": 2,
+   "provisions": 29
   },
   "MCO-1400.31D": {
    "edges": 25,
@@ -1151,7 +4353,8 @@
    "unparsed": 16,
    "held": 3,
    "drift": 8,
-   "gaps": 14
+   "gaps": 14,
+   "provisions": 378
   },
   "MCO-1400.32D-CH1": {
    "edges": 13,
@@ -1159,7 +4362,8 @@
    "unparsed": 14,
    "held": 2,
    "drift": 8,
-   "gaps": 3
+   "gaps": 3,
+   "provisions": 586
   },
   "MCO-1400.32D-CH2": {
    "edges": 12,
@@ -1167,7 +4371,8 @@
    "unparsed": 14,
    "held": 1,
    "drift": 8,
-   "gaps": 3
+   "gaps": 3,
+   "provisions": 586
   },
   "MCO-1610.7B": {
    "edges": 21,
@@ -1175,7 +4380,8 @@
    "unparsed": 7,
    "held": 6,
    "drift": 4,
-   "gaps": 11
+   "gaps": 11,
+   "provisions": 1991
   },
   "MCO-1616.1": {
    "edges": 5,
@@ -1183,7 +4389,8 @@
    "unparsed": 5,
    "held": 2,
    "drift": 1,
-   "gaps": 2
+   "gaps": 2,
+   "provisions": 191
   },
   "MCO-6100.13A-CH5": {
    "edges": 19,
@@ -1191,7 +4398,8 @@
    "unparsed": 3,
    "held": 3,
    "drift": 5,
-   "gaps": 11
+   "gaps": 11,
+   "provisions": 327
   },
   "MCO-6100.14": {
    "edges": 18,
@@ -1199,7 +4407,8 @@
    "unparsed": 3,
    "held": 3,
    "drift": 6,
-   "gaps": 9
+   "gaps": 9,
+   "provisions": 121
   },
   "MCO-6110.3A-CH4": {
    "edges": 18,
@@ -1207,7 +4416,8 @@
    "unparsed": 10,
    "held": 3,
    "drift": 7,
-   "gaps": 8
+   "gaps": 8,
+   "provisions": 277
   },
   "NAVMC-1200.1L": {
    "edges": 27,
@@ -1215,7 +4425,8 @@
    "unparsed": 2,
    "held": 3,
    "drift": 5,
-   "gaps": 19
+   "gaps": 19,
+   "provisions": 13595
   },
   "SECNAVINST-1400.1D": {
    "edges": 7,
@@ -1223,7 +4434,8 @@
    "unparsed": 2,
    "held": 3,
    "drift": 1,
-   "gaps": 3
+   "gaps": 3,
+   "provisions": 29
   },
   "SECNAVINST-1610.3A": {
    "edges": 15,
@@ -1231,7 +4443,8 @@
    "unparsed": 4,
    "held": 1,
    "drift": 0,
-   "gaps": 14
+   "gaps": 14,
+   "provisions": 150
   },
   "SECNAVINST-1610.4A": {
    "edges": 16,
@@ -1239,7 +4452,8 @@
    "unparsed": 8,
    "held": 1,
    "drift": 1,
-   "gaps": 14
+   "gaps": 14,
+   "provisions": 269
   },
   "USC-T10-S574": {
    "edges": 0,
@@ -1247,7 +4461,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 0
   },
   "USC-T10-S701": {
    "edges": 0,
@@ -1255,7 +4470,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 6
   },
   "USC-T10": {
    "edges": 0,
@@ -1263,7 +4479,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 0
   },
   "USC-T5-S552a": {
    "edges": 0,
@@ -1271,7 +4488,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 9
   },
   "USC-T5": {
    "edges": 0,
@@ -1279,7 +4497,8 @@
    "unparsed": 0,
    "held": 0,
    "drift": 0,
-   "gaps": 0
+   "gaps": 0,
+   "provisions": 0
   }
  }
 }
