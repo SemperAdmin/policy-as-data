@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -253,7 +254,25 @@ def mech_report(fx, fixtures):
     }
 
 
+def mech_exports(fx, fixtures):
+    """Element counts in data/exports against the per-document provision counts
+    the authority report measured in the store. Config and exports only."""
+    r = json.loads((ROOT / "config" / "authority_report.json").read_text(encoding="utf-8"))
+    per = r.get("per_document", {})
+    mismatch, total_el = [], 0
+    for f in (ROOT / "data" / "exports").glob("*.issuance.xml"):
+        did = f.name[:-len(".issuance.xml")]
+        n = len(re.findall(r"<provision", f.read_text(encoding="utf-8", errors="replace")))
+        total_el += n
+        want = per.get(did, {}).get("provisions")
+        if want is not None and want != n:
+            mismatch.append((did, n, want))
+    return {"docs_with_element_count_mismatch": len(mismatch), "mismatches": mismatch[:5],
+            "total_elements_equal_total_provisions": total_el == r["totals"].get("provisions")}
+
+
 MECHANISMS = {
+    "exports": mech_exports,
     "report": mech_report,
     "evaluate_fixture": mech_evaluate_fixture,
     "reconcile": mech_reconcile,

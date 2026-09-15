@@ -714,21 +714,6 @@
         </provision>
         <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3" path="p1/b/3" number="1.b.(3)" label="(3)" depth="2" verification="UNVERIFIED">
           <text>Commanders have 30 calendar days (or 60 calendar days for RC officials) to notify the NAVINSGEN or the IGMC when an allegation is received.  The NAVINSGEN or the IGMC then have 15 calendar days to electronically transmit certain information to DIG (EVAL).</text>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3/a" path="p1/b/3/a" number="1.b.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>The NCIS.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3/b" path="p1/b/3/b" number="1.b.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Counterintelligence organization(s), as appropriate.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3/c" path="p1/b/3/c" number="1.b.(3)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>Command Security Manager, if the military member possesses a security clearance.  The commander will determine if access to classified material should be suspended and if/when an entry should be made into the Defense Information System for Security based on credibility determination.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3/d" path="p1/b/3/d" number="1.b.(3)(d)" label="(d)" depth="3" verification="UNVERIFIED">
-            <text>Staff Judge Advocate in the chain of command.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/3/e" path="p1/b/3/e" number="1.b.(3)(e)" label="(e)" depth="3" verification="UNVERIFIED">
-            <text>Service Insider Threat Analytic Hub.</text>
-          </provision>
         </provision>
         <provision identifier="/us/dod/don/secnavinst/1610_4a/p-1-5/p1/b/4" path="p1/b/4" number="1.b.(4)" label="(4)" depth="2" verification="UNVERIFIED">
           <text>Commanders will make every effort to report enclosure (5), paragraphs 2.a. and 2.b. of this instruction simultaneously within the 30 calendar days (or 60 calendar days for RC officials), prior to reporting to the NAVINSGEN or the IGMC.  When the information required to report enclosure (5), paragraph 2b of this instruction is not available within this timeline, enclosure (5), paragraphs 2.a. and 2.b. of this instruction  will be reported separately.</text>
@@ -798,9 +783,6 @@
             <text>Unit (as applicable).</text>
           </provision>
         </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, the entity to which the allegation is referred for investigation or inquiry (including contact information), and the date of the referral (if one occurred).  When an allegation is not referred for investigation or inquiry, notification to the NAVINSGEN or the IGMC must occur within 30 days (60 days for RC officials) of the decision and include the reason an investigation or inquiry was not necessary. SECNAVINST 1610.4A 13 May 2026 5                   Enclosure (5)</text>
-        </provision>
       </provision>
       <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
         <text>Referral or non-referral of any such allegation for the purposes of investigation or inquiry.</text>
@@ -810,63 +792,6 @@
       </provision>
       <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
         <text>of this instruction for investigation or inquiry to one of the following entities – the NCIS; the NAVINSGEN or the IGMC; a military police or security police organization; a military commander; Service Insider Threat Hub; another organization or official of the DoW; or a civilian law enforcement organization or official - must notify the NAVINSGEN or the IGMC, as appropriate, within 30 calendar days (or 60 calendar days for RC officials) of referral.  The timeline for notification of referral to civilian law enforcement begins when any individual or entity who may receive an allegation becomes aware of the civilian law enforcement referral.  The NAVINSGEN or the IGMC will electronically transmit this information to DIG (EVAL) within 15 calendar days of notification.</text>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/1" path="p2/a/1" number="2.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Timing.  Allegations must be transmitted by commanders to the NAVINSGEN or the IGMC within 30 calendar days after the allegation is received.  Transmission is required within 60 calendar days for allegations reported to the RC.  The NAVINSGEN or the IGMC, as appropriate, will electronically transmit this information to DIG (EVAL) within 15 calendar days through a mechanism coordinated with DIG (EVAL).  The NAVINSGEN SECNAVINST 1610.4A 13 May 2026 3                   Enclosure (5) and the IGMC will electronically transmit all information to DIG (EVAL) via unique identification codes assigned to each allegation.  This unique identifier will be provided to the commander of any alleged offender, to the party or parties that reported the allegation to the NAVINSGEN or the IGMC (unless reported in a non-official duty capacity), and to DIG (EVAL). It will be associated with any future reporting or tracking requirements relating to the same incident.</text>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Allegations received must be reported to the office designated as primary responsibility, the NAVINSGEN or the IGMC, and to the DIG (EVAL) in de-identified form and will not include the name, DoD ID number, phone number, or other PII that would directly identify alleged offenders or victims.</text>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3" path="p2/a/3" number="2.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>Reports will contain the following information for the alleged offender:</text>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/a" path="p2/a/3/a" number="2.a.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Grade/Rank.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/b" path="p2/a/3/b" number="2.a.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Unit.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/c" path="p2/a/3/c" number="2.a.(3)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>Occupational or specialty code.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/d" path="p2/a/3/d" number="2.a.(3)(d)" label="(d)" depth="3" verification="UNVERIFIED">
-            <text>Age.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/e" path="p2/a/3/e" number="2.a.(3)(e)" label="(e)" depth="3" verification="UNVERIFIED">
-            <text>Sex.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/f" path="p2/a/3/f" number="2.a.(3)(f)" label="(f)" depth="3" verification="UNVERIFIED">
-            <text>Military Service.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/g" path="p2/a/3/g" number="2.a.(3)(g)" label="(g)" depth="3" verification="UNVERIFIED">
-            <text>How the offender is alleged to have violated reference (a), this instruction, or other relevant Military Department or Service policies (if applicable).</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/h" path="p2/a/3/h" number="2.a.(3)(h)" label="(h)" depth="3" verification="UNVERIFIED">
-            <text>Date and location of the alleged prohibited conduct (if known).</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/i" path="p2/a/3/i" number="2.a.(3)(i)" label="(i)" depth="3" verification="UNVERIFIED">
-            <text>Date the allegation was provided to the Commander.</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4" path="p2/a/4" number="2.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
-          <text>If applicable, reports including information on victims (if known) should only contain the following: SECNAVINST 1610.4A 13 May 2026 4                   Enclosure (5)</text>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/a" path="p2/a/4/a" number="2.a.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Age.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/b" path="p2/a/4/b" number="2.a.(4)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Sex.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/c" path="p2/a/4/c" number="2.a.(4)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>Military Service or other military affiliation (as applicable).</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/d" path="p2/a/4/d" number="2.a.(4)(d)" label="(d)" depth="3" verification="UNVERIFIED">
-            <text>Grade/rank (as applicable).</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/e" path="p2/a/4/e" number="2.a.(4)(e)" label="(e)" depth="3" verification="UNVERIFIED">
-            <text>Occupational or specialty code (as applicable).</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/f" path="p2/a/4/f" number="2.a.(4)(f)" label="(f)" depth="3" verification="UNVERIFIED">
-            <text>Unit (as applicable).</text>
-          </provision>
-        </provision>
         <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
           <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, the entity to which the allegation is referred for investigation or inquiry (including contact information), and the date of the referral (if one occurred).  When an allegation is not referred for investigation or inquiry, notification to the NAVINSGEN or the IGMC must occur within 30 days (60 days for RC officials) of the decision and include the reason an investigation or inquiry was not necessary. SECNAVINST 1610.4A 13 May 2026 5                   Enclosure (5)</text>
         </provision>
@@ -896,9 +821,6 @@
         <text>Any resulting action taken against a Service Member (to include no action).</text>
         <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/1" path="p2/e/1" number="2.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
           <text>Report any resulting action taken against a Service Member (including judicial, disciplinary, adverse, or corrective administrative action, counseling, or no action taken) based on the determination described in enclosure (5), paragraph 2.d. of this instruction.</text>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/1/c" path="p2/e/1/c" number="2.e.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, and whether any action was taken against a Service Member on the basis of a determination reached under enclosure (5), paragraph 2.d. of this enclosure. SECNAVINST 1610.4A 13 May 2026 7                   Enclosure (5)</text>
-          </provision>
         </provision>
         <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/2" path="p2/e/2" number="2.e.(2)" label="(2)" depth="2" verification="UNVERIFIED">
           <text>For purposes of this reporting requirement, types of action include court-martial, other criminal prosecution, non-judicial punishment under reference (s), administrative action (involuntary discharge), administrative action (denial of continuation or re-enlistment), and administrative action (counseling).</text>
@@ -925,186 +847,6 @@
     </provision>
     <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2" path="p2" number="2." label="2." depth="0" verification="UNVERIFIED">
       <text>If no action was taken despite a finding that an allegation was substantiated under enclosure (5), paragraph 2.d. of this instruction, the transmission should note and explain the reasons why no action was warranted.</text>
-      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
-        <text>Any allegation that a Service member engaged in prohibited extremist or criminal gang activities.</text>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/1" path="p2/a/1" number="2.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Timing.  Allegations must be transmitted by commanders to the NAVINSGEN or the IGMC within 30 calendar days after the allegation is received.  Transmission is required within 60 calendar days for allegations reported to the RC.  The NAVINSGEN or the IGMC, as appropriate, will electronically transmit this information to DIG (EVAL) within 15 calendar days through a mechanism coordinated with DIG (EVAL).  The NAVINSGEN SECNAVINST 1610.4A 13 May 2026 3                   Enclosure (5) and the IGMC will electronically transmit all information to DIG (EVAL) via unique identification codes assigned to each allegation.  This unique identifier will be provided to the commander of any alleged offender, to the party or parties that reported the allegation to the NAVINSGEN or the IGMC (unless reported in a non-official duty capacity), and to DIG (EVAL). It will be associated with any future reporting or tracking requirements relating to the same incident.</text>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Allegations received must be reported to the office designated as primary responsibility, the NAVINSGEN or the IGMC, and to the DIG (EVAL) in de-identified form and will not include the name, DoD ID number, phone number, or other PII that would directly identify alleged offenders or victims.</text>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3" path="p2/a/3" number="2.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>Reports will contain the following information for the alleged offender:</text>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/a" path="p2/a/3/a" number="2.a.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Grade/Rank.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/b" path="p2/a/3/b" number="2.a.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Unit.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/c" path="p2/a/3/c" number="2.a.(3)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>Occupational or specialty code.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/d" path="p2/a/3/d" number="2.a.(3)(d)" label="(d)" depth="3" verification="UNVERIFIED">
-            <text>Age.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/e" path="p2/a/3/e" number="2.a.(3)(e)" label="(e)" depth="3" verification="UNVERIFIED">
-            <text>Sex.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/f" path="p2/a/3/f" number="2.a.(3)(f)" label="(f)" depth="3" verification="UNVERIFIED">
-            <text>Military Service.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/g" path="p2/a/3/g" number="2.a.(3)(g)" label="(g)" depth="3" verification="UNVERIFIED">
-            <text>How the offender is alleged to have violated reference (a), this instruction, or other relevant Military Department or Service policies (if applicable).</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/h" path="p2/a/3/h" number="2.a.(3)(h)" label="(h)" depth="3" verification="UNVERIFIED">
-            <text>Date and location of the alleged prohibited conduct (if known).</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/i" path="p2/a/3/i" number="2.a.(3)(i)" label="(i)" depth="3" verification="UNVERIFIED">
-            <text>Date the allegation was provided to the Commander.</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4" path="p2/a/4" number="2.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
-          <text>If applicable, reports including information on victims (if known) should only contain the following: SECNAVINST 1610.4A 13 May 2026 4                   Enclosure (5)</text>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/a" path="p2/a/4/a" number="2.a.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Age.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/b" path="p2/a/4/b" number="2.a.(4)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Sex.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/c" path="p2/a/4/c" number="2.a.(4)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>Military Service or other military affiliation (as applicable).</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/d" path="p2/a/4/d" number="2.a.(4)(d)" label="(d)" depth="3" verification="UNVERIFIED">
-            <text>Grade/rank (as applicable).</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/e" path="p2/a/4/e" number="2.a.(4)(e)" label="(e)" depth="3" verification="UNVERIFIED">
-            <text>Occupational or specialty code (as applicable).</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/f" path="p2/a/4/f" number="2.a.(4)(f)" label="(f)" depth="3" verification="UNVERIFIED">
-            <text>Unit (as applicable).</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, the entity to which the allegation is referred for investigation or inquiry (including contact information), and the date of the referral (if one occurred).  When an allegation is not referred for investigation or inquiry, notification to the NAVINSGEN or the IGMC must occur within 30 days (60 days for RC officials) of the decision and include the reason an investigation or inquiry was not necessary. SECNAVINST 1610.4A 13 May 2026 5                   Enclosure (5)</text>
-        </provision>
-      </provision>
-      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/b" path="p2/b" number="2.b." label="b." depth="1" verification="UNVERIFIED">
-        <text>Referral or non-referral of any such allegation for the purposes of investigation or inquiry.</text>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/b/1" path="p2/b/1" number="2.b.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Timing.  Commanders or other authorities responsible for referring allegations described in enclosure (5), paragraph</text>
-        </provision>
-      </provision>
-      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a" path="p2/a" number="2.a." label="a." depth="1" verification="UNVERIFIED">
-        <text>of this instruction for investigation or inquiry to one of the following entities – the NCIS; the NAVINSGEN or the IGMC; a military police or security police organization; a military commander; Service Insider Threat Hub; another organization or official of the DoW; or a civilian law enforcement organization or official - must notify the NAVINSGEN or the IGMC, as appropriate, within 30 calendar days (or 60 calendar days for RC officials) of referral.  The timeline for notification of referral to civilian law enforcement begins when any individual or entity who may receive an allegation becomes aware of the civilian law enforcement referral.  The NAVINSGEN or the IGMC will electronically transmit this information to DIG (EVAL) within 15 calendar days of notification.</text>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/1" path="p2/a/1" number="2.a.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Timing.  Allegations must be transmitted by commanders to the NAVINSGEN or the IGMC within 30 calendar days after the allegation is received.  Transmission is required within 60 calendar days for allegations reported to the RC.  The NAVINSGEN or the IGMC, as appropriate, will electronically transmit this information to DIG (EVAL) within 15 calendar days through a mechanism coordinated with DIG (EVAL).  The NAVINSGEN SECNAVINST 1610.4A 13 May 2026 3                   Enclosure (5) and the IGMC will electronically transmit all information to DIG (EVAL) via unique identification codes assigned to each allegation.  This unique identifier will be provided to the commander of any alleged offender, to the party or parties that reported the allegation to the NAVINSGEN or the IGMC (unless reported in a non-official duty capacity), and to DIG (EVAL). It will be associated with any future reporting or tracking requirements relating to the same incident.</text>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>Allegations received must be reported to the office designated as primary responsibility, the NAVINSGEN or the IGMC, and to the DIG (EVAL) in de-identified form and will not include the name, DoD ID number, phone number, or other PII that would directly identify alleged offenders or victims.</text>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3" path="p2/a/3" number="2.a.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>Reports will contain the following information for the alleged offender:</text>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/a" path="p2/a/3/a" number="2.a.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Grade/Rank.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/b" path="p2/a/3/b" number="2.a.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Unit.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/c" path="p2/a/3/c" number="2.a.(3)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>Occupational or specialty code.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/d" path="p2/a/3/d" number="2.a.(3)(d)" label="(d)" depth="3" verification="UNVERIFIED">
-            <text>Age.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/e" path="p2/a/3/e" number="2.a.(3)(e)" label="(e)" depth="3" verification="UNVERIFIED">
-            <text>Sex.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/f" path="p2/a/3/f" number="2.a.(3)(f)" label="(f)" depth="3" verification="UNVERIFIED">
-            <text>Military Service.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/g" path="p2/a/3/g" number="2.a.(3)(g)" label="(g)" depth="3" verification="UNVERIFIED">
-            <text>How the offender is alleged to have violated reference (a), this instruction, or other relevant Military Department or Service policies (if applicable).</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/h" path="p2/a/3/h" number="2.a.(3)(h)" label="(h)" depth="3" verification="UNVERIFIED">
-            <text>Date and location of the alleged prohibited conduct (if known).</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/3/i" path="p2/a/3/i" number="2.a.(3)(i)" label="(i)" depth="3" verification="UNVERIFIED">
-            <text>Date the allegation was provided to the Commander.</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4" path="p2/a/4" number="2.a.(4)" label="(4)" depth="2" verification="UNVERIFIED">
-          <text>If applicable, reports including information on victims (if known) should only contain the following: SECNAVINST 1610.4A 13 May 2026 4                   Enclosure (5)</text>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/a" path="p2/a/4/a" number="2.a.(4)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>Age.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/b" path="p2/a/4/b" number="2.a.(4)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>Sex.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/c" path="p2/a/4/c" number="2.a.(4)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>Military Service or other military affiliation (as applicable).</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/d" path="p2/a/4/d" number="2.a.(4)(d)" label="(d)" depth="3" verification="UNVERIFIED">
-            <text>Grade/rank (as applicable).</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/e" path="p2/a/4/e" number="2.a.(4)(e)" label="(e)" depth="3" verification="UNVERIFIED">
-            <text>Occupational or specialty code (as applicable).</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/4/f" path="p2/a/4/f" number="2.a.(4)(f)" label="(f)" depth="3" verification="UNVERIFIED">
-            <text>Unit (as applicable).</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/a/2" path="p2/a/2" number="2.a.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, the entity to which the allegation is referred for investigation or inquiry (including contact information), and the date of the referral (if one occurred).  When an allegation is not referred for investigation or inquiry, notification to the NAVINSGEN or the IGMC must occur within 30 days (60 days for RC officials) of the decision and include the reason an investigation or inquiry was not necessary. SECNAVINST 1610.4A 13 May 2026 5                   Enclosure (5)</text>
-        </provision>
-      </provision>
-      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/c" path="p2/c" number="2.c." label="c." depth="1" verification="UNVERIFIED">
-        <text>Reporting of the referral of the final report of an investigation or inquiry to a military commander or other appropriate authority for action.</text>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/c/1" path="p2/c/1" number="2.c.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Timing.  Upon receipt of the final report of an investigation or inquiry for an allegation described in enclosure (5), paragraph 2.a. of this instruction, the commander or other appropriate authority must notify the NAVINSGEN or the IGMC within 15 calendar days (or 30 calendar days for RC members).  Within 15 calendar days of receiving the notification, the NAVINSGEN or the IGMC will electronically transmit the information to DIG (EVAL).</text>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/c/2" path="p2/c/2" number="2.c.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, the name of the military commander, servicing legal office, or other authority that received the final report of the investigation or inquiry for action (including contact information); the date of the final report; and the date of receipt of the final report.</text>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/c/3" path="p2/c/3" number="2.c.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>Non-Reporting.  If the NAVINSGEN or the IGMC was previously notified that an allegation described in enclosure (5), paragraphs 2a of this instruction did not require further investigation or inquiry, and reported this information to the DIG (EVAL), no additional action is required.</text>
-        </provision>
-      </provision>
-      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
-        <text>The final determination of whether an allegation described in enclosure (5), paragraph 2.a. of this instruction was substantiated or not substantiated.</text>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/d/1" path="p2/d/1" number="2.d.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Timing.  Commanders or other appropriate authority must notify the NAVINSGEN or the IGMC within 15 calendar days of a final determination of whether an allegation is substantiated (or 30 calendar days for RC members).  Within 15 calendar days of receiving the notification, the NAVINSGEN or the IGMC will electronically transmit this information to DIG (EVAL).</text>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/d/2" path="p2/d/2" number="2.d.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation; the name of the military commander or other authority who assessed the allegation was substantiated (including, if possible, contact information); the date that the allegation was deemed SECNAVINST 1610.4A 13 May 2026 6                   Enclosure (5) substantiated; and the date of receipt of the determination of whether a Service Member engaged in a prohibited activity under reference (a) and this instruction.</text>
-        </provision>
-      </provision>
-      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e" path="p2/e" number="2.e." label="e." depth="1" verification="UNVERIFIED">
-        <text>Any resulting action taken against a Service Member (to include no action).</text>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/1" path="p2/e/1" number="2.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>Report any resulting action taken against a Service Member (including judicial, disciplinary, adverse, or corrective administrative action, counseling, or no action taken) based on the determination described in enclosure (5), paragraph 2.d. of this instruction.</text>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/1/c" path="p2/e/1/c" number="2.e.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, and whether any action was taken against a Service Member on the basis of a determination reached under enclosure (5), paragraph 2.d. of this enclosure. SECNAVINST 1610.4A 13 May 2026 7                   Enclosure (5)</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/2" path="p2/e/2" number="2.e.(2)" label="(2)" depth="2" verification="UNVERIFIED">
-          <text>For purposes of this reporting requirement, types of action include court-martial, other criminal prosecution, non-judicial punishment under reference (s), administrative action (involuntary discharge), administrative action (denial of continuation or re-enlistment), and administrative action (counseling).</text>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/3" path="p2/e/3" number="2.e.(3)" label="(3)" depth="2" verification="UNVERIFIED">
-          <text>Timing.  Commanders or other appropriate authority must notify the NAVINSGEN or the IGMC of such action (or non- actions), within 15 calendar days of a final decision (or 30 calendar days for RC officials).</text>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/3/a" path="p2/e/3/a" number="2.e.(3)(a)" label="(a)" depth="3" verification="UNVERIFIED">
-            <text>For purposes of this reporting requirement, a final decision is the DON’s final approval of an action after all stages of in-service review and appeal have completed.  For courts martial, notification should be filed upon conviction or acquittal of charges.  If the decision is appealed, then a second notification should be filed once the appeal is fully adjudicated.</text>
-          </provision>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/3/b" path="p2/e/3/b" number="2.e.(3)(b)" label="(b)" depth="3" verification="UNVERIFIED">
-            <text>The NAVINSGEN and the IGMC will electronically submit this information described in enclosure (5), paragraph</text>
-          </provision>
-        </provision>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/1" path="p2/e/1" number="2.e.(1)" label="(1)" depth="2" verification="UNVERIFIED">
-          <text>of this instruction to DIG (EVAL) within 15 calendar days of notification.</text>
-          <provision identifier="/us/dod/don/secnavinst/1610_4a/p-2-4/p2/e/1/c" path="p2/e/1/c" number="2.e.(1)(c)" label="(c)" depth="3" verification="UNVERIFIED">
-            <text>The transmissions above to the NAVINSGEN, the IGMC, and DIG (EVAL) must include, at minimum, the unique identification code for the allegation, and whether any action was taken against a Service Member on the basis of a determination reached under enclosure (5), paragraph 2.d. of this enclosure. SECNAVINST 1610.4A 13 May 2026 7                   Enclosure (5)</text>
-          </provision>
-        </provision>
-      </provision>
     </provision>
   </section>
   <section anchor="p-3-3" identifier="/us/dod/don/secnavinst/1610_4a/p-3-3" heading="3. Quarterly Reporting Requirements" verification="UNVERIFIED">
@@ -1137,33 +879,9 @@
       <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/7" path="p2/d/7" number="2.d.(7)" label="(7)" depth="2" verification="UNVERIFIED">
         <text>The number of Service Members who, on the basis of determinations reported pursuant to enclosure (5), paragraph</text>
       </provision>
-      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/a" path="p2/d/a" number="2.d.(a)" label="(a)" depth="2" verification="UNVERIFIED">
-        <text>Court martial.</text>
-      </provision>
-      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/b" path="p2/d/b" number="2.d.(b)" label="(b)" depth="2" verification="UNVERIFIED">
-        <text>Other criminal prosecution.</text>
-      </provision>
-      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/c" path="p2/d/c" number="2.d.(c)" label="(c)" depth="2" verification="UNVERIFIED">
-        <text>Non-judicial punishment under references (r) and (s).</text>
-      </provision>
-      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/d" path="p2/d/d" number="2.d.(d)" label="(d)" depth="2" verification="UNVERIFIED">
-        <text>Involuntary administrative separation from the Armed Forces.</text>
-      </provision>
-      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/e" path="p2/d/e" number="2.d.(e)" label="(e)" depth="2" verification="UNVERIFIED">
-        <text>Denial of reenlistment due to a substantiated allegation.</text>
-      </provision>
-      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/f" path="p2/d/f" number="2.d.(f)" label="(f)" depth="2" verification="UNVERIFIED">
-        <text>Counseling.</text>
-        <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/f/8" path="p2/d/f/8" number="2.d.(f)(8)" label="(8)" depth="3" verification="UNVERIFIED">
-          <text>The number of Service Members who, notwithstanding determinations that allegations were reported as substantiated under enclosure (5), paragraph 2.d. of this instruction, were not subject to any action reported under enclosure (5), paragraph 2.e.(1) of this instruction.</text>
-        </provision>
-      </provision>
     </provision>
     <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d" path="p2/d" number="2.d." label="d." depth="1" verification="UNVERIFIED">
       <text>of this instruction (that the Service Member(s) engaged in extremist or criminal gang activities), were subject to each of the following forms of punitive and/or administrative action:</text>
-      <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/7" path="p2/d/7" number="2.d.(7)" label="(7)" depth="2" verification="UNVERIFIED">
-        <text>The number of Service Members who, on the basis of determinations reported pursuant to enclosure (5), paragraph</text>
-      </provision>
       <provision identifier="/us/dod/don/secnavinst/1610_4a/p-3-3/p2/d/a" path="p2/d/a" number="2.d.(a)" label="(a)" depth="2" verification="UNVERIFIED">
         <text>Court martial.</text>
       </provision>

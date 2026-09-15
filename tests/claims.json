@@ -588,6 +588,17 @@
       "expect": {
         "named_by_sum_equals_edges": true
       }
+    },
+    {
+      "id": "C13",
+      "polarity": "positive",
+      "claim": "Every export carries exactly as many provision elements as the store holds provisions for that document; a repeated path multiplies nothing (ACTION-REGISTER 6.6)",
+      "mechanism": "exports",
+      "fixture": {},
+      "expect": {
+        "docs_with_element_count_mismatch": 0,
+        "total_elements_equal_total_provisions": true
+      }
     }
   ]
 }
