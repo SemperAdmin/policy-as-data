@@ -243,7 +243,7 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
                 shown_gaps.add(skipped)
                 P.append("<div class=\"arrow\"><span>implemented by</span></div>")
                 P.append(
-                    f"<div class=\"tier gap\"><div class=\"tierhead\">"
+                    f"<div class=\"tier gap\" id=\"gap-{skipped}\"><div class=\"tierhead\">"
                     f"<span class=\"tiercode\">{skipped}</span>"
                     f"<span>{esc(TIER_NAME[skipped])}</span>"
                     f"<span class=\"pill gap\">tier not held</span></div>"
@@ -252,7 +252,7 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
             label = "supersedes" if m and m.get("rel") == "superseded_by" else "implemented by"
             P.append(f"<div class=\"arrow\"><span>{esc(label)}</span></div>")
 
-        P.append(f"<div class=\"tier\"><div class=\"tierhead\">"
+        P.append(f"<div class=\"tier\" id=\"{esc(did)}\"><div class=\"tierhead\">"
                  f"<span class=\"tiercode\">{tier}</span>"
                  f"<span>{esc(TIER_NAME.get(tier, tier))}</span></div>")
         P.append("<div class=\"doc\">")

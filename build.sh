@@ -102,5 +102,11 @@ echo "### 17 verification page - queue, worked examples, and the process"
 # implementation of those rules is how they drift apart.
 python3 tools/render_verification.py
 
-echo "### 18 check the site actually works"
+echo "### 18 site pages from fragments"
+# Home, How it works, About, Search, Accessibility: bodies in site/, chrome
+# and counts applied here. Every number on these pages is measured by an
+# earlier stage; a placeholder that cannot be filled fails the build.
+python3 tools/render_pages.py
+
+echo "### 19 check the site actually works"
 python3 tools/check_site.py "$SITE" index.html | tail -12

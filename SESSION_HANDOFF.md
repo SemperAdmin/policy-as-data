@@ -305,6 +305,14 @@ Windows git, not through a Linux view.
 13,595 addressable paragraphs. The text sits inside a collapsed disclosure so
 nothing draws until asked. It is heavy on a phone.
 
+**Exported identifiers are not unique, found 2026-09-15.** 14 of 56 exports
+carry more `<provision>` elements than the store holds provisions;
+`MCO-1400.31D.issuance.xml` has 3,932 elements for 378 provisions, one
+identifier repeated 378 times. 19,528 distinct identifiers across all exports
+against 20,178 store provisions. The XSD does not require uniqueness, so
+"ALL VALID" was true and meaningless for this. `ACTION-REGISTER.md` 5.13.
+Do not offer the exports to a consumer until it is understood.
+
 **Two round-trip weld artifacts.** MCO 1050.3J `p-1-4` and NAVMC 1200.1L
 `p-3-36` carry a paragraph whose text spans a page break, so it does not appear
 contiguously in the source. Both reproduce identically under the previous

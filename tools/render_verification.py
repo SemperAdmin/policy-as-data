@@ -39,6 +39,7 @@ from verify_status import (  # noqa: E402
     DATA, LEDGER, POLICY, derive, live_rule_assertions, load_ledger, load_policy,
 )
 from chrome import head, header  # noqa: E402
+import mdlite  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "docs" / "verification.html"
@@ -58,6 +59,8 @@ BADGE = {
 # rules come from chrome.py; the long-form --color-* names stay because every
 # rule below uses them.
 PAGE_CSS = """
+details.finding{margin:10px 0}details.finding summary{cursor:pointer;font-weight:700}
+details.finding pre{overflow-x:auto;background:var(--color-bg-sunken);padding:10px;border-radius:6px}
 :root{--color-usmc-scarlet:#B82230;--color-marine-blue:#0F1F3D;--color-marine-blue-100:#6B9BD2;
 --color-parchment:#F2E5BE;--color-parchment-300:#FAF1D8;--color-brass:#B89042;--color-brass-300:#D4AF67;
 --color-status-fresh:#2F8F5C;--color-status-aging:#C97D1F;--color-status-stale:#B83232;
@@ -118,6 +121,24 @@ FLOW = [
     ("6", "VERIFIED", "Derived, never stored. If the content changes, the reading stops applying.", False),
     ("7", "Used", "Only verified values are compared or published. Unverified ones are withheld and say so.", False),
 ]
+
+
+FINDINGS_DIR = ROOT / "verification"
+
+
+def findings_html() -> str:
+    """Every verification/findings-*.md, rendered. Files whose title opens with
+    'Finding' come first; a reading record follows."""
+    items = []
+    for path in sorted(FINDINGS_DIR.glob("findings-*.md")):
+        md = path.read_text(encoding="utf-8")
+        title = mdlite.title_of(md) or path.stem
+        items.append((0 if title.startswith("Finding") else 1, path.stem, title, md))
+    out = []
+    for _order, stem, title, md in sorted(items):
+        out.append(f'<details class="finding" id="{E(stem)}"><summary>{E(title)}</summary>'
+                   f'<div class="prose">{mdlite.render(md, heading_shift=2)}</div></details>')
+    return "\n".join(out) or "<p class=\"muted\">No findings recorded.</p>"
 
 
 def badge(status: str) -> str:
@@ -294,7 +315,7 @@ def render(data_dir: Path, ledger_path: Path, policy_path: Path,
                     f'Open the issuing authority\'s copy</a></p>'
                     if it.get("source_url") else "")
         walkthrough = f"""
-<h2>Walkthrough - one claim, end to end</h2>
+<h2 id="walkthrough">Walkthrough - one claim, end to end</h2>
 <p class="muted">A live claim from this corpus. Nothing below is illustrative;
 the "after" is produced by the same code that produces the "before".</p>
 
@@ -355,6 +376,7 @@ reading is not enough.</p>
     if unver:
         examples += f'<div><h3>Unverified - withheld</h3>{example_card(unver, ledger)}</div>'
 
+    findings = findings_html()
     return head("Verification", extra_css=PAGE_CSS) + header("Verification", current="verification.html") + f"""
 <main id="main">
 <h1>Verification</h1>
@@ -367,30 +389,35 @@ changes, the reading stops applying and the page says so.</p>
 {dev}
 </div>
 
-<h2>The process</h2>
+<h2 id="process">The process</h2>
 <p class="muted">Steps 4 and 5 are the ones a person does. Everything else is
 mechanical.</p>
 <ul class="flow">{flow}</ul>
 
-<h2>What the states mean</h2>
+<h2 id="states">What the states mean</h2>
 <table><tr><th>State</th><th>Meaning</th></tr>{legend}</table>
 
-<h2>How a value appears, verified and unverified</h2>
+<h2 id="examples">How a value appears, verified and unverified</h2>
 <p class="muted">Real records from this corpus, not mock-ups.</p>
 <div class="two">{examples}</div>
 
 {walkthrough}
 
-<h2>Cross-tier comparison, as it stands now</h2>
+<h2 id="cross-tier">Cross-tier comparison, as it stands now</h2>
 <p class="muted">A value is compared with the authority above it only when both
 sides have been read by a person. An unverified side is withheld and the
 comparison is refused rather than guessed.</p>
 {find_rows}
 
-<h2>The queue</h2>
+<h2 id="findings">Findings</h2>
+<p class="muted">What the process found, written up as it was found. Each is a
+file in verification/ rendered here unchanged.</p>
+{findings}
+
+<h2 id="queue">The queue</h2>
 <table><tr><th>State</th><th>Claim</th><th>Detail</th></tr>{queue_rows}</table>
 
-<h2>Validate a claim</h2>
+<h2 id="validate">Validate a claim</h2>
 <div class="prose">
 <p>This page cannot write to the library. It produces an attestation file that a
 maintainer admits with <span class="mono">python tools/attest.py --ingest</span>,
