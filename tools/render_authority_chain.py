@@ -25,6 +25,25 @@ import re
 from chrome import FAVICON, BRAND, BRAND_CSS, CSS, head, header  # noqa: E402
 
 
+def _recon_docs():
+    """Document identifiers that take part in a cross-tier comparison."""
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "config", "reconciliation.json")
+    try:
+        with open(path, encoding="utf-8") as fh:
+            findings = json.load(fh).get("findings") or []
+    except FileNotFoundError:
+        return {}
+    out = {}
+    for f in findings:
+        for r in f["tiers"] + f["withheld"] + f["not_comparable"]:
+            out.setdefault(r["assertion"].split("#")[0].replace(".", "_"), set()).add(f["label"])
+    return out
+
+
+RECON_DOCS = _recon_docs()
+
+
 TIER_ORDER = ["T0", "T1", "T2", "T3", "T4", "T5"]
 TIER_NAME = {
     "T0": "Statute",
@@ -49,6 +68,36 @@ TIER_OF_TYPE = {
 TIER_RX = re.compile(r"tier=(T[0-9X])")
 SRC_RX = re.compile(r"^([^;]+);")
 HOLDS_RX = re.compile(r"store-holds=([^;]+)")
+
+
+def cite_words(src: str) -> str:
+    """The place a citation was read from, in words. The machine form
+    (front-matter:ref/f, narr:REF D, p-5-3:ref/c) stays in the title attribute
+    so nothing is lost; the page says where a reader would look."""
+    src = (src or "").strip()
+    m = re.match(r"^front-matter:ref(2?)/(\w+)$", src)
+    if m:
+        which = "second reference list" if m.group(1) else "reference list"
+        return f"reference ({m.group(2)}) in the {which}"
+    m = re.match(r"^narr:REF\s+(\w+)$", src)
+    if m:
+        return f"reference {m.group(1)} in the message"
+    m = re.match(r"^ref-line:REF\s+(\w+)$", src)
+    if m:
+        return f"reference {m.group(1)} on the reference line"
+    m = re.match(r"^p-([\d-]+):ref(2?)/(\w+)$", src)
+    if m:
+        sec = m.group(1).replace("-", ".")
+        return f"reference ({m.group(3)}) in section {sec}"
+    if src == "front-matter":
+        return "the front matter"
+    if src == "exact":
+        return "an exact citation in the text"
+    return src
+
+
+def cite_html(src: str) -> str:
+    return f"<span title=\"{esc(src)}\">{esc(cite_words(src))}</span>"
 
 
 def tier_of(doc_id, record=None):
@@ -271,8 +320,8 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
                     extra = (" <span class=\"pill drift\">revision drift</span> "
                              f"store holds <code>{esc(holds.group(1) if holds else '')}</code>")
                 P.append(
-                    f"<p class=\"why\"><code>{esc(walk_up[i + 1])}</code> names it at "
-                    f"<code>{esc(src.group(1) if src else '')}</code> "
+                    f"<p class=\"why\"><code>{esc(walk_up[i + 1])}</code> names it"
+                    f"{', ' + cite_html(src.group(1)) + ' ' if src and src.group(1).strip() else ' '}"
                     f"<span class=\"pill cited\">{esc(m.get('basis', 'cited'))}</span>"
                     f"{extra}</p>")
         breadth = sorted(inbound.get(did, []), key=lambda e: e["src"])
@@ -282,7 +331,7 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
                      f"{'The 1 reference' if len(outbound) == 1 else f'All {len(outbound)} references'}"
                      f" this document names</summary><table><tr><th>target</th>"
                      f"<th>tier</th><th>relation</th><th>basis</th>"
-                     f"<th>from paragraph</th><th>note</th></tr>")
+                     f"<th>read from</th><th>note</th></tr>")
             for e in sorted(outbound, key=lambda e: (e["tier"], e["dst"])):
                 src = SRC_RX.search(e["resolution"])
                 holds = HOLDS_RX.search(e["resolution"])
@@ -297,7 +346,7 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
                 P.append(f"<tr><td><code>{esc(e['dst'])}</code></td>"
                          f"<td>{esc(e['tier'])}</td><td>{esc(e['rel'])}</td>"
                          f"<td><span class=\"pill cited\">{esc(e['basis'])}</span></td>"
-                         f"<td><code>{esc(src.group(1) if src else '')}</code></td>"
+                         f"<td>{cite_html(src.group(1) if src else '')}</td>"
                          f"<td>{note}</td></tr>")
             P.append("</table></details>")
         P.append("</div></div>")
@@ -305,6 +354,17 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
     held = sum(1 for e in edges if e["confidence"] == "high")
     drift = sum(1 for e in edges if e["confidence"] == "revision-drift")
     gap_n = sum(1 for e in edges if e["confidence"] == "named-not-held")
+    compared = [d for d in chain
+                if (records.get(d) or {}).get("uslm_identifier", "").replace(".", "_") in RECON_DOCS]
+    if compared:
+        labels = sorted({l for d in compared
+                         for l in RECON_DOCS[records[d]["uslm_identifier"].replace(".", "_")]})
+        P.append("<h2>Compared across tiers</h2><p class=\"lede\">Values stated on "
+                 "this chain that have been set against the same value at another "
+                 "tier: " + "; ".join(esc(l) for l in labels) + ". Each is compared "
+                 "only after a person has read both sides. "
+                 "<a href=\"verification.html#cross-tier\">The comparison</a>, and the "
+                 "panel on each document's page.</p>")
     P.append("<h2>How to read this page</h2><p class=\"lede\">Every step states "
              "the paragraph the citation came from and whether the link is cited "
              "or inferred. Every link here is <strong>cited</strong>: it exists "
