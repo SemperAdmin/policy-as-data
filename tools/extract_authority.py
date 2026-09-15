@@ -398,6 +398,19 @@ def main():
         n_prov = sum(len(sec.get("provisions") or []) for sec in rec.get("sections") or [])
         totals["provisions"] = totals.get("provisions", 0) + n_prov
         s["provisions"] = n_prov
+        # Provision paths that repeat within a section. A parser defect the
+        # site states rather than hides (ACTION-REGISTER 6.12).
+        seen, coll = set(), 0
+        for sec in rec.get("sections") or []:
+            for prov in sec.get("provisions") or []:
+                key = (sec.get("anchor"), prov.get("path"))
+                if key in seen:
+                    coll += 1
+                seen.add(key)
+        s["path_collisions"] = coll
+        totals["path_collisions"] = totals.get("path_collisions", 0) + coll
+        if coll:
+            totals["docs_with_path_collisions"] = totals.get("docs_with_path_collisions", 0) + 1
         per_doc[rec["id"]] = s
         for m in rec.get("relationships", {}).get("edge_meta", []):
             if m.get("rel") != "references":
