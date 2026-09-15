@@ -6,7 +6,8 @@
   "unparsed": 174,
   "held": 57,
   "drift": 85,
-  "gaps": 220
+  "gaps": 220,
+  "provisions": 20178
  },
  "edges_by_tier": {
   "T0": {
@@ -816,6 +817,20 @@
   "USC-T10-S815": [
    "SECNAVINST-1610.4A"
   ]
+ },
+ "cites_superseded": {
+  "DODI-1308.3": [
+   "MCO-6100.13A-CH5",
+   "MCO-6100.14",
+   "MCO-6110.3A-CH4"
+  ],
+  "DODI-1327.6": [
+   "MCO-1050.3J"
+  ]
+ },
+ "superseded_status": {
+  "DODI-1327.6": "superseded",
+  "DODI-1308.3": "cancelled"
  },
  "per_document": {
   "DODI-1300.19": {
