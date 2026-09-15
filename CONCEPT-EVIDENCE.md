@@ -24,6 +24,7 @@ Check here before analysing anything new.
 | S1 | 2026-09-15 | email | Announcement to an AI working group, signed jointly by Maj Gannon and MSgt Shorter | Names the public URLs and the help wanted |
 | S2 | 2026-09-15 | transcript | Teams call, ~25 min. Shorter, Gannon, Chiofalo | Shorter on leave. Informal sync |
 | S3 | 2026-09-15 | transcript | **Duplicate of S2.** Same text, email omitted | No new content |
+| S5 | 2026-09-15 | transcript, **fragment** | Teams call, ~66 min. Shorter, Gannon, Amaya Ashe (civilian) | **First 35 seconds and last 90 seconds only; ~63 minutes missing.** Carries the best user-research datum in the record and an action with a date |
 | S4 | 2026-09-15 | transcript, **fragment** | Teams call with the Government Publishing Office. ~90 min. Shorter, Gannon, Lisa LaPlant, Matt L (GPO), Brad Chang, Lauren Wood | **First 20 seconds and last 2 minutes only. The middle 87 minutes are missing and are the highest-value unrecovered material in the project.** Affiliations of Chang and Wood not stated |
 
 ---
@@ -141,6 +142,80 @@ A readiness argument, priced in time. Candidate F in section 4. The hedge on
 compliance is pre-emptive and rehearsed, which suggests this is the standing
 pitch rather than an improvisation.
 
+### S5, the call with Amaya Ashe
+
+**A fragment.** The opening 35 seconds of a live demo and the closing 90
+seconds. About 63 minutes missing.
+
+**The most useful sentence anyone has said about this project.** Ashe, a
+civilian who had already been briefed in person by Gannon:
+
+> I honestly, Sir, I was lost. I was like conceptually I'm not getting it
+> because you're talking to me with all this developer language and I'm just
+> like, I don't even know what you're talking about. Like I know what you're
+> talking about in terms of the concept, but you know, we didn't have like that
+> visual even.
+
+She understood the concept and lost the explanation. **The visual is what
+closed it.** This is the too-technical problem confirmed by a stakeholder
+rather than inferred, and it names the remedy.
+
+Recorded against this: on 2026-09-15 two things were removed from the site on
+a judgement about an undefined briefing audience. The sentences connecting the
+encoding to model use, contradicted by Shorter in S2. And
+`visuals/04-pipeline-and-gates.svg`, contradicted by Ashe here. **The file is
+still on disk and is now referenced by nothing.** One pattern, not two calls:
+with the concept unsettled, deleting loses the option that reframing keeps.
+
+**Gannon states the user's problem in the user's words:**
+
+> it's gone from. I need to fix all the orders in my command. How do I do that?
+> Like AI? OK, how do I get AI to do it to then? Well, I have all these other
+> orders across these other services. How do I do that?
+
+This is **remediation, not checking**, and no candidate in section 4 covers it.
+Every concept so far tells a reader that something is wrong. This is a person
+holding a stack of orders they have to correct. It also escalates from one
+command to across services, a joint scope claim made in passing while
+`CHARTER.md` section 5 rates whole-of-government as aspiration.
+
+**Gannon's demo narration, and what it claims:**
+
+> We don't have to build anything new, but then we have the computer code that
+> another data system needs to see ... this is computer speak to computer speak
+> talking to each other, and it's also very low bandwidth. It takes up a lot
+> less space. It also decreases our compute time, it also decreases the amount
+> of time it takes to parse out stuff and then we can also trace things
+> together.
+
+Five claims. **None is measured anywhere in this repository.** Measured now,
+against this corpus, so the briefing stops carrying unchecked numbers:
+
+| Claim | Measured |
+|---|---|
+| Takes up a lot less space | **Wrong against the text.** MCO 1050.3J carries 132,953 characters of provision text; its export XML is 298,372 bytes, about 2.2x. Markup costs space |
+| Takes up a lot less space | **Right against the source.** DoWI 1327.06 is a 924,431 byte PDF of 76 pages |
+| Low bandwidth, machine to machine | **Right, and this is the number that makes the case.** One provision, the unit of an actual question, is **164 bytes** against a **924,431 byte** PDF |
+| Decreases parse time | True and unmeasured. A consumer indexes rather than parses |
+| Decreases compute time | True and unmeasured |
+
+The figure that supports the pitch is 164 against 924,431, and it exists in no
+file. Say the precise claim, which is about the size of what a machine must
+fetch to answer one question, not about total size.
+
+**An action with a date:**
+
+> if you guys [need] anything between now and the 23rd, just let me know. But
+> otherwise I'll just try and make sure I have my wish list by then
+
+A named person, a deliverable, and a date. The most actionable item in any
+source so far, and it sits next to Chiofalo's "I don't think they want to make
+this a full-time project yet." Both are resourcing signals and they point
+opposite ways.
+
+Ashe also says "sounds like this was perfect timing." What was timed is not
+recoverable from the fragment.
+
 ---
 
 ## 3. The pain statement, in the owner's words
@@ -159,7 +234,7 @@ it is framed that way.
 
 ## 4. Concept candidates
 
-Six, each with a constituency. They share a substrate. They are not one
+Seven, each with a constituency. They share a substrate. They are not one
 product, and the difference has never been written down.
 
 | # | Concept | Whose words | Built? |
@@ -170,6 +245,7 @@ product, and the difference has never been written down.
 | D | Authoring. How a directive is actually made | Shorter, S2, second half. SemperScribe | Deferred. `ACTION-REGISTER.md` Track 3 |
 | E | Training and Readiness. **Inference, see section 5** | Gannon, S2, if TNR is T&R | No. Zero T&R manuals held |
 | F | Administrative burden reduction. Time returned to warfighting | Gannon, S4, to GPO | No. **Nothing built measures time.** The site counts documents, references, drift findings and confirmed values. Not one minute |
+| G | Remediation. "I need to fix all the orders in my command" | Gannon, S5, quoting the user | No. Every other candidate reports that something is wrong. None helps correct it |
 
 **The layering that is missing.** Layer 0 is the encoding: the paragraph as the
 addressable unit, the identifier grammar, cited versus inferred, the
@@ -297,6 +373,7 @@ Pease appears only as a literature citation.
 | Col Wilkerson, TECOM G1 | Manpower and administration | No. Closest constituency to the encoded leave use case |
 | Personnel Administration School | Does this belong in the course | No. A schoolhouse insertion point is a different adoption path from the directives control point |
 | **Government Publishing Office** | Publishes the standard this project follows. Owns USLM, GovInfo, and the resolution grammar | **Fragment only.** Ninety minutes, opening and closing preserved, middle lost. Section 5a |
+| **Amaya Ashe, civilian** | Office not stated. Thanks them for "contributions to the Corps", which suggests a headquarters or programme role. **Has a wish list due the 23rd** | Fragment only. Her one recorded judgement is that the explanation lost her and the visual saved it |
 | MIU | Adjacent, via Chiofalo's separate project | No. Also competition for the same volunteer pool |
 
 ---
@@ -315,6 +392,10 @@ Pease appears only as a literature citation.
 | U8 | **What was said in the missing 87 minutes of the GPO call.** The highest-value unknown in this file | Recover it now: the recording, the chat, notes, or both men writing down what they remember before it fades |
 | U9 | Whether the period defect in the published grammar was raised with GPO | It changes what can be asked for next |
 | U10 | Affiliations of Brad Chang and Lauren Wood | One line each |
+| U12 | **Amaya Ashe's office, and what the wish list on the 23rd feeds.** Requirements, funding, tasking, or a brief | One line. It is the nearest thing to a resourcing decision in the record |
+| U13 | Which visual closed it for her: a site diagram, the rendered page, or a live demo | Decides what to build more of |
+| U14 | What "perfect timing" referred to | One line |
+| U15 | What the sentence "it's gone from ... " was going to end with. The demo answered it and the fragment does not | Ask Gannon what he showed |
 | U11 | Whether candidate F is measurable. How long a person takes today to answer one of these questions from the source PDFs | Time one. It is the only proof F admits, and nothing in the tree measures time |
 
 ---
