@@ -105,6 +105,31 @@ def measure() -> dict:
         f"{policy_link(tgt)}, {report['superseded_status'].get(tgt, 'no longer in force')}"
         for tgt, docs in cs.items()) or "none found in this set"
 
+    # At scale: the same measurement across the full corpus, if the report-only
+    # run has been made. Honest either way: the block says "not yet run" rather
+    # than being omitted, because its absence is itself a fact about the proof.
+    scale_path = ROOT / "config" / "scale_report.json"
+    if scale_path.exists():
+        sr = json.loads(scale_path.read_text(encoding="utf-8"))
+        st, gone = sr["totals"], sr.get("cites_superseded_detail", [])
+        n_gone_docs = len({d["citing"] for d in gone})
+        v["scale_block"] = (
+            '<div class="findings scale"><div class="finding">'
+            f'<div class="big">{n_gone_docs:,}</div><p>documents in force across the full '
+            f'corpus of {st["docs"]:,} cite an instruction that is not. '
+            f'<a href="scale.html">The same measurement, at scale</a></p></div>'
+            '<div class="finding">'
+            f'<div class="big">{st["drift"]:,} of {st["edges"]:,}</div><p>references across the '
+            f'full corpus name an edition since superseded</p></div>'
+            '<div class="finding">'
+            f'<div class="big">{st["quarantined"]:,}</div><p>records carrying a limited '
+            f'distribution statement, excluded from the count as from everything else</p></div>'
+            '</div>')
+    else:
+        v["scale_block"] = ('<p class="note">The same measurement has not yet been run across '
+                            'the full corpus. When it has, its counts appear here, produced by '
+                            'the same tool and never typed.</p>')
+
     # The most depended-upon document, for the impact pointer.
     nb = report.get("named_by", {})
     if nb:
