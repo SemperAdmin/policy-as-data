@@ -46,6 +46,11 @@ PAGES = [
     ("about.html", "About", "about.html"),
     ("search.html", "Search", "search.html"),
     ("accessibility.html", "Accessibility", "about.html"),
+    # The MOS strand, folded into the build as fragments (ACTION-REGISTER 5.10,
+    # first half). Generating the lineage page from the family manifest is the
+    # second half and is still open.
+    ("mos-manual-intro.html", "MOS Manual", "policy-index.html"),
+    ("mos-manual-lineage.html", "Version history", "policy-index.html"),
 ]
 
 FOOTER = ('<footer><p>Generated from the canonical policy store. This site is an '
@@ -83,6 +88,8 @@ def measure() -> dict:
     # some identifiers collide (ACTION-REGISTER 5.13), so a tag count there
     # states neither the store nor the truth.
     v["provisions"] = t.get("provisions", 0)
+    v["path_collisions"] = t.get("path_collisions", 0)
+    v["docs_with_path_collisions"] = t.get("docs_with_path_collisions", 0)
 
     # Pages by type, from what the renderers wrote.
     by_type = {}
