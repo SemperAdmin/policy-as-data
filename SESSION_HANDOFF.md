@@ -79,6 +79,44 @@ version-history signals, each row naming which signal produced it), and **what
 it says** (full text, with reference-list entries rendered as links to the
 policy they name).
 
+### Addendum, 2026-09-15 - the site restructured for a decision-maker
+
+Measured after `./build.sh` on 2026-09-15: 80 pages, 773 files byte-identical
+across two builds, 0 dead links, 0 orphans, claims table 18 of 18.
+
+The site now leads with what the encoding found rather than with the
+programme name. `SITE-PLAN.md` is the plan, adopted; `ACTION-REGISTER.md`
+Track 5 is the ledger. What changed on the site:
+
+- **Home** asks "does the order say what its authority says?", states three
+  findings computed from the build (85 of 362 references naming a superseded
+  edition; four current orders citing an instruction no longer in force; the
+  forfeiture-window error), then walks the parental-leave thread in seven
+  linked steps. Every number is a placeholder filled by `render_pages.py`.
+- **One chrome** from `tools/chrome.py` and `config/site_nav.json`; 78 of
+  80 pages on it. The two MOS hand pages wait on item 5.10 (fold).
+- **Five hand pages became fragments** in `site/`, rendered by stage 19.
+- **New pages:** `scenarios.html` (the evaluator on three fixed inputs,
+  stage 18) and `about.html` (what this is not, terms, posture).
+- **Reader words everywhere.** No `QUORUM_SHORT` or `NOT_COMPARABLE` on a
+  page; the code stays in the data and the legend. Maintainer material sits
+  behind disclosures. Spine pages say where a citation was read from in words.
+- **Comparison panels** on the policy pages that take part and a pointer on
+  the leave spine (item 1.5 closed by 5.7).
+- **Findings** from `verification/findings-*.md` render on the verification
+  page through `tools/mdlite.py`.
+- **The evaluator reads the ledger** and withholds what it has not admitted
+  (5.4). `evaluate()` is a function the CLI wraps.
+
+Two defects found and registered, one fixed: the build read the clock at
+six sites (fixed, section 10); exported identifiers are not unique within a
+document (open, section 9, item 5.13).
+
+Two owner decisions the brief still needs, neither engineering: the emblem
+on an unofficial site (`NOTICE` section 4), and the DoD forms feedback link.
+And item 2.7: attest the five MARADMIN 051/23 values, so the scenarios page
+and four of five comparisons stop being withheld. An afternoon, no code.
+
 ### The five spines
 
 | spine | seed | tiers reached | edges |
