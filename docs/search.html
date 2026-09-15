@@ -169,6 +169,60 @@ code, h3{overflow-wrap: anywhere;}
 ol.thread{padding-left:1.4em}ol.thread li{margin:10px 0}
 ul.sections li{margin:8px 0}
 
+
+/* MOS strand, folded 2026-09-15 */
+header.chrome a.nav{margin-left:auto;color:var(--blue-100);text-decoration:none;font-size:14px}
+header.chrome a.nav+a.nav{margin-left:16px}
+nav.crumbs li+li::before{content:"/";margin:0 8px;color:var(--border-strong)}
+main{max-width:56rem;margin:0 auto;padding:16px 24px 80px}
+.docmeta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:8px 0 4px;font-size:13px;color:var(--muted-fg)}
+.badge{font-size:12px;font-weight:700;color:var(--parch-300);background:var(--muted);
+ border:1px solid var(--border-strong);border-radius:9999px;padding:2px 10px}
+.badge.cur{border-color:var(--fresh);color:#9BE3B8}
+.sub{color:var(--muted-fg);margin:6px 0 20px}
+h2.sect{font:700 18px/1.2 var(--font);color:var(--scarlet);border-bottom:1px solid var(--border-strong);padding-bottom:6px;margin:28px 0 12px}
+.prov{position:relative}
+.prov .lab{font-weight:700;color:var(--brass-300);margin-right:8px}
+.prose p.lvl1{margin-left:26px}
+.prose p.lvl2{margin-left:52px}
+.prov.changed{background:rgba(212,175,103,.07);border-left:3px solid var(--brass-300);
+ padding:8px 12px;border-radius:4px}
+.chip{display:inline-block;font-size:11px;font-weight:700;color:var(--navy-700);
+ background:var(--brass-300);border-radius:9999px;padding:0 8px;margin-left:8px;vertical-align:middle}
+details.prior{margin-top:6px}
+details.prior summary{cursor:pointer;font-size:13px;color:var(--blue-100)}
+details.prior summary:hover{color:var(--brass-300)}
+details.prior .was{margin-top:6px;padding:8px 12px;background:var(--sunken);border:1px solid var(--border);
+ border-radius:4px;font-size:14px}
+.was .old{color:#E58A93}
+.was .new{color:#9BE3B8}
+.legend{font-size:13px;color:var(--muted-fg);border-left:3px solid var(--brass-300);padding-left:12px;margin:10px 0 22px}
+header.chrome .eyebrow{flex-basis: 100%; order: 2;}
+header.chrome a.nav, header.chrome a.nav + a.nav{order: 3; margin-left: 0;
+    font: 600 13px/1.1 var(--font); padding: 8px 12px;
+    border: 1px solid var(--border-strong); border-radius: 9999px;
+    background: var(--muted); color: var(--parch-300);}
+table{display: block; overflow-x: auto;}
+.eras{display:flex;gap:2px;margin:18px 0;border-radius:8px;overflow:hidden;border:1px solid var(--border)}
+.era{padding:10px 12px;color:#08121f;font-weight:700;font-size:12.5px}
+.era small{display:block;font-weight:500;opacity:.8}
+ol.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--border-strong);margin-left:8px}
+ol.timeline li{position:relative;padding:8px 0 8px 22px;margin:0}
+ol.timeline li::before{content:"";position:absolute;left:-7px;top:14px;width:12px;height:12px;
+ border-radius:50%;background:var(--dot,#6B9BD2);border:2px solid var(--navy-700)}
+.ed{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.ed .yr{font:700 15px var(--mono);color:var(--brass-300);min-width:44px}
+.ed .id{font:600 15px var(--font)}
+.ed .fy{font-size:12px;color:var(--muted-fg)}
+.ed .tag{font-size:11px;color:var(--parch-300);background:var(--muted);border:1px solid var(--border-strong);
+ border-radius:9999px;padding:1px 8px}
+.note{font-size:13px;color:var(--muted-fg);border-left:3px solid var(--brass-300);padding-left:12px;margin:14px 0}
+.diff{background:var(--elev);border:1px solid var(--border);border-radius:10px;padding:18px;margin-top:14px}
+.diff h3{margin:0 0 10px;font-size:16px}
+.diff .add{color:#7BD3A0}
+.diff .drop{color:#E58A93}
+.diff ul{margin:4px 0 12px;padding-left:20px}
+.diff code{font-family:var(--mono);font-size:13px}
 </style></head><body><a class="skip" href="#main">Skip to main content</a><header class="chrome"><a class="emblem" href="https://semper-admin-portal.app.cloud.gov/" target="_blank" rel="noopener noreferrer" title="Semper Admin portal (opens in a new tab)"><img src="semper-logo.jpg" alt="Semper Admin portal (opens in a new tab)" height="40"></a><div class="brand"><a class="wordmark" href="index.html">G.O.A.T.S.</a><span class="eyebrow">By Semper Admin</span></div><span class="eyebrow">Search</span><a href="how-it-works.html" style="margin-left:auto">How it works</a><a href="currency.html">Currency</a><a href="impact.html">Impact</a><a href="policy-index.html">Library</a><a href="authority-index.html">Authority chains</a><a href="connections.html">Connections</a><a href="verification.html">Verification</a><a href="scenarios.html">Scenarios</a><a href="about.html">About</a><a href="search.html" aria-current="page">Search</a></header><main id="main"><h1>Search the policy library</h1>
 <p>Full-text search across every published document. Multiple words narrow
 the results (all words must appear). Policy numbers work - try 5215.1k or

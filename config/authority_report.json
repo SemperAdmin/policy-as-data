@@ -8,6 +8,8 @@
   "drift": 85,
   "gaps": 220,
   "provisions": 20178,
+  "path_collisions": 585,
+  "docs_with_path_collisions": 15,
   "known": 17514,
   "quarantined": 0
  },
@@ -4003,7 +4005,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 0,
-   "provisions": 0
+   "provisions": 0,
+   "path_collisions": 0
   },
   "DODI-1308.03": {
    "edges": 7,
@@ -4012,7 +4015,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 7,
-   "provisions": 12
+   "provisions": 12,
+   "path_collisions": 0
   },
   "DODI-1308.3": {
    "edges": 0,
@@ -4021,7 +4025,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 0,
-   "provisions": 0
+   "provisions": 0,
+   "path_collisions": 0
   },
   "DODI-1320.14": {
    "edges": 8,
@@ -4030,7 +4035,8 @@
    "held": 2,
    "drift": 0,
    "gaps": 6,
-   "provisions": 11
+   "provisions": 11,
+   "path_collisions": 0
   },
   "DODI-1327.06": {
    "edges": 18,
@@ -4039,7 +4045,8 @@
    "held": 1,
    "drift": 1,
    "gaps": 16,
-   "provisions": 27
+   "provisions": 27,
+   "path_collisions": 0
   },
   "DODI-1327.6": {
    "edges": 0,
@@ -4048,7 +4055,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 0,
-   "provisions": 0
+   "provisions": 0,
+   "path_collisions": 0
   },
   "MARADMIN-2008-418": {
    "edges": 1,
@@ -4057,7 +4065,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 1,
-   "provisions": 27
+   "provisions": 27,
+   "path_collisions": 0
   },
   "MARADMIN-2018-011": {
    "edges": 4,
@@ -4066,7 +4075,8 @@
    "held": 0,
    "drift": 1,
    "gaps": 3,
-   "provisions": 29
+   "provisions": 29,
+   "path_collisions": 0
   },
   "MARADMIN-2018-161": {
    "edges": 0,
@@ -4075,7 +4085,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 0,
-   "provisions": 0
+   "provisions": 0,
+   "path_collisions": 0
   },
   "MARADMIN-2019-114": {
    "edges": 0,
@@ -4084,7 +4095,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 0,
-   "provisions": 32
+   "provisions": 32,
+   "path_collisions": 0
   },
   "MARADMIN-2021-360": {
    "edges": 11,
@@ -4093,7 +4105,8 @@
    "held": 0,
    "drift": 3,
    "gaps": 8,
-   "provisions": 78
+   "provisions": 78,
+   "path_collisions": 1
   },
   "MARADMIN-2021-388": {
    "edges": 0,
@@ -4102,7 +4115,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 0,
-   "provisions": 12
+   "provisions": 12,
+   "path_collisions": 0
   },
   "MARADMIN-2021-404": {
    "edges": 1,
@@ -4111,7 +4125,8 @@
    "held": 1,
    "drift": 0,
    "gaps": 0,
-   "provisions": 8
+   "provisions": 8,
+   "path_collisions": 0
   },
   "MARADMIN-2022-408": {
    "edges": 0,
@@ -4120,7 +4135,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 0,
-   "provisions": 19
+   "provisions": 19,
+   "path_collisions": 0
   },
   "MARADMIN-2022-409": {
    "edges": 7,
@@ -4129,7 +4145,8 @@
    "held": 0,
    "drift": 3,
    "gaps": 4,
-   "provisions": 59
+   "provisions": 59,
+   "path_collisions": 0
   },
   "MARADMIN-2023-051": {
    "edges": 3,
@@ -4138,7 +4155,8 @@
    "held": 1,
    "drift": 1,
    "gaps": 1,
-   "provisions": 78
+   "provisions": 78,
+   "path_collisions": 0
   },
   "MARADMIN-2023-129": {
    "edges": 2,
@@ -4147,7 +4165,8 @@
    "held": 2,
    "drift": 0,
    "gaps": 0,
-   "provisions": 5
+   "provisions": 5,
+   "path_collisions": 0
   },
   "MARADMIN-2023-322": {
    "edges": 4,
@@ -4156,7 +4175,8 @@
    "held": 0,
    "drift": 2,
    "gaps": 2,
-   "provisions": 17
+   "provisions": 17,
+   "path_collisions": 0
   },
   "MARADMIN-2024-016": {
    "edges": 3,
@@ -4165,7 +4185,8 @@
    "held": 0,
    "drift": 2,
    "gaps": 1,
-   "provisions": 16
+   "provisions": 16,
+   "path_collisions": 0
   },
   "MARADMIN-2024-253": {
    "edges": 2,
@@ -4174,7 +4195,8 @@
    "held": 1,
    "drift": 1,
    "gaps": 0,
-   "provisions": 67
+   "provisions": 67,
+   "path_collisions": 0
   },
   "MARADMIN-2024-586": {
    "edges": 5,
@@ -4183,7 +4205,8 @@
    "held": 1,
    "drift": 0,
    "gaps": 4,
-   "provisions": 81
+   "provisions": 81,
+   "path_collisions": 0
   },
   "MARADMIN-2025-166": {
    "edges": 0,
@@ -4192,7 +4215,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 0,
-   "provisions": 47
+   "provisions": 47,
+   "path_collisions": 0
   },
   "MARADMIN-2025-237": {
    "edges": 5,
@@ -4201,7 +4225,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 5,
-   "provisions": 19
+   "provisions": 19,
+   "path_collisions": 0
   },
   "MARADMIN-2026-012": {
    "edges": 5,
@@ -4210,7 +4235,8 @@
    "held": 1,
    "drift": 0,
    "gaps": 4,
-   "provisions": 33
+   "provisions": 33,
+   "path_collisions": 0
   },
   "MARADMIN-2026-026": {
    "edges": 3,
@@ -4219,7 +4245,8 @@
    "held": 0,
    "drift": 1,
    "gaps": 2,
-   "provisions": 13
+   "provisions": 13,
+   "path_collisions": 0
   },
   "MARADMIN-2026-043": {
    "edges": 5,
@@ -4228,7 +4255,8 @@
    "held": 0,
    "drift": 1,
    "gaps": 4,
-   "provisions": 24
+   "provisions": 24,
+   "path_collisions": 0
   },
   "MARADMIN-2026-073": {
    "edges": 5,
@@ -4237,7 +4265,8 @@
    "held": 2,
    "drift": 0,
    "gaps": 3,
-   "provisions": 3
+   "provisions": 3,
+   "path_collisions": 0
   },
   "MARADMIN-2026-074": {
    "edges": 0,
@@ -4246,7 +4275,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 0,
-   "provisions": 47
+   "provisions": 47,
+   "path_collisions": 1
   },
   "MARADMIN-2026-151": {
    "edges": 7,
@@ -4255,7 +4285,8 @@
    "held": 1,
    "drift": 0,
    "gaps": 6,
-   "provisions": 28
+   "provisions": 28,
+   "path_collisions": 0
   },
   "MARADMIN-2026-191": {
    "edges": 8,
@@ -4264,7 +4295,8 @@
    "held": 3,
    "drift": 1,
    "gaps": 4,
-   "provisions": 64
+   "provisions": 64,
+   "path_collisions": 0
   },
   "MARADMIN-2026-213": {
    "edges": 1,
@@ -4273,7 +4305,8 @@
    "held": 1,
    "drift": 0,
    "gaps": 0,
-   "provisions": 0
+   "provisions": 0,
+   "path_collisions": 0
   },
   "MARADMIN-2026-221": {
    "edges": 4,
@@ -4282,7 +4315,8 @@
    "held": 1,
    "drift": 0,
    "gaps": 3,
-   "provisions": 25
+   "provisions": 25,
+   "path_collisions": 0
   },
   "MARADMIN-2026-274": {
    "edges": 8,
@@ -4291,7 +4325,8 @@
    "held": 0,
    "drift": 1,
    "gaps": 7,
-   "provisions": 145
+   "provisions": 145,
+   "path_collisions": 40
   },
   "MARADMIN-2026-284": {
    "edges": 2,
@@ -4300,7 +4335,8 @@
    "held": 2,
    "drift": 0,
    "gaps": 0,
-   "provisions": 10
+   "provisions": 10,
+   "path_collisions": 0
   },
   "MARADMIN-CANX-2018-011": {
    "edges": 0,
@@ -4309,7 +4345,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 0,
-   "provisions": 2
+   "provisions": 2,
+   "path_collisions": 0
   },
   "MCO-1050.3J": {
    "edges": 18,
@@ -4318,7 +4355,8 @@
    "held": 2,
    "drift": 4,
    "gaps": 12,
-   "provisions": 543
+   "provisions": 543,
+   "path_collisions": 12
   },
   "MCO-1200.13G": {
    "edges": 7,
@@ -4327,7 +4365,8 @@
    "held": 1,
    "drift": 3,
    "gaps": 3,
-   "provisions": 50
+   "provisions": 50,
+   "path_collisions": 2
   },
   "MCO-1200.15C-CH1": {
    "edges": 1,
@@ -4336,7 +4375,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 1,
-   "provisions": 3
+   "provisions": 3,
+   "path_collisions": 0
   },
   "MCO-1200.18": {
    "edges": 11,
@@ -4345,7 +4385,8 @@
    "held": 3,
    "drift": 6,
    "gaps": 2,
-   "provisions": 29
+   "provisions": 29,
+   "path_collisions": 0
   },
   "MCO-1400.31D": {
    "edges": 25,
@@ -4354,7 +4395,8 @@
    "held": 3,
    "drift": 8,
    "gaps": 14,
-   "provisions": 378
+   "provisions": 378,
+   "path_collisions": 122
   },
   "MCO-1400.32D-CH1": {
    "edges": 13,
@@ -4363,7 +4405,8 @@
    "held": 2,
    "drift": 8,
    "gaps": 3,
-   "provisions": 586
+   "provisions": 586,
+   "path_collisions": 50
   },
   "MCO-1400.32D-CH2": {
    "edges": 12,
@@ -4372,7 +4415,8 @@
    "held": 1,
    "drift": 8,
    "gaps": 3,
-   "provisions": 586
+   "provisions": 586,
+   "path_collisions": 50
   },
   "MCO-1610.7B": {
    "edges": 21,
@@ -4381,7 +4425,8 @@
    "held": 6,
    "drift": 4,
    "gaps": 11,
-   "provisions": 1991
+   "provisions": 1991,
+   "path_collisions": 242
   },
   "MCO-1616.1": {
    "edges": 5,
@@ -4390,7 +4435,8 @@
    "held": 2,
    "drift": 1,
    "gaps": 2,
-   "provisions": 191
+   "provisions": 191,
+   "path_collisions": 8
   },
   "MCO-6100.13A-CH5": {
    "edges": 19,
@@ -4399,7 +4445,8 @@
    "held": 3,
    "drift": 5,
    "gaps": 11,
-   "provisions": 327
+   "provisions": 327,
+   "path_collisions": 1
   },
   "MCO-6100.14": {
    "edges": 18,
@@ -4408,7 +4455,8 @@
    "held": 3,
    "drift": 6,
    "gaps": 9,
-   "provisions": 121
+   "provisions": 121,
+   "path_collisions": 4
   },
   "MCO-6110.3A-CH4": {
    "edges": 18,
@@ -4417,7 +4465,8 @@
    "held": 3,
    "drift": 7,
    "gaps": 8,
-   "provisions": 277
+   "provisions": 277,
+   "path_collisions": 26
   },
   "NAVMC-1200.1L": {
    "edges": 27,
@@ -4426,7 +4475,8 @@
    "held": 3,
    "drift": 5,
    "gaps": 19,
-   "provisions": 13595
+   "provisions": 13595,
+   "path_collisions": 20
   },
   "SECNAVINST-1400.1D": {
    "edges": 7,
@@ -4435,7 +4485,8 @@
    "held": 3,
    "drift": 1,
    "gaps": 3,
-   "provisions": 29
+   "provisions": 29,
+   "path_collisions": 0
   },
   "SECNAVINST-1610.3A": {
    "edges": 15,
@@ -4444,7 +4495,8 @@
    "held": 1,
    "drift": 0,
    "gaps": 14,
-   "provisions": 150
+   "provisions": 150,
+   "path_collisions": 0
   },
   "SECNAVINST-1610.4A": {
    "edges": 16,
@@ -4453,7 +4505,8 @@
    "held": 1,
    "drift": 1,
    "gaps": 14,
-   "provisions": 269
+   "provisions": 269,
+   "path_collisions": 6
   },
   "USC-T10-S574": {
    "edges": 0,
@@ -4462,7 +4515,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 0,
-   "provisions": 0
+   "provisions": 0,
+   "path_collisions": 0
   },
   "USC-T10-S701": {
    "edges": 0,
@@ -4471,7 +4525,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 0,
-   "provisions": 6
+   "provisions": 6,
+   "path_collisions": 0
   },
   "USC-T10": {
    "edges": 0,
@@ -4480,7 +4535,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 0,
-   "provisions": 0
+   "provisions": 0,
+   "path_collisions": 0
   },
   "USC-T5-S552a": {
    "edges": 0,
@@ -4489,7 +4545,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 0,
-   "provisions": 9
+   "provisions": 9,
+   "path_collisions": 0
   },
   "USC-T5": {
    "edges": 0,
@@ -4498,7 +4555,8 @@
    "held": 0,
    "drift": 0,
    "gaps": 0,
-   "provisions": 0
+   "provisions": 0,
+   "path_collisions": 0
   }
  }
 }

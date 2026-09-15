@@ -81,8 +81,33 @@ policy they name).
 
 ### Addendum, 2026-09-15 - the site restructured for a decision-maker
 
-Measured after `./build.sh` on 2026-09-15: 80 pages, 773 files byte-identical
-across two builds, 0 dead links, 0 orphans, claims table 18 of 18.
+Measured after `./build.sh` on 2026-09-15, end of day: 83 pages, 777 files
+byte-identical across two builds, 0 dead links, 0 orphans, claims table 22 of
+22, every page on one header. Track 6 in `ACTION-REGISTER.md` is the demo
+path and `CONCEPT.md` is why. Since the morning measurement:
+
+- **The site opens on the question people asked.** `currency.html`: four
+  documents in force cite an instruction this set holds as cancelled or
+  superseded, each with the paragraph that cites it; 85 references name a
+  superseded edition, the held edition beside each; 220 name something not
+  held, stated as unknown. `impact.html`: every named document, sorted by how
+  many depend on it. Every policy page frames its citers as what a reissue
+  would touch.
+- **The same measurement at scale.** `extract_authority.py --report-only`
+  over the 17,514-document store on E, read-only, 169 seconds: 887 documents
+  in force cite an instruction the corpus holds as cancelled, 5,169 of
+  21,198 references name a superseded edition, 7 quarantined records never
+  read. `config/scale_report.json`, `docs/scale.html`, and the home page.
+  The run is not a build stage; a fresh clone has no full corpus.
+- **The exporter no longer multiplies a store defect.** 585 of 20,178
+  provisions carry a path repeated within their section (parser, item 6.12);
+  the exporter nested by path and emitted children once per repeat. Fixed to
+  emit each provision once; claim C13 holds the count per document.
+- **Every write goes through `atomicio`**, with a bounded retry for a
+  transient Windows lock. Two builds had died on `verification.html` while a
+  browser served the site.
+- **The MOS pages take the chrome** as fragments; generating the lineage
+  page from the manifest is the open half of 5.10.
 
 The site now leads with what the encoding found rather than with the
 programme name. `SITE-PLAN.md` is the plan, adopted; `ACTION-REGISTER.md`

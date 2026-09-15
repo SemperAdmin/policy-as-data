@@ -105,9 +105,10 @@ The impact question needs one thing, and it already exists:
 | Stale citations found | 85 |
 | Current documents citing something no longer in force | 4 |
 
-**This is the largest thing wrong.** The cheapest product with the widest
-audience is unbuilt; the most expensive product with the narrowest audience is
-the whole site.
+**This was the largest thing wrong. Addressed 2026-09-15:** `currency.html`
+and `impact.html` are built, every policy page frames its dependents as what
+a reissue would touch, and the home page opens on the currency finding.
+Reconciliation stays as the second act.
 
 ### 3.2 The proof is at a scale where the tool is not needed
 
@@ -118,7 +119,12 @@ The pain is roughly 17,500 documents done 17,000 ways. The 85 stale references
 out of 362 is the most striking figure the project has produced, and its force
 comes entirely from what the same measurement would return across the real
 corpus. `config/revision_index.json` already holds 17,514 known identifiers.
-Nobody has run the measurement at that scale.
+
+**Run 2026-09-15, read-only, 169 seconds.** Across 17,507 documents, 887 in
+force cite an instruction the corpus holds as cancelled; 5,169 of 21,198
+references name a superseded edition; 6,005 name something not held. Seven
+records carrying a limited distribution statement were skipped and counted,
+never read. `docs/scale.html`, and the home page.
 
 The demonstration corpus was chosen for depth, and that was right: depth proved
 the encoding. **The encoding is proved. The next proof is breadth,** and
