@@ -58,6 +58,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from atomicio import write_text  # noqa: E402
 from verify_status import (  # noqa: E402
     DATA, LEDGER, POLICY, VERIFIED, derive, live_rule_assertions, load_ledger,
     load_policy,
@@ -259,8 +260,7 @@ def main() -> int:
     }
 
     if args.out:
-        Path(args.out).write_text(
-            json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        write_text(args.out, json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
         print(f"wrote {args.out}")
     if args.json:
         print(json.dumps(payload, indent=2, ensure_ascii=False))

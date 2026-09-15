@@ -1,5 +1,5 @@
 {
-  "$comment": "The site navigation, as data. One copy, read by tools/chrome.py and emitted on every page. A page is listed here only once it exists in docs/; check_site.py fails the build on a dead link.",
+  "$comment": "The site navigation, as data. One copy, read by tools/chrome.py and emitted on every page. A page is listed here only once it exists in docs/; check_site.py fails the build on a dead link. Sources and Feedback left the nav 2026-09-15 to keep it to ten; both are reachable from About and How it works.",
   "schema_version": "1.0",
   "established": "2026-09-11",
   "home": {
@@ -16,6 +16,14 @@
     {
       "label": "How it works",
       "href": "how-it-works.html"
+    },
+    {
+      "label": "Currency",
+      "href": "currency.html"
+    },
+    {
+      "label": "Impact",
+      "href": "impact.html"
     },
     {
       "label": "Library",
@@ -38,21 +46,12 @@
       "href": "scenarios.html"
     },
     {
-      "label": "Sources",
-      "href": "sources.html"
-    },
-    {
       "label": "About",
       "href": "about.html"
     },
     {
       "label": "Search",
       "href": "search.html"
-    },
-    {
-      "label": "Feedback",
-      "href": "https://forms.osi.apps.mil/r/k5QWzJDL9P",
-      "external": true
     }
   ]
 }

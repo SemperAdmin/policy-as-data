@@ -30,6 +30,7 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from atomicio import write_text  # noqa: E402
 from lineage import (build, build_inbound, load_families,      # noqa: E402
                      base_id, revision_letter, change_number)
 from chrome import head, header  # noqa: E402
@@ -251,8 +252,11 @@ def authority_section(rec, records, pages, inbound, gaps):
         msgs = [e for e in citers if (records.get(e["src"]) or {}).get("doc_type")
                 in MESSAGE_TYPES]
         others = [e for e in citers if e not in msgs]
-        out.append('<div class="rung"><div class="t">Below &middot; '
-                   f'{len(citers)} document(s) name this one</div>')
+        out.append('<div class="rung" id="impact"><div class="t">If this document reissues &middot; '
+                   f'{len(citers)} document(s) name it and would need review</div>'
+                   '<div class="small">Every one below printed a reference to this document. '
+                   'A change here is a change they inherit. <a href="impact.html">All documents, '
+                   'by how many depend on them</a></div>')
         for e in sorted(citers, key=lambda e: e["src"], reverse=True)[:8]:
             src = SRC_RX.search(e.get("resolution", ""))
             out.append(
@@ -553,8 +557,7 @@ def render_one(rec, records, pages, inbound_t, inbound_b, families, gaps, out_di
              'document. This library is an unofficial reference - the issuing '
              'authority\'s copy governs.</p></footer></main></body></html>')
 
-    with open(os.path.join(out_dir, page_name(did)), "w", encoding="utf-8") as fh:
-        fh.write("\n".join(P))
+    write_text(os.path.join(out_dir, page_name(did)), "\n".join(P))
     return tracks
 
 

@@ -28,6 +28,7 @@ import sys
 from collections import Counter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from atomicio import write_text  # noqa: E402
 from chrome import head, header  # noqa: E402
 from render_authority_chain import (BRAND, CSS, TIER_NAME, TIER_ORDER,   # noqa: E402
                                     tier_of, esc, load, TIER_RX, HOLDS_RX,
@@ -426,8 +427,7 @@ def render(records, out_path):
              'to see it. Records are UNVERIFIED machine extractions unless '
              'promoted.</p></footer></main>' + VIZ_JS + '</body></html>')
 
-    with open(out_path, "w", encoding="utf-8") as fh:
-        fh.write("\n".join(P))
+    write_text(out_path, "\n".join(P))
     return {"docs": len(pos), "edges": len(edges), "internal": internal,
             "drift": drift, "gap": gap, "isolated": len(isolated),
             "tiers": len(rows)}

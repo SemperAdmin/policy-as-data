@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="favicon.png"><title>Currency - Semper Admin Policy Library</title><style>
+:root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
+--blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
+--brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
+--bg:#0A1424;--elev:#11203F;--sunken:#060E1A;--fg:#F2E5BE;--card:#11203F;
+--muted:#182A4D;--mutedfg:#B5A988;--border:#233A5C;--borders:#34507A;
+--n950:#0F0C09;--rad:8px;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:400 15px/1.6 "Inter Variable",Inter,system-ui,sans-serif}
+a{color:var(--blue1)}a:hover{color:var(--brass3)}
+:focus-visible{outline:3px solid var(--brass3);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px;
+background:var(--brass3);color:var(--n950)}
+header.chrome,main,footer{max-width:64rem;margin:0 auto;padding:16px 24px}
+header.chrome{margin-top:16px;border-radius:12px;border:1px solid var(--border);
+background:var(--elev);display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.brand{display:flex;flex-direction:column;align-items:flex-start}
+.brand .eyebrow{margin-top:2px}
+.eyebrow{font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.08em;
+color:var(--mutedfg)}
+header.chrome a[aria-current="page"]{color:var(--parch3);text-decoration-thickness:2px}
+.emblem{align-self:center;display:flex}
+.wordmark{font:400 28px/1.2 "Bebas Neue",Oswald,system-ui,sans-serif;
+letter-spacing:.04em;color:var(--parch3);text-decoration:none;text-transform:uppercase}
+h1{font:700 28px/1.2 inherit;margin:32px 0 8px}
+h2{font:700 20px/1.2 inherit;border-bottom:1px solid var(--borders);
+padding-bottom:8px;margin-top:40px}
+.lede{color:var(--mutedfg);max-width:52rem}
+.tier{border:1px solid var(--border);border-radius:12px;background:var(--card);
+margin:0 0 4px;padding:16px 20px}
+.tier.gap{background:repeating-linear-gradient(135deg,var(--sunken),
+var(--sunken) 10px,#0b1830 10px,#0b1830 20px);border-style:dashed;
+border-color:var(--aging)}
+.tierhead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;
+font:700 11px/1 inherit;text-transform:uppercase;letter-spacing:.09em;
+color:var(--mutedfg);margin-bottom:10px}
+.tiercode{color:var(--brass3);font-weight:700}
+.doc{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--muted)}
+.doc:first-of-type{border-top:0;padding-top:0}
+.docid{font:600 14px/1.4 "JetBrains Mono",Menlo,monospace;color:var(--parch3)}
+.doctitle{color:var(--fg)}
+.uslm{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3);
+word-break:break-all}
+.why{font-size:13px;color:var(--mutedfg);margin-top:4px}
+.pill{display:inline-block;padding:2px 9px;border-radius:9999px;
+font:700 11px/1.6 inherit;border:1px solid var(--borders);
+background:var(--muted);color:var(--parch3);white-space:nowrap}
+.pill.cited{border-color:var(--fresh);color:#9fe0bd}
+.pill.drift{border-color:var(--aging);color:#f0c489}
+.pill.gap{border-color:var(--stale);color:#f3a3a3}
+.pill.held{border-color:var(--blue1);color:#bcd7f2}
+.pill.cancelled,.pill.superseded{background:var(--stale);border-color:var(--stale);
+color:#fff}
+.arrow{text-align:center;color:var(--brass);font:700 13px/1 inherit;
+padding:6px 0;letter-spacing:.08em}
+.arrow span{background:var(--bg);padding:0 10px}
+.arrow{position:relative}
+.arrow:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;
+background:var(--brass);z-index:-1}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--muted);
+vertical-align:top}
+th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;
+letter-spacing:.08em}
+code{font:500 12px/1.5 "JetBrains Mono",Menlo,monospace;color:var(--brass3)}
+footer{border-top:1px solid var(--border);margin-top:48px;font-size:13px;
+color:var(--mutedfg)}
+/* Small screens: the chrome stacks - wordmark row, page label, then nav links
+   as wrapping pill targets (the inline margin-left:auto that right-aligns the
+   first link on desktop needs the !important to release). Wide tables scroll
+   in place instead of stretching the page, and long identifiers break. */
+@media (max-width:640px){
+header.chrome{align-items:center;column-gap:12px;row-gap:8px;padding:12px 16px}
+.wordmark{font-size:22px}
+header.chrome span{flex-basis:100%;order:2;font:700 11px/1 inherit;
+text-transform:uppercase;letter-spacing:.08em;color:var(--mutedfg)}
+header.chrome a:not(.wordmark):not(.emblem){order:3;margin-left:0!important;
+font:600 13px/1.1 inherit;padding:8px 12px;border:1px solid var(--borders);
+border-radius:9999px;background:var(--muted);color:var(--parch3);
+text-decoration:none}
+table{display:block;overflow-x:auto}
+code,h3{overflow-wrap:anywhere}
+}
+
+.big{font:400 40px/1 "Bebas Neue",Oswald,system-ui,sans-serif;color:var(--brass3);letter-spacing:.02em}
+.tiles{display:grid;grid-template-columns:1fr;gap:12px;margin:12px 0}
+@media(min-width:52rem){.tiles{grid-template-columns:1fr 1fr 1fr}}
+.tile{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 18px}
+.tile p{margin:8px 0 0;font-size:14px;color:var(--mutedfg)}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:8px 0}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--muted);vertical-align:top}
+th{color:var(--mutedfg);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+.pill{display:inline-block;padding:2px 9px;border-radius:9999px;font:700 11px/1.6 inherit;border:1px solid var(--borders);background:var(--muted);color:var(--parch3);white-space:nowrap}
+.pill.stale{border-color:var(--stale);color:#f3a3a3}
+.pill.drift{border-color:var(--aging);color:#f0c489}
+.pill.gap{border-color:var(--borders);color:var(--mutedfg)}
+.small{font-size:13px;color:var(--mutedfg)}
+.note{border-left:3px solid var(--brass);padding:8px 0 8px 14px;margin:14px 0;color:var(--mutedfg);font-size:14px}
+</style></head><body><a class="skip" href="#main">Skip to main content</a><header class="chrome"><a class="emblem" href="https://semper-admin-portal.app.cloud.gov/" target="_blank" rel="noopener noreferrer" title="Semper Admin portal (opens in a new tab)"><img src="semper-logo.jpg" alt="Semper Admin portal (opens in a new tab)" height="40"></a><div class="brand"><a class="wordmark" href="index.html">G.O.A.T.S.</a><span class="eyebrow">By Semper Admin</span></div><span class="eyebrow">Currency</span><a href="how-it-works.html" style="margin-left:auto">How it works</a><a href="currency.html" aria-current="page">Currency</a><a href="impact.html">Impact</a><a href="policy-index.html">Library</a><a href="authority-index.html">Authority chains</a><a href="connections.html">Connections</a><a href="verification.html">Verification</a><a href="scenarios.html">Scenarios</a><a href="about.html">About</a><a href="search.html">Search</a></header><main id="main">
+<h1>What rests on something that no longer exists</h1>
+<p class="lede">Every document here printed a reference list. Every row below is a
+reference that still points at something, read from the paragraph that names
+it. Nothing is inferred from subject or numbering; a citation exists on this
+page only because the issuing authority printed it.</p>
+
+<div class="tiles">
+<div class="tile"><div class="big">4</div><p>documents in force today
+cite an instruction this set holds as cancelled or superseded</p></div>
+<div class="tile"><div class="big">85 of 362</div><p>references
+name an edition that has since been superseded</p></div>
+<div class="tile"><div class="big">220</div><p>references name something this
+set does not hold. Status unknown, stated as a gap</p></div>
+</div>
+
+<h2 id="gone">In force, citing an instruction that is not</h2>
+<p class="lede">The strongest finding this set produces. The citing document is
+active. The cited one has been cancelled or superseded, and this set holds the
+record that says so.</p>
+<table><tr><th>Document in force</th><th>Cites</th><th>Which is</th><th>Read from</th></tr>
+<tr><td><a href="policy-MCO-6100.13A-CH5.html">MCO 6100.13A-CH5</a><div class="small">MCO 6100.13A - Marine Corps Directives Compliance with Executive Order 14168</div></td><td><a href="policy-DODI-1308.3.html">DoDI 1308.3</a><div class="small">DoD Instruction 1308.3 - DoD Physical Fitness and Body Fat Programs Procedures</div></td><td><span class="pill stale">cancelled</span></td><td class="small"><span title="p-6:ref/a">reference (a) in section 6</span></td></tr><tr><td><a href="policy-MCO-6100.14.html">MCO 6100.14</a><div class="small">MCO 6100.14 - Marine Corps Physical Fitness Program (MCPFP)</div></td><td><a href="policy-DODI-1308.3.html">DoDI 1308.3</a><div class="small">DoD Instruction 1308.3 - DoD Physical Fitness and Body Fat Programs Procedures</div></td><td><span class="pill stale">cancelled</span></td><td class="small"><span title="p-5:ref/a">reference (a) in section 5</span></td></tr><tr><td><a href="policy-MCO-6110.3A-CH4.html">MCO 6110.3A-CH4</a><div class="small">MCO 6110.3A - Marine Corps Directives Compliance with Executive Order 14168</div></td><td><a href="policy-DODI-1308.3.html">DoDI 1308.3</a><div class="small">DoD Instruction 1308.3 - DoD Physical Fitness and Body Fat Programs Procedures</div></td><td><span class="pill stale">cancelled</span></td><td class="small"><span title="p-5-3:ref/c">reference (c) in section 5.3</span></td></tr><tr><td><a href="policy-MCO-1050.3J.html">MCO 1050.3J</a><div class="small">MCO 1050.3J - Regulations for Leave, Liberty, and Administrative Absence</div></td><td><a href="policy-DODI-1327.6.html">DoDI 1327.6</a><div class="small">DoD Instruction 1327.06 - Leave and Liberty Policy and Procedures</div></td><td><span class="pill stale">superseded</span></td><td class="small"><span title="front-matter:ref/h">reference (h) in the reference list</span></td></tr></table>
+
+<h2 id="editions">Citing an edition since superseded</h2>
+<p class="lede">26 documents, 85 references. The reference is
+not wrong as written; it names the edition the author had. Judged against the
+revision index of 17,514 identifiers known to exist, a later
+edition has since issued. The cited edition is never silently upgraded; the
+edition now held is named beside it.</p>
+<table><tr><th>Document</th><th>Names</th><th>Now held as</th><th>Read from</th></tr>
+<tr><td rowspan="8"><a href="policy-MCO-1400.31D.html">MCO 1400.31D</a><div class="small">MCO 1400.31D - Marine Corps Promotion Manual, Volume 1, Officer Promotions (MARCORPROMMAN,</div></td><td>SECNAVINST 1000.7</td><td class="small">SECNAVINST 1000.7G</td><td class="small"><span title="p-6:ref/l">reference (l) in section 6</span></td></tr><tr><td>SECNAVINST 1301.4</td><td class="small">SECNAVINST 1301.4B</td><td class="small"><span title="p-6:ref/n">reference (n) in section 6</span></td></tr><tr><td>SECNAVINST 1301.7</td><td class="small">SECNAVINST 1301.7B</td><td class="small"><span title="p-6:ref/o">reference (o) in section 6</span></td></tr><tr><td>SECNAVINST 1400.1</td><td class="small">SECNAVINST 1400.1D</td><td class="small"><span title="p-6:ref/u">reference (u) in section 6</span></td></tr><tr><td>SECNAVINST 1401.4</td><td class="small">SECNAVINST 1401.4B</td><td class="small"><span title="p-6:ref/v">reference (v) in section 6</span></td></tr><tr><td>SECNAVINST 1412.6</td><td class="small">SECNAVINST 1412.6M</td><td class="small"><span title="p-6:ref/t">reference (t) in section 6</span></td></tr><tr><td>SECNAVINST 1412.8</td><td class="small">SECNAVINST 1412.8C</td><td class="small"><span title="p-6:ref/e">reference (e) in section 6</span></td></tr><tr><td>SECNAVINST 1421.3M</td><td class="small">SECNAVINST 1421.3N</td><td class="small"><span title="p-6:ref/g">reference (g) in section 6</span></td></tr><tr><td rowspan="8"><a href="policy-MCO-1400.32D-CH1.html">MCO 1400.32D-CH1</a><div class="small">MCO 1400.32D - Marine Corps Promotion Manual, Volume 2, Enlisted Promotions (SHORT TITLE: </div></td><td>MCO 1001R.1J</td><td class="small">MCO 1001R.1L-CH2</td><td class="small"><span title="p-2:ref/e">reference (e) in section 2</span></td></tr><tr><td>MCO 1130.53P-CH1</td><td class="small">MCO 1130.53R</td><td class="small"><span title="p-2:ref/l">reference (l) in section 2</span></td></tr><tr><td>MCO 1130.62B</td><td class="small">MCO 1130.62C</td><td class="small"><span title="p-2:ref/m">reference (m) in section 2</span></td></tr><tr><td>MCO 1130.80A</td><td class="small">MCO 1130.80B</td><td class="small"><span title="p-2:ref/n">reference (n) in section 2</span></td></tr><tr><td>MCO 1610.7F-CH2</td><td class="small">MCO 1610.7B</td><td class="small"><span title="p-2:ref/i">reference (i) in section 2</span></td></tr><tr><td>MCO 1900.16F-CH2</td><td class="small">MCO 1900.16-CH3</td><td class="small"><span title="p-2:ref/j">reference (j) in section 2</span></td></tr><tr><td>MCO 3574.2K</td><td class="small">MCO 3574.2M</td><td class="small"><span title="p-2:ref/p">reference (p) in section 2</span></td></tr><tr><td>MCO 6100.13-CH1</td><td class="small">MCO 6100.13A-CH5</td><td class="small"><span title="p-2:ref/k">reference (k) in section 2</span></td></tr><tr><td rowspan="8"><a href="policy-MCO-1400.32D-CH2.html">MCO 1400.32D-CH2</a><div class="small">MCO 1400.32D - Marine Corps Promotion Manual, Volume 2, Enlisted Promotions (SHORT TITLE: </div></td><td>MCO 1001R.1J</td><td class="small">MCO 1001R.1L-CH2</td><td class="small"><span title="p-2:ref/e">reference (e) in section 2</span></td></tr><tr><td>MCO 1130.53P-CH1</td><td class="small">MCO 1130.53R</td><td class="small"><span title="p-2:ref/l">reference (l) in section 2</span></td></tr><tr><td>MCO 1130.62B</td><td class="small">MCO 1130.62C</td><td class="small"><span title="p-2:ref/m">reference (m) in section 2</span></td></tr><tr><td>MCO 1130.80A</td><td class="small">MCO 1130.80B</td><td class="small"><span title="p-2:ref/n">reference (n) in section 2</span></td></tr><tr><td>MCO 1610.7F-CH2</td><td class="small">MCO 1610.7B</td><td class="small"><span title="p-2:ref/i">reference (i) in section 2</span></td></tr><tr><td>MCO 1900.16F-CH2</td><td class="small">MCO 1900.16-CH3</td><td class="small"><span title="p-2:ref/j">reference (j) in section 2</span></td></tr><tr><td>MCO 3574.2K</td><td class="small">MCO 3574.2M</td><td class="small"><span title="p-2:ref/p">reference (p) in section 2</span></td></tr><tr><td>MCO 6100.13-CH1</td><td class="small">MCO 6100.13A-CH5</td><td class="small"><span title="p-2:ref/k">reference (k) in section 2</span></td></tr><tr><td rowspan="7"><a href="policy-MCO-6110.3A-CH4.html">MCO 6110.3A-CH4</a><div class="small">MCO 6110.3A - Marine Corps Directives Compliance with Executive Order 14168</div></td><td>MCO 1326.6D-CH2</td><td class="small">MCO 1326.6-CH1</td><td class="small"><span title="p-5-3:ref/o">reference (o) in section 5.3</span></td></tr><tr><td>MCO 1400.31C-CH1</td><td class="small">MCO 1400.31D</td><td class="small"><span title="p-5-3:ref/m">reference (m) in section 5.3</span></td></tr><tr><td>MCO 1610.7</td><td class="small">MCO 1610.7B</td><td class="small"><span title="p-5-3:ref/q">reference (q) in section 5.3</span></td></tr><tr><td>MCO 1900.16-CH1</td><td class="small">MCO 1900.16-CH3</td><td class="small"><span title="p-5-3:ref/f">reference (f) in section 5.3</span></td></tr><tr><td>MCO 5000.12E-CH1</td><td class="small">MCO 5000.12F, MCO 5000.12F-CH2</td><td class="small"><span title="p-5-3:ref/i">reference (i) in section 5.3</span></td></tr><tr><td>MCO 6100.13A-CH1</td><td class="small">MCO 6100.13A-CH5</td><td class="small"><span title="p-5-3:ref/b">reference (b) in section 5.3</span></td></tr><tr><td>SECNAVINST 1920.6C-CH5</td><td class="small">SECNAVINST 1920.6D</td><td class="small"><span title="p-5-3:ref/g">reference (g) in section 5.3</span></td></tr><tr><td rowspan="6"><a href="policy-MCO-1200.18.html">MCO 1200.18</a><div class="small">MCO 1200.18 - Military Occupational Specialties (MOS) Program Order (SHORT TITLE: MOS MANU</div></td><td>MCO 1000.6G</td><td class="small">MCO 1000.6</td><td class="small"><span title="front-matter:ref/b">reference (b) in the reference list</span></td></tr><tr><td>MCO 1001R.1K</td><td class="small">MCO 1001R.1L-CH2</td><td class="small"><span title="front-matter:ref/g">reference (g) in the reference list</span></td></tr><tr><td>MCO 1300.8R-CH1</td><td class="small">MCO 1300.8-CH2</td><td class="small"><span title="front-matter:ref/d">reference (d) in the reference list</span></td></tr><tr><td>MCO 5215.1K</td><td class="small">MCO 5215.1K-CH3</td><td class="small"><span title="front-matter:ref/i">reference (i) in the reference list</span></td></tr><tr><td>MCO 5311.1D</td><td class="small">MCO 5311.1E-CH1</td><td class="small"><span title="front-matter:ref/f">reference (f) in the reference list</span></td></tr><tr><td>NAVMC 1200.1</td><td class="small">NAVMC 1200.1L</td><td class="small"><span title="front-matter:ref/h">reference (h) in the reference list</span></td></tr><tr><td rowspan="6"><a href="policy-MCO-6100.14.html">MCO 6100.14</a><div class="small">MCO 6100.14 - Marine Corps Physical Fitness Program (MCPFP)</div></td><td>MCO 1500.52D</td><td class="small">MCO 1500.52E</td><td class="small"><span title="p-5:ref/h">reference (h) in section 5</span></td></tr><tr><td>MCO 1500.59</td><td class="small">MCO 1500.59A</td><td class="small"><span title="p-5:ref/i">reference (i) in section 5</span></td></tr><tr><td>MCO 1700.29</td><td class="small">MCO 1700.29-CH1</td><td class="small"><span title="p-5:ref/g">reference (g) in section 5</span></td></tr><tr><td>MCO 1900.16-CH1</td><td class="small">MCO 1900.16-CH3</td><td class="small"><span title="p-5:ref/u">reference (u) in section 5</span></td></tr><tr><td>MCO 5000.12E-CH1</td><td class="small">MCO 5000.12F, MCO 5000.12F-CH2</td><td class="small"><span title="p-5:ref/t">reference (t) in section 5</span></td></tr><tr><td>MCO 6110.3A-CH1</td><td class="small">MCO 6110.3A-CH4</td><td class="small"><span title="p-5:ref/f">reference (f) in section 5</span></td></tr><tr><td rowspan="5"><a href="policy-MCO-6100.13A-CH5.html">MCO 6100.13A-CH5</a><div class="small">MCO 6100.13A - Marine Corps Directives Compliance with Executive Order 14168</div></td><td>MCO 1326.6D-CH2</td><td class="small">MCO 1326.6-CH1</td><td class="small"><span title="p-6:ref/p">reference (p) in section 6</span></td></tr><tr><td>MCO 1400.31C-CH1</td><td class="small">MCO 1400.31D</td><td class="small"><span title="p-6:ref/n">reference (n) in section 6</span></td></tr><tr><td>MCO 1610.7A</td><td class="small">MCO 1610.7B</td><td class="small"><span title="p-6:ref/j">reference (j) in section 6</span></td></tr><tr><td>MCO 1900.16-CH2</td><td class="small">MCO 1900.16-CH3</td><td class="small"><span title="p-6:ref/k">reference (k) in section 6</span></td></tr><tr><td>MCO 6100.13A-CH4</td><td class="small">MCO 6100.13A-CH5</td><td class="small"><span title="front-matter:ref/c">reference (c) in the reference list</span></td></tr><tr><td rowspan="5"><a href="policy-NAVMC-1200.1L.html">NAVMC 1200.1L</a><div class="small">NAVMC 1200.1L - Military Occupational Specialties Manual</div></td><td>MCO 1300.8-CH1</td><td class="small">MCO 1300.8-CH2</td><td class="small"><span title="front-matter:ref2/c">reference (c) in the second reference list</span></td></tr><tr><td>NAVMC 3500.105C-CH1</td><td class="small">NAVMC 3500.105C</td><td class="small"><span title="front-matter:ref2/p">reference (p) in the second reference list</span></td></tr><tr><td>NAVMC 3500.119-CH1</td><td class="small">NAVMC 3500.119B</td><td class="small"><span title="front-matter:ref2/o">reference (o) in the second reference list</span></td></tr><tr><td>NAVMC 3500.2C-CH1</td><td class="small">NAVMC 3500.2D</td><td class="small"><span title="front-matter:ref2/n">reference (n) in the second reference list</span></td></tr><tr><td>NAVMC 3500.56C-CH1</td><td class="small">NAVMC 3500.56C</td><td class="small"><span title="front-matter:ref2/i">reference (i) in the second reference list</span></td></tr><tr><td rowspan="4"><a href="policy-MCO-1050.3J.html">MCO 1050.3J</a><div class="small">MCO 1050.3J - Regulations for Leave, Liberty, and Administrative Absence</div></td><td>DoD FMR </td><td class="small">DoD FMR VOL01-CH01, DoD FMR VOL01-CH02, DoD FMR VOL01-CH03</td><td class="small"><span title="front-matter:ref/b">reference (b) in the reference list</span></td></tr><tr><td>MCO 10110.47</td><td class="small">MCO 10110.47A</td><td class="small"><span title="front-matter:ref/o">reference (o) in the reference list</span></td></tr><tr><td>MCO 1300.8R</td><td class="small">MCO 1300.8-CH2</td><td class="small"><span title="front-matter:ref/g">reference (g) in the reference list</span></td></tr><tr><td>MCO 1900.16F</td><td class="small">MCO 1900.16-CH3</td><td class="small"><span title="front-matter:ref/k">reference (k) in the reference list</span></td></tr><tr><td rowspan="4"><a href="policy-MCO-1610.7B.html">MCO 1610.7B</a><div class="small">MCO 1610.7B - Performance Evaluation System (PES)</div></td><td>MCO 5100.29C</td><td class="small">MCO 5100.29C-CH2</td><td class="small"><span title="p-6:ref/u">reference (u) in section 6</span></td></tr><tr><td>MCO 5215.1K</td><td class="small">MCO 5215.1K-CH3</td><td class="small"><span title="p-6:ref/f">reference (f) in section 6</span></td></tr><tr><td>MCO 5354.1F</td><td class="small">MCO 5354.1G, MCO 5354.1G-CH1</td><td class="small"><span title="p-6:ref/x">reference (x) in section 6</span></td></tr><tr><td>MCO 5800.16-V1</td><td class="small">MCO 5800.16-CH1, MCO 5800.16-V01, MCO 5800.16-V02</td><td class="small"><span title="p-6:ref/y">reference (y) in section 6</span></td></tr><tr><td rowspan="3"><a href="policy-MARADMIN-2021-360.html">MARADMIN 360/21</a><div class="small">FY22 COMMANDANTâ€™S PROFESSIONAL INTERMEDIATE-LEVEL EDUCATION BOARD (CPIB)</div></td><td>MCO 1300.8</td><td class="small">MCO 1300.8-CH2</td><td class="small"><span title="narr:REF F">reference F in the message</span></td></tr><tr><td>MCO 1900.16-CH2</td><td class="small">MCO 1900.16-CH3</td><td class="small"><span title="narr:REF J">reference J in the message</span></td></tr><tr><td>MCO 7220.52F</td><td class="small">MCO 7220.52G</td><td class="small"><span title="narr:REF D">reference D in the message</span></td></tr><tr><td rowspan="3"><a href="policy-MARADMIN-2022-409.html">MARADMIN 409/22</a><div class="small">FISCAL YEAR 2023 (FY23) ENLISTED TO WARRANT OFFICER (RESERVE) SELECTION BOARD</div></td><td>MCO 1040.42B</td><td class="small">MCO 1040.42B-CH1</td><td class="small"><span title="narr:REF A">reference A in the message</span></td></tr><tr><td>MCO 6100.13A-CH4</td><td class="small">MCO 6100.13A-CH5</td><td class="small"><span title="narr:REF G">reference G in the message</span></td></tr><tr><td>MCO 6110.3A-CH3</td><td class="small">MCO 6110.3A-CH4</td><td class="small"><span title="narr:REF H">reference H in the message</span></td></tr><tr><td rowspan="3"><a href="policy-MCO-1200.13G.html">MCO 1200.13G</a><div class="small">MCO 1200.13G - Marine Corps Front-end Analysis Program</div></td><td>MCO 3500.72A</td><td class="small">MCO 3500.72A-CH1</td><td class="small"><span title="front-matter:ref/b">reference (b) in the reference list</span></td></tr><tr><td>NAVMC 1553.1</td><td class="small">NAVMC 1553.1A</td><td class="small"><span title="front-matter:ref/a">reference (a) in the reference list</span></td></tr><tr><td>NAVMC 3500.106</td><td class="small">NAVMC 3500.106A</td><td class="small"><span title="front-matter:ref/f">reference (f) in the reference list</span></td></tr><tr><td rowspan="2"><a href="policy-MARADMIN-2023-322.html">MARADMIN 322/23</a><div class="small">PROCUREMENT OF COMMERCIAL AMMUNITION AND EXPLOSIVES (A&amp;E)</div></td><td>MCO 3570.1C</td><td class="small">MCO 3570.1</td><td class="small"><span title="ref-line:REF E">reference E on the reference line</span></td></tr><tr><td>MCO 5100.29B-V8</td><td class="small">MCO 5100.29C-CH2</td><td class="small"><span title="ref-line:REF B">reference B on the reference line</span></td></tr><tr><td rowspan="2"><a href="policy-MARADMIN-2024-016.html">MARADMIN 016/24</a><div class="small">FISCAL YEAR 2025 ACTIVE AND RESERVE MARINE ATTACHÉ SELECTION BOARD: OFFICER</div></td><td>MCO 1300.8-CH1</td><td class="small">MCO 1300.8-CH2</td><td class="small"><span title="narr:REF B">reference B in the message</span></td></tr><tr><td>MCO 1900.16-CH2</td><td class="small">MCO 1900.16-CH3</td><td class="small"><span title="narr:REF C">reference C in the message</span></td></tr><tr><td rowspan="1"><a href="policy-DODI-1327.06.html">DoDI 1327.06</a><div class="small">DoD Instruction 1327.06 - Military Leave, Liberty, and Administrative Absence</div></td><td>DoD FMR </td><td class="small">DoD FMR VOL01-CH01, DoD FMR VOL01-CH02, DoD FMR VOL01-CH03</td><td class="small"><span title="front-matter:ref/u">reference (u) in the reference list</span></td></tr><tr><td rowspan="1"><a href="policy-MARADMIN-2018-011.html">MARADMIN 011/18</a><div class="small">CONVENING OF THE COLLEGE OF DISTANCE EDUCATION AND TRAINING COMMAND AND STAFF</div></td><td>MCO 1900.16G</td><td class="small">MCO 1900.16-CH3</td><td class="small"><span title="narr:REF A">reference A in the message</span></td></tr><tr><td rowspan="1"><a href="policy-MARADMIN-2023-051.html">MARADMIN 051/23</a><div class="small">EXPANSION OF THE MARINE CORPS MILITARY PARENTAL LEAVE PROGRAM</div></td><td>MCO 5000.12F-CH1</td><td class="small">MCO 5000.12F, MCO 5000.12F-CH2</td><td class="small"><span title="narr:REF C">reference C in the message</span></td></tr><tr><td rowspan="1"><a href="policy-MARADMIN-2024-253.html">MARADMIN 253/24</a><div class="small">FISCAL YEAR 2024 MARINE CORPS TALENT ACQUISITION PILOT</div></td><td>NAVMC 1200.1J</td><td class="small">NAVMC 1200.1L</td><td class="small"><span title="narr:REF H">reference H in the message</span></td></tr><tr><td rowspan="1"><a href="policy-MARADMIN-2026-026.html">MARADMIN 026/26</a><div class="small">SOLICITATION OF POLICY ISSUES FOR MARINE CORPS RESERVE POLICY</div></td><td>MCO 5420R.8H</td><td class="small">MCO 5420R.8H-CH1</td><td class="small"><span title="narr:REF C">reference C in the message</span></td></tr><tr><td rowspan="1"><a href="policy-MARADMIN-2026-043.html">MARADMIN 043/26</a><div class="small">FY27 HQMC SPECIAL DUTY ASSIGNMENT SCREENING TEAM (HSST)</div></td><td>MCO 1300.8-CH1</td><td class="small">MCO 1300.8-CH2</td><td class="small"><span title="narr:REF C">reference C in the message</span></td></tr><tr><td rowspan="1"><a href="policy-MARADMIN-2026-191.html">MARADMIN 191/26</a><div class="small">CHANGES TO RESERVE COMPONENT MATERNITY LEAVE (RCML) AND RESERVE</div></td><td>MCO 5000.12F-CH1</td><td class="small">MCO 5000.12F, MCO 5000.12F-CH2</td><td class="small"><span title="narr:REF D">reference D in the message</span></td></tr><tr><td rowspan="1"><a href="policy-MARADMIN-2026-274.html">MARADMIN 274/26</a><div class="small">FISCAL YEAR 2027 COMMANDANT&#x27;S PROFESSIONAL INTERMEDIATE-LEVEL</div></td><td>MCO 1900.16-CH2</td><td class="small">MCO 1900.16-CH3</td><td class="small"><span title="narr:REF E">reference E in the message</span></td></tr><tr><td rowspan="1"><a href="policy-MCO-1616.1.html">MCO 1616.1</a><div class="small">MCO 1616.1 - Junior Enlisted Performance Evaluation System (JEPES)</div></td><td>MCO 5215.1K</td><td class="small">MCO 5215.1K-CH3</td><td class="small"><span title="front-matter:ref/f">reference (f) in the reference list</span></td></tr><tr><td rowspan="1"><a href="policy-SECNAVINST-1400.1D.html">SECNAVINST 1400.1D</a><div class="small">SECNAVINST 1400.1D - Officer Competitive Categories for the Active Duty List of the Navy a</div></td><td>NAVMC 1200.1K</td><td class="small">NAVMC 1200.1L</td><td class="small"><span title="front-matter:ref/f">reference (f) in the reference list</span></td></tr><tr><td rowspan="1"><a href="policy-SECNAVINST-1610.4A.html">SECNAVINST 1610.4A</a><div class="small">SECNAVINST 1610.4A - Department of the Navy Policy on Handling Protest, Extremist, and Cri</div></td><td>MCO 1620.2D</td><td class="small">MCO 1620.2</td><td class="small"><span title="p-10:ref/k">reference (k) in section 10</span></td></tr></table>
+
+<h2 id="unheld">Citing something this set does not hold</h2>
+<p class="lede">220 references, and the status of what they name is unknown
+here. That is stated, not closed: the tool refuses to guess whether an
+instruction it has never seen is still in force.
+<a href="connections.html">The network</a> shows every one as an edge to a
+document outside the set.</p>
+
+<p class="note">This page compares the statuses and editions this set records. The
+issuing authority's copy governs, and a row here is a reason to open it, not a
+determination. Every count is produced by the build from the reference lists as
+printed; none is typed.</p>
+<footer><p>Generated from the authority report by tools/render_currency.py. This
+site is an unofficial reference - the issuing authority's copy governs.</p></footer>
+</main></body></html>
