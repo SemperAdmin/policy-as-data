@@ -58,16 +58,7 @@ TYPE_LABEL = {"MCO": "Marine Corps Orders", "MARADMIN": "MARADMIN messages",
               "DODI": "DoD instructions", "USC": "U.S. Code sections"}
 
 
-def display_id(doc_id: str) -> str:
-    """DODI-1308.3 -> DoDI 1308.3, MCO-6100.14 -> MCO 6100.14. Readers see the
-    number the way the document prints it, never the store key."""
-    prefix, _, rest = doc_id.partition("-")
-    nice = {"DODI": "DoDI", "DODD": "DoDD", "DTM": "DTM", "SECNAVINST": "SECNAVINST",
-            "MARADMIN": "MARADMIN", "MCO": "MCO", "NAVMC": "NAVMC", "USC": "U.S.C."}.get(prefix, prefix)
-    if prefix == "MARADMIN" and re.match(r"\d{4}-\d{3}", rest):
-        y, n = rest.split("-")
-        return f"MARADMIN {n}/{y[2:]}"
-    return f"{nice} {rest}"
+from render_currency import display as display_id  # noqa: E402
 
 
 def policy_link(doc_id: str) -> str:
@@ -114,6 +105,15 @@ def measure() -> dict:
         f"{policy_link(tgt)}, {report['superseded_status'].get(tgt, 'no longer in force')}"
         for tgt, docs in cs.items()) or "none found in this set"
 
+    # The most depended-upon document, for the impact pointer.
+    nb = report.get("named_by", {})
+    if nb:
+        top = next(iter(nb))
+        v["most_named"] = policy_link(top)
+        v["most_named_n"] = len(nb[top])
+    else:
+        v["most_named"], v["most_named_n"] = "nothing", 0
+
     # Verification, derived the same way the verification page derives it.
     quorum, _dev = load_policy()
     rows = derive(live_rule_assertions(DATA), load_ledger(LEDGER), quorum)
@@ -139,7 +139,7 @@ def measure() -> dict:
     v["n_not_compared"] = n_nc
     for k, val in v.items():
         if isinstance(val, int) and k not in ("n_findings", "n_not_compared", "verified",
-                                              "assertions", "n_cites_superseded"):
+                                              "assertions", "n_cites_superseded", "most_named_n"):
             v[k] = f"{val:,}"
     return v
 

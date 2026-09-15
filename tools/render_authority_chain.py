@@ -19,6 +19,7 @@ Three rules the rendering obeys, all inherited from the store's discipline:
 import argparse
 import html
 import json
+from atomicio import write_text
 import os
 import re
 
@@ -383,8 +384,7 @@ def render(records, seed, title, gaps, out_path, subtitle="", prefer=None):
              f"only, section text not ingested.</p></footer>")
     P.append("</main></body></html>")
 
-    with open(out_path, "w", encoding="utf-8") as fh:
-        fh.write("\n".join(P))
+    write_text(out_path, "\n".join(P))
     return nodes, edges, chain
 
 
@@ -462,8 +462,7 @@ def render_index(results, out_path):
              f"Statute and Department of Defense records are metadata-grade: "
              f"identity, dates, supersession, and reference lists only, section "
              f"text not ingested.</p></footer></main></body></html>")
-    with open(out_path, "w", encoding="utf-8") as fh:
-        fh.write("\n".join(P))
+    write_text(out_path, "\n".join(P))
 
 
 def main():

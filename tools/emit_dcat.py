@@ -33,7 +33,10 @@ Two DCAT-US 3.0 notes that bite:
 
 import argparse
 import json
+import sys
 import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from atomicio import write_json  # noqa: E402
 from collections import Counter
 
 SCHEMA = ("https://raw.githubusercontent.com/GSA/dcat-us/main/schemas/"
@@ -158,8 +161,7 @@ def main():
     catalog, recs, types, statuses = build(
         args.store, args.base_url.rstrip("/"), args.publisher,
         args.contact_name, args.contact_email)
-    with open(args.out, "w", encoding="utf-8") as fh:
-        json.dump(catalog, fh, indent=1, ensure_ascii=False)
+    write_json(args.out, catalog, indent=1)
 
     ds = catalog["dataset"][0]
     print(f"{args.out}: 1 dataset, {len(ds['distribution'])} distributions, "

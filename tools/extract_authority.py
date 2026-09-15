@@ -365,12 +365,14 @@ def main():
 
     # Status of every record in the set, so a citation from an active document
     # to a superseded or cancelled one can be reported. Ids and status only.
-    status_of = {}
+    status_of, title_of = {}, {}
     for name in names:
         with open(os.path.join(args.src, name), encoding="utf-8") as fh:
             r0 = json.load(fh)
         status_of[r0["id"]] = r0.get("status")
-    cites_superseded = {}
+        title_of[r0["id"]] = r0.get("title") or r0["id"]
+    cites_superseded, cites_superseded_detail, drift_edges, named_by = {}, [], [], {}
+    holds_rx = re.compile(r"store-holds=([^;]+)")
 
     for name in names:
         with open(os.path.join(args.src, name), encoding="utf-8") as fh:
@@ -389,13 +391,26 @@ def main():
             by_tier[tier] = by_tier.get(tier, 0) + 1
             if m.get("confidence") in ("named-not-held", "revision-drift"):
                 gap_docs.setdefault(m["target"], []).append(rec["id"])
+            read_from = (m.get("resolution") or "").split(";")[0].strip()
+            named_by.setdefault(m["target"], []).append(
+                {"citing": rec["id"], "read_from": read_from,
+                 "confidence": m.get("confidence")})
+            if m.get("confidence") == "revision-drift":
+                h = holds_rx.search(m.get("resolution") or "")
+                drift_edges.append({"citing": rec["id"], "target": m["target"],
+                                    "holds": (h.group(1).split(",") if h else []),
+                                    "read_from": read_from})
             if (rec.get("status") == "active"
                     and status_of.get(m.get("target")) in ("superseded", "cancelled")):
                 cites_superseded.setdefault(m["target"], []).append(rec["id"])
+                cites_superseded_detail.append({
+                    "citing": rec["id"], "target": m["target"],
+                    "target_status": status_of[m["target"]], "read_from": read_from})
         write_json(os.path.join(args.out, name), rec)
 
     # No generated_at. The report is a pure function of the store and the
     # index; a clock field made two identical builds differ by one line.
+    totals["known"] = len(known) if known else len(store_ids)
     report = {
         "totals": totals,
         "edges_by_tier": {k: {"count": v, "name": TIERS.get(k, k)}
@@ -410,10 +425,20 @@ def main():
                              for k, v in sorted(cites_superseded.items(),
                                                 key=lambda kv: -len(kv[1]))},
         "superseded_status": {k: status_of[k] for k in cites_superseded},
+        # Detail for the currency and impact pages, so they read config only.
+        # Identifiers, statuses, titles, and the paragraph a citation was read
+        # from. No provision text, so nothing here can carry a contact.
+        "cites_superseded_detail": sorted(cites_superseded_detail,
+                                          key=lambda d: (d["target"], d["citing"])),
+        "drift_edges": sorted(drift_edges, key=lambda d: (d["citing"], d["target"])),
+        "named_by": {k: sorted(v, key=lambda d: d["citing"])
+                     for k, v in sorted(named_by.items(),
+                                        key=lambda kv: (-len(kv[1]), kv[0]))},
+        "status": dict(sorted(status_of.items())),
+        "titles": dict(sorted(title_of.items())),
         "per_document": per_doc,
     }
-    with open(args.report, "w", encoding="utf-8") as fh:
-        json.dump(report, fh, indent=1)
+    write_json(args.report, report, indent=1)
 
     print(f"documents        {totals['docs']}")
     if known:

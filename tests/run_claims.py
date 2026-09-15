@@ -236,7 +236,25 @@ def mech_evaluate_fixture(fx, fixtures):
     }
 
 
+def mech_report(fx, fixtures):
+    """Consistency of the live authority report, which the currency and impact
+    pages read. Live data by design: the claim is about the report the build
+    just wrote, not about a fixture."""
+    r = json.loads((ROOT / "config" / "authority_report.json").read_text(encoding="utf-8"))
+    status = r.get("status", {})
+    gone = r.get("cites_superseded_detail", [])
+    drift = r.get("drift_edges", [])
+    nb = r.get("named_by", {})
+    return {
+        "gone_targets_all_gone": all(status.get(d["target"]) in ("superseded", "cancelled") for d in gone),
+        "gone_citers_all_active": all(status.get(d["citing"]) == "active" for d in gone),
+        "drift_holds_equal_target": sum(1 for d in drift if d["target"] in d["holds"]),
+        "named_by_sum_equals_edges": sum(len(v) for v in nb.values()) == r["totals"]["edges"],
+    }
+
+
 MECHANISMS = {
+    "report": mech_report,
     "evaluate_fixture": mech_evaluate_fixture,
     "reconcile": mech_reconcile,
     "reconcile_unassigned": mech_reconcile_unassigned,

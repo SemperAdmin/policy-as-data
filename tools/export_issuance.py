@@ -40,6 +40,10 @@ import argparse
 import json
 import os
 import re
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from atomicio import write_text  # noqa: E402
 from datetime import datetime, timezone
 from xml.sax.saxutils import escape, quoteattr
 
@@ -319,8 +323,7 @@ def main():
             continue
         xml = to_xml(rec, not args.no_mask)
         path = os.path.join(args.out, f"{rec['id']}.issuance.xml")
-        with open(path, "w", encoding="utf-8") as fh:
-            fh.write(xml)
+        write_text(path, xml)
         written += 1
         for sec in rec.get("sections", []):
             for p in sec.get("provisions") or []:

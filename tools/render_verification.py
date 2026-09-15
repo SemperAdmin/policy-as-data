@@ -32,6 +32,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from atomicio import write_text  # noqa: E402
 from reconcile import (  # noqa: E402
     CONCEPTS, UNITS, gather, load_units, reconcile,
 )
@@ -534,7 +535,7 @@ def main() -> int:
                   Path(args.concepts), Path(args.units))
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(page, encoding="utf-8", newline="\n")
+    write_text(out, page)
     print(f"    wrote {out} ({len(page):,} bytes)")
     return 0
 
