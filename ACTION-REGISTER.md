@@ -3,6 +3,7 @@
 Date: 2026-08-08. Owner: Stephen. Status: current.
 Last verified against disk: 2026-08-08, items 0.1, 0.4, 0.7, 0.8.
 Updated 2026-09-11: items 1.8 to 1.11 added from `resources/31-oceans-sumo-roe-paper.md`, accepted by the owner. Track 5 added from `SITE-PLAN.md`, adopted; 5.10 decided, fold.
+Updated 2026-09-15: Track 6, demo readiness, added from `CONCEPT.md`. Tracks 1 and 5 are not cancelled and are not the demo path; see `CONCEPT.md` section 3.1 for why.
 
 Consolidates every open item raised this session across `CHARTER.md`,
 `POC-PLAN.md`, `REUSE-ASSESSMENT.md`, `VERIFICATION-DESIGN.md`,
@@ -158,6 +159,65 @@ end-to-end thread walked by no page. Order: 5.1 and 5.4 first, in parallel.
 | **5.11** | `viewer/` ruling recorded in one line; `README.md` "What is here" stops listing retired code as current. | - | P1 |
 | **5.12** | Interactive evaluator. Needs a decision on where logic lives before any code. | 5.6 shown to someone | P2 |
 | **5.13** | **DEFECT, found 2026-09-15.** Exported XML repeats provision elements and collides identifiers. 14 of 56 exports carry more `<provision>` elements than the store holds provisions; `MCO-1400.31D.issuance.xml` carries 3,932 elements for 378 provisions and one identifier 378 times. Across all exports 19,528 distinct identifiers against 20,178 store provisions. The store is right; the export is wrong. Every export still validates against the XSD, so schema validation did not catch it. Investigate `export_issuance.py` before the exports are offered to anyone; the identifier claim ("every provision has a stable identifier") is false for these files as published. | - | P0 |
+
+---
+
+## 5b. Track 6 - demo readiness. Added 2026-09-15.
+
+Scope: what the application needs to be demonstrable to a general officer and
+defensible under approval. Derived from `CONCEPT.md` and the six sources in
+`CONCEPT-EVIDENCE.md`. **The owner's role is the application.** Outreach,
+the duplication question, and the ask are named in section 5c and are not this
+track.
+
+### The demo, five beats
+
+A general gives five minutes. Each beat lands a number and needs no
+explanation; Ashe in S5 is the evidence for what happens otherwise.
+
+| # | Beat | State |
+|---|---|---|
+| 1 | Which of your orders rest on something that no longer exists? Four today, each naming the citing order, the dead target, and why it is dead | Data exists, no page. **6.1** |
+| 2 | Click one. MCO 6100.14, paragraph 5, reference (a), cites DoDI 1308.3, cancelled March 2022 | Works today |
+| 3 | If DoDI 1327.06 reissues tomorrow, what breaks? | Computed, not framed. **6.2** |
+| 4 | How do I know this is right? One withheld value | Works today |
+| 5 | Is this just 56 documents? | Missing. **6.3**, and it decides the brief |
+
+### The work
+
+| # | Item | Why | Size |
+|---|---|---|---|
+| **6.1** | **Currency page.** What rests on something no longer in force. Rows from `authority_report.cites_superseded` and `superseded_status`; each links the citing paragraph, which `edge_meta.resolution` already carries (e.g. `p-5:ref/a`). Reader words, no codes | Beat 1, the opening | small, data exists |
+| **6.2** | **Impact view.** For any document: what names it, at which paragraph, framed as what breaks if this reissues. `lineage.build_inbound` already computes it and every policy page already shows it as inbound traffic; this is framing plus an index sorted by how many documents name a target | Beat 3, and the question three constituencies actually asked | small |
+| **6.3** | **Scale run.** Edge extraction and the currency and drift measurements across all 17,514 documents at `E:\GunnyBot\canonical`. **Report only: counts and identifiers, no text, no contacts, no rendered pages.** Needs a `--report-only` flag so nothing is written back. `SESSION_HANDOFF.md` non-negotiable 1 keeps that store untouched; non-negotiable 2 keeps the seven Statement C records out, and that gate must hold even for a counts report | Beat 5. Today the honest answer to "how many orders does the Marine Corps have" is 17,500 and we did 56, which is a scale a person can do by hand. This is the number that makes the brief | medium |
+| **6.4** | **Home opens on the currency finding**, not the reconciliation thread. Most of the page already reads this way; the lead and the order of the three findings change | The demo opens correctly | small |
+| **6.5** | **One time measurement.** Time a person answering one of these questions from the source PDFs, then with the tool. N of 1, and say so on its face | The whole pitch is priced in time and the project has never measured a minute. `POC-PLAN.md` S1 to S7 all measure correctness | tiny |
+| **6.6** | **Fix the export identifier defect**, item 5.13. `MCO-1400.31D.issuance.xml` carries 3,932 provision elements for 378 provisions and one identifier 378 times | If a technical reviewer opens the XML, that is the moment the room turns. The identifier claim is false for these files as published | unknown until diagnosed |
+| **6.7** | **Confirm the deployed cloud.gov site matches a local build** | A stale live demo is an unforced error | tiny |
+| **6.8** | **Settle the emblem, then finish About.** `NOTICE` section 4 carries the open question | "Is this official" will be asked in the room | owner decision, then small |
+
+Order: 6.1, 6.2, 6.4 together, about a day. 6.3 and 6.5 in parallel, and they
+are the pair that makes the demo land. Then 6.6 to 6.8.
+
+### Needed the moment leadership says yes, not before
+
+| # | Item | Why |
+|---|---|---|
+| **6.9** | A fresh clone that builds. `canonical/` is gitignored, `build.sh` reads it at stage 1, and `CLAUDE.md` constraint 10 claims a fresh clone builds. Both cannot be true | Approval means other people. Today nobody but the owner can run this |
+| **6.10** | `CONTRIBUTING.md` and a governance stub. `CHARTER.md` 5 records the collaborative space as not started, and the announcement recruited volunteers for four things the repository forbids | Same |
+| **6.11** | One Training and Readiness manual encoded, as the second corpus. T&R is confirmed (S2, owner 2026-09-15), TECOM owns it, the grammar takes it unchanged, and the corpus holds none | The impact question is the daily question in a T&R manual rather than an occasional one. **Read one real manual first**; its structure is currently asserted from general knowledge, not measured here |
+
+---
+
+## 5c. Not the application, and not this owner's lane
+
+Recorded so they are not lost. `CONCEPT.md` section 3.6.
+
+| # | Item | Why it matters to the brief |
+|---|---|---|
+| **6.A** | **The duplication question.** Why does the Directive Control Point not already do this. Open since the first analysis, answered nowhere in the tree | The first question a general asks. The app supplies part of the answer: the current system did not catch four orders resting on a cancelled instruction |
+| **6.B** | **The ask.** Nobody has written down what leadership is being asked to approve: people, corpus access, a decision on where it lives, or permission to continue | A brief with no ask gets a nod and no follow-up |
+| **6.C** | GPO's two standing offers and Ashe's wish list, all unanswered | The only outside validation the programme has |
 
 ---
 
