@@ -1,0 +1,25 @@
+{
+  "$comment": "Fixed inputs for docs/scenarios.html. The page runs tools/evaluate.py on each and renders the result: every decision line with its citation, every withheld line with the rule it waits on, and what the engine refuses by name. Inputs are fixed so the page is a build output like every other; it is a demonstration of cited computation against encoded rules, not a calculator and not an entitlement determination. ACTION-REGISTER 5.6.",
+  "schema_version": "1.0",
+  "established": "2026-09-15",
+  "scenarios": [
+    {
+      "id": "birth-no-leave-taken",
+      "title": "A birth, no leave taken yet",
+      "narrative": "A qualifying birth on 1 March 2027. Evaluated on 1 June 2027 with no parental leave used.",
+      "args": {"event_date": "2027-03-01", "as_of": "2027-06-01", "used_days": 0}
+    },
+    {
+      "id": "birth-short-increment",
+      "title": "Seventy days used, a five-day block proposed",
+      "narrative": "The same birth. Seventy days already used and a further five-day increment proposed on 1 June 2027.",
+      "args": {"event_date": "2027-03-01", "as_of": "2027-06-01", "used_days": 70, "increments_used": 2, "proposed_increment": 5}
+    },
+    {
+      "id": "two-events-one-day-apart",
+      "title": "Two qualifying events a day apart",
+      "narrative": "Two qualifying events, 1 and 2 March 2027. Whether they count as one event turns on the merge window.",
+      "args": {"event_date": "2027-03-01", "second_event_date": "2027-03-02", "as_of": "2027-06-01", "used_days": 0}
+    }
+  ]
+}
