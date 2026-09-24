@@ -642,6 +642,22 @@ claim of this project is that its provenance can be trusted.
   covers. Claims LN9-LN12. The trap: **Task 7 attestation must bind the new
   hash** - an attestation recorded against the clause-only hash reads
   INVALIDATED, correctly.
+  - **Correction, 2026-09-24 (residual fix R11): the hash-scope fix was
+    exponential.** `preceded_by` bound every earlier clause in the group,
+    each with its own full dependency hash - which itself bound every
+    clause before it, recursively. Measured: 14.6s to hash 20 clauses
+    sharing one item; a group of 60 would not finish in reasonable time.
+    Fix: `preceded_by` now binds only the one clause immediately before it
+    in the group (`[id, clause_dependency_hash(doc, id)]`, or `null` for
+    the first clause) - the chain transitively covers every earlier clause,
+    since each predecessor's own hash already binds its predecessor, so
+    coverage is unchanged and cost is linear. `attest.py show_clause` still
+    lists every earlier clause id in the group (read from the document, not
+    from the payload) and adds one line stating each is attested on its own
+    through the chain. Claim LC8 (60 clauses, distinct hashes, under two
+    seconds) and LN19 (invalidating the first clause of a two-clause group
+    still invalidates the last, proving the chain's coverage did not
+    shrink). Claims table: 55 rows.
 - **An unadmitted clause could be skipped by its own guard.** `engine.py`
   evaluated a clause's guard before its admission, so an INVALIDATED clause
   whose guard came out false was passed over and a later admitted clause
@@ -651,6 +667,21 @@ claim of this project is that its provenance can be trusted.
   the operators were called total when they are partial (now EngineError
   plus static shape checks, LN14-LN16) and the proof omitted what earlier
   clauses in the group touched (LC7).
+  - **Correction, 2026-09-24 (residual fix R12): a line could still vanish.**
+    An unadmitted clause blocks the clauses after it (fixed above), but if
+    a group's own guards and `when`s all read false - including an
+    unadmitted clause's, which is not trusted to decide the group does not
+    apply - the group produced nothing at all: no finding, no withheld
+    entry, the item simply absent from the decision. Fix: in
+    `evaluate_clauses`, if a group's loop ends without emitting or
+    withholding anything and any clause in it is not VERIFIED, one withheld
+    entry is emitted for the item, citing the first unadmitted clause's
+    rule and naming every unadmitted clause in the group, file order.
+    Admitted-only groups are unaffected, so the parity claims (LC2-LC4b) did
+    not change. Claims LN17, LN18. Consequence: on a ledger carrying
+    unattested clauses, a group whose guards are all false now shows a
+    withheld line instead of nothing - the safe direction, and it
+    disappears once the clauses are attested. Claims table: 55 rows.
 
 ---
 
