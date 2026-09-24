@@ -46,6 +46,7 @@ PAGES = [
     ("about.html", "About", "about.html"),
     ("search.html", "Search", "search.html"),
     ("accessibility.html", "Accessibility", "about.html"),
+    ("ontology.html", "Ontology", "ontology.html"),
     # The MOS strand, folded into the build as fragments (ACTION-REGISTER 5.10,
     # first half). Generating the lineage page from the family manifest is the
     # second half and is still open.
@@ -167,6 +168,13 @@ def measure() -> dict:
         v["thread_verdict"] = f"Not yet. {lead['detail']}."
     else:
         v["thread_verdict"] = "Not yet. The concept is not in the reconciliation report."
+    # The ontology page: what the project's own ontology holds, counted from
+    # the schema and the concept register rather than typed.
+    ttl = (ROOT / "schema" / "authority-ontology.ttl").read_text(encoding="utf-8")
+    v["n_ontology_classes"] = len(re.findall(r"\ba owl:Class\b", ttl))
+    concepts = json.loads((ROOT / "config" / "rule_concepts.json").read_text(encoding="utf-8"))
+    v["n_concepts"] = len(concepts["concepts"])
+
     v["n_findings"] = len(findings)
     v["n_not_compared"] = n_nc
     for k, val in v.items():

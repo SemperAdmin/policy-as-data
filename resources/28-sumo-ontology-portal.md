@@ -93,3 +93,68 @@ pass restricted it to, which is a deliberate change, recorded here and in
 Confidence 0.8. Sizes, license strings, repository counts, and the Law.kif
 measurement were read directly. The IEEE ownership claim was not resolved and is
 carried as unconfirmed.
+
+## Addendum 2026-09-24: the method, read from the primary literature
+
+Rows 27 to 31 were written without the papers. On 2026-09-24 every paper file
+linked from the author's site was retrieved (78 files, row 27) and the method
+was read from the papers themselves. The files are held in a local reference
+library outside this repository because they are third-party copyright; the
+filenames below are the author's own and resolve at <https://www.adampease.com/>.
+
+**Independence is unchanged.** All of this is one research group. The
+independent evaluation required above is still owed.
+
+### What the papers confirm
+
+| Claim | Stated in |
+|---|---|
+| Size: 106,633 axioms and 16,541 symbols with every domain file loaded; `Merge.kif` alone is 5,477 axioms. Earlier papers give 20,000 terms and 70,000 to 80,000 axioms. | `Sigma-rs.pdf`, `IKBETSigma-journal.pdf`, `PeaseFLAIRS2022.pdf` |
+| Reasoning runs only after translation to first-order TPTP (FOF or TFF). "All the strictly higher-order content in SUMO is lost in translation to first-order." Predicate variables range only over predicates in the knowledge base; row variables are macro-expanded to arity 7. | arXiv 2303.04148, `pe_sch_sigma.pdf` |
+| At full size the prover needs relevance filtering. Handing Vampire the whole knowledge base solved 18 of 39 test problems at 60 s; the Rust build with SInE pre-selection solved 39 of 39 at about 2 s each. | `Sigma-rs.pdf` |
+| Consistency cannot be certified. One check produced a contradiction with a 120-step proof; the authors report "a few each year" and a regression suite of about 50 tests. | `ontocheck.pdf`, `PeaseFLAIRS2022.pdf` |
+| The deontic operators (`modalAttribute` with Obligation, Permission, Prohibition; `confersNorm`, `holdsObligation`) are exercised only in hand-written THF test problems. The automated SUO-KIF to THF translator is unfinished. Universal conjectures fail under system D; a contrary-to-duty case yields a wrong refutation the authors are still investigating. THF carries no arithmetic. | `FEENER-ARQNL.pdf`, `PeaseCrouchFest.pdf` |
+| The working rule system, COLREG, uses plain first-order predicates (`giveWayVessel`, `standOnVessel`), not the deontic operators. Rules were hand-encoded. Exceptions are hand-written guards on each rule. 171 of 172 refutations correct over 288 scenarios, 0.531 s mean. | `TimberPeaseCOLREG-CSCI2025.pdf` |
+| Calendar arithmetic is axiomatized in typed first-order logic with integers. Vampire proved all 200 benchmark conjectures and Z3 validated them. It needs 47 hand-proved anchor facts tailored to the benchmark, and it is not yet integrated with SUMO. | `CalendarLogic.pdf` |
+| The English-to-logic pipeline was tested on 100 sentences from an unnamed policy corpus: 59 to 62 percent of outputs were both syntactically valid and used only SUMO terms. **Whether the meaning is correct was not measured.** The prover checks consistency, not faithfulness. | `NESY_Conference_Paper.pdf`, `Edinburgh25.pdf` |
+| No paper names a license. They say "open source" and "free". The contradiction recorded above is not resolved by the literature. | all |
+
+### What changes in this row
+
+Nothing in the verdict. **EVALUATE** stands, and the reading strengthens the
+argument against early adoption on three new grounds.
+
+1. **The part a policy domain needs most is the least mature part.** Deontic
+   operators, embedded formulas, and temporal validity are exactly the content
+   the first-order translation drops or the THF route handles experimentally.
+   Defeasibility, norm conflict, precedence, and the in-force interval of a
+   norm (effective date, cancellation, supersession) are not addressed in any
+   paper. LegalRuleML addresses all four.
+2. **No paper computes an entitlement quantity.** A prover answers proof or
+   timeout. `evaluate.py` answers "84 days, cited" or refuses by name. A timeout
+   is not a verdict this project can publish.
+3. **Automated translation does not reduce the verification burden.** At the
+   authors' own best, four in ten outputs fail a well-formedness check and the
+   six that pass are unchecked for meaning. Every rule would still need a
+   person to read the paragraph, which is the step `UNVERIFIED` already forces.
+
+And one ground **for**, stated plainly: SUMO is the only candidate in the
+register with a world model the rules could quantify over, and the proof
+object is a derivation from facts to conclusion, which is the "show its work"
+half of `CONCEPT.md` section 1 done at depth.
+
+### Trigger, restated
+
+Unchanged from row 31: the trigger fires when a rule's value is a **class**
+rather than a number, or when two or more encoded orders interact. M5
+promotion eligibility is the first candidate. Then run SUMO plus Sigma and
+LegalRuleML plus SHACL on that one worked example and decide once.
+
+### Actions from this pass
+
+| # | Action | Priority | State |
+|---|---|---|---|
+| 28.1 | Port the CalendarLogic benchmark shape (leap years, month ends, Nth weekday, offsets across year boundaries) into positive and negative claims for the date arithmetic in `evaluate.py`. Stdlib only. Targets the forfeiture-window defect class. | P1 | OPEN |
+| 28.2 | Optional `sumo_term` cross-reference on `config/rule_concepts.json`, assigned by a person, never used to derive anything. Held until the license contradiction is resolved in writing. | P2 | HELD |
+| 28.3 | Independent evaluation: one third-party source on SUMO, with BFO under ISO/IEC 21838-2 as the baseline. | before adoption | OPEN |
+| 28.4 | Rejected for now: a prover in the build path, SUMO deontic operators as the rule format, automated English-to-logic translation. | - | REJECTED |
