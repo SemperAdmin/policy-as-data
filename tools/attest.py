@@ -37,7 +37,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from normalize import clause_hash, file_hash, rule_hash  # noqa: E402
+from normalize import (  # noqa: E402
+    clause_dependency_hash, clause_dependency_payload, file_hash, rule_hash)
 from verify_status import (  # noqa: E402
     DATA, LEDGER, POLICY, derive, live_assertions, live_rule_assertions, load_ledger, load_policy,
 )
@@ -104,8 +105,13 @@ def load_clause(file_name: str, clause_id: str, data_dir: Path):
     raise SystemExit(f"clause {clause_id} not found in {file_name}")
 
 
-def show_clause(row: dict, clause: dict) -> None:
+def show_clause(row: dict, clause: dict, doc: dict) -> None:
+    """Show a clause and everything its attestation binds. The ledger binds
+    clause_dependency_hash, so the verifier is shown the facts, input specs and
+    earlier clauses that hash covers - an attestation must not cover more than
+    the verifier was shown."""
     citation = clause.get("citation") or {}
+    covers = clause_dependency_payload(doc, clause["id"])
     print("=" * 72)
     print(f"ASSERTION   {row['assertion']}")
     print(f"STATUS      {row['status']}  ({row.get('detail','')})")
@@ -123,6 +129,26 @@ def show_clause(row: dict, clause: dict) -> None:
         print("-" * 72)
         print("COMMENT (not hashed, not part of the claim):")
         print(f"  {clause['$comment']}")
+    print("-" * 72)
+    print("THIS ATTESTATION ALSO COVERS what the clause's answer depends on:")
+    print("FACTS REACHED")
+    for name, expr in covers["facts"].items():
+        print(f"  {name} = {json.dumps(expr, ensure_ascii=False)}")
+    if not covers["facts"]:
+        print("  (none)")
+    print("INPUT SPECS")
+    for name, spec in covers["inputs"].items():
+        print(f"  {name}: {json.dumps(spec, ensure_ascii=False)}")
+    if not covers["inputs"]:
+        print("  (none)")
+    print("PRECEDED BY (earlier clauses in this item group; first match wins)")
+    for cid, _digest in covers["preceded_by"]:
+        print(f"  {cid}")
+    if not covers["preceded_by"]:
+        print("  (none - this clause is tried first)")
+    print(f"RULES FILE  {covers['rules_file']}")
+    print("You are attesting all of the above, not only the clause: a later edit")
+    print("to any fact, input spec or earlier clause listed here invalidates it.")
     print("-" * 72)
     print("Open the issuing authority's copy. Confirm the cited paragraph states")
     print("this condition and this result. If basis is 'inferred', confirm the")
@@ -328,8 +354,8 @@ def main() -> int:
 
     if target["kind"] == "clause":
         doc, item = load_clause(target["file"], target["clause_id"], data_dir)
-        show_clause(target, item)
-        content_hash = clause_hash(item)
+        show_clause(target, item, doc)
+        content_hash = clause_dependency_hash(doc, item["id"])
     else:
         doc, item = load_rule(target["file"], target["rule_id"], data_dir)
         show(target, item)

@@ -33,7 +33,8 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from normalize import clause_assertion_id, clause_hash, rule_assertion_id, rule_hash  # noqa: E402
+from normalize import (  # noqa: E402
+    clause_assertion_id, clause_dependency_hash, rule_assertion_id, rule_hash)
 from verify_status import LEDGER, POLICY, VERIFIED, derive, load_ledger, load_policy  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -239,7 +240,7 @@ def run(logic_path, inputs, *, ledger_path=LEDGER, policy_path=POLICY, today=Non
 
     clause_live = {clause_assertion_id(identifier, c["id"]):
                    {"assertion": clause_assertion_id(identifier, c["id"]), "kind": "clause",
-                    "hash": clause_hash(c)} for c in doc["clauses"]}
+                    "hash": clause_dependency_hash(doc, c["id"])} for c in doc["clauses"]}
     admitted = admit(clause_live, ledger, quorum)
     clause_status = {c["id"]: admitted[clause_assertion_id(identifier, c["id"])]
                      for c in doc["clauses"]}
