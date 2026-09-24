@@ -599,6 +599,72 @@
         "docs_with_element_count_mismatch": 0,
         "total_elements_equal_total_provisions": true
       }
+    },
+    {
+      "id": "LC1",
+      "polarity": "positive",
+      "claim": "A clause hash changes when anything that changes a decision changes: its condition, value, note, requires, citation, or basis",
+      "mechanism": "clause_hash",
+      "fixture": {
+        "base": {
+          "id": "X",
+          "item": "i",
+          "cite": "R",
+          "requires": [
+            "R"
+          ],
+          "basis": "cited",
+          "citation": {
+            "identifier": "/us/x/p1",
+            "label": "p1"
+          },
+          "value": {
+            "op": "rule",
+            "id": "R"
+          }
+        },
+        "edit": {
+          "value": {
+            "op": "const",
+            "value": 1
+          }
+        }
+      },
+      "expect": {
+        "hash_changed": true
+      }
+    },
+    {
+      "id": "LN1",
+      "polarity": "negative",
+      "claim": "A clause hash does NOT change when only the $comment or the legacy inline status changes; neither is part of the claim",
+      "mechanism": "clause_hash",
+      "fixture": {
+        "base": {
+          "id": "X",
+          "item": "i",
+          "cite": "R",
+          "requires": [
+            "R"
+          ],
+          "basis": "cited",
+          "citation": {
+            "identifier": "/us/x/p1",
+            "label": "p1"
+          },
+          "value": {
+            "op": "rule",
+            "id": "R"
+          }
+        },
+        "edit": {
+          "$comment": "reworded",
+          "status": "VERIFIED"
+        }
+      },
+      "expect": {
+        "hash_changed": false
+      }
     }
   ]
 }
