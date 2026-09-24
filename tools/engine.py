@@ -288,6 +288,7 @@ def run(logic_path, inputs, *, ledger_path=LEDGER, policy_path=POLICY, today=Non
 
     status = {rid: r["verification"] for rid, r in rules.items()}
     unadmitted = sorted(rid for rid, st in status.items() if st != VERIFIED)
+    logic_out = sorted(cid for cid, st in clause_status.items() if st != VERIFIED)
     return {"source": rules_doc["source"]["label"], "scenario": scenario,
             "decision": findings, "withheld": withheld,
             "out_of_scope": [r["text"] for r in doc.get("refusals", [])],
@@ -296,7 +297,10 @@ def run(logic_path, inputs, *, ledger_path=LEDGER, policy_path=POLICY, today=Non
                              "summary": ("all rules VERIFIED in the ledger" if not unadmitted
                                          else f"{len(unadmitted)} rule(s) not admitted; "
                                               f"lines depending on them withheld: {unadmitted}"),
-                             "by_clause": clause_status},
+                             "by_clause": clause_status,
+                             "clause_summary": ("all clauses VERIFIED in the ledger" if not logic_out
+                                                else f"{len(logic_out)} clause(s) not admitted: "
+                                                     f"{logic_out}")},
             "proof": proof}
 
 
@@ -322,7 +326,8 @@ def main() -> int:
         print(json.dumps(result, indent=2, default=str))
         return 0
     print(f"Decision basis: {result['source']}")
-    print(f"Verification: {result['verification']['summary']}\n")
+    print(f"Verification: {result['verification']['summary']}")
+    print(f"Logic: {result['verification']['clause_summary']}\n")
     proof = {p["item"]: p for p in result["proof"]}
     for line in result["decision"]:
         p = proof[line["item"]]

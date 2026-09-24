@@ -647,6 +647,26 @@
         "hash_changed": true
       }
     },
+    {"id": "LC1a", "polarity": "positive", "claim": "A clause hash changes when its requires list changes (LC1, one edit per row)",
+     "mechanism": "clause_hash",
+     "fixture": {"base": {"id": "X", "item": "i", "cite": "R", "requires": ["R"], "basis": "cited", "citation": {"identifier": "/us/x/p1", "label": "p1"}, "value": {"op": "rule", "id": "R"}},
+                 "edit": {"requires": ["R", "S"]}},
+     "expect": {"hash_changed": true}},
+    {"id": "LC1b", "polarity": "positive", "claim": "A clause hash changes when its citation changes (LC1, one edit per row)",
+     "mechanism": "clause_hash",
+     "fixture": {"base": {"id": "X", "item": "i", "cite": "R", "requires": ["R"], "basis": "cited", "citation": {"identifier": "/us/x/p1", "label": "p1"}, "value": {"op": "rule", "id": "R"}},
+                 "edit": {"citation": {"identifier": "/us/x/p2", "label": "p2"}}},
+     "expect": {"hash_changed": true}},
+    {"id": "LC1c", "polarity": "positive", "claim": "A clause hash changes when its basis changes (LC1, one edit per row)",
+     "mechanism": "clause_hash",
+     "fixture": {"base": {"id": "X", "item": "i", "cite": "R", "requires": ["R"], "basis": "cited", "citation": {"identifier": "/us/x/p1", "label": "p1"}, "value": {"op": "rule", "id": "R"}},
+                 "edit": {"basis": "inferred"}},
+     "expect": {"hash_changed": true}},
+    {"id": "LC1d", "polarity": "positive", "claim": "A clause hash changes when an added when condition changes (LC1, one edit per row)",
+     "mechanism": "clause_hash",
+     "fixture": {"base": {"id": "X", "item": "i", "cite": "R", "requires": ["R"], "basis": "cited", "citation": {"identifier": "/us/x/p1", "label": "p1"}, "value": {"op": "rule", "id": "R"}},
+                 "edit": {"when": {"op": "const", "value": false}}},
+     "expect": {"hash_changed": true}},
     {
       "id": "LN1",
       "polarity": "negative",
@@ -720,7 +740,8 @@
       "mechanism": "engine",
       "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01", "proposed_increment": 10, "increments_used": 3},
                   "attest_rules": "all", "attest_clauses": "all"},
-      "expect": {"proof_matches_decision": true, "every_proof_cited": true, "logic_blockers": []}
+      "expect": {"proof_matches_decision": true, "every_proof_cited": true, "logic_blockers": [],
+                 "clause_summary": "all clauses VERIFIED in the ledger"}
     },
     {
       "id": "LN2", "polarity": "negative",
@@ -728,7 +749,8 @@
       "mechanism": "engine",
       "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01"},
                   "attest_rules": "all", "attest_clauses_except": ["REMAINING_DAYS"]},
-      "expect": {"logic_blockers": ["logic/REMAINING_DAYS"], "decision_has_remaining_days": false}
+      "expect": {"logic_blockers": ["logic/REMAINING_DAYS"], "decision_has_remaining_days": false,
+                 "clause_summary": "1 clause(s) not admitted: ['REMAINING_DAYS']"}
     },
     {
       "id": "LN3", "polarity": "negative",
@@ -737,7 +759,8 @@
       "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01"},
                   "attest_rules": "all", "attest_clauses": "all",
                   "mutations": [{"path": ["clauses", "clause:REMAINING_DAYS", "note", "template"], "value": "{max} minus {used}"}]},
-      "expect": {"logic_blockers": ["logic/REMAINING_DAYS"], "decision_has_remaining_days": false}
+      "expect": {"logic_blockers": ["logic/REMAINING_DAYS"], "logic_blocker_states": ["logic/REMAINING_DAYS [INVALIDATED]"],
+                 "decision_has_remaining_days": false}
     },
     {"id": "LC6", "polarity": "positive", "claim": "The live clause file passes every static check",
      "mechanism": "check_logic", "fixture": {"mutations": [], "stderr_has": ""},

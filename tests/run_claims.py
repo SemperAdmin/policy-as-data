@@ -319,7 +319,8 @@ def _fixture_ledger(tmp, rules_doc, logic_doc, attest_rules, attest_clauses):
 def mech_engine_parity(fx, fixtures):
     """The engine against tools/evaluate.py: same rules, same ledger, same inputs.
     Compared as sorted-key JSON, so this is a byte comparison and not a count.
-    The engine's two additions (proof, verification.by_clause) are removed first;
+    The engine's additions (proof, verification.by_clause and
+    verification.clause_summary) are removed first;
     everything else must match exactly."""
     import engine as eg  # noqa: E402
     import evaluate as old  # noqa: E402
@@ -336,6 +337,7 @@ def mech_engine_parity(fx, fixtures):
             got = eg.run(MPLP_LOGIC, args, ledger_path=ledger, policy_path=policy)
             got.pop("proof")
             got["verification"].pop("by_clause")
+            got["verification"].pop("clause_summary")
             if json.dumps(want, sort_keys=True, default=str) != \
                     json.dumps(got, sort_keys=True, default=str):
                 mismatches.append(args)
@@ -411,7 +413,9 @@ def mech_engine(fx, fixtures):
         "every_proof_cited": all(str(p["clause_citation"].get("identifier", "")).startswith("/us/")
                                  and p["basis"] in ("cited", "inferred") for p in out["proof"]),
         "logic_blockers": sorted(b.split(" [")[0] for b in blockers if b.startswith("logic/")),
+        "logic_blocker_states": sorted(b for b in blockers if b.startswith("logic/")),
         "withheld_items": sorted(w["item"] for w in out["withheld"]),
+        "clause_summary": out["verification"]["clause_summary"],
         "decision_has_remaining_days": any(l["item"] == "remaining_days" for l in out["decision"]),
     }
 

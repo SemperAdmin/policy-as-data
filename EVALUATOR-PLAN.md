@@ -82,6 +82,13 @@ Every expression is a JSON object with an `op` key.
 
 **Clause fields:** `id`, `item`, `cite` (rule id; supplies the output line's citation), `requires` (ordered rule ids, `requires[0] == cite`), `citation` (`{identifier, label}`, the paragraph the logic was read from), `basis` (`cited|inferred`), optional `guard` (rule-free applicability test), optional `when`, `value`, optional `note`. Clauses sharing an `item` are tried in file order, and the first match wins. `$comment` and `status` are excluded from the hash.
 
+> **Corrected 2026-09-24 after final review.** Two statements above were incomplete, and both let a decision change under a clause the ledger still read as VERIFIED.
+>
+> 1. **Hash scope.** "The hash" of a clause, as bound by the ledger, is not `clause_hash` (the clause's own keys). A clause's answer also depends on the facts it reaches, the input specs it reads (defaults included), the clauses ahead of it in its item group (first match), and the rules file. The final review measured a fact edit, a reorder, a deletion and an input-default change each altering decisions with every clause still VERIFIED. The ledger now binds `normalize.clause_dependency_hash(doc, clause_id)`: `clause` (the `clause_assertion`), `facts` (every fact reached, transitively, with its expr), `inputs` (the spec of every input read via `input` or `present` in the clause or a reached fact), `preceded_by` (each earlier clause in the group, in file order, with its own dependency hash), and `rules_file`. `clause_hash` stays as the clause's own core and is what LC1/LN1 test. Rows LN9-LN12.
+> 2. **Guard and admission order.** Tasks 3-4 evaluated a clause's guard before checking admission, so an unadmitted clause whose guard came out false was skipped and a later admitted clause answered. Now every earlier clause in the group that the ledger has not admitted blocks each later clause, whatever its guard evaluates to (row LN13). The proof accumulates rules and inputs across every clause tried in the group and names them in `preceded_by` (row LC7).
+>
+> The code blocks in Tasks 1-4 below are the plan as executed and are left as written; `tools/normalize.py` and `tools/engine.py` are the current statement.
+
 ---
 
 ### Task 1: Clause hashing
@@ -1326,6 +1333,8 @@ Expected: exit 0, every row PASS. Record the row count.
 No code in this task, and no agent may perform it. An agent may prepare the list.
 
 - [ ] **Step 1:** `python tools/attest.py --list` shows the ten `#logic/` assertions as UNVERIFIED.
+> **Corrected 2026-09-24 after final review.** Each attestation binds `clause_dependency_hash`, not `clause_hash`; `attest.py` shows the facts, input specs and earlier clauses it covers, and the owner is attesting all of it. Any attestation recorded against the old clause-only hash reads INVALIDATED (none existed when this was corrected).
+
 - [ ] **Step 2:** For each clause, the owner opens MARADMIN 051/23 at the cited paragraph and runs `python tools/attest.py --assertion '/us/dod/don/usmc/maradmin/2023/051#logic/<ID>' --verifier <V-id>`. For `basis: inferred` clauses, the question is whether the derivation is the only reading the paragraph supports. If it is not, REJECT; the correction request records why.
 - [ ] **Step 3:** `python tools/verify_status.py` shows the clauses VERIFIED, or shows the rejections. Rejected clauses go through `tools/corrections.py`, and Task 8 waits for them.
 
