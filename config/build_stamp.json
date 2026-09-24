@@ -1,0 +1,6 @@
+{
+ "$comment": "Digest of the tracked build inputs (config/build_inputs.json) the committed output was built from. Written by ./build.sh stage 24; CI runs tools/build_stamp.py --check. No timestamp, so two builds over the same inputs write the same bytes.",
+ "schema_version": "1.0",
+ "inputs_sha256": "4d6b83cd0c50891e816798adc0d25dfb6548fe04234e7708a9fed6deac530596",
+ "files": 91
+}

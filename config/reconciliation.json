@@ -1,12 +1,13 @@
 {
   "quorum": {
     "rule": 1,
-    "provision": 1
+    "provision": 1,
+    "clause": 1
   },
   "deviation": {
     "in_force": true,
     "since": "2026-08-08",
-    "affects": "rule",
+    "affects": "rule, clause",
     "reduced_from": 2,
     "reduced_to": 1,
     "reason": "One verifier exists. A two-person rule with one available person produces either permanent QUORUM_SHORT or invented second identities, and an invented identity is far worse than an honest quorum of one. The deviation is recorded here and reported by tools/verify_status.py on every run rather than hidden in a default.",

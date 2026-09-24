@@ -162,6 +162,18 @@ Fifteen stages, in the only order that works.
                                  declared dependencies, operator shapes,
                                  unique names, cited paragraphs. Clause and
                                  claims counts live in SESSION_HANDOFF.md.
+    24  build_stamp              digest of the tracked inputs this output
+                                 was built from, config/build_stamp.json
+
+Stage 24 runs last, so a stamp exists only when every earlier stage
+succeeded. CI cannot run stages 1-14 (they read `canonical/`, which is never
+committed), so it guards stale output two ways: it re-runs the
+canonical-free stages 16, 16a and 17-22 and fails on any change to the tree,
+and it recomputes the stamp over the inputs listed in
+`config/build_inputs.json` (`tools/build_stamp.py --check`). The stamp proves
+the build ran after the last input change; it does not prove
+canonical-dependent output correct and cannot see `canonical/`. Change an
+input, run `./build.sh`, commit its output.
 
 Stage 3 must follow stage 2 and precede stage 4. Reparse rebuilds provision
 paths from stored section text and strips the minted tier records back to zero

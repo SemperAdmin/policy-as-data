@@ -871,6 +871,26 @@
                  "attest_rules": "all", "attest_clauses": "all",
                  "mutations": [{"path": ["clauses", "clause:WINDOW_EXPIRED", "value"], "value": {"op": "const", "value": "EXPIRED"}}],
                  "clause_status_check": ["WINDOW_EXPIRED", "WINDOW_OPEN"]},
-     "expect": {"clause_status": {"WINDOW_EXPIRED": "INVALIDATED", "WINDOW_OPEN": "INVALIDATED"}}}
+     "expect": {"clause_status": {"WINDOW_EXPIRED": "INVALIDATED", "WINDOW_OPEN": "INVALIDATED"}}},
+    {"id": "BS1", "polarity": "positive",
+     "claim": "A build stamp written over the tracked build inputs checks clean against those same inputs",
+     "mechanism": "build_stamp",
+     "fixture": {},
+     "expect": {"write_exit": 0, "check_exit": 0}},
+    {"id": "BS2", "polarity": "negative",
+     "claim": "Editing a site/ fragment after the stamp was written is reported as stale output: the check exits 1 and says so",
+     "mechanism": "build_stamp",
+     "fixture": {"mutate": {"file": "site/about.html", "kind": "append"}, "output_has": "stale"},
+     "expect": {"write_exit": 0, "check_exit": 1, "output_has": "stale"}},
+    {"id": "BS3", "polarity": "negative",
+     "claim": "A line-ending-only change to an input is not a content change: a Windows checkout and a Linux runner agree on the stamp",
+     "mechanism": "build_stamp",
+     "fixture": {"mutate": {"file": "tools/reconcile.py", "kind": "toggle_crlf"}},
+     "expect": {"write_exit": 0, "check_exit": 0}},
+    {"id": "BS4", "polarity": "negative",
+     "claim": "A manifest pattern that matches no file is refused at write time, so a stale manifest cannot silently narrow what the stamp covers",
+     "mechanism": "build_stamp",
+     "fixture": {"add_include": "site/no-such-fragment-*.html", "output_has": "matches nothing"},
+     "expect": {"write_exit_nonzero": true, "output_has": "matches nothing"}}
   ]
 }
