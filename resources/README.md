@@ -86,6 +86,17 @@ Three findings from this pass sit above the individual rows.
 2. **SUMO's licensing is contradictory at the source.** The portal states IEEE ownership with GPL extensions. The repository header states GNU Public License over a repository holding both. Resolve in writing with the licensor before adoption.
 3. **This pass does not displace the standing recommendation.** `conformance-matrix.md` section 13 names LegalRuleML as the closest fit in the register. SUMO is a complement to it, not a replacement, and section 12's ruling stands unchanged. Correct tool, not yet needed, do not adopt early.
 
+### 2026-09-24, the papers read
+
+No new row. Rows 27, 28, and 31 carry dated addenda. The author's 78 paper
+files were retrieved into a local library outside this repository and the
+method was read from them. Verdicts unchanged. The deontic layer is
+experimental, no paper computes an entitlement quantity, and the
+English-to-logic pipeline's meaning accuracy is unmeasured. Four actions
+recorded under row 28, one P1: port the CalendarLogic test shape into claims
+for `evaluate.py` date arithmetic. The site's `ontology.html` states the same
+reading for a non-specialist.
+
 One GAP surfaced in the 2026-08-08 pass, at row 20, and it is open. Two rows carry no
 verdict because their sources could not be confirmed. Row 23 was added the same
 day and its build-versus-reuse consequences are worked out in

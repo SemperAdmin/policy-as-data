@@ -1,0 +1,136 @@
+<h1>Ontology</h1>
+<p class="lede">An ontology is a precise statement of what kinds of things exist
+in a subject and how they relate, written so a machine can check it. This page
+says what this project already has, what the leading formal method would add,
+and why it has not been adopted yet.</p>
+
+<h2>What this project already has</h2>
+<div class="findings">
+<div class="finding"><div class="big">{{n_ontology_classes}}</div><p>classes in the
+authority ontology: statute, DoD instruction, Navy instruction, Marine Corps
+order, manual, message, and the relationships that rank them. The
+<a href="authority-index.html">authority chains</a> are drawn from it.</p></div>
+<div class="finding"><div class="big">{{n_concepts}}</div><p>rule concepts, each
+assigned by a person who read both paragraphs. A concept is what makes "12 weeks"
+in a message and "84 days" in an instruction the same entitlement rather than
+two similar numbers.</p></div>
+<div class="finding"><div class="big">{{edges}}</div><p>cited links, each naming
+the paragraph it was read from. A link the text states and a link a tool worked
+out are never recorded as the same kind of thing.</p></div>
+</div>
+<p>This is a small ontology on purpose. It describes documents and their
+authority. It does not yet describe the world the rules are about: who counts
+as a reservist, what a qualifying event is, which duty status a rule applies
+to. Today a person answers those questions and the answer is written down with
+their name on it.</p>
+
+<h2>The method we evaluated</h2>
+<p>The Suggested Upper Merged Ontology (SUMO), with its Sigma toolset, is described
+by its publisher as the largest public formal ontology. It is led by Adam Pease at the Naval
+Postgraduate School. It was read in full from the group's published papers in
+September 2026. It has four parts.</p>
+<table>
+<thead><tr><th>Part</th><th>What it does</th><th>What the papers show</th></tr></thead>
+<tbody>
+<tr><td>A world model</td><td>About 20,000 defined terms and over 100,000
+logical statements, mapped by hand to the English dictionary WordNet.</td><td>Mature.
+It works as a shared vocabulary. Its legal vocabulary is a sketch of about 500
+lines.</td></tr>
+<tr><td>A theorem prover</td><td>Translates the ontology into first-order logic
+and asks a prover whether a conclusion follows.</td><td>Works at full size only
+with a relevance filter in front of it, which takes it to about 2 seconds a
+question. Content beyond first-order logic is dropped in translation, by the
+authors' own statement. The ontology cannot be proven free of
+contradictions.</td></tr>
+<tr><td>Obligation and permission</td><td>Marks a statement as required,
+allowed, or forbidden, and says who holds the duty.</td><td>Experimental. Tested
+on small hand-written problems. Known wrong answers in one class of case, still
+under investigation.</td></tr>
+<tr><td>English to logic</td><td>A trained model translates a sentence into the
+ontology's logic.</td><td>On 100 real policy sentences, 59 to 62 percent of
+outputs were well formed. Whether they meant the same thing as the sentence was
+not measured.</td></tr>
+</tbody>
+</table>
+<p>The group's most successful rule system encodes the maritime collision
+rules. It was written by hand, uses plain logic rather than the obligation
+operators. Across 288 generated encounters it reached a conclusion in 172 and
+was right in 171.</p>
+
+<h2>How it would apply here</h2>
+<table>
+<thead><tr><th>This project</th><th>What SUMO would change</th><th>Fit today</th></tr></thead>
+<tbody>
+<tr><td>The rule concept register</td><td>Concepts would point at defined terms,
+and a rule could cover a class of people or duties rather than one
+number.</td><td>The strongest case. Not needed until a rule's value is a class,
+not a number. Promotion eligibility is the first place that happens.</td></tr>
+<tr><td>The <a href="scenarios.html">evaluator</a></td><td>A prover would derive
+the answer and show every step.</td><td>Poor. No paper computes an entitlement
+such as a number of days, and a prover can run out of time, which is not an
+answer.</td></tr>
+<tr><td>Checking orders against each other</td><td>A prover could find two
+orders that cannot both be followed.</td><td>A real future need, once two or
+more orders with interacting rules are encoded.</td></tr>
+<tr><td>Reading rules out of text</td><td>A model would draft the rules.</td><td>At
+best a drafting aid. Every drafted rule would still need a person to read the
+paragraph, which is what <a href="verification.html">verification</a> already
+requires.</td></tr>
+</tbody>
+</table>
+
+<h2>What it would give</h2>
+<ul>
+<li><strong>A model of the world the rules are about.</strong> No other candidate
+the project has reviewed has one.</li>
+<li><strong>Answers that show their work.</strong> A proof runs from the facts
+through each rule to the conclusion, which is deeper than the one citation per
+line this site shows today.</li>
+<li><strong>Proven date arithmetic.</strong> The group's calendar work was checked
+by two independent provers on 200 cases. This project has already found one
+error of exactly that kind, a year counted as 365 days.</li>
+<li><strong>Discipline about absence.</strong> The papers insist that failing to
+prove something is allowed never proves it is forbidden. This project holds the
+same rule.</li>
+</ul>
+
+<h2>What it would cost</h2>
+<ul>
+<li><strong>A heavy dependency.</strong> The standard toolset needs Java, at least
+16 GB of memory, and a separate prover. A lighter rewrite exists but is marked
+as a development build. This project builds from a plain copy with standard Python and nothing
+else, and that is a fixed requirement.</li>
+<li><strong>Unclear terms of use.</strong> The ontology's own site and its code
+repository state different licences, and no paper settles it.</li>
+<li><strong>Immature where policy needs it most.</strong> Obligations, exceptions,
+which rule wins when two conflict, and the dates a rule is in force are the
+least developed parts. A legal rules standard, LegalRuleML, covers all four.</li>
+<li><strong>One source.</strong> Every paper traces to one research group. No
+independent assessment has been read yet.</li>
+<li><strong>It does not address the current problem.</strong> What this site
+finds today is documents citing instructions that are no longer in force. That
+is a question of provenance, not of reasoning.</li>
+</ul>
+
+<h2>The decision</h2>
+<p><strong>Not adopted yet, and kept under evaluation.</strong> Three of its
+ideas are planned for this project's own tools, without the dependency. None is
+built yet. They are: date arithmetic tested against fixed cases in the shape of
+the calendar benchmark; every computed answer printing its steps; and an
+explicit record when a person has read an authority and found it silent, so
+silence is never inferred from nothing having been read.</p>
+<p>The question is reopened when the first rule's value is a class rather than
+a number, or when two encoded orders interact. At that point SUMO and
+LegalRuleML are tried on one worked example and the choice is made once.</p>
+<p class="note">Sources: the group's papers as published at
+<a href="https://www.adampease.com/" rel="noopener">adampease.com</a>, among them
+<a href="https://www.adampease.com/Sigma-rs.pdf" rel="noopener">SigmaKEE-rs</a>,
+<a href="https://www.adampease.com/FEENER-ARQNL.pdf" rel="noopener">Embedding
+Deontic Logic Operators</a>,
+<a href="https://www.adampease.com/CalendarLogic.pdf" rel="noopener">Gregorian date
+arithmetic</a>,
+<a href="https://www.adampease.com/TimberPeaseCOLREG-CSCI2025.pdf" rel="noopener">Rules
+of the Road</a>, and
+<a href="https://www.adampease.com/NESY_Conference_Paper.pdf" rel="noopener">Grounding
+Terms from an Ontology</a>. The full review, with the paper each claim was read
+from, is in the repository under <code>resources/28</code>.</p>
