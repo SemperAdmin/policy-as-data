@@ -156,9 +156,19 @@ def clause_dependency_payload(doc: dict, clause_id: str) -> dict:
       facts        every fact the clause reaches, transitively, with its expr
       inputs       the declared spec of every input the clause or a reached
                    fact reads (op input or present), default included
-      preceded_by  each earlier clause in the same item group, in file order,
-                   with its own dependency hash - first match means an earlier
-                   clause decides whether this one is ever reached
+      preceded_by  [id, clause_dependency_hash(doc, id)] for the one clause
+                   directly before this one in its item group, or null for
+                   the first clause in the group - first match means an
+                   earlier clause decides whether this one is ever reached.
+                   Only the immediate predecessor is bound, not the full list
+                   of earlier clauses: each predecessor's own dependency hash
+                   already binds ITS predecessor, so the chain transitively
+                   covers every earlier clause in the group at O(1) links per
+                   clause. Binding the full list (as this did before the
+                   2026-09-24 review) makes each hash embed every earlier
+                   hash's own embedded history, which is exponential in group
+                   size (measured: 14.6s at 20 clauses) for the same coverage
+                   the chain gives in linear time.
       rules_file   which rules file the clause's rule ids resolve against
     """
     clauses = doc.get("clauses", [])
@@ -184,12 +194,14 @@ def clause_dependency_payload(doc: dict, clause_id: str) -> dict:
         _expression_refs(fact_exprs.get(name), more, inputs)
         queue.extend(n for n in more if n is not None and n not in seen)
 
-    preceded_by = []
+    prev = None
     for c in clauses:
         if c is clause:
             break
         if c.get("item") == clause.get("item"):
-            preceded_by.append([c.get("id"), clause_dependency_hash(doc, c.get("id"))])
+            prev = c
+    preceded_by = ([prev.get("id"), clause_dependency_hash(doc, prev.get("id"))]
+                    if prev is not None else None)
 
     return {
         "clause": core,
