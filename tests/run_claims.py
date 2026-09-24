@@ -450,6 +450,9 @@ def mech_engine(fx, fixtures):
         "withheld_items": sorted(w["item"] for w in out["withheld"]),
         "clause_summary": out["verification"]["clause_summary"],
         "decision_has_remaining_days": any(l["item"] == "remaining_days" for l in out["decision"]),
+        # Full decision-item list, so a row can assert an item's line is
+        # absent (not merely withheld) without a bespoke boolean per item.
+        "decision_items": sorted(l["item"] for l in out["decision"]),
         # R11 coverage check: the derived status of specific clauses, direct
         # from verification.by_clause - independent of evaluate_clauses'
         # first-match control flow, which is what withheld_because reflects.
