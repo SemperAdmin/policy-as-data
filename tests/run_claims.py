@@ -340,6 +340,54 @@ def mech_engine_parity(fx, fixtures):
     return {"mismatches": mismatches}
 
 
+def _step(target, key):
+    """Path step. 'clause:ID' selects a clause by id, so a fixture does not
+    depend on clause order."""
+    if isinstance(key, str) and key.startswith("clause:"):
+        return next(c for c in target if c["id"] == key[len("clause:"):])
+    return target[key]
+
+
+def apply_mutation(doc, m):
+    target = doc
+    for key in m["path"][:-1]:
+        target = _step(target, key)
+    last = m["path"][-1]
+    if "append" in m:
+        _step(target, last).append(m["append"])
+    else:
+        target[last] = m["value"]
+
+
+def mech_engine(fx, fixtures):
+    """The engine on a temporary copy of the live clause file. The ledger is
+    built from the file BEFORE any mutation, so a mutation is an edit made after
+    attestation."""
+    import engine as eg  # noqa: E402
+    rules_doc = json.loads(MPLP_RULES.read_text(encoding="utf-8"))
+    logic_doc = json.loads(MPLP_LOGIC.read_text(encoding="utf-8"))
+    clauses = fx.get("attest_clauses")
+    if "attest_clauses_except" in fx:
+        clauses = [c["id"] for c in logic_doc["clauses"] if c["id"] not in fx["attest_clauses_except"]]
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = Path(tmp)
+        ledger, policy = _fixture_ledger(tmp, rules_doc, logic_doc, fx["attest_rules"], clauses)
+        for m in fx.get("mutations", []):
+            apply_mutation(logic_doc, m)
+        shutil.copy(MPLP_RULES, tmp / MPLP_RULES.name)
+        logic_path = tmp / MPLP_LOGIC.name
+        logic_path.write_text(json.dumps(logic_doc, indent=2), encoding="utf-8")
+        out = eg.run(logic_path, fx["args"], ledger_path=ledger, policy_path=policy)
+    blockers = {b for w in out["withheld"] for b in w["withheld_because"]}
+    return {
+        "proof_matches_decision": [p["item"] for p in out["proof"]] == [l["item"] for l in out["decision"]],
+        "every_proof_cited": all(str(p["clause_citation"].get("identifier", "")).startswith("/us/")
+                                 and p["basis"] in ("cited", "inferred") for p in out["proof"]),
+        "logic_blockers": sorted(b.split(" [")[0] for b in blockers if b.startswith("logic/")),
+        "decision_has_remaining_days": any(l["item"] == "remaining_days" for l in out["decision"]),
+    }
+
+
 MECHANISMS = {
     "exports": mech_exports,
     "report": mech_report,
@@ -352,6 +400,7 @@ MECHANISMS = {
     "reconcile_cli": mech_reconcile_cli,
     "clause_hash": mech_clause_hash,
     "engine_parity": mech_engine_parity,
+    "engine": mech_engine,
 }
 
 # Keys handled by eval_extra_checks rather than plain equality.
