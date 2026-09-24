@@ -99,6 +99,30 @@ def rule_assertion_id(source_identifier: str, rule_id: str) -> str:
     return f"{source_identifier}#{rule_id}"
 
 
+# Keys that are never part of a clause's claim. The comment is prose for the
+# reader; the inline status is the same legacy claim ACTION-REGISTER 5.4 retired
+# for rules. Everything else in a clause changes what the engine says.
+CLAUSE_UNHASHED = ("$comment", "status")
+
+
+def clause_assertion(clause: dict) -> dict:
+    """The hashable core of a logic clause: every key that can change a decision."""
+    return {k: v for k, v in clause.items() if k not in CLAUSE_UNHASHED}
+
+
+def clause_hash(clause: dict) -> str:
+    """Hash of a clause's assertion. Key order is fixed by sort_keys."""
+    payload = json.dumps(
+        clause_assertion(clause), sort_keys=True, separators=(",", ":"), ensure_ascii=False
+    )
+    return PREFIX + hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def clause_assertion_id(source_identifier: str, clause_id: str) -> str:
+    """Stable id for a clause assertion: <document identifier>#logic/<CLAUSE_ID>."""
+    return f"{source_identifier}#logic/{clause_id}"
+
+
 def file_hash(path) -> str:
     """Hash of a file's raw bytes. For signed artifacts, NOT for text.
 
