@@ -791,6 +791,22 @@
      "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01"},
                  "attest_rules": "all", "attest_clauses": "all",
                  "mutations": [{"path": ["inputs", "input:used_days", "default"], "value": 50}]},
-     "expect": {"logic_blockers": ["logic/REMAINING_DAYS"], "withheld_items": ["remaining_days"], "decision_has_remaining_days": false}}
+     "expect": {"logic_blockers": ["logic/REMAINING_DAYS"], "withheld_items": ["remaining_days"], "decision_has_remaining_days": false}},
+    {"id": "LN13", "polarity": "negative",
+     "claim": "An unadmitted earlier clause blocks every later clause in its group whatever its guard evaluates to: a first-match answer cannot skip past a clause the ledger has not admitted",
+     "mechanism": "engine",
+     "fixture": {"args": {"event_date": "2027-03-01", "second_event_date": "2027-03-02", "as_of": "2027-06-01"},
+                 "attest_rules": "all", "attest_clauses": "all",
+                 "mutations": [{"path": ["clauses", "clause:MULTIPLE_EVENTS_SINGLE", "guard"], "value": {"op": "present", "name": "proposed_increment"}}]},
+     "expect": {"logic_blockers": ["logic/MULTIPLE_EVENTS_SEPARATE", "logic/MULTIPLE_EVENTS_SINGLE"], "withheld_items": ["multiple_events"]}},
+    {"id": "LC7", "polarity": "positive",
+     "claim": "A first-match line's proof names everything it rests on, including the rules and inputs of the earlier clauses tried and rejected, and names those clauses",
+     "mechanism": "engine",
+     "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01", "proposed_increment": 10, "increments_used": 3},
+                 "attest_rules": "all", "attest_clauses": "all", "proof_item": "proposed_increment"},
+     "expect": {"proof_for_item": {"rules": ["MAX_INCREMENTS", "MIN_INCREMENT_DAYS"],
+                                   "inputs": ["increments_used", "proposed_increment"],
+                                   "preceded_by": ["INCREMENT_UNDER_MIN", "INCREMENT_MAX_REACHED"]},
+                "logic_blockers": []}}
   ]
 }

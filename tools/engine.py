@@ -100,6 +100,7 @@ def ev(node, cx):
         cx.inputs_touched.append(node["name"])
         return cx.inputs[node["name"]]
     if op == "present":
+        cx.inputs_touched.append(node["name"])
         return cx.inputs[node["name"]] is not None
     if op == "rule":
         rule = cx.rules[node["id"]]
@@ -185,12 +186,22 @@ def evaluate_clauses(doc, rules, clause_status, inputs, identifier):
     for c in doc["clauses"]:
         groups.setdefault(c["item"], []).append(c)
     for item, clauses in groups.items():
-        for c in clauses:
-            cx.rules_touched, cx.inputs_touched = [], []
+        # First match: a line rests on every clause tried ahead of the one that
+        # answers, because each of those decided not to answer. So what they
+        # touched accumulates across the group and lands in the proof.
+        cx.rules_touched, cx.inputs_touched = [], []
+        for i, c in enumerate(clauses):
+            earlier = clauses[:i]
+            # An earlier clause the ledger has not admitted blocks this one
+            # whatever its guard says. Its guard is part of unadmitted logic
+            # too, so a false guard is no evidence it would not have answered.
+            prior_blockers = [f"logic/{e['id']} [{clause_status[e['id']]}]" for e in earlier
+                              if clause_status[e["id"]] != VERIFIED]
             if "guard" in c and not ev(c["guard"], cx):
                 continue
             blockers = [blocker(r, rules) for r in c["requires"]
                         if rules[r]["verification"] != VERIFIED]
+            blockers += prior_blockers
             if clause_status[c["id"]] != VERIFIED:
                 blockers.append(f"logic/{c['id']} [{clause_status[c['id']]}]")
             when = ev(c["when"], cx) if "when" in c else True
@@ -215,7 +226,8 @@ def evaluate_clauses(doc, rules, clause_status, inputs, identifier):
                               "basis": c["basis"],
                               "clause_citation": c["citation"],
                               "rules": sorted(set(cx.rules_touched)),
-                              "inputs": sorted(set(cx.inputs_touched))})
+                              "inputs": sorted(set(cx.inputs_touched)),
+                              "preceded_by": [e["id"] for e in earlier]})
             break
     return findings, withheld, proof
 

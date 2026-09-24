@@ -403,7 +403,10 @@ def mech_engine(fx, fixtures):
         logic_path.write_text(json.dumps(logic_doc, indent=2), encoding="utf-8")
         out = eg.run(logic_path, fx["args"], ledger_path=ledger, policy_path=policy)
     blockers = {b for w in out["withheld"] for b in w["withheld_because"]}
+    proof_item = next((p for p in out["proof"] if p["item"] == fx.get("proof_item")), None)
     return {
+        "proof_for_item": proof_item and {k: proof_item.get(k)
+                                          for k in ("rules", "inputs", "preceded_by")},
         "proof_matches_decision": [p["item"] for p in out["proof"]] == [l["item"] for l in out["decision"]],
         "every_proof_cited": all(str(p["clause_citation"].get("identifier", "")).startswith("/us/")
                                  and p["basis"] in ("cited", "inferred") for p in out["proof"]),
