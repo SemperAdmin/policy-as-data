@@ -116,3 +116,28 @@ or the build.
 
 Confidence 0.85 on the reading of the paper, which was read in full. 0.7 on
 the venue, which is inferred from a filename and recorded as UNCONFIRMED.
+
+## Addendum 2026-09-24: read against the group's other papers
+
+The group's other papers were retrieved and read (rows 27 and 28). Three
+points bear on this row.
+
+- **The ROE and COLREG work is the group's most mature normative encoding,
+  and it does not use SUMO's deontic operators.** COLREG
+  (`TimberPeaseCOLREG-CSCI2025.pdf`) encodes give-way and stand-on duties as
+  plain first-order predicates with hand-written exception guards. The
+  deontic-operator work (`FEENER-ARQNL.pdf`) is still on hand-written THF test
+  problems. So the transfer recorded above, which takes the mechanisms and
+  leaves the formalism, is also what the authors' own working system does.
+- **The attested-absence point is confirmed elsewhere, and violated
+  elsewhere.** COLREG writes negations out explicitly because classical logic
+  has no negation-as-failure. The work-in-progress cyber paper
+  (`GoohsPeasehotSOS.pdf`) treats "no fact witnesses the validation" as a
+  violation, which a classical prover cannot refute. The `NOT_HELD` split
+  adopted above guards this project against the same slip.
+- **Derivation steps (adopted item 4) now have a concrete test source.**
+  `CalendarLogic.pdf` states 200 date conjectures with expected answers,
+  validated by two provers. Its shape, not its axioms, is what action 28.1
+  ports into the claims table.
+
+Verdict unchanged: **ADAPTED**.

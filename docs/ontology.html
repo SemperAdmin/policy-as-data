@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="favicon.png"><title>Home - Semper Admin Policy Library</title><style>
+<link rel="alternate icon" href="favicon.png"><title>Ontology - Semper Admin Policy Library</title><style>
 :root{--scarlet:#B82230;--scarlet3:#D14150;--blue:#0F1F3D;--blue3:#2A3D60;
 --blue1:#6B9BD2;--parch:#F2E5BE;--parch3:#FAF1D8;--brass:#B89042;
 --brass3:#D4AF67;--fresh:#2F8F5C;--aging:#C97D1F;--stale:#B83232;
@@ -223,96 +223,140 @@ ol.timeline li::before{content:"";position:absolute;left:-7px;top:14px;width:12p
 .diff .drop{color:#E58A93}
 .diff ul{margin:4px 0 12px;padding-left:20px}
 .diff code{font-family:var(--mono);font-size:13px}
-</style></head><body><a class="skip" href="#main">Skip to main content</a><header class="chrome"><a class="emblem" href="https://semper-admin-portal.app.cloud.gov/" target="_blank" rel="noopener noreferrer" title="Semper Admin portal (opens in a new tab)"><img src="semper-logo.jpg" alt="Semper Admin portal (opens in a new tab)" height="40"></a><div class="brand"><a class="wordmark" href="index.html">G.O.A.T.S.</a><span class="eyebrow">By Semper Admin</span></div><span class="eyebrow">Home</span><a href="how-it-works.html" style="margin-left:auto">How it works</a><a href="currency.html">Currency</a><a href="impact.html">Impact</a><a href="policy-index.html">Library</a><a href="authority-index.html">Authority chains</a><a href="connections.html">Connections</a><a href="verification.html">Verification</a><a href="scenarios.html">Scenarios</a><a href="ontology.html">Ontology</a><a href="about.html">About</a><a href="search.html">Search</a></header><main id="main"><h1>Does the order say what its authority says?</h1>
-<p class="lede">Marine Corps orders cite the DoD instructions and statutes they
-implement. Nobody can check today, at scale, whether a citation still points at
-something in force, or whether the number in the order matches the number in the
-authority above it. This site is a proof that both checks can be made mechanical.
-56 documents, 20,178 paragraphs, every claim traceable to the
-paragraph that states it.</p>
+</style></head><body><a class="skip" href="#main">Skip to main content</a><header class="chrome"><a class="emblem" href="https://semper-admin-portal.app.cloud.gov/" target="_blank" rel="noopener noreferrer" title="Semper Admin portal (opens in a new tab)"><img src="semper-logo.jpg" alt="Semper Admin portal (opens in a new tab)" height="40"></a><div class="brand"><a class="wordmark" href="index.html">G.O.A.T.S.</a><span class="eyebrow">By Semper Admin</span></div><span class="eyebrow">Ontology</span><a href="how-it-works.html" style="margin-left:auto">How it works</a><a href="currency.html">Currency</a><a href="impact.html">Impact</a><a href="policy-index.html">Library</a><a href="authority-index.html">Authority chains</a><a href="connections.html">Connections</a><a href="verification.html">Verification</a><a href="scenarios.html">Scenarios</a><a href="ontology.html" aria-current="page">Ontology</a><a href="about.html">About</a><a href="search.html">Search</a></header><main id="main"><h1>Ontology</h1>
+<p class="lede">An ontology is a precise statement of what kinds of things exist
+in a subject and how they relate, written so a machine can check it. This page
+says what this project already has, what the leading formal method would add,
+and why it has not been adopted yet.</p>
 
-<h2>What it found</h2>
+<h2>What this project already has</h2>
 <div class="findings">
-<div class="finding">
-<div class="big">4</div>
-<p>documents in force today cite, in their own reference list, an instruction
-that no longer is: <a href="policy-MCO-6100.13A-CH5.html">MCO 6100.13A-CH5</a>, <a href="policy-MCO-6100.14.html">MCO 6100.14</a>, <a href="policy-MCO-6110.3A-CH4.html">MCO 6110.3A-CH4</a> cite <a href="policy-DODI-1308.3.html">DoDI 1308.3</a>, cancelled; <a href="policy-MCO-1050.3J.html">MCO 1050.3J</a> cites <a href="policy-DODI-1327.6.html">DoDI 1327.6</a>, superseded. <a href="currency.html">Every one,
-with the paragraph that cites it</a></p>
+<div class="finding"><div class="big">15</div><p>classes in the
+authority ontology: statute, DoD instruction, Navy instruction, Marine Corps
+order, manual, message, and the relationships that rank them. The
+<a href="authority-index.html">authority chains</a> are drawn from it.</p></div>
+<div class="finding"><div class="big">5</div><p>rule concepts, each
+assigned by a person who read both paragraphs. A concept is what makes "12 weeks"
+in a message and "84 days" in an instruction the same entitlement rather than
+two similar numbers.</p></div>
+<div class="finding"><div class="big">362</div><p>cited links, each naming
+the paragraph it was read from. A link the text states and a link a tool worked
+out are never recorded as the same kind of thing.</p></div>
 </div>
-<div class="finding">
-<div class="big">85 of 362</div>
-<p>references in these 56 documents name an edition that has since been
-superseded. A currency report nobody compiled; it fell out of the encoding.
-<a href="currency.html#editions">The list</a></p>
-</div>
-<div class="finding">
-<div class="big">1 day</div>
-<p>An error in our own encoding, caught by the machine: a computed forfeiture
-date one day early on a quarter of possible event dates. Neither issuance was
-wrong. The encoding between them was. <a href="verification.html#findings">The
-finding</a></p>
-</div>
-</div>
+<p>This is a small ontology on purpose. It describes documents and their
+authority. It does not yet describe the world the rules are about: who counts
+as a reservist, what a qualifying event is, which duty status a rule applies
+to. Today a person answers those questions and the answer is written down with
+their name on it.</p>
 
-<div class="findings scale"><div class="finding"><div class="big">887</div><p>documents in force across the full corpus of 17,507 cite an instruction that is not. <a href="scale.html">The same measurement, at scale</a></p></div><div class="finding"><div class="big">5,169 of 21,198</div><p>references across the full corpus name an edition since superseded</p></div><div class="finding"><div class="big">7</div><p>records carrying a limited distribution statement, excluded from the count as from everything else</p></div></div>
+<h2>The method we evaluated</h2>
+<p>The Suggested Upper Merged Ontology (SUMO), with its Sigma toolset, is described
+by its publisher as the largest public formal ontology. It is led by Adam Pease at the Naval
+Postgraduate School. It was read in full from the group's published papers in
+September 2026. It has four parts.</p>
+<table>
+<thead><tr><th>Part</th><th>What it does</th><th>What the papers show</th></tr></thead>
+<tbody>
+<tr><td>A world model</td><td>About 20,000 defined terms and over 100,000
+logical statements, mapped by hand to the English dictionary WordNet.</td><td>Mature.
+It works as a shared vocabulary. Its legal vocabulary is a sketch of about 500
+lines.</td></tr>
+<tr><td>A theorem prover</td><td>Translates the ontology into first-order logic
+and asks a prover whether a conclusion follows.</td><td>Works at full size only
+with a relevance filter in front of it, which takes it to about 2 seconds a
+question. Content beyond first-order logic is dropped in translation, by the
+authors' own statement. The ontology cannot be proven free of
+contradictions.</td></tr>
+<tr><td>Obligation and permission</td><td>Marks a statement as required,
+allowed, or forbidden, and says who holds the duty.</td><td>Experimental. Tested
+on small hand-written problems. Known wrong answers in one class of case, still
+under investigation.</td></tr>
+<tr><td>English to logic</td><td>A trained model translates a sentence into the
+ontology's logic.</td><td>On 100 real policy sentences, 59 to 62 percent of
+outputs were well formed. Whether they meant the same thing as the sentence was
+not measured.</td></tr>
+</tbody>
+</table>
+<p>The group's most successful rule system encodes the maritime collision
+rules. It was written by hand, uses plain logic rather than the obligation
+operators. Across 288 generated encounters it reached a conclusion in 172 and
+was right in 171.</p>
 
-<p class="lede">And the question in the other direction: if one of these documents
-reissues tomorrow, what breaks? <a href="impact.html">8 documents
-name <a href="policy-USC-T5-S552a.html">5 U.S.C. 552a</a></a>, the most depended-upon document in the set. Every
-policy page carries its own answer.</p>
+<h2>How it would apply here</h2>
+<table>
+<thead><tr><th>This project</th><th>What SUMO would change</th><th>Fit today</th></tr></thead>
+<tbody>
+<tr><td>The rule concept register</td><td>Concepts would point at defined terms,
+and a rule could cover a class of people or duties rather than one
+number.</td><td>The strongest case. Not needed until a rule's value is a class,
+not a number. Promotion eligibility is the first place that happens.</td></tr>
+<tr><td>The <a href="scenarios.html">evaluator</a></td><td>A prover would derive
+the answer and show every step.</td><td>Poor. No paper computes an entitlement
+such as a number of days, and a prover can run out of time, which is not an
+answer.</td></tr>
+<tr><td>Checking orders against each other</td><td>A prover could find two
+orders that cannot both be followed.</td><td>A real future need, once two or
+more orders with interacting rules are encoded.</td></tr>
+<tr><td>Reading rules out of text</td><td>A model would draft the rules.</td><td>At
+best a drafting aid. Every drafted rule would still need a person to read the
+paragraph, which is what <a href="verification.html">verification</a> already
+requires.</td></tr>
+</tbody>
+</table>
 
-<h2>One question, walked end to end</h2>
-<p class="lede">Does MARADMIN 051/23 give a Marine the parental leave the DoD
-instruction authorizes?</p>
-<ol class="thread">
-<li><strong>The message.</strong> MARADMIN 051/23, paragraph 11.d, states 84
-days. <a href="policy-MARADMIN-2023-051.html#p11-d">Read the paragraph</a></li>
-<li><strong>Where it sits.</strong> Statute, DoD instruction, Marine Corps
-order, message. Every step is a citation printed on the document below it, and a
-tier the corpus does not hold is stated as a gap, never inferred.
-<a href="authority-leave.html">The chain</a></li>
-<li><strong>The authority.</strong> DoD Instruction 1327.06, paragraph
-3.11.c.(3)(a)1, states twelve weeks. <a href="verification.html#examples">As read
-and confirmed</a></li>
-<li><strong>Do they agree.</strong> Yes. The DoD instruction states 12 weeks; the message states 84 days. Both come to 84 days.
-<a href="verification.html#cross-tier">The comparison</a></li>
-<li><strong>Who confirmed it.</strong> 3 of 11 encoded
-values have been read against the issuing authority's copy by a named person.
-4 of 5 comparisons are withheld until both sides
-have been read. Withheld, not guessed. <a href="verification.html">The
-ledger</a></li>
-<li><strong>What follows.</strong> Three fixed cases run through the encoded
-rules: days remaining, the forfeiture date, whether a proposed block is valid.
-Every line cites its paragraph; a line resting on a value nobody has confirmed
-is withheld and says which. <a href="scenarios.html">The scenarios</a></li>
-<li><strong>What this proves, and what it does not.</strong> It compares encoded
-values, never the issuances themselves. The issuing authority's copy governs.
-Where a value has not been read by a person, the page says so instead of showing
-a number. A wrong entitlement figure with a caveat under it is worse than no
-figure.</li>
-</ol>
-
-<h2>What is here</h2>
-<ul class="sections">
-<li><a href="currency.html">Currency</a> - what rests on something that no
-longer exists, with the paragraph that cites it.</li>
-<li><a href="impact.html">Impact</a> - if a document reissues, what names it and
-would need review.</li>
-<li><a href="policy-index.html">Library</a> - 56 documents, each on
-one page: its text to the paragraph, the authority above it, the versions before
-it. <a href="type-MARADMIN.html">MARADMIN messages</a> 29 &middot; <a href="type-MCO.html">Marine Corps Orders</a> 12 &middot; <a href="type-DODI.html">DoD instructions</a> 6 &middot; <a href="type-USC.html">U.S. Code sections</a> 5 &middot; <a href="type-SECNAV.html">SECNAV instructions</a> 3 &middot; <a href="type-NAVMC.html">NAVMC publications</a> 1.</li>
-<li><a href="authority-index.html">Authority chains</a> - five subjects traced
-from the message a Marine reads to the statute it rests on.</li>
-<li><a href="connections.html">Connections</a> - every document and every cited
-reference between them, on one map.</li>
-<li><a href="verification.html">Verification</a> - what a person has confirmed,
-what is still unread, and how a value is admitted.</li>
-<li><a href="mos-manual-lineage.html">Version history</a> - the MOS Manual
-across 25 years and four numbering schemes.</li>
-<li><a href="how-it-works.html">How it works</a> - the three ideas underneath:
-a paragraph is the unit, a reference is a link only if it resolves, and nothing
-is trusted until a person confirms it.</li>
-<li><a href="about.html">About</a> - who this is from, what it is not, and the
-terms it is shared under.</li>
+<h2>What it would give</h2>
+<ul>
+<li><strong>A model of the world the rules are about.</strong> No other candidate
+the project has reviewed has one.</li>
+<li><strong>Answers that show their work.</strong> A proof runs from the facts
+through each rule to the conclusion, which is deeper than the one citation per
+line this site shows today.</li>
+<li><strong>Proven date arithmetic.</strong> The group's calendar work was checked
+by two independent provers on 200 cases. This project has already found one
+error of exactly that kind, a year counted as 365 days.</li>
+<li><strong>Discipline about absence.</strong> The papers insist that failing to
+prove something is allowed never proves it is forbidden. This project holds the
+same rule.</li>
 </ul>
+
+<h2>What it would cost</h2>
+<ul>
+<li><strong>A heavy dependency.</strong> The standard toolset needs Java, at least
+16 GB of memory, and a separate prover. A lighter rewrite exists but is marked
+as a development build. This project builds from a plain copy with standard Python and nothing
+else, and that is a fixed requirement.</li>
+<li><strong>Unclear terms of use.</strong> The ontology's own site and its code
+repository state different licences, and no paper settles it.</li>
+<li><strong>Immature where policy needs it most.</strong> Obligations, exceptions,
+which rule wins when two conflict, and the dates a rule is in force are the
+least developed parts. A legal rules standard, LegalRuleML, covers all four.</li>
+<li><strong>One source.</strong> Every paper traces to one research group. No
+independent assessment has been read yet.</li>
+<li><strong>It does not address the current problem.</strong> What this site
+finds today is documents citing instructions that are no longer in force. That
+is a question of provenance, not of reasoning.</li>
+</ul>
+
+<h2>The decision</h2>
+<p><strong>Not adopted yet, and kept under evaluation.</strong> Three of its
+ideas are planned for this project's own tools, without the dependency. None is
+built yet. They are: date arithmetic tested against fixed cases in the shape of
+the calendar benchmark; every computed answer printing its steps; and an
+explicit record when a person has read an authority and found it silent, so
+silence is never inferred from nothing having been read.</p>
+<p>The question is reopened when the first rule's value is a class rather than
+a number, or when two encoded orders interact. At that point SUMO and
+LegalRuleML are tried on one worked example and the choice is made once.</p>
+<p class="note">Sources: the group's papers as published at
+<a href="https://www.adampease.com/" rel="noopener">adampease.com</a>, among them
+<a href="https://www.adampease.com/Sigma-rs.pdf" rel="noopener">SigmaKEE-rs</a>,
+<a href="https://www.adampease.com/FEENER-ARQNL.pdf" rel="noopener">Embedding
+Deontic Logic Operators</a>,
+<a href="https://www.adampease.com/CalendarLogic.pdf" rel="noopener">Gregorian date
+arithmetic</a>,
+<a href="https://www.adampease.com/TimberPeaseCOLREG-CSCI2025.pdf" rel="noopener">Rules
+of the Road</a>, and
+<a href="https://www.adampease.com/NESY_Conference_Paper.pdf" rel="noopener">Grounding
+Terms from an Ontology</a>. The full review, with the paper each claim was read
+from, is in the repository under <code>resources/28</code>.</p>
 </main><footer><p>Generated from the canonical policy store. This site is an unofficial reference - the issuing authority's copy governs.</p><p><a href="accessibility.html">Accessibility statement</a> &middot; <a href="about.html">About</a></p></footer></body></html>
