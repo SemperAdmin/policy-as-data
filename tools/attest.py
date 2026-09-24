@@ -141,11 +141,20 @@ def show_clause(row: dict, clause: dict, doc: dict) -> None:
         print(f"  {name}: {json.dumps(spec, ensure_ascii=False)}")
     if not covers["inputs"]:
         print("  (none)")
+    earlier_ids = []
+    for c in doc.get("clauses", []):
+        if c.get("id") == clause.get("id"):
+            break
+        if c.get("item") == clause.get("item"):
+            earlier_ids.append(c.get("id"))
     print("PRECEDED BY (earlier clauses in this item group; first match wins)")
-    for cid, _digest in covers["preceded_by"]:
+    for cid in earlier_ids:
         print(f"  {cid}")
-    if not covers["preceded_by"]:
+    if not earlier_ids:
         print("  (none - this clause is tried first)")
+    else:
+        print("Each earlier clause is bound through the chain and is attested on its own; "
+              "its body is not repeated here.")
     print(f"RULES FILE  {covers['rules_file']}")
     print("You are attesting all of the above, not only the clause: a later edit")
     print("to any fact, input spec or earlier clause listed here invalidates it.")

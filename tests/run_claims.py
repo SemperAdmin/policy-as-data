@@ -25,6 +25,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -278,6 +279,37 @@ def mech_clause_hash(fx, fixtures):
     return {"hash_changed": clause_hash(base) != clause_hash({**base, **fx["edit"]})}
 
 
+def mech_dependency_hash_scaling(fx, fixtures):
+    """R11: clause_dependency_hash must be linear in item-group size, not
+    exponential. A synthetic doc with n clauses sharing one item, each a
+    minimal valid clause with a guard reading the one declared input. Timed
+    with time.perf_counter so the claim is measured, not asserted."""
+    from normalize import clause_dependency_hash  # noqa: E402
+    n = fx.get("n", 60)
+    doc = {
+        "rules_file": "x.rules.json",
+        "inputs": [{"name": "flag", "type": "int", "default": 0}],
+        "facts": [],
+        "clauses": [
+            {
+                "id": f"C{i}",
+                "item": "shared",
+                "basis": "cited",
+                "cite": "R",
+                "requires": [],
+                "citation": {"identifier": f"/us/x/p{i}", "label": f"p{i}"},
+                "guard": {"op": "input", "name": "flag"},
+                "value": {"op": "const", "value": i},
+            }
+            for i in range(n)
+        ],
+    }
+    start = time.perf_counter()
+    hashes = [clause_dependency_hash(doc, c["id"]) for c in doc["clauses"]]
+    elapsed = time.perf_counter() - start
+    return {"all_hashes_distinct": len(set(hashes)) == n, "under_two_seconds": elapsed < 2.0}
+
+
 DATA_DIR = ROOT / "data"
 MPLP_RULES = DATA_DIR / "maradmin-051-23.rules.json"
 MPLP_LOGIC = DATA_DIR / "maradmin-051-23.logic.json"
@@ -406,6 +438,7 @@ def mech_engine(fx, fixtures):
         out = eg.run(logic_path, fx["args"], ledger_path=ledger, policy_path=policy)
     blockers = {b for w in out["withheld"] for b in w["withheld_because"]}
     proof_item = next((p for p in out["proof"] if p["item"] == fx.get("proof_item")), None)
+    clause_status_check = fx.get("clause_status_check", [])
     return {
         "proof_for_item": proof_item and {k: proof_item.get(k)
                                           for k in ("rules", "inputs", "preceded_by")},
@@ -417,6 +450,10 @@ def mech_engine(fx, fixtures):
         "withheld_items": sorted(w["item"] for w in out["withheld"]),
         "clause_summary": out["verification"]["clause_summary"],
         "decision_has_remaining_days": any(l["item"] == "remaining_days" for l in out["decision"]),
+        # R11 coverage check: the derived status of specific clauses, direct
+        # from verification.by_clause - independent of evaluate_clauses'
+        # first-match control flow, which is what withheld_because reflects.
+        "clause_status": {cid: out["verification"]["by_clause"].get(cid) for cid in clause_status_check},
     }
 
 
@@ -451,6 +488,7 @@ MECHANISMS = {
     "clause_hash": mech_clause_hash,
     "engine_parity": mech_engine_parity,
     "engine": mech_engine,
+    "dependency_hash_scaling": mech_dependency_hash_scaling,
 }
 
 # Keys handled by eval_extra_checks rather than plain equality.

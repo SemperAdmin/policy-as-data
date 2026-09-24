@@ -842,6 +842,19 @@
     {"id": "LN16", "polarity": "negative", "claim": "Two facts with the same name are rejected; which definition a clause reads must not depend on file order",
      "mechanism": "check_logic",
      "fixture": {"mutations": [{"path": ["facts"], "append": {"name": "gap_hours", "expr": {"op": "const", "value": 0}}}], "stderr_has": "duplicate fact"},
-     "expect": {"exit_nonzero": true, "stderr_has": "duplicate fact"}}
+     "expect": {"exit_nonzero": true, "stderr_has": "duplicate fact"}},
+    {"id": "LC8", "polarity": "positive",
+     "claim": "clause_dependency_hash is linear in item-group size: 60 clauses sharing one item hash distinctly in under two seconds (R11)",
+     "mechanism": "dependency_hash_scaling",
+     "fixture": {"n": 60},
+     "expect": {"all_hashes_distinct": true, "under_two_seconds": true}},
+    {"id": "LN19", "polarity": "negative",
+     "claim": "The predecessor chain still covers a later clause in a group: invalidating the first clause of window_status (WINDOW_EXPIRED) after attestation invalidates WINDOW_OPEN too, the clause the chain binds through it (R11)",
+     "mechanism": "engine",
+     "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01"},
+                 "attest_rules": "all", "attest_clauses": "all",
+                 "mutations": [{"path": ["clauses", "clause:WINDOW_EXPIRED", "value"], "value": {"op": "const", "value": "EXPIRED"}}],
+                 "clause_status_check": ["WINDOW_EXPIRED", "WINDOW_OPEN"]},
+     "expect": {"clause_status": {"WINDOW_EXPIRED": "INVALIDATED", "WINDOW_OPEN": "INVALIDATED"}}}
   ]
 }
