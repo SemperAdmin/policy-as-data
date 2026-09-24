@@ -278,6 +278,52 @@ so rather than hanging - browsers refuse `fetch()` for `file:` URLs.
 
 ## 7. Open decisions - the owner's, not yours
 
+0. **The clause engine. Decided 2026-09-24.** `EVALUATOR-PLAN.md` M1.
+
+   - **Decision:** decision logic is hand-tier data, attested per clause, not
+     hand-written Python. `data/maradmin-051-23.logic.json` (10 clauses - 5
+     `cited`, 5 `inferred`; 3 named refusals), evaluated by `tools/engine.py`
+     and gated by `tools/check_logic.py` (build stage 16a).
+   - **Reason:** unverified Python logic was the weak link sitting under
+     verified rule values. A clause now carries the same basis and citation
+     discipline as an authority edge, and a transcription error is provable
+     precisely rather than buried in a function body.
+   - **Alternatives:** SUMO+Vampire, LegalRuleML+SHACL, Datalog.
+   - **Tradeoffs:** no recursion, no loops, no user functions - a small
+     fixed-operator expression language (`engine.OPS`). A new operator needs a
+     stated clause that requires it.
+   - **Risk:** a transcription error in a clause is proved precisely once
+     found, but human attestation per clause (Task 7, pending - see below) is
+     the only guard against one shipping in the first place. That guard is
+     only as wide as what the attestation binds: since 2026-09-24 it is
+     `clause_dependency_hash` (the clause, the facts it reaches, the input
+     specs it reads, the earlier clauses in its group, the rules file), not
+     the clause alone - see the defect register, section 10.
+   - **Revisit trigger:** the first recursive requirement, or M3 (the
+     SUMO+Sigma vs. LegalRuleML+SHACL formalism decision, `resources/28`).
+
+   Parity: engine output is byte-identical to `tools/evaluate.py` on all 11
+   cases under 5 ledger states (claims rows LC2, LC3, LC4, LC4a, LC4b).
+   `tools/evaluate.py` is unchanged; it remains the parity reference and
+   `docs/scenarios.html` still renders from it. Claims table: 51 of 51 PASS
+   (after the 2026-09-24 final-review fix wave).
+
+   Clause quorum set to 1 (target 2), under the existing one-verifier
+   deviation in `config/verification_policy.json` (`"affects": "rule,
+   clause"` - extended explicitly to cover clauses, not a new deviation).
+
+   **Not done, stated plainly:**
+   - Build-twice hash idempotence for stage 16a has not been measured.
+     `canonical/` is absent from this worktree; run the hash comparison in
+     the main checkout after merge (commands in `EVALUATOR-PLAN.md` Task 6).
+   - Owner attestation of the 10 clauses (`EVALUATOR-PLAN.md` Task 7) is
+     pending. Until it lands, every line the engine emits is withheld, same
+     as an unattested rule. It must bind `clause_dependency_hash`, which
+     `tools/attest.py` does as of 2026-09-24; an attestation against the old
+     clause-only hash would read INVALIDATED.
+   - The cutover of `docs/scenarios.html` to the engine (`EVALUATOR-PLAN.md`
+     Task 8) is gated on that attestation and has not happened.
+
 1. **The `[ID2]` promotion.** `E:\GunnyBot\promotion_report.md` is the sheet:
    16 records with moved provision paths, 21,315 rewritten identifiers, 11 new
    top-tier records. None of it is in `E:\GunnyBot\canonical`. Approving brings
@@ -390,6 +436,16 @@ deliberately, so they stay visible without masking a real one.
 **174 of 384 reference items unparsed.** The citation grammar covers ~24
 issuance forms. The remainder are mostly prose references and forms not yet in
 the grammar. They are counted and reported, not silently dropped.
+
+**The clause engine's ingest and verification-page gaps, found 2026-09-24.**
+`tools/attest.py --ingest` is not clause-aware - it was built for rules and
+does not walk `data/*.logic.json`, so a clause's attestation has to be
+recorded by the mechanism `EVALUATOR-PLAN.md` Task 7 uses, not the ingest
+flow. `docs/verification.html` has no clause queue; an unattested clause is
+invisible there even though the engine withholds on it exactly as it does
+for an unattested rule. `FORFEITURE_DATE` is `inferred` and inherits the
+open 365-day-versus-one-year finding rather than resolving it - the finding
+stays open, the clause just states its dependency honestly.
 
 **Fourteen documents carry no outbound edges.** Ten are statute or DoD records,
 which is expected - they are the top of the ladder. `MARADMIN-2021-388`,
@@ -570,6 +626,62 @@ claim of this project is that its provenance can be trusted.
   The trap: a citation edge and its markup anchor must move in the same
   commit, and `python tools/validate.py` is the pre-push check that would have
   caught it locally.
+
+### Clause engine, fixed 2026-09-24
+
+- **A clause attestation covered only the clause.** The ledger bound
+  `clause_hash`, the clause dict minus `$comment` and `status`. Found by the
+  final review's probe of the clause-engine branch: editing a fact
+  expression, reordering clauses within an item group, deleting an earlier
+  clause, or changing an input default each changed decisions while every
+  clause stayed VERIFIED. Fix: `normalize.clause_dependency_hash` binds the
+  clause plus every fact it reaches, the spec of every input it reads, each
+  earlier clause in its group (with that clause's own dependency hash), and
+  the rules file. `verify_status`, `attest.py`, `engine.run` and the claims
+  fixture ledger all use it; `attest.py` shows the verifier everything it
+  covers. Claims LN9-LN12. The trap: **Task 7 attestation must bind the new
+  hash** - an attestation recorded against the clause-only hash reads
+  INVALIDATED, correctly.
+  - **Correction, 2026-09-24 (residual fix R11): the hash-scope fix was
+    exponential.** `preceded_by` bound every earlier clause in the group,
+    each with its own full dependency hash - which itself bound every
+    clause before it, recursively. Measured: 14.6s to hash 20 clauses
+    sharing one item; a group of 60 would not finish in reasonable time.
+    Fix: `preceded_by` now binds only the one clause immediately before it
+    in the group (`[id, clause_dependency_hash(doc, id)]`, or `null` for
+    the first clause) - the chain transitively covers every earlier clause,
+    since each predecessor's own hash already binds its predecessor, so
+    coverage is unchanged and cost is linear. `attest.py show_clause` still
+    lists every earlier clause id in the group (read from the document, not
+    from the payload) and adds one line stating each is attested on its own
+    through the chain. Claim LC8 (60 clauses, distinct hashes, under two
+    seconds) and LN19 (invalidating the first clause of a two-clause group
+    still invalidates the last, proving the chain's coverage did not
+    shrink). Claims table: 55 rows.
+- **An unadmitted clause could be skipped by its own guard.** `engine.py`
+  evaluated a clause's guard before its admission, so an INVALIDATED clause
+  whose guard came out false was passed over and a later admitted clause
+  answered in its place. Found by the same review. Fix: every earlier clause
+  in the item group that the ledger has not admitted is a blocker on each
+  later clause, whatever its guard says. Claim LN13. Same review also found
+  the operators were called total when they are partial (now EngineError
+  plus static shape checks, LN14-LN16) and the proof omitted what earlier
+  clauses in the group touched (LC7).
+  - **Correction, 2026-09-24 (residual fix R12): a line could still vanish.**
+    An unadmitted clause blocks the clauses after it (fixed above), but if
+    a group's own guards and `when`s all read false - including an
+    unadmitted clause's, which is not trusted to decide the group does not
+    apply - the group produced nothing at all: no finding, no withheld
+    entry, the item simply absent from the decision. Fix: in
+    `evaluate_clauses`, if a group's loop ends without emitting or
+    withholding anything and any clause in it is not VERIFIED, one withheld
+    entry is emitted for the item, citing the first unadmitted clause's
+    rule and naming every unadmitted clause in the group, file order.
+    Admitted-only groups are unaffected, so the parity claims (LC2-LC4b) did
+    not change. Claims LN17, LN18. Consequence: on a ledger carrying
+    unattested clauses, a group whose guards are all false now shows a
+    withheld line instead of nothing - the safe direction, and it
+    disappears once the clauses are attested. Claims table: 55 rows.
 
 ---
 

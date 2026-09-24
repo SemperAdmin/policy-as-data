@@ -45,7 +45,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from normalize import rule_assertion_id, rule_hash  # noqa: E402
+from normalize import (  # noqa: E402
+    clause_assertion_id, clause_dependency_hash, rule_assertion_id, rule_hash)
 
 ROOT = Path(__file__).resolve().parent.parent
 LEDGER = ROOT / "verification" / "attestations.jsonl"
@@ -53,7 +54,7 @@ DATA = ROOT / "data"
 POLICY = ROOT / "config" / "verification_policy.json"
 
 # The target, and what the project holds itself to absent a recorded deviation.
-TARGET_QUORUM = {"rule": 2, "provision": 1}
+TARGET_QUORUM = {"rule": 2, "provision": 1, "clause": 2}
 
 
 def load_policy(path: Path = POLICY):
@@ -131,6 +132,45 @@ def live_rule_assertions(data_dir: Path = DATA) -> dict:
                 "inline_status": rule.get("status"),
             }
     return live
+
+
+def live_clause_assertions(data_dir: Path = DATA) -> dict:
+    """Every logic clause currently in the corpus, keyed by assertion id. A clause
+    is attested exactly as a rule value is: read against its cited paragraph.
+
+    The hash is clause_dependency_hash: the clause plus the facts, input specs
+    and earlier clauses in its group that its answer depends on. The identifier
+    comes from the rules file's source with no fallback, because tools/engine.py
+    computes the assertion id the same way and the two must never disagree."""
+    live = {}
+    for path in sorted(data_dir.glob("*.logic.json")):
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        rules_doc = json.loads((path.parent / doc["rules_file"]).read_text(encoding="utf-8"))
+        source = rules_doc.get("source", {})
+        identifier = source.get("identifier")
+        if not identifier:
+            raise SystemExit(f"{path.name}: rules file {doc['rules_file']} has no "
+                             "source.identifier; a clause assertion id cannot be formed")
+        for clause in doc.get("clauses", []):
+            aid = clause_assertion_id(identifier, clause["id"])
+            live[aid] = {
+                "assertion": aid,
+                "kind": "clause",
+                "file": path.name,
+                "clause_id": clause["id"],
+                "source_label": source.get("label"),
+                "source_url": source.get("url"),
+                "source_artifact": (source.get("artifact") or {}).get("sha256"),
+                "citation": (clause.get("citation") or {}).get("label"),
+                "hash": clause_dependency_hash(doc, clause["id"]),
+                "inline_status": clause.get("status"),
+            }
+    return live
+
+
+def live_assertions(data_dir: Path = DATA) -> dict:
+    """Rule values and logic clauses together - everything the ledger can admit."""
+    return {**live_rule_assertions(data_dir), **live_clause_assertions(data_dir)}
 
 
 def derive(live: dict, ledger: dict, quorum: dict | None = None) -> list:
@@ -211,7 +251,7 @@ def main() -> int:
     args = ap.parse_args()
 
     quorum, deviation = load_policy(Path(args.policy))
-    live = live_rule_assertions(Path(args.data))
+    live = live_assertions(Path(args.data))
     ledger = load_ledger(Path(args.ledger))
     rows = derive(live, ledger, quorum)
 
@@ -225,7 +265,7 @@ def main() -> int:
         counts = {}
         for r in rows:
             counts[r["status"]] = counts.get(r["status"], 0) + 1
-        print(f"Verification status - {len(rows)} rule assertions")
+        print(f"Verification status - {len(rows)} rule and clause assertions")
         if deviation:
             print(f"  QUORUM DEVIATION IN FORCE since {deviation['since']}: "
                   f"{deviation['affects']} reduced {deviation['reduced_from']} -> "

@@ -25,6 +25,19 @@
         }
       ]
     },
+    "parity_cases": [
+      {"event_date": "2027-03-01", "as_of": "2027-06-01", "used_days": 0},
+      {"event_date": "2027-03-01", "as_of": "2027-06-01", "used_days": 70, "increments_used": 2, "proposed_increment": 5},
+      {"event_date": "2027-03-01", "second_event_date": "2027-03-02", "as_of": "2027-06-01", "used_days": 0},
+      {"event_date": "2027-03-01", "second_event_date": "2027-03-04", "as_of": "2027-06-01"},
+      {"event_date": "2027-03-01", "second_event_date": "2027-03-10", "as_of": "2027-06-01"},
+      {"event_date": "2027-03-10", "second_event_date": "2027-03-01", "as_of": "2027-06-01"},
+      {"event_date": "2027-03-01", "as_of": "2028-06-01"},
+      {"event_date": "2027-03-01", "as_of": "2028-02-29"},
+      {"event_date": "2027-03-01", "as_of": "2027-06-01", "used_days": 90},
+      {"event_date": "2027-03-01", "as_of": "2027-06-01", "increments_used": 12, "proposed_increment": 10},
+      {"event_date": "2027-03-01", "as_of": "2027-06-01", "increments_used": 3, "proposed_increment": 10}
+    ],
     "rules_all_inline_verified": {
       "source": {
         "identifier": "/us/dod/don/usmc/maradmin/2099/001",
@@ -599,6 +612,265 @@
         "docs_with_element_count_mismatch": 0,
         "total_elements_equal_total_provisions": true
       }
-    }
+    },
+    {
+      "id": "LC1",
+      "polarity": "positive",
+      "claim": "A clause hash changes when anything that changes a decision changes: its condition, value, note, requires, citation, or basis",
+      "mechanism": "clause_hash",
+      "fixture": {
+        "base": {
+          "id": "X",
+          "item": "i",
+          "cite": "R",
+          "requires": [
+            "R"
+          ],
+          "basis": "cited",
+          "citation": {
+            "identifier": "/us/x/p1",
+            "label": "p1"
+          },
+          "value": {
+            "op": "rule",
+            "id": "R"
+          }
+        },
+        "edit": {
+          "value": {
+            "op": "const",
+            "value": 1
+          }
+        }
+      },
+      "expect": {
+        "hash_changed": true
+      }
+    },
+    {"id": "LC1a", "polarity": "positive", "claim": "A clause hash changes when its requires list changes (LC1, one edit per row)",
+     "mechanism": "clause_hash",
+     "fixture": {"base": {"id": "X", "item": "i", "cite": "R", "requires": ["R"], "basis": "cited", "citation": {"identifier": "/us/x/p1", "label": "p1"}, "value": {"op": "rule", "id": "R"}},
+                 "edit": {"requires": ["R", "S"]}},
+     "expect": {"hash_changed": true}},
+    {"id": "LC1b", "polarity": "positive", "claim": "A clause hash changes when its citation changes (LC1, one edit per row)",
+     "mechanism": "clause_hash",
+     "fixture": {"base": {"id": "X", "item": "i", "cite": "R", "requires": ["R"], "basis": "cited", "citation": {"identifier": "/us/x/p1", "label": "p1"}, "value": {"op": "rule", "id": "R"}},
+                 "edit": {"citation": {"identifier": "/us/x/p2", "label": "p2"}}},
+     "expect": {"hash_changed": true}},
+    {"id": "LC1c", "polarity": "positive", "claim": "A clause hash changes when its basis changes (LC1, one edit per row)",
+     "mechanism": "clause_hash",
+     "fixture": {"base": {"id": "X", "item": "i", "cite": "R", "requires": ["R"], "basis": "cited", "citation": {"identifier": "/us/x/p1", "label": "p1"}, "value": {"op": "rule", "id": "R"}},
+                 "edit": {"basis": "inferred"}},
+     "expect": {"hash_changed": true}},
+    {"id": "LC1d", "polarity": "positive", "claim": "A clause hash changes when an added when condition changes (LC1, one edit per row)",
+     "mechanism": "clause_hash",
+     "fixture": {"base": {"id": "X", "item": "i", "cite": "R", "requires": ["R"], "basis": "cited", "citation": {"identifier": "/us/x/p1", "label": "p1"}, "value": {"op": "rule", "id": "R"}},
+                 "edit": {"when": {"op": "const", "value": false}}},
+     "expect": {"hash_changed": true}},
+    {
+      "id": "LN1",
+      "polarity": "negative",
+      "claim": "A clause hash does NOT change when only the $comment or the legacy inline status changes; neither is part of the claim",
+      "mechanism": "clause_hash",
+      "fixture": {
+        "base": {
+          "id": "X",
+          "item": "i",
+          "cite": "R",
+          "requires": [
+            "R"
+          ],
+          "basis": "cited",
+          "citation": {
+            "identifier": "/us/x/p1",
+            "label": "p1"
+          },
+          "value": {
+            "op": "rule",
+            "id": "R"
+          }
+        },
+        "edit": {
+          "$comment": "reworded",
+          "status": "VERIFIED"
+        }
+      },
+      "expect": {
+        "hash_changed": false
+      }
+    },
+    {
+      "id": "LC2", "polarity": "positive",
+      "claim": "With every rule and clause admitted, the engine reproduces the hand-written evaluator byte for byte on every parity case",
+      "mechanism": "engine_parity",
+      "fixture": {"cases": "parity_cases", "attest_rules": "all", "attest_clauses": "all"},
+      "expect": {"mismatches": []}
+    },
+    {
+      "id": "LC3", "polarity": "positive",
+      "claim": "With no rule admitted and every clause admitted, the engine withholds exactly what the hand-written evaluator withholds, naming the same rules in the same order",
+      "mechanism": "engine_parity",
+      "fixture": {"cases": "parity_cases", "attest_rules": [], "attest_clauses": "all"},
+      "expect": {"mismatches": []}
+    },
+    {
+      "id": "LC4", "polarity": "positive",
+      "claim": "With only the maximum admitted, the engine and the evaluator agree line for line (the C10 condition, applied to the engine)",
+      "mechanism": "engine_parity",
+      "fixture": {"cases": "parity_cases", "attest_rules": ["MAX_PARENTAL_LEAVE_DAYS"], "attest_clauses": "all"},
+      "expect": {"mismatches": []}
+    },
+    {
+      "id": "LC4a", "polarity": "positive",
+      "claim": "With every rule admitted except the merge period, forfeiture and window lines on two-event cases withhold naming the merge rule exactly as the evaluator does (dynamic dependency through governing_event)",
+      "mechanism": "engine_parity",
+      "fixture": {"cases": "parity_cases", "attest_rules": ["MAX_PARENTAL_LEAVE_DAYS", "ENTITLEMENT_WINDOW_DAYS", "MIN_INCREMENT_DAYS", "MAX_INCREMENTS"], "attest_clauses": "all"},
+      "expect": {"mismatches": []}
+    },
+    {
+      "id": "LC4b", "polarity": "positive",
+      "claim": "With every rule admitted except the entitlement window, the engine and the evaluator agree line for line",
+      "mechanism": "engine_parity",
+      "fixture": {"cases": "parity_cases", "attest_rules": ["MAX_PARENTAL_LEAVE_DAYS", "MIN_INCREMENT_DAYS", "MAX_INCREMENTS", "EVENT_PROXIMITY_MERGE_HOURS"], "attest_clauses": "all"},
+      "expect": {"mismatches": []}
+    },
+    {
+      "id": "LC5", "polarity": "positive",
+      "claim": "Every emitted line has a proof entry naming its clause, its basis, and a paragraph identifier",
+      "mechanism": "engine",
+      "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01", "proposed_increment": 10, "increments_used": 3},
+                  "attest_rules": "all", "attest_clauses": "all"},
+      "expect": {"proof_matches_decision": true, "every_proof_cited": true, "logic_blockers": [],
+                 "clause_summary": "all clauses VERIFIED in the ledger"}
+    },
+    {
+      "id": "LN2", "polarity": "negative",
+      "claim": "A VERIFIED rule does not make an unattested clause usable: with every rule admitted and REMAINING_DAYS unattested, that line is withheld and names the clause",
+      "mechanism": "engine",
+      "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01"},
+                  "attest_rules": "all", "attest_clauses_except": ["REMAINING_DAYS"]},
+      "expect": {"logic_blockers": ["logic/REMAINING_DAYS"], "decision_has_remaining_days": false,
+                 "clause_summary": "1 clause(s) not admitted: ['REMAINING_DAYS']"}
+    },
+    {
+      "id": "LN3", "polarity": "negative",
+      "claim": "A clause edited after attestation is not used: its hash no longer matches, the ledger reads INVALIDATED, and the line is withheld",
+      "mechanism": "engine",
+      "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01"},
+                  "attest_rules": "all", "attest_clauses": "all",
+                  "mutations": [{"path": ["clauses", "clause:REMAINING_DAYS", "note", "template"], "value": "{max} minus {used}"}]},
+      "expect": {"logic_blockers": ["logic/REMAINING_DAYS"], "logic_blocker_states": ["logic/REMAINING_DAYS [INVALIDATED]"],
+                 "decision_has_remaining_days": false}
+    },
+    {"id": "LC6", "polarity": "positive", "claim": "The live clause file passes every static check",
+     "mechanism": "check_logic", "fixture": {"mutations": [], "stderr_has": ""},
+     "expect": {"exit_nonzero": false, "stderr_has": ""}},
+    {"id": "LN4", "polarity": "negative", "claim": "A cycle in the fact graph is rejected; the engine could not be proven to terminate",
+     "mechanism": "check_logic",
+     "fixture": {"mutations": [{"path": ["facts"], "value": [
+       {"name": "loop_a", "expr": {"op": "fact", "name": "loop_b"}},
+       {"name": "loop_b", "expr": {"op": "fact", "name": "loop_a"}}]}], "stderr_has": "fact cycle"},
+     "expect": {"exit_nonzero": true, "stderr_has": "fact cycle"}},
+    {"id": "LN5", "polarity": "negative", "claim": "A clause citation containing a period is rejected under NAMESPACES.md N3",
+     "mechanism": "check_logic",
+     "fixture": {"mutations": [{"path": ["clauses", "clause:REMAINING_DAYS", "citation", "identifier"], "value": "/us/dod/dodi/1327.06/s3/3.11"}], "stderr_has": "N3/N4"},
+     "expect": {"exit_nonzero": true, "stderr_has": "N3/N4"}},
+    {"id": "LN6", "polarity": "negative", "claim": "A clause citing a paragraph that exists in no USLM file is rejected; no logic without the paragraph it was read from",
+     "mechanism": "check_logic",
+     "fixture": {"mutations": [{"path": ["clauses", "clause:REMAINING_DAYS", "citation", "identifier"], "value": "/us/dod/don/usmc/maradmin/2023/051/p99"}], "stderr_has": "not a paragraph"},
+     "expect": {"exit_nonzero": true, "stderr_has": "not a paragraph"}},
+    {"id": "LN7", "polarity": "negative", "claim": "A clause reading a rule it does not declare in requires is rejected; its withholding would be incomplete",
+     "mechanism": "check_logic",
+     "fixture": {"mutations": [{"path": ["clauses", "clause:AUTHORIZED_TOTAL", "value"], "value": {"op": "rule", "id": "MIN_INCREMENT_DAYS"}}], "stderr_has": "not in requires"},
+     "expect": {"exit_nonzero": true, "stderr_has": "not in requires"}},
+    {"id": "LN8", "polarity": "negative", "claim": "A guard that reads a rule is rejected; applicability is decided from inputs only",
+     "mechanism": "check_logic",
+     "fixture": {"mutations": [{"path": ["clauses", "clause:MULTIPLE_EVENTS_SINGLE", "guard"], "value": {"op": "gt", "args": [{"op": "rule", "id": "EVENT_PROXIMITY_MERGE_HOURS"}, {"op": "const", "value": 0}]}}], "stderr_has": "guard reads a rule"},
+     "expect": {"exit_nonzero": true, "stderr_has": "guard reads a rule"}},
+    {"id": "LN9", "polarity": "negative",
+     "claim": "An attestation covers the facts a clause reads: editing a fact after attestation withholds every line resting on it, with no clause text changed",
+     "mechanism": "engine",
+     "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01"},
+                 "attest_rules": "all", "attest_clauses": "all",
+                 "mutations": [{"path": ["facts", "fact:forfeiture_date", "expr", "args", 0], "value": {"op": "input", "name": "as_of"}}]},
+     "expect": {"logic_blockers": ["logic/FORFEITURE_DATE", "logic/WINDOW_EXPIRED"], "withheld_items": ["forfeiture_date", "window_status"]}},
+    {"id": "LN10", "polarity": "negative",
+     "claim": "An attestation covers first-match order: moving a clause ahead of another in its item group after attestation withholds that line",
+     "mechanism": "engine",
+     "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01"},
+                 "attest_rules": "all", "attest_clauses": "all",
+                 "mutations": [{"path": ["clauses"], "move": "clause:WINDOW_OPEN", "before": "clause:WINDOW_EXPIRED"}]},
+     "expect": {"logic_blockers": ["logic/WINDOW_OPEN"], "withheld_items": ["window_status"]}},
+    {"id": "LN11", "polarity": "negative",
+     "claim": "An attestation covers the clauses ahead of it: deleting an earlier clause in the group after attestation withholds the line the next clause would answer",
+     "mechanism": "engine",
+     "fixture": {"args": {"event_date": "2027-03-01", "second_event_date": "2027-03-02", "as_of": "2027-06-01"},
+                 "attest_rules": "all", "attest_clauses": "all",
+                 "mutations": [{"path": ["clauses"], "remove": "clause:MULTIPLE_EVENTS_SINGLE"}]},
+     "expect": {"logic_blockers": ["logic/MULTIPLE_EVENTS_SEPARATE"], "withheld_items": ["multiple_events"]}},
+    {"id": "LN12", "polarity": "negative",
+     "claim": "An attestation covers the input specs a clause reads: changing an input default after attestation withholds the line",
+     "mechanism": "engine",
+     "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01"},
+                 "attest_rules": "all", "attest_clauses": "all",
+                 "mutations": [{"path": ["inputs", "input:used_days", "default"], "value": 50}]},
+     "expect": {"logic_blockers": ["logic/REMAINING_DAYS"], "withheld_items": ["remaining_days"], "decision_has_remaining_days": false}},
+    {"id": "LN13", "polarity": "negative",
+     "claim": "An unadmitted earlier clause blocks every later clause in its group whatever its guard evaluates to: a first-match answer cannot skip past a clause the ledger has not admitted",
+     "mechanism": "engine",
+     "fixture": {"args": {"event_date": "2027-03-01", "second_event_date": "2027-03-02", "as_of": "2027-06-01"},
+                 "attest_rules": "all", "attest_clauses": "all",
+                 "mutations": [{"path": ["clauses", "clause:MULTIPLE_EVENTS_SINGLE", "guard"], "value": {"op": "present", "name": "proposed_increment"}}]},
+     "expect": {"logic_blockers": ["logic/MULTIPLE_EVENTS_SEPARATE", "logic/MULTIPLE_EVENTS_SINGLE"], "withheld_items": ["multiple_events"]}},
+    {"id": "LC7", "polarity": "positive",
+     "claim": "A first-match line's proof names everything it rests on, including the rules and inputs of the earlier clauses tried and rejected, and names those clauses",
+     "mechanism": "engine",
+     "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01", "proposed_increment": 10, "increments_used": 3},
+                 "attest_rules": "all", "attest_clauses": "all", "proof_item": "proposed_increment"},
+     "expect": {"proof_for_item": {"rules": ["MAX_INCREMENTS", "MIN_INCREMENT_DAYS"],
+                                   "inputs": ["increments_used", "proposed_increment"],
+                                   "preceded_by": ["INCREMENT_UNDER_MIN", "INCREMENT_MAX_REACHED"]},
+                "logic_blockers": []}},
+    {"id": "LN14", "polarity": "negative", "claim": "A format template naming a placeholder its args do not supply is rejected statically, not discovered at evaluation",
+     "mechanism": "check_logic",
+     "fixture": {"mutations": [{"path": ["clauses", "clause:REMAINING_DAYS", "note", "template"], "value": "{max} authorized minus {spent} used"}], "stderr_has": "placeholder"},
+     "expect": {"exit_nonzero": true, "stderr_has": "placeholder"}},
+    {"id": "LN15", "polarity": "negative", "claim": "An operator given the wrong number of arguments is rejected statically; operators are partial and the gate checks their shape",
+     "mechanism": "check_logic",
+     "fixture": {"mutations": [{"path": ["facts", "fact:gap_hours", "expr", "args", 0, "args"], "value": [{"op": "const", "value": 1}, {"op": "const", "value": 2}]}], "stderr_has": "arity"},
+     "expect": {"exit_nonzero": true, "stderr_has": "arity"}},
+    {"id": "LN16", "polarity": "negative", "claim": "Two facts with the same name are rejected; which definition a clause reads must not depend on file order",
+     "mechanism": "check_logic",
+     "fixture": {"mutations": [{"path": ["facts"], "append": {"name": "gap_hours", "expr": {"op": "const", "value": 0}}}], "stderr_has": "duplicate fact"},
+     "expect": {"exit_nonzero": true, "stderr_has": "duplicate fact"}},
+    {"id": "LC8", "polarity": "positive",
+     "claim": "clause_dependency_hash is linear in item-group size: 60 clauses sharing one item hash distinctly in under two seconds (R11)",
+     "mechanism": "dependency_hash_scaling",
+     "fixture": {"n": 60},
+     "expect": {"all_hashes_distinct": true, "under_two_seconds": true}},
+    {"id": "LN17", "polarity": "negative",
+     "claim": "An unadmitted clause's guard is not trusted to decide the group is inapplicable: if every clause in the group is skipped on that basis and the group would otherwise emit nothing, the item is withheld rather than silently absent (R12)",
+     "mechanism": "engine",
+     "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01", "proposed_increment": 10, "increments_used": 3},
+                 "attest_rules": "all", "attest_clauses": "all",
+                 "mutations": [{"path": ["clauses", "clause:INCREMENT_VALID", "guard"], "value": {"op": "const", "value": false}}]},
+     "expect": {"withheld_items": ["proposed_increment"],
+                "logic_blocker_states": ["logic/INCREMENT_VALID [INVALIDATED]"],
+                "decision_items": ["authorized_total_days", "forfeiture_date", "remaining_days", "window_status"]}},
+    {"id": "LN18", "polarity": "negative",
+     "claim": "Two never-attested clauses whose guards both read false leave nothing to trust: the group is withheld naming both, not silently absent (R12)",
+     "mechanism": "engine",
+     "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01"},
+                 "attest_rules": "all", "attest_clauses_except": ["MULTIPLE_EVENTS_SINGLE", "MULTIPLE_EVENTS_SEPARATE"]},
+     "expect": {"withheld_items": ["multiple_events"],
+                "logic_blocker_states": ["logic/MULTIPLE_EVENTS_SEPARATE [UNVERIFIED]", "logic/MULTIPLE_EVENTS_SINGLE [UNVERIFIED]"]}},
+    {"id": "LN19", "polarity": "negative",
+     "claim": "The predecessor chain still covers a later clause in a group: invalidating the first clause of window_status (WINDOW_EXPIRED) after attestation invalidates WINDOW_OPEN too, the clause the chain binds through it (R11)",
+     "mechanism": "engine",
+     "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01"},
+                 "attest_rules": "all", "attest_clauses": "all",
+                 "mutations": [{"path": ["clauses", "clause:WINDOW_EXPIRED", "value"], "value": {"op": "const", "value": "EXPIRED"}}],
+                 "clause_status_check": ["WINDOW_EXPIRED", "WINDOW_OPEN"]},
+     "expect": {"clause_status": {"WINDOW_EXPIRED": "INVALIDATED", "WINDOW_OPEN": "INVALIDATED"}}}
   ]
 }
