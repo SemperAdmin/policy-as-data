@@ -38,3 +38,25 @@ the index to the primary literature behind rows 28 and 29.
 
 Confidence 0.85. Identity, affiliation, book, and the shape of the publication
 list were read from the site. Individual papers were not retrieved.
+
+## Papers retrieved, 2026-09-24
+
+Every paper file the page links was fetched into a local reference library at
+`D:\Coding\ontology-library\adam-pease\`, **outside this repository on purpose**.
+The papers are third-party copyright; nothing from that folder is committed here
+or reaches `docs/`. Cite a paper, never ship its file.
+
+- 78 files retrieved, text extracted for all 78, sha256 per file in its `manifest.json`.
+- 8 recovered from moved or dead links: ACL Anthology and Springer relocations, and
+  6 raw Wayback Machine captures. `articulatesoftware.com/publications/` was a
+  frameset over `adampease.org/Articulate/publications/`.
+- **Lost, 2:** Svarny and Pease 2013 (AsiaLex) and `AAAI-SSS-03.pdf`. 404 at
+  source, no PDF capture in the Wayback CDX index. Recorded, not substituted.
+- **Skipped, 1:** Rauch et al. 2024, which the page links to a `file:///` path.
+- Page defects found: that `file:///` link, a Cheung et al. 2013 link written as
+  Markdown inside the HTML, and a malformed `adampease.org/professional/=` link.
+
+Most relevant to the rules layer: Feener, Pease and Thompson 2026 on deontic
+operators in higher-order logic; Pease 2025 on modal and higher-order reasoning
+with SUMO; Pease and Stanica 2026 on calendar arithmetic; Timberlake and Pease
+2025 on COLREG rules in SUMO. Read against `resources/28` and `resources/31`.
