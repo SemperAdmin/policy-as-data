@@ -25,6 +25,19 @@
         }
       ]
     },
+    "parity_cases": [
+      {"event_date": "2027-03-01", "as_of": "2027-06-01", "used_days": 0},
+      {"event_date": "2027-03-01", "as_of": "2027-06-01", "used_days": 70, "increments_used": 2, "proposed_increment": 5},
+      {"event_date": "2027-03-01", "second_event_date": "2027-03-02", "as_of": "2027-06-01", "used_days": 0},
+      {"event_date": "2027-03-01", "second_event_date": "2027-03-04", "as_of": "2027-06-01"},
+      {"event_date": "2027-03-01", "second_event_date": "2027-03-10", "as_of": "2027-06-01"},
+      {"event_date": "2027-03-10", "second_event_date": "2027-03-01", "as_of": "2027-06-01"},
+      {"event_date": "2027-03-01", "as_of": "2028-06-01"},
+      {"event_date": "2027-03-01", "as_of": "2028-02-29"},
+      {"event_date": "2027-03-01", "as_of": "2027-06-01", "used_days": 90},
+      {"event_date": "2027-03-01", "as_of": "2027-06-01", "increments_used": 12, "proposed_increment": 10},
+      {"event_date": "2027-03-01", "as_of": "2027-06-01", "increments_used": 3, "proposed_increment": 10}
+    ],
     "rules_all_inline_verified": {
       "source": {
         "identifier": "/us/dod/don/usmc/maradmin/2099/001",
@@ -665,6 +678,41 @@
       "expect": {
         "hash_changed": false
       }
+    },
+    {
+      "id": "LC2", "polarity": "positive",
+      "claim": "With every rule and clause admitted, the engine reproduces the hand-written evaluator byte for byte on every parity case",
+      "mechanism": "engine_parity",
+      "fixture": {"cases": "parity_cases", "attest_rules": "all", "attest_clauses": "all"},
+      "expect": {"mismatches": []}
+    },
+    {
+      "id": "LC3", "polarity": "positive",
+      "claim": "With no rule admitted and every clause admitted, the engine withholds exactly what the hand-written evaluator withholds, naming the same rules in the same order",
+      "mechanism": "engine_parity",
+      "fixture": {"cases": "parity_cases", "attest_rules": [], "attest_clauses": "all"},
+      "expect": {"mismatches": []}
+    },
+    {
+      "id": "LC4", "polarity": "positive",
+      "claim": "With only the maximum admitted, the engine and the evaluator agree line for line (the C10 condition, applied to the engine)",
+      "mechanism": "engine_parity",
+      "fixture": {"cases": "parity_cases", "attest_rules": ["MAX_PARENTAL_LEAVE_DAYS"], "attest_clauses": "all"},
+      "expect": {"mismatches": []}
+    },
+    {
+      "id": "LC4a", "polarity": "positive",
+      "claim": "With every rule admitted except the merge period, forfeiture and window lines on two-event cases withhold naming the merge rule exactly as the evaluator does (dynamic dependency through governing_event)",
+      "mechanism": "engine_parity",
+      "fixture": {"cases": "parity_cases", "attest_rules": ["MAX_PARENTAL_LEAVE_DAYS", "ENTITLEMENT_WINDOW_DAYS", "MIN_INCREMENT_DAYS", "MAX_INCREMENTS"], "attest_clauses": "all"},
+      "expect": {"mismatches": []}
+    },
+    {
+      "id": "LC4b", "polarity": "positive",
+      "claim": "With every rule admitted except the entitlement window, the engine and the evaluator agree line for line",
+      "mechanism": "engine_parity",
+      "fixture": {"cases": "parity_cases", "attest_rules": ["MAX_PARENTAL_LEAVE_DAYS", "MIN_INCREMENT_DAYS", "MAX_INCREMENTS", "EVENT_PROXIMITY_MERGE_HOURS"], "attest_clauses": "all"},
+      "expect": {"mismatches": []}
     }
   ]
 }

@@ -21,6 +21,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -277,6 +278,68 @@ def mech_clause_hash(fx, fixtures):
     return {"hash_changed": clause_hash(base) != clause_hash({**base, **fx["edit"]})}
 
 
+DATA_DIR = ROOT / "data"
+MPLP_RULES = DATA_DIR / "maradmin-051-23.rules.json"
+MPLP_LOGIC = DATA_DIR / "maradmin-051-23.logic.json"
+
+
+def _fixture_ledger(tmp, rules_doc, logic_doc, attest_rules, attest_clauses):
+    """A two-verifier ledger admitting the named rules and clauses, quorum 2.
+    'all' admits everything. Hashes are taken from the documents passed in, so a
+    document mutated afterwards reads as INVALIDATED - which is the point."""
+    from normalize import clause_assertion_id, clause_hash, rule_assertion_id, rule_hash  # noqa: E402
+    ident = rules_doc["source"]["identifier"]
+
+    def rec(aid, kind, digest, verifier):
+        return json.dumps({"assertion": aid, "kind": kind, "content_hash": digest,
+                           "result": "VERIFIED", "verifier": verifier,
+                           "at": "2026-09-11T00:00:00+00:00", "method": "read-and-compare",
+                           "verified_against": {"edition": "fixture", "obtained": "fixture",
+                                                "artifact_hash": None}})
+
+    lines = []
+    for r in rules_doc["rules"]:
+        if attest_rules == "all" or r["id"] in attest_rules:
+            lines += [rec(rule_assertion_id(ident, r["id"]), "rule", rule_hash(r), v)
+                      for v in ("V-001", "V-002")]
+    for c in logic_doc["clauses"]:
+        if attest_clauses == "all" or c["id"] in attest_clauses:
+            lines += [rec(clause_assertion_id(ident, c["id"]), "clause", clause_hash(c), v)
+                      for v in ("V-001", "V-002")]
+    ledger = tmp / "ledger.jsonl"
+    ledger.write_text("".join(line + "\n" for line in lines), encoding="utf-8")
+    policy = tmp / "policy.json"
+    policy.write_text(json.dumps({"quorum": {"rule": 2, "provision": 1, "clause": 2}}),
+                      encoding="utf-8")
+    return ledger, policy
+
+
+def mech_engine_parity(fx, fixtures):
+    """The engine against tools/evaluate.py: same rules, same ledger, same inputs.
+    Compared as sorted-key JSON, so this is a byte comparison and not a count.
+    The engine's two additions (proof, verification.by_clause) are removed first;
+    everything else must match exactly."""
+    import engine as eg  # noqa: E402
+    import evaluate as old  # noqa: E402
+    rules_doc = json.loads(MPLP_RULES.read_text(encoding="utf-8"))
+    logic_doc = json.loads(MPLP_LOGIC.read_text(encoding="utf-8"))
+    cases = fixtures[fx["cases"]]
+    mismatches = []
+    with tempfile.TemporaryDirectory() as tmp:
+        ledger, policy = _fixture_ledger(Path(tmp), rules_doc, logic_doc,
+                                         fx["attest_rules"], fx["attest_clauses"])
+        rules, source, deviation = old.load_rules(MPLP_RULES, ledger, policy)
+        for args in cases:
+            want = old.evaluate(rules, source, deviation, **args)
+            got = eg.run(MPLP_LOGIC, args, ledger_path=ledger, policy_path=policy)
+            got.pop("proof")
+            got["verification"].pop("by_clause")
+            if json.dumps(want, sort_keys=True, default=str) != \
+                    json.dumps(got, sort_keys=True, default=str):
+                mismatches.append(args)
+    return {"mismatches": mismatches}
+
+
 MECHANISMS = {
     "exports": mech_exports,
     "report": mech_report,
@@ -288,6 +351,7 @@ MECHANISMS = {
     "evaluate": mech_evaluate,
     "reconcile_cli": mech_reconcile_cli,
     "clause_hash": mech_clause_hash,
+    "engine_parity": mech_engine_parity,
 }
 
 # Keys handled by eval_extra_checks rather than plain equality.
