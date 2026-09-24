@@ -550,6 +550,40 @@
         17,
         24,
         29
+      ],
+      "addenda": [
+        {
+          "date": "2026-09-24",
+          "review": "resources/28-sumo-ontology-portal.md, addendum 2026-09-24",
+          "summary": "Method read from 78 retrieved papers. Verdict unchanged. Deontic layer experimental; no paper computes an entitlement quantity; English-to-logic output 59-62% well-formed on policy text with meaning unmeasured; no license named in any paper.",
+          "actions": [
+            {
+              "id": "28.1",
+              "action": "Port the CalendarLogic benchmark shape into positive and negative claims for evaluate.py date arithmetic.",
+              "priority": "P1",
+              "state": "OPEN"
+            },
+            {
+              "id": "28.2",
+              "action": "Optional human-assigned sumo_term cross-reference on config/rule_concepts.json, never used to derive.",
+              "priority": "P2",
+              "state": "HELD",
+              "held_on": "license contradiction resolved in writing"
+            },
+            {
+              "id": "28.3",
+              "action": "One independent evaluation of SUMO, BFO under ISO/IEC 21838-2 as baseline.",
+              "priority": "before adoption",
+              "state": "OPEN"
+            },
+            {
+              "id": "28.4",
+              "action": "Prover in the build path, SUMO deontic operators as rule format, automated English-to-logic translation.",
+              "priority": "-",
+              "state": "REJECTED"
+            }
+          ]
+        }
       ]
     },
     {
@@ -666,6 +700,13 @@
         27,
         28,
         29
+      ],
+      "addenda": [
+        {
+          "date": "2026-09-24",
+          "review": "resources/31-oceans-sumo-roe-paper.md, addendum 2026-09-24",
+          "summary": "The group's working normative system (COLREG) uses plain first-order predicates, not the deontic operators; the transfer recorded here matches that. CalendarLogic supplies the test shape for adopted item 4. Verdict unchanged."
+        }
       ]
     }
   ],
