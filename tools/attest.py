@@ -37,9 +37,10 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from normalize import file_hash, rule_hash  # noqa: E402
+from normalize import (  # noqa: E402
+    clause_dependency_hash, clause_dependency_payload, file_hash, rule_hash)
 from verify_status import (  # noqa: E402
-    DATA, LEDGER, POLICY, derive, live_rule_assertions, load_ledger, load_policy,
+    DATA, LEDGER, POLICY, derive, live_assertions, live_rule_assertions, load_ledger, load_policy,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -94,6 +95,75 @@ def load_rule(file_name: str, rule_id: str, data_dir: Path):
         if rule["id"] == rule_id:
             return doc, rule
     raise SystemExit(f"rule {rule_id} not found in {file_name}")
+
+
+def load_clause(file_name: str, clause_id: str, data_dir: Path):
+    doc = json.loads((data_dir / file_name).read_text(encoding="utf-8"))
+    for clause in doc.get("clauses", []):
+        if clause["id"] == clause_id:
+            return doc, clause
+    raise SystemExit(f"clause {clause_id} not found in {file_name}")
+
+
+def show_clause(row: dict, clause: dict, doc: dict) -> None:
+    """Show a clause and everything its attestation binds. The ledger binds
+    clause_dependency_hash, so the verifier is shown the facts, input specs and
+    earlier clauses that hash covers - an attestation must not cover more than
+    the verifier was shown."""
+    citation = clause.get("citation") or {}
+    covers = clause_dependency_payload(doc, clause["id"])
+    print("=" * 72)
+    print(f"ASSERTION   {row['assertion']}")
+    print(f"STATUS      {row['status']}  ({row.get('detail','')})")
+    print("-" * 72)
+    print(f"LOGIC       line '{clause.get('item')}', basis {clause.get('basis')}")
+    print(f"READ FROM   {citation.get('label')}")
+    print(f"            {citation.get('identifier')}")
+    print(f"SOURCE      {row.get('source_label')}")
+    if row.get("source_url"):
+        print(f"OPEN        {row['source_url']}")
+    print("-" * 72)
+    shown = {k: v for k, v in clause.items() if k not in ("$comment", "status")}
+    print(json.dumps(shown, indent=2, ensure_ascii=False))
+    if clause.get("$comment"):
+        print("-" * 72)
+        print("COMMENT (not hashed, not part of the claim):")
+        print(f"  {clause['$comment']}")
+    print("-" * 72)
+    print("THIS ATTESTATION ALSO COVERS what the clause's answer depends on:")
+    print("FACTS REACHED")
+    for name, expr in covers["facts"].items():
+        print(f"  {name} = {json.dumps(expr, ensure_ascii=False)}")
+    if not covers["facts"]:
+        print("  (none)")
+    print("INPUT SPECS")
+    for name, spec in covers["inputs"].items():
+        print(f"  {name}: {json.dumps(spec, ensure_ascii=False)}")
+    if not covers["inputs"]:
+        print("  (none)")
+    earlier_ids = []
+    for c in doc.get("clauses", []):
+        if c.get("id") == clause.get("id"):
+            break
+        if c.get("item") == clause.get("item"):
+            earlier_ids.append(c.get("id"))
+    print("PRECEDED BY (earlier clauses in this item group; first match wins)")
+    for cid in earlier_ids:
+        print(f"  {cid}")
+    if not earlier_ids:
+        print("  (none - this clause is tried first)")
+    else:
+        print("Each earlier clause is bound through the chain and is attested on its own; "
+              "its body is not repeated here.")
+    print(f"RULES FILE  {covers['rules_file']}")
+    print("You are attesting all of the above, not only the clause: a later edit")
+    print("to any fact, input spec or earlier clause listed here invalidates it.")
+    print("-" * 72)
+    print("Open the issuing authority's copy. Confirm the cited paragraph states")
+    print("this condition and this result. If basis is 'inferred', confirm the")
+    print("derivation is the only reading the paragraph supports. Do not confirm")
+    print("from the comment, from another tier, or from memory.")
+    print("=" * 72)
 
 
 def seed(data_dir: Path, ledger_path: Path, verifier: str | None = None) -> int:
@@ -265,12 +335,12 @@ def main() -> int:
         print(f"QUORUM DEVIATION IN FORCE since {deviation['since']}: "
               f"{deviation['affects']} reduced {deviation['reduced_from']} -> "
               f"{deviation['reduced_to']}. See config/verification_policy.json.\n")
-    live = live_rule_assertions(data_dir)
+    live = live_assertions(data_dir)
     rows = derive(live, load_ledger(ledger_path), quorum)
     todo = pending(rows)
 
     if args.list or not (args.next or args.assertion):
-        print(f"{len(todo)} of {len(rows)} rule assertions need work\n")
+        print(f"{len(todo)} of {len(rows)} assertions need work\n")
         for r in todo:
             print(f"  [{r['status']:<12}] {r['assertion']}")
             print(f"                 {r['citation']}  -  {r.get('detail','')}")
@@ -291,8 +361,14 @@ def main() -> int:
     if not args.verifier:
         raise SystemExit("--verifier is required to record an attestation")
 
-    doc, rule = load_rule(target["file"], target["rule_id"], data_dir)
-    show(target, rule)
+    if target["kind"] == "clause":
+        doc, item = load_clause(target["file"], target["clause_id"], data_dir)
+        show_clause(target, item, doc)
+        content_hash = clause_dependency_hash(doc, item["id"])
+    else:
+        doc, item = load_rule(target["file"], target["rule_id"], data_dir)
+        show(target, item)
+        content_hash = rule_hash(item)
 
     answer = input("verified / rejected / unable / skip  [v/r/u/s]: ").strip().lower()
     if answer in ("s", "skip", ""):
@@ -302,7 +378,7 @@ def main() -> int:
         raise SystemExit("unrecognised answer, nothing written")
 
     edition = input("source edition read (blank = the label above): ").strip() \
-        or doc.get("source", {}).get("label")
+        or target.get("source_label")
 
     # Provenance is what lets a future reader re-run this reading. One word does
     # not. Re-prompt rather than accept something that will be useless later.
@@ -338,8 +414,8 @@ def main() -> int:
 
     append(ledger_path, {
         "assertion": target["assertion"],
-        "kind": "rule",
-        "content_hash": rule_hash(rule),
+        "kind": target["kind"],
+        "content_hash": content_hash,
         "verified_against": {
             "edition": edition,
             "obtained": obtained,
@@ -359,7 +435,8 @@ def main() -> int:
         correct = input("what does the source actually say: ").strip()
         append(REQUESTS, {
             "assertion": target["assertion"], "raised_by": args.verifier, "at": at,
-            "encoded": {"value": rule.get("value"), "unit": rule.get("unit")},
+            "encoded": ({"clause_id": target["clause_id"]} if target["kind"] == "clause"
+                        else {"value": item.get("value"), "unit": item.get("unit")}),
             "source_states": correct, "note": note, "state": "OPEN",
         })
         print(f"correction request written to {REQUESTS}")
