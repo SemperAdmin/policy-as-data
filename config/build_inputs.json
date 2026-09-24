@@ -1,0 +1,27 @@
+{
+ "$comment": "Tracked files ./build.sh reads to produce its output. tools/build_stamp.py hashes these into config/build_stamp.json (stage 24), and CI recomputes the hash to catch output committed without a rebuild after an input changed. Patterns are pathlib globs from the repository root; each must match at least one file. canonical/ is not listed because it is untracked: the stamp cannot see a change to it. Build outputs are never inputs: config/store_ids.json (stage 1), config/authority_report.json (stage 4), config/reconciliation.json (stage 16), config/build_stamp.json (stage 24), docs/**, data/exports/**.",
+ "schema_version": "1.0",
+ "include": [
+  "build.sh",
+  "tools/*.py",
+  "site/**/*",
+  "schema/*",
+  "data/*.json",
+  "data/*.jsonld",
+  "data/*.xml",
+  "verification/attestations.jsonl",
+  "config/build_inputs.json",
+  "config/mos-family-manifest.json",
+  "config/revision_index.json",
+  "config/rule_concepts.json",
+  "config/scale_report.json",
+  "config/scenarios.json",
+  "config/site_nav.json",
+  "config/spines.json",
+  "config/units.json",
+  "config/verification_policy.json"
+ ],
+ "exclude": [
+  "schema/README.md"
+ ]
+}
