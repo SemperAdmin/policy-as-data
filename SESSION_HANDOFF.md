@@ -377,6 +377,26 @@ so rather than hanging - browsers refuse `fetch()` for `file:` URLs.
    The `.git` one first: a stale `index.lock` makes the next git command fail
    with "Another git process seems to be running."
 
+5. **CONFLICT, found 2026-09-24: "`./build.sh` succeeds on a fresh clone" is
+   not true.** `CLAUDE.md` section 2, constraint 10, states that `./build.sh`
+   succeeds on a fresh clone with nothing else present; `README.md` says
+   "Nothing else needs to be present." Measured 2026-09-24 in a fresh clone
+   of `chore/rebuild-and-stale-guard`: stage 1 runs
+   `os.listdir("canonical")` and the build exits 1 with `FileNotFoundError`.
+   `canonical/` is gitignored by design (constraint 2), so no clone has it.
+   Why it matters: the claim is a published property, CI was designed around
+   it being false (it cannot run the build, which is why the stale-output
+   guard below exists), and a contributor following the README fails at the
+   first stage. Stages 16, 16a and 17-22 do run without it. Resolution, the
+   owner's call: (a) amend both documents to "the canonical-free stages
+   (16-22) succeed on a fresh clone; stages 1-14 need `canonical/`", or
+   (b) make stages 1-14 skip cleanly, with a stated message, when
+   `canonical/` is absent. (a) is a text change; (b) makes the claim true but
+   a fresh-clone build would then silently publish nothing new from stages
+   1-14, so it needs the skip to be loud. Recommendation: (a) now; (b) only
+   if a contributor path needs `./build.sh` to exit 0. `CLAUDE.md` has not
+   been edited - flagged here only.
+
 ---
 
 ## 8. Before the first commit
@@ -682,6 +702,38 @@ claim of this project is that its provenance can be trusted.
     unattested clauses, a group whose guards are all false now shows a
     withheld line instead of nothing - the safe direction, and it
     disappears once the clauses are attested. Claims table: 55 rows.
+
+### Stale output, guarded 2026-09-24
+
+- **A source change merged without its rebuilt output, twice.** The Ontology
+  nav link was missing from 71 pages, and clause quorum was missing from
+  `config/reconciliation.json`, each after the source change reached main.
+  CI ran `validate.py` and the claims table only, and cannot run `./build.sh`
+  because stages 1-14 read `canonical/`. Guard, two layers in
+  `.github/workflows/validate.yml`: (1) "Canonical-free stages reproduce
+  committed output" re-runs stages 16, 16a, 17-22 in build order and fails
+  on any tree change, tracked or untracked - exact, but only for those
+  stages; (2) "Build output matches its inputs" runs
+  `tools/build_stamp.py --check` against `config/build_stamp.json`, written
+  by new build stage 24 from the inputs listed in `config/build_inputs.json`.
+  Claims BS1-BS4. Known limits: the stamp proves the build *ran* after the
+  last input change, not that canonical-dependent output is correct; it
+  cannot see `canonical/` (untracked); a hand-edited output committed
+  without a rebuild is caught only for the canonical-free outputs (layer 1);
+  an untracked file inside an input glob (say a scratch `tools/x.py`) enters
+  a local stamp and CI then reports stale - the safe direction. Stage 23
+  (`check_site`) is not in layer 1: it was not measured without
+  `canonical/`. The trap: **an edit to anything in `config/build_inputs.json`
+  needs `./build.sh` and a commit of its output, even a comment-only edit to
+  a tool** - that is the price of a digest, and the message says so.
+  Claims table: 59 rows.
+- **Windows writes CRLF into LF-attributed outputs.** `atomicio` writes in
+  text mode, so on Windows every rendered file lands CRLF while
+  `.gitattributes` says `eol=lf`; `git status` then lists each as modified
+  with no content change (`git diff` is empty). Measured 2026-09-24 over the
+  14 layer-1 outputs: identical to the committed blobs once CR is stripped.
+  Not a CI problem (Linux writes LF); do not read Windows `git status` noise
+  as a stale-output finding.
 
 ---
 
