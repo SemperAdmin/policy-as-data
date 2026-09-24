@@ -271,6 +271,12 @@ def mech_exports(fx, fixtures):
             "total_elements_equal_total_provisions": total_el == r["totals"].get("provisions")}
 
 
+def mech_clause_hash(fx, fixtures):
+    from normalize import clause_hash  # noqa: E402
+    base = fx["base"]
+    return {"hash_changed": clause_hash(base) != clause_hash({**base, **fx["edit"]})}
+
+
 MECHANISMS = {
     "exports": mech_exports,
     "report": mech_report,
@@ -281,6 +287,7 @@ MECHANISMS = {
     "verify_status": mech_verify_status,
     "evaluate": mech_evaluate,
     "reconcile_cli": mech_reconcile_cli,
+    "clause_hash": mech_clause_hash,
 }
 
 # Keys handled by eval_extra_checks rather than plain equality.
