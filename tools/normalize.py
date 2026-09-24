@@ -24,6 +24,12 @@ assertion itself. Not the note, not the label, not the id. Editing prose in a
 note is not a change to the claim; changing 84 to 90, or repointing the citation
 from para 11.d to para 8, is.
 
+For a LOGIC CLAUSE: clause_hash is the clause's own core (every key but
+$comment and status). The ledger does NOT bind that; it binds
+clause_dependency_hash, which adds the facts the clause reaches, the input
+specs it reads, the clauses ahead of it in its item group, and the rules file.
+A clause's answer depends on all of them, so an attestation must too.
+
 Normalization steps, in order:
   1. Line endings to \\n
   2. Trailing whitespace stripped per line
@@ -114,6 +120,92 @@ def clause_hash(clause: dict) -> str:
     """Hash of a clause's assertion. Key order is fixed by sort_keys."""
     payload = json.dumps(
         clause_assertion(clause), sort_keys=True, separators=(",", ":"), ensure_ascii=False
+    )
+    return PREFIX + hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def _expression_refs(node, facts: set, inputs: set) -> None:
+    """Collect fact and input names read anywhere in an expression tree. Walks
+    every dict and list value generically, so this module needs no knowledge of
+    the engine's operators and does not import it."""
+    if isinstance(node, list):
+        for item in node:
+            _expression_refs(item, facts, inputs)
+        return
+    if not isinstance(node, dict):
+        return
+    op = node.get("op")
+    if op == "fact":
+        facts.add(node.get("name"))
+    elif op in ("input", "present"):
+        inputs.add(node.get("name"))
+    for value in node.values():
+        _expression_refs(value, facts, inputs)
+
+
+def clause_dependency_payload(doc: dict, clause_id: str) -> dict:
+    """Everything a clause's answer depends on, besides admitted rule values
+    (which the ledger admits separately, per rule).
+
+    The clause alone is not enough. Measured in the final review of the clause
+    engine (2026-09-24): editing a fact, reordering an item group, deleting an
+    earlier clause, or changing an input default all changed decisions while
+    every clause hash stayed put and every clause stayed VERIFIED. So the hash a
+    verifier binds covers:
+      clause       the clause's own assertion (clause_assertion)
+      facts        every fact the clause reaches, transitively, with its expr
+      inputs       the declared spec of every input the clause or a reached
+                   fact reads (op input or present), default included
+      preceded_by  each earlier clause in the same item group, in file order,
+                   with its own dependency hash - first match means an earlier
+                   clause decides whether this one is ever reached
+      rules_file   which rules file the clause's rule ids resolve against
+    """
+    clauses = doc.get("clauses", [])
+    clause = next(c for c in clauses if c.get("id") == clause_id)
+    fact_exprs = {f.get("name"): f.get("expr") for f in doc.get("facts", [])}
+    input_specs = {i.get("name"): i for i in doc.get("inputs", [])}
+
+    core = clause_assertion(clause)
+    facts: set = set()
+    inputs: set = set()
+    _expression_refs(core, facts, inputs)
+    # Transitive closure over facts. A seen-set, not an acyclicity assumption:
+    # check_logic.py rejects a cycle, but this must terminate on a file that
+    # has not been checked yet.
+    seen: set = set()
+    queue = sorted(n for n in facts if n is not None)
+    while queue:
+        name = queue.pop()
+        if name in seen:
+            continue
+        seen.add(name)
+        more: set = set()
+        _expression_refs(fact_exprs.get(name), more, inputs)
+        queue.extend(n for n in more if n is not None and n not in seen)
+
+    preceded_by = []
+    for c in clauses:
+        if c is clause:
+            break
+        if c.get("item") == clause.get("item"):
+            preceded_by.append([c.get("id"), clause_dependency_hash(doc, c.get("id"))])
+
+    return {
+        "clause": core,
+        "facts": {n: fact_exprs.get(n) for n in sorted(seen)},
+        "inputs": {n: input_specs.get(n) for n in sorted(i for i in inputs if i is not None)},
+        "preceded_by": preceded_by,
+        "rules_file": doc.get("rules_file"),
+    }
+
+
+def clause_dependency_hash(doc: dict, clause_id: str) -> str:
+    """The hash the ledger binds for a clause: its dependency payload, sorted
+    keys, same pattern as clause_hash. See clause_dependency_payload."""
+    payload = json.dumps(
+        clause_dependency_payload(doc, clause_id),
+        sort_keys=True, separators=(",", ":"), ensure_ascii=False,
     )
     return PREFIX + hashlib.sha256(payload.encode("utf-8")).hexdigest()
 

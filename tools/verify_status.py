@@ -45,7 +45,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from normalize import clause_assertion_id, clause_hash, rule_assertion_id, rule_hash  # noqa: E402
+from normalize import (  # noqa: E402
+    clause_assertion_id, clause_dependency_hash, rule_assertion_id, rule_hash)
 
 ROOT = Path(__file__).resolve().parent.parent
 LEDGER = ROOT / "verification" / "attestations.jsonl"
@@ -135,13 +136,21 @@ def live_rule_assertions(data_dir: Path = DATA) -> dict:
 
 def live_clause_assertions(data_dir: Path = DATA) -> dict:
     """Every logic clause currently in the corpus, keyed by assertion id. A clause
-    is attested exactly as a rule value is: read against its cited paragraph."""
+    is attested exactly as a rule value is: read against its cited paragraph.
+
+    The hash is clause_dependency_hash: the clause plus the facts, input specs
+    and earlier clauses in its group that its answer depends on. The identifier
+    comes from the rules file's source with no fallback, because tools/engine.py
+    computes the assertion id the same way and the two must never disagree."""
     live = {}
     for path in sorted(data_dir.glob("*.logic.json")):
         doc = json.loads(path.read_text(encoding="utf-8"))
         rules_doc = json.loads((path.parent / doc["rules_file"]).read_text(encoding="utf-8"))
         source = rules_doc.get("source", {})
-        identifier = source.get("identifier", path.stem)
+        identifier = source.get("identifier")
+        if not identifier:
+            raise SystemExit(f"{path.name}: rules file {doc['rules_file']} has no "
+                             "source.identifier; a clause assertion id cannot be formed")
         for clause in doc.get("clauses", []):
             aid = clause_assertion_id(identifier, clause["id"])
             live[aid] = {
@@ -153,7 +162,7 @@ def live_clause_assertions(data_dir: Path = DATA) -> dict:
                 "source_url": source.get("url"),
                 "source_artifact": (source.get("artifact") or {}).get("sha256"),
                 "citation": (clause.get("citation") or {}).get("label"),
-                "hash": clause_hash(clause),
+                "hash": clause_dependency_hash(doc, clause["id"]),
                 "inline_status": clause.get("status"),
             }
     return live

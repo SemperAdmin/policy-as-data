@@ -287,7 +287,8 @@ def _fixture_ledger(tmp, rules_doc, logic_doc, attest_rules, attest_clauses):
     """A two-verifier ledger admitting the named rules and clauses, quorum 2.
     'all' admits everything. Hashes are taken from the documents passed in, so a
     document mutated afterwards reads as INVALIDATED - which is the point."""
-    from normalize import clause_assertion_id, clause_hash, rule_assertion_id, rule_hash  # noqa: E402
+    from normalize import (  # noqa: E402
+        clause_assertion_id, clause_dependency_hash, rule_assertion_id, rule_hash)
     ident = rules_doc["source"]["identifier"]
 
     def rec(aid, kind, digest, verifier):
@@ -304,7 +305,8 @@ def _fixture_ledger(tmp, rules_doc, logic_doc, attest_rules, attest_clauses):
                       for v in ("V-001", "V-002")]
     for c in logic_doc["clauses"]:
         if attest_clauses == "all" or c["id"] in attest_clauses:
-            lines += [rec(clause_assertion_id(ident, c["id"]), "clause", clause_hash(c), v)
+            digest = clause_dependency_hash(logic_doc, c["id"])
+            lines += [rec(clause_assertion_id(ident, c["id"]), "clause", digest, v)
                       for v in ("V-001", "V-002")]
     ledger = tmp / "ledger.jsonl"
     ledger.write_text("".join(line + "\n" for line in lines), encoding="utf-8")
@@ -341,17 +343,39 @@ def mech_engine_parity(fx, fixtures):
 
 
 def _step(target, key):
-    """Path step. 'clause:ID' selects a clause by id, so a fixture does not
-    depend on clause order."""
-    if isinstance(key, str) and key.startswith("clause:"):
-        return next(c for c in target if c["id"] == key[len("clause:"):])
+    """Path step. 'clause:ID' selects a clause by id, and 'fact:NAME' and
+    'input:NAME' a fact or input by name, so a fixture does not depend on
+    order in the file."""
+    if isinstance(key, str):
+        for prefix, field in (("clause:", "id"), ("fact:", "name"), ("input:", "name")):
+            if key.startswith(prefix):
+                return next(c for c in target if c[field] == key[len(prefix):])
     return target[key]
 
 
-def apply_mutation(doc, m):
+def _resolve(doc, path):
     target = doc
-    for key in m["path"][:-1]:
+    for key in path:
         target = _step(target, key)
+    return target
+
+
+def apply_mutation(doc, m):
+    """One edit. Forms: value (set path), append (to the list at path), remove
+    (the element of the list at path), move ... before (reorder within the list
+    at path). remove and move exist so an attested file can be edited by
+    deletion and by reordering, not only by rewriting a value."""
+    if "remove" in m:
+        seq = _resolve(doc, m["path"])
+        seq.remove(_step(seq, m["remove"]))
+        return
+    if "move" in m:
+        seq = _resolve(doc, m["path"])
+        moving = _step(seq, m["move"])
+        seq.remove(moving)
+        seq.insert(seq.index(_step(seq, m["before"])), moving)
+        return
+    target = _resolve(doc, m["path"][:-1])
     last = m["path"][-1]
     if "append" in m:
         _step(target, last).append(m["append"])
@@ -384,6 +408,7 @@ def mech_engine(fx, fixtures):
         "every_proof_cited": all(str(p["clause_citation"].get("identifier", "")).startswith("/us/")
                                  and p["basis"] in ("cited", "inferred") for p in out["proof"]),
         "logic_blockers": sorted(b.split(" [")[0] for b in blockers if b.startswith("logic/")),
+        "withheld_items": sorted(w["item"] for w in out["withheld"]),
         "decision_has_remaining_days": any(l["item"] == "remaining_days" for l in out["decision"]),
     }
 
