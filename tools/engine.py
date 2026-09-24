@@ -216,6 +216,7 @@ def evaluate_clauses(doc, rules, clause_status, inputs, identifier):
         # answers, because each of those decided not to answer. So what they
         # touched accumulates across the group and lands in the proof.
         cx.rules_touched, cx.inputs_touched = [], []
+        matched = False
         for i, c in enumerate(clauses):
             earlier = clauses[:i]
             # An earlier clause the ledger has not admitted blocks this one
@@ -254,7 +255,23 @@ def evaluate_clauses(doc, rules, clause_status, inputs, identifier):
                               "rules": sorted(set(cx.rules_touched)),
                               "inputs": sorted(set(cx.inputs_touched)),
                               "preceded_by": [e["id"] for e in earlier]})
+            matched = True
             break
+        if not matched:
+            # Every clause in the group was skipped on its guard or its
+            # "when": each one said "does not apply". But an unadmitted
+            # clause's guard and when are not trusted to decide anything -
+            # a false reading is no evidence it would not have answered. If
+            # any clause here is not VERIFIED, the item is withheld rather
+            # than silently dropped, naming every unadmitted clause in the
+            # group so the reader sees what the answer is waiting on.
+            unadmitted = [c for c in clauses if clause_status[c["id"]] != VERIFIED]
+            if unadmitted:
+                cited = rules[unadmitted[0]["cite"]]["citation"]
+                withheld.append({"item": item, "citation": cited["label"],
+                                 "identifier": cited["identifier"],
+                                 "withheld_because": [f"logic/{u['id']} [{clause_status[u['id']]}]"
+                                                      for u in unadmitted]})
     return findings, withheld, proof
 
 
