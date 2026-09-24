@@ -713,6 +713,31 @@
       "mechanism": "engine_parity",
       "fixture": {"cases": "parity_cases", "attest_rules": ["MAX_PARENTAL_LEAVE_DAYS", "MIN_INCREMENT_DAYS", "MAX_INCREMENTS", "EVENT_PROXIMITY_MERGE_HOURS"], "attest_clauses": "all"},
       "expect": {"mismatches": []}
+    },
+    {
+      "id": "LC5", "polarity": "positive",
+      "claim": "Every emitted line has a proof entry naming its clause, its basis, and a paragraph identifier",
+      "mechanism": "engine",
+      "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01", "proposed_increment": 10, "increments_used": 3},
+                  "attest_rules": "all", "attest_clauses": "all"},
+      "expect": {"proof_matches_decision": true, "every_proof_cited": true, "logic_blockers": []}
+    },
+    {
+      "id": "LN2", "polarity": "negative",
+      "claim": "A VERIFIED rule does not make an unattested clause usable: with every rule admitted and REMAINING_DAYS unattested, that line is withheld and names the clause",
+      "mechanism": "engine",
+      "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01"},
+                  "attest_rules": "all", "attest_clauses_except": ["REMAINING_DAYS"]},
+      "expect": {"logic_blockers": ["logic/REMAINING_DAYS"], "decision_has_remaining_days": false}
+    },
+    {
+      "id": "LN3", "polarity": "negative",
+      "claim": "A clause edited after attestation is not used: its hash no longer matches, the ledger reads INVALIDATED, and the line is withheld",
+      "mechanism": "engine",
+      "fixture": {"args": {"event_date": "2027-03-01", "as_of": "2027-06-01"},
+                  "attest_rules": "all", "attest_clauses": "all",
+                  "mutations": [{"path": ["clauses", "clause:REMAINING_DAYS", "note", "template"], "value": "{max} minus {used}"}]},
+      "expect": {"logic_blockers": ["logic/REMAINING_DAYS"], "decision_has_remaining_days": false}
     }
   ]
 }
