@@ -294,14 +294,19 @@ so rather than hanging - browsers refuse `fetch()` for `file:` URLs.
      stated clause that requires it.
    - **Risk:** a transcription error in a clause is proved precisely once
      found, but human attestation per clause (Task 7, pending - see below) is
-     the only guard against one shipping in the first place.
+     the only guard against one shipping in the first place. That guard is
+     only as wide as what the attestation binds: since 2026-09-24 it is
+     `clause_dependency_hash` (the clause, the facts it reaches, the input
+     specs it reads, the earlier clauses in its group, the rules file), not
+     the clause alone - see the defect register, section 10.
    - **Revisit trigger:** the first recursive requirement, or M3 (the
      SUMO+Sigma vs. LegalRuleML+SHACL formalism decision, `resources/28`).
 
    Parity: engine output is byte-identical to `tools/evaluate.py` on all 11
    cases under 5 ledger states (claims rows LC2, LC3, LC4, LC4a, LC4b).
    `tools/evaluate.py` is unchanged; it remains the parity reference and
-   `docs/scenarios.html` still renders from it. Claims table: 38 of 38 PASS.
+   `docs/scenarios.html` still renders from it. Claims table: 51 of 51 PASS
+   (after the 2026-09-24 final-review fix wave).
 
    Clause quorum set to 1 (target 2), under the existing one-verifier
    deviation in `config/verification_policy.json` (`"affects": "rule,
@@ -313,7 +318,9 @@ so rather than hanging - browsers refuse `fetch()` for `file:` URLs.
      the main checkout after merge (commands in `EVALUATOR-PLAN.md` Task 6).
    - Owner attestation of the 10 clauses (`EVALUATOR-PLAN.md` Task 7) is
      pending. Until it lands, every line the engine emits is withheld, same
-     as an unattested rule.
+     as an unattested rule. It must bind `clause_dependency_hash`, which
+     `tools/attest.py` does as of 2026-09-24; an attestation against the old
+     clause-only hash would read INVALIDATED.
    - The cutover of `docs/scenarios.html` to the engine (`EVALUATOR-PLAN.md`
      Task 8) is gated on that attestation and has not happened.
 
@@ -619,6 +626,31 @@ claim of this project is that its provenance can be trusted.
   The trap: a citation edge and its markup anchor must move in the same
   commit, and `python tools/validate.py` is the pre-push check that would have
   caught it locally.
+
+### Clause engine, fixed 2026-09-24
+
+- **A clause attestation covered only the clause.** The ledger bound
+  `clause_hash`, the clause dict minus `$comment` and `status`. Found by the
+  final review's probe of the clause-engine branch: editing a fact
+  expression, reordering clauses within an item group, deleting an earlier
+  clause, or changing an input default each changed decisions while every
+  clause stayed VERIFIED. Fix: `normalize.clause_dependency_hash` binds the
+  clause plus every fact it reaches, the spec of every input it reads, each
+  earlier clause in its group (with that clause's own dependency hash), and
+  the rules file. `verify_status`, `attest.py`, `engine.run` and the claims
+  fixture ledger all use it; `attest.py` shows the verifier everything it
+  covers. Claims LN9-LN12. The trap: **Task 7 attestation must bind the new
+  hash** - an attestation recorded against the clause-only hash reads
+  INVALIDATED, correctly.
+- **An unadmitted clause could be skipped by its own guard.** `engine.py`
+  evaluated a clause's guard before its admission, so an INVALIDATED clause
+  whose guard came out false was passed over and a later admitted clause
+  answered in its place. Found by the same review. Fix: every earlier clause
+  in the item group that the ledger has not admitted is a blocker on each
+  later clause, whatever its guard says. Claim LN13. Same review also found
+  the operators were called total when they are partial (now EngineError
+  plus static shape checks, LN14-LN16) and the proof omitted what earlier
+  clauses in the group touched (LC7).
 
 ---
 
