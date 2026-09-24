@@ -477,7 +477,61 @@ def mech_check_logic(fx, fixtures):
             "stderr_has": needle if needle in proc.stderr else proc.stderr[-300:]}
 
 
+BUILD_INPUTS = ROOT / "config" / "build_inputs.json"
+
+
+def _stamp_run(root, mode):
+    return subprocess.run(
+        [sys.executable, str(root / "tools" / "build_stamp.py"), mode, "--root", str(root)],
+        capture_output=True, text=True)
+
+
+def mech_build_stamp(fx, fixtures):
+    """Copy the files the live manifest matches into a temp root, write a
+    stamp, optionally mutate one input, and check. File selection here is a
+    plain glob over the manifest, independent of build_stamp.py's own
+    resolver, so the row tests the tool rather than agreeing with it."""
+    manifest = json.loads(BUILD_INPUTS.read_text(encoding="utf-8"))
+    if fx.get("add_include"):
+        manifest["include"] = manifest["include"] + [fx["add_include"]]
+    excluded = set(manifest.get("exclude", []))
+    wanted = {"config/build_inputs.json", "tools/build_stamp.py", "tools/atomicio.py"}
+    for pattern in manifest["include"]:
+        wanted.update(p.relative_to(ROOT).as_posix() for p in ROOT.glob(pattern) if p.is_file())
+    wanted -= excluded
+    needle = fx.get("output_has")
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = Path(tmp)
+        for rel in sorted(wanted):
+            if not (ROOT / rel).is_file():
+                continue  # a missing tool shows up as a failing exit, not a crash
+            (tmp / rel).parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(ROOT / rel, tmp / rel)
+        (tmp / "config" / "build_inputs.json").write_text(json.dumps(manifest, indent=1), encoding="utf-8")
+        wrote = _stamp_run(tmp, "--write")
+        out = {"write_exit": wrote.returncode, "write_exit_nonzero": wrote.returncode != 0}
+        seen = wrote.stdout + wrote.stderr
+        if wrote.returncode == 0:
+            m = fx.get("mutate")
+            if m:
+                target = tmp / m["file"]
+                data = target.read_bytes()
+                if m["kind"] == "append":
+                    data += b"\n<!-- edited after the stamp -->\n"
+                elif m["kind"] == "toggle_crlf":
+                    data = (data.replace(b"\r\n", b"\n") if b"\r\n" in data
+                            else data.replace(b"\n", b"\r\n"))
+                target.write_bytes(data)
+            checked = _stamp_run(tmp, "--check")
+            out["check_exit"] = checked.returncode
+            seen += checked.stdout + checked.stderr
+    if needle:
+        out["output_has"] = needle if needle in seen else seen[-300:]
+    return out
+
+
 MECHANISMS = {
+    "build_stamp": mech_build_stamp,
     "exports": mech_exports,
     "report": mech_report,
     "evaluate_fixture": mech_evaluate_fixture,
