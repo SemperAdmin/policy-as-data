@@ -20,6 +20,8 @@ The project goal is an answer that is right every time by construction, not by a
 
 It is **not** Datalog and not a theorem prover. It is a **non-recursive, ordered rule set with total built-in operators**. Facts form an acyclic graph, expressions are finite trees, and every operator returns for every input. That is the termination proof. Nothing in M1 or M2 needs recursion.
 
+> **Corrected 2026-09-24 after final review.** "Total built-in operators" and "every operator returns for every input" were wrong. The operators are **partial**: `abs` given two args, `lt` comparing a date with an int, a `format` template naming a placeholder its args do not supply, and a missing key all raised raw Python exceptions. The accurate statement: the engine **always terminates; operators are partial and fail loudly with `EngineError`, never with a guess.** Termination still rests on the acyclic fact graph and finite trees, not on totality. `tools/check_logic.py` now gates operator shape statically (required keys, arity, format placeholders equal to args, unique fact and input names), and `tools/engine.py` wraps any `KeyError`, `IndexError`, `TypeError` or `ValueError` as an `EngineError` naming the op. The original sentence is kept above so the correction is visible.
+
 **Revisit trigger:** the first requirement that needs recursion, such as transitive closure over authority chains. At that point evaluate a Datalog core, which still terminates, as part of the M3 decision.
 
 ## Global Constraints

@@ -15,8 +15,15 @@ Discipline, inherited from tools/evaluate.py and extended to the logic:
 
 Why it always terminates: facts form an acyclic graph (tools/check_logic.py
 rejects a cycle before the build ships), every expression is a finite tree,
-and every operator is total. No recursion, no search, no solver. This is not
-Datalog; recursion is a revisit trigger, not a feature.
+and each operator does a bounded amount of work. No recursion, no search, no
+solver. This is not Datalog; recursion is a revisit trigger, not a feature.
+
+It always terminates; operators are partial and fail loudly with EngineError,
+never with a guess. A missing key, a wrong arity, a date compared with an int,
+a template naming an absent placeholder: each raises EngineError naming the
+op. tools/check_logic.py gates the static shapes (keys, arity, placeholders)
+so a malformed file stops the build before it reaches here; what remains is
+type errors that depend on input values.
 
 Usage:
   python tools/engine.py --input event_date=2027-03-01 --input as_of=2027-06-01
@@ -93,6 +100,19 @@ class Context:
 
 
 def ev(node, cx):
+    """Evaluate one expression node. Any KeyError, IndexError, TypeError or
+    ValueError raised by the node becomes an EngineError naming the op, so the
+    innermost failing op is the one reported."""
+    try:
+        return _ev(node, cx)
+    except EngineError:
+        raise
+    except (KeyError, IndexError, TypeError, ValueError) as exc:
+        op = node.get("op") if isinstance(node, dict) else None
+        raise EngineError(f"op {op!r} failed: {type(exc).__name__}: {exc}") from exc
+
+
+def _ev(node, cx):
     op = node["op"]
     if op == "const":
         return node["value"]
@@ -161,9 +181,15 @@ def bind_inputs(spec, given, today=None):
         if raw is None:
             value = (today or date.today()) if inp.get("default_today") else None
         elif inp["type"] == "date":
-            value = raw if isinstance(raw, date) else datetime.strptime(raw, "%Y-%m-%d").date()
+            try:
+                value = raw if isinstance(raw, date) else datetime.strptime(raw, "%Y-%m-%d").date()
+            except (TypeError, ValueError):
+                raise EngineError(f"input {name}: {raw!r} is not a date (YYYY-MM-DD)") from None
         elif inp["type"] == "int":
-            value = int(raw)
+            try:
+                value = int(raw)
+            except (TypeError, ValueError):
+                raise EngineError(f"input {name}: {raw!r} is not an integer") from None
         else:
             raise EngineError(f"input {name}: unknown type {inp['type']!r}")
         scenario[name] = value if inp["type"] == "int" and raw is not None else raw
@@ -282,6 +308,10 @@ def main() -> int:
     ap.add_argument("--input", action="append", default=[], metavar="NAME=VALUE")
     ap.add_argument("--json", action="store_true")
     args = ap.parse_args()
+    bare = [pair for pair in args.input if "=" not in pair]
+    if bare:
+        print(f"engine: --input needs NAME=VALUE; got {bare}", file=sys.stderr)
+        return 2
     given = dict(pair.split("=", 1) for pair in args.input)
     try:
         result = run(args.logic, given, ledger_path=args.ledger, policy_path=args.policy)
