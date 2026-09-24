@@ -738,6 +738,31 @@
                   "attest_rules": "all", "attest_clauses": "all",
                   "mutations": [{"path": ["clauses", "clause:REMAINING_DAYS", "note", "template"], "value": "{max} minus {used}"}]},
       "expect": {"logic_blockers": ["logic/REMAINING_DAYS"], "decision_has_remaining_days": false}
-    }
+    },
+    {"id": "LC6", "polarity": "positive", "claim": "The live clause file passes every static check",
+     "mechanism": "check_logic", "fixture": {"mutations": [], "stderr_has": ""},
+     "expect": {"exit_nonzero": false, "stderr_has": ""}},
+    {"id": "LN4", "polarity": "negative", "claim": "A cycle in the fact graph is rejected; the engine could not be proven to terminate",
+     "mechanism": "check_logic",
+     "fixture": {"mutations": [{"path": ["facts"], "value": [
+       {"name": "loop_a", "expr": {"op": "fact", "name": "loop_b"}},
+       {"name": "loop_b", "expr": {"op": "fact", "name": "loop_a"}}]}], "stderr_has": "fact cycle"},
+     "expect": {"exit_nonzero": true, "stderr_has": "fact cycle"}},
+    {"id": "LN5", "polarity": "negative", "claim": "A clause citation containing a period is rejected under NAMESPACES.md N3",
+     "mechanism": "check_logic",
+     "fixture": {"mutations": [{"path": ["clauses", "clause:REMAINING_DAYS", "citation", "identifier"], "value": "/us/dod/dodi/1327.06/s3/3.11"}], "stderr_has": "N3/N4"},
+     "expect": {"exit_nonzero": true, "stderr_has": "N3/N4"}},
+    {"id": "LN6", "polarity": "negative", "claim": "A clause citing a paragraph that exists in no USLM file is rejected; no logic without the paragraph it was read from",
+     "mechanism": "check_logic",
+     "fixture": {"mutations": [{"path": ["clauses", "clause:REMAINING_DAYS", "citation", "identifier"], "value": "/us/dod/don/usmc/maradmin/2023/051/p99"}], "stderr_has": "not a paragraph"},
+     "expect": {"exit_nonzero": true, "stderr_has": "not a paragraph"}},
+    {"id": "LN7", "polarity": "negative", "claim": "A clause reading a rule it does not declare in requires is rejected; its withholding would be incomplete",
+     "mechanism": "check_logic",
+     "fixture": {"mutations": [{"path": ["clauses", "clause:AUTHORIZED_TOTAL", "value"], "value": {"op": "rule", "id": "MIN_INCREMENT_DAYS"}}], "stderr_has": "not in requires"},
+     "expect": {"exit_nonzero": true, "stderr_has": "not in requires"}},
+    {"id": "LN8", "polarity": "negative", "claim": "A guard that reads a rule is rejected; applicability is decided from inputs only",
+     "mechanism": "check_logic",
+     "fixture": {"mutations": [{"path": ["clauses", "clause:MULTIPLE_EVENTS_SINGLE", "guard"], "value": {"op": "gt", "args": [{"op": "rule", "id": "EVENT_PROXIMITY_MERGE_HOURS"}, {"op": "const", "value": 0}]}}], "stderr_has": "guard reads a rule"},
+     "expect": {"exit_nonzero": true, "stderr_has": "guard reads a rule"}}
   ]
 }
