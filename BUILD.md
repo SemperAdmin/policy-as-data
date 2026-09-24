@@ -158,6 +158,10 @@ Fifteen stages, in the only order that works.
     13  build_search             the search index, from this corpus
     14  verify_authority         adversarial check, must report PASS
     15  check_site               every link lands, every page reachable
+    16a check_logic              clause engine static checks - acyclic facts,
+                                 declared dependencies, operator shapes,
+                                 unique names, cited paragraphs. Clause and
+                                 claims counts live in SESSION_HANDOFF.md.
 
 Stage 3 must follow stage 2 and precede stage 4. Reparse rebuilds provision
 paths from stored section text and strips the minted tier records back to zero
@@ -183,6 +187,13 @@ measured:
 
 Matching counts hid two defects that only a hash comparison finds, both fixed
 on 2026-08-04 and both described under Standing items.
+
+Stage 16a is idempotent by construction - `check_logic.py` reads
+`data/*.logic.json` and reports; it writes no output for the build to hash.
+The full-build hash run measuring the stage in place (this document's
+existing `canonical`/`docs`/`data/exports`/`config` comparison) has not been
+run since 16a landed; `canonical/` is not present in the worktree it was
+built in, so that measurement is pending in the main checkout.
 
 ---
 

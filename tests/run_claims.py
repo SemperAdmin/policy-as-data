@@ -21,9 +21,11 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -271,6 +273,210 @@ def mech_exports(fx, fixtures):
             "total_elements_equal_total_provisions": total_el == r["totals"].get("provisions")}
 
 
+def mech_clause_hash(fx, fixtures):
+    from normalize import clause_hash  # noqa: E402
+    base = fx["base"]
+    return {"hash_changed": clause_hash(base) != clause_hash({**base, **fx["edit"]})}
+
+
+def mech_dependency_hash_scaling(fx, fixtures):
+    """R11: clause_dependency_hash must be linear in item-group size, not
+    exponential. A synthetic doc with n clauses sharing one item, each a
+    minimal valid clause with a guard reading the one declared input. Timed
+    with time.perf_counter so the claim is measured, not asserted."""
+    from normalize import clause_dependency_hash  # noqa: E402
+    n = fx.get("n", 60)
+    doc = {
+        "rules_file": "x.rules.json",
+        "inputs": [{"name": "flag", "type": "int", "default": 0}],
+        "facts": [],
+        "clauses": [
+            {
+                "id": f"C{i}",
+                "item": "shared",
+                "basis": "cited",
+                "cite": "R",
+                "requires": [],
+                "citation": {"identifier": f"/us/x/p{i}", "label": f"p{i}"},
+                "guard": {"op": "input", "name": "flag"},
+                "value": {"op": "const", "value": i},
+            }
+            for i in range(n)
+        ],
+    }
+    start = time.perf_counter()
+    hashes = [clause_dependency_hash(doc, c["id"]) for c in doc["clauses"]]
+    elapsed = time.perf_counter() - start
+    return {"all_hashes_distinct": len(set(hashes)) == n, "under_two_seconds": elapsed < 2.0}
+
+
+DATA_DIR = ROOT / "data"
+MPLP_RULES = DATA_DIR / "maradmin-051-23.rules.json"
+MPLP_LOGIC = DATA_DIR / "maradmin-051-23.logic.json"
+
+
+def _fixture_ledger(tmp, rules_doc, logic_doc, attest_rules, attest_clauses):
+    """A two-verifier ledger admitting the named rules and clauses, quorum 2.
+    'all' admits everything. Hashes are taken from the documents passed in, so a
+    document mutated afterwards reads as INVALIDATED - which is the point."""
+    from normalize import (  # noqa: E402
+        clause_assertion_id, clause_dependency_hash, rule_assertion_id, rule_hash)
+    ident = rules_doc["source"]["identifier"]
+
+    def rec(aid, kind, digest, verifier):
+        return json.dumps({"assertion": aid, "kind": kind, "content_hash": digest,
+                           "result": "VERIFIED", "verifier": verifier,
+                           "at": "2026-09-11T00:00:00+00:00", "method": "read-and-compare",
+                           "verified_against": {"edition": "fixture", "obtained": "fixture",
+                                                "artifact_hash": None}})
+
+    lines = []
+    for r in rules_doc["rules"]:
+        if attest_rules == "all" or r["id"] in attest_rules:
+            lines += [rec(rule_assertion_id(ident, r["id"]), "rule", rule_hash(r), v)
+                      for v in ("V-001", "V-002")]
+    for c in logic_doc["clauses"]:
+        if attest_clauses == "all" or c["id"] in attest_clauses:
+            digest = clause_dependency_hash(logic_doc, c["id"])
+            lines += [rec(clause_assertion_id(ident, c["id"]), "clause", digest, v)
+                      for v in ("V-001", "V-002")]
+    ledger = tmp / "ledger.jsonl"
+    ledger.write_text("".join(line + "\n" for line in lines), encoding="utf-8")
+    policy = tmp / "policy.json"
+    policy.write_text(json.dumps({"quorum": {"rule": 2, "provision": 1, "clause": 2}}),
+                      encoding="utf-8")
+    return ledger, policy
+
+
+def mech_engine_parity(fx, fixtures):
+    """The engine against tools/evaluate.py: same rules, same ledger, same inputs.
+    Compared as sorted-key JSON, so this is a byte comparison and not a count.
+    The engine's additions (proof, verification.by_clause and
+    verification.clause_summary) are removed first;
+    everything else must match exactly."""
+    import engine as eg  # noqa: E402
+    import evaluate as old  # noqa: E402
+    rules_doc = json.loads(MPLP_RULES.read_text(encoding="utf-8"))
+    logic_doc = json.loads(MPLP_LOGIC.read_text(encoding="utf-8"))
+    cases = fixtures[fx["cases"]]
+    mismatches = []
+    with tempfile.TemporaryDirectory() as tmp:
+        ledger, policy = _fixture_ledger(Path(tmp), rules_doc, logic_doc,
+                                         fx["attest_rules"], fx["attest_clauses"])
+        rules, source, deviation = old.load_rules(MPLP_RULES, ledger, policy)
+        for args in cases:
+            want = old.evaluate(rules, source, deviation, **args)
+            got = eg.run(MPLP_LOGIC, args, ledger_path=ledger, policy_path=policy)
+            got.pop("proof")
+            got["verification"].pop("by_clause")
+            got["verification"].pop("clause_summary")
+            if json.dumps(want, sort_keys=True, default=str) != \
+                    json.dumps(got, sort_keys=True, default=str):
+                mismatches.append(args)
+    return {"mismatches": mismatches}
+
+
+def _step(target, key):
+    """Path step. 'clause:ID' selects a clause by id, and 'fact:NAME' and
+    'input:NAME' a fact or input by name, so a fixture does not depend on
+    order in the file."""
+    if isinstance(key, str):
+        for prefix, field in (("clause:", "id"), ("fact:", "name"), ("input:", "name")):
+            if key.startswith(prefix):
+                return next(c for c in target if c[field] == key[len(prefix):])
+    return target[key]
+
+
+def _resolve(doc, path):
+    target = doc
+    for key in path:
+        target = _step(target, key)
+    return target
+
+
+def apply_mutation(doc, m):
+    """One edit. Forms: value (set path), append (to the list at path), remove
+    (the element of the list at path), move ... before (reorder within the list
+    at path). remove and move exist so an attested file can be edited by
+    deletion and by reordering, not only by rewriting a value."""
+    if "remove" in m:
+        seq = _resolve(doc, m["path"])
+        seq.remove(_step(seq, m["remove"]))
+        return
+    if "move" in m:
+        seq = _resolve(doc, m["path"])
+        moving = _step(seq, m["move"])
+        seq.remove(moving)
+        seq.insert(seq.index(_step(seq, m["before"])), moving)
+        return
+    target = _resolve(doc, m["path"][:-1])
+    last = m["path"][-1]
+    if "append" in m:
+        _step(target, last).append(m["append"])
+    else:
+        target[last] = m["value"]
+
+
+def mech_engine(fx, fixtures):
+    """The engine on a temporary copy of the live clause file. The ledger is
+    built from the file BEFORE any mutation, so a mutation is an edit made after
+    attestation."""
+    import engine as eg  # noqa: E402
+    rules_doc = json.loads(MPLP_RULES.read_text(encoding="utf-8"))
+    logic_doc = json.loads(MPLP_LOGIC.read_text(encoding="utf-8"))
+    clauses = fx.get("attest_clauses")
+    if "attest_clauses_except" in fx:
+        clauses = [c["id"] for c in logic_doc["clauses"] if c["id"] not in fx["attest_clauses_except"]]
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = Path(tmp)
+        ledger, policy = _fixture_ledger(tmp, rules_doc, logic_doc, fx["attest_rules"], clauses)
+        for m in fx.get("mutations", []):
+            apply_mutation(logic_doc, m)
+        shutil.copy(MPLP_RULES, tmp / MPLP_RULES.name)
+        logic_path = tmp / MPLP_LOGIC.name
+        logic_path.write_text(json.dumps(logic_doc, indent=2), encoding="utf-8")
+        out = eg.run(logic_path, fx["args"], ledger_path=ledger, policy_path=policy)
+    blockers = {b for w in out["withheld"] for b in w["withheld_because"]}
+    proof_item = next((p for p in out["proof"] if p["item"] == fx.get("proof_item")), None)
+    clause_status_check = fx.get("clause_status_check", [])
+    return {
+        "proof_for_item": proof_item and {k: proof_item.get(k)
+                                          for k in ("rules", "inputs", "preceded_by")},
+        "proof_matches_decision": [p["item"] for p in out["proof"]] == [l["item"] for l in out["decision"]],
+        "every_proof_cited": all(str(p["clause_citation"].get("identifier", "")).startswith("/us/")
+                                 and p["basis"] in ("cited", "inferred") for p in out["proof"]),
+        "logic_blockers": sorted(b.split(" [")[0] for b in blockers if b.startswith("logic/")),
+        "logic_blocker_states": sorted(b for b in blockers if b.startswith("logic/")),
+        "withheld_items": sorted(w["item"] for w in out["withheld"]),
+        "clause_summary": out["verification"]["clause_summary"],
+        "decision_has_remaining_days": any(l["item"] == "remaining_days" for l in out["decision"]),
+        # Full decision-item list, so a row can assert an item's line is
+        # absent (not merely withheld) without a bespoke boolean per item.
+        "decision_items": sorted(l["item"] for l in out["decision"]),
+        # R11 coverage check: the derived status of specific clauses, direct
+        # from verification.by_clause - independent of evaluate_clauses'
+        # first-match control flow, which is what withheld_because reflects.
+        "clause_status": {cid: out["verification"]["by_clause"].get(cid) for cid in clause_status_check},
+    }
+
+
+def mech_check_logic(fx, fixtures):
+    logic_doc = json.loads(MPLP_LOGIC.read_text(encoding="utf-8"))
+    for m in fx["mutations"]:
+        apply_mutation(logic_doc, m)
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = Path(tmp)
+        (tmp / MPLP_LOGIC.name).write_text(json.dumps(logic_doc, indent=2), encoding="utf-8")
+        shutil.copy(MPLP_RULES, tmp / MPLP_RULES.name)
+        proc = subprocess.run(
+            [sys.executable, str(TOOLS / "check_logic.py"), "--data", str(tmp),
+             "--identifiers", str(DATA_DIR), "--identifiers", str(DATA_DIR / "exports")],
+            capture_output=True, text=True, cwd=str(ROOT))
+    needle = fx["stderr_has"]
+    return {"exit_nonzero": proc.returncode != 0,
+            "stderr_has": needle if needle in proc.stderr else proc.stderr[-300:]}
+
+
 MECHANISMS = {
     "exports": mech_exports,
     "report": mech_report,
@@ -280,7 +486,12 @@ MECHANISMS = {
     "units": mech_units,
     "verify_status": mech_verify_status,
     "evaluate": mech_evaluate,
+    "check_logic": mech_check_logic,
     "reconcile_cli": mech_reconcile_cli,
+    "clause_hash": mech_clause_hash,
+    "engine_parity": mech_engine_parity,
+    "engine": mech_engine,
+    "dependency_hash_scaling": mech_dependency_hash_scaling,
 }
 
 # Keys handled by eval_extra_checks rather than plain equality.
