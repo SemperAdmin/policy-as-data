@@ -159,8 +159,9 @@ Fifteen stages, in the only order that works.
     14  verify_authority         adversarial check, must report PASS
     15  check_site               every link lands, every page reachable
     16a check_logic              clause engine static checks - acyclic facts,
-                                 declared dependencies, cited paragraphs.
-                                 10 clauses, OK. Claims table 38 of 38 PASS.
+                                 declared dependencies, operator shapes,
+                                 unique names, cited paragraphs. Clause and
+                                 claims counts live in SESSION_HANDOFF.md.
 
 Stage 3 must follow stage 2 and precede stage 4. Reparse rebuilds provision
 paths from stored section text and strips the minted tier records back to zero
