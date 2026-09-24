@@ -278,6 +278,45 @@ so rather than hanging - browsers refuse `fetch()` for `file:` URLs.
 
 ## 7. Open decisions - the owner's, not yours
 
+0. **The clause engine. Decided 2026-09-24.** `EVALUATOR-PLAN.md` M1.
+
+   - **Decision:** decision logic is hand-tier data, attested per clause, not
+     hand-written Python. `data/maradmin-051-23.logic.json` (10 clauses - 5
+     `cited`, 5 `inferred`; 3 named refusals), evaluated by `tools/engine.py`
+     and gated by `tools/check_logic.py` (build stage 16a).
+   - **Reason:** unverified Python logic was the weak link sitting under
+     verified rule values. A clause now carries the same basis and citation
+     discipline as an authority edge, and a transcription error is provable
+     precisely rather than buried in a function body.
+   - **Alternatives:** SUMO+Vampire, LegalRuleML+SHACL, Datalog.
+   - **Tradeoffs:** no recursion, no loops, no user functions - a small
+     fixed-operator expression language (`engine.OPS`). A new operator needs a
+     stated clause that requires it.
+   - **Risk:** a transcription error in a clause is proved precisely once
+     found, but human attestation per clause (Task 7, pending - see below) is
+     the only guard against one shipping in the first place.
+   - **Revisit trigger:** the first recursive requirement, or M3 (the
+     SUMO+Sigma vs. LegalRuleML+SHACL formalism decision, `resources/28`).
+
+   Parity: engine output is byte-identical to `tools/evaluate.py` on all 11
+   cases under 5 ledger states (claims rows LC2, LC3, LC4, LC4a, LC4b).
+   `tools/evaluate.py` is unchanged; it remains the parity reference and
+   `docs/scenarios.html` still renders from it. Claims table: 38 of 38 PASS.
+
+   Clause quorum set to 1 (target 2), under the existing one-verifier
+   deviation in `config/verification_policy.json` (`"affects": "rule,
+   clause"` - extended explicitly to cover clauses, not a new deviation).
+
+   **Not done, stated plainly:**
+   - Build-twice hash idempotence for stage 16a has not been measured.
+     `canonical/` is absent from this worktree; run the hash comparison in
+     the main checkout after merge (commands in `EVALUATOR-PLAN.md` Task 6).
+   - Owner attestation of the 10 clauses (`EVALUATOR-PLAN.md` Task 7) is
+     pending. Until it lands, every line the engine emits is withheld, same
+     as an unattested rule.
+   - The cutover of `docs/scenarios.html` to the engine (`EVALUATOR-PLAN.md`
+     Task 8) is gated on that attestation and has not happened.
+
 1. **The `[ID2]` promotion.** `E:\GunnyBot\promotion_report.md` is the sheet:
    16 records with moved provision paths, 21,315 rewritten identifiers, 11 new
    top-tier records. None of it is in `E:\GunnyBot\canonical`. Approving brings
@@ -390,6 +429,16 @@ deliberately, so they stay visible without masking a real one.
 **174 of 384 reference items unparsed.** The citation grammar covers ~24
 issuance forms. The remainder are mostly prose references and forms not yet in
 the grammar. They are counted and reported, not silently dropped.
+
+**The clause engine's ingest and verification-page gaps, found 2026-09-24.**
+`tools/attest.py --ingest` is not clause-aware - it was built for rules and
+does not walk `data/*.logic.json`, so a clause's attestation has to be
+recorded by the mechanism `EVALUATOR-PLAN.md` Task 7 uses, not the ingest
+flow. `docs/verification.html` has no clause queue; an unattested clause is
+invisible there even though the engine withholds on it exactly as it does
+for an unattested rule. `FORFEITURE_DATE` is `inferred` and inherits the
+open 365-day-versus-one-year finding rather than resolving it - the finding
+stays open, the clause just states its dependency honestly.
 
 **Fourteen documents carry no outbound edges.** Ten are statute or DoD records,
 which is expected - they are the top of the ladder. `MARADMIN-2021-388`,
