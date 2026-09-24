@@ -134,3 +134,11 @@ python3 tools/render_pages.py
 
 echo "### 23 check the site actually works"
 python3 tools/check_site.py "$SITE" index.html | tail -12
+
+echo "### 24 build stamp - inputs this output was built from"
+# Last, so the stamp is written only when every earlier stage succeeded. CI
+# recomputes it (tools/build_stamp.py --check): an input changed without a
+# rebuild fails there. It proves the build ran, not that canonical-dependent
+# output is right, and it cannot see canonical/ (untracked). Inputs are
+# listed in config/build_inputs.json.
+python3 tools/build_stamp.py --write
