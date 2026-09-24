@@ -31,3 +31,29 @@ jobs:
         # tests/claims.json: what the tooling claims about itself, positive
         # and negative, with the negatives as the gate. Writes nothing.
         run: python tests/run_claims.py
+      - name: Canonical-free stages reproduce committed output
+        # Stages 16, 16a and 17-22 of build.sh read no canonical/, so CI
+        # re-runs them in build.sh order and requires a clean tree. The diff
+        # is over the whole tree, not a file list, so a new canonical-free
+        # output is covered without editing this step.
+        run: |
+          python tools/reconcile.py --out config/reconciliation.json
+          python tools/check_logic.py
+          python tools/render_verification.py
+          python tools/render_currency.py
+          python tools/render_impact.py
+          python tools/render_scale.py
+          python tools/render_scenarios.py
+          python tools/render_pages.py
+          # git diff catches a changed output; status catches a new one
+          # that was never committed.
+          if ! git diff --exit-code --stat || [ -n "$(git status --porcelain)" ]; then
+            git status --porcelain
+            echo "::error::Committed output does not match its sources. Run ./build.sh and commit its output."
+            exit 1
+          fi
+      - name: Build output matches its inputs
+        # Stages 1-14 need canonical/, which CI does not have. The stamp
+        # written by build.sh stage 24 records a digest of every tracked
+        # input; a mismatch means an input changed after the last build.
+        run: python tools/build_stamp.py --check
