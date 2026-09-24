@@ -388,6 +388,23 @@ def mech_engine(fx, fixtures):
     }
 
 
+def mech_check_logic(fx, fixtures):
+    logic_doc = json.loads(MPLP_LOGIC.read_text(encoding="utf-8"))
+    for m in fx["mutations"]:
+        apply_mutation(logic_doc, m)
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = Path(tmp)
+        (tmp / MPLP_LOGIC.name).write_text(json.dumps(logic_doc, indent=2), encoding="utf-8")
+        shutil.copy(MPLP_RULES, tmp / MPLP_RULES.name)
+        proc = subprocess.run(
+            [sys.executable, str(TOOLS / "check_logic.py"), "--data", str(tmp),
+             "--identifiers", str(DATA_DIR), "--identifiers", str(DATA_DIR / "exports")],
+            capture_output=True, text=True, cwd=str(ROOT))
+    needle = fx["stderr_has"]
+    return {"exit_nonzero": proc.returncode != 0,
+            "stderr_has": needle if needle in proc.stderr else proc.stderr[-300:]}
+
+
 MECHANISMS = {
     "exports": mech_exports,
     "report": mech_report,
@@ -397,6 +414,7 @@ MECHANISMS = {
     "units": mech_units,
     "verify_status": mech_verify_status,
     "evaluate": mech_evaluate,
+    "check_logic": mech_check_logic,
     "reconcile_cli": mech_reconcile_cli,
     "clause_hash": mech_clause_hash,
     "engine_parity": mech_engine_parity,

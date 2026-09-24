@@ -96,6 +96,9 @@ echo "### 16 cross-tier rule reconciliation"
 # that is the correct output, not a failure.
 python3 tools/reconcile.py --out config/reconciliation.json | tail -6
 
+echo "### 16a logic clauses - termination and citation checks"
+python3 tools/check_logic.py
+
 echo "### 17 verification page - queue, worked examples, and the process"
 # Renders from the ledger and the rule store by importing verify_status and
 # reconcile. It does not re-decide status, quorum, or verdicts; a fourth
