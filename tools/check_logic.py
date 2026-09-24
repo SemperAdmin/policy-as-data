@@ -10,9 +10,14 @@ engine's termination and citation guarantees, enforced before anything runs.
   4. A guard reads no rule, directly or through a fact.
   5. Every input read is declared; every fact read is defined.
   6. The fact graph is acyclic. This is the termination guarantee.
-  7. Every operator is one tools/engine.py implements.
+  7. Every operator is one tools/engine.py implements, and every node has the
+     shape its operator needs: required keys present, the right number of
+     args, and a format template whose placeholders are exactly its args.
+     The engine's operators are partial; this is where their shape is gated,
+     so a malformed node is a FAIL line here and never a traceback there.
   8. basis is 'cited' or 'inferred' (CLAUDE.md section 2.4).
-  9. Every clause and refusal citation obeys NAMESPACES.md N3/N4 and names a
+  9. Fact names are unique and input names are unique.
+ 10. Every clause and refusal citation obeys NAMESPACES.md N3/N4 and names a
      paragraph that exists in a USLM file under data/ or data/exports/.
 
 Usage:
@@ -25,6 +30,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import string
 import sys
 from pathlib import Path
 
@@ -45,18 +51,78 @@ def known_identifiers(dirs) -> set:
     return found
 
 
+# Operator shapes. Arity is (minimum, maximum) over a list-valued "args";
+# None for maximum means unbounded. Keys are the other fields a node must carry.
+ARITY = {
+    **{op: (2, 2) for op in ("lt", "le", "gt", "ge", "eq", "add", "sub", "mul",
+                             "add_days", "days_between")},
+    **{op: (1, 1) for op in ("abs", "iso")},
+    **{op: (1, None) for op in ("and", "max", "min")},
+}
+KEYS = {"const": ("value",), "input": ("name",), "present": ("name",), "rule": ("id",),
+        "fact": ("name",), "if": ("cond", "then", "else"), "format": ("template", "args")}
+
+
+def placeholders(template: str) -> set:
+    """Field names a str.format template reads, as the engine will call it."""
+    names = set()
+    for _literal, field, _spec, _conv in string.Formatter().parse(template):
+        if field is not None:
+            names.add(re.split(r"[.\[]", field, maxsplit=1)[0])
+    return names
+
+
+def shape_errors(node) -> list:
+    """What is wrong with one node's shape, ignoring its children. Never indexes
+    a key it has not checked, so a malformed node yields messages, not a
+    traceback."""
+    op = node["op"]
+    out = [f"op {op!r} needs {k!r}" for k in KEYS.get(op, ()) if k not in node]
+    if op in ARITY:
+        args = node.get("args")
+        lo, hi = ARITY[op]
+        if not isinstance(args, list):
+            out.append(f"op {op!r} needs args as a list")
+        elif len(args) < lo or (hi is not None and len(args) > hi):
+            want = f"exactly {lo}" if lo == hi else f"at least {lo}"
+            out.append(f"op {op!r} arity: needs {want} arg(s), has {len(args)}")
+    if op == "format" and "template" in node and "args" in node:
+        template, args = node["template"], node["args"]
+        if not isinstance(template, str):
+            out.append("op 'format' template must be a string")
+        elif not isinstance(args, dict):
+            out.append("op 'format' args must be an object")
+        else:
+            try:
+                names = placeholders(template)
+            except ValueError as exc:
+                out.append(f"op 'format' template does not parse: {exc}")
+            else:
+                if names - set(args):
+                    out.append(f"format placeholder(s) {sorted(names - set(args))} "
+                               "not supplied in args")
+                if set(args) - names:
+                    out.append(f"format args {sorted(set(args) - names)} "
+                               "name no placeholder in the template")
+    return out
+
+
 def children(node):
-    if node["op"] == "format":
-        return list(node["args"].values())
-    if node["op"] == "if":
-        return [node["cond"], node["then"], node["else"]]
-    return list(node.get("args", []))
+    op = node["op"]
+    if op == "format":
+        args = node.get("args")
+        return list(args.values()) if isinstance(args, dict) else []
+    if op == "if":
+        return [node[k] for k in ("cond", "then", "else") if k in node]
+    args = node.get("args", [])
+    return list(args) if isinstance(args, list) else []
 
 
 def walk(node, where, errors):
     if not isinstance(node, dict) or node.get("op") not in OPS:
         errors.append(f"{where}: not a known expression: {json.dumps(node)[:80]}")
         return
+    errors.extend(f"{where}: {e}" for e in shape_errors(node))
     yield node
     for child in children(node):
         yield from walk(child, where, errors)
@@ -113,8 +179,13 @@ def check_file(path: Path, idents: set) -> list:
     if not rules_path.is_file():
         return [f"{path.name}: rules_file {doc.get('rules_file')!r} not found"]
     rule_ids = {r["id"] for r in json.loads(rules_path.read_text(encoding="utf-8"))["rules"]}
-    inputs = {i["name"] for i in doc.get("inputs", [])}
-    facts = {f["name"]: f["expr"] for f in doc.get("facts", [])}
+    input_names = [i.get("name") for i in doc.get("inputs", [])]
+    fact_names = [f.get("name") for f in doc.get("facts", [])]
+    for kind, names in (("input", input_names), ("fact", fact_names)):
+        for name in sorted({n for n in names if names.count(n) > 1}, key=str):
+            errors.append(f"{path.name}: duplicate {kind} name {name!r}")
+    inputs = set(input_names)
+    facts = {f.get("name"): f.get("expr") for f in doc.get("facts", [])}
 
     graph = {}
     for name, expr in facts.items():

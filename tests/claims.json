@@ -807,6 +807,18 @@
      "expect": {"proof_for_item": {"rules": ["MAX_INCREMENTS", "MIN_INCREMENT_DAYS"],
                                    "inputs": ["increments_used", "proposed_increment"],
                                    "preceded_by": ["INCREMENT_UNDER_MIN", "INCREMENT_MAX_REACHED"]},
-                "logic_blockers": []}}
+                "logic_blockers": []}},
+    {"id": "LN14", "polarity": "negative", "claim": "A format template naming a placeholder its args do not supply is rejected statically, not discovered at evaluation",
+     "mechanism": "check_logic",
+     "fixture": {"mutations": [{"path": ["clauses", "clause:REMAINING_DAYS", "note", "template"], "value": "{max} authorized minus {spent} used"}], "stderr_has": "placeholder"},
+     "expect": {"exit_nonzero": true, "stderr_has": "placeholder"}},
+    {"id": "LN15", "polarity": "negative", "claim": "An operator given the wrong number of arguments is rejected statically; operators are partial and the gate checks their shape",
+     "mechanism": "check_logic",
+     "fixture": {"mutations": [{"path": ["facts", "fact:gap_hours", "expr", "args", 0, "args"], "value": [{"op": "const", "value": 1}, {"op": "const", "value": 2}]}], "stderr_has": "arity"},
+     "expect": {"exit_nonzero": true, "stderr_has": "arity"}},
+    {"id": "LN16", "polarity": "negative", "claim": "Two facts with the same name are rejected; which definition a clause reads must not depend on file order",
+     "mechanism": "check_logic",
+     "fixture": {"mutations": [{"path": ["facts"], "append": {"name": "gap_hours", "expr": {"op": "const", "value": 0}}}], "stderr_has": "duplicate fact"},
+     "expect": {"exit_nonzero": true, "stderr_has": "duplicate fact"}}
   ]
 }
