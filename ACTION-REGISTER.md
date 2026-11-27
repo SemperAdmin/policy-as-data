@@ -134,6 +134,7 @@ Small, and they keep the record honest.
 | **4.7** | Discharge `resources/21`, NPS FAST. Paste the landing page, About, and any documentation from a browser, or confirm it is CAC-gated. | `resources/21` |
 | **4.8** | Fill the table in `resources/22`. Title, author, publisher, year, ISBN. | `resources/22` |
 | **4.9** | Carry the authority statement into exported XML as a processing instruction or header comment. Near-zero cost. | `resources/20` |
+| **4.10** | **ADDED 2026-11-24.** Submit the Authority Currency topic to the MPRL, jointly with MARFOREUR/AF, by 1 December 2026. Six pre-submission items in the file's checklist, four of them MARFOREUR/AF's. | `MPRL-SUBMISSION.md`, MARADMIN 540/26 |
 
 ---
 
