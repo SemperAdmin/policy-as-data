@@ -1,7 +1,7 @@
 {
   "$comment": "The rule concept register. A concept is what makes a value stated at one tier comparable to a value stated at another. Concept assignment is a human judgement about two paragraphs and is recorded here, never inferred from rule-id similarity, unit compatibility, or subject proximity. Same discipline as a cited edge: no assignment without a person who read both.",
   "schema_version": "1.0",
-  "owner": "the project owner",
+  "owner": "project owner",
   "established": "2026-08-08",
   "concepts": [
     {

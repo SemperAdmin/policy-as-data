@@ -29,10 +29,10 @@ five ways by four people.
 
 | Who | Their words | The crossing |
 |---|---|---|
-| S2 participant A, S2 | "right now we do it in like 17,000 different ways" | Everyone re-derives the crossing by hand, and differently |
-| S2 participant B, S2 | "what other documents does this affect?" | One document, outward |
-| the sponsor to GPO, S4 | "the time we spend doing this administrative stuff is the time we're not focused on warfighting" | The cost of re-deriving it by hand, every time, by everyone |
-| the sponsor quoting a user, S5 | "I need to fix all the orders in my command. How do I do that?" | Many documents, one command, then across services |
+| S2 participant A | "right now we do it in like 17,000 different ways" | Everyone re-derives the crossing by hand, and differently |
+| S2 participant B | "what other documents does this affect?" | One document, outward |
+| The sponsor, to GPO, S4 | "the time we spend doing this administrative stuff is the time we're not focused on warfighting" | The cost of re-deriving it by hand, every time, by everyone |
+| The sponsor quoting a user, S5 | "I need to fix all the orders in my command. How do I do that?" | Many documents, one command, then across services |
 | The built product | does this order state what the authority above it states | One document, upward |
 
 **Why "show its work" is half the sentence.** A cross-document answer that
@@ -68,9 +68,9 @@ are in play, they have different users, and they are not the same product.
 | B | Does this order match its authority | `POC-PLAN.md` | Yes. The whole site |
 | C | A corpus a model or a method can interrogate | S2 participant A | The enabling discipline exists, unnamed |
 | D | How a directive is made, structured at birth | S2 participant A, SemperScribe | Deferred |
-| E | Training and Readiness | the sponsor, **confirmed 2026-09-15** | No. Zero held |
-| F | Time returned to warfighting | the sponsor, to GPO | No. Nothing measures time |
-| G | Fix all the orders in my command | the sponsor, quoting a user | No. Everything reports; nothing remediates |
+| E | Training and Readiness | The sponsor, **confirmed 2026-09-15** | No. Zero held |
+| F | Time returned to warfighting | The sponsor, to GPO | No. Nothing measures time |
+| G | Fix all the orders in my command | The sponsor, quoting a user | No. Everything reports; nothing remediates |
 
 **Every one of the seven is layer 2.** That is why each of them felt like "the
 concept" when it came up. They are all real, they all stand on the same two
@@ -135,7 +135,7 @@ breadth is what makes the value legible to someone who has not read the code.
 Candidate F is priced in time. The project counts documents, references,
 findings, and confirmed values. Not one minute.
 
-the sponsor's five performance claims in S5 are unmeasured anywhere in the tree, and
+The sponsor's five performance claims in S5 are unmeasured anywhere in the tree, and
 one is wrong as stated. Measured for the first time on 2026-09-15:
 
 | Claim | Measured |
@@ -169,7 +169,7 @@ want to make this a full-time project yet."
 
 ### 3.5 It explains itself in the wrong register
 
-the S5 stakeholder, already briefed in person, was lost in developer language and rescued by
+A civilian stakeholder (S5), already briefed in person, was lost in developer language and rescued by
 a picture. `conformance-matrix.md` is 628 lines written for a standards
 reviewer who has not appeared in any transcript. Every stakeholder who has
 appeared needed less: a graph, a picture, a time argument, a peer conversation
@@ -183,9 +183,9 @@ concrete offers, and the conversion rate is zero.
 
 | Opening | From | Cost to claim | State |
 |---|---|---|---|
-| Brief GPO's legislative branch data partners on the project | the GPO representative, S6 | Reply yes | **Not followed up** |
-| Present to Library of Congress, House, or Senate support staff | the GPO representative, S6 | Reply yes | **Not followed up** |
-| the S5 stakeholder's wish list, due the 23rd | the S5 stakeholder, S5 | One conversation | **Not followed up** |
+| Brief GPO's legislative branch data partners on the project | GPO, S6 | Reply yes | **Not followed up** |
+| Present to Library of Congress, House, or Senate support staff | GPO, S6 | Reply yes | **Not followed up** |
+| The S5 civilian stakeholder's wish list, due the 23rd | S5 stakeholder | One conversation | **Not followed up** |
 
 The first two came from the body that publishes the standard this project
 follows, after ninety minutes in which their response to the work was not a
@@ -197,7 +197,7 @@ noticed these were offers.
 
 **The recording problem underneath it is real too.** Four load-bearing rulings
 about GPO in this repository were reached by reading their published documents
-rather than asking them, while GPO sat in a room for ninety minutes. Pease, the
+rather than asking them, while GPO sat in a room for ninety minutes. The NPS briefing, the
 Directive Control Point, TECOM, and the Personnel Administration School are
 recorded nowhere in the tree. `CLAUDE.md` section 16 exists to prevent exactly
 this.
@@ -207,8 +207,8 @@ this.
 On 2026-09-15 the site was rebuilt to tell the narrowest product's story
 better, and two things were deleted on a judgement about an audience nobody had
 defined: the sentences connecting the encoding to model use, contradicted by
-S2 participant A in S2, and `visuals/04-pipeline-and-gates.svg`, contradicted by the S5 stakeholder in
-S5. The diagram is still on disk and referenced by nothing. With a concept
+S2 participant A, and `visuals/04-pipeline-and-gates.svg`, contradicted by the S5
+stakeholder. The diagram is still on disk and referenced by nothing. With a concept
 unsettled, deleting loses the option that reframing keeps.
 
 ---
@@ -278,7 +278,7 @@ What is still open, in order of what it changes:
 1. **Can GPO's two offers still be taken up?** One reply each. They are the
    only evidence the whole-of-government claim has ever had.
 2. **What does CDA stand for, and what is the sponsor's part in creating it?** It
-   names where his mandate comes from and how long it lasts, and the whole
+   names where the sponsor's mandate comes from and how long it lasts, and the whole
    programme is currently running on that mandate.
 3. **What was said in the missing 87 minutes with GPO?** Four rulings in this
    repository turn on it.

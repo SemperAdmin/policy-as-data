@@ -173,7 +173,7 @@ track.
 ### The demo, five beats
 
 A general gives five minutes. Each beat lands a number and needs no
-explanation; the S5 stakeholder in S5 is the evidence for what happens otherwise.
+explanation; the S5 stakeholder is the evidence for what happens otherwise.
 
 | # | Beat | State |
 |---|---|---|
