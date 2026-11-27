@@ -29,3 +29,6 @@ deploy_cloudgov.bat
 # data attached to an official act. Same treatment as canonical/: held, never
 # published. The site shows state, method, and date - never a name.
 verification/roster.json
+
+# Filled submission forms: carry distribution markings and personal metadata. Never commit.
+submissions/
