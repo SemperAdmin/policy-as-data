@@ -1,0 +1,68 @@
+# Publish Policy as Data to GitHub Pages: the generated site, the earlier
+# viewer and the data files the viewer reads, and nothing else.
+#
+# Pages used to publish the whole repository root, which also served the
+# working notes, plans and handoff files at the root as public pages. This
+# workflow keeps every public address the same (the root redirect, docs/ and
+# viewer/) and leaves everything else out.
+#
+# Requires the repository's Pages source to be "GitHub Actions"
+# (Settings > Pages > Build and deployment).
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Assemble the published files
+        run: |
+          set -euo pipefail
+          mkdir -p _site/data
+          # Root redirect to the site.
+          cp index.html _site/index.html
+          # The generated site, minus the cloud.gov deployment files.
+          cp -R docs _site/docs
+          rm -f _site/docs/manifest.yml _site/docs/Staticfile _site/docs/.cfignore
+          # The earlier read-only viewer and only the data files it loads.
+          cp -R viewer _site/viewer
+          grep -ohE '"\.\./data/[^"]+"' viewer/docs.js | tr -d '"' | sed 's#^\.\./##' | sort -u |
+            while read -r f; do cp "$f" "_site/$f"; done
+          touch _site/.nojekyll
+          find _site -maxdepth 2 -type d | sort
+          echo "files: $(find _site -type f | wc -l)"
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload the published files
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
