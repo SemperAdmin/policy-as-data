@@ -104,7 +104,7 @@ python tools/build_stamp.py --check
 | Environment | URL | How |
 |---|---|---|
 | cloud.gov | https://policy-as-data.app.cloud.gov | Serves `docs/` only. `docs/manifest.yml` (staticfile buildpack) and the manual **Deploy to cloud.gov** workflow, which runs the validator and the contact guard, then `cf push` from `docs/`. The sandbox is managed by the private cloudgov-redeploy repository. |
-| GitHub Pages | https://semperadmin.github.io/policy-as-data/ | Published from the repository root of `main`, so every file in the repository is served. The root `index.html` redirects to `docs/`. |
+| GitHub Pages | https://semperadmin.github.io/policy-as-data/ | `.github/workflows/pages.yml` on push to `main`. Publishes the root redirect, `docs/` and the earlier `viewer/` with the data files it reads; nothing else in the repository is served. |
 
 ## Documentation
 
