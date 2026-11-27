@@ -1,7 +1,7 @@
 {
   "$comment": "Quorum policy for verification. Kept in config rather than in code so a deviation is a recorded decision with a reason attached, not an edit somebody has to find in a Python file.",
   "schema_version": "1.0",
-  "owner": "the project owner",
+  "owner": "project owner",
   "established": "2026-08-08",
   "quorum": {
     "rule": 1,

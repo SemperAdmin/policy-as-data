@@ -737,6 +737,23 @@ claim of this project is that its provenance can be trusted.
 
 ---
 
+### Personal names in tracked files, fixed 2026-11-27
+
+- **Stakeholders and the owner were named in a public repository.** Call
+  participants, a GPO staff member, the programme sponsor, and the owner's
+  first name appeared in `CONCEPT.md`, `ACTION-REGISTER.md`, the document
+  headers, two config files, one schema description, and one tool comment.
+  Replaced with roles: "S2 participant A/B", "the sponsor", "the S5
+  stakeholder", "GPO, S6", "the project owner". Separately, a filled MPRL
+  form carrying a limited-distribution marking and its template author's
+  name reached the PR #18 branch; the branch was rebuilt without it and
+  `submissions/` is ignored. The trap: **a tracked file names roles, never
+  people**, and a `.docx` from outside carries its author in
+  `docProps/core.xml` whatever its visible text says. Authors cited for
+  their published work (resources rows 27 to 31) are citations, not
+  personal records, and stay. GitHub still serves the removed commits by
+  hash until GitHub Support purges them; the GitLab mirror needs the same.
+
 ## 11. Environment - the bridge to the user's disk
 
 The session reaching `D:` and `E:` runs in a cloud container. The user's disk
