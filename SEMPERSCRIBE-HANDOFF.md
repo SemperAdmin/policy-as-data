@@ -5,7 +5,7 @@ Audience: an implementing developer or coding agent working in
 Source of truth: this document, plus `NLDP-CONTRACT.md` in the policy-as-data
 repository for the receiving side.
 Audited against: `f843a95`, 2026-08-07.
-Date: 2026-08-08. Owner: Stephen.
+Date: 2026-08-08. Owner: the project owner.
 
 Place a copy at `docs/POLICY_AS_DATA_HANDOFF.md` in SemperScribe.
 

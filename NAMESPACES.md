@@ -1,6 +1,6 @@
 # Namespace Register
 
-Date: 2026-08-03. Owner: Stephen. Status: in force for the canonical store.
+Date: 2026-08-03. Owner: the project owner. Status: in force for the canonical store.
 Companion to `conformance-matrix.md` and the N3.1 deliverable named in
 `hhq-alignment-plan.md`.
 

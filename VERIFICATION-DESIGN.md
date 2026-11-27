@@ -1,6 +1,6 @@
 # Human verification - process design
 
-Date: 2026-08-08. Owner: Stephen. Status: proposed.
+Date: 2026-08-08. Owner: the project owner. Status: proposed.
 
 Companion to `VERIFICATION.md`, which records whether the demo works, and to
 `schema/README.md`, which defines the verification semantics. This document

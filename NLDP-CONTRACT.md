@@ -1,6 +1,6 @@
 # NLDP contract and SemperScribe export audit
 
-Date: 2026-08-08. Owner: Stephen.
+Date: 2026-08-08. Owner: the project owner.
 Source audited: `github.com/SemperAdmin/semperscribe` at `f843a95`, 2026-08-07.
 Supersedes section 5 of `INTEGRATION-SEMPERSCRIBE.md`, which was written against
 an unknown schema.

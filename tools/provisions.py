@@ -1,6 +1,6 @@
 """Provision-depth parser - Phase P1 (provision-depth-plan.md).
 
-Requirement (Maj Gannon, 2026-07-17): one paragraph per node, hierarchy
+Requirement (programme sponsor, 2026-07-17): one paragraph per node, hierarchy
 explicit in the data, the STORED path absolute (p2/c/1) and the DISPLAYED
 label local only ("(1)") per standard naval letter format. References
 then resolve to chapter and verse instead of to a whole document.

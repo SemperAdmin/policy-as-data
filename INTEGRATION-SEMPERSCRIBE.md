@@ -1,6 +1,6 @@
 # SemperScribe integration - design
 
-Date: 2026-08-08. Owner: Stephen. Status: **proposed. Not adopted, and it is not
+Date: 2026-08-08. Owner: the project owner. Status: **proposed. Not adopted, and it is not
 in the POC.** Scope decision required, section 9.
 
 Supersedes nothing. Extends the Option A / Option B choice recorded open in

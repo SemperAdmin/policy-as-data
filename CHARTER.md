@@ -1,6 +1,6 @@
 # Charter
 
-Date: 2026-08-08. Owner: Stephen. Status: adopted text, with the derivation
+Date: 2026-08-08. Owner: the project owner. Status: adopted text, with the derivation
 recorded and the scope bounded.
 
 Companion to `README.md`, which states what the repository is, and to

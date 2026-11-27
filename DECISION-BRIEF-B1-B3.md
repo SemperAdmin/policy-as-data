@@ -1,6 +1,6 @@
 # Decision brief - B1, B2, B3
 
-Date: 2026-08-08. For: Stephen. Prepared by: the engineering side.
+Date: 2026-08-08. For: the project owner. Prepared by: the engineering side.
 Companion to `POC-PLAN.md` section 11 and `ACTION-REGISTER.md` section 0.
 
 Three decisions gate the POC. Each section states what turns on it, the options,

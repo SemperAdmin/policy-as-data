@@ -1,6 +1,6 @@
 # Policy as Data - Build State
 
-Date: 2026-08-03. Owner: Stephen. Store of record: UNTOUCHED.
+Date: 2026-08-03. Owner: the project owner. Store of record: UNTOUCHED.
 Everything below lands in `canonical_staging` and awaits one owner ruling.
 
 ---

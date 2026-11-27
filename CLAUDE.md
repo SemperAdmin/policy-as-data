@@ -1,6 +1,6 @@
 # CLAUDE.md - working instructions
 
-Date: 2026-08-08. Owner: Stephen. Applies to: `D:\Coding\policy-as-data`,
+Date: 2026-08-08. Owner: the project owner. Applies to: `D:\Coding\policy-as-data`,
 the encoding component of **GOATS by Semper Admin**.
 
 **Filename ruling.** This file is named `CLAUDE.md` and not `INSTRUCTIONS.md`

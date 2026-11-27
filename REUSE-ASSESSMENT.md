@@ -1,6 +1,6 @@
 # Reuse assessment
 
-Date: 2026-08-08. Owner: Stephen. Scope: build-versus-reuse for the POC in
+Date: 2026-08-08. Owner: the project owner. Scope: build-versus-reuse for the POC in
 `POC-PLAN.md` and the layers after it.
 
 ---

@@ -1,6 +1,6 @@
 # POC plan - GOATS by Semper Admin
 
-Date: 2026-08-08. Owner: Stephen. Author role: senior developer, per `CLAUDE.md`.
+Date: 2026-08-08. Owner: the project owner. Author role: senior developer, per `CLAUDE.md`.
 Status: **proposed, not adopted.** Three blocking questions in section 11.
 
 ---

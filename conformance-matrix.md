@@ -1,6 +1,6 @@
 # Conformance Matrix
 
-Date: 2026-08-03. Owner: Stephen. Scope: the 14 references in Web_resources.csv,
+Date: 2026-08-03. Owner: the project owner. Scope: the 14 references in Web_resources.csv,
 plus the governing authorities those references lead to.
 
 Verdicts follow the four-value scale set in hhq-alignment-plan.md N0.2:

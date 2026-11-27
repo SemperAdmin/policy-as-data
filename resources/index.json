@@ -2,7 +2,7 @@
   "$comment": "Machine-readable register for the 2026-08-08 resource review pass. Companion to resources/README.md and to conformance-matrix.md. The verdict scale is quoted from conformance-matrix.md. NOTE: that document sources the scale from hhq-alignment-plan.md N0.2, which is not present in this repository - see ACTION-REGISTER.md item 0.7. 'UNCONFIRMED' is a retrieval state, not a verdict; 'EVALUATE' applies to row 24 only. 2026-08-20: rows 25-30 added for the ontology pass. EVALUATE now applies to rows 24, 28, and 29, extending the single-row restriction stated for the 2026-08-08 pass. 2026-09-11: row 31 added, verdict ADAPTED; EVALUATE rows unchanged.",
   "schema_version": "1.0",
   "generated": "2026-09-11",
-  "owner": "Stephen",
+  "owner": "project owner",
   "status": "draft",
   "merges_into": {
     "document": "conformance-matrix.md",

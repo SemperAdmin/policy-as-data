@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-Date: 2026-09-24. Owner: Stephen. Status: **APPROVED 2026-09-24** for subagent-driven execution. Owner ruling: clause quorum 1 under the existing one-verifier deviation, target 2.
+Date: 2026-09-24. Owner: the project owner. Status: **APPROVED 2026-09-24** for subagent-driven execution. Owner ruling: clause quorum 1 under the existing one-verifier deviation, target 2.
 
 **Goal:** Move the decision logic out of hand-written Python in `tools/evaluate.py` and into cited, attested data files, evaluated by a generic engine that always terminates and shows its reasoning. M1 proves this on parental leave by exact parity. M2 extends it to leave accrual (MCO 1050.3J).
 

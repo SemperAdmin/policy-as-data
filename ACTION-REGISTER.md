@@ -1,6 +1,6 @@
 # Action register
 
-Date: 2026-08-08. Owner: Stephen. Status: current.
+Date: 2026-08-08. Owner: the project owner. Status: current.
 Last verified against disk: 2026-08-08, items 0.1, 0.4, 0.7, 0.8.
 Updated 2026-09-11: items 1.8 to 1.11 added from `resources/31-oceans-sumo-roe-paper.md`, accepted by the owner. Track 5 added from `SITE-PLAN.md`, adopted; 5.10 decided, fold.
 Updated 2026-09-15: Track 6, demo readiness, added from `CONCEPT.md`. Tracks 1 and 5 are not cancelled and are not the demo path; see `CONCEPT.md` section 3.1 for why.
@@ -173,7 +173,7 @@ track.
 ### The demo, five beats
 
 A general gives five minutes. Each beat lands a number and needs no
-explanation; Ashe in S5 is the evidence for what happens otherwise.
+explanation; the S5 stakeholder is the evidence for what happens otherwise.
 
 | # | Beat | State |
 |---|---|---|
@@ -218,7 +218,7 @@ Recorded so they are not lost. `CONCEPT.md` section 3.6.
 |---|---|---|
 | **6.A** | **The duplication question.** Why does the Directive Control Point not already do this. Open since the first analysis, answered nowhere in the tree | The first question a general asks. The app supplies part of the answer: the current system did not catch four orders resting on a cancelled instruction |
 | **6.B** | **The ask.** Nobody has written down what leadership is being asked to approve: people, corpus access, a decision on where it lives, or permission to continue | A brief with no ask gets a nod and no follow-up |
-| **6.C** | GPO's two standing offers and Ashe's wish list, all unanswered | The only outside validation the programme has |
+| **6.C** | GPO's two standing offers and the S5 stakeholder's wish list, all unanswered | The only outside validation the programme has |
 
 ---
 

@@ -1,6 +1,6 @@
 # Resource reviews
 
-Dates: 2026-08-08, rows 17 to 24. 2026-08-20, rows 25 to 30. 2026-09-11, row 31. Owner: Stephen.
+Dates: 2026-08-08, rows 17 to 24. 2026-08-20, rows 25 to 30. 2026-09-11, row 31. Owner: the project owner.
 Status: draft, pending merge into `conformance-matrix.md`.
 
 This directory holds the per-source review for external resources added after

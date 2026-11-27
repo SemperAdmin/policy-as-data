@@ -1,6 +1,6 @@
 # What we are trying to do, and what is wrong with what we built
 
-Date: 2026-09-15. Owner: Stephen. Status: **proposed. Nothing here is decided.**
+Date: 2026-09-15. Owner: the project owner. Status: **proposed. Nothing here is decided.**
 
 Written at the owner's request after five sources were logged in
 `CONCEPT-EVIDENCE.md` and building was put on hold. Every claim traces to a
@@ -29,10 +29,10 @@ five ways by four people.
 
 | Who | Their words | The crossing |
 |---|---|---|
-| Shorter, S2 | "right now we do it in like 17,000 different ways" | Everyone re-derives the crossing by hand, and differently |
-| Chiofalo, S2 | "what other documents does this affect?" | One document, outward |
-| Gannon to GPO, S4 | "the time we spend doing this administrative stuff is the time we're not focused on warfighting" | The cost of re-deriving it by hand, every time, by everyone |
-| Gannon quoting a user, S5 | "I need to fix all the orders in my command. How do I do that?" | Many documents, one command, then across services |
+| S2 participant A | "right now we do it in like 17,000 different ways" | Everyone re-derives the crossing by hand, and differently |
+| S2 participant B | "what other documents does this affect?" | One document, outward |
+| The sponsor, to GPO, S4 | "the time we spend doing this administrative stuff is the time we're not focused on warfighting" | The cost of re-deriving it by hand, every time, by everyone |
+| The sponsor quoting a user, S5 | "I need to fix all the orders in my command. How do I do that?" | Many documents, one command, then across services |
 | The built product | does this order state what the authority above it states | One document, upward |
 
 **Why "show its work" is half the sentence.** A cross-document answer that
@@ -64,13 +64,13 @@ are in play, they have different users, and they are not the same product.
 
 | # | Answer | Whose words | Built |
 |---|---|---|---|
-| A | What does this change affect | Chiofalo, and the Directive Control Point question | Data exists, view does not |
+| A | What does this change affect | S2 participant B, and the Directive Control Point question | Data exists, view does not |
 | B | Does this order match its authority | `POC-PLAN.md` | Yes. The whole site |
-| C | A corpus a model or a method can interrogate | Shorter | The enabling discipline exists, unnamed |
-| D | How a directive is made, structured at birth | Shorter, SemperScribe | Deferred |
-| E | Training and Readiness | Gannon, **confirmed 2026-09-15** | No. Zero held |
-| F | Time returned to warfighting | Gannon, to GPO | No. Nothing measures time |
-| G | Fix all the orders in my command | Gannon, quoting a user | No. Everything reports; nothing remediates |
+| C | A corpus a model or a method can interrogate | S2 participant A | The enabling discipline exists, unnamed |
+| D | How a directive is made, structured at birth | S2 participant A, SemperScribe | Deferred |
+| E | Training and Readiness | The sponsor, **confirmed 2026-09-15** | No. Zero held |
+| F | Time returned to warfighting | The sponsor, to GPO | No. Nothing measures time |
+| G | Fix all the orders in my command | The sponsor, quoting a user | No. Everything reports; nothing remediates |
 
 **Every one of the seven is layer 2.** That is why each of them felt like "the
 concept" when it came up. They are all real, they all stand on the same two
@@ -135,7 +135,7 @@ breadth is what makes the value legible to someone who has not read the code.
 Candidate F is priced in time. The project counts documents, references,
 findings, and confirmed values. Not one minute.
 
-Gannon's five performance claims in S5 are unmeasured anywhere in the tree, and
+The sponsor's five performance claims in S5 are unmeasured anywhere in the tree, and
 one is wrong as stated. Measured for the first time on 2026-09-15:
 
 | Claim | Measured |
@@ -164,12 +164,12 @@ takes to answer one of these questions today, and that has never been timed.
   is also a single point of failure for the entire verification claim.
 
 A side project with interest from six directions and no way in dies of the
-founder's calendar. That is not a hypothetical: Chiofalo's read is "they don't
+founder's calendar. That is not a hypothetical: S2 participant B's read is "they don't
 want to make this a full-time project yet."
 
 ### 3.5 It explains itself in the wrong register
 
-Ashe, already briefed in person, was lost in developer language and rescued by
+A civilian stakeholder (S5), already briefed in person, was lost in developer language and rescued by
 a picture. `conformance-matrix.md` is 628 lines written for a standards
 reviewer who has not appeared in any transcript. Every stakeholder who has
 appeared needed less: a graph, a picture, a time argument, a peer conversation
@@ -183,9 +183,9 @@ concrete offers, and the conversion rate is zero.
 
 | Opening | From | Cost to claim | State |
 |---|---|---|---|
-| Brief GPO's legislative branch data partners on the project | LaPlant, S6 | Reply yes | **Not followed up** |
-| Present to Library of Congress, House, or Senate support staff | LaPlant, S6 | Reply yes | **Not followed up** |
-| Amaya Ashe's wish list, due the 23rd | Ashe, S5 | One conversation | **Not followed up** |
+| Brief GPO's legislative branch data partners on the project | GPO, S6 | Reply yes | **Not followed up** |
+| Present to Library of Congress, House, or Senate support staff | GPO, S6 | Reply yes | **Not followed up** |
+| The S5 civilian stakeholder's wish list, due the 23rd | S5 stakeholder | One conversation | **Not followed up** |
 
 The first two came from the body that publishes the standard this project
 follows, after ninety minutes in which their response to the work was not a
@@ -197,7 +197,7 @@ noticed these were offers.
 
 **The recording problem underneath it is real too.** Four load-bearing rulings
 about GPO in this repository were reached by reading their published documents
-rather than asking them, while GPO sat in a room for ninety minutes. Pease, the
+rather than asking them, while GPO sat in a room for ninety minutes. The NPS briefing, the
 Directive Control Point, TECOM, and the Personnel Administration School are
 recorded nowhere in the tree. `CLAUDE.md` section 16 exists to prevent exactly
 this.
@@ -207,8 +207,8 @@ this.
 On 2026-09-15 the site was rebuilt to tell the narrowest product's story
 better, and two things were deleted on a judgement about an audience nobody had
 defined: the sentences connecting the encoding to model use, contradicted by
-Shorter in S2, and `visuals/04-pipeline-and-gates.svg`, contradicted by Ashe in
-S5. The diagram is still on disk and referenced by nothing. With a concept
+S2 participant A, and `visuals/04-pipeline-and-gates.svg`, contradicted by the S5
+stakeholder. The diagram is still on disk and referenced by nothing. With a concept
 unsettled, deleting loses the option that reframing keeps.
 
 ---
@@ -224,7 +224,7 @@ Why this one and not another:
 
 - **It uses what exists.** The edges, the inbound index, the cited-versus-
   inferred basis, the drift classification. No new capability.
-- **It answers a question three constituencies actually asked.** Chiofalo, the
+- **It answers a question three constituencies actually asked.** S2 participant B, the
   Directive Control Point, and by extension TECOM.
 - **It has no verification gate.** An edge is cited or it is not. Reconciliation
   needs a human reading on both sides before it says anything; impact does not.
@@ -244,7 +244,7 @@ separate converge on one product:
 
 - **A**, the impact question, is the one three constituencies actually asked.
 - **E**, Training and Readiness, is a corpus with a named owner in TECOM, a
-  summit that has happened, and Gannon already briefing it at the Personnel
+  summit that has happened, and the sponsor already briefing it at the Personnel
   Administration School.
 - **F**, time saved, is the currency the pitch already uses.
 
@@ -277,8 +277,8 @@ What is still open, in order of what it changes:
 
 1. **Can GPO's two offers still be taken up?** One reply each. They are the
    only evidence the whole-of-government claim has ever had.
-2. **What does CDA stand for, and what is Gannon's part in creating it?** It
-   names where his mandate comes from and how long it lasts, and the whole
+2. **What does CDA stand for, and what is the sponsor's part in creating it?** It
+   names where the sponsor's mandate comes from and how long it lasts, and the whole
    programme is currently running on that mandate.
 3. **What was said in the missing 87 minutes with GPO?** Four rulings in this
    repository turn on it.

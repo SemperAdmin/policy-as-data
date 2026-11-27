@@ -1,6 +1,6 @@
 # Where verification runs
 
-Date: 2026-08-08. Owner: Stephen. Status: options, one blocking question.
+Date: 2026-08-08. Owner: the project owner. Status: options, one blocking question.
 Companion to `VERIFICATION-DESIGN.md`, which covers the act. This covers the
 delivery of the act.
 

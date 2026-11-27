@@ -1,6 +1,6 @@
 # Site plan - one application, then the pages that explain it
 
-Date: 2026-09-11. Owner: Stephen. Status: **adopted 2026-09-11.** The one
+Date: 2026-09-11. Owner: the project owner. Status: **adopted 2026-09-11.** The one
 owner decision, section 8, was taken the same day: fold. Everything else was
 decidable on the engineering side and is decided here.
 
